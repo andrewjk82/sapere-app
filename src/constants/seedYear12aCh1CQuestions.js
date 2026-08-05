@@ -39,7 +39,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "Multiply the fourth term by the common ratio to get the fifth term, and repeat for the sixth term.",
-        "workingOut": "\\(T_5 = 8 \\times 2 = 16\\\\n\\text{and}\\\\nT_6 = 16 \\times 2 = 32\\)",
+        "workingOut": "\\(T_5 = 8 \\times 2 = 16\\\n\\text{and}\\\nT_6 = 16 \\times 2 = 32\\)",
         "graphData": null
       }
     ]
@@ -84,7 +84,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "Calculate the fifth and sixth terms by successive multiplication.",
-        "workingOut": "\\(T_5 = 3 \\times \\dfrac{1}{3} = 1\\\\n\\text{and}\\\\nT_6 = 1 \\times \\dfrac{1}{3} = \\dfrac{1}{3}\\)",
+        "workingOut": "\\(T_5 = 3 \\times \\dfrac{1}{3} = 1\\\n\\text{and}\\\nT_6 = 1 \\times \\dfrac{1}{3} = \\dfrac{1}{3}\\)",
         "graphData": null
       }
     ]
@@ -129,7 +129,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "Generate the fifth and sixth terms by continuing to multiply by \\(2\\).",
-        "workingOut": "\\(T_5 = -56 \\times 2 = -112\\\\n\\text{and}\\\\nT_6 = -112 \\times 2 = -224\\)",
+        "workingOut": "\\(T_5 = -56 \\times 2 = -112\\\n\\text{and}\\\nT_6 = -112 \\times 2 = -224\\)",
         "graphData": null
       }
     ]
@@ -174,7 +174,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "Compute the fifth and sixth terms in the same manner.",
-        "workingOut": "\\(T_5 = -20 \\times \\dfrac{1}{5} = -4\\\\n\\text{and}\\\\nT_6 = -4 \\times \\dfrac{1}{5} = -\\dfrac{4}{5}\\)",
+        "workingOut": "\\(T_5 = -20 \\times \\dfrac{1}{5} = -4\\\n\\text{and}\\\nT_6 = -4 \\times \\dfrac{1}{5} = -\\dfrac{4}{5}\\)",
         "graphData": null
       }
     ]
@@ -219,7 +219,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "Multiply successively to get the fifth and sixth terms.",
-        "workingOut": "\\(T_5 = -24 \\times (-2) = 48\\\\n\\text{and}\\\\nT_6 = 48 \\times (-2) = -96\\)",
+        "workingOut": "\\(T_5 = -24 \\times (-2) = 48\\\n\\text{and}\\\nT_6 = 48 \\times (-2) = -96\\)",
         "graphData": null
       }
     ]
@@ -264,7 +264,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "Find the fifth and sixth terms by continuing the multiplication.",
-        "workingOut": "\\(T_5 = 200 \\times (-2) = -400\\\\n\\text{and}\\\\nT_6 = -400 \\times (-2) = 800\\)",
+        "workingOut": "\\(T_5 = 200 \\times (-2) = -400\\\n\\text{and}\\\nT_6 = -400 \\times (-2) = 800\\)",
         "graphData": null
       }
     ]
@@ -309,7 +309,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "Compute the fifth and sixth terms.",
-        "workingOut": "\\(T_5 = -5 \\times (-1) = 5\\\\n\\text{and}\\\\nT_6 = 5 \\times (-1) = -5\\)",
+        "workingOut": "\\(T_5 = -5 \\times (-1) = 5\\\n\\text{and}\\\nT_6 = 5 \\times (-1) = -5\\)",
         "graphData": null
       }
     ]
@@ -354,7 +354,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "Compute the fifth and sixth terms.",
-        "workingOut": "\\(T_5 = 1 \\times \\left(-\\dfrac{1}{10}\\right) = -\\dfrac{1}{10}\\\\n\\text{and}\\\\nT_6 = -\\dfrac{1}{10} \\times \\left(-\\dfrac{1}{10}\\right) = \\dfrac{1}{100}\\)",
+        "workingOut": "\\(T_5 = 1 \\times \\left(-\\dfrac{1}{10}\\right) = -\\dfrac{1}{10}\\\n\\text{and}\\\nT_6 = -\\dfrac{1}{10} \\times \\left(-\\dfrac{1}{10}\\right) = \\dfrac{1}{100}\\)",
         "graphData": null
       }
     ]
@@ -399,7 +399,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "Calculate the fifth and sixth terms.",
-        "workingOut": "\\(T_5 = 40 \\times 10 = 400\\\\n\\text{and}\\\\nT_6 = 400 \\times 10 = 4000\\)",
+        "workingOut": "\\(T_5 = 40 \\times 10 = 400\\\n\\text{and}\\\nT_6 = 400 \\times 10 = 4000\\)",
         "graphData": null
       }
     ]
@@ -444,7 +444,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "Generate the third and fourth terms by multiplying the previous term by \\(3\\) each time.",
-        "workingOut": "\\(T_3 = 3 \\times 3 = 9\\\\n\\text{and}\\\\nT_4 = 9 \\times 3 = 27\\)",
+        "workingOut": "\\(T_3 = 3 \\times 3 = 9\\\n\\text{and}\\\nT_4 = 9 \\times 3 = 27\\)",
         "graphData": null
       }
     ]
@@ -489,7 +489,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "Determine the third and fourth terms.",
-        "workingOut": "\\(T_3 = 24 \\times 2 = 48\\\\n\\text{and}\\\\nT_4 = 48 \\times 2 = 96\\)",
+        "workingOut": "\\(T_3 = 24 \\times 2 = 48\\\n\\text{and}\\\nT_4 = 48 \\times 2 = 96\\)",
         "graphData": null
       }
     ]
@@ -534,7 +534,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "Compute the third and fourth terms.",
-        "workingOut": "\\(T_3 = -10 \\times (-2) = 20\\\\n\\text{and}\\\\nT_4 = 20 \\times (-2) = -40\\)",
+        "workingOut": "\\(T_3 = -10 \\times (-2) = 20\\\n\\text{and}\\\nT_4 = 20 \\times (-2) = -40\\)",
         "graphData": null
       }
     ]
@@ -579,7 +579,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "Generate the third and fourth terms.",
-        "workingOut": "\\(T_3 = 6 \\times \\dfrac{1}{3} = 2\\\\n\\text{and}\\\\nT_4 = 2 \\times \\dfrac{1}{3} = \\dfrac{2}{3}\\)",
+        "workingOut": "\\(T_3 = 6 \\times \\dfrac{1}{3} = 2\\\n\\text{and}\\\nT_4 = 2 \\times \\dfrac{1}{3} = \\dfrac{2}{3}\\)",
         "graphData": null
       }
     ]
@@ -624,7 +624,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "Calculate the third and fourth terms, noting the signs alternate.",
-        "workingOut": "\\(T_3 = -6 \\times \\left(-\\dfrac{1}{3}\\right) = 2\\\\n\\text{and}\\\\nT_4 = 2 \\times \\left(-\\dfrac{1}{3}\\right) = -\\dfrac{2}{3}\\)",
+        "workingOut": "\\(T_3 = -6 \\times \\left(-\\dfrac{1}{3}\\right) = 2\\\n\\text{and}\\\nT_4 = 2 \\times \\left(-\\dfrac{1}{3}\\right) = -\\dfrac{2}{3}\\)",
         "graphData": null
       }
     ]
@@ -669,7 +669,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "Determine the third and fourth terms.",
-        "workingOut": "\\(T_3 = 10 \\times \\dfrac{1}{5} = 2\\\\n\\text{and}\\\\nT_4 = 2 \\times \\dfrac{1}{5} = \\dfrac{2}{5}\\)",
+        "workingOut": "\\(T_3 = 10 \\times \\dfrac{1}{5} = 2\\\n\\text{and}\\\nT_4 = 2 \\times \\dfrac{1}{5} = \\dfrac{2}{5}\\)",
         "graphData": null
       }
     ]
@@ -714,7 +714,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "Find the third and fourth terms.",
-        "workingOut": "\\(T_3 = -3 \\times \\left(-\\dfrac{1}{2}\\right) = \\dfrac{3}{2}\\\\n\\text{and}\\\\nT_4 = \\dfrac{3}{2} \\times \\left(-\\dfrac{1}{2}\\right) = -\\dfrac{3}{4}\\)",
+        "workingOut": "\\(T_3 = -3 \\times \\left(-\\dfrac{1}{2}\\right) = \\dfrac{3}{2}\\\n\\text{and}\\\nT_4 = \\dfrac{3}{2} \\times \\left(-\\dfrac{1}{2}\\right) = -\\dfrac{3}{4}\\)",
         "graphData": null
       }
     ]
@@ -759,7 +759,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "Multiply successively to find the third and fourth terms.",
-        "workingOut": "\\(T_3 = -26 \\times 2 = -52\\\\n\\text{and}\\\\nT_4 = -52 \\times 2 = -104\\)",
+        "workingOut": "\\(T_3 = -26 \\times 2 = -52\\\n\\text{and}\\\nT_4 = -52 \\times 2 = -104\\)",
         "graphData": null
       }
     ]
@@ -804,7 +804,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "Compute the third and fourth terms.",
-        "workingOut": "\\(T_3 = 7 \\times (-1) = -7\\\\n\\text{and}\\\\nT_4 = -7 \\times (-1) = 7\\)",
+        "workingOut": "\\(T_3 = 7 \\times (-1) = -7\\\n\\text{and}\\\nT_4 = -7 \\times (-1) = 7\\)",
         "graphData": null
       }
     ]
@@ -821,7 +821,7 @@ export const Y12A_CH1C_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "It is not a GP because \\(\\dfrac{16}{8} \\neq \\dfrac{8}{4}\\)",
+        "text": "It is not a GP because \\(\\dfrac{16}{8} \neq \\dfrac{8}{4}\\)",
         "imageUrl": ""
       },
       {
@@ -839,7 +839,7 @@ export const Y12A_CH1C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Calculate the ratio of the consecutive terms: \\(\\dfrac{T_2}{T_1}\\) and \\(\\dfrac{T_3}{T_2}\\).",
-        "workingOut": "\\(\\dfrac{T_2}{T_1} = \\dfrac{8}{4} = 2\\\\n\\text{and}\\\\n\\dfrac{T_3}{T_2} = \\dfrac{16}{8} = 2\\)",
+        "workingOut": "\\(\\dfrac{T_2}{T_1} = \\dfrac{8}{4} = 2\\\n\\text{and}\\\n\\dfrac{T_3}{T_2} = \\dfrac{16}{8} = 2\\)",
         "graphData": null
       },
       {
@@ -884,7 +884,7 @@ export const Y12A_CH1C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find the ratios of the adjacent terms.",
-        "workingOut": "\\(\\dfrac{T_2}{T_1} = \\dfrac{8}{16} = \\dfrac{1}{2}\\\\n\\text{and}\\\\n\\dfrac{T_3}{T_2} = \\dfrac{4}{8} = \\dfrac{1}{2}\\)",
+        "workingOut": "\\(\\dfrac{T_2}{T_1} = \\dfrac{8}{16} = \\dfrac{1}{2}\\\n\\text{and}\\\n\\dfrac{T_3}{T_2} = \\dfrac{4}{8} = \\dfrac{1}{2}\\)",
         "graphData": null
       },
       {
@@ -929,7 +929,7 @@ export const Y12A_CH1C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Compute the consecutive ratios.",
-        "workingOut": "\\(\\dfrac{T_2}{T_1} = \\dfrac{21}{7} = 3\\\\n\\text{and}\\\\n\\dfrac{T_3}{T_2} = \\dfrac{63}{21} = 3\\)",
+        "workingOut": "\\(\\dfrac{T_2}{T_1} = \\dfrac{21}{7} = 3\\\n\\text{and}\\\n\\dfrac{T_3}{T_2} = \\dfrac{63}{21} = 3\\)",
         "graphData": null
       },
       {
@@ -974,7 +974,7 @@ export const Y12A_CH1C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Determine the term ratios.",
-        "workingOut": "\\(\\dfrac{T_2}{T_1} = \\dfrac{-20}{-4} = 5\\\\n\\text{and}\\\\n\\dfrac{T_3}{T_2} = \\dfrac{-100}{-20} = 5\\)",
+        "workingOut": "\\(\\dfrac{T_2}{T_1} = \\dfrac{-20}{-4} = 5\\\n\\text{and}\\\n\\dfrac{T_3}{T_2} = \\dfrac{-100}{-20} = 5\\)",
         "graphData": null
       },
       {
@@ -1029,7 +1029,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "Compare the two ratios to test for a geometric progression.",
-        "workingOut": "\\(2 \\neq 1.5\\)",
+        "workingOut": "\\(2 \neq 1.5\\)",
         "graphData": null
       }
     ]
@@ -1064,7 +1064,7 @@ export const Y12A_CH1C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find the ratios.",
-        "workingOut": "\\(\\dfrac{T_2}{T_1} = \\dfrac{-100}{-1000} = \\dfrac{1}{10}\\\\n\\text{and}\\\\n\\dfrac{T_3}{T_2} = \\dfrac{-10}{-100} = \\dfrac{1}{10}\\)",
+        "workingOut": "\\(\\dfrac{T_2}{T_1} = \\dfrac{-100}{-1000} = \\dfrac{1}{10}\\\n\\text{and}\\\n\\dfrac{T_3}{T_2} = \\dfrac{-10}{-100} = \\dfrac{1}{10}\\)",
         "graphData": null
       },
       {
@@ -1109,7 +1109,7 @@ export const Y12A_CH1C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Calculate the consecutive ratios.",
-        "workingOut": "\\(\\dfrac{T_2}{T_1} = \\dfrac{40}{-80} = -\\dfrac{1}{2}\\\\n\\text{and}\\\\n\\dfrac{T_3}{T_2} = \\dfrac{-20}{40} = -\\dfrac{1}{2}\\)",
+        "workingOut": "\\(\\dfrac{T_2}{T_1} = \\dfrac{40}{-80} = -\\dfrac{1}{2}\\\n\\text{and}\\\n\\dfrac{T_3}{T_2} = \\dfrac{-20}{40} = -\\dfrac{1}{2}\\)",
         "graphData": null
       },
       {
@@ -1154,7 +1154,7 @@ export const Y12A_CH1C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Compute the consecutive ratios.",
-        "workingOut": "\\(\\dfrac{T_2}{T_1} = \\dfrac{29}{29} = 1\\\\n\\text{and}\\\\n\\dfrac{T_3}{T_2} = \\dfrac{29}{29} = 1\\)",
+        "workingOut": "\\(\\dfrac{T_2}{T_1} = \\dfrac{29}{29} = 1\\\n\\text{and}\\\n\\dfrac{T_3}{T_2} = \\dfrac{29}{29} = 1\\)",
         "graphData": null
       },
       {
@@ -1209,7 +1209,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "Compare the two ratios.",
-        "workingOut": "\\(4 \\neq 2.25\\)",
+        "workingOut": "\\(4 \neq 2.25\\)",
         "graphData": null
       }
     ]
@@ -1244,7 +1244,7 @@ export const Y12A_CH1C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Compute the ratios.",
-        "workingOut": "\\(\\dfrac{T_2}{T_1} = \\dfrac{14}{-14} = -1\\\\n\\text{and}\\\\n\\dfrac{T_3}{T_2} = \\dfrac{-14}{14} = -1\\)",
+        "workingOut": "\\(\\dfrac{T_2}{T_1} = \\dfrac{14}{-14} = -1\\\n\\text{and}\\\n\\dfrac{T_3}{T_2} = \\dfrac{-14}{14} = -1\\)",
         "graphData": null
       },
       {
@@ -1289,7 +1289,7 @@ export const Y12A_CH1C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Compute the ratios.",
-        "workingOut": "\\(\\dfrac{T_2}{T_1} = \\dfrac{1}{6}\\\\n\\text{and}\\\\n\\dfrac{T_3}{T_2} = \\dfrac{\\dfrac{1}{6}}{1} = \\dfrac{1}{6}\\)",
+        "workingOut": "\\(\\dfrac{T_2}{T_1} = \\dfrac{1}{6}\\\n\\text{and}\\\n\\dfrac{T_3}{T_2} = \\dfrac{\\dfrac{1}{6}}{1} = \\dfrac{1}{6}\\)",
         "graphData": null
       },
       {
@@ -1334,7 +1334,7 @@ export const Y12A_CH1C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find the ratios.",
-        "workingOut": "\\(\\dfrac{T_2}{T_1} = \\dfrac{1}{-\\dfrac{1}{3}} = -3\\\\n\\text{and}\\\\n\\dfrac{T_3}{T_2} = \\dfrac{-3}{1} = -3\\)",
+        "workingOut": "\\(\\dfrac{T_2}{T_1} = \\dfrac{1}{-\\dfrac{1}{3}} = -3\\\n\\text{and}\\\n\\dfrac{T_3}{T_2} = \\dfrac{-3}{1} = -3\\)",
         "graphData": null
       },
       {
@@ -2294,7 +2294,7 @@ export const Y12A_CH1C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Compute ratios to check if it is a GP.",
-        "workingOut": "\\(\\dfrac{T_2}{T_1} = \\dfrac{20}{10} = 2\\\\n\\text{and}\\\\n\\dfrac{T_3}{T_2} = \\dfrac{40}{20} = 2\\)",
+        "workingOut": "\\(\\dfrac{T_2}{T_1} = \\dfrac{20}{10} = 2\\\n\\text{and}\\\n\\dfrac{T_3}{T_2} = \\dfrac{40}{20} = 2\\)",
         "graphData": null
       },
       {
@@ -2339,7 +2339,7 @@ export const Y12A_CH1C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Verify if the ratios are equal.",
-        "workingOut": "\\(\\dfrac{T_2}{T_1} = \\dfrac{60}{180} = \\dfrac{1}{3}\\\\n\\text{and}\\\\n\\dfrac{T_3}{T_2} = \\dfrac{20}{60} = \\dfrac{1}{3}\\)",
+        "workingOut": "\\(\\dfrac{T_2}{T_1} = \\dfrac{60}{180} = \\dfrac{1}{3}\\\n\\text{and}\\\n\\dfrac{T_3}{T_2} = \\dfrac{20}{60} = \\dfrac{1}{3}\\)",
         "graphData": null
       },
       {
@@ -2394,7 +2394,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "Compare the two ratios.",
-        "workingOut": "\\(1.265625 \\neq 1.234568\\)",
+        "workingOut": "\\(1.265625 \neq 1.234568\\)",
         "graphData": null
       }
     ]
@@ -2429,12 +2429,12 @@ export const Y12A_CH1C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Calculate the ratio of consecutive terms.",
-        "workingOut": "\\(\\dfrac{T_2}{T_1} = \\dfrac{50}{35} = \\dfrac{10}{7} \\approx 1.43\\\\n\\text{and}\\\\n\\dfrac{T_3}{T_2} = \\dfrac{65}{50} = \\dfrac{13}{10} = 1.3\\)",
+        "workingOut": "\\(\\dfrac{T_2}{T_1} = \\dfrac{50}{35} = \\dfrac{10}{7} \\approx 1.43\\\n\\text{and}\\\n\\dfrac{T_3}{T_2} = \\dfrac{65}{50} = \\dfrac{13}{10} = 1.3\\)",
         "graphData": null
       },
       {
         "explanation": "Since the ratios are unequal, the sequence is not a geometric progression.",
-        "workingOut": "\\(\\dfrac{10}{7} \\neq 1.3\\)",
+        "workingOut": "\\(\\dfrac{10}{7} \neq 1.3\\)",
         "graphData": null
       }
     ]
@@ -2469,7 +2469,7 @@ export const Y12A_CH1C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Verify the ratios of consecutive terms.",
-        "workingOut": "\\(\\dfrac{T_2}{T_1} = 3 \\div \\dfrac{3}{4} = 3 \\times \\dfrac{4}{3} = 4\\\\n\\text{and}\\\\n\\dfrac{T_3}{T_2} = \\dfrac{12}{3} = 4\\)",
+        "workingOut": "\\(\\dfrac{T_2}{T_1} = 3 \\div \\dfrac{3}{4} = 3 \\times \\dfrac{4}{3} = 4\\\n\\text{and}\\\n\\dfrac{T_3}{T_2} = \\dfrac{12}{3} = 4\\)",
         "graphData": null
       },
       {
@@ -2514,7 +2514,7 @@ export const Y12A_CH1C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find the ratios of the terms.",
-        "workingOut": "\\(\\dfrac{T_2}{T_1} = \\dfrac{-24}{-48} = \\dfrac{1}{2}\\\\n\\text{and}\\\\n\\dfrac{T_3}{T_2} = \\dfrac{-12}{-24} = \\dfrac{1}{2}\\)",
+        "workingOut": "\\(\\dfrac{T_2}{T_1} = \\dfrac{-24}{-48} = \\dfrac{1}{2}\\\n\\text{and}\\\n\\dfrac{T_3}{T_2} = \\dfrac{-12}{-24} = \\dfrac{1}{2}\\)",
         "graphData": null
       },
       {
@@ -2839,7 +2839,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "Solve the exponential equation by writing both sides with base 2.",
-        "workingOut": "\\(2^{n-1} = 2^6\\\\n\\text{so } n - 1 = 6\\\\n\\text{hence } n = 7\\)",
+        "workingOut": "\\(2^{n-1} = 2^6\\\n\\text{so } n - 1 = 6\\\n\\text{hence } n = 7\\)",
         "graphData": null
       }
     ]
@@ -2884,7 +2884,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "Divide both sides by -1 and solve for n.",
-        "workingOut": "\\(3^{n-1} = 81\\\\n3^{n-1} = 3^4\\\\nn - 1 = 4\\\\nn = 5\\)",
+        "workingOut": "\\(3^{n-1} = 81\\\n3^{n-1} = 3^4\\\nn - 1 = 4\\\nn = 5\\)",
         "graphData": null
       }
     ]
@@ -2929,7 +2929,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "Divide by 8 and find the power of 5.",
-        "workingOut": "\\(5^{n-1} = \\dfrac{125000}{8} = 15625\\\\n5^{n-1} = 5^6\\\\nn - 1 = 6\\\\nn = 7\\)",
+        "workingOut": "\\(5^{n-1} = \\dfrac{125000}{8} = 15625\\\n5^{n-1} = 5^6\\\nn - 1 = 6\\\nn = 7\\)",
         "graphData": null
       }
     ]
@@ -2974,7 +2974,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "Solve for \\(n\\).",
-        "workingOut": "\\(2^{n-1} = \\dfrac{224}{7} = 32\\\\n2^{n-1} = 2^5\\\\nn - 1 = 5\\\\nn = 6\\)",
+        "workingOut": "\\(2^{n-1} = \\dfrac{224}{7} = 32\\\n2^{n-1} = 2^5\\\nn - 1 = 5\\\nn = 6\\)",
         "graphData": null
       }
     ]
@@ -3019,7 +3019,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "Solve the exponential equation.",
-        "workingOut": "\\(7^{n-1} = 2401\\\\n7^{n-1} = 7^4\\\\nn - 1 = 4\\\\nn = 5\\)",
+        "workingOut": "\\(7^{n-1} = 2401\\\n7^{n-1} = 7^4\\\nn - 1 = 4\\\nn = 5\\)",
         "graphData": null
       }
     ]
@@ -3064,7 +3064,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "Solve for \\(n\\) by multiplying both sides by 25.",
-        "workingOut": "\\(5^{n-1} = 625 \\times 25\\\\n5^{n-1} = 15625\\\\n5^{n-1} = 5^6\\\\nn - 1 = 6\\\\nn = 7\\)",
+        "workingOut": "\\(5^{n-1} = 625 \\times 25\\\n5^{n-1} = 15625\\\n5^{n-1} = 5^6\\\nn - 1 = 6\\\nn = 7\\)",
         "graphData": null
       }
     ]
@@ -3104,12 +3104,12 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "Substitute \\(a = 25\\) into the equation and solve for \\(r\\).",
-        "workingOut": "\\(25 \\times r^3 = 200\\\\nr^3 = \\dfrac{200}{25} = 8\\\\nr = 2\\)",
+        "workingOut": "\\(25 \\times r^3 = 200\\\nr^3 = \\dfrac{200}{25} = 8\\\nr = 2\\)",
         "graphData": null
       },
       {
         "explanation": "Generate the first five terms by multiplying successively by \\(2\\).",
-        "workingOut": "\\(T_1 = 25\\\\nT_2 = 50\\\\nT_3 = 100\\\\nT_4 = 200\\\\nT_5 = 400\\)",
+        "workingOut": "\\(T_1 = 25\\\nT_2 = 50\\\nT_3 = 100\\\nT_4 = 200\\\nT_5 = 400\\)",
         "graphData": null
       }
     ]
@@ -3149,12 +3149,12 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "Substitute \\(a = 3\\) and solve for \\(r\\).",
-        "workingOut": "\\(3 r^5 = 96\\\\nr^5 = 32\\\\nr = 2\\)",
+        "workingOut": "\\(3 r^5 = 96\\\nr^5 = 32\\\nr = 2\\)",
         "graphData": null
       },
       {
         "explanation": "List the first six terms of the progression.",
-        "workingOut": "\\(T_1 = 3\\\\nT_2 = 6\\\\nT_3 = 12\\\\nT_4 = 24\\\\nT_5 = 48\\\\nT_6 = 96\\)",
+        "workingOut": "\\(T_1 = 3\\\nT_2 = 6\\\nT_3 = 12\\\nT_4 = 24\\\nT_5 = 48\\\nT_6 = 96\\)",
         "graphData": null
       }
     ]
@@ -3194,12 +3194,12 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "Substitute \\(a = 1\\) and solve for the positive ratio \\(r\\).",
-        "workingOut": "\\(1 \\times r^4 = 81\\\\nr^4 = 81\\\\nr = 3 \\quad (\\text{since } r > 0)\\)",
+        "workingOut": "\\(1 \\times r^4 = 81\\\nr^4 = 81\\\nr = 3 \\quad (\\text{since } r > 0)\\)",
         "graphData": null
       },
       {
         "explanation": "State the first five terms.",
-        "workingOut": "\\(T_1 = 1\\\\nT_2 = 3\\\\nT_3 = 9\\\\nT_4 = 27\\\\nT_5 = 81\\)",
+        "workingOut": "\\(T_1 = 1\\\nT_2 = 3\\\nT_3 = 9\\\nT_4 = 27\\\nT_5 = 81\\)",
         "graphData": null
       }
     ]
@@ -3239,12 +3239,12 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "Substitute \\(a = 486\\) and solve for \\(r^4\\).",
-        "workingOut": "\\(486 r^4 = \\dfrac{2}{27}\\\\nr^4 = \\dfrac{2}{27 \\times 486} = \\dfrac{2}{13122}\\)",
+        "workingOut": "\\(486 r^4 = \\dfrac{2}{27}\\\nr^4 = \\dfrac{2}{27 \\times 486} = \\dfrac{2}{13122}\\)",
         "graphData": null
       },
       {
         "explanation": "Simplify the fraction and calculate the fourth root of the resulting value.",
-        "workingOut": "\\(r^4 = \\dfrac{1}{6561}\\\\nr = \\sqrt[4]{\\dfrac{1}{6561}} = \\dfrac{1}{3}\\)",
+        "workingOut": "\\(r^4 = \\dfrac{1}{6561}\\\nr = \\sqrt[4]{\\dfrac{1}{6561}} = \\dfrac{1}{3}\\)",
         "graphData": null
       }
     ]
@@ -3284,7 +3284,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "Substitute \\(a = 1000\\) and solve for \\(r^6\\).",
-        "workingOut": "\\(1000 r^6 = 10^{-3}\\\\nr^6 = \\dfrac{10^{-3}}{10^3} = 10^{-6}\\)",
+        "workingOut": "\\(1000 r^6 = 10^{-3}\\\nr^6 = \\dfrac{10^{-3}}{10^3} = 10^{-6}\\)",
         "graphData": null
       },
       {
@@ -3329,7 +3329,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "Substitute \\(a = 32\\) and solve for \\(r^5\\).",
-        "workingOut": "\\(32 r^5 = -243\\\\nr^5 = -\\dfrac{243}{32}\\)",
+        "workingOut": "\\(32 r^5 = -243\\\nr^5 = -\\dfrac{243}{32}\\)",
         "graphData": null
       },
       {
@@ -3374,7 +3374,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "Substitute \\(a = 5\\) and solve for \\(r^6\\).",
-        "workingOut": "\\(5 r^6 = 40\\\\nr^6 = 8\\)",
+        "workingOut": "\\(5 r^6 = 40\\\nr^6 = 8\\)",
         "graphData": null
       },
       {
@@ -3419,12 +3419,12 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "Compute the next five terms successively by doubling.",
-        "workingOut": "\\(T_2 = 50 \\times 2 = 100\\\\nT_3 = 200\\\\nT_4 = 400\\\\nT_5 = 800\\\\nT_6 = 1600\\)",
+        "workingOut": "\\(T_2 = 50 \\times 2 = 100\\\nT_3 = 200\\\nT_4 = 400\\\nT_5 = 800\\\nT_6 = 1600\\)",
         "graphData": null
       },
       {
         "explanation": "Identify the parameters \\(a\\) and \\(r\\) of the GP.",
-        "workingOut": "\\(a = T_1 = 50\\\\nr = \\dfrac{100}{50} = 2\\)",
+        "workingOut": "\\(a = T_1 = 50\\\nr = \\dfrac{100}{50} = 2\\)",
         "graphData": null
       }
     ]
@@ -3469,7 +3469,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "Write 256 as a power of 2 to solve for n.",
-        "workingOut": "\\(2^n = 2^8\\\\nn = 8\\)",
+        "workingOut": "\\(2^n = 2^8\\\nn = 8\\)",
         "graphData": null
       }
     ]
@@ -3504,7 +3504,7 @@ export const Y12A_CH1C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write expressions for \\(T_{50}\\) and \\(T_{25}\\).",
-        "workingOut": "\\(T_{50} = 25 \\times 2^{50}\\\\nT_{25} = 25 \\times 2^{25}\\)",
+        "workingOut": "\\(T_{50} = 25 \\times 2^{50}\\\nT_{25} = 25 \\times 2^{25}\\)",
         "graphData": null
       },
       {
@@ -3575,7 +3575,7 @@ export const Y12A_CH1C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Express the terms \\(T_9\\) and \\(T_{11}\\) using the sequence definition.",
-        "workingOut": "\\(T_9 = 25 \\times 2^9\\\\n\\text{and}\\\\nT_{11} = 25 \\times 2^{11}\\)",
+        "workingOut": "\\(T_9 = 25 \\times 2^9\\\n\\text{and}\\\nT_{11} = 25 \\times 2^{11}\\)",
         "graphData": null
       },
       {
@@ -3630,12 +3630,12 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "Find the integer values of n that satisfy the inequality.",
-        "workingOut": "\\(2^5 = 32 \\quad (\\text{too small})\\\\n2^6 = 64 \\\\n\\dots\\\\n2^{11} = 2048\\\\n2^{12} = 4096 \\quad (\\text{too large})\\\\n\\text{So, } n \\in \\{6, 7, 8, 9, 10, 11\\}\\)",
+        "workingOut": "\\(2^5 = 32 \\quad (\\text{too small})\\\n2^6 = 64 \\\n\\dots\\\n2^{11} = 2048\\\n2^{12} = 4096 \\quad (\\text{too large})\\\n\\text{So, } n \\in \\{6, 7, 8, 9, 10, 11\\}\\)",
         "graphData": null
       },
       {
         "explanation": "Compute the terms for these indices and count them.",
-        "workingOut": "\\(T_6 = 1600\\\\nT_7 = 3200\\\\nT_8 = 6400\\\\nT_9 = 12800\\\\nT_10 = 25600\\\\nT_11 = 51200\\\\n\\text{There are } 6 \\text{ terms.}\\)",
+        "workingOut": "\\(T_6 = 1600\\\nT_7 = 3200\\\nT_8 = 6400\\\nT_9 = 12800\\\nT_10 = 25600\\\nT_11 = 51200\\\n\\text{There are } 6 \\text{ terms.}\\)",
         "graphData": null
       }
     ]
@@ -3741,12 +3741,12 @@ export const Y12A_CH1C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find the first three terms by substituting \\(x = 1\\), \\(x = 2\\), and \\(x = 3\\) into \\(f(x)\\).",
-        "workingOut": "\\(f(1) = \\dfrac{4}{25} \\times 5^1 = \\dfrac{4}{5}\\\\nf(2) = \\dfrac{4}{25} \\times 5^2 = 4\\\\nf(3) = \\dfrac{4}{25} \\times 5^3 = 20\\)",
+        "workingOut": "\\(f(1) = \\dfrac{4}{25} \\times 5^1 = \\dfrac{4}{5}\\\nf(2) = \\dfrac{4}{25} \\times 5^2 = 4\\\nf(3) = \\dfrac{4}{25} \\times 5^3 = 20\\)",
         "graphData": null
       },
       {
         "explanation": "Determine the first term \\(a\\) and common ratio \\(r\\) of this GP.",
-        "workingOut": "\\(a = \\dfrac{4}{5}\\\\nr = \\dfrac{4}{\\dfrac{4}{5}} = 5\\)",
+        "workingOut": "\\(a = \\dfrac{4}{5}\\\nr = \\dfrac{4}{\\dfrac{4}{5}} = 5\\)",
         "graphData": null
       },
       {
@@ -3796,7 +3796,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "Find the exponential function \\(f(x) = c \\cdot r^x\\) where \\(f(1) = T_1 = 5\\).",
-        "workingOut": "\\(f(x) = c \\times 2^x\\\\nf(1) = c \\times 2^1 = 5 \\implies c = \\dfrac{5}{2}\\\\n\\text{So, } f(x) = \\dfrac{5}{2} \\times 2^x\\)",
+        "workingOut": "\\(f(x) = c \\times 2^x\\\nf(1) = c \\times 2^1 = 5 \\implies c = \\dfrac{5}{2}\\\n\\text{So, } f(x) = \\dfrac{5}{2} \\times 2^x\\)",
         "graphData": null
       }
     ]
@@ -4002,7 +4002,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "Set \\(T_6 = 2\\) and solve for the positive variable \\(x\\).",
-        "workingOut": "\\(2x^6 = 2\\\\nx^6 = 1\\\\nx = 1 \\quad (\\text{since } x > 0)\\)",
+        "workingOut": "\\(2x^6 = 2\\\nx^6 = 1\\\nx = 1 \\quad (\\text{since } x > 0)\\)",
         "graphData": null
       }
     ]
@@ -4047,7 +4047,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "Substitute \\(n = 6\\) and solve \\(T_6 = 3^6\\) for positive \\(x\\).",
-        "workingOut": "\\(T_6 = x^{6-12} = x^{-6} = 3^6\\\\n\\left(\\dfrac{1}{x}\\right)^6 = 3^6\\\\n\\dfrac{1}{x} = 3 \\implies x = \\dfrac{1}{3}\\)",
+        "workingOut": "\\(T_6 = x^{6-12} = x^{-6} = 3^6\\\n\\left(\\dfrac{1}{x}\\right)^6 = 3^6\\\n\\dfrac{1}{x} = 3 \\implies x = \\dfrac{1}{3}\\)",
         "graphData": null
       }
     ]
@@ -4082,7 +4082,7 @@ export const Y12A_CH1C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term and calculate the common ratio.",
-        "workingOut": "\\(a = 2^{-16}x\\\\nr = \\dfrac{2^{-12}x}{2^{-16}x} = 2^4 = 16\\)",
+        "workingOut": "\\(a = 2^{-16}x\\\nr = \\dfrac{2^{-12}x}{2^{-16}x} = 2^4 = 16\\)",
         "graphData": null
       },
       {
@@ -4092,7 +4092,7 @@ export const Y12A_CH1C_QUESTIONS = [
       },
       {
         "explanation": "Substitute \\(n = 6\\) and solve \\(T_6 = 96\\).",
-        "workingOut": "\\(T_6 = 2^{24-20}x = 96\\\\n2^4 x = 96\\\\n16x = 96 \\implies x = 6\\)",
+        "workingOut": "\\(T_6 = 2^{24-20}x = 96\\\n2^4 x = 96\\\n16x = 96 \\implies x = 6\\)",
         "graphData": null
       }
     ]

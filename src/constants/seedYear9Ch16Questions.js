@@ -1618,7 +1618,7 @@ export const Y9_CH16_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Divide both sides by \\(\\pi\\) (since \\(\\pi \\neq 0\\)).",
+        "explanation": "Divide both sides by \\(\\pi\\) (since \\(\\pi \neq 0\\)).",
         "workingOut": "\\(r^2 = 16\\)",
         "graphData": null
       },

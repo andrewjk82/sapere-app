@@ -1764,12 +1764,12 @@ export const Y9_CH11C_QUESTIONS = [
       },
       {
         "explanation": "Step 2: Substitute the known point and gradient.",
-        "workingOut": "Substitute $(x_1, y_1) = (1, 4)$ and $m = 4$:\\n$$ \\frac{y - 4}{x - 1} = 4 $$",
+        "workingOut": "Substitute $(x_1, y_1) = (1, 4)$ and $m = 4$:\n$$ \\frac{y - 4}{x - 1} = 4 $$",
         "graphData": null
       },
       {
         "explanation": "Step 3: Substitute the given $x$-coordinate.",
-        "workingOut": "Substitute $x = -2$:\\n$$ \\frac{y - 4}{-2 - 1} = 4 $$",
+        "workingOut": "Substitute $x = -2$:\n$$ \\frac{y - 4}{-2 - 1} = 4 $$",
         "graphData": null
       },
       {
@@ -1833,7 +1833,7 @@ export const Y9_CH11C_QUESTIONS = [
       },
       {
         "explanation": "Step 3: For each given value in the table, substitute it into the equation to find the missing coordinate.",
-        "workingOut": "$y$ when $x = -2$: $y = 3(-2) = -6$\\n\\n$x$ when $y = -3$: $-3 = 3x \\implies x = -1$\\n\\n$y$ when $x = 1$: $y = 3(1) = 3$\\n\\n$x$ when $y = 9$: $9 = 3x \\implies x = 3$",
+        "workingOut": "$y$ when $x = -2$: $y = 3(-2) = -6$\n\n$x$ when $y = -3$: $-3 = 3x \\implies x = -1$\n\n$y$ when $x = 1$: $y = 3(1) = 3$\n\n$x$ when $y = 9$: $9 = 3x \\implies x = 3$",
         "graphData": null
       },
       {
@@ -1897,7 +1897,7 @@ export const Y9_CH11C_QUESTIONS = [
       },
       {
         "explanation": "Step 3: For each given value in the table, substitute it into the equation to find the missing coordinate.",
-        "workingOut": "$x$ when $y = -4$: $-4 = \\frac{3}{5}x + 2 \\implies -6 = \\frac{3}{5}x \\implies x = -10$\\n\\n$y$ when $x = -5$: $y = \\frac{3}{5}(-5) + 2 = -3 + 2 = -1$\\n\\n$y$ when $x = 5$: $y = \\frac{3}{5}(5) + 2 = 3 + 2 = 5$\\n\\n$x$ when $y = 8$: $8 = \\frac{3}{5}x + 2 \\implies 6 = \\frac{3}{5}x \\implies x = 10$",
+        "workingOut": "$x$ when $y = -4$: $-4 = \\frac{3}{5}x + 2 \\implies -6 = \\frac{3}{5}x \\implies x = -10$\n\n$y$ when $x = -5$: $y = \\frac{3}{5}(-5) + 2 = -3 + 2 = -1$\n\n$y$ when $x = 5$: $y = \\frac{3}{5}(5) + 2 = 3 + 2 = 5$\n\n$x$ when $y = 8$: $8 = \\frac{3}{5}x + 2 \\implies 6 = \\frac{3}{5}x \\implies x = 10$",
         "graphData": null
       },
       {
@@ -1961,7 +1961,7 @@ export const Y9_CH11C_QUESTIONS = [
       },
       {
         "explanation": "Step 3: For each given value in the table, substitute it into the equation to find the missing coordinate.",
-        "workingOut": "$x$ when $y = -4$: $-4 = \\frac{1}{2}x + 3 \\implies -7 = \\frac{1}{2}x \\implies x = -14$\\n\\n$y$ when $x = -4$: $y = \\frac{1}{2}(-4) + 3 = -2 + 3 = 1$\\n\\n$x$ when $y = 6$: $6 = \\frac{1}{2}x + 3 \\implies 3 = \\frac{1}{2}x \\implies x = 6$",
+        "workingOut": "$x$ when $y = -4$: $-4 = \\frac{1}{2}x + 3 \\implies -7 = \\frac{1}{2}x \\implies x = -14$\n\n$y$ when $x = -4$: $y = \\frac{1}{2}(-4) + 3 = -2 + 3 = 1$\n\n$x$ when $y = 6$: $6 = \\frac{1}{2}x + 3 \\implies 3 = \\frac{1}{2}x \\implies x = 6$",
         "graphData": null
       },
       {
@@ -2025,7 +2025,7 @@ export const Y9_CH11C_QUESTIONS = [
       },
       {
         "explanation": "Step 3: For each given value in the table, substitute it into the equation to find the missing coordinate.",
-        "workingOut": "$x$ when $y = 9$: $9 = -3x + 3 \\implies 6 = -3x \\implies x = -2$\\n\\n$y$ when $x = -1$: $y = -3(-1) + 3 = 3 + 3 = 6$\\n\\n$x$ when $y = 3$: $3 = -3x + 3 \\implies 0 = -3x \\implies x = 0$\\n\\n$y$ when $x = 1$: $y = -3(1) + 3 = -3 + 3 = 0$",
+        "workingOut": "$x$ when $y = 9$: $9 = -3x + 3 \\implies 6 = -3x \\implies x = -2$\n\n$y$ when $x = -1$: $y = -3(-1) + 3 = 3 + 3 = 6$\n\n$x$ when $y = 3$: $3 = -3x + 3 \\implies 0 = -3x \\implies x = 0$\n\n$y$ when $x = 1$: $y = -3(1) + 3 = -3 + 3 = 0$",
         "graphData": null
       },
       {
@@ -2156,7 +2156,7 @@ export const Y9_CH11C_QUESTIONS = [
       },
       {
         "explanation": "Step 4: Expand to find the $y$-intercept (the constant term).",
-        "workingOut": "$$ y = 4(x + 3) \\implies y = 4x + 12 $$\\nSo, the $y$-intercept is $12$.",
+        "workingOut": "$$ y = 4(x + 3) \\implies y = 4x + 12 $$\nSo, the $y$-intercept is $12$.",
         "graphData": null
       }
     ],
@@ -2345,7 +2345,7 @@ export const Y9_CH11C_QUESTIONS = [
       },
       {
         "explanation": "Step 4: Expand to find the $y$-intercept.",
-        "workingOut": "$$ y = -1(x + 6) \\implies y = -x - 6 $$\\nSo, the $y$-intercept is $-6$.",
+        "workingOut": "$$ y = -1(x + 6) \\implies y = -x - 6 $$\nSo, the $y$-intercept is $-6$.",
         "graphData": null
       }
     ],
@@ -2524,7 +2524,7 @@ export const Y9_CH11C_QUESTIONS = [
       },
       {
         "explanation": "Step 2: Find the equation of the line.",
-        "workingOut": "Substitute $(3, 8)$ and $m = 2$:\\n$$ y - 8 = 2(x - 3) \\implies y - 8 = 2x - 6 \\implies y = 2x + 2 $$",
+        "workingOut": "Substitute $(3, 8)$ and $m = 2$:\n$$ y - 8 = 2(x - 3) \\implies y - 8 = 2x - 6 \\implies y = 2x + 2 $$",
         "graphData": null
       },
       {
@@ -2534,7 +2534,7 @@ export const Y9_CH11C_QUESTIONS = [
       },
       {
         "explanation": "Step 4: Solve for $x$ and state the coordinate.",
-        "workingOut": "$$ -2 = 2x \\implies x = -1 $$\\nSo, the $x$-intercept is $(-1, 0)$.",
+        "workingOut": "$$ -2 = 2x \\implies x = -1 $$\nSo, the $x$-intercept is $(-1, 0)$.",
         "graphData": null
       }
     ],
@@ -2587,7 +2587,7 @@ export const Y9_CH11C_QUESTIONS = [
       },
       {
         "explanation": "Step 2: Find the equation of the line.",
-        "workingOut": "Substitute $(3, 8)$ and $m = 2$:\\n$$ y - 8 = 2(x - 3) \\implies y - 8 = 2x - 6 \\implies y = 2x + 2 $$",
+        "workingOut": "Substitute $(3, 8)$ and $m = 2$:\n$$ y - 8 = 2(x - 3) \\implies y - 8 = 2x - 6 \\implies y = 2x + 2 $$",
         "graphData": null
       },
       {
@@ -2650,17 +2650,17 @@ export const Y9_CH11C_QUESTIONS = [
       },
       {
         "explanation": "Step 2: Find the gradient of the line.",
-        "workingOut": "Using points $(3, 11)$ and $(0, 5)$:\\n$$ m = \\frac{11 - 5}{3 - 0} = \\frac{6}{3} = 2 $$",
+        "workingOut": "Using points $(3, 11)$ and $(0, 5)$:\n$$ m = \\frac{11 - 5}{3 - 0} = \\frac{6}{3} = 2 $$",
         "graphData": null
       },
       {
         "explanation": "Step 3: Write the equation of the line and set $y = 0$ for the $x$-intercept.",
-        "workingOut": "$$ y = 2x + 5 $$\\n$$ 0 = 2x + 5 $$",
+        "workingOut": "$$ y = 2x + 5 $$\n$$ 0 = 2x + 5 $$",
         "graphData": null
       },
       {
         "explanation": "Step 4: Solve for $x$ and state the coordinate.",
-        "workingOut": "$$ -5 = 2x \\implies x = -2.5 $$\\nThe $x$-intercept is $(-2.5, 0)$.",
+        "workingOut": "$$ -5 = 2x \\implies x = -2.5 $$\nThe $x$-intercept is $(-2.5, 0)$.",
         "graphData": null
       }
     ],

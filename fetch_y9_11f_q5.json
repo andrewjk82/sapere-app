@@ -1,0 +1,340 @@
+{
+  "y9-11f-q5a": {
+    "year": "Year 9",
+    "origin": "seed",
+    "subQuestions": [],
+    "isActive": true,
+    "title": "Consider the interval AB with endpoints ...",
+    "type": "teacher_review",
+    "topicTitle": "The equation of a line using the gradient and a point",
+    "createdAt": {
+      "_seconds": 1784364625,
+      "_nanoseconds": 396000000
+    },
+    "solution": "2",
+    "chapterId": "y9-11",
+    "options": [],
+    "graphData": null,
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "updatedAt": {
+      "_seconds": 1784364625,
+      "_nanoseconds": 396000000
+    },
+    "topicCode": "11F",
+    "question": "Consider the interval \\(AB\\) with endpoints \\(A(-2, -5)\\) and \\(B(4, 7)\\). Answer the following sub-questions.\na) Find the gradient of \\(AB\\).",
+    "isManual": true,
+    "requiresManualGrading": true,
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "topicId": "y9-11f",
+    "answer": "2",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The equation of a line using the gradient and a point: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 2. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(2\\)",
+        "graphData": null
+      }
+    ],
+    "isNew": false
+  },
+  "y9-11f-q5b": {
+    "year": "Year 9",
+    "origin": "seed",
+    "subQuestions": [],
+    "isActive": true,
+    "title": "Consider the interval AB with endpoints ...",
+    "type": "multiple_choice",
+    "topicTitle": "The equation of a line using the gradient and a point",
+    "createdAt": {
+      "_seconds": 1784364625,
+      "_nanoseconds": 396000000
+    },
+    "solution": "The correct answer is \\((1, 1)\\).",
+    "chapterId": "y9-11",
+    "graphData": null,
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "topicCode": "11F",
+    "question": "Consider the interval \\(AB\\) with endpoints \\(A(-2, -5)\\) and \\(B(4, 7)\\). Answer the following sub-questions.\nb) Find the coordinates of \\(C\\), the midpoint of interval \\(AB\\).",
+    "isManual": true,
+    "requiresManualGrading": false,
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "topicId": "y9-11f",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The equation of a line using the gradient and a point: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\((1, 1)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: (1, 1). Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\((1, 1)\\)",
+        "graphData": null
+      }
+    ],
+    "isNew": false,
+    "answer": "1",
+    "options": [
+      {
+        "text": "\\(1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((1, 1)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-1\\)",
+        "imageUrl": ""
+      }
+    ],
+    "updatedAt": {
+      "_seconds": 1784982176,
+      "_nanoseconds": 826000000
+    }
+  },
+  "y9-11f-q5c": {
+    "year": "Year 9",
+    "origin": "seed",
+    "subQuestions": [],
+    "isActive": true,
+    "title": "Consider the interval AB with endpoints ...",
+    "type": "multiple_choice",
+    "topicTitle": "The equation of a line using the gradient and a point",
+    "createdAt": {
+      "_seconds": 1784364625,
+      "_nanoseconds": 396000000
+    },
+    "solution": "The correct answer is \\(y = -1/2x + 3/2\\).",
+    "chapterId": "y9-11",
+    "graphData": null,
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "topicCode": "11F",
+    "question": "Consider the interval \\(AB\\) with endpoints \\(A(-2, -5)\\) and \\(B(4, 7)\\). Answer the following sub-questions.\nc) Find the equation of the line that passes through \\(C\\) with gradient \\(-\\frac{1}{2}\\).",
+    "isManual": true,
+    "requiresManualGrading": false,
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "topicId": "y9-11f",
+    "answer": "1",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The equation of a line using the gradient and a point: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(y = -1/2x + 3/2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: y = -1/2x + 3/2. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(y = -1/2x + 3/2\\)",
+        "graphData": null
+      }
+    ],
+    "isNew": false,
+    "options": [
+      {
+        "text": "\\(y = 5x + 2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = -1/2x + 3/2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = -2x + 7\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = 4x - 3\\)",
+        "imageUrl": ""
+      }
+    ],
+    "updatedAt": {
+      "_seconds": 1784982176,
+      "_nanoseconds": 826000000
+    }
+  },
+  "y9-11f-q5d": {
+    "year": "Year 9",
+    "origin": "seed",
+    "subQuestions": [],
+    "isActive": true,
+    "title": "Consider the interval AB with endpoints ...",
+    "type": "multiple_choice",
+    "topicTitle": "The equation of a line using the gradient and a point",
+    "createdAt": {
+      "_seconds": 1784364625,
+      "_nanoseconds": 396000000
+    },
+    "solution": "The correct answer is \\((0, 1.5)\\).",
+    "chapterId": "y9-11",
+    "graphData": null,
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "topicCode": "11F",
+    "question": "Consider the interval \\(AB\\) with endpoints \\(A(-2, -5)\\) and \\(B(4, 7)\\). Answer the following sub-questions.\nd) What are the coordinates of the point \\(D\\), where the line intersects the \\(y\\)-axis?",
+    "isManual": true,
+    "requiresManualGrading": false,
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "topicId": "y9-11f",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The equation of a line using the gradient and a point: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\((0, 1.5)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: (0, 1.5). Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\((0, 1.5)\\)",
+        "graphData": null
+      }
+    ],
+    "isNew": false,
+    "answer": "1",
+    "options": [
+      {
+        "text": "\\(3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((0, 1.5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-3\\)",
+        "imageUrl": ""
+      }
+    ],
+    "updatedAt": {
+      "_seconds": 1784982176,
+      "_nanoseconds": 826000000
+    }
+  },
+  "y9-11f-q5e": {
+    "year": "Year 9",
+    "origin": "seed",
+    "subQuestions": [],
+    "isActive": true,
+    "title": "Consider the interval AB with endpoints ...",
+    "type": "multiple_choice",
+    "topicTitle": "The equation of a line using the gradient and a point",
+    "createdAt": {
+      "_seconds": 1784364625,
+      "_nanoseconds": 396000000
+    },
+    "solution": "The correct answer is \\(\\sqrt{1.25}\\).",
+    "chapterId": "y9-11",
+    "graphData": null,
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "topicCode": "11F",
+    "question": "Consider the interval \\(AB\\) with endpoints \\(A(-2, -5)\\) and \\(B(4, 7)\\). Answer the following sub-questions.\ne) How far is the point \\(C\\) from the point \\(D\\)?",
+    "isManual": true,
+    "requiresManualGrading": false,
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "topicId": "y9-11f",
+    "answer": "1",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The equation of a line using the gradient and a point: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(\\sqrt{1.25}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\sqrt{1.25}. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(\\sqrt{1.25}\\)",
+        "graphData": null
+      }
+    ],
+    "isNew": false,
+    "options": [
+      {
+        "text": "\\(4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\sqrt{1.25}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-1\\)",
+        "imageUrl": ""
+      }
+    ],
+    "updatedAt": {
+      "_seconds": 1784982176,
+      "_nanoseconds": 826000000
+    }
+  }
+}

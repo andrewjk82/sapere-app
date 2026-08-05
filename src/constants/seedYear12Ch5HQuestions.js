@@ -1240,7 +1240,7 @@ export const Y12A_CH5H_QUESTIONS = [
     "answer": "2",
     "opts": [
       "\\(x \\ge 0\\)",
-      "\\(x \\neq 0\\)",
+      "\\(x \neq 0\\)",
       "\\(x > 0\\)",
       "\\(x < 0\\)"
     ],
@@ -1720,7 +1720,7 @@ export const Y12A_CH5H_QUESTIONS = [
     "answer": "2",
     "opts": [
       "\\(x \\ge 0\\)",
-      "\\(x \\neq 0\\)",
+      "\\(x \neq 0\\)",
       "\\(x > 0\\)",
       "\\(x < 0\\)"
     ],
@@ -1936,7 +1936,7 @@ export const Y12A_CH5H_QUESTIONS = [
     "opts": [
       "\\(x \\ge 0\\)",
       "\\(x > 0\\)",
-      "\\(x \\neq 0\\)",
+      "\\(x \neq 0\\)",
       "\\(x < 0\\)"
     ],
     "hint": "Differentiate carefully; evaluate at the given point when asked.",
@@ -2156,7 +2156,7 @@ export const Y12A_CH5H_QUESTIONS = [
     "opts": [
       "\\(x \\ge 0\\)",
       "\\(x > 0\\)",
-      "\\(x \\neq 0\\)",
+      "\\(x \neq 0\\)",
       "\\(x < 0\\)"
     ],
     "hint": "Differentiate carefully; evaluate at the given point when asked.",
@@ -2568,7 +2568,7 @@ export const Y12A_CH5H_QUESTIONS = [
     "solution": "The correct answer is \\(x = \\pm 2\\).",
     "solutionSteps": [
       {
-        "explanation": "Inflection candidates where \\(y'' = 0\\) and denominator \\(\\neq 0\\): \\(4 - x^{2} = 0\\).",
+        "explanation": "Inflection candidates where \\(y'' = 0\\) and denominator \\(\neq 0\\): \\(4 - x^{2} = 0\\).",
         "workingOut": "\\(4 - x^{2} = 0\\)",
         "graphData": null
       },

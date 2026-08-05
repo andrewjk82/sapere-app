@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraph.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraphcore.js"></script>
+</head>
+<body>
+    <div id="box" class="jxgbox" style="width:340px; height:340px;"></div>
+    <script type="text/javascript">
+        try {
+            var board = JXG.JSXGraph.initBoard('box', {boundingbox: [-11.5,11.5,11.5,-11.5]});
+            board.suspendUpdate(); 
+            board.create('arrow', [[-8.571067811865476,0],[8.571067811865476,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); 
+            board.create('arrow', [[0,-8.571067811865476],[0,8.571067811865476]], {strokeColor:'#94a3b8', strokeWidth:1.5}); 
+            board.create('text', [7.542539674441619, -2.9998737341529162, 'x'], {fontSize:13, color:'#64748b'}); 
+            board.create('text', [0.12, 7.713961030678928, 'y'], {fontSize:13, color:'#64748b'}); 
+            board.create('circle', [[0,0], 7.0710678118654755], {strokeColor:'#6366f1', strokeWidth:2.5, fillColor:'#6366f1', fillOpacity:0.06}); 
+            board.create('point', [0,0], {name:'O', size:2, color:'#64748b', fixed:true}); 
+            board.create('text', [3.5355339059327378, 5.303300858899107, 'x² + y² = 50'], {fontSize:12, color:'#4f46e5'}); 
+            board.create('point', [8, -6], {name:' 
+            board.unsuspendUpdate();
+            console.log("SUCCESS");
+        } catch(e) {
+            console.error("ERROR", e);
+        }
+    </script>
+</body>
+</html>
+, size:3, color:'#ef4444', label: {autoPosition: true, offset: [10, 10]}}); 
+            board.unsuspendUpdate();
+            console.log("SUCCESS");
+        } catch(e) {
+            console.error("ERROR", e);
+        }
+    </script>
+</body>
+</html>

@@ -174,11 +174,40 @@ export const GIRRAWEEN_2020_QUESTIONS_PART2 = [
     source: 'Girraween 2020 Trial Q14b',
     type: 'teacher_review',
     difficulty: 'medium',
-    q: 'Sketch the graph of $f(x) = x^3 - 3x^2 + 3x$ for $-1 \\leq x \\leq 3$. Show the stationary point and any intercepts. **(Teacher-graded sketch)**',
+    q: 'Sketch the graph of $f(x) = x^3 - 3x^2 + 3x$ for $-1 \\leq x \\leq 3$. Show the stationary point and any intercepts.',
     a: 'sketch',
     opts: ['Sketch provided by teacher'],
     h: 'Mark the stationary point at $(1, 1)$, find the $y$-intercept at $(0, 0)$, and show the cubic shape.',
-    s: 'The function has a stationary point at $(1, 1)$. The $y$-intercept is at $(0, 0)$. The graph is a cubic with the general shape of a cubic inflection point at $x = 1$.'
+    s: 'The function has a stationary point at $(1, 1)$. The $y$-intercept is at $(0, 0)$. The graph is a cubic with the general shape of a cubic inflection point at $x = 1$.',
+    solutionSteps: [
+      {
+        explanation: 'First, find the endpoints of the domain $-1 \\leq x \\leq 3$. Evaluate $f(x)$ at $x = -1$ and $x = 3$.',
+        workingOut: '$\\begin{aligned} f(-1) &= (-1)^3 - 3(-1)^2 + 3(-1) = -1 - 3 - 3 = -7 \\\\ f(3) &= 3^3 - 3(3)^2 + 3(3) = 27 - 27 + 9 = 9 \\end{aligned}$'
+      },
+      {
+        explanation: 'Next, find the axes intercepts. For the $y$-intercept, set $x = 0$. For the $x$-intercept, set $f(x) = 0$.',
+        workingOut: '$f(0) = 0^3 - 3(0)^2 + 3(0) = 0 \\quad \\Rightarrow \\quad (0, 0)$'
+      },
+      {
+        explanation: 'To find the $x$-intercepts, solve $x^3 - 3x^2 + 3x = 0$. Factor out $x$: $x(x^2 - 3x + 3) = 0$. The quadratic has discriminant $\\Delta = (-3)^2 - 4(1)(3) = 9 - 12 = -3 < 0$, so no real roots. The only intercept is $(0, 0)$.',
+        workingOut: '$x(x^2 - 3x + 3) = 0 \\quad \\Rightarrow \\quad x = 0$'
+      },
+      {
+        explanation: 'Find the stationary points by setting the first derivative $f\'(x)$ to zero.',
+        workingOut: '$\\begin{aligned} f\'(x) &= 3x^2 - 6x + 3 = 3(x^2 - 2x + 1) = 3(x - 1)^2 \\\\ 3(x - 1)^2 &= 0 \\quad \\Rightarrow \\quad x = 1 \\end{aligned}$'
+      },
+      {
+        explanation: 'Find the $y$-coordinate of the stationary point at $x = 1$.',
+        workingOut: '$f(1) = 1^3 - 3(1)^2 + 3(1) = 1 \\quad \\Rightarrow \\quad (1, 1)$'
+      },
+      {
+        explanation: 'Determine the nature of the stationary point $(1, 1)$. Since $f\'(x) = 3(x - 1)^2 \\geq 0$ for all $x$, the gradient never becomes negative. It is positive on both sides of $x=1$.',
+        workingOut: '$\\text{The point } (1, 1) \\text{ is a horizontal point of inflection.}$',
+        graphData: {
+          svg: '<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg"><defs><style>.axis { stroke: #94a3b8; stroke-width: 2; }.curve { stroke: #3b82f6; stroke-width: 3; fill: none; }.point { fill: #ef4444; }.label { font-size: 14px; fill: #1e293b; font-family: sans-serif; }</style></defs><rect width="500" height="500" fill="#ffffff" /><g transform="translate(150, 300)"><line x1="-100" y1="0" x2="220" y2="0" class="axis" /><text x="210" y="20" class="label">x</text><line x1="0" y1="-250" x2="0" y2="170" class="axis" /><text x="-15" y="-240" class="label">y</text><line x1="-60" y1="-5" x2="-60" y2="5" class="axis" /><text x="-70" y="20" class="label">-1</text><line x1="60" y1="-5" x2="60" y2="5" class="axis" /><text x="55" y="20" class="label">1</text><line x1="180" y1="-5" x2="180" y2="5" class="axis" /><text x="175" y="20" class="label">3</text><line x1="-5" y1="140" x2="5" y2="140" class="axis" /><text x="-25" y="145" class="label">-7</text><line x1="-5" y1="-20" x2="5" y2="-20" class="axis" /><text x="-20" y="-15" class="label">1</text><line x1="-5" y1="-180" x2="5" y2="-180" class="axis" /><text x="-25" y="-175" class="label">9</text><polyline points="-60.00,140.00 -54.00,117.18 -48.00,96.64 -42.00,78.26 -36.00,61.92 -30.00,47.50 -24.00,34.88 -18.00,23.94 -12.00,14.56 -6.00,6.62 -0.00,0.00 6.00,-5.42 12.00,-9.76 18.00,-13.14 24.00,-15.68 30.00,-17.50 36.00,-18.72 42.00,-19.46 48.00,-19.84 54.00,-19.98 60.00,-20.00 66.00,-20.02 72.00,-20.16 78.00,-20.54 84.00,-21.28 90.00,-22.50 96.00,-24.32 102.00,-26.86 108.00,-30.24 114.00,-34.58 120.00,-40.00 126.00,-46.62 132.00,-54.56 138.00,-63.94 144.00,-74.88 150.00,-87.50 156.00,-101.92 162.00,-118.26 168.00,-136.64 174.00,-157.18" class="curve" /><circle cx="-60" cy="140" r="4" class="point" /><circle cx="0" cy="0" r="4" class="point" /><circle cx="60" cy="-20" r="4" class="point" /><circle cx="180" cy="-180" r="4" class="point" /><text x="-50" y="155" class="label">(-1, -7)</text><text x="10" y="15" class="label">(0, 0)</text><text x="65" y="-30" class="label">(1, 1)</text><text x="190" y="-170" class="label">(3, 9)</text></g></svg>'
+        }
+      }
+    ]
   },
 
   {
@@ -447,7 +476,7 @@ export const GIRRAWEEN_2020_QUESTIONS_PART2 = [
     source: 'Girraween 2020 Trial Q19b',
     type: 'multiple_choice',
     difficulty: 'medium',
-    q: 'Using the distribution from Q19a, find the expected value (mean) $E(X)$.',
+    q: 'Given the probability distribution $P(X = 0) = 0.1$, $P(X = 1) = 0.2$, $P(X = 2) = 0.3$, $P(X = 3) = 0.2$, and $P(X = 4) = 0.2$, find the expected value (mean) $E(X)$.',
     a: '1',
     opts: [
       '$E(X) = 1.8$',
@@ -485,7 +514,7 @@ export const GIRRAWEEN_2020_QUESTIONS_PART2 = [
     source: 'Girraween 2020 Trial Q19c',
     type: 'multiple_choice',
     difficulty: 'medium',
-    q: 'Find $P(X < E(X))$ using the distribution from Q19a.',
+    q: 'Given the probability distribution $P(X = 0) = 0.1$, $P(X = 1) = 0.2$, $P(X = 2) = 0.3$, $P(X = 3) = 0.2$, and $P(X = 4) = 0.2$, find $P(X < E(X))$.',
     a: '2',
     opts: [
       '$P(X < 2.2) = 0.4$',

@@ -31,12 +31,12 @@ export const Y12A_CH10A_QUESTIONS = [
       },
       {
         "explanation": "Now let us compute the sum of the probabilities for the first option. Adding these values together gives zero point nine nine, which is not equal to one. Hence, this set of values is not a valid distribution.",
-        "workingOut": "\\(0.23 + 0.16 + 0.35 + 0.25 = 0.99 \\neq 1\\)",
+        "workingOut": "\\(0.23 + 0.16 + 0.35 + 0.25 = 0.99 \neq 1\\)",
         "graphData": null
       },
       {
         "explanation": "Next, we calculate the sum of the probabilities for the third option. Adding these numbers gives one point zero seven, which exceeds the required sum of one. Therefore, this option is also invalid.",
-        "workingOut": "\\(0.14 + 0.32 + 0.48 + 0.07 = 1.01 \\neq 1\\)",
+        "workingOut": "\\(0.14 + 0.32 + 0.48 + 0.07 = 1.01 \neq 1\\)",
         "graphData": null
       },
       {
@@ -81,12 +81,12 @@ export const Y12A_CH10A_QUESTIONS = [
       },
       {
         "explanation": "Let us calculate the sum for the first option. Since there are four values of zero point three, their sum is one point two, which is not equal to one. Therefore, the first option is invalid.",
-        "workingOut": "\\(4 \\times 0.3 = 1.2 \\neq 1\\)",
+        "workingOut": "\\(4 \\times 0.3 = 1.2 \neq 1\\)",
         "graphData": null
       },
       {
         "explanation": "Let us sum the values for the third option. Adding the four values of zero point five results in two point zero, which is not equal to one. This option is also invalid.",
-        "workingOut": "\\(4 \\times 0.5 = 2.0 \\neq 1\\)",
+        "workingOut": "\\(4 \\times 0.5 = 2.0 \neq 1\\)",
         "graphData": null
       },
       {
@@ -573,17 +573,17 @@ export const Y12A_CH10A_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 180,
     "question": "The discrete random variable \\(X\\) has a mean of \\(2\\) and probability distribution:\n\n| \\(x\\) | 1 | 2 | 3 | 4 |\n|---|---|---|---|---|\n| \\(p(x)\\) | \\(0.3\\) | \\(0.45\\) | \\(a\\) | \\(b\\) |\n\n(a) Show that the two equations in terms of \\(a\\) and \\(b\\) are \\(a + b = 0.25\\) and \\(3a + 4b = 0.8\\).\n\n(b) Hence find the values of \\(a\\) and \\(b\\).",
-    "answer": "(a) By using the sum of probabilities rule:\\n0.3 + 0.45 + a + b = 1 \\implies a + b = 0.25.\\nBy using the expectation formula:\\n1(0.3) + 2(0.45) + 3a + 4b = 2 \\implies 1.2 + 3a + 4b = 2 \\implies 3a + 4b = 0.8.\\n\\n(b) Solving the simultaneous equations:\\nMultiply the first equation by 4 to get:\\n4a + 4b = 1.0.\\nSubtract the second equation to get:\\na = 0.2.\\nSubstitute back to find b:\\n0.2 + b = 0.25 \\implies b = 0.05.",
+    "answer": "(a) By using the sum of probabilities rule:\n0.3 + 0.45 + a + b = 1 \\implies a + b = 0.25.\nBy using the expectation formula:\n1(0.3) + 2(0.45) + 3a + 4b = 2 \\implies 1.2 + 3a + 4b = 2 \\implies 3a + 4b = 0.8.\n\n(b) Solving the simultaneous equations:\nMultiply the first equation by 4 to get:\n4a + 4b = 1.0.\nSubtract the second equation to get:\na = 0.2.\nSubstitute back to find b:\n0.2 + b = 0.25 \\implies b = 0.05.",
     "hint": "Write a full structured solution for the teacher to mark.",
-    "solution": "(a) By using the sum of probabilities rule:\\n0.3 + 0.45 + a + b = 1 \\implies a + b = 0.25.\\nBy using the expectation formula:\\n1(0.3) + 2(0.45) + 3a + 4b = 2 \\implies 1.2 + 3a + 4b = 2 \\implies 3a + 4b = 0.8.\\n\\n(b) Solving the simultaneous equations:\\nMultiply the first equation by 4 to get:\\n4a + 4b = 1.0.\\nSubtract the second equation to get:\\na = 0.2.\\nSubstitute back to find b:\\n0.2 + b = 0.25 \\implies b = 0.05.",
+    "solution": "(a) By using the sum of probabilities rule:\n0.3 + 0.45 + a + b = 1 \\implies a + b = 0.25.\nBy using the expectation formula:\n1(0.3) + 2(0.45) + 3a + 4b = 2 \\implies 1.2 + 3a + 4b = 2 \\implies 3a + 4b = 0.8.\n\n(b) Solving the simultaneous equations:\nMultiply the first equation by 4 to get:\n4a + 4b = 1.0.\nSubtract the second equation to get:\na = 0.2.\nSubstitute back to find b:\n0.2 + b = 0.25 \\implies b = 0.05.",
     "solutionSteps": [
       {
-        "explanation": "For part (a), we sum all the probabilities from the distribution table and equate the sum to one.\\nThis is a requirement that holds true for any discrete probability distribution.",
+        "explanation": "For part (a), we sum all the probabilities from the distribution table and equate the sum to one.\nThis is a requirement that holds true for any discrete probability distribution.",
         "workingOut": "\\(0.3 + 0.45 + a + b = 1 \\implies a + b = 0.25\\)",
         "graphData": null
       },
       {
-        "explanation": "We set up the expected value equation using the given mean of two.\\nWe apply the formula for expectation by summing the products of each variable outcome and its corresponding probability.",
+        "explanation": "We set up the expected value equation using the given mean of two.\nWe apply the formula for expectation by summing the products of each variable outcome and its corresponding probability.",
         "workingOut": "\\(1(0.3) + 2(0.45) + 3a + 4b = 2\\)",
         "graphData": null
       },
@@ -593,7 +593,7 @@ export const Y12A_CH10A_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "For part (b), we solve the system of simultaneous equations.\\nWe scale the first equation by multiplying it by four to match the coefficient of \\(b\\) in the second equation.",
+        "explanation": "For part (b), we solve the system of simultaneous equations.\nWe scale the first equation by multiplying it by four to match the coefficient of \\(b\\) in the second equation.",
         "workingOut": "\\(4(a + b) = 4(0.25) \\implies 4a + 4b = 1.0\\)",
         "graphData": null
       },
@@ -603,7 +603,7 @@ export const Y12A_CH10A_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Substitute the value of \\(a = 0.2\\) back into the equation \\(a + b = 0.25\\) to find \\(b\\).\\nWe conclude that the values are \\(a = 0.2\\) and \\(b = 0.05\\).",
+        "explanation": "Substitute the value of \\(a = 0.2\\) back into the equation \\(a + b = 0.25\\) to find \\(b\\).\nWe conclude that the values are \\(a = 0.2\\) and \\(b = 0.05\\).",
         "workingOut": "\\(0.2 + b = 0.25 \\implies b = 0.05\\)",
         "graphData": null
       }
@@ -621,17 +621,17 @@ export const Y12A_CH10A_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 180,
     "question": "The discrete random variable \\(Y\\) has a mean of \\(3\\) and probability distribution:\n\n| \\(y\\) | 1 | 2 | 3 | 4 | 5 |\n|---|---|---|---|---|---|\n| \\(p(y)\\) | \\(0.1\\) | \\(0.2\\) | \\(c\\) | \\(d\\) | \\(0.1\\) |\n\n(a) Show that the two equations in terms of \\(c\\) and \\(d\\) are \\(c + d = 0.6\\) and \\(3c + 4d = 2\\).\n\n(b) Hence find the values of \\(c\\) and \\(d\\).",
-    "answer": "(a) By using the sum of probabilities rule:\\n0.1 + 0.2 + c + d + 0.1 = 1 \\implies c + d = 0.6.\\nBy using the expectation formula:\\n1(0.1) + 2(0.2) + 3c + 4d + 5(0.1) = 3 \\implies 1.0 + 3c + 4d = 3 \\implies 3c + 4d = 2.\\n\\n(b) Solving the simultaneous equations:\\nMultiply the first equation by 3 to get:\\n3c + 3d = 1.8.\\nSubtract this from the second equation to get:\\nd = 0.2.\\nSubstitute back to find c:\\nc + 0.2 = 0.6 \\implies c = 0.4.",
+    "answer": "(a) By using the sum of probabilities rule:\n0.1 + 0.2 + c + d + 0.1 = 1 \\implies c + d = 0.6.\nBy using the expectation formula:\n1(0.1) + 2(0.2) + 3c + 4d + 5(0.1) = 3 \\implies 1.0 + 3c + 4d = 3 \\implies 3c + 4d = 2.\n\n(b) Solving the simultaneous equations:\nMultiply the first equation by 3 to get:\n3c + 3d = 1.8.\nSubtract this from the second equation to get:\nd = 0.2.\nSubstitute back to find c:\nc + 0.2 = 0.6 \\implies c = 0.4.",
     "hint": "Write a full structured solution for the teacher to mark.",
-    "solution": "(a) By using the sum of probabilities rule:\\n0.1 + 0.2 + c + d + 0.1 = 1 \\implies c + d = 0.6.\\nBy using the expectation formula:\\n1(0.1) + 2(0.2) + 3c + 4d + 5(0.1) = 3 \\implies 1.0 + 3c + 4d = 3 \\implies 3c + 4d = 2.\\n\\n(b) Solving the simultaneous equations:\\nMultiply the first equation by 3 to get:\\n3c + 3d = 1.8.\\nSubtract this from the second equation to get:\\nd = 0.2.\\nSubstitute back to find c:\\nc + 0.2 = 0.6 \\implies c = 0.4.",
+    "solution": "(a) By using the sum of probabilities rule:\n0.1 + 0.2 + c + d + 0.1 = 1 \\implies c + d = 0.6.\nBy using the expectation formula:\n1(0.1) + 2(0.2) + 3c + 4d + 5(0.1) = 3 \\implies 1.0 + 3c + 4d = 3 \\implies 3c + 4d = 2.\n\n(b) Solving the simultaneous equations:\nMultiply the first equation by 3 to get:\n3c + 3d = 1.8.\nSubtract this from the second equation to get:\nd = 0.2.\nSubstitute back to find c:\nc + 0.2 = 0.6 \\implies c = 0.4.",
     "solutionSteps": [
       {
-        "explanation": "For part (a), we set up the equation for the sum of all probabilities in the table, setting it equal to one.\\nThis serves to establish our first relationship between the unknowns.",
+        "explanation": "For part (a), we set up the equation for the sum of all probabilities in the table, setting it equal to one.\nThis serves to establish our first relationship between the unknowns.",
         "workingOut": "\\(0.1 + 0.2 + c + d + 0.1 = 1 \\implies c + d = 0.6\\)",
         "graphData": null
       },
       {
-        "explanation": "Next, we set up the expected value equation using the given mean value of three.\\nWe sum the products of each variable outcome and its probability.",
+        "explanation": "Next, we set up the expected value equation using the given mean value of three.\nWe sum the products of each variable outcome and its probability.",
         "workingOut": "\\(1(0.1) + 2(0.2) + 3c + 4d + 5(0.1) = 3\\)",
         "graphData": null
       },
@@ -641,7 +641,7 @@ export const Y12A_CH10A_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "For part (b), we solve the system of simultaneous equations by elimination.\\nWe multiply the first equation by three so that the coefficient of \\(c\\) aligns with that in the second equation.",
+        "explanation": "For part (b), we solve the system of simultaneous equations by elimination.\nWe multiply the first equation by three so that the coefficient of \\(c\\) aligns with that in the second equation.",
         "workingOut": "\\(3(c + d) = 3(0.6) \\implies 3c + 3d = 1.8\\)",
         "graphData": null
       },
@@ -651,7 +651,7 @@ export const Y12A_CH10A_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Substitute \\(d = 0.2\\) back into the first equation to solve for \\(c\\).\\nThis gives \\(c = 0.4\\) and \\(d = 0.2\\) as the final values.",
+        "explanation": "Substitute \\(d = 0.2\\) back into the first equation to solve for \\(c\\).\nThis gives \\(c = 0.4\\) and \\(d = 0.2\\) as the final values.",
         "workingOut": "\\(c + 0.2 = 0.6 \\implies c = 0.4\\)",
         "graphData": null
       }

@@ -1617,7 +1617,7 @@ export const Y12A_CH5C_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Set \\(y=0\\): \\(e^{t}(x-t+1)=0\\Rightarrow x=t-1\\) (since \\(e^{t}\\neq 0\\)).",
+        "explanation": "Set \\(y=0\\): \\(e^{t}(x-t+1)=0\\Rightarrow x=t-1\\) (since \\(e^{t}\neq 0\\)).",
         "workingOut": "\\(x=t-1\\)",
         "graphData": null
       }
@@ -1887,7 +1887,7 @@ export const Y12A_CH5C_QUESTIONS = [
     "solution": "2x+1=0 ⇒ x=-1/2, y=-1/(2e). y''(-1/2)>0 ⇒ local min.",
     "solutionSteps": [
       {
-        "explanation": "Set \\(y'=0\\). Since \\(e^{2x}\\neq 0\\), we need \\(2x+1=0\\Rightarrow x=-\\dfrac{1}{2}\\). Only one stationary point.",
+        "explanation": "Set \\(y'=0\\). Since \\(e^{2x}\neq 0\\), we need \\(2x+1=0\\Rightarrow x=-\\dfrac{1}{2}\\). Only one stationary point.",
         "workingOut": "\\(x=-\\dfrac{1}{2}\\)",
         "graphData": null
       },
@@ -1927,7 +1927,7 @@ export const Y12A_CH5C_QUESTIONS = [
     "solution": "4x+4=0 ⇒ x=-1, y=-e^{-2}. Point (-1,-e^{-2}).",
     "solutionSteps": [
       {
-        "explanation": "Inflection points require \\(y''=0\\). With \\(e^{2x}\\neq 0\\), solve \\(4x+4=0\\Rightarrow x=-1\\).",
+        "explanation": "Inflection points require \\(y''=0\\). With \\(e^{2x}\neq 0\\), solve \\(4x+4=0\\Rightarrow x=-1\\).",
         "workingOut": "\\(x=-1\\)",
         "graphData": null
       },
@@ -2127,7 +2127,7 @@ export const Y12A_CH5C_QUESTIONS = [
     "solution": "Zero at \\(x=1\\). Sign of \\(y\\) matches sign of \\((1-x)\\).",
     "solutionSteps": [
       {
-        "explanation": "Set \\(y=0\\): \\((1-x)e^{x}=0\\Rightarrow x=1\\) (because \\(e^{x}\\neq 0\\)).",
+        "explanation": "Set \\(y=0\\): \\((1-x)e^{x}=0\\Rightarrow x=1\\) (because \\(e^{x}\neq 0\\)).",
         "workingOut": "\\(x=1\\)",
         "graphData": null
       },
@@ -2497,7 +2497,7 @@ export const Y12A_CH5C_QUESTIONS = [
     "solution": "\\(y'=0\\) at \\(x=0,2\\). \\(y''(0)>0\\) min; \\(y''(2)<0\\) max at \\((2,4e^{-2})\\).",
     "solutionSteps": [
       {
-        "explanation": "From \\(y'=x(2-x)e^{-x}=0\\): \\(x=0\\) or \\(x=2\\) (since \\(e^{-x}\\neq 0\\)).",
+        "explanation": "From \\(y'=x(2-x)e^{-x}=0\\): \\(x=0\\) or \\(x=2\\) (since \\(e^{-x}\neq 0\\)).",
         "workingOut": "\\(x=0\\text{ or }2\\)",
         "graphData": null
       },

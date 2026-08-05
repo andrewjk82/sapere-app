@@ -1,25 +1,25 @@
 export const Y7_CH23B_QUESTIONS = [
   {
     "id": "y7-23b-q1a",
+    "topicId": "y7-23b",
+    "c": "23B",
     "t": "Like terms and unlike terms",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Complete the following.\\n\\nTerms such as \\(4y, 7y, 2y, -3y, y\\) are called ________ terms.",
-    "a": 2,
-    "answer": "2",
+    "question": "Complete the following.<br /><br />Terms such as \\(4y, 7y, 2y, -3y, y\\) are called ________ terms.",
+    "a": 0,
+    "answer": "0",
     "opts": [
-      "\\(-like\\)",
-      "\\(opt1\\)",
-      "\\(like\\)",
-      "\\(opt2\\)"
+      "like",
+      "unlike"
     ],
     "hint": "Terms with exactly the same variable(s) are called...",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "All these terms have the exact same variable part, which is '\\(y\\)'.",
-        "workingOut": "\\(\\text{Variables are all identical}\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -38,25 +38,25 @@ export const Y7_CH23B_QUESTIONS = [
   },
   {
     "id": "y7-23b-q1b",
+    "topicId": "y7-23b",
+    "c": "23B",
     "t": "Like terms and unlike terms",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Complete the following.\\n\\nTerms such as \\(5a, 7b\\) are called ________ terms.",
-    "a": 3,
-    "answer": "3",
+    "question": "Complete the following.<br /><br />Terms such as \\(5a, 7b\\) are called ________ terms.",
+    "a": 1,
+    "answer": "1",
     "opts": [
-      "\\(-unlike\\)",
-      "\\(opt1\\)",
-      "\\(opt2\\)",
-      "\\(unlike\\)"
+      "like",
+      "unlike"
     ],
     "hint": "If the variables are different, the terms are...",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "The terms have different variable parts (\\(a\\) and \\(b\\)).",
-        "workingOut": "\\(\\text{Variables differ}\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -75,25 +75,25 @@ export const Y7_CH23B_QUESTIONS = [
   },
   {
     "id": "y7-23b-q1c",
+    "topicId": "y7-23b",
+    "c": "23B",
     "t": "Like terms and unlike terms",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Complete the following.\\n\\n\\(7m, 2m, 5m\\) are ________ terms.",
+    "question": "Complete the following.<br /><br />\\(7m, 2m, 5m\\) are ________ terms.",
     "a": 0,
     "answer": "0",
     "opts": [
-      "\\(like\\)",
-      "\\(-like\\)",
-      "\\(opt1\\)",
-      "\\(opt2\\)"
+      "like",
+      "unlike"
     ],
     "hint": "Look at the variables attached to each number.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "All three terms have the same variable, '\\(m\\)'.",
-        "workingOut": "\\(\\text{Variables are all } m\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -112,25 +112,25 @@ export const Y7_CH23B_QUESTIONS = [
   },
   {
     "id": "y7-23b-q1d",
+    "topicId": "y7-23b",
+    "c": "23B",
     "t": "Like terms and unlike terms",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Complete the following.\\n\\n\\(4p, 3q, 2r\\) are ________ terms.",
+    "question": "Complete the following.<br /><br />\\(4p, 3q, 2r\\) are ________ terms.",
     "a": 1,
     "answer": "1",
     "opts": [
-      "\\(-unlike\\)",
-      "\\(unlike\\)",
-      "\\(opt1\\)",
-      "\\(opt2\\)"
+      "like",
+      "unlike"
     ],
     "hint": "Do the terms share the same variable?",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Each term has a completely different variable (\\(p\\), \\(q\\), and \\(r\\)).",
-        "workingOut": "\\(\\text{Variables differ}\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -149,25 +149,25 @@ export const Y7_CH23B_QUESTIONS = [
   },
   {
     "id": "y7-23b-q1e",
+    "topicId": "y7-23b",
+    "c": "23B",
     "t": "Like terms and unlike terms",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Complete the following.\\n\\n\\(4x^2, 7x^2, 9x^2\\) are ________ terms.",
-    "a": 2,
-    "answer": "2",
+    "question": "Complete the following.<br /><br />\\(4x^2, 7x^2, 9x^2\\) are ________ terms.",
+    "a": 0,
+    "answer": "0",
     "opts": [
-      "\\(-like\\)",
-      "\\(opt1\\)",
-      "\\(like\\)",
-      "\\(opt2\\)"
+      "like",
+      "unlike"
     ],
     "hint": "Check both the variable and its exponent.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "All terms have the exact same variable part, which is '\\(x^2\\)'.",
-        "workingOut": "\\(\\text{Variables are all } x^2\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -186,25 +186,25 @@ export const Y7_CH23B_QUESTIONS = [
   },
   {
     "id": "y7-23b-q1f",
+    "topicId": "y7-23b",
+    "c": "23B",
     "t": "Like terms and unlike terms",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Complete the following.\\n\\n\\(3pq, pq, 8pq\\) are ________ terms.",
-    "a": 3,
-    "answer": "3",
+    "question": "Complete the following.<br /><br />\\(3pq, pq, 8pq\\) are ________ terms.",
+    "a": 0,
+    "answer": "0",
     "opts": [
-      "\\(-like\\)",
-      "\\(opt1\\)",
-      "\\(opt2\\)",
-      "\\(like\\)"
+      "like",
+      "unlike"
     ],
     "hint": "Do they have the exact same combination of variables?",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "The variable part for each term is '\\(pq\\)'.",
-        "workingOut": "\\(\\text{Variables are all } pq\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -223,25 +223,25 @@ export const Y7_CH23B_QUESTIONS = [
   },
   {
     "id": "y7-23b-q1g",
+    "topicId": "y7-23b",
+    "c": "23B",
     "t": "Like terms and unlike terms",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Complete the following.\\n\\n\\(5n, 6n^2\\) are ________ terms.",
-    "a": 0,
-    "answer": "0",
+    "question": "Complete the following.<br /><br />\\(5n, 6n^2\\) are ________ terms.",
+    "a": 1,
+    "answer": "1",
     "opts": [
-      "\\(unlike\\)",
-      "\\(-unlike\\)",
-      "\\(opt1\\)",
-      "\\(opt2\\)"
+      "like",
+      "unlike"
     ],
     "hint": "Does a different power make them unlike?",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "One term has the variable '\\(n\\)', while the other has '\\(n^2\\)'.",
-        "workingOut": "\\(\\text{Powers differ}\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -260,25 +260,25 @@ export const Y7_CH23B_QUESTIONS = [
   },
   {
     "id": "y7-23b-q1h",
+    "topicId": "y7-23b",
+    "c": "23B",
     "t": "Like terms and unlike terms",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Complete the following.\\n\\n\\(ab\\) and \\(ac\\) are ________ terms.",
+    "question": "Complete the following.<br /><br />\\(ab\\) and \\(ac\\) are ________ terms.",
     "a": 1,
     "answer": "1",
     "opts": [
-      "\\(-unlike\\)",
-      "\\(unlike\\)",
-      "\\(opt1\\)",
-      "\\(opt2\\)"
+      "like",
+      "unlike"
     ],
     "hint": "Compare the letters in each term.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "The first term has variables \\(a\\) and \\(b\\), while the second has \\(a\\) and \\(c\\).",
-        "workingOut": "\\(\\text{Variables differ}\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -297,24 +297,25 @@ export const Y7_CH23B_QUESTIONS = [
   },
   {
     "id": "y7-23b-q2a",
+    "topicId": "y7-23b",
+    "c": "23B",
+    "t": "Like terms and unlike terms",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
     "question": "Which of the following describes the pair of terms: \\(3y, 8y\\)?",
-    "a": 1,
-    "answer": "1",
+    "a": 0,
+    "answer": "0",
     "opts": [
-      "\\(1\\)",
-      "\\(0\\)",
-      "\\(-1\\)",
-      "\\(-0\\)"
+      "like",
+      "unlike"
     ],
     "hint": "Do they have the same variable part?",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Both terms have '\\(y\\)' as their variable.",
-        "workingOut": "\\(\\text{Variables are identical}\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -324,7 +325,7 @@ export const Y7_CH23B_QUESTIONS = [
       },
       {
         "explanation": "Confirm the final answer.",
-        "workingOut": "\\(0\\)",
+        "workingOut": "\\(\\text{like}\\)",
         "graphData": null
       }
     ],
@@ -333,24 +334,25 @@ export const Y7_CH23B_QUESTIONS = [
   },
   {
     "id": "y7-23b-q2b",
+    "topicId": "y7-23b",
+    "c": "23B",
+    "t": "Like terms and unlike terms",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
     "question": "Which of the following describes the pair of terms: \\(5m, 11m\\)?",
-    "a": 2,
-    "answer": "2",
+    "a": 0,
+    "answer": "0",
     "opts": [
-      "\\(1\\)",
-      "\\(-1\\)",
-      "\\(0\\)",
-      "\\(-0\\)"
+      "like",
+      "unlike"
     ],
     "hint": "Do they have the same variable part?",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Both terms share the exact same variable '\\(m\\)'.",
-        "workingOut": "\\(\\text{Variables are identical}\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -360,7 +362,7 @@ export const Y7_CH23B_QUESTIONS = [
       },
       {
         "explanation": "Confirm the final answer.",
-        "workingOut": "\\(0\\)",
+        "workingOut": "\\(\\text{like}\\)",
         "graphData": null
       }
     ],
@@ -369,24 +371,25 @@ export const Y7_CH23B_QUESTIONS = [
   },
   {
     "id": "y7-23b-q2c",
+    "topicId": "y7-23b",
+    "c": "23B",
+    "t": "Like terms and unlike terms",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
     "question": "Which of the following describes the pair of terms: \\(12p, 12\\)?",
-    "a": 3,
-    "answer": "3",
+    "a": 1,
+    "answer": "1",
     "opts": [
-      "\\(2\\)",
-      "\\(0\\)",
-      "\\(-1\\)",
-      "\\(1\\)"
+      "like",
+      "unlike"
     ],
     "hint": "One has a variable, the other is just a number.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "The first term has a variable '\\(p\\)', but the second term is a constant with no variable.",
-        "workingOut": "\\(\\text{One is variable, one is constant}\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -396,7 +399,7 @@ export const Y7_CH23B_QUESTIONS = [
       },
       {
         "explanation": "Confirm the final answer.",
-        "workingOut": "\\(1\\)",
+        "workingOut": "\\(\\text{unlike}\\)",
         "graphData": null
       }
     ],
@@ -405,24 +408,25 @@ export const Y7_CH23B_QUESTIONS = [
   },
   {
     "id": "y7-23b-q2d",
+    "topicId": "y7-23b",
+    "c": "23B",
+    "t": "Like terms and unlike terms",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
     "question": "Which of the following describes the pair of terms: \\(7b^2, 14b\\)?",
-    "a": 0,
-    "answer": "0",
+    "a": 1,
+    "answer": "1",
     "opts": [
-      "\\(1\\)",
-      "\\(2\\)",
-      "\\(0\\)",
-      "\\(-1\\)"
+      "like",
+      "unlike"
     ],
     "hint": "Check the powers of the variables.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "The first term has \\(b\\) squared (\\(b^2\\)), while the second term just has \\(b\\).",
-        "workingOut": "\\(\\text{Powers are different}\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -432,7 +436,7 @@ export const Y7_CH23B_QUESTIONS = [
       },
       {
         "explanation": "Confirm the final answer.",
-        "workingOut": "\\(1\\)",
+        "workingOut": "\\(\\text{unlike}\\)",
         "graphData": null
       }
     ],
@@ -441,24 +445,25 @@ export const Y7_CH23B_QUESTIONS = [
   },
   {
     "id": "y7-23b-q2e",
+    "topicId": "y7-23b",
+    "c": "23B",
+    "t": "Like terms and unlike terms",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
     "question": "Which of the following describes the pair of terms: \\(4x, 13x\\)?",
-    "a": 1,
-    "answer": "1",
+    "a": 0,
+    "answer": "0",
     "opts": [
-      "\\(1\\)",
-      "\\(0\\)",
-      "\\(-1\\)",
-      "\\(-0\\)"
+      "like",
+      "unlike"
     ],
     "hint": "Do they share the same letter?",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Both terms have '\\(x\\)' as their variable.",
-        "workingOut": "\\(\\text{Variables are identical}\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -468,7 +473,7 @@ export const Y7_CH23B_QUESTIONS = [
       },
       {
         "explanation": "Confirm the final answer.",
-        "workingOut": "\\(0\\)",
+        "workingOut": "\\(\\text{like}\\)",
         "graphData": null
       }
     ],
@@ -477,24 +482,25 @@ export const Y7_CH23B_QUESTIONS = [
   },
   {
     "id": "y7-23b-q2f",
+    "topicId": "y7-23b",
+    "c": "23B",
+    "t": "Like terms and unlike terms",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
     "question": "Which of the following describes the pair of terms: \\(2m^2, 9m^2\\)?",
-    "a": 2,
-    "answer": "2",
+    "a": 0,
+    "answer": "0",
     "opts": [
-      "\\(1\\)",
-      "\\(-1\\)",
-      "\\(0\\)",
-      "\\(-0\\)"
+      "like",
+      "unlike"
     ],
     "hint": "Check if the variable and its power are identical.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Both terms have the variable part '\\(m^2\\)'.",
-        "workingOut": "\\(\\text{Variables and powers are identical}\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -504,7 +510,7 @@ export const Y7_CH23B_QUESTIONS = [
       },
       {
         "explanation": "Confirm the final answer.",
-        "workingOut": "\\(0\\)",
+        "workingOut": "\\(\\text{like}\\)",
         "graphData": null
       }
     ],
@@ -513,24 +519,25 @@ export const Y7_CH23B_QUESTIONS = [
   },
   {
     "id": "y7-23b-q2g",
+    "topicId": "y7-23b",
+    "c": "23B",
+    "t": "Like terms and unlike terms",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
     "question": "Which of the following describes the pair of terms: \\(10xy, 4yx\\)?",
-    "a": 3,
-    "answer": "3",
+    "a": 0,
+    "answer": "0",
     "opts": [
-      "\\(1\\)",
-      "\\(-1\\)",
-      "\\(-0\\)",
-      "\\(0\\)"
+      "like",
+      "unlike"
     ],
     "hint": "Does the order of variables matter in multiplication?",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "The variables \\(xy\\) and \\(yx\\) represent the same product because multiplication is commutative.",
-        "workingOut": "\\(xy = yx\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -540,7 +547,7 @@ export const Y7_CH23B_QUESTIONS = [
       },
       {
         "explanation": "Confirm the final answer.",
-        "workingOut": "\\(0\\)",
+        "workingOut": "\\(\\text{like}\\)",
         "graphData": null
       }
     ],
@@ -549,6 +556,9 @@ export const Y7_CH23B_QUESTIONS = [
   },
   {
     "id": "y7-23b-q2h",
+    "topicId": "y7-23b",
+    "c": "23B",
+    "t": "Like terms and unlike terms",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
@@ -556,17 +566,15 @@ export const Y7_CH23B_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "opts": [
-      "\\(0\\)",
-      "\\(1\\)",
-      "\\(-1\\)",
-      "\\(-0\\)"
+      "like",
+      "unlike"
     ],
     "hint": "A term without a visible number has a coefficient of 1.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "The first term is '\\(1k\\)' and the second is '\\(8k\\)'. Both have the same variable '\\(k\\)'.",
-        "workingOut": "\\(\\text{Variables are identical}\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -576,7 +584,7 @@ export const Y7_CH23B_QUESTIONS = [
       },
       {
         "explanation": "Confirm the final answer.",
-        "workingOut": "\\(0\\)",
+        "workingOut": "\\(\\text{like}\\)",
         "graphData": null
       }
     ],
@@ -585,6 +593,9 @@ export const Y7_CH23B_QUESTIONS = [
   },
   {
     "id": "y7-23b-q2i",
+    "topicId": "y7-23b",
+    "c": "23B",
+    "t": "Like terms and unlike terms",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
@@ -592,17 +603,15 @@ export const Y7_CH23B_QUESTIONS = [
     "a": 1,
     "answer": "1",
     "opts": [
-      "\\(2\\)",
-      "\\(1\\)",
-      "\\(0\\)",
-      "\\(-1\\)"
+      "like",
+      "unlike"
     ],
     "hint": "Are all the letters exactly the same in both terms?",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "The first term contains \\(m\\) and \\(n\\), while the second contains \\(m\\) and \\(p\\).",
-        "workingOut": "\\(\\text{Variables differ}\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -612,7 +621,7 @@ export const Y7_CH23B_QUESTIONS = [
       },
       {
         "explanation": "Confirm the final answer.",
-        "workingOut": "\\(1\\)",
+        "workingOut": "\\(\\text{unlike}\\)",
         "graphData": null
       }
     ],
@@ -621,24 +630,25 @@ export const Y7_CH23B_QUESTIONS = [
   },
   {
     "id": "y7-23b-q2j",
+    "topicId": "y7-23b",
+    "c": "23B",
+    "t": "Like terms and unlike terms",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
     "question": "Which of the following describes the pair of terms: \\(4pq, 7pq\\)?",
-    "a": 2,
-    "answer": "2",
+    "a": 0,
+    "answer": "0",
     "opts": [
-      "\\(1\\)",
-      "\\(-1\\)",
-      "\\(0\\)",
-      "\\(-0\\)"
+      "like",
+      "unlike"
     ],
     "hint": "Look at the variables attached to each number.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Both terms have '\\(pq\\)' as their variable.",
-        "workingOut": "\\(\\text{Variables are identical}\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -648,7 +658,7 @@ export const Y7_CH23B_QUESTIONS = [
       },
       {
         "explanation": "Confirm the final answer.",
-        "workingOut": "\\(0\\)",
+        "workingOut": "\\(\\text{like}\\)",
         "graphData": null
       }
     ],
@@ -657,24 +667,25 @@ export const Y7_CH23B_QUESTIONS = [
   },
   {
     "id": "y7-23b-q2k",
+    "topicId": "y7-23b",
+    "c": "23B",
+    "t": "Like terms and unlike terms",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
     "question": "Which of the following describes the pair of terms: \\(3y, 4y^2\\)?",
-    "a": 3,
-    "answer": "3",
+    "a": 1,
+    "answer": "1",
     "opts": [
-      "\\(2\\)",
-      "\\(0\\)",
-      "\\(-1\\)",
-      "\\(1\\)"
+      "like",
+      "unlike"
     ],
     "hint": "Look at the exponent of the variable.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "The first term has \\(y\\) to the power of 1, and the second has \\(y\\) to the power of 2.",
-        "workingOut": "\\(\\text{Powers differ}\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -684,7 +695,7 @@ export const Y7_CH23B_QUESTIONS = [
       },
       {
         "explanation": "Confirm the final answer.",
-        "workingOut": "\\(1\\)",
+        "workingOut": "\\(\\text{unlike}\\)",
         "graphData": null
       }
     ],
@@ -693,24 +704,25 @@ export const Y7_CH23B_QUESTIONS = [
   },
   {
     "id": "y7-23b-q2l",
+    "topicId": "y7-23b",
+    "c": "23B",
+    "t": "Like terms and unlike terms",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
     "question": "Which of the following describes the pair of terms: \\(6n, 12n^2\\)?",
-    "a": 0,
-    "answer": "0",
+    "a": 1,
+    "answer": "1",
     "opts": [
-      "\\(1\\)",
-      "\\(2\\)",
-      "\\(0\\)",
-      "\\(-1\\)"
+      "like",
+      "unlike"
     ],
     "hint": "Compare the powers of the variables.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "One term contains '\\(n\\)' while the other contains '\\(n^2\\)'.",
-        "workingOut": "\\(\\text{Powers differ}\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -720,7 +732,7 @@ export const Y7_CH23B_QUESTIONS = [
       },
       {
         "explanation": "Confirm the final answer.",
-        "workingOut": "\\(1\\)",
+        "workingOut": "\\(\\text{unlike}\\)",
         "graphData": null
       }
     ],
@@ -729,6 +741,8 @@ export const Y7_CH23B_QUESTIONS = [
   },
   {
     "id": "y7-23b-q3a",
+    "topicId": "y7-23b",
+    "c": "23B",
     "t": "Like terms and unlike terms",
     "type": "multiple_choice",
     "difficulty": "easy",
@@ -740,14 +754,14 @@ export const Y7_CH23B_QUESTIONS = [
       "\\(5\\)",
       "\\(6\\)",
       "\\(4\\)",
-      "\\(-5\\)"
+      "\\(7\\)"
     ],
     "hint": "Count the separate parts separated by plus or minus signs.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Terms are separated by addition and subtraction signs.",
-        "workingOut": "\\(\\text{Identify the terms}\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -766,6 +780,8 @@ export const Y7_CH23B_QUESTIONS = [
   },
   {
     "id": "y7-23b-q3b",
+    "topicId": "y7-23b",
+    "c": "23B",
     "t": "Like terms and unlike terms",
     "type": "multiple_choice",
     "difficulty": "easy",
@@ -774,17 +790,17 @@ export const Y7_CH23B_QUESTIONS = [
     "a": 1,
     "answer": "1",
     "opts": [
-      "\\(-7q\\)",
-      "\\(7q\\)",
       "\\(8q\\)",
-      "\\(opt2\\)"
+      "\\(7q\\)",
+      "\\(9q\\)",
+      "\\(10q\\)"
     ],
     "hint": "Count from left to right, starting with the first term.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "List the terms in order: 1st is \\(4m^3\\), 2nd is \\(3p^2\\), 3rd is \\(-6m\\), 4th is \\(7q\\).",
-        "workingOut": "\\(\\text{Fourth term is } 7q\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -803,6 +819,8 @@ export const Y7_CH23B_QUESTIONS = [
   },
   {
     "id": "y7-23b-q3c",
+    "topicId": "y7-23b",
+    "c": "23B",
     "t": "Like terms and unlike terms",
     "type": "multiple_choice",
     "difficulty": "easy",
@@ -814,14 +832,14 @@ export const Y7_CH23B_QUESTIONS = [
       "\\(5\\)",
       "\\(3\\)",
       "\\(4\\)",
-      "\\(-4\\)"
+      "\\(6\\)"
     ],
     "hint": "The coefficient is the number part of the term.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "The first term is \\(4m^3\\).",
-        "workingOut": "\\(\\text{First term: } 4m^3\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -840,6 +858,8 @@ export const Y7_CH23B_QUESTIONS = [
   },
   {
     "id": "y7-23b-q3d",
+    "topicId": "y7-23b",
+    "c": "23B",
     "t": "Like terms and unlike terms",
     "type": "multiple_choice",
     "difficulty": "easy",
@@ -850,7 +870,7 @@ export const Y7_CH23B_QUESTIONS = [
     "opts": [
       "\\(-4\\)",
       "\\(-6\\)",
-      "\\(5\\)",
+      "\\(7\\)",
       "\\(-5\\)"
     ],
     "hint": "A constant term is a number on its own, without any variables.",
@@ -858,7 +878,7 @@ export const Y7_CH23B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Look for the term that has no letters attached to it.",
-        "workingOut": "\\(\\text{No variable part}\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -877,6 +897,8 @@ export const Y7_CH23B_QUESTIONS = [
   },
   {
     "id": "y7-23b-q4a",
+    "topicId": "y7-23b",
+    "c": "23B",
     "t": "Like terms and unlike terms",
     "type": "multiple_choice",
     "difficulty": "easy",
@@ -895,7 +917,7 @@ export const Y7_CH23B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Inspect the variables: \\(y^2\\), \\(yz\\), \\(cd\\), and \\(y^2\\).",
-        "workingOut": "\\(\\text{Variables are } y^2, yz, cd, y^2\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -914,6 +936,8 @@ export const Y7_CH23B_QUESTIONS = [
   },
   {
     "id": "y7-23b-q4b",
+    "topicId": "y7-23b",
+    "c": "23B",
     "t": "Like terms and unlike terms",
     "type": "multiple_choice",
     "difficulty": "easy",
@@ -932,7 +956,7 @@ export const Y7_CH23B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Inspect the variables: \\(m\\), \\(q\\), \\(m\\), and \\(m^2\\). Remember \\(m^2\\) is different from \\(m\\).",
-        "workingOut": "\\(\\text{Variables are } m, q, m, m^2\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -951,6 +975,8 @@ export const Y7_CH23B_QUESTIONS = [
   },
   {
     "id": "y7-23b-q4c",
+    "topicId": "y7-23b",
+    "c": "23B",
     "t": "Like terms and unlike terms",
     "type": "multiple_choice",
     "difficulty": "easy",
@@ -969,7 +995,7 @@ export const Y7_CH23B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Inspect the variables: \\(p\\), \\(n\\), \\(p\\), and \\(c\\).",
-        "workingOut": "\\(\\text{Variables are } p, n, p, c\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -988,6 +1014,8 @@ export const Y7_CH23B_QUESTIONS = [
   },
   {
     "id": "y7-23b-q4d",
+    "topicId": "y7-23b",
+    "c": "23B",
     "t": "Like terms and unlike terms",
     "type": "multiple_choice",
     "difficulty": "easy",
@@ -1006,7 +1034,7 @@ export const Y7_CH23B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Inspect the variables: \\(z\\), \\(b\\), \\(w\\), and \\(z\\).",
-        "workingOut": "\\(\\text{Variables are } z, b, w, z\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -1025,6 +1053,8 @@ export const Y7_CH23B_QUESTIONS = [
   },
   {
     "id": "y7-23b-q4e",
+    "topicId": "y7-23b",
+    "c": "23B",
     "t": "Like terms and unlike terms",
     "type": "multiple_choice",
     "difficulty": "easy",
@@ -1043,7 +1073,7 @@ export const Y7_CH23B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Inspect the variables: \\(mn\\), \\(y^2\\), \\(mn\\), and \\(mn\\).",
-        "workingOut": "\\(\\text{Variables are } mn, y^2, mn, mn\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -1062,6 +1092,8 @@ export const Y7_CH23B_QUESTIONS = [
   },
   {
     "id": "y7-23b-q4f",
+    "topicId": "y7-23b",
+    "c": "23B",
     "t": "Like terms and unlike terms",
     "type": "multiple_choice",
     "difficulty": "easy",
@@ -1080,7 +1112,7 @@ export const Y7_CH23B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "The variables \\(pq\\) and \\(qp\\) represent the same product because multiplication is commutative.",
-        "workingOut": "\\(pq = qp\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -1099,6 +1131,8 @@ export const Y7_CH23B_QUESTIONS = [
   },
   {
     "id": "y7-23b-q4g",
+    "topicId": "y7-23b",
+    "c": "23B",
     "t": "Like terms and unlike terms",
     "type": "multiple_choice",
     "difficulty": "easy",
@@ -1117,7 +1151,7 @@ export const Y7_CH23B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Inspect the variables: \\(a\\), \\(b\\), \\(k\\), and \\(b\\).",
-        "workingOut": "\\(\\text{Variables are } a, b, k, b\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -1136,6 +1170,8 @@ export const Y7_CH23B_QUESTIONS = [
   },
   {
     "id": "y7-23b-q4h",
+    "topicId": "y7-23b",
+    "c": "23B",
     "t": "Like terms and unlike terms",
     "type": "multiple_choice",
     "difficulty": "easy",
@@ -1154,7 +1190,7 @@ export const Y7_CH23B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "The variables \\(mn\\) and \\(nm\\) represent the same product.",
-        "workingOut": "\\(mn = nm\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -1173,6 +1209,8 @@ export const Y7_CH23B_QUESTIONS = [
   },
   {
     "id": "y7-23b-q5a",
+    "topicId": "y7-23b",
+    "c": "23B",
     "t": "Like terms and unlike terms",
     "type": "multiple_choice",
     "difficulty": "easy",
@@ -1191,7 +1229,7 @@ export const Y7_CH23B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Scan the terms looking for matching variables. The variable '\\(b\\)' appears multiple times.",
-        "workingOut": "\\(\\text{Match variables}\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -1210,6 +1248,8 @@ export const Y7_CH23B_QUESTIONS = [
   },
   {
     "id": "y7-23b-q5b",
+    "topicId": "y7-23b",
+    "c": "23B",
     "t": "Like terms and unlike terms",
     "type": "multiple_choice",
     "difficulty": "easy",
@@ -1228,7 +1268,7 @@ export const Y7_CH23B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify terms with identical variable bases and exponents.",
-        "workingOut": "\\(\\text{Look for matching powers}\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -1247,6 +1287,8 @@ export const Y7_CH23B_QUESTIONS = [
   },
   {
     "id": "y7-23b-q5c",
+    "topicId": "y7-23b",
+    "c": "23B",
     "t": "Like terms and unlike terms",
     "type": "multiple_choice",
     "difficulty": "easy",
@@ -1265,7 +1307,7 @@ export const Y7_CH23B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Numbers without variables are called constants. All constant terms are like terms.",
-        "workingOut": "\\(\\text{Identify constants}\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -1284,6 +1326,8 @@ export const Y7_CH23B_QUESTIONS = [
   },
   {
     "id": "y7-23b-q5d",
+    "topicId": "y7-23b",
+    "c": "23B",
     "t": "Like terms and unlike terms",
     "type": "multiple_choice",
     "difficulty": "easy",
@@ -1302,7 +1346,7 @@ export const Y7_CH23B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Scan the terms looking for matching variables. The variable '\\(p\\)' appears multiple times.",
-        "workingOut": "\\(\\text{Match variables}\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -1321,6 +1365,8 @@ export const Y7_CH23B_QUESTIONS = [
   },
   {
     "id": "y7-23b-q5e",
+    "topicId": "y7-23b",
+    "c": "23B",
     "t": "Like terms and unlike terms",
     "type": "multiple_choice",
     "difficulty": "easy",
@@ -1339,7 +1385,7 @@ export const Y7_CH23B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify terms with identical variable bases and exponents.",
-        "workingOut": "\\(\\text{Look for matching powers}\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {

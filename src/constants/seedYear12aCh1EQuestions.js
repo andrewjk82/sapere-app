@@ -1819,7 +1819,7 @@ export const Y12A_CH1E_QUESTIONS = [
     "options": [],
     "answer": "A dot diagram arranged in L-shaped shells (gnomons) shows that adding the \\(n\\)-th odd number (which consists of \\(2n - 1\\) dots) to a square of size \\((n-1) \\times (n-1)\\) completes a larger square of size \\(n \\times n\\). Hence, \\(1 + 3 + 5 + \\dots + (2n - 1) = n^2\\).",
     "hint": "Think about building a square grid of dots by adding successive L-shaped borders.",
-    "solution": "To visualize the sum of odd numbers, we can arrange dots in concentric L-shaped borders (called gnomons) starting from a single dot in the corner.\\n- The 1st shell has \\(1\\) dot.\\n- The 2nd shell adds \\(3\\) dots to make a \\(2 \\times 2\\) square.\\n- The 3rd shell adds \\(5\\) dots to make a \\(3 \\times 3\\) square.\\n- In general, the \\(n\\)-th shell adds \\(2n-1\\) dots to a square of side \\(n-1\\) to form a square of side \\(n\\). Therefore, \\(1 + 3 + 5 + \\dots + (2n-1) = n^2\\).",
+    "solution": "To visualize the sum of odd numbers, we can arrange dots in concentric L-shaped borders (called gnomons) starting from a single dot in the corner.\n- The 1st shell has \\(1\\) dot.\n- The 2nd shell adds \\(3\\) dots to make a \\(2 \\times 2\\) square.\n- The 3rd shell adds \\(5\\) dots to make a \\(3 \\times 3\\) square.\n- In general, the \\(n\\)-th shell adds \\(2n-1\\) dots to a square of side \\(n-1\\) to form a square of side \\(n\\). Therefore, \\(1 + 3 + 5 + \\dots + (2n-1) = n^2\\).",
     "t": "Adding up the terms of a sequence",
     "solutionSteps": [
       {
@@ -1848,7 +1848,7 @@ export const Y12A_CH1E_QUESTIONS = [
     "options": [],
     "answer": "A triangular arrangement of dots representing \\(1 + 2 + 3 + \\dots + n\\) can be combined with an identical triangular arrangement to form a rectangular grid of size \\(n \\times (n + 1)\\). The total number of dots in the rectangle is \\(n(n+1)\\), so the sum of the single triangle is half of that: \\(\\frac{1}{2}n(n+1)\\).",
     "hint": "Think about combining two identical triangles of dots to form a rectangle.",
-    "solution": "We can represent the sum \\(1 + 2 + 3 + \\dots + n\\) as a triangular array of dots.\\n- By taking a second identical triangular array of dots, we can flip it and join it to the first triangle.\\n- This combined shape forms a rectangle of width \\(n+1\\) and height \\(n\\).\\n- The total number of dots in this rectangle is \\(n(n+1)\\).\\n- Since the rectangle is made of two identical triangles, the number of dots in one triangle is exactly half of the rectangle's dots: \\(\\frac{1}{2}n(n+1)\\).",
+    "solution": "We can represent the sum \\(1 + 2 + 3 + \\dots + n\\) as a triangular array of dots.\n- By taking a second identical triangular array of dots, we can flip it and join it to the first triangle.\n- This combined shape forms a rectangle of width \\(n+1\\) and height \\(n\\).\n- The total number of dots in this rectangle is \\(n(n+1)\\).\n- Since the rectangle is made of two identical triangles, the number of dots in one triangle is exactly half of the rectangle's dots: \\(\\frac{1}{2}n(n+1)\\).",
     "t": "Adding up the terms of a sequence",
     "solutionSteps": [
       {
@@ -2209,9 +2209,9 @@ export const Y12A_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "The partial sums of a sequence \\(T_n\\) are given by \\(S_n = 2^n\\). Confirm your formula \\(T_n = 2^{n-1}\\) (for \\(n \\ge 2\\)) and \\(T_1 = 2\\) by writing out the calculations in table form for \\(n=1\\) to \\(5\\).",
     "options": [],
-    "answer": "By calculating values:\\n- \\(S_1 = 2 \\Rightarrow T_1 = 2\\)\\n- \\(S_2 = 4 \\Rightarrow T_2 = 4 - 2 = 2 = 2^{2-1}\\)\\n- \\(S_3 = 8 \\Rightarrow T_3 = 8 - 4 = 4 = 2^{3-1}\\)\\n- \\(S_4 = 16 \\Rightarrow T_4 = 16 - 8 = 8 = 2^{4-1}\\)\\n- \\(S_5 = 32 \\Rightarrow T_5 = 32 - 16 = 16 = 2^{5-1}\\)\\nThe sequence \\(T_n\\) is indeed \\([2, 2, 4, 8, 16]\\).",
+    "answer": "By calculating values:\n- \\(S_1 = 2 \\Rightarrow T_1 = 2\\)\n- \\(S_2 = 4 \\Rightarrow T_2 = 4 - 2 = 2 = 2^{2-1}\\)\n- \\(S_3 = 8 \\Rightarrow T_3 = 8 - 4 = 4 = 2^{3-1}\\)\n- \\(S_4 = 16 \\Rightarrow T_4 = 16 - 8 = 8 = 2^{4-1}\\)\n- \\(S_5 = 32 \\Rightarrow T_5 = 32 - 16 = 16 = 2^{5-1}\\)\nThe sequence \\(T_n\\) is indeed \\([2, 2, 4, 8, 16]\\).",
     "hint": "Compute \\(S_n\\) for \\(n=1, 2, 3, 4, 5\\), then take differences to find \\(T_n\\).",
-    "solution": "Let us list the partial sums \\(S_n = 2^n\\) for \\(n=1\\) to \\(5\\):\\n- \\(S_n = [2, 4, 8, 16, 32]\\)\\nNow calculate the terms \\(T_n = S_n - S_{n-1}\\):\\n- \\(T_1 = S_1 = 2\\)\\n- \\(T_2 = S_2 - S_1 = 4 - 2 = 2\\)\\n- \\(T_3 = S_3 - S_2 = 8 - 4 = 4\\)\\n- \\(T_4 = S_4 - S_3 = 16 - 8 = 8\\)\\n- \\(T_5 = S_5 - S_4 = 32 - 16 = 16\\)\\nFor \\(n \\ge 2\\), \\(T_n\\) matches the formula \\(2^{n-1}\\).",
+    "solution": "Let us list the partial sums \\(S_n = 2^n\\) for \\(n=1\\) to \\(5\\):\n- \\(S_n = [2, 4, 8, 16, 32]\\)\nNow calculate the terms \\(T_n = S_n - S_{n-1}\\):\n- \\(T_1 = S_1 = 2\\)\n- \\(T_2 = S_2 - S_1 = 4 - 2 = 2\\)\n- \\(T_3 = S_3 - S_2 = 8 - 4 = 4\\)\n- \\(T_4 = S_4 - S_3 = 16 - 8 = 8\\)\n- \\(T_5 = S_5 - S_4 = 32 - 16 = 16\\)\nFor \\(n \\ge 2\\), \\(T_n\\) matches the formula \\(2^{n-1}\\).",
     "t": "Adding up the terms of a sequence",
     "solutionSteps": [
       {
@@ -2240,7 +2240,7 @@ export const Y12A_CH1E_QUESTIONS = [
     "options": [],
     "answer": "In calculus, the derivative of \\(e^x\\) is \\(e^x\\), meaning the rate of change is proportional to the function value itself. Analogously, in discrete sequences, the difference sequence \\(T_n = S_n - S_{n-1}\\) (the discrete rate of change) of the exponential sum \\(S_n = 2^n\\) is \\(T_n = 2^{n-1}\\), which is also an exponential function of the same base.",
     "hint": "Think about how rate of change relates to function values for exponential functions.",
-    "solution": "The analogy is between continuous rates of change (derivatives) and discrete rates of change (differences):\\n- In continuous calculus, the derivative of the exponential function \\(e^x\\) is \\(e^x\\).\\n- In discrete mathematics, the difference of the exponential sum \\(S_n = 2^n\\) is the term \\(T_n = 2^{n-1} = \\frac{1}{2} \\cdot 2^n\\).\\n- Thus, the difference of an exponential sequence is proportional to the sequence itself, which is the discrete equivalent of \\(\\frac{d}{dx}(e^x) = e^x\\).",
+    "solution": "The analogy is between continuous rates of change (derivatives) and discrete rates of change (differences):\n- In continuous calculus, the derivative of the exponential function \\(e^x\\) is \\(e^x\\).\n- In discrete mathematics, the difference of the exponential sum \\(S_n = 2^n\\) is the term \\(T_n = 2^{n-1} = \\frac{1}{2} \\cdot 2^n\\).\n- Thus, the difference of an exponential sequence is proportional to the sequence itself, which is the discrete equivalent of \\(\\frac{d}{dx}(e^x) = e^x\\).",
     "t": "Adding up the terms of a sequence",
     "solutionSteps": [
       {
@@ -2262,9 +2262,9 @@ export const Y12A_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "Prove the algebraic identity:\n\\[n^3 - (n - 1)^3 = 3n^2 - 3n + 1\\]",
     "options": [],
-    "answer": "Expanding the term \\((n-1)^3 = n^3 - 3n^2 + 3n - 1\\).\\nSubstituting this back into the left-hand side gives:\\n\\(n^3 - (n^3 - 3n^2 + 3n - 1) = 3n^2 - 3n + 1\\).\\nThus, LHS = RHS, completing the proof.",
+    "answer": "Expanding the term \\((n-1)^3 = n^3 - 3n^2 + 3n - 1\\).\nSubstituting this back into the left-hand side gives:\n\\(n^3 - (n^3 - 3n^2 + 3n - 1) = 3n^2 - 3n + 1\\).\nThus, LHS = RHS, completing the proof.",
     "hint": "Expand \\((n-1)^3\\) using the binomial expansion and simplify.",
-    "solution": "We start with the left-hand side (LHS) of the identity: \\(n^3 - (n-1)^3\\).\\n- Expand the cubic term using binomial expansion: \\((n - 1)^3 = n^3 - 3n^2 + 3n - 1\\).\\n- Substitute this expansion back: \\(n^3 - (n^3 - 3n^2 + 3n - 1)\\).\\n- Distribute the negative sign: \\(n^3 - n^3 + 3n^2 - 3n + 1\\).\\n- Simplify the expression: \\(3n^2 - 3n + 1\\), which equals the right-hand side (RHS).",
+    "solution": "We start with the left-hand side (LHS) of the identity: \\(n^3 - (n-1)^3\\).\n- Expand the cubic term using binomial expansion: \\((n - 1)^3 = n^3 - 3n^2 + 3n - 1\\).\n- Substitute this expansion back: \\(n^3 - (n^3 - 3n^2 + 3n - 1)\\).\n- Distribute the negative sign: \\(n^3 - n^3 + 3n^2 - 3n + 1\\).\n- Simplify the expression: \\(3n^2 - 3n + 1\\), which equals the right-hand side (RHS).",
     "t": "Adding up the terms of a sequence",
     "solutionSteps": [
       {
@@ -2390,9 +2390,9 @@ export const Y12A_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "The terms of a sequence are \\(T_n = 3n^2 - 3n + 1\\), and \\(U_n = 6n - 6\\) (for \\(n \\ge 2\\)). Confirm your formulas by writing out calculations in table form for \\(n = 1\\) to \\(4\\).",
     "options": [],
-    "answer": "By calculating values:\\n- \\(T_1 = 1 \\Rightarrow U_1 = 1\\)\\n- \\(T_2 = 7 \\Rightarrow U_2 = 7 - 1 = 6 = 6(2) - 6\\)\\n- \\(T_3 = 19 \\Rightarrow U_3 = 19 - 7 = 12 = 6(3) - 6\\)\\n- \\(T_4 = 37 \\Rightarrow U_4 = 37 - 19 = 18 = 6(4) - 6\\)\\nThe sequence \\(U_n\\) is \\([1, 6, 12, 18]\\), which confirms the formula.",
+    "answer": "By calculating values:\n- \\(T_1 = 1 \\Rightarrow U_1 = 1\\)\n- \\(T_2 = 7 \\Rightarrow U_2 = 7 - 1 = 6 = 6(2) - 6\\)\n- \\(T_3 = 19 \\Rightarrow U_3 = 19 - 7 = 12 = 6(3) - 6\\)\n- \\(T_4 = 37 \\Rightarrow U_4 = 37 - 19 = 18 = 6(4) - 6\\)\nThe sequence \\(U_n\\) is \\([1, 6, 12, 18]\\), which confirms the formula.",
     "hint": "Evaluate \\(T_n\\) for \\(n=1, 2, 3, 4\\) and compute successive differences \\(U_n = T_n - T_{n-1}\\).",
-    "solution": "Let us list \\(T_n = 3n^2 - 3n + 1\\) for \\(n=1\\) to \\(4\\):\\n- \\(T_n = [1, 7, 19, 37]\\)\\nNow calculate the terms \\(U_n = T_n - T_{n-1}\\):\\n- \\(U_1 = T_1 = 1\\)\\n- \\(U_2 = T_2 - T_1 = 7 - 1 = 6\\)\\n- \\(U_3 = T_3 - T_2 = 19 - 7 = 12\\)\\n- \\(U_4 = T_4 - T_3 = 37 - 19 = 18\\)\\nFor \\(n \\ge 2\\), this matches the formula \\(U_n = 6n - 6\\).",
+    "solution": "Let us list \\(T_n = 3n^2 - 3n + 1\\) for \\(n=1\\) to \\(4\\):\n- \\(T_n = [1, 7, 19, 37]\\)\nNow calculate the terms \\(U_n = T_n - T_{n-1}\\):\n- \\(U_1 = T_1 = 1\\)\n- \\(U_2 = T_2 - T_1 = 7 - 1 = 6\\)\n- \\(U_3 = T_3 - T_2 = 19 - 7 = 12\\)\n- \\(U_4 = T_4 - T_3 = 37 - 19 = 18\\)\nFor \\(n \\ge 2\\), this matches the formula \\(U_n = 6n - 6\\).",
     "t": "Adding up the terms of a sequence",
     "solutionSteps": [
       {
@@ -2414,9 +2414,9 @@ export const Y12A_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "question": "The partial sums of a sequence \\(T_n\\) are given by \\(S_n = n^3\\), and the differences are \\(T_n = 3n^2 - 3n + 1\\). Compare this to the differentiation of powers of \\(x\\) from calculus. What is the analogy to these results?",
     "options": [],
-    "answer": "In continuous calculus, taking the derivative reduces the power of the polynomial by 1: \\(\\frac{d}{dx}(x^3) = 3x^2\\) and \\(\\frac{d}{dx}(3x^2) = 6x\\).\\nAnalogously, in discrete mathematics, taking successive differences (the discrete rate of change) reduces the polynomial degree by 1:\\n- The first difference of \\(S_n = n^3\\) is quadratic \\(T_n = 3n^2 - 3n + 1\\).\\n- The second difference (difference of \\(T_n\\)) is linear \\(U_n = 6n - 6\\).\\nThis mirrors the continuous derivatives.",
+    "answer": "In continuous calculus, taking the derivative reduces the power of the polynomial by 1: \\(\\frac{d}{dx}(x^3) = 3x^2\\) and \\(\\frac{d}{dx}(3x^2) = 6x\\).\nAnalogously, in discrete mathematics, taking successive differences (the discrete rate of change) reduces the polynomial degree by 1:\n- The first difference of \\(S_n = n^3\\) is quadratic \\(T_n = 3n^2 - 3n + 1\\).\n- The second difference (difference of \\(T_n\\)) is linear \\(U_n = 6n - 6\\).\nThis mirrors the continuous derivatives.",
     "hint": "Consider how taking successive derivatives of \\(x^3\\) reduces the power step-by-step.",
-    "solution": "The analogy compares continuous derivatives to discrete differences:\\n- Continuous: \\(\\frac{d}{dx}(x^3) = 3x^2\\), and the second derivative is \\(\\frac{d^2}{dx^2}(x^3) = 6x\\).\\n- Discrete: The first difference of \\(S_n = n^3\\) is \\(T_n = 3n^2 - 3n + 1\\) (quadratic), and the second difference is \\(U_n = 6n - 6\\) (linear).\\n- In both systems, taking the rate of change reduces the degree of the polynomial by 1.",
+    "solution": "The analogy compares continuous derivatives to discrete differences:\n- Continuous: \\(\\frac{d}{dx}(x^3) = 3x^2\\), and the second derivative is \\(\\frac{d^2}{dx^2}(x^3) = 6x\\).\n- Discrete: The first difference of \\(S_n = n^3\\) is \\(T_n = 3n^2 - 3n + 1\\) (quadratic), and the second difference is \\(U_n = 6n - 6\\) (linear).\n- In both systems, taking the rate of change reduces the degree of the polynomial by 1.",
     "t": "Adding up the terms of a sequence",
     "solutionSteps": [
       {
@@ -6234,7 +6234,7 @@ export const Y12A_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The \\(1\\)-st, \\(3\\)-rd, and \\(9\\)-th terms of an AP form the first three terms of a GP. If the first term of the AP is \\(3\\), find the common ratio \\(r\\) of the GP (assume common difference \\(d \\ne 0\\)).",
+    "question": "The \\(1\\)-st, \\(3\\)-rd, and \\(9\\)-th terms of an AP form the first three terms of a GP. If the first term of the AP is \\(3\\), find the common ratio \\(r\\) of the GP (assume common difference \\(d \ne 0\\)).",
     "options": [
       {
         "text": "\\(2\\)",
@@ -6267,7 +6267,7 @@ export const Y12A_CH1E_QUESTIONS = [
         "workingOut": "\\(3(3+8d) = (3+2d)^2\\)"
       },
       {
-        "explanation": "Expand and solve for \\(d\\) (where \\(d \\ne 0\\)).",
+        "explanation": "Expand and solve for \\(d\\) (where \\(d \ne 0\\)).",
         "workingOut": "\\(9 + 24d = 9 + 12d + 4d^2 \\Rightarrow 4d^2 - 12d = 0 \\Rightarrow d = 3\\)"
       },
       {

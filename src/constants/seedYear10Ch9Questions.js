@@ -2432,7 +2432,7 @@ export const Y10_CH9_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Evaluate: \\(7 + x^0\\), where \\(x \\neq 0\\).",
+    "question": "Evaluate: \\(7 + x^0\\), where \\(x \neq 0\\).",
     "opts": [
       "\\(-8\\)",
       "\\(7\\)",
@@ -2445,7 +2445,7 @@ export const Y10_CH9_QUESTIONS = [
     "solution": "The correct answer is \\(8\\).",
     "solutionSteps": [
       {
-        "explanation": "Any non-zero number to the power 0 equals 1: \\(x^0 = 1\\) when \\(x \\neq 0\\).",
+        "explanation": "Any non-zero number to the power 0 equals 1: \\(x^0 = 1\\) when \\(x \neq 0\\).",
         "workingOut": "\\(x^0 = 1\\)",
         "graphData": null
       },
@@ -2477,7 +2477,7 @@ export const Y10_CH9_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Evaluate: \\(\\frac{6x^0}{(7y)^0}\\), where \\(x, y \\neq 0\\).",
+    "question": "Evaluate: \\(\\frac{6x^0}{(7y)^0}\\), where \\(x, y \neq 0\\).",
     "opts": [
       "\\(-6\\)",
       "\\(5\\)",
@@ -2522,7 +2522,7 @@ export const Y10_CH9_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Evaluate: \\((3 + x)^0\\), where \\(x \\neq -3\\).",
+    "question": "Evaluate: \\((3 + x)^0\\), where \\(x \neq -3\\).",
     "answer": "1",
     "hint": "",
     "solution": "The correct answer is 1.",
@@ -2533,8 +2533,8 @@ export const Y10_CH9_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "The condition \\(x \\neq -3\\) ensures the base is not zero, so the law applies.\n",
-        "workingOut": "\\(3 + x \\neq 0\\)",
+        "explanation": "The condition \\(x \neq -3\\) ensures the base is not zero, so the law applies.\n",
+        "workingOut": "\\(3 + x \neq 0\\)",
         "graphData": null
       },
       {

@@ -1,0 +1,198 @@
+[
+  {
+    "id": "y8-16a-q1",
+    "question": "One letter is chosen at random from the word HOPE. What is the probability that it is E?"
+  },
+  {
+    "id": "y8-16a-q2",
+    "question": "What is the probability of choosing a prime number from the numbers 11, 12, 13, 14, 15, 16, 17, 18?"
+  },
+  {
+    "id": "y8-16a-q3",
+    "question": "What is the probability of randomly picking the most expensive laptop from a range of eight new and differently priced laptops in a store?"
+  },
+  {
+    "id": "y8-16a-q4",
+    "question": "What is the probability of choosing an integer that is exactly divisible by 3 from the set \\({4, 5, 6, 7, 8, 9, 10, 11, 12, 13}\\)?"
+  },
+  {
+    "id": "y8-16a-q5",
+    "question": "In a raffle, 250 tickets are sold. If you have bought one ticket, what is the probability that you will win first prize?"
+  },
+  {
+    "id": "y8-16a-q6",
+    "question": "One card is chosen at random from a pack of 52 ordinary playing cards. What is the probability that it is the Queen of Spades?"
+  },
+  {
+    "id": "y8-16a-q7",
+    "question": "A number is chosen from the first 25 positive whole numbers. What is the probability that it is exactly divisible by both 2 and 5?"
+  },
+  {
+    "id": "y8-16a-q8a",
+    "question": "One card is drawn at random from a pack of 52 playing cards. Find the probability that it is:\n\na) a King?\nb) a black card?\nc) a Club?\nd) a face card? (A face card is a King, Queen or Jack.)\na) What is the probability that it is a King?"
+  },
+  {
+    "id": "y8-16a-q8b",
+    "question": "One card is drawn at random from a pack of 52 playing cards. Find the probability that it is:\n\na) a King?\nb) a black card?\nc) a Club?\nd) a face card? (A face card is a King, Queen or Jack.)\nb) What is the probability that it is a black card?"
+  },
+  {
+    "id": "y8-16a-q8c",
+    "question": "One card is drawn at random from a pack of 52 playing cards. Find the probability that it is:\n\na) a King?\nb) a black card?\nc) a Club?\nd) a face card? (A face card is a King, Queen or Jack.)\nc) What is the probability that it is a Club?"
+  },
+  {
+    "id": "y8-16a-q8d",
+    "question": "One card is drawn at random from a pack of 52 playing cards. Find the probability that it is:\n\na) a King?\nb) a black card?\nc) a Club?\nd) a face card? (A face card is a King, Queen or Jack.)\nd) What is the probability that it is a face card?"
+  },
+  {
+    "id": "y8-16a-q9",
+    "question": "A book of 160 pages has a picture on 24 of its pages. If one page is chosen at random, what is the probability that it has a picture on it?"
+  },
+  {
+    "id": "y8-16a-q10a",
+    "question": "One marble is picked at random from a bag containing 14 blue marbles, 6 green marbles and 8 purple marbles. Find the probability that the marble removed is:\n\na) blue?\nb) green?\nc) not blue?\na) What is the probability that the marble is blue?"
+  },
+  {
+    "id": "y8-16a-q10b",
+    "question": "One marble is picked at random from a bag containing 14 blue marbles, 6 green marbles and 8 purple marbles. Find the probability that the marble removed is:\n\na) blue?\nb) green?\nc) not blue?\nb) What is the probability that the marble is green?"
+  },
+  {
+    "id": "y8-16a-q10c",
+    "question": "One marble is picked at random from a bag containing 14 blue marbles, 6 green marbles and 8 purple marbles. Find the probability that the marble removed is:\n\na) blue?\nb) green?\nc) not blue?\nc) What is the probability that the marble is not blue?"
+  },
+  {
+    "id": "y8-16a-q11",
+    "question": "If you bought 8 raffle tickets and a total of 360 were sold, what would be the probability that you won first prize?"
+  },
+  {
+    "id": "y8-16a-q12a",
+    "question": "The numbers on a spinner wheel go from 0 to 24. The spinner is spun. What is the probability that when it stops it will be pointing to:\n\na) an even number?\nb) an odd number?\nc) a number less than 8, excluding zero?\na) What is the probability that it points to an even number?"
+  },
+  {
+    "id": "y8-16a-q12b",
+    "question": "The numbers on a spinner wheel go from 0 to 24. The spinner is spun. What is the probability that when it stops it will be pointing to:\n\na) an even number?\nb) an odd number?\nc) a number less than 8, excluding zero?\nb) What is the probability that it points to an odd number?"
+  },
+  {
+    "id": "y8-16a-q12c",
+    "question": "The numbers on a spinner wheel go from 0 to 24. The spinner is spun. What is the probability that when it stops it will be pointing to:\n\na) an even number?\nb) an odd number?\nc) a number less than 8, excluding zero?\nc) What is the probability that it points to a number less than 8, excluding zero?"
+  },
+  {
+    "id": "y8-16a-q13",
+    "question": "A number is chosen at random from the first 16 positive whole numbers. What is the probability that it is not a prime number?"
+  },
+  {
+    "id": "y8-16a-q14",
+    "question": "A card is drawn at random from a pack of 52 playing cards. What is the probability that it is not a face card (Jack, Queen or King)?"
+  },
+  {
+    "id": "y8-16a-q15",
+    "question": "One letter is chosen at random from the 26 letters of the English alphabet. What is the probability that it is not one of the letters in the word SPIN?"
+  },
+  {
+    "id": "y8-16a-q16",
+    "question": "A box of 80 coloured pens contains a mixture of colours. Only 16 of the pens are blue. If one pen is chosen at random, what is the probability that it is not blue?"
+  },
+  {
+    "id": "y8-16a-q17",
+    "question": "A number is chosen at random from the first 15 positive whole numbers. What is the probability that it is not exactly divisible by 5?"
+  },
+  {
+    "id": "y8-16a-q18",
+    "question": "One letter is chosen at random from the word STUDENT. What is the probability that it is not a vowel?"
+  },
+  {
+    "id": "y8-16a-q19",
+    "question": "In a raffle, 300 tickets are sold. If you bought 15 tickets, what is the probability that you will not win first prize?"
+  },
+  {
+    "id": "y8-16a-q20",
+    "question": "If you roll an ordinary six-sided die, what is the probability that you will not get a score of 3 or more?"
+  },
+  {
+    "id": "y8-16a-q21",
+    "question": "There are 150 envelopes in a prize draw. Six envelopes contain a \\(10 voucher, and the rest contain a thank-you note. What is the probability that you will not draw an envelope containing a \\)10 voucher?"
+  },
+  {
+    "id": "y8-16a-q22",
+    "question": "When a standard deck of 52 playing cards is cut, what is the probability that the card showing is not a number card from 2 to 10 (inclusive)?"
+  },
+  {
+    "id": "y8-16a-q23a",
+    "question": "A letter is chosen at random from the letters of the word PERCENTAGE. Find the probability that the letter is:\n\na) P?\nb) E?\nc) a vowel?\nd) not E?\na) What is the probability that it is P?"
+  },
+  {
+    "id": "y8-16a-q23b",
+    "question": "A letter is chosen at random from the letters of the word PERCENTAGE. Find the probability that the letter is:\n\na) P?\nb) E?\nc) a vowel?\nd) not E?\nb) What is the probability that it is E?"
+  },
+  {
+    "id": "y8-16a-q23c",
+    "question": "A letter is chosen at random from the letters of the word PERCENTAGE. Find the probability that the letter is:\n\na) P?\nb) E?\nc) a vowel?\nd) not E?\nc) What is the probability that it is a vowel?"
+  },
+  {
+    "id": "y8-16a-q23d",
+    "question": "A letter is chosen at random from the letters of the word PERCENTAGE. Find the probability that the letter is:\n\na) P?\nb) E?\nc) a vowel?\nd) not E?\nd) What is the probability that it is not E?"
+  },
+  {
+    "id": "y8-16a-q24a",
+    "question": "A card is drawn at random from a pack of playing cards. What is the probability that it is:\n\na) a Queen?\nb) a Diamond?\nc) not a Heart?\nd) not a 9 or a 10?\na) What is the probability that it is a Queen?"
+  },
+  {
+    "id": "y8-16a-q24b",
+    "question": "A card is drawn at random from a pack of playing cards. What is the probability that it is:\n\na) a Queen?\nb) a Diamond?\nc) not a Heart?\nd) not a 9 or a 10?\nb) What is the probability that it is a Diamond?"
+  },
+  {
+    "id": "y8-16a-q24c",
+    "question": "A card is drawn at random from a pack of playing cards. What is the probability that it is:\n\na) a Queen?\nb) a Diamond?\nc) not a Heart?\nd) not a 9 or a 10?\nc) What is the probability that it is not a Heart?"
+  },
+  {
+    "id": "y8-16a-q24d",
+    "question": "A card is drawn at random from a pack of playing cards. What is the probability that it is:\n\na) a Queen?\nb) a Diamond?\nc) not a Heart?\nd) not a 9 or a 10?\nd) What is the probability that it is not a 9 or a 10?"
+  },
+  {
+    "id": "y8-16a-q25a",
+    "question": "A bag contains 12 green marbles and one each of red, yellow, blue, orange, purple and white marbles. What is the probability that one marble selected at random is:\n\na) green?\nb) not green?\nc) white?\nd) neither green nor red?\na) What is the probability that the marble is green?"
+  },
+  {
+    "id": "y8-16a-q25b",
+    "question": "A bag contains 12 green marbles and one each of red, yellow, blue, orange, purple and white marbles. What is the probability that one marble selected at random is:\n\na) green?\nb) not green?\nc) white?\nd) neither green nor red?\nb) What is the probability that the marble is not green?"
+  },
+  {
+    "id": "y8-16a-q25c",
+    "question": "A bag contains 12 green marbles and one each of red, yellow, blue, orange, purple and white marbles. What is the probability that one marble selected at random is:\n\na) green?\nb) not green?\nc) white?\nd) neither green nor red?\nc) What is the probability that the marble is white?"
+  },
+  {
+    "id": "y8-16a-q25d",
+    "question": "A bag contains 12 green marbles and one each of red, yellow, blue, orange, purple and white marbles. What is the probability that one marble selected at random is:\n\na) green?\nb) not green?\nc) white?\nd) neither green nor red?\nd) What is the probability that the marble is neither green nor red?"
+  },
+  {
+    "id": "y8-16a-q26a",
+    "question": "There are 80 fruits in a basket. Of the fruits, 32 are apples, 36 are bananas and the rest are oranges. What is the probability that the first fruit chosen at random is:\n\na) a banana?\nb) not an apple?\nc) an orange?\nd) a pear?\na) What is the probability that the fruit is a banana?"
+  },
+  {
+    "id": "y8-16a-q26b",
+    "question": "There are 80 fruits in a basket. Of the fruits, 32 are apples, 36 are bananas and the rest are oranges. What is the probability that the first fruit chosen at random is:\n\na) a banana?\nb) not an apple?\nc) an orange?\nd) a pear?\nb) What is the probability that the fruit is not an apple?"
+  },
+  {
+    "id": "y8-16a-q26c",
+    "question": "There are 80 fruits in a basket. Of the fruits, 32 are apples, 36 are bananas and the rest are oranges. What is the probability that the first fruit chosen at random is:\n\na) a banana?\nb) not an apple?\nc) an orange?\nd) a pear?\nc) What is the probability that the fruit is an orange?"
+  },
+  {
+    "id": "y8-16a-q26d",
+    "question": "There are 80 fruits in a basket. Of the fruits, 32 are apples, 36 are bananas and the rest are oranges. What is the probability that the first fruit chosen at random is:\n\na) a banana?\nb) not an apple?\nc) an orange?\nd) a pear?\nd) What is the probability that the fruit is a pear?"
+  },
+  {
+    "id": "y8-16a-q27a",
+    "question": "A whole number is chosen at random from the first 50 positive whole numbers. What is the probability that:\n\na) it is divisible by 5?\nb) it is divisible by 5 and 3?\nc) it is divisible by 5 but not by 3?\nd) it is even and divisible by 5?\na) What is the probability that it is divisible by 5?"
+  },
+  {
+    "id": "y8-16a-q27b",
+    "question": "A whole number is chosen at random from the first 50 positive whole numbers. What is the probability that:\n\na) it is divisible by 5?\nb) it is divisible by 5 and 3?\nc) it is divisible by 5 but not by 3?\nd) it is even and divisible by 5?\nb) What is the probability that it is divisible by 5 and 3?"
+  },
+  {
+    "id": "y8-16a-q27c",
+    "question": "A whole number is chosen at random from the first 50 positive whole numbers. What is the probability that:\n\na) it is divisible by 5?\nb) it is divisible by 5 and 3?\nc) it is divisible by 5 but not by 3?\nd) it is even and divisible by 5?\nc) What is the probability that it is divisible by 5 but not by 3?"
+  },
+  {
+    "id": "y8-16a-q27d",
+    "question": "A whole number is chosen at random from the first 50 positive whole numbers. What is the probability that:\n\na) it is divisible by 5?\nb) it is divisible by 5 and 3?\nc) it is divisible by 5 but not by 3?\nd) it is even and divisible by 5?\nd) What is the probability that it is even and divisible by 5?"
+  }
+]

@@ -2635,7 +2635,7 @@ export const Y12A_CH5G_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Final answer: \\(\\dfrac{2(\\ln x - 1)}{(\\ln x)^{2}}\\). Domain: \\(x > 0\\), \\(x \\neq 1\\) (so \\(\\ln x \\neq 0\\)).",
+        "explanation": "Final answer: \\(\\dfrac{2(\\ln x - 1)}{(\\ln x)^{2}}\\). Domain: \\(x > 0\\), \\(x \neq 1\\) (so \\(\\ln x \neq 0\\)).",
         "workingOut": "\\(\\dfrac{2(\\ln x - 1)}{(\\ln x)^{2}}\\)",
         "graphData": null
       }
@@ -2680,7 +2680,7 @@ export const Y12A_CH5G_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Final answer: \\(\\dfrac{x^{2}(3\\ln x - 1)}{(\\ln x)^{2}}\\). Domain: \\(x > 0\\), \\(x \\neq 1\\). Why this step? It isolates one clear rule so the next algebra stays clean. A common slip is a sign error or forgetting a chain-rule factor — re-check before continuing.",
+        "explanation": "Final answer: \\(\\dfrac{x^{2}(3\\ln x - 1)}{(\\ln x)^{2}}\\). Domain: \\(x > 0\\), \\(x \neq 1\\). Why this step? It isolates one clear rule so the next algebra stays clean. A common slip is a sign error or forgetting a chain-rule factor — re-check before continuing.",
         "workingOut": "\\(\\dfrac{x^{2}(3\\ln x - 1)}{(\\ln x)^{2}}\\)",
         "graphData": null
       }
@@ -2780,7 +2780,7 @@ export const Y12A_CH5G_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Final simplified answer: \\(\\dfrac{e^{2x}(2x\\ln x - 1)}{x(\\ln x)^{2}}\\). Domain: \\(x > 0\\), \\(x \\neq 1\\).",
+        "explanation": "Final simplified answer: \\(\\dfrac{e^{2x}(2x\\ln x - 1)}{x(\\ln x)^{2}}\\). Domain: \\(x > 0\\), \\(x \neq 1\\).",
         "workingOut": "\\(\\dfrac{e^{2x}(2x\\ln x - 1)}{x(\\ln x)^{2}}\\)",
         "graphData": null
       }
@@ -3758,9 +3758,9 @@ export const Y12A_CH5G_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 180,
     "question": "Consider the function \\(y = \\dfrac{x}{2\\ln x}\\).\nHence show that \\(y = \\dfrac{x}{2\\ln x}\\) is a solution of the differential equation\n\\(\\dfrac{dy}{dx} = \\dfrac{y}{x} - 2\\left(\\dfrac{y}{x}\\right)^{2}\\).",
-    "answer": "From part (a), \\(\\dfrac{dy}{dx} = \\dfrac{\\ln x - 1}{2(\\ln x)^{2}}\\).\nGiven \\(y = \\dfrac{x}{2\\ln x}\\), we have \\(\\dfrac{y}{x} = \\dfrac{1}{2\\ln x}\\).\nThen \\(\\left(\\dfrac{y}{x}\\right)^{2} = \\dfrac{1}{4(\\ln x)^{2}}\\), so\n\\(2\\left(\\dfrac{y}{x}\\right)^{2} = \\dfrac{1}{2(\\ln x)^{2}}\\).\nThe right-hand side of the DE is\n\\(\\dfrac{y}{x} - 2\\left(\\dfrac{y}{x}\\right)^{2} = \\dfrac{1}{2\\ln x} - \\dfrac{1}{2(\\ln x)^{2}} = \\dfrac{\\ln x - 1}{2(\\ln x)^{2}}\\).\nThis equals \\(\\dfrac{dy}{dx}\\).\nTherefore \\(y = \\dfrac{x}{2\\ln x}\\) satisfies \\(\\dfrac{dy}{dx} = \\dfrac{y}{x} - 2\\left(\\dfrac{y}{x}\\right)^{2}\\) (for \\(x > 0\\), \\(x \\neq 1\\)).",
+    "answer": "From part (a), \\(\\dfrac{dy}{dx} = \\dfrac{\\ln x - 1}{2(\\ln x)^{2}}\\).\nGiven \\(y = \\dfrac{x}{2\\ln x}\\), we have \\(\\dfrac{y}{x} = \\dfrac{1}{2\\ln x}\\).\nThen \\(\\left(\\dfrac{y}{x}\\right)^{2} = \\dfrac{1}{4(\\ln x)^{2}}\\), so\n\\(2\\left(\\dfrac{y}{x}\\right)^{2} = \\dfrac{1}{2(\\ln x)^{2}}\\).\nThe right-hand side of the DE is\n\\(\\dfrac{y}{x} - 2\\left(\\dfrac{y}{x}\\right)^{2} = \\dfrac{1}{2\\ln x} - \\dfrac{1}{2(\\ln x)^{2}} = \\dfrac{\\ln x - 1}{2(\\ln x)^{2}}\\).\nThis equals \\(\\dfrac{dy}{dx}\\).\nTherefore \\(y = \\dfrac{x}{2\\ln x}\\) satisfies \\(\\dfrac{dy}{dx} = \\dfrac{y}{x} - 2\\left(\\dfrac{y}{x}\\right)^{2}\\) (for \\(x > 0\\), \\(x \neq 1\\)).",
     "hint": "From part (a), \\(\\dfrac{dy}{dx} = \\dfrac{\\ln x - 1}{2(\\ln x)^{2}}\\). Express \\(\\dfrac{y}{x}\\) in terms of \\(\\ln x\\) and expand the right-hand side.",
-    "solution": "From part (a), \\(\\dfrac{dy}{dx} = \\dfrac{\\ln x - 1}{2(\\ln x)^{2}}\\).\nGiven \\(y = \\dfrac{x}{2\\ln x}\\), we have \\(\\dfrac{y}{x} = \\dfrac{1}{2\\ln x}\\).\nThen \\(\\left(\\dfrac{y}{x}\\right)^{2} = \\dfrac{1}{4(\\ln x)^{2}}\\), so\n\\(2\\left(\\dfrac{y}{x}\\right)^{2} = \\dfrac{1}{2(\\ln x)^{2}}\\).\nThe right-hand side of the DE is\n\\(\\dfrac{y}{x} - 2\\left(\\dfrac{y}{x}\\right)^{2} = \\dfrac{1}{2\\ln x} - \\dfrac{1}{2(\\ln x)^{2}} = \\dfrac{\\ln x - 1}{2(\\ln x)^{2}}\\).\nThis equals \\(\\dfrac{dy}{dx}\\).\nTherefore \\(y = \\dfrac{x}{2\\ln x}\\) satisfies \\(\\dfrac{dy}{dx} = \\dfrac{y}{x} - 2\\left(\\dfrac{y}{x}\\right)^{2}\\) (for \\(x > 0\\), \\(x \\neq 1\\)).",
+    "solution": "From part (a), \\(\\dfrac{dy}{dx} = \\dfrac{\\ln x - 1}{2(\\ln x)^{2}}\\).\nGiven \\(y = \\dfrac{x}{2\\ln x}\\), we have \\(\\dfrac{y}{x} = \\dfrac{1}{2\\ln x}\\).\nThen \\(\\left(\\dfrac{y}{x}\\right)^{2} = \\dfrac{1}{4(\\ln x)^{2}}\\), so\n\\(2\\left(\\dfrac{y}{x}\\right)^{2} = \\dfrac{1}{2(\\ln x)^{2}}\\).\nThe right-hand side of the DE is\n\\(\\dfrac{y}{x} - 2\\left(\\dfrac{y}{x}\\right)^{2} = \\dfrac{1}{2\\ln x} - \\dfrac{1}{2(\\ln x)^{2}} = \\dfrac{\\ln x - 1}{2(\\ln x)^{2}}\\).\nThis equals \\(\\dfrac{dy}{dx}\\).\nTherefore \\(y = \\dfrac{x}{2\\ln x}\\) satisfies \\(\\dfrac{dy}{dx} = \\dfrac{y}{x} - 2\\left(\\dfrac{y}{x}\\right)^{2}\\) (for \\(x > 0\\), \\(x \neq 1\\)).",
     "solutionSteps": [
       {
         "explanation": "Start from the derivative found in part (a). Why use part (a)? The “hence” means we may quote that result rather than re-differentiating. A common slip is re-deriving from scratch and introducing algebra errors.",
@@ -3778,7 +3778,7 @@ export const Y12A_CH5G_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Compare with the left-hand side. The two sides are identical, so the DE holds. State the domain: \\(x > 0\\) and \\(\\ln x \\neq 0\\) (i.e. \\(x \\neq 1\\)).",
+        "explanation": "Compare with the left-hand side. The two sides are identical, so the DE holds. State the domain: \\(x > 0\\) and \\(\\ln x \neq 0\\) (i.e. \\(x \neq 1\\)).",
         "workingOut": "\\(\\dfrac{dy}{dx} = \\dfrac{y}{x} - 2\\left(\\dfrac{y}{x}\\right)^{2}\\)",
         "graphData": null
       },
@@ -4170,13 +4170,13 @@ export const Y12A_CH5G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "Complete the piecewise definition of \\(\\ln|x|\\) for \\(x \\neq 0\\).\n\nWhen \\(x > 0\\), \\(\\ln|x| =\\) ____\n\nWhen \\(x < 0\\), \\(\\ln|x| =\\) ____\n\nWhich option is correct?",
+    "question": "Complete the piecewise definition of \\(\\ln|x|\\) for \\(x \neq 0\\).\n\nWhen \\(x > 0\\), \\(\\ln|x| =\\) ____\n\nWhen \\(x < 0\\), \\(\\ln|x| =\\) ____\n\nWhich option is correct?",
     "a": 0,
     "answer": "0",
     "opts": [
       "\\(\\ln x\\)  and  \\(\\ln(-x)\\)",
       "\\(\\ln x\\)  and  \\(-\\ln x\\)",
-      "\\(\\ln x\\)  for all  \\(x \\neq 0\\)",
+      "\\(\\ln x\\)  for all  \\(x \neq 0\\)",
       "\\(|\\ln x|\\)  and  \\(|\\ln x|\\)"
     ],
     "hint": "For \\(x > 0\\), \\(|x| = x\\). For \\(x < 0\\), \\(|x| = -x\\) (note \\(-x > 0\\)). Then take natural logs.",
@@ -4261,10 +4261,10 @@ export const Y12A_CH5G_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "hard",
     "timeLimit": 180,
-    "question": "Using the piecewise definition\n• \\(\\ln|x| = \\ln x\\) for \\(x > 0\\)\n• \\(\\ln|x| = \\ln(-x)\\) for \\(x < 0\\)\n\nshow, by differentiating each branch separately, that\n\\(\\dfrac{d}{dx}\\ln|x| = \\dfrac{1}{x}\\) for all \\(x \\neq 0\\).",
-    "answer": "Case 1 — \\(x > 0\\):\n\\(\\ln|x| = \\ln x\\), so \\(\\dfrac{d}{dx}\\ln|x| = \\dfrac{d}{dx}\\ln x = \\dfrac{1}{x}\\).\n\nCase 2 — \\(x < 0\\):\n\\(\\ln|x| = \\ln(-x)\\). Let \\(u = -x\\), so \\(\\dfrac{du}{dx} = -1\\).\nThen \\(\\dfrac{d}{dx}\\ln(-x) = \\dfrac{1}{u}\\cdot\\dfrac{du}{dx} = \\dfrac{1}{-x}\\cdot(-1) = \\dfrac{1}{x}\\).\n\nIn both cases, \\(\\dfrac{d}{dx}\\ln|x| = \\dfrac{1}{x}\\).\nAt \\(x = 0\\) the function is undefined, so the result is stated for all \\(x \\neq 0\\).\nNote: the derivative is \\(\\dfrac{1}{x}\\), not \\(\\dfrac{1}{|x|}\\).",
+    "question": "Using the piecewise definition\n• \\(\\ln|x| = \\ln x\\) for \\(x > 0\\)\n• \\(\\ln|x| = \\ln(-x)\\) for \\(x < 0\\)\n\nshow, by differentiating each branch separately, that\n\\(\\dfrac{d}{dx}\\ln|x| = \\dfrac{1}{x}\\) for all \\(x \neq 0\\).",
+    "answer": "Case 1 — \\(x > 0\\):\n\\(\\ln|x| = \\ln x\\), so \\(\\dfrac{d}{dx}\\ln|x| = \\dfrac{d}{dx}\\ln x = \\dfrac{1}{x}\\).\n\nCase 2 — \\(x < 0\\):\n\\(\\ln|x| = \\ln(-x)\\). Let \\(u = -x\\), so \\(\\dfrac{du}{dx} = -1\\).\nThen \\(\\dfrac{d}{dx}\\ln(-x) = \\dfrac{1}{u}\\cdot\\dfrac{du}{dx} = \\dfrac{1}{-x}\\cdot(-1) = \\dfrac{1}{x}\\).\n\nIn both cases, \\(\\dfrac{d}{dx}\\ln|x| = \\dfrac{1}{x}\\).\nAt \\(x = 0\\) the function is undefined, so the result is stated for all \\(x \neq 0\\).\nNote: the derivative is \\(\\dfrac{1}{x}\\), not \\(\\dfrac{1}{|x|}\\).",
     "hint": "For \\(x > 0\\) differentiate \\(\\ln x\\). For \\(x < 0\\) differentiate \\(\\ln(-x)\\) with the chain rule (inner derivative \\(-1\\)). Both cases should give \\(\\dfrac{1}{x}\\).",
-    "solution": "Case 1 — \\(x > 0\\):\n\\(\\ln|x| = \\ln x\\), so \\(\\dfrac{d}{dx}\\ln|x| = \\dfrac{d}{dx}\\ln x = \\dfrac{1}{x}\\).\n\nCase 2 — \\(x < 0\\):\n\\(\\ln|x| = \\ln(-x)\\). Let \\(u = -x\\), so \\(\\dfrac{du}{dx} = -1\\).\nThen \\(\\dfrac{d}{dx}\\ln(-x) = \\dfrac{1}{u}\\cdot\\dfrac{du}{dx} = \\dfrac{1}{-x}\\cdot(-1) = \\dfrac{1}{x}\\).\n\nIn both cases, \\(\\dfrac{d}{dx}\\ln|x| = \\dfrac{1}{x}\\).\nAt \\(x = 0\\) the function is undefined, so the result is stated for all \\(x \\neq 0\\).\nNote: the derivative is \\(\\dfrac{1}{x}\\), not \\(\\dfrac{1}{|x|}\\).",
+    "solution": "Case 1 — \\(x > 0\\):\n\\(\\ln|x| = \\ln x\\), so \\(\\dfrac{d}{dx}\\ln|x| = \\dfrac{d}{dx}\\ln x = \\dfrac{1}{x}\\).\n\nCase 2 — \\(x < 0\\):\n\\(\\ln|x| = \\ln(-x)\\). Let \\(u = -x\\), so \\(\\dfrac{du}{dx} = -1\\).\nThen \\(\\dfrac{d}{dx}\\ln(-x) = \\dfrac{1}{u}\\cdot\\dfrac{du}{dx} = \\dfrac{1}{-x}\\cdot(-1) = \\dfrac{1}{x}\\).\n\nIn both cases, \\(\\dfrac{d}{dx}\\ln|x| = \\dfrac{1}{x}\\).\nAt \\(x = 0\\) the function is undefined, so the result is stated for all \\(x \neq 0\\).\nNote: the derivative is \\(\\dfrac{1}{x}\\), not \\(\\dfrac{1}{|x|}\\).",
     "solutionSteps": [
       {
         "explanation": "Split into the two open intervals. Absolute value (and therefore \\(\\ln|x|\\)) is defined by a different formula on each side of zero, so differentiate each branch separately.",
@@ -4282,8 +4282,8 @@ export const Y12A_CH5G_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Both branches give the same formula. Therefore \\(\\dfrac{d}{dx}\\ln|x| = \\dfrac{1}{x}\\) for every \\(x \\neq 0\\).",
-        "workingOut": "\\(\\dfrac{d}{dx}\\ln|x| = \\dfrac{1}{x}\\quad (x \\neq 0)\\)",
+        "explanation": "Both branches give the same formula. Therefore \\(\\dfrac{d}{dx}\\ln|x| = \\dfrac{1}{x}\\) for every \\(x \neq 0\\).",
+        "workingOut": "\\(\\dfrac{d}{dx}\\ln|x| = \\dfrac{1}{x}\\quad (x \neq 0)\\)",
         "graphData": null
       }
     ],
@@ -4318,7 +4318,7 @@ export const Y12A_CH5G_QUESTIONS = [
       },
       {
         "explanation": "Therefore \\(x = 0\\) is excluded from the domain. Geometrically, the curve approaches a vertical asymptote along the \\(y\\)-axis and never meets the origin.",
-        "workingOut": "\\(\\text{Domain: } x \\neq 0\\)",
+        "workingOut": "\\(\\text{Domain: } x \neq 0\\)",
         "graphData": null
       },
       {

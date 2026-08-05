@@ -7,7 +7,7 @@ export const Y9_CH16F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Convert the following measurement into metres, expressing your answer in scientific form:\\n\\(23\\\\text{ millimetres}\\)",
+    "question": "Convert the following measurement into metres, expressing your answer in scientific form:\n\\(23\\\\text{ millimetres}\\)",
     "opts": [
       "\\(2.3 \\\\times 10^{-2}\\\\text{ m}\\)",
       "\\(2.3 \\\\times 10^{-3}\\\\text{ m}\\)",
@@ -17,7 +17,7 @@ export const Y9_CH16F_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "1 millimetre is 10^-3 metres. Shift the decimal point to express it in scientific notation.",
-    "solution": "Convert from millimetres to metres:\\n\\[23\\\\text{ mm} = 23 \\\\times 10^{-3}\\\\text{ m} = 2.3 \\\\times 10^{-2}\\\\text{ m}\\]",
+    "solution": "Convert from millimetres to metres:\n\\[23\\\\text{ mm} = 23 \\\\times 10^{-3}\\\\text{ m} = 2.3 \\\\times 10^{-2}\\\\text{ m}\\]",
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Small and large units of measurement: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
@@ -52,7 +52,7 @@ export const Y9_CH16F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Convert the following measurement into metres, expressing your answer in scientific form:\\n\\(67\\\\text{ picometres}\\)",
+    "question": "Convert the following measurement into metres, expressing your answer in scientific form:\n\\(67\\\\text{ picometres}\\)",
     "opts": [
       "\\(6.7 \\\\times 10^{-11}\\\\text{ m}\\)",
       "\\(6.7 \\\\times 10^{-12}\\\\text{ m}\\)",
@@ -62,7 +62,7 @@ export const Y9_CH16F_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "1 picometre is 10^-12 metres.",
-    "solution": "Convert from picometres to metres:\\n\\[67\\\\text{ pm} = 67 \\\\times 10^{-12}\\\\text{ m} = 6.7 \\\\times 10^{-11}\\\\text{ m}\\]",
+    "solution": "Convert from picometres to metres:\n\\[67\\\\text{ pm} = 67 \\\\times 10^{-12}\\\\text{ m} = 6.7 \\\\times 10^{-11}\\\\text{ m}\\]",
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Small and large units of measurement: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
@@ -97,7 +97,7 @@ export const Y9_CH16F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Convert the following measurement into metres, expressing your answer in scientific form:\\n\\(456\\\\text{ picometres}\\)",
+    "question": "Convert the following measurement into metres, expressing your answer in scientific form:\n\\(456\\\\text{ picometres}\\)",
     "opts": [
       "\\(4.56 \\\\times 10^{-10}\\\\text{ m}\\)",
       "\\(4.56 \\\\times 10^{-12}\\\\text{ m}\\)",
@@ -107,7 +107,7 @@ export const Y9_CH16F_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "1 picometre is 10^-12 metres.",
-    "solution": "Convert from picometres to metres:\\n\\[456\\\\text{ pm} = 456 \\\\times 10^{-12}\\\\text{ m} = 4.56 \\\\times 10^{-10}\\\\text{ m}\\]",
+    "solution": "Convert from picometres to metres:\n\\[456\\\\text{ pm} = 456 \\\\times 10^{-12}\\\\text{ m} = 4.56 \\\\times 10^{-10}\\\\text{ m}\\]",
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Small and large units of measurement: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
@@ -142,7 +142,7 @@ export const Y9_CH16F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Convert the following measurement into metres, expressing your answer in scientific form:\\n\\(25\\\\text{ micrometres}\\)",
+    "question": "Convert the following measurement into metres, expressing your answer in scientific form:\n\\(25\\\\text{ micrometres}\\)",
     "opts": [
       "\\(2.5 \\\\times 10^{-5}\\\\text{ m}\\)",
       "\\(2.5 \\\\times 10^{-6}\\\\text{ m}\\)",
@@ -152,7 +152,7 @@ export const Y9_CH16F_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "1 micrometre is 10^-6 metres.",
-    "solution": "Convert from micrometres to metres:\\n\\[25\\,\\\\mu\\\\text{m} = 25 \\\\times 10^{-6}\\\\text{ m} = 2.5 \\\\times 10^{-5}\\\\text{ m}\\]",
+    "solution": "Convert from micrometres to metres:\n\\[25\\,\\\\mu\\\\text{m} = 25 \\\\times 10^{-6}\\\\text{ m} = 2.5 \\\\times 10^{-5}\\\\text{ m}\\]",
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Small and large units of measurement: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
@@ -187,7 +187,7 @@ export const Y9_CH16F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Convert the following measurement into metres, expressing your answer in scientific form:\\n\\(93\\\\text{ nanometres}\\)",
+    "question": "Convert the following measurement into metres, expressing your answer in scientific form:\n\\(93\\\\text{ nanometres}\\)",
     "opts": [
       "\\(9.3 \\\\times 10^{-8}\\\\text{ m}\\)",
       "\\(9.3 \\\\times 10^{-9}\\\\text{ m}\\)",
@@ -197,7 +197,7 @@ export const Y9_CH16F_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "1 nanometre is 10^-9 metres.",
-    "solution": "Convert from nanometres to metres:\\n\\[93\\\\text{ nm} = 93 \\\\times 10^{-9}\\\\text{ m} = 9.3 \\\\times 10^{-8}\\\\text{ m}\\]",
+    "solution": "Convert from nanometres to metres:\n\\[93\\\\text{ nm} = 93 \\\\times 10^{-9}\\\\text{ m} = 9.3 \\\\times 10^{-8}\\\\text{ m}\\]",
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Small and large units of measurement: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
@@ -232,7 +232,7 @@ export const Y9_CH16F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Convert the following measurement into metres, expressing your answer in scientific form:\\n\\(651\\\\text{ nanometres}\\)",
+    "question": "Convert the following measurement into metres, expressing your answer in scientific form:\n\\(651\\\\text{ nanometres}\\)",
     "opts": [
       "\\(6.51 \\\\times 10^{-7}\\\\text{ m}\\)",
       "\\(6.51 \\\\times 10^{-9}\\\\text{ m}\\)",
@@ -242,7 +242,7 @@ export const Y9_CH16F_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "1 nanometre is 10^-9 metres.",
-    "solution": "Convert from nanometres to metres:\\n\\[651\\\\text{ nm} = 651 \\\\times 10^{-9}\\\\text{ m} = 6.51 \\\\times 10^{-7}\\\\text{ m}\\]",
+    "solution": "Convert from nanometres to metres:\n\\[651\\\\text{ nm} = 651 \\\\times 10^{-9}\\\\text{ m} = 6.51 \\\\times 10^{-7}\\\\text{ m}\\]",
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Small and large units of measurement: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
@@ -277,7 +277,7 @@ export const Y9_CH16F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Convert the following time measurement into microseconds:\\n\\(1\\\\text{ day}\\)",
+    "question": "Convert the following time measurement into microseconds:\n\\(1\\\\text{ day}\\)",
     "opts": [
       "\\(8.64 \\\\times 10^{10}\\\\text{ microseconds}\\)",
       "\\(8.64 \\\\times 10^{9}\\\\text{ microseconds}\\)",
@@ -287,7 +287,7 @@ export const Y9_CH16F_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "Find the total seconds in a day first, then multiply by 1,000,000.",
-    "solution": "Convert days to seconds:\\n\\[1\\\\text{ day} = 24 \\\\times 60 \\\\times 60 = 86,400\\\\text{ seconds}\\]\\nConvert seconds to microseconds by multiplying by \\(10^6\\):\\n\\[86,400 \\\\times 10^6 = 8.64 \\\\times 10^{10}\\\\text{ microseconds}\\]",
+    "solution": "Convert days to seconds:\n\\[1\\\\text{ day} = 24 \\\\times 60 \\\\times 60 = 86,400\\\\text{ seconds}\\]\nConvert seconds to microseconds by multiplying by \\(10^6\\):\n\\[86,400 \\\\times 10^6 = 8.64 \\\\times 10^{10}\\\\text{ microseconds}\\]",
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Small and large units of measurement: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
@@ -322,7 +322,7 @@ export const Y9_CH16F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Convert the following time measurement into microseconds:\\n\\(1\\\\text{ week}\\)",
+    "question": "Convert the following time measurement into microseconds:\n\\(1\\\\text{ week}\\)",
     "opts": [
       "\\(6.048 \\\\times 10^{11}\\\\text{ microseconds}\\)",
       "\\(6.048 \\\\times 10^{10}\\\\text{ microseconds}\\)",
@@ -332,7 +332,7 @@ export const Y9_CH16F_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "Multiply the microseconds in one day by 7.",
-    "solution": "Convert weeks to seconds:\\n\\[1\\\\text{ week} = 7 \\\\times 86,400 = 604,800\\\\text{ seconds}\\]\\nConvert to microseconds:\\n\\[604,800 \\\\times 10^6 = 6.048 \\\\times 10^{11}\\\\text{ microseconds}\\]",
+    "solution": "Convert weeks to seconds:\n\\[1\\\\text{ week} = 7 \\\\times 86,400 = 604,800\\\\text{ seconds}\\]\nConvert to microseconds:\n\\[604,800 \\\\times 10^6 = 6.048 \\\\times 10^{11}\\\\text{ microseconds}\\]",
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Small and large units of measurement: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
@@ -367,7 +367,7 @@ export const Y9_CH16F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Convert the following time measurement into microseconds:\\n\\(14\\\\text{ hours and } 25\\\\text{ seconds}\\)",
+    "question": "Convert the following time measurement into microseconds:\n\\(14\\\\text{ hours and } 25\\\\text{ seconds}\\)",
     "opts": [
       "\\(5.0425 \\\\times 10^{10}\\\\text{ microseconds}\\)",
       "\\(5.0425 \\\\times 10^{9}\\\\text{ microseconds}\\)",
@@ -377,7 +377,7 @@ export const Y9_CH16F_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "Convert hours and seconds to seconds first, then multiply by 1,000,000.",
-    "solution": "Convert hours to seconds and add 25 seconds:\\n\\[14\\\\text{ hours} = 14 \\\\times 3600 = 50,400\\\\text{ seconds}\\]\\[t_{\\\\text{total}} = 50,400 + 25 = 50,425\\\\text{ seconds}\\]\\nConvert to microseconds:\\n\\[50,425 \\\\times 10^6 = 5.0425 \\\\times 10^{10}\\\\text{ microseconds}\\]",
+    "solution": "Convert hours to seconds and add 25 seconds:\n\\[14\\\\text{ hours} = 14 \\\\times 3600 = 50,400\\\\text{ seconds}\\]\\[t_{\\\\text{total}} = 50,400 + 25 = 50,425\\\\text{ seconds}\\]\nConvert to microseconds:\n\\[50,425 \\\\times 10^6 = 5.0425 \\\\times 10^{10}\\\\text{ microseconds}\\]",
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Small and large units of measurement: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
@@ -412,7 +412,7 @@ export const Y9_CH16F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Convert the following time measurement into microseconds:\\n\\(0.65\\\\text{ seconds}\\)",
+    "question": "Convert the following time measurement into microseconds:\n\\(0.65\\\\text{ seconds}\\)",
     "opts": [
       "\\(6.5 \\\\times 10^{5}\\\\text{ microseconds}\\)",
       "\\(6.5 \\\\times 10^{4}\\\\text{ microseconds}\\)",
@@ -422,7 +422,7 @@ export const Y9_CH16F_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "Multiply by 1,000,000 to convert seconds to microseconds.",
-    "solution": "Convert from seconds to microseconds:\\n\\[0.65 \\\\times 10^6 = 6.5 \\\\times 10^{5}\\\\text{ microseconds}\\]",
+    "solution": "Convert from seconds to microseconds:\n\\[0.65 \\\\times 10^6 = 6.5 \\\\times 10^{5}\\\\text{ microseconds}\\]",
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Small and large units of measurement: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
@@ -457,7 +457,7 @@ export const Y9_CH16F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Convert the following time measurement into nanoseconds:\\n\\(1\\\\text{ day}\\)",
+    "question": "Convert the following time measurement into nanoseconds:\n\\(1\\\\text{ day}\\)",
     "opts": [
       "\\(8.64 \\\\times 10^{13}\\\\text{ nanoseconds}\\)",
       "\\(8.64 \\\\times 10^{12}\\\\text{ nanoseconds}\\)",
@@ -467,7 +467,7 @@ export const Y9_CH16F_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "Find the total seconds in a day first, then multiply by 1,000,000,000.",
-    "solution": "Convert days to seconds:\\n\\[1\\\\text{ day} = 86,400\\\\text{ seconds}\\]\\nConvert seconds to nanoseconds by multiplying by \\(10^9\\):\\n\\[86,400 \\\\times 10^9 = 8.64 \\\\times 10^{13}\\\\text{ nanoseconds}\\]",
+    "solution": "Convert days to seconds:\n\\[1\\\\text{ day} = 86,400\\\\text{ seconds}\\]\nConvert seconds to nanoseconds by multiplying by \\(10^9\\):\n\\[86,400 \\\\times 10^9 = 8.64 \\\\times 10^{13}\\\\text{ nanoseconds}\\]",
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Small and large units of measurement: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
@@ -502,7 +502,7 @@ export const Y9_CH16F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Convert the following time measurement into nanoseconds:\\n\\(1\\\\text{ week}\\)",
+    "question": "Convert the following time measurement into nanoseconds:\n\\(1\\\\text{ week}\\)",
     "opts": [
       "\\(6.048 \\\\times 10^{14}\\\\text{ nanoseconds}\\)",
       "\\(6.048 \\\\times 10^{13}\\\\text{ nanoseconds}\\)",
@@ -512,7 +512,7 @@ export const Y9_CH16F_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "Multiply the nanoseconds in one day by 7.",
-    "solution": "Convert weeks to seconds:\\n\\[1\\\\text{ week} = 604,800\\\\text{ seconds}\\]\\nConvert to nanoseconds:\\n\\[604,800 \\\\times 10^9 = 6.048 \\\\times 10^{14}\\\\text{ nanoseconds}\\]",
+    "solution": "Convert weeks to seconds:\n\\[1\\\\text{ week} = 604,800\\\\text{ seconds}\\]\nConvert to nanoseconds:\n\\[604,800 \\\\times 10^9 = 6.048 \\\\times 10^{14}\\\\text{ nanoseconds}\\]",
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Small and large units of measurement: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
@@ -547,7 +547,7 @@ export const Y9_CH16F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Convert the following time measurement into nanoseconds:\\n\\(14\\\\text{ hours and } 35\\\\text{ seconds}\\)",
+    "question": "Convert the following time measurement into nanoseconds:\n\\(14\\\\text{ hours and } 35\\\\text{ seconds}\\)",
     "opts": [
       "\\(5.0435 \\\\times 10^{13}\\\\text{ nanoseconds}\\)",
       "\\(5.0435 \\\\times 10^{12}\\\\text{ nanoseconds}\\)",
@@ -557,7 +557,7 @@ export const Y9_CH16F_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "Convert hours and seconds to seconds first, then multiply by 1,000,000,000.",
-    "solution": "Convert hours to seconds and add 35 seconds:\\n\\[14\\\\text{ hours} = 14 \\\\times 3600 = 50,400\\\\text{ seconds}\\]\\[t_{\\\\text{total}} = 50,400 + 35 = 50,435\\\\text{ seconds}\\]\\nConvert to nanoseconds:\\n\\[50,435 \\\\times 10^9 = 5.0435 \\\\times 10^{13}\\\\text{ nanoseconds}\\]",
+    "solution": "Convert hours to seconds and add 35 seconds:\n\\[14\\\\text{ hours} = 14 \\\\times 3600 = 50,400\\\\text{ seconds}\\]\\[t_{\\\\text{total}} = 50,400 + 35 = 50,435\\\\text{ seconds}\\]\nConvert to nanoseconds:\n\\[50,435 \\\\times 10^9 = 5.0435 \\\\times 10^{13}\\\\text{ nanoseconds}\\]",
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Small and large units of measurement: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
@@ -592,7 +592,7 @@ export const Y9_CH16F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Convert the following time measurement into nanoseconds:\\n\\(672\\\\text{ microseconds}\\)",
+    "question": "Convert the following time measurement into nanoseconds:\n\\(672\\\\text{ microseconds}\\)",
     "opts": [
       "\\(6.72 \\\\times 10^{5}\\\\text{ nanoseconds}\\)",
       "\\(6.72 \\\\times 10^{4}\\\\text{ nanoseconds}\\)",
@@ -602,7 +602,7 @@ export const Y9_CH16F_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "Multiply by 1000 to convert microseconds to nanoseconds.",
-    "solution": "Convert from microseconds to nanoseconds:\\n\\[672\\,\\\\mu\\\\text{s} = 672 \\\\times 1000 = 672,000\\\\text{ nanoseconds} = 6.72 \\\\times 10^{5}\\\\text{ nanoseconds}\\]",
+    "solution": "Convert from microseconds to nanoseconds:\n\\[672\\,\\\\mu\\\\text{s} = 672 \\\\times 1000 = 672,000\\\\text{ nanoseconds} = 6.72 \\\\times 10^{5}\\\\text{ nanoseconds}\\]",
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Small and large units of measurement: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
@@ -637,7 +637,7 @@ export const Y9_CH16F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "A cube holds \\(1\\\\text{ kilolitre}\\) of water. What is the length of a side of the cube in metres?\\n\\n(Remember: \\(1\\\\text{ litre} = 1000\\\\text{ cm}^3\\))",
+    "question": "A cube holds \\(1\\\\text{ kilolitre}\\) of water. What is the length of a side of the cube in metres?\n\n(Remember: \\(1\\\\text{ litre} = 1000\\\\text{ cm}^3\\))",
     "opts": [
       "\\(1\\\\text{ m}\\)",
       "\\(10\\\\text{ m}\\)",
@@ -647,7 +647,7 @@ export const Y9_CH16F_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "Convert kilolitres to litres, then to cubic centimetres, then find the side length and convert to metres.",
-    "solution": "Convert kilolitres to litres:\\n\\[1\\\\text{ kL} = 1000\\\\text{ L}\\]\\nConvert litres to cubic centimetres:\\n\\[1000\\\\text{ L} = 1000 \\\\times 1000\\\\text{ cm}^3 = 1,000,000\\\\text{ cm}^3\\]\\nFind the side length of the cube in centimetres:\\n\\[s = \\\\sqrt[3]{1,000,000} = 100\\\\text{ cm}\\]\\nConvert to metres:\\n\\[100\\\\text{ cm} = 1\\\\text{ m}\\]",
+    "solution": "Convert kilolitres to litres:\n\\[1\\\\text{ kL} = 1000\\\\text{ L}\\]\nConvert litres to cubic centimetres:\n\\[1000\\\\text{ L} = 1000 \\\\times 1000\\\\text{ cm}^3 = 1,000,000\\\\text{ cm}^3\\]\nFind the side length of the cube in centimetres:\n\\[s = \\\\sqrt[3]{1,000,000} = 100\\\\text{ cm}\\]\nConvert to metres:\n\\[100\\\\text{ cm} = 1\\\\text{ m}\\]",
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Small and large units of measurement: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
@@ -682,7 +682,7 @@ export const Y9_CH16F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "A reservoir holds \\(765,910\\\\text{ megalitres}\\) of water. How many litres is this?\\n\\nExpress your answer in scientific form.",
+    "question": "A reservoir holds \\(765,910\\\\text{ megalitres}\\) of water. How many litres is this?\n\nExpress your answer in scientific form.",
     "opts": [
       "\\(7.6591 \\\\times 10^{11}\\\\text{ L}\\)",
       "\\(7.6591 \\\\times 10^{10}\\\\text{ L}\\)",
@@ -692,7 +692,7 @@ export const Y9_CH16F_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "1 megalitre is 10^6 litres.",
-    "solution": "Convert megalitres to litres:\\n\\[765,910\\\\text{ ML} = 765,910 \\\\times 10^6\\\\text{ L} = 7.6591 \\\\times 10^{11}\\\\text{ L}\\]",
+    "solution": "Convert megalitres to litres:\n\\[765,910\\\\text{ ML} = 765,910 \\\\times 10^6\\\\text{ L} = 7.6591 \\\\times 10^{11}\\\\text{ L}\\]",
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Small and large units of measurement: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
@@ -727,7 +727,7 @@ export const Y9_CH16F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "The half-life of a copernicum-277 atom is \\(240\\\\text{ microseconds}\\).\\n\\nExpress this in seconds using scientific notation.",
+    "question": "The half-life of a copernicum-277 atom is \\(240\\\\text{ microseconds}\\).\n\nExpress this in seconds using scientific notation.",
     "opts": [
       "\\(2.4 \\\\times 10^{-4}\\\\text{ s}\\)",
       "\\(2.4 \\\\times 10^{-5}\\\\text{ s}\\)",
@@ -737,7 +737,7 @@ export const Y9_CH16F_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "1 microsecond is 10^-6 seconds.",
-    "solution": "Convert microseconds to seconds:\\n\\[240\\,\\\\mu\\\\text{s} = 240 \\\\times 10^{-6}\\\\text{ s} = 2.4 \\\\times 10^{-4}\\\\text{ s}\\]",
+    "solution": "Convert microseconds to seconds:\n\\[240\\,\\\\mu\\\\text{s} = 240 \\\\times 10^{-6}\\\\text{ s} = 2.4 \\\\times 10^{-4}\\\\text{ s}\\]",
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Small and large units of measurement: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
@@ -772,7 +772,7 @@ export const Y9_CH16F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "A newspaper stated: \"One million megalitres of pollution spewed onto the Great Barrier Reef.\"\\n\\nHow many litres is this?",
+    "question": "A newspaper stated: \"One million megalitres of pollution spewed onto the Great Barrier Reef.\"\n\nHow many litres is this?",
     "opts": [
       "\\(10^{12}\\\\text{ L}\\)",
       "\\(10^{11}\\\\text{ L}\\)",
@@ -782,7 +782,7 @@ export const Y9_CH16F_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "1 million is 10^6 and 1 megalitre is 10^6 litres.",
-    "solution": "Calculate total volume in litres:\\n\\[1\\,000\\,000\\\\text{ ML} = 10^6 \\\\times 10^6\\\\text{ L} = 10^{12}\\\\text{ L}\\]",
+    "solution": "Calculate total volume in litres:\n\\[1\\,000\\,000\\\\text{ ML} = 10^6 \\\\times 10^6\\\\text{ L} = 10^{12}\\\\text{ L}\\]",
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Small and large units of measurement: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
@@ -817,7 +817,7 @@ export const Y9_CH16F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "A newspaper stated: \"One million megalitres of pollution spewed onto the Great Barrier Reef.\"\\n\\nHow many gigalitres is this?",
+    "question": "A newspaper stated: \"One million megalitres of pollution spewed onto the Great Barrier Reef.\"\n\nHow many gigalitres is this?",
     "opts": [
       "\\(1000\\\\text{ GL}\\)",
       "\\(100\\\\text{ GL}\\)",
@@ -827,7 +827,7 @@ export const Y9_CH16F_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "1 gigalitre is 10^9 litres, or 1000 megalitres.",
-    "solution": "Convert megalitres to gigalitres by dividing by 1000:\\n\\[1\\,000\\,000\\\\text{ ML} \\\\div 1000 = 1000\\\\text{ GL}\\]",
+    "solution": "Convert megalitres to gigalitres by dividing by 1000:\n\\[1\\,000\\,000\\\\text{ ML} \\\\div 1000 = 1000\\\\text{ GL}\\]",
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Small and large units of measurement: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
@@ -862,7 +862,7 @@ export const Y9_CH16F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "To find the volume of a dam on a farm, use the following steps:\\n- Step 1: Determine the width, length and depth of the dam.\\n- Step 2: Calculate the circular surface area in square metres (diameter = \\(40\\\\text{ m}\\)).\\n- Step 3: Calculate volume: \\\\(Volume = 0.4 \\\\times surface\\,area \\\\times depth\\\\) (where depth = \\(4\\\\text{ m}\\)).\\n- Step 4: Convert capacity to megalitres (ML) by dividing the volume in cubic metres by 1000.\\n\\nCalculate the volume of water held in the dam in megalitres.",
+    "question": "To find the volume of a dam on a farm, use the following steps:\n- Step 1: Determine the width, length and depth of the dam.\n- Step 2: Calculate the circular surface area in square metres (diameter = \\(40\\\\text{ m}\\)).\n- Step 3: Calculate volume: \\\\(Volume = 0.4 \\\\times surface\\,area \\\\times depth\\\\) (where depth = \\(4\\\\text{ m}\\)).\n- Step 4: Convert capacity to megalitres (ML) by dividing the volume in cubic metres by 1000.\n\nCalculate the volume of water held in the dam in megalitres.",
     "opts": [
       "\\(2.01\\\\text{ ML}\\)",
       "\\(2.01 \\\\times 10^3\\\\text{ ML}\\)",
@@ -872,7 +872,7 @@ export const Y9_CH16F_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "Find the area of the circle with radius 20 m first, then find the volume, and finally divide by 1000.",
-    "solution": "Calculate surface area (circle with \\(r = 20\\\\text{ m}\\)):\\n\\[A = \\\\pi \\\\times 20^2 = 400\\\\pi \\\\approx 1256.64\\\\text{ m}^2\\]\\nCalculate volume using formula in Step 3 (depth = \\(4\\\\text{ m}\\)):\\n\\[V = 0.4 \\\\times 1256.64 \\\\times 4 \\\\approx 2010.62\\\\text{ m}^3\\]\\nConvert to capacity in megalitres by dividing by 1000:\\n\\[\\\\text{Capacity} = 2010.62 \\\\div 1000 \\\\approx 2.01\\\\text{ ML}\\]",
+    "solution": "Calculate surface area (circle with \\(r = 20\\\\text{ m}\\)):\n\\[A = \\\\pi \\\\times 20^2 = 400\\\\pi \\\\approx 1256.64\\\\text{ m}^2\\]\nCalculate volume using formula in Step 3 (depth = \\(4\\\\text{ m}\\)):\n\\[V = 0.4 \\\\times 1256.64 \\\\times 4 \\\\approx 2010.62\\\\text{ m}^3\\]\nConvert to capacity in megalitres by dividing by 1000:\n\\[\\\\text{Capacity} = 2010.62 \\\\div 1000 \\\\approx 2.01\\\\text{ ML}\\]",
     "solutionSteps": [
       {
         "explanation": "Calculate the circular surface area of the dam using the formula for the area of a circle, with radius \\(r = 20\\\\text{ m}\\) (half of the diameter of \\(40\\\\text{ m}\\)).",
@@ -902,7 +902,7 @@ export const Y9_CH16F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Light travels \\(1\\\\text{ millimetre}\\) in \\(3.3\\\\text{ picoseconds}\\).\\n\\nHow long does it take for light to travel \\(1\\\\text{ metre}\\)?",
+    "question": "Light travels \\(1\\\\text{ millimetre}\\) in \\(3.3\\\\text{ picoseconds}\\).\n\nHow long does it take for light to travel \\(1\\\\text{ metre}\\)?",
     "opts": [
       "\\(3.3\\\\text{ nanoseconds}\\)",
       "\\(33\\\\text{ nanoseconds}\\)",
@@ -912,7 +912,7 @@ export const Y9_CH16F_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "There are 1000 millimetres in 1 metre. Multiply the time for 1 mm by 1000.",
-    "solution": "Since \\(1\\\\text{ m} = 1000\\\\text{ mm}\\), multiply the time by 1000:\\n\\[t = 3.3\\\\text{ picoseconds} \\\\times 1000 = 3300\\\\text{ picoseconds} = 3.3\\\\text{ nanoseconds}\\]",
+    "solution": "Since \\(1\\\\text{ m} = 1000\\\\text{ mm}\\), multiply the time by 1000:\n\\[t = 3.3\\\\text{ picoseconds} \\\\times 1000 = 3300\\\\text{ picoseconds} = 3.3\\\\text{ nanoseconds}\\]",
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Small and large units of measurement: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
@@ -947,7 +947,7 @@ export const Y9_CH16F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Light travels \\(1\\\\text{ millimetre}\\) in \\(3.3\\\\text{ picoseconds}\\).\\n\\nHow long does it take for light to travel \\(1\\\\text{ kilometre}\\)?",
+    "question": "Light travels \\(1\\\\text{ millimetre}\\) in \\(3.3\\\\text{ picoseconds}\\).\n\nHow long does it take for light to travel \\(1\\\\text{ kilometre}\\)?",
     "opts": [
       "\\(3.3\\\\text{ microseconds}\\)",
       "\\(33\\\\text{ microseconds}\\)",
@@ -957,7 +957,7 @@ export const Y9_CH16F_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "There are 1,000,000 millimetres in 1 kilometre.",
-    "solution": "Since \\(1\\\\text{ km} = 1,000,000\\\\text{ mm}\\), multiply the time by 1,000,000:\\n\\[t = 3.3 \\\\times 1,000,000 = 3,300,000\\\\text{ picoseconds} = 3.3\\\\text{ microseconds}\\]",
+    "solution": "Since \\(1\\\\text{ km} = 1,000,000\\\\text{ mm}\\), multiply the time by 1,000,000:\n\\[t = 3.3 \\\\times 1,000,000 = 3,300,000\\\\text{ picoseconds} = 3.3\\\\text{ microseconds}\\]",
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Small and large units of measurement: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
@@ -992,7 +992,7 @@ export const Y9_CH16F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Light travels \\(1\\\\text{ millimetre}\\) in \\(3.3\\\\text{ picoseconds}\\).\\n\\nHow far does light travel in \\(1\\\\text{ nanosecond}\\)?",
+    "question": "Light travels \\(1\\\\text{ millimetre}\\) in \\(3.3\\\\text{ picoseconds}\\).\n\nHow far does light travel in \\(1\\\\text{ nanosecond}\\)?",
     "opts": [
       "\\(30\\\\text{ cm}\\)",
       "\\(3\\\\text{ cm}\\)",
@@ -1002,7 +1002,7 @@ export const Y9_CH16F_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "Convert 1 nanosecond to picoseconds, then divide by 3.3 to get the distance in millimetres.",
-    "solution": "Convert nanoseconds to picoseconds:\\n\\[1\\\\text{ nanosecond} = 1000\\\\text{ picoseconds}\\]\\nDivide by 3.3 to find the travel distance in millimetres:\\n\\[d = 1000 \\\\div 3.3 \\\\approx 303\\\\text{ mm} = 30.3\\\\text{ cm} \\\\approx 30\\\\text{ cm}\\]",
+    "solution": "Convert nanoseconds to picoseconds:\n\\[1\\\\text{ nanosecond} = 1000\\\\text{ picoseconds}\\]\nDivide by 3.3 to find the travel distance in millimetres:\n\\[d = 1000 \\\\div 3.3 \\\\approx 303\\\\text{ mm} = 30.3\\\\text{ cm} \\\\approx 30\\\\text{ cm}\\]",
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Small and large units of measurement: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",

@@ -26,7 +26,7 @@ export const Y11_CH12A_QUESTIONS = [
       },
       {
         "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(\\text{I. } A = B? \\quad 8 \\in A \\text{ but } 8 \\notin B \\Rightarrow \\textbf{False} \\\\ \\text{II. } |A|=4? \\quad A \\text{ has } 4 \\text{ elements} \\Rightarrow \\textbf{True} \\\\ \\text{III. } |B|=6? \\quad B \\text{ has } 5 \\text{ elements} \\Rightarrow \\textbf{False} \\\\ \\text{IV. } A \\subset B? \\quad 8 \\in A \\text{ but } 8 \\notin B \\Rightarrow \\textbf{False}\\)",
+        "workingOut": "\\(\\text{I. } A = B? \\quad 8 \\in A \\text{ but } 8 \notin B \\Rightarrow \\textbf{False} \\\\ \\text{II. } |A|=4? \\quad A \\text{ has } 4 \\text{ elements} \\Rightarrow \\textbf{True} \\\\ \\text{III. } |B|=6? \\quad B \\text{ has } 5 \\text{ elements} \\Rightarrow \\textbf{False} \\\\ \\text{IV. } A \\subset B? \\quad 8 \\in A \\text{ but } 8 \notin B \\Rightarrow \\textbf{False}\\)",
         "graphData": null
       },
       {
@@ -192,7 +192,7 @@ export const Y11_CH12A_QUESTIONS = [
       },
       {
         "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(A \\not\\subset B \\quad (\\textbf{True})\\)",
+        "workingOut": "\\(A \not\\subset B \\quad (\\textbf{True})\\)",
         "graphData": null
       },
       {
@@ -275,7 +275,7 @@ export const Y11_CH12A_QUESTIONS = [
       },
       {
         "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(A\\not\\subset B \\quad (\\textbf{False})\\)",
+        "workingOut": "\\(A\not\\subset B \\quad (\\textbf{False})\\)",
         "graphData": null
       },
       {
@@ -571,7 +571,7 @@ export const Y11_CH12A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Sets and Venn diagrams: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(1 \\times 18 = 18 \\Rightarrow 1,\\ 18 \\\\ 2 \\times 9 = 18 \\Rightarrow 2,\\ 9 \\\\ 3 \\times 6 = 18 \\Rightarrow 3,\\ 6 \\\\ 4 \\nmid 18,\\ 5 \\nmid 18\\)",
+        "workingOut": "\\(1 \\times 18 = 18 \\Rightarrow 1,\\ 18 \\\\ 2 \\times 9 = 18 \\Rightarrow 2,\\ 9 \\\\ 3 \\times 6 = 18 \\Rightarrow 3,\\ 6 \\\\ 4 \nmid 18,\\ 5 \nmid 18\\)",
         "graphData": null
       },
       {

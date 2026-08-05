@@ -72,10 +72,10 @@ export const GIRRAWEEN_2020_METADATA = {
         'girr2020-mc18b', 'girr2020-mc19a', 'girr2020-mc19b', 'girr2020-mc19c', 'girr2020-mc20',
         'girr2020-mc21', 'girr2020-mc22', 'girr2020-mc23', 'girr2020-mc24', 'girr2020-mc25a',
         'girr2020-mc25b', 'girr2020-mc26a', 'girr2020-mc26b', 'girr2020-mc27', 'girr2020-mc28a',
-        'girr2020-mc28b', 'girr2020-mc29a', 'girr2020-mc29b', 'girr2020-mc29c', 'girr2020-mc29d',
+        'girr2020-mc28b', 'girr2020-mc29',
         'girr2020-mc30a', 'girr2020-mc30b', 'girr2020-mc30c', 'girr2020-mc31', 'girr2020-mc32',
-        'girr2020-mc33', 'girr2020-mc34a', 'girr2020-mc34b', 'girr2020-mc35a', 'girr2020-mc36a',
-        'girr2020-mc37a', 'girr2020-mc37b', 'girr2020-mc38a', 'girr2020-mc38b'
+        'girr2020-mc33', 'girr2020-mc34', 'girr2020-mc35', 'girr2020-mc36',
+        'girr2020-mc37', 'girr2020-mc38'
       ]
     }
   ],

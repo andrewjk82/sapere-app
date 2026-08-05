@@ -215,7 +215,7 @@ export const CRANBROOK_2023_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Form the second composite \\(g(f(x)) = \\dfrac{1}{\\sqrt{x} - 1}\\). It requires \\(x \\geq 0\\) for the square root and \\(\\sqrt{x} \\neq 1\\) (i.e. \\(x \\neq 1\\)) so the denominator is non-zero.",
+        "explanation": "Form the second composite \\(g(f(x)) = \\dfrac{1}{\\sqrt{x} - 1}\\). It requires \\(x \\geq 0\\) for the square root and \\(\\sqrt{x} \neq 1\\) (i.e. \\(x \neq 1\\)) so the denominator is non-zero.",
         "workingOut": "\\(g(f(x)) = \\dfrac{1}{\\sqrt{x}-1}, quad \\text{domain: } [0, infty)\\setminus{1}\\)",
         "graphData": null
       },
@@ -2092,7 +2092,7 @@ export const CRANBROOK_2023_QUESTIONS = [
       },
       {
         "explanation": "Join the points smoothly: increasing on \\((0,1)\\), decreasing on \\((1, 4)\\), flattening momentarily at \\((4,1)\\), then decreasing through the \\(x\\)-axis to \\((6, -\\dfrac{5}{4})\\).",
-        "workingOut": "$$ \\text{smooth curve through } (0,1) \\nearrow (1, 2.27) \\searrow (4,1) \\searrow (6, -1.25) $$",
+        "workingOut": "$$ \\text{smooth curve through } (0,1) \nearrow (1, 2.27) \\searrow (4,1) \\searrow (6, -1.25) $$",
         "graphData": null
       },
       {
@@ -2356,7 +2356,7 @@ export const CRANBROOK_2023_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Multiply both sides by \\(\\sin x\\) to clear the fraction (noting \\(\\sin x \\neq 0\\) where \\(\\cot x\\) is defined, so no solutions are lost).",
+        "explanation": "Multiply both sides by \\(\\sin x\\) to clear the fraction (noting \\(\\sin x \neq 0\\) where \\(\\cot x\\) is defined, so no solutions are lost).",
         "workingOut": "\\(2\\cos x\\sin x = \\cos x\\)",
         "graphData": null
       },

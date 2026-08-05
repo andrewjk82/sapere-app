@@ -1509,6 +1509,21 @@ const StudentDetail = ({ studentId, onBack }) => {
       // Secret Note XP and manual bonus XP that live only on the user doc).
       const statSnap = await getDoc(statRef);
       const statXpEarned = Number(statSnap.data()?.xpEarned) || 0;
+      // Archive the original attempt before deleting it — a reset must never make a
+      // score unrecoverable. Archived under the same student doc so it survives even
+      // if the student is later deleted independently.
+      if (statSnap.exists()) {
+        await setDoc(
+          doc(db, activeStudentCollection, activeStudentId, "reset_archive", `${statCollection}_${stat.id}_${Date.now()}`),
+          {
+            ...statSnap.data(),
+            archivedFrom: statCollection,
+            archivedDocId: stat.id,
+            archivedAt: new Date().toISOString(),
+            archivedBy: "teacher-reset",
+          },
+        ).catch((archiveErr) => console.warn("Reset archive write failed:", archiveErr));
+      }
       await deleteDoc(statRef);
       // Also delete from users/{registeredUid} if student used a different path
       if (syncUid !== activeStudentId) {

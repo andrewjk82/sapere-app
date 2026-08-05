@@ -111,7 +111,7 @@ export const CTHS_2020_QUESTIONS = [
       },
       {
         "explanation": "Eliminate option A: \\(P(B|A)\\) is the conditional probability of \\(B\\) given \\(A\\), not the probability of both occurring.",
-        "workingOut": "\\(P(B|A) = \\frac{P(A \\cap B)}{P(A)} \\neq P(A)P(B) \\text{ in general}\\)",
+        "workingOut": "\\(P(B|A) = \\frac{P(A \\cap B)}{P(A)} \neq P(A)P(B) \\text{ in general}\\)",
         "graphData": null
       },
       {

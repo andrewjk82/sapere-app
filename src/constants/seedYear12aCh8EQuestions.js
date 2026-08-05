@@ -2667,10 +2667,10 @@ export const Y12A_CH8E_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 240,
-    "question": "A personal loan for \\( \\$40000 \\) is approved with the following conditions: the reducible interest rate is 11.2% per annum, with payments to be made at six-monthly intervals over five years.\nb) Using this rounded instalment amount, show that \\( A_{10} \\neq 0 \\), that is, the loan is not paid off exactly in five years.",
-    "answer": "Evaluate \\( A_{10} = 40000 \\times 1.056^{10} - \\frac{5332 \times (1.056^{10} - 1)}{0.056} \\approx 68977.44 - 68976.62 = \\$0.82 \\neq 0 \\).",
+    "question": "A personal loan for \\( \\$40000 \\) is approved with the following conditions: the reducible interest rate is 11.2% per annum, with payments to be made at six-monthly intervals over five years.\nb) Using this rounded instalment amount, show that \\( A_{10} \neq 0 \\), that is, the loan is not paid off exactly in five years.",
+    "answer": "Evaluate \\( A_{10} = 40000 \\times 1.056^{10} - \\frac{5332 \times (1.056^{10} - 1)}{0.056} \\approx 68977.44 - 68976.62 = \\$0.82 \neq 0 \\).",
     "hint": "Write a full structured solution for the teacher to mark.",
-    "solution": "Evaluate \\( A_{10} = 40000 \\times 1.056^{10} - \\frac{5332 \times (1.056^{10} - 1)}{0.056} \\approx 68977.44 - 68976.62 = \\$0.82 \\neq 0 \\).",
+    "solution": "Evaluate \\( A_{10} = 40000 \\times 1.056^{10} - \\frac{5332 \times (1.056^{10} - 1)}{0.056} \\approx 68977.44 - 68976.62 = \\$0.82 \neq 0 \\).",
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Paying off a loan: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
@@ -2684,12 +2684,12 @@ export const Y12A_CH8E_QUESTIONS = [
       },
       {
         "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "Evaluate \\( A_{10} = 40000 \\times 1.056^{10} - \\frac{5332 \times (1.056^{10} - 1)}{0.056} \\approx 68977.44 - 68976.62 = \\$0.82 \\neq 0 \\).",
+        "workingOut": "Evaluate \\( A_{10} = 40000 \\times 1.056^{10} - \\frac{5332 \times (1.056^{10} - 1)}{0.056} \\approx 68977.44 - 68976.62 = \\$0.82 \neq 0 \\).",
         "graphData": null
       },
       {
-        "explanation": "Final answer: Evaluate \\( A_{10} = 40000 \\times 1.056^{10} - \\frac{5332 \times (1.056^{10} - 1)}{0.056} \\approx 68977.44 - 68976.62 = \\$0.82 \\neq 0 \\).. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "Evaluate \\( A_{10} = 40000 \\times 1.056^{10} - \\frac{5332 \times (1.056^{10} - 1)}{0.056} \\approx 68977.44 - 68976.62 = \\$0.82 \\neq 0 \\).",
+        "explanation": "Final answer: Evaluate \\( A_{10} = 40000 \\times 1.056^{10} - \\frac{5332 \times (1.056^{10} - 1)}{0.056} \\approx 68977.44 - 68976.62 = \\$0.82 \neq 0 \\).. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "Evaluate \\( A_{10} = 40000 \\times 1.056^{10} - \\frac{5332 \times (1.056^{10} - 1)}{0.056} \\approx 68977.44 - 68976.62 = \\$0.82 \neq 0 \\).",
         "graphData": null
       }
     ],

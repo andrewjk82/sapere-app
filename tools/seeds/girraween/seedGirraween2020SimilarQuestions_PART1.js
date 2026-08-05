@@ -82,10 +82,13 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART1 = [
         workingOut: '\\text{Maximum of velocity curve occurs at } t = 8'
       },
       {
-        explanation: 'At $t = 8$, the velocity is at its peak. Before this time, velocity is increasing (positive acceleration). After this time, velocity would decrease (negative acceleration). At the peak, the transition occurs, so acceleration is zero.',
-        workingOut: 't < 8: \\; \\frac{dv}{dt} > 0 \\quad t = 8: \\; \\frac{dv}{dt} = 0 \\quad t > 8: \\; \\frac{dv}{dt} < 0'
+        explanation: 'Since acceleration is the derivative of velocity, and we have identified that the derivative equals zero at $t = 8$ (where the velocity graph reaches its maximum), we can conclude that the acceleration of the particle is zero at $t = 8$ seconds.',
+        workingOut: '\\text{Therefore, } a(8) = 0'
       }
-    ]
+    ],
+    graphData: {
+      svg: '<svg viewBox="0 0 350 200" xmlns="http://www.w3.org/2000/svg">\n<defs>\n<style>\n.axis { stroke: #94a3b8; stroke-width: 2; }\n.curve { stroke: #3b82f6; stroke-width: 3; fill: none; }\n.label { font-size: 14px; fill: #1e293b; font-family: sans-serif; }\n.grid { stroke: #e2e8f0; stroke-width: 1; stroke-dasharray: 4 4; }\n</style>\n</defs>\n<rect width="350" height="200" fill="#ffffff" />\n<g>\n  <line x1="30" y1="160" x2="320" y2="160" class="axis" />\n  <text x="310" y="180" class="label">t</text>\n  <line x1="50" y1="180" x2="50" y2="20" class="axis" />\n  <text x="25" y="30" class="label">v</text>\n  <text x="35" y="180" class="label">0</text>\n  \n  <text x="205" y="180" class="label">8</text>\n  <line x1="210" y1="155" x2="210" y2="165" class="axis" />\n  <line x1="210" y1="160" x2="210" y2="40" class="grid" />\n  \n  <path d="M 50 140 Q 210 -60 330 160" class="curve" />\n</g>\n</svg>'
+    }
   },
 
   // ============================================================

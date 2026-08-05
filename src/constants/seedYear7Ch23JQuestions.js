@@ -1,6 +1,9 @@
 export const Y7_CH23J_QUESTIONS = [
   {
     "id": "y7-23j-q1",
+    "topicId": "y7-23j",
+    "c": "23J",
+    "t": "Problem solving with algebra",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
@@ -37,6 +40,9 @@ export const Y7_CH23J_QUESTIONS = [
   },
   {
     "id": "y7-23j-q2",
+    "topicId": "y7-23j",
+    "c": "23J",
+    "t": "Problem solving with algebra",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
@@ -54,7 +60,7 @@ export const Y7_CH23J_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write as a fraction. Simplify carefully and match the option.",
-        "workingOut": "\\(\\frac{12xy}{12x}\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -73,6 +79,9 @@ export const Y7_CH23J_QUESTIONS = [
   },
   {
     "id": "y7-23j-q3",
+    "topicId": "y7-23j",
+    "c": "23J",
+    "t": "Problem solving with algebra",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
@@ -109,6 +118,9 @@ export const Y7_CH23J_QUESTIONS = [
   },
   {
     "id": "y7-23j-q4",
+    "topicId": "y7-23j",
+    "c": "23J",
+    "t": "Problem solving with algebra",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
@@ -126,7 +138,7 @@ export const Y7_CH23J_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Substitute \\(b = 3\\) and \\(k = 4\\).",
-        "workingOut": "\\(\\frac{1}{2} \\times 3 \\times 4^2\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -145,6 +157,9 @@ export const Y7_CH23J_QUESTIONS = [
   },
   {
     "id": "y7-23j-q5",
+    "topicId": "y7-23j",
+    "c": "23J",
+    "t": "Problem solving with algebra",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
@@ -162,7 +177,7 @@ export const Y7_CH23J_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "The terms \\(m^4\\) and \\(m^4\\) are identical.",
-        "workingOut": "\\(1m^4 + 1m^4\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -181,6 +196,9 @@ export const Y7_CH23J_QUESTIONS = [
   },
   {
     "id": "y7-23j-q6",
+    "topicId": "y7-23j",
+    "c": "23J",
+    "t": "Problem solving with algebra",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
@@ -198,7 +216,7 @@ export const Y7_CH23J_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify like terms. Simplify carefully and match the option.",
-        "workingOut": "\\((2x^2 + 5x^2) + (-4x + 7x)\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -222,6 +240,9 @@ export const Y7_CH23J_QUESTIONS = [
   },
   {
     "id": "y7-23j-q7",
+    "topicId": "y7-23j",
+    "c": "23J",
+    "t": "Problem solving with algebra",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
@@ -239,7 +260,7 @@ export const Y7_CH23J_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "\\(y^2\\) means \\(y \\times y\\).",
-        "workingOut": "\\(y^2 = y \\times y\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -258,6 +279,9 @@ export const Y7_CH23J_QUESTIONS = [
   },
   {
     "id": "y7-23j-q8",
+    "topicId": "y7-23j",
+    "c": "23J",
+    "t": "Problem solving with algebra",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
@@ -294,6 +318,9 @@ export const Y7_CH23J_QUESTIONS = [
   },
   {
     "id": "y7-23j-q9",
+    "topicId": "y7-23j",
+    "c": "23J",
+    "t": "Problem solving with algebra",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
@@ -311,7 +338,7 @@ export const Y7_CH23J_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Substitute \\(4\\) for \\(y\\).",
-        "workingOut": "\\(3 \\times 4^2\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -330,6 +357,9 @@ export const Y7_CH23J_QUESTIONS = [
   },
   {
     "id": "y7-23j-q10",
+    "topicId": "y7-23j",
+    "c": "23J",
+    "t": "Problem solving with algebra",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
@@ -366,18 +396,20 @@ export const Y7_CH23J_QUESTIONS = [
   },
   {
     "id": "y7-23j-q11a",
+    "topicId": "y7-23j",
+    "c": "23J",
     "t": "Chapter review",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify.\\n\\n\\(4 \\times x \\times 7 \\times y\\)",
-    "a": 3,
-    "answer": "3",
+    "question": "Simplify.<br /><br />\\(4 \\times x \\times 7 \\times y\\)",
+    "a": 2,
+    "answer": "2",
     "opts": [
-      "\\(-28xy\\)",
       "\\(29xy\\)",
-      "\\(opt2\\)",
-      "\\(28xy\\)"
+      "\\(30xy\\)",
+      "\\(28xy\\)",
+      "\\(31xy\\)"
     ],
     "hint": "Multiply the numbers and write the letters next to each other.",
     "solution": "",
@@ -403,11 +435,13 @@ export const Y7_CH23J_QUESTIONS = [
   },
   {
     "id": "y7-23j-q11b",
+    "topicId": "y7-23j",
+    "c": "23J",
     "t": "Chapter review",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify.\\n\\n\\(15a + 8b - 4a - 2b\\)",
+    "question": "Simplify.<br /><br />\\(15a + 8b - 4a - 2b\\)",
     "a": 0,
     "answer": "0",
     "opts": [
@@ -440,18 +474,20 @@ export const Y7_CH23J_QUESTIONS = [
   },
   {
     "id": "y7-23j-q11c",
+    "topicId": "y7-23j",
+    "c": "23J",
     "t": "Chapter review",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write in a shorter way.\\n\\n\\(6 \\times 4(3 \\times b - 2)\\)",
+    "question": "Write in a shorter way.<br /><br />\\(6 \\times 4(3 \\times b - 2)\\)",
     "a": 1,
     "answer": "1",
     "opts": [
       "\\(-24(3b - 2)\\)",
       "\\(24(3b - 2)\\)",
       "\\(25(3b - 2)\\)",
-      "\\(opt2\\)"
+      "\\(26(3b - 2)\\)"
     ],
     "hint": "Multiply the numbers outside the bracket and remove unnecessary multiplication signs inside.",
     "solution": "",
@@ -477,6 +513,8 @@ export const Y7_CH23J_QUESTIONS = [
   },
   {
     "id": "y7-23j-q11d",
+    "topicId": "y7-23j",
+    "c": "23J",
     "t": "Chapter review",
     "type": "multiple_choice",
     "difficulty": "easy",
@@ -488,14 +526,14 @@ export const Y7_CH23J_QUESTIONS = [
       "\\(101\\)",
       "\\(99\\)",
       "\\(100\\)",
-      "\\(-100\\)"
+      "\\(102\\)"
     ],
     "hint": "Substitute \\(m = 5\\), calculate the square, then multiply by \\(4\\).",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Substitute \\(5\\) for \\(m\\).",
-        "workingOut": "\\(4 \\times 5^2\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -514,6 +552,8 @@ export const Y7_CH23J_QUESTIONS = [
   },
   {
     "id": "y7-23j-q11e",
+    "topicId": "y7-23j",
+    "c": "23J",
     "t": "Chapter review",
     "type": "multiple_choice",
     "difficulty": "easy",
@@ -524,7 +564,7 @@ export const Y7_CH23J_QUESTIONS = [
     "opts": [
       "\\(61\\)",
       "\\(59\\)",
-      "\\(-60\\)",
+      "\\(62\\)",
       "\\(60\\)"
     ],
     "hint": "Substitute the values for \\(p\\) and \\(q\\) and evaluate.",
@@ -551,6 +591,8 @@ export const Y7_CH23J_QUESTIONS = [
   },
   {
     "id": "y7-23j-q12a",
+    "topicId": "y7-23j",
+    "c": "23J",
     "t": "Chapter review",
     "type": "multiple_choice",
     "difficulty": "easy",
@@ -588,6 +630,8 @@ export const Y7_CH23J_QUESTIONS = [
   },
   {
     "id": "y7-23j-q12b",
+    "topicId": "y7-23j",
+    "c": "23J",
     "t": "Chapter review",
     "type": "multiple_choice",
     "difficulty": "easy",
@@ -625,6 +669,8 @@ export const Y7_CH23J_QUESTIONS = [
   },
   {
     "id": "y7-23j-q12c",
+    "topicId": "y7-23j",
+    "c": "23J",
     "t": "Chapter review",
     "type": "multiple_choice",
     "difficulty": "easy",
@@ -643,7 +689,7 @@ export const Y7_CH23J_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write \\(7x\\) divided by \\(4y\\) as a fraction.",
-        "workingOut": "\\(\\frac{7x}{4y}\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -662,11 +708,13 @@ export const Y7_CH23J_QUESTIONS = [
   },
   {
     "id": "y7-23j-q12d",
+    "topicId": "y7-23j",
+    "c": "23J",
     "t": "Chapter review",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write in a shorter way:\\n\\n\\(15\\) plus \\(k\\) all divided by \\(7\\)",
+    "question": "Write in a shorter way:<br /><br />\\(15\\) plus \\(k\\) all divided by \\(7\\)",
     "a": 1,
     "answer": "1",
     "opts": [
@@ -699,6 +747,8 @@ export const Y7_CH23J_QUESTIONS = [
   },
   {
     "id": "y7-23j-q12e",
+    "topicId": "y7-23j",
+    "c": "23J",
     "t": "Chapter review",
     "type": "multiple_choice",
     "difficulty": "easy",
@@ -710,7 +760,7 @@ export const Y7_CH23J_QUESTIONS = [
       "\\(-\\frac{x - y}{x + y}\\)",
       "\\(\\frac{x - y}{x - y}\\)",
       "\\(\\frac{x - y}{x + y}\\)",
-      "\\(opt2\\)"
+      "\\(2\\frac{x - y}{x + y}\\)"
     ],
     "hint": "Difference means subtract, sum means add. Use a fraction for division.",
     "solution": "",
@@ -736,6 +786,8 @@ export const Y7_CH23J_QUESTIONS = [
   },
   {
     "id": "y7-23j-q13a",
+    "topicId": "y7-23j",
+    "c": "23J",
     "t": "Chapter review",
     "type": "multiple_choice",
     "difficulty": "easy",
@@ -744,17 +796,17 @@ export const Y7_CH23J_QUESTIONS = [
     "a": 1,
     "answer": "1",
     "opts": [
-      "\\(-28y\\)",
-      "\\(28y\\)",
       "\\(29y\\)",
-      "\\(opt2\\)"
+      "\\(28y\\)",
+      "\\(30y\\)",
+      "\\(31y\\)"
     ],
     "hint": "Product means multiply them all together.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Multiply the values. Simplify carefully and match the option.",
-        "workingOut": "\\(4 \\times y \\times 7\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -773,6 +825,8 @@ export const Y7_CH23J_QUESTIONS = [
   },
   {
     "id": "y7-23j-q13b",
+    "topicId": "y7-23j",
+    "c": "23J",
     "t": "Chapter review",
     "type": "multiple_choice",
     "difficulty": "easy",
@@ -784,14 +838,14 @@ export const Y7_CH23J_QUESTIONS = [
       "\\(-8xy - 5x\\)",
       "\\(9xy - 5x\\)",
       "\\(8xy - 5x\\)",
-      "\\(opt2\\)"
+      "\\(10xy - 5x\\)"
     ],
     "hint": "Find the product first, then subtract \\(5x\\) from it.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Find the product of \\(4x\\) and \\(2y\\).",
-        "workingOut": "\\(4x \\times 2y = 8xy\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -810,18 +864,20 @@ export const Y7_CH23J_QUESTIONS = [
   },
   {
     "id": "y7-23j-q13c",
+    "topicId": "y7-23j",
+    "c": "23J",
     "t": "Chapter review",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify.\\n\\n\\(6y \\times 3y \\times 4y\\)",
-    "a": 3,
-    "answer": "3",
+    "question": "Simplify.<br /><br />\\(6y \\times 3y \\times 4y\\)",
+    "a": 2,
+    "answer": "2",
     "opts": [
       "\\(-72y^3\\)",
       "\\(73y^3\\)",
-      "\\(opt2\\)",
-      "\\(72y^3\\)"
+      "\\(72y^3\\)",
+      "\\(74y^3\\)"
     ],
     "hint": "Multiply all the numbers, then multiply all the variables.",
     "solution": "",
@@ -847,11 +903,13 @@ export const Y7_CH23J_QUESTIONS = [
   },
   {
     "id": "y7-23j-q13d",
+    "topicId": "y7-23j",
+    "c": "23J",
     "t": "Chapter review",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Expand.\\n\\n\\(4(3m + 5)\\)",
+    "question": "Expand.<br /><br />\\(4(3m + 5)\\)",
     "a": 0,
     "answer": "0",
     "opts": [
@@ -884,18 +942,20 @@ export const Y7_CH23J_QUESTIONS = [
   },
   {
     "id": "y7-23j-q13e",
+    "topicId": "y7-23j",
+    "c": "23J",
     "t": "Chapter review",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Expand and simplify.\\n\\n\\(7(4y - 10) - 25\\)",
+    "question": "Expand and simplify.<br /><br />\\(7(4y - 10) - 25\\)",
     "a": 1,
     "answer": "1",
     "opts": [
       "\\(-28y - 95\\)",
       "\\(28y - 95\\)",
       "\\(29y - 95\\)",
-      "\\(opt2\\)"
+      "\\(30y - 95\\)"
     ],
     "hint": "Expand the bracket first, then combine the number terms.",
     "solution": "",
@@ -921,11 +981,13 @@ export const Y7_CH23J_QUESTIONS = [
   },
   {
     "id": "y7-23j-q14a",
+    "topicId": "y7-23j",
+    "c": "23J",
     "t": "Chapter review",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the following.\\n\\n\\(6x + 12 + 14x - 5\\)",
+    "question": "Simplify the following.<br /><br />\\(6x + 12 + 14x - 5\\)",
     "a": 0,
     "answer": "0",
     "opts": [
@@ -958,18 +1020,20 @@ export const Y7_CH23J_QUESTIONS = [
   },
   {
     "id": "y7-23j-q14b",
+    "topicId": "y7-23j",
+    "c": "23J",
     "t": "Chapter review",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the following.\\n\\n\\(18 \\times m \\times n\\)",
+    "question": "Simplify the following.<br /><br />\\(18 \\times m \\times n\\)",
     "a": 1,
     "answer": "1",
     "opts": [
-      "\\(-18mn\\)",
-      "\\(18mn\\)",
       "\\(19mn\\)",
-      "\\(opt2\\)"
+      "\\(18mn\\)",
+      "\\(20mn\\)",
+      "\\(21mn\\)"
     ],
     "hint": "Remove the multiplication signs.",
     "solution": "",
@@ -995,18 +1059,20 @@ export const Y7_CH23J_QUESTIONS = [
   },
   {
     "id": "y7-23j-q14c",
+    "topicId": "y7-23j",
+    "c": "23J",
     "t": "Chapter review",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the following.\\n\\n\\(12k - 4k - 2k - k\\)",
+    "question": "Simplify the following.<br /><br />\\(12k - 4k - 2k - k\\)",
     "a": 2,
     "answer": "2",
     "opts": [
-      "\\(-5k\\)",
       "\\(6k\\)",
+      "\\(7k\\)",
       "\\(5k\\)",
-      "\\(opt2\\)"
+      "\\(8k\\)"
     ],
     "hint": "These are all like terms. Subtract their coefficients in order.",
     "solution": "",
@@ -1032,11 +1098,13 @@ export const Y7_CH23J_QUESTIONS = [
   },
   {
     "id": "y7-23j-q14d",
+    "topicId": "y7-23j",
+    "c": "23J",
     "t": "Chapter review",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the following.\\n\\n\\(14p + 8q - 6p + 5q\\)",
+    "question": "Simplify the following.<br /><br />\\(14p + 8q - 6p + 5q\\)",
     "a": 3,
     "answer": "3",
     "opts": [
@@ -1069,11 +1137,13 @@ export const Y7_CH23J_QUESTIONS = [
   },
   {
     "id": "y7-23j-q14e",
+    "topicId": "y7-23j",
+    "c": "23J",
     "t": "Chapter review",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the following.\\n\\n\\(xy + 6x + 4xy - 3x + 7xy\\)",
+    "question": "Simplify the following.<br /><br />\\(xy + 6x + 4xy - 3x + 7xy\\)",
     "a": 0,
     "answer": "0",
     "opts": [

@@ -1,0 +1,757 @@
+{
+  "y9-11g-q15": {
+    "chapterId": "y9-11",
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "topicId": "y9-11g",
+    "topicCode": "11G",
+    "topicTitle": "Parallel and perpendicular straight lines",
+    "year": "Year 9",
+    "isManual": true,
+    "title": "The coordinates of the vertice...",
+    "question": "The coordinates of the vertices of \\(\\Delta PQR\\) are \\(P(2, -3)\\), \\(Q(4, 5)\\), and \\(R(8, -1)\\). Answer the following sub-questions.",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "type": "teacher_review",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "a) S(3, 1), b) m_SR = -0.4, c) y = -2/5x + 11/5, d) y = 5/4x - 11/2; y = -7x + 33, e) m_PQ = 4, f) y = -1/4x + 7/4, g) y = 2/3x - 2, h) y = -3x + 13",
+    "hint": "Midpoint coordinates, gradients (and their negative reciprocals for perpendicular bisectors), and point-slope equations are required.",
+    "solution": "a) Midpoint \\(S\\) of \\(PQ\\): \\(\\left(\\frac{2+4}{2}, \\frac{-3+5}{2}\right) = (3, 1)\\).\n\nb) Gradient of \\(SR\\) where \\(S(3, 1)\\), \\(R(8, -1)\\):\n   \\(m = \\frac{-1 - 1}{8 - 3} = -\\frac{2}{5} = -0.4\\).\n\nc) Equation of line \\(SR\\):\n   \\(y - 1 = -\\frac{2}{5}(x - 3) \\implies y = -\\frac{2}{5}x + \\frac{11}{5}\\).\n\nd) Equations of the other two medians:\n   - Midpoint of \\(QR\\): \\(T(6, 2)\\). Median through \\(P\\) is \\(y = \\frac{5}{4}x - \\frac{11}{2}\\).\n   - Midpoint of \\(PR\\): \\(U(5, -2)\\). Median through \\(Q\\) is \\(y = -7x + 33\\).\n\ne) Gradient of \\(PQ\\): \\(m_{PQ} = \\frac{5 - (-3)}{4 - 2} = 4\\).\n\nf) Equation of perpendicular bisector of \\(PQ\\) (passes through \\(S(3, 1)\\) with gradient \\(-\\frac{1}{4}\\)):\n   \\(y - 1 = -\\frac{1}{4}(x - 3) \\implies y = -\\frac{1}{4}x + \\frac{7}{4}\\).\n\ng) Perpendicular bisector of \\(QR\\) (passes through \\(T(6, 2)\\) with gradient \\(\\frac{2}{3}\\)):\n   \\(y - 2 = \\frac{2}{3}(x - 6) \\implies y = \\frac{2}{3}x - 2\\).\n\nh) Perpendicular bisector of \\(PR\\) (passes through \\(U(5, -2)\\) with gradient \\(-3\\)):\n   \\(y - (-2) = -3(x - 5) \\implies y = -3x + 13\\).",
+    "solutionSteps": [],
+    "questionImage": "",
+    "subQuestions": [
+      {
+        "id": "y9-11g-q15a",
+        "type": "short_answer",
+        "question": "a) Find the coordinates of \\(S\\), the midpoint of \\(PQ\\).",
+        "options": [],
+        "answer": "(3, 1)",
+        "solutionSteps": [
+          {
+            "explanation": "Average coordinates.",
+            "workingOut": "S = \\left(\\frac{2+4}{2}, \\frac{-3+5}{2}\\right) = (3, 1)"
+          }
+        ],
+        "graphData": null
+      },
+      {
+        "id": "y9-11g-q15b",
+        "type": "short_answer",
+        "question": "b) Find the gradient of \\(SR\\).",
+        "options": [],
+        "answer": "-0.4",
+        "solutionSteps": [
+          {
+            "explanation": "Find gradient of segment SR.",
+            "workingOut": "m = \\frac{-1 - 1}{8 - 3} = -0.4"
+          }
+        ],
+        "graphData": null
+      },
+      {
+        "id": "y9-11g-q15c",
+        "type": "short_answer",
+        "question": "c) Find the equation of the line \\(SR\\).",
+        "options": [],
+        "answer": "y = -2/5x + 11/5",
+        "solutionSteps": [
+          {
+            "explanation": "Use point-gradient form.",
+            "workingOut": "y - 1 = -\\frac{2}{5}(x - 3) \\implies y = -\\frac{2}{5}x + \\frac{11}{5}"
+          }
+        ],
+        "graphData": null
+      },
+      {
+        "id": "y9-11g-q15d",
+        "type": "short_answer",
+        "question": "d) Find the equations of the other two medians of the triangle. (Format: y = 5/4x - 11/2; y = -7x + 33)",
+        "options": [],
+        "answer": "y = 5/4x - 11/2; y = -7x + 33",
+        "solutionSteps": [
+          {
+            "explanation": "Find midpoints T(6, 2) and U(5, -2), then find equations of PT and QU.",
+            "workingOut": "y - 2 = \\frac{5}{4}(x - 6) \\implies y = \\frac{5}{4}x - \\frac{11}{2}; \\quad y - 5 = -7(x - 4) \\implies y = -7x + 33"
+          }
+        ],
+        "graphData": null
+      },
+      {
+        "id": "y9-11g-q15e",
+        "type": "short_answer",
+        "question": "e) Find the gradient of \\(PQ\\).",
+        "options": [],
+        "answer": "4",
+        "solutionSteps": [
+          {
+            "explanation": "Find gradient of PQ.",
+            "workingOut": "m = \\frac{5 - (-3)}{4 - 2} = 4"
+          }
+        ],
+        "graphData": null
+      },
+      {
+        "id": "y9-11g-q15f",
+        "type": "short_answer",
+        "question": "f) Find the equation of the perpendicular bisector of \\(PQ\\).",
+        "options": [],
+        "answer": "y = -1/4x + 7/4",
+        "solutionSteps": [
+          {
+            "explanation": "Use midpoint S(3, 1) and perpendicular gradient -1/4.",
+            "workingOut": "y - 1 = -\\frac{1}{4}(x - 3) \\implies y = -\\frac{1}{4}x + \\frac{7}{4}"
+          }
+        ],
+        "graphData": null
+      },
+      {
+        "id": "y9-11g-q15g",
+        "type": "short_answer",
+        "question": "g) Find the equation of the perpendicular bisector of the side \\(QR\\).",
+        "options": [],
+        "answer": "y = 2/3x - 2",
+        "solutionSteps": [
+          {
+            "explanation": "Midpoint of QR is T(6, 2). Gradient of QR is -3/2. Perpendicular gradient is 2/3.",
+            "workingOut": "y - 2 = \\frac{2}{3}(x - 6) \\implies y = \\frac{2}{3}x - 2"
+          }
+        ],
+        "graphData": null
+      },
+      {
+        "id": "y9-11g-q15h",
+        "type": "short_answer",
+        "question": "h) Find the equation of the perpendicular bisector of the side \\(PR\\).",
+        "options": [],
+        "answer": "y = -3x + 13",
+        "solutionSteps": [
+          {
+            "explanation": "Midpoint of PR is U(5, -2). Gradient of PR is 1/3. Perpendicular gradient is -3.",
+            "workingOut": "y - (-2) = -3(x - 5) \\implies y = -3x + 13"
+          }
+        ],
+        "graphData": null
+      }
+    ],
+    "blanks": [],
+    "graphData": {
+      "jsxGraph": {
+        "width": 350,
+        "height": 350,
+        "boundingbox": [
+          -1,
+          7,
+          10,
+          -5
+        ],
+        "showConstructionPoints": true,
+        "boardOptions": {
+          "axis": true,
+          "grid": true
+        },
+        "script": "board.suspendUpdate();\nvar pP = board.create('point', [2, -3], {size: 3, color: 'black', name: 'P(2, -3)', withLabel: true, label: {autoPosition: false, offset: [-15, -15]}});\nvar pQ = board.create('point', [4, 5], {size: 3, color: 'black', name: 'Q(4, 5)', withLabel: true, label: {autoPosition: false, offset: [-10, 15]}});\nvar pR = board.create('point', [8, -1], {size: 3, color: 'black', name: 'R(8, -1)', withLabel: true, label: {autoPosition: false, offset: [15, 10]}});\nboard.create('polygon', [pP, pQ, pR], {fillColor: 'none', borders: {strokeColor: 'black', strokeWidth: 1.5}});\nvar pS = board.create('point', [3, 1], {size: 3, color: 'blue', name: 'S(3, 1)', withLabel: true, label: {autoPosition: false, offset: [-15, 10]}});\nboard.create('segment', [pS, pR], {strokeColor: 'blue', strokeWidth: 1});\nboard.unsuspendUpdate();"
+      }
+    },
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830227,
+      "_nanoseconds": 114000000
+    },
+    "updatedAt": {
+      "_seconds": 1782830227,
+      "_nanoseconds": 114000000
+    }
+  },
+  "y9-11g-q15a": {
+    "year": "Year 9",
+    "origin": "seed",
+    "subQuestions": [],
+    "isActive": true,
+    "title": "The coordinates of the vertices of \\Delt...",
+    "type": "multiple_choice",
+    "topicTitle": "Parallel and perpendicular straight lines",
+    "createdAt": {
+      "_seconds": 1784364626,
+      "_nanoseconds": 910000000
+    },
+    "solution": "The correct answer is \\((3, 1)\\).",
+    "chapterId": "y9-11",
+    "graphData": null,
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "topicCode": "11G",
+    "question": "The coordinates of the vertices of \\(\\Delta PQR\\) are \\(P(2, -3)\\), \\(Q(4, 5)\\), and \\(R(8, -1)\\). Answer the following sub-questions.\na) Find the coordinates of \\(S\\), the midpoint of \\(PQ\\).",
+    "isManual": true,
+    "isNew": true,
+    "requiresManualGrading": false,
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "topicId": "y9-11g",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Parallel and perpendicular straight lines: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\((3, 1)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: (3, 1). Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\((3, 1)\\)",
+        "graphData": null
+      }
+    ],
+    "answer": "1",
+    "options": [
+      {
+        "text": "\\(2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3, 1)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-2\\)",
+        "imageUrl": ""
+      }
+    ],
+    "updatedAt": {
+      "_seconds": 1784982176,
+      "_nanoseconds": 826000000
+    }
+  },
+  "y9-11g-q15b": {
+    "year": "Year 9",
+    "origin": "seed",
+    "subQuestions": [],
+    "isActive": true,
+    "title": "The coordinates of the vertices of \\Delt...",
+    "type": "multiple_choice",
+    "topicTitle": "Parallel and perpendicular straight lines",
+    "createdAt": {
+      "_seconds": 1784364626,
+      "_nanoseconds": 910000000
+    },
+    "solution": "The correct answer is \\(-0.4\\).",
+    "chapterId": "y9-11",
+    "options": [
+      {
+        "text": "\\(-0.4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-1.4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(0.4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(0.6\\)",
+        "imageUrl": ""
+      }
+    ],
+    "graphData": null,
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "updatedAt": {
+      "_seconds": 1784364626,
+      "_nanoseconds": 910000000
+    },
+    "topicCode": "11G",
+    "question": "The coordinates of the vertices of \\(\\Delta PQR\\) are \\(P(2, -3)\\), \\(Q(4, 5)\\), and \\(R(8, -1)\\). Answer the following sub-questions.\nb) Find the gradient of \\(SR\\).",
+    "isManual": true,
+    "isNew": true,
+    "requiresManualGrading": false,
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "topicId": "y9-11g",
+    "answer": "0",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Parallel and perpendicular straight lines: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(-0.4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: -0.4. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(-0.4\\)",
+        "graphData": null
+      }
+    ]
+  },
+  "y9-11g-q15c": {
+    "year": "Year 9",
+    "origin": "seed",
+    "subQuestions": [],
+    "isActive": true,
+    "title": "The coordinates of the vertices of \\Delt...",
+    "type": "multiple_choice",
+    "topicTitle": "Parallel and perpendicular straight lines",
+    "createdAt": {
+      "_seconds": 1784364626,
+      "_nanoseconds": 910000000
+    },
+    "solution": "The correct answer is \\(y = -2/5x + 11/5\\).",
+    "chapterId": "y9-11",
+    "graphData": null,
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "topicCode": "11G",
+    "question": "The coordinates of the vertices of \\(\\Delta PQR\\) are \\(P(2, -3)\\), \\(Q(4, 5)\\), and \\(R(8, -1)\\). Answer the following sub-questions.\nc) Find the equation of the line \\(SR\\).",
+    "isManual": true,
+    "isNew": true,
+    "requiresManualGrading": false,
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "topicId": "y9-11g",
+    "answer": "1",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Parallel and perpendicular straight lines: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(y = -2/5x + 11/5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: y = -2/5x + 11/5. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(y = -2/5x + 11/5\\)",
+        "graphData": null
+      }
+    ],
+    "options": [
+      {
+        "text": "\\(y = 5x + 3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = -2/5x + 11/5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = -4x + 7\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = 3x - 5\\)",
+        "imageUrl": ""
+      }
+    ],
+    "updatedAt": {
+      "_seconds": 1784982176,
+      "_nanoseconds": 826000000
+    }
+  },
+  "y9-11g-q15d": {
+    "year": "Year 9",
+    "origin": "seed",
+    "subQuestions": [],
+    "isActive": true,
+    "title": "The coordinates of the vertices of \\Delt...",
+    "type": "multiple_choice",
+    "topicTitle": "Parallel and perpendicular straight lines",
+    "createdAt": {
+      "_seconds": 1784364626,
+      "_nanoseconds": 910000000
+    },
+    "solution": "The correct answer is \\(y = 5/4x - 11/2; y = -7x + 33\\).",
+    "chapterId": "y9-11",
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "topicCode": "11G",
+    "question": "The coordinates of the vertices of \\(\\Delta PQR\\) are \\(P(2, -3)\\), \\(Q(4, 5)\\), and \\(R(8, -1)\\). Answer the following sub-questions.\nd) Find the equations of the other two medians of the triangle. (Format: y = 5/4x - 11/2; y = -7x + 33)",
+    "isManual": true,
+    "isNew": true,
+    "requiresManualGrading": false,
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "topicId": "y9-11g",
+    "answer": "1",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Parallel and perpendicular straight lines: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": {
+          "jsxGraph": {
+            "width": 360,
+            "height": 280,
+            "boundingbox": [
+              -6,
+              6,
+              6,
+              -6
+            ],
+            "script": "board.suspendUpdate(); board.create('arrow', [[-6,0],[6,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-6],[0,6]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [5.28, -2.0999999999999996, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 5.4, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return (-7)*x + (+33); }, -5.5, 5.5], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [2.2, 3.5, 'y = -7x+33'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+          }
+        }
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(y = 5/4x - 11/2; y = -7x + 33\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: y = 5/4x - 11/2; y = -7x + 33. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(y = 5/4x - 11/2; y = -7x + 33\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": {
+      "jsxGraph": {
+        "boundingbox": [
+          -6,
+          6,
+          6,
+          -6
+        ],
+        "width": 360,
+        "script": "board.suspendUpdate(); board.create('arrow', [[-6,0],[6,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-6],[0,6]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [5.28, -2.0999999999999996, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 5.4, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return (-7)*x + (+33); }, -5.5, 5.5], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [2.2, 3.5, 'y = -7x+33'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();",
+        "height": 280
+      }
+    },
+    "options": [
+      {
+        "text": "\\(y = 6x - 3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = 5/4x - 11/2; y = -7x + 33\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = -x + 8\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = 4x - 6\\)",
+        "imageUrl": ""
+      }
+    ],
+    "updatedAt": {
+      "_seconds": 1784982176,
+      "_nanoseconds": 826000000
+    }
+  },
+  "y9-11g-q15e": {
+    "year": "Year 9",
+    "origin": "seed",
+    "subQuestions": [],
+    "isActive": true,
+    "title": "The coordinates of the vertices of \\Delt...",
+    "type": "multiple_choice",
+    "topicTitle": "Parallel and perpendicular straight lines",
+    "createdAt": {
+      "_seconds": 1784364626,
+      "_nanoseconds": 910000000
+    },
+    "solution": "The correct answer is \\(4\\).",
+    "chapterId": "y9-11",
+    "options": [
+      {
+        "text": "\\(-4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5\\)",
+        "imageUrl": ""
+      }
+    ],
+    "graphData": null,
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "updatedAt": {
+      "_seconds": 1784364626,
+      "_nanoseconds": 910000000
+    },
+    "topicCode": "11G",
+    "question": "The coordinates of the vertices of \\(\\Delta PQR\\) are \\(P(2, -3)\\), \\(Q(4, 5)\\), and \\(R(8, -1)\\). Answer the following sub-questions.\ne) Find the gradient of \\(PQ\\).",
+    "isManual": true,
+    "isNew": true,
+    "requiresManualGrading": false,
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "topicId": "y9-11g",
+    "answer": "2",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Parallel and perpendicular straight lines: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 4. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(4\\)",
+        "graphData": null
+      }
+    ]
+  },
+  "y9-11g-q15f": {
+    "year": "Year 9",
+    "origin": "seed",
+    "subQuestions": [],
+    "isActive": true,
+    "title": "The coordinates of the vertices of \\Delt...",
+    "type": "multiple_choice",
+    "topicTitle": "Parallel and perpendicular straight lines",
+    "createdAt": {
+      "_seconds": 1784364626,
+      "_nanoseconds": 910000000
+    },
+    "solution": "The correct answer is \\(y = -1/4x + 7/4\\).",
+    "chapterId": "y9-11",
+    "graphData": null,
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "topicCode": "11G",
+    "question": "The coordinates of the vertices of \\(\\Delta PQR\\) are \\(P(2, -3)\\), \\(Q(4, 5)\\), and \\(R(8, -1)\\). Answer the following sub-questions.\nf) Find the equation of the perpendicular bisector of \\(PQ\\).",
+    "isManual": true,
+    "isNew": true,
+    "requiresManualGrading": false,
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "topicId": "y9-11g",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Parallel and perpendicular straight lines: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(y = -1/4x + 7/4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: y = -1/4x + 7/4. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(y = -1/4x + 7/4\\)",
+        "graphData": null
+      }
+    ],
+    "answer": "1",
+    "options": [
+      {
+        "text": "\\(y = 3x - 1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = -1/4x + 7/4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = -3x + 5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = 3x - 2\\)",
+        "imageUrl": ""
+      }
+    ],
+    "updatedAt": {
+      "_seconds": 1784982176,
+      "_nanoseconds": 826000000
+    }
+  },
+  "y9-11g-q15g": {
+    "year": "Year 9",
+    "origin": "seed",
+    "subQuestions": [],
+    "isActive": true,
+    "title": "The coordinates of the vertices of \\Delt...",
+    "type": "multiple_choice",
+    "topicTitle": "Parallel and perpendicular straight lines",
+    "createdAt": {
+      "_seconds": 1784364626,
+      "_nanoseconds": 910000000
+    },
+    "solution": "The correct answer is \\(y = 2/3x - 2\\).",
+    "chapterId": "y9-11",
+    "graphData": null,
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "topicCode": "11G",
+    "question": "The coordinates of the vertices of \\(\\Delta PQR\\) are \\(P(2, -3)\\), \\(Q(4, 5)\\), and \\(R(8, -1)\\). Answer the following sub-questions.\ng) Find the equation of the perpendicular bisector of the side \\(QR\\).",
+    "isManual": true,
+    "isNew": true,
+    "requiresManualGrading": false,
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "topicId": "y9-11g",
+    "answer": "1",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Parallel and perpendicular straight lines: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(y = 2/3x - 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: y = 2/3x - 2. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(y = 2/3x - 2\\)",
+        "graphData": null
+      }
+    ],
+    "options": [
+      {
+        "text": "\\(y = 4x\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = 2/3x - 2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = -4x + 6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = 4x - 3\\)",
+        "imageUrl": ""
+      }
+    ],
+    "updatedAt": {
+      "_seconds": 1784982176,
+      "_nanoseconds": 826000000
+    }
+  },
+  "y9-11g-q15h": {
+    "year": "Year 9",
+    "origin": "seed",
+    "subQuestions": [],
+    "isActive": true,
+    "title": "The coordinates of the vertices of \\Delt...",
+    "type": "multiple_choice",
+    "topicTitle": "Parallel and perpendicular straight lines",
+    "createdAt": {
+      "_seconds": 1784364626,
+      "_nanoseconds": 910000000
+    },
+    "solution": "The correct answer is \\(y = -3x + 13\\).",
+    "chapterId": "y9-11",
+    "graphData": null,
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "topicCode": "11G",
+    "question": "The coordinates of the vertices of \\(\\Delta PQR\\) are \\(P(2, -3)\\), \\(Q(4, 5)\\), and \\(R(8, -1)\\). Answer the following sub-questions.\nh) Find the equation of the perpendicular bisector of the side \\(PR\\).",
+    "isManual": true,
+    "isNew": true,
+    "requiresManualGrading": false,
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "topicId": "y9-11g",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Parallel and perpendicular straight lines: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(y = -3x + 13\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: y = -3x + 13. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(y = -3x + 13\\)",
+        "graphData": null
+      }
+    ],
+    "answer": "1",
+    "options": [
+      {
+        "text": "\\(y = 5x + 1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = -3x + 13\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = -x + 7\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = 5x - 4\\)",
+        "imageUrl": ""
+      }
+    ],
+    "updatedAt": {
+      "_seconds": 1784982176,
+      "_nanoseconds": 826000000
+    }
+  }
+}

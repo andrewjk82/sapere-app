@@ -1,35 +1,32 @@
 export const Y7_CH23F_QUESTIONS = [
   {
     "id": "y7-23f-q1a",
+    "topicId": "y7-23f",
+    "c": "23F",
     "t": "Substitution",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "If \\(x = 4\\), find the value of the following expression.\\n\\n\\(6x\\)",
+    "question": "If \\(x = 4\\), find the value of the following expression.<br /><br />\\(6x\\)",
     "a": 2,
     "answer": "2",
     "opts": [
       "\\(25\\)",
       "\\(23\\)",
       "\\(24\\)",
-      "\\(-24\\)"
+      "\\(26\\)"
     ],
     "hint": "Replace \\(x\\) with \\(4\\) and calculate.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Substitute \\(x = 4\\) into the expression.",
-        "workingOut": "\\(6 \\times 4\\)",
+        "workingOut": "\\( 6(4) \\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the result. Simplify carefully and match the option.",
-        "workingOut": "24",
-        "graphData": null
-      },
-      {
-        "explanation": "Confirm the final answer.",
-        "workingOut": "\\(24\\)",
+        "explanation": "Multiply to find the final value.",
+        "workingOut": "\\( 24 \\)",
         "graphData": null
       }
     ],
@@ -38,35 +35,37 @@ export const Y7_CH23F_QUESTIONS = [
   },
   {
     "id": "y7-23f-q1b",
+    "topicId": "y7-23f",
+    "c": "23F",
     "t": "Substitution",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "If \\(x = 4\\), find the value of the following expression.\\n\\n\\(8x + 3\\)",
+    "question": "If \\(x = 4\\), find the value of the following expression.<br /><br />\\(8x + 3\\)",
     "a": 3,
     "answer": "3",
     "opts": [
       "\\(36\\)",
       "\\(34\\)",
-      "\\(-35\\)",
+      "\\(37\\)",
       "\\(35\\)"
     ],
     "hint": "Remember the order of operations (multiply before adding).",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Substitute \\(x = 4\\). Simplify carefully and match the option.",
-        "workingOut": "\\(8 \\times 4 + 3\\)",
+        "explanation": "Substitute \\(x = 4\\) into the expression.",
+        "workingOut": "\\( 8(4) + 3 \\)",
         "graphData": null
       },
       {
-        "explanation": "Multiply first. Simplify carefully and match the option.",
-        "workingOut": "32 + 3",
+        "explanation": "Multiply first.",
+        "workingOut": "\\( 32 + 3 \\)",
         "graphData": null
       },
       {
-        "explanation": "Add the numbers. Simplify carefully and match the option.",
-        "workingOut": "35",
+        "explanation": "Add to find the final value.",
+        "workingOut": "\\( 35 \\)",
         "graphData": null
       }
     ],
@@ -75,35 +74,37 @@ export const Y7_CH23F_QUESTIONS = [
   },
   {
     "id": "y7-23f-q1c",
+    "topicId": "y7-23f",
+    "c": "23F",
     "t": "Substitution",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "If \\(x = 4\\), find the value of the following expression.\\n\\n\\(8x - 3\\)",
+    "question": "If \\(x = 4\\), find the value of the following expression.<br /><br />\\(8x - 3\\)",
     "a": 0,
     "answer": "0",
     "opts": [
       "\\(29\\)",
       "\\(30\\)",
       "\\(28\\)",
-      "\\(-29\\)"
+      "\\(31\\)"
     ],
     "hint": "Multiply first, then subtract.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Substitute \\(x = 4\\). Simplify carefully and match the option.",
-        "workingOut": "\\(8 \\times 4 - 3\\)",
+        "explanation": "Substitute \\(x = 4\\) into the expression.",
+        "workingOut": "\\( 8(4) - 3 \\)",
         "graphData": null
       },
       {
-        "explanation": "Multiply. Simplify carefully and match the option.",
-        "workingOut": "32 - 3",
+        "explanation": "Multiply first.",
+        "workingOut": "\\( 32 - 3 \\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract. Simplify carefully and match the option.",
-        "workingOut": "29",
+        "explanation": "Subtract to find the final value.",
+        "workingOut": "\\( 29 \\)",
         "graphData": null
       }
     ],
@@ -112,35 +113,32 @@ export const Y7_CH23F_QUESTIONS = [
   },
   {
     "id": "y7-23f-q1d",
+    "topicId": "y7-23f",
+    "c": "23F",
     "t": "Substitution",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "If \\(x = 4\\), find the value of the following expression.\\n\\n\\(x^2\\)",
+    "question": "If \\(x = 4\\), find the value of the following expression.<br /><br />\\(x^2\\)",
     "a": 1,
     "answer": "1",
     "opts": [
       "\\(17\\)",
       "\\(16\\)",
       "\\(15\\)",
-      "\\(-16\\)"
+      "\\(18\\)"
     ],
     "hint": "\\(x^2\\) means \\(x\\) multiplied by itself.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Substitute \\(x = 4\\). Simplify carefully and match the option.",
-        "workingOut": "\\(4^2\\)",
+        "explanation": "Substitute \\(x = 4\\) into the expression.",
+        "workingOut": "\\( (4)^2 \\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate \\(4 \\times 4\\).",
-        "workingOut": "16",
-        "graphData": null
-      },
-      {
-        "explanation": "Confirm the final answer.",
-        "workingOut": "\\(16\\)",
+        "explanation": "Evaluate the square to find the final value.",
+        "workingOut": "\\( 16 \\)",
         "graphData": null
       }
     ],
@@ -149,35 +147,37 @@ export const Y7_CH23F_QUESTIONS = [
   },
   {
     "id": "y7-23f-q1e",
+    "topicId": "y7-23f",
+    "c": "23F",
     "t": "Substitution",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "If \\(x = 4\\), find the value of the following expression.\\n\\n\\(3x^2\\)",
+    "question": "If \\(x = 4\\), find the value of the following expression.<br /><br />\\(3x^2\\)",
     "a": 2,
     "answer": "2",
     "opts": [
       "\\(49\\)",
       "\\(47\\)",
       "\\(48\\)",
-      "\\(-48\\)"
+      "\\(50\\)"
     ],
     "hint": "Calculate the power first, then multiply by \\(3\\).",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Substitute \\(x = 4\\). Simplify carefully and match the option.",
-        "workingOut": "\\(3 \\times (4)^2\\)",
+        "explanation": "Substitute \\(x = 4\\) into the expression.",
+        "workingOut": "\\( 3(4)^2 \\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate \\(4^2\\). Simplify carefully and match the option.",
-        "workingOut": "\\(3 \\times 16\\)",
+        "explanation": "Evaluate the square first.",
+        "workingOut": "\\( 3(16) \\)",
         "graphData": null
       },
       {
-        "explanation": "Multiply by 3. Simplify carefully and match the option.",
-        "workingOut": "48",
+        "explanation": "Multiply to find the final value.",
+        "workingOut": "\\( 48 \\)",
         "graphData": null
       }
     ],
@@ -186,35 +186,37 @@ export const Y7_CH23F_QUESTIONS = [
   },
   {
     "id": "y7-23f-q1f",
+    "topicId": "y7-23f",
+    "c": "23F",
     "t": "Substitution",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "If \\(x = 4\\), find the value of the following expression.\\n\\n\\((x + 2)(x - 2)\\)",
+    "question": "If \\(x = 4\\), find the value of the following expression.<br /><br />\\((x + 2)(x - 2)\\)",
     "a": 3,
     "answer": "3",
     "opts": [
       "\\(13\\)",
       "\\(11\\)",
-      "\\(-12\\)",
+      "\\(14\\)",
       "\\(12\\)"
     ],
     "hint": "Calculate the value inside each bracket first.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Substitute \\(x = 4\\) into both brackets.",
-        "workingOut": "(4 + 2)(4 - 2)",
+        "explanation": "Substitute \\(x = 4\\) into the expression.",
+        "workingOut": "\\( (4 + 2)(4 - 2) \\)",
         "graphData": null
       },
       {
-        "explanation": "Evaluate the brackets. Simplify carefully and match the option.",
-        "workingOut": "(6)(2)",
+        "explanation": "Evaluate inside the brackets.",
+        "workingOut": "\\( (6)(2) \\)",
         "graphData": null
       },
       {
-        "explanation": "Multiply the results. Simplify carefully and match the option.",
-        "workingOut": "12",
+        "explanation": "Multiply to find the final value.",
+        "workingOut": "\\( 12 \\)",
         "graphData": null
       }
     ],
@@ -223,35 +225,32 @@ export const Y7_CH23F_QUESTIONS = [
   },
   {
     "id": "y7-23f-q1g",
+    "topicId": "y7-23f",
+    "c": "23F",
     "t": "Substitution",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "If \\(x = 4\\), find the value of the following expression.\\n\\n\\(x^3\\)",
+    "question": "If \\(x = 4\\), find the value of the following expression.<br /><br />\\(x^3\\)",
     "a": 0,
     "answer": "0",
     "opts": [
       "\\(64\\)",
       "\\(65\\)",
       "\\(63\\)",
-      "\\(-64\\)"
+      "\\(66\\)"
     ],
     "hint": "\\(x^3\\) means \\(x \\times x \\times x\\).",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Substitute \\(x = 4\\). Simplify carefully and match the option.",
-        "workingOut": "\\(4^3\\)",
+        "explanation": "Substitute \\(x = 4\\) into the expression.",
+        "workingOut": "\\( (4)^3 \\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate \\(4 \\times 4 \\times 4\\).",
-        "workingOut": "64",
-        "graphData": null
-      },
-      {
-        "explanation": "Confirm the final answer.",
-        "workingOut": "\\(64\\)",
+        "explanation": "Evaluate the cube to find the final value.",
+        "workingOut": "\\( 64 \\)",
         "graphData": null
       }
     ],
@@ -260,35 +259,37 @@ export const Y7_CH23F_QUESTIONS = [
   },
   {
     "id": "y7-23f-q1h",
+    "topicId": "y7-23f",
+    "c": "23F",
     "t": "Substitution",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "If \\(x = 4\\), find the value of the following expression.\\n\\n\\(x^2 - 3x\\)",
+    "question": "If \\(x = 4\\), find the value of the following expression.<br /><br />\\(x^2 - 3x\\)",
     "a": 1,
     "answer": "1",
     "opts": [
       "\\(5\\)",
       "\\(4\\)",
       "\\(3\\)",
-      "\\(-4\\)"
+      "\\(6\\)"
     ],
     "hint": "Calculate \\(x^2\\) and \\(3x\\) separately, then subtract.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Substitute \\(x = 4\\). Simplify carefully and match the option.",
-        "workingOut": "\\((4)^2 - 3(4)\\)",
+        "explanation": "Substitute \\(x = 4\\) into the expression.",
+        "workingOut": "\\( (4)^2 - 3(4) \\)",
         "graphData": null
       },
       {
-        "explanation": "Evaluate each part. Simplify carefully and match the option.",
-        "workingOut": "16 - 12",
+        "explanation": "Evaluate each part.",
+        "workingOut": "\\( 16 - 12 \\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract. Simplify carefully and match the option.",
-        "workingOut": "4",
+        "explanation": "Subtract to find the final value.",
+        "workingOut": "\\( 4 \\)",
         "graphData": null
       }
     ],
@@ -297,40 +298,42 @@ export const Y7_CH23F_QUESTIONS = [
   },
   {
     "id": "y7-23f-q1i",
+    "topicId": "y7-23f",
+    "c": "23F",
     "t": "Substitution",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "If \\(x = 4\\), find the value of the following expression.\\n\\n\\((3x + 5) \\times 2x\\)",
+    "question": "If \\(x = 4\\), find the value of the following expression.<br /><br />\\((3x + 5) \\times 2x\\)",
     "a": 2,
     "answer": "2",
     "opts": [
       "\\(137\\)",
       "\\(135\\)",
       "\\(136\\)",
-      "\\(-136\\)"
+      "\\(138\\)"
     ],
     "hint": "Calculate the value in the bracket first, then multiply.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Substitute \\(x = 4\\). Simplify carefully and match the option.",
-        "workingOut": "\\((3(4) + 5) \\times 2(4)\\)",
+        "explanation": "Substitute \\(x = 4\\) into the expression.",
+        "workingOut": "\\( (3(4) + 5) \\times 2(4) \\)",
         "graphData": null
       },
       {
-        "explanation": "Evaluate the bracket and the term outside.",
-        "workingOut": "\\((12 + 5) \\times 8\\)",
+        "explanation": "Evaluate the multiplication inside the brackets and the standalone term.",
+        "workingOut": "\\( (12 + 5) \\times 8 \\)",
         "graphData": null
       },
       {
-        "explanation": "Simplify the bracket. Simplify carefully and match the option.",
-        "workingOut": "\\(17 \\times 8\\)",
+        "explanation": "Add inside the brackets.",
+        "workingOut": "\\( 17 \\times 8 \\)",
         "graphData": null
       },
       {
-        "explanation": "Multiply. Simplify carefully and match the option.",
-        "workingOut": "136",
+        "explanation": "Multiply to find the final value.",
+        "workingOut": "\\( 136 \\)",
         "graphData": null
       }
     ],
@@ -339,35 +342,37 @@ export const Y7_CH23F_QUESTIONS = [
   },
   {
     "id": "y7-23f-q1j",
+    "topicId": "y7-23f",
+    "c": "23F",
     "t": "Substitution",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "If \\(x = 4\\), find the value of the following expression.\\n\\n\\(5x - 7\\)",
+    "question": "If \\(x = 4\\), find the value of the following expression.<br /><br />\\(5x - 7\\)",
     "a": 3,
     "answer": "3",
     "opts": [
       "\\(14\\)",
       "\\(12\\)",
-      "\\(-13\\)",
+      "\\(15\\)",
       "\\(13\\)"
     ],
     "hint": "Multiply first, then subtract.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Substitute \\(x = 4\\). Simplify carefully and match the option.",
-        "workingOut": "5(4) - 7",
+        "explanation": "Substitute \\(x = 4\\) into the expression.",
+        "workingOut": "\\( 5(4) - 7 \\)",
         "graphData": null
       },
       {
-        "explanation": "Multiply. Simplify carefully and match the option.",
-        "workingOut": "20 - 7",
+        "explanation": "Multiply first.",
+        "workingOut": "\\( 20 - 7 \\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract. Simplify carefully and match the option.",
-        "workingOut": "13",
+        "explanation": "Subtract to find the final value.",
+        "workingOut": "\\( 13 \\)",
         "graphData": null
       }
     ],
@@ -376,35 +381,37 @@ export const Y7_CH23F_QUESTIONS = [
   },
   {
     "id": "y7-23f-q1k",
+    "topicId": "y7-23f",
+    "c": "23F",
     "t": "Substitution",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "If \\(x = 4\\), find the value of the following expression.\\n\\n\\(120 \\div 5x\\)",
+    "question": "If \\(x = 4\\), find the value of the following expression.<br /><br />\\(120 \\div 5x\\)",
     "a": 0,
     "answer": "0",
     "opts": [
       "\\(6\\)",
       "\\(7\\)",
       "\\(5\\)",
-      "\\(-6\\)"
+      "\\(8\\)"
     ],
     "hint": "Calculate \\(5x\\) first, then divide \\(120\\) by the result.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Substitute \\(x = 4\\). Simplify carefully and match the option.",
-        "workingOut": "\\(120 \\div (5 \\times 4)\\)",
+        "explanation": "Substitute \\(x = 4\\) into the expression.",
+        "workingOut": "\\( 120 \\div (5 \\times 4) \\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the divisor. Simplify carefully and match the option.",
-        "workingOut": "\\(120 \\div 20\\)",
+        "explanation": "Evaluate the multiplication.",
+        "workingOut": "\\( 120 \\div 20 \\)",
         "graphData": null
       },
       {
-        "explanation": "Divide. Simplify carefully and match the option.",
-        "workingOut": "6",
+        "explanation": "Divide to find the final value.",
+        "workingOut": "\\( 6 \\)",
         "graphData": null
       }
     ],
@@ -413,35 +420,37 @@ export const Y7_CH23F_QUESTIONS = [
   },
   {
     "id": "y7-23f-q1l",
+    "topicId": "y7-23f",
+    "c": "23F",
     "t": "Substitution",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "If \\(x = 4\\), find the value of the following expression.\\n\\n\\((x - 1) \\div 3\\)",
+    "question": "If \\(x = 4\\), find the value of the following expression.<br /><br />\\((x - 1) \\div 3\\)",
     "a": 1,
     "answer": "1",
     "opts": [
       "\\(2\\)",
       "\\(1\\)",
       "\\(0\\)",
-      "\\(-1\\)"
+      "\\(3\\)"
     ],
     "hint": "Calculate the bracket first.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Substitute \\(x = 4\\). Simplify carefully and match the option.",
-        "workingOut": "\\((4 - 1) \\div 3\\)",
+        "explanation": "Substitute \\(x = 4\\) into the expression.",
+        "workingOut": "\\( (4 - 1) \\div 3 \\)",
         "graphData": null
       },
       {
-        "explanation": "Evaluate the bracket. Simplify carefully and match the option.",
-        "workingOut": "\\(3 \\div 3\\)",
+        "explanation": "Evaluate inside the brackets.",
+        "workingOut": "\\( 3 \\div 3 \\)",
         "graphData": null
       },
       {
-        "explanation": "Divide. Simplify carefully and match the option.",
-        "workingOut": "1",
+        "explanation": "Divide to find the final value.",
+        "workingOut": "\\( 1 \\)",
         "graphData": null
       }
     ],
@@ -450,35 +459,32 @@ export const Y7_CH23F_QUESTIONS = [
   },
   {
     "id": "y7-23f-q2a",
+    "topicId": "y7-23f",
+    "c": "23F",
     "t": "Substitution",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "If \\(p = 2\\), \\(q = 4\\), \\(r = 6\\) and \\(s = 12\\), find the value of the following expression.\\n\\n\\(p + q\\)",
+    "question": "If \\(p = 2\\), \\(q = 4\\), \\(r = 6\\) and \\(s = 12\\), find the value of the following expression.<br /><br />\\(p + q\\)",
     "a": 1,
     "answer": "1",
     "opts": [
       "\\(7\\)",
       "\\(6\\)",
       "\\(5\\)",
-      "\\(-6\\)"
+      "\\(8\\)"
     ],
     "hint": "Substitute the given values.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Replace \\(p\\) with \\(2\\) and \\(q\\) with \\(4\\).",
-        "workingOut": "2 + 4",
+        "explanation": "Substitute the given values (\\(p = 2\\), \\(q = 4\\)).",
+        "workingOut": "\\( 2 + 4 \\)",
         "graphData": null
       },
       {
-        "explanation": "Add the numbers. Simplify carefully and match the option.",
-        "workingOut": "6",
-        "graphData": null
-      },
-      {
-        "explanation": "Confirm the final answer.",
-        "workingOut": "\\(6\\)",
+        "explanation": "Add to find the final value.",
+        "workingOut": "\\( 6 \\)",
         "graphData": null
       }
     ],
@@ -487,35 +493,32 @@ export const Y7_CH23F_QUESTIONS = [
   },
   {
     "id": "y7-23f-q2b",
+    "topicId": "y7-23f",
+    "c": "23F",
     "t": "Substitution",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "If \\(p = 2\\), \\(q = 4\\), \\(r = 6\\) and \\(s = 12\\), find the value of the following expression.\\n\\n\\(p + q + r + s\\)",
+    "question": "If \\(p = 2\\), \\(q = 4\\), \\(r = 6\\) and \\(s = 12\\), find the value of the following expression.<br /><br />\\(p + q + r + s\\)",
     "a": 2,
     "answer": "2",
     "opts": [
       "\\(25\\)",
       "\\(23\\)",
       "\\(24\\)",
-      "\\(-24\\)"
+      "\\(26\\)"
     ],
     "hint": "Add all four values together.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Substitute the values. Simplify carefully and match the option.",
-        "workingOut": "2 + 4 + 6 + 12",
+        "explanation": "Substitute the given values (\\(p = 2, q = 4, r = 6, s = 12\\)).",
+        "workingOut": "\\( 2 + 4 + 6 + 12 \\)",
         "graphData": null
       },
       {
-        "explanation": "Add the numbers. Simplify carefully and match the option.",
-        "workingOut": "24",
-        "graphData": null
-      },
-      {
-        "explanation": "Confirm the final answer.",
-        "workingOut": "\\(24\\)",
+        "explanation": "Add to find the final value.",
+        "workingOut": "\\( 24 \\)",
         "graphData": null
       }
     ],
@@ -524,35 +527,37 @@ export const Y7_CH23F_QUESTIONS = [
   },
   {
     "id": "y7-23f-q2c",
+    "topicId": "y7-23f",
+    "c": "23F",
     "t": "Substitution",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "If \\(p = 2\\), \\(q = 4\\), \\(r = 6\\) and \\(s = 12\\), find the value of the following expression.\\n\\n\\(pqr - s^2\\)",
+    "question": "If \\(p = 2\\), \\(q = 4\\), \\(r = 6\\) and \\(s = 12\\), find the value of the following expression.<br /><br />\\(pqr - s^2\\)",
     "a": 3,
     "answer": "3",
     "opts": [
       "\\(-95\\)",
       "\\(-97\\)",
-      "\\(96\\)",
+      "\\(98\\)",
       "\\(-96\\)"
     ],
     "hint": "Calculate \\(p \\times q \\times r\\) and subtract \\(s^2\\).",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Substitute the values. Simplify carefully and match the option.",
-        "workingOut": "\\((2)(4)(6) - (12)^2\\)",
+        "explanation": "Substitute the given values.",
+        "workingOut": "\\( (2)(4)(6) - (12)^2 \\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate the multiplication and the power.",
-        "workingOut": "48 - 144",
+        "explanation": "Evaluate the multiplication and the square.",
+        "workingOut": "\\( 48 - 144 \\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract. Simplify carefully and match the option.",
-        "workingOut": "-96",
+        "explanation": "Subtract to find the final value.",
+        "workingOut": "\\( -96 \\)",
         "graphData": null
       }
     ],
@@ -561,35 +566,32 @@ export const Y7_CH23F_QUESTIONS = [
   },
   {
     "id": "y7-23f-q2d",
+    "topicId": "y7-23f",
+    "c": "23F",
     "t": "Substitution",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "If \\(p = 2\\), \\(q = 4\\), \\(r = 6\\) and \\(s = 12\\), find the value of the following expression.\\n\\n\\(pqr\\)",
+    "question": "If \\(p = 2\\), \\(q = 4\\), \\(r = 6\\) and \\(s = 12\\), find the value of the following expression.<br /><br />\\(pqr\\)",
     "a": 0,
     "answer": "0",
     "opts": [
       "\\(48\\)",
       "\\(49\\)",
       "\\(47\\)",
-      "\\(-48\\)"
+      "\\(50\\)"
     ],
     "hint": "Multiply \\(p, q\\), and \\(r\\) together.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Substitute the values. Simplify carefully and match the option.",
-        "workingOut": "\\(2 \\times 4 \\times 6\\)",
+        "explanation": "Substitute the given values.",
+        "workingOut": "\\( (2)(4)(6) \\)",
         "graphData": null
       },
       {
-        "explanation": "Multiply. Simplify carefully and match the option.",
-        "workingOut": "48",
-        "graphData": null
-      },
-      {
-        "explanation": "Confirm the final answer.",
-        "workingOut": "\\(48\\)",
+        "explanation": "Multiply to find the final value.",
+        "workingOut": "\\( 48 \\)",
         "graphData": null
       }
     ],
@@ -598,35 +600,37 @@ export const Y7_CH23F_QUESTIONS = [
   },
   {
     "id": "y7-23f-q2e",
+    "topicId": "y7-23f",
+    "c": "23F",
     "t": "Substitution",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "If \\(p = 2\\), \\(q = 4\\), \\(r = 6\\) and \\(s = 12\\), find the value of the following expression.\\n\\n\\(3p + 2q + 5r\\)",
+    "question": "If \\(p = 2\\), \\(q = 4\\), \\(r = 6\\) and \\(s = 12\\), find the value of the following expression.<br /><br />\\(3p + 2q + 5r\\)",
     "a": 1,
     "answer": "1",
     "opts": [
       "\\(45\\)",
       "\\(44\\)",
       "\\(43\\)",
-      "\\(-44\\)"
+      "\\(46\\)"
     ],
     "hint": "Multiply each variable by its coefficient, then add.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Substitute the values. Simplify carefully and match the option.",
-        "workingOut": "3(2) + 2(4) + 5(6)",
+        "explanation": "Substitute the given values.",
+        "workingOut": "\\( 3(2) + 2(4) + 5(6) \\)",
         "graphData": null
       },
       {
-        "explanation": "Multiply. Simplify carefully and match the option.",
-        "workingOut": "6 + 8 + 30",
+        "explanation": "Multiply each part.",
+        "workingOut": "\\( 6 + 8 + 30 \\)",
         "graphData": null
       },
       {
-        "explanation": "Add the numbers. Simplify carefully and match the option.",
-        "workingOut": "44",
+        "explanation": "Add to find the final value.",
+        "workingOut": "\\( 44 \\)",
         "graphData": null
       }
     ],
@@ -635,35 +639,37 @@ export const Y7_CH23F_QUESTIONS = [
   },
   {
     "id": "y7-23f-q2f",
+    "topicId": "y7-23f",
+    "c": "23F",
     "t": "Substitution",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "If \\(p = 2\\), \\(q = 4\\), \\(r = 6\\) and \\(s = 12\\), find the value of the following expression.\\n\\n\\(4q + 3r - s\\)",
+    "question": "If \\(p = 2\\), \\(q = 4\\), \\(r = 6\\) and \\(s = 12\\), find the value of the following expression.<br /><br />\\(4q + 3r - s\\)",
     "a": 2,
     "answer": "2",
     "opts": [
       "\\(23\\)",
       "\\(21\\)",
       "\\(22\\)",
-      "\\(-22\\)"
+      "\\(24\\)"
     ],
     "hint": "Substitute and follow order of operations.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Substitute the values. Simplify carefully and match the option.",
-        "workingOut": "4(4) + 3(6) - 12",
+        "explanation": "Substitute the given values.",
+        "workingOut": "\\( 4(4) + 3(6) - 12 \\)",
         "graphData": null
       },
       {
-        "explanation": "Multiply. Simplify carefully and match the option.",
-        "workingOut": "16 + 18 - 12",
+        "explanation": "Multiply each part.",
+        "workingOut": "\\( 16 + 18 - 12 \\)",
         "graphData": null
       },
       {
-        "explanation": "Add and subtract from left to right.",
-        "workingOut": "\\(34 - 12 = 22\\)",
+        "explanation": "Calculate the final value.",
+        "workingOut": "\\( 22 \\)",
         "graphData": null
       }
     ],
@@ -672,35 +678,32 @@ export const Y7_CH23F_QUESTIONS = [
   },
   {
     "id": "y7-23f-q2g",
+    "topicId": "y7-23f",
+    "c": "23F",
     "t": "Substitution",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "If \\(p = 2\\), \\(q = 4\\), \\(r = 6\\) and \\(s = 12\\), find the value of the following expression.\\n\\n\\(10qr\\)",
+    "question": "If \\(p = 2\\), \\(q = 4\\), \\(r = 6\\) and \\(s = 12\\), find the value of the following expression.<br /><br />\\(10qr\\)",
     "a": 3,
     "answer": "3",
     "opts": [
       "\\(241\\)",
       "\\(239\\)",
-      "\\(-240\\)",
+      "\\(242\\)",
       "\\(240\\)"
     ],
     "hint": "Multiply \\(10\\), \\(q\\), and \\(r\\).",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Substitute the values. Simplify carefully and match the option.",
-        "workingOut": "\\(10 \\times 4 \\times 6\\)",
+        "explanation": "Substitute the given values.",
+        "workingOut": "\\( 10(4)(6) \\)",
         "graphData": null
       },
       {
-        "explanation": "Multiply. Simplify carefully and match the option.",
-        "workingOut": "240",
-        "graphData": null
-      },
-      {
-        "explanation": "Confirm the final answer.",
-        "workingOut": "\\(240\\)",
+        "explanation": "Multiply to find the final value.",
+        "workingOut": "\\( 240 \\)",
         "graphData": null
       }
     ],
@@ -709,35 +712,37 @@ export const Y7_CH23F_QUESTIONS = [
   },
   {
     "id": "y7-23f-q2h",
+    "topicId": "y7-23f",
+    "c": "23F",
     "t": "Substitution",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "If \\(p = 2\\), \\(q = 4\\), \\(r = 6\\) and \\(s = 12\\), find the value of the following expression.\\n\\n\\(5r - s\\)",
+    "question": "If \\(p = 2\\), \\(q = 4\\), \\(r = 6\\) and \\(s = 12\\), find the value of the following expression.<br /><br />\\(5r - s\\)",
     "a": 0,
     "answer": "0",
     "opts": [
       "\\(18\\)",
       "\\(19\\)",
       "\\(17\\)",
-      "\\(-18\\)"
+      "\\(20\\)"
     ],
     "hint": "Calculate \\(5r\\), then subtract \\(s\\).",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Substitute the values. Simplify carefully and match the option.",
-        "workingOut": "5(6) - 12",
+        "explanation": "Substitute the given values.",
+        "workingOut": "\\( 5(6) - 12 \\)",
         "graphData": null
       },
       {
-        "explanation": "Multiply. Simplify carefully and match the option.",
-        "workingOut": "30 - 12",
+        "explanation": "Multiply first.",
+        "workingOut": "\\( 30 - 12 \\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract. Simplify carefully and match the option.",
-        "workingOut": "18",
+        "explanation": "Subtract to find the final value.",
+        "workingOut": "\\( 18 \\)",
         "graphData": null
       }
     ],
@@ -746,35 +751,37 @@ export const Y7_CH23F_QUESTIONS = [
   },
   {
     "id": "y7-23f-q2i",
+    "topicId": "y7-23f",
+    "c": "23F",
     "t": "Substitution",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "If \\(p = 2\\), \\(q = 4\\), \\(r = 6\\) and \\(s = 12\\), find the value of the following expression.\\n\\n\\(6s \\div q\\)",
+    "question": "If \\(p = 2\\), \\(q = 4\\), \\(r = 6\\) and \\(s = 12\\), find the value of the following expression.<br /><br />\\(6s \\div q\\)",
     "a": 1,
     "answer": "1",
     "opts": [
       "\\(19\\)",
       "\\(18\\)",
       "\\(17\\)",
-      "\\(-18\\)"
+      "\\(20\\)"
     ],
     "hint": "Calculate \\(6s\\) first, then divide by \\(q\\).",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Substitute the values. Simplify carefully and match the option.",
-        "workingOut": "\\((6 \\times 12) \\div 4\\)",
+        "explanation": "Substitute the given values.",
+        "workingOut": "\\( 6(12) \\div 4 \\)",
         "graphData": null
       },
       {
-        "explanation": "Multiply. Simplify carefully and match the option.",
-        "workingOut": "\\(72 \\div 4\\)",
+        "explanation": "Multiply first.",
+        "workingOut": "\\( 72 \\div 4 \\)",
         "graphData": null
       },
       {
-        "explanation": "Divide. Simplify carefully and match the option.",
-        "workingOut": "18",
+        "explanation": "Divide to find the final value.",
+        "workingOut": "\\( 18 \\)",
         "graphData": null
       }
     ],
@@ -783,35 +790,37 @@ export const Y7_CH23F_QUESTIONS = [
   },
   {
     "id": "y7-23f-q2j",
+    "topicId": "y7-23f",
+    "c": "23F",
     "t": "Substitution",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "If \\(p = 2\\), \\(q = 4\\), \\(r = 6\\) and \\(s = 12\\), find the value of the following expression.\\n\\n\\(7p - p^2\\)",
+    "question": "If \\(p = 2\\), \\(q = 4\\), \\(r = 6\\) and \\(s = 12\\), find the value of the following expression.<br /><br />\\(7p - p^2\\)",
     "a": 2,
     "answer": "2",
     "opts": [
       "\\(11\\)",
       "\\(9\\)",
       "\\(10\\)",
-      "\\(-10\\)"
+      "\\(12\\)"
     ],
     "hint": "Calculate \\(7p\\) and \\(p^2\\), then subtract.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Substitute the values. Simplify carefully and match the option.",
-        "workingOut": "\\(7(2) - (2)^2\\)",
+        "explanation": "Substitute \\(p = 2\\).",
+        "workingOut": "\\( 7(2) - (2)^2 \\)",
         "graphData": null
       },
       {
-        "explanation": "Evaluate each part. Simplify carefully and match the option.",
-        "workingOut": "14 - 4",
+        "explanation": "Evaluate the multiplication and the square.",
+        "workingOut": "\\( 14 - 4 \\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract. Simplify carefully and match the option.",
-        "workingOut": "10",
+        "explanation": "Subtract to find the final value.",
+        "workingOut": "\\( 10 \\)",
         "graphData": null
       }
     ],
@@ -820,35 +829,37 @@ export const Y7_CH23F_QUESTIONS = [
   },
   {
     "id": "y7-23f-q2k",
+    "topicId": "y7-23f",
+    "c": "23F",
     "t": "Substitution",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "If \\(p = 2\\), \\(q = 4\\), \\(r = 6\\) and \\(s = 12\\), find the value of the following expression.\\n\\n\\((r + s) - p^2\\)",
+    "question": "If \\(p = 2\\), \\(q = 4\\), \\(r = 6\\) and \\(s = 12\\), find the value of the following expression.<br /><br />\\((r + s) - p^2\\)",
     "a": 3,
     "answer": "3",
     "opts": [
       "\\(15\\)",
       "\\(13\\)",
-      "\\(-14\\)",
+      "\\(16\\)",
       "\\(14\\)"
     ],
     "hint": "Evaluate the bracket and the power first.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Substitute the values. Simplify carefully and match the option.",
-        "workingOut": "\\((6 + 12) - (2)^2\\)",
+        "explanation": "Substitute the given values.",
+        "workingOut": "\\( (6 + 12) - (2)^2 \\)",
         "graphData": null
       },
       {
-        "explanation": "Evaluate bracket and power.",
-        "workingOut": "18 - 4",
+        "explanation": "Evaluate the brackets and the square.",
+        "workingOut": "\\( 18 - 4 \\)",
         "graphData": null
       },
       {
-        "explanation": "Subtract. Simplify carefully and match the option.",
-        "workingOut": "14",
+        "explanation": "Subtract to find the final value.",
+        "workingOut": "\\( 14 \\)",
         "graphData": null
       }
     ],
@@ -857,35 +868,37 @@ export const Y7_CH23F_QUESTIONS = [
   },
   {
     "id": "y7-23f-q2l",
+    "topicId": "y7-23f",
+    "c": "23F",
     "t": "Substitution",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "If \\(p = 2\\), \\(q = 4\\), \\(r = 6\\) and \\(s = 12\\), find the value of the following expression.\\n\\n\\(q^2 + s^2 - pqr\\)",
+    "question": "If \\(p = 2\\), \\(q = 4\\), \\(r = 6\\) and \\(s = 12\\), find the value of the following expression.<br /><br />\\(q^2 + s^2 - pqr\\)",
     "a": 0,
     "answer": "0",
     "opts": [
       "\\(112\\)",
       "\\(113\\)",
       "\\(111\\)",
-      "\\(-112\\)"
+      "\\(114\\)"
     ],
     "hint": "Calculate the powers and the multiplication before adding and subtracting.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Substitute the values. Simplify carefully and match the option.",
-        "workingOut": "\\((4)^2 + (12)^2 - (2)(4)(6)\\)",
+        "explanation": "Substitute the given values.",
+        "workingOut": "\\( (4)^2 + (12)^2 - (2)(4)(6) \\)",
         "graphData": null
       },
       {
-        "explanation": "Evaluate the powers and multiplication.",
-        "workingOut": "16 + 144 - 48",
+        "explanation": "Evaluate the squares and the multiplication.",
+        "workingOut": "\\( 16 + 144 - 48 \\)",
         "graphData": null
       },
       {
-        "explanation": "Add and subtract from left to right.",
-        "workingOut": "\\(160 - 48 = 112\\)",
+        "explanation": "Calculate the final value.",
+        "workingOut": "\\( 112 \\)",
         "graphData": null
       }
     ],
@@ -894,6 +907,8 @@ export const Y7_CH23F_QUESTIONS = [
   },
   {
     "id": "y7-23f-q3a_0",
+    "topicId": "y7-23f",
+    "c": "23F",
     "t": "Substitution",
     "type": "multiple_choice",
     "difficulty": "easy",
@@ -905,24 +920,24 @@ export const Y7_CH23F_QUESTIONS = [
       "\\(3\\)",
       "\\(2\\)",
       "\\(1\\)",
-      "\\(-2\\)"
+      "\\(4\\)"
     ],
     "hint": "Substitute \\(x = 0\\) into the equation.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Replace \\(x\\) with \\(0\\).",
-        "workingOut": "\\(y = 3(0) + 2\\)",
+        "explanation": "Substitute \\(x = 0\\) into the equation.",
+        "workingOut": "\\( y = 3(0) + 2 \\)",
         "graphData": null
       },
       {
-        "explanation": "Multiply and add. Simplify carefully and match the option.",
-        "workingOut": "\\(y = 0 + 2 = 2\\)",
+        "explanation": "Multiply first.",
+        "workingOut": "\\( y = 0 + 2 \\)",
         "graphData": null
       },
       {
-        "explanation": "Confirm the final answer.",
-        "workingOut": "\\(2\\)",
+        "explanation": "Add to find the final value.",
+        "workingOut": "\\( y = 2 \\)",
         "graphData": null
       }
     ],
@@ -931,6 +946,8 @@ export const Y7_CH23F_QUESTIONS = [
   },
   {
     "id": "y7-23f-q3a_1",
+    "topicId": "y7-23f",
+    "c": "23F",
     "t": "Substitution",
     "type": "multiple_choice",
     "difficulty": "easy",
@@ -942,24 +959,24 @@ export const Y7_CH23F_QUESTIONS = [
       "\\(6\\)",
       "\\(4\\)",
       "\\(5\\)",
-      "\\(-5\\)"
+      "\\(7\\)"
     ],
     "hint": "Substitute \\(x = 1\\) into the equation.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Replace \\(x\\) with \\(1\\).",
-        "workingOut": "\\(y = 3(1) + 2\\)",
+        "explanation": "Substitute \\(x = 1\\) into the equation.",
+        "workingOut": "\\( y = 3(1) + 2 \\)",
         "graphData": null
       },
       {
-        "explanation": "Multiply and add. Simplify carefully and match the option.",
-        "workingOut": "\\(y = 3 + 2 = 5\\)",
+        "explanation": "Multiply first.",
+        "workingOut": "\\( y = 3 + 2 \\)",
         "graphData": null
       },
       {
-        "explanation": "Confirm the final answer.",
-        "workingOut": "\\(5\\)",
+        "explanation": "Add to find the final value.",
+        "workingOut": "\\( y = 5 \\)",
         "graphData": null
       }
     ],
@@ -968,6 +985,8 @@ export const Y7_CH23F_QUESTIONS = [
   },
   {
     "id": "y7-23f-q3a_2",
+    "topicId": "y7-23f",
+    "c": "23F",
     "t": "Substitution",
     "type": "multiple_choice",
     "difficulty": "easy",
@@ -978,25 +997,25 @@ export const Y7_CH23F_QUESTIONS = [
     "opts": [
       "\\(9\\)",
       "\\(7\\)",
-      "\\(-8\\)",
+      "\\(10\\)",
       "\\(8\\)"
     ],
     "hint": "Substitute \\(x = 2\\) into the equation.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Replace \\(x\\) with \\(2\\).",
-        "workingOut": "\\(y = 3(2) + 2\\)",
+        "explanation": "Substitute \\(x = 2\\) into the equation.",
+        "workingOut": "\\( y = 3(2) + 2 \\)",
         "graphData": null
       },
       {
-        "explanation": "Multiply and add. Simplify carefully and match the option.",
-        "workingOut": "\\(y = 6 + 2 = 8\\)",
+        "explanation": "Multiply first.",
+        "workingOut": "\\( y = 6 + 2 \\)",
         "graphData": null
       },
       {
-        "explanation": "Confirm the final answer.",
-        "workingOut": "\\(8\\)",
+        "explanation": "Add to find the final value.",
+        "workingOut": "\\( y = 8 \\)",
         "graphData": null
       }
     ],
@@ -1005,6 +1024,8 @@ export const Y7_CH23F_QUESTIONS = [
   },
   {
     "id": "y7-23f-q3b_1",
+    "topicId": "y7-23f",
+    "c": "23F",
     "t": "Substitution",
     "type": "multiple_choice",
     "difficulty": "easy",
@@ -1015,25 +1036,25 @@ export const Y7_CH23F_QUESTIONS = [
     "opts": [
       "\\(2\\)",
       "\\(0\\)",
-      "\\(-1\\)",
+      "\\(3\\)",
       "\\(1\\)"
     ],
     "hint": "Substitute \\(x = 1\\) into the equation.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Replace \\(x\\) with \\(1\\).",
-        "workingOut": "\\(y = 4(1) - 3\\)",
+        "explanation": "Substitute \\(x = 1\\) into the equation.",
+        "workingOut": "\\( y = 4(1) - 3 \\)",
         "graphData": null
       },
       {
-        "explanation": "Multiply and subtract. Simplify carefully and match the option.",
-        "workingOut": "\\(y = 4 - 3 = 1\\)",
+        "explanation": "Multiply first.",
+        "workingOut": "\\( y = 4 - 3 \\)",
         "graphData": null
       },
       {
-        "explanation": "Confirm the final answer.",
-        "workingOut": "\\(1\\)",
+        "explanation": "Subtract to find the final value.",
+        "workingOut": "\\( y = 1 \\)",
         "graphData": null
       }
     ],
@@ -1042,6 +1063,8 @@ export const Y7_CH23F_QUESTIONS = [
   },
   {
     "id": "y7-23f-q3b_3",
+    "topicId": "y7-23f",
+    "c": "23F",
     "t": "Substitution",
     "type": "multiple_choice",
     "difficulty": "easy",
@@ -1053,24 +1076,24 @@ export const Y7_CH23F_QUESTIONS = [
       "\\(10\\)",
       "\\(9\\)",
       "\\(8\\)",
-      "\\(-9\\)"
+      "\\(11\\)"
     ],
     "hint": "Substitute \\(x = 3\\) into the equation.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Replace \\(x\\) with \\(3\\).",
-        "workingOut": "\\(y = 4(3) - 3\\)",
+        "explanation": "Substitute \\(x = 3\\) into the equation.",
+        "workingOut": "\\( y = 4(3) - 3 \\)",
         "graphData": null
       },
       {
-        "explanation": "Multiply and subtract. Simplify carefully and match the option.",
-        "workingOut": "\\(y = 12 - 3 = 9\\)",
+        "explanation": "Multiply first.",
+        "workingOut": "\\( y = 12 - 3 \\)",
         "graphData": null
       },
       {
-        "explanation": "Confirm the final answer.",
-        "workingOut": "\\(9\\)",
+        "explanation": "Subtract to find the final value.",
+        "workingOut": "\\( y = 9 \\)",
         "graphData": null
       }
     ],
@@ -1079,6 +1102,8 @@ export const Y7_CH23F_QUESTIONS = [
   },
   {
     "id": "y7-23f-q3c_2",
+    "topicId": "y7-23f",
+    "c": "23F",
     "t": "Substitution",
     "type": "multiple_choice",
     "difficulty": "easy",
@@ -1090,24 +1115,24 @@ export const Y7_CH23F_QUESTIONS = [
       "\\(15\\)",
       "\\(14\\)",
       "\\(13\\)",
-      "\\(-14\\)"
+      "\\(16\\)"
     ],
     "hint": "Substitute \\(x = 2\\) into the equation.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Replace \\(x\\) with \\(2\\).",
-        "workingOut": "\\(y = 20 - 3(2)\\)",
+        "explanation": "Substitute \\(x = 2\\) into the equation.",
+        "workingOut": "\\( y = 20 - 3(2) \\)",
         "graphData": null
       },
       {
-        "explanation": "Multiply, then subtract. Simplify carefully and match the option.",
-        "workingOut": "\\(y = 20 - 6 = 14\\)",
+        "explanation": "Multiply first.",
+        "workingOut": "\\( y = 20 - 6 \\)",
         "graphData": null
       },
       {
-        "explanation": "Confirm the final answer.",
-        "workingOut": "\\(14\\)",
+        "explanation": "Subtract to find the final value.",
+        "workingOut": "\\( y = 14 \\)",
         "graphData": null
       }
     ],
@@ -1116,6 +1141,8 @@ export const Y7_CH23F_QUESTIONS = [
   },
   {
     "id": "y7-23f-q3c_4",
+    "topicId": "y7-23f",
+    "c": "23F",
     "t": "Substitution",
     "type": "multiple_choice",
     "difficulty": "easy",
@@ -1126,25 +1153,25 @@ export const Y7_CH23F_QUESTIONS = [
     "opts": [
       "\\(9\\)",
       "\\(7\\)",
-      "\\(-8\\)",
+      "\\(10\\)",
       "\\(8\\)"
     ],
     "hint": "Substitute \\(x = 4\\) into the equation.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Replace \\(x\\) with \\(4\\).",
-        "workingOut": "\\(y = 20 - 3(4)\\)",
+        "explanation": "Substitute \\(x = 4\\) into the equation.",
+        "workingOut": "\\( y = 20 - 3(4) \\)",
         "graphData": null
       },
       {
-        "explanation": "Multiply, then subtract. Simplify carefully and match the option.",
-        "workingOut": "\\(y = 20 - 12 = 8\\)",
+        "explanation": "Multiply first.",
+        "workingOut": "\\( y = 20 - 12 \\)",
         "graphData": null
       },
       {
-        "explanation": "Confirm the final answer.",
-        "workingOut": "\\(8\\)",
+        "explanation": "Subtract to find the final value.",
+        "workingOut": "\\( y = 8 \\)",
         "graphData": null
       }
     ],
@@ -1153,6 +1180,8 @@ export const Y7_CH23F_QUESTIONS = [
   },
   {
     "id": "y7-23f-q3d_3",
+    "topicId": "y7-23f",
+    "c": "23F",
     "t": "Substitution",
     "type": "multiple_choice",
     "difficulty": "easy",
@@ -1163,25 +1192,25 @@ export const Y7_CH23F_QUESTIONS = [
     "opts": [
       "\\(15\\)",
       "\\(13\\)",
-      "\\(-14\\)",
+      "\\(16\\)",
       "\\(14\\)"
     ],
     "hint": "Substitute \\(x = 3\\) into the equation.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Replace \\(x\\) with \\(3\\).",
-        "workingOut": "\\(y = 5(3) - 1\\)",
+        "explanation": "Substitute \\(x = 3\\) into the equation.",
+        "workingOut": "\\( y = 5(3) - 1 \\)",
         "graphData": null
       },
       {
-        "explanation": "Multiply and subtract. Simplify carefully and match the option.",
-        "workingOut": "\\(y = 15 - 1 = 14\\)",
+        "explanation": "Multiply first.",
+        "workingOut": "\\( y = 15 - 1 \\)",
         "graphData": null
       },
       {
-        "explanation": "Confirm the final answer.",
-        "workingOut": "\\(14\\)",
+        "explanation": "Subtract to find the final value.",
+        "workingOut": "\\( y = 14 \\)",
         "graphData": null
       }
     ],
@@ -1190,6 +1219,8 @@ export const Y7_CH23F_QUESTIONS = [
   },
   {
     "id": "y7-23f-q3d_5",
+    "topicId": "y7-23f",
+    "c": "23F",
     "t": "Substitution",
     "type": "multiple_choice",
     "difficulty": "easy",
@@ -1201,24 +1232,24 @@ export const Y7_CH23F_QUESTIONS = [
       "\\(25\\)",
       "\\(24\\)",
       "\\(23\\)",
-      "\\(-24\\)"
+      "\\(26\\)"
     ],
     "hint": "Substitute \\(x = 5\\) into the equation.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Replace \\(x\\) with \\(5\\).",
-        "workingOut": "\\(y = 5(5) - 1\\)",
+        "explanation": "Substitute \\(x = 5\\) into the equation.",
+        "workingOut": "\\( y = 5(5) - 1 \\)",
         "graphData": null
       },
       {
-        "explanation": "Multiply and subtract. Simplify carefully and match the option.",
-        "workingOut": "\\(y = 25 - 1 = 24\\)",
+        "explanation": "Multiply first.",
+        "workingOut": "\\( y = 25 - 1 \\)",
         "graphData": null
       },
       {
-        "explanation": "Confirm the final answer.",
-        "workingOut": "\\(24\\)",
+        "explanation": "Subtract to find the final value.",
+        "workingOut": "\\( y = 24 \\)",
         "graphData": null
       }
     ],
@@ -1227,6 +1258,8 @@ export const Y7_CH23F_QUESTIONS = [
   },
   {
     "id": "y7-23f-q3e_4",
+    "topicId": "y7-23f",
+    "c": "23F",
     "t": "Substitution",
     "type": "multiple_choice",
     "difficulty": "easy",
@@ -1238,24 +1271,24 @@ export const Y7_CH23F_QUESTIONS = [
       "\\(30\\)",
       "\\(29\\)",
       "\\(28\\)",
-      "\\(-29\\)"
+      "\\(31\\)"
     ],
     "hint": "Substitute \\(x = 4\\) into the equation.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Replace \\(x\\) with \\(4\\).",
-        "workingOut": "\\(y = 6(4) + 5\\)",
+        "explanation": "Substitute \\(x = 4\\) into the equation.",
+        "workingOut": "\\( y = 6(4) + 5 \\)",
         "graphData": null
       },
       {
-        "explanation": "Multiply and add. Simplify carefully and match the option.",
-        "workingOut": "\\(y = 24 + 5 = 29\\)",
+        "explanation": "Multiply first.",
+        "workingOut": "\\( y = 24 + 5 \\)",
         "graphData": null
       },
       {
-        "explanation": "Confirm the final answer.",
-        "workingOut": "\\(29\\)",
+        "explanation": "Add to find the final value.",
+        "workingOut": "\\( y = 29 \\)",
         "graphData": null
       }
     ],
@@ -1264,6 +1297,8 @@ export const Y7_CH23F_QUESTIONS = [
   },
   {
     "id": "y7-23f-q3f_6",
+    "topicId": "y7-23f",
+    "c": "23F",
     "t": "Substitution",
     "type": "multiple_choice",
     "difficulty": "easy",
@@ -1275,24 +1310,24 @@ export const Y7_CH23F_QUESTIONS = [
       "\\(4\\)",
       "\\(5\\)",
       "\\(3\\)",
-      "\\(-4\\)"
+      "\\(6\\)"
     ],
     "hint": "Substitute \\(x = 6\\) into the equation.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Replace \\(x\\) with \\(6\\).",
-        "workingOut": "\\(y = 40 - 6(6)\\)",
+        "explanation": "Substitute \\(x = 6\\) into the equation.",
+        "workingOut": "\\( y = 40 - 6(6) \\)",
         "graphData": null
       },
       {
-        "explanation": "Multiply and subtract. Simplify carefully and match the option.",
-        "workingOut": "\\(y = 40 - 36 = 4\\)",
+        "explanation": "Multiply first.",
+        "workingOut": "\\( y = 40 - 36 \\)",
         "graphData": null
       },
       {
-        "explanation": "Confirm the final answer.",
-        "workingOut": "\\(4\\)",
+        "explanation": "Subtract to find the final value.",
+        "workingOut": "\\( y = 4 \\)",
         "graphData": null
       }
     ],
@@ -1301,6 +1336,8 @@ export const Y7_CH23F_QUESTIONS = [
   },
   {
     "id": "y7-23f-q4a",
+    "topicId": "y7-23f",
+    "c": "23F",
     "t": "Substitution",
     "type": "multiple_choice",
     "difficulty": "easy",
@@ -1311,25 +1348,20 @@ export const Y7_CH23F_QUESTIONS = [
     "opts": [
       "\\(8\\)",
       "\\(6\\)",
-      "\\(-7\\)",
+      "\\(9\\)",
       "\\(7\\)"
     ],
     "hint": "Add the values of \\(x\\) and \\(y\\).",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Substitute \\(4\\) for \\(x\\) and \\(3\\) for \\(y\\).",
-        "workingOut": "4 + 3",
+        "explanation": "Substitute the given values (\\(x = 4\\), \\(y = 3\\)).",
+        "workingOut": "\\( 4 + 3 \\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate. Simplify carefully and match the option.",
-        "workingOut": "7",
-        "graphData": null
-      },
-      {
-        "explanation": "Confirm the final answer.",
-        "workingOut": "\\(7\\)",
+        "explanation": "Add to find the final value.",
+        "workingOut": "\\( 7 \\)",
         "graphData": null
       }
     ],
@@ -1338,6 +1370,8 @@ export const Y7_CH23F_QUESTIONS = [
   },
   {
     "id": "y7-23f-q4b",
+    "topicId": "y7-23f",
+    "c": "23F",
     "t": "Substitution",
     "type": "multiple_choice",
     "difficulty": "easy",
@@ -1349,24 +1383,19 @@ export const Y7_CH23F_QUESTIONS = [
       "\\(1\\)",
       "\\(2\\)",
       "\\(0\\)",
-      "\\(-1\\)"
+      "\\(3\\)"
     ],
     "hint": "Subtract the value of \\(y\\) from \\(x\\).",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Substitute \\(4\\) for \\(x\\) and \\(3\\) for \\(y\\).",
-        "workingOut": "4 - 3",
+        "explanation": "Substitute the given values (\\(x = 4\\), \\(y = 3\\)).",
+        "workingOut": "\\( 4 - 3 \\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate. Simplify carefully and match the option.",
-        "workingOut": "1",
-        "graphData": null
-      },
-      {
-        "explanation": "Confirm the final answer.",
-        "workingOut": "\\(1\\)",
+        "explanation": "Subtract to find the final value.",
+        "workingOut": "\\( 1 \\)",
         "graphData": null
       }
     ],
@@ -1375,6 +1404,8 @@ export const Y7_CH23F_QUESTIONS = [
   },
   {
     "id": "y7-23f-q4c",
+    "topicId": "y7-23f",
+    "c": "23F",
     "t": "Substitution",
     "type": "multiple_choice",
     "difficulty": "easy",
@@ -1386,24 +1417,19 @@ export const Y7_CH23F_QUESTIONS = [
       "\\(13\\)",
       "\\(12\\)",
       "\\(11\\)",
-      "\\(-12\\)"
+      "\\(14\\)"
     ],
     "hint": "\\(xy\\) means \\(x\\) multiplied by \\(y\\).",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Substitute \\(4\\) for \\(x\\) and \\(3\\) for \\(y\\).",
-        "workingOut": "\\(4 \\times 3\\)",
+        "explanation": "Substitute the given values.",
+        "workingOut": "\\( (4)(3) \\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate. Simplify carefully and match the option.",
-        "workingOut": "12",
-        "graphData": null
-      },
-      {
-        "explanation": "Confirm the final answer.",
-        "workingOut": "\\(12\\)",
+        "explanation": "Multiply to find the final value.",
+        "workingOut": "\\( 12 \\)",
         "graphData": null
       }
     ],
@@ -1412,6 +1438,8 @@ export const Y7_CH23F_QUESTIONS = [
   },
   {
     "id": "y7-23f-q4d",
+    "topicId": "y7-23f",
+    "c": "23F",
     "t": "Substitution",
     "type": "multiple_choice",
     "difficulty": "easy",
@@ -1423,24 +1451,19 @@ export const Y7_CH23F_QUESTIONS = [
       "\\(17\\)",
       "\\(15\\)",
       "\\(16\\)",
-      "\\(-16\\)"
+      "\\(18\\)"
     ],
     "hint": "\\(x^2\\) means \\(x\\) multiplied by itself.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Substitute \\(4\\) for \\(x\\).",
-        "workingOut": "\\(4^2 = 4 \\times 4\\)",
+        "explanation": "Substitute \\(x = 4\\).",
+        "workingOut": "\\( (4)^2 \\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate. Simplify carefully and match the option.",
-        "workingOut": "16",
-        "graphData": null
-      },
-      {
-        "explanation": "Confirm the final answer.",
-        "workingOut": "\\(16\\)",
+        "explanation": "Evaluate the square to find the final value.",
+        "workingOut": "\\( 16 \\)",
         "graphData": null
       }
     ],
@@ -1449,6 +1472,8 @@ export const Y7_CH23F_QUESTIONS = [
   },
   {
     "id": "y7-23f-q4e",
+    "topicId": "y7-23f",
+    "c": "23F",
     "t": "Substitution",
     "type": "multiple_choice",
     "difficulty": "easy",
@@ -1459,25 +1484,20 @@ export const Y7_CH23F_QUESTIONS = [
     "opts": [
       "\\(10\\)",
       "\\(8\\)",
-      "\\(-9\\)",
+      "\\(11\\)",
       "\\(9\\)"
     ],
     "hint": "\\(y^2\\) means \\(y\\) multiplied by itself.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Substitute \\(3\\) for \\(y\\).",
-        "workingOut": "\\(3^2 = 3 \\times 3\\)",
+        "explanation": "Substitute \\(y = 3\\).",
+        "workingOut": "\\( (3)^2 \\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate. Simplify carefully and match the option.",
-        "workingOut": "9",
-        "graphData": null
-      },
-      {
-        "explanation": "Confirm the final answer.",
-        "workingOut": "\\(9\\)",
+        "explanation": "Evaluate the square to find the final value.",
+        "workingOut": "\\( 9 \\)",
         "graphData": null
       }
     ],
@@ -1486,6 +1506,8 @@ export const Y7_CH23F_QUESTIONS = [
   },
   {
     "id": "y7-23f-q4f",
+    "topicId": "y7-23f",
+    "c": "23F",
     "t": "Substitution",
     "type": "multiple_choice",
     "difficulty": "easy",
@@ -1497,24 +1519,24 @@ export const Y7_CH23F_QUESTIONS = [
       "\\(24\\)",
       "\\(25\\)",
       "\\(23\\)",
-      "\\(-24\\)"
+      "\\(26\\)"
     ],
     "hint": "Multiply first, then add the results.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Substitute \\(4\\) for \\(x\\) and \\(3\\) for \\(y\\).",
-        "workingOut": "3(4) + 4(3)",
+        "explanation": "Substitute the given values.",
+        "workingOut": "\\( 3(4) + 4(3) \\)",
         "graphData": null
       },
       {
-        "explanation": "Multiply. Simplify carefully and match the option.",
-        "workingOut": "12 + 12",
+        "explanation": "Multiply each part.",
+        "workingOut": "\\( 12 + 12 \\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate. Simplify carefully and match the option.",
-        "workingOut": "24",
+        "explanation": "Add to find the final value.",
+        "workingOut": "\\( 24 \\)",
         "graphData": null
       }
     ],
@@ -1523,6 +1545,8 @@ export const Y7_CH23F_QUESTIONS = [
   },
   {
     "id": "y7-23f-q4g",
+    "topicId": "y7-23f",
+    "c": "23F",
     "t": "Substitution",
     "type": "multiple_choice",
     "difficulty": "easy",
@@ -1534,24 +1558,19 @@ export const Y7_CH23F_QUESTIONS = [
       "\\(15\\)",
       "\\(14\\)",
       "\\(13\\)",
-      "\\(-14\\)"
+      "\\(16\\)"
     ],
     "hint": "\\(xy\\) means \\(x\\) multiplied by \\(y\\).",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Substitute \\(7\\) for \\(x\\) and \\(2\\) for \\(y\\).",
-        "workingOut": "\\(7 \\times 2\\)",
+        "explanation": "Substitute the given values.",
+        "workingOut": "\\( (7)(2) \\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate. Simplify carefully and match the option.",
-        "workingOut": "14",
-        "graphData": null
-      },
-      {
-        "explanation": "Confirm the final answer.",
-        "workingOut": "\\(14\\)",
+        "explanation": "Multiply to find the final value.",
+        "workingOut": "\\( 14 \\)",
         "graphData": null
       }
     ],
@@ -1560,6 +1579,8 @@ export const Y7_CH23F_QUESTIONS = [
   },
   {
     "id": "y7-23f-q4h",
+    "topicId": "y7-23f",
+    "c": "23F",
     "t": "Substitution",
     "type": "multiple_choice",
     "difficulty": "easy",
@@ -1571,24 +1592,19 @@ export const Y7_CH23F_QUESTIONS = [
       "\\(6\\)",
       "\\(4\\)",
       "\\(5\\)",
-      "\\(-5\\)"
+      "\\(7\\)"
     ],
     "hint": "Subtract \\(y\\) from \\(x\\).",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Substitute \\(7\\) for \\(x\\) and \\(2\\) for \\(y\\).",
-        "workingOut": "7 - 2",
+        "explanation": "Substitute the given values.",
+        "workingOut": "\\( 7 - 2 \\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate. Simplify carefully and match the option.",
-        "workingOut": "5",
-        "graphData": null
-      },
-      {
-        "explanation": "Confirm the final answer.",
-        "workingOut": "\\(5\\)",
+        "explanation": "Subtract to find the final value.",
+        "workingOut": "\\( 5 \\)",
         "graphData": null
       }
     ],
@@ -1597,6 +1613,8 @@ export const Y7_CH23F_QUESTIONS = [
   },
   {
     "id": "y7-23f-q4i",
+    "topicId": "y7-23f",
+    "c": "23F",
     "t": "Substitution",
     "type": "multiple_choice",
     "difficulty": "easy",
@@ -1607,25 +1625,25 @@ export const Y7_CH23F_QUESTIONS = [
     "opts": [
       "\\(30\\)",
       "\\(28\\)",
-      "\\(-29\\)",
+      "\\(31\\)",
       "\\(29\\)"
     ],
     "hint": "Multiply first, then add the results.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Substitute \\(7\\) for \\(x\\) and \\(2\\) for \\(y\\).",
-        "workingOut": "3(7) + 4(2)",
+        "explanation": "Substitute the given values.",
+        "workingOut": "\\( 3(7) + 4(2) \\)",
         "graphData": null
       },
       {
-        "explanation": "Multiply. Simplify carefully and match the option.",
-        "workingOut": "21 + 8",
+        "explanation": "Multiply each part.",
+        "workingOut": "\\( 21 + 8 \\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate. Simplify carefully and match the option.",
-        "workingOut": "29",
+        "explanation": "Add to find the final value.",
+        "workingOut": "\\( 29 \\)",
         "graphData": null
       }
     ],
@@ -1634,6 +1652,8 @@ export const Y7_CH23F_QUESTIONS = [
   },
   {
     "id": "y7-23f-q4j",
+    "topicId": "y7-23f",
+    "c": "23F",
     "t": "Substitution",
     "type": "multiple_choice",
     "difficulty": "easy",
@@ -1645,24 +1665,24 @@ export const Y7_CH23F_QUESTIONS = [
       "\\(41\\)",
       "\\(42\\)",
       "\\(40\\)",
-      "\\(-41\\)"
+      "\\(43\\)"
     ],
     "hint": "Square each number first, then add the results.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Substitute \\(5\\) for \\(x\\) and \\(4\\) for \\(y\\).",
-        "workingOut": "\\(5^2 + 4^2\\)",
+        "explanation": "Substitute the given values.",
+        "workingOut": "\\( (5)^2 + (4)^2 \\)",
         "graphData": null
       },
       {
-        "explanation": "Evaluate the powers. Simplify carefully and match the option.",
-        "workingOut": "25 + 16",
+        "explanation": "Evaluate the squares.",
+        "workingOut": "\\( 25 + 16 \\)",
         "graphData": null
       },
       {
-        "explanation": "Calculate. Simplify carefully and match the option.",
-        "workingOut": "41",
+        "explanation": "Add to find the final value.",
+        "workingOut": "\\( 41 \\)",
         "graphData": null
       }
     ],

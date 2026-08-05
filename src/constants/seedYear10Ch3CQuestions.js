@@ -1892,8 +1892,8 @@ export const Y10_CH3C_QUESTIONS = [
     difficulty: "hard",
     q: "Solve: \\\\(\\frac{2x+1}{3} - \\frac{x-2}{5} = \\frac{x+3}{15}\\\\)",
     h: "Multiply through by 15 (LCM of 3, 5, and 15).",
-    opts: ["\\\\(x = 5\\\\)","\\\\(x = 0\\\\)","\\\\(x = 10\\\\)","\\\\(x = -10\\\\)"],
-    a: "\\\\(x = -10\\\\)",
+    opts: ["\\(x = -\\frac{4}{3}\\)", "\\(x = \\frac{4}{3}\\)", "\\(x = -\\frac{3}{4}\\)", "\\(x = -10\\)"],
+    a: "\\(x = -\\frac{4}{3}\\)",
     solutionSteps: [
           {
                 "explanation": "Multiply every term by 15.",

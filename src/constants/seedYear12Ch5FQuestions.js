@@ -900,7 +900,7 @@ export const Y12A_CH5F_QUESTIONS = [
     "solution": "Using change of base, \\(\\log_{3} 8 = \\dfrac{\\ln 8}{\\ln 3} \\approx 1.893\\) (4 s.f.).",
     "solutionSteps": [
       {
-        "explanation": "Given: approximate \\(\\log_{3} 8\\) correct to four significant figures. Strategy: calculators evaluate natural logs easily, so apply the change-of-base formula \\(\\log_{b} a = \\dfrac{\\ln a}{\\ln b}\\) (valid for \\(a>0\\) and \\(b>0\\), \\(b\\neq 1\\)). Why change base? The definition \\(\\log_{3} 8\\) is the exponent that turns 3 into 8, and writing it as a ratio of natural logs lets you use the \\(\\ln\\) key. A common mistake is swapping numerator and denominator (\\(\\ln 3/\\ln 8\\)).",
+        "explanation": "Given: approximate \\(\\log_{3} 8\\) correct to four significant figures. Strategy: calculators evaluate natural logs easily, so apply the change-of-base formula \\(\\log_{b} a = \\dfrac{\\ln a}{\\ln b}\\) (valid for \\(a>0\\) and \\(b>0\\), \\(b\neq 1\\)). Why change base? The definition \\(\\log_{3} 8\\) is the exponent that turns 3 into 8, and writing it as a ratio of natural logs lets you use the \\(\\ln\\) key. A common mistake is swapping numerator and denominator (\\(\\ln 3/\\ln 8\\)).",
         "workingOut": "\\(\\log_{3} 8 = \\dfrac{\\ln 8}{\\ln 3}\\)",
         "graphData": null
       },

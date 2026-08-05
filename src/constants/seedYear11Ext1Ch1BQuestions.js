@@ -4,7 +4,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor by taking out any common factors.\\n\\n$3y+12$",
+    "question": "Factor by taking out any common factors.\n\n$3y+12$",
     "a": "3(y+4)",
     "solution": "3(y+4)",
     "t": "Factoring",
@@ -12,7 +12,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the highest common factor (HCF) of all the terms.",
-        "workingOut": "Factor by taking out any common factors.\\n\\n3y+12"
+        "workingOut": "Factor by taking out any common factors.\n\n3y+12"
       },
       {
         "explanation": "Divide each term by the HCF to find the expression inside the brackets.",
@@ -30,7 +30,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor by taking out any common factors.\\n\\n$8b-20$",
+    "question": "Factor by taking out any common factors.\n\n$8b-20$",
     "a": "4(2b-5)",
     "solution": "4(2b-5)",
     "t": "Factoring",
@@ -38,7 +38,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the highest common factor (HCF) of all the terms.",
-        "workingOut": "Factor by taking out any common factors.\\n\\n8b-20"
+        "workingOut": "Factor by taking out any common factors.\n\n8b-20"
       },
       {
         "explanation": "Divide each term by the HCF to find the expression inside the brackets.",
@@ -56,7 +56,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor by taking out any common factors.\\n\\n$pu-pv$",
+    "question": "Factor by taking out any common factors.\n\n$pu-pv$",
     "a": "p(u-v)",
     "solution": "p(u-v)",
     "t": "Factoring",
@@ -64,7 +64,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the highest common factor (HCF) of all the terms.",
-        "workingOut": "Factor by taking out any common factors.\\n\\npu-pv"
+        "workingOut": "Factor by taking out any common factors.\n\npu-pv"
       },
       {
         "explanation": "Divide each term by the HCF to find the expression inside the brackets.",
@@ -82,7 +82,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor by taking out any common factors.\\n\\n$15xy-10xz$",
+    "question": "Factor by taking out any common factors.\n\n$15xy-10xz$",
     "a": "5x(3y-2z)",
     "solution": "5x(3y-2z)",
     "t": "Factoring",
@@ -90,7 +90,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the highest common factor (HCF) of all the terms.",
-        "workingOut": "Factor by taking out any common factors.\\n\\n15xy-10xz"
+        "workingOut": "Factor by taking out any common factors.\n\n15xy-10xz"
       },
       {
         "explanation": "Divide each term by the HCF to find the expression inside the brackets.",
@@ -108,7 +108,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor by taking out any common factors.\\n\\n$m^2+4m$",
+    "question": "Factor by taking out any common factors.\n\n$m^2+4m$",
     "a": "m(m+4)",
     "solution": "m(m+4)",
     "t": "Factoring",
@@ -116,7 +116,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the highest common factor (HCF) of all the terms.",
-        "workingOut": "Factor by taking out any common factors.\\n\\nm^2+4m"
+        "workingOut": "Factor by taking out any common factors.\n\nm^2+4m"
       },
       {
         "explanation": "Divide each term by the HCF to find the expression inside the brackets.",
@@ -134,7 +134,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor by taking out any common factors.\\n\\n$k^2+3km$",
+    "question": "Factor by taking out any common factors.\n\n$k^2+3km$",
     "a": "k(k+3m)",
     "solution": "k(k+3m)",
     "t": "Factoring",
@@ -142,7 +142,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the highest common factor (HCF) of all the terms.",
-        "workingOut": "Factor by taking out any common factors.\\n\\nk^2+3km"
+        "workingOut": "Factor by taking out any common factors.\n\nk^2+3km"
       },
       {
         "explanation": "Divide each term by the HCF to find the expression inside the brackets.",
@@ -160,7 +160,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor by taking out any common factors.\\n\\n$4u^2-8uv$",
+    "question": "Factor by taking out any common factors.\n\n$4u^2-8uv$",
     "a": "4u(u-2v)",
     "solution": "4u(u-2v)",
     "t": "Factoring",
@@ -168,7 +168,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the highest common factor (HCF) of all the terms.",
-        "workingOut": "Factor by taking out any common factors.\\n\\n4u^2-8uv"
+        "workingOut": "Factor by taking out any common factors.\n\n4u^2-8uv"
       },
       {
         "explanation": "Divide each term by the HCF to find the expression inside the brackets.",
@@ -186,7 +186,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor by taking out any common factors.\\n\\n$15y^2+20y$",
+    "question": "Factor by taking out any common factors.\n\n$15y^2+20y$",
     "a": "5y(3y+4)",
     "solution": "5y(3y+4)",
     "t": "Factoring",
@@ -194,7 +194,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the highest common factor (HCF) of all the terms.",
-        "workingOut": "Factor by taking out any common factors.\\n\\n15y^2+20y"
+        "workingOut": "Factor by taking out any common factors.\n\n15y^2+20y"
       },
       {
         "explanation": "Divide each term by the HCF to find the expression inside the brackets.",
@@ -212,7 +212,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor by taking out any common factors.\\n\\n$18pq-24p$",
+    "question": "Factor by taking out any common factors.\n\n$18pq-24p$",
     "a": "6p(3q-4)",
     "solution": "6p(3q-4)",
     "t": "Factoring",
@@ -220,7 +220,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the highest common factor (HCF) of all the terms.",
-        "workingOut": "Factor by taking out any common factors.\\n\\n18pq-24p"
+        "workingOut": "Factor by taking out any common factors.\n\n18pq-24p"
       },
       {
         "explanation": "Divide each term by the HCF to find the expression inside the brackets.",
@@ -238,7 +238,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor by taking out any common factors.\\n\\n$m^2n+n^2m$",
+    "question": "Factor by taking out any common factors.\n\n$m^2n+n^2m$",
     "a": "mn(m+n)",
     "solution": "mn(m+n)",
     "t": "Factoring",
@@ -246,7 +246,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the highest common factor (HCF) of all the terms.",
-        "workingOut": "Factor by taking out any common factors.\\n\\nm^2n+n^2m"
+        "workingOut": "Factor by taking out any common factors.\n\nm^2n+n^2m"
       },
       {
         "explanation": "Divide each term by the HCF to find the expression inside the brackets.",
@@ -264,7 +264,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor by taking out any common factors.\\n\\n$8x^2+4x^3$",
+    "question": "Factor by taking out any common factors.\n\n$8x^2+4x^3$",
     "a": "4x^2(2+x)",
     "solution": "4x^2(2+x)",
     "t": "Factoring",
@@ -272,7 +272,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the highest common factor (HCF) of all the terms.",
-        "workingOut": "Factor by taking out any common factors.\\n\\n8x^2+4x^3"
+        "workingOut": "Factor by taking out any common factors.\n\n8x^2+4x^3"
       },
       {
         "explanation": "Divide each term by the HCF to find the expression inside the brackets.",
@@ -290,7 +290,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor by taking out any common factors.\\n\\n$5u^3v-15u^2v^2$",
+    "question": "Factor by taking out any common factors.\n\n$5u^3v-15u^2v^2$",
     "a": "5u^2v(u-3v)",
     "solution": "5u^2v(u-3v)",
     "t": "Factoring",
@@ -298,7 +298,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the highest common factor (HCF) of all the terms.",
-        "workingOut": "Factor by taking out any common factors.\\n\\n5u^3v-15u^2v^2"
+        "workingOut": "Factor by taking out any common factors.\n\n5u^3v-15u^2v^2"
       },
       {
         "explanation": "Divide each term by the HCF to find the expression inside the brackets.",
@@ -316,7 +316,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor by grouping in pairs.\\n\\n$ax+ay+bx+by$",
+    "question": "Factor by grouping in pairs.\n\n$ax+ay+bx+by$",
     "a": "(a+b)(x+y)",
     "solution": "(a+b)(x+y)",
     "t": "Factoring",
@@ -324,7 +324,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the highest common factor (HCF) of all the terms.",
-        "workingOut": "Factor by grouping in pairs.\\n\\nax+ay+bx+by"
+        "workingOut": "Factor by grouping in pairs.\n\nax+ay+bx+by"
       },
       {
         "explanation": "Divide each term by the HCF to find the expression inside the brackets.",
@@ -342,7 +342,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor by grouping in pairs.\\n\\n$pu-pv+qu-qv$",
+    "question": "Factor by grouping in pairs.\n\n$pu-pv+qu-qv$",
     "a": "(p+q)(u-v)",
     "solution": "(p+q)(u-v)",
     "t": "Factoring",
@@ -350,7 +350,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the highest common factor (HCF) of all the terms.",
-        "workingOut": "Factor by grouping in pairs.\\n\\npu-pv+qu-qv"
+        "workingOut": "Factor by grouping in pairs.\n\npu-pv+qu-qv"
       },
       {
         "explanation": "Divide each term by the HCF to find the expression inside the brackets.",
@@ -368,7 +368,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor by grouping in pairs.\\n\\n$by+4b+3y+12$",
+    "question": "Factor by grouping in pairs.\n\n$by+4b+3y+12$",
     "a": "(b+3)(y+4)",
     "solution": "(b+3)(y+4)",
     "t": "Factoring",
@@ -376,7 +376,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the highest common factor (HCF) of all the terms.",
-        "workingOut": "Factor by grouping in pairs.\\n\\nby+4b+3y+12"
+        "workingOut": "Factor by grouping in pairs.\n\nby+4b+3y+12"
       },
       {
         "explanation": "Divide each term by the HCF to find the expression inside the brackets.",
@@ -394,7 +394,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor by grouping in pairs.\\n\\n$x^2+xy+xz+yz$",
+    "question": "Factor by grouping in pairs.\n\n$x^2+xy+xz+yz$",
     "a": "(x+y)(x+z)",
     "solution": "(x+y)(x+z)",
     "t": "Factoring",
@@ -402,7 +402,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the highest common factor (HCF) of all the terms.",
-        "workingOut": "Factor by grouping in pairs.\\n\\nx^2+xy+xz+yz"
+        "workingOut": "Factor by grouping in pairs.\n\nx^2+xy+xz+yz"
       },
       {
         "explanation": "Divide each term by the HCF to find the expression inside the brackets.",
@@ -420,7 +420,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor by grouping in pairs.\\n\\n$w^3-w^2+w-1$",
+    "question": "Factor by grouping in pairs.\n\n$w^3-w^2+w-1$",
     "a": "(w-1)(w^2+1)",
     "solution": "(w-1)(w^2+1)",
     "t": "Factoring",
@@ -428,7 +428,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the highest common factor (HCF) of all the terms.",
-        "workingOut": "Factor by grouping in pairs.\\n\\nw^3-w^2+w-1"
+        "workingOut": "Factor by grouping in pairs.\n\nw^3-w^2+w-1"
       },
       {
         "explanation": "Divide each term by the HCF to find the expression inside the brackets.",
@@ -446,7 +446,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor by grouping in pairs.\\n\\n$pr+qr-ps-qs$",
+    "question": "Factor by grouping in pairs.\n\n$pr+qr-ps-qs$",
     "a": "(p+q)(r-s)",
     "solution": "(p+q)(r-s)",
     "t": "Factoring",
@@ -454,7 +454,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the highest common factor (HCF) of all the terms.",
-        "workingOut": "Factor by grouping in pairs.\\n\\npr+qr-ps-qs"
+        "workingOut": "Factor by grouping in pairs.\n\npr+qr-ps-qs"
       },
       {
         "explanation": "Divide each term by the HCF to find the expression inside the brackets.",
@@ -472,7 +472,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor by grouping in pairs.\\n\\n$mx-nx-my+ny$",
+    "question": "Factor by grouping in pairs.\n\n$mx-nx-my+ny$",
     "a": "(m-n)(x-y)",
     "solution": "(m-n)(x-y)",
     "t": "Factoring",
@@ -480,7 +480,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the highest common factor (HCF) of all the terms.",
-        "workingOut": "Factor by grouping in pairs.\\n\\nmx-nx-my+ny"
+        "workingOut": "Factor by grouping in pairs.\n\nmx-nx-my+ny"
       },
       {
         "explanation": "Divide each term by the HCF to find the expression inside the brackets.",
@@ -498,7 +498,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor by grouping in pairs.\\n\\n$y^2-4y-yz+4z$",
+    "question": "Factor by grouping in pairs.\n\n$y^2-4y-yz+4z$",
     "a": "(y-4)(y-z)",
     "solution": "(y-4)(y-z)",
     "t": "Factoring",
@@ -506,7 +506,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the highest common factor (HCF) of all the terms.",
-        "workingOut": "Factor by grouping in pairs.\\n\\ny^2-4y-yz+4z"
+        "workingOut": "Factor by grouping in pairs.\n\ny^2-4y-yz+4z"
       },
       {
         "explanation": "Divide each term by the HCF to find the expression inside the brackets.",
@@ -524,7 +524,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor by grouping in pairs.\\n\\n$3a-3b-ax+bx$",
+    "question": "Factor by grouping in pairs.\n\n$3a-3b-ax+bx$",
     "a": "(3-x)(a-b)",
     "solution": "(3-x)(a-b)",
     "t": "Factoring",
@@ -532,7 +532,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the highest common factor (HCF) of all the terms.",
-        "workingOut": "Factor by grouping in pairs.\\n\\n3a-3b-ax+bx"
+        "workingOut": "Factor by grouping in pairs.\n\n3a-3b-ax+bx"
       },
       {
         "explanation": "Divide each term by the HCF to find the expression inside the brackets.",
@@ -550,7 +550,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor by grouping in pairs.\\n\\n$3pu-qu-3pv+qv$",
+    "question": "Factor by grouping in pairs.\n\n$3pu-qu-3pv+qv$",
     "a": "(3p-q)(u-v)",
     "solution": "(3p-q)(u-v)",
     "t": "Factoring",
@@ -558,7 +558,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the highest common factor (HCF) of all the terms.",
-        "workingOut": "Factor by grouping in pairs.\\n\\n3pu-qu-3pv+qv"
+        "workingOut": "Factor by grouping in pairs.\n\n3pu-qu-3pv+qv"
       },
       {
         "explanation": "Divide each term by the HCF to find the expression inside the brackets.",
@@ -576,7 +576,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor by grouping in pairs.\\n\\n$xy+xz-y-z$",
+    "question": "Factor by grouping in pairs.\n\n$xy+xz-y-z$",
     "a": "(x-1)(y+z)",
     "solution": "(x-1)(y+z)",
     "t": "Factoring",
@@ -584,7 +584,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the highest common factor (HCF) of all the terms.",
-        "workingOut": "Factor by grouping in pairs.\\n\\nxy+xz-y-z"
+        "workingOut": "Factor by grouping in pairs.\n\nxy+xz-y-z"
       },
       {
         "explanation": "Divide each term by the HCF to find the expression inside the brackets.",
@@ -602,7 +602,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor by grouping in pairs.\\n\\n$m^3+5m^2-2m-10$",
+    "question": "Factor by grouping in pairs.\n\n$m^3+5m^2-2m-10$",
     "a": "(m+5)(m^2-2)",
     "solution": "(m+5)(m^2-2)",
     "t": "Factoring",
@@ -610,7 +610,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the highest common factor (HCF) of all the terms.",
-        "workingOut": "Factor by grouping in pairs.\\n\\nm^3+5m^2-2m-10"
+        "workingOut": "Factor by grouping in pairs.\n\nm^3+5m^2-2m-10"
       },
       {
         "explanation": "Divide each term by the HCF to find the expression inside the brackets.",
@@ -628,7 +628,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor by grouping in pairs.\\n\\n$y^3-4y^2-3y+12$",
+    "question": "Factor by grouping in pairs.\n\n$y^3-4y^2-3y+12$",
     "a": "(y-4)(y^2-3)",
     "solution": "(y-4)(y^2-3)",
     "t": "Factoring",
@@ -636,7 +636,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the highest common factor (HCF) of all the terms.",
-        "workingOut": "Factor by grouping in pairs.\\n\\ny^3-4y^2-3y+12"
+        "workingOut": "Factor by grouping in pairs.\n\ny^3-4y^2-3y+12"
       },
       {
         "explanation": "Divide each term by the HCF to find the expression inside the brackets.",
@@ -654,7 +654,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor by grouping in pairs.\\n\\n$3k^3+4k^2-15k-20$",
+    "question": "Factor by grouping in pairs.\n\n$3k^3+4k^2-15k-20$",
     "a": "(3k+4)(k^2-5)",
     "solution": "(3k+4)(k^2-5)",
     "t": "Factoring",
@@ -662,7 +662,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the highest common factor (HCF) of all the terms.",
-        "workingOut": "Factor by grouping in pairs.\\n\\n3k^3+4k^2-15k-20"
+        "workingOut": "Factor by grouping in pairs.\n\n3k^3+4k^2-15k-20"
       },
       {
         "explanation": "Divide each term by the HCF to find the expression inside the brackets.",
@@ -680,7 +680,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor by grouping in pairs.\\n\\n$4y^3-8y^2-by+2b$",
+    "question": "Factor by grouping in pairs.\n\n$4y^3-8y^2-by+2b$",
     "a": "(y-2)(4y^2-b)",
     "solution": "(y-2)(4y^2-b)",
     "t": "Factoring",
@@ -688,7 +688,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the highest common factor (HCF) of all the terms.",
-        "workingOut": "Factor by grouping in pairs.\\n\\n4y^3-8y^2-by+2b"
+        "workingOut": "Factor by grouping in pairs.\n\n4y^3-8y^2-by+2b"
       },
       {
         "explanation": "Divide each term by the HCF to find the expression inside the brackets.",
@@ -706,7 +706,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor using the difference of squares.\\n\\n$y^2-1$",
+    "question": "Factor using the difference of squares.\n\n$y^2-1$",
     "a": "(y-1)(y+1)",
     "solution": "(y-1)(y+1)",
     "t": "Factoring",
@@ -714,7 +714,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the highest common factor (HCF) of all the terms.",
-        "workingOut": "Factor using the difference of squares.\\n\\ny^2-1"
+        "workingOut": "Factor using the difference of squares.\n\ny^2-1"
       },
       {
         "explanation": "Divide each term by the HCF to find the expression inside the brackets.",
@@ -732,7 +732,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor using the difference of squares.\\n\\n$x^2-9$",
+    "question": "Factor using the difference of squares.\n\n$x^2-9$",
     "a": "(x-3)(x+3)",
     "solution": "(x-3)(x+3)",
     "t": "Factoring",
@@ -740,7 +740,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the highest common factor (HCF) of all the terms.",
-        "workingOut": "Factor using the difference of squares.\\n\\nx^2-9"
+        "workingOut": "Factor using the difference of squares.\n\nx^2-9"
       },
       {
         "explanation": "Divide each term by the HCF to find the expression inside the brackets.",
@@ -758,7 +758,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor using the difference of squares.\\n\\n$m^2-16$",
+    "question": "Factor using the difference of squares.\n\n$m^2-16$",
     "a": "(m-4)(m+4)",
     "solution": "(m-4)(m+4)",
     "t": "Factoring",
@@ -766,7 +766,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the highest common factor (HCF) of all the terms.",
-        "workingOut": "Factor using the difference of squares.\\n\\nm^2-16"
+        "workingOut": "Factor using the difference of squares.\n\nm^2-16"
       },
       {
         "explanation": "Divide each term by the HCF to find the expression inside the brackets.",
@@ -784,7 +784,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor using the difference of squares.\\n\\n$p^2-81$",
+    "question": "Factor using the difference of squares.\n\n$p^2-81$",
     "a": "(p-9)(p+9)",
     "solution": "(p-9)(p+9)",
     "t": "Factoring",
@@ -792,7 +792,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the highest common factor (HCF) of all the terms.",
-        "workingOut": "Factor using the difference of squares.\\n\\np^2-81"
+        "workingOut": "Factor using the difference of squares.\n\np^2-81"
       },
       {
         "explanation": "Divide each term by the HCF to find the expression inside the brackets.",
@@ -810,7 +810,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor using the difference of squares.\\n\\n$36-k^2$",
+    "question": "Factor using the difference of squares.\n\n$36-k^2$",
     "a": "(6-k)(6+k)",
     "solution": "(6-k)(6+k)",
     "t": "Factoring",
@@ -818,7 +818,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the highest common factor (HCF) of all the terms.",
-        "workingOut": "Factor using the difference of squares.\\n\\n36-k^2"
+        "workingOut": "Factor using the difference of squares.\n\n36-k^2"
       },
       {
         "explanation": "Divide each term by the HCF to find the expression inside the brackets.",
@@ -836,7 +836,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor using the difference of squares.\\n\\n$1-u^2$",
+    "question": "Factor using the difference of squares.\n\n$1-u^2$",
     "a": "(1-u)(1+u)",
     "solution": "(1-u)(1+u)",
     "t": "Factoring",
@@ -844,7 +844,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the highest common factor (HCF) of all the terms.",
-        "workingOut": "Factor using the difference of squares.\\n\\n1-u^2"
+        "workingOut": "Factor using the difference of squares.\n\n1-u^2"
       },
       {
         "explanation": "Divide each term by the HCF to find the expression inside the brackets.",
@@ -862,7 +862,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor using the difference of squares.\\n\\n$64-v^2$",
+    "question": "Factor using the difference of squares.\n\n$64-v^2$",
     "a": "(8-v)(8+v)",
     "solution": "(8-v)(8+v)",
     "t": "Factoring",
@@ -870,7 +870,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the highest common factor (HCF) of all the terms.",
-        "workingOut": "Factor using the difference of squares.\\n\\n64-v^2"
+        "workingOut": "Factor using the difference of squares.\n\n64-v^2"
       },
       {
         "explanation": "Divide each term by the HCF to find the expression inside the brackets.",
@@ -888,7 +888,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor using the difference of squares.\\n\\n$121-w^2$",
+    "question": "Factor using the difference of squares.\n\n$121-w^2$",
     "a": "(11-w)(11+w)",
     "solution": "(11-w)(11+w)",
     "t": "Factoring",
@@ -896,7 +896,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the highest common factor (HCF) of all the terms.",
-        "workingOut": "Factor using the difference of squares.\\n\\n121-w^2"
+        "workingOut": "Factor using the difference of squares.\n\n121-w^2"
       },
       {
         "explanation": "Divide each term by the HCF to find the expression inside the brackets.",
@@ -914,7 +914,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor using the difference of squares.\\n\\n$9z^2-16$",
+    "question": "Factor using the difference of squares.\n\n$9z^2-16$",
     "a": "(3z-4)(3z+4)",
     "solution": "(3z-4)(3z+4)",
     "t": "Factoring",
@@ -922,7 +922,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the highest common factor (HCF) of all the terms.",
-        "workingOut": "Factor using the difference of squares.\\n\\n9z^2-16"
+        "workingOut": "Factor using the difference of squares.\n\n9z^2-16"
       },
       {
         "explanation": "Divide each term by the HCF to find the expression inside the brackets.",
@@ -940,7 +940,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor using the difference of squares.\\n\\n$25a^2-1$",
+    "question": "Factor using the difference of squares.\n\n$25a^2-1$",
     "a": "(5a-1)(5a+1)",
     "solution": "(5a-1)(5a+1)",
     "t": "Factoring",
@@ -948,7 +948,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the highest common factor (HCF) of all the terms.",
-        "workingOut": "Factor using the difference of squares.\\n\\n25a^2-1"
+        "workingOut": "Factor using the difference of squares.\n\n25a^2-1"
       },
       {
         "explanation": "Divide each term by the HCF to find the expression inside the brackets.",
@@ -966,7 +966,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor using the difference of squares.\\n\\n$49b^2-25$",
+    "question": "Factor using the difference of squares.\n\n$49b^2-25$",
     "a": "(7b-5)(7b+5)",
     "solution": "(7b-5)(7b+5)",
     "t": "Factoring",
@@ -974,7 +974,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the highest common factor (HCF) of all the terms.",
-        "workingOut": "Factor using the difference of squares.\\n\\n49b^2-25"
+        "workingOut": "Factor using the difference of squares.\n\n49b^2-25"
       },
       {
         "explanation": "Divide each term by the HCF to find the expression inside the brackets.",
@@ -992,7 +992,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor using the difference of squares.\\n\\n$1-64c^2$",
+    "question": "Factor using the difference of squares.\n\n$1-64c^2$",
     "a": "(1-8c)(1+8c)",
     "solution": "(1-8c)(1+8c)",
     "t": "Factoring",
@@ -1000,7 +1000,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the highest common factor (HCF) of all the terms.",
-        "workingOut": "Factor using the difference of squares.\\n\\n1-64c^2"
+        "workingOut": "Factor using the difference of squares.\n\n1-64c^2"
       },
       {
         "explanation": "Divide each term by the HCF to find the expression inside the brackets.",
@@ -1018,7 +1018,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor using the difference of squares.\\n\\n$a^2-9b^2$",
+    "question": "Factor using the difference of squares.\n\n$a^2-9b^2$",
     "a": "(a-3b)(a+3b)",
     "solution": "(a-3b)(a+3b)",
     "t": "Factoring",
@@ -1026,7 +1026,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the highest common factor (HCF) of all the terms.",
-        "workingOut": "Factor using the difference of squares.\\n\\na^2-9b^2"
+        "workingOut": "Factor using the difference of squares.\n\na^2-9b^2"
       },
       {
         "explanation": "Divide each term by the HCF to find the expression inside the brackets.",
@@ -1044,7 +1044,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor using the difference of squares.\\n\\n$16m^2-n^2$",
+    "question": "Factor using the difference of squares.\n\n$16m^2-n^2$",
     "a": "(4m-n)(4m+n)",
     "solution": "(4m-n)(4m+n)",
     "t": "Factoring",
@@ -1052,7 +1052,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the highest common factor (HCF) of all the terms.",
-        "workingOut": "Factor using the difference of squares.\\n\\n16m^2-n^2"
+        "workingOut": "Factor using the difference of squares.\n\n16m^2-n^2"
       },
       {
         "explanation": "Divide each term by the HCF to find the expression inside the brackets.",
@@ -1070,7 +1070,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor using the difference of squares.\\n\\n$49p^2-81q^2$",
+    "question": "Factor using the difference of squares.\n\n$49p^2-81q^2$",
     "a": "(7p-9q)(7p+9q)",
     "solution": "(7p-9q)(7p+9q)",
     "t": "Factoring",
@@ -1078,7 +1078,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the highest common factor (HCF) of all the terms.",
-        "workingOut": "Factor using the difference of squares.\\n\\n49p^2-81q^2"
+        "workingOut": "Factor using the difference of squares.\n\n49p^2-81q^2"
       },
       {
         "explanation": "Divide each term by the HCF to find the expression inside the brackets.",
@@ -1096,7 +1096,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor using the difference of squares.\\n\\n$36x^2y^2-25$",
+    "question": "Factor using the difference of squares.\n\n$36x^2y^2-25$",
     "a": "(6xy-5)(6xy+5)",
     "solution": "(6xy-5)(6xy+5)",
     "t": "Factoring",
@@ -1104,7 +1104,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the highest common factor (HCF) of all the terms.",
-        "workingOut": "Factor using the difference of squares.\\n\\n36x^2y^2-25"
+        "workingOut": "Factor using the difference of squares.\n\n36x^2y^2-25"
       },
       {
         "explanation": "Divide each term by the HCF to find the expression inside the brackets.",
@@ -1122,7 +1122,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor the monic quadratic expression.\\n\\n$b^2+5b+6$",
+    "question": "Factor the monic quadratic expression.\n\n$b^2+5b+6$",
     "a": "(b+2)(b+3)",
     "solution": "(b+2)(b+3)",
     "t": "Factoring",
@@ -1130,7 +1130,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
-        "workingOut": "Factor the monic quadratic expression.\\n\\nb^2+5b+6"
+        "workingOut": "Factor the monic quadratic expression.\n\nb^2+5b+6"
       },
       {
         "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
@@ -1148,7 +1148,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor the monic quadratic expression.\\n\\n$m^2+7m+12$",
+    "question": "Factor the monic quadratic expression.\n\n$m^2+7m+12$",
     "a": "(m+3)(m+4)",
     "solution": "(m+3)(m+4)",
     "t": "Factoring",
@@ -1156,7 +1156,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
-        "workingOut": "Factor the monic quadratic expression.\\n\\nm^2+7m+12"
+        "workingOut": "Factor the monic quadratic expression.\n\nm^2+7m+12"
       },
       {
         "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
@@ -1174,7 +1174,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor the monic quadratic expression.\\n\\n$n^2+8n+7$",
+    "question": "Factor the monic quadratic expression.\n\n$n^2+8n+7$",
     "a": "(n+1)(n+7)",
     "solution": "(n+1)(n+7)",
     "t": "Factoring",
@@ -1182,7 +1182,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
-        "workingOut": "Factor the monic quadratic expression.\\n\\nn^2+8n+7"
+        "workingOut": "Factor the monic quadratic expression.\n\nn^2+8n+7"
       },
       {
         "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
@@ -1200,7 +1200,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor the monic quadratic expression.\\n\\n$y^2+9y+20$",
+    "question": "Factor the monic quadratic expression.\n\n$y^2+9y+20$",
     "a": "(y+4)(y+5)",
     "solution": "(y+4)(y+5)",
     "t": "Factoring",
@@ -1208,7 +1208,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
-        "workingOut": "Factor the monic quadratic expression.\\n\\ny^2+9y+20"
+        "workingOut": "Factor the monic quadratic expression.\n\ny^2+9y+20"
       },
       {
         "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
@@ -1226,7 +1226,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor the monic quadratic expression.\\n\\n$z^2+11z+30$",
+    "question": "Factor the monic quadratic expression.\n\n$z^2+11z+30$",
     "a": "(z+5)(z+6)",
     "solution": "(z+5)(z+6)",
     "t": "Factoring",
@@ -1234,7 +1234,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
-        "workingOut": "Factor the monic quadratic expression.\\n\\nz^2+11z+30"
+        "workingOut": "Factor the monic quadratic expression.\n\nz^2+11z+30"
       },
       {
         "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
@@ -1252,7 +1252,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor the monic quadratic expression.\\n\\n$u^2+13u+22$",
+    "question": "Factor the monic quadratic expression.\n\n$u^2+13u+22$",
     "a": "(u+2)(u+11)",
     "solution": "(u+2)(u+11)",
     "t": "Factoring",
@@ -1260,7 +1260,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
-        "workingOut": "Factor the monic quadratic expression.\\n\\nu^2+13u+22"
+        "workingOut": "Factor the monic quadratic expression.\n\nu^2+13u+22"
       },
       {
         "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
@@ -1278,7 +1278,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor the monic quadratic expression.\\n\\n$p^2-5p+4$",
+    "question": "Factor the monic quadratic expression.\n\n$p^2-5p+4$",
     "a": "(p-1)(p-4)",
     "solution": "(p-1)(p-4)",
     "t": "Factoring",
@@ -1286,7 +1286,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
-        "workingOut": "Factor the monic quadratic expression.\\n\\np^2-5p+4"
+        "workingOut": "Factor the monic quadratic expression.\n\np^2-5p+4"
       },
       {
         "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
@@ -1304,7 +1304,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor the monic quadratic expression.\\n\\n$d^2-8d+15$",
+    "question": "Factor the monic quadratic expression.\n\n$d^2-8d+15$",
     "a": "(d-3)(d-5)",
     "solution": "(d-3)(d-5)",
     "t": "Factoring",
@@ -1312,7 +1312,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
-        "workingOut": "Factor the monic quadratic expression.\\n\\nd^2-8d+15"
+        "workingOut": "Factor the monic quadratic expression.\n\nd^2-8d+15"
       },
       {
         "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
@@ -1330,7 +1330,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor the monic quadratic expression.\\n\\n$b^2-9b+14$",
+    "question": "Factor the monic quadratic expression.\n\n$b^2-9b+14$",
     "a": "(b-2)(b-7)",
     "solution": "(b-2)(b-7)",
     "t": "Factoring",
@@ -1338,7 +1338,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
-        "workingOut": "Factor the monic quadratic expression.\\n\\nb^2-9b+14"
+        "workingOut": "Factor the monic quadratic expression.\n\nb^2-9b+14"
       },
       {
         "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
@@ -1356,7 +1356,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor the monic quadratic expression.\\n\\n$c^2-9c+18$",
+    "question": "Factor the monic quadratic expression.\n\n$c^2-9c+18$",
     "a": "(c-3)(c-6)",
     "solution": "(c-3)(c-6)",
     "t": "Factoring",
@@ -1364,7 +1364,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
-        "workingOut": "Factor the monic quadratic expression.\\n\\nc^2-9c+18"
+        "workingOut": "Factor the monic quadratic expression.\n\nc^2-9c+18"
       },
       {
         "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
@@ -1382,7 +1382,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor the monic quadratic expression.\\n\\n$v^2+v-6$",
+    "question": "Factor the monic quadratic expression.\n\n$v^2+v-6$",
     "a": "(v-2)(v+3)",
     "solution": "(v-2)(v+3)",
     "t": "Factoring",
@@ -1390,7 +1390,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
-        "workingOut": "Factor the monic quadratic expression.\\n\\nv^2+v-6"
+        "workingOut": "Factor the monic quadratic expression.\n\nv^2+v-6"
       },
       {
         "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
@@ -1408,7 +1408,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor the monic quadratic expression.\\n\\n$w^2-w-6$",
+    "question": "Factor the monic quadratic expression.\n\n$w^2-w-6$",
     "a": "(w-3)(w+2)",
     "solution": "(w-3)(w+2)",
     "t": "Factoring",
@@ -1416,7 +1416,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
-        "workingOut": "Factor the monic quadratic expression.\\n\\nw^2-w-6"
+        "workingOut": "Factor the monic quadratic expression.\n\nw^2-w-6"
       },
       {
         "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
@@ -1434,7 +1434,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor the monic quadratic expression.\\n\\n$x^2-3x-10$",
+    "question": "Factor the monic quadratic expression.\n\n$x^2-3x-10$",
     "a": "(x-5)(x+2)",
     "solution": "(x-5)(x+2)",
     "t": "Factoring",
@@ -1442,7 +1442,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
-        "workingOut": "Factor the monic quadratic expression.\\n\\nx^2-3x-10"
+        "workingOut": "Factor the monic quadratic expression.\n\nx^2-3x-10"
       },
       {
         "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
@@ -1460,7 +1460,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor the monic quadratic expression.\\n\\n$k^2+3k-10$",
+    "question": "Factor the monic quadratic expression.\n\n$k^2+3k-10$",
     "a": "(k+5)(k-2)",
     "solution": "(k+5)(k-2)",
     "t": "Factoring",
@@ -1468,7 +1468,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
-        "workingOut": "Factor the monic quadratic expression.\\n\\nk^2+3k-10"
+        "workingOut": "Factor the monic quadratic expression.\n\nk^2+3k-10"
       },
       {
         "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
@@ -1486,7 +1486,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor the monic quadratic expression.\\n\\n$q^2-4q-21$",
+    "question": "Factor the monic quadratic expression.\n\n$q^2-4q-21$",
     "a": "(q-7)(q+3)",
     "solution": "(q-7)(q+3)",
     "t": "Factoring",
@@ -1494,7 +1494,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
-        "workingOut": "Factor the monic quadratic expression.\\n\\nq^2-4q-21"
+        "workingOut": "Factor the monic quadratic expression.\n\nq^2-4q-21"
       },
       {
         "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
@@ -1512,7 +1512,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor the monic quadratic expression.\\n\\n$z^2+4z-32$",
+    "question": "Factor the monic quadratic expression.\n\n$z^2+4z-32$",
     "a": "(z+8)(z-4)",
     "solution": "(z+8)(z-4)",
     "t": "Factoring",
@@ -1520,7 +1520,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
-        "workingOut": "Factor the monic quadratic expression.\\n\\nz^2+4z-32"
+        "workingOut": "Factor the monic quadratic expression.\n\nz^2+4z-32"
       },
       {
         "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
@@ -1538,7 +1538,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor the monic quadratic expression.\\n\\n$d^2-13d+36$",
+    "question": "Factor the monic quadratic expression.\n\n$d^2-13d+36$",
     "a": "(d-4)(d-9)",
     "solution": "(d-4)(d-9)",
     "t": "Factoring",
@@ -1546,7 +1546,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
-        "workingOut": "Factor the monic quadratic expression.\\n\\nd^2-13d+36"
+        "workingOut": "Factor the monic quadratic expression.\n\nd^2-13d+36"
       },
       {
         "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
@@ -1564,7 +1564,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor the monic quadratic expression.\\n\\n$v^2-14v+45$",
+    "question": "Factor the monic quadratic expression.\n\n$v^2-14v+45$",
     "a": "(v-5)(v-9)",
     "solution": "(v-5)(v-9)",
     "t": "Factoring",
@@ -1572,7 +1572,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
-        "workingOut": "Factor the monic quadratic expression.\\n\\nv^2-14v+45"
+        "workingOut": "Factor the monic quadratic expression.\n\nv^2-14v+45"
       },
       {
         "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
@@ -1590,7 +1590,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor the monic quadratic expression.\\n\\n$y^2-y-72$",
+    "question": "Factor the monic quadratic expression.\n\n$y^2-y-72$",
     "a": "(y-9)(y+8)",
     "solution": "(y-9)(y+8)",
     "t": "Factoring",
@@ -1598,7 +1598,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
-        "workingOut": "Factor the monic quadratic expression.\\n\\ny^2-y-72"
+        "workingOut": "Factor the monic quadratic expression.\n\ny^2-y-72"
       },
       {
         "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
@@ -1616,7 +1616,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor the monic quadratic expression.\\n\\n$y^2+4y-45$",
+    "question": "Factor the monic quadratic expression.\n\n$y^2+4y-45$",
     "a": "(y+9)(y-5)",
     "solution": "(y+9)(y-5)",
     "t": "Factoring",
@@ -1624,7 +1624,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
-        "workingOut": "Factor the monic quadratic expression.\\n\\ny^2+4y-45"
+        "workingOut": "Factor the monic quadratic expression.\n\ny^2+4y-45"
       },
       {
         "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
@@ -1642,7 +1642,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor the monic quadratic expression.\\n\\n$u^2-5u-36$",
+    "question": "Factor the monic quadratic expression.\n\n$u^2-5u-36$",
     "a": "(u-9)(u+4)",
     "solution": "(u-9)(u+4)",
     "t": "Factoring",
@@ -1650,7 +1650,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
-        "workingOut": "Factor the monic quadratic expression.\\n\\nu^2-5u-36"
+        "workingOut": "Factor the monic quadratic expression.\n\nu^2-5u-36"
       },
       {
         "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
@@ -1668,7 +1668,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor the monic quadratic expression.\\n\\n$q^2+10q-39$",
+    "question": "Factor the monic quadratic expression.\n\n$q^2+10q-39$",
     "a": "(q+13)(q-3)",
     "solution": "(q+13)(q-3)",
     "t": "Factoring",
@@ -1676,7 +1676,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
-        "workingOut": "Factor the monic quadratic expression.\\n\\nq^2+10q-39"
+        "workingOut": "Factor the monic quadratic expression.\n\nq^2+10q-39"
       },
       {
         "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
@@ -1694,7 +1694,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor the monic quadratic expression.\\n\\n$v^2-17v-60$",
+    "question": "Factor the monic quadratic expression.\n\n$v^2-17v-60$",
     "a": "(v-20)(v+3)",
     "solution": "(v-20)(v+3)",
     "t": "Factoring",
@@ -1702,7 +1702,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
-        "workingOut": "Factor the monic quadratic expression.\\n\\nv^2-17v-60"
+        "workingOut": "Factor the monic quadratic expression.\n\nv^2-17v-60"
       },
       {
         "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
@@ -1720,7 +1720,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor the monic quadratic expression.\\n\\n$w^2+24w-52$",
+    "question": "Factor the monic quadratic expression.\n\n$w^2+24w-52$",
     "a": "(w+26)(w-2)",
     "solution": "(w+26)(w-2)",
     "t": "Factoring",
@@ -1728,7 +1728,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
-        "workingOut": "Factor the monic quadratic expression.\\n\\nw^2+24w-52"
+        "workingOut": "Factor the monic quadratic expression.\n\nw^2+24w-52"
       },
       {
         "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
@@ -1746,7 +1746,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor the perfect square.\\n\\n$y^2+6y+9$",
+    "question": "Factor the perfect square.\n\n$y^2+6y+9$",
     "a": "(y+3)^2",
     "solution": "(y+3)^2",
     "t": "Factoring",
@@ -1754,7 +1754,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
-        "workingOut": "Factor the perfect square.\\n\\ny^2+6y+9"
+        "workingOut": "Factor the perfect square.\n\ny^2+6y+9"
       },
       {
         "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
@@ -1772,7 +1772,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor the perfect square.\\n\\n$z^2+8z+16$",
+    "question": "Factor the perfect square.\n\n$z^2+8z+16$",
     "a": "(z+4)^2",
     "solution": "(z+4)^2",
     "t": "Factoring",
@@ -1780,7 +1780,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
-        "workingOut": "Factor the perfect square.\\n\\nz^2+8z+16"
+        "workingOut": "Factor the perfect square.\n\nz^2+8z+16"
       },
       {
         "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
@@ -1798,7 +1798,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor the perfect square.\\n\\n$m^2+12m+36$",
+    "question": "Factor the perfect square.\n\n$m^2+12m+36$",
     "a": "(m+6)^2",
     "solution": "(m+6)^2",
     "t": "Factoring",
@@ -1806,7 +1806,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
-        "workingOut": "Factor the perfect square.\\n\\nm^2+12m+36"
+        "workingOut": "Factor the perfect square.\n\nm^2+12m+36"
       },
       {
         "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
@@ -1824,7 +1824,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor the perfect square.\\n\\n$n^2-10n+25$",
+    "question": "Factor the perfect square.\n\n$n^2-10n+25$",
     "a": "(n-5)^2",
     "solution": "(n-5)^2",
     "t": "Factoring",
@@ -1832,7 +1832,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
-        "workingOut": "Factor the perfect square.\\n\\nn^2-10n+25"
+        "workingOut": "Factor the perfect square.\n\nn^2-10n+25"
       },
       {
         "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
@@ -1850,7 +1850,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor the perfect square.\\n\\n$u^2-14u+49$",
+    "question": "Factor the perfect square.\n\n$u^2-14u+49$",
     "a": "(u-7)^2",
     "solution": "(u-7)^2",
     "t": "Factoring",
@@ -1858,7 +1858,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
-        "workingOut": "Factor the perfect square.\\n\\nu^2-14u+49"
+        "workingOut": "Factor the perfect square.\n\nu^2-14u+49"
       },
       {
         "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
@@ -1876,7 +1876,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor the perfect square.\\n\\n$y^2+18y+81$",
+    "question": "Factor the perfect square.\n\n$y^2+18y+81$",
     "a": "(y+9)^2",
     "solution": "(y+9)^2",
     "t": "Factoring",
@@ -1884,7 +1884,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
-        "workingOut": "Factor the perfect square.\\n\\ny^2+18y+81"
+        "workingOut": "Factor the perfect square.\n\ny^2+18y+81"
       },
       {
         "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
@@ -1902,7 +1902,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor the perfect square.\\n\\n$v^2-30v+225$",
+    "question": "Factor the perfect square.\n\n$v^2-30v+225$",
     "a": "(v-15)^2",
     "solution": "(v-15)^2",
     "t": "Factoring",
@@ -1910,7 +1910,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
-        "workingOut": "Factor the perfect square.\\n\\nv^2-30v+225"
+        "workingOut": "Factor the perfect square.\n\nv^2-30v+225"
       },
       {
         "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
@@ -1928,7 +1928,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor the perfect square.\\n\\n$b^2-26b+169$",
+    "question": "Factor the perfect square.\n\n$b^2-26b+169$",
     "a": "(b-13)^2",
     "solution": "(b-13)^2",
     "t": "Factoring",
@@ -1936,7 +1936,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
-        "workingOut": "Factor the perfect square.\\n\\nb^2-26b+169"
+        "workingOut": "Factor the perfect square.\n\nb^2-26b+169"
       },
       {
         "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
@@ -1954,7 +1954,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Complete the perfect square:\\n\\n$y^2 + 10y + \\dots = (y + \\dots)^2$",
+    "question": "Complete the perfect square:\n\n$y^2 + 10y + \\dots = (y + \\dots)^2$",
     "a": "y^2 + 10y + 25 = (y + 5)^2",
     "solution": "y^2 + 10y + 25 = (y + 5)^2",
     "t": "Factoring",
@@ -1962,7 +1962,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
-        "workingOut": "Complete the perfect square:\\n\\ny^2 + 10y + \\dots = (y + \\dots)^2"
+        "workingOut": "Complete the perfect square:\n\ny^2 + 10y + \\dots = (y + \\dots)^2"
       },
       {
         "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
@@ -1980,7 +1980,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Complete the perfect square:\\n\\n$z^2 + 12z + \\dots = (z + \\dots)^2$",
+    "question": "Complete the perfect square:\n\n$z^2 + 12z + \\dots = (z + \\dots)^2$",
     "a": "z^2 + 12z + 36 = (z + 6)^2",
     "solution": "z^2 + 12z + 36 = (z + 6)^2",
     "t": "Factoring",
@@ -1988,7 +1988,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
-        "workingOut": "Complete the perfect square:\\n\\nz^2 + 12z + \\dots = (z + \\dots)^2"
+        "workingOut": "Complete the perfect square:\n\nz^2 + 12z + \\dots = (z + \\dots)^2"
       },
       {
         "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
@@ -2006,7 +2006,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Complete the perfect square:\\n\\n$m^2 - 16m + \\dots = (m - \\dots)^2$",
+    "question": "Complete the perfect square:\n\n$m^2 - 16m + \\dots = (m - \\dots)^2$",
     "a": "m^2 - 16m + 64 = (m - 8)^2",
     "solution": "m^2 - 16m + 64 = (m - 8)^2",
     "t": "Factoring",
@@ -2014,7 +2014,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
-        "workingOut": "Complete the perfect square:\\n\\nm^2 - 16m + \\dots = (m - \\dots)^2"
+        "workingOut": "Complete the perfect square:\n\nm^2 - 16m + \\dots = (m - \\dots)^2"
       },
       {
         "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
@@ -2032,7 +2032,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Complete the perfect square:\\n\\n$n^2 - 40n + \\dots = (n - \\dots)^2$",
+    "question": "Complete the perfect square:\n\n$n^2 - 40n + \\dots = (n - \\dots)^2$",
     "a": "n^2 - 40n + 400 = (n - 20)^2",
     "solution": "n^2 - 40n + 400 = (n - 20)^2",
     "t": "Factoring",
@@ -2040,7 +2040,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
-        "workingOut": "Complete the perfect square:\\n\\nn^2 - 40n + \\dots = (n - \\dots)^2"
+        "workingOut": "Complete the perfect square:\n\nn^2 - 40n + \\dots = (n - \\dots)^2"
       },
       {
         "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
@@ -2058,7 +2058,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Complete the perfect square:\\n\\n$v^2 + 3v + \\dots = (v + \\dots)^2$",
+    "question": "Complete the perfect square:\n\n$v^2 + 3v + \\dots = (v + \\dots)^2$",
     "a": "v^2 + 3v + \\frac{9}{4} = (v + \\frac{3}{2})^2",
     "solution": "v^2 + 3v + \\frac{9}{4} = (v + \\frac{3}{2})^2",
     "t": "Factoring",
@@ -2066,7 +2066,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
-        "workingOut": "Complete the perfect square:\\n\\nv^2 + 3v + \\dots = (v + \\dots)^2"
+        "workingOut": "Complete the perfect square:\n\nv^2 + 3v + \\dots = (v + \\dots)^2"
       },
       {
         "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
@@ -2084,7 +2084,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Complete the perfect square:\\n\\n$w^2 - 5w + \\dots = (w - \\dots)^2$",
+    "question": "Complete the perfect square:\n\n$w^2 - 5w + \\dots = (w - \\dots)^2$",
     "a": "w^2 - 5w + \\frac{25}{4} = (w - \\frac{5}{2})^2",
     "solution": "w^2 - 5w + \\frac{25}{4} = (w - \\frac{5}{2})^2",
     "t": "Factoring",
@@ -2092,7 +2092,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
-        "workingOut": "Complete the perfect square:\\n\\nw^2 - 5w + \\dots = (w - \\dots)^2"
+        "workingOut": "Complete the perfect square:\n\nw^2 - 5w + \\dots = (w - \\dots)^2"
       },
       {
         "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
@@ -2110,7 +2110,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Complete the perfect square:\\n\\n$k^2 + 60k + \\dots = (k + \\dots)^2$",
+    "question": "Complete the perfect square:\n\n$k^2 + 60k + \\dots = (k + \\dots)^2$",
     "a": "k^2 + 60k + 900 = (k + 30)^2",
     "solution": "k^2 + 60k + 900 = (k + 30)^2",
     "t": "Factoring",
@@ -2118,7 +2118,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
-        "workingOut": "Complete the perfect square:\\n\\nk^2 + 60k + \\dots = (k + \\dots)^2"
+        "workingOut": "Complete the perfect square:\n\nk^2 + 60k + \\dots = (k + \\dots)^2"
       },
       {
         "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
@@ -2136,7 +2136,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Complete the perfect square:\\n\\n$d^2 - 15d + \\dots = (d - \\dots)^2$",
+    "question": "Complete the perfect square:\n\n$d^2 - 15d + \\dots = (d - \\dots)^2$",
     "a": "d^2 - 15d + \\frac{225}{4} = (d - \\frac{15}{2})^2",
     "solution": "d^2 - 15d + \\frac{225}{4} = (d - \\frac{15}{2})^2",
     "t": "Factoring",
@@ -2144,7 +2144,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Recognize the mathematical structure, such as a difference of two squares \\(a^2 - b^2\\) or a perfect square.",
-        "workingOut": "Complete the perfect square:\\n\\nd^2 - 15d + \\dots = (d - \\dots)^2"
+        "workingOut": "Complete the perfect square:\n\nd^2 - 15d + \\dots = (d - \\dots)^2"
       },
       {
         "explanation": "Apply the relevant factoring formula \\((a-b)(a+b)\\) or \\((a \\pm b)^2\\).",
@@ -2162,7 +2162,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor the non-monic quadratic expression.\\n\\n$2y^2+3y+1$",
+    "question": "Factor the non-monic quadratic expression.\n\n$2y^2+3y+1$",
     "a": "(2y+1)(y+1)",
     "solution": "(2y+1)(y+1)",
     "t": "Factoring",
@@ -2170,7 +2170,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
-        "workingOut": "Factor the non-monic quadratic expression.\\n\\n2y^2+3y+1"
+        "workingOut": "Factor the non-monic quadratic expression.\n\n2y^2+3y+1"
       },
       {
         "explanation": "Split the middle term using these two numbers.",
@@ -2188,7 +2188,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor the non-monic quadratic expression.\\n\\n$3z^2+7z+2$",
+    "question": "Factor the non-monic quadratic expression.\n\n$3z^2+7z+2$",
     "a": "(3z+1)(z+2)",
     "solution": "(3z+1)(z+2)",
     "t": "Factoring",
@@ -2196,7 +2196,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
-        "workingOut": "Factor the non-monic quadratic expression.\\n\\n3z^2+7z+2"
+        "workingOut": "Factor the non-monic quadratic expression.\n\n3z^2+7z+2"
       },
       {
         "explanation": "Split the middle term using these two numbers.",
@@ -2214,7 +2214,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor the non-monic quadratic expression.\\n\\n$2m^2+11m+5$",
+    "question": "Factor the non-monic quadratic expression.\n\n$2m^2+11m+5$",
     "a": "(2m+1)(m+5)",
     "solution": "(2m+1)(m+5)",
     "t": "Factoring",
@@ -2222,7 +2222,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
-        "workingOut": "Factor the non-monic quadratic expression.\\n\\n2m^2+11m+5"
+        "workingOut": "Factor the non-monic quadratic expression.\n\n2m^2+11m+5"
       },
       {
         "explanation": "Split the middle term using these two numbers.",
@@ -2240,7 +2240,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor the non-monic quadratic expression.\\n\\n$5n^2+12n+4$",
+    "question": "Factor the non-monic quadratic expression.\n\n$5n^2+12n+4$",
     "a": "(5n+2)(n+2)",
     "solution": "(5n+2)(n+2)",
     "t": "Factoring",
@@ -2248,7 +2248,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
-        "workingOut": "Factor the non-monic quadratic expression.\\n\\n5n^2+12n+4"
+        "workingOut": "Factor the non-monic quadratic expression.\n\n5n^2+12n+4"
       },
       {
         "explanation": "Split the middle term using these two numbers.",
@@ -2266,7 +2266,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor the non-monic quadratic expression.\\n\\n$3p^2-4p+1$",
+    "question": "Factor the non-monic quadratic expression.\n\n$3p^2-4p+1$",
     "a": "(3p-1)(p-1)",
     "solution": "(3p-1)(p-1)",
     "t": "Factoring",
@@ -2274,7 +2274,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
-        "workingOut": "Factor the non-monic quadratic expression.\\n\\n3p^2-4p+1"
+        "workingOut": "Factor the non-monic quadratic expression.\n\n3p^2-4p+1"
       },
       {
         "explanation": "Split the middle term using these two numbers.",
@@ -2292,7 +2292,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor the non-monic quadratic expression.\\n\\n$2q^2-7q+6$",
+    "question": "Factor the non-monic quadratic expression.\n\n$2q^2-7q+6$",
     "a": "(2q-3)(q-2)",
     "solution": "(2q-3)(q-2)",
     "t": "Factoring",
@@ -2300,7 +2300,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
-        "workingOut": "Factor the non-monic quadratic expression.\\n\\n2q^2-7q+6"
+        "workingOut": "Factor the non-monic quadratic expression.\n\n2q^2-7q+6"
       },
       {
         "explanation": "Split the middle term using these two numbers.",
@@ -2318,7 +2318,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor the non-monic quadratic expression.\\n\\n$3u^2-8u+5$",
+    "question": "Factor the non-monic quadratic expression.\n\n$3u^2-8u+5$",
     "a": "(3u-5)(u-1)",
     "solution": "(3u-5)(u-1)",
     "t": "Factoring",
@@ -2326,7 +2326,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
-        "workingOut": "Factor the non-monic quadratic expression.\\n\\n3u^2-8u+5"
+        "workingOut": "Factor the non-monic quadratic expression.\n\n3u^2-8u+5"
       },
       {
         "explanation": "Split the middle term using these two numbers.",
@@ -2344,7 +2344,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor the non-monic quadratic expression.\\n\\n$10v^2-17v+3$",
+    "question": "Factor the non-monic quadratic expression.\n\n$10v^2-17v+3$",
     "a": "(5v-1)(2v-3)",
     "solution": "(5v-1)(2v-3)",
     "t": "Factoring",
@@ -2352,7 +2352,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
-        "workingOut": "Factor the non-monic quadratic expression.\\n\\n10v^2-17v+3"
+        "workingOut": "Factor the non-monic quadratic expression.\n\n10v^2-17v+3"
       },
       {
         "explanation": "Split the middle term using these two numbers.",
@@ -2370,7 +2370,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor the non-monic quadratic expression.\\n\\n$3w^2-2w-5$",
+    "question": "Factor the non-monic quadratic expression.\n\n$3w^2-2w-5$",
     "a": "(3w-5)(w+1)",
     "solution": "(3w-5)(w+1)",
     "t": "Factoring",
@@ -2378,7 +2378,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
-        "workingOut": "Factor the non-monic quadratic expression.\\n\\n3w^2-2w-5"
+        "workingOut": "Factor the non-monic quadratic expression.\n\n3w^2-2w-5"
       },
       {
         "explanation": "Split the middle term using these two numbers.",
@@ -2396,7 +2396,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor the non-monic quadratic expression.\\n\\n$3k^2+4k-7$",
+    "question": "Factor the non-monic quadratic expression.\n\n$3k^2+4k-7$",
     "a": "(3k+7)(k-1)",
     "solution": "(3k+7)(k-1)",
     "t": "Factoring",
@@ -2404,7 +2404,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
-        "workingOut": "Factor the non-monic quadratic expression.\\n\\n3k^2+4k-7"
+        "workingOut": "Factor the non-monic quadratic expression.\n\n3k^2+4k-7"
       },
       {
         "explanation": "Split the middle term using these two numbers.",
@@ -2422,7 +2422,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor the non-monic quadratic expression.\\n\\n$2a^2+3a-5$",
+    "question": "Factor the non-monic quadratic expression.\n\n$2a^2+3a-5$",
     "a": "(2a+5)(a-1)",
     "solution": "(2a+5)(a-1)",
     "t": "Factoring",
@@ -2430,7 +2430,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
-        "workingOut": "Factor the non-monic quadratic expression.\\n\\n2a^2+3a-5"
+        "workingOut": "Factor the non-monic quadratic expression.\n\n2a^2+3a-5"
       },
       {
         "explanation": "Split the middle term using these two numbers.",
@@ -2448,7 +2448,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor the non-monic quadratic expression.\\n\\n$2b^2+9b-5$",
+    "question": "Factor the non-monic quadratic expression.\n\n$2b^2+9b-5$",
     "a": "(2b-1)(b+5)",
     "solution": "(2b-1)(b+5)",
     "t": "Factoring",
@@ -2456,7 +2456,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
-        "workingOut": "Factor the non-monic quadratic expression.\\n\\n2b^2+9b-5"
+        "workingOut": "Factor the non-monic quadratic expression.\n\n2b^2+9b-5"
       },
       {
         "explanation": "Split the middle term using these two numbers.",
@@ -2474,7 +2474,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor the non-monic quadratic expression.\\n\\n$3c^2-10c-8$",
+    "question": "Factor the non-monic quadratic expression.\n\n$3c^2-10c-8$",
     "a": "(3c+2)(c-4)",
     "solution": "(3c+2)(c-4)",
     "t": "Factoring",
@@ -2482,7 +2482,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
-        "workingOut": "Factor the non-monic quadratic expression.\\n\\n3c^2-10c-8"
+        "workingOut": "Factor the non-monic quadratic expression.\n\n3c^2-10c-8"
       },
       {
         "explanation": "Split the middle term using these two numbers.",
@@ -2500,7 +2500,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor the non-monic quadratic expression.\\n\\n$3d^2+d-10$",
+    "question": "Factor the non-monic quadratic expression.\n\n$3d^2+d-10$",
     "a": "(3d-5)(d+2)",
     "solution": "(3d-5)(d+2)",
     "t": "Factoring",
@@ -2508,7 +2508,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
-        "workingOut": "Factor the non-monic quadratic expression.\\n\\n3d^2+d-10"
+        "workingOut": "Factor the non-monic quadratic expression.\n\n3d^2+d-10"
       },
       {
         "explanation": "Split the middle term using these two numbers.",
@@ -2526,7 +2526,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor the non-monic quadratic expression.\\n\\n$8m^2+14m-15$",
+    "question": "Factor the non-monic quadratic expression.\n\n$8m^2+14m-15$",
     "a": "(4m-3)(2m+5)",
     "solution": "(4m-3)(2m+5)",
     "t": "Factoring",
@@ -2534,7 +2534,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
-        "workingOut": "Factor the non-monic quadratic expression.\\n\\n8m^2+14m-15"
+        "workingOut": "Factor the non-monic quadratic expression.\n\n8m^2+14m-15"
       },
       {
         "explanation": "Split the middle term using these two numbers.",
@@ -2552,7 +2552,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor the non-monic quadratic expression.\\n\\n$10n^2-11n-6$",
+    "question": "Factor the non-monic quadratic expression.\n\n$10n^2-11n-6$",
     "a": "(5n+2)(2n-3)",
     "solution": "(5n+2)(2n-3)",
     "t": "Factoring",
@@ -2560,7 +2560,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
-        "workingOut": "Factor the non-monic quadratic expression.\\n\\n10n^2-11n-6"
+        "workingOut": "Factor the non-monic quadratic expression.\n\n10n^2-11n-6"
       },
       {
         "explanation": "Split the middle term using these two numbers.",
@@ -2578,7 +2578,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor the non-monic quadratic expression.\\n\\n$15p^2+14p-8$",
+    "question": "Factor the non-monic quadratic expression.\n\n$15p^2+14p-8$",
     "a": "(5p-2)(3p+4)",
     "solution": "(5p-2)(3p+4)",
     "t": "Factoring",
@@ -2586,7 +2586,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
-        "workingOut": "Factor the non-monic quadratic expression.\\n\\n15p^2+14p-8"
+        "workingOut": "Factor the non-monic quadratic expression.\n\n15p^2+14p-8"
       },
       {
         "explanation": "Split the middle term using these two numbers.",
@@ -2604,7 +2604,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor the non-monic quadratic expression.\\n\\n$3q^2+17q+20$",
+    "question": "Factor the non-monic quadratic expression.\n\n$3q^2+17q+20$",
     "a": "(3q+5)(q+4)",
     "solution": "(3q+5)(q+4)",
     "t": "Factoring",
@@ -2612,7 +2612,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
-        "workingOut": "Factor the non-monic quadratic expression.\\n\\n3q^2+17q+20"
+        "workingOut": "Factor the non-monic quadratic expression.\n\n3q^2+17q+20"
       },
       {
         "explanation": "Split the middle term using these two numbers.",
@@ -2630,7 +2630,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor the non-monic quadratic expression.\\n\\n$7u^2+10u-8$",
+    "question": "Factor the non-monic quadratic expression.\n\n$7u^2+10u-8$",
     "a": "(7u-4)(u+2)",
     "solution": "(7u-4)(u+2)",
     "t": "Factoring",
@@ -2638,7 +2638,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
-        "workingOut": "Factor the non-monic quadratic expression.\\n\\n7u^2+10u-8"
+        "workingOut": "Factor the non-monic quadratic expression.\n\n7u^2+10u-8"
       },
       {
         "explanation": "Split the middle term using these two numbers.",
@@ -2656,7 +2656,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor the non-monic quadratic expression.\\n\\n$7v^2-24v+9$",
+    "question": "Factor the non-monic quadratic expression.\n\n$7v^2-24v+9$",
     "a": "(7v-3)(v-3)",
     "solution": "(7v-3)(v-3)",
     "t": "Factoring",
@@ -2664,7 +2664,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
-        "workingOut": "Factor the non-monic quadratic expression.\\n\\n7v^2-24v+9"
+        "workingOut": "Factor the non-monic quadratic expression.\n\n7v^2-24v+9"
       },
       {
         "explanation": "Split the middle term using these two numbers.",
@@ -2682,7 +2682,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor the non-monic quadratic expression.\\n\\n$7w^2-12w-4$",
+    "question": "Factor the non-monic quadratic expression.\n\n$7w^2-12w-4$",
     "a": "(7w+2)(w-2)",
     "solution": "(7w+2)(w-2)",
     "t": "Factoring",
@@ -2690,7 +2690,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
-        "workingOut": "Factor the non-monic quadratic expression.\\n\\n7w^2-12w-4"
+        "workingOut": "Factor the non-monic quadratic expression.\n\n7w^2-12w-4"
       },
       {
         "explanation": "Split the middle term using these two numbers.",
@@ -2708,7 +2708,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor the non-monic quadratic expression.\\n\\n$3k^2+14k-24$",
+    "question": "Factor the non-monic quadratic expression.\n\n$3k^2+14k-24$",
     "a": "(3k-4)(k+6)",
     "solution": "(3k-4)(k+6)",
     "t": "Factoring",
@@ -2716,7 +2716,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
-        "workingOut": "Factor the non-monic quadratic expression.\\n\\n3k^2+14k-24"
+        "workingOut": "Factor the non-monic quadratic expression.\n\n3k^2+14k-24"
       },
       {
         "explanation": "Split the middle term using these two numbers.",
@@ -2734,7 +2734,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor the non-monic quadratic expression.\\n\\n$4x^2-4x-15$",
+    "question": "Factor the non-monic quadratic expression.\n\n$4x^2-4x-15$",
     "a": "(2x+3)(2x-5)",
     "solution": "(2x+3)(2x-5)",
     "t": "Factoring",
@@ -2742,7 +2742,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
-        "workingOut": "Factor the non-monic quadratic expression.\\n\\n4x^2-4x-15"
+        "workingOut": "Factor the non-monic quadratic expression.\n\n4x^2-4x-15"
       },
       {
         "explanation": "Split the middle term using these two numbers.",
@@ -2760,7 +2760,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Factor the non-monic quadratic expression.\\n\\n$2y^2+11y-21$",
+    "question": "Factor the non-monic quadratic expression.\n\n$2y^2+11y-21$",
     "a": "(2y-3)(y+7)",
     "solution": "(2y-3)(y+7)",
     "t": "Factoring",
@@ -2768,7 +2768,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
-        "workingOut": "Factor the non-monic quadratic expression.\\n\\n2y^2+11y-21"
+        "workingOut": "Factor the non-monic quadratic expression.\n\n2y^2+11y-21"
       },
       {
         "explanation": "Split the middle term using these two numbers.",
@@ -2786,7 +2786,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Use appropriate techniques to factor the expression.\\n\\n$m^2-36$",
+    "question": "Use appropriate techniques to factor the expression.\n\n$m^2-36$",
     "a": "(m-6)(m+6)",
     "solution": "(m-6)(m+6)",
     "t": "Factoring",
@@ -2794,7 +2794,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
-        "workingOut": "Use appropriate techniques to factor the expression.\\n\\nm^2-36"
+        "workingOut": "Use appropriate techniques to factor the expression.\n\nm^2-36"
       },
       {
         "explanation": "Split the middle term using these two numbers.",
@@ -2812,7 +2812,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Use appropriate techniques to factor the expression.\\n\\n$n^2-36n$",
+    "question": "Use appropriate techniques to factor the expression.\n\n$n^2-36n$",
     "a": "n(n-36)",
     "solution": "n(n-36)",
     "t": "Factoring",
@@ -2820,7 +2820,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
-        "workingOut": "Use appropriate techniques to factor the expression.\\n\\nn^2-36n"
+        "workingOut": "Use appropriate techniques to factor the expression.\n\nn^2-36n"
       },
       {
         "explanation": "Split the middle term using these two numbers.",
@@ -2838,7 +2838,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Use appropriate techniques to factor the expression.\\n\\n$p^2-26p+120$",
+    "question": "Use appropriate techniques to factor the expression.\n\n$p^2-26p+120$",
     "a": "(p-6)(p-20)",
     "solution": "(p-6)(p-20)",
     "t": "Factoring",
@@ -2846,7 +2846,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
-        "workingOut": "Use appropriate techniques to factor the expression.\\n\\np^2-26p+120"
+        "workingOut": "Use appropriate techniques to factor the expression.\n\np^2-26p+120"
       },
       {
         "explanation": "Split the middle term using these two numbers.",
@@ -2864,7 +2864,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Use appropriate techniques to factor the expression.\\n\\n$3q^2+26q+48$",
+    "question": "Use appropriate techniques to factor the expression.\n\n$3q^2+26q+48$",
     "a": "(3q+8)(q+6)",
     "solution": "(3q+8)(q+6)",
     "t": "Factoring",
@@ -2872,7 +2872,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
-        "workingOut": "Use appropriate techniques to factor the expression.\\n\\n3q^2+26q+48"
+        "workingOut": "Use appropriate techniques to factor the expression.\n\n3q^2+26q+48"
       },
       {
         "explanation": "Split the middle term using these two numbers.",
@@ -2890,7 +2890,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Use appropriate techniques to factor the expression.\\n\\n$u^3+4u^2+6u+24$",
+    "question": "Use appropriate techniques to factor the expression.\n\n$u^3+4u^2+6u+24$",
     "a": "(u+4)(u^2+6)",
     "solution": "(u+4)(u^2+6)",
     "t": "Factoring",
@@ -2898,7 +2898,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
-        "workingOut": "Use appropriate techniques to factor the expression.\\n\\nu^3+4u^2+6u+24"
+        "workingOut": "Use appropriate techniques to factor the expression.\n\nu^3+4u^2+6u+24"
       },
       {
         "explanation": "Split the middle term using these two numbers.",
@@ -2916,7 +2916,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Use appropriate techniques to factor the expression.\\n\\n$49-v^2$",
+    "question": "Use appropriate techniques to factor the expression.\n\n$49-v^2$",
     "a": "(7-v)(7+v)",
     "solution": "(7-v)(7+v)",
     "t": "Factoring",
@@ -2924,7 +2924,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
-        "workingOut": "Use appropriate techniques to factor the expression.\\n\\n49-v^2"
+        "workingOut": "Use appropriate techniques to factor the expression.\n\n49-v^2"
       },
       {
         "explanation": "Split the middle term using these two numbers.",
@@ -2942,7 +2942,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Use appropriate techniques to factor the expression.\\n\\n$49w^2-w^3$",
+    "question": "Use appropriate techniques to factor the expression.\n\n$49w^2-w^3$",
     "a": "w^2(49-w)",
     "solution": "w^2(49-w)",
     "t": "Factoring",
@@ -2950,7 +2950,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
-        "workingOut": "Use appropriate techniques to factor the expression.\\n\\n49w^2-w^3"
+        "workingOut": "Use appropriate techniques to factor the expression.\n\n49w^2-w^3"
       },
       {
         "explanation": "Split the middle term using these two numbers.",
@@ -2968,7 +2968,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Use appropriate techniques to factor the expression.\\n\\n$k^2+18k+81$",
+    "question": "Use appropriate techniques to factor the expression.\n\n$k^2+18k+81$",
     "a": "(k+9)^2",
     "solution": "(k+9)^2",
     "t": "Factoring",
@@ -2976,7 +2976,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
-        "workingOut": "Use appropriate techniques to factor the expression.\\n\\nk^2+18k+81"
+        "workingOut": "Use appropriate techniques to factor the expression.\n\nk^2+18k+81"
       },
       {
         "explanation": "Split the middle term using these two numbers.",
@@ -2994,7 +2994,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Use appropriate techniques to factor the expression.\\n\\n$x^2-18x-40$",
+    "question": "Use appropriate techniques to factor the expression.\n\n$x^2-18x-40$",
     "a": "(x-20)(x+2)",
     "solution": "(x-20)(x+2)",
     "t": "Factoring",
@@ -3002,7 +3002,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
-        "workingOut": "Use appropriate techniques to factor the expression.\\n\\nx^2-18x-40"
+        "workingOut": "Use appropriate techniques to factor the expression.\n\nx^2-18x-40"
       },
       {
         "explanation": "Split the middle term using these two numbers.",
@@ -3020,7 +3020,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Use appropriate techniques to factor the expression.\\n\\n$3y^2+14y-24$",
+    "question": "Use appropriate techniques to factor the expression.\n\n$3y^2+14y-24$",
     "a": "(3y-4)(y+6)",
     "solution": "(3y-4)(y+6)",
     "t": "Factoring",
@@ -3028,7 +3028,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
-        "workingOut": "Use appropriate techniques to factor the expression.\\n\\n3y^2+14y-24"
+        "workingOut": "Use appropriate techniques to factor the expression.\n\n3y^2+14y-24"
       },
       {
         "explanation": "Split the middle term using these two numbers.",
@@ -3046,7 +3046,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Use appropriate techniques to factor the expression.\\n\\n$4z^2-20z-11$",
+    "question": "Use appropriate techniques to factor the expression.\n\n$4z^2-20z-11$",
     "a": "(2z-11)(2z+1)",
     "solution": "(2z-11)(2z+1)",
     "t": "Factoring",
@@ -3054,7 +3054,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
-        "workingOut": "Use appropriate techniques to factor the expression.\\n\\n4z^2-20z-11"
+        "workingOut": "Use appropriate techniques to factor the expression.\n\n4z^2-20z-11"
       },
       {
         "explanation": "Split the middle term using these two numbers.",
@@ -3072,7 +3072,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Use appropriate techniques to factor the expression.\\n\\n$3m^3-15m^2-2m+10$",
+    "question": "Use appropriate techniques to factor the expression.\n\n$3m^3-15m^2-2m+10$",
     "a": "(m-5)(3m^2-2)",
     "solution": "(m-5)(3m^2-2)",
     "t": "Factoring",
@@ -3080,7 +3080,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
-        "workingOut": "Use appropriate techniques to factor the expression.\\n\\n3m^3-15m^2-2m+10"
+        "workingOut": "Use appropriate techniques to factor the expression.\n\n3m^3-15m^2-2m+10"
       },
       {
         "explanation": "Split the middle term using these two numbers.",
@@ -3098,7 +3098,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Use appropriate techniques to factor the expression.\\n\\n$3x^2+xy-6x-2y$",
+    "question": "Use appropriate techniques to factor the expression.\n\n$3x^2+xy-6x-2y$",
     "a": "(3x+y)(x-2)",
     "solution": "(3x+y)(x-2)",
     "t": "Factoring",
@@ -3106,7 +3106,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
-        "workingOut": "Use appropriate techniques to factor the expression.\\n\\n3x^2+xy-6x-2y"
+        "workingOut": "Use appropriate techniques to factor the expression.\n\n3x^2+xy-6x-2y"
       },
       {
         "explanation": "Split the middle term using these two numbers.",
@@ -3124,7 +3124,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Use appropriate techniques to factor the expression.\\n\\n$8p^4q^3+12p^3q^4$",
+    "question": "Use appropriate techniques to factor the expression.\n\n$8p^4q^3+12p^3q^4$",
     "a": "4p^3q^3(2p+3q)",
     "solution": "4p^3q^3(2p+3q)",
     "t": "Factoring",
@@ -3132,7 +3132,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
-        "workingOut": "Use appropriate techniques to factor the expression.\\n\\n8p^4q^3+12p^3q^4"
+        "workingOut": "Use appropriate techniques to factor the expression.\n\n8p^4q^3+12p^3q^4"
       },
       {
         "explanation": "Split the middle term using these two numbers.",
@@ -3150,7 +3150,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Use appropriate techniques to factor the expression.\\n\\n$64u^2-81v^2$",
+    "question": "Use appropriate techniques to factor the expression.\n\n$64u^2-81v^2$",
     "a": "(8u-9v)(8u+9v)",
     "solution": "(8u-9v)(8u+9v)",
     "t": "Factoring",
@@ -3158,7 +3158,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
-        "workingOut": "Use appropriate techniques to factor the expression.\\n\\n64u^2-81v^2"
+        "workingOut": "Use appropriate techniques to factor the expression.\n\n64u^2-81v^2"
       },
       {
         "explanation": "Split the middle term using these two numbers.",
@@ -3176,7 +3176,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Use appropriate techniques to factor the expression.\\n\\n$w^2-16w+60$",
+    "question": "Use appropriate techniques to factor the expression.\n\n$w^2-16w+60$",
     "a": "(w-6)(w-10)",
     "solution": "(w-6)(w-10)",
     "t": "Factoring",
@@ -3184,7 +3184,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
-        "workingOut": "Use appropriate techniques to factor the expression.\\n\\nw^2-16w+60"
+        "workingOut": "Use appropriate techniques to factor the expression.\n\nw^2-16w+60"
       },
       {
         "explanation": "Split the middle term using these two numbers.",
@@ -3202,7 +3202,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Use appropriate techniques to factor the expression.\\n\\n$5x^2+3x-26$",
+    "question": "Use appropriate techniques to factor the expression.\n\n$5x^2+3x-26$",
     "a": "(5x+13)(x-2)",
     "solution": "(5x+13)(x-2)",
     "t": "Factoring",
@@ -3210,7 +3210,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
-        "workingOut": "Use appropriate techniques to factor the expression.\\n\\n5x^2+3x-26"
+        "workingOut": "Use appropriate techniques to factor the expression.\n\n5x^2+3x-26"
       },
       {
         "explanation": "Split the middle term using these two numbers.",
@@ -3228,7 +3228,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Use appropriate techniques to factor the expression.\\n\\n$3y^2+35y+22$",
+    "question": "Use appropriate techniques to factor the expression.\n\n$3y^2+35y+22$",
     "a": "(3y+2)(y+11)",
     "solution": "(3y+2)(y+11)",
     "t": "Factoring",
@@ -3236,7 +3236,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
-        "workingOut": "Use appropriate techniques to factor the expression.\\n\\n3y^2+35y+22"
+        "workingOut": "Use appropriate techniques to factor the expression.\n\n3y^2+35y+22"
       },
       {
         "explanation": "Split the middle term using these two numbers.",
@@ -3254,7 +3254,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Use appropriate techniques to factor the expression.\\n\\n$3z^2+19z+28$",
+    "question": "Use appropriate techniques to factor the expression.\n\n$3z^2+19z+28$",
     "a": "(3z+7)(z+4)",
     "solution": "(3z+7)(z+4)",
     "t": "Factoring",
@@ -3262,7 +3262,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
-        "workingOut": "Use appropriate techniques to factor the expression.\\n\\n3z^2+19z+28"
+        "workingOut": "Use appropriate techniques to factor the expression.\n\n3z^2+19z+28"
       },
       {
         "explanation": "Split the middle term using these two numbers.",
@@ -3280,7 +3280,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Use appropriate techniques to factor the expression.\\n\\n$4k^3+12k^2+20k$",
+    "question": "Use appropriate techniques to factor the expression.\n\n$4k^3+12k^2+20k$",
     "a": "4k(k^2+3k+5)",
     "solution": "4k(k^2+3k+5)",
     "t": "Factoring",
@@ -3288,7 +3288,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
-        "workingOut": "Use appropriate techniques to factor the expression.\\n\\n4k^3+12k^2+20k"
+        "workingOut": "Use appropriate techniques to factor the expression.\n\n4k^3+12k^2+20k"
       },
       {
         "explanation": "Split the middle term using these two numbers.",
@@ -3306,7 +3306,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Use appropriate techniques to factor the expression.\\n\\n$m^2+12m-64$",
+    "question": "Use appropriate techniques to factor the expression.\n\n$m^2+12m-64$",
     "a": "(m+16)(m-4)",
     "solution": "(m+16)(m-4)",
     "t": "Factoring",
@@ -3314,7 +3314,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
-        "workingOut": "Use appropriate techniques to factor the expression.\\n\\nm^2+12m-64"
+        "workingOut": "Use appropriate techniques to factor the expression.\n\nm^2+12m-64"
       },
       {
         "explanation": "Split the middle term using these two numbers.",
@@ -3332,7 +3332,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Use appropriate techniques to factor the expression.\\n\\n$4p^3-3p^2q-16p+12q$",
+    "question": "Use appropriate techniques to factor the expression.\n\n$4p^3-3p^2q-16p+12q$",
     "a": "(4p-3q)(p-2)(p+2)",
     "solution": "(4p-3q)(p-2)(p+2)",
     "t": "Factoring",
@@ -3340,7 +3340,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
-        "workingOut": "Use appropriate techniques to factor the expression.\\n\\n4p^3-3p^2q-16p+12q"
+        "workingOut": "Use appropriate techniques to factor the expression.\n\n4p^3-3p^2q-16p+12q"
       },
       {
         "explanation": "Split the middle term using these two numbers.",
@@ -3358,7 +3358,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Use appropriate techniques to factor the expression.\\n\\n$(x+y)^2-z^2$",
+    "question": "Use appropriate techniques to factor the expression.\n\n$(x+y)^2-z^2$",
     "a": "(x+y-z)(x+y+z)",
     "solution": "(x+y-z)(x+y+z)",
     "t": "Factoring",
@@ -3366,7 +3366,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
-        "workingOut": "Use appropriate techniques to factor the expression.\\n\\n(x+y)^2-z^2"
+        "workingOut": "Use appropriate techniques to factor the expression.\n\n(x+y)^2-z^2"
       },
       {
         "explanation": "Split the middle term using these two numbers.",
@@ -3384,7 +3384,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Use appropriate techniques to factor the expression.\\n\\n$9b^2-24b+16$",
+    "question": "Use appropriate techniques to factor the expression.\n\n$9b^2-24b+16$",
     "a": "(3b-4)^2",
     "solution": "(3b-4)^2",
     "t": "Factoring",
@@ -3392,7 +3392,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
-        "workingOut": "Use appropriate techniques to factor the expression.\\n\\n9b^2-24b+16"
+        "workingOut": "Use appropriate techniques to factor the expression.\n\n9b^2-24b+16"
       },
       {
         "explanation": "Split the middle term using these two numbers.",
@@ -3410,7 +3410,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Factor each expression as fully as possible. (Take out any common factors first.)\\n\\n$5m^2-45$",
+    "question": "Factor each expression as fully as possible. (Take out any common factors first.)\n\n$5m^2-45$",
     "a": "5(m-3)(m+3)",
     "solution": "5(m-3)(m+3)",
     "t": "Factoring",
@@ -3418,7 +3418,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
-        "workingOut": "Factor each expression as fully as possible. (Take out any common factors first.)\\n\\n5m^2-45"
+        "workingOut": "Factor each expression as fully as possible. (Take out any common factors first.)\n\n5m^2-45"
       },
       {
         "explanation": "Split the middle term using these two numbers.",
@@ -3436,7 +3436,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Factor each expression as fully as possible. (Take out any common factors first.)\\n\\n$a^4-b^4$",
+    "question": "Factor each expression as fully as possible. (Take out any common factors first.)\n\n$a^4-b^4$",
     "a": "(a^2+b^2)(a-b)(a+b)",
     "solution": "(a^2+b^2)(a-b)(a+b)",
     "t": "Factoring",
@@ -3444,7 +3444,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
-        "workingOut": "Factor each expression as fully as possible. (Take out any common factors first.)\\n\\na^4-b^4"
+        "workingOut": "Factor each expression as fully as possible. (Take out any common factors first.)\n\na^4-b^4"
       },
       {
         "explanation": "Split the middle term using these two numbers.",
@@ -3462,7 +3462,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Factor each expression as fully as possible. (Take out any common factors first.)\\n\\n$y^3-y$",
+    "question": "Factor each expression as fully as possible. (Take out any common factors first.)\n\n$y^3-y$",
     "a": "y(y-1)(y+1)",
     "solution": "y(y-1)(y+1)",
     "t": "Factoring",
@@ -3470,7 +3470,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
-        "workingOut": "Factor each expression as fully as possible. (Take out any common factors first.)\\n\\ny^3-y"
+        "workingOut": "Factor each expression as fully as possible. (Take out any common factors first.)\n\ny^3-y"
       },
       {
         "explanation": "Split the middle term using these two numbers.",
@@ -3488,7 +3488,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Factor each expression as fully as possible. (Take out any common factors first.)\\n\\n$3z^2-3z-18$",
+    "question": "Factor each expression as fully as possible. (Take out any common factors first.)\n\n$3z^2-3z-18$",
     "a": "3(z-3)(z+2)",
     "solution": "3(z-3)(z+2)",
     "t": "Factoring",
@@ -3496,7 +3496,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
-        "workingOut": "Factor each expression as fully as possible. (Take out any common factors first.)\\n\\n3z^2-3z-18"
+        "workingOut": "Factor each expression as fully as possible. (Take out any common factors first.)\n\n3z^2-3z-18"
       },
       {
         "explanation": "Split the middle term using these two numbers.",
@@ -3514,7 +3514,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Factor each expression as fully as possible. (Take out any common factors first.)\\n\\n$16k-k^3$",
+    "question": "Factor each expression as fully as possible. (Take out any common factors first.)\n\n$16k-k^3$",
     "a": "k(4-k)(4+k)",
     "solution": "k(4-k)(4+k)",
     "t": "Factoring",
@@ -3522,7 +3522,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
-        "workingOut": "Factor each expression as fully as possible. (Take out any common factors first.)\\n\\n16k-k^3"
+        "workingOut": "Factor each expression as fully as possible. (Take out any common factors first.)\n\n16k-k^3"
       },
       {
         "explanation": "Split the middle term using these two numbers.",
@@ -3540,7 +3540,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Factor each expression as fully as possible. (Take out any common factors first.)\\n\\n$81-c^4$",
+    "question": "Factor each expression as fully as possible. (Take out any common factors first.)\n\n$81-c^4$",
     "a": "(9+c^2)(3-c)(3+c)",
     "solution": "(9+c^2)(3-c)(3+c)",
     "t": "Factoring",
@@ -3548,7 +3548,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
-        "workingOut": "Factor each expression as fully as possible. (Take out any common factors first.)\\n\\n81-c^4"
+        "workingOut": "Factor each expression as fully as possible. (Take out any common factors first.)\n\n81-c^4"
       },
       {
         "explanation": "Split the middle term using these two numbers.",
@@ -3566,7 +3566,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Factor each expression as fully as possible. (Take out any common factors first.)\\n\\n$6p^2+21p-45$",
+    "question": "Factor each expression as fully as possible. (Take out any common factors first.)\n\n$6p^2+21p-45$",
     "a": "3(2p-3)(p+5)",
     "solution": "3(2p-3)(p+5)",
     "t": "Factoring",
@@ -3574,7 +3574,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
-        "workingOut": "Factor each expression as fully as possible. (Take out any common factors first.)\\n\\n6p^2+21p-45"
+        "workingOut": "Factor each expression as fully as possible. (Take out any common factors first.)\n\n6p^2+21p-45"
       },
       {
         "explanation": "Split the middle term using these two numbers.",
@@ -3592,7 +3592,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Factor each expression as fully as possible. (Take out any common factors first.)\\n\\n$x^4+x^3+x^2+x$",
+    "question": "Factor each expression as fully as possible. (Take out any common factors first.)\n\n$x^4+x^3+x^2+x$",
     "a": "x(x+1)(x^2+1)",
     "solution": "x(x+1)(x^2+1)",
     "t": "Factoring",
@@ -3600,7 +3600,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
-        "workingOut": "Factor each expression as fully as possible. (Take out any common factors first.)\\n\\nx^4+x^3+x^2+x"
+        "workingOut": "Factor each expression as fully as possible. (Take out any common factors first.)\n\nx^4+x^3+x^2+x"
       },
       {
         "explanation": "Split the middle term using these two numbers.",
@@ -3618,7 +3618,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Factor each expression as fully as possible. (Take out any common factors first.)\\n\\n$m^3+4m^2-m-4$",
+    "question": "Factor each expression as fully as possible. (Take out any common factors first.)\n\n$m^3+4m^2-m-4$",
     "a": "(m+4)(m-1)(m+1)",
     "solution": "(m+4)(m-1)(m+1)",
     "t": "Factoring",
@@ -3626,7 +3626,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
-        "workingOut": "Factor each expression as fully as possible. (Take out any common factors first.)\\n\\nm^3+4m^2-m-4"
+        "workingOut": "Factor each expression as fully as possible. (Take out any common factors first.)\n\nm^3+4m^2-m-4"
       },
       {
         "explanation": "Split the middle term using these two numbers.",
@@ -3644,7 +3644,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Factor each expression as fully as possible. (Take out any common factors first.)\\n\\n$n^3-9n^2+8n$",
+    "question": "Factor each expression as fully as possible. (Take out any common factors first.)\n\n$n^3-9n^2+8n$",
     "a": "n(n-1)(n-8)",
     "solution": "n(n-1)(n-8)",
     "t": "Factoring",
@@ -3652,7 +3652,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
-        "workingOut": "Factor each expression as fully as possible. (Take out any common factors first.)\\n\\nn^3-9n^2+8n"
+        "workingOut": "Factor each expression as fully as possible. (Take out any common factors first.)\n\nn^3-9n^2+8n"
       },
       {
         "explanation": "Split the middle term using these two numbers.",
@@ -3670,7 +3670,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Factor each expression as fully as possible. (Take out any common factors first.)\\n\\n$u^4-8u^2-9$",
+    "question": "Factor each expression as fully as possible. (Take out any common factors first.)\n\n$u^4-8u^2-9$",
     "a": "(u-3)(u+3)(u^2+1)",
     "solution": "(u-3)(u+3)(u^2+1)",
     "t": "Factoring",
@@ -3678,7 +3678,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
-        "workingOut": "Factor each expression as fully as possible. (Take out any common factors first.)\\n\\nu^4-8u^2-9"
+        "workingOut": "Factor each expression as fully as possible. (Take out any common factors first.)\n\nu^4-8u^2-9"
       },
       {
         "explanation": "Split the middle term using these two numbers.",
@@ -3696,7 +3696,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Factor each expression as fully as possible. (Take out any common factors first.)\\n\\n$by^2-b-3y^2+3$",
+    "question": "Factor each expression as fully as possible. (Take out any common factors first.)\n\n$by^2-b-3y^2+3$",
     "a": "(y-1)(y+1)(b-3)",
     "solution": "(y-1)(y+1)(b-3)",
     "t": "Factoring",
@@ -3704,7 +3704,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "For the quadratic expression \\(ax^2 + bx + c\\), find two numbers that multiply to give \\(ac\\) and add to give \\(b\\).",
-        "workingOut": "Factor each expression as fully as possible. (Take out any common factors first.)\\n\\nby^2-b-3y^2+3"
+        "workingOut": "Factor each expression as fully as possible. (Take out any common factors first.)\n\nby^2-b-3y^2+3"
       },
       {
         "explanation": "Split the middle term using these two numbers.",
@@ -3722,7 +3722,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Factor as fully as possible:\\n\\n$9x^2-(y+z)^2$",
+    "question": "Factor as fully as possible:\n\n$9x^2-(y+z)^2$",
     "a": "(3x-y-z)(3x+y+z)",
     "solution": "(3x-y-z)(3x+y+z)",
     "t": "Factoring",
@@ -3730,7 +3730,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the highest common factor (HCF) of all the terms.",
-        "workingOut": "Factor as fully as possible:\\n\\n9x^2-(y+z)^2"
+        "workingOut": "Factor as fully as possible:\n\n9x^2-(y+z)^2"
       },
       {
         "explanation": "Divide each term by the HCF to find the expression inside the brackets.",
@@ -3748,7 +3748,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Factor as fully as possible:\\n\\n$p^2-q^2-p+q$",
+    "question": "Factor as fully as possible:\n\n$p^2-q^2-p+q$",
     "a": "(p-q)(p+q-1)",
     "solution": "(p-q)(p+q-1)",
     "t": "Factoring",
@@ -3756,7 +3756,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the highest common factor (HCF) of all the terms.",
-        "workingOut": "Factor as fully as possible:\\n\\np^2-q^2-p+q"
+        "workingOut": "Factor as fully as possible:\n\np^2-q^2-p+q"
       },
       {
         "explanation": "Divide each term by the HCF to find the expression inside the brackets.",
@@ -3774,7 +3774,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Factor as fully as possible:\\n\\n$x^3-11x^2y+28xy^2$",
+    "question": "Factor as fully as possible:\n\n$x^3-11x^2y+28xy^2$",
     "a": "x(x-4y)(x-7y)",
     "solution": "x(x-4y)(x-7y)",
     "t": "Factoring",
@@ -3782,7 +3782,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the highest common factor (HCF) of all the terms.",
-        "workingOut": "Factor as fully as possible:\\n\\nx^3-11x^2y+28xy^2"
+        "workingOut": "Factor as fully as possible:\n\nx^3-11x^2y+28xy^2"
       },
       {
         "explanation": "Divide each term by the HCF to find the expression inside the brackets.",
@@ -3800,7 +3800,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Factor as fully as possible:\\n\\n$10m^4-m^3-3m^2$",
+    "question": "Factor as fully as possible:\n\n$10m^4-m^3-3m^2$",
     "a": "m^2(5m-3)(2m+1)",
     "solution": "m^2(5m-3)(2m+1)",
     "t": "Factoring",
@@ -3808,7 +3808,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the highest common factor (HCF) of all the terms.",
-        "workingOut": "Factor as fully as possible:\\n\\n10m^4-m^3-3m^2"
+        "workingOut": "Factor as fully as possible:\n\n10m^4-m^3-3m^2"
       },
       {
         "explanation": "Divide each term by the HCF to find the expression inside the brackets.",
@@ -3826,7 +3826,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Factor as fully as possible:\\n\\n$9u^4-82u^2+9$",
+    "question": "Factor as fully as possible:\n\n$9u^4-82u^2+9$",
     "a": "(3u-1)(3u+1)(u-3)(u+3)",
     "solution": "(3u-1)(3u+1)(u-3)(u+3)",
     "t": "Factoring",
@@ -3834,7 +3834,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the highest common factor (HCF) of all the terms.",
-        "workingOut": "Factor as fully as possible:\\n\\n9u^4-82u^2+9"
+        "workingOut": "Factor as fully as possible:\n\n9u^4-82u^2+9"
       },
       {
         "explanation": "Divide each term by the HCF to find the expression inside the brackets.",
@@ -3852,7 +3852,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Factor as fully as possible:\\n\\n$12-5k-2k^2$",
+    "question": "Factor as fully as possible:\n\n$12-5k-2k^2$",
     "a": "(4+k)(3-2k)",
     "solution": "(4+k)(3-2k)",
     "t": "Factoring",
@@ -3860,7 +3860,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the highest common factor (HCF) of all the terms.",
-        "workingOut": "Factor as fully as possible:\\n\\n12-5k-2k^2"
+        "workingOut": "Factor as fully as possible:\n\n12-5k-2k^2"
       },
       {
         "explanation": "Divide each term by the HCF to find the expression inside the brackets.",
@@ -3878,7 +3878,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Factor as fully as possible:\\n\\n$9y^3-18y^2-y+2$",
+    "question": "Factor as fully as possible:\n\n$9y^3-18y^2-y+2$",
     "a": "(y-2)(3y-1)(3y+1)",
     "solution": "(y-2)(3y-1)(3y+1)",
     "t": "Factoring",
@@ -3886,7 +3886,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the highest common factor (HCF) of all the terms.",
-        "workingOut": "Factor as fully as possible:\\n\\n9y^3-18y^2-y+2"
+        "workingOut": "Factor as fully as possible:\n\n9y^3-18y^2-y+2"
       },
       {
         "explanation": "Divide each term by the HCF to find the expression inside the brackets.",
@@ -3904,7 +3904,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Factor as fully as possible:\\n\\n$y^2+2cy+c^2-d^2$",
+    "question": "Factor as fully as possible:\n\n$y^2+2cy+c^2-d^2$",
     "a": "(y+c-d)(y+c+d)",
     "solution": "(y+c-d)(y+c+d)",
     "t": "Factoring",
@@ -3912,7 +3912,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the highest common factor (HCF) of all the terms.",
-        "workingOut": "Factor as fully as possible:\\n\\ny^2+2cy+c^2-d^2"
+        "workingOut": "Factor as fully as possible:\n\ny^2+2cy+c^2-d^2"
       },
       {
         "explanation": "Divide each term by the HCF to find the expression inside the brackets.",
@@ -3930,7 +3930,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Factor as fully as possible:\\n\\n$p^4-p^2-4p-4$",
+    "question": "Factor as fully as possible:\n\n$p^4-p^2-4p-4$",
     "a": "(p-2)(p+1)(p^2+p+2)",
     "solution": "(p-2)(p+1)(p^2+p+2)",
     "t": "Factoring",
@@ -3938,7 +3938,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the highest common factor (HCF) of all the terms.",
-        "workingOut": "Factor as fully as possible:\\n\\np^4-p^2-4p-4"
+        "workingOut": "Factor as fully as possible:\n\np^4-p^2-4p-4"
       },
       {
         "explanation": "Divide each term by the HCF to find the expression inside the brackets.",
@@ -3956,7 +3956,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Factor fully:\\n\\n$m^2+n(n+1)m+n^3$",
+    "question": "Factor fully:\n\n$m^2+n(n+1)m+n^3$",
     "a": "(m+n)(m+n^2)",
     "solution": "(m+n)(m+n^2)",
     "t": "Factoring",
@@ -3964,7 +3964,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the highest common factor (HCF) of all the terms.",
-        "workingOut": "Factor fully:\\n\\nm^2+n(n+1)m+n^3"
+        "workingOut": "Factor fully:\n\nm^2+n(n+1)m+n^3"
       },
       {
         "explanation": "Divide each term by the HCF to find the expression inside the brackets.",
@@ -3982,7 +3982,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Factor fully:\\n\\n$(u^2+uv)^2-(uv+v^2)^2$",
+    "question": "Factor fully:\n\n$(u^2+uv)^2-(uv+v^2)^2$",
     "a": "(u-v)(u+v)^3",
     "solution": "(u-v)(u+v)^3",
     "t": "Factoring",
@@ -3990,7 +3990,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the highest common factor (HCF) of all the terms.",
-        "workingOut": "Factor fully:\\n\\n(u^2+uv)^2-(uv+v^2)^2"
+        "workingOut": "Factor fully:\n\n(u^2+uv)^2-(uv+v^2)^2"
       },
       {
         "explanation": "Divide each term by the HCF to find the expression inside the brackets.",
@@ -4008,7 +4008,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Factor fully:\\n\\n$(x^2-y^2)^2-(x-y)^4$",
+    "question": "Factor fully:\n\n$(x^2-y^2)^2-(x-y)^4$",
     "a": "4xy(x-y)^2",
     "solution": "4xy(x-y)^2",
     "t": "Factoring",
@@ -4016,7 +4016,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the highest common factor (HCF) of all the terms.",
-        "workingOut": "Factor fully:\\n\\n(x^2-y^2)^2-(x-y)^4"
+        "workingOut": "Factor fully:\n\n(x^2-y^2)^2-(x-y)^4"
       },
       {
         "explanation": "Divide each term by the HCF to find the expression inside the brackets.",
@@ -4034,7 +4034,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Factor fully:\\n\\n$4a^4-2a^3b-3ab^3-9b^4$",
+    "question": "Factor fully:\n\n$4a^4-2a^3b-3ab^3-9b^4$",
     "a": "(2a^2-3b^2)(2a^2-ab+3b^2)",
     "solution": "(2a^2-3b^2)(2a^2-ab+3b^2)",
     "t": "Factoring",
@@ -4042,7 +4042,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the highest common factor (HCF) of all the terms.",
-        "workingOut": "Factor fully:\\n\\n4a^4-2a^3b-3ab^3-9b^4"
+        "workingOut": "Factor fully:\n\n4a^4-2a^3b-3ab^3-9b^4"
       },
       {
         "explanation": "Divide each term by the HCF to find the expression inside the brackets.",
@@ -4060,7 +4060,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Factor fully:\\n\\n$(p^2-q^2-r^2)^2-4q^2r^2$",
+    "question": "Factor fully:\n\n$(p^2-q^2-r^2)^2-4q^2r^2$",
     "a": "(p-q-r)(p+q+r)(p-q+r)(p+q-r)",
     "solution": "(p-q-r)(p+q+r)(p-q+r)(p+q-r)",
     "t": "Factoring",
@@ -4068,7 +4068,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the highest common factor (HCF) of all the terms.",
-        "workingOut": "Factor fully:\\n\\n(p^2-q^2-r^2)^2-4q^2r^2"
+        "workingOut": "Factor fully:\n\n(p^2-q^2-r^2)^2-4q^2r^2"
       },
       {
         "explanation": "Divide each term by the HCF to find the expression inside the brackets.",
@@ -4086,7 +4086,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Factor fully:\\n\\n$(pu+qv)^2+(pv-qu)^2+w^2(u^2+v^2)$",
+    "question": "Factor fully:\n\n$(pu+qv)^2+(pv-qu)^2+w^2(u^2+v^2)$",
     "a": "(u^2+v^2)(p^2+q^2+w^2)",
     "solution": "(u^2+v^2)(p^2+q^2+w^2)",
     "t": "Factoring",
@@ -4094,7 +4094,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the highest common factor (HCF) of all the terms.",
-        "workingOut": "Factor fully:\\n\\n(pu+qv)^2+(pv-qu)^2+w^2(u^2+v^2)"
+        "workingOut": "Factor fully:\n\n(pu+qv)^2+(pv-qu)^2+w^2(u^2+v^2)"
       },
       {
         "explanation": "Divide each term by the HCF to find the expression inside the brackets.",
@@ -4112,7 +4112,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Factor fully:\\n\\n$x^4+x^2y^2+y^4$",
+    "question": "Factor fully:\n\n$x^4+x^2y^2+y^4$",
     "a": "(x^2-xy+y^2)(x^2+xy+y^2)",
     "solution": "(x^2-xy+y^2)(x^2+xy+y^2)",
     "t": "Factoring",
@@ -4120,7 +4120,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the highest common factor (HCF) of all the terms.",
-        "workingOut": "Factor fully:\\n\\nx^4+x^2y^2+y^4"
+        "workingOut": "Factor fully:\n\nx^4+x^2y^2+y^4"
       },
       {
         "explanation": "Divide each term by the HCF to find the expression inside the brackets.",
@@ -4138,7 +4138,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Factor fully:\\n\\n$m^4+4n^4$",
+    "question": "Factor fully:\n\n$m^4+4n^4$",
     "a": "(m^2-2mn+2n^2)(m^2+2mn+2n^2)",
     "solution": "(m^2-2mn+2n^2)(m^2+2mn+2n^2)",
     "t": "Factoring",
@@ -4146,7 +4146,7 @@ export const Y11_EXT1_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the highest common factor (HCF) of all the terms.",
-        "workingOut": "Factor fully:\\n\\nm^4+4n^4"
+        "workingOut": "Factor fully:\n\nm^4+4n^4"
       },
       {
         "explanation": "Divide each term by the HCF to find the expression inside the brackets.",

@@ -1,0 +1,100 @@
+{
+  "y9-11g-q7": {
+    "chapterId": "y9-11",
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "topicId": "y9-11g",
+    "topicCode": "11G",
+    "topicTitle": "Parallel and perpendicular straight lines",
+    "year": "Year 9",
+    "isManual": true,
+    "question": "The equations of eight lines are given below:\n**a** \\(y = 3x - 5\\)\n**b** \\(3y + x = 6\\)\n**c** \\(y = x + 3\\)\n**d** \\(2y - x = 4\\)\n**e** \\(y = 5 - x\\)\n**f** \\(2y + x = 6\\)\n**g** \\(2y - 4x = 8\\)\n**h** \\(y = -3x + 1\\)\n\nState which pairs of lines are perpendicular. Format perpendicular pairs separated by semicolons (e.g. a and b; c and e; f and g).",
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "requiresManualGrading": false,
+    "hint": "Rearrange each equation to \\(y = mx + c\\) and verify if the product of their gradients is \\(-1\\).",
+    "solution": "Let's find the gradient \\(m\\) of each line:\n- **a**: \\(y = 3x - 5 \\implies m_a = 3\\)\n- **b**: \\(y = -\\frac{1}{3}x + 2 \\implies m_b = -\\frac{1}{3}\\)\n- **c**: \\(y = x + 3 \\implies m_c = 1\\)\n- **d**: \\(y = \\frac{1}{2}x + 2 \\implies m_d = \\frac{1}{2}\\)\n- **e**: \\(y = -x + 5 \\implies m_e = -1\\)\n- **f**: \\(y = -\\frac{1}{2}x + 3 \\implies m_f = -\\frac{1}{2}\\)\n- **g**: \\(y = 2x + 4 \\implies m_g = 2\\)\n- **h**: \\(y = -3x + 1 \\implies m_h = -3\\)\n\nPerpendicular pairs (where \\(m_1 \\times m_2 = -1\\)):\n- \\(3 \\times -\\frac{1}{3} = -1\\): **a and b**\n- \\(1 \\times -1 = -1\\): **c and e**\n- \\(2 \\times -\\frac{1}{2} = -1\\): **f and g**",
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830227,
+      "_nanoseconds": 114000000
+    },
+    "answer": "0",
+    "origin": "seed",
+    "options": [
+      {
+        "text": "a and b; c and e; f and g",
+        "imageUrl": ""
+      },
+      {
+        "text": "The opposite statement is true.",
+        "imageUrl": ""
+      },
+      {
+        "text": "This is only true for acute angles.",
+        "imageUrl": ""
+      },
+      {
+        "text": "This only holds when the triangle is isosceles.",
+        "imageUrl": ""
+      }
+    ],
+    "graphData": {
+      "jsxGraph": {
+        "boundingbox": [
+          -6,
+          6,
+          6,
+          -6
+        ],
+        "width": 360,
+        "script": "board.suspendUpdate(); board.create('arrow', [[-6,0],[6,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-6],[0,6]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [5.28, -2.0999999999999996, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 5.4, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return (3)*x + (-5); }, -5.5, 5.5], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [2.2, 3.5, 'y = 3x-5'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();",
+        "height": 280
+      }
+    },
+    "isActive": true,
+    "title": "The equations of eight lines are given b...",
+    "type": "multiple_choice",
+    "updatedAt": {
+      "_seconds": 1784364626,
+      "_nanoseconds": 910000000
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Parallel and perpendicular straight lines: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": {
+          "jsxGraph": {
+            "width": 360,
+            "height": 280,
+            "boundingbox": [
+              -6,
+              6,
+              6,
+              -6
+            ],
+            "script": "board.suspendUpdate(); board.create('arrow', [[-6,0],[6,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-6],[0,6]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [5.28, -2.0999999999999996, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 5.4, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return (3)*x + (-5); }, -5.5, 5.5], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [2.2, 3.5, 'y = 3x-5'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+          }
+        }
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "a and b; c and e; f and g",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: a and b; c and e; f and g. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "a and b; c and e; f and g",
+        "graphData": null
+      }
+    ],
+    "isNew": false
+  }
+}

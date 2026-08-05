@@ -2523,7 +2523,7 @@ export const Y8_CH3A_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "If \\\\(N\\\\) is not a square number, every factor \\\\(a\\\\) has a distinct partner \\\\(b \\neq a\\\\). This groups the factors into couples of size 2.",
+        "explanation": "If \\\\(N\\\\) is not a square number, every factor \\\\(a\\\\) has a distinct partner \\\\(b \neq a\\\\). This groups the factors into couples of size 2.",
         "workingOut": "\\\\(\\text{Non-square: pairs are distinct } \\implies \\text{Total count} = 2 \\times k \\implies \\text{Even number of factors}\\\\)",
         "graphData": null
       },

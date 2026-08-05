@@ -62,11 +62,11 @@ export const Y9_CH14_QUESTIONS = [
     "a": 2,
     "answer": "2",
     "hint": "Substitute x = -2 and y = 5 into the equations and verify if they are true.",
-    "solution": "Substituting \\( x = -2 \\) and \\( y = 5 \\) into the equations: \n\\( -2 + 5 = 3 \\neq 4 \\) (False).\nSince the first equation is not satisfied, the point is not a solution.",
+    "solution": "Substituting \\( x = -2 \\) and \\( y = 5 \\) into the equations: \n\\( -2 + 5 = 3 \neq 4 \\) (False).\nSince the first equation is not satisfied, the point is not a solution.",
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Solving simultaneous equations by drawing graphs: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(-2 + 5 = 3 \\neq 4 \\quad \\text{(False)}\\)",
+        "workingOut": "\\(-2 + 5 = 3 \neq 4 \\quad \\text{(False)}\\)",
         "graphData": null
       },
       {

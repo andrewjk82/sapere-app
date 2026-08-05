@@ -1,0 +1,59 @@
+{
+  "y9-11d-q14": {
+    "chapterId": "y9-11",
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "topicId": "y9-11d",
+    "topicCode": "11D",
+    "topicTitle": "The equation of a straight line",
+    "year": "Year 9",
+    "isManual": true,
+    "question": "Show that the line passing through \\((a, 0)\\) and \\((0, b)\\) has the equation \\(\\frac{x}{a} + \\frac{y}{b} = 1\\).",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "type": "teacher_review",
+    "requiresManualGrading": true,
+    "options": [],
+    "hint": "Find the gradient first, substitute it and the y-intercept into \\(y = mx + c\\), then divide both sides by \\(b\\).",
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830225,
+      "_nanoseconds": 399000000
+    },
+    "answer": "Proof: Gradient m = -b/a, y-intercept c = b.\nSubstituting into y = mx + c gives y = -b/a * x + b.\nDividing by b yields y/b = -x/a + 1, which rearranges to x/a + y/b = 1.",
+    "solution": "Proof: Gradient m = -b/a, y-intercept c = b.\nSubstituting into y = mx + c gives y = -b/a * x + b.\nDividing by b yields y/b = -x/a + 1, which rearranges to x/a + y/b = 1.",
+    "origin": "seed",
+    "isActive": true,
+    "title": "Show that the line passing through (a, 0...",
+    "updatedAt": {
+      "_seconds": 1784364622,
+      "_nanoseconds": 926000000
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The equation of a straight line: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(y = -\\frac{b}{a}x + b\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(\\frac{y}{b} = -\\frac{x}{a} + 1 \\implies \\frac{x}{a} + \\frac{y}{b} = 1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Proof: Gradient m = -b/a, y-intercept c = b.\nSubstituting into y = mx + c gives y = -b/a * x + b.\nDividing by b yields y/b = -x/a + 1, which rearranges to x/a + y/b = 1.. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "Proof: Gradient m = -b/a, y-intercept c = b.\nSubstituting into y = mx + c gives y = -b/a * x + b.\nDividing by b yields y/b = -x/a + 1, which rearranges to x/a + y/b = 1.",
+        "graphData": null
+      }
+    ],
+    "isNew": false
+  }
+}

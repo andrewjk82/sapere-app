@@ -1,0 +1,83 @@
+const fs = require('fs');
+const { initializeApp, cert } = require('firebase-admin/app');
+const { getFirestore, FieldValue } = require('firebase-admin/firestore');
+
+const path = './src/constants/seedBaulkham2020Questions.js';
+let content = fs.readFileSync(path, 'utf8');
+
+const arrayMatch = content.match(/export const BAULKHAM_HILLS_2020_QUESTIONS = (\[[\s\S]*?\]);\n/);
+if (!arrayMatch) throw new Error("No array found");
+
+let questions = eval(arrayMatch[1]);
+const qIndex = questions.findIndex(x => x.id === 'baulko2020-mc4');
+if (qIndex === -1) throw new Error("Question not found");
+
+// Generate SVG points for decreasing concave up curve
+let points = [];
+for (let x = -20; x <= 200; x += 5) {
+  // y = 100 * e^(-x/50)
+  let y = 100 * Math.exp(-x / 50);
+  let X = 50 + x;
+  let Y = 150 - y;
+  points.push(`${X.toFixed(1)},${Y.toFixed(1)}`);
+}
+const svgPath = points.join(' ');
+
+const svgCode = `
+<div style="display:flex; justify-content:center; margin: 16px 0;">
+<svg viewBox="0 0 300 200" width="100%" style="max-width:300px; background-color:white; border:1px solid #ccc; border-radius:8px;">
+  <!-- Axes -->
+  <line x1="20" y1="150" x2="280" y2="150" stroke="#333" stroke-width="2" /> <!-- x-axis -->
+  <line x1="50" y1="20" x2="50" y2="180" stroke="#333" stroke-width="2" /> <!-- y-axis -->
+  
+  <!-- Labels -->
+  <text x="270" y="140" fill="#333" font-size="14" font-family="sans-serif">x</text>
+  <text x="60" y="30" fill="#333" font-size="14" font-family="sans-serif">y</text>
+  <text x="35" y="165" fill="#333" font-size="12" font-family="sans-serif">O</text>
+
+  <!-- Curve -->
+  <polyline fill="none" stroke="#2563eb" stroke-width="3" points="${svgPath}" />
+</svg>
+</div>
+`;
+
+questions[qIndex].question = `For the curve shown, which inequalities are correct?<br/>${svgCode}`;
+
+questions[qIndex].solutionSteps = [
+  {
+    explanation: "Step 1: First, observe the overall direction of the curve. As \\(x\\) increases (moving from left to right), the \\(y\\)-values are getting smaller. This means the function is strictly decreasing.",
+    workingOut: "$$ \\text{Decreasing function} \\implies \\frac{dy}{dx} < 0 $$"
+  },
+  {
+    explanation: "Step 2: Next, observe the shape (curvature) of the graph. The curve is bending upwards, similar to the shape of a cup (\\(\\cup\\)). A curve that bends upwards like this is called \"concave up\".",
+    workingOut: "$$ \\text{Concave up} \\implies \\frac{d^2y}{dx^2} > 0 $$"
+  },
+  {
+    explanation: "Step 3: Combine both observations. The curve must satisfy both conditions simultaneously.",
+    workingOut: "$$ \\therefore \\frac{dy}{dx} < 0 \\text{ and } \\frac{d^2y}{dx^2} > 0 $$"
+  }
+];
+
+const newContent = `export const BAULKHAM_HILLS_2020_QUESTIONS = ${JSON.stringify(questions, null, 2)};\n`;
+fs.writeFileSync(path, newContent, 'utf8');
+
+async function run() {
+  const serviceAccount = JSON.parse(fs.readFileSync('/Users/andrewkim/Downloads/sapere-fe23e-firebase-adminsdk-fbsvc-d9dd93623b.json', 'utf8'));
+  initializeApp({ credential: cert(serviceAccount) });
+  const db = getFirestore();
+  
+  await db.collection('questions').doc('baulko2020-mc4').update({
+    question: questions[qIndex].question,
+    solutionSteps: questions[qIndex].solutionSteps,
+    updatedAt: FieldValue.serverTimestamp()
+  });
+
+  await db.doc('sync_meta/questions').update({
+    version: Date.now(),
+    updatedAt: FieldValue.serverTimestamp()
+  });
+
+  console.log('Successfully updated baulko2020-mc4 graph and steps!');
+  process.exit(0);
+}
+run();

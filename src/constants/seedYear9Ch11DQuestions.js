@@ -1310,7 +1310,7 @@ export const Y9_CH11D_QUESTIONS = [
       },
       {
         "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(-5 \\ne -4\\)",
+        "workingOut": "\\(-5 \ne -4\\)",
         "graphData": null
       },
       {
@@ -1379,7 +1379,7 @@ export const Y9_CH11D_QUESTIONS = [
       },
       {
         "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(7 \\ne 8\\)",
+        "workingOut": "\\(7 \ne 8\\)",
         "graphData": null
       },
       {
@@ -1586,7 +1586,7 @@ export const Y9_CH11D_QUESTIONS = [
       },
       {
         "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(5 \\ne 4\\)",
+        "workingOut": "\\(5 \ne 4\\)",
         "graphData": null
       },
       {
@@ -1655,7 +1655,7 @@ export const Y9_CH11D_QUESTIONS = [
       },
       {
         "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(-7 \\ne -6\\)",
+        "workingOut": "\\(-7 \ne -6\\)",
         "graphData": null
       },
       {
@@ -1862,7 +1862,7 @@ export const Y9_CH11D_QUESTIONS = [
       },
       {
         "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(5 \\ne 6\\)",
+        "workingOut": "\\(5 \ne 6\\)",
         "graphData": null
       },
       {
@@ -1931,7 +1931,7 @@ export const Y9_CH11D_QUESTIONS = [
       },
       {
         "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(-10 \\ne -8\\)",
+        "workingOut": "\\(-10 \ne -8\\)",
         "graphData": null
       },
       {
@@ -3481,7 +3481,7 @@ export const Y9_CH11D_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Answer the following analytical questions regarding the general linear equation \\(ax + by = d\\).\na) Express the equation \\(ax + by = d\\), where \\(a\\), \\(b\\) and \\(d\\) are constants (\\(b \\neq 0\\)), in the form \\(y = mx + c\\).",
+    "question": "Answer the following analytical questions regarding the general linear equation \\(ax + by = d\\).\na) Express the equation \\(ax + by = d\\), where \\(a\\), \\(b\\) and \\(d\\) are constants (\\(b \neq 0\\)), in the form \\(y = mx + c\\).",
     "opts": [
       "\\(-y = -\\frac{a}{b}x + \\frac{d}{b}\\)",
       "\\(y = -\\frac{a}{b}x + \\frac{d}{b}\\)",

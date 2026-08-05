@@ -7659,7 +7659,7 @@ export const DECIMALS_QUESTIONS_Y6 = [
     "difficulty": "medium",
     "timeLimit": 120,
     "isNew": true,
-    "question": "Complete the equivalence row for a percentage value of \\\\(75\\%\\\\) by finding its corresponding decimal, fraction, and simplest fraction:\\n\\n| Percentage | Decimal | Fraction | Simplest fraction |\\n| :--- | :---: | :---: | :---: |\\n| 75% | ? | ? | ? |",
+    "question": "Complete the equivalence row for a percentage value of \\\\(75\\%\\\\) by finding its corresponding decimal, fraction, and simplest fraction:\n\n| Percentage | Decimal | Fraction | Simplest fraction |\n| :--- | :---: | :---: | :---: |\n| 75% | ? | ? | ? |",
     "graphData": null,
     "hint": "Convert 75% to a decimal by dividing by 100. Then express it as a fraction and divide by the highest common factor, 25.",
     "solutionSteps": [

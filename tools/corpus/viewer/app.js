@@ -340,6 +340,14 @@ async function loadDetail(id) {
       ul.appendChild(li);
     });
     detail.appendChild(ul);
+  } else if (q.answer) {
+    const ansBox = document.createElement('div');
+    ansBox.style.cssText = 'margin: 12px 0; padding: 12px; background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 6px; color: #166534; font-weight: 500;';
+    ansBox.innerHTML = 'Answer: ';
+    const span = document.createElement('span');
+    setMathHtml(span, String(q.answer));
+    ansBox.appendChild(span);
+    detail.appendChild(ansBox);
   }
 
   const diagramSvg = q.graphData?.diagramSvg || q.graphData?.svgSnapshot || q.graphData?.svg;
@@ -411,6 +419,14 @@ async function loadDetail(id) {
           ul.appendChild(li);
         });
         box.appendChild(ul);
+      } else if (sq.answer || sq.a) {
+        const ansBox = document.createElement('div');
+        ansBox.style.cssText = 'margin-top: 12px; padding: 8px 12px; background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 6px; color: #166534; font-weight: 500;';
+        ansBox.innerHTML = 'Answer: ';
+        const span = document.createElement('span');
+        setMathHtml(span, String(sq.answer || sq.a));
+        ansBox.appendChild(span);
+        box.appendChild(ansBox);
       }
 
       if (Array.isArray(sq.solutionSteps) && sq.solutionSteps.length) {

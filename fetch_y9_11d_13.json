@@ -1,0 +1,68 @@
+{
+  "y9-11d-q13": {
+    "chapterId": "y9-11",
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "topicId": "y9-11d",
+    "topicCode": "11D",
+    "topicTitle": "The equation of a straight line",
+    "year": "Year 9",
+    "isManual": true,
+    "title": "Answer the following analytica...",
+    "question": "Answer the following analytical questions regarding the general linear equation \\(ax + by = d\\).",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "type": "teacher_review",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "a) y = -\\frac{a}{b}x + \\frac{d}{b}, b) m = -\\frac{a}{b}, c = \\frac{d}{b}",
+    "hint": "Isolate \\(y\\) by moving the \\(x\\) term to the right side, then divide all terms by \\(b\\).",
+    "solution": "a) Rearrange \\(ax + by = d\\):\n   \\(by = -ax + d \\implies y = -\\frac{a}{b}x + \\frac{d}{b}\\).\n\nb) Comparing to \\(y = mx + c\\):\n   - Gradient \\(m = -\\frac{a}{b}\\)\n   - \\(y\\)-intercept \\(c = \\frac{d}{b}\\).",
+    "solutionSteps": [],
+    "questionImage": "",
+    "subQuestions": [
+      {
+        "id": "y9-11d-q13a",
+        "type": "short_answer",
+        "question": "a) Express the equation \\(ax + by = d\\), where \\(a\\), \\(b\\) and \\(d\\) are constants (\\(b \\neq 0\\)), in the form \\(y = mx + c\\).",
+        "options": [],
+        "answer": "y = -\\frac{a}{b}x + \\frac{d}{b}",
+        "solutionSteps": [
+          {
+            "explanation": "Subtract ax from both sides.",
+            "workingOut": "by = -ax + d"
+          },
+          {
+            "explanation": "Divide both sides by b.",
+            "workingOut": "y = -\\frac{a}{b}x + \\frac{d}{b}"
+          }
+        ],
+        "graphData": null
+      },
+      {
+        "id": "y9-11d-q13b",
+        "type": "short_answer",
+        "question": "b) Write down the gradient and \\(y\\)-intercept of the line whose equation is \\(ax + by = d\\). Format: m = [val], c = [val]",
+        "options": [],
+        "answer": "m = -\\frac{a}{b}, c = \\frac{d}{b}",
+        "solutionSteps": [
+          {
+            "explanation": "Identify m and c by matching with y = mx + c.",
+            "workingOut": "m = -\\frac{a}{b}, \\quad c = \\frac{d}{b}"
+          }
+        ],
+        "graphData": null
+      }
+    ],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830225,
+      "_nanoseconds": 399000000
+    },
+    "updatedAt": {
+      "_seconds": 1782830225,
+      "_nanoseconds": 399000000
+    }
+  }
+}

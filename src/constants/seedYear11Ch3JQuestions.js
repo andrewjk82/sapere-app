@@ -250,7 +250,7 @@ export const Y11_CH3J_QUESTIONS = [
         "workingOut": ""
       },
       {
-        "explanation": "a) The denominator cannot be zero: \\( x - 5 \\neq 0 \\implies x \\neq 5 \\).",
+        "explanation": "a) The denominator cannot be zero: \\( x - 5 \neq 0 \\implies x \neq 5 \\).",
         "workingOut": ""
       },
       {
@@ -607,19 +607,19 @@ export const Y11_CH3J_QUESTIONS = [
       },
       {
         "explanation": "a) For \\( y = -x^2 - 4x + 1 \\):",
-        "workingOut": "\\Delta = (-4)^2 - 4(-1)(1) = 16 + 4 = 20 > 0 \\implies 2\\text{ intercepts.}\\nx = -\\frac{-4}{2(-1)} = -2 \\implies y = -(-2)^2 - 4(-2) + 1 = 5 \\implies \\text{vertex: } (-2, 5)"
+        "workingOut": "\\Delta = (-4)^2 - 4(-1)(1) = 16 + 4 = 20 > 0 \\implies 2\\text{ intercepts.}\nx = -\\frac{-4}{2(-1)} = -2 \\implies y = -(-2)^2 - 4(-2) + 1 = 5 \\implies \\text{vertex: } (-2, 5)"
       },
       {
         "explanation": "b) For \\( y = x^2 - 6x + 4 \\):",
-        "workingOut": "\\Delta = (-6)^2 - 4(1)(4) = 36 - 16 = 20 > 0 \\implies 2\\text{ intercepts.}\\nx = -\\frac{-6}{2(1)} = 3 \\implies y = 3^2 - 6(3) + 4 = -5 \\implies \\text{vertex: } (3, -5)"
+        "workingOut": "\\Delta = (-6)^2 - 4(1)(4) = 36 - 16 = 20 > 0 \\implies 2\\text{ intercepts.}\nx = -\\frac{-6}{2(1)} = 3 \\implies y = 3^2 - 6(3) + 4 = -5 \\implies \\text{vertex: } (3, -5)"
       },
       {
         "explanation": "c) For \\( y = x^2 - 6x + 12 \\):",
-        "workingOut": "\\Delta = (-6)^2 - 4(1)(12) = 36 - 48 = -12 < 0 \\implies 0\\text{ intercepts.}\\nx = -\\frac{-6}{2(1)} = 3 \\implies y = 3^2 - 6(3) + 12 = 3 \\implies \\text{vertex: } (3, 3)"
+        "workingOut": "\\Delta = (-6)^2 - 4(1)(12) = 36 - 48 = -12 < 0 \\implies 0\\text{ intercepts.}\nx = -\\frac{-6}{2(1)} = 3 \\implies y = 3^2 - 6(3) + 12 = 3 \\implies \\text{vertex: } (3, 3)"
       },
       {
         "explanation": "d) For \\( y = -x^2 + 8x - 20 \\):",
-        "workingOut": "\\Delta = 8^2 - 4(-1)(-20) = 64 - 80 = -16 < 0 \\implies 0\\text{ intercepts.}\\nx = -\\frac{8}{2(-1)} = 4 \\implies y = -(4)^2 + 8(4) - 20 = -4 \\implies \\text{vertex: } (4, -4)"
+        "workingOut": "\\Delta = 8^2 - 4(-1)(-20) = 64 - 80 = -16 < 0 \\implies 0\\text{ intercepts.}\nx = -\\frac{8}{2(-1)} = 4 \\implies y = -(4)^2 + 8(4) - 20 = -4 \\implies \\text{vertex: } (4, -4)"
       }
     ]
   },
@@ -788,10 +788,10 @@ export const Y11_CH3J_QUESTIONS = [
         "type": "multiple_choice",
         "question": "a) State the domain, range, and asymptotes of \\( y = \\frac{6}{x} \\).",
         "opts": [
-          "Domain: \\( x \\neq 0 \\), Range: \\( y \\neq 0 \\), Asymptotes: \\( x = 0, y = 0 \\)",
+          "Domain: \\( x \neq 0 \\), Range: \\( y \neq 0 \\), Asymptotes: \\( x = 0, y = 0 \\)",
           "Domain: all real x, Range: all real y, Asymptotes: none",
           "Domain: \\( x > 0 \\), Range: \\( y > 0 \\), Asymptotes: \\( x = 0, y = 0 \\)",
-          "Domain: \\( x \\neq 0 \\), Range: \\( y \\neq 0 \\), Asymptotes: \\( y = x, y = -x \\)"
+          "Domain: \\( x \neq 0 \\), Range: \\( y \neq 0 \\), Asymptotes: \\( y = x, y = -x \\)"
         ],
         "a": "0"
       },
@@ -814,7 +814,7 @@ export const Y11_CH3J_QUESTIONS = [
         "workingOut": ""
       },
       {
-        "explanation": "a) For \\( y = \\frac{6}{x} \\), the asymptotes are \\( x = 0 \\) and \\( y = 0 \\). The domain is \\( x \\neq 0 \\) and the range is \\( y \\neq 0 \\).",
+        "explanation": "a) For \\( y = \\frac{6}{x} \\), the asymptotes are \\( x = 0 \\) and \\( y = 0 \\). The domain is \\( x \neq 0 \\) and the range is \\( y \neq 0 \\).",
         "workingOut": ""
       },
       {

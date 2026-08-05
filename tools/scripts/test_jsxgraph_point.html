@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraph.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraphcore.js"></script>
+</head>
+<body>
+    <div id="box" class="jxgbox" style="width:500px; height:500px;"></div>
+    <script type="text/javascript">
+        var board = JXG.JSXGraph.initBoard('box', {boundingbox: [-10, 10, 10, -10], axis:true});
+        board.suspendUpdate();
+        board.create('circle', [[0,0], 7.07], {strokeColor:'#6366f1', strokeWidth:2.5, fillColor:'#6366f1', fillOpacity:0.06});
+        try {
+            board.create('point', [-1, 7], {name:'$(-1, 7)$', size:3, color:'#ef4444', label: {autoPosition: true, offset: [10, 10]}});
+            console.log('Point created successfully');
+        } catch (e) {
+            console.error("Point failed:", e);
+        }
+        board.unsuspendUpdate();
+    </script>
+</body>
+</html>

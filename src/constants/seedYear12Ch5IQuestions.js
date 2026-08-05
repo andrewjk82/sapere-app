@@ -2935,7 +2935,7 @@ export const Y12A_CH5I_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Final family of primitives: \\(\\ln|\\ln x| + C\\) (equivalently \\(\\ln|2\\ln x| + C\\)). Domain requires \\(x > 1\\) or \\(0 < x < 1\\) carefully so \\(\\ln x \\neq 0\\).",
+        "explanation": "Final family of primitives: \\(\\ln|\\ln x| + C\\) (equivalently \\(\\ln|2\\ln x| + C\\)). Domain requires \\(x > 1\\) or \\(0 < x < 1\\) carefully so \\(\\ln x \neq 0\\).",
         "workingOut": "\\(\\ln|\\ln x| + C\\)",
         "graphData": null
       }

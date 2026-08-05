@@ -1,0 +1,100 @@
+{
+  "y9-11d-q3a": {
+    "chapterId": "y9-11",
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "topicId": "y9-11d",
+    "topicCode": "11D",
+    "topicTitle": "The equation of a straight line",
+    "year": "Year 9",
+    "isManual": true,
+    "question": "Check whether or not the point \\((2, 4)\\) lies on the line with equation \\(y = 3x - 2\\).",
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "requiresManualGrading": false,
+    "hint": "Substitute the x-coordinate of the point into the line equation and see if the resulting y matches the point's y-coordinate.",
+    "solution": "Substitute \\(x = 2\\) into the equation \\(y = 3x - 2\\):\n\\(y = 3(2) - 2 = 4\\).\n\nSince the calculated \\(y\\)-value is equal to the point's \\(y\\)-coordinate of \\(4\\), the point **lies** on the line.",
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830225,
+      "_nanoseconds": 399000000
+    },
+    "answer": "2",
+    "origin": "seed",
+    "options": [
+      {
+        "text": "\\(\\dfrac{12}{5}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\dfrac{13}{6}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(Yes\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(Yes + 1\\)",
+        "imageUrl": ""
+      }
+    ],
+    "graphData": {
+      "jsxGraph": {
+        "boundingbox": [
+          -6,
+          6,
+          6,
+          -6
+        ],
+        "width": 360,
+        "script": "board.suspendUpdate(); board.create('arrow', [[-6,0],[6,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-6],[0,6]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [5.28, -2.0999999999999996, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 5.4, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return (3)*x + (-2); }, -5.5, 5.5], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [2.2, 3.5, 'y = 3x-2'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();",
+        "height": 280
+      }
+    },
+    "isActive": true,
+    "title": "Check whether or not the point (2, 4) li...",
+    "type": "multiple_choice",
+    "updatedAt": {
+      "_seconds": 1784364622,
+      "_nanoseconds": 926000000
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The equation of a straight line: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": {
+          "jsxGraph": {
+            "width": 360,
+            "height": 280,
+            "boundingbox": [
+              -6,
+              6,
+              6,
+              -6
+            ],
+            "script": "board.suspendUpdate(); board.create('arrow', [[-6,0],[6,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-6],[0,6]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [5.28, -2.0999999999999996, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 5.4, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return (3)*x + (-2); }, -5.5, 5.5], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [2.2, 3.5, 'y = 3x-2'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+          }
+        }
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(4 = 4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(Yes\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Yes. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(Yes\\)",
+        "graphData": null
+      }
+    ],
+    "isNew": false
+  }
+}

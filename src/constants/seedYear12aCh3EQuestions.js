@@ -758,7 +758,7 @@ export const Y12A_CH3E_QUESTIONS = [
       },
       {
         "explanation": "Determine the sign of the derivative to analyze stationary points.",
-        "workingOut": "2(x^2+9) > 0 \\text{ and } (x^2-9)^2 > 0 \\implies f'(x) < 0 \\text{ for all } x \\neq \\pm 3"
+        "workingOut": "2(x^2+9) > 0 \\text{ and } (x^2-9)^2 > 0 \\implies f'(x) < 0 \\text{ for all } x \neq \\pm 3"
       },
       {
         "explanation": "Find inflection points using \\( f''(x) = 0 \\) and evaluating the inflection gradient.",
@@ -766,7 +766,7 @@ export const Y12A_CH3E_QUESTIONS = [
       },
       {
         "explanation": "State the domain and identify asymptotes.",
-        "workingOut": "x \\neq \\pm 3 \\implies x=-3 \\text{ and } x=3 \\text{ are vertical asymptotes.}"
+        "workingOut": "x \neq \\pm 3 \\implies x=-3 \\text{ and } x=3 \\text{ are vertical asymptotes.}"
       },
       {
         "explanation": "Evaluate limits at infinity to find horizontal asymptotes.",

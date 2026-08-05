@@ -4,7 +4,7 @@ export const Y9_CH1H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Simplify the expression by expanding and collecting like terms:\\n\\((x+3)^2 - (x+5)^2\\)",
+    "question": "Simplify the expression by expanding and collecting like terms:\n\\((x+3)^2 - (x+5)^2\\)",
     "a": "0",
     "opts": [
       "\\(-4x-16\\)",
@@ -38,7 +38,7 @@ export const Y9_CH1H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Simplify the expression by expanding and collecting like terms:\\n\\((x+7)^2 - (x+4)^2\\)",
+    "question": "Simplify the expression by expanding and collecting like terms:\n\\((x+7)^2 - (x+4)^2\\)",
     "a": "0",
     "opts": [
       "\\(6x+33\\)",
@@ -72,7 +72,7 @@ export const Y9_CH1H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Simplify the expression by expanding and collecting like terms:\\n\\((a-5)^2 - (a-5)(a+5)\\)",
+    "question": "Simplify the expression by expanding and collecting like terms:\n\\((a-5)^2 - (a-5)(a+5)\\)",
     "a": "0",
     "opts": [
       "\\(-10a+50\\)",
@@ -106,7 +106,7 @@ export const Y9_CH1H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Simplify the expression by expanding and collecting like terms:\\n\\((a+5)(a-4) - (a+2)(a-3)\\)",
+    "question": "Simplify the expression by expanding and collecting like terms:\n\\((a+5)(a-4) - (a+2)(a-3)\\)",
     "a": "0",
     "opts": [
       "\\(2a-14\\)",
@@ -140,7 +140,7 @@ export const Y9_CH1H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Simplify the expression by expanding and collecting like terms:\\n\\((2x+3)(x+2) - (x+1)(x+4)\\)",
+    "question": "Simplify the expression by expanding and collecting like terms:\n\\((2x+3)(x+2) - (x+1)(x+4)\\)",
     "a": "0",
     "opts": [
       "\\(x^2+2x+2\\)",
@@ -174,7 +174,7 @@ export const Y9_CH1H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Simplify the expression by expanding and collecting like terms:\\n\\((3b-4)(2b+3) + (b+2)(b+4)\\)",
+    "question": "Simplify the expression by expanding and collecting like terms:\n\\((3b-4)(2b+3) + (b+2)(b+4)\\)",
     "a": "0",
     "opts": [
       "\\(7b^2+7b-4\\)",
@@ -208,7 +208,7 @@ export const Y9_CH1H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Simplify the expression by expanding and collecting like terms:\\n\\((a+3b)(3a-b) - (a+b)^2\\)",
+    "question": "Simplify the expression by expanding and collecting like terms:\n\\((a+3b)(3a-b) - (a+b)^2\\)",
     "a": "0",
     "opts": [
       "\\(2a^2+6ab-4b^2\\)",
@@ -242,7 +242,7 @@ export const Y9_CH1H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Simplify the expression by expanding and collecting like terms:\\n\\((3x+y)(y-3x) + (3x-y)^2\\)",
+    "question": "Simplify the expression by expanding and collecting like terms:\n\\((3x+y)(y-3x) + (3x-y)^2\\)",
     "a": "0",
     "opts": [
       "\\(2y^2-6xy\\)",
@@ -276,7 +276,7 @@ export const Y9_CH1H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Simplify the expression by expanding and collecting like terms:\\n\\((3m-2)(2m+4) - (2m+1)(m-3)\\)",
+    "question": "Simplify the expression by expanding and collecting like terms:\n\\((3m-2)(2m+4) - (2m+1)(m-3)\\)",
     "a": "0",
     "opts": [
       "\\(4m^2+13m-5\\)",
@@ -310,7 +310,7 @@ export const Y9_CH1H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Evaluate the algebraic expression:\\n\\(2m^3 - 3n^2\\)\\n\\nwhen \\(m = 3\\) and \\(n = 2\\)",
+    "question": "Evaluate the algebraic expression:\n\\(2m^3 - 3n^2\\)\n\nwhen \\(m = 3\\) and \\(n = 2\\)",
     "a": "0",
     "opts": [
       "\\(42\\)",
@@ -344,7 +344,7 @@ export const Y9_CH1H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Evaluate the algebraic expression:\\n\\(2m^3 - 3n^2\\)\\n\\nwhen \\(m = -3\\) and \\(n = -4\\)",
+    "question": "Evaluate the algebraic expression:\n\\(2m^3 - 3n^2\\)\n\nwhen \\(m = -3\\) and \\(n = -4\\)",
     "a": "0",
     "opts": [
       "\\(-102\\)",
@@ -378,7 +378,7 @@ export const Y9_CH1H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Evaluate the algebraic expression:\\n\\(2m^3 - 3n^2\\)\\n\\nwhen \\(m = -\\\\frac{1}{2}\\) and \\(n = \\\\frac{1}{4}\\)",
+    "question": "Evaluate the algebraic expression:\n\\(2m^3 - 3n^2\\)\n\nwhen \\(m = -\\\\frac{1}{2}\\) and \\(n = \\\\frac{1}{4}\\)",
     "a": "0",
     "opts": [
       "\\(-\\\\frac{7}{16}\\)",
@@ -412,7 +412,7 @@ export const Y9_CH1H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Evaluate the algebraic expression:\\n\\(2m^3 - 3n^2\\)\\n\\nwhen \\(m = \\\\frac{1}{2}\\) and \\(n = \\\\sqrt{3}\\)",
+    "question": "Evaluate the algebraic expression:\n\\(2m^3 - 3n^2\\)\n\nwhen \\(m = \\\\frac{1}{2}\\) and \\(n = \\\\sqrt{3}\\)",
     "a": "0",
     "opts": [
       "\\(-\\\\frac{35}{4}\\)",
@@ -446,7 +446,7 @@ export const Y9_CH1H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Evaluate the algebraic expression:\\n\\(\\frac{3x^2 + y}{y^2}\\)\\n\\nwhen \\(x = 2\\) and \\(y = 3\\)",
+    "question": "Evaluate the algebraic expression:\n\\(\\frac{3x^2 + y}{y^2}\\)\n\nwhen \\(x = 2\\) and \\(y = 3\\)",
     "a": "0",
     "opts": [
       "\\(\\\\frac{5}{3}\\)",
@@ -480,7 +480,7 @@ export const Y9_CH1H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Evaluate the algebraic expression:\\n\\(\\frac{3x^2 + y}{y^2}\\)\\n\\nwhen \\(x = -\\\\frac{1}{2}\\) and \\(y = \\\\frac{1}{2}\\)",
+    "question": "Evaluate the algebraic expression:\n\\(\\frac{3x^2 + y}{y^2}\\)\n\nwhen \\(x = -\\\\frac{1}{2}\\) and \\(y = \\\\frac{1}{2}\\)",
     "a": "0",
     "opts": [
       "\\(5\\)",
@@ -514,7 +514,7 @@ export const Y9_CH1H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Evaluate the algebraic expression:\\n\\(\\frac{3x^2 + y}{y^2}\\)\\n\\nwhen \\(x = \\\\sqrt{2}\\) and \\(y = -3\\)",
+    "question": "Evaluate the algebraic expression:\n\\(\\frac{3x^2 + y}{y^2}\\)\n\nwhen \\(x = \\\\sqrt{2}\\) and \\(y = -3\\)",
     "a": "0",
     "opts": [
       "\\(\\\\frac{1}{3}\\)",
@@ -548,7 +548,7 @@ export const Y9_CH1H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Evaluate the algebraic expression:\\n\\(\\frac{3x^2 + y}{y^2}\\)\\n\\nwhen \\(x = \\\\sqrt{5}\\) and \\(y = -2\\)",
+    "question": "Evaluate the algebraic expression:\n\\(\\frac{3x^2 + y}{y^2}\\)\n\nwhen \\(x = \\\\sqrt{5}\\) and \\(y = -2\\)",
     "a": "0",
     "opts": [
       "\\(\\\\frac{13}{4}\\)",
@@ -582,7 +582,7 @@ export const Y9_CH1H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Evaluate the algebraic expression:\\n\\(a - 3b + 2c\\)\\n\\nwhen \\(a = \\\\frac{1}{2},\\ b = \\\\frac{1}{3},\\ c = \\\\frac{1}{6}\\)",
+    "question": "Evaluate the algebraic expression:\n\\(a - 3b + 2c\\)\n\nwhen \\(a = \\\\frac{1}{2},\\ b = \\\\frac{1}{3},\\ c = \\\\frac{1}{6}\\)",
     "a": "0",
     "opts": [
       "\\(-\\\\frac{1}{6}\\)",
@@ -616,7 +616,7 @@ export const Y9_CH1H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Evaluate the algebraic expression:\\n\\(a - 3b + 2c\\)\\n\\nwhen \\(a = \\\\frac{b}{2},\\ b = -\\\\frac{1}{3},\\ c = \\\\frac{4b}{3}\\)",
+    "question": "Evaluate the algebraic expression:\n\\(a - 3b + 2c\\)\n\nwhen \\(a = \\\\frac{b}{2},\\ b = -\\\\frac{1}{3},\\ c = \\\\frac{4b}{3}\\)",
     "a": "0",
     "opts": [
       "\\(-\\\\frac{1}{18}\\)",
@@ -650,7 +650,7 @@ export const Y9_CH1H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Evaluate the algebraic expression:\\n\\(a - 3b + 2c\\)\\n\\nwhen \\(a = \\\\frac{2}{c},\\ b = \\\\frac{c}{3},\\ c = \\\\frac{1}{4}\\)",
+    "question": "Evaluate the algebraic expression:\n\\(a - 3b + 2c\\)\n\nwhen \\(a = \\\\frac{2}{c},\\ b = \\\\frac{c}{3},\\ c = \\\\frac{1}{4}\\)",
     "a": "0",
     "opts": [
       "\\(\\\\frac{33}{4}\\)",
@@ -684,7 +684,7 @@ export const Y9_CH1H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Evaluate the algebraic expression:\\n\\(a - 3b + 2c\\)\\n\\nwhen \\(a = c^2,\\ b = \\\\frac{2}{c^2},\\ c = \\\\frac{1}{2}\\)",
+    "question": "Evaluate the algebraic expression:\n\\(a - 3b + 2c\\)\n\nwhen \\(a = c^2,\\ b = \\\\frac{2}{c^2},\\ c = \\\\frac{1}{2}\\)",
     "a": "0",
     "opts": [
       "\\(-\\\\frac{91}{4}\\)",
@@ -718,7 +718,7 @@ export const Y9_CH1H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Evaluate the algebraic expression:\\n\\(\\frac{p^3 - 3q^2}{p^2}\\)\\n\\nwhen \\(p = \\\\frac{1}{2}\\) and \\(q = \\\\frac{1}{3}\\)",
+    "question": "Evaluate the algebraic expression:\n\\(\\frac{p^3 - 3q^2}{p^2}\\)\n\nwhen \\(p = \\\\frac{1}{2}\\) and \\(q = \\\\frac{1}{3}\\)",
     "a": "0",
     "opts": [
       "\\(-\\\\frac{5}{6}\\)",
@@ -752,7 +752,7 @@ export const Y9_CH1H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Evaluate the algebraic expression:\\n\\(\\frac{p^3 - 3q^2}{p^2}\\)\\n\\nwhen \\(p = \\\\frac{1}{3}\\) and \\(q = -3\\)",
+    "question": "Evaluate the algebraic expression:\n\\(\\frac{p^3 - 3q^2}{p^2}\\)\n\nwhen \\(p = \\\\frac{1}{3}\\) and \\(q = -3\\)",
     "a": "0",
     "opts": [
       "\\(-\\\\frac{728}{3}\\)",
@@ -786,7 +786,7 @@ export const Y9_CH1H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Evaluate the algebraic expression:\\n\\(\\frac{p^3 - 3q^2}{p^2}\\)\\n\\nwhen \\(p = -3\\) and \\(q = -6\\)",
+    "question": "Evaluate the algebraic expression:\n\\(\\frac{p^3 - 3q^2}{p^2}\\)\n\nwhen \\(p = -3\\) and \\(q = -6\\)",
     "a": "0",
     "opts": [
       "\\(-15\\)",
@@ -820,7 +820,7 @@ export const Y9_CH1H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Evaluate the expression:\\n\\((x^2 - 3)^2\\)\\n\\nwhen \\(x = 3\\)",
+    "question": "Evaluate the expression:\n\\((x^2 - 3)^2\\)\n\nwhen \\(x = 3\\)",
     "a": "0",
     "opts": [
       "\\(36\\)",
@@ -854,7 +854,7 @@ export const Y9_CH1H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Evaluate the expression:\\n\\((x^2 - 3)^2\\)\\n\\nwhen \\(x = -3\\)",
+    "question": "Evaluate the expression:\n\\((x^2 - 3)^2\\)\n\nwhen \\(x = -3\\)",
     "a": "0",
     "opts": [
       "\\(36\\)",
@@ -888,7 +888,7 @@ export const Y9_CH1H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Evaluate the expression:\\n\\((x^2 - 3)^2\\)\\n\\nwhen \\(x = \\\\frac{1}{2}\\)",
+    "question": "Evaluate the expression:\n\\((x^2 - 3)^2\\)\n\nwhen \\(x = \\\\frac{1}{2}\\)",
     "a": "0",
     "opts": [
       "\\(\\\\frac{121}{16}\\)",
@@ -922,7 +922,7 @@ export const Y9_CH1H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Evaluate the expression:\\n\\((x^2 - 3)^2\\)\\n\\nwhen \\(x = -\\\\sqrt{3}\\)",
+    "question": "Evaluate the expression:\n\\((x^2 - 3)^2\\)\n\nwhen \\(x = -\\\\sqrt{3}\\)",
     "a": "0",
     "opts": [
       "\\(0\\)",
@@ -956,7 +956,7 @@ export const Y9_CH1H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Evaluate the expression:\\n\\((x^2 - 3)^2\\)\\n\\nwhen \\(x = \\\\sqrt{5}\\)",
+    "question": "Evaluate the expression:\n\\((x^2 - 3)^2\\)\n\nwhen \\(x = \\\\sqrt{5}\\)",
     "a": "0",
     "opts": [
       "\\(4\\)",
@@ -990,7 +990,7 @@ export const Y9_CH1H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Simplify the algebraic expression by collecting like terms:\\n\\(\\\\frac{2}{5}a^2 + \\\\frac{3}{4}a^2\\)",
+    "question": "Simplify the algebraic expression by collecting like terms:\n\\(\\\\frac{2}{5}a^2 + \\\\frac{3}{4}a^2\\)",
     "a": "0",
     "opts": [
       "\\(\\\\frac{23}{20}a^2\\)",
@@ -1019,7 +1019,7 @@ export const Y9_CH1H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Simplify the algebraic expression by collecting like terms:\\n\\(\\\\frac{2x}{y} + \\\\frac{4x}{3y}\\)",
+    "question": "Simplify the algebraic expression by collecting like terms:\n\\(\\\\frac{2x}{y} + \\\\frac{4x}{3y}\\)",
     "a": "0",
     "opts": [
       "\\(\\\\frac{10x}{3y}\\)",
@@ -1048,7 +1048,7 @@ export const Y9_CH1H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Simplify the algebraic expression by collecting like terms:\\n\\(\\\\frac{3m}{n^2} + \\\\frac{5m}{2n^2}\\)",
+    "question": "Simplify the algebraic expression by collecting like terms:\n\\(\\\\frac{3m}{n^2} + \\\\frac{5m}{2n^2}\\)",
     "a": "0",
     "opts": [
       "\\(\\\\frac{11m}{2n^2}\\)",
@@ -1077,7 +1077,7 @@ export const Y9_CH1H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Simplify the algebraic expression by collecting like terms:\\n\\(\\\\frac{3x^2y}{4} - \\\\frac{3x^2y}{4} + \\\\frac{5p}{q^3}\\)",
+    "question": "Simplify the algebraic expression by collecting like terms:\n\\(\\\\frac{3x^2y}{4} - \\\\frac{3x^2y}{4} + \\\\frac{5p}{q^3}\\)",
     "a": "0",
     "opts": [
       "\\(\\\\frac{5p}{q^3}\\)",
@@ -1106,7 +1106,7 @@ export const Y9_CH1H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the missing term to make the equation true:\\n\\(\\\\frac{3x^2y}{4} - \\\\Box = \\\\frac{5x^2y}{12}\\)",
+    "question": "Find the missing term to make the equation true:\n\\(\\\\frac{3x^2y}{4} - \\\\Box = \\\\frac{5x^2y}{12}\\)",
     "a": "0",
     "opts": [
       "\\(\\\\frac{x^2y}{3}\\)",
@@ -1140,7 +1140,7 @@ export const Y9_CH1H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the missing term to make the equation true:\\n\\(\\\\frac{3a^2}{b} - \\\\Box = \\\\frac{7a^2}{4b}\\)",
+    "question": "Find the missing term to make the equation true:\n\\(\\\\frac{3a^2}{b} - \\\\Box = \\\\frac{7a^2}{4b}\\)",
     "a": "0",
     "opts": [
       "\\(\\\\frac{5a^2}{4b}\\)",
@@ -1174,7 +1174,7 @@ export const Y9_CH1H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the missing term to make the equation true:\\n\\(\\\\frac{2p}{3q^2} + \\\\Box = \\\\frac{8p}{3q^2}\\)",
+    "question": "Find the missing term to make the equation true:\n\\(\\\\frac{2p}{3q^2} + \\\\Box = \\\\frac{8p}{3q^2}\\)",
     "a": "0",
     "opts": [
       "\\(\\\\frac{2p}{q^2}\\)",
@@ -1208,7 +1208,7 @@ export const Y9_CH1H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the missing term to make the equation true:\\n\\(\\\\frac{a^2}{3b^2} - \\\\Box = -\\\\frac{a^2}{b^2}\\)",
+    "question": "Find the missing term to make the equation true:\n\\(\\\\frac{a^2}{3b^2} - \\\\Box = -\\\\frac{a^2}{b^2}\\)",
     "a": "0",
     "opts": [
       "\\(\\\\frac{4a^2}{3b^2}\\)",
@@ -1654,7 +1654,7 @@ export const Y9_CH1H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Expand and simplify the expression:\\n\\(a(3a^2 + 2a + 5)\\)",
+    "question": "Expand and simplify the expression:\n\\(a(3a^2 + 2a + 5)\\)",
     "a": "0",
     "opts": [
       "\\(3a^3+2a^2+5a\\)",
@@ -1683,7 +1683,7 @@ export const Y9_CH1H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Expand and simplify the expression:\\n\\(2x(x^2 - 5x + 3)\\)",
+    "question": "Expand and simplify the expression:\n\\(2x(x^2 - 5x + 3)\\)",
     "a": "0",
     "opts": [
       "\\(2x^3-10x^2+6x\\)",
@@ -1712,7 +1712,7 @@ export const Y9_CH1H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Expand and simplify the expression:\\n\\((x+3)(x^2 + 2x + 4)\\)",
+    "question": "Expand and simplify the expression:\n\\((x+3)(x^2 + 2x + 4)\\)",
     "a": "0",
     "opts": [
       "\\(x^3+5x^2+10x+12\\)",
@@ -1746,7 +1746,7 @@ export const Y9_CH1H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Expand and simplify the expression:\\n\\((y-2)(3y^2 + 4y + 2)\\)",
+    "question": "Expand and simplify the expression:\n\\((y-2)(3y^2 + 4y + 2)\\)",
     "a": "0",
     "opts": [
       "\\(3y^3-2y^2-6y-4\\)",
@@ -1780,7 +1780,7 @@ export const Y9_CH1H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Expand and simplify the expression:\\n\\((x+5)(x^2 - 4x + 2)\\)",
+    "question": "Expand and simplify the expression:\n\\((x+5)(x^2 - 4x + 2)\\)",
     "a": "0",
     "opts": [
       "\\(x^3+x^2-18x+10\\)",
@@ -1814,7 +1814,7 @@ export const Y9_CH1H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Expand and simplify the expression:\\n\\((y-4)(y^2 + 3)\\)",
+    "question": "Expand and simplify the expression:\n\\((y-4)(y^2 + 3)\\)",
     "a": "0",
     "opts": [
       "\\(y^3-4y^2+3y-12\\)",
@@ -1843,7 +1843,7 @@ export const Y9_CH1H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Expand and simplify the expression:\\n\\((a-2)(a^2 + 2a + 4)\\)",
+    "question": "Expand and simplify the expression:\n\\((a-2)(a^2 + 2a + 4)\\)",
     "a": "0",
     "opts": [
       "\\(a^3-8\\)",
@@ -1877,7 +1877,7 @@ export const Y9_CH1H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Expand and simplify the expression:\\n\\((b+3)(b^2 - 3b + 9)\\)",
+    "question": "Expand and simplify the expression:\n\\((b+3)(b^2 - 3b + 9)\\)",
     "a": "0",
     "opts": [
       "\\(b^3+27\\)",
@@ -1911,7 +1911,7 @@ export const Y9_CH1H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Given \\(a = 2,\\ b = 6,\\ c = 10,\\ d = 0\\), find the exact value of the expression:\\n\\(\\sqrt{3ab} + \\sqrt{3ac} + \\sqrt{3bd}\\)",
+    "question": "Given \\(a = 2,\\ b = 6,\\ c = 10,\\ d = 0\\), find the exact value of the expression:\n\\(\\sqrt{3ab} + \\sqrt{3ac} + \\sqrt{3bd}\\)",
     "a": "0",
     "opts": [
       "\\(6 + 2\\sqrt{15}\\)",
@@ -1942,7 +1942,7 @@ export const Y9_CH1H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Expand and simplify the expression:\\n\\((a+b-c)(a-b+c)\\)",
+    "question": "Expand and simplify the expression:\n\\((a+b-c)(a-b+c)\\)",
     "a": "0",
     "opts": [
       "\\(a^2-b^2+2bc-c^2\\)",
@@ -1976,7 +1976,7 @@ export const Y9_CH1H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Expand and simplify the expression:\\n\\((x-y+z)(x+y-z)\\)",
+    "question": "Expand and simplify the expression:\n\\((x-y+z)(x+y-z)\\)",
     "a": "0",
     "opts": [
       "\\(x^2-y^2+2yz-z^2\\)",
@@ -2010,7 +2010,7 @@ export const Y9_CH1H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Expand and simplify the expression:\\n\\((3a-b+c)(3a+b-c)\\)",
+    "question": "Expand and simplify the expression:\n\\((3a-b+c)(3a+b-c)\\)",
     "a": "0",
     "opts": [
       "\\(9a^2-b^2+2bc-c^2\\)",
@@ -2044,7 +2044,7 @@ export const Y9_CH1H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Expand and simplify the expression:\\n\\((a+b+2)^2\\)",
+    "question": "Expand and simplify the expression:\n\\((a+b+2)^2\\)",
     "a": "0",
     "opts": [
       "\\(a^2+2ab+b^2+4a+4b+4\\)",
@@ -2078,7 +2078,7 @@ export const Y9_CH1H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Expand and simplify the expression:\\n\\((p+q+r)^2\\)",
+    "question": "Expand and simplify the expression:\n\\((p+q+r)^2\\)",
     "a": "0",
     "opts": [
       "\\(p^2+q^2+r^2+2pq+2pr+2qr\\)",
@@ -2102,7 +2102,7 @@ export const Y9_CH1H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Expand and simplify the expression:\\n\\((a+b-c)^2\\)",
+    "question": "Expand and simplify the expression:\n\\((a+b-c)^2\\)",
     "a": "0",
     "opts": [
       "\\(a^2+b^2+c^2+2ab-2ac-2bc\\)",
@@ -2472,7 +2472,7 @@ export const Y9_CH1H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Simplify the algebraic expression by first removing brackets:\\n\\(x-(y-z)+x+(y-z)+y-(z+x)\\)",
+    "question": "Simplify the algebraic expression by first removing brackets:\n\\(x-(y-z)+x+(y-z)+y-(z+x)\\)",
     "a": "0",
     "opts": [
       "\\(x+y-z\\)",
@@ -2506,7 +2506,7 @@ export const Y9_CH1H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Simplify the algebraic expression by first removing brackets:\\n\\(4x-3y-z - (5x-4y+6z)\\)",
+    "question": "Simplify the algebraic expression by first removing brackets:\n\\(4x-3y-z - (5x-4y+6z)\\)",
     "a": "0",
     "opts": [
       "\\(-x+y-7z\\)",
@@ -2540,7 +2540,7 @@ export const Y9_CH1H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Simplify the algebraic expression by first removing brackets:\\n\\(x-(y+x-(y+x))\\)",
+    "question": "Simplify the algebraic expression by first removing brackets:\n\\(x-(y+x-(y+x))\\)",
     "a": "0",
     "opts": [
       "\\(x\\)",
@@ -2574,7 +2574,7 @@ export const Y9_CH1H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Simplify the algebraic expression by first removing brackets:\\n\\(-(-(-(x-y-z)))\\)",
+    "question": "Simplify the algebraic expression by first removing brackets:\n\\(-(-(-(x-y-z)))\\)",
     "a": "0",
     "opts": [
       "\\(-x+y+z\\)",
@@ -2603,7 +2603,7 @@ export const Y9_CH1H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Simplify the algebraic expression by first removing brackets:\\n\\(-(-3a-(2b-(3a-2b)+(2a-3b)))\\)",
+    "question": "Simplify the algebraic expression by first removing brackets:\n\\(-(-3a-(2b-(3a-2b)+(2a-3b)))\\)",
     "a": "0",
     "opts": [
       "\\(2a+b\\)",
@@ -2642,7 +2642,7 @@ export const Y9_CH1H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Expand and simplify the expression:\\n\\(2[(x+y)(x-y) + (x+z)(x-z) + x(y+z)] + (x-y)^2 + (x-z)^2 + (y-z)^2\\)",
+    "question": "Expand and simplify the expression:\n\\(2[(x+y)(x-y) + (x+z)(x-z) + x(y+z)] + (x-y)^2 + (x-z)^2 + (y-z)^2\\)",
     "a": "0",
     "opts": [
       "\\(6x^2-2yz\\)",
@@ -2676,7 +2676,7 @@ export const Y9_CH1H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Expand and simplify the expression:\\n\\((x-y)(x^2+x+y) + (x+y)(x^2-x+y)\\)",
+    "question": "Expand and simplify the expression:\n\\((x-y)(x^2+x+y) + (x+y)(x^2-x+y)\\)",
     "a": "0",
     "opts": [
       "\\(2x^3\\)",
@@ -2710,7 +2710,7 @@ export const Y9_CH1H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Expand and simplify the expression:\\n\\(\\\\left(\\\\frac{1}{x} - \\\\frac{1}{y}\\\\right)^2 \\\\left(\\\\frac{1}{x} + \\\\frac{1}{y}\\\\right)^2\\)",
+    "question": "Expand and simplify the expression:\n\\(\\\\left(\\\\frac{1}{x} - \\\\frac{1}{y}\\\\right)^2 \\\\left(\\\\frac{1}{x} + \\\\frac{1}{y}\\\\right)^2\\)",
     "a": "0",
     "opts": [
       "\\(\\\\frac{1}{x^4}-\\\\frac{2}{x^2y^2}+\\\\frac{1}{y^4}\\)",
@@ -2744,7 +2744,7 @@ export const Y9_CH1H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Expand and simplify the expression:\\n\\(\\\\left(x + \\\\frac{1}{x}\\\\right)^2 \\\\left(x - \\\\frac{1}{x}\\\\right)^2\\)",
+    "question": "Expand and simplify the expression:\n\\(\\\\left(x + \\\\frac{1}{x}\\\\right)^2 \\\\left(x - \\\\frac{1}{x}\\\\right)^2\\)",
     "a": "0",
     "opts": [
       "\\(x^4-2+\\\\frac{1}{x^4}\\)",
@@ -2778,7 +2778,7 @@ export const Y9_CH1H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Expand and simplify the expression:\\n\\(\\\\left(3x + \\\\frac{1}{x}\\\\right)^2 - \\\\left(x - \\\\frac{1}{x}\\\\right)^2\\)",
+    "question": "Expand and simplify the expression:\n\\(\\\\left(3x + \\\\frac{1}{x}\\\\right)^2 - \\\\left(x - \\\\frac{1}{x}\\\\right)^2\\)",
     "a": "0",
     "opts": [
       "\\(8x^2+8\\)",
@@ -2812,7 +2812,7 @@ export const Y9_CH1H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Expand and simplify the expression:\\n\\(\\\\left(x + \\\\frac{2}{y}\\\\right)\\\\left(y - \\\\frac{2}{x}\\\\right)\\)",
+    "question": "Expand and simplify the expression:\n\\(\\\\left(x + \\\\frac{2}{y}\\\\right)\\\\left(y - \\\\frac{2}{x}\\\\right)\\)",
     "a": "0",
     "opts": [
       "\\(xy-\\\\frac{4}{xy}\\)",
@@ -2846,7 +2846,7 @@ export const Y9_CH1H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Expand and simplify the expression:\\n\\((x+y)^2 - [2y(x+y) - (x+y)(y-x)]\\)",
+    "question": "Expand and simplify the expression:\n\\((x+y)^2 - [2y(x+y) - (x+y)(y-x)]\\)",
     "a": "0",
     "opts": [
       "\\(0\\)",

@@ -603,11 +603,17 @@ export const Y9_CH11C_QUESTIONS = [
     subQuestions: [
       {
         id: "y9-11c-q6a",
-        type: "short_answer",
+        type: "multiple_choice",
         difficulty: "medium",
         timeLimit: 90,
         question: "a) Complete the table for the line passing through \\((0, 0)\\) with gradient 3. Find the missing values in order: \\(y\\) when \\(x = -2\\), \\(x\\) when \\(y = -3\\), \\(y\\) when \\(x = 1\\), and \\(x\\) when \\(y = 9\\). Format: [val1], [val2], [val3], [val4]",
-        a: "-6, -1, 3, 3",
+        opts: [
+          "\\(-6, 1, -3, 3\\)",
+          "\\(6, -1, 3, -3\\)",
+          "\\(-6, -1, 3, 3\\)",
+          "\\(6, 1, 3, 3\\)"
+        ],
+        a: 2,
         solutionSteps: [
           {
             explanation: "Substitute coordinates into \\(y = 3x\\).",
@@ -617,11 +623,17 @@ export const Y9_CH11C_QUESTIONS = [
       },
       {
         id: "y9-11c-q6b",
-        type: "short_answer",
+        type: "multiple_choice",
         difficulty: "medium",
         timeLimit: 90,
         question: "b) Complete the table for the line passing through \\((0, 2)\\) with gradient \\(\\frac{3}{5}\\). Find the missing values: \\(x\\) when \\(y = -4\\), \\(y\\) when \\(x = -5\\), \\(y\\) when \\(x = 5\\), and \\(x\\) when \\(y = 8\\). Format: [val1], [val2], [val3], [val4]",
-        a: "-10, -1, 5, 10",
+        opts: [
+          "\\(-10, -1, 5, 10\\)",
+          "\\(10, 1, 5, -10\\)",
+          "\\(-10, 1, -5, 10\\)",
+          "\\(10, -1, 5, -10\\)"
+        ],
+        a: 0,
         solutionSteps: [
           {
             explanation: "Substitute coordinates into \\(y = \\frac{3}{5}x + 2\\).",
@@ -631,11 +643,17 @@ export const Y9_CH11C_QUESTIONS = [
       },
       {
         id: "y9-11c-q6c",
-        type: "short_answer",
+        type: "multiple_choice",
         difficulty: "medium",
         timeLimit: 90,
         question: "c) Complete the table for the line passing through \\((0, 3)\\) with gradient \\(\\frac{1}{2}\\). Find the missing values: \\(x\\) when \\(y = -4\\), \\(y\\) when \\(x = -4\\), and \\(x\\) when \\(y = 6\\). Format: [val1], [val2], [val3]",
-        a: "-14, 1, 6",
+        opts: [
+          "\\(14, -1, -6\\)",
+          "\\(-14, 1, 6\\)",
+          "\\(-7, 1, 3\\)",
+          "\\(-14, -1, 6\\)"
+        ],
+        a: 1,
         solutionSteps: [
           {
             explanation: "Substitute coordinates into \\(y = \\frac{1}{2}x + 3\\).",
@@ -645,11 +663,17 @@ export const Y9_CH11C_QUESTIONS = [
       },
       {
         id: "y9-11c-q6d",
-        type: "short_answer",
+        type: "multiple_choice",
         difficulty: "medium",
         timeLimit: 90,
         question: "d) Complete the table for the line passing through \\((2, -3)\\) with gradient \\(-3\\). Find the missing values: \\(x\\) when \\(y = 9\\), \\(y\\) when \\(x = -1\\), \\(x\\) when \\(y = 3\\), and \\(y\\) when \\(x = 1\\). Format: [val1], [val2], [val3], [val4]",
-        a: "-2, 6, 0, 0",
+        opts: [
+          "\\(-2, 6, 0, 0\\)",
+          "\\(2, -6, 0, 0\\)",
+          "\\(-2, 6, 1, 1\\)",
+          "\\(2, 6, 0, 1\\)"
+        ],
+        a: 0,
         solutionSteps: [
           {
             explanation: "Substitute coordinates into \\(y = -3x + 3\\).",
@@ -805,11 +829,17 @@ export const Y9_CH11C_QUESTIONS = [
     subQuestions: [
       {
         id: "y9-11c-q8a",
-        type: "short_answer",
+        type: "multiple_choice",
         difficulty: "medium",
         timeLimit: 90,
         question: "a) Find the coordinates of the point where the line crosses the \\(x\\)-axis.",
-        a: "(-1, 0)",
+        options: [
+          "(-1, 0)",
+          "(1, 0)",
+          "(0, -1)",
+          "(-2, 0)"
+        ],
+        a: "0",
         solutionSteps: [
           {
             explanation: "Set \\(y = 0\\) in the line equation \\(y = 2x + 2\\).",
@@ -819,11 +849,17 @@ export const Y9_CH11C_QUESTIONS = [
       },
       {
         id: "y9-11c-q8b",
-        type: "short_answer",
+        type: "multiple_choice",
         difficulty: "medium",
         timeLimit: 90,
         question: "b) Find the coordinates of the point where the line crosses the \\(y\\)-axis.",
-        a: "(0, 2)",
+        options: [
+          "(0, 2)",
+          "(2, 0)",
+          "(0, -2)",
+          "(0, 1)"
+        ],
+        a: "0",
         solutionSteps: [
           {
             explanation: "Set \\(x = 0\\) in the line equation \\(y = 2x + 2\\).",

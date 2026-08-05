@@ -17,7 +17,7 @@ export const Y11A_CH4C_QUESTIONS = [
       },
       {
         "explanation": "Since the discriminant is strictly positive, there are two distinct real zeroes. Next, determine if they are rational or irrational by checking if 5 is a perfect square.",
-        "workingOut": "\\sqrt{5} \\notin \\mathbb{Q}",
+        "workingOut": "\\sqrt{5} \notin \\mathbb{Q}",
         "graphData": null
       },
       {
@@ -482,7 +482,7 @@ export const Y11A_CH4C_QUESTIONS = [
     "timeLimit": 90,
     "question": "Solve \\(\\Delta \\ge 0\\) to find the values of \\(p\\) for which the roots of the quadratic equation \\(px^2 - 6x + 3 = 0\\) are real numbers.",
     "a": "p <= 3 and p != 0",
-    "solution": "For real roots, \\(\\Delta \\ge 0 \\implies (-6)^2 - 4(p)(3) \\ge 0 \\implies 36 - 12p \\ge 0 \\implies p \\le 3\\). Since it is a quadratic equation, \\(p \\ne 0\\).",
+    "solution": "For real roots, \\(\\Delta \\ge 0 \\implies (-6)^2 - 4(p)(3) \\ge 0 \\implies 36 - 12p \\ge 0 \\implies p \\le 3\\). Since it is a quadratic equation, \\(p \ne 0\\).",
     "t": "The discriminant",
     "hint": "Set the discriminant to be non-negative and remember that the lead coefficient of a quadratic equation cannot be zero.",
     "solutionSteps": [
@@ -498,7 +498,7 @@ export const Y11A_CH4C_QUESTIONS = [
       },
       {
         "explanation": "Since the equation must be quadratic, the coefficient of \\(x^2\\) cannot be zero.",
-        "workingOut": "p \\ne 0",
+        "workingOut": "p \ne 0",
         "graphData": null
       }
     ]
@@ -538,7 +538,7 @@ export const Y11A_CH4C_QUESTIONS = [
     "timeLimit": 90,
     "question": "Solve \\(\\Delta \\ge 0\\) to find the values of \\(p\\) for which the roots of the quadratic equation \\((3p - 1)x^2 - 4x + 2 = 0\\) are real numbers.",
     "a": "p <= 1",
-    "solution": "For real roots, \\(\\Delta \\ge 0 \\implies (-4)^2 - 4(3p-1)(2) \\ge 0 \\implies 16 - 8(3p-1) \\ge 0 \\implies 16 - 24p + 8 \\ge 0 \\implies 24 \\ge 24p \\implies p \\le 1\\). Note that for a quadratic equation, \\(p \\ne 1/3\\).",
+    "solution": "For real roots, \\(\\Delta \\ge 0 \\implies (-4)^2 - 4(3p-1)(2) \\ge 0 \\implies 16 - 8(3p-1) \\ge 0 \\implies 16 - 24p + 8 \\ge 0 \\implies 24 \\ge 24p \\implies p \\le 1\\). Note that for a quadratic equation, \\(p \ne 1/3\\).",
     "t": "The discriminant",
     "hint": "Formulate the inequality \\(\\Delta \\ge 0\\) using \\(a = 3p - 1\\).",
     "solutionSteps": [
@@ -762,7 +762,7 @@ export const Y11A_CH4C_QUESTIONS = [
     "timeLimit": 90,
     "question": "Determine the discriminant \\(\\Delta\\), then solve \\(\\Delta = 0\\) to find the values of \\(g\\) for which the quadratic function \\(y = (2g - 1)x^2 + (4g - 1)x + (2g + 1)\\) has exactly one zero.",
     "a": "5/8",
-    "solution": "The discriminant is \\(\\Delta = (4g-1)^2 - 4(2g-1)(2g+1) = 16g^2 - 8g + 1 - 4(4g^2 - 1) = -8g + 5\\). Set \\(\\Delta = 0 \\implies -8g + 5 = 0 \\implies g = 5/8\\). Note that \\(2g-1 \\ne 0 \\implies g \\ne 1/2\\).",
+    "solution": "The discriminant is \\(\\Delta = (4g-1)^2 - 4(2g-1)(2g+1) = 16g^2 - 8g + 1 - 4(4g^2 - 1) = -8g + 5\\). Set \\(\\Delta = 0 \\implies -8g + 5 = 0 \\implies g = 5/8\\). Note that \\(2g-1 \ne 0 \\implies g \ne 1/2\\).",
     "t": "The discriminant",
     "hint": "Calculate the discriminant and simplify carefully, paying attention to difference of two squares.",
     "solutionSteps": [

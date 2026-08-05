@@ -1,0 +1,1618 @@
+[
+  {
+    "id": "1fRTRfvJwmAmspFRPUtb",
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7b",
+    "topicCode": "7B",
+    "topicTitle": "Converting decimals to fractions and fractions to decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "isManual": true,
+    "question": "Express the fraction $\\frac{5}{2}$ as a decimal.",
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Divide $5$ by $2$: <br>$5 \\div 2 = 2.5$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.733Z",
+    "isActive": false,
+    "updatedAt": {
+      "_seconds": 1779444925,
+      "_nanoseconds": 142000000
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+        "workingOut": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Divide $5$ by $2$: <br>$5 \\div 2 = 2.5$.</p>\n    </div>",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+        "workingOut": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Divide $5$ by $2$: <br>$5 \\div 2 = 2.5$.</p>\n    </div>",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final simplified answer and match it to the correct option.",
+        "workingOut": "$2.5$",
+        "graphData": null
+      }
+    ],
+    "answer": "1",
+    "options": [
+      {
+        "text": "\\(5.2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2.2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(0.25\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2.5\\)",
+        "imageUrl": ""
+      }
+    ],
+    "isNew": true
+  },
+  {
+    "id": "33dRKly7RcRRovFyEBtJ",
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7b",
+    "topicCode": "7B",
+    "topicTitle": "Converting decimals to fractions and fractions to decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "isManual": true,
+    "question": "Express the fraction $\\frac{24}{15}$ as a decimal.",
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>First simplify the fraction by dividing numerator and denominator by $3$:<br>$\\frac{24 \\div 3}{15 \\div 3} = \\frac{8}{5}$.<br>Next, convert to tenths:<br>$\\frac{8 \\times 2}{5 \\times 2} = \\frac{16}{10} = 1.6$.</p>\n    </div>",
+    "createdAt": "2026-05-17T12:29:11.733Z",
+    "isActive": false,
+    "updatedAt": {
+      "_seconds": 1779444948,
+      "_nanoseconds": 316000000
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+        "workingOut": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>First simplify the fraction by dividing numerator and denominator by $3$:<br>$\\frac{24 \\div 3}{15 \\div 3} = \\frac{8}{5}$.<br>Next, convert to tenths:<br>$\\frac{8 \\times 2}{5 \\times 2} = \\frac{16}{10} = 1.6$.</p>\n    </div>",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+        "workingOut": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>First simplify the fraction by dividing numerator and denominator by $3$:<br>$\\frac{24 \\div 3}{15 \\div 3} = \\frac{8}{5}$.<br>Next, convert to tenths:<br>$\\frac{8 \\times 2}{5 \\times 2} = \\frac{16}{10} = 1.6$.</p>\n    </div>",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final simplified answer and match it to the correct option.",
+        "workingOut": "$1.6$",
+        "graphData": null
+      }
+    ],
+    "answer": "3",
+    "options": [
+      {
+        "text": "\\(1.8\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1.4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1.6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2.4\\)",
+        "imageUrl": ""
+      }
+    ],
+    "isNew": true
+  },
+  {
+    "id": "3qXLvKKd5hd5W6OugQk8",
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7b",
+    "topicCode": "7B",
+    "topicTitle": "Converting decimals to fractions and fractions to decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "createdAt": "2026-05-17T12:29:11.733Z",
+    "question": "Find the equivalent mixed fraction in simplest form for the decimal \\(4.375\\).",
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>\\(4.375 = 4\\frac{375}{1000}\\). Simplify the fraction by dividing by \\(125\\):<br>\\(\\frac{375 \\div 125}{1000 \\div 125} = \\frac{3}{8}\\). Thus, \\(4\\frac{3}{8}\\).</p>\n    </div>",
+    "hint": "",
+    "requiresManualGrading": false,
+    "updatedAt": {
+      "_seconds": 1784357700,
+      "_nanoseconds": 924000000
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+        "workingOut": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>\\(4.375 = 4\\frac{375}{1000}\\). Simplify the fraction by dividing by \\(125\\):<br>\\(\\frac{375 \\div 125}{1000 \\div 125} = \\frac{3}{8}\\). Thus, \\(4\\frac{3}{8}\\).</p>\n    </div>",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+        "workingOut": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>\\(4.375 = 4\\frac{375}{1000}\\). Simplify the fraction by dividing by \\(125\\):<br>\\(\\frac{375 \\div 125}{1000 \\div 125} = \\frac{3}{8}\\). Thus, \\(4\\frac{3}{8}\\).</p>\n    </div>",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final simplified answer and match it to the correct option.",
+        "workingOut": "\\(4\\frac{3}{8}\\)",
+        "graphData": null
+      }
+    ],
+    "answer": "3",
+    "options": [
+      {
+        "text": "\\(4\\frac{3}{8}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4\\frac{3}{4}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4\\frac{375}{1000}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4\\frac{5}{8}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "isNew": false,
+    "timeLimit": 60
+  },
+  {
+    "id": "9v9bYwqkFL0ea7D4IsPc",
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7b",
+    "topicCode": "7B",
+    "topicTitle": "Converting decimals to fractions and fractions to decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "isActive": true,
+    "isManual": true,
+    "createdAt": "2026-05-17T12:29:11.733Z",
+    "question": "Express the fraction \\(\\frac{1}{4}\\) as a decimal.",
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Divide \\(1\\) by \\(4\\): <br>\\(1 \\div 4 = 0.25\\).</p>\n    </div>",
+    "hint": "",
+    "requiresManualGrading": false,
+    "updatedAt": {
+      "_seconds": 1784357700,
+      "_nanoseconds": 924000000
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+        "workingOut": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Divide \\(1\\) by \\(4\\): <br>\\(1 \\div 4 = 0.25\\).</p>\n    </div>",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+        "workingOut": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Divide \\(1\\) by \\(4\\): <br>\\(1 \\div 4 = 0.25\\).</p>\n    </div>",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final simplified answer and match it to the correct option.",
+        "workingOut": "\\(0.25\\)",
+        "graphData": null
+      }
+    ],
+    "answer": "3",
+    "options": [
+      {
+        "text": "\\(0.14\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(0.75\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(0.4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(0.25\\)",
+        "imageUrl": ""
+      }
+    ],
+    "isNew": false,
+    "timeLimit": 60
+  },
+  {
+    "id": "A5O7KWdEXRONSbedF7n9",
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7b",
+    "topicCode": "7B",
+    "topicTitle": "Converting decimals to fractions and fractions to decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "createdAt": "2026-05-17T12:29:11.733Z",
+    "question": "Express the decimal \\(0.7\\) as a fraction or mixed fraction in simplest form.",
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>\\(0.7\\) has 1 decimal place, so the denominator is \\(10\\). Thus, \\(0.7 = \\frac{7}{10}\\) (already in simplest form).</p>\n    </div>",
+    "hint": "",
+    "requiresManualGrading": false,
+    "updatedAt": {
+      "_seconds": 1784357700,
+      "_nanoseconds": 924000000
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+        "workingOut": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>\\(0.7\\) has 1 decimal place, so the denominator is \\(10\\). Thus, \\(0.7 = \\frac{7}{10}\\) (already in simplest form).</p>\n    </div>",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+        "workingOut": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>\\(0.7\\) has 1 decimal place, so the denominator is \\(10\\). Thus, \\(0.7 = \\frac{7}{10}\\) (already in simplest form).</p>\n    </div>",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final simplified answer and match it to the correct option.",
+        "workingOut": "\\(\\frac{7}{10}\\)",
+        "graphData": null
+      }
+    ],
+    "answer": "2",
+    "options": [
+      {
+        "text": "\\(\\frac{7}{5}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{7}{10}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{7}{100}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(0.07\\)",
+        "imageUrl": ""
+      }
+    ],
+    "isNew": false,
+    "timeLimit": 60
+  },
+  {
+    "id": "DwqESMX8DYW9emzCYulz",
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7b",
+    "topicCode": "7B",
+    "topicTitle": "Converting decimals to fractions and fractions to decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "isActive": true,
+    "isManual": true,
+    "createdAt": "2026-05-17T12:29:11.733Z",
+    "question": "Express the fraction \\(\\frac{8}{100}\\) as a decimal.",
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Dividing by \\(100\\) moves the decimal point 2 places to the left:<br>\\(8 \\div 100 = 0.08\\).</p>\n    </div>",
+    "hint": "",
+    "options": [
+      {
+        "text": "\\(0.08\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(0.8\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(0.008\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8.0\\)",
+        "imageUrl": ""
+      }
+    ],
+    "requiresManualGrading": false,
+    "updatedAt": {
+      "_seconds": 1784357700,
+      "_nanoseconds": 924000000
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+        "workingOut": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Dividing by \\(100\\) moves the decimal point 2 places to the left:<br>\\(8 \\div 100 = 0.08\\).</p>\n    </div>",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+        "workingOut": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Dividing by \\(100\\) moves the decimal point 2 places to the left:<br>\\(8 \\div 100 = 0.08\\).</p>\n    </div>",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final simplified answer and match it to the correct option.",
+        "workingOut": "\\(0.08\\)",
+        "graphData": null
+      }
+    ],
+    "answer": "3",
+    "isNew": false,
+    "timeLimit": 60
+  },
+  {
+    "id": "E4SJHLASAUO2Ex5FVoU8",
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7b",
+    "topicCode": "7B",
+    "topicTitle": "Converting decimals to fractions and fractions to decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "createdAt": "2026-05-17T12:29:11.733Z",
+    "question": "Find the equivalent fraction in simplest form for the decimal \\(0.25\\).",
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>\\(0.25 = \\frac{25}{100} = \\frac{1}{4}\\).</p>\n    </div>",
+    "hint": "",
+    "requiresManualGrading": false,
+    "updatedAt": {
+      "_seconds": 1784357700,
+      "_nanoseconds": 924000000
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+        "workingOut": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>\\(0.25 = \\frac{25}{100} = \\frac{1}{4}\\).</p>\n    </div>",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+        "workingOut": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>\\(0.25 = \\frac{25}{100} = \\frac{1}{4}\\).</p>\n    </div>",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final simplified answer and match it to the correct option.",
+        "workingOut": "\\(\\frac{1}{4}\\)",
+        "graphData": null
+      }
+    ],
+    "answer": "3",
+    "options": [
+      {
+        "text": "\\(\\frac{25}{10}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{1}{5}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{1}{4}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{3}{4}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "isNew": false,
+    "timeLimit": 60
+  },
+  {
+    "id": "JMvZVvqsm9UXDxp8PLSW",
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7b",
+    "topicCode": "7B",
+    "topicTitle": "Converting decimals to fractions and fractions to decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "isActive": true,
+    "isManual": true,
+    "createdAt": "2026-05-17T12:29:11.733Z",
+    "question": "Express the fraction \\(2\\frac{3}{20}\\) as a decimal.",
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>First convert the fractional part \\(\\frac{3}{20}\\):<br>\\(\\frac{3 \\times 5}{20 \\times 5} = \\frac{15}{100} = 0.15\\).<br>Adding to the whole number \\(2\\): \\(2 + 0.15 = 2.15\\).</p>\n    </div>",
+    "hint": "",
+    "requiresManualGrading": false,
+    "updatedAt": {
+      "_seconds": 1784357700,
+      "_nanoseconds": 924000000
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+        "workingOut": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>First convert the fractional part \\(\\frac{3}{20}\\):<br>\\(\\frac{3 \\times 5}{20 \\times 5} = \\frac{15}{100} = 0.15\\).<br>Adding to the whole number \\(2\\): \\(2 + 0.15 = 2.15\\).</p>\n    </div>",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+        "workingOut": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>First convert the fractional part \\(\\frac{3}{20}\\):<br>\\(\\frac{3 \\times 5}{20 \\times 5} = \\frac{15}{100} = 0.15\\).<br>Adding to the whole number \\(2\\): \\(2 + 0.15 = 2.15\\).</p>\n    </div>",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final simplified answer and match it to the correct option.",
+        "workingOut": "\\(2.15\\)",
+        "graphData": null
+      }
+    ],
+    "answer": "1",
+    "options": [
+      {
+        "text": "\\(2.75\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2.15\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2.03\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2.3\\)",
+        "imageUrl": ""
+      }
+    ],
+    "isNew": false,
+    "timeLimit": 60
+  },
+  {
+    "id": "JeZB9ulMNMRf0KaInEvQ",
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7b",
+    "topicCode": "7B",
+    "topicTitle": "Converting decimals to fractions and fractions to decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "isActive": true,
+    "isManual": true,
+    "createdAt": "2026-05-17T12:29:11.733Z",
+    "question": "Express the fraction \\(\\frac{35}{100}\\) as a decimal.",
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Dividing by \\(100\\) moves the decimal point 2 places to the left:<br>\\(35 \\div 100 = 0.35\\).</p>\n    </div>",
+    "hint": "",
+    "requiresManualGrading": false,
+    "updatedAt": {
+      "_seconds": 1784357700,
+      "_nanoseconds": 924000000
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+        "workingOut": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Dividing by \\(100\\) moves the decimal point 2 places to the left:<br>\\(35 \\div 100 = 0.35\\).</p>\n    </div>",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+        "workingOut": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Dividing by \\(100\\) moves the decimal point 2 places to the left:<br>\\(35 \\div 100 = 0.35\\).</p>\n    </div>",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final simplified answer and match it to the correct option.",
+        "workingOut": "\\(0.35\\)",
+        "graphData": null
+      }
+    ],
+    "answer": "2",
+    "options": [
+      {
+        "text": "\\(0.035\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3.5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(0.35\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(35.0\\)",
+        "imageUrl": ""
+      }
+    ],
+    "isNew": false,
+    "timeLimit": 60
+  },
+  {
+    "id": "Lr7eMSLx0uPRelY5EMPr",
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7b",
+    "topicCode": "7B",
+    "topicTitle": "Converting decimals to fractions and fractions to decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "createdAt": "2026-05-17T12:29:11.733Z",
+    "question": "Express the decimal \\(0.0008\\) as a fraction or mixed fraction in simplest form.",
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>\\(0.0008 = \\frac{8}{10000}\\). Divide numerator and denominator by \\(8\\):<br>\\(\\frac{8 \\div 8}{10000 \\div 8} = \\frac{1}{1250}\\).</p>\n    </div>",
+    "hint": "",
+    "requiresManualGrading": false,
+    "updatedAt": {
+      "_seconds": 1784357700,
+      "_nanoseconds": 924000000
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+        "workingOut": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>\\(0.0008 = \\frac{8}{10000}\\). Divide numerator and denominator by \\(8\\):<br>\\(\\frac{8 \\div 8}{10000 \\div 8} = \\frac{1}{1250}\\).</p>\n    </div>",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+        "workingOut": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>\\(0.0008 = \\frac{8}{10000}\\). Divide numerator and denominator by \\(8\\):<br>\\(\\frac{8 \\div 8}{10000 \\div 8} = \\frac{1}{1250}\\).</p>\n    </div>",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final simplified answer and match it to the correct option.",
+        "workingOut": "\\(\\frac{1}{1250}\\)",
+        "graphData": null
+      }
+    ],
+    "answer": "2",
+    "options": [
+      {
+        "text": "\\(\\frac{2}{2500}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{1}{1250}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{8}{1000}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{4}{5000}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "isNew": false,
+    "timeLimit": 60
+  },
+  {
+    "id": "N4Lyixn866Wa6euf2Jjb",
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7b",
+    "topicCode": "7B",
+    "topicTitle": "Converting decimals to fractions and fractions to decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "createdAt": "2026-05-17T12:29:11.733Z",
+    "question": "Find the equivalent decimal for the fraction \\(\\frac{4}{5}\\).",
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Convert to tenths:<br>\\(\\frac{4 \\times 2}{5 \\times 2} = \\frac{8}{10} = 0.8\\).</p>\n    </div>",
+    "hint": "",
+    "requiresManualGrading": false,
+    "updatedAt": {
+      "_seconds": 1784357700,
+      "_nanoseconds": 924000000
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+        "workingOut": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Convert to tenths:<br>\\(\\frac{4 \\times 2}{5 \\times 2} = \\frac{8}{10} = 0.8\\).</p>\n    </div>",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+        "workingOut": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Convert to tenths:<br>\\(\\frac{4 \\times 2}{5 \\times 2} = \\frac{8}{10} = 0.8\\).</p>\n    </div>",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final simplified answer and match it to the correct option.",
+        "workingOut": "\\(0.8\\)",
+        "graphData": null
+      }
+    ],
+    "answer": "3",
+    "options": [
+      {
+        "text": "\\(0.8\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(0.08\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(0.4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(0.45\\)",
+        "imageUrl": ""
+      }
+    ],
+    "isNew": false,
+    "timeLimit": 60
+  },
+  {
+    "id": "OTRKdD8tQilP4Cx9BwUn",
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7b",
+    "topicCode": "7B",
+    "topicTitle": "Converting decimals to fractions and fractions to decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "createdAt": "2026-05-17T12:29:11.733Z",
+    "question": "Find the equivalent fraction in simplest form for the decimal \\(0.875\\).",
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>\\(0.875 = \\frac{875}{1000}\\). Simplify by dividing both by their GCD (\\(125\\)):<br>\\(\\frac{875 \\div 125}{1000 \\div 125} = \\frac{7}{8}\\).</p>\n    </div>",
+    "hint": "",
+    "requiresManualGrading": false,
+    "updatedAt": {
+      "_seconds": 1784357700,
+      "_nanoseconds": 924000000
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+        "workingOut": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>\\(0.875 = \\frac{875}{1000}\\). Simplify by dividing both by their GCD (\\(125\\)):<br>\\(\\frac{875 \\div 125}{1000 \\div 125} = \\frac{7}{8}\\).</p>\n    </div>",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+        "workingOut": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>\\(0.875 = \\frac{875}{1000}\\). Simplify by dividing both by their GCD (\\(125\\)):<br>\\(\\frac{875 \\div 125}{1000 \\div 125} = \\frac{7}{8}\\).</p>\n    </div>",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final simplified answer and match it to the correct option.",
+        "workingOut": "\\(\\frac{7}{8}\\)",
+        "graphData": null
+      }
+    ],
+    "answer": "2",
+    "options": [
+      {
+        "text": "\\(\\frac{7}{8}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{875}{100}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{3}{4}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{7}{80}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "isNew": false,
+    "timeLimit": 60
+  },
+  {
+    "id": "RoanEkGtiYcEal3dFLKu",
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7b",
+    "topicCode": "7B",
+    "topicTitle": "Converting decimals to fractions and fractions to decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "createdAt": "2026-05-17T12:29:11.733Z",
+    "answer": "0",
+    "question": "Express the decimal \\(3.1256\\) as a fraction or mixed fraction in simplest form.",
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>\\(3.1256 = 3\\frac{1256}{10000}\\). Let us simplify \\(\\frac{1256}{10000}\\):<br>Divide by \\(8\\): \\(1256 \\div 8 = 157\\) and \\(10000 \\div 8 = 1250\\). <br>Therefore, the simplest mixed fraction is: \\(3\\frac{157}{1250}\\).</p>\n    </div>",
+    "hint": "",
+    "requiresManualGrading": false,
+    "updatedAt": {
+      "_seconds": 1784357700,
+      "_nanoseconds": 924000000
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+        "workingOut": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>\\(3.1256 = 3\\frac{1256}{10000}\\). Let us simplify \\(\\frac{1256}{10000}\\):<br>Divide by \\(8\\): \\(1256 \\div 8 = 157\\) and \\(10000 \\div 8 = 1250\\). <br>Therefore, the simplest mixed fraction is: \\(3\\frac{157}{1250}\\).</p>\n    </div>",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+        "workingOut": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>\\(3.1256 = 3\\frac{1256}{10000}\\). Let us simplify \\(\\frac{1256}{10000}\\):<br>Divide by \\(8\\): \\(1256 \\div 8 = 157\\) and \\(10000 \\div 8 = 1250\\). <br>Therefore, the simplest mixed fraction is: \\(3\\frac{157}{1250}\\).</p>\n    </div>",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final simplified answer and match it to the correct option.",
+        "workingOut": "\\(3\\frac{157}{1250}\\)",
+        "graphData": null
+      }
+    ],
+    "options": [
+      {
+        "text": "\\(3\\frac{157}{1250}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3\\frac{1256}{1000}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3\\frac{78}{625}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3\\frac{314}{2500}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "isNew": false,
+    "timeLimit": 60
+  },
+  {
+    "id": "TuslcVtgsKoqQplt6nZu",
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7b",
+    "topicCode": "7B",
+    "topicTitle": "Converting decimals to fractions and fractions to decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "isActive": true,
+    "isManual": true,
+    "createdAt": "2026-05-17T12:29:11.733Z",
+    "answer": "0",
+    "question": "Express the fraction \\(\\frac{3}{10}\\) as a decimal.",
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Dividing by \\(10\\) moves the decimal point 1 place to the left:<br>\\(3 \\div 10 = 0.3\\).</p>\n    </div>",
+    "hint": "",
+    "requiresManualGrading": false,
+    "updatedAt": {
+      "_seconds": 1784357700,
+      "_nanoseconds": 924000000
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+        "workingOut": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Dividing by \\(10\\) moves the decimal point 1 place to the left:<br>\\(3 \\div 10 = 0.3\\).</p>\n    </div>",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+        "workingOut": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Dividing by \\(10\\) moves the decimal point 1 place to the left:<br>\\(3 \\div 10 = 0.3\\).</p>\n    </div>",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final simplified answer and match it to the correct option.",
+        "workingOut": "\\(0.3\\)",
+        "graphData": null
+      }
+    ],
+    "options": [
+      {
+        "text": "\\(3.0\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(0.3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(0.03\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(0.003\\)",
+        "imageUrl": ""
+      }
+    ],
+    "isNew": false,
+    "timeLimit": 60
+  },
+  {
+    "id": "U0jFU035u4Ae8I9itgp9",
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7b",
+    "topicCode": "7B",
+    "topicTitle": "Converting decimals to fractions and fractions to decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "createdAt": "2026-05-17T12:29:11.733Z",
+    "question": "Express the decimal \\(12.408\\) as a fraction or mixed fraction in simplest form.",
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>\\(12.408 = 12\\frac{408}{1000}\\). Simplify \\(\\frac{408}{1000}\\) by dividing both by their GCD (\\(8\\)):<br>\\(408 \\div 8 = 51\\) and \\(1000 \\div 8 = 125\\). Thus, \\(12.408 = 12\\frac{51}{125}\\).</p>\n    </div>",
+    "hint": "",
+    "requiresManualGrading": false,
+    "updatedAt": {
+      "_seconds": 1784357700,
+      "_nanoseconds": 924000000
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+        "workingOut": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>\\(12.408 = 12\\frac{408}{1000}\\). Simplify \\(\\frac{408}{1000}\\) by dividing both by their GCD (\\(8\\)):<br>\\(408 \\div 8 = 51\\) and \\(1000 \\div 8 = 125\\). Thus, \\(12.408 = 12\\frac{51}{125}\\).</p>\n    </div>",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+        "workingOut": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>\\(12.408 = 12\\frac{408}{1000}\\). Simplify \\(\\frac{408}{1000}\\) by dividing both by their GCD (\\(8\\)):<br>\\(408 \\div 8 = 51\\) and \\(1000 \\div 8 = 125\\). Thus, \\(12.408 = 12\\frac{51}{125}\\).</p>\n    </div>",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final simplified answer and match it to the correct option.",
+        "workingOut": "\\(12\\frac{51}{125}\\)",
+        "graphData": null
+      }
+    ],
+    "answer": "2",
+    "options": [
+      {
+        "text": "\\(12\\frac{51}{125}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(12\\frac{408}{100}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(12\\frac{51}{250}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(12\\frac{102}{250}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "isNew": false,
+    "timeLimit": 60
+  },
+  {
+    "id": "UTwUfknUNWeEjhlifW6A",
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7b",
+    "topicCode": "7B",
+    "topicTitle": "Converting decimals to fractions and fractions to decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "createdAt": "2026-05-17T12:29:11.733Z",
+    "question": "Express the decimal \\(12.625\\) as a fraction or mixed fraction in simplest form.",
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>\\(12.625 = 12\\frac{625}{1000}\\). Simplify \\(\\frac{625}{1000}\\) by dividing both by their GCD (\\(125\\)):<br>\\(625 \\div 125 = 5\\) and \\(1000 \\div 125 = 8\\). Thus, \\(12.625 = 12\\frac{5}{8}\\).</p>\n    </div>",
+    "hint": "",
+    "requiresManualGrading": false,
+    "updatedAt": {
+      "_seconds": 1784357700,
+      "_nanoseconds": 924000000
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+        "workingOut": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>\\(12.625 = 12\\frac{625}{1000}\\). Simplify \\(\\frac{625}{1000}\\) by dividing both by their GCD (\\(125\\)):<br>\\(625 \\div 125 = 5\\) and \\(1000 \\div 125 = 8\\). Thus, \\(12.625 = 12\\frac{5}{8}\\).</p>\n    </div>",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+        "workingOut": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>\\(12.625 = 12\\frac{625}{1000}\\). Simplify \\(\\frac{625}{1000}\\) by dividing both by their GCD (\\(125\\)):<br>\\(625 \\div 125 = 5\\) and \\(1000 \\div 125 = 8\\). Thus, \\(12.625 = 12\\frac{5}{8}\\).</p>\n    </div>",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final simplified answer and match it to the correct option.",
+        "workingOut": "\\(12\\frac{5}{8}\\)",
+        "graphData": null
+      }
+    ],
+    "answer": "1",
+    "options": [
+      {
+        "text": "\\(12\\frac{5}{80}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(12\\frac{625}{100}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(12\\frac{5}{8}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(12\\frac{1}{4}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "isNew": false,
+    "timeLimit": 60
+  },
+  {
+    "id": "VIcFmP8bltAbyrfO3ZYF",
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7b",
+    "topicCode": "7B",
+    "topicTitle": "Converting decimals to fractions and fractions to decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "createdAt": "2026-05-17T12:29:11.733Z",
+    "answer": "0",
+    "question": "Express the decimal \\(8.8037\\) as a fraction or mixed fraction in simplest form.",
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>\\(8.8037 = 8\\frac{8037}{10000}\\). Since \\(8037\\) and \\(10000\\) share no common factors, this is in simplest form.</p>\n    </div>",
+    "hint": "",
+    "requiresManualGrading": false,
+    "updatedAt": {
+      "_seconds": 1784357700,
+      "_nanoseconds": 924000000
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+        "workingOut": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>\\(8.8037 = 8\\frac{8037}{10000}\\). Since \\(8037\\) and \\(10000\\) share no common factors, this is in simplest form.</p>\n    </div>",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+        "workingOut": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>\\(8.8037 = 8\\frac{8037}{10000}\\). Since \\(8037\\) and \\(10000\\) share no common factors, this is in simplest form.</p>\n    </div>",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final simplified answer and match it to the correct option.",
+        "workingOut": "\\(8\\frac{8037}{10000}\\)",
+        "graphData": null
+      }
+    ],
+    "options": [
+      {
+        "text": "\\(8\\frac{803.7}{1000}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8\\frac{8037}{10000}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8\\frac{8037}{100000}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8\\frac{8037}{1000}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "isNew": false,
+    "timeLimit": 60
+  },
+  {
+    "id": "b77hohRhpr44TSYwBuK2",
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7b",
+    "topicCode": "7B",
+    "topicTitle": "Converting decimals to fractions and fractions to decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "createdAt": "2026-05-17T12:29:11.733Z",
+    "question": "Express the decimal \\(0.8\\) as a fraction or mixed fraction in simplest form.",
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>\\(0.8 = \\frac{8}{10}\\). Simplifying by dividing numerator and denominator by \\(2\\):<br>\\(\\frac{8 \\div 2}{10 \\div 2} = \\frac{4}{5}\\).</p>\n    </div>",
+    "hint": "",
+    "requiresManualGrading": false,
+    "updatedAt": {
+      "_seconds": 1784357700,
+      "_nanoseconds": 924000000
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+        "workingOut": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>\\(0.8 = \\frac{8}{10}\\). Simplifying by dividing numerator and denominator by \\(2\\):<br>\\(\\frac{8 \\div 2}{10 \\div 2} = \\frac{4}{5}\\).</p>\n    </div>",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+        "workingOut": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>\\(0.8 = \\frac{8}{10}\\). Simplifying by dividing numerator and denominator by \\(2\\):<br>\\(\\frac{8 \\div 2}{10 \\div 2} = \\frac{4}{5}\\).</p>\n    </div>",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final simplified answer and match it to the correct option.",
+        "workingOut": "\\(\\frac{4}{5}\\)",
+        "graphData": null
+      }
+    ],
+    "answer": "2",
+    "options": [
+      {
+        "text": "\\(\\frac{3}{5}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{4}{5}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{2}{3}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{8}{100}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "isNew": false,
+    "timeLimit": 60
+  },
+  {
+    "id": "eujSyTLDtHrJq9GyxLh4",
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7b",
+    "topicCode": "7B",
+    "topicTitle": "Converting decimals to fractions and fractions to decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "createdAt": "2026-05-17T12:29:11.733Z",
+    "answer": "0",
+    "question": "Express the decimal \\(8.5\\) as a fraction or mixed fraction in simplest form.",
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>\\(8.5 = 8\\frac{5}{10} = 8\\frac{1}{2}\\).</p>\n    </div>",
+    "hint": "",
+    "requiresManualGrading": false,
+    "updatedAt": {
+      "_seconds": 1784357700,
+      "_nanoseconds": 924000000
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+        "workingOut": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>\\(8.5 = 8\\frac{5}{10} = 8\\frac{1}{2}\\).</p>\n    </div>",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+        "workingOut": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>\\(8.5 = 8\\frac{5}{10} = 8\\frac{1}{2}\\).</p>\n    </div>",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final simplified answer and match it to the correct option.",
+        "workingOut": "\\(8\\frac{1}{2}\\)",
+        "graphData": null
+      }
+    ],
+    "options": [
+      {
+        "text": "\\(8\\frac{1}{2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{85}{100}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8.5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8\\frac{5}{100}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "isNew": false,
+    "timeLimit": 60
+  },
+  {
+    "id": "iJpqkGwNTDWuBA2nf2dK",
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7b",
+    "topicCode": "7B",
+    "topicTitle": "Converting decimals to fractions and fractions to decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "createdAt": "2026-05-17T12:29:11.733Z",
+    "question": "Express the decimal \\(0.75\\) as a fraction or mixed fraction in simplest form.",
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>\\(0.75 = \\frac{75}{100}\\). Dividing the numerator and denominator by their greatest common divisor (\\(25\\)):<br>\\(\\frac{75 \\div 25}{100 \\div 25} = \\frac{3}{4}\\).</p>\n    </div>",
+    "hint": "",
+    "options": [
+      {
+        "text": "\\(\\frac{3}{4}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{75}{10}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{3}{5}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{1}{4}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "requiresManualGrading": false,
+    "updatedAt": {
+      "_seconds": 1784357700,
+      "_nanoseconds": 924000000
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+        "workingOut": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>\\(0.75 = \\frac{75}{100}\\). Dividing the numerator and denominator by their greatest common divisor (\\(25\\)):<br>\\(\\frac{75 \\div 25}{100 \\div 25} = \\frac{3}{4}\\).</p>\n    </div>",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+        "workingOut": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>\\(0.75 = \\frac{75}{100}\\). Dividing the numerator and denominator by their greatest common divisor (\\(25\\)):<br>\\(\\frac{75 \\div 25}{100 \\div 25} = \\frac{3}{4}\\).</p>\n    </div>",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final simplified answer and match it to the correct option.",
+        "workingOut": "\\(\\frac{3}{4}\\)",
+        "graphData": null
+      }
+    ],
+    "answer": "2",
+    "isNew": false,
+    "timeLimit": 60
+  },
+  {
+    "id": "n7HufknabA4acDCzrkSI",
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7b",
+    "topicCode": "7B",
+    "topicTitle": "Converting decimals to fractions and fractions to decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "isActive": true,
+    "isManual": true,
+    "createdAt": "2026-05-17T12:29:11.733Z",
+    "question": "Express the fraction \\(\\frac{3}{5}\\) as a decimal.",
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Convert the fraction to have a denominator of \\(10\\):<br>\\(\\frac{3 \\times 2}{5 \\times 2} = \\frac{6}{10} = 0.6\\).</p>\n    </div>",
+    "hint": "",
+    "requiresManualGrading": false,
+    "updatedAt": {
+      "_seconds": 1784357700,
+      "_nanoseconds": 924000000
+    },
+    "options": [
+      {
+        "text": "\\(0.06\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(0.3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(0.5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(0.6\\)",
+        "imageUrl": ""
+      }
+    ],
+    "isNew": false,
+    "timeLimit": 60,
+    "solutionSteps": [
+      {
+        "explanation": "To convert the fraction \\(\\frac{3}{5}\\) into a decimal, we can find an equivalent fraction with a denominator of 10.",
+        "workingOut": "\\(\\frac{3 \\times 2}{5 \\times 2} = \\frac{6}{10}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Now write the fraction \\(\\frac{6}{10}\\) as a decimal.",
+        "workingOut": "\\(\\frac{6}{10} = 0.6\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Therefore, the decimal representation is 0.6.",
+        "workingOut": "\\(0.6\\)",
+        "graphData": null
+      }
+    ],
+    "answer": "3"
+  },
+  {
+    "id": "rhwXNm6jq3mLzsS5Pal9",
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7b",
+    "topicCode": "7B",
+    "topicTitle": "Converting decimals to fractions and fractions to decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "createdAt": "2026-05-17T12:29:11.733Z",
+    "question": "Express the decimal \\(5.003\\) as a fraction or mixed fraction in simplest form.",
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>\\(5.003\\) has \\(3\\) decimal places, representing thousandths. So, \\(5.003 = 5\\frac{3}{1000}\\). Since \\(3\\) is prime, it cannot be simplified further.</p>\n    </div>",
+    "hint": "",
+    "requiresManualGrading": false,
+    "updatedAt": {
+      "_seconds": 1784357700,
+      "_nanoseconds": 924000000
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+        "workingOut": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>\\(5.003\\) has \\(3\\) decimal places, representing thousandths. So, \\(5.003 = 5\\frac{3}{1000}\\). Since \\(3\\) is prime, it cannot be simplified further.</p>\n    </div>",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+        "workingOut": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>\\(5.003\\) has \\(3\\) decimal places, representing thousandths. So, \\(5.003 = 5\\frac{3}{1000}\\). Since \\(3\\) is prime, it cannot be simplified further.</p>\n    </div>",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final simplified answer and match it to the correct option.",
+        "workingOut": "\\(5\\frac{3}{1000}\\)",
+        "graphData": null
+      }
+    ],
+    "answer": "2",
+    "options": [
+      {
+        "text": "\\(\\frac{5003}{100}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5\\frac{3}{10000}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5\\frac{3}{100}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5\\frac{3}{1000}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "isNew": false,
+    "timeLimit": 60
+  },
+  {
+    "id": "tjgVC8TQRYnSksSQ2fId",
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7b",
+    "topicCode": "7B",
+    "topicTitle": "Converting decimals to fractions and fractions to decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "createdAt": "2026-05-17T12:29:11.733Z",
+    "answer": "0",
+    "question": "Find the equivalent decimal for the mixed fraction \\(3\\frac{1}{4}\\).",
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>\\(\\frac{1}{4} = 0.25\\). Adding to the whole number \\(3\\) gives: \\(3.25\\).</p>\n    </div>",
+    "hint": "",
+    "requiresManualGrading": false,
+    "updatedAt": {
+      "_seconds": 1784357700,
+      "_nanoseconds": 924000000
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+        "workingOut": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>\\(\\frac{1}{4} = 0.25\\). Adding to the whole number \\(3\\) gives: \\(3.25\\).</p>\n    </div>",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+        "workingOut": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>\\(\\frac{1}{4} = 0.25\\). Adding to the whole number \\(3\\) gives: \\(3.25\\).</p>\n    </div>",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final simplified answer and match it to the correct option.",
+        "workingOut": "\\(3.25\\)",
+        "graphData": null
+      }
+    ],
+    "options": [
+      {
+        "text": "\\(3.5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3.025\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3.14\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3.25\\)",
+        "imageUrl": ""
+      }
+    ],
+    "isNew": false,
+    "timeLimit": 60
+  },
+  {
+    "id": "w4be5HdNaR9BCU5DeuHF",
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7b",
+    "topicCode": "7B",
+    "topicTitle": "Converting decimals to fractions and fractions to decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "isActive": true,
+    "isManual": true,
+    "createdAt": "2026-05-17T12:29:11.733Z",
+    "answer": "0",
+    "question": "Express the fraction \\(\\frac{456}{1000}\\) as a decimal.",
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Dividing by \\(1000\\) moves the decimal point 3 places to the left:<br>\\(456 \\div 1000 = 0.456\\).</p>\n    </div>",
+    "hint": "",
+    "requiresManualGrading": false,
+    "updatedAt": {
+      "_seconds": 1784357700,
+      "_nanoseconds": 924000000
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+        "workingOut": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Dividing by \\(1000\\) moves the decimal point 3 places to the left:<br>\\(456 \\div 1000 = 0.456\\).</p>\n    </div>",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+        "workingOut": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Dividing by \\(1000\\) moves the decimal point 3 places to the left:<br>\\(456 \\div 1000 = 0.456\\).</p>\n    </div>",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final simplified answer and match it to the correct option.",
+        "workingOut": "\\(0.456\\)",
+        "graphData": null
+      }
+    ],
+    "options": [
+      {
+        "text": "\\(0.0456\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4.56\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(0.456\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(45.6\\)",
+        "imageUrl": ""
+      }
+    ],
+    "isNew": false,
+    "timeLimit": 60
+  },
+  {
+    "id": "wUQOLJGiqmQRsZ1n8UuZ",
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7b",
+    "topicCode": "7B",
+    "topicTitle": "Converting decimals to fractions and fractions to decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "createdAt": "2026-05-17T12:29:11.733Z",
+    "question": "Express the decimal \\(2.63\\) as a fraction or mixed fraction in simplest form.",
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>\\(2.63\\) consists of the whole number \\(2\\) and the decimal \\(0.63\\). Since \\(0.63 = \\frac{63}{100}\\) (cannot be simplified further), we get: \\(2\\frac{63}{100}\\).</p>\n    </div>",
+    "hint": "",
+    "requiresManualGrading": false,
+    "updatedAt": {
+      "_seconds": 1784357700,
+      "_nanoseconds": 924000000
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+        "workingOut": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>\\(2.63\\) consists of the whole number \\(2\\) and the decimal \\(0.63\\). Since \\(0.63 = \\frac{63}{100}\\) (cannot be simplified further), we get: \\(2\\frac{63}{100}\\).</p>\n    </div>",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+        "workingOut": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>\\(2.63\\) consists of the whole number \\(2\\) and the decimal \\(0.63\\). Since \\(0.63 = \\frac{63}{100}\\) (cannot be simplified further), we get: \\(2\\frac{63}{100}\\).</p>\n    </div>",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final simplified answer and match it to the correct option.",
+        "workingOut": "\\(2\\frac{63}{100}\\)",
+        "graphData": null
+      }
+    ],
+    "answer": "1",
+    "options": [
+      {
+        "text": "\\(2\\frac{63}{100}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{263}{10}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2\\frac{6.3}{10}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2\\frac{63}{1000}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "isNew": false,
+    "timeLimit": 60
+  },
+  {
+    "id": "y7-7-practice-q5",
+    "chapterId": "y7-7",
+    "chapterTitle": "Year 7 Mixed Practice Exam",
+    "topicId": "y7-7b",
+    "topicCode": "7B",
+    "topicTitle": "Converting decimals to fractions and fractions to decimals",
+    "year": "Year 7",
+    "isManual": true,
+    "origin": "seed",
+    "title": "Is \\( \\frac{2}{5} = 0.4 \\) tru...",
+    "question": "Is \\( \\frac{2}{5} = 0.4 \\) true or false?",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "type": "multiple_choice",
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "True",
+        "imageUrl": ""
+      },
+      {
+        "text": "False — \\( \\frac{2}{5} = 0.25 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "False — \\( \\frac{2}{5} = 0.04 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "False — \\( \\frac{2}{5} = 4.0 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "hint": "",
+    "solution": "",
+    "solutionSteps": [
+      {
+        "explanation": "Divide 2 by 5 to convert the fraction to a decimal.",
+        "workingOut": "2 \\div 5 = 0.4"
+      },
+      {
+        "explanation": "Compare to the given decimal.",
+        "workingOut": "0.4 = 0.4, so the statement is TRUE"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "y7-practice-1",
+    "isNew": false,
+    "createdAt": {
+      "_seconds": 1785390564,
+      "_nanoseconds": 735000000
+    },
+    "updatedAt": {
+      "_seconds": 1785390564,
+      "_nanoseconds": 735000000
+    }
+  },
+  {
+    "id": "yJSFB9IQed4yTaXNSDf5",
+    "chapterId": "y7-7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicId": "y7-7b",
+    "topicCode": "7B",
+    "topicTitle": "Converting decimals to fractions and fractions to decimals",
+    "year": "Year 7",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "isActive": true,
+    "isManual": true,
+    "createdAt": "2026-05-17T12:29:11.733Z",
+    "question": "Express the decimal \\(3.05\\) as a fraction or mixed fraction in simplest form.",
+    "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>\\(3.05 = 3\\frac{5}{100}\\). Simplify \\(\\frac{5}{100}\\) by dividing both by \\(5\\):<br>\\(\\frac{5 \\div 5}{100 \\div 5} = \\frac{1}{20}\\). Thus, \\(3.05 = 3\\frac{1}{20}\\).</p>\n    </div>",
+    "hint": "",
+    "requiresManualGrading": false,
+    "updatedAt": {
+      "_seconds": 1784357700,
+      "_nanoseconds": 924000000
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+        "workingOut": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>\\(3.05 = 3\\frac{5}{100}\\). Simplify \\(\\frac{5}{100}\\) by dividing both by \\(5\\):<br>\\(\\frac{5 \\div 5}{100 \\div 5} = \\frac{1}{20}\\). Thus, \\(3.05 = 3\\frac{1}{20}\\).</p>\n    </div>",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+        "workingOut": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>\\(3.05 = 3\\frac{5}{100}\\). Simplify \\(\\frac{5}{100}\\) by dividing both by \\(5\\):<br>\\(\\frac{5 \\div 5}{100 \\div 5} = \\frac{1}{20}\\). Thus, \\(3.05 = 3\\frac{1}{20}\\).</p>\n    </div>",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final simplified answer and match it to the correct option.",
+        "workingOut": "\\(3\\frac{1}{20}\\)",
+        "graphData": null
+      }
+    ],
+    "answer": "2",
+    "options": [
+      {
+        "text": "\\(3\\frac{5}{100}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3\\frac{1}{200}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3\\frac{1}{20}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3\\frac{5}{10}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "isNew": false,
+    "timeLimit": 60
+  }
+]

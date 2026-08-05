@@ -25,6 +25,7 @@ and pushing updates to both the local seed file and Firestore.
 
 See `references/question_schema.md` for the complete field reference.
 See `references/svg_label_rules.md` for rules on preventing label overlaps in graphs.
+See `references/svg_3d_geometry_rules.md` for CRITICAL rules on 3D projections, hidden lines, and dimension formatting.
 
 ### Quick Reference — Key Fields
 

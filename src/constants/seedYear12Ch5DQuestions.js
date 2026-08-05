@@ -12,7 +12,7 @@ export const Y12A_CH5D_QUESTIONS = [
     "solution": "Using the standard formula \\( \\int e^{ax+b} \\, dx = \\frac{1}{a}e^{ax+b} + C \\) with \\( a = 4, b = 0 \\):\n\\( \\int e^{4x} \\, dx = \\frac{1}{4}e^{4x} + C \\).",
     "solutionSteps": [
       {
-        "explanation": "We integrate an exponential of the form \\(e^{ax}\\). The standard result is \\(\\int e^{ax}\\,dx=\\dfrac{1}{a}e^{ax}+C\\) for \\(a\\neq 0\\). Here the exponent is \\(4x\\), so identify \\(a=4\\).",
+        "explanation": "We integrate an exponential of the form \\(e^{ax}\\). The standard result is \\(\\int e^{ax}\\,dx=\\dfrac{1}{a}e^{ax}+C\\) for \\(a\neq 0\\). Here the exponent is \\(4x\\), so identify \\(a=4\\).",
         "workingOut": "\\(a=4\\)",
         "graphData": null
       },

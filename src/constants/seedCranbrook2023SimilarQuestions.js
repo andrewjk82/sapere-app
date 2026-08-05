@@ -215,7 +215,7 @@ export const CRANBROOK_2023_SIMILAR_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Form \\(g(f(x)) = \\dfrac{1}{\\sqrt{x}-2}\\), which requires \\(x \\geq 0\\) and \\(\\sqrt{x} \\neq 2\\), i.e. \\(x \\neq 4\\). Its range: \\(\\sqrt{x} - 2\\) covers \\([-2, infty)\\setminus{0}\\), so the reciprocal covers \\((-\\infty, -\\tfrac{1}{2}] \\cup (0, infty)\\).",
+        "explanation": "Form \\(g(f(x)) = \\dfrac{1}{\\sqrt{x}-2}\\), which requires \\(x \\geq 0\\) and \\(\\sqrt{x} \neq 2\\), i.e. \\(x \neq 4\\). Its range: \\(\\sqrt{x} - 2\\) covers \\([-2, infty)\\setminus{0}\\), so the reciprocal covers \\((-\\infty, -\\tfrac{1}{2}] \\cup (0, infty)\\).",
         "workingOut": "\\(g(f(x)) = \\dfrac{1}{\\sqrt{x}-2}, quad \\text{domain: } [0, infty)\\setminus{4}\\)",
         "graphData": null
       },
@@ -2172,7 +2172,7 @@ export const CRANBROOK_2023_SIMILAR_QUESTIONS = [
       },
       {
         "explanation": "Join smoothly: rising on \\(\\left(0, dfrac{3}{4}\\right)\\), falling on \\(\\left(\\dfrac{3}{4}, 3\\right)\\), flattening at \\((3,1)\\), then falling through the axis to \\((5, -1.96)\\).",
-        "workingOut": "\\((0,1) \\nearrow (0.75, 1.63) \\searrow (3,1) \\searrow (5, -1.96)\\)",
+        "workingOut": "\\((0,1) \nearrow (0.75, 1.63) \\searrow (3,1) \\searrow (5, -1.96)\\)",
         "graphData": null
       },
       {
@@ -2436,7 +2436,7 @@ export const CRANBROOK_2023_SIMILAR_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Multiply both sides by \\(\\cos x\\) (where \\(\\tan x\\) is defined, \\(\\cos x \\neq 0\\), so no solutions are lost).",
+        "explanation": "Multiply both sides by \\(\\cos x\\) (where \\(\\tan x\\) is defined, \\(\\cos x \neq 0\\), so no solutions are lost).",
         "workingOut": "\\(2\\sin x\\cos x = \\sin x\\)",
         "graphData": null
       },

@@ -908,7 +908,7 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "A bouncy ball is dropped from a height of 18 metres. It bounces continually, each successive bounce height being one-third of the previous height.\n\nShow that the first distance travelled down-and-up is 24 metres, and explain why the successive down-and-up distances form a geometric progression with \\(r = \\frac{1}{3}\\).",
     "opts": [],
-    "answer": "The first down-and-up distance consists of the initial drop of 18 metres plus the first upward bounce of 6 metres.\\nThis sum is \\(18 + 6 = 24\\) metres.\\nEach subsequent bounce is exactly one-third of the height of the previous bounce.\\nTherefore, both the downward and upward paths are multiplied by \\(\\frac{1}{3}\\), meaning the total distance for each bounce cycle is one-third of the previous cycle.\\nThis forms a geometric progression with common ratio \\(r = \\frac{1}{3}\\).",
+    "answer": "The first down-and-up distance consists of the initial drop of 18 metres plus the first upward bounce of 6 metres.\nThis sum is \\(18 + 6 = 24\\) metres.\nEach subsequent bounce is exactly one-third of the height of the previous bounce.\nTherefore, both the downward and upward paths are multiplied by \\(\\frac{1}{3}\\), meaning the total distance for each bounce cycle is one-third of the previous cycle.\nThis forms a geometric progression with common ratio \\(r = \\frac{1}{3}\\).",
     "hint": "The first down-and-up cycle includes the initial 18 m drop and the first 6 m bounce up.",
     "solutionSteps": [
       {
@@ -969,7 +969,7 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "For a geometric progression with first term \\(a = 8\\) and common ratio \\(r = 1\\):\n\nWrite down the first six terms of \\(T_n\\) and the partial sums \\(S_n\\), and describe the behaviour of \\(S_n\\) as \\(n \\to \\infty\\).",
     "opts": [],
-    "answer": "The terms of the progression are all 8, so \\(T_n = 8\\) for all \\(n\\).\\nSequence of partial sums: \\(8, 16, 24, 32, 40, 48\\).\\nSince \\(S_n = 8n\\), as \\(n\\) increases, \\(S_n\\) grows without bound.\\nTherefore, \\(S_n \\to \\infty\\) as \\(n \\to \\infty\\), meaning the series diverges and has no limiting sum.",
+    "answer": "The terms of the progression are all 8, so \\(T_n = 8\\) for all \\(n\\).\nSequence of partial sums: \\(8, 16, 24, 32, 40, 48\\).\nSince \\(S_n = 8n\\), as \\(n\\) increases, \\(S_n\\) grows without bound.\nTherefore, \\(S_n \\to \\infty\\) as \\(n \\to \\infty\\), meaning the series diverges and has no limiting sum.",
     "hint": "For \\(r=1\\), every term is equal to the first term.",
     "solutionSteps": [
       {
@@ -997,7 +997,7 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "For a geometric progression with first term \\(a = 12\\) and common ratio \\(r = -1\\):\n\nWrite down the first six terms of \\(T_n\\) and the partial sums \\(S_n\\), and describe the behaviour of \\(S_n\\) as \\(n \\to \\infty\\).",
     "opts": [],
-    "answer": "The terms of the progression alternate in sign: \\(12, -12, 12, -12, 12, -12\\).\\nSequence of partial sums: \\(12, 0, 12, 0, 12, 0\\).\\nAs \\(n \\to \\infty\\), the partial sums oscillate between 12 and 0.\\nSince they do not approach a single fixed limit, the series diverges and has no limiting sum.",
+    "answer": "The terms of the progression alternate in sign: \\(12, -12, 12, -12, 12, -12\\).\nSequence of partial sums: \\(12, 0, 12, 0, 12, 0\\).\nAs \\(n \\to \\infty\\), the partial sums oscillate between 12 and 0.\nSince they do not approach a single fixed limit, the series diverges and has no limiting sum.",
     "hint": "Alternate the signs of the terms and calculate the running totals.",
     "solutionSteps": [
       {
@@ -1025,7 +1025,7 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "For a geometric progression with first term \\(a = 5\\) and common ratio \\(r = 3\\):\n\nWrite down the first six terms of \\(T_n\\) and the partial sums \\(S_n\\), and describe the behaviour of \\(S_n\\) as \\(n \\to \\infty\\).",
     "opts": [],
-    "answer": "The terms of the progression are \\(5, 15, 45, 135, 405, 1215\\).\\nSequence of partial sums: \\(5, 20, 65, 200, 605, 1820\\).\\nSince \\(r = 3 > 1\\), the terms grow exponentially.\\nConsequently, \\(S_n \\to \\infty\\) as \\(n \\to \\infty\\), meaning the series diverges and has no limiting sum.",
+    "answer": "The terms of the progression are \\(5, 15, 45, 135, 405, 1215\\).\nSequence of partial sums: \\(5, 20, 65, 200, 605, 1820\\).\nSince \\(r = 3 > 1\\), the terms grow exponentially.\nConsequently, \\(S_n \\to \\infty\\) as \\(n \\to \\infty\\), meaning the series diverges and has no limiting sum.",
     "hint": "Calculate the terms by multiplying by 3 at each step, then sum them.",
     "solutionSteps": [
       {
@@ -1053,7 +1053,7 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "For a geometric progression with first term \\(a = 6\\) and common ratio \\(r = -3\\):\n\nWrite down the first six terms of \\(T_n\\) and the partial sums \\(S_n\\), and describe the behaviour of \\(S_n\\) as \\(n \\to \\infty\\).",
     "opts": [],
-    "answer": "The terms of the progression are \\(6, -18, 54, -162, 486, -1458\\).\\nSequence of partial sums: \\(6, -12, 42, -120, 366, -1092\\).\\nAs \\(n\\) increases, the partial sums oscillate with an ever-increasing magnitude.\\nTherefore, \\(S_n\\) does not approach any limit, and the series diverges with no limiting sum.",
+    "answer": "The terms of the progression are \\(6, -18, 54, -162, 486, -1458\\).\nSequence of partial sums: \\(6, -12, 42, -120, 366, -1092\\).\nAs \\(n\\) increases, the partial sums oscillate with an ever-increasing magnitude.\nTherefore, \\(S_n\\) does not approach any limit, and the series diverges with no limiting sum.",
     "hint": "Each term is multiplied by \\(-3\\). Sum the alternating terms.",
     "solutionSteps": [
       {
@@ -1195,7 +1195,7 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "A local council offered free reflective house numbers to its 20000 home owners. In the first month, 20% of the owners installed them. In each subsequent month, the number of owners installing them was exactly 20% of the number who installed them in the previous month.\n\nShow that the numbers of installations each month form a geometric progression.",
     "opts": [],
-    "answer": "In the first month, the number of installations is \\(20000 \\times 0.20 = 4000\\).\\nIn the second month, the number of installations is \\(4000 \\times 0.20 = 800\\).\\nIn the third month, the number of installations is \\(800 \\times 0.20 = 160\\).\\nSince each month's installation number is obtained by multiplying the previous month's number by a constant factor of \\(0.20\\), the sequence of installations \\(4000, 800, 160, \\dots\\) forms a geometric progression with first term \\(a = 4000\\) and common ratio \\(r = 0.2\\).",
+    "answer": "In the first month, the number of installations is \\(20000 \\times 0.20 = 4000\\).\nIn the second month, the number of installations is \\(4000 \\times 0.20 = 800\\).\nIn the third month, the number of installations is \\(800 \\times 0.20 = 160\\).\nSince each month's installation number is obtained by multiplying the previous month's number by a constant factor of \\(0.20\\), the sequence of installations \\(4000, 800, 160, \\dots\\) forms a geometric progression with first term \\(a = 4000\\) and common ratio \\(r = 0.2\\).",
     "hint": "Verify that the ratio between consecutive months' installations is a constant.",
     "solutionSteps": [
       {
@@ -2234,7 +2234,7 @@ export const Y12A_CH1H_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Divide both sides by \\(a\\) (assuming \\(a \\neq 0\\)) and solve for \\(r\\).",
+        "explanation": "Divide both sides by \\(a\\) (assuming \\(a \neq 0\\)) and solve for \\(r\\).",
         "workingOut": "\\(\\frac{1}{1-r} = 4 \\implies 1-r = \\frac{1}{4} \\implies r = 1 - \\frac{1}{4} = \\frac{3}{4}\\)",
         "graphData": null
       }
@@ -2324,7 +2324,7 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Suppose that \\(T_n = ar^{n-1}\\) is a geometric progression with a limiting sum.\n\nShow that the sum \\(S\\) of all terms from the third term onwards (i.e. \\(T_3 + T_4 + T_5 + \\dots\\)) is given by:\n\\(S = \\frac{ar^2}{1-r}\\).",
     "opts": [],
-    "answer": "The terms from the third term onwards are \\(ar^2, ar^3, ar^4, \\dots\\).\\nThis series is a geometric progression with first term \\(A = ar^2\\) and common ratio \\(R = r\\).\\nSince the original series converges, we have \\(|r| < 1\\), so this subseries also converges.\\nApplying the limiting sum formula, we get:\\n\\(S = \\frac{A}{1-R} = \\frac{ar^2}{1-r}\\).",
+    "answer": "The terms from the third term onwards are \\(ar^2, ar^3, ar^4, \\dots\\).\nThis series is a geometric progression with first term \\(A = ar^2\\) and common ratio \\(R = r\\).\nSince the original series converges, we have \\(|r| < 1\\), so this subseries also converges.\nApplying the limiting sum formula, we get:\n\\(S = \\frac{A}{1-R} = \\frac{ar^2}{1-r}\\).",
     "hint": "Identify the first term of the subseries starting at \\(T_3\\) and apply the limiting sum formula.",
     "solutionSteps": [
       {
@@ -2404,7 +2404,7 @@ export const Y12A_CH1H_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Assuming \\(a \\neq 0\\) and \\(r \\neq 0\\), divide both sides by \\(ar\\).",
+        "explanation": "Assuming \\(a \neq 0\\) and \\(r \neq 0\\), divide both sides by \\(ar\\).",
         "workingOut": "\\(\\frac{r}{1-r} = 1\\)",
         "graphData": null
       },
@@ -2500,9 +2500,9 @@ export const Y12A_CH1H_QUESTIONS = [
     "question": "Find the condition for the geometric series:\n\\(1 + \\frac{2}{2 + x^2} + \\frac{4}{(2 + x^2)^2} + \\dots\\)\nto have a limiting sum, and find that limiting sum.",
     "opts": [
       "Condition: \\(x > 0\\), Limiting sum: \\(1 + \\frac{2}{x^2}\\)",
-      "Condition: \\(x \\neq 0\\), Limiting sum: \\(\\frac{x^2}{2+x^2}\\)",
+      "Condition: \\(x \neq 0\\), Limiting sum: \\(\\frac{x^2}{2+x^2}\\)",
       "Condition: All real \\(x\\), Limiting sum: \\(\\frac{2+x^2}{x^2}\\)",
-      "Condition: \\(x \\neq 0\\), Limiting sum: \\(1 + \\frac{2}{x^2}\\)"
+      "Condition: \\(x \neq 0\\), Limiting sum: \\(1 + \\frac{2}{x^2}\\)"
     ],
     "a": 3,
     "hint": "The common ratio is \\(r = \\frac{2}{2+x^2}\\). Solve \\(|r| < 1\\) given \\(x^2 \\geq 0\\).",
@@ -2519,7 +2519,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Since \\(x^2 \\geq 0\\), the denominator \\(2+x^2\\) is always positive. Solve the inequality.",
-        "workingOut": "\\(\\frac{2}{2+x^2} < 1 \\implies 2 < 2 + x^2 \\implies x^2 > 0 \\implies x \\neq 0\\)",
+        "workingOut": "\\(\\frac{2}{2+x^2} < 1 \\implies 2 < 2 + x^2 \\implies x^2 > 0 \\implies x \neq 0\\)",
         "graphData": null
       },
       {
@@ -2636,7 +2636,7 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Suppose that the geometric series:\n\\(v + v^2 + v^3 + \\dots\\)\nhas a limiting sum \\(w\\).\n\nTest the algebraic results from the previous parts by substituting \\(v = \\frac{1}{4}\\).",
     "opts": [],
-    "answer": "If \\(v = \\frac{1}{4}\\), the series \\(v + v^2 + v^3 + \\dots\\) has first term \\(\\frac{1}{4}\\) and common ratio \\(\\frac{1}{4}\\).\\nIts limiting sum is:\\n\\(w = \\frac{1/4}{1 - 1/4} = \\frac{1/4}{3/4} = \\frac{1}{3}\\).\\nUsing the formula from part (b), we find:\\n\\(v = \\frac{w}{1+w} = \\frac{1/3}{1 + 1/3} = \\frac{1/3}{4/3} = \\frac{1}{4}\\), which matches our initial value.\\nFor part (c), the series \\(w - w^2 + w^3 - \\dots\\) becomes:\\n\\(\\frac{1}{3} - \\frac{1}{9} + \\frac{1}{27} - \\dots\\).\\nIts limiting sum is:\\n\\(S = \\frac{1/3}{1 - (-1/3)} = \\frac{1/3}{4/3} = \\frac{1}{4}\\).\\nThis matches \\(v = \\frac{1}{4}\\), confirming our algebraic results.",
+    "answer": "If \\(v = \\frac{1}{4}\\), the series \\(v + v^2 + v^3 + \\dots\\) has first term \\(\\frac{1}{4}\\) and common ratio \\(\\frac{1}{4}\\).\nIts limiting sum is:\n\\(w = \\frac{1/4}{1 - 1/4} = \\frac{1/4}{3/4} = \\frac{1}{3}\\).\nUsing the formula from part (b), we find:\n\\(v = \\frac{w}{1+w} = \\frac{1/3}{1 + 1/3} = \\frac{1/3}{4/3} = \\frac{1}{4}\\), which matches our initial value.\nFor part (c), the series \\(w - w^2 + w^3 - \\dots\\) becomes:\n\\(\\frac{1}{3} - \\frac{1}{9} + \\frac{1}{27} - \\dots\\).\nIts limiting sum is:\n\\(S = \\frac{1/3}{1 - (-1/3)} = \\frac{1/3}{4/3} = \\frac{1}{4}\\).\nThis matches \\(v = \\frac{1}{4}\\), confirming our algebraic results.",
     "hint": "Substitute \\(v = 1/4\\) into the formulas and calculate the numerical values to check if they match.",
     "solutionSteps": [
       {
@@ -2694,7 +2694,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Solve for \\(r\\) and then calculate \\(a\\).",
-        "workingOut": "\\(r = 0.20 = 0.2\\)\\n\\(a = S_{\\infty}(1-r) = 22.50 \\times (1 - 0.2) = 18\\)",
+        "workingOut": "\\(r = 0.20 = 0.2\\)\n\\(a = S_{\\infty}(1-r) = 22.50 \\times (1 - 0.2) = 18\\)",
         "graphData": null
       }
     ]
@@ -2732,7 +2732,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Solve for \\(r\\) and then calculate \\(a\\).",
-        "workingOut": "\\(r = 0.25 = 0.25\\)\\n\\(a = S_{\\infty}(1-r) = 32.00 \\times (1 - 0.25) = 24\\)",
+        "workingOut": "\\(r = 0.25 = 0.25\\)\n\\(a = S_{\\infty}(1-r) = 32.00 \\times (1 - 0.25) = 24\\)",
         "graphData": null
       }
     ]
@@ -2770,7 +2770,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Solve for \\(r\\) and then calculate \\(a\\).",
-        "workingOut": "\\(r = 0.20 = 0.2\\)\\n\\(a = S_{\\infty}(1-r) = 45.00 \\times (1 - 0.2) = 36\\)",
+        "workingOut": "\\(r = 0.20 = 0.2\\)\n\\(a = S_{\\infty}(1-r) = 45.00 \\times (1 - 0.2) = 36\\)",
         "graphData": null
       }
     ]
@@ -2808,7 +2808,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Solve for \\(r\\) and then calculate \\(a\\).",
-        "workingOut": "\\(r = 0.50 = 0.5\\)\\n\\(a = S_{\\infty}(1-r) = 24.00 \\times (1 - 0.5) = 12\\)",
+        "workingOut": "\\(r = 0.50 = 0.5\\)\n\\(a = S_{\\infty}(1-r) = 24.00 \\times (1 - 0.5) = 12\\)",
         "graphData": null
       }
     ]
@@ -2846,7 +2846,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Solve for \\(r\\) and then calculate \\(a\\).",
-        "workingOut": "\\(r = 0.20 = 0.2\\)\\n\\(a = S_{\\infty}(1-r) = 50.00 \\times (1 - 0.2) = 40\\)",
+        "workingOut": "\\(r = 0.20 = 0.2\\)\n\\(a = S_{\\infty}(1-r) = 50.00 \\times (1 - 0.2) = 40\\)",
         "graphData": null
       }
     ]
@@ -2884,7 +2884,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Solve for \\(r\\) and then calculate \\(a\\).",
-        "workingOut": "\\(r = 0.40 = 0.4\\)\\n\\(a = S_{\\infty}(1-r) = 25.00 \\times (1 - 0.4) = 15\\)",
+        "workingOut": "\\(r = 0.40 = 0.4\\)\n\\(a = S_{\\infty}(1-r) = 25.00 \\times (1 - 0.4) = 15\\)",
         "graphData": null
       }
     ]
@@ -2922,7 +2922,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Solve for \\(r\\) and then calculate \\(a\\).",
-        "workingOut": "\\(r = 0.25 = 0.25\\)\\n\\(a = S_{\\infty}(1-r) = 40.00 \\times (1 - 0.25) = 30\\)",
+        "workingOut": "\\(r = 0.25 = 0.25\\)\n\\(a = S_{\\infty}(1-r) = 40.00 \\times (1 - 0.25) = 30\\)",
         "graphData": null
       }
     ]
@@ -2960,7 +2960,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Solve for \\(r\\) and then calculate \\(a\\).",
-        "workingOut": "\\(r = 0.10 = 0.1\\)\\n\\(a = S_{\\infty}(1-r) = 55.56 \\times (1 - 0.1) = 50\\)",
+        "workingOut": "\\(r = 0.10 = 0.1\\)\n\\(a = S_{\\infty}(1-r) = 55.56 \\times (1 - 0.1) = 50\\)",
         "graphData": null
       }
     ]
@@ -2998,7 +2998,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Solve for \\(r\\) and then calculate \\(a\\).",
-        "workingOut": "\\(r = 0.20 = 0.2\\)\\n\\(a = S_{\\infty}(1-r) = 60.00 \\times (1 - 0.2) = 48\\)",
+        "workingOut": "\\(r = 0.20 = 0.2\\)\n\\(a = S_{\\infty}(1-r) = 60.00 \\times (1 - 0.2) = 48\\)",
         "graphData": null
       }
     ]
@@ -3036,7 +3036,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Solve for \\(r\\) and then calculate \\(a\\).",
-        "workingOut": "\\(r = 0.60 = 0.6\\)\\n\\(a = S_{\\infty}(1-r) = 50.00 \\times (1 - 0.6) = 20\\)",
+        "workingOut": "\\(r = 0.60 = 0.6\\)\n\\(a = S_{\\infty}(1-r) = 50.00 \\times (1 - 0.6) = 20\\)",
         "graphData": null
       }
     ]
@@ -3074,7 +3074,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Solve for \\(r\\) and then calculate \\(a\\).",
-        "workingOut": "\\(r = 0.20 = 0.2\\)\\n\\(a = S_{\\infty}(1-r) = 75.00 \\times (1 - 0.2) = 60\\)",
+        "workingOut": "\\(r = 0.20 = 0.2\\)\n\\(a = S_{\\infty}(1-r) = 75.00 \\times (1 - 0.2) = 60\\)",
         "graphData": null
       }
     ]
@@ -3112,7 +3112,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Solve for \\(r\\) and then calculate \\(a\\).",
-        "workingOut": "\\(r = 0.60 = 0.6\\)\\n\\(a = S_{\\infty}(1-r) = 40.00 \\times (1 - 0.6) = 16\\)",
+        "workingOut": "\\(r = 0.60 = 0.6\\)\n\\(a = S_{\\infty}(1-r) = 40.00 \\times (1 - 0.6) = 16\\)",
         "graphData": null
       }
     ]
@@ -3150,7 +3150,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Solve for \\(r\\) and then calculate \\(a\\).",
-        "workingOut": "\\(r = 0.25 = 0.25\\)\\n\\(a = S_{\\infty}(1-r) = 60.00 \\times (1 - 0.25) = 45\\)",
+        "workingOut": "\\(r = 0.25 = 0.25\\)\n\\(a = S_{\\infty}(1-r) = 60.00 \\times (1 - 0.25) = 45\\)",
         "graphData": null
       }
     ]
@@ -3188,7 +3188,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Solve for \\(r\\) and then calculate \\(a\\).",
-        "workingOut": "\\(r = 0.10 = 0.1\\)\\n\\(a = S_{\\infty}(1-r) = 77.78 \\times (1 - 0.1) = 70\\)",
+        "workingOut": "\\(r = 0.10 = 0.1\\)\n\\(a = S_{\\infty}(1-r) = 77.78 \\times (1 - 0.1) = 70\\)",
         "graphData": null
       }
     ]
@@ -3226,7 +3226,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Solve for \\(r\\) and then calculate \\(a\\).",
-        "workingOut": "\\(r = 0.30 = 0.3\\)\\n\\(a = S_{\\infty}(1-r) = 40.00 \\times (1 - 0.3) = 28\\)",
+        "workingOut": "\\(r = 0.30 = 0.3\\)\n\\(a = S_{\\infty}(1-r) = 40.00 \\times (1 - 0.3) = 28\\)",
         "graphData": null
       }
     ]
@@ -3264,7 +3264,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Solve for \\(r\\) and then calculate \\(a\\).",
-        "workingOut": "\\(r = 0.50 = 0.5\\)\\n\\(a = S_{\\infty}(1-r) = 64.00 \\times (1 - 0.5) = 32\\)",
+        "workingOut": "\\(r = 0.50 = 0.5\\)\n\\(a = S_{\\infty}(1-r) = 64.00 \\times (1 - 0.5) = 32\\)",
         "graphData": null
       }
     ]
@@ -3302,7 +3302,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Solve for \\(r\\) and then calculate \\(a\\).",
-        "workingOut": "\\(r = 0.10 = 0.1\\)\\n\\(a = S_{\\infty}(1-r) = 60.00 \\times (1 - 0.1) = 54\\)",
+        "workingOut": "\\(r = 0.10 = 0.1\\)\n\\(a = S_{\\infty}(1-r) = 60.00 \\times (1 - 0.1) = 54\\)",
         "graphData": null
       }
     ]
@@ -3340,7 +3340,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Solve for \\(r\\) and then calculate \\(a\\).",
-        "workingOut": "\\(r = 0.50 = 0.5\\)\\n\\(a = S_{\\infty}(1-r) = 50.00 \\times (1 - 0.5) = 25\\)",
+        "workingOut": "\\(r = 0.50 = 0.5\\)\n\\(a = S_{\\infty}(1-r) = 50.00 \\times (1 - 0.5) = 25\\)",
         "graphData": null
       }
     ]
@@ -3378,7 +3378,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Solve for \\(r\\) and then calculate \\(a\\).",
-        "workingOut": "\\(r = 0.10 = 0.1\\)\\n\\(a = S_{\\infty}(1-r) = 100.00 \\times (1 - 0.1) = 90\\)",
+        "workingOut": "\\(r = 0.10 = 0.1\\)\n\\(a = S_{\\infty}(1-r) = 100.00 \\times (1 - 0.1) = 90\\)",
         "graphData": null
       }
     ]
@@ -3416,7 +3416,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Solve for \\(r\\) and then calculate \\(a\\).",
-        "workingOut": "\\(r = 0.30 = 0.3\\)\\n\\(a = S_{\\infty}(1-r) = 60.00 \\times (1 - 0.3) = 42\\)",
+        "workingOut": "\\(r = 0.30 = 0.3\\)\n\\(a = S_{\\infty}(1-r) = 60.00 \\times (1 - 0.3) = 42\\)",
         "graphData": null
       }
     ]
@@ -4092,7 +4092,7 @@ export const Y12A_CH1H_QUESTIONS = [
       "\\(x > 0\\)",
       "\\(-1 < x < 1\\)",
       "\\(x \\in \\mathbb{R}\\)",
-      "\\(x \\neq n\\pi\\)"
+      "\\(x \neq n\\pi\\)"
     ],
     "a": 3,
     "hint": "Identify the common ratio of the geometric series, then solve the inequality \\(|r| < 1\\).",
@@ -4109,7 +4109,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Solve this inequality to find the range of valid \\(x\\) values.",
-        "workingOut": "\\(x \\neq n\\pi\\)",
+        "workingOut": "\\(x \neq n\\pi\\)",
         "graphData": null
       }
     ]
@@ -4122,7 +4122,7 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Find the set of real values of \\(x\\) for which the infinite geometric series:\n\\(3 + 3(\\sin(x)) + 3(\\sin(x))^2 + \\dots\\)\nconverges to a limiting sum.",
     "opts": [
-      "\\(x \\neq \\frac{\\pi}{2} + n\\pi\\)",
+      "\\(x \neq \\frac{\\pi}{2} + n\\pi\\)",
       "\\(-1 < x < 1\\)",
       "\\(x \\in \\mathbb{R}\\)",
       "\\(x > 0\\)"
@@ -4142,7 +4142,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Solve this inequality to find the range of valid \\(x\\) values.",
-        "workingOut": "\\(x \\neq \\frac{\\pi}{2} + n\\pi\\)",
+        "workingOut": "\\(x \neq \\frac{\\pi}{2} + n\\pi\\)",
         "graphData": null
       }
     ]
@@ -4287,7 +4287,7 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Find the set of real values of \\(x\\) for which the infinite geometric series:\n\\(1 + 1(\\cos(2x)) + 1(\\cos(2x))^2 + \\dots\\)\nconverges to a limiting sum.",
     "opts": [
-      "\\(x \\neq \\frac{n\\pi}{2}\\)",
+      "\\(x \neq \\frac{n\\pi}{2}\\)",
       "\\(x > 0\\)",
       "\\(-1 < x < 1\\)",
       "\\(x \\in \\mathbb{R}\\)"
@@ -4307,7 +4307,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Solve this inequality to find the range of valid \\(x\\) values.",
-        "workingOut": "\\(x \\neq \\frac{n\\pi}{2}\\)",
+        "workingOut": "\\(x \neq \\frac{n\\pi}{2}\\)",
         "graphData": null
       }
     ]
@@ -4320,7 +4320,7 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Find the set of real values of \\(x\\) for which the infinite geometric series:\n\\(6 + 6(\\sin\\left(\\frac{x}{2}\\right)) + 6(\\sin\\left(\\frac{x}{2}\\right))^2 + \\dots\\)\nconverges to a limiting sum.",
     "opts": [
-      "\\(x \\neq \\pi + 2n\\pi\\)",
+      "\\(x \neq \\pi + 2n\\pi\\)",
       "\\(x \\in \\mathbb{R}\\)",
       "\\(x > 0\\)",
       "\\(-1 < x < 1\\)"
@@ -4340,7 +4340,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Solve this inequality to find the range of valid \\(x\\) values.",
-        "workingOut": "\\(x \\neq \\pi + 2n\\pi\\)",
+        "workingOut": "\\(x \neq \\pi + 2n\\pi\\)",
         "graphData": null
       }
     ]
@@ -4552,7 +4552,7 @@ export const Y12A_CH1H_QUESTIONS = [
     "question": "Find the set of real values of \\(x\\) for which the infinite geometric series:\n\\(x^2 + x^2(x^2 - 1) + x^2(x^2 - 1)^2 + \\dots\\)\nconverges to a limiting sum.",
     "opts": [
       "\\(-1 < x < 1\\)",
-      "\\(-\\sqrt{2} < x < \\sqrt{2}, x \\neq 0\\)",
+      "\\(-\\sqrt{2} < x < \\sqrt{2}, x \neq 0\\)",
       "\\(x \\in \\mathbb{R}\\)",
       "\\(x > 0\\)"
     ],
@@ -4571,7 +4571,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Solve this inequality to find the range of valid \\(x\\) values.",
-        "workingOut": "\\(-\\sqrt{2} < x < \\sqrt{2}, x \\neq 0\\)",
+        "workingOut": "\\(-\\sqrt{2} < x < \\sqrt{2}, x \neq 0\\)",
         "graphData": null
       }
     ]
@@ -4586,7 +4586,7 @@ export const Y12A_CH1H_QUESTIONS = [
     "opts": [
       "\\(-1 < x < 1\\)",
       "\\(x > 0\\)",
-      "\\(x \\neq 3n\\pi\\)",
+      "\\(x \neq 3n\\pi\\)",
       "\\(x \\in \\mathbb{R}\\)"
     ],
     "a": 2,
@@ -4604,7 +4604,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Solve this inequality to find the range of valid \\(x\\) values.",
-        "workingOut": "\\(x \\neq 3n\\pi\\)",
+        "workingOut": "\\(x \neq 3n\\pi\\)",
         "graphData": null
       }
     ]
@@ -4719,7 +4719,7 @@ export const Y12A_CH1H_QUESTIONS = [
       "\\(-1 < x < 1\\)",
       "\\(x > 0\\)",
       "\\(x \\in \\mathbb{R}\\)",
-      "\\(x \\neq \\frac{\\pi}{2} + n\\pi\\)"
+      "\\(x \neq \\frac{\\pi}{2} + n\\pi\\)"
     ],
     "a": 3,
     "hint": "Identify the common ratio of the geometric series, then solve the inequality \\(|r| < 1\\).",
@@ -4736,7 +4736,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Solve this inequality to find the range of valid \\(x\\) values.",
-        "workingOut": "\\(x \\neq \\frac{\\pi}{2} + n\\pi\\)",
+        "workingOut": "\\(x \neq \\frac{\\pi}{2} + n\\pi\\)",
         "graphData": null
       }
     ]
@@ -4782,7 +4782,7 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Find the set of real values of \\(x\\) for which the infinite geometric series:\n\\(1 + 1(\\cos^2(x)) + 1(\\cos^2(x))^2 + \\dots\\)\nconverges to a limiting sum.",
     "opts": [
-      "\\(x \\neq n\\pi\\)",
+      "\\(x \neq n\\pi\\)",
       "\\(-1 < x < 1\\)",
       "\\(x \\in \\mathbb{R}\\)",
       "\\(x > 0\\)"
@@ -4802,7 +4802,7 @@ export const Y12A_CH1H_QUESTIONS = [
       },
       {
         "explanation": "Solve this inequality to find the range of valid \\(x\\) values.",
-        "workingOut": "\\(x \\neq n\\pi\\)",
+        "workingOut": "\\(x \neq n\\pi\\)",
         "graphData": null
       }
     ]
@@ -5739,7 +5739,7 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Regarding pharmacokinetics of periodic dosing:\n\nProve that a drug level in the blood stabilizes at a maximum value \\(M = \\frac{D}{1-e^{-kt}}\\) after infinite periodic doses \\(D\\) administered at time intervals \\(t\\) with elimination rate constant \\(k\\).",
     "opts": [],
-    "answer": "Step 1: Write down the general terms of the infinite geometric series.\\nStep 2: Identify the first term and the common ratio from the physical setup.\\nStep 3: Verify that the absolute value of the common ratio is less than 1 to guarantee convergence.\\nStep 4: Substitute the parameters into the limiting sum formula to derive the required expression.",
+    "answer": "Step 1: Write down the general terms of the infinite geometric series.\nStep 2: Identify the first term and the common ratio from the physical setup.\nStep 3: Verify that the absolute value of the common ratio is less than 1 to guarantee convergence.\nStep 4: Substitute the parameters into the limiting sum formula to derive the required expression.",
     "hint": "Identify the first term and the common ratio from the geometric progression of the physical model, then apply the sum formula.",
     "solutionSteps": [
       {
@@ -5767,7 +5767,7 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Regarding Nested fractal squares perimeter:\n\nShow that for nested squares where each subsequent square is formed by connecting the midpoints of the previous square, the sum of all perimeters forms a geometric progression. Prove its limiting sum exists and find it in terms of the initial square side length \\(S\\).",
     "opts": [],
-    "answer": "Step 1: Write down the general terms of the infinite geometric series.\\nStep 2: Identify the first term and the common ratio from the physical setup.\\nStep 3: Verify that the absolute value of the common ratio is less than 1 to guarantee convergence.\\nStep 4: Substitute the parameters into the limiting sum formula to derive the required expression.",
+    "answer": "Step 1: Write down the general terms of the infinite geometric series.\nStep 2: Identify the first term and the common ratio from the physical setup.\nStep 3: Verify that the absolute value of the common ratio is less than 1 to guarantee convergence.\nStep 4: Substitute the parameters into the limiting sum formula to derive the required expression.",
     "hint": "Identify the first term and the common ratio from the geometric progression of the physical model, then apply the sum formula.",
     "solutionSteps": [
       {
@@ -5795,7 +5795,7 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Regarding The Present Value of a Perpetuity:\n\nShow that the present value of a perpetuity paying a fixed amount \\(C\\) at the end of each year with annual interest rate \\(i\\) is given by \\(PV = \\frac{C}{i}\\). Explain this using the limiting sum of a geometric series.",
     "opts": [],
-    "answer": "Step 1: Write down the general terms of the infinite geometric series.\\nStep 2: Identify the first term and the common ratio from the physical setup.\\nStep 3: Verify that the absolute value of the common ratio is less than 1 to guarantee convergence.\\nStep 4: Substitute the parameters into the limiting sum formula to derive the required expression.",
+    "answer": "Step 1: Write down the general terms of the infinite geometric series.\nStep 2: Identify the first term and the common ratio from the physical setup.\nStep 3: Verify that the absolute value of the common ratio is less than 1 to guarantee convergence.\nStep 4: Substitute the parameters into the limiting sum formula to derive the required expression.",
     "hint": "Identify the first term and the common ratio from the geometric progression of the physical model, then apply the sum formula.",
     "solutionSteps": [
       {
@@ -5823,7 +5823,7 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Regarding Oscillatory system settling bounds:\n\nFor a pendulum with amplitude decreasing by 10% each swing, show that the total angle traversed before coming to a stop is exactly 19 times the first swing amplitude \\(\\theta_0\\), assuming it swings back and forth.",
     "opts": [],
-    "answer": "Step 1: Write down the general terms of the infinite geometric series.\\nStep 2: Identify the first term and the common ratio from the physical setup.\\nStep 3: Verify that the absolute value of the common ratio is less than 1 to guarantee convergence.\\nStep 4: Substitute the parameters into the limiting sum formula to derive the required expression.",
+    "answer": "Step 1: Write down the general terms of the infinite geometric series.\nStep 2: Identify the first term and the common ratio from the physical setup.\nStep 3: Verify that the absolute value of the common ratio is less than 1 to guarantee convergence.\nStep 4: Substitute the parameters into the limiting sum formula to derive the required expression.",
     "hint": "Identify the first term and the common ratio from the geometric progression of the physical model, then apply the sum formula.",
     "solutionSteps": [
       {
@@ -5851,7 +5851,7 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Regarding Spirals inside equilateral triangles:\n\nProve that the sum of the altitudes of an infinite set of nested equilateral triangles, where each triangle is inscribed inside the previous by joining the midpoints, converges to twice the altitude of the outermost triangle.",
     "opts": [],
-    "answer": "Step 1: Write down the general terms of the infinite geometric series.\\nStep 2: Identify the first term and the common ratio from the physical setup.\\nStep 3: Verify that the absolute value of the common ratio is less than 1 to guarantee convergence.\\nStep 4: Substitute the parameters into the limiting sum formula to derive the required expression.",
+    "answer": "Step 1: Write down the general terms of the infinite geometric series.\nStep 2: Identify the first term and the common ratio from the physical setup.\nStep 3: Verify that the absolute value of the common ratio is less than 1 to guarantee convergence.\nStep 4: Substitute the parameters into the limiting sum formula to derive the required expression.",
     "hint": "Identify the first term and the common ratio from the geometric progression of the physical model, then apply the sum formula.",
     "solutionSteps": [
       {
@@ -5879,7 +5879,7 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Regarding Fractional step search algorithm limits:\n\nIn a search algorithm, the step size is halved at each iteration. Prove that the maximum total distance the algorithm can move from its starting point in one direction is twice the initial step size \\(L_0\\).",
     "opts": [],
-    "answer": "Step 1: Write down the general terms of the infinite geometric series.\\nStep 2: Identify the first term and the common ratio from the physical setup.\\nStep 3: Verify that the absolute value of the common ratio is less than 1 to guarantee convergence.\\nStep 4: Substitute the parameters into the limiting sum formula to derive the required expression.",
+    "answer": "Step 1: Write down the general terms of the infinite geometric series.\nStep 2: Identify the first term and the common ratio from the physical setup.\nStep 3: Verify that the absolute value of the common ratio is less than 1 to guarantee convergence.\nStep 4: Substitute the parameters into the limiting sum formula to derive the required expression.",
     "hint": "Identify the first term and the common ratio from the geometric progression of the physical model, then apply the sum formula.",
     "solutionSteps": [
       {
@@ -5907,7 +5907,7 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Regarding Buildup of soil salt concentration:\n\nShow that if an irrigation system adds \\(S\\) units of salt to the soil annually, and 15% of the salt is washed away by rainfall each year, the total amount of salt in the soil will eventually stabilize. Find the limiting value.",
     "opts": [],
-    "answer": "Step 1: Write down the general terms of the infinite geometric series.\\nStep 2: Identify the first term and the common ratio from the physical setup.\\nStep 3: Verify that the absolute value of the common ratio is less than 1 to guarantee convergence.\\nStep 4: Substitute the parameters into the limiting sum formula to derive the required expression.",
+    "answer": "Step 1: Write down the general terms of the infinite geometric series.\nStep 2: Identify the first term and the common ratio from the physical setup.\nStep 3: Verify that the absolute value of the common ratio is less than 1 to guarantee convergence.\nStep 4: Substitute the parameters into the limiting sum formula to derive the required expression.",
     "hint": "Identify the first term and the common ratio from the geometric progression of the physical model, then apply the sum formula.",
     "solutionSteps": [
       {
@@ -5935,7 +5935,7 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Regarding Repeated chemical extraction yield:\n\nIn a chemical extraction process, the first run yields 75% of the compound. Each subsequent run yields 75% of the remaining compound. Prove that the total amount extracted after infinite runs is 100% of the initial compound.",
     "opts": [],
-    "answer": "Step 1: Write down the general terms of the infinite geometric series.\\nStep 2: Identify the first term and the common ratio from the physical setup.\\nStep 3: Verify that the absolute value of the common ratio is less than 1 to guarantee convergence.\\nStep 4: Substitute the parameters into the limiting sum formula to derive the required expression.",
+    "answer": "Step 1: Write down the general terms of the infinite geometric series.\nStep 2: Identify the first term and the common ratio from the physical setup.\nStep 3: Verify that the absolute value of the common ratio is less than 1 to guarantee convergence.\nStep 4: Substitute the parameters into the limiting sum formula to derive the required expression.",
     "hint": "Identify the first term and the common ratio from the geometric progression of the physical model, then apply the sum formula.",
     "solutionSteps": [
       {
@@ -5963,7 +5963,7 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Regarding Energy loss in bouncing hydraulic cylinder:\n\nProve that a hydraulic piston losing 20% of its kinetic energy with each rebound will travel a total vertical distance proportional to the initial drop height \\(H\\). Find the constant of proportionality.",
     "opts": [],
-    "answer": "Step 1: Write down the general terms of the infinite geometric series.\\nStep 2: Identify the first term and the common ratio from the physical setup.\\nStep 3: Verify that the absolute value of the common ratio is less than 1 to guarantee convergence.\\nStep 4: Substitute the parameters into the limiting sum formula to derive the required expression.",
+    "answer": "Step 1: Write down the general terms of the infinite geometric series.\nStep 2: Identify the first term and the common ratio from the physical setup.\nStep 3: Verify that the absolute value of the common ratio is less than 1 to guarantee convergence.\nStep 4: Substitute the parameters into the limiting sum formula to derive the required expression.",
     "hint": "Identify the first term and the common ratio from the geometric progression of the physical model, then apply the sum formula.",
     "solutionSteps": [
       {
@@ -5991,7 +5991,7 @@ export const Y12A_CH1H_QUESTIONS = [
     "t": "The limiting sum of a geometric series",
     "question": "Regarding Damped harmonic oscillator total distance:\n\nShow that a damped harmonic oscillator with initial amplitude \\(A_0\\) and damping ratio \\(e^{-\\alpha}\\) per cycle traverses a total distance that converges to a finite value. Find the limiting sum in terms of \\(A_0\\) and \\(\\alpha\\).",
     "opts": [],
-    "answer": "Step 1: Write down the general terms of the infinite geometric series.\\nStep 2: Identify the first term and the common ratio from the physical setup.\\nStep 3: Verify that the absolute value of the common ratio is less than 1 to guarantee convergence.\\nStep 4: Substitute the parameters into the limiting sum formula to derive the required expression.",
+    "answer": "Step 1: Write down the general terms of the infinite geometric series.\nStep 2: Identify the first term and the common ratio from the physical setup.\nStep 3: Verify that the absolute value of the common ratio is less than 1 to guarantee convergence.\nStep 4: Substitute the parameters into the limiting sum formula to derive the required expression.",
     "hint": "Identify the first term and the common ratio from the geometric progression of the physical model, then apply the sum formula.",
     "solutionSteps": [
       {

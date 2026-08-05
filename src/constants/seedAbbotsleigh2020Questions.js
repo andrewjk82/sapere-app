@@ -1724,9 +1724,9 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 180,
     "question": "Show that the acceleration remains positive for $t > 1$ given $x = t^2 - 4\\ln_e(t-1) + 5$.",
-    "answer": "\\(a = 2 + \\dfrac{4}{(t-1)^2}\\).\nSince \\((t-1)^2 > 0\\) for all \\(t \\neq 1\\), we have \\(a > 2 > 0\\) for all \\(t > 1\\).",
+    "answer": "\\(a = 2 + \\dfrac{4}{(t-1)^2}\\).\nSince \\((t-1)^2 > 0\\) for all \\(t \neq 1\\), we have \\(a > 2 > 0\\) for all \\(t > 1\\).",
     "hint": "Write a full structured solution for the teacher to mark.",
-    "solution": "\\(a = 2 + \\dfrac{4}{(t-1)^2}\\).\nSince \\((t-1)^2 > 0\\) for all \\(t \\neq 1\\), we have \\(a > 2 > 0\\) for all \\(t > 1\\).",
+    "solution": "\\(a = 2 + \\dfrac{4}{(t-1)^2}\\).\nSince \\((t-1)^2 > 0\\) for all \\(t \neq 1\\), we have \\(a > 2 > 0\\) for all \\(t > 1\\).",
     "solutionSteps": [
       {
         "explanation": "Differentiate \\(v = 2t - \\frac{4}{t-1} = 2t - 4(t-1)^{-1}\\) with respect to \\(t\\). Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or swapping upper and lower limits, so re-check those before continuing.",
@@ -1848,7 +1848,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "Set $d^2y/dx^2 = 0$. Since $e^{-x^2} \\neq 0$, you need $x^2 - \\frac{1}{2} = 0$.",
+    "hint": "Set $d^2y/dx^2 = 0$. Since $e^{-x^2} \neq 0$, you need $x^2 - \\frac{1}{2} = 0$.",
     "solution": "The correct answer is \\(\\left(\\pm\\dfrac{1}{\\sqrt{2}}, e^{-1/2}\\right)\\).",
     "solutionSteps": [
       {

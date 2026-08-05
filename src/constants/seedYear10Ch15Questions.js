@@ -654,7 +654,7 @@ export const Y10_CH15_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of probability: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(\\begin{aligned} \\text{Case 1 (5 first)}: &\\quad (5, x) \\; \\text{where} \\; x \\ne 5 \\implies 5 \\; \\text{outcomes} \\\\ \\text{Case 2 (5 second)}: &\\quad (y, 5) \\; \\text{where} \\; y \\ne 5 \\implies 5 \\; \\text{outcomes} \\end{aligned}\\)",
+        "workingOut": "\\(\\begin{aligned} \\text{Case 1 (5 first)}: &\\quad (5, x) \\; \\text{where} \\; x \ne 5 \\implies 5 \\; \\text{outcomes} \\\\ \\text{Case 2 (5 second)}: &\\quad (y, 5) \\; \\text{where} \\; y \ne 5 \\implies 5 \\; \\text{outcomes} \\end{aligned}\\)",
         "graphData": null
       },
       {

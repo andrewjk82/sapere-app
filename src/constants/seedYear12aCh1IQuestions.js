@@ -540,7 +540,7 @@ export const Y12A_CH1I_QUESTIONS = [
     "t": "Recurring decimals and geometric series",
     "question": "Express the repeating decimal \\(0.\\dot{9}\\) as an infinite geometric progression, and hence show that it equals 1.",
     "opts": [],
-    "answer": "Expressing \\(0.\\dot{9}\\) as a geometric progression:\\n\\(0.\\dot{9} = \\frac{9}{10} + \\frac{9}{100} + \\dots\\)\\nThis is an infinite geometric progression with first term \\(a = \\frac{9}{10}\\) and common ratio \\(r = \\frac{1}{10}\\).\\nSince \\(|r| < 1\\), the limiting sum is:\\n\\(S_{\\infty} = \\frac{\\frac{9}{10}}{1 - \\frac{1}{10}} = \\frac{\\frac{9}{10}}{\\frac{9}{10}} = 1\\).\\nThus, \\(0.\\dot{9} = 1\\).",
+    "answer": "Expressing \\(0.\\dot{9}\\) as a geometric progression:\n\\(0.\\dot{9} = \\frac{9}{10} + \\frac{9}{100} + \\dots\\)\nThis is an infinite geometric progression with first term \\(a = \\frac{9}{10}\\) and common ratio \\(r = \\frac{1}{10}\\).\nSince \\(|r| < 1\\), the limiting sum is:\n\\(S_{\\infty} = \\frac{\\frac{9}{10}}{1 - \\frac{1}{10}} = \\frac{\\frac{9}{10}}{\\frac{9}{10}} = 1\\).\nThus, \\(0.\\dot{9} = 1\\).",
     "hint": "Represent the decimal as a GP and evaluate its limiting sum.",
     "solutionSteps": [
       {
@@ -568,7 +568,7 @@ export const Y12A_CH1I_QUESTIONS = [
     "t": "Recurring decimals and geometric series",
     "question": "Express the repeating decimal \\(3.5\\dot{9}\\) as \\(3.5\\) plus an infinite geometric progression, and hence show that it equals \\(3.6\\).",
     "opts": [],
-    "answer": "Expressing \\(3.5\\dot{9}\\) as \\(3.5\\) plus a GP:\\n\\(3.5\\dot{9} = 3.5 + 0.0\\dot{9} = 3.5 + (0.09 + 0.009 + \\dots)\\)\\nThe infinite geometric progression has first term \\(a = \\frac{9}{100}\\) and common ratio \\(r = \\frac{1}{10}\\).\\nIts limiting sum is:\\n\\(S_{\\infty} = \\frac{\\frac{9}{100}}{1 - \\frac{1}{10}} = \\frac{\\frac{9}{100}}{\\frac{9}{10}} = \\frac{1}{10} = 0.1\\).\\nAdding this to \\(3.5\\):\\n\\(3.5 + 0.1 = 3.6\\).\\nThus, \\(3.5\\dot{9} = 3.6\\).",
+    "answer": "Expressing \\(3.5\\dot{9}\\) as \\(3.5\\) plus a GP:\n\\(3.5\\dot{9} = 3.5 + 0.0\\dot{9} = 3.5 + (0.09 + 0.009 + \\dots)\\)\nThe infinite geometric progression has first term \\(a = \\frac{9}{100}\\) and common ratio \\(r = \\frac{1}{10}\\).\nIts limiting sum is:\n\\(S_{\\infty} = \\frac{\\frac{9}{100}}{1 - \\frac{1}{10}} = \\frac{\\frac{9}{100}}{\\frac{9}{10}} = \\frac{1}{10} = 0.1\\).\nAdding this to \\(3.5\\):\n\\(3.5 + 0.1 = 3.6\\).\nThus, \\(3.5\\dot{9} = 3.6\\).",
     "hint": "Write the expression as the sum of a terminating decimal and a repeating GP, then find the limiting sum.",
     "solutionSteps": [
       {
@@ -865,7 +865,7 @@ export const Y12A_CH1I_QUESTIONS = [
     "t": "Recurring decimals and geometric series",
     "question": "We proved previously that \\(\\sqrt{2}\\) is irrational. Why can we now conclude that when \\(\\sqrt{2}\\) is written as a decimal, it is not a recurring decimal?",
     "opts": [],
-    "answer": "Every terminating or recurring decimal can be represented as a rational number (i.e., the ratio of two integers) using the formula for the limiting sum of a geometric series.\\nSince \\(\\sqrt{2}\\) is irrational, it cannot be written as a rational number.\\nTherefore, its decimal expansion cannot be terminating or recurring; it must be non-terminating and non-recurring.",
+    "answer": "Every terminating or recurring decimal can be represented as a rational number (i.e., the ratio of two integers) using the formula for the limiting sum of a geometric series.\nSince \\(\\sqrt{2}\\) is irrational, it cannot be written as a rational number.\nTherefore, its decimal expansion cannot be terminating or recurring; it must be non-terminating and non-recurring.",
     "hint": "Consider the relationship between recurring decimals and rational numbers.",
     "solutionSteps": [
       {
@@ -4214,17 +4214,17 @@ export const Y12A_CH1I_QUESTIONS = [
     "t": "Recurring decimals and geometric series",
     "question": "Show that the product of any recurring decimal and a rational number is always a rational number.",
     "opts": [],
-    "answer": "Let \\(d\\) be a recurring decimal. By definition, \\(d\\) can be written as the sum of a terminating decimal and an infinite geometric series.\\nSince the common ratio of the series is a power of 0.1 (which is rational) and the first term is rational, the limiting sum \\(S_{\\infty} = \\frac{a}{1-r}\\) is rational.\\nThus, \\(d\\) is a rational number, say \\(d = \\frac{p}{q}\\) for \\(p, q \\in \\mathbb{Z}\\).\\nAny rational number \\(x\\) can be written as \\(x = \\frac{m}{n}\\) for \\(m, n \\in \\mathbb{Z}\\).\\nThe product is \\(d \\times x = \\frac{p \\cdot m}{q \\cdot n}\\).\\nSince \\(p \\cdot m\\) and \\(q \\cdot n\\) are integers, the product is rational.",
+    "answer": "Let \\(d\\) be a recurring decimal. By definition, \\(d\\) can be written as the sum of a terminating decimal and an infinite geometric series.\nSince the common ratio of the series is a power of 0.1 (which is rational) and the first term is rational, the limiting sum \\(S_{\\infty} = \\frac{a}{1-r}\\) is rational.\nThus, \\(d\\) is a rational number, say \\(d = \\frac{p}{q}\\) for \\(p, q \\in \\mathbb{Z}\\).\nAny rational number \\(x\\) can be written as \\(x = \\frac{m}{n}\\) for \\(m, n \\in \\mathbb{Z}\\).\nThe product is \\(d \\times x = \\frac{p \\cdot m}{q \\cdot n}\\).\nSince \\(p \\cdot m\\) and \\(q \\cdot n\\) are integers, the product is rational.",
     "hint": "Recall the definition of a rational number and express the recurring decimal as a ratio of integers.",
     "solutionSteps": [
       {
         "explanation": "Define the recurring decimal as a fraction using GP limiting sums.",
-        "workingOut": "\\(d = \\frac{p}{q}\\text{ where }p, q \\in \\mathbb{Z}, q \\neq 0\\)",
+        "workingOut": "\\(d = \\frac{p}{q}\\text{ where }p, q \\in \\mathbb{Z}, q \neq 0\\)",
         "graphData": null
       },
       {
         "explanation": "Define the other rational number.",
-        "workingOut": "\\(x = \\frac{m}{n}\\text{ where }m, n \\in \\mathbb{Z}, n \\neq 0\\)",
+        "workingOut": "\\(x = \\frac{m}{n}\\text{ where }m, n \\in \\mathbb{Z}, n \neq 0\\)",
         "graphData": null
       },
       {
@@ -4242,7 +4242,7 @@ export const Y12A_CH1I_QUESTIONS = [
     "t": "Recurring decimals and geometric series",
     "question": "Prove that the repeating decimal \\(0.\\dot{a}\\dot{b}\\) is equal to \\(\\frac{10a + b}{99}\\) where \\(a\\) and \\(b\\) are single-digit integers.",
     "opts": [],
-    "answer": "Let \\(x = 0.\\dot{a}\\dot{b}\\).\\nThen \\(x = \\frac{10a + b}{100} + \\frac{10a + b}{10000} + \\dots\\)\\nThis is an infinite geometric progression with first term \\(T_1 = \\frac{10a + b}{100}\\) and common ratio \\(r = \\frac{1}{100}\\).\\nSince \\(|r| < 1\\), the limiting sum exists and is:\\n\\(S_{\\infty} = \\frac{\\frac{10a+b}{100}}{1 - \\frac{1}{100}} = \\frac{\\frac{10a+b}{100}}{\\frac{99}{100}} = \\frac{10a + b}{99}\\).\\nTherefore, \\(0.\\dot{a}\\dot{b} = \\frac{10a + b}{99}\\).",
+    "answer": "Let \\(x = 0.\\dot{a}\\dot{b}\\).\nThen \\(x = \\frac{10a + b}{100} + \\frac{10a + b}{10000} + \\dots\\)\nThis is an infinite geometric progression with first term \\(T_1 = \\frac{10a + b}{100}\\) and common ratio \\(r = \\frac{1}{100}\\).\nSince \\(|r| < 1\\), the limiting sum exists and is:\n\\(S_{\\infty} = \\frac{\\frac{10a+b}{100}}{1 - \\frac{1}{100}} = \\frac{\\frac{10a+b}{100}}{\\frac{99}{100}} = \\frac{10a + b}{99}\\).\nTherefore, \\(0.\\dot{a}\\dot{b} = \\frac{10a + b}{99}\\).",
     "hint": "Write the decimal expansion explicitly and identify the geometric series components.",
     "solutionSteps": [
       {
@@ -4270,7 +4270,7 @@ export const Y12A_CH1I_QUESTIONS = [
     "t": "Recurring decimals and geometric series",
     "question": "Show that if a geometric series converges to a value \\(S\\), and the terms of the series are repeating decimals, the value \\(S\\) must be rational.",
     "opts": [],
-    "answer": "Every repeating decimal term \\(T_n\\) is a rational number because it can be written in the form \\(\\frac{p}{q}\\).\\nSince the series is geometric, the common ratio \\(r = \\frac{T_2}{T_1}\\) is the quotient of two rational numbers, which is also rational.\\nSimilarly, the first term \\(a = T_1\\) is rational.\\nIf the series converges, its sum is \\(S_{\\infty} = \\frac{a}{1-r}\\).\\nSince \\(a\\) and \\(r\\) are rational, \\(1-r\\) is rational, and the quotient of two rational numbers is rational.\\nHence, \\(S\\) must be rational.",
+    "answer": "Every repeating decimal term \\(T_n\\) is a rational number because it can be written in the form \\(\\frac{p}{q}\\).\nSince the series is geometric, the common ratio \\(r = \\frac{T_2}{T_1}\\) is the quotient of two rational numbers, which is also rational.\nSimilarly, the first term \\(a = T_1\\) is rational.\nIf the series converges, its sum is \\(S_{\\infty} = \\frac{a}{1-r}\\).\nSince \\(a\\) and \\(r\\) are rational, \\(1-r\\) is rational, and the quotient of two rational numbers is rational.\nHence, \\(S\\) must be rational.",
     "hint": "Use the properties of rational numbers under basic arithmetic operations.",
     "solutionSteps": [
       {

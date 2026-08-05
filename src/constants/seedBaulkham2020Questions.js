@@ -4046,7 +4046,7 @@ export const BAULKHAM_2020_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Multiply both sides by \\(k\\) (assuming \\(k\\neq 0\\)): \\(4e^{2k}=16\\Rightarrow e^{2k}=4\\). Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or swapping upper and lower limits, so re-check those before continuing.",
+        "explanation": "Multiply both sides by \\(k\\) (assuming \\(k\neq 0\\)): \\(4e^{2k}=16\\Rightarrow e^{2k}=4\\). Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or swapping upper and lower limits, so re-check those before continuing.",
         "workingOut": "\\(e^{2k}=4\\)",
         "graphData": null
       }

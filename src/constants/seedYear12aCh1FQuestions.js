@@ -4,7 +4,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Let \\(S_{7} = 2 + 5 + 8 + 11 + 14 + 17 + 20\\).\\nBy reversing the sum and adding in columns, evaluate \\(S_{7}\\).",
+    "question": "Let \\(S_{7} = 2 + 5 + 8 + 11 + 14 + 17 + 20\\).\nBy reversing the sum and adding in columns, evaluate \\(S_{7}\\).",
     "options": [
       {
         "text": "\\(87\\)",
@@ -30,7 +30,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write the sum in forward and reverse order.",
-        "workingOut": "\\(S_{7} = 2 + 5 + 8 + 11 + 14 + 17 + 20\\)\\n\\(S_{7} = 20 + 17 + 14 + 11 + 8 + 5 + 2\\)",
+        "workingOut": "\\(S_{7} = 2 + 5 + 8 + 11 + 14 + 17 + 20\\)\n\\(S_{7} = 20 + 17 + 14 + 11 + 8 + 5 + 2\\)",
         "graphData": null
       },
       {
@@ -58,7 +58,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Let \\(S_{8} = 3 + 7 + 11 + 15 + 19 + 23 + 27 + 31\\).\\nBy reversing the sum and adding in columns, evaluate \\(S_{8}\\).",
+    "question": "Let \\(S_{8} = 3 + 7 + 11 + 15 + 19 + 23 + 27 + 31\\).\nBy reversing the sum and adding in columns, evaluate \\(S_{8}\\).",
     "options": [
       {
         "text": "\\(140\\)",
@@ -84,7 +84,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write the sum in forward and reverse order.",
-        "workingOut": "\\(S_{8} = 3 + 7 + 11 + 15 + 19 + 23 + 27 + 31\\)\\n\\(S_{8} = 31 + 27 + 23 + 19 + 15 + 11 + 7 + 3\\)",
+        "workingOut": "\\(S_{8} = 3 + 7 + 11 + 15 + 19 + 23 + 27 + 31\\)\n\\(S_{8} = 31 + 27 + 23 + 19 + 15 + 11 + 7 + 3\\)",
         "graphData": null
       },
       {
@@ -112,7 +112,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Let \\(S_{6} = 4 + 9 + 14 + 19 + 24 + 29\\).\\nBy reversing the sum and adding in columns, evaluate \\(S_{6}\\).",
+    "question": "Let \\(S_{6} = 4 + 9 + 14 + 19 + 24 + 29\\).\nBy reversing the sum and adding in columns, evaluate \\(S_{6}\\).",
     "options": [
       {
         "text": "\\(109\\)",
@@ -138,7 +138,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write the sum in forward and reverse order.",
-        "workingOut": "\\(S_{6} = 4 + 9 + 14 + 19 + 24 + 29\\)\\n\\(S_{6} = 29 + 24 + 19 + 14 + 9 + 4\\)",
+        "workingOut": "\\(S_{6} = 4 + 9 + 14 + 19 + 24 + 29\\)\n\\(S_{6} = 29 + 24 + 19 + 14 + 9 + 4\\)",
         "graphData": null
       },
       {
@@ -166,7 +166,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Let \\(S_{7} = 5 + 11 + 17 + 23 + 29 + 35 + 41\\).\\nBy reversing the sum and adding in columns, evaluate \\(S_{7}\\).",
+    "question": "Let \\(S_{7} = 5 + 11 + 17 + 23 + 29 + 35 + 41\\).\nBy reversing the sum and adding in columns, evaluate \\(S_{7}\\).",
     "options": [
       {
         "text": "\\(167\\)",
@@ -192,7 +192,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write the sum in forward and reverse order.",
-        "workingOut": "\\(S_{7} = 5 + 11 + 17 + 23 + 29 + 35 + 41\\)\\n\\(S_{7} = 41 + 35 + 29 + 23 + 17 + 11 + 5\\)",
+        "workingOut": "\\(S_{7} = 5 + 11 + 17 + 23 + 29 + 35 + 41\\)\n\\(S_{7} = 41 + 35 + 29 + 23 + 17 + 11 + 5\\)",
         "graphData": null
       },
       {
@@ -220,7 +220,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Let \\(S_{8} = 6 + 13 + 20 + 27 + 34 + 41 + 48 + 55\\).\\nBy reversing the sum and adding in columns, evaluate \\(S_{8}\\).",
+    "question": "Let \\(S_{8} = 6 + 13 + 20 + 27 + 34 + 41 + 48 + 55\\).\nBy reversing the sum and adding in columns, evaluate \\(S_{8}\\).",
     "options": [
       {
         "text": "\\(244\\)",
@@ -246,7 +246,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write the sum in forward and reverse order.",
-        "workingOut": "\\(S_{8} = 6 + 13 + 20 + 27 + 34 + 41 + 48 + 55\\)\\n\\(S_{8} = 55 + 48 + 41 + 34 + 27 + 20 + 13 + 6\\)",
+        "workingOut": "\\(S_{8} = 6 + 13 + 20 + 27 + 34 + 41 + 48 + 55\\)\n\\(S_{8} = 55 + 48 + 41 + 34 + 27 + 20 + 13 + 6\\)",
         "graphData": null
       },
       {
@@ -274,7 +274,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Let \\(S_{6} = 7 + 15 + 23 + 31 + 39 + 47\\).\\nBy reversing the sum and adding in columns, evaluate \\(S_{6}\\).",
+    "question": "Let \\(S_{6} = 7 + 15 + 23 + 31 + 39 + 47\\).\nBy reversing the sum and adding in columns, evaluate \\(S_{6}\\).",
     "options": [
       {
         "text": "\\(162\\)",
@@ -300,7 +300,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write the sum in forward and reverse order.",
-        "workingOut": "\\(S_{6} = 7 + 15 + 23 + 31 + 39 + 47\\)\\n\\(S_{6} = 47 + 39 + 31 + 23 + 15 + 7\\)",
+        "workingOut": "\\(S_{6} = 7 + 15 + 23 + 31 + 39 + 47\\)\n\\(S_{6} = 47 + 39 + 31 + 23 + 15 + 7\\)",
         "graphData": null
       },
       {
@@ -328,7 +328,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Let \\(S_{7} = 8 + 17 + 26 + 35 + 44 + 53 + 62\\).\\nBy reversing the sum and adding in columns, evaluate \\(S_{7}\\).",
+    "question": "Let \\(S_{7} = 8 + 17 + 26 + 35 + 44 + 53 + 62\\).\nBy reversing the sum and adding in columns, evaluate \\(S_{7}\\).",
     "options": [
       {
         "text": "\\(254\\)",
@@ -354,7 +354,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write the sum in forward and reverse order.",
-        "workingOut": "\\(S_{7} = 8 + 17 + 26 + 35 + 44 + 53 + 62\\)\\n\\(S_{7} = 62 + 53 + 44 + 35 + 26 + 17 + 8\\)",
+        "workingOut": "\\(S_{7} = 8 + 17 + 26 + 35 + 44 + 53 + 62\\)\n\\(S_{7} = 62 + 53 + 44 + 35 + 26 + 17 + 8\\)",
         "graphData": null
       },
       {
@@ -382,7 +382,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Let \\(S_{8} = 9 + 19 + 29 + 39 + 49 + 59 + 69 + 79\\).\\nBy reversing the sum and adding in columns, evaluate \\(S_{8}\\).",
+    "question": "Let \\(S_{8} = 9 + 19 + 29 + 39 + 49 + 59 + 69 + 79\\).\nBy reversing the sum and adding in columns, evaluate \\(S_{8}\\).",
     "options": [
       {
         "text": "\\(352\\)",
@@ -408,7 +408,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write the sum in forward and reverse order.",
-        "workingOut": "\\(S_{8} = 9 + 19 + 29 + 39 + 49 + 59 + 69 + 79\\)\\n\\(S_{8} = 79 + 69 + 59 + 49 + 39 + 29 + 19 + 9\\)",
+        "workingOut": "\\(S_{8} = 9 + 19 + 29 + 39 + 49 + 59 + 69 + 79\\)\n\\(S_{8} = 79 + 69 + 59 + 49 + 39 + 29 + 19 + 9\\)",
         "graphData": null
       },
       {
@@ -436,7 +436,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Let \\(S_{6} = 10 + 21 + 32 + 43 + 54 + 65\\).\\nBy reversing the sum and adding in columns, evaluate \\(S_{6}\\).",
+    "question": "Let \\(S_{6} = 10 + 21 + 32 + 43 + 54 + 65\\).\nBy reversing the sum and adding in columns, evaluate \\(S_{6}\\).",
     "options": [
       {
         "text": "\\(225\\)",
@@ -462,7 +462,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write the sum in forward and reverse order.",
-        "workingOut": "\\(S_{6} = 10 + 21 + 32 + 43 + 54 + 65\\)\\n\\(S_{6} = 65 + 54 + 43 + 32 + 21 + 10\\)",
+        "workingOut": "\\(S_{6} = 10 + 21 + 32 + 43 + 54 + 65\\)\n\\(S_{6} = 65 + 54 + 43 + 32 + 21 + 10\\)",
         "graphData": null
       },
       {
@@ -490,7 +490,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Let \\(S_{7} = 11 + 23 + 35 + 47 + 59 + 71 + 83\\).\\nBy reversing the sum and adding in columns, evaluate \\(S_{7}\\).",
+    "question": "Let \\(S_{7} = 11 + 23 + 35 + 47 + 59 + 71 + 83\\).\nBy reversing the sum and adding in columns, evaluate \\(S_{7}\\).",
     "options": [
       {
         "text": "\\(339\\)",
@@ -516,7 +516,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write the sum in forward and reverse order.",
-        "workingOut": "\\(S_{7} = 11 + 23 + 35 + 47 + 59 + 71 + 83\\)\\n\\(S_{7} = 83 + 71 + 59 + 47 + 35 + 23 + 11\\)",
+        "workingOut": "\\(S_{7} = 11 + 23 + 35 + 47 + 59 + 71 + 83\\)\n\\(S_{7} = 83 + 71 + 59 + 47 + 35 + 23 + 11\\)",
         "graphData": null
       },
       {
@@ -544,7 +544,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "State how many terms the following sum has, then evaluate it:\\n\\(1 + 2 + 3 + \\dots + 120\\).",
+    "question": "State how many terms the following sum has, then evaluate it:\n\\(1 + 2 + 3 + \\dots + 120\\).",
     "options": [
       {
         "text": "\\(120\\) terms, sum \\(= 7261\\)",
@@ -593,7 +593,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "State how many terms the following sum has, then evaluate it:\\n\\(1 + 3 + 5 + \\dots + 149\\).",
+    "question": "State how many terms the following sum has, then evaluate it:\n\\(1 + 3 + 5 + \\dots + 149\\).",
     "options": [
       {
         "text": "\\(76\\) terms, sum \\(= 5774\\)",
@@ -642,7 +642,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "State how many terms the following sum has, then evaluate it:\\n\\(2 + 4 + 6 + \\dots + 160\\).",
+    "question": "State how many terms the following sum has, then evaluate it:\n\\(2 + 4 + 6 + \\dots + 160\\).",
     "options": [
       {
         "text": "\\(80\\) terms, sum \\(= 6480\\)",
@@ -691,7 +691,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "State how many terms the following sum has, then evaluate it:\\n\\(3 + 6 + 9 + \\dots + 360\\).",
+    "question": "State how many terms the following sum has, then evaluate it:\n\\(3 + 6 + 9 + \\dots + 360\\).",
     "options": [
       {
         "text": "\\(120\\) terms, sum \\(= 21783\\)",
@@ -740,7 +740,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "State how many terms the following sum has, then evaluate it:\\n\\(201 + 203 + 205 + \\dots + 299\\).",
+    "question": "State how many terms the following sum has, then evaluate it:\n\\(201 + 203 + 205 + \\dots + 299\\).",
     "options": [
       {
         "text": "\\(50\\) terms, sum \\(= 12500\\)",
@@ -789,7 +789,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "State how many terms the following sum has, then evaluate it:\\n\\(1001 + 1002 + 1003 + \\dots + 4000\\).",
+    "question": "State how many terms the following sum has, then evaluate it:\n\\(1001 + 1002 + 1003 + \\dots + 4000\\).",
     "options": [
       {
         "text": "\\(3000\\) terms, sum \\(= 7502501\\)",
@@ -838,7 +838,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "State how many terms the following sum has, then evaluate it:\\n\\(2 + 4 + 6 + \\dots + 240\\).",
+    "question": "State how many terms the following sum has, then evaluate it:\n\\(2 + 4 + 6 + \\dots + 240\\).",
     "options": [
       {
         "text": "\\(121\\) terms, sum \\(= 14760\\)",
@@ -887,7 +887,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "State how many terms the following sum has, then evaluate it:\\n\\(2 + 6 + 10 + \\dots + 298\\).",
+    "question": "State how many terms the following sum has, then evaluate it:\n\\(2 + 6 + 10 + \\dots + 298\\).",
     "options": [
       {
         "text": "\\(75\\) terms, sum \\(= 11250\\)",
@@ -936,7 +936,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "State how many terms the following sum has, then evaluate it:\\n\\(4 + 8 + 12 + \\dots + 320\\).",
+    "question": "State how many terms the following sum has, then evaluate it:\n\\(4 + 8 + 12 + \\dots + 320\\).",
     "options": [
       {
         "text": "\\(81\\) terms, sum \\(= 13280\\)",
@@ -985,7 +985,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "State how many terms the following sum has, then evaluate it:\\n\\(6 + 12 + 18 + \\dots + 720\\).",
+    "question": "State how many terms the following sum has, then evaluate it:\n\\(6 + 12 + 18 + \\dots + 720\\).",
     "options": [
       {
         "text": "\\(121\\) terms, sum \\(= 44280\\)",
@@ -1034,7 +1034,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "State how many terms the following sum has, then evaluate it:\\n\\(402 + 406 + 410 + \\dots + 598\\).",
+    "question": "State how many terms the following sum has, then evaluate it:\n\\(402 + 406 + 410 + \\dots + 598\\).",
     "options": [
       {
         "text": "\\(49\\) terms, sum \\(= 24402\\)",
@@ -1083,7 +1083,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "State how many terms the following sum has, then evaluate it:\\n\\(2002 + 2004 + 2006 + \\dots + 8000\\).",
+    "question": "State how many terms the following sum has, then evaluate it:\n\\(2002 + 2004 + 2006 + \\dots + 8000\\).",
     "options": [
       {
         "text": "\\(3000\\) terms, sum \\(= 15003000\\)",
@@ -1132,7 +1132,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "State how many terms the following sum has, then evaluate it:\\n\\(3 + 6 + 9 + \\dots + 360\\).",
+    "question": "State how many terms the following sum has, then evaluate it:\n\\(3 + 6 + 9 + \\dots + 360\\).",
     "options": [
       {
         "text": "\\(119\\) terms, sum \\(= 21420\\)",
@@ -1181,7 +1181,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "State how many terms the following sum has, then evaluate it:\\n\\(3 + 9 + 15 + \\dots + 447\\).",
+    "question": "State how many terms the following sum has, then evaluate it:\n\\(3 + 9 + 15 + \\dots + 447\\).",
     "options": [
       {
         "text": "\\(75\\) terms, sum \\(= 16878\\)",
@@ -1230,7 +1230,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "State how many terms the following sum has, then evaluate it:\\n\\(6 + 12 + 18 + \\dots + 480\\).",
+    "question": "State how many terms the following sum has, then evaluate it:\n\\(6 + 12 + 18 + \\dots + 480\\).",
     "options": [
       {
         "text": "\\(80\\) terms, sum \\(= 19440\\)",
@@ -1279,7 +1279,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Use the formula \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\) to find the sum \\(S_6\\) of the first \\(6\\) terms of the arithmetic series with:\\n\\(a = -3\\) and \\(d = -5\\).",
+    "question": "Use the formula \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\) to find the sum \\(S_6\\) of the first \\(6\\) terms of the arithmetic series with:\n\\(a = -3\\) and \\(d = -5\\).",
     "options": [
       {
         "text": "\\(-93\\)",
@@ -1328,7 +1328,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Use the formula \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\) to find the sum \\(S_6\\) of the first \\(6\\) terms of the arithmetic series with:\\n\\(a = -1\\) and \\(d = -2\\).",
+    "question": "Use the formula \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\) to find the sum \\(S_6\\) of the first \\(6\\) terms of the arithmetic series with:\n\\(a = -1\\) and \\(d = -2\\).",
     "options": [
       {
         "text": "\\(-36\\)",
@@ -1377,7 +1377,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Use the formula \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\) to find the sum \\(S_6\\) of the first \\(6\\) terms of the arithmetic series with:\\n\\(a = 1\\) and \\(d = 1\\).",
+    "question": "Use the formula \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\) to find the sum \\(S_6\\) of the first \\(6\\) terms of the arithmetic series with:\n\\(a = 1\\) and \\(d = 1\\).",
     "options": [
       {
         "text": "\\(23\\)",
@@ -1426,7 +1426,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Use the formula \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\) to find the sum \\(S_6\\) of the first \\(6\\) terms of the arithmetic series with:\\n\\(a = 3\\) and \\(d = 4\\).",
+    "question": "Use the formula \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\) to find the sum \\(S_6\\) of the first \\(6\\) terms of the arithmetic series with:\n\\(a = 3\\) and \\(d = 4\\).",
     "options": [
       {
         "text": "\\(74\\)",
@@ -1475,7 +1475,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Use the formula \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\) to find the sum \\(S_6\\) of the first \\(6\\) terms of the arithmetic series with:\\n\\(a = 5\\) and \\(d = 7\\).",
+    "question": "Use the formula \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\) to find the sum \\(S_6\\) of the first \\(6\\) terms of the arithmetic series with:\n\\(a = 5\\) and \\(d = 7\\).",
     "options": [
       {
         "text": "\\(145\\)",
@@ -1524,7 +1524,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Use the formula \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\) to find the sum \\(S_6\\) of the first \\(6\\) terms of the arithmetic series with:\\n\\(a = 7\\) and \\(d = 10\\).",
+    "question": "Use the formula \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\) to find the sum \\(S_6\\) of the first \\(6\\) terms of the arithmetic series with:\n\\(a = 7\\) and \\(d = 10\\).",
     "options": [
       {
         "text": "\\(182\\)",
@@ -1573,7 +1573,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Use the formula \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\) to find the sum \\(S_6\\) of the first \\(6\\) terms of the arithmetic series with:\\n\\(a = 9\\) and \\(d = 13\\).",
+    "question": "Use the formula \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\) to find the sum \\(S_6\\) of the first \\(6\\) terms of the arithmetic series with:\n\\(a = 9\\) and \\(d = 13\\).",
     "options": [
       {
         "text": "\\(236\\)",
@@ -1622,7 +1622,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Use the formula \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\) to find the sum \\(S_6\\) of the first \\(6\\) terms of the arithmetic series with:\\n\\(a = 11\\) and \\(d = 16\\).",
+    "question": "Use the formula \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\) to find the sum \\(S_6\\) of the first \\(6\\) terms of the arithmetic series with:\n\\(a = 11\\) and \\(d = 16\\).",
     "options": [
       {
         "text": "\\(338\\)",
@@ -1671,7 +1671,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Use the formula \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\) to find the sum \\(S_6\\) of the first \\(6\\) terms of the arithmetic series with:\\n\\(a = 13\\) and \\(d = 19\\).",
+    "question": "Use the formula \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\) to find the sum \\(S_6\\) of the first \\(6\\) terms of the arithmetic series with:\n\\(a = 13\\) and \\(d = 19\\).",
     "options": [
       {
         "text": "\\(363\\)",
@@ -1720,7 +1720,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Use the formula \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\) to find the sum \\(S_6\\) of the first \\(6\\) terms of the arithmetic series with:\\n\\(a = 15\\) and \\(d = 22\\).",
+    "question": "Use the formula \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\) to find the sum \\(S_6\\) of the first \\(6\\) terms of the arithmetic series with:\n\\(a = 15\\) and \\(d = 22\\).",
     "options": [
       {
         "text": "\\(464\\)",
@@ -1769,7 +1769,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "For the arithmetic series below, find the first term \\(a\\), the common difference \\(d\\), and evaluate the sum of the first \\(21\\) terms:\\n\\(-7 + -2 + 3 + \\dots\\)",
+    "question": "For the arithmetic series below, find the first term \\(a\\), the common difference \\(d\\), and evaluate the sum of the first \\(21\\) terms:\n\\(-7 + -2 + 3 + \\dots\\)",
     "options": [
       {
         "text": "\\(a = -2, \\; d = 5, \\; S_{21} = 903\\)",
@@ -1823,7 +1823,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "For the arithmetic series below, find the first term \\(a\\), the common difference \\(d\\), and evaluate the sum of the first \\(21\\) terms:\\n\\(-4 + 2 + 8 + \\dots\\)",
+    "question": "For the arithmetic series below, find the first term \\(a\\), the common difference \\(d\\), and evaluate the sum of the first \\(21\\) terms:\n\\(-4 + 2 + 8 + \\dots\\)",
     "options": [
       {
         "text": "\\(a = 2, \\; d = 6, \\; S_{21} = 1176\\)",
@@ -1877,7 +1877,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "For the arithmetic series below, find the first term \\(a\\), the common difference \\(d\\), and evaluate the sum of the first \\(21\\) terms:\\n\\(-1 + 3 + 7 + \\dots\\)",
+    "question": "For the arithmetic series below, find the first term \\(a\\), the common difference \\(d\\), and evaluate the sum of the first \\(21\\) terms:\n\\(-1 + 3 + 7 + \\dots\\)",
     "options": [
       {
         "text": "\\(a = 3, \\; d = 4, \\; S_{21} = 819\\)",
@@ -1931,7 +1931,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "For the arithmetic series below, find the first term \\(a\\), the common difference \\(d\\), and evaluate the sum of the first \\(21\\) terms:\\n\\(2 + 7 + 12 + \\dots\\)",
+    "question": "For the arithmetic series below, find the first term \\(a\\), the common difference \\(d\\), and evaluate the sum of the first \\(21\\) terms:\n\\(2 + 7 + 12 + \\dots\\)",
     "options": [
       {
         "text": "\\(a = 7, \\; d = 5, \\; S_{21} = 1092\\)",
@@ -1985,7 +1985,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "For the arithmetic series below, find the first term \\(a\\), the common difference \\(d\\), and evaluate the sum of the first \\(21\\) terms:\\n\\(5 + 11 + 17 + \\dots\\)",
+    "question": "For the arithmetic series below, find the first term \\(a\\), the common difference \\(d\\), and evaluate the sum of the first \\(21\\) terms:\n\\(5 + 11 + 17 + \\dots\\)",
     "options": [
       {
         "text": "\\(a = 5, \\; d = 7, \\; S_{21} = 1385\\)",
@@ -2039,7 +2039,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "For the arithmetic series below, find the first term \\(a\\), the common difference \\(d\\), and evaluate the sum of the first \\(21\\) terms:\\n\\(8 + 12 + 16 + \\dots\\)",
+    "question": "For the arithmetic series below, find the first term \\(a\\), the common difference \\(d\\), and evaluate the sum of the first \\(21\\) terms:\n\\(8 + 12 + 16 + \\dots\\)",
     "options": [
       {
         "text": "\\(a = 8, \\; d = 4, \\; S_{21} = 1008\\)",
@@ -2093,7 +2093,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "For the arithmetic series below, find the first term \\(a\\), the common difference \\(d\\), and evaluate the sum of the first \\(21\\) terms:\\n\\(11 + 16 + 21 + \\dots\\)",
+    "question": "For the arithmetic series below, find the first term \\(a\\), the common difference \\(d\\), and evaluate the sum of the first \\(21\\) terms:\n\\(11 + 16 + 21 + \\dots\\)",
     "options": [
       {
         "text": "\\(a = 11, \\; d = 5, \\; S_{21} = 1281\\)",
@@ -2147,7 +2147,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "For the arithmetic series below, find the first term \\(a\\), the common difference \\(d\\), and evaluate the sum of the first \\(21\\) terms:\\n\\(14 + 20 + 26 + \\dots\\)",
+    "question": "For the arithmetic series below, find the first term \\(a\\), the common difference \\(d\\), and evaluate the sum of the first \\(21\\) terms:\n\\(14 + 20 + 26 + \\dots\\)",
     "options": [
       {
         "text": "\\(a = 14, \\; d = 6, \\; S_{21} = 1554\\)",
@@ -2201,7 +2201,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "For the arithmetic series below, find the first term \\(a\\), the common difference \\(d\\), and evaluate the sum of the first \\(21\\) terms:\\n\\(17 + 21 + 25 + \\dots\\)",
+    "question": "For the arithmetic series below, find the first term \\(a\\), the common difference \\(d\\), and evaluate the sum of the first \\(21\\) terms:\n\\(17 + 21 + 25 + \\dots\\)",
     "options": [
       {
         "text": "\\(a = 21, \\; d = 4, \\; S_{21} = 1197\\)",
@@ -2255,7 +2255,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "For the arithmetic series below, find the first term \\(a\\), the common difference \\(d\\), and evaluate the sum of the first \\(21\\) terms:\\n\\(20 + 25 + 30 + \\dots\\)",
+    "question": "For the arithmetic series below, find the first term \\(a\\), the common difference \\(d\\), and evaluate the sum of the first \\(21\\) terms:\n\\(20 + 25 + 30 + \\dots\\)",
     "options": [
       {
         "text": "\\(a = 20, \\; d = 5, \\; S_{21} = 1470\\)",
@@ -2309,7 +2309,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "For the arithmetic series below, find the first term \\(a\\), the common difference \\(d\\), and evaluate the sum of the first \\(21\\) terms:\\n\\(23 + 29 + 35 + \\dots\\)",
+    "question": "For the arithmetic series below, find the first term \\(a\\), the common difference \\(d\\), and evaluate the sum of the first \\(21\\) terms:\n\\(23 + 29 + 35 + \\dots\\)",
     "options": [
       {
         "text": "\\(a = 29, \\; d = 6, \\; S_{21} = 1743\\)",
@@ -2363,7 +2363,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "For the arithmetic series below, find the first term \\(a\\), the common difference \\(d\\), and evaluate the sum of the first \\(21\\) terms:\\n\\(26 + 30 + 34 + \\dots\\)",
+    "question": "For the arithmetic series below, find the first term \\(a\\), the common difference \\(d\\), and evaluate the sum of the first \\(21\\) terms:\n\\(26 + 30 + 34 + \\dots\\)",
     "options": [
       {
         "text": "\\(a = 26, \\; d = 4, \\; S_{21} = 1386\\)",
@@ -2417,7 +2417,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Find the sum of the first \\(11\\) terms of the following arithmetic series:\\n\\(-16 + -12 + -8 + \\dots\\)",
+    "question": "Find the sum of the first \\(11\\) terms of the following arithmetic series:\n\\(-16 + -12 + -8 + \\dots\\)",
     "options": [
       {
         "text": "\\(44\\)",
@@ -2471,7 +2471,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Find the sum of the first \\(12\\) terms of the following arithmetic series:\\n\\(-12 + -9 + -6 + \\dots\\)",
+    "question": "Find the sum of the first \\(12\\) terms of the following arithmetic series:\n\\(-12 + -9 + -6 + \\dots\\)",
     "options": [
       {
         "text": "\\(66\\)",
@@ -2525,7 +2525,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Find the sum of the first \\(13\\) terms of the following arithmetic series:\\n\\(-8 + -6 + -4 + \\dots\\)",
+    "question": "Find the sum of the first \\(13\\) terms of the following arithmetic series:\n\\(-8 + -6 + -4 + \\dots\\)",
     "options": [
       {
         "text": "\\(52\\)",
@@ -2579,7 +2579,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Find the sum of the first \\(14\\) terms of the following arithmetic series:\\n\\(-4 + 1 + 6 + \\dots\\)",
+    "question": "Find the sum of the first \\(14\\) terms of the following arithmetic series:\n\\(-4 + 1 + 6 + \\dots\\)",
     "options": [
       {
         "text": "\\(411\\)",
@@ -2633,7 +2633,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Find the sum of the first \\(15\\) terms of the following arithmetic series:\\n\\(0 + 4 + 8 + \\dots\\)",
+    "question": "Find the sum of the first \\(15\\) terms of the following arithmetic series:\n\\(0 + 4 + 8 + \\dots\\)",
     "options": [
       {
         "text": "\\(424\\)",
@@ -2687,7 +2687,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Find the sum of the first \\(16\\) terms of the following arithmetic series:\\n\\(4 + 7 + 10 + \\dots\\)",
+    "question": "Find the sum of the first \\(16\\) terms of the following arithmetic series:\n\\(4 + 7 + 10 + \\dots\\)",
     "options": [
       {
         "text": "\\(421\\)",
@@ -2741,7 +2741,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Find the sum of the first \\(17\\) terms of the following arithmetic series:\\n\\(8 + 10 + 12 + \\dots\\)",
+    "question": "Find the sum of the first \\(17\\) terms of the following arithmetic series:\n\\(8 + 10 + 12 + \\dots\\)",
     "options": [
       {
         "text": "\\(406\\)",
@@ -2795,7 +2795,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Find the sum of the first \\(18\\) terms of the following arithmetic series:\\n\\(12 + 17 + 22 + \\dots\\)",
+    "question": "Find the sum of the first \\(18\\) terms of the following arithmetic series:\n\\(12 + 17 + 22 + \\dots\\)",
     "options": [
       {
         "text": "\\(986\\)",
@@ -2849,7 +2849,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Find the sum of the first \\(19\\) terms of the following arithmetic series:\\n\\(16 + 20 + 24 + \\dots\\)",
+    "question": "Find the sum of the first \\(19\\) terms of the following arithmetic series:\n\\(16 + 20 + 24 + \\dots\\)",
     "options": [
       {
         "text": "\\(984\\)",
@@ -2903,7 +2903,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Find the sum of the first \\(20\\) terms of the following arithmetic series:\\n\\(20 + 23 + 26 + \\dots\\)",
+    "question": "Find the sum of the first \\(20\\) terms of the following arithmetic series:\n\\(20 + 23 + 26 + \\dots\\)",
     "options": [
       {
         "text": "\\(973\\)",
@@ -2957,7 +2957,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Find the sum of the first \\(21\\) terms of the following arithmetic series:\\n\\(24 + 26 + 28 + \\dots\\)",
+    "question": "Find the sum of the first \\(21\\) terms of the following arithmetic series:\n\\(24 + 26 + 28 + \\dots\\)",
     "options": [
       {
         "text": "\\(926\\)",
@@ -3011,7 +3011,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Find the sum of the first \\(22\\) terms of the following arithmetic series:\\n\\(28 + 33 + 38 + \\dots\\)",
+    "question": "Find the sum of the first \\(22\\) terms of the following arithmetic series:\n\\(28 + 33 + 38 + \\dots\\)",
     "options": [
       {
         "text": "\\(1771\\)",
@@ -3065,7 +3065,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the number of terms and the sum of the following series:\\n\\(12 + 16 + 20 + \\dots + 52\\)",
+    "question": "Find the number of terms and the sum of the following series:\n\\(12 + 16 + 20 + \\dots + 52\\)",
     "options": [
       {
         "text": "\\(12\\) terms, sum \\(= 404\\)",
@@ -3114,7 +3114,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the number of terms and the sum of the following series:\\n\\(14 + 19 + 24 + \\dots + 69\\)",
+    "question": "Find the number of terms and the sum of the following series:\n\\(14 + 19 + 24 + \\dots + 69\\)",
     "options": [
       {
         "text": "\\(12\\) terms, sum \\(= 498\\)",
@@ -3163,7 +3163,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the number of terms and the sum of the following series:\\n\\(16 + 19 + 22 + \\dots + 52\\)",
+    "question": "Find the number of terms and the sum of the following series:\n\\(16 + 19 + 22 + \\dots + 52\\)",
     "options": [
       {
         "text": "\\(12\\) terms, sum \\(= 390\\)",
@@ -3212,7 +3212,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the number of terms and the sum of the following series:\\n\\(18 + 22 + 26 + \\dots + 70\\)",
+    "question": "Find the number of terms and the sum of the following series:\n\\(18 + 22 + 26 + \\dots + 70\\)",
     "options": [
       {
         "text": "\\(14\\) terms, sum \\(= 616\\)",
@@ -3261,7 +3261,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the number of terms and the sum of the following series:\\n\\(20 + 25 + 30 + \\dots + 90\\)",
+    "question": "Find the number of terms and the sum of the following series:\n\\(20 + 25 + 30 + \\dots + 90\\)",
     "options": [
       {
         "text": "\\(15\\) terms, sum \\(= 825\\)",
@@ -3310,7 +3310,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the number of terms and the sum of the following series:\\n\\(22 + 25 + 28 + \\dots + 67\\)",
+    "question": "Find the number of terms and the sum of the following series:\n\\(22 + 25 + 28 + \\dots + 67\\)",
     "options": [
       {
         "text": "\\(16\\) terms, sum \\(= 734\\)",
@@ -3359,7 +3359,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the number of terms and the sum of the following series:\\n\\(24 + 28 + 32 + \\dots + 88\\)",
+    "question": "Find the number of terms and the sum of the following series:\n\\(24 + 28 + 32 + \\dots + 88\\)",
     "options": [
       {
         "text": "\\(18\\) terms, sum \\(= 1040\\)",
@@ -3408,7 +3408,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the number of terms and the sum of the following series:\\n\\(26 + 31 + 36 + \\dots + 111\\)",
+    "question": "Find the number of terms and the sum of the following series:\n\\(26 + 31 + 36 + \\dots + 111\\)",
     "options": [
       {
         "text": "\\(18\\) terms, sum \\(= 1233\\)",
@@ -3457,7 +3457,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the number of terms and the sum of the following series:\\n\\(28 + 31 + 34 + \\dots + 82\\)",
+    "question": "Find the number of terms and the sum of the following series:\n\\(28 + 31 + 34 + \\dots + 82\\)",
     "options": [
       {
         "text": "\\(19\\) terms, sum \\(= 1045\\)",
@@ -3506,7 +3506,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the number of terms and the sum of the following series:\\n\\(30 + 34 + 38 + \\dots + 106\\)",
+    "question": "Find the number of terms and the sum of the following series:\n\\(30 + 34 + 38 + \\dots + 106\\)",
     "options": [
       {
         "text": "\\(20\\) terms, sum \\(= 1390\\)",
@@ -3555,7 +3555,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the number of terms and the sum of the following series:\\n\\(32 + 37 + 42 + \\dots + 132\\)",
+    "question": "Find the number of terms and the sum of the following series:\n\\(32 + 37 + 42 + \\dots + 132\\)",
     "options": [
       {
         "text": "\\(22\\) terms, sum \\(= 1854\\)",
@@ -3604,7 +3604,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the number of terms and the sum of the following series:\\n\\(34 + 37 + 40 + \\dots + 97\\)",
+    "question": "Find the number of terms and the sum of the following series:\n\\(34 + 37 + 40 + \\dots + 97\\)",
     "options": [
       {
         "text": "\\(22\\) terms, sum \\(= 1475\\)",
@@ -3653,7 +3653,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the sum of the following arithmetic progression:\\n\\(5 + 10 + 15 + \\dots + 100\\)",
+    "question": "Find the sum of the following arithmetic progression:\n\\(5 + 10 + 15 + \\dots + 100\\)",
     "options": [
       {
         "text": "\\(1150\\)",
@@ -3702,7 +3702,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the sum of the following arithmetic progression:\\n\\(10 + 15 + 20 + \\dots + 205\\)",
+    "question": "Find the sum of the following arithmetic progression:\n\\(10 + 15 + 20 + \\dots + 205\\)",
     "options": [
       {
         "text": "\\(4505\\)",
@@ -3751,7 +3751,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the sum of the following arithmetic progression:\\n\\(15 + 20 + 25 + \\dots + 310\\)",
+    "question": "Find the sum of the following arithmetic progression:\n\\(15 + 20 + 25 + \\dots + 310\\)",
     "options": [
       {
         "text": "\\(9750\\)",
@@ -3800,7 +3800,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the sum of the following arithmetic progression:\\n\\(20 + 25 + 30 + \\dots + 415\\)",
+    "question": "Find the sum of the following arithmetic progression:\n\\(20 + 25 + 30 + \\dots + 415\\)",
     "options": [
       {
         "text": "\\(17420\\)",
@@ -3849,7 +3849,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the sum of the following arithmetic progression:\\n\\(25 + 30 + 35 + \\dots + 520\\)",
+    "question": "Find the sum of the following arithmetic progression:\n\\(25 + 30 + 35 + \\dots + 520\\)",
     "options": [
       {
         "text": "\\(27770\\)",
@@ -3898,7 +3898,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the sum of the following arithmetic progression:\\n\\(30 + 35 + 40 + \\dots + 625\\)",
+    "question": "Find the sum of the following arithmetic progression:\n\\(30 + 35 + 40 + \\dots + 625\\)",
     "options": [
       {
         "text": "\\(39925\\)",
@@ -3947,7 +3947,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the sum of the following arithmetic progression:\\n\\(35 + 40 + 45 + \\dots + 730\\)",
+    "question": "Find the sum of the following arithmetic progression:\n\\(35 + 40 + 45 + \\dots + 730\\)",
     "options": [
       {
         "text": "\\(54280\\)",
@@ -3996,7 +3996,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the sum of the following arithmetic progression:\\n\\(40 + 45 + 50 + \\dots + 835\\)",
+    "question": "Find the sum of the following arithmetic progression:\n\\(40 + 45 + 50 + \\dots + 835\\)",
     "options": [
       {
         "text": "\\(70040\\)",
@@ -4045,7 +4045,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find and simplify a formula for the sum of the first \\(n\\) terms of the arithmetic series:\\n\\(2 + 4 + 6 + \\dots\\)",
+    "question": "Find and simplify a formula for the sum of the first \\(n\\) terms of the arithmetic series:\n\\(2 + 4 + 6 + \\dots\\)",
     "options": [
       {
         "text": "\\(n(2n + 2)\\)",
@@ -4094,7 +4094,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find and simplify a formula for the sum of the first \\(n\\) terms of the arithmetic series:\\n\\(4 + 7 + 10 + \\dots\\)",
+    "question": "Find and simplify a formula for the sum of the first \\(n\\) terms of the arithmetic series:\n\\(4 + 7 + 10 + \\dots\\)",
     "options": [
       {
         "text": "\\(n(3n + 5)\\)",
@@ -4143,7 +4143,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find and simplify a formula for the sum of the first \\(n\\) terms of the arithmetic series:\\n\\(6 + 10 + 14 + \\dots\\)",
+    "question": "Find and simplify a formula for the sum of the first \\(n\\) terms of the arithmetic series:\n\\(6 + 10 + 14 + \\dots\\)",
     "options": [
       {
         "text": "\\(n(4n + 8)\\)",
@@ -4192,7 +4192,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find and simplify a formula for the sum of the first \\(n\\) terms of the arithmetic series:\\n\\(8 + 13 + 18 + \\dots\\)",
+    "question": "Find and simplify a formula for the sum of the first \\(n\\) terms of the arithmetic series:\n\\(8 + 13 + 18 + \\dots\\)",
     "options": [
       {
         "text": "\\(\\frac{n}{2}(5n - 11)\\)",
@@ -4241,7 +4241,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find and simplify a formula for the sum of the first \\(n\\) terms of the arithmetic series:\\n\\(10 + 16 + 22 + \\dots\\)",
+    "question": "Find and simplify a formula for the sum of the first \\(n\\) terms of the arithmetic series:\n\\(10 + 16 + 22 + \\dots\\)",
     "options": [
       {
         "text": "\\(\\frac{n}{2}(6n + 14)\\)",
@@ -4290,7 +4290,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find and simplify a formula for the sum of the first \\(n\\) terms of the arithmetic series:\\n\\(12 + 19 + 26 + \\dots\\)",
+    "question": "Find and simplify a formula for the sum of the first \\(n\\) terms of the arithmetic series:\n\\(12 + 19 + 26 + \\dots\\)",
     "options": [
       {
         "text": "\\(\\frac{n}{2}(7n + 17)\\)",
@@ -4339,7 +4339,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find and simplify a formula for the sum of the first \\(n\\) terms of the arithmetic series:\\n\\(14 + 22 + 30 + \\dots\\)",
+    "question": "Find and simplify a formula for the sum of the first \\(n\\) terms of the arithmetic series:\n\\(14 + 22 + 30 + \\dots\\)",
     "options": [
       {
         "text": "\\(\\frac{n}{2}(8n + 28)\\)",
@@ -4388,7 +4388,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find and simplify a formula for the sum of the first \\(n\\) terms of the arithmetic series:\\n\\(16 + 25 + 34 + \\dots\\)",
+    "question": "Find and simplify a formula for the sum of the first \\(n\\) terms of the arithmetic series:\n\\(16 + 25 + 34 + \\dots\\)",
     "options": [
       {
         "text": "\\(\\frac{n}{2}(9n + 23)\\)",
@@ -4437,7 +4437,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find and simplify a formula for the sum of the first \\(n\\) terms of the arithmetic series:\\n\\(18 + 28 + 38 + \\dots\\)",
+    "question": "Find and simplify a formula for the sum of the first \\(n\\) terms of the arithmetic series:\n\\(18 + 28 + 38 + \\dots\\)",
     "options": [
       {
         "text": "\\(\\frac{n}{2}(10n + 26)\\)",
@@ -4486,7 +4486,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find and simplify a formula for the sum of the first \\(n\\) terms of the arithmetic series:\\n\\(20 + 31 + 42 + \\dots\\)",
+    "question": "Find and simplify a formula for the sum of the first \\(n\\) terms of the arithmetic series:\n\\(20 + 31 + 42 + \\dots\\)",
     "options": [
       {
         "text": "\\(\\frac{n}{2}(11n - 29)\\)",
@@ -4927,7 +4927,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "How many legs are there on \\(25\\) fish, \\(25\\) ducks, \\(25\\) dogs, \\(25\\) beetles, \\(25\\) spiders, and \\(25\\) ten-legged grubs?\\nHow many of these creatures have the mean number of legs?",
+    "question": "How many legs are there on \\(25\\) fish, \\(25\\) ducks, \\(25\\) dogs, \\(25\\) beetles, \\(25\\) spiders, and \\(25\\) ten-legged grubs?\nHow many of these creatures have the mean number of legs?",
     "options": [
       {
         "text": "\\(750\\) legs, \\(50\\) creatures",
@@ -4981,7 +4981,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Matthew Flinders High School has \\(1200\\) pupils, with equal numbers of each age from \\(6\\) to \\(17\\) years inclusive.\\nIt also has \\(100\\) teachers and staff, all aged \\(30\\) years, and one Principal aged \\(60\\) years.\\nWhat is the total of the ages of everyone in the school?",
+    "question": "Matthew Flinders High School has \\(1200\\) pupils, with equal numbers of each age from \\(6\\) to \\(17\\) years inclusive.\nIt also has \\(100\\) teachers and staff, all aged \\(30\\) years, and one Principal aged \\(60\\) years.\nWhat is the total of the ages of everyone in the school?",
     "options": [
       {
         "text": "\\(17200\\) years",
@@ -5030,7 +5030,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "A graduate earns \\(28000\\) dollars in her first year, then each successive year her salary rises by \\(1600\\) dollars.\\nWhat are her total earnings over \\(10\\) years?",
+    "question": "A graduate earns \\(28000\\) dollars in her first year, then each successive year her salary rises by \\(1600\\) dollars.\nWhat are her total earnings over \\(10\\) years?",
     "options": [
       {
         "text": "\\(352000\\) dollars",
@@ -5079,7 +5079,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Evaluate the following arithmetic series using \\(S_n = \\frac{n}{2}(a+l)\\):\\n\\(\\sum_{k=1}^{60} (105 - 3k)\\)",
+    "question": "Evaluate the following arithmetic series using \\(S_n = \\frac{n}{2}(a+l)\\):\n\\(\\sum_{k=1}^{60} (105 - 3k)\\)",
     "options": [
       {
         "text": "\\(a = 102, \\; l = -78, \\; S = 810\\)",
@@ -5128,7 +5128,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Evaluate the following arithmetic series using \\(S_n = \\frac{n}{2}(a+l)\\):\\n\\(\\sum_{k=1}^{70} (110 - 4k)\\)",
+    "question": "Evaluate the following arithmetic series using \\(S_n = \\frac{n}{2}(a+l)\\):\n\\(\\sum_{k=1}^{70} (110 - 4k)\\)",
     "options": [
       {
         "text": "\\(a = 106, \\; l = -170, \\; S = -2240\\)",
@@ -5177,7 +5177,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Evaluate the following arithmetic series using \\(S_n = \\frac{n}{2}(a+l)\\):\\n\\(\\sum_{k=1}^{80} (115 - 5k)\\)",
+    "question": "Evaluate the following arithmetic series using \\(S_n = \\frac{n}{2}(a+l)\\):\n\\(\\sum_{k=1}^{80} (115 - 5k)\\)",
     "options": [
       {
         "text": "\\(a = 115, \\; l = -285, \\; S = -7000\\)",
@@ -5226,7 +5226,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Evaluate the following arithmetic series using \\(S_n = \\frac{n}{2}(a+l)\\):\\n\\(\\sum_{k=1}^{90} (120 - 6k)\\)",
+    "question": "Evaluate the following arithmetic series using \\(S_n = \\frac{n}{2}(a+l)\\):\n\\(\\sum_{k=1}^{90} (120 - 6k)\\)",
     "options": [
       {
         "text": "\\(a = 114, \\; l = -426, \\; S = -13770\\)",
@@ -5275,7 +5275,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Evaluate the following arithmetic series using \\(S_n = \\frac{n}{2}(a+l)\\):\\n\\(\\sum_{k=1}^{100} (125 - 7k)\\)",
+    "question": "Evaluate the following arithmetic series using \\(S_n = \\frac{n}{2}(a+l)\\):\n\\(\\sum_{k=1}^{100} (125 - 7k)\\)",
     "options": [
       {
         "text": "\\(a = 118, \\; l = -575, \\; S = -22850\\)",
@@ -5324,7 +5324,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Evaluate the following arithmetic series using \\(S_n = \\frac{n}{2}(a+l)\\):\\n\\(\\sum_{k=1}^{110} (130 - 8k)\\)",
+    "question": "Evaluate the following arithmetic series using \\(S_n = \\frac{n}{2}(a+l)\\):\n\\(\\sum_{k=1}^{110} (130 - 8k)\\)",
     "options": [
       {
         "text": "\\(a = 122, \\; l = -750, \\; S = -34540\\)",
@@ -5373,7 +5373,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Evaluate the following arithmetic series using \\(S_n = \\frac{n}{2}(a+l)\\):\\n\\(\\sum_{k=1}^{120} (135 - 9k)\\)",
+    "question": "Evaluate the following arithmetic series using \\(S_n = \\frac{n}{2}(a+l)\\):\n\\(\\sum_{k=1}^{120} (135 - 9k)\\)",
     "options": [
       {
         "text": "\\(a = 126, \\; l = -945, \\; S = -48195\\)",
@@ -5422,7 +5422,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Evaluate the following arithmetic series using \\(S_n = \\frac{n}{2}(a+l)\\):\\n\\(\\sum_{k=1}^{130} (140 - 10k)\\)",
+    "question": "Evaluate the following arithmetic series using \\(S_n = \\frac{n}{2}(a+l)\\):\n\\(\\sum_{k=1}^{130} (140 - 10k)\\)",
     "options": [
       {
         "text": "\\(a = 130, \\; l = -1170, \\; S = -66950\\)",
@@ -5704,7 +5704,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "For the arithmetic series \\(80 + 72 + 64 + 56 + \\dots\\) with \\(S_n = 4n(21 - n)\\):\\nFind the number of terms \\(n\\) required to make the sum zero, and the minimum number of terms to make the sum negative.",
+    "question": "For the arithmetic series \\(80 + 72 + 64 + 56 + \\dots\\) with \\(S_n = 4n(21 - n)\\):\nFind the number of terms \\(n\\) required to make the sum zero, and the minimum number of terms to make the sum negative.",
     "options": [
       {
         "text": "Zero sum at \\(n = 21\\) terms, Negative sum at \\(n = 23\\) terms",
@@ -5758,7 +5758,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "For the arithmetic series \\(80 + 72 + 64 + 56 + \\dots\\) with \\(S_n = 4n(21 - n)\\):\\nFind the two values of \\(n\\) for which the sum \\(S_n\\) is \\(272\\).",
+    "question": "For the arithmetic series \\(80 + 72 + 64 + 56 + \\dots\\) with \\(S_n = 4n(21 - n)\\):\nFind the two values of \\(n\\) for which the sum \\(S_n\\) is \\(272\\).",
     "options": [
       {
         "text": "\\(n = 3\\) and \\(n = 18\\)",
@@ -5854,7 +5854,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "For the arithmetic series \\(80 + 72 + 64 + 56 + \\dots\\) with \\(S_n = 4n(21 - n)\\):\\nFor what integer values of \\(n\\) does the sum \\(S_n\\) exceed \\(180\\)?",
+    "question": "For the arithmetic series \\(80 + 72 + 64 + 56 + \\dots\\) with \\(S_n = 4n(21 - n)\\):\nFor what integer values of \\(n\\) does the sum \\(S_n\\) exceed \\(180\\)?",
     "options": [
       {
         "text": "\\(4 \\le n \\le 17\\)",
@@ -5950,7 +5950,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "First use the formula \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\) to express the sum of the series \\(25 + 23 + 21 + \\dots\\).\\nThen find the number of terms \\(n\\) if the sum is \\(0\\).",
+    "question": "First use the formula \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\) to express the sum of the series \\(25 + 23 + 21 + \\dots\\).\nThen find the number of terms \\(n\\) if the sum is \\(0\\).",
     "options": [
       {
         "text": "\\(n = 24\\)",
@@ -6004,7 +6004,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "First use the formula \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\) to express the sum of the series \\(30 + 28 + 26 + \\dots\\).\\nThen find the number of terms \\(n\\) if the sum is \\(0\\).",
+    "question": "First use the formula \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\) to express the sum of the series \\(30 + 28 + 26 + \\dots\\).\nThen find the number of terms \\(n\\) if the sum is \\(0\\).",
     "options": [
       {
         "text": "\\(n = 29\\)",
@@ -6058,7 +6058,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "First use the formula \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\) to express the sum of the series \\(35 + 33 + 31 + \\dots\\).\\nThen find the number of terms \\(n\\) if the sum is \\(0\\).",
+    "question": "First use the formula \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\) to express the sum of the series \\(35 + 33 + 31 + \\dots\\).\nThen find the number of terms \\(n\\) if the sum is \\(0\\).",
     "options": [
       {
         "text": "\\(n = 37\\)",
@@ -6112,7 +6112,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "First use the formula \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\) to express the sum of the series \\(40 + 38 + 36 + \\dots\\).\\nThen find the number of terms \\(n\\) if the sum is \\(0\\).",
+    "question": "First use the formula \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\) to express the sum of the series \\(40 + 38 + 36 + \\dots\\).\nThen find the number of terms \\(n\\) if the sum is \\(0\\).",
     "options": [
       {
         "text": "\\(n = 41\\)",
@@ -6166,7 +6166,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "First use the formula \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\) to express the sum of the series \\(45 + 43 + 41 + \\dots\\).\\nThen find the number of terms \\(n\\) if the sum is \\(0\\).",
+    "question": "First use the formula \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\) to express the sum of the series \\(45 + 43 + 41 + \\dots\\).\nThen find the number of terms \\(n\\) if the sum is \\(0\\).",
     "options": [
       {
         "text": "\\(n = 46\\)",
@@ -6220,7 +6220,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "First use the formula \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\) to express the sum of the series \\(50 + 48 + 46 + \\dots\\).\\nThen find the number of terms \\(n\\) if the sum is \\(0\\).",
+    "question": "First use the formula \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\) to express the sum of the series \\(50 + 48 + 46 + \\dots\\).\nThen find the number of terms \\(n\\) if the sum is \\(0\\).",
     "options": [
       {
         "text": "\\(n = 51\\)",
@@ -6274,7 +6274,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "First use the formula \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\) to express the sum of the series \\(55 + 53 + 51 + \\dots\\).\\nThen find the number of terms \\(n\\) if the sum is \\(0\\).",
+    "question": "First use the formula \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\) to express the sum of the series \\(55 + 53 + 51 + \\dots\\).\nThen find the number of terms \\(n\\) if the sum is \\(0\\).",
     "options": [
       {
         "text": "\\(n = 54\\)",
@@ -6328,7 +6328,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "First use the formula \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\) to express the sum of the series \\(60 + 58 + 56 + \\dots\\).\\nThen find the number of terms \\(n\\) if the sum is \\(0\\).",
+    "question": "First use the formula \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\) to express the sum of the series \\(60 + 58 + 56 + \\dots\\).\nThen find the number of terms \\(n\\) if the sum is \\(0\\).",
     "options": [
       {
         "text": "\\(n = 62\\)",
@@ -6382,7 +6382,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Logs of wood are stacked with \\(15\\) on the top row, \\(16\\) on the next, and so on.\\nIf there are \\(360\\) logs in total, find the number of rows and the number of logs on the bottom row.",
+    "question": "Logs of wood are stacked with \\(15\\) on the top row, \\(16\\) on the next, and so on.\nIf there are \\(360\\) logs in total, find the number of rows and the number of logs on the bottom row.",
     "options": [
       {
         "text": "\\(16\\) rows, \\(30\\) logs on the bottom row",
@@ -6441,7 +6441,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A stone dropped from the top of a cliff falls \\(5\\) metres in the first second, \\(15\\) metres in the second second, \\(25\\) metres in the third, and so on in an arithmetic sequence.\\nIf the cliff is \\(180\\) metres high, find a formula for the distance fallen after \\(n\\) seconds, and calculate how long the stone takes to fall to the ground.",
+    "question": "A stone dropped from the top of a cliff falls \\(5\\) metres in the first second, \\(15\\) metres in the second second, \\(25\\) metres in the third, and so on in an arithmetic sequence.\nIf the cliff is \\(180\\) metres high, find a formula for the distance fallen after \\(n\\) seconds, and calculate how long the stone takes to fall to the ground.",
     "options": [
       {
         "text": "Distance \\(= 5n^2\\) metres, Time \\(= 6\\) seconds",
@@ -6495,7 +6495,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A truck deposits loads of gravel at equally spaced intervals along a straight road.\\nThe first load is deposited \\(24\\) km from the quarry, and the last is \\(12\\) km further (at \\(36\\) km).\\nIf the truck travels \\(600\\) km in total during these deliveries (including its return to the quarry after the last delivery), how many trips does it make, and how far apart are the deposits?",
+    "question": "A truck deposits loads of gravel at equally spaced intervals along a straight road.\nThe first load is deposited \\(24\\) km from the quarry, and the last is \\(12\\) km further (at \\(36\\) km).\nIf the truck travels \\(600\\) km in total during these deliveries (including its return to the quarry after the last delivery), how many trips does it make, and how far apart are the deposits?",
     "options": [
       {
         "text": "\\(9\\) trips, \\(1.50\\) km apart",
@@ -6549,7 +6549,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The sum of the first and fourth terms of an arithmetic progression is \\(7\\), and the sum of the third and eighth terms is \\(13\\).\\nFind the sum of the first \\(10\\) terms.",
+    "question": "The sum of the first and fourth terms of an arithmetic progression is \\(7\\), and the sum of the third and eighth terms is \\(13\\).\nFind the sum of the first \\(10\\) terms.",
     "options": [
       {
         "text": "\\(64\\)",
@@ -6608,7 +6608,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The sum of the first and fourth terms of an arithmetic progression is \\(14\\), and the sum of the third and eighth terms is \\(26\\).\\nFind the sum of the first \\(10\\) terms.",
+    "question": "The sum of the first and fourth terms of an arithmetic progression is \\(14\\), and the sum of the third and eighth terms is \\(26\\).\nFind the sum of the first \\(10\\) terms.",
     "options": [
       {
         "text": "\\(150\\)",
@@ -6667,7 +6667,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The sum of the first and fourth terms of an arithmetic progression is \\(21\\), and the sum of the third and eighth terms is \\(39\\).\\nFind the sum of the first \\(10\\) terms.",
+    "question": "The sum of the first and fourth terms of an arithmetic progression is \\(21\\), and the sum of the third and eighth terms is \\(39\\).\nFind the sum of the first \\(10\\) terms.",
     "options": [
       {
         "text": "\\(195\\)",
@@ -6726,7 +6726,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The sum of the first and fourth terms of an arithmetic progression is \\(28\\), and the sum of the third and eighth terms is \\(52\\).\\nFind the sum of the first \\(10\\) terms.",
+    "question": "The sum of the first and fourth terms of an arithmetic progression is \\(28\\), and the sum of the third and eighth terms is \\(52\\).\nFind the sum of the first \\(10\\) terms.",
     "options": [
       {
         "text": "\\(250\\)",
@@ -6785,7 +6785,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The sum of the first and fourth terms of an arithmetic progression is \\(35\\), and the sum of the third and eighth terms is \\(65\\).\\nFind the sum of the first \\(10\\) terms.",
+    "question": "The sum of the first and fourth terms of an arithmetic progression is \\(35\\), and the sum of the third and eighth terms is \\(65\\).\nFind the sum of the first \\(10\\) terms.",
     "options": [
       {
         "text": "\\(320\\)",
@@ -6844,7 +6844,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The sum of the first and fourth terms of an arithmetic progression is \\(42\\), and the sum of the third and eighth terms is \\(78\\).\\nFind the sum of the first \\(10\\) terms.",
+    "question": "The sum of the first and fourth terms of an arithmetic progression is \\(42\\), and the sum of the third and eighth terms is \\(78\\).\nFind the sum of the first \\(10\\) terms.",
     "options": [
       {
         "text": "\\(410\\)",
@@ -6903,7 +6903,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Find the sum of the following logarithmic series in terms of \\(\\log_a\\):\\n\\(\\log_a 2 + \\log_a 4 + \\log_a 8 + \\dots + \\log_a 128\\)",
+    "question": "Find the sum of the following logarithmic series in terms of \\(\\log_a\\):\n\\(\\log_a 2 + \\log_a 4 + \\log_a 8 + \\dots + \\log_a 128\\)",
     "options": [
       {
         "text": "\\(\\frac{28}{2} \\log_a 2\\)",
@@ -6929,7 +6929,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Rewrite each log term using the power rule.",
-        "workingOut": "\\(\\log_a 2^1 + \\log_a 2^2 + \\dots + \\log_a 2^{7}\\)\\n\\(= 1\\log_a 2 + 2\\log_a 2 + \\dots + 7\\log_a 2\\)",
+        "workingOut": "\\(\\log_a 2^1 + \\log_a 2^2 + \\dots + \\log_a 2^{7}\\)\n\\(= 1\\log_a 2 + 2\\log_a 2 + \\dots + 7\\log_a 2\\)",
         "graphData": null
       },
       {
@@ -6957,7 +6957,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Find the sum of the following logarithmic series in terms of \\(\\log_a\\):\\n\\(\\log_a 3 + \\log_a 9 + \\log_a 27 + \\dots + \\log_a 6561\\)",
+    "question": "Find the sum of the following logarithmic series in terms of \\(\\log_a\\):\n\\(\\log_a 3 + \\log_a 9 + \\log_a 27 + \\dots + \\log_a 6561\\)",
     "options": [
       {
         "text": "\\(28 \\log_a 3\\)",
@@ -6983,7 +6983,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Rewrite each log term using the power rule.",
-        "workingOut": "\\(\\log_a 3^1 + \\log_a 3^2 + \\dots + \\log_a 3^{8}\\)\\n\\(= 1\\log_a 3 + 2\\log_a 3 + \\dots + 8\\log_a 3\\)",
+        "workingOut": "\\(\\log_a 3^1 + \\log_a 3^2 + \\dots + \\log_a 3^{8}\\)\n\\(= 1\\log_a 3 + 2\\log_a 3 + \\dots + 8\\log_a 3\\)",
         "graphData": null
       },
       {
@@ -7011,7 +7011,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Find the sum of the following logarithmic series in terms of \\(\\log_a\\):\\n\\(\\log_a 4 + \\log_a 16 + \\log_a 64 + \\dots + \\log_a 262144\\)",
+    "question": "Find the sum of the following logarithmic series in terms of \\(\\log_a\\):\n\\(\\log_a 4 + \\log_a 16 + \\log_a 64 + \\dots + \\log_a 262144\\)",
     "options": [
       {
         "text": "\\(45 \\log_a 4\\)",
@@ -7037,7 +7037,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Rewrite each log term using the power rule.",
-        "workingOut": "\\(\\log_a 4^1 + \\log_a 4^2 + \\dots + \\log_a 4^{9}\\)\\n\\(= 1\\log_a 4 + 2\\log_a 4 + \\dots + 9\\log_a 4\\)",
+        "workingOut": "\\(\\log_a 4^1 + \\log_a 4^2 + \\dots + \\log_a 4^{9}\\)\n\\(= 1\\log_a 4 + 2\\log_a 4 + \\dots + 9\\log_a 4\\)",
         "graphData": null
       },
       {
@@ -7065,7 +7065,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Find the sum of the following logarithmic series in terms of \\(\\log_a\\):\\n\\(\\log_a 5 + \\log_a 25 + \\log_a 125 + \\dots + \\log_a 9765625\\)",
+    "question": "Find the sum of the following logarithmic series in terms of \\(\\log_a\\):\n\\(\\log_a 5 + \\log_a 25 + \\log_a 125 + \\dots + \\log_a 9765625\\)",
     "options": [
       {
         "text": "\\(55 \\log_a 25\\)",
@@ -7091,7 +7091,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Rewrite each log term using the power rule.",
-        "workingOut": "\\(\\log_a 5^1 + \\log_a 5^2 + \\dots + \\log_a 5^{10}\\)\\n\\(= 1\\log_a 5 + 2\\log_a 5 + \\dots + 10\\log_a 5\\)",
+        "workingOut": "\\(\\log_a 5^1 + \\log_a 5^2 + \\dots + \\log_a 5^{10}\\)\n\\(= 1\\log_a 5 + 2\\log_a 5 + \\dots + 10\\log_a 5\\)",
         "graphData": null
       },
       {
@@ -7119,7 +7119,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Find the sum of the following logarithmic series in terms of \\(\\log_a\\):\\n\\(\\log_a 6 + \\log_a 36 + \\log_a 216 + \\dots + \\log_a 362797056\\)",
+    "question": "Find the sum of the following logarithmic series in terms of \\(\\log_a\\):\n\\(\\log_a 6 + \\log_a 36 + \\log_a 216 + \\dots + \\log_a 362797056\\)",
     "options": [
       {
         "text": "\\(66 \\log_a 6\\)",
@@ -7145,7 +7145,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Rewrite each log term using the power rule.",
-        "workingOut": "\\(\\log_a 6^1 + \\log_a 6^2 + \\dots + \\log_a 6^{11}\\)\\n\\(= 1\\log_a 6 + 2\\log_a 6 + \\dots + 11\\log_a 6\\)",
+        "workingOut": "\\(\\log_a 6^1 + \\log_a 6^2 + \\dots + \\log_a 6^{11}\\)\n\\(= 1\\log_a 6 + 2\\log_a 6 + \\dots + 11\\log_a 6\\)",
         "graphData": null
       },
       {
@@ -7173,7 +7173,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Find the sum of the following logarithmic series in terms of \\(\\log_a\\):\\n\\(\\log_a 7 + \\log_a 49 + \\log_a 343 + \\dots + \\log_a 13841287201\\)",
+    "question": "Find the sum of the following logarithmic series in terms of \\(\\log_a\\):\n\\(\\log_a 7 + \\log_a 49 + \\log_a 343 + \\dots + \\log_a 13841287201\\)",
     "options": [
       {
         "text": "\\(\\frac{78}{2} \\log_a 7\\)",
@@ -7199,7 +7199,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Rewrite each log term using the power rule.",
-        "workingOut": "\\(\\log_a 7^1 + \\log_a 7^2 + \\dots + \\log_a 7^{12}\\)\\n\\(= 1\\log_a 7 + 2\\log_a 7 + \\dots + 12\\log_a 7\\)",
+        "workingOut": "\\(\\log_a 7^1 + \\log_a 7^2 + \\dots + \\log_a 7^{12}\\)\n\\(= 1\\log_a 7 + 2\\log_a 7 + \\dots + 12\\log_a 7\\)",
         "graphData": null
       },
       {
@@ -7227,7 +7227,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Find the sum of the following logarithmic series in terms of \\(\\log_a\\):\\n\\(\\log_a 8 + \\log_a 64 + \\log_a 512 + \\dots + \\log_a 549755813888\\)",
+    "question": "Find the sum of the following logarithmic series in terms of \\(\\log_a\\):\n\\(\\log_a 8 + \\log_a 64 + \\log_a 512 + \\dots + \\log_a 549755813888\\)",
     "options": [
       {
         "text": "\\(91 \\log_a 64\\)",
@@ -7253,7 +7253,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Rewrite each log term using the power rule.",
-        "workingOut": "\\(\\log_a 8^1 + \\log_a 8^2 + \\dots + \\log_a 8^{13}\\)\\n\\(= 1\\log_a 8 + 2\\log_a 8 + \\dots + 13\\log_a 8\\)",
+        "workingOut": "\\(\\log_a 8^1 + \\log_a 8^2 + \\dots + \\log_a 8^{13}\\)\n\\(= 1\\log_a 8 + 2\\log_a 8 + \\dots + 13\\log_a 8\\)",
         "graphData": null
       },
       {
@@ -7281,7 +7281,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Find the sum of the following logarithmic series in terms of \\(\\log_a\\):\\n\\(\\log_a 9 + \\log_a 81 + \\log_a 729 + \\dots + \\log_a 22876792454961\\)",
+    "question": "Find the sum of the following logarithmic series in terms of \\(\\log_a\\):\n\\(\\log_a 9 + \\log_a 81 + \\log_a 729 + \\dots + \\log_a 22876792454961\\)",
     "options": [
       {
         "text": "\\(105 \\log_a 9\\)",
@@ -7307,7 +7307,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Rewrite each log term using the power rule.",
-        "workingOut": "\\(\\log_a 9^1 + \\log_a 9^2 + \\dots + \\log_a 9^{14}\\)\\n\\(= 1\\log_a 9 + 2\\log_a 9 + \\dots + 14\\log_a 9\\)",
+        "workingOut": "\\(\\log_a 9^1 + \\log_a 9^2 + \\dots + \\log_a 9^{14}\\)\n\\(= 1\\log_a 9 + 2\\log_a 9 + \\dots + 14\\log_a 9\\)",
         "graphData": null
       },
       {
@@ -7335,7 +7335,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "During testing of a Aerospace thrust decay, the cumulative output of rocket booster propellant combustion rate is recorded. The sum of the first \\(6\\) readings is \\(69\\) kN, and the sum of the first \\(11\\) readings is \\(209\\) kN.\\nAssuming the readings follow an arithmetic progression, find the cumulative sum of the first \\(17\\) readings.",
+    "question": "During testing of a Aerospace thrust decay, the cumulative output of rocket booster propellant combustion rate is recorded. The sum of the first \\(6\\) readings is \\(69\\) kN, and the sum of the first \\(11\\) readings is \\(209\\) kN.\nAssuming the readings follow an arithmetic progression, find the cumulative sum of the first \\(17\\) readings.",
     "options": [
       {
         "text": "\\(426\\)",
@@ -7361,17 +7361,17 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Set up the sum equations for the first p terms and the first q terms using the general sum formula.",
-        "workingOut": "\\(S_{6} = \\frac{6}{2}(2a + 5d) = 69\\)\\n\\(S_{11} = \\frac{11}{2}(2a + 10d) = 209\\)",
+        "workingOut": "\\(S_{6} = \\frac{6}{2}(2a + 5d) = 69\\)\n\\(S_{11} = \\frac{11}{2}(2a + 10d) = 209\\)",
         "graphData": null
       },
       {
         "explanation": "Simplify both equations by multiplying out and isolating the terms involving a and d.",
-        "workingOut": "\\(2a + 5d = \\frac{2 \\times 69}{6} = 23\\)  --- (1)\\n\\(2a + 10d = \\frac{2 \\times 209}{11} = 38\\)  --- (2)",
+        "workingOut": "\\(2a + 5d = \\frac{2 \\times 69}{6} = 23\\)  --- (1)\n\\(2a + 10d = \\frac{2 \\times 209}{11} = 38\\)  --- (2)",
         "graphData": null
       },
       {
         "explanation": "Subtract equation (1) from equation (2) to solve for the common difference d, then substitute it back to find the first term a.",
-        "workingOut": "\\((10 - 5)d = 15 \\implies d = 3\\)\\n\\(2a + 5(3) = 23 \\implies a = 4\\)",
+        "workingOut": "\\((10 - 5)d = 15 \\implies d = 3\\)\n\\(2a + 5(3) = 23 \\implies a = 4\\)",
         "graphData": null
       },
       {
@@ -7389,7 +7389,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a Deep-space probe signals, a machine undergoes a two-stage calibration process. In the first phase of \\(10\\) cycles, the telemetry packet arrival delay increment starts at \\(12\\) ms and increases by \\(4\\) ms per cycle. In the second phase of \\(10\\) cycles, the common difference doubles to \\(8\\) ms per cycle, continuing from the next logical step of the progression.\\nFind the total cumulative measurement over all \\(20\\) cycles.",
+    "question": "In a Deep-space probe signals, a machine undergoes a two-stage calibration process. In the first phase of \\(10\\) cycles, the telemetry packet arrival delay increment starts at \\(12\\) ms and increases by \\(4\\) ms per cycle. In the second phase of \\(10\\) cycles, the common difference doubles to \\(8\\) ms per cycle, continuing from the next logical step of the progression.\nFind the total cumulative measurement over all \\(20\\) cycles.",
     "options": [
       {
         "text": "\\(1260\\)",
@@ -7420,7 +7420,7 @@ export const Y12A_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Find the value of the last term in the first phase, and use it to determine the starting term of the second phase.",
-        "workingOut": "\\(T_{10} = 12 + (10 - 1)(4) = 48\\)\\n\\(\\text{First term of Phase 2} = T_{10} + 2d = 48 + 8 = 56\\)",
+        "workingOut": "\\(T_{10} = 12 + (10 - 1)(4) = 48\\)\n\\(\\text{First term of Phase 2} = T_{10} + 2d = 48 + 8 = 56\\)",
         "graphData": null
       },
       {
@@ -7443,7 +7443,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An automated sensor in a Blockchain mining difficulty logs a sequence of measurements of hash difficulty adjustment steps. The first measurement is \\(10\\) GH/s, and each subsequent measurement increases by \\(4\\) GH/s.\\nIf the total cumulative sum of the measurements is exactly \\(792\\) GH/s, find the number of measurements taken.",
+    "question": "An automated sensor in a Blockchain mining difficulty logs a sequence of measurements of hash difficulty adjustment steps. The first measurement is \\(10\\) GH/s, and each subsequent measurement increases by \\(4\\) GH/s.\nIf the total cumulative sum of the measurements is exactly \\(792\\) GH/s, find the number of measurements taken.",
     "options": [
       {
         "text": "\\(20\\)",
@@ -7479,7 +7479,7 @@ export const Y12A_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Solve the quadratic equation by factoring or using the quadratic formula, looking for a positive integer solution.",
-        "workingOut": "\\((2n + \\dots)(n - 18) = 0\\) (or equivalent factorization)\\n\\(n = 18\\) or \\(n = -\\frac{88}{4}\\) (invalid)",
+        "workingOut": "\\((2n + \\dots)(n - 18) = 0\\) (or equivalent factorization)\n\\(n = 18\\) or \\(n = -\\frac{88}{4}\\) (invalid)",
         "graphData": null
       },
       {
@@ -7497,7 +7497,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a long-term simulation of a Quantum state coherence, the superposition decay rate across energy bands is recorded daily. The daily values form an arithmetic progression with first term \\(9\\) seconds and common difference \\(3\\) seconds.\\nDetermine the cumulative sum of the measurements recorded from day \\(15\\) to day \\(34\\) inclusive.",
+    "question": "In a long-term simulation of a Quantum state coherence, the superposition decay rate across energy bands is recorded daily. The daily values form an arithmetic progression with first term \\(9\\) seconds and common difference \\(3\\) seconds.\nDetermine the cumulative sum of the measurements recorded from day \\(15\\) to day \\(34\\) inclusive.",
     "options": [
       {
         "text": "\\(1599\\)",
@@ -7523,12 +7523,12 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Calculate the number of terms to sum, and find the value of the first term in this range, which is T_p.",
-        "workingOut": "\\(\\text{Number of terms } N = 34 - 15 + 1 = 20\\)\\n\\(T_{15} = a + (15 - 1)d = 9 + 14(3) = 51\\)",
+        "workingOut": "\\(\\text{Number of terms } N = 34 - 15 + 1 = 20\\)\n\\(T_{15} = a + (15 - 1)d = 9 + 14(3) = 51\\)",
         "graphData": null
       },
       {
         "explanation": "Set up the sum of this new arithmetic series with N terms, where the first term is T_p and the common difference is d.",
-        "workingOut": "\\(S = \\frac{N}{2}\\left(2 T_{15} + (N - 1)d\\right)\\)\\n\\(S = \\frac{20}{2}\\left(2(51) + (19 \\times 3)\\right)\\)",
+        "workingOut": "\\(S = \\frac{N}{2}\\left(2 T_{15} + (N - 1)d\\right)\\)\n\\(S = \\frac{20}{2}\\left(2(51) + (19 \\times 3)\\right)\\)",
         "graphData": null
       },
       {
@@ -7546,7 +7546,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a monitoring study of Hydroelectric reservoir drainage, the daily water discharge volume decrement is measured over intervals. The value in the first interval is \\(135\\) m^3 and decreases by \\(4\\) m^3 in each subsequent interval, forming an arithmetic progression.\\nFind the maximum possible cumulative sum of this sequence before the values become non-positive.",
+    "question": "In a monitoring study of Hydroelectric reservoir drainage, the daily water discharge volume decrement is measured over intervals. The value in the first interval is \\(135\\) m^3 and decreases by \\(4\\) m^3 in each subsequent interval, forming an arithmetic progression.\nFind the maximum possible cumulative sum of this sequence before the values become non-positive.",
     "options": [
       {
         "text": "\\(2346\\)",
@@ -7572,7 +7572,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term and the common difference from the given details. Set up an inequality to determine when the terms of the arithmetic progression become zero or negative.",
-        "workingOut": "\\(a = 135\\), \\(d = -4\\)\\n\\(T_n = a + (n - 1)d \\geq 0\\)",
+        "workingOut": "\\(a = 135\\), \\(d = -4\\)\n\\(T_n = a + (n - 1)d \\geq 0\\)",
         "graphData": null
       },
       {
@@ -7582,7 +7582,7 @@ export const Y12A_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Use the sum formula for an arithmetic series to calculate the sum of the first n terms.",
-        "workingOut": "\\(S_n = \\frac{n}{2}\\left(2a + (n - 1)d\\right)\\)\\n\\(S_{34} = \\frac{34}{2}\\left(2(135) + (34 - 1)(-4)\\right)\\)",
+        "workingOut": "\\(S_n = \\frac{n}{2}\\left(2a + (n - 1)d\\right)\\)\n\\(S_{34} = \\frac{34}{2}\\left(2(135) + (34 - 1)(-4)\\right)\\)",
         "graphData": null
       },
       {
@@ -7600,7 +7600,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "During testing of a Geothermal borehole thermal gradients, the cumulative output of heat conduction loss per 100m depth is recorded. The sum of the first \\(5\\) readings is \\(65\\) °C, and the sum of the first \\(12\\) readings is \\(240\\) °C.\\nAssuming the readings follow an arithmetic progression, find the cumulative sum of the first \\(17\\) readings.",
+    "question": "During testing of a Geothermal borehole thermal gradients, the cumulative output of heat conduction loss per 100m depth is recorded. The sum of the first \\(5\\) readings is \\(65\\) °C, and the sum of the first \\(12\\) readings is \\(240\\) °C.\nAssuming the readings follow an arithmetic progression, find the cumulative sum of the first \\(17\\) readings.",
     "options": [
       {
         "text": "\\(489\\)",
@@ -7626,17 +7626,17 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Set up the sum equations for the first p terms and the first q terms using the general sum formula.",
-        "workingOut": "\\(S_{5} = \\frac{5}{2}(2a + 4d) = 65\\)\\n\\(S_{12} = \\frac{12}{2}(2a + 11d) = 240\\)",
+        "workingOut": "\\(S_{5} = \\frac{5}{2}(2a + 4d) = 65\\)\n\\(S_{12} = \\frac{12}{2}(2a + 11d) = 240\\)",
         "graphData": null
       },
       {
         "explanation": "Simplify both equations by multiplying out and isolating the terms involving a and d.",
-        "workingOut": "\\(2a + 4d = \\frac{2 \\times 65}{5} = 26\\)  --- (1)\\n\\(2a + 11d = \\frac{2 \\times 240}{12} = 40\\)  --- (2)",
+        "workingOut": "\\(2a + 4d = \\frac{2 \\times 65}{5} = 26\\)  --- (1)\n\\(2a + 11d = \\frac{2 \\times 240}{12} = 40\\)  --- (2)",
         "graphData": null
       },
       {
         "explanation": "Subtract equation (1) from equation (2) to solve for the common difference d, then substitute it back to find the first term a.",
-        "workingOut": "\\((11 - 4)d = 14 \\implies d = 2\\)\\n\\(2a + 4(2) = 26 \\implies a = 9\\)",
+        "workingOut": "\\((11 - 4)d = 14 \\implies d = 2\\)\n\\(2a + 4(2) = 26 \\implies a = 9\\)",
         "graphData": null
       },
       {
@@ -7654,7 +7654,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a Cybersecurity defense layers, a machine undergoes a two-stage calibration process. In the first phase of \\(10\\) cycles, the encryption key rotation latency scaling starts at \\(17\\) ms and increases by \\(3\\) ms per cycle. In the second phase of \\(10\\) cycles, the common difference doubles to \\(6\\) ms per cycle, continuing from the next logical step of the progression.\\nFind the total cumulative measurement over all \\(20\\) cycles.",
+    "question": "In a Cybersecurity defense layers, a machine undergoes a two-stage calibration process. In the first phase of \\(10\\) cycles, the encryption key rotation latency scaling starts at \\(17\\) ms and increases by \\(3\\) ms per cycle. In the second phase of \\(10\\) cycles, the common difference doubles to \\(6\\) ms per cycle, continuing from the next logical step of the progression.\nFind the total cumulative measurement over all \\(20\\) cycles.",
     "options": [
       {
         "text": "\\(1115\\)",
@@ -7685,7 +7685,7 @@ export const Y12A_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Find the value of the last term in the first phase, and use it to determine the starting term of the second phase.",
-        "workingOut": "\\(T_{10} = 17 + (10 - 1)(3) = 44\\)\\n\\(\\text{First term of Phase 2} = T_{10} + 2d = 44 + 6 = 50\\)",
+        "workingOut": "\\(T_{10} = 17 + (10 - 1)(3) = 44\\)\n\\(\\text{First term of Phase 2} = T_{10} + 2d = 44 + 6 = 50\\)",
         "graphData": null
       },
       {
@@ -7708,7 +7708,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An automated sensor in a Silicon wafer etching precision logs a sequence of measurements of nanometer deviation increment per laser cycle. The first measurement is \\(10\\) nm, and each subsequent measurement increases by \\(6\\) nm.\\nIf the total cumulative sum of the measurements is exactly \\(1748\\) nm, find the number of measurements taken.",
+    "question": "An automated sensor in a Silicon wafer etching precision logs a sequence of measurements of nanometer deviation increment per laser cycle. The first measurement is \\(10\\) nm, and each subsequent measurement increases by \\(6\\) nm.\nIf the total cumulative sum of the measurements is exactly \\(1748\\) nm, find the number of measurements taken.",
     "options": [
       {
         "text": "\\(23\\)",
@@ -7744,7 +7744,7 @@ export const Y12A_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Solve the quadratic equation by factoring or using the quadratic formula, looking for a positive integer solution.",
-        "workingOut": "\\((3n + \\dots)(n - 23) = 0\\) (or equivalent factorization)\\n\\(n = 23\\) or \\(n = -\\frac{152}{6}\\) (invalid)",
+        "workingOut": "\\((3n + \\dots)(n - 23) = 0\\) (or equivalent factorization)\n\\(n = 23\\) or \\(n = -\\frac{152}{6}\\) (invalid)",
         "graphData": null
       },
       {
@@ -7762,7 +7762,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a long-term simulation of a Autonomous drone flight battery load, the current draw increment per extra payload unit is recorded daily. The daily values form an arithmetic progression with first term \\(14\\) mA and common difference \\(4\\) mA.\\nDetermine the cumulative sum of the measurements recorded from day \\(15\\) to day \\(39\\) inclusive.",
+    "question": "In a long-term simulation of a Autonomous drone flight battery load, the current draw increment per extra payload unit is recorded daily. The daily values form an arithmetic progression with first term \\(14\\) mA and common difference \\(4\\) mA.\nDetermine the cumulative sum of the measurements recorded from day \\(15\\) to day \\(39\\) inclusive.",
     "options": [
       {
         "text": "\\(2950\\)",
@@ -7788,12 +7788,12 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Calculate the number of terms to sum, and find the value of the first term in this range, which is T_p.",
-        "workingOut": "\\(\\text{Number of terms } N = 39 - 15 + 1 = 25\\)\\n\\(T_{15} = a + (15 - 1)d = 14 + 14(4) = 70\\)",
+        "workingOut": "\\(\\text{Number of terms } N = 39 - 15 + 1 = 25\\)\n\\(T_{15} = a + (15 - 1)d = 14 + 14(4) = 70\\)",
         "graphData": null
       },
       {
         "explanation": "Set up the sum of this new arithmetic series with N terms, where the first term is T_p and the common difference is d.",
-        "workingOut": "\\(S = \\frac{N}{2}\\left(2 T_{15} + (N - 1)d\\right)\\)\\n\\(S = \\frac{25}{2}\\left(2(70) + (24 \\times 4)\\right)\\)",
+        "workingOut": "\\(S = \\frac{N}{2}\\left(2 T_{15} + (N - 1)d\\right)\\)\n\\(S = \\frac{25}{2}\\left(2(70) + (24 \\times 4)\\right)\\)",
         "graphData": null
       },
       {
@@ -7811,7 +7811,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a monitoring study of Nanoparticle drug delivery release, the hourly diffusion rate decay in bloodstream is measured over intervals. The value in the first interval is \\(150\\) mg/L and decreases by \\(4\\) mg/L in each subsequent interval, forming an arithmetic progression.\\nFind the maximum possible cumulative sum of this sequence before the values become non-positive.",
+    "question": "In a monitoring study of Nanoparticle drug delivery release, the hourly diffusion rate decay in bloodstream is measured over intervals. The value in the first interval is \\(150\\) mg/L and decreases by \\(4\\) mg/L in each subsequent interval, forming an arithmetic progression.\nFind the maximum possible cumulative sum of this sequence before the values become non-positive.",
     "options": [
       {
         "text": "\\(2888\\)",
@@ -7837,7 +7837,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term and the common difference from the given details. Set up an inequality to determine when the terms of the arithmetic progression become zero or negative.",
-        "workingOut": "\\(a = 150\\), \\(d = -4\\)\\n\\(T_n = a + (n - 1)d \\geq 0\\)",
+        "workingOut": "\\(a = 150\\), \\(d = -4\\)\n\\(T_n = a + (n - 1)d \\geq 0\\)",
         "graphData": null
       },
       {
@@ -7847,7 +7847,7 @@ export const Y12A_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Use the sum formula for an arithmetic series to calculate the sum of the first n terms.",
-        "workingOut": "\\(S_n = \\frac{n}{2}\\left(2a + (n - 1)d\\right)\\)\\n\\(S_{38} = \\frac{38}{2}\\left(2(150) + (38 - 1)(-4)\\right)\\)",
+        "workingOut": "\\(S_n = \\frac{n}{2}\\left(2a + (n - 1)d\\right)\\)\n\\(S_{38} = \\frac{38}{2}\\left(2(150) + (38 - 1)(-4)\\right)\\)",
         "graphData": null
       },
       {
@@ -7865,7 +7865,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "During testing of a Fusion reactor magnetic confinement, the cumulative output of plasma density depletion gradient per millisecond is recorded. The sum of the first \\(7\\) readings is \\(182\\) T, and the sum of the first \\(13\\) readings is \\(494\\) T.\\nAssuming the readings follow an arithmetic progression, find the cumulative sum of the first \\(20\\) readings.",
+    "question": "During testing of a Fusion reactor magnetic confinement, the cumulative output of plasma density depletion gradient per millisecond is recorded. The sum of the first \\(7\\) readings is \\(182\\) T, and the sum of the first \\(13\\) readings is \\(494\\) T.\nAssuming the readings follow an arithmetic progression, find the cumulative sum of the first \\(20\\) readings.",
     "options": [
       {
         "text": "\\(990\\)",
@@ -7891,17 +7891,17 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Set up the sum equations for the first p terms and the first q terms using the general sum formula.",
-        "workingOut": "\\(S_{7} = \\frac{7}{2}(2a + 6d) = 182\\)\\n\\(S_{13} = \\frac{13}{2}(2a + 12d) = 494\\)",
+        "workingOut": "\\(S_{7} = \\frac{7}{2}(2a + 6d) = 182\\)\n\\(S_{13} = \\frac{13}{2}(2a + 12d) = 494\\)",
         "graphData": null
       },
       {
         "explanation": "Simplify both equations by multiplying out and isolating the terms involving a and d.",
-        "workingOut": "\\(2a + 6d = \\frac{2 \\times 182}{7} = 52\\)  --- (1)\\n\\(2a + 12d = \\frac{2 \\times 494}{13} = 76\\)  --- (2)",
+        "workingOut": "\\(2a + 6d = \\frac{2 \\times 182}{7} = 52\\)  --- (1)\n\\(2a + 12d = \\frac{2 \\times 494}{13} = 76\\)  --- (2)",
         "graphData": null
       },
       {
         "explanation": "Subtract equation (1) from equation (2) to solve for the common difference d, then substitute it back to find the first term a.",
-        "workingOut": "\\((12 - 6)d = 24 \\implies d = 4\\)\\n\\(2a + 6(4) = 52 \\implies a = 14\\)",
+        "workingOut": "\\((12 - 6)d = 24 \\implies d = 4\\)\n\\(2a + 6(4) = 52 \\implies a = 14\\)",
         "graphData": null
       },
       {
@@ -7919,7 +7919,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a Biopolymer chain length synthesis, a machine undergoes a two-stage calibration process. In the first phase of \\(10\\) cycles, the monomer bond addition rate decrement starts at \\(22\\) units and increases by \\(2\\) units per cycle. In the second phase of \\(10\\) cycles, the common difference doubles to \\(4\\) units per cycle, continuing from the next logical step of the progression.\\nFind the total cumulative measurement over all \\(20\\) cycles.",
+    "question": "In a Biopolymer chain length synthesis, a machine undergoes a two-stage calibration process. In the first phase of \\(10\\) cycles, the monomer bond addition rate decrement starts at \\(22\\) units and increases by \\(2\\) units per cycle. In the second phase of \\(10\\) cycles, the common difference doubles to \\(4\\) units per cycle, continuing from the next logical step of the progression.\nFind the total cumulative measurement over all \\(20\\) cycles.",
     "options": [
       {
         "text": "\\(930\\)",
@@ -7950,7 +7950,7 @@ export const Y12A_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Find the value of the last term in the first phase, and use it to determine the starting term of the second phase.",
-        "workingOut": "\\(T_{10} = 22 + (10 - 1)(2) = 40\\)\\n\\(\\text{First term of Phase 2} = T_{10} + 2d = 40 + 4 = 44\\)",
+        "workingOut": "\\(T_{10} = 22 + (10 - 1)(2) = 40\\)\n\\(\\text{First term of Phase 2} = T_{10} + 2d = 40 + 4 = 44\\)",
         "graphData": null
       },
       {
@@ -7973,7 +7973,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An automated sensor in a Deep sea pressure vessel stress logs a sequence of measurements of micro-strain deflection per 100 meters descent. The first measurement is \\(10\\) µε, and each subsequent measurement increases by \\(5\\) µε.\\nIf the total cumulative sum of the measurements is exactly \\(945\\) µε, find the number of measurements taken.",
+    "question": "An automated sensor in a Deep sea pressure vessel stress logs a sequence of measurements of micro-strain deflection per 100 meters descent. The first measurement is \\(10\\) µε, and each subsequent measurement increases by \\(5\\) µε.\nIf the total cumulative sum of the measurements is exactly \\(945\\) µε, find the number of measurements taken.",
     "options": [
       {
         "text": "\\(20\\)",
@@ -8009,7 +8009,7 @@ export const Y12A_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Solve the quadratic equation by factoring or using the quadratic formula, looking for a positive integer solution.",
-        "workingOut": "\\((2.5n + \\dots)(n - 18) = 0\\) (or equivalent factorization)\\n\\(n = 18\\) or \\(n = -\\frac{105}{5}\\) (invalid)",
+        "workingOut": "\\((2.5n + \\dots)(n - 18) = 0\\) (or equivalent factorization)\n\\(n = 18\\) or \\(n = -\\frac{105}{5}\\) (invalid)",
         "graphData": null
       },
       {
@@ -8027,7 +8027,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a long-term simulation of a Agricultural drip irrigation networks, the nozzle flow rate depletion along pipeline is recorded daily. The daily values form an arithmetic progression with first term \\(19\\) L/h and common difference \\(5\\) L/h.\\nDetermine the cumulative sum of the measurements recorded from day \\(15\\) to day \\(34\\) inclusive.",
+    "question": "In a long-term simulation of a Agricultural drip irrigation networks, the nozzle flow rate depletion along pipeline is recorded daily. The daily values form an arithmetic progression with first term \\(19\\) L/h and common difference \\(5\\) L/h.\nDetermine the cumulative sum of the measurements recorded from day \\(15\\) to day \\(34\\) inclusive.",
     "options": [
       {
         "text": "\\(2720\\)",
@@ -8053,12 +8053,12 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Calculate the number of terms to sum, and find the value of the first term in this range, which is T_p.",
-        "workingOut": "\\(\\text{Number of terms } N = 34 - 15 + 1 = 20\\)\\n\\(T_{15} = a + (15 - 1)d = 19 + 14(5) = 89\\)",
+        "workingOut": "\\(\\text{Number of terms } N = 34 - 15 + 1 = 20\\)\n\\(T_{15} = a + (15 - 1)d = 19 + 14(5) = 89\\)",
         "graphData": null
       },
       {
         "explanation": "Set up the sum of this new arithmetic series with N terms, where the first term is T_p and the common difference is d.",
-        "workingOut": "\\(S = \\frac{N}{2}\\left(2 T_{15} + (N - 1)d\\right)\\)\\n\\(S = \\frac{20}{2}\\left(2(89) + (19 \\times 5)\\right)\\)",
+        "workingOut": "\\(S = \\frac{N}{2}\\left(2 T_{15} + (N - 1)d\\right)\\)\n\\(S = \\frac{20}{2}\\left(2(89) + (19 \\times 5)\\right)\\)",
         "graphData": null
       },
       {
@@ -8076,7 +8076,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a monitoring study of Wind turbine aerodynamic drag, the vibration amplitude increase per m/s wind speed is measured over intervals. The value in the first interval is \\(165\\) mm and decreases by \\(4\\) mm in each subsequent interval, forming an arithmetic progression.\\nFind the maximum possible cumulative sum of this sequence before the values become non-positive.",
+    "question": "In a monitoring study of Wind turbine aerodynamic drag, the vibration amplitude increase per m/s wind speed is measured over intervals. The value in the first interval is \\(165\\) mm and decreases by \\(4\\) mm in each subsequent interval, forming an arithmetic progression.\nFind the maximum possible cumulative sum of this sequence before the values become non-positive.",
     "options": [
       {
         "text": "\\(3486\\)",
@@ -8102,7 +8102,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term and the common difference from the given details. Set up an inequality to determine when the terms of the arithmetic progression become zero or negative.",
-        "workingOut": "\\(a = 165\\), \\(d = -4\\)\\n\\(T_n = a + (n - 1)d \\geq 0\\)",
+        "workingOut": "\\(a = 165\\), \\(d = -4\\)\n\\(T_n = a + (n - 1)d \\geq 0\\)",
         "graphData": null
       },
       {
@@ -8112,7 +8112,7 @@ export const Y12A_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Use the sum formula for an arithmetic series to calculate the sum of the first n terms.",
-        "workingOut": "\\(S_n = \\frac{n}{2}\\left(2a + (n - 1)d\\right)\\)\\n\\(S_{42} = \\frac{42}{2}\\left(2(165) + (42 - 1)(-4)\\right)\\)",
+        "workingOut": "\\(S_n = \\frac{n}{2}\\left(2a + (n - 1)d\\right)\\)\n\\(S_{42} = \\frac{42}{2}\\left(2(165) + (42 - 1)(-4)\\right)\\)",
         "graphData": null
       },
       {
@@ -8130,7 +8130,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "During testing of a Machine learning gradient descent steps, the cumulative output of computational cost increment per parameter billion is recorded. The sum of the first \\(6\\) readings is \\(159\\) FLOPs, and the sum of the first \\(10\\) readings is \\(325\\) FLOPs.\\nAssuming the readings follow an arithmetic progression, find the cumulative sum of the first \\(16\\) readings.",
+    "question": "During testing of a Machine learning gradient descent steps, the cumulative output of computational cost increment per parameter billion is recorded. The sum of the first \\(6\\) readings is \\(159\\) FLOPs, and the sum of the first \\(10\\) readings is \\(325\\) FLOPs.\nAssuming the readings follow an arithmetic progression, find the cumulative sum of the first \\(16\\) readings.",
     "options": [
       {
         "text": "\\(664\\) 3",
@@ -8156,17 +8156,17 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Set up the sum equations for the first p terms and the first q terms using the general sum formula.",
-        "workingOut": "\\(S_{6} = \\frac{6}{2}(2a + 5d) = 159\\)\\n\\(S_{10} = \\frac{10}{2}(2a + 9d) = 325\\)",
+        "workingOut": "\\(S_{6} = \\frac{6}{2}(2a + 5d) = 159\\)\n\\(S_{10} = \\frac{10}{2}(2a + 9d) = 325\\)",
         "graphData": null
       },
       {
         "explanation": "Simplify both equations by multiplying out and isolating the terms involving a and d.",
-        "workingOut": "\\(2a + 5d = \\frac{2 \\times 159}{6} = 53\\)  --- (1)\\n\\(2a + 9d = \\frac{2 \\times 325}{10} = 65\\)  --- (2)",
+        "workingOut": "\\(2a + 5d = \\frac{2 \\times 159}{6} = 53\\)  --- (1)\n\\(2a + 9d = \\frac{2 \\times 325}{10} = 65\\)  --- (2)",
         "graphData": null
       },
       {
         "explanation": "Subtract equation (1) from equation (2) to solve for the common difference d, then substitute it back to find the first term a.",
-        "workingOut": "\\((9 - 5)d = 12 \\implies d = 3\\)\\n\\(2a + 5(3) = 53 \\implies a = 19\\)",
+        "workingOut": "\\((9 - 5)d = 12 \\implies d = 3\\)\n\\(2a + 5(3) = 53 \\implies a = 19\\)",
         "graphData": null
       },
       {
@@ -8184,7 +8184,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a Optical fiber signal attenuation, a machine undergoes a two-stage calibration process. In the first phase of \\(10\\) cycles, the photon scattering rate over kilometers starts at \\(27\\) dB and increases by \\(4\\) dB per cycle. In the second phase of \\(10\\) cycles, the common difference doubles to \\(8\\) dB per cycle, continuing from the next logical step of the progression.\\nFind the total cumulative measurement over all \\(20\\) cycles.",
+    "question": "In a Optical fiber signal attenuation, a machine undergoes a two-stage calibration process. In the first phase of \\(10\\) cycles, the photon scattering rate over kilometers starts at \\(27\\) dB and increases by \\(4\\) dB per cycle. In the second phase of \\(10\\) cycles, the common difference doubles to \\(8\\) dB per cycle, continuing from the next logical step of the progression.\nFind the total cumulative measurement over all \\(20\\) cycles.",
     "options": [
       {
         "text": "\\(1292\\)",
@@ -8215,7 +8215,7 @@ export const Y12A_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Find the value of the last term in the first phase, and use it to determine the starting term of the second phase.",
-        "workingOut": "\\(T_{10} = 27 + (10 - 1)(4) = 63\\)\\n\\(\\text{First term of Phase 2} = T_{10} + 2d = 63 + 8 = 71\\)",
+        "workingOut": "\\(T_{10} = 27 + (10 - 1)(4) = 63\\)\n\\(\\text{First term of Phase 2} = T_{10} + 2d = 63 + 8 = 71\\)",
         "graphData": null
       },
       {
@@ -8238,7 +8238,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An automated sensor in a High-speed rail braking thermal absorption logs a sequence of measurements of disc temperature rise increment per second. The first measurement is \\(10\\) °C, and each subsequent measurement increases by \\(4\\) °C.\\nIf the total cumulative sum of the measurements is exactly \\(1242\\) °C, find the number of measurements taken.",
+    "question": "An automated sensor in a High-speed rail braking thermal absorption logs a sequence of measurements of disc temperature rise increment per second. The first measurement is \\(10\\) °C, and each subsequent measurement increases by \\(4\\) °C.\nIf the total cumulative sum of the measurements is exactly \\(1242\\) °C, find the number of measurements taken.",
     "options": [
       {
         "text": "\\(28\\)",
@@ -8274,7 +8274,7 @@ export const Y12A_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Solve the quadratic equation by factoring or using the quadratic formula, looking for a positive integer solution.",
-        "workingOut": "\\((2n + \\dots)(n - 23) = 0\\) (or equivalent factorization)\\n\\(n = 23\\) or \\(n = -\\frac{108}{4}\\) (invalid)",
+        "workingOut": "\\((2n + \\dots)(n - 23) = 0\\) (or equivalent factorization)\n\\(n = 23\\) or \\(n = -\\frac{108}{4}\\) (invalid)",
         "graphData": null
       },
       {
@@ -8292,7 +8292,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a long-term simulation of a Hydraulic fracture propagation, the fluid pressure drop per meter cracked is recorded daily. The daily values form an arithmetic progression with first term \\(24\\) kPa and common difference \\(6\\) kPa.\\nDetermine the cumulative sum of the measurements recorded from day \\(15\\) to day \\(39\\) inclusive.",
+    "question": "In a long-term simulation of a Hydraulic fracture propagation, the fluid pressure drop per meter cracked is recorded daily. The daily values form an arithmetic progression with first term \\(24\\) kPa and common difference \\(6\\) kPa.\nDetermine the cumulative sum of the measurements recorded from day \\(15\\) to day \\(39\\) inclusive.",
     "options": [
       {
         "text": "\\(4524\\)",
@@ -8318,12 +8318,12 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Calculate the number of terms to sum, and find the value of the first term in this range, which is T_p.",
-        "workingOut": "\\(\\text{Number of terms } N = 39 - 15 + 1 = 25\\)\\n\\(T_{15} = a + (15 - 1)d = 24 + 14(6) = 108\\)",
+        "workingOut": "\\(\\text{Number of terms } N = 39 - 15 + 1 = 25\\)\n\\(T_{15} = a + (15 - 1)d = 24 + 14(6) = 108\\)",
         "graphData": null
       },
       {
         "explanation": "Set up the sum of this new arithmetic series with N terms, where the first term is T_p and the common difference is d.",
-        "workingOut": "\\(S = \\frac{N}{2}\\left(2 T_{15} + (N - 1)d\\right)\\)\\n\\(S = \\frac{25}{2}\\left(2(108) + (24 \\times 6)\\right)\\)",
+        "workingOut": "\\(S = \\frac{N}{2}\\left(2 T_{15} + (N - 1)d\\right)\\)\n\\(S = \\frac{25}{2}\\left(2(108) + (24 \\times 6)\\right)\\)",
         "graphData": null
       },
       {
@@ -8341,7 +8341,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a monitoring study of Solar panel dust accumulation degradation, the daily power output reduction increment is measured over intervals. The value in the first interval is \\(180\\) W and decreases by \\(4\\) W in each subsequent interval, forming an arithmetic progression.\\nFind the maximum possible cumulative sum of this sequence before the values become non-positive.",
+    "question": "In a monitoring study of Solar panel dust accumulation degradation, the daily power output reduction increment is measured over intervals. The value in the first interval is \\(180\\) W and decreases by \\(4\\) W in each subsequent interval, forming an arithmetic progression.\nFind the maximum possible cumulative sum of this sequence before the values become non-positive.",
     "options": [
       {
         "text": "\\(4140\\)",
@@ -8367,7 +8367,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term and the common difference from the given details. Set up an inequality to determine when the terms of the arithmetic progression become zero or negative.",
-        "workingOut": "\\(a = 180\\), \\(d = -4\\)\\n\\(T_n = a + (n - 1)d \\geq 0\\)",
+        "workingOut": "\\(a = 180\\), \\(d = -4\\)\n\\(T_n = a + (n - 1)d \\geq 0\\)",
         "graphData": null
       },
       {
@@ -8377,7 +8377,7 @@ export const Y12A_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Use the sum formula for an arithmetic series to calculate the sum of the first n terms.",
-        "workingOut": "\\(S_n = \\frac{n}{2}\\left(2a + (n - 1)d\\right)\\)\\n\\(S_{46} = \\frac{46}{2}\\left(2(180) + (46 - 1)(-4)\\right)\\)",
+        "workingOut": "\\(S_n = \\frac{n}{2}\\left(2a + (n - 1)d\\right)\\)\n\\(S_{46} = \\frac{46}{2}\\left(2(180) + (46 - 1)(-4)\\right)\\)",
         "graphData": null
       },
       {
@@ -8395,7 +8395,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "During testing of a Automated warehouse sorter throughput, the cumulative output of package transfer time penalty per conveyor section is recorded. The sum of the first \\(5\\) readings is \\(140\\) ms, and the sum of the first \\(11\\) readings is \\(374\\) ms.\\nAssuming the readings follow an arithmetic progression, find the cumulative sum of the first \\(16\\) readings.",
+    "question": "During testing of a Automated warehouse sorter throughput, the cumulative output of package transfer time penalty per conveyor section is recorded. The sum of the first \\(5\\) readings is \\(140\\) ms, and the sum of the first \\(11\\) readings is \\(374\\) ms.\nAssuming the readings follow an arithmetic progression, find the cumulative sum of the first \\(16\\) readings.",
     "options": [
       {
         "text": "\\(724\\)",
@@ -8421,17 +8421,17 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Set up the sum equations for the first p terms and the first q terms using the general sum formula.",
-        "workingOut": "\\(S_{5} = \\frac{5}{2}(2a + 4d) = 140\\)\\n\\(S_{11} = \\frac{11}{2}(2a + 10d) = 374\\)",
+        "workingOut": "\\(S_{5} = \\frac{5}{2}(2a + 4d) = 140\\)\n\\(S_{11} = \\frac{11}{2}(2a + 10d) = 374\\)",
         "graphData": null
       },
       {
         "explanation": "Simplify both equations by multiplying out and isolating the terms involving a and d.",
-        "workingOut": "\\(2a + 4d = \\frac{2 \\times 140}{5} = 56\\)  --- (1)\\n\\(2a + 10d = \\frac{2 \\times 374}{11} = 68\\)  --- (2)",
+        "workingOut": "\\(2a + 4d = \\frac{2 \\times 140}{5} = 56\\)  --- (1)\n\\(2a + 10d = \\frac{2 \\times 374}{11} = 68\\)  --- (2)",
         "graphData": null
       },
       {
         "explanation": "Subtract equation (1) from equation (2) to solve for the common difference d, then substitute it back to find the first term a.",
-        "workingOut": "\\((10 - 4)d = 12 \\implies d = 2\\)\\n\\(2a + 4(2) = 56 \\implies a = 24\\)",
+        "workingOut": "\\((10 - 4)d = 12 \\implies d = 2\\)\n\\(2a + 4(2) = 56 \\implies a = 24\\)",
         "graphData": null
       },
       {
@@ -8449,7 +8449,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a Atmospheric balloon telemetry pressure, a machine undergoes a two-stage calibration process. In the first phase of \\(10\\) cycles, the barometric measurement offset per kilometer altitude starts at \\(32\\) hPa and increases by \\(3\\) hPa per cycle. In the second phase of \\(10\\) cycles, the common difference doubles to \\(6\\) hPa per cycle, continuing from the next logical step of the progression.\\nFind the total cumulative measurement over all \\(20\\) cycles.",
+    "question": "In a Atmospheric balloon telemetry pressure, a machine undergoes a two-stage calibration process. In the first phase of \\(10\\) cycles, the barometric measurement offset per kilometer altitude starts at \\(32\\) hPa and increases by \\(3\\) hPa per cycle. In the second phase of \\(10\\) cycles, the common difference doubles to \\(6\\) hPa per cycle, continuing from the next logical step of the progression.\nFind the total cumulative measurement over all \\(20\\) cycles.",
     "options": [
       {
         "text": "\\(1169\\)",
@@ -8480,7 +8480,7 @@ export const Y12A_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Find the value of the last term in the first phase, and use it to determine the starting term of the second phase.",
-        "workingOut": "\\(T_{10} = 32 + (10 - 1)(3) = 59\\)\\n\\(\\text{First term of Phase 2} = T_{10} + 2d = 59 + 6 = 65\\)",
+        "workingOut": "\\(T_{10} = 32 + (10 - 1)(3) = 59\\)\n\\(\\text{First term of Phase 2} = T_{10} + 2d = 59 + 6 = 65\\)",
         "graphData": null
       },
       {
@@ -8503,7 +8503,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An automated sensor in a Laser diode thermal drift logs a sequence of measurements of wavelength shift increment per degree Celsius. The first measurement is \\(10\\) pm, and each subsequent measurement increases by \\(6\\) pm.\\nIf the total cumulative sum of the measurements is exactly \\(1098\\) pm, find the number of measurements taken.",
+    "question": "An automated sensor in a Laser diode thermal drift logs a sequence of measurements of wavelength shift increment per degree Celsius. The first measurement is \\(10\\) pm, and each subsequent measurement increases by \\(6\\) pm.\nIf the total cumulative sum of the measurements is exactly \\(1098\\) pm, find the number of measurements taken.",
     "options": [
       {
         "text": "\\(23\\)",
@@ -8539,7 +8539,7 @@ export const Y12A_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Solve the quadratic equation by factoring or using the quadratic formula, looking for a positive integer solution.",
-        "workingOut": "\\((3n + \\dots)(n - 18) = 0\\) (or equivalent factorization)\\n\\(n = 18\\) or \\(n = -\\frac{122}{6}\\) (invalid)",
+        "workingOut": "\\((3n + \\dots)(n - 18) = 0\\) (or equivalent factorization)\n\\(n = 18\\) or \\(n = -\\frac{122}{6}\\) (invalid)",
         "graphData": null
       },
       {
@@ -8557,7 +8557,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a long-term simulation of a Marine ecosystem coral bleaching rate, the algae population density loss per week is recorded daily. The daily values form an arithmetic progression with first term \\(29\\) cells/mL and common difference \\(3\\) cells/mL.\\nDetermine the cumulative sum of the measurements recorded from day \\(15\\) to day \\(34\\) inclusive.",
+    "question": "In a long-term simulation of a Marine ecosystem coral bleaching rate, the algae population density loss per week is recorded daily. The daily values form an arithmetic progression with first term \\(29\\) cells/mL and common difference \\(3\\) cells/mL.\nDetermine the cumulative sum of the measurements recorded from day \\(15\\) to day \\(34\\) inclusive.",
     "options": [
       {
         "text": "\\(2019\\)",
@@ -8583,12 +8583,12 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Calculate the number of terms to sum, and find the value of the first term in this range, which is T_p.",
-        "workingOut": "\\(\\text{Number of terms } N = 34 - 15 + 1 = 20\\)\\n\\(T_{15} = a + (15 - 1)d = 29 + 14(3) = 71\\)",
+        "workingOut": "\\(\\text{Number of terms } N = 34 - 15 + 1 = 20\\)\n\\(T_{15} = a + (15 - 1)d = 29 + 14(3) = 71\\)",
         "graphData": null
       },
       {
         "explanation": "Set up the sum of this new arithmetic series with N terms, where the first term is T_p and the common difference is d.",
-        "workingOut": "\\(S = \\frac{N}{2}\\left(2 T_{15} + (N - 1)d\\right)\\)\\n\\(S = \\frac{20}{2}\\left(2(71) + (19 \\times 3)\\right)\\)",
+        "workingOut": "\\(S = \\frac{N}{2}\\left(2 T_{15} + (N - 1)d\\right)\\)\n\\(S = \\frac{20}{2}\\left(2(71) + (19 \\times 3)\\right)\\)",
         "graphData": null
       },
       {
@@ -8606,7 +8606,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a monitoring study of Subsea fiber-optic repeater power draw, the current load increment per extra channel link is measured over intervals. The value in the first interval is \\(195\\) mW and decreases by \\(4\\) mW in each subsequent interval, forming an arithmetic progression.\\nFind the maximum possible cumulative sum of this sequence before the values become non-positive.",
+    "question": "In a monitoring study of Subsea fiber-optic repeater power draw, the current load increment per extra channel link is measured over intervals. The value in the first interval is \\(195\\) mW and decreases by \\(4\\) mW in each subsequent interval, forming an arithmetic progression.\nFind the maximum possible cumulative sum of this sequence before the values become non-positive.",
     "options": [
       {
         "text": "\\(4859\\)",
@@ -8632,7 +8632,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term and the common difference from the given details. Set up an inequality to determine when the terms of the arithmetic progression become zero or negative.",
-        "workingOut": "\\(a = 195\\), \\(d = -4\\)\\n\\(T_n = a + (n - 1)d \\geq 0\\)",
+        "workingOut": "\\(a = 195\\), \\(d = -4\\)\n\\(T_n = a + (n - 1)d \\geq 0\\)",
         "graphData": null
       },
       {
@@ -8642,7 +8642,7 @@ export const Y12A_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Use the sum formula for an arithmetic series to calculate the sum of the first n terms.",
-        "workingOut": "\\(S_n = \\frac{n}{2}\\left(2a + (n - 1)d\\right)\\)\\n\\(S_{49} = \\frac{49}{2}\\left(2(195) + (49 - 1)(-4)\\right)\\)",
+        "workingOut": "\\(S_n = \\frac{n}{2}\\left(2a + (n - 1)d\\right)\\)\n\\(S_{49} = \\frac{49}{2}\\left(2(195) + (49 - 1)(-4)\\right)\\)",
         "graphData": null
       },
       {
@@ -8660,7 +8660,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "During testing of a Micro-seismic event frequency escalation, the cumulative output of shocks registered per hour preceding main tremor is recorded. The sum of the first \\(7\\) readings is \\(287\\) events, and the sum of the first \\(12\\) readings is \\(612\\) events.\\nAssuming the readings follow an arithmetic progression, find the cumulative sum of the first \\(19\\) readings.",
+    "question": "During testing of a Micro-seismic event frequency escalation, the cumulative output of shocks registered per hour preceding main tremor is recorded. The sum of the first \\(7\\) readings is \\(287\\) events, and the sum of the first \\(12\\) readings is \\(612\\) events.\nAssuming the readings follow an arithmetic progression, find the cumulative sum of the first \\(19\\) readings.",
     "options": [
       {
         "text": "\\(1420\\)",
@@ -8686,17 +8686,17 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Set up the sum equations for the first p terms and the first q terms using the general sum formula.",
-        "workingOut": "\\(S_{7} = \\frac{7}{2}(2a + 6d) = 287\\)\\n\\(S_{12} = \\frac{12}{2}(2a + 11d) = 612\\)",
+        "workingOut": "\\(S_{7} = \\frac{7}{2}(2a + 6d) = 287\\)\n\\(S_{12} = \\frac{12}{2}(2a + 11d) = 612\\)",
         "graphData": null
       },
       {
         "explanation": "Simplify both equations by multiplying out and isolating the terms involving a and d.",
-        "workingOut": "\\(2a + 6d = \\frac{2 \\times 287}{7} = 82\\)  --- (1)\\n\\(2a + 11d = \\frac{2 \\times 612}{12} = 102\\)  --- (2)",
+        "workingOut": "\\(2a + 6d = \\frac{2 \\times 287}{7} = 82\\)  --- (1)\n\\(2a + 11d = \\frac{2 \\times 612}{12} = 102\\)  --- (2)",
         "graphData": null
       },
       {
         "explanation": "Subtract equation (1) from equation (2) to solve for the common difference d, then substitute it back to find the first term a.",
-        "workingOut": "\\((11 - 6)d = 20 \\implies d = 4\\)\\n\\(2a + 6(4) = 82 \\implies a = 29\\)",
+        "workingOut": "\\((11 - 6)d = 20 \\implies d = 4\\)\n\\(2a + 6(4) = 82 \\implies a = 29\\)",
         "graphData": null
       },
       {
@@ -8714,7 +8714,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a Aircraft wing carbon fiber strain stress, a machine undergoes a two-stage calibration process. In the first phase of \\(10\\) cycles, the stress factor increment per G-force unit starts at \\(37\\) MPa and increases by \\(2\\) MPa per cycle. In the second phase of \\(10\\) cycles, the common difference doubles to \\(4\\) MPa per cycle, continuing from the next logical step of the progression.\\nFind the total cumulative measurement over all \\(20\\) cycles.",
+    "question": "In a Aircraft wing carbon fiber strain stress, a machine undergoes a two-stage calibration process. In the first phase of \\(10\\) cycles, the stress factor increment per G-force unit starts at \\(37\\) MPa and increases by \\(2\\) MPa per cycle. In the second phase of \\(10\\) cycles, the common difference doubles to \\(4\\) MPa per cycle, continuing from the next logical step of the progression.\nFind the total cumulative measurement over all \\(20\\) cycles.",
     "options": [
       {
         "text": "\\(1230\\)",
@@ -8745,7 +8745,7 @@ export const Y12A_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Find the value of the last term in the first phase, and use it to determine the starting term of the second phase.",
-        "workingOut": "\\(T_{10} = 37 + (10 - 1)(2) = 55\\)\\n\\(\\text{First term of Phase 2} = T_{10} + 2d = 55 + 4 = 59\\)",
+        "workingOut": "\\(T_{10} = 37 + (10 - 1)(2) = 55\\)\n\\(\\text{First term of Phase 2} = T_{10} + 2d = 55 + 4 = 59\\)",
         "graphData": null
       },
       {
@@ -8768,7 +8768,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An automated sensor in a Desalination membrane clogging rate logs a sequence of measurements of salt passage percentage increase per month. The first measurement is \\(10\\) %, and each subsequent measurement increases by \\(5\\) %.\\nIf the total cumulative sum of the measurements is exactly \\(1495\\) %, find the number of measurements taken.",
+    "question": "An automated sensor in a Desalination membrane clogging rate logs a sequence of measurements of salt passage percentage increase per month. The first measurement is \\(10\\) %, and each subsequent measurement increases by \\(5\\) %.\nIf the total cumulative sum of the measurements is exactly \\(1495\\) %, find the number of measurements taken.",
     "options": [
       {
         "text": "\\(28\\)",
@@ -8804,7 +8804,7 @@ export const Y12A_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Solve the quadratic equation by factoring or using the quadratic formula, looking for a positive integer solution.",
-        "workingOut": "\\((2.5n + \\dots)(n - 23) = 0\\) (or equivalent factorization)\\n\\(n = 23\\) or \\(n = -\\frac{130}{5}\\) (invalid)",
+        "workingOut": "\\((2.5n + \\dots)(n - 23) = 0\\) (or equivalent factorization)\n\\(n = 23\\) or \\(n = -\\frac{130}{5}\\) (invalid)",
         "graphData": null
       },
       {
@@ -8822,7 +8822,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a long-term simulation of a Crypto token staking yield dilution, the annual percentage rate decay per million tokens staked is recorded daily. The daily values form an arithmetic progression with first term \\(34\\) % and common difference \\(4\\) %.\\nDetermine the cumulative sum of the measurements recorded from day \\(15\\) to day \\(39\\) inclusive.",
+    "question": "In a long-term simulation of a Crypto token staking yield dilution, the annual percentage rate decay per million tokens staked is recorded daily. The daily values form an arithmetic progression with first term \\(34\\) % and common difference \\(4\\) %.\nDetermine the cumulative sum of the measurements recorded from day \\(15\\) to day \\(39\\) inclusive.",
     "options": [
       {
         "text": "\\(3484\\)",
@@ -8848,12 +8848,12 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Calculate the number of terms to sum, and find the value of the first term in this range, which is T_p.",
-        "workingOut": "\\(\\text{Number of terms } N = 39 - 15 + 1 = 25\\)\\n\\(T_{15} = a + (15 - 1)d = 34 + 14(4) = 90\\)",
+        "workingOut": "\\(\\text{Number of terms } N = 39 - 15 + 1 = 25\\)\n\\(T_{15} = a + (15 - 1)d = 34 + 14(4) = 90\\)",
         "graphData": null
       },
       {
         "explanation": "Set up the sum of this new arithmetic series with N terms, where the first term is T_p and the common difference is d.",
-        "workingOut": "\\(S = \\frac{N}{2}\\left(2 T_{15} + (N - 1)d\\right)\\)\\n\\(S = \\frac{25}{2}\\left(2(90) + (24 \\times 4)\\right)\\)",
+        "workingOut": "\\(S = \\frac{N}{2}\\left(2 T_{15} + (N - 1)d\\right)\\)\n\\(S = \\frac{25}{2}\\left(2(90) + (24 \\times 4)\\right)\\)",
         "graphData": null
       },
       {
@@ -8871,7 +8871,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a monitoring study of Smart grid peak load redistribution, the transformer temperature load increment per hour is measured over intervals. The value in the first interval is \\(210\\) °C and decreases by \\(4\\) °C in each subsequent interval, forming an arithmetic progression.\\nFind the maximum possible cumulative sum of this sequence before the values become non-positive.",
+    "question": "In a monitoring study of Smart grid peak load redistribution, the transformer temperature load increment per hour is measured over intervals. The value in the first interval is \\(210\\) °C and decreases by \\(4\\) °C in each subsequent interval, forming an arithmetic progression.\nFind the maximum possible cumulative sum of this sequence before the values become non-positive.",
     "options": [
       {
         "text": "\\(5614\\)",
@@ -8897,7 +8897,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term and the common difference from the given details. Set up an inequality to determine when the terms of the arithmetic progression become zero or negative.",
-        "workingOut": "\\(a = 210\\), \\(d = -4\\)\\n\\(T_n = a + (n - 1)d \\geq 0\\)",
+        "workingOut": "\\(a = 210\\), \\(d = -4\\)\n\\(T_n = a + (n - 1)d \\geq 0\\)",
         "graphData": null
       },
       {
@@ -8907,7 +8907,7 @@ export const Y12A_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Use the sum formula for an arithmetic series to calculate the sum of the first n terms.",
-        "workingOut": "\\(S_n = \\frac{n}{2}\\left(2a + (n - 1)d\\right)\\)\\n\\(S_{53} = \\frac{53}{2}\\left(2(210) + (53 - 1)(-4)\\right)\\)",
+        "workingOut": "\\(S_n = \\frac{n}{2}\\left(2a + (n - 1)d\\right)\\)\n\\(S_{53} = \\frac{53}{2}\\left(2(210) + (53 - 1)(-4)\\right)\\)",
         "graphData": null
       },
       {
@@ -8925,7 +8925,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "During testing of a Superconducting magnet quench propagation, the cumulative output of resistive zone length expansion per millisecond is recorded. The sum of the first \\(6\\) readings is \\(249\\) cm, and the sum of the first \\(13\\) readings is \\(676\\) cm.\\nAssuming the readings follow an arithmetic progression, find the cumulative sum of the first \\(19\\) readings.",
+    "question": "During testing of a Superconducting magnet quench propagation, the cumulative output of resistive zone length expansion per millisecond is recorded. The sum of the first \\(6\\) readings is \\(249\\) cm, and the sum of the first \\(13\\) readings is \\(676\\) cm.\nAssuming the readings follow an arithmetic progression, find the cumulative sum of the first \\(19\\) readings.",
     "options": [
       {
         "text": "\\(1259\\)",
@@ -8951,17 +8951,17 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Set up the sum equations for the first p terms and the first q terms using the general sum formula.",
-        "workingOut": "\\(S_{6} = \\frac{6}{2}(2a + 5d) = 249\\)\\n\\(S_{13} = \\frac{13}{2}(2a + 12d) = 676\\)",
+        "workingOut": "\\(S_{6} = \\frac{6}{2}(2a + 5d) = 249\\)\n\\(S_{13} = \\frac{13}{2}(2a + 12d) = 676\\)",
         "graphData": null
       },
       {
         "explanation": "Simplify both equations by multiplying out and isolating the terms involving a and d.",
-        "workingOut": "\\(2a + 5d = \\frac{2 \\times 249}{6} = 83\\)  --- (1)\\n\\(2a + 12d = \\frac{2 \\times 676}{13} = 104\\)  --- (2)",
+        "workingOut": "\\(2a + 5d = \\frac{2 \\times 249}{6} = 83\\)  --- (1)\n\\(2a + 12d = \\frac{2 \\times 676}{13} = 104\\)  --- (2)",
         "graphData": null
       },
       {
         "explanation": "Subtract equation (1) from equation (2) to solve for the common difference d, then substitute it back to find the first term a.",
-        "workingOut": "\\((12 - 5)d = 21 \\implies d = 3\\)\\n\\(2a + 5(3) = 83 \\implies a = 34\\)",
+        "workingOut": "\\((12 - 5)d = 21 \\implies d = 3\\)\n\\(2a + 5(3) = 83 \\implies a = 34\\)",
         "graphData": null
       },
       {
@@ -8979,7 +8979,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a Satellite orbital decay trajectory, a machine undergoes a two-stage calibration process. In the first phase of \\(10\\) cycles, the altitude loss per orbital revolution increment starts at \\(42\\) meters and increases by \\(4\\) meters per cycle. In the second phase of \\(10\\) cycles, the common difference doubles to \\(8\\) meters per cycle, continuing from the next logical step of the progression.\\nFind the total cumulative measurement over all \\(20\\) cycles.",
+    "question": "In a Satellite orbital decay trajectory, a machine undergoes a two-stage calibration process. In the first phase of \\(10\\) cycles, the altitude loss per orbital revolution increment starts at \\(42\\) meters and increases by \\(4\\) meters per cycle. In the second phase of \\(10\\) cycles, the common difference doubles to \\(8\\) meters per cycle, continuing from the next logical step of the progression.\nFind the total cumulative measurement over all \\(20\\) cycles.",
     "options": [
       {
         "text": "\\(1805\\)",
@@ -9010,7 +9010,7 @@ export const Y12A_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Find the value of the last term in the first phase, and use it to determine the starting term of the second phase.",
-        "workingOut": "\\(T_{10} = 42 + (10 - 1)(4) = 78\\)\\n\\(\\text{First term of Phase 2} = T_{10} + 2d = 78 + 8 = 86\\)",
+        "workingOut": "\\(T_{10} = 42 + (10 - 1)(4) = 78\\)\n\\(\\text{First term of Phase 2} = T_{10} + 2d = 78 + 8 = 86\\)",
         "graphData": null
       },
       {
@@ -9033,7 +9033,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An automated sensor in a Acoustic resonance sound dampening logs a sequence of measurements of sound pressure level drop per acoustic panel layer. The first measurement is \\(10\\) dB, and each subsequent measurement increases by \\(4\\) dB.\\nIf the total cumulative sum of the measurements is exactly \\(792\\) dB, find the number of measurements taken.",
+    "question": "An automated sensor in a Acoustic resonance sound dampening logs a sequence of measurements of sound pressure level drop per acoustic panel layer. The first measurement is \\(10\\) dB, and each subsequent measurement increases by \\(4\\) dB.\nIf the total cumulative sum of the measurements is exactly \\(792\\) dB, find the number of measurements taken.",
     "options": [
       {
         "text": "\\(23\\)",
@@ -9069,7 +9069,7 @@ export const Y12A_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Solve the quadratic equation by factoring or using the quadratic formula, looking for a positive integer solution.",
-        "workingOut": "\\((2n + \\dots)(n - 18) = 0\\) (or equivalent factorization)\\n\\(n = 18\\) or \\(n = -\\frac{88}{4}\\) (invalid)",
+        "workingOut": "\\((2n + \\dots)(n - 18) = 0\\) (or equivalent factorization)\n\\(n = 18\\) or \\(n = -\\frac{88}{4}\\) (invalid)",
         "graphData": null
       },
       {
@@ -9087,7 +9087,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a long-term simulation of a Electric vehicle regenerative braking recapture, the efficiency loss per consecutive stop cycle is recorded daily. The daily values form an arithmetic progression with first term \\(39\\) Wh and common difference \\(5\\) Wh.\\nDetermine the cumulative sum of the measurements recorded from day \\(15\\) to day \\(34\\) inclusive.",
+    "question": "In a long-term simulation of a Electric vehicle regenerative braking recapture, the efficiency loss per consecutive stop cycle is recorded daily. The daily values form an arithmetic progression with first term \\(39\\) Wh and common difference \\(5\\) Wh.\nDetermine the cumulative sum of the measurements recorded from day \\(15\\) to day \\(34\\) inclusive.",
     "options": [
       {
         "text": "\\(3130\\)",
@@ -9113,12 +9113,12 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Calculate the number of terms to sum, and find the value of the first term in this range, which is T_p.",
-        "workingOut": "\\(\\text{Number of terms } N = 34 - 15 + 1 = 20\\)\\n\\(T_{15} = a + (15 - 1)d = 39 + 14(5) = 109\\)",
+        "workingOut": "\\(\\text{Number of terms } N = 34 - 15 + 1 = 20\\)\n\\(T_{15} = a + (15 - 1)d = 39 + 14(5) = 109\\)",
         "graphData": null
       },
       {
         "explanation": "Set up the sum of this new arithmetic series with N terms, where the first term is T_p and the common difference is d.",
-        "workingOut": "\\(S = \\frac{N}{2}\\left(2 T_{15} + (N - 1)d\\right)\\)\\n\\(S = \\frac{20}{2}\\left(2(109) + (19 \\times 5)\\right)\\)",
+        "workingOut": "\\(S = \\frac{N}{2}\\left(2 T_{15} + (N - 1)d\\right)\\)\n\\(S = \\frac{20}{2}\\left(2(109) + (19 \\times 5)\\right)\\)",
         "graphData": null
       },
       {
@@ -9136,7 +9136,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a monitoring study of Bacterial bio-film surface growth resistance, the shear stress tolerance increment per layer is measured over intervals. The value in the first interval is \\(225\\) Pa and decreases by \\(4\\) Pa in each subsequent interval, forming an arithmetic progression.\\nFind the maximum possible cumulative sum of this sequence before the values become non-positive.",
+    "question": "In a monitoring study of Bacterial bio-film surface growth resistance, the shear stress tolerance increment per layer is measured over intervals. The value in the first interval is \\(225\\) Pa and decreases by \\(4\\) Pa in each subsequent interval, forming an arithmetic progression.\nFind the maximum possible cumulative sum of this sequence before the values become non-positive.",
     "options": [
       {
         "text": "\\(6449\\)",
@@ -9162,7 +9162,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term and the common difference from the given details. Set up an inequality to determine when the terms of the arithmetic progression become zero or negative.",
-        "workingOut": "\\(a = 225\\), \\(d = -4\\)\\n\\(T_n = a + (n - 1)d \\geq 0\\)",
+        "workingOut": "\\(a = 225\\), \\(d = -4\\)\n\\(T_n = a + (n - 1)d \\geq 0\\)",
         "graphData": null
       },
       {
@@ -9172,7 +9172,7 @@ export const Y12A_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Use the sum formula for an arithmetic series to calculate the sum of the first n terms.",
-        "workingOut": "\\(S_n = \\frac{n}{2}\\left(2a + (n - 1)d\\right)\\)\\n\\(S_{57} = \\frac{57}{2}\\left(2(225) + (57 - 1)(-4)\\right)\\)",
+        "workingOut": "\\(S_n = \\frac{n}{2}\\left(2a + (n - 1)d\\right)\\)\n\\(S_{57} = \\frac{57}{2}\\left(2(225) + (57 - 1)(-4)\\right)\\)",
         "graphData": null
       },
       {
@@ -9190,7 +9190,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "During testing of a Thermal power plant boiler expansion, the cumulative output of structural metal displacement per degree Celsius is recorded. The sum of the first \\(5\\) readings is \\(215\\) mm, and the sum of the first \\(10\\) readings is \\(480\\) mm.\\nAssuming the readings follow an arithmetic progression, find the cumulative sum of the first \\(15\\) readings.",
+    "question": "During testing of a Thermal power plant boiler expansion, the cumulative output of structural metal displacement per degree Celsius is recorded. The sum of the first \\(5\\) readings is \\(215\\) mm, and the sum of the first \\(10\\) readings is \\(480\\) mm.\nAssuming the readings follow an arithmetic progression, find the cumulative sum of the first \\(15\\) readings.",
     "options": [
       {
         "text": "\\(795\\)",
@@ -9216,17 +9216,17 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Set up the sum equations for the first p terms and the first q terms using the general sum formula.",
-        "workingOut": "\\(S_{5} = \\frac{5}{2}(2a + 4d) = 215\\)\\n\\(S_{10} = \\frac{10}{2}(2a + 9d) = 480\\)",
+        "workingOut": "\\(S_{5} = \\frac{5}{2}(2a + 4d) = 215\\)\n\\(S_{10} = \\frac{10}{2}(2a + 9d) = 480\\)",
         "graphData": null
       },
       {
         "explanation": "Simplify both equations by multiplying out and isolating the terms involving a and d.",
-        "workingOut": "\\(2a + 4d = \\frac{2 \\times 215}{5} = 86\\)  --- (1)\\n\\(2a + 9d = \\frac{2 \\times 480}{10} = 96\\)  --- (2)",
+        "workingOut": "\\(2a + 4d = \\frac{2 \\times 215}{5} = 86\\)  --- (1)\n\\(2a + 9d = \\frac{2 \\times 480}{10} = 96\\)  --- (2)",
         "graphData": null
       },
       {
         "explanation": "Subtract equation (1) from equation (2) to solve for the common difference d, then substitute it back to find the first term a.",
-        "workingOut": "\\((9 - 4)d = 10 \\implies d = 2\\)\\n\\(2a + 4(2) = 86 \\implies a = 39\\)",
+        "workingOut": "\\((9 - 4)d = 10 \\implies d = 2\\)\n\\(2a + 4(2) = 86 \\implies a = 39\\)",
         "graphData": null
       },
       {
@@ -9244,7 +9244,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a Wireless mesh network routing overhead, a machine undergoes a two-stage calibration process. In the first phase of \\(10\\) cycles, the data packet retry rate per network hop starts at \\(47\\) retries and increases by \\(3\\) retries per cycle. In the second phase of \\(10\\) cycles, the common difference doubles to \\(6\\) retries per cycle, continuing from the next logical step of the progression.\\nFind the total cumulative measurement over all \\(20\\) cycles.",
+    "question": "In a Wireless mesh network routing overhead, a machine undergoes a two-stage calibration process. In the first phase of \\(10\\) cycles, the data packet retry rate per network hop starts at \\(47\\) retries and increases by \\(3\\) retries per cycle. In the second phase of \\(10\\) cycles, the common difference doubles to \\(6\\) retries per cycle, continuing from the next logical step of the progression.\nFind the total cumulative measurement over all \\(20\\) cycles.",
     "options": [
       {
         "text": "\\(1424\\)",
@@ -9275,7 +9275,7 @@ export const Y12A_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Find the value of the last term in the first phase, and use it to determine the starting term of the second phase.",
-        "workingOut": "\\(T_{10} = 47 + (10 - 1)(3) = 74\\)\\n\\(\\text{First term of Phase 2} = T_{10} + 2d = 74 + 6 = 80\\)",
+        "workingOut": "\\(T_{10} = 47 + (10 - 1)(3) = 74\\)\n\\(\\text{First term of Phase 2} = T_{10} + 2d = 74 + 6 = 80\\)",
         "graphData": null
       },
       {
@@ -9298,7 +9298,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An automated sensor in a Nuclear waste canister decay heat logs a sequence of measurements of thermal output decrement per decade. The first measurement is \\(10\\) W, and each subsequent measurement increases by \\(6\\) W.\\nIf the total cumulative sum of the measurements is exactly \\(1748\\) W, find the number of measurements taken.",
+    "question": "An automated sensor in a Nuclear waste canister decay heat logs a sequence of measurements of thermal output decrement per decade. The first measurement is \\(10\\) W, and each subsequent measurement increases by \\(6\\) W.\nIf the total cumulative sum of the measurements is exactly \\(1748\\) W, find the number of measurements taken.",
     "options": [
       {
         "text": "\\(20\\)",
@@ -9334,7 +9334,7 @@ export const Y12A_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Solve the quadratic equation by factoring or using the quadratic formula, looking for a positive integer solution.",
-        "workingOut": "\\((3n + \\dots)(n - 23) = 0\\) (or equivalent factorization)\\n\\(n = 23\\) or \\(n = -\\frac{152}{6}\\) (invalid)",
+        "workingOut": "\\((3n + \\dots)(n - 23) = 0\\) (or equivalent factorization)\n\\(n = 23\\) or \\(n = -\\frac{152}{6}\\) (invalid)",
         "graphData": null
       },
       {
@@ -9352,7 +9352,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a long-term simulation of a Urban aquifer replenishment recharge, the daily percolation rate decline under compaction is recorded daily. The daily values form an arithmetic progression with first term \\(44\\) m^3 and common difference \\(6\\) m^3.\\nDetermine the cumulative sum of the measurements recorded from day \\(15\\) to day \\(39\\) inclusive.",
+    "question": "In a long-term simulation of a Urban aquifer replenishment recharge, the daily percolation rate decline under compaction is recorded daily. The daily values form an arithmetic progression with first term \\(44\\) m^3 and common difference \\(6\\) m^3.\nDetermine the cumulative sum of the measurements recorded from day \\(15\\) to day \\(39\\) inclusive.",
     "options": [
       {
         "text": "\\(4500\\)",
@@ -9378,12 +9378,12 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Calculate the number of terms to sum, and find the value of the first term in this range, which is T_p.",
-        "workingOut": "\\(\\text{Number of terms } N = 39 - 15 + 1 = 25\\)\\n\\(T_{15} = a + (15 - 1)d = 44 + 14(6) = 128\\)",
+        "workingOut": "\\(\\text{Number of terms } N = 39 - 15 + 1 = 25\\)\n\\(T_{15} = a + (15 - 1)d = 44 + 14(6) = 128\\)",
         "graphData": null
       },
       {
         "explanation": "Set up the sum of this new arithmetic series with N terms, where the first term is T_p and the common difference is d.",
-        "workingOut": "\\(S = \\frac{N}{2}\\left(2 T_{15} + (N - 1)d\\right)\\)\\n\\(S = \\frac{25}{2}\\left(2(128) + (24 \\times 6)\\right)\\)",
+        "workingOut": "\\(S = \\frac{N}{2}\\left(2 T_{15} + (N - 1)d\\right)\\)\n\\(S = \\frac{25}{2}\\left(2(128) + (24 \\times 6)\\right)\\)",
         "graphData": null
       },
       {
@@ -9401,7 +9401,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a monitoring study of Gas turbine exhaust emission nitrogen oxide, the concentration increment per megawatt output is measured over intervals. The value in the first interval is \\(240\\) ppm and decreases by \\(4\\) ppm in each subsequent interval, forming an arithmetic progression.\\nFind the maximum possible cumulative sum of this sequence before the values become non-positive.",
+    "question": "In a monitoring study of Gas turbine exhaust emission nitrogen oxide, the concentration increment per megawatt output is measured over intervals. The value in the first interval is \\(240\\) ppm and decreases by \\(4\\) ppm in each subsequent interval, forming an arithmetic progression.\nFind the maximum possible cumulative sum of this sequence before the values become non-positive.",
     "options": [
       {
         "text": "\\(7316\\)",
@@ -9427,7 +9427,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term and the common difference from the given details. Set up an inequality to determine when the terms of the arithmetic progression become zero or negative.",
-        "workingOut": "\\(a = 240\\), \\(d = -4\\)\\n\\(T_n = a + (n - 1)d \\geq 0\\)",
+        "workingOut": "\\(a = 240\\), \\(d = -4\\)\n\\(T_n = a + (n - 1)d \\geq 0\\)",
         "graphData": null
       },
       {
@@ -9437,7 +9437,7 @@ export const Y12A_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Use the sum formula for an arithmetic series to calculate the sum of the first n terms.",
-        "workingOut": "\\(S_n = \\frac{n}{2}\\left(2a + (n - 1)d\\right)\\)\\n\\(S_{61} = \\frac{61}{2}\\left(2(240) + (61 - 1)(-4)\\right)\\)",
+        "workingOut": "\\(S_n = \\frac{n}{2}\\left(2a + (n - 1)d\\right)\\)\n\\(S_{61} = \\frac{61}{2}\\left(2(240) + (61 - 1)(-4)\\right)\\)",
         "graphData": null
       },
       {
@@ -9455,7 +9455,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "During testing of a Robotic arm joint wear calibration, the cumulative output of backlash angle increase per million cycles is recorded. The sum of the first \\(7\\) readings is \\(392\\) arcsec, and the sum of the first \\(11\\) readings is \\(704\\) arcsec.\\nAssuming the readings follow an arithmetic progression, find the cumulative sum of the first \\(18\\) readings.",
+    "question": "During testing of a Robotic arm joint wear calibration, the cumulative output of backlash angle increase per million cycles is recorded. The sum of the first \\(7\\) readings is \\(392\\) arcsec, and the sum of the first \\(11\\) readings is \\(704\\) arcsec.\nAssuming the readings follow an arithmetic progression, find the cumulative sum of the first \\(18\\) readings.",
     "options": [
       {
         "text": "\\(1404\\)",
@@ -9481,17 +9481,17 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Set up the sum equations for the first p terms and the first q terms using the general sum formula.",
-        "workingOut": "\\(S_{7} = \\frac{7}{2}(2a + 6d) = 392\\)\\n\\(S_{11} = \\frac{11}{2}(2a + 10d) = 704\\)",
+        "workingOut": "\\(S_{7} = \\frac{7}{2}(2a + 6d) = 392\\)\n\\(S_{11} = \\frac{11}{2}(2a + 10d) = 704\\)",
         "graphData": null
       },
       {
         "explanation": "Simplify both equations by multiplying out and isolating the terms involving a and d.",
-        "workingOut": "\\(2a + 6d = \\frac{2 \\times 392}{7} = 112\\)  --- (1)\\n\\(2a + 10d = \\frac{2 \\times 704}{11} = 128\\)  --- (2)",
+        "workingOut": "\\(2a + 6d = \\frac{2 \\times 392}{7} = 112\\)  --- (1)\n\\(2a + 10d = \\frac{2 \\times 704}{11} = 128\\)  --- (2)",
         "graphData": null
       },
       {
         "explanation": "Subtract equation (1) from equation (2) to solve for the common difference d, then substitute it back to find the first term a.",
-        "workingOut": "\\((10 - 6)d = 16 \\implies d = 4\\)\\n\\(2a + 6(4) = 112 \\implies a = 44\\)",
+        "workingOut": "\\((10 - 6)d = 16 \\implies d = 4\\)\n\\(2a + 6(4) = 112 \\implies a = 44\\)",
         "graphData": null
       },
       {
@@ -9509,7 +9509,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a Space debris collision probability scaling, a machine undergoes a two-stage calibration process. In the first phase of \\(10\\) cycles, the tracked objects density growth per altitude band starts at \\(52\\) objects/km^3 and increases by \\(2\\) objects/km^3 per cycle. In the second phase of \\(10\\) cycles, the common difference doubles to \\(4\\) objects/km^3 per cycle, continuing from the next logical step of the progression.\\nFind the total cumulative measurement over all \\(20\\) cycles.",
+    "question": "In a Space debris collision probability scaling, a machine undergoes a two-stage calibration process. In the first phase of \\(10\\) cycles, the tracked objects density growth per altitude band starts at \\(52\\) objects/km^3 and increases by \\(2\\) objects/km^3 per cycle. In the second phase of \\(10\\) cycles, the common difference doubles to \\(4\\) objects/km^3 per cycle, continuing from the next logical step of the progression.\nFind the total cumulative measurement over all \\(20\\) cycles.",
     "options": [
       {
         "text": "\\(1530\\)",
@@ -9540,7 +9540,7 @@ export const Y12A_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Find the value of the last term in the first phase, and use it to determine the starting term of the second phase.",
-        "workingOut": "\\(T_{10} = 52 + (10 - 1)(2) = 70\\)\\n\\(\\text{First term of Phase 2} = T_{10} + 2d = 70 + 4 = 74\\)",
+        "workingOut": "\\(T_{10} = 52 + (10 - 1)(2) = 70\\)\n\\(\\text{First term of Phase 2} = T_{10} + 2d = 70 + 4 = 74\\)",
         "graphData": null
       },
       {
@@ -9563,7 +9563,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An automated sensor in a Hydroponic nutrient solution conductivity logs a sequence of measurements of ion concentration decay per plant absorption cycle. The first measurement is \\(10\\) mS/cm, and each subsequent measurement increases by \\(5\\) mS/cm.\\nIf the total cumulative sum of the measurements is exactly \\(945\\) mS/cm, find the number of measurements taken.",
+    "question": "An automated sensor in a Hydroponic nutrient solution conductivity logs a sequence of measurements of ion concentration decay per plant absorption cycle. The first measurement is \\(10\\) mS/cm, and each subsequent measurement increases by \\(5\\) mS/cm.\nIf the total cumulative sum of the measurements is exactly \\(945\\) mS/cm, find the number of measurements taken.",
     "options": [
       {
         "text": "\\(15\\)",
@@ -9599,7 +9599,7 @@ export const Y12A_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Solve the quadratic equation by factoring or using the quadratic formula, looking for a positive integer solution.",
-        "workingOut": "\\((2.5n + \\dots)(n - 18) = 0\\) (or equivalent factorization)\\n\\(n = 18\\) or \\(n = -\\frac{105}{5}\\) (invalid)",
+        "workingOut": "\\((2.5n + \\dots)(n - 18) = 0\\) (or equivalent factorization)\n\\(n = 18\\) or \\(n = -\\frac{105}{5}\\) (invalid)",
         "graphData": null
       },
       {
@@ -9617,7 +9617,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a long-term simulation of a Suspension bridge main cable tension stress, the strain gauge measurement increment per loaded lane is recorded daily. The daily values form an arithmetic progression with first term \\(49\\) kN and common difference \\(3\\) kN.\\nDetermine the cumulative sum of the measurements recorded from day \\(15\\) to day \\(34\\) inclusive.",
+    "question": "In a long-term simulation of a Suspension bridge main cable tension stress, the strain gauge measurement increment per loaded lane is recorded daily. The daily values form an arithmetic progression with first term \\(49\\) kN and common difference \\(3\\) kN.\nDetermine the cumulative sum of the measurements recorded from day \\(15\\) to day \\(34\\) inclusive.",
     "options": [
       {
         "text": "\\(2384\\)",
@@ -9643,12 +9643,12 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Calculate the number of terms to sum, and find the value of the first term in this range, which is T_p.",
-        "workingOut": "\\(\\text{Number of terms } N = 34 - 15 + 1 = 20\\)\\n\\(T_{15} = a + (15 - 1)d = 49 + 14(3) = 91\\)",
+        "workingOut": "\\(\\text{Number of terms } N = 34 - 15 + 1 = 20\\)\n\\(T_{15} = a + (15 - 1)d = 49 + 14(3) = 91\\)",
         "graphData": null
       },
       {
         "explanation": "Set up the sum of this new arithmetic series with N terms, where the first term is T_p and the common difference is d.",
-        "workingOut": "\\(S = \\frac{N}{2}\\left(2 T_{15} + (N - 1)d\\right)\\)\\n\\(S = \\frac{20}{2}\\left(2(91) + (19 \\times 3)\\right)\\)",
+        "workingOut": "\\(S = \\frac{N}{2}\\left(2 T_{15} + (N - 1)d\\right)\\)\n\\(S = \\frac{20}{2}\\left(2(91) + (19 \\times 3)\\right)\\)",
         "graphData": null
       },
       {
@@ -9666,7 +9666,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a monitoring study of Supercomputer coolant pipe pressure drop, the flow resistance increment per pipe junction bend is measured over intervals. The value in the first interval is \\(255\\) Pa and decreases by \\(4\\) Pa in each subsequent interval, forming an arithmetic progression.\\nFind the maximum possible cumulative sum of this sequence before the values become non-positive.",
+    "question": "In a monitoring study of Supercomputer coolant pipe pressure drop, the flow resistance increment per pipe junction bend is measured over intervals. The value in the first interval is \\(255\\) Pa and decreases by \\(4\\) Pa in each subsequent interval, forming an arithmetic progression.\nFind the maximum possible cumulative sum of this sequence before the values become non-positive.",
     "options": [
       {
         "text": "\\(8264\\)",
@@ -9692,7 +9692,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term and the common difference from the given details. Set up an inequality to determine when the terms of the arithmetic progression become zero or negative.",
-        "workingOut": "\\(a = 255\\), \\(d = -4\\)\\n\\(T_n = a + (n - 1)d \\geq 0\\)",
+        "workingOut": "\\(a = 255\\), \\(d = -4\\)\n\\(T_n = a + (n - 1)d \\geq 0\\)",
         "graphData": null
       },
       {
@@ -9702,7 +9702,7 @@ export const Y12A_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Use the sum formula for an arithmetic series to calculate the sum of the first n terms.",
-        "workingOut": "\\(S_n = \\frac{n}{2}\\left(2a + (n - 1)d\\right)\\)\\n\\(S_{64} = \\frac{64}{2}\\left(2(255) + (64 - 1)(-4)\\right)\\)",
+        "workingOut": "\\(S_n = \\frac{n}{2}\\left(2a + (n - 1)d\\right)\\)\n\\(S_{64} = \\frac{64}{2}\\left(2(255) + (64 - 1)(-4)\\right)\\)",
         "graphData": null
       },
       {
@@ -9720,7 +9720,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "During testing of a E-commerce microservice API call latency, the cumulative output of response time penalty per nested query level is recorded. The sum of the first \\(6\\) readings is \\(339\\) ms, and the sum of the first \\(12\\) readings is \\(786\\) ms.\\nAssuming the readings follow an arithmetic progression, find the cumulative sum of the first \\(18\\) readings.",
+    "question": "During testing of a E-commerce microservice API call latency, the cumulative output of response time penalty per nested query level is recorded. The sum of the first \\(6\\) readings is \\(339\\) ms, and the sum of the first \\(12\\) readings is \\(786\\) ms.\nAssuming the readings follow an arithmetic progression, find the cumulative sum of the first \\(18\\) readings.",
     "options": [
       {
         "text": "\\(1291\\)",
@@ -9746,17 +9746,17 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Set up the sum equations for the first p terms and the first q terms using the general sum formula.",
-        "workingOut": "\\(S_{6} = \\frac{6}{2}(2a + 5d) = 339\\)\\n\\(S_{12} = \\frac{12}{2}(2a + 11d) = 786\\)",
+        "workingOut": "\\(S_{6} = \\frac{6}{2}(2a + 5d) = 339\\)\n\\(S_{12} = \\frac{12}{2}(2a + 11d) = 786\\)",
         "graphData": null
       },
       {
         "explanation": "Simplify both equations by multiplying out and isolating the terms involving a and d.",
-        "workingOut": "\\(2a + 5d = \\frac{2 \\times 339}{6} = 113\\)  --- (1)\\n\\(2a + 11d = \\frac{2 \\times 786}{12} = 131\\)  --- (2)",
+        "workingOut": "\\(2a + 5d = \\frac{2 \\times 339}{6} = 113\\)  --- (1)\n\\(2a + 11d = \\frac{2 \\times 786}{12} = 131\\)  --- (2)",
         "graphData": null
       },
       {
         "explanation": "Subtract equation (1) from equation (2) to solve for the common difference d, then substitute it back to find the first term a.",
-        "workingOut": "\\((11 - 5)d = 18 \\implies d = 3\\)\\n\\(2a + 5(3) = 113 \\implies a = 49\\)",
+        "workingOut": "\\((11 - 5)d = 18 \\implies d = 3\\)\n\\(2a + 5(3) = 113 \\implies a = 49\\)",
         "graphData": null
       },
       {
@@ -9774,7 +9774,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a Glacial flow velocity acceleration, a machine undergoes a two-stage calibration process. In the first phase of \\(10\\) cycles, the ice mass displacement increment per summer week starts at \\(57\\) cm/day and increases by \\(4\\) cm/day per cycle. In the second phase of \\(10\\) cycles, the common difference doubles to \\(8\\) cm/day per cycle, continuing from the next logical step of the progression.\\nFind the total cumulative measurement over all \\(20\\) cycles.",
+    "question": "In a Glacial flow velocity acceleration, a machine undergoes a two-stage calibration process. In the first phase of \\(10\\) cycles, the ice mass displacement increment per summer week starts at \\(57\\) cm/day and increases by \\(4\\) cm/day per cycle. In the second phase of \\(10\\) cycles, the common difference doubles to \\(8\\) cm/day per cycle, continuing from the next logical step of the progression.\nFind the total cumulative measurement over all \\(20\\) cycles.",
     "options": [
       {
         "text": "\\(1802\\)",
@@ -9805,7 +9805,7 @@ export const Y12A_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Find the value of the last term in the first phase, and use it to determine the starting term of the second phase.",
-        "workingOut": "\\(T_{10} = 57 + (10 - 1)(4) = 93\\)\\n\\(\\text{First term of Phase 2} = T_{10} + 2d = 93 + 8 = 101\\)",
+        "workingOut": "\\(T_{10} = 57 + (10 - 1)(4) = 93\\)\n\\(\\text{First term of Phase 2} = T_{10} + 2d = 93 + 8 = 101\\)",
         "graphData": null
       },
       {
@@ -9828,7 +9828,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An automated sensor in a Centrifugal pump impeller erosion friction logs a sequence of measurements of efficiency loss rate per 1000 operational hours. The first measurement is \\(10\\) %, and each subsequent measurement increases by \\(4\\) %.\\nIf the total cumulative sum of the measurements is exactly \\(1242\\) %, find the number of measurements taken.",
+    "question": "An automated sensor in a Centrifugal pump impeller erosion friction logs a sequence of measurements of efficiency loss rate per 1000 operational hours. The first measurement is \\(10\\) %, and each subsequent measurement increases by \\(4\\) %.\nIf the total cumulative sum of the measurements is exactly \\(1242\\) %, find the number of measurements taken.",
     "options": [
       {
         "text": "\\(25\\)",
@@ -9864,7 +9864,7 @@ export const Y12A_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Solve the quadratic equation by factoring or using the quadratic formula, looking for a positive integer solution.",
-        "workingOut": "\\((2n + \\dots)(n - 23) = 0\\) (or equivalent factorization)\\n\\(n = 23\\) or \\(n = -\\frac{108}{4}\\) (invalid)",
+        "workingOut": "\\((2n + \\dots)(n - 23) = 0\\) (or equivalent factorization)\n\\(n = 23\\) or \\(n = -\\frac{108}{4}\\) (invalid)",
         "graphData": null
       },
       {
@@ -9882,7 +9882,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a long-term simulation of a Lithium-ion cell internal resistance growth, the micro-ohm impedance increment per charge cycle is recorded daily. The daily values form an arithmetic progression with first term \\(54\\) µΩ and common difference \\(4\\) µΩ.\\nDetermine the cumulative sum of the measurements recorded from day \\(15\\) to day \\(39\\) inclusive.",
+    "question": "In a long-term simulation of a Lithium-ion cell internal resistance growth, the micro-ohm impedance increment per charge cycle is recorded daily. The daily values form an arithmetic progression with first term \\(54\\) µΩ and common difference \\(4\\) µΩ.\nDetermine the cumulative sum of the measurements recorded from day \\(15\\) to day \\(39\\) inclusive.",
     "options": [
       {
         "text": "\\(4004\\)",
@@ -9908,12 +9908,12 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Calculate the number of terms to sum, and find the value of the first term in this range, which is T_p.",
-        "workingOut": "\\(\\text{Number of terms } N = 39 - 15 + 1 = 25\\)\\n\\(T_{15} = a + (15 - 1)d = 54 + 14(4) = 110\\)",
+        "workingOut": "\\(\\text{Number of terms } N = 39 - 15 + 1 = 25\\)\n\\(T_{15} = a + (15 - 1)d = 54 + 14(4) = 110\\)",
         "graphData": null
       },
       {
         "explanation": "Set up the sum of this new arithmetic series with N terms, where the first term is T_p and the common difference is d.",
-        "workingOut": "\\(S = \\frac{N}{2}\\left(2 T_{15} + (N - 1)d\\right)\\)\\n\\(S = \\frac{25}{2}\\left(2(110) + (24 \\times 4)\\right)\\)",
+        "workingOut": "\\(S = \\frac{N}{2}\\left(2 T_{15} + (N - 1)d\\right)\\)\n\\(S = \\frac{25}{2}\\left(2(110) + (24 \\times 4)\\right)\\)",
         "graphData": null
       },
       {
@@ -9931,7 +9931,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a monitoring study of Volcanic ash plume particle settling speed, the fall velocity decrease per kilometer distance is measured over intervals. The value in the first interval is \\(270\\) m/s and decreases by \\(4\\) m/s in each subsequent interval, forming an arithmetic progression.\\nFind the maximum possible cumulative sum of this sequence before the values become non-positive.",
+    "question": "In a monitoring study of Volcanic ash plume particle settling speed, the fall velocity decrease per kilometer distance is measured over intervals. The value in the first interval is \\(270\\) m/s and decreases by \\(4\\) m/s in each subsequent interval, forming an arithmetic progression.\nFind the maximum possible cumulative sum of this sequence before the values become non-positive.",
     "options": [
       {
         "text": "\\(9256\\)",
@@ -9957,7 +9957,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term and the common difference from the given details. Set up an inequality to determine when the terms of the arithmetic progression become zero or negative.",
-        "workingOut": "\\(a = 270\\), \\(d = -4\\)\\n\\(T_n = a + (n - 1)d \\geq 0\\)",
+        "workingOut": "\\(a = 270\\), \\(d = -4\\)\n\\(T_n = a + (n - 1)d \\geq 0\\)",
         "graphData": null
       },
       {
@@ -9967,7 +9967,7 @@ export const Y12A_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Use the sum formula for an arithmetic series to calculate the sum of the first n terms.",
-        "workingOut": "\\(S_n = \\frac{n}{2}\\left(2a + (n - 1)d\\right)\\)\\n\\(S_{68} = \\frac{68}{2}\\left(2(270) + (68 - 1)(-4)\\right)\\)",
+        "workingOut": "\\(S_n = \\frac{n}{2}\\left(2a + (n - 1)d\\right)\\)\n\\(S_{68} = \\frac{68}{2}\\left(2(270) + (68 - 1)(-4)\\right)\\)",
         "graphData": null
       },
       {
@@ -9985,7 +9985,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "During testing of a Bio-pharmaceutical bioreactor oxygen demand, the cumulative output of dissolved oxygen uptake rate per cell doubling is recorded. The sum of the first \\(5\\) readings is \\(290\\) mg/L/h, and the sum of the first \\(13\\) readings is \\(858\\) mg/L/h.\\nAssuming the readings follow an arithmetic progression, find the cumulative sum of the first \\(18\\) readings.",
+    "question": "During testing of a Bio-pharmaceutical bioreactor oxygen demand, the cumulative output of dissolved oxygen uptake rate per cell doubling is recorded. The sum of the first \\(5\\) readings is \\(290\\) mg/L/h, and the sum of the first \\(13\\) readings is \\(858\\) mg/L/h.\nAssuming the readings follow an arithmetic progression, find the cumulative sum of the first \\(18\\) readings.",
     "options": [
       {
         "text": "\\(1278\\)",
@@ -10011,17 +10011,17 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Set up the sum equations for the first p terms and the first q terms using the general sum formula.",
-        "workingOut": "\\(S_{5} = \\frac{5}{2}(2a + 4d) = 290\\)\\n\\(S_{13} = \\frac{13}{2}(2a + 12d) = 858\\)",
+        "workingOut": "\\(S_{5} = \\frac{5}{2}(2a + 4d) = 290\\)\n\\(S_{13} = \\frac{13}{2}(2a + 12d) = 858\\)",
         "graphData": null
       },
       {
         "explanation": "Simplify both equations by multiplying out and isolating the terms involving a and d.",
-        "workingOut": "\\(2a + 4d = \\frac{2 \\times 290}{5} = 116\\)  --- (1)\\n\\(2a + 12d = \\frac{2 \\times 858}{13} = 132\\)  --- (2)",
+        "workingOut": "\\(2a + 4d = \\frac{2 \\times 290}{5} = 116\\)  --- (1)\n\\(2a + 12d = \\frac{2 \\times 858}{13} = 132\\)  --- (2)",
         "graphData": null
       },
       {
         "explanation": "Subtract equation (1) from equation (2) to solve for the common difference d, then substitute it back to find the first term a.",
-        "workingOut": "\\((12 - 4)d = 16 \\implies d = 2\\)\\n\\(2a + 4(2) = 116 \\implies a = 54\\)",
+        "workingOut": "\\((12 - 4)d = 16 \\implies d = 2\\)\n\\(2a + 4(2) = 116 \\implies a = 54\\)",
         "graphData": null
       },
       {
@@ -10039,7 +10039,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a Subsea oil well casing collapse strain, a machine undergoes a two-stage calibration process. In the first phase of \\(10\\) cycles, the radial deformation increment per bar external pressure starts at \\(62\\) mm and increases by \\(3\\) mm per cycle. In the second phase of \\(10\\) cycles, the common difference doubles to \\(6\\) mm per cycle, continuing from the next logical step of the progression.\\nFind the total cumulative measurement over all \\(20\\) cycles.",
+    "question": "In a Subsea oil well casing collapse strain, a machine undergoes a two-stage calibration process. In the first phase of \\(10\\) cycles, the radial deformation increment per bar external pressure starts at \\(62\\) mm and increases by \\(3\\) mm per cycle. In the second phase of \\(10\\) cycles, the common difference doubles to \\(6\\) mm per cycle, continuing from the next logical step of the progression.\nFind the total cumulative measurement over all \\(20\\) cycles.",
     "options": [
       {
         "text": "\\(2015\\)",
@@ -10070,7 +10070,7 @@ export const Y12A_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Find the value of the last term in the first phase, and use it to determine the starting term of the second phase.",
-        "workingOut": "\\(T_{10} = 62 + (10 - 1)(3) = 89\\)\\n\\(\\text{First term of Phase 2} = T_{10} + 2d = 89 + 6 = 95\\)",
+        "workingOut": "\\(T_{10} = 62 + (10 - 1)(3) = 89\\)\n\\(\\text{First term of Phase 2} = T_{10} + 2d = 89 + 6 = 95\\)",
         "graphData": null
       },
       {
@@ -10093,7 +10093,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An automated sensor in a Autonomous vehicle lidar point cloud density logs a sequence of measurements of laser return rate decay per 10 meters distance. The first measurement is \\(10\\) points/m^2, and each subsequent measurement increases by \\(6\\) points/m^2.\\nIf the total cumulative sum of the measurements is exactly \\(1098\\) points/m^2, find the number of measurements taken.",
+    "question": "An automated sensor in a Autonomous vehicle lidar point cloud density logs a sequence of measurements of laser return rate decay per 10 meters distance. The first measurement is \\(10\\) points/m^2, and each subsequent measurement increases by \\(6\\) points/m^2.\nIf the total cumulative sum of the measurements is exactly \\(1098\\) points/m^2, find the number of measurements taken.",
     "options": [
       {
         "text": "\\(15\\)",
@@ -10129,7 +10129,7 @@ export const Y12A_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Solve the quadratic equation by factoring or using the quadratic formula, looking for a positive integer solution.",
-        "workingOut": "\\((3n + \\dots)(n - 18) = 0\\) (or equivalent factorization)\\n\\(n = 18\\) or \\(n = -\\frac{122}{6}\\) (invalid)",
+        "workingOut": "\\((3n + \\dots)(n - 18) = 0\\) (or equivalent factorization)\n\\(n = 18\\) or \\(n = -\\frac{122}{6}\\) (invalid)",
         "graphData": null
       },
       {
@@ -10147,7 +10147,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a long-term simulation of a Water treatment ozone disinfection decay, the residual ozone depletion rate per minute contact time is recorded daily. The daily values form an arithmetic progression with first term \\(59\\) mg/L and common difference \\(5\\) mg/L.\\nDetermine the cumulative sum of the measurements recorded from day \\(15\\) to day \\(34\\) inclusive.",
+    "question": "In a long-term simulation of a Water treatment ozone disinfection decay, the residual ozone depletion rate per minute contact time is recorded daily. The daily values form an arithmetic progression with first term \\(59\\) mg/L and common difference \\(5\\) mg/L.\nDetermine the cumulative sum of the measurements recorded from day \\(15\\) to day \\(34\\) inclusive.",
     "options": [
       {
         "text": "\\(3520\\)",
@@ -10173,12 +10173,12 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Calculate the number of terms to sum, and find the value of the first term in this range, which is T_p.",
-        "workingOut": "\\(\\text{Number of terms } N = 34 - 15 + 1 = 20\\)\\n\\(T_{15} = a + (15 - 1)d = 59 + 14(5) = 129\\)",
+        "workingOut": "\\(\\text{Number of terms } N = 34 - 15 + 1 = 20\\)\n\\(T_{15} = a + (15 - 1)d = 59 + 14(5) = 129\\)",
         "graphData": null
       },
       {
         "explanation": "Set up the sum of this new arithmetic series with N terms, where the first term is T_p and the common difference is d.",
-        "workingOut": "\\(S = \\frac{N}{2}\\left(2 T_{15} + (N - 1)d\\right)\\)\\n\\(S = \\frac{20}{2}\\left(2(129) + (19 \\times 5)\\right)\\)",
+        "workingOut": "\\(S = \\frac{N}{2}\\left(2 T_{15} + (N - 1)d\\right)\\)\n\\(S = \\frac{20}{2}\\left(2(129) + (19 \\times 5)\\right)\\)",
         "graphData": null
       },
       {
@@ -10196,7 +10196,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a monitoring study of Steel alloy tensile strength elongation, the yield stress point variation per percent carbon content is measured over intervals. The value in the first interval is \\(285\\) MPa and decreases by \\(4\\) MPa in each subsequent interval, forming an arithmetic progression.\\nFind the maximum possible cumulative sum of this sequence before the values become non-positive.",
+    "question": "In a monitoring study of Steel alloy tensile strength elongation, the yield stress point variation per percent carbon content is measured over intervals. The value in the first interval is \\(285\\) MPa and decreases by \\(4\\) MPa in each subsequent interval, forming an arithmetic progression.\nFind the maximum possible cumulative sum of this sequence before the values become non-positive.",
     "options": [
       {
         "text": "\\(10296\\)",
@@ -10222,7 +10222,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term and the common difference from the given details. Set up an inequality to determine when the terms of the arithmetic progression become zero or negative.",
-        "workingOut": "\\(a = 285\\), \\(d = -4\\)\\n\\(T_n = a + (n - 1)d \\geq 0\\)",
+        "workingOut": "\\(a = 285\\), \\(d = -4\\)\n\\(T_n = a + (n - 1)d \\geq 0\\)",
         "graphData": null
       },
       {
@@ -10232,7 +10232,7 @@ export const Y12A_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Use the sum formula for an arithmetic series to calculate the sum of the first n terms.",
-        "workingOut": "\\(S_n = \\frac{n}{2}\\left(2a + (n - 1)d\\right)\\)\\n\\(S_{72} = \\frac{72}{2}\\left(2(285) + (72 - 1)(-4)\\right)\\)",
+        "workingOut": "\\(S_n = \\frac{n}{2}\\left(2a + (n - 1)d\\right)\\)\n\\(S_{72} = \\frac{72}{2}\\left(2(285) + (72 - 1)(-4)\\right)\\)",
         "graphData": null
       },
       {
@@ -10250,7 +10250,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "During testing of a Railway catenary wire sag mechanical tension, the cumulative output of wire displacement per degree temperature rise is recorded. The sum of the first \\(7\\) readings is \\(497\\) mm, and the sum of the first \\(10\\) readings is \\(770\\) mm.\\nAssuming the readings follow an arithmetic progression, find the cumulative sum of the first \\(17\\) readings.",
+    "question": "During testing of a Railway catenary wire sag mechanical tension, the cumulative output of wire displacement per degree temperature rise is recorded. The sum of the first \\(7\\) readings is \\(497\\) mm, and the sum of the first \\(10\\) readings is \\(770\\) mm.\nAssuming the readings follow an arithmetic progression, find the cumulative sum of the first \\(17\\) readings.",
     "options": [
       {
         "text": "\\(1547\\)",
@@ -10276,17 +10276,17 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Set up the sum equations for the first p terms and the first q terms using the general sum formula.",
-        "workingOut": "\\(S_{7} = \\frac{7}{2}(2a + 6d) = 497\\)\\n\\(S_{10} = \\frac{10}{2}(2a + 9d) = 770\\)",
+        "workingOut": "\\(S_{7} = \\frac{7}{2}(2a + 6d) = 497\\)\n\\(S_{10} = \\frac{10}{2}(2a + 9d) = 770\\)",
         "graphData": null
       },
       {
         "explanation": "Simplify both equations by multiplying out and isolating the terms involving a and d.",
-        "workingOut": "\\(2a + 6d = \\frac{2 \\times 497}{7} = 142\\)  --- (1)\\n\\(2a + 9d = \\frac{2 \\times 770}{10} = 154\\)  --- (2)",
+        "workingOut": "\\(2a + 6d = \\frac{2 \\times 497}{7} = 142\\)  --- (1)\n\\(2a + 9d = \\frac{2 \\times 770}{10} = 154\\)  --- (2)",
         "graphData": null
       },
       {
         "explanation": "Subtract equation (1) from equation (2) to solve for the common difference d, then substitute it back to find the first term a.",
-        "workingOut": "\\((9 - 6)d = 12 \\implies d = 4\\)\\n\\(2a + 6(4) = 142 \\implies a = 59\\)",
+        "workingOut": "\\((9 - 6)d = 12 \\implies d = 4\\)\n\\(2a + 6(4) = 142 \\implies a = 59\\)",
         "graphData": null
       },
       {
@@ -10304,7 +10304,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a Virtual reality frame render dispatch latency, a machine undergoes a two-stage calibration process. In the first phase of \\(10\\) cycles, the draw call computation time per thousand polygons starts at \\(67\\) µs and increases by \\(2\\) µs per cycle. In the second phase of \\(10\\) cycles, the common difference doubles to \\(4\\) µs per cycle, continuing from the next logical step of the progression.\\nFind the total cumulative measurement over all \\(20\\) cycles.",
+    "question": "In a Virtual reality frame render dispatch latency, a machine undergoes a two-stage calibration process. In the first phase of \\(10\\) cycles, the draw call computation time per thousand polygons starts at \\(67\\) µs and increases by \\(2\\) µs per cycle. In the second phase of \\(10\\) cycles, the common difference doubles to \\(4\\) µs per cycle, continuing from the next logical step of the progression.\nFind the total cumulative measurement over all \\(20\\) cycles.",
     "options": [
       {
         "text": "\\(1830\\)",
@@ -10335,7 +10335,7 @@ export const Y12A_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Find the value of the last term in the first phase, and use it to determine the starting term of the second phase.",
-        "workingOut": "\\(T_{10} = 67 + (10 - 1)(2) = 85\\)\\n\\(\\text{First term of Phase 2} = T_{10} + 2d = 85 + 4 = 89\\)",
+        "workingOut": "\\(T_{10} = 67 + (10 - 1)(2) = 85\\)\n\\(\\text{First term of Phase 2} = T_{10} + 2d = 85 + 4 = 89\\)",
         "graphData": null
       },
       {
@@ -10358,7 +10358,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An automated sensor in a Industrial kiln heat insulation degradation logs a sequence of measurements of hourly energy loss increment per thermal cycle. The first measurement is \\(10\\) kJ, and each subsequent measurement increases by \\(5\\) kJ.\\nIf the total cumulative sum of the measurements is exactly \\(1495\\) kJ, find the number of measurements taken.",
+    "question": "An automated sensor in a Industrial kiln heat insulation degradation logs a sequence of measurements of hourly energy loss increment per thermal cycle. The first measurement is \\(10\\) kJ, and each subsequent measurement increases by \\(5\\) kJ.\nIf the total cumulative sum of the measurements is exactly \\(1495\\) kJ, find the number of measurements taken.",
     "options": [
       {
         "text": "\\(25\\)",
@@ -10394,7 +10394,7 @@ export const Y12A_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Solve the quadratic equation by factoring or using the quadratic formula, looking for a positive integer solution.",
-        "workingOut": "\\((2.5n + \\dots)(n - 23) = 0\\) (or equivalent factorization)\\n\\(n = 23\\) or \\(n = -\\frac{130}{5}\\) (invalid)",
+        "workingOut": "\\((2.5n + \\dots)(n - 23) = 0\\) (or equivalent factorization)\n\\(n = 23\\) or \\(n = -\\frac{130}{5}\\) (invalid)",
         "graphData": null
       },
       {
@@ -10412,7 +10412,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a long-term simulation of a High-altitude drone solar cell efficiency, the photovoltaic voltage drop per degree above optimal temp is recorded daily. The daily values form an arithmetic progression with first term \\(64\\) mV and common difference \\(6\\) mV.\\nDetermine the cumulative sum of the measurements recorded from day \\(15\\) to day \\(39\\) inclusive.",
+    "question": "In a long-term simulation of a High-altitude drone solar cell efficiency, the photovoltaic voltage drop per degree above optimal temp is recorded daily. The daily values form an arithmetic progression with first term \\(64\\) mV and common difference \\(6\\) mV.\nDetermine the cumulative sum of the measurements recorded from day \\(15\\) to day \\(39\\) inclusive.",
     "options": [
       {
         "text": "\\(5500\\)",
@@ -10438,12 +10438,12 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Calculate the number of terms to sum, and find the value of the first term in this range, which is T_p.",
-        "workingOut": "\\(\\text{Number of terms } N = 39 - 15 + 1 = 25\\)\\n\\(T_{15} = a + (15 - 1)d = 64 + 14(6) = 148\\)",
+        "workingOut": "\\(\\text{Number of terms } N = 39 - 15 + 1 = 25\\)\n\\(T_{15} = a + (15 - 1)d = 64 + 14(6) = 148\\)",
         "graphData": null
       },
       {
         "explanation": "Set up the sum of this new arithmetic series with N terms, where the first term is T_p and the common difference is d.",
-        "workingOut": "\\(S = \\frac{N}{2}\\left(2 T_{15} + (N - 1)d\\right)\\)\\n\\(S = \\frac{25}{2}\\left(2(148) + (24 \\times 6)\\right)\\)",
+        "workingOut": "\\(S = \\frac{N}{2}\\left(2 T_{15} + (N - 1)d\\right)\\)\n\\(S = \\frac{25}{2}\\left(2(148) + (24 \\times 6)\\right)\\)",
         "graphData": null
       },
       {
@@ -10461,7 +10461,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a monitoring study of Urban transit system passenger load transfer, the dwell time increase per extra passenger boarding is measured over intervals. The value in the first interval is \\(300\\) seconds and decreases by \\(4\\) seconds in each subsequent interval, forming an arithmetic progression.\\nFind the maximum possible cumulative sum of this sequence before the values become non-positive.",
+    "question": "In a monitoring study of Urban transit system passenger load transfer, the dwell time increase per extra passenger boarding is measured over intervals. The value in the first interval is \\(300\\) seconds and decreases by \\(4\\) seconds in each subsequent interval, forming an arithmetic progression.\nFind the maximum possible cumulative sum of this sequence before the values become non-positive.",
     "options": [
       {
         "text": "\\(11400\\)",
@@ -10487,7 +10487,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term and the common difference from the given details. Set up an inequality to determine when the terms of the arithmetic progression become zero or negative.",
-        "workingOut": "\\(a = 300\\), \\(d = -4\\)\\n\\(T_n = a + (n - 1)d \\geq 0\\)",
+        "workingOut": "\\(a = 300\\), \\(d = -4\\)\n\\(T_n = a + (n - 1)d \\geq 0\\)",
         "graphData": null
       },
       {
@@ -10497,7 +10497,7 @@ export const Y12A_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Use the sum formula for an arithmetic series to calculate the sum of the first n terms.",
-        "workingOut": "\\(S_n = \\frac{n}{2}\\left(2a + (n - 1)d\\right)\\)\\n\\(S_{76} = \\frac{76}{2}\\left(2(300) + (76 - 1)(-4)\\right)\\)",
+        "workingOut": "\\(S_n = \\frac{n}{2}\\left(2a + (n - 1)d\\right)\\)\n\\(S_{76} = \\frac{76}{2}\\left(2(300) + (76 - 1)(-4)\\right)\\)",
         "graphData": null
       },
       {
@@ -10515,7 +10515,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "During testing of a Landfill methane gas extraction volume, the cumulative output of biogas yield depletion rate per extraction well per year is recorded. The sum of the first \\(6\\) readings is \\(429\\) m^3/h, and the sum of the first \\(11\\) readings is \\(869\\) m^3/h.\\nAssuming the readings follow an arithmetic progression, find the cumulative sum of the first \\(17\\) readings.",
+    "question": "During testing of a Landfill methane gas extraction volume, the cumulative output of biogas yield depletion rate per extraction well per year is recorded. The sum of the first \\(6\\) readings is \\(429\\) m^3/h, and the sum of the first \\(11\\) readings is \\(869\\) m^3/h.\nAssuming the readings follow an arithmetic progression, find the cumulative sum of the first \\(17\\) readings.",
     "options": [
       {
         "text": "\\(1720\\)",
@@ -10541,17 +10541,17 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Set up the sum equations for the first p terms and the first q terms using the general sum formula.",
-        "workingOut": "\\(S_{6} = \\frac{6}{2}(2a + 5d) = 429\\)\\n\\(S_{11} = \\frac{11}{2}(2a + 10d) = 869\\)",
+        "workingOut": "\\(S_{6} = \\frac{6}{2}(2a + 5d) = 429\\)\n\\(S_{11} = \\frac{11}{2}(2a + 10d) = 869\\)",
         "graphData": null
       },
       {
         "explanation": "Simplify both equations by multiplying out and isolating the terms involving a and d.",
-        "workingOut": "\\(2a + 5d = \\frac{2 \\times 429}{6} = 143\\)  --- (1)\\n\\(2a + 10d = \\frac{2 \\times 869}{11} = 158\\)  --- (2)",
+        "workingOut": "\\(2a + 5d = \\frac{2 \\times 429}{6} = 143\\)  --- (1)\n\\(2a + 10d = \\frac{2 \\times 869}{11} = 158\\)  --- (2)",
         "graphData": null
       },
       {
         "explanation": "Subtract equation (1) from equation (2) to solve for the common difference d, then substitute it back to find the first term a.",
-        "workingOut": "\\((10 - 5)d = 15 \\implies d = 3\\)\\n\\(2a + 5(3) = 143 \\implies a = 64\\)",
+        "workingOut": "\\((10 - 5)d = 15 \\implies d = 3\\)\n\\(2a + 5(3) = 143 \\implies a = 64\\)",
         "graphData": null
       },
       {
@@ -10569,7 +10569,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a Deep-ocean research submarine sonar echo, a machine undergoes a two-stage calibration process. In the first phase of \\(10\\) cycles, the transmission loss factor per hundred fathoms depth starts at \\(72\\) dB and increases by \\(4\\) dB per cycle. In the second phase of \\(10\\) cycles, the common difference doubles to \\(8\\) dB per cycle, continuing from the next logical step of the progression.\\nFind the total cumulative measurement over all \\(20\\) cycles.",
+    "question": "In a Deep-ocean research submarine sonar echo, a machine undergoes a two-stage calibration process. In the first phase of \\(10\\) cycles, the transmission loss factor per hundred fathoms depth starts at \\(72\\) dB and increases by \\(4\\) dB per cycle. In the second phase of \\(10\\) cycles, the common difference doubles to \\(8\\) dB per cycle, continuing from the next logical step of the progression.\nFind the total cumulative measurement over all \\(20\\) cycles.",
     "options": [
       {
         "text": "\\(2460\\)",
@@ -10600,7 +10600,7 @@ export const Y12A_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Find the value of the last term in the first phase, and use it to determine the starting term of the second phase.",
-        "workingOut": "\\(T_{10} = 72 + (10 - 1)(4) = 108\\)\\n\\(\\text{First term of Phase 2} = T_{10} + 2d = 108 + 8 = 116\\)",
+        "workingOut": "\\(T_{10} = 72 + (10 - 1)(4) = 108\\)\n\\(\\text{First term of Phase 2} = T_{10} + 2d = 108 + 8 = 116\\)",
         "graphData": null
       },
       {
@@ -10623,7 +10623,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An automated sensor in a Microfluidic lab-on-a-chip capillary flow logs a sequence of measurements of meniscus velocity decrease per channel constriction. The first measurement is \\(10\\) µm/s, and each subsequent measurement increases by \\(4\\) µm/s.\\nIf the total cumulative sum of the measurements is exactly \\(792\\) µm/s, find the number of measurements taken.",
+    "question": "An automated sensor in a Microfluidic lab-on-a-chip capillary flow logs a sequence of measurements of meniscus velocity decrease per channel constriction. The first measurement is \\(10\\) µm/s, and each subsequent measurement increases by \\(4\\) µm/s.\nIf the total cumulative sum of the measurements is exactly \\(792\\) µm/s, find the number of measurements taken.",
     "options": [
       {
         "text": "\\(23\\)",
@@ -10659,7 +10659,7 @@ export const Y12A_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Solve the quadratic equation by factoring or using the quadratic formula, looking for a positive integer solution.",
-        "workingOut": "\\((2n + \\dots)(n - 18) = 0\\) (or equivalent factorization)\\n\\(n = 18\\) or \\(n = -\\frac{88}{4}\\) (invalid)",
+        "workingOut": "\\((2n + \\dots)(n - 18) = 0\\) (or equivalent factorization)\n\\(n = 18\\) or \\(n = -\\frac{88}{4}\\) (invalid)",
         "graphData": null
       },
       {
@@ -10677,7 +10677,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a long-term simulation of a Automotive crash test dummy deceleration impact, the peak G-force force transfer per millimeter deflection is recorded daily. The daily values form an arithmetic progression with first term \\(69\\) G and common difference \\(3\\) G.\\nDetermine the cumulative sum of the measurements recorded from day \\(15\\) to day \\(34\\) inclusive.",
+    "question": "In a long-term simulation of a Automotive crash test dummy deceleration impact, the peak G-force force transfer per millimeter deflection is recorded daily. The daily values form an arithmetic progression with first term \\(69\\) G and common difference \\(3\\) G.\nDetermine the cumulative sum of the measurements recorded from day \\(15\\) to day \\(34\\) inclusive.",
     "options": [
       {
         "text": "\\(2790\\)",
@@ -10703,12 +10703,12 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Calculate the number of terms to sum, and find the value of the first term in this range, which is T_p.",
-        "workingOut": "\\(\\text{Number of terms } N = 34 - 15 + 1 = 20\\)\\n\\(T_{15} = a + (15 - 1)d = 69 + 14(3) = 111\\)",
+        "workingOut": "\\(\\text{Number of terms } N = 34 - 15 + 1 = 20\\)\n\\(T_{15} = a + (15 - 1)d = 69 + 14(3) = 111\\)",
         "graphData": null
       },
       {
         "explanation": "Set up the sum of this new arithmetic series with N terms, where the first term is T_p and the common difference is d.",
-        "workingOut": "\\(S = \\frac{N}{2}\\left(2 T_{15} + (N - 1)d\\right)\\)\\n\\(S = \\frac{20}{2}\\left(2(111) + (19 \\times 3)\\right)\\)",
+        "workingOut": "\\(S = \\frac{N}{2}\\left(2 T_{15} + (N - 1)d\\right)\\)\n\\(S = \\frac{20}{2}\\left(2(111) + (19 \\times 3)\\right)\\)",
         "graphData": null
       },
       {
@@ -10726,7 +10726,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a monitoring study of Air traffic control radar sweeps interference, the clutter signal return rate per storm cell density unit is measured over intervals. The value in the first interval is \\(315\\) dBm and decreases by \\(4\\) dBm in each subsequent interval, forming an arithmetic progression.\\nFind the maximum possible cumulative sum of this sequence before the values become non-positive.",
+    "question": "In a monitoring study of Air traffic control radar sweeps interference, the clutter signal return rate per storm cell density unit is measured over intervals. The value in the first interval is \\(315\\) dBm and decreases by \\(4\\) dBm in each subsequent interval, forming an arithmetic progression.\nFind the maximum possible cumulative sum of this sequence before the values become non-positive.",
     "options": [
       {
         "text": "\\(11305\\)",
@@ -10752,7 +10752,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term and the common difference from the given details. Set up an inequality to determine when the terms of the arithmetic progression become zero or negative.",
-        "workingOut": "\\(a = 315\\), \\(d = -4\\)\\n\\(T_n = a + (n - 1)d \\geq 0\\)",
+        "workingOut": "\\(a = 315\\), \\(d = -4\\)\n\\(T_n = a + (n - 1)d \\geq 0\\)",
         "graphData": null
       },
       {
@@ -10762,7 +10762,7 @@ export const Y12A_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Use the sum formula for an arithmetic series to calculate the sum of the first n terms.",
-        "workingOut": "\\(S_n = \\frac{n}{2}\\left(2a + (n - 1)d\\right)\\)\\n\\(S_{79} = \\frac{79}{2}\\left(2(315) + (79 - 1)(-4)\\right)\\)",
+        "workingOut": "\\(S_n = \\frac{n}{2}\\left(2a + (n - 1)d\\right)\\)\n\\(S_{79} = \\frac{79}{2}\\left(2(315) + (79 - 1)(-4)\\right)\\)",
         "graphData": null
       },
       {
@@ -10780,7 +10780,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "During testing of a Tidal barrage electricity generator output, the cumulative output of turbine mechanical friction torque penalty per tide cycle is recorded. The sum of the first \\(5\\) readings is \\(365\\) N·m, and the sum of the first \\(12\\) readings is \\(960\\) N·m.\\nAssuming the readings follow an arithmetic progression, find the cumulative sum of the first \\(17\\) readings.",
+    "question": "During testing of a Tidal barrage electricity generator output, the cumulative output of turbine mechanical friction torque penalty per tide cycle is recorded. The sum of the first \\(5\\) readings is \\(365\\) N·m, and the sum of the first \\(12\\) readings is \\(960\\) N·m.\nAssuming the readings follow an arithmetic progression, find the cumulative sum of the first \\(17\\) readings.",
     "options": [
       {
         "text": "\\(1662\\)",
@@ -10806,17 +10806,17 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Set up the sum equations for the first p terms and the first q terms using the general sum formula.",
-        "workingOut": "\\(S_{5} = \\frac{5}{2}(2a + 4d) = 365\\)\\n\\(S_{12} = \\frac{12}{2}(2a + 11d) = 960\\)",
+        "workingOut": "\\(S_{5} = \\frac{5}{2}(2a + 4d) = 365\\)\n\\(S_{12} = \\frac{12}{2}(2a + 11d) = 960\\)",
         "graphData": null
       },
       {
         "explanation": "Simplify both equations by multiplying out and isolating the terms involving a and d.",
-        "workingOut": "\\(2a + 4d = \\frac{2 \\times 365}{5} = 146\\)  --- (1)\\n\\(2a + 11d = \\frac{2 \\times 960}{12} = 160\\)  --- (2)",
+        "workingOut": "\\(2a + 4d = \\frac{2 \\times 365}{5} = 146\\)  --- (1)\n\\(2a + 11d = \\frac{2 \\times 960}{12} = 160\\)  --- (2)",
         "graphData": null
       },
       {
         "explanation": "Subtract equation (1) from equation (2) to solve for the common difference d, then substitute it back to find the first term a.",
-        "workingOut": "\\((11 - 4)d = 14 \\implies d = 2\\)\\n\\(2a + 4(2) = 146 \\implies a = 69\\)",
+        "workingOut": "\\((11 - 4)d = 14 \\implies d = 2\\)\n\\(2a + 4(2) = 146 \\implies a = 69\\)",
         "graphData": null
       },
       {
@@ -10834,7 +10834,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a Semiconductor thin-film deposition uniformity, a machine undergoes a two-stage calibration process. In the first phase of \\(10\\) cycles, the thickness variation rate per centimeter wafer radius starts at \\(77\\) Å and increases by \\(3\\) Å per cycle. In the second phase of \\(10\\) cycles, the common difference doubles to \\(6\\) Å per cycle, continuing from the next logical step of the progression.\\nFind the total cumulative measurement over all \\(20\\) cycles.",
+    "question": "In a Semiconductor thin-film deposition uniformity, a machine undergoes a two-stage calibration process. In the first phase of \\(10\\) cycles, the thickness variation rate per centimeter wafer radius starts at \\(77\\) Å and increases by \\(3\\) Å per cycle. In the second phase of \\(10\\) cycles, the common difference doubles to \\(6\\) Å per cycle, continuing from the next logical step of the progression.\nFind the total cumulative measurement over all \\(20\\) cycles.",
     "options": [
       {
         "text": "\\(1934\\)",
@@ -10865,7 +10865,7 @@ export const Y12A_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Find the value of the last term in the first phase, and use it to determine the starting term of the second phase.",
-        "workingOut": "\\(T_{10} = 77 + (10 - 1)(3) = 104\\)\\n\\(\\text{First term of Phase 2} = T_{10} + 2d = 104 + 6 = 110\\)",
+        "workingOut": "\\(T_{10} = 77 + (10 - 1)(3) = 104\\)\n\\(\\text{First term of Phase 2} = T_{10} + 2d = 104 + 6 = 110\\)",
         "graphData": null
       },
       {
@@ -10888,7 +10888,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An automated sensor in a Forest canopy biomass carbon sequestration logs a sequence of measurements of annual absorption increment per hectare growth year. The first measurement is \\(10\\) tonnes, and each subsequent measurement increases by \\(6\\) tonnes.\\nIf the total cumulative sum of the measurements is exactly \\(1748\\) tonnes, find the number of measurements taken.",
+    "question": "An automated sensor in a Forest canopy biomass carbon sequestration logs a sequence of measurements of annual absorption increment per hectare growth year. The first measurement is \\(10\\) tonnes, and each subsequent measurement increases by \\(6\\) tonnes.\nIf the total cumulative sum of the measurements is exactly \\(1748\\) tonnes, find the number of measurements taken.",
     "options": [
       {
         "text": "\\(28\\)",
@@ -10924,7 +10924,7 @@ export const Y12A_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Solve the quadratic equation by factoring or using the quadratic formula, looking for a positive integer solution.",
-        "workingOut": "\\((3n + \\dots)(n - 23) = 0\\) (or equivalent factorization)\\n\\(n = 23\\) or \\(n = -\\frac{152}{6}\\) (invalid)",
+        "workingOut": "\\((3n + \\dots)(n - 23) = 0\\) (or equivalent factorization)\n\\(n = 23\\) or \\(n = -\\frac{152}{6}\\) (invalid)",
         "graphData": null
       },
       {
@@ -10942,7 +10942,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a long-term simulation of a Industrial gas compressor intercooler temperature, the compressed air temperature rise per stage cycle is recorded daily. The daily values form an arithmetic progression with first term \\(74\\) °C and common difference \\(4\\) °C.\\nDetermine the cumulative sum of the measurements recorded from day \\(15\\) to day \\(39\\) inclusive.",
+    "question": "In a long-term simulation of a Industrial gas compressor intercooler temperature, the compressed air temperature rise per stage cycle is recorded daily. The daily values form an arithmetic progression with first term \\(74\\) °C and common difference \\(4\\) °C.\nDetermine the cumulative sum of the measurements recorded from day \\(15\\) to day \\(39\\) inclusive.",
     "options": [
       {
         "text": "\\(4442\\)",
@@ -10968,12 +10968,12 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Calculate the number of terms to sum, and find the value of the first term in this range, which is T_p.",
-        "workingOut": "\\(\\text{Number of terms } N = 39 - 15 + 1 = 25\\)\\n\\(T_{15} = a + (15 - 1)d = 74 + 14(4) = 130\\)",
+        "workingOut": "\\(\\text{Number of terms } N = 39 - 15 + 1 = 25\\)\n\\(T_{15} = a + (15 - 1)d = 74 + 14(4) = 130\\)",
         "graphData": null
       },
       {
         "explanation": "Set up the sum of this new arithmetic series with N terms, where the first term is T_p and the common difference is d.",
-        "workingOut": "\\(S = \\frac{N}{2}\\left(2 T_{15} + (N - 1)d\\right)\\)\\n\\(S = \\frac{25}{2}\\left(2(130) + (24 \\times 4)\\right)\\)",
+        "workingOut": "\\(S = \\frac{N}{2}\\left(2 T_{15} + (N - 1)d\\right)\\)\n\\(S = \\frac{25}{2}\\left(2(130) + (24 \\times 4)\\right)\\)",
         "graphData": null
       },
       {
@@ -10991,7 +10991,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a monitoring study of Tunnel boring machine cutter disc wear, the abrasion rate increment per meter granite drilled is measured over intervals. The value in the first interval is \\(330\\) µm and decreases by \\(4\\) µm in each subsequent interval, forming an arithmetic progression.\\nFind the maximum possible cumulative sum of this sequence before the values become non-positive.",
+    "question": "In a monitoring study of Tunnel boring machine cutter disc wear, the abrasion rate increment per meter granite drilled is measured over intervals. The value in the first interval is \\(330\\) µm and decreases by \\(4\\) µm in each subsequent interval, forming an arithmetic progression.\nFind the maximum possible cumulative sum of this sequence before the values become non-positive.",
     "options": [
       {
         "text": "\\(13778\\)",
@@ -11017,7 +11017,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term and the common difference from the given details. Set up an inequality to determine when the terms of the arithmetic progression become zero or negative.",
-        "workingOut": "\\(a = 330\\), \\(d = -4\\)\\n\\(T_n = a + (n - 1)d \\geq 0\\)",
+        "workingOut": "\\(a = 330\\), \\(d = -4\\)\n\\(T_n = a + (n - 1)d \\geq 0\\)",
         "graphData": null
       },
       {
@@ -11027,7 +11027,7 @@ export const Y12A_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Use the sum formula for an arithmetic series to calculate the sum of the first n terms.",
-        "workingOut": "\\(S_n = \\frac{n}{2}\\left(2a + (n - 1)d\\right)\\)\\n\\(S_{83} = \\frac{83}{2}\\left(2(330) + (83 - 1)(-4)\\right)\\)",
+        "workingOut": "\\(S_n = \\frac{n}{2}\\left(2a + (n - 1)d\\right)\\)\n\\(S_{83} = \\frac{83}{2}\\left(2(330) + (83 - 1)(-4)\\right)\\)",
         "graphData": null
       },
       {
@@ -11045,7 +11045,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "During testing of a Smart water meter wireless signal range, the cumulative output of undefined is recorded. The sum of the first \\(7\\) readings is \\(602\\) dBm, and the sum of the first \\(13\\) readings is \\(1274\\) dBm.\\nAssuming the readings follow an arithmetic progression, find the cumulative sum of the first \\(20\\) readings.",
+    "question": "During testing of a Smart water meter wireless signal range, the cumulative output of undefined is recorded. The sum of the first \\(7\\) readings is \\(602\\) dBm, and the sum of the first \\(13\\) readings is \\(1274\\) dBm.\nAssuming the readings follow an arithmetic progression, find the cumulative sum of the first \\(20\\) readings.",
     "options": [
       {
         "text": "\\(2576\\)",
@@ -11071,17 +11071,17 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Set up the sum equations for the first p terms and the first q terms using the general sum formula.",
-        "workingOut": "\\(S_{7} = \\frac{7}{2}(2a + 6d) = 602\\)\\n\\(S_{13} = \\frac{13}{2}(2a + 12d) = 1274\\)",
+        "workingOut": "\\(S_{7} = \\frac{7}{2}(2a + 6d) = 602\\)\n\\(S_{13} = \\frac{13}{2}(2a + 12d) = 1274\\)",
         "graphData": null
       },
       {
         "explanation": "Simplify both equations by multiplying out and isolating the terms involving a and d.",
-        "workingOut": "\\(2a + 6d = \\frac{2 \\times 602}{7} = 172\\)  --- (1)\\n\\(2a + 12d = \\frac{2 \\times 1274}{13} = 196\\)  --- (2)",
+        "workingOut": "\\(2a + 6d = \\frac{2 \\times 602}{7} = 172\\)  --- (1)\n\\(2a + 12d = \\frac{2 \\times 1274}{13} = 196\\)  --- (2)",
         "graphData": null
       },
       {
         "explanation": "Subtract equation (1) from equation (2) to solve for the common difference d, then substitute it back to find the first term a.",
-        "workingOut": "\\((12 - 6)d = 24 \\implies d = 4\\)\\n\\(2a + 6(4) = 172 \\implies a = 74\\)",
+        "workingOut": "\\((12 - 6)d = 24 \\implies d = 4\\)\n\\(2a + 6(4) = 172 \\implies a = 74\\)",
         "graphData": null
       },
       {
@@ -11099,7 +11099,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a High-frequency stock trading engine queue latency, a machine undergoes a two-stage calibration process. In the first phase of \\(10\\) cycles, the undefined starts at \\(82\\) ns and increases by \\(2\\) ns per cycle. In the second phase of \\(10\\) cycles, the common difference doubles to \\(4\\) ns per cycle, continuing from the next logical step of the progression.\\nFind the total cumulative measurement over all \\(20\\) cycles.",
+    "question": "In a High-frequency stock trading engine queue latency, a machine undergoes a two-stage calibration process. In the first phase of \\(10\\) cycles, the undefined starts at \\(82\\) ns and increases by \\(2\\) ns per cycle. In the second phase of \\(10\\) cycles, the common difference doubles to \\(4\\) ns per cycle, continuing from the next logical step of the progression.\nFind the total cumulative measurement over all \\(20\\) cycles.",
     "options": [
       {
         "text": "\\(2170\\)",
@@ -11130,7 +11130,7 @@ export const Y12A_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Find the value of the last term in the first phase, and use it to determine the starting term of the second phase.",
-        "workingOut": "\\(T_{10} = 82 + (10 - 1)(2) = 100\\)\\n\\(\\text{First term of Phase 2} = T_{10} + 2d = 100 + 4 = 104\\)",
+        "workingOut": "\\(T_{10} = 82 + (10 - 1)(2) = 100\\)\n\\(\\text{First term of Phase 2} = T_{10} + 2d = 100 + 4 = 104\\)",
         "graphData": null
       },
       {
@@ -11153,7 +11153,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An automated sensor in a Bio-luminescent algae glow intensity logs a sequence of measurements of undefined. The first measurement is \\(10\\) cd/m^2, and each subsequent measurement increases by \\(5\\) cd/m^2.\\nIf the total cumulative sum of the measurements is exactly \\(945\\) cd/m^2, find the number of measurements taken.",
+    "question": "An automated sensor in a Bio-luminescent algae glow intensity logs a sequence of measurements of undefined. The first measurement is \\(10\\) cd/m^2, and each subsequent measurement increases by \\(5\\) cd/m^2.\nIf the total cumulative sum of the measurements is exactly \\(945\\) cd/m^2, find the number of measurements taken.",
     "options": [
       {
         "text": "\\(23\\)",
@@ -11189,7 +11189,7 @@ export const Y12A_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Solve the quadratic equation by factoring or using the quadratic formula, looking for a positive integer solution.",
-        "workingOut": "\\((2.5n + \\dots)(n - 18) = 0\\) (or equivalent factorization)\\n\\(n = 18\\) or \\(n = -\\frac{105}{5}\\) (invalid)",
+        "workingOut": "\\((2.5n + \\dots)(n - 18) = 0\\) (or equivalent factorization)\n\\(n = 18\\) or \\(n = -\\frac{105}{5}\\) (invalid)",
         "graphData": null
       },
       {
@@ -11207,7 +11207,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a long-term simulation of a Nuclear magnetic resonance spectral resolution, the undefined is recorded daily. The daily values form an arithmetic progression with first term \\(79\\) Hz and common difference \\(5\\) Hz.\\nDetermine the cumulative sum of the measurements recorded from day \\(15\\) to day \\(34\\) inclusive.",
+    "question": "In a long-term simulation of a Nuclear magnetic resonance spectral resolution, the undefined is recorded daily. The daily values form an arithmetic progression with first term \\(79\\) Hz and common difference \\(5\\) Hz.\nDetermine the cumulative sum of the measurements recorded from day \\(15\\) to day \\(34\\) inclusive.",
     "options": [
       {
         "text": "\\(3920\\)",
@@ -11233,12 +11233,12 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Calculate the number of terms to sum, and find the value of the first term in this range, which is T_p.",
-        "workingOut": "\\(\\text{Number of terms } N = 34 - 15 + 1 = 20\\)\\n\\(T_{15} = a + (15 - 1)d = 79 + 14(5) = 149\\)",
+        "workingOut": "\\(\\text{Number of terms } N = 34 - 15 + 1 = 20\\)\n\\(T_{15} = a + (15 - 1)d = 79 + 14(5) = 149\\)",
         "graphData": null
       },
       {
         "explanation": "Set up the sum of this new arithmetic series with N terms, where the first term is T_p and the common difference is d.",
-        "workingOut": "\\(S = \\frac{N}{2}\\left(2 T_{15} + (N - 1)d\\right)\\)\\n\\(S = \\frac{20}{2}\\left(2(149) + (19 \\times 5)\\right)\\)",
+        "workingOut": "\\(S = \\frac{N}{2}\\left(2 T_{15} + (N - 1)d\\right)\\)\n\\(S = \\frac{20}{2}\\left(2(149) + (19 \\times 5)\\right)\\)",
         "graphData": null
       },
       {
@@ -11256,7 +11256,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a monitoring study of Pipeline gas velocity friction loss, the undefined is measured over intervals. The value in the first interval is \\(345\\) m/s and decreases by \\(4\\) m/s in each subsequent interval, forming an arithmetic progression.\\nFind the maximum possible cumulative sum of this sequence before the values become non-positive.",
+    "question": "In a monitoring study of Pipeline gas velocity friction loss, the undefined is measured over intervals. The value in the first interval is \\(345\\) m/s and decreases by \\(4\\) m/s in each subsequent interval, forming an arithmetic progression.\nFind the maximum possible cumulative sum of this sequence before the values become non-positive.",
     "options": [
       {
         "text": "\\(15051\\)",
@@ -11282,7 +11282,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term and the common difference from the given details. Set up an inequality to determine when the terms of the arithmetic progression become zero or negative.",
-        "workingOut": "\\(a = 345\\), \\(d = -4\\)\\n\\(T_n = a + (n - 1)d \\geq 0\\)",
+        "workingOut": "\\(a = 345\\), \\(d = -4\\)\n\\(T_n = a + (n - 1)d \\geq 0\\)",
         "graphData": null
       },
       {
@@ -11292,7 +11292,7 @@ export const Y12A_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Use the sum formula for an arithmetic series to calculate the sum of the first n terms.",
-        "workingOut": "\\(S_n = \\frac{n}{2}\\left(2a + (n - 1)d\\right)\\)\\n\\(S_{87} = \\frac{87}{2}\\left(2(345) + (87 - 1)(-4)\\right)\\)",
+        "workingOut": "\\(S_n = \\frac{n}{2}\\left(2a + (n - 1)d\\right)\\)\n\\(S_{87} = \\frac{87}{2}\\left(2(345) + (87 - 1)(-4)\\right)\\)",
         "graphData": null
       },
       {
@@ -11310,7 +11310,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "During testing of a Hydrogen fuel cell anode catalyst poisoning, the cumulative output of undefined is recorded. The sum of the first \\(6\\) readings is \\(519\\) mV, and the sum of the first \\(10\\) readings is \\(925\\) mV.\\nAssuming the readings follow an arithmetic progression, find the cumulative sum of the first \\(16\\) readings.",
+    "question": "During testing of a Hydrogen fuel cell anode catalyst poisoning, the cumulative output of undefined is recorded. The sum of the first \\(6\\) readings is \\(519\\) mV, and the sum of the first \\(10\\) readings is \\(925\\) mV.\nAssuming the readings follow an arithmetic progression, find the cumulative sum of the first \\(16\\) readings.",
     "options": [
       {
         "text": "\\(1624\\)",
@@ -11336,17 +11336,17 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Set up the sum equations for the first p terms and the first q terms using the general sum formula.",
-        "workingOut": "\\(S_{6} = \\frac{6}{2}(2a + 5d) = 519\\)\\n\\(S_{10} = \\frac{10}{2}(2a + 9d) = 925\\)",
+        "workingOut": "\\(S_{6} = \\frac{6}{2}(2a + 5d) = 519\\)\n\\(S_{10} = \\frac{10}{2}(2a + 9d) = 925\\)",
         "graphData": null
       },
       {
         "explanation": "Simplify both equations by multiplying out and isolating the terms involving a and d.",
-        "workingOut": "\\(2a + 5d = \\frac{2 \\times 519}{6} = 173\\)  --- (1)\\n\\(2a + 9d = \\frac{2 \\times 925}{10} = 185\\)  --- (2)",
+        "workingOut": "\\(2a + 5d = \\frac{2 \\times 519}{6} = 173\\)  --- (1)\n\\(2a + 9d = \\frac{2 \\times 925}{10} = 185\\)  --- (2)",
         "graphData": null
       },
       {
         "explanation": "Subtract equation (1) from equation (2) to solve for the common difference d, then substitute it back to find the first term a.",
-        "workingOut": "\\((9 - 5)d = 12 \\implies d = 3\\)\\n\\(2a + 5(3) = 173 \\implies a = 79\\)",
+        "workingOut": "\\((9 - 5)d = 12 \\implies d = 3\\)\n\\(2a + 5(3) = 173 \\implies a = 79\\)",
         "graphData": null
       },
       {
@@ -11364,7 +11364,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a Vertical farm lettuce crop transpiration rate, a machine undergoes a two-stage calibration process. In the first phase of \\(10\\) cycles, the undefined starts at \\(87\\) mL/h and increases by \\(4\\) mL/h per cycle. In the second phase of \\(10\\) cycles, the common difference doubles to \\(8\\) mL/h per cycle, continuing from the next logical step of the progression.\\nFind the total cumulative measurement over all \\(20\\) cycles.",
+    "question": "In a Vertical farm lettuce crop transpiration rate, a machine undergoes a two-stage calibration process. In the first phase of \\(10\\) cycles, the undefined starts at \\(87\\) mL/h and increases by \\(4\\) mL/h per cycle. In the second phase of \\(10\\) cycles, the common difference doubles to \\(8\\) mL/h per cycle, continuing from the next logical step of the progression.\nFind the total cumulative measurement over all \\(20\\) cycles.",
     "options": [
       {
         "text": "\\(2760\\)",
@@ -11395,7 +11395,7 @@ export const Y12A_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Find the value of the last term in the first phase, and use it to determine the starting term of the second phase.",
-        "workingOut": "\\(T_{10} = 87 + (10 - 1)(4) = 123\\)\\n\\(\\text{First term of Phase 2} = T_{10} + 2d = 123 + 8 = 131\\)",
+        "workingOut": "\\(T_{10} = 87 + (10 - 1)(4) = 123\\)\n\\(\\text{First term of Phase 2} = T_{10} + 2d = 123 + 8 = 131\\)",
         "graphData": null
       },
       {
@@ -11418,7 +11418,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An automated sensor in a Aircraft fuselage pressurization cyclic fatigue logs a sequence of measurements of undefined. The first measurement is \\(10\\) psi, and each subsequent measurement increases by \\(4\\) psi.\\nIf the total cumulative sum of the measurements is exactly \\(1242\\) psi, find the number of measurements taken.",
+    "question": "An automated sensor in a Aircraft fuselage pressurization cyclic fatigue logs a sequence of measurements of undefined. The first measurement is \\(10\\) psi, and each subsequent measurement increases by \\(4\\) psi.\nIf the total cumulative sum of the measurements is exactly \\(1242\\) psi, find the number of measurements taken.",
     "options": [
       {
         "text": "\\(20\\)",
@@ -11454,7 +11454,7 @@ export const Y12A_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Solve the quadratic equation by factoring or using the quadratic formula, looking for a positive integer solution.",
-        "workingOut": "\\((2n + \\dots)(n - 23) = 0\\) (or equivalent factorization)\\n\\(n = 23\\) or \\(n = -\\frac{108}{4}\\) (invalid)",
+        "workingOut": "\\((2n + \\dots)(n - 23) = 0\\) (or equivalent factorization)\n\\(n = 23\\) or \\(n = -\\frac{108}{4}\\) (invalid)",
         "graphData": null
       },
       {
@@ -11472,7 +11472,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a long-term simulation of a Deep-well submersible water pump flow decay, the undefined is recorded daily. The daily values form an arithmetic progression with first term \\(84\\) L/min and common difference \\(6\\) L/min.\\nDetermine the cumulative sum of the measurements recorded from day \\(15\\) to day \\(39\\) inclusive.",
+    "question": "In a long-term simulation of a Deep-well submersible water pump flow decay, the undefined is recorded daily. The daily values form an arithmetic progression with first term \\(84\\) L/min and common difference \\(6\\) L/min.\nDetermine the cumulative sum of the measurements recorded from day \\(15\\) to day \\(39\\) inclusive.",
     "options": [
       {
         "text": "\\(6000\\)",
@@ -11498,12 +11498,12 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Calculate the number of terms to sum, and find the value of the first term in this range, which is T_p.",
-        "workingOut": "\\(\\text{Number of terms } N = 39 - 15 + 1 = 25\\)\\n\\(T_{15} = a + (15 - 1)d = 84 + 14(6) = 168\\)",
+        "workingOut": "\\(\\text{Number of terms } N = 39 - 15 + 1 = 25\\)\n\\(T_{15} = a + (15 - 1)d = 84 + 14(6) = 168\\)",
         "graphData": null
       },
       {
         "explanation": "Set up the sum of this new arithmetic series with N terms, where the first term is T_p and the common difference is d.",
-        "workingOut": "\\(S = \\frac{N}{2}\\left(2 T_{15} + (N - 1)d\\right)\\)\\n\\(S = \\frac{25}{2}\\left(2(168) + (24 \\times 6)\\right)\\)",
+        "workingOut": "\\(S = \\frac{N}{2}\\left(2 T_{15} + (N - 1)d\\right)\\)\n\\(S = \\frac{25}{2}\\left(2(168) + (24 \\times 6)\\right)\\)",
         "graphData": null
       },
       {
@@ -11521,7 +11521,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a monitoring study of Concrete pillar load-bearing structural compression, the undefined is measured over intervals. The value in the first interval is \\(360\\) mm and decreases by \\(4\\) mm in each subsequent interval, forming an arithmetic progression.\\nFind the maximum possible cumulative sum of this sequence before the values become non-positive.",
+    "question": "In a monitoring study of Concrete pillar load-bearing structural compression, the undefined is measured over intervals. The value in the first interval is \\(360\\) mm and decreases by \\(4\\) mm in each subsequent interval, forming an arithmetic progression.\nFind the maximum possible cumulative sum of this sequence before the values become non-positive.",
     "options": [
       {
         "text": "\\(16388\\)",
@@ -11547,7 +11547,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term and the common difference from the given details. Set up an inequality to determine when the terms of the arithmetic progression become zero or negative.",
-        "workingOut": "\\(a = 360\\), \\(d = -4\\)\\n\\(T_n = a + (n - 1)d \\geq 0\\)",
+        "workingOut": "\\(a = 360\\), \\(d = -4\\)\n\\(T_n = a + (n - 1)d \\geq 0\\)",
         "graphData": null
       },
       {
@@ -11557,7 +11557,7 @@ export const Y12A_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Use the sum formula for an arithmetic series to calculate the sum of the first n terms.",
-        "workingOut": "\\(S_n = \\frac{n}{2}\\left(2a + (n - 1)d\\right)\\)\\n\\(S_{91} = \\frac{91}{2}\\left(2(360) + (91 - 1)(-4)\\right)\\)",
+        "workingOut": "\\(S_n = \\frac{n}{2}\\left(2a + (n - 1)d\\right)\\)\n\\(S_{91} = \\frac{91}{2}\\left(2(360) + (91 - 1)(-4)\\right)\\)",
         "graphData": null
       },
       {
@@ -11575,7 +11575,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "During testing of a High-power electric arc furnace electrode melt, the cumulative output of undefined is recorded. The sum of the first \\(5\\) readings is \\(440\\) cm, and the sum of the first \\(11\\) readings is \\(1034\\) cm.\\nAssuming the readings follow an arithmetic progression, find the cumulative sum of the first \\(16\\) readings.",
+    "question": "During testing of a High-power electric arc furnace electrode melt, the cumulative output of undefined is recorded. The sum of the first \\(5\\) readings is \\(440\\) cm, and the sum of the first \\(11\\) readings is \\(1034\\) cm.\nAssuming the readings follow an arithmetic progression, find the cumulative sum of the first \\(16\\) readings.",
     "options": [
       {
         "text": "\\(1822\\)",
@@ -11601,17 +11601,17 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Set up the sum equations for the first p terms and the first q terms using the general sum formula.",
-        "workingOut": "\\(S_{5} = \\frac{5}{2}(2a + 4d) = 440\\)\\n\\(S_{11} = \\frac{11}{2}(2a + 10d) = 1034\\)",
+        "workingOut": "\\(S_{5} = \\frac{5}{2}(2a + 4d) = 440\\)\n\\(S_{11} = \\frac{11}{2}(2a + 10d) = 1034\\)",
         "graphData": null
       },
       {
         "explanation": "Simplify both equations by multiplying out and isolating the terms involving a and d.",
-        "workingOut": "\\(2a + 4d = \\frac{2 \\times 440}{5} = 176\\)  --- (1)\\n\\(2a + 10d = \\frac{2 \\times 1034}{11} = 188\\)  --- (2)",
+        "workingOut": "\\(2a + 4d = \\frac{2 \\times 440}{5} = 176\\)  --- (1)\n\\(2a + 10d = \\frac{2 \\times 1034}{11} = 188\\)  --- (2)",
         "graphData": null
       },
       {
         "explanation": "Subtract equation (1) from equation (2) to solve for the common difference d, then substitute it back to find the first term a.",
-        "workingOut": "\\((10 - 4)d = 12 \\implies d = 2\\)\\n\\(2a + 4(2) = 176 \\implies a = 84\\)",
+        "workingOut": "\\((10 - 4)d = 12 \\implies d = 2\\)\n\\(2a + 4(2) = 176 \\implies a = 84\\)",
         "graphData": null
       },
       {
@@ -11629,7 +11629,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a Radar cross-section stealth aircraft detection range, a machine undergoes a two-stage calibration process. In the first phase of \\(10\\) cycles, the undefined starts at \\(92\\) km and increases by \\(3\\) km per cycle. In the second phase of \\(10\\) cycles, the common difference doubles to \\(6\\) km per cycle, continuing from the next logical step of the progression.\\nFind the total cumulative measurement over all \\(20\\) cycles.",
+    "question": "In a Radar cross-section stealth aircraft detection range, a machine undergoes a two-stage calibration process. In the first phase of \\(10\\) cycles, the undefined starts at \\(92\\) km and increases by \\(3\\) km per cycle. In the second phase of \\(10\\) cycles, the common difference doubles to \\(6\\) km per cycle, continuing from the next logical step of the progression.\nFind the total cumulative measurement over all \\(20\\) cycles.",
     "options": [
       {
         "text": "\\(2560\\)",
@@ -11660,7 +11660,7 @@ export const Y12A_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Find the value of the last term in the first phase, and use it to determine the starting term of the second phase.",
-        "workingOut": "\\(T_{10} = 92 + (10 - 1)(3) = 119\\)\\n\\(\\text{First term of Phase 2} = T_{10} + 2d = 119 + 6 = 125\\)",
+        "workingOut": "\\(T_{10} = 92 + (10 - 1)(3) = 119\\)\n\\(\\text{First term of Phase 2} = T_{10} + 2d = 119 + 6 = 125\\)",
         "graphData": null
       },
       {
@@ -11683,7 +11683,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An automated sensor in a Borehole logging neutron porosity drift logs a sequence of measurements of undefined. The first measurement is \\(10\\) %, and each subsequent measurement increases by \\(6\\) %.\\nIf the total cumulative sum of the measurements is exactly \\(1098\\) %, find the number of measurements taken.",
+    "question": "An automated sensor in a Borehole logging neutron porosity drift logs a sequence of measurements of undefined. The first measurement is \\(10\\) %, and each subsequent measurement increases by \\(6\\) %.\nIf the total cumulative sum of the measurements is exactly \\(1098\\) %, find the number of measurements taken.",
     "options": [
       {
         "text": "\\(18\\)",
@@ -11719,7 +11719,7 @@ export const Y12A_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Solve the quadratic equation by factoring or using the quadratic formula, looking for a positive integer solution.",
-        "workingOut": "\\((3n + \\dots)(n - 18) = 0\\) (or equivalent factorization)\\n\\(n = 18\\) or \\(n = -\\frac{122}{6}\\) (invalid)",
+        "workingOut": "\\((3n + \\dots)(n - 18) = 0\\) (or equivalent factorization)\n\\(n = 18\\) or \\(n = -\\frac{122}{6}\\) (invalid)",
         "graphData": null
       },
       {
@@ -11737,7 +11737,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a long-term simulation of a Concentrated solar power salt tank thermal energy storage, the undefined is recorded daily. The daily values form an arithmetic progression with first term \\(89\\) MWh and common difference \\(3\\) MWh.\\nDetermine the cumulative sum of the measurements recorded from day \\(15\\) to day \\(34\\) inclusive.",
+    "question": "In a long-term simulation of a Concentrated solar power salt tank thermal energy storage, the undefined is recorded daily. The daily values form an arithmetic progression with first term \\(89\\) MWh and common difference \\(3\\) MWh.\nDetermine the cumulative sum of the measurements recorded from day \\(15\\) to day \\(34\\) inclusive.",
     "options": [
       {
         "text": "\\(3279\\)",
@@ -11763,12 +11763,12 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Calculate the number of terms to sum, and find the value of the first term in this range, which is T_p.",
-        "workingOut": "\\(\\text{Number of terms } N = 34 - 15 + 1 = 20\\)\\n\\(T_{15} = a + (15 - 1)d = 89 + 14(3) = 131\\)",
+        "workingOut": "\\(\\text{Number of terms } N = 34 - 15 + 1 = 20\\)\n\\(T_{15} = a + (15 - 1)d = 89 + 14(3) = 131\\)",
         "graphData": null
       },
       {
         "explanation": "Set up the sum of this new arithmetic series with N terms, where the first term is T_p and the common difference is d.",
-        "workingOut": "\\(S = \\frac{N}{2}\\left(2 T_{15} + (N - 1)d\\right)\\)\\n\\(S = \\frac{20}{2}\\left(2(131) + (19 \\times 3)\\right)\\)",
+        "workingOut": "\\(S = \\frac{N}{2}\\left(2 T_{15} + (N - 1)d\\right)\\)\n\\(S = \\frac{20}{2}\\left(2(131) + (19 \\times 3)\\right)\\)",
         "graphData": null
       },
       {
@@ -11786,7 +11786,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a monitoring study of Ecosystem pollinator population density decline, the undefined is measured over intervals. The value in the first interval is \\(375\\) bees/ha and decreases by \\(4\\) bees/ha in each subsequent interval, forming an arithmetic progression.\\nFind the maximum possible cumulative sum of this sequence before the values become non-positive.",
+    "question": "In a monitoring study of Ecosystem pollinator population density decline, the undefined is measured over intervals. The value in the first interval is \\(375\\) bees/ha and decreases by \\(4\\) bees/ha in each subsequent interval, forming an arithmetic progression.\nFind the maximum possible cumulative sum of this sequence before the values become non-positive.",
     "options": [
       {
         "text": "\\(15989\\)",
@@ -11812,7 +11812,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term and the common difference from the given details. Set up an inequality to determine when the terms of the arithmetic progression become zero or negative.",
-        "workingOut": "\\(a = 375\\), \\(d = -4\\)\\n\\(T_n = a + (n - 1)d \\geq 0\\)",
+        "workingOut": "\\(a = 375\\), \\(d = -4\\)\n\\(T_n = a + (n - 1)d \\geq 0\\)",
         "graphData": null
       },
       {
@@ -11822,7 +11822,7 @@ export const Y12A_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Use the sum formula for an arithmetic series to calculate the sum of the first n terms.",
-        "workingOut": "\\(S_n = \\frac{n}{2}\\left(2a + (n - 1)d\\right)\\)\\n\\(S_{94} = \\frac{94}{2}\\left(2(375) + (94 - 1)(-4)\\right)\\)",
+        "workingOut": "\\(S_n = \\frac{n}{2}\\left(2a + (n - 1)d\\right)\\)\n\\(S_{94} = \\frac{94}{2}\\left(2(375) + (94 - 1)(-4)\\right)\\)",
         "graphData": null
       },
       {
@@ -11840,7 +11840,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "During testing of a Oceanographic drift buoy telemetry battery discharge, the cumulative output of undefined is recorded. The sum of the first \\(7\\) readings is \\(707\\) mV, and the sum of the first \\(12\\) readings is \\(1332\\) mV.\\nAssuming the readings follow an arithmetic progression, find the cumulative sum of the first \\(19\\) readings.",
+    "question": "During testing of a Oceanographic drift buoy telemetry battery discharge, the cumulative output of undefined is recorded. The sum of the first \\(7\\) readings is \\(707\\) mV, and the sum of the first \\(12\\) readings is \\(1332\\) mV.\nAssuming the readings follow an arithmetic progression, find the cumulative sum of the first \\(19\\) readings.",
     "options": [
       {
         "text": "\\(2731\\)",
@@ -11866,17 +11866,17 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Set up the sum equations for the first p terms and the first q terms using the general sum formula.",
-        "workingOut": "\\(S_{7} = \\frac{7}{2}(2a + 6d) = 707\\)\\n\\(S_{12} = \\frac{12}{2}(2a + 11d) = 1332\\)",
+        "workingOut": "\\(S_{7} = \\frac{7}{2}(2a + 6d) = 707\\)\n\\(S_{12} = \\frac{12}{2}(2a + 11d) = 1332\\)",
         "graphData": null
       },
       {
         "explanation": "Simplify both equations by multiplying out and isolating the terms involving a and d.",
-        "workingOut": "\\(2a + 6d = \\frac{2 \\times 707}{7} = 202\\)  --- (1)\\n\\(2a + 11d = \\frac{2 \\times 1332}{12} = 222\\)  --- (2)",
+        "workingOut": "\\(2a + 6d = \\frac{2 \\times 707}{7} = 202\\)  --- (1)\n\\(2a + 11d = \\frac{2 \\times 1332}{12} = 222\\)  --- (2)",
         "graphData": null
       },
       {
         "explanation": "Subtract equation (1) from equation (2) to solve for the common difference d, then substitute it back to find the first term a.",
-        "workingOut": "\\((11 - 6)d = 20 \\implies d = 4\\)\\n\\(2a + 6(4) = 202 \\implies a = 89\\)",
+        "workingOut": "\\((11 - 6)d = 20 \\implies d = 4\\)\n\\(2a + 6(4) = 202 \\implies a = 89\\)",
         "graphData": null
       },
       {
@@ -11894,7 +11894,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a Coal-fired power station ash hopper filling rate, a machine undergoes a two-stage calibration process. In the first phase of \\(10\\) cycles, the undefined starts at \\(97\\) kg/h and increases by \\(2\\) kg/h per cycle. In the second phase of \\(10\\) cycles, the common difference doubles to \\(4\\) kg/h per cycle, continuing from the next logical step of the progression.\\nFind the total cumulative measurement over all \\(20\\) cycles.",
+    "question": "In a Coal-fired power station ash hopper filling rate, a machine undergoes a two-stage calibration process. In the first phase of \\(10\\) cycles, the undefined starts at \\(97\\) kg/h and increases by \\(2\\) kg/h per cycle. In the second phase of \\(10\\) cycles, the common difference doubles to \\(4\\) kg/h per cycle, continuing from the next logical step of the progression.\nFind the total cumulative measurement over all \\(20\\) cycles.",
     "options": [
       {
         "text": "\\(2066\\)",
@@ -11925,7 +11925,7 @@ export const Y12A_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Find the value of the last term in the first phase, and use it to determine the starting term of the second phase.",
-        "workingOut": "\\(T_{10} = 97 + (10 - 1)(2) = 115\\)\\n\\(\\text{First term of Phase 2} = T_{10} + 2d = 115 + 4 = 119\\)",
+        "workingOut": "\\(T_{10} = 97 + (10 - 1)(2) = 115\\)\n\\(\\text{First term of Phase 2} = T_{10} + 2d = 115 + 4 = 119\\)",
         "graphData": null
       },
       {
@@ -11948,7 +11948,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An automated sensor in a Wastewater sludge centrifuge dryness retention logs a sequence of measurements of undefined. The first measurement is \\(10\\) %, and each subsequent measurement increases by \\(5\\) %.\\nIf the total cumulative sum of the measurements is exactly \\(1495\\) %, find the number of measurements taken.",
+    "question": "An automated sensor in a Wastewater sludge centrifuge dryness retention logs a sequence of measurements of undefined. The first measurement is \\(10\\) %, and each subsequent measurement increases by \\(5\\) %.\nIf the total cumulative sum of the measurements is exactly \\(1495\\) %, find the number of measurements taken.",
     "options": [
       {
         "text": "\\(23\\)",
@@ -11984,7 +11984,7 @@ export const Y12A_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Solve the quadratic equation by factoring or using the quadratic formula, looking for a positive integer solution.",
-        "workingOut": "\\((2.5n + \\dots)(n - 23) = 0\\) (or equivalent factorization)\\n\\(n = 23\\) or \\(n = -\\frac{130}{5}\\) (invalid)",
+        "workingOut": "\\((2.5n + \\dots)(n - 23) = 0\\) (or equivalent factorization)\n\\(n = 23\\) or \\(n = -\\frac{130}{5}\\) (invalid)",
         "graphData": null
       },
       {
@@ -12002,7 +12002,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a long-term simulation of a Fiber-reinforced plastic composite delamination strength, the undefined is recorded daily. The daily values form an arithmetic progression with first term \\(94\\) MPa and common difference \\(4\\) MPa.\\nDetermine the cumulative sum of the measurements recorded from day \\(15\\) to day \\(39\\) inclusive.",
+    "question": "In a long-term simulation of a Fiber-reinforced plastic composite delamination strength, the undefined is recorded daily. The daily values form an arithmetic progression with first term \\(94\\) MPa and common difference \\(4\\) MPa.\nDetermine the cumulative sum of the measurements recorded from day \\(15\\) to day \\(39\\) inclusive.",
     "options": [
       {
         "text": "\\(4950\\)",
@@ -12028,12 +12028,12 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Calculate the number of terms to sum, and find the value of the first term in this range, which is T_p.",
-        "workingOut": "\\(\\text{Number of terms } N = 39 - 15 + 1 = 25\\)\\n\\(T_{15} = a + (15 - 1)d = 94 + 14(4) = 150\\)",
+        "workingOut": "\\(\\text{Number of terms } N = 39 - 15 + 1 = 25\\)\n\\(T_{15} = a + (15 - 1)d = 94 + 14(4) = 150\\)",
         "graphData": null
       },
       {
         "explanation": "Set up the sum of this new arithmetic series with N terms, where the first term is T_p and the common difference is d.",
-        "workingOut": "\\(S = \\frac{N}{2}\\left(2 T_{15} + (N - 1)d\\right)\\)\\n\\(S = \\frac{25}{2}\\left(2(150) + (24 \\times 4)\\right)\\)",
+        "workingOut": "\\(S = \\frac{N}{2}\\left(2 T_{15} + (N - 1)d\\right)\\)\n\\(S = \\frac{25}{2}\\left(2(150) + (24 \\times 4)\\right)\\)",
         "graphData": null
       },
       {
@@ -12051,7 +12051,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a monitoring study of Aviation jet engine turbine blade creep elongation, the undefined is measured over intervals. The value in the first interval is \\(390\\) µm and decreases by \\(4\\) µm in each subsequent interval, forming an arithmetic progression.\\nFind the maximum possible cumulative sum of this sequence before the values become non-positive.",
+    "question": "In a monitoring study of Aviation jet engine turbine blade creep elongation, the undefined is measured over intervals. The value in the first interval is \\(390\\) µm and decreases by \\(4\\) µm in each subsequent interval, forming an arithmetic progression.\nFind the maximum possible cumulative sum of this sequence before the values become non-positive.",
     "options": [
       {
         "text": "\\(17287\\)",
@@ -12077,7 +12077,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term and the common difference from the given details. Set up an inequality to determine when the terms of the arithmetic progression become zero or negative.",
-        "workingOut": "\\(a = 390\\), \\(d = -4\\)\\n\\(T_n = a + (n - 1)d \\geq 0\\)",
+        "workingOut": "\\(a = 390\\), \\(d = -4\\)\n\\(T_n = a + (n - 1)d \\geq 0\\)",
         "graphData": null
       },
       {
@@ -12087,7 +12087,7 @@ export const Y12A_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Use the sum formula for an arithmetic series to calculate the sum of the first n terms.",
-        "workingOut": "\\(S_n = \\frac{n}{2}\\left(2a + (n - 1)d\\right)\\)\\n\\(S_{98} = \\frac{98}{2}\\left(2(390) + (98 - 1)(-4)\\right)\\)",
+        "workingOut": "\\(S_n = \\frac{n}{2}\\left(2a + (n - 1)d\\right)\\)\n\\(S_{98} = \\frac{98}{2}\\left(2(390) + (98 - 1)(-4)\\right)\\)",
         "graphData": null
       },
       {
@@ -12105,7 +12105,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "During testing of a Satellite synthetic aperture radar data processing, the cumulative output of undefined is recorded. The sum of the first \\(6\\) readings is \\(609\\) sec, and the sum of the first \\(13\\) readings is \\(1456\\) sec.\\nAssuming the readings follow an arithmetic progression, find the cumulative sum of the first \\(19\\) readings.",
+    "question": "During testing of a Satellite synthetic aperture radar data processing, the cumulative output of undefined is recorded. The sum of the first \\(6\\) readings is \\(609\\) sec, and the sum of the first \\(13\\) readings is \\(1456\\) sec.\nAssuming the readings follow an arithmetic progression, find the cumulative sum of the first \\(19\\) readings.",
     "options": [
       {
         "text": "\\(2299\\)",
@@ -12131,17 +12131,17 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Set up the sum equations for the first p terms and the first q terms using the general sum formula.",
-        "workingOut": "\\(S_{6} = \\frac{6}{2}(2a + 5d) = 609\\)\\n\\(S_{13} = \\frac{13}{2}(2a + 12d) = 1456\\)",
+        "workingOut": "\\(S_{6} = \\frac{6}{2}(2a + 5d) = 609\\)\n\\(S_{13} = \\frac{13}{2}(2a + 12d) = 1456\\)",
         "graphData": null
       },
       {
         "explanation": "Simplify both equations by multiplying out and isolating the terms involving a and d.",
-        "workingOut": "\\(2a + 5d = \\frac{2 \\times 609}{6} = 203\\)  --- (1)\\n\\(2a + 12d = \\frac{2 \\times 1456}{13} = 224\\)  --- (2)",
+        "workingOut": "\\(2a + 5d = \\frac{2 \\times 609}{6} = 203\\)  --- (1)\n\\(2a + 12d = \\frac{2 \\times 1456}{13} = 224\\)  --- (2)",
         "graphData": null
       },
       {
         "explanation": "Subtract equation (1) from equation (2) to solve for the common difference d, then substitute it back to find the first term a.",
-        "workingOut": "\\((12 - 5)d = 21 \\implies d = 3\\)\\n\\(2a + 5(3) = 203 \\implies a = 94\\)",
+        "workingOut": "\\((12 - 5)d = 21 \\implies d = 3\\)\n\\(2a + 5(3) = 203 \\implies a = 94\\)",
         "graphData": null
       },
       {
@@ -12159,7 +12159,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a Heavy machinery hydraulic oil viscosity degradation, a machine undergoes a two-stage calibration process. In the first phase of \\(10\\) cycles, the undefined starts at \\(102\\) cSt and increases by \\(4\\) cSt per cycle. In the second phase of \\(10\\) cycles, the common difference doubles to \\(8\\) cSt per cycle, continuing from the next logical step of the progression.\\nFind the total cumulative measurement over all \\(20\\) cycles.",
+    "question": "In a Heavy machinery hydraulic oil viscosity degradation, a machine undergoes a two-stage calibration process. In the first phase of \\(10\\) cycles, the undefined starts at \\(102\\) cSt and increases by \\(4\\) cSt per cycle. In the second phase of \\(10\\) cycles, the common difference doubles to \\(8\\) cSt per cycle, continuing from the next logical step of the progression.\nFind the total cumulative measurement over all \\(20\\) cycles.",
     "options": [
       {
         "text": "\\(3020\\)",
@@ -12190,7 +12190,7 @@ export const Y12A_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Find the value of the last term in the first phase, and use it to determine the starting term of the second phase.",
-        "workingOut": "\\(T_{10} = 102 + (10 - 1)(4) = 138\\)\\n\\(\\text{First term of Phase 2} = T_{10} + 2d = 138 + 8 = 146\\)",
+        "workingOut": "\\(T_{10} = 102 + (10 - 1)(4) = 138\\)\n\\(\\text{First term of Phase 2} = T_{10} + 2d = 138 + 8 = 146\\)",
         "graphData": null
       },
       {
@@ -12213,7 +12213,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An automated sensor in a Laser metal deposition powder feed rate efficiency logs a sequence of measurements of undefined. The first measurement is \\(10\\) %, and each subsequent measurement increases by \\(4\\) %.\\nIf the total cumulative sum of the measurements is exactly \\(792\\) %, find the number of measurements taken.",
+    "question": "An automated sensor in a Laser metal deposition powder feed rate efficiency logs a sequence of measurements of undefined. The first measurement is \\(10\\) %, and each subsequent measurement increases by \\(4\\) %.\nIf the total cumulative sum of the measurements is exactly \\(792\\) %, find the number of measurements taken.",
     "options": [
       {
         "text": "\\(23\\)",
@@ -12249,7 +12249,7 @@ export const Y12A_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Solve the quadratic equation by factoring or using the quadratic formula, looking for a positive integer solution.",
-        "workingOut": "\\((2n + \\dots)(n - 18) = 0\\) (or equivalent factorization)\\n\\(n = 18\\) or \\(n = -\\frac{88}{4}\\) (invalid)",
+        "workingOut": "\\((2n + \\dots)(n - 18) = 0\\) (or equivalent factorization)\n\\(n = 18\\) or \\(n = -\\frac{88}{4}\\) (invalid)",
         "graphData": null
       },
       {
@@ -12267,7 +12267,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a long-term simulation of a Municipal storm sewer system peak runoff load, the undefined is recorded daily. The daily values form an arithmetic progression with first term \\(99\\) m^3/s and common difference \\(5\\) m^3/s.\\nDetermine the cumulative sum of the measurements recorded from day \\(15\\) to day \\(34\\) inclusive.",
+    "question": "In a long-term simulation of a Municipal storm sewer system peak runoff load, the undefined is recorded daily. The daily values form an arithmetic progression with first term \\(99\\) m^3/s and common difference \\(5\\) m^3/s.\nDetermine the cumulative sum of the measurements recorded from day \\(15\\) to day \\(34\\) inclusive.",
     "options": [
       {
         "text": "\\(4330\\)",
@@ -12293,12 +12293,12 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Calculate the number of terms to sum, and find the value of the first term in this range, which is T_p.",
-        "workingOut": "\\(\\text{Number of terms } N = 34 - 15 + 1 = 20\\)\\n\\(T_{15} = a + (15 - 1)d = 99 + 14(5) = 169\\)",
+        "workingOut": "\\(\\text{Number of terms } N = 34 - 15 + 1 = 20\\)\n\\(T_{15} = a + (15 - 1)d = 99 + 14(5) = 169\\)",
         "graphData": null
       },
       {
         "explanation": "Set up the sum of this new arithmetic series with N terms, where the first term is T_p and the common difference is d.",
-        "workingOut": "\\(S = \\frac{N}{2}\\left(2 T_{15} + (N - 1)d\\right)\\)\\n\\(S = \\frac{20}{2}\\left(2(169) + (19 \\times 5)\\right)\\)",
+        "workingOut": "\\(S = \\frac{N}{2}\\left(2 T_{15} + (N - 1)d\\right)\\)\n\\(S = \\frac{20}{2}\\left(2(169) + (19 \\times 5)\\right)\\)",
         "graphData": null
       },
       {
@@ -12316,7 +12316,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a monitoring study of Superconducting quantum computing qubit gate error, the undefined is measured over intervals. The value in the first interval is \\(405\\) % and decreases by \\(4\\) % in each subsequent interval, forming an arithmetic progression.\\nFind the maximum possible cumulative sum of this sequence before the values become non-positive.",
+    "question": "In a monitoring study of Superconducting quantum computing qubit gate error, the undefined is measured over intervals. The value in the first interval is \\(405\\) % and decreases by \\(4\\) % in each subsequent interval, forming an arithmetic progression.\nFind the maximum possible cumulative sum of this sequence before the values become non-positive.",
     "options": [
       {
         "text": "\\(20706\\)",
@@ -12342,7 +12342,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term and the common difference from the given details. Set up an inequality to determine when the terms of the arithmetic progression become zero or negative.",
-        "workingOut": "\\(a = 405\\), \\(d = -4\\)\\n\\(T_n = a + (n - 1)d \\geq 0\\)",
+        "workingOut": "\\(a = 405\\), \\(d = -4\\)\n\\(T_n = a + (n - 1)d \\geq 0\\)",
         "graphData": null
       },
       {
@@ -12352,7 +12352,7 @@ export const Y12A_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Use the sum formula for an arithmetic series to calculate the sum of the first n terms.",
-        "workingOut": "\\(S_n = \\frac{n}{2}\\left(2a + (n - 1)d\\right)\\)\\n\\(S_{102} = \\frac{102}{2}\\left(2(405) + (102 - 1)(-4)\\right)\\)",
+        "workingOut": "\\(S_n = \\frac{n}{2}\\left(2a + (n - 1)d\\right)\\)\n\\(S_{102} = \\frac{102}{2}\\left(2(405) + (102 - 1)(-4)\\right)\\)",
         "graphData": null
       },
       {
@@ -12370,7 +12370,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "During testing of a Thermoelectric generator cooling fan power requirement, the cumulative output of undefined is recorded. The sum of the first \\(5\\) readings is \\(515\\) mW, and the sum of the first \\(10\\) readings is \\(1080\\) mW.\\nAssuming the readings follow an arithmetic progression, find the cumulative sum of the first \\(15\\) readings.",
+    "question": "During testing of a Thermoelectric generator cooling fan power requirement, the cumulative output of undefined is recorded. The sum of the first \\(5\\) readings is \\(515\\) mW, and the sum of the first \\(10\\) readings is \\(1080\\) mW.\nAssuming the readings follow an arithmetic progression, find the cumulative sum of the first \\(15\\) readings.",
     "options": [
       {
         "text": "\\(1949\\)",
@@ -12396,17 +12396,17 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Set up the sum equations for the first p terms and the first q terms using the general sum formula.",
-        "workingOut": "\\(S_{5} = \\frac{5}{2}(2a + 4d) = 515\\)\\n\\(S_{10} = \\frac{10}{2}(2a + 9d) = 1080\\)",
+        "workingOut": "\\(S_{5} = \\frac{5}{2}(2a + 4d) = 515\\)\n\\(S_{10} = \\frac{10}{2}(2a + 9d) = 1080\\)",
         "graphData": null
       },
       {
         "explanation": "Simplify both equations by multiplying out and isolating the terms involving a and d.",
-        "workingOut": "\\(2a + 4d = \\frac{2 \\times 515}{5} = 206\\)  --- (1)\\n\\(2a + 9d = \\frac{2 \\times 1080}{10} = 216\\)  --- (2)",
+        "workingOut": "\\(2a + 4d = \\frac{2 \\times 515}{5} = 206\\)  --- (1)\n\\(2a + 9d = \\frac{2 \\times 1080}{10} = 216\\)  --- (2)",
         "graphData": null
       },
       {
         "explanation": "Subtract equation (1) from equation (2) to solve for the common difference d, then substitute it back to find the first term a.",
-        "workingOut": "\\((9 - 4)d = 10 \\implies d = 2\\)\\n\\(2a + 4(2) = 206 \\implies a = 99\\)",
+        "workingOut": "\\((9 - 4)d = 10 \\implies d = 2\\)\n\\(2a + 4(2) = 206 \\implies a = 99\\)",
         "graphData": null
       },
       {
@@ -12424,7 +12424,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a Gas-insulated switchgear sulfur hexafluoride leak rate, a machine undergoes a two-stage calibration process. In the first phase of \\(10\\) cycles, the undefined starts at \\(107\\) g/year and increases by \\(3\\) g/year per cycle. In the second phase of \\(10\\) cycles, the common difference doubles to \\(6\\) g/year per cycle, continuing from the next logical step of the progression.\\nFind the total cumulative measurement over all \\(20\\) cycles.",
+    "question": "In a Gas-insulated switchgear sulfur hexafluoride leak rate, a machine undergoes a two-stage calibration process. In the first phase of \\(10\\) cycles, the undefined starts at \\(107\\) g/year and increases by \\(3\\) g/year per cycle. In the second phase of \\(10\\) cycles, the common difference doubles to \\(6\\) g/year per cycle, continuing from the next logical step of the progression.\nFind the total cumulative measurement over all \\(20\\) cycles.",
     "options": [
       {
         "text": "\\(2915\\)",
@@ -12455,7 +12455,7 @@ export const Y12A_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Find the value of the last term in the first phase, and use it to determine the starting term of the second phase.",
-        "workingOut": "\\(T_{10} = 107 + (10 - 1)(3) = 134\\)\\n\\(\\text{First term of Phase 2} = T_{10} + 2d = 134 + 6 = 140\\)",
+        "workingOut": "\\(T_{10} = 107 + (10 - 1)(3) = 134\\)\n\\(\\text{First term of Phase 2} = T_{10} + 2d = 134 + 6 = 140\\)",
         "graphData": null
       },
       {
@@ -12478,7 +12478,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An automated sensor in a Heavy duty diesel engine selective catalytic reduction conversion logs a sequence of measurements of undefined. The first measurement is \\(10\\) %, and each subsequent measurement increases by \\(6\\) %.\\nIf the total cumulative sum of the measurements is exactly \\(1748\\) %, find the number of measurements taken.",
+    "question": "An automated sensor in a Heavy duty diesel engine selective catalytic reduction conversion logs a sequence of measurements of undefined. The first measurement is \\(10\\) %, and each subsequent measurement increases by \\(6\\) %.\nIf the total cumulative sum of the measurements is exactly \\(1748\\) %, find the number of measurements taken.",
     "options": [
       {
         "text": "\\(20\\)",
@@ -12514,7 +12514,7 @@ export const Y12A_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Solve the quadratic equation by factoring or using the quadratic formula, looking for a positive integer solution.",
-        "workingOut": "\\((3n + \\dots)(n - 23) = 0\\) (or equivalent factorization)\\n\\(n = 23\\) or \\(n = -\\frac{152}{6}\\) (invalid)",
+        "workingOut": "\\((3n + \\dots)(n - 23) = 0\\) (or equivalent factorization)\n\\(n = 23\\) or \\(n = -\\frac{152}{6}\\) (invalid)",
         "graphData": null
       },
       {
@@ -12532,7 +12532,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a long-term simulation of a Double-walled underground fuel tank interstitial pressure, the undefined is recorded daily. The daily values form an arithmetic progression with first term \\(104\\) kPa and common difference \\(6\\) kPa.\\nDetermine the cumulative sum of the measurements recorded from day \\(15\\) to day \\(39\\) inclusive.",
+    "question": "In a long-term simulation of a Double-walled underground fuel tank interstitial pressure, the undefined is recorded daily. The daily values form an arithmetic progression with first term \\(104\\) kPa and common difference \\(6\\) kPa.\nDetermine the cumulative sum of the measurements recorded from day \\(15\\) to day \\(39\\) inclusive.",
     "options": [
       {
         "text": "\\(6500\\)",
@@ -12558,12 +12558,12 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Calculate the number of terms to sum, and find the value of the first term in this range, which is T_p.",
-        "workingOut": "\\(\\text{Number of terms } N = 39 - 15 + 1 = 25\\)\\n\\(T_{15} = a + (15 - 1)d = 104 + 14(6) = 188\\)",
+        "workingOut": "\\(\\text{Number of terms } N = 39 - 15 + 1 = 25\\)\n\\(T_{15} = a + (15 - 1)d = 104 + 14(6) = 188\\)",
         "graphData": null
       },
       {
         "explanation": "Set up the sum of this new arithmetic series with N terms, where the first term is T_p and the common difference is d.",
-        "workingOut": "\\(S = \\frac{N}{2}\\left(2 T_{15} + (N - 1)d\\right)\\)\\n\\(S = \\frac{25}{2}\\left(2(188) + (24 \\times 6)\\right)\\)",
+        "workingOut": "\\(S = \\frac{N}{2}\\left(2 T_{15} + (N - 1)d\\right)\\)\n\\(S = \\frac{25}{2}\\left(2(188) + (24 \\times 6)\\right)\\)",
         "graphData": null
       },
       {
@@ -12581,7 +12581,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a monitoring study of Steel production blast furnace hot blast oxygen enrichment, the undefined is measured over intervals. The value in the first interval is \\(420\\) m^3/min and decreases by \\(4\\) m^3/min in each subsequent interval, forming an arithmetic progression.\\nFind the maximum possible cumulative sum of this sequence before the values become non-positive.",
+    "question": "In a monitoring study of Steel production blast furnace hot blast oxygen enrichment, the undefined is measured over intervals. The value in the first interval is \\(420\\) m^3/min and decreases by \\(4\\) m^3/min in each subsequent interval, forming an arithmetic progression.\nFind the maximum possible cumulative sum of this sequence before the values become non-positive.",
     "options": [
       {
         "text": "\\(22260\\)",
@@ -12607,7 +12607,7 @@ export const Y12A_CH1F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the first term and the common difference from the given details. Set up an inequality to determine when the terms of the arithmetic progression become zero or negative.",
-        "workingOut": "\\(a = 420\\), \\(d = -4\\)\\n\\(T_n = a + (n - 1)d \\geq 0\\)",
+        "workingOut": "\\(a = 420\\), \\(d = -4\\)\n\\(T_n = a + (n - 1)d \\geq 0\\)",
         "graphData": null
       },
       {
@@ -12617,7 +12617,7 @@ export const Y12A_CH1F_QUESTIONS = [
       },
       {
         "explanation": "Use the sum formula for an arithmetic series to calculate the sum of the first n terms.",
-        "workingOut": "\\(S_n = \\frac{n}{2}\\left(2a + (n - 1)d\\right)\\)\\n\\(S_{106} = \\frac{106}{2}\\left(2(420) + (106 - 1)(-4)\\right)\\)",
+        "workingOut": "\\(S_n = \\frac{n}{2}\\left(2a + (n - 1)d\\right)\\)\n\\(S_{106} = \\frac{106}{2}\\left(2(420) + (106 - 1)(-4)\\right)\\)",
         "graphData": null
       },
       {

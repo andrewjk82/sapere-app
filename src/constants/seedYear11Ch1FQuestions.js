@@ -52,7 +52,7 @@ export const Y11_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve the simultaneous equations:\\n\\( y = x^2 \\)\\n\\( y = 2x + 3 \\)",
+    "question": "Solve the simultaneous equations:\n\\( y = x^2 \\)\n\\( y = 2x + 3 \\)",
     "options": [
       {
         "text": "\\(x = -1, y = 1 \\text{ \\text{ and } } x = 3, y = 9\\)",
@@ -274,7 +274,7 @@ export const Y11_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Solve the simultaneous equations:\\n\\( 3x + 2y = 16 \\)\\n\\( x - 2y = 0 \\)",
+    "question": "Solve the simultaneous equations:\n\\( 3x + 2y = 16 \\)\n\\( x - 2y = 0 \\)",
     "options": [
       {
         "text": "\\(x = 4, y = 2\\)",
@@ -423,7 +423,7 @@ export const Y11_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Solve the simultaneous equations:\\n\\( 2x + y = 7 \\)\\n\\( x - y = 2 \\)",
+    "question": "Solve the simultaneous equations:\n\\( 2x + y = 7 \\)\n\\( x - y = 2 \\)",
     "options": [
       {
         "text": "\\(x = 3, y = 1\\)",
@@ -802,7 +802,7 @@ export const Y11_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Solve the simultaneous equations:\\n\\( y = 2x + 1 \\)\\n\\( 3x + y = 11 \\)",
+    "question": "Solve the simultaneous equations:\n\\( y = 2x + 1 \\)\n\\( 3x + y = 11 \\)",
     "options": [
       {
         "text": "\\(x = 2, y = 5\\)",
@@ -989,7 +989,7 @@ export const Y11_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve the simultaneous equations:\\n\\( y = x + 1 \\)\\n\\( x^2 + y^2 = 13 \\)",
+    "question": "Solve the simultaneous equations:\n\\( y = x + 1 \\)\n\\( x^2 + y^2 = 13 \\)",
     "options": [
       {
         "text": "\\(x = -3, y = -2 \\text{ \\text{ and } } x = 2, y = 3\\)",
@@ -1641,7 +1641,7 @@ export const Y11_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Solve the simultaneous equations:\\n\\( 3x + 2y = 12 \\)\\n\\( x + 2y = 8 \\)",
+    "question": "Solve the simultaneous equations:\n\\( 3x + 2y = 12 \\)\n\\( x + 2y = 8 \\)",
     "options": [
       {
         "text": "\\(x = 2, y = 3\\)",
@@ -1775,7 +1775,7 @@ export const Y11_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Solve the simultaneous equations:\\n\\( 4x + 3y = 11 \\)\\n\\( 3x + 2y = 8 \\)",
+    "question": "Solve the simultaneous equations:\n\\( 4x + 3y = 11 \\)\n\\( 3x + 2y = 8 \\)",
     "options": [
       {
         "text": "\\(x = 2, y = 1\\)",
@@ -1876,7 +1876,7 @@ export const Y11_CH1F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Solve the simultaneous equations:\\n\\( 2x + 3y = 13 \\)\\n\\( 5x - 3y = 1 \\)",
+    "question": "Solve the simultaneous equations:\n\\( 2x + 3y = 13 \\)\n\\( 5x - 3y = 1 \\)",
     "options": [
       {
         "text": "\\(x = 2, y = 3\\)",

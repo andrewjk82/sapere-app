@@ -1,0 +1,308 @@
+{
+  "y9-11g-q16": {
+    "chapterId": "y9-11",
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "topicId": "y9-11g",
+    "topicCode": "11G",
+    "topicTitle": "Parallel and perpendicular straight lines",
+    "year": "Year 9",
+    "isManual": true,
+    "title": "In triangle \\(ABC\\), the altit...",
+    "question": "In triangle \\(ABC\\), the altitude through \\(A\\) is the line through \\(A\\) perpendicular to \\(BC\\). The coordinates of the vertices of the triangle are \\(A(1, 2)\\), \\(B(5, 8)\\), and \\(C(7, 0)\\). Answer the following sub-questions.",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "type": "teacher_review",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "a) y = -2/3x + 14/3, b) y = 3x - 7, c) y = 1/4x + 7/4",
+    "hint": "An altitude is a line through a vertex perpendicular to the opposite side. Find the gradient of the opposite side, take its negative reciprocal, and use point-gradient form.",
+    "solution": "a) Altitude through \\(C\\) is perpendicular to \\(AB\\):\n   - Gradient \\(AB\\): \\(m_{AB} = \\frac{8 - 2}{5 - 1} = \\frac{3}{2}\\).\n   - Perpendicular gradient: \\(-\\frac{2}{3}\\).\n   - Equation: \\(y - 0 = -\\frac{2}{3}(x - 7) \\implies y = -\\frac{2}{3}x + \\frac{14}{3}\\).\n\nb) Altitude through \\(B\\) is perpendicular to \\(AC\\):\n   - Gradient \\(AC\\): \\(m_{AC} = \\frac{0 - 2}{7 - 1} = -\\frac{1}{3}\\).\n   - Perpendicular gradient: \\(3\\).\n   - Equation: \\(y - 8 = 3(x - 5) \\implies y = 3x - 7\\).\n\nc) Altitude through \\(A\\) is perpendicular to \\(BC\\):\n   - Gradient \\(BC\\): \\(m_{BC} = \\frac{0 - 8}{7 - 5} = -4\\).\n   - Perpendicular gradient: \\(\\frac{1}{4}\\).\n   - Equation: \\(y - 2 = \\frac{1}{4}(x - 1) \\implies y = \\frac{1}{4}x + \\frac{7}{4}\\).",
+    "solutionSteps": [],
+    "questionImage": "",
+    "subQuestions": [
+      {
+        "id": "y9-11g-q16a",
+        "type": "short_answer",
+        "question": "a) Find the equation of the altitude through \\(C\\).",
+        "options": [],
+        "answer": "y = -2/3x + 14/3",
+        "solutionSteps": [
+          {
+            "explanation": "Gradient of AB is 3/2, so the altitude gradient is -2/3.",
+            "workingOut": "y - 0 = -\\frac{2}{3}(x - 7) \\implies y = -\\frac{2}{3}x + \\frac{14}{3}"
+          }
+        ],
+        "graphData": null
+      },
+      {
+        "id": "y9-11g-q16b",
+        "type": "short_answer",
+        "question": "b) Find the equation of the altitude through \\(B\\).",
+        "options": [],
+        "answer": "y = 3x - 7",
+        "solutionSteps": [
+          {
+            "explanation": "Gradient of AC is -1/3, so the altitude gradient is 3.",
+            "workingOut": "y - 8 = 3(x - 5) \\implies y = 3x - 7"
+          }
+        ],
+        "graphData": null
+      },
+      {
+        "id": "y9-11g-q16c",
+        "type": "short_answer",
+        "question": "c) Find the equation of the altitude through \\(A\\).",
+        "options": [],
+        "answer": "y = 1/4x + 7/4",
+        "solutionSteps": [
+          {
+            "explanation": "Gradient of BC is -4, so the altitude gradient is 1/4.",
+            "workingOut": "y - 2 = \\frac{1}{4}(x - 1) \\implies y = \\frac{1}{4}x + \\frac{7}{4}"
+          }
+        ],
+        "graphData": null
+      }
+    ],
+    "blanks": [],
+    "graphData": {
+      "jsxGraph": {
+        "width": 350,
+        "height": 350,
+        "boundingbox": [
+          -1,
+          10,
+          9,
+          -2
+        ],
+        "showConstructionPoints": true,
+        "boardOptions": {
+          "axis": true,
+          "grid": true
+        },
+        "script": "board.suspendUpdate();\nvar pA = board.create('point', [1, 2], {size: 3, color: 'black', name: 'A(1, 2)', withLabel: true, label: {autoPosition: false, offset: [-15, 10]}});\nvar pB = board.create('point', [5, 8], {size: 3, color: 'black', name: 'B(5, 8)', withLabel: true, label: {autoPosition: false, offset: [10, 10]}});\nvar pC = board.create('point', [7, 0], {size: 3, color: 'black', name: 'C(7, 0)', withLabel: true, label: {autoPosition: false, offset: [10, -10]}});\nboard.create('polygon', [pA, pB, pC], {fillColor: 'none', borders: {strokeColor: 'black', strokeWidth: 1.5}});\nboard.unsuspendUpdate();"
+      }
+    },
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830227,
+      "_nanoseconds": 114000000
+    },
+    "updatedAt": {
+      "_seconds": 1782830227,
+      "_nanoseconds": 114000000
+    }
+  },
+  "y9-11g-q16a": {
+    "year": "Year 9",
+    "origin": "seed",
+    "subQuestions": [],
+    "isActive": true,
+    "title": "In triangle ABC, the altitude through A ...",
+    "type": "multiple_choice",
+    "topicTitle": "Parallel and perpendicular straight lines",
+    "createdAt": {
+      "_seconds": 1784364626,
+      "_nanoseconds": 910000000
+    },
+    "solution": "The correct answer is \\(y = -2/3x + 14/3\\).",
+    "chapterId": "y9-11",
+    "graphData": null,
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "topicCode": "11G",
+    "question": "In triangle \\(ABC\\), the altitude through \\(A\\) is the line through \\(A\\) perpendicular to \\(BC\\). The coordinates of the vertices of the triangle are \\(A(1, 2)\\), \\(B(5, 8)\\), and \\(C(7, 0)\\). Answer the following sub-questions.\na) Find the equation of the altitude through \\(C\\).",
+    "isManual": true,
+    "isNew": true,
+    "requiresManualGrading": false,
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "topicId": "y9-11g",
+    "answer": "1",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Parallel and perpendicular straight lines: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(y = -2/3x + 14/3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: y = -2/3x + 14/3. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(y = -2/3x + 14/3\\)",
+        "graphData": null
+      }
+    ],
+    "options": [
+      {
+        "text": "\\(y = 4x + 2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = -2/3x + 14/3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = -3x + 6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = 5x - 4\\)",
+        "imageUrl": ""
+      }
+    ],
+    "updatedAt": {
+      "_seconds": 1784982176,
+      "_nanoseconds": 826000000
+    }
+  },
+  "y9-11g-q16b": {
+    "year": "Year 9",
+    "origin": "seed",
+    "subQuestions": [],
+    "isActive": true,
+    "title": "In triangle ABC, the altitude through A ...",
+    "type": "multiple_choice",
+    "topicTitle": "Parallel and perpendicular straight lines",
+    "createdAt": {
+      "_seconds": 1784364626,
+      "_nanoseconds": 910000000
+    },
+    "solution": "The correct answer is \\(y = 3x - 7\\).",
+    "chapterId": "y9-11",
+    "graphData": null,
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "topicCode": "11G",
+    "question": "In triangle \\(ABC\\), the altitude through \\(A\\) is the line through \\(A\\) perpendicular to \\(BC\\). The coordinates of the vertices of the triangle are \\(A(1, 2)\\), \\(B(5, 8)\\), and \\(C(7, 0)\\). Answer the following sub-questions.\nb) Find the equation of the altitude through \\(B\\).",
+    "isManual": true,
+    "isNew": true,
+    "requiresManualGrading": false,
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "topicId": "y9-11g",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Parallel and perpendicular straight lines: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(y = 3x - 7\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: y = 3x - 7. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(y = 3x - 7\\)",
+        "graphData": null
+      }
+    ],
+    "answer": "1",
+    "options": [
+      {
+        "text": "\\(y = 5x + 3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = 3x - 7\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = -4x + 7\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = 3x - 5\\)",
+        "imageUrl": ""
+      }
+    ],
+    "updatedAt": {
+      "_seconds": 1784982176,
+      "_nanoseconds": 826000000
+    }
+  },
+  "y9-11g-q16c": {
+    "year": "Year 9",
+    "origin": "seed",
+    "subQuestions": [],
+    "isActive": true,
+    "title": "In triangle ABC, the altitude through A ...",
+    "type": "multiple_choice",
+    "topicTitle": "Parallel and perpendicular straight lines",
+    "createdAt": {
+      "_seconds": 1784364626,
+      "_nanoseconds": 910000000
+    },
+    "solution": "The correct answer is \\(y = 1/4x + 7/4\\).",
+    "chapterId": "y9-11",
+    "graphData": null,
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "topicCode": "11G",
+    "question": "In triangle \\(ABC\\), the altitude through \\(A\\) is the line through \\(A\\) perpendicular to \\(BC\\). The coordinates of the vertices of the triangle are \\(A(1, 2)\\), \\(B(5, 8)\\), and \\(C(7, 0)\\). Answer the following sub-questions.\nc) Find the equation of the altitude through \\(A\\).",
+    "isManual": true,
+    "isNew": true,
+    "requiresManualGrading": false,
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "topicId": "y9-11g",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Parallel and perpendicular straight lines: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(y = 1/4x + 7/4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: y = 1/4x + 7/4. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(y = 1/4x + 7/4\\)",
+        "graphData": null
+      }
+    ],
+    "answer": "1",
+    "options": [
+      {
+        "text": "\\(y = 6x - 3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = 1/4x + 7/4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = -x + 8\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = 4x - 6\\)",
+        "imageUrl": ""
+      }
+    ],
+    "updatedAt": {
+      "_seconds": 1784982176,
+      "_nanoseconds": 826000000
+    }
+  }
+}

@@ -955,9 +955,9 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A city is suffering through a drought and adopts a plan to import water. The volume imported in the 1st year is \\(1.8 \\times 10^9\\text{ m}^3\\), and each subsequent year is 90\\% of the previous year.\\nExplain why the total volume of water imported since the start of the plan will never exceed \\(1.9 \\times 10^{10}\\text{ m}^3\\).",
+    "question": "A city is suffering through a drought and adopts a plan to import water. The volume imported in the 1st year is \\(1.8 \\times 10^9\\text{ m}^3\\), and each subsequent year is 90\\% of the previous year.\nExplain why the total volume of water imported since the start of the plan will never exceed \\(1.9 \\times 10^{10}\\text{ m}^3\\).",
     "opts": [],
-    "answer": "The water imports form an infinite geometric series with first term \\(a = 1.8 \\times 10^9\\text{ m}^3\\) and common ratio \\(r = 0.90\\).\\nSince \\(|r| < 1\\), the limiting sum exists and is given by \\(S_{\\infty} = \\frac{a}{1-r} = \\frac{1.8 \\times 10^9}{1-0.9} = 1.8 \\times 10^{10}\\text{ m}^3\\).\\nBecause this infinite sum is exactly \\(1.8 \\times 10^{10}\\text{ m}^3\\), the total volume of water imported can never exceed this limit, which is strictly less than \\(1.9 \\times 10^{10}\\text{ m}^3\\).",
+    "answer": "The water imports form an infinite geometric series with first term \\(a = 1.8 \\times 10^9\\text{ m}^3\\) and common ratio \\(r = 0.90\\).\nSince \\(|r| < 1\\), the limiting sum exists and is given by \\(S_{\\infty} = \\frac{a}{1-r} = \\frac{1.8 \\times 10^9}{1-0.9} = 1.8 \\times 10^{10}\\text{ m}^3\\).\nBecause this infinite sum is exactly \\(1.8 \\times 10^{10}\\text{ m}^3\\), the total volume of water imported can never exceed this limit, which is strictly less than \\(1.9 \\times 10^{10}\\text{ m}^3\\).",
     "hint": "Determine the limiting sum of the infinite series and compare it with the given value.",
     "solutionSteps": [
       {
@@ -1382,7 +1382,7 @@ export const Y12A_CH1J_QUESTIONS = [
       },
       {
         "explanation": "Simplify the equation to find a relation between \\(a\\) and \\(d\\).",
-        "workingOut": "\\(4d^2 = 4ad \\implies d = a \\quad \\text{(since } d \\ne 0\\text{)}\\)",
+        "workingOut": "\\(4d^2 = 4ad \\implies d = a \\quad \\text{(since } d \ne 0\\text{)}\\)",
         "graphData": null
       },
       {
@@ -1453,7 +1453,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A conservation project monitors a local penguin colony. The initial colony size is estimated at \\(2020\\) penguins. Due to shifting climate conditions, the colony size decreases by \\(6\\%\\) each year.\\nFind the predicted penguin population at the start of year \\(5\\) (after \\(4\\) years of decline), rounded to the nearest integer.",
+    "question": "A conservation project monitors a local penguin colony. The initial colony size is estimated at \\(2020\\) penguins. Due to shifting climate conditions, the colony size decreases by \\(6\\%\\) each year.\nFind the predicted penguin population at the start of year \\(5\\) (after \\(4\\) years of decline), rounded to the nearest integer.",
     "opts": [
       {
         "text": "\\(1577\\)",
@@ -1503,7 +1503,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A hydroponic greenhouse tracks crop biomass yields. On Week 1, the system harvests \\(154\\) grams of organic greens. Each week, the greenhouse's yield increases by \\(14\\) grams compared to the previous week.\\nDetermine the total crop yield harvested across the first \\(17\\) weeks.",
+    "question": "A hydroponic greenhouse tracks crop biomass yields. On Week 1, the system harvests \\(154\\) grams of organic greens. Each week, the greenhouse's yield increases by \\(14\\) grams compared to the previous week.\nDetermine the total crop yield harvested across the first \\(17\\) weeks.",
     "opts": [
       {
         "text": "\\(4522\\)",
@@ -1553,7 +1553,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A laboratory chemical mixture evaporates over consecutive heating cycles. In the first cycle, \\(83\\) millilitres evaporate. In each subsequent cycle, the volume evaporated is exactly \\(87\\%\\) of the volume evaporated in the previous cycle.\\nFind the theoretical maximum limit of the total volume evaporated across infinite cycles (to 2 decimal places).",
+    "question": "A laboratory chemical mixture evaporates over consecutive heating cycles. In the first cycle, \\(83\\) millilitres evaporate. In each subsequent cycle, the volume evaporated is exactly \\(87\\%\\) of the volume evaporated in the previous cycle.\nFind the theoretical maximum limit of the total volume evaporated across infinite cycles (to 2 decimal places).",
     "opts": [
       {
         "text": "\\(638.46\\) mL",
@@ -1658,7 +1658,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A conservation project monitors a local penguin colony. The initial colony size is estimated at \\(2100\\) penguins. Due to shifting climate conditions, the colony size decreases by \\(10\\%\\) each year.\\nFind the predicted penguin population at the start of year \\(6\\) (after \\(5\\) years of decline), rounded to the nearest integer.",
+    "question": "A conservation project monitors a local penguin colony. The initial colony size is estimated at \\(2100\\) penguins. Due to shifting climate conditions, the colony size decreases by \\(10\\%\\) each year.\nFind the predicted penguin population at the start of year \\(6\\) (after \\(5\\) years of decline), rounded to the nearest integer.",
     "opts": [
       {
         "text": "\\(1240\\)",
@@ -1708,7 +1708,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A hydroponic greenhouse tracks crop biomass yields. On Week 1, the system harvests \\(162\\) grams of organic greens. Each week, the greenhouse's yield increases by \\(13\\) grams compared to the previous week.\\nDetermine the total crop yield harvested across the first \\(17\\) weeks.",
+    "question": "A hydroponic greenhouse tracks crop biomass yields. On Week 1, the system harvests \\(162\\) grams of organic greens. Each week, the greenhouse's yield increases by \\(13\\) grams compared to the previous week.\nDetermine the total crop yield harvested across the first \\(17\\) weeks.",
     "opts": [
       {
         "text": "\\(4535\\)",
@@ -1758,7 +1758,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A laboratory chemical mixture evaporates over consecutive heating cycles. In the first cycle, \\(87\\) millilitres evaporate. In each subsequent cycle, the volume evaporated is exactly \\(83\\%\\) of the volume evaporated in the previous cycle.\\nFind the theoretical maximum limit of the total volume evaporated across infinite cycles (to 2 decimal places).",
+    "question": "A laboratory chemical mixture evaporates over consecutive heating cycles. In the first cycle, \\(87\\) millilitres evaporate. In each subsequent cycle, the volume evaporated is exactly \\(83\\%\\) of the volume evaporated in the previous cycle.\nFind the theoretical maximum limit of the total volume evaporated across infinite cycles (to 2 decimal places).",
     "opts": [
       {
         "text": "\\(72.21\\) mL",
@@ -1863,7 +1863,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A conservation project monitors a local penguin colony. The initial colony size is estimated at \\(2180\\) penguins. Due to shifting climate conditions, the colony size decreases by \\(8\\%\\) each year.\\nFind the predicted penguin population at the start of year \\(4\\) (after \\(3\\) years of decline), rounded to the nearest integer.",
+    "question": "A conservation project monitors a local penguin colony. The initial colony size is estimated at \\(2180\\) penguins. Due to shifting climate conditions, the colony size decreases by \\(8\\%\\) each year.\nFind the predicted penguin population at the start of year \\(4\\) (after \\(3\\) years of decline), rounded to the nearest integer.",
     "opts": [
       {
         "text": "\\(1845\\)",
@@ -1913,7 +1913,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A hydroponic greenhouse tracks crop biomass yields. On Week 1, the system harvests \\(170\\) grams of organic greens. Each week, the greenhouse's yield increases by \\(12\\) grams compared to the previous week.\\nDetermine the total crop yield harvested across the first \\(17\\) weeks.",
+    "question": "A hydroponic greenhouse tracks crop biomass yields. On Week 1, the system harvests \\(170\\) grams of organic greens. Each week, the greenhouse's yield increases by \\(12\\) grams compared to the previous week.\nDetermine the total crop yield harvested across the first \\(17\\) weeks.",
     "opts": [
       {
         "text": "\\(4510\\)",
@@ -1963,7 +1963,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A laboratory chemical mixture evaporates over consecutive heating cycles. In the first cycle, \\(91\\) millilitres evaporate. In each subsequent cycle, the volume evaporated is exactly \\(90\\%\\) of the volume evaporated in the previous cycle.\\nFind the theoretical maximum limit of the total volume evaporated across infinite cycles (to 2 decimal places).",
+    "question": "A laboratory chemical mixture evaporates over consecutive heating cycles. In the first cycle, \\(91\\) millilitres evaporate. In each subsequent cycle, the volume evaporated is exactly \\(90\\%\\) of the volume evaporated in the previous cycle.\nFind the theoretical maximum limit of the total volume evaporated across infinite cycles (to 2 decimal places).",
     "opts": [
       {
         "text": "\\(81.90\\) mL",
@@ -2068,7 +2068,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A conservation project monitors a local penguin colony. The initial colony size is estimated at \\(2260\\) penguins. Due to shifting climate conditions, the colony size decreases by \\(6\\%\\) each year.\\nFind the predicted penguin population at the start of year \\(5\\) (after \\(4\\) years of decline), rounded to the nearest integer.",
+    "question": "A conservation project monitors a local penguin colony. The initial colony size is estimated at \\(2260\\) penguins. Due to shifting climate conditions, the colony size decreases by \\(6\\%\\) each year.\nFind the predicted penguin population at the start of year \\(5\\) (after \\(4\\) years of decline), rounded to the nearest integer.",
     "opts": [
       {
         "text": "\\(1764\\)",
@@ -2118,7 +2118,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A hydroponic greenhouse tracks crop biomass yields. On Week 1, the system harvests \\(178\\) grams of organic greens. Each week, the greenhouse's yield increases by \\(16\\) grams compared to the previous week.\\nDetermine the total crop yield harvested across the first \\(17\\) weeks.",
+    "question": "A hydroponic greenhouse tracks crop biomass yields. On Week 1, the system harvests \\(178\\) grams of organic greens. Each week, the greenhouse's yield increases by \\(16\\) grams compared to the previous week.\nDetermine the total crop yield harvested across the first \\(17\\) weeks.",
     "opts": [
       {
         "text": "\\(5202\\)",
@@ -2168,7 +2168,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A laboratory chemical mixture evaporates over consecutive heating cycles. In the first cycle, \\(95\\) millilitres evaporate. In each subsequent cycle, the volume evaporated is exactly \\(86\\%\\) of the volume evaporated in the previous cycle.\\nFind the theoretical maximum limit of the total volume evaporated across infinite cycles (to 2 decimal places).",
+    "question": "A laboratory chemical mixture evaporates over consecutive heating cycles. In the first cycle, \\(95\\) millilitres evaporate. In each subsequent cycle, the volume evaporated is exactly \\(86\\%\\) of the volume evaporated in the previous cycle.\nFind the theoretical maximum limit of the total volume evaporated across infinite cycles (to 2 decimal places).",
     "opts": [
       {
         "text": "\\(678.57\\) mL",
@@ -2273,7 +2273,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A conservation project monitors a local penguin colony. The initial colony size is estimated at \\(2340\\) penguins. Due to shifting climate conditions, the colony size decreases by \\(10\\%\\) each year.\\nFind the predicted penguin population at the start of year \\(6\\) (after \\(5\\) years of decline), rounded to the nearest integer.",
+    "question": "A conservation project monitors a local penguin colony. The initial colony size is estimated at \\(2340\\) penguins. Due to shifting climate conditions, the colony size decreases by \\(10\\%\\) each year.\nFind the predicted penguin population at the start of year \\(6\\) (after \\(5\\) years of decline), rounded to the nearest integer.",
     "opts": [
       {
         "text": "\\(1244\\)",
@@ -2323,7 +2323,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A hydroponic greenhouse tracks crop biomass yields. On Week 1, the system harvests \\(186\\) grams of organic greens. Each week, the greenhouse's yield increases by \\(15\\) grams compared to the previous week.\\nDetermine the total crop yield harvested across the first \\(17\\) weeks.",
+    "question": "A hydroponic greenhouse tracks crop biomass yields. On Week 1, the system harvests \\(186\\) grams of organic greens. Each week, the greenhouse's yield increases by \\(15\\) grams compared to the previous week.\nDetermine the total crop yield harvested across the first \\(17\\) weeks.",
     "opts": [
       {
         "text": "\\(5187\\)",
@@ -2373,7 +2373,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A laboratory chemical mixture evaporates over consecutive heating cycles. In the first cycle, \\(99\\) millilitres evaporate. In each subsequent cycle, the volume evaporated is exactly \\(82\\%\\) of the volume evaporated in the previous cycle.\\nFind the theoretical maximum limit of the total volume evaporated across infinite cycles (to 2 decimal places).",
+    "question": "A laboratory chemical mixture evaporates over consecutive heating cycles. In the first cycle, \\(99\\) millilitres evaporate. In each subsequent cycle, the volume evaporated is exactly \\(82\\%\\) of the volume evaporated in the previous cycle.\nFind the theoretical maximum limit of the total volume evaporated across infinite cycles (to 2 decimal places).",
     "opts": [
       {
         "text": "\\(120.73\\) mL",
@@ -2478,7 +2478,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A conservation project monitors a local penguin colony. The initial colony size is estimated at \\(2420\\) penguins. Due to shifting climate conditions, the colony size decreases by \\(8\\%\\) each year.\\nFind the predicted penguin population at the start of year \\(4\\) (after \\(3\\) years of decline), rounded to the nearest integer.",
+    "question": "A conservation project monitors a local penguin colony. The initial colony size is estimated at \\(2420\\) penguins. Due to shifting climate conditions, the colony size decreases by \\(8\\%\\) each year.\nFind the predicted penguin population at the start of year \\(4\\) (after \\(3\\) years of decline), rounded to the nearest integer.",
     "opts": [
       {
         "text": "\\(1839 \\)",
@@ -2528,7 +2528,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A hydroponic greenhouse tracks crop biomass yields. On Week 1, the system harvests \\(194\\) grams of organic greens. Each week, the greenhouse's yield increases by \\(14\\) grams compared to the previous week.\\nDetermine the total crop yield harvested across the first \\(17\\) weeks.",
+    "question": "A hydroponic greenhouse tracks crop biomass yields. On Week 1, the system harvests \\(194\\) grams of organic greens. Each week, the greenhouse's yield increases by \\(14\\) grams compared to the previous week.\nDetermine the total crop yield harvested across the first \\(17\\) weeks.",
     "opts": [
       {
         "text": "\\(3312\\)",
@@ -2578,7 +2578,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A laboratory chemical mixture evaporates over consecutive heating cycles. In the first cycle, \\(103\\) millilitres evaporate. In each subsequent cycle, the volume evaporated is exactly \\(89\\%\\) of the volume evaporated in the previous cycle.\\nFind the theoretical maximum limit of the total volume evaporated across infinite cycles (to 2 decimal places).",
+    "question": "A laboratory chemical mixture evaporates over consecutive heating cycles. In the first cycle, \\(103\\) millilitres evaporate. In each subsequent cycle, the volume evaporated is exactly \\(89\\%\\) of the volume evaporated in the previous cycle.\nFind the theoretical maximum limit of the total volume evaporated across infinite cycles (to 2 decimal places).",
     "opts": [
       {
         "text": "\\(936.36\\) mL",
@@ -2683,7 +2683,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A conservation project monitors a local penguin colony. The initial colony size is estimated at \\(2500\\) penguins. Due to shifting climate conditions, the colony size decreases by \\(6\\%\\) each year.\\nFind the predicted penguin population at the start of year \\(5\\) (after \\(4\\) years of decline), rounded to the nearest integer.",
+    "question": "A conservation project monitors a local penguin colony. The initial colony size is estimated at \\(2500\\) penguins. Due to shifting climate conditions, the colony size decreases by \\(6\\%\\) each year.\nFind the predicted penguin population at the start of year \\(5\\) (after \\(4\\) years of decline), rounded to the nearest integer.",
     "opts": [
       {
         "text": "\\(1900 \\)",
@@ -2733,7 +2733,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A hydroponic greenhouse tracks crop biomass yields. On Week 1, the system harvests \\(202\\) grams of organic greens. Each week, the greenhouse's yield increases by \\(13\\) grams compared to the previous week.\\nDetermine the total crop yield harvested across the first \\(17\\) weeks.",
+    "question": "A hydroponic greenhouse tracks crop biomass yields. On Week 1, the system harvests \\(202\\) grams of organic greens. Each week, the greenhouse's yield increases by \\(13\\) grams compared to the previous week.\nDetermine the total crop yield harvested across the first \\(17\\) weeks.",
     "opts": [
       {
         "text": "\\(3447\\)",
@@ -2783,7 +2783,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A laboratory chemical mixture evaporates over consecutive heating cycles. In the first cycle, \\(107\\) millilitres evaporate. In each subsequent cycle, the volume evaporated is exactly \\(85\\%\\) of the volume evaporated in the previous cycle.\\nFind the theoretical maximum limit of the total volume evaporated across infinite cycles (to 2 decimal places).",
+    "question": "A laboratory chemical mixture evaporates over consecutive heating cycles. In the first cycle, \\(107\\) millilitres evaporate. In each subsequent cycle, the volume evaporated is exactly \\(85\\%\\) of the volume evaporated in the previous cycle.\nFind the theoretical maximum limit of the total volume evaporated across infinite cycles (to 2 decimal places).",
     "opts": [
       {
         "text": "\\(125.88\\) mL",
@@ -2888,7 +2888,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A conservation project monitors a local penguin colony. The initial colony size is estimated at \\(2580\\) penguins. Due to shifting climate conditions, the colony size decreases by \\(10\\%\\) each year.\\nFind the predicted penguin population at the start of year \\(6\\) (after \\(5\\) years of decline), rounded to the nearest integer.",
+    "question": "A conservation project monitors a local penguin colony. The initial colony size is estimated at \\(2580\\) penguins. Due to shifting climate conditions, the colony size decreases by \\(10\\%\\) each year.\nFind the predicted penguin population at the start of year \\(6\\) (after \\(5\\) years of decline), rounded to the nearest integer.",
     "opts": [
       {
         "text": "\\(1523\\)",
@@ -2938,7 +2938,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A hydroponic greenhouse tracks crop biomass yields. On Week 1, the system harvests \\(210\\) grams of organic greens. Each week, the greenhouse's yield increases by \\(12\\) grams compared to the previous week.\\nDetermine the total crop yield harvested across the first \\(17\\) weeks.",
+    "question": "A hydroponic greenhouse tracks crop biomass yields. On Week 1, the system harvests \\(210\\) grams of organic greens. Each week, the greenhouse's yield increases by \\(12\\) grams compared to the previous week.\nDetermine the total crop yield harvested across the first \\(17\\) weeks.",
     "opts": [
       {
         "text": "\\(5214\\)",
@@ -2988,7 +2988,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A laboratory chemical mixture evaporates over consecutive heating cycles. In the first cycle, \\(111\\) millilitres evaporate. In each subsequent cycle, the volume evaporated is exactly \\(81\\%\\) of the volume evaporated in the previous cycle.\\nFind the theoretical maximum limit of the total volume evaporated across infinite cycles (to 2 decimal places).",
+    "question": "A laboratory chemical mixture evaporates over consecutive heating cycles. In the first cycle, \\(111\\) millilitres evaporate. In each subsequent cycle, the volume evaporated is exactly \\(81\\%\\) of the volume evaporated in the previous cycle.\nFind the theoretical maximum limit of the total volume evaporated across infinite cycles (to 2 decimal places).",
     "opts": [
       {
         "text": "\\(89.91\\) mL",
@@ -3093,7 +3093,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A conservation project monitors a local penguin colony. The initial colony size is estimated at \\(2660\\) penguins. Due to shifting climate conditions, the colony size decreases by \\(8\\%\\) each year.\\nFind the predicted penguin population at the start of year \\(4\\) (after \\(3\\) years of decline), rounded to the nearest integer.",
+    "question": "A conservation project monitors a local penguin colony. The initial colony size is estimated at \\(2660\\) penguins. Due to shifting climate conditions, the colony size decreases by \\(8\\%\\) each year.\nFind the predicted penguin population at the start of year \\(4\\) (after \\(3\\) years of decline), rounded to the nearest integer.",
     "opts": [
       {
         "text": "\\(2022 \\)",
@@ -3143,7 +3143,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A hydroponic greenhouse tracks crop biomass yields. On Week 1, the system harvests \\(218\\) grams of organic greens. Each week, the greenhouse's yield increases by \\(16\\) grams compared to the previous week.\\nDetermine the total crop yield harvested across the first \\(17\\) weeks.",
+    "question": "A hydroponic greenhouse tracks crop biomass yields. On Week 1, the system harvests \\(218\\) grams of organic greens. Each week, the greenhouse's yield increases by \\(16\\) grams compared to the previous week.\nDetermine the total crop yield harvested across the first \\(17\\) weeks.",
     "opts": [
       {
         "text": "\\(3722\\)",
@@ -3193,7 +3193,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A laboratory chemical mixture evaporates over consecutive heating cycles. In the first cycle, \\(115\\) millilitres evaporate. In each subsequent cycle, the volume evaporated is exactly \\(88\\%\\) of the volume evaporated in the previous cycle.\\nFind the theoretical maximum limit of the total volume evaporated across infinite cycles (to 2 decimal places).",
+    "question": "A laboratory chemical mixture evaporates over consecutive heating cycles. In the first cycle, \\(115\\) millilitres evaporate. In each subsequent cycle, the volume evaporated is exactly \\(88\\%\\) of the volume evaporated in the previous cycle.\nFind the theoretical maximum limit of the total volume evaporated across infinite cycles (to 2 decimal places).",
     "opts": [
       {
         "text": "\\(958.33\\) mL",
@@ -3298,7 +3298,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A conservation project monitors a local penguin colony. The initial colony size is estimated at \\(2740\\) penguins. Due to shifting climate conditions, the colony size decreases by \\(6\\%\\) each year.\\nFind the predicted penguin population at the start of year \\(5\\) (after \\(4\\) years of decline), rounded to the nearest integer.",
+    "question": "A conservation project monitors a local penguin colony. The initial colony size is estimated at \\(2740\\) penguins. Due to shifting climate conditions, the colony size decreases by \\(6\\%\\) each year.\nFind the predicted penguin population at the start of year \\(5\\) (after \\(4\\) years of decline), rounded to the nearest integer.",
     "opts": [
       {
         "text": "\\(2139\\)",
@@ -3348,7 +3348,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A hydroponic greenhouse tracks crop biomass yields. On Week 1, the system harvests \\(226\\) grams of organic greens. Each week, the greenhouse's yield increases by \\(15\\) grams compared to the previous week.\\nDetermine the total crop yield harvested across the first \\(17\\) weeks.",
+    "question": "A hydroponic greenhouse tracks crop biomass yields. On Week 1, the system harvests \\(226\\) grams of organic greens. Each week, the greenhouse's yield increases by \\(15\\) grams compared to the previous week.\nDetermine the total crop yield harvested across the first \\(17\\) weeks.",
     "opts": [
       {
         "text": "\\(5867\\)",
@@ -3398,7 +3398,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A laboratory chemical mixture evaporates over consecutive heating cycles. In the first cycle, \\(119\\) millilitres evaporate. In each subsequent cycle, the volume evaporated is exactly \\(84\\%\\) of the volume evaporated in the previous cycle.\\nFind the theoretical maximum limit of the total volume evaporated across infinite cycles (to 2 decimal places).",
+    "question": "A laboratory chemical mixture evaporates over consecutive heating cycles. In the first cycle, \\(119\\) millilitres evaporate. In each subsequent cycle, the volume evaporated is exactly \\(84\\%\\) of the volume evaporated in the previous cycle.\nFind the theoretical maximum limit of the total volume evaporated across infinite cycles (to 2 decimal places).",
     "opts": [
       {
         "text": "\\(141.67\\) mL",
@@ -3503,7 +3503,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A conservation project monitors a local penguin colony. The initial colony size is estimated at \\(2820\\) penguins. Due to shifting climate conditions, the colony size decreases by \\(10\\%\\) each year.\\nFind the predicted penguin population at the start of year \\(6\\) (after \\(5\\) years of decline), rounded to the nearest integer.",
+    "question": "A conservation project monitors a local penguin colony. The initial colony size is estimated at \\(2820\\) penguins. Due to shifting climate conditions, the colony size decreases by \\(10\\%\\) each year.\nFind the predicted penguin population at the start of year \\(6\\) (after \\(5\\) years of decline), rounded to the nearest integer.",
     "opts": [
       {
         "text": "\\(1410 \\)",
@@ -3553,7 +3553,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A hydroponic greenhouse tracks crop biomass yields. On Week 1, the system harvests \\(234\\) grams of organic greens. Each week, the greenhouse's yield increases by \\(14\\) grams compared to the previous week.\\nDetermine the total crop yield harvested across the first \\(17\\) weeks.",
+    "question": "A hydroponic greenhouse tracks crop biomass yields. On Week 1, the system harvests \\(234\\) grams of organic greens. Each week, the greenhouse's yield increases by \\(14\\) grams compared to the previous week.\nDetermine the total crop yield harvested across the first \\(17\\) weeks.",
     "opts": [
       {
         "text": "\\(5896\\)",
@@ -3603,7 +3603,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A laboratory chemical mixture evaporates over consecutive heating cycles. In the first cycle, \\(123\\) millilitres evaporate. In each subsequent cycle, the volume evaporated is exactly \\(80\\%\\) of the volume evaporated in the previous cycle.\\nFind the theoretical maximum limit of the total volume evaporated across infinite cycles (to 2 decimal places).",
+    "question": "A laboratory chemical mixture evaporates over consecutive heating cycles. In the first cycle, \\(123\\) millilitres evaporate. In each subsequent cycle, the volume evaporated is exactly \\(80\\%\\) of the volume evaporated in the previous cycle.\nFind the theoretical maximum limit of the total volume evaporated across infinite cycles (to 2 decimal places).",
     "opts": [
       {
         "text": "\\(98.40\\) mL",
@@ -3708,7 +3708,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A conservation project monitors a local penguin colony. The initial colony size is estimated at \\(2900\\) penguins. Due to shifting climate conditions, the colony size decreases by \\(8\\%\\) each year.\\nFind the predicted penguin population at the start of year \\(4\\) (after \\(3\\) years of decline), rounded to the nearest integer.",
+    "question": "A conservation project monitors a local penguin colony. The initial colony size is estimated at \\(2900\\) penguins. Due to shifting climate conditions, the colony size decreases by \\(8\\%\\) each year.\nFind the predicted penguin population at the start of year \\(4\\) (after \\(3\\) years of decline), rounded to the nearest integer.",
     "opts": [
       {
         "text": "\\(2204 \\)",
@@ -3758,7 +3758,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A hydroponic greenhouse tracks crop biomass yields. On Week 1, the system harvests \\(242\\) grams of organic greens. Each week, the greenhouse's yield increases by \\(13\\) grams compared to the previous week.\\nDetermine the total crop yield harvested across the first \\(17\\) weeks.",
+    "question": "A hydroponic greenhouse tracks crop biomass yields. On Week 1, the system harvests \\(242\\) grams of organic greens. Each week, the greenhouse's yield increases by \\(13\\) grams compared to the previous week.\nDetermine the total crop yield harvested across the first \\(17\\) weeks.",
     "opts": [
       {
         "text": "\\(5895\\)",
@@ -3808,7 +3808,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A laboratory chemical mixture evaporates over consecutive heating cycles. In the first cycle, \\(127\\) millilitres evaporate. In each subsequent cycle, the volume evaporated is exactly \\(87\\%\\) of the volume evaporated in the previous cycle.\\nFind the theoretical maximum limit of the total volume evaporated across infinite cycles (to 2 decimal places).",
+    "question": "A laboratory chemical mixture evaporates over consecutive heating cycles. In the first cycle, \\(127\\) millilitres evaporate. In each subsequent cycle, the volume evaporated is exactly \\(87\\%\\) of the volume evaporated in the previous cycle.\nFind the theoretical maximum limit of the total volume evaporated across infinite cycles (to 2 decimal places).",
     "opts": [
       {
         "text": "\\(976.92\\) mL",
@@ -3913,7 +3913,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A conservation project monitors a local penguin colony. The initial colony size is estimated at \\(2980\\) penguins. Due to shifting climate conditions, the colony size decreases by \\(6\\%\\) each year.\\nFind the predicted penguin population at the start of year \\(5\\) (after \\(4\\) years of decline), rounded to the nearest integer.",
+    "question": "A conservation project monitors a local penguin colony. The initial colony size is estimated at \\(2980\\) penguins. Due to shifting climate conditions, the colony size decreases by \\(6\\%\\) each year.\nFind the predicted penguin population at the start of year \\(5\\) (after \\(4\\) years of decline), rounded to the nearest integer.",
     "opts": [
       {
         "text": "\\(2327\\)",
@@ -3963,7 +3963,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A hydroponic greenhouse tracks crop biomass yields. On Week 1, the system harvests \\(250\\) grams of organic greens. Each week, the greenhouse's yield increases by \\(12\\) grams compared to the previous week.\\nDetermine the total crop yield harvested across the first \\(17\\) weeks.",
+    "question": "A hydroponic greenhouse tracks crop biomass yields. On Week 1, the system harvests \\(250\\) grams of organic greens. Each week, the greenhouse's yield increases by \\(12\\) grams compared to the previous week.\nDetermine the total crop yield harvested across the first \\(17\\) weeks.",
     "opts": [
       {
         "text": "\\(5882\\)",
@@ -4013,7 +4013,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A laboratory chemical mixture evaporates over consecutive heating cycles. In the first cycle, \\(131\\) millilitres evaporate. In each subsequent cycle, the volume evaporated is exactly \\(83\\%\\) of the volume evaporated in the previous cycle.\\nFind the theoretical maximum limit of the total volume evaporated across infinite cycles (to 2 decimal places).",
+    "question": "A laboratory chemical mixture evaporates over consecutive heating cycles. In the first cycle, \\(131\\) millilitres evaporate. In each subsequent cycle, the volume evaporated is exactly \\(83\\%\\) of the volume evaporated in the previous cycle.\nFind the theoretical maximum limit of the total volume evaporated across infinite cycles (to 2 decimal places).",
     "opts": [
       {
         "text": "\\(157.83\\) mL",
@@ -4118,7 +4118,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A conservation project monitors a local penguin colony. The initial colony size is estimated at \\(3060\\) penguins. Due to shifting climate conditions, the colony size decreases by \\(10\\%\\) each year.\\nFind the predicted penguin population at the start of year \\(6\\) (after \\(5\\) years of decline), rounded to the nearest integer.",
+    "question": "A conservation project monitors a local penguin colony. The initial colony size is estimated at \\(3060\\) penguins. Due to shifting climate conditions, the colony size decreases by \\(10\\%\\) each year.\nFind the predicted penguin population at the start of year \\(6\\) (after \\(5\\) years of decline), rounded to the nearest integer.",
     "opts": [
       {
         "text": "\\(1530 \\)",
@@ -4168,7 +4168,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A hydroponic greenhouse tracks crop biomass yields. On Week 1, the system harvests \\(258\\) grams of organic greens. Each week, the greenhouse's yield increases by \\(16\\) grams compared to the previous week.\\nDetermine the total crop yield harvested across the first \\(17\\) weeks.",
+    "question": "A hydroponic greenhouse tracks crop biomass yields. On Week 1, the system harvests \\(258\\) grams of organic greens. Each week, the greenhouse's yield increases by \\(16\\) grams compared to the previous week.\nDetermine the total crop yield harvested across the first \\(17\\) weeks.",
     "opts": [
       {
         "text": "\\(6562\\)",
@@ -4218,7 +4218,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A laboratory chemical mixture evaporates over consecutive heating cycles. In the first cycle, \\(135\\) millilitres evaporate. In each subsequent cycle, the volume evaporated is exactly \\(90\\%\\) of the volume evaporated in the previous cycle.\\nFind the theoretical maximum limit of the total volume evaporated across infinite cycles (to 2 decimal places).",
+    "question": "A laboratory chemical mixture evaporates over consecutive heating cycles. In the first cycle, \\(135\\) millilitres evaporate. In each subsequent cycle, the volume evaporated is exactly \\(90\\%\\) of the volume evaporated in the previous cycle.\nFind the theoretical maximum limit of the total volume evaporated across infinite cycles (to 2 decimal places).",
     "opts": [
       {
         "text": "\\(150.00\\) mL",
@@ -4323,7 +4323,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A conservation project monitors a local penguin colony. The initial colony size is estimated at \\(3140\\) penguins. Due to shifting climate conditions, the colony size decreases by \\(8\\%\\) each year.\\nFind the predicted penguin population at the start of year \\(4\\) (after \\(3\\) years of decline), rounded to the nearest integer.",
+    "question": "A conservation project monitors a local penguin colony. The initial colony size is estimated at \\(3140\\) penguins. Due to shifting climate conditions, the colony size decreases by \\(8\\%\\) each year.\nFind the predicted penguin population at the start of year \\(4\\) (after \\(3\\) years of decline), rounded to the nearest integer.",
     "opts": [
       {
         "text": "\\(2658\\)",
@@ -4373,7 +4373,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A hydroponic greenhouse tracks crop biomass yields. On Week 1, the system harvests \\(266\\) grams of organic greens. Each week, the greenhouse's yield increases by \\(15\\) grams compared to the previous week.\\nDetermine the total crop yield harvested across the first \\(17\\) weeks.",
+    "question": "A hydroponic greenhouse tracks crop biomass yields. On Week 1, the system harvests \\(266\\) grams of organic greens. Each week, the greenhouse's yield increases by \\(15\\) grams compared to the previous week.\nDetermine the total crop yield harvested across the first \\(17\\) weeks.",
     "opts": [
       {
         "text": "\\(6562\\)",
@@ -4423,7 +4423,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A laboratory chemical mixture evaporates over consecutive heating cycles. In the first cycle, \\(139\\) millilitres evaporate. In each subsequent cycle, the volume evaporated is exactly \\(86\\%\\) of the volume evaporated in the previous cycle.\\nFind the theoretical maximum limit of the total volume evaporated across infinite cycles (to 2 decimal places).",
+    "question": "A laboratory chemical mixture evaporates over consecutive heating cycles. In the first cycle, \\(139\\) millilitres evaporate. In each subsequent cycle, the volume evaporated is exactly \\(86\\%\\) of the volume evaporated in the previous cycle.\nFind the theoretical maximum limit of the total volume evaporated across infinite cycles (to 2 decimal places).",
     "opts": [
       {
         "text": "\\(161.63\\) mL",
@@ -4528,7 +4528,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A conservation project monitors a local penguin colony. The initial colony size is estimated at \\(3220\\) penguins. Due to shifting climate conditions, the colony size decreases by \\(6\\%\\) each year.\\nFind the predicted penguin population at the start of year \\(5\\) (after \\(4\\) years of decline), rounded to the nearest integer.",
+    "question": "A conservation project monitors a local penguin colony. The initial colony size is estimated at \\(3220\\) penguins. Due to shifting climate conditions, the colony size decreases by \\(6\\%\\) each year.\nFind the predicted penguin population at the start of year \\(5\\) (after \\(4\\) years of decline), rounded to the nearest integer.",
     "opts": [
       {
         "text": "\\(2674\\)",
@@ -4578,7 +4578,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A hydroponic greenhouse tracks crop biomass yields. On Week 1, the system harvests \\(274\\) grams of organic greens. Each week, the greenhouse's yield increases by \\(14\\) grams compared to the previous week.\\nDetermine the total crop yield harvested across the first \\(17\\) weeks.",
+    "question": "A hydroponic greenhouse tracks crop biomass yields. On Week 1, the system harvests \\(274\\) grams of organic greens. Each week, the greenhouse's yield increases by \\(14\\) grams compared to the previous week.\nDetermine the total crop yield harvested across the first \\(17\\) weeks.",
     "opts": [
       {
         "text": "\\(6576\\)",
@@ -4628,7 +4628,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A laboratory chemical mixture evaporates over consecutive heating cycles. In the first cycle, \\(143\\) millilitres evaporate. In each subsequent cycle, the volume evaporated is exactly \\(82\\%\\) of the volume evaporated in the previous cycle.\\nFind the theoretical maximum limit of the total volume evaporated across infinite cycles (to 2 decimal places).",
+    "question": "A laboratory chemical mixture evaporates over consecutive heating cycles. In the first cycle, \\(143\\) millilitres evaporate. In each subsequent cycle, the volume evaporated is exactly \\(82\\%\\) of the volume evaporated in the previous cycle.\nFind the theoretical maximum limit of the total volume evaporated across infinite cycles (to 2 decimal places).",
     "opts": [
       {
         "text": "\\(117.26\\) mL",
@@ -4733,7 +4733,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A conservation project monitors a local penguin colony. The initial colony size is estimated at \\(3300\\) penguins. Due to shifting climate conditions, the colony size decreases by \\(10\\%\\) each year.\\nFind the predicted penguin population at the start of year \\(6\\) (after \\(5\\) years of decline), rounded to the nearest integer.",
+    "question": "A conservation project monitors a local penguin colony. The initial colony size is estimated at \\(3300\\) penguins. Due to shifting climate conditions, the colony size decreases by \\(10\\%\\) each year.\nFind the predicted penguin population at the start of year \\(6\\) (after \\(5\\) years of decline), rounded to the nearest integer.",
     "opts": [
       {
         "text": "\\(1949\\)",
@@ -4783,7 +4783,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A hydroponic greenhouse tracks crop biomass yields. On Week 1, the system harvests \\(282\\) grams of organic greens. Each week, the greenhouse's yield increases by \\(13\\) grams compared to the previous week.\\nDetermine the total crop yield harvested across the first \\(17\\) weeks.",
+    "question": "A hydroponic greenhouse tracks crop biomass yields. On Week 1, the system harvests \\(282\\) grams of organic greens. Each week, the greenhouse's yield increases by \\(13\\) grams compared to the previous week.\nDetermine the total crop yield harvested across the first \\(17\\) weeks.",
     "opts": [
       {
         "text": "\\(6562\\)",
@@ -4833,7 +4833,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A laboratory chemical mixture evaporates over consecutive heating cycles. In the first cycle, \\(147\\) millilitres evaporate. In each subsequent cycle, the volume evaporated is exactly \\(89\\%\\) of the volume evaporated in the previous cycle.\\nFind the theoretical maximum limit of the total volume evaporated across infinite cycles (to 2 decimal places).",
+    "question": "A laboratory chemical mixture evaporates over consecutive heating cycles. In the first cycle, \\(147\\) millilitres evaporate. In each subsequent cycle, the volume evaporated is exactly \\(89\\%\\) of the volume evaporated in the previous cycle.\nFind the theoretical maximum limit of the total volume evaporated across infinite cycles (to 2 decimal places).",
     "opts": [
       {
         "text": "\\(1336.36\\) mL",
@@ -4938,7 +4938,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A conservation project monitors a local penguin colony. The initial colony size is estimated at \\(3380\\) penguins. Due to shifting climate conditions, the colony size decreases by \\(8\\%\\) each year.\\nFind the predicted penguin population at the start of year \\(4\\) (after \\(3\\) years of decline), rounded to the nearest integer.",
+    "question": "A conservation project monitors a local penguin colony. The initial colony size is estimated at \\(3380\\) penguins. Due to shifting climate conditions, the colony size decreases by \\(8\\%\\) each year.\nFind the predicted penguin population at the start of year \\(4\\) (after \\(3\\) years of decline), rounded to the nearest integer.",
     "opts": [
       {
         "text": "\\(2861\\)",
@@ -4988,7 +4988,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A hydroponic greenhouse tracks crop biomass yields. On Week 1, the system harvests \\(290\\) grams of organic greens. Each week, the greenhouse's yield increases by \\(12\\) grams compared to the previous week.\\nDetermine the total crop yield harvested across the first \\(17\\) weeks.",
+    "question": "A hydroponic greenhouse tracks crop biomass yields. On Week 1, the system harvests \\(290\\) grams of organic greens. Each week, the greenhouse's yield increases by \\(12\\) grams compared to the previous week.\nDetermine the total crop yield harvested across the first \\(17\\) weeks.",
     "opts": [
       {
         "text": "\\(6550\\)",
@@ -5038,7 +5038,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A laboratory chemical mixture evaporates over consecutive heating cycles. In the first cycle, \\(151\\) millilitres evaporate. In each subsequent cycle, the volume evaporated is exactly \\(85\\%\\) of the volume evaporated in the previous cycle.\\nFind the theoretical maximum limit of the total volume evaporated across infinite cycles (to 2 decimal places).",
+    "question": "A laboratory chemical mixture evaporates over consecutive heating cycles. In the first cycle, \\(151\\) millilitres evaporate. In each subsequent cycle, the volume evaporated is exactly \\(85\\%\\) of the volume evaporated in the previous cycle.\nFind the theoretical maximum limit of the total volume evaporated across infinite cycles (to 2 decimal places).",
     "opts": [
       {
         "text": "\\(177.65\\) mL",
@@ -5143,7 +5143,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A conservation project monitors a local penguin colony. The initial colony size is estimated at \\(3460\\) penguins. Due to shifting climate conditions, the colony size decreases by \\(6\\%\\) each year.\\nFind the predicted penguin population at the start of year \\(5\\) (after \\(4\\) years of decline), rounded to the nearest integer.",
+    "question": "A conservation project monitors a local penguin colony. The initial colony size is estimated at \\(3460\\) penguins. Due to shifting climate conditions, the colony size decreases by \\(6\\%\\) each year.\nFind the predicted penguin population at the start of year \\(5\\) (after \\(4\\) years of decline), rounded to the nearest integer.",
     "opts": [
       {
         "text": "\\(2630 \\)",
@@ -5193,7 +5193,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A hydroponic greenhouse tracks crop biomass yields. On Week 1, the system harvests \\(298\\) grams of organic greens. Each week, the greenhouse's yield increases by \\(16\\) grams compared to the previous week.\\nDetermine the total crop yield harvested across the first \\(17\\) weeks.",
+    "question": "A hydroponic greenhouse tracks crop biomass yields. On Week 1, the system harvests \\(298\\) grams of organic greens. Each week, the greenhouse's yield increases by \\(16\\) grams compared to the previous week.\nDetermine the total crop yield harvested across the first \\(17\\) weeks.",
     "opts": [
       {
         "text": "\\(7258\\)",
@@ -5243,7 +5243,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A laboratory chemical mixture evaporates over consecutive heating cycles. In the first cycle, \\(155\\) millilitres evaporate. In each subsequent cycle, the volume evaporated is exactly \\(81\\%\\) of the volume evaporated in the previous cycle.\\nFind the theoretical maximum limit of the total volume evaporated across infinite cycles (to 2 decimal places).",
+    "question": "A laboratory chemical mixture evaporates over consecutive heating cycles. In the first cycle, \\(155\\) millilitres evaporate. In each subsequent cycle, the volume evaporated is exactly \\(81\\%\\) of the volume evaporated in the previous cycle.\nFind the theoretical maximum limit of the total volume evaporated across infinite cycles (to 2 decimal places).",
     "opts": [
       {
         "text": "\\(815.79\\) mL",
@@ -5348,7 +5348,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A conservation project monitors a local penguin colony. The initial colony size is estimated at \\(3540\\) penguins. Due to shifting climate conditions, the colony size decreases by \\(10\\%\\) each year.\\nFind the predicted penguin population at the start of year \\(6\\) (after \\(5\\) years of decline), rounded to the nearest integer.",
+    "question": "A conservation project monitors a local penguin colony. The initial colony size is estimated at \\(3540\\) penguins. Due to shifting climate conditions, the colony size decreases by \\(10\\%\\) each year.\nFind the predicted penguin population at the start of year \\(6\\) (after \\(5\\) years of decline), rounded to the nearest integer.",
     "opts": [
       {
         "text": "\\(1770 \\)",
@@ -5398,7 +5398,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A hydroponic greenhouse tracks crop biomass yields. On Week 1, the system harvests \\(306\\) grams of organic greens. Each week, the greenhouse's yield increases by \\(15\\) grams compared to the previous week.\\nDetermine the total crop yield harvested across the first \\(17\\) weeks.",
+    "question": "A hydroponic greenhouse tracks crop biomass yields. On Week 1, the system harvests \\(306\\) grams of organic greens. Each week, the greenhouse's yield increases by \\(15\\) grams compared to the previous week.\nDetermine the total crop yield harvested across the first \\(17\\) weeks.",
     "opts": [
       {
         "text": "\\(5217\\)",
@@ -5448,7 +5448,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A laboratory chemical mixture evaporates over consecutive heating cycles. In the first cycle, \\(159\\) millilitres evaporate. In each subsequent cycle, the volume evaporated is exactly \\(88\\%\\) of the volume evaporated in the previous cycle.\\nFind the theoretical maximum limit of the total volume evaporated across infinite cycles (to 2 decimal places).",
+    "question": "A laboratory chemical mixture evaporates over consecutive heating cycles. In the first cycle, \\(159\\) millilitres evaporate. In each subsequent cycle, the volume evaporated is exactly \\(88\\%\\) of the volume evaporated in the previous cycle.\nFind the theoretical maximum limit of the total volume evaporated across infinite cycles (to 2 decimal places).",
     "opts": [
       {
         "text": "\\(139.92\\) mL",
@@ -5553,7 +5553,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A conservation project monitors a local penguin colony. The initial colony size is estimated at \\(3620\\) penguins. Due to shifting climate conditions, the colony size decreases by \\(8\\%\\) each year.\\nFind the predicted penguin population at the start of year \\(4\\) (after \\(3\\) years of decline), rounded to the nearest integer.",
+    "question": "A conservation project monitors a local penguin colony. The initial colony size is estimated at \\(3620\\) penguins. Due to shifting climate conditions, the colony size decreases by \\(8\\%\\) each year.\nFind the predicted penguin population at the start of year \\(4\\) (after \\(3\\) years of decline), rounded to the nearest integer.",
     "opts": [
       {
         "text": "\\(3064\\)",
@@ -5603,7 +5603,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A hydroponic greenhouse tracks crop biomass yields. On Week 1, the system harvests \\(314\\) grams of organic greens. Each week, the greenhouse's yield increases by \\(14\\) grams compared to the previous week.\\nDetermine the total crop yield harvested across the first \\(17\\) weeks.",
+    "question": "A hydroponic greenhouse tracks crop biomass yields. On Week 1, the system harvests \\(314\\) grams of organic greens. Each week, the greenhouse's yield increases by \\(14\\) grams compared to the previous week.\nDetermine the total crop yield harvested across the first \\(17\\) weeks.",
     "opts": [
       {
         "text": "\\(7228\\)",
@@ -5653,7 +5653,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A laboratory chemical mixture evaporates over consecutive heating cycles. In the first cycle, \\(163\\) millilitres evaporate. In each subsequent cycle, the volume evaporated is exactly \\(84\\%\\) of the volume evaporated in the previous cycle.\\nFind the theoretical maximum limit of the total volume evaporated across infinite cycles (to 2 decimal places).",
+    "question": "A laboratory chemical mixture evaporates over consecutive heating cycles. In the first cycle, \\(163\\) millilitres evaporate. In each subsequent cycle, the volume evaporated is exactly \\(84\\%\\) of the volume evaporated in the previous cycle.\nFind the theoretical maximum limit of the total volume evaporated across infinite cycles (to 2 decimal places).",
     "opts": [
       {
         "text": "\\(194.05\\) mL",
@@ -5758,7 +5758,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A conservation project monitors a local penguin colony. The initial colony size is estimated at \\(3700\\) penguins. Due to shifting climate conditions, the colony size decreases by \\(6\\%\\) each year.\\nFind the predicted penguin population at the start of year \\(5\\) (after \\(4\\) years of decline), rounded to the nearest integer.",
+    "question": "A conservation project monitors a local penguin colony. The initial colony size is estimated at \\(3700\\) penguins. Due to shifting climate conditions, the colony size decreases by \\(6\\%\\) each year.\nFind the predicted penguin population at the start of year \\(5\\) (after \\(4\\) years of decline), rounded to the nearest integer.",
     "opts": [
       {
         "text": "\\(2889\\)",
@@ -5808,7 +5808,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A hydroponic greenhouse tracks crop biomass yields. On Week 1, the system harvests \\(322\\) grams of organic greens. Each week, the greenhouse's yield increases by \\(13\\) grams compared to the previous week.\\nDetermine the total crop yield harvested across the first \\(17\\) weeks.",
+    "question": "A hydroponic greenhouse tracks crop biomass yields. On Week 1, the system harvests \\(322\\) grams of organic greens. Each week, the greenhouse's yield increases by \\(13\\) grams compared to the previous week.\nDetermine the total crop yield harvested across the first \\(17\\) weeks.",
     "opts": [
       {
         "text": "\\(7255\\)",
@@ -5858,7 +5858,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A laboratory chemical mixture evaporates over consecutive heating cycles. In the first cycle, \\(167\\) millilitres evaporate. In each subsequent cycle, the volume evaporated is exactly \\(80\\%\\) of the volume evaporated in the previous cycle.\\nFind the theoretical maximum limit of the total volume evaporated across infinite cycles (to 2 decimal places).",
+    "question": "A laboratory chemical mixture evaporates over consecutive heating cycles. In the first cycle, \\(167\\) millilitres evaporate. In each subsequent cycle, the volume evaporated is exactly \\(80\\%\\) of the volume evaporated in the previous cycle.\nFind the theoretical maximum limit of the total volume evaporated across infinite cycles (to 2 decimal places).",
     "opts": [
       {
         "text": "\\(208.75\\) mL",
@@ -5963,7 +5963,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A conservation project monitors a local penguin colony. The initial colony size is estimated at \\(3780\\) penguins. Due to shifting climate conditions, the colony size decreases by \\(10\\%\\) each year.\\nFind the predicted penguin population at the start of year \\(6\\) (after \\(5\\) years of decline), rounded to the nearest integer.",
+    "question": "A conservation project monitors a local penguin colony. The initial colony size is estimated at \\(3780\\) penguins. Due to shifting climate conditions, the colony size decreases by \\(10\\%\\) each year.\nFind the predicted penguin population at the start of year \\(6\\) (after \\(5\\) years of decline), rounded to the nearest integer.",
     "opts": [
       {
         "text": "\\(2480\\)",
@@ -6013,7 +6013,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A hydroponic greenhouse tracks crop biomass yields. On Week 1, the system harvests \\(330\\) grams of organic greens. Each week, the greenhouse's yield increases by \\(12\\) grams compared to the previous week.\\nDetermine the total crop yield harvested across the first \\(17\\) weeks.",
+    "question": "A hydroponic greenhouse tracks crop biomass yields. On Week 1, the system harvests \\(330\\) grams of organic greens. Each week, the greenhouse's yield increases by \\(12\\) grams compared to the previous week.\nDetermine the total crop yield harvested across the first \\(17\\) weeks.",
     "opts": [
       {
         "text": "\\(5622\\)",
@@ -6063,7 +6063,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A laboratory chemical mixture evaporates over consecutive heating cycles. In the first cycle, \\(171\\) millilitres evaporate. In each subsequent cycle, the volume evaporated is exactly \\(87\\%\\) of the volume evaporated in the previous cycle.\\nFind the theoretical maximum limit of the total volume evaporated across infinite cycles (to 2 decimal places).",
+    "question": "A laboratory chemical mixture evaporates over consecutive heating cycles. In the first cycle, \\(171\\) millilitres evaporate. In each subsequent cycle, the volume evaporated is exactly \\(87\\%\\) of the volume evaporated in the previous cycle.\nFind the theoretical maximum limit of the total volume evaporated across infinite cycles (to 2 decimal places).",
     "opts": [
       {
         "text": "\\(1315.38\\) mL",
@@ -6168,7 +6168,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A conservation project monitors a local penguin colony. The initial colony size is estimated at \\(3860\\) penguins. Due to shifting climate conditions, the colony size decreases by \\(8\\%\\) each year.\\nFind the predicted penguin population at the start of year \\(4\\) (after \\(3\\) years of decline), rounded to the nearest integer.",
+    "question": "A conservation project monitors a local penguin colony. The initial colony size is estimated at \\(3860\\) penguins. Due to shifting climate conditions, the colony size decreases by \\(8\\%\\) each year.\nFind the predicted penguin population at the start of year \\(4\\) (after \\(3\\) years of decline), rounded to the nearest integer.",
     "opts": [
       {
         "text": "\\(3267\\)",
@@ -6218,7 +6218,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A hydroponic greenhouse tracks crop biomass yields. On Week 1, the system harvests \\(338\\) grams of organic greens. Each week, the greenhouse's yield increases by \\(16\\) grams compared to the previous week.\\nDetermine the total crop yield harvested across the first \\(17\\) weeks.",
+    "question": "A hydroponic greenhouse tracks crop biomass yields. On Week 1, the system harvests \\(338\\) grams of organic greens. Each week, the greenhouse's yield increases by \\(16\\) grams compared to the previous week.\nDetermine the total crop yield harvested across the first \\(17\\) weeks.",
     "opts": [
       {
         "text": "\\(7922\\)",
@@ -6268,7 +6268,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A laboratory chemical mixture evaporates over consecutive heating cycles. In the first cycle, \\(175\\) millilitres evaporate. In each subsequent cycle, the volume evaporated is exactly \\(83\\%\\) of the volume evaporated in the previous cycle.\\nFind the theoretical maximum limit of the total volume evaporated across infinite cycles (to 2 decimal places).",
+    "question": "A laboratory chemical mixture evaporates over consecutive heating cycles. In the first cycle, \\(175\\) millilitres evaporate. In each subsequent cycle, the volume evaporated is exactly \\(83\\%\\) of the volume evaporated in the previous cycle.\nFind the theoretical maximum limit of the total volume evaporated across infinite cycles (to 2 decimal places).",
     "opts": [
       {
         "text": "\\(145.25\\) mL",
@@ -6373,7 +6373,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A conservation project monitors a local penguin colony. The initial colony size is estimated at \\(3940\\) penguins. Due to shifting climate conditions, the colony size decreases by \\(6\\%\\) each year.\\nFind the predicted penguin population at the start of year \\(5\\) (after \\(4\\) years of decline), rounded to the nearest integer.",
+    "question": "A conservation project monitors a local penguin colony. The initial colony size is estimated at \\(3940\\) penguins. Due to shifting climate conditions, the colony size decreases by \\(6\\%\\) each year.\nFind the predicted penguin population at the start of year \\(5\\) (after \\(4\\) years of decline), rounded to the nearest integer.",
     "opts": [
       {
         "text": "\\(3273\\)",
@@ -6423,7 +6423,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A hydroponic greenhouse tracks crop biomass yields. On Week 1, the system harvests \\(346\\) grams of organic greens. Each week, the greenhouse's yield increases by \\(15\\) grams compared to the previous week.\\nDetermine the total crop yield harvested across the first \\(17\\) weeks.",
+    "question": "A hydroponic greenhouse tracks crop biomass yields. On Week 1, the system harvests \\(346\\) grams of organic greens. Each week, the greenhouse's yield increases by \\(15\\) grams compared to the previous week.\nDetermine the total crop yield harvested across the first \\(17\\) weeks.",
     "opts": [
       {
         "text": "\\(7937\\)",
@@ -6473,7 +6473,7 @@ export const Y12A_CH1J_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "A laboratory chemical mixture evaporates over consecutive heating cycles. In the first cycle, \\(179\\) millilitres evaporate. In each subsequent cycle, the volume evaporated is exactly \\(90\\%\\) of the volume evaporated in the previous cycle.\\nFind the theoretical maximum limit of the total volume evaporated across infinite cycles (to 2 decimal places).",
+    "question": "A laboratory chemical mixture evaporates over consecutive heating cycles. In the first cycle, \\(179\\) millilitres evaporate. In each subsequent cycle, the volume evaporated is exactly \\(90\\%\\) of the volume evaporated in the previous cycle.\nFind the theoretical maximum limit of the total volume evaporated across infinite cycles (to 2 decimal places).",
     "opts": [
       {
         "text": "\\(161.10\\) mL",

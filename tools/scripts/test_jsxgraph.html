@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraph.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraphcore.js"></script>
+</head>
+<body>
+    <div id="box" class="jxgbox" style="width:500px; height:500px;"></div>
+    <script type="text/javascript">
+        var board = JXG.JSXGraph.initBoard('box', {boundingbox: [-5, 10, 10, -5], axis:true});
+        board.suspendUpdate();
+        // Test 1: Coordinate array and radius
+        try {
+            board.create('circle', [[4, 3], 5], {strokeColor: '#4f46e5', strokeWidth: 2, fillColor: 'none'});
+        } catch (e) {
+            console.error("Test 1 failed:", e);
+        }
+        board.unsuspendUpdate();
+    </script>
+</body>
+</html>

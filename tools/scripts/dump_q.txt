@@ -1,0 +1,166 @@
+ID: y10-13a-q2a
+Q: Find the values of \(\alpha\) and \(\beta\). Enter your answer as two numbers separated by a comma (e.g. 30, 40).
+Opts: ["\\(-9075\\)","\\(9074\\)","\\(90, 75\\)","\\(9076\\)"]
+
+ID: y10-13a-q2b
+Q: Find the value of \(\theta\).
+Opts: ["\\\\(25^\\\\circ\\\\)","\\\\(65^\\\\circ\\\\)","\\\\(90^\\\\circ\\\\)","\\\\(115^\\\\circ\\\\)"]
+
+ID: y10-13a-q2c
+Q: Find the value of \(\theta\).
+Opts: ["\\(-90\\)","\\(89\\)","\\(90\\)","\\(91\\)"]
+
+ID: y10-13a-q2d
+Q: Find the values of \(\alpha\), \(\beta\), \(\gamma\), and \(\theta\). Enter your answer as four numbers separated by commas (e.g. 10, 20, 30, 40).
+Opts: ["\\(-402070140\\)","\\(402070139\\)","\\(40, 20, 70, 140\\)","\\(402070141\\)"]
+
+ID: y10-13a-q2e
+Q: Find the values of \(\alpha\) and \(\beta\). Enter your answer as two numbers separated by a comma.
+Opts: ["\\(-9035\\)","\\(9034\\)","\\(90, 35\\)","\\(9036\\)"]
+
+ID: y10-13a-q2f
+Q: Find the value of \(\theta\).
+Opts: ["\\(-80\\)","\\(79\\)","\\(80\\)","\\(81\\)"]
+
+ID: y10-13a-q3a
+Q: Find the value of \(\alpha\).
+Opts: ["\\(-27.5\\)","\\(26.5\\)","\\(27.5\\)","\\(28.5\\)"]
+
+ID: y10-13a-q3b
+Q: Find the value of \(\gamma\).
+Opts: ["\\(-44\\)","\\(43\\)","\\(44\\)","\\(45\\)"]
+
+ID: y10-13a-q3c
+Q: Find the value of \(\alpha\).
+Opts: ["\\(-190\\)","\\(189\\)","\\(190\\)","\\(191\\)"]
+
+ID: y10-13a-q3d
+Q: Find the value of \(\gamma\).
+Opts: ["\\(-100\\)","\\(100\\)","\\(101\\)","\\(99\\)"]
+
+ID: y10-13a-q3e
+Q: Find the value of \(\theta\).
+Opts: ["\\(-129\\)","\\(128\\)","\\(129\\)","\\(130\\)"]
+
+ID: y10-13a-q3f
+Q: Find the value of \(\alpha\).
+Opts: ["\\(-40\\)","\\(39\\)","\\(40\\)","\\(41\\)"]
+
+ID: y10-13a-q3g
+Q: Find the value of \(\beta\).
+Opts: ["\\(-30\\)","\\(29\\)","\\(30\\)","\\(31\\)"]
+
+ID: y10-13a-q3h
+Q: Find the value of \(\gamma\).
+Opts: ["\\(-100\\)","\\(100\\)","\\(101\\)","\\(99\\)"]
+
+ID: y10-13a-q3i
+Q: Find the value of \(\theta\).
+Opts: ["\\(-24\\)","\\(23\\)","\\(24\\)","\\(25\\)"]
+
+ID: y10-13a-q4a
+Q: Find the values of \(\alpha\) and \(\beta\). Enter your answer as two numbers separated by a comma.
+Opts: ["\\(-12060\\)","\\(12059\\)","\\(120, 60\\)","\\(12061\\)"]
+
+ID: y10-13a-q4b
+Q: Find the value of \(\theta\).
+Opts: ["\\(-30\\)","\\(29\\)","\\(30\\)","\\(31\\)"]
+
+ID: y10-13a-q4c
+Q: Find the value of \(\theta\).
+Opts: ["\\(-140\\)","\\(139\\)","\\(140\\)","\\(141\\)"]
+
+ID: y10-13a-q4d
+Q: Find the values of \(\alpha\) and \(\beta\). Enter your answer as two numbers separated by a comma.
+Opts: ["\\(-4040\\)","\\(4039\\)","\\(40, 40\\)","\\(4041\\)"]
+
+ID: y10-13a-q4e
+Q: Find the values of \(\alpha\) and \(\theta\). Enter your answer as two numbers separated by a comma.
+Opts: ["\\(-2040\\)","\\(2039\\)","\\(20, 40\\)","\\(2041\\)"]
+
+ID: y10-13a-q4f
+Q: Find the values of \(\alpha\), \(\beta\), and \(\gamma\). Enter your answer as three numbers separated by commas.
+Opts: ["\\(-1002050\\)","\\(1002049\\)","\\(100, 20, 50\\)","\\(1002051\\)"]
+
+ID: y10-13a-q4g
+Q: Find the values of \(\alpha\), \(\beta\), and \(\gamma\). Enter your answer as three numbers separated by commas.
+Opts: ["\\(-10020080\\)","\\(10020079\\)","\\(100, 200, 80\\)","\\(10020081\\)"]
+
+ID: y10-13a-q4h
+Q: Find the values of \(\alpha\), \(\beta\), and \(\gamma\). Enter your answer as three numbers separated by commas.
+Opts: ["\\(-6060120\\)","\\(6060119\\)","\\(60, 60, 120\\)","\\(6060121\\)"]
+
+ID: y10-13a-q4i
+Q: Find the values of \(\alpha\) and \(\beta\). Enter your answer as two numbers separated by a comma.
+Opts: ["\\(-4545\\)","\\(4544\\)","\\(45, 45\\)","\\(4546\\)"]
+
+ID: y10-13a-q5a
+Q: Find the values of \(\alpha\) and \(\beta\). Enter your answer as two numbers separated by a comma (e.g. 30, 40).
+Opts: ["\\(-10020\\)","\\(10019\\)","\\(100, 20\\)","\\(10021\\)"]
+
+ID: y10-13a-q5b
+Q: Find the values of \(\alpha\) and \(\beta\). Enter your answer as two numbers separated by a comma.
+Opts: ["\\(-6030\\)","\\(6029\\)","\\(60, 30\\)","\\(6031\\)"]
+
+ID: y10-13a-q5c
+Q: Find the values of \(\alpha\), \(\beta\) and \(\gamma\). Enter your answer as three numbers separated by commas.
+Opts: ["\\(-40110140\\)","\\(40110139\\)","\\(40, 110, 140\\)","\\(40110141\\)"]
+
+ID: y10-13a-q5d
+Q: Find the values of \(\alpha\), \(\beta\) and \(\gamma\). Enter your answer as three numbers separated by commas.
+Opts: ["\\(-1206070\\)","\\(1206069\\)","\\(120, 60, 70\\)","\\(1206071\\)"]
+
+ID: y10-13a-q5e
+Q: Find the values of \(\alpha\), \(\beta\) and \(\gamma\). Enter your answer as three numbers separated by commas.
+Opts: ["\\(-1408020\\)","\\(1408019\\)","\\(140, 80, 20\\)","\\(1408021\\)"]
+
+ID: y10-13a-q5f
+Q: Find the values of \(\alpha\), \(\beta\) and \(\gamma\). Enter your answer as three numbers separated by commas.
+Opts: ["\\(-404010\\)","\\(404009\\)","\\(40, 40, 10\\)","\\(404011\\)"]
+
+ID: y10-13a-q6a
+Q: Thales' theorem states that: *An angle in a semicircle is a right angle*. This question develops Euclid's proof. Let \(A\), \(O\), \(B\) form the diameter of a circle, and \(P\) be a point on the circumference. Join \(PO\), and produce \(AP\) to \(X\).
+Let \(\angle A = \alpha\) and \(\angle B = \beta\).
+
+**i)** Prove that \(\angle APB = \alpha + \beta\), and that \(\angle XPB = \alpha + \beta\).
+**ii)** Hence, prove that \(\alpha + \beta = 90^\circ\).
+
+ID: y10-13a-q6b
+Q: Thales' theorem states that: *An angle in a semicircle is a right angle*. This question develops an alternate proof.
+Join \(PO\) and produce it to a point \(M\).
+Let \(\angle PAB = \alpha\) and \(\angle PBA = \beta\).
+
+**i)** Prove that \(\angle AOM = 2\alpha\) and \(\angle BOM = 2\beta\).
+**ii)** Hence, prove that \(2\alpha + 2\beta = 180^\circ\).
+**iii)** Deduce that \(\alpha + \beta = 90^\circ\) (and therefore \(\angle APB = 90^\circ\)).
+
+ID: y10-13a-q7a
+Q: Prove that: *An angle at the centre subtended by an arc is twice an angle at the circumference subtended by the same arc*.
+Using the provided diagram where the centre \(O\) lies inside the angle \(\angle APB\), and the line \(PO\) is produced to a point \(X\) on the circle.
+Let \(\angle OPB = \beta\) and \(\angle OPA = \alpha\).
+
+**i)** Prove that \(\angle APB = \alpha + \beta\).
+**ii)** Prove that \(\angle AOB = 2\alpha + 2\beta = 2\angle APB\).
+
+ID: y10-13a-q7b
+Q: Prove that: *An angle at the centre subtended by an arc is twice an angle at the circumference subtended by the same arc*.
+Using the provided diagram where the centre \(O\) lies outside the angle \(\angle APB\), and the line \(PO\) is produced to a point \(X\) on the circle.
+Let \(\angle OPB = \beta\) and \(\angle OPA = \alpha\).
+
+**i)** Prove that \(\angle APB = \beta - \alpha\).
+**ii)** Prove that \(\angle AOB = 2(\beta - \alpha) = 2\angle APB\).
+
+ID: y10-13a-q8
+Q: The converse of Thales' theorem is established by proving the following result: *The midpoint of the hypotenuse of a right-angled triangle is equidistant from the three vertices of the triangle*.
+
+Let \(\triangle ABP\) be right-angled at \(P\), and let \(O\) be the midpoint of the hypotenuse \(AB\). Draw \(PO\) and produce it to \(Q\) so that \(PO = OQ\). Draw \(AQ\) and \(BQ\).
+
+**a)** Explain why \(APBQ\) is a parallelogram.
+**b)** Hence, explain why \(APBQ\) is a rectangle.
+**c)** Hence, explain why \(AO = BO = PO\) and why the circle with diameter \(AB\) passes through \(P\).
+
+ID: y10-13a-q9
+Q: *(An application of the angle at the centre and circumference theorem)*
+
+A horse is travelling around a circular track at a constant speed. A punter standing at the very edge of the track is following him with binoculars. Explain why the punter's binoculars are rotating at a constant rate.
+

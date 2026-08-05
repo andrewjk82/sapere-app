@@ -1,0 +1,93 @@
+{
+  "y9-11g-q14": {
+    "chapterId": "y9-11",
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "topicId": "y9-11g",
+    "topicCode": "11G",
+    "topicTitle": "Parallel and perpendicular straight lines",
+    "year": "Year 9",
+    "isManual": true,
+    "question": "Quadrilateral \\(ABCD\\) has vertices \\(A(1, -3)\\), \\(B(4, 1)\\), \\(C(8, -2)\\) and \\(D(5, -6)\\). Show that the diagonals \\(AC\\) and \\(BD\\) are perpendicular.",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "type": "teacher_review",
+    "requiresManualGrading": true,
+    "options": [],
+    "hint": "Compute the gradients of diagonals AC and BD, then verify if their product is \\(-1\\).",
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": {
+      "jsxGraph": {
+        "width": 350,
+        "height": 350,
+        "boundingbox": [
+          -1,
+          3,
+          10,
+          -8
+        ],
+        "showConstructionPoints": true,
+        "boardOptions": {
+          "axis": true,
+          "grid": true
+        },
+        "script": "board.suspendUpdate();\nvar pA = board.create('point', [1, -3], {size: 3, color: 'black', name: 'A(1, -3)', withLabel: true, label: {autoPosition: false, offset: [-15, -15]}});\nvar pB = board.create('point', [4, 1], {size: 3, color: 'black', name: 'B(4, 1)', withLabel: true, label: {autoPosition: false, offset: [-10, 15]}});\nvar pC = board.create('point', [8, -2], {size: 3, color: 'black', name: 'C(8, -2)', withLabel: true, label: {autoPosition: false, offset: [15, 10]}});\nvar pD = board.create('point', [5, -6], {size: 3, color: 'black', name: 'D(5, -6)', withLabel: true, label: {autoPosition: false, offset: [15, -15]}});\nboard.create('polygon', [pA, pB, pC, pD], {fillColor: 'none', borders: {strokeColor: 'black', strokeWidth: 1}});\nboard.create('segment', [pA, pC], {strokeColor: 'blue', strokeWidth: 1.5, strokeDasharray: '4 4'});\nboard.create('segment', [pB, pD], {strokeColor: 'blue', strokeWidth: 1.5, strokeDasharray: '4 4'});\nboard.unsuspendUpdate();"
+      }
+    },
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830227,
+      "_nanoseconds": 114000000
+    },
+    "answer": "Proof: Gradient m_AC = 1/7, m_BD = -7.\nSince m_AC * m_BD = -1, the diagonals AC and BD are perpendicular.",
+    "solution": "Proof: Gradient m_AC = 1/7, m_BD = -7.\nSince m_AC * m_BD = -1, the diagonals AC and BD are perpendicular.",
+    "origin": "seed",
+    "isActive": true,
+    "title": "Quadrilateral ABCD has vertices A(1, -3)...",
+    "updatedAt": {
+      "_seconds": 1784364626,
+      "_nanoseconds": 910000000
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Parallel and perpendicular straight lines: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": {
+          "jsxGraph": {
+            "width": 350,
+            "height": 350,
+            "boundingbox": [
+              -1,
+              3,
+              10,
+              -8
+            ],
+            "showConstructionPoints": true,
+            "boardOptions": {
+              "axis": true,
+              "grid": true
+            },
+            "script": "board.suspendUpdate();\nvar pA = board.create('point', [1, -3], {size: 3, color: 'black', name: 'A(1, -3)', withLabel: true, label: {autoPosition: false, offset: [-15, -15]}});\nvar pB = board.create('point', [4, 1], {size: 3, color: 'black', name: 'B(4, 1)', withLabel: true, label: {autoPosition: false, offset: [-10, 15]}});\nvar pC = board.create('point', [8, -2], {size: 3, color: 'black', name: 'C(8, -2)', withLabel: true, label: {autoPosition: false, offset: [15, 10]}});\nvar pD = board.create('point', [5, -6], {size: 3, color: 'black', name: 'D(5, -6)', withLabel: true, label: {autoPosition: false, offset: [15, -15]}});\nboard.create('polygon', [pA, pB, pC, pD], {fillColor: 'none', borders: {strokeColor: 'black', strokeWidth: 1}});\nboard.create('segment', [pA, pC], {strokeColor: 'blue', strokeWidth: 1.5, strokeDasharray: '4 4'});\nboard.create('segment', [pB, pD], {strokeColor: 'blue', strokeWidth: 1.5, strokeDasharray: '4 4'});\nboard.unsuspendUpdate();"
+          }
+        }
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(m_{BD} = \\frac{-6 - 1}{5 - 4} = -7\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(m_{AC} \\times m_{BD} = \\frac{1}{7} \\times (-7) = -1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Proof: Gradient m_AC = 1/7, m_BD = -7.\nSince m_AC * m_BD = -1, the diagonals AC and BD are perpendicular.. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "Proof: Gradient m_AC = 1/7, m_BD = -7.\nSince m_AC * m_BD = -1, the diagonals AC and BD are perpendicular.",
+        "graphData": null
+      }
+    ],
+    "isNew": false
+  }
+}

@@ -1,0 +1,302 @@
+{
+  "y9-11d-q12i": {
+    "topicTitle": "The equation of a straight line",
+    "year": "Year 9",
+    "isManual": true,
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "requiresManualGrading": false,
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830225,
+      "_nanoseconds": 399000000
+    },
+    "origin": "seed",
+    "source": "",
+    "isActive": true,
+    "topicCode": "11D",
+    "question": "Rewrite the equation \\(x = -3y\\) in the form \\(y = mx + c\\) and write down the gradient and \\(y\\)-intercept. Format: y = [eq], m = [val], c = [val]",
+    "title": "Rewrite the equation x = -3y in the form...",
+    "type": "multiple_choice",
+    "topicId": "y9-11d",
+    "answer": "1",
+    "solution": "Rearrange the equation to isolate \\(y\\):\n\\(x = -3y\\) becomes \\(y = -\\frac{1}{3}x\\).\n\nFrom this form:\n- Gradient \\(m = -\\frac{1}{3}\\)\n- \\(y\\)-intercept \\(c = 0\\).",
+    "chapterId": "y9-11",
+    "hint": "Solve the equation for \\(y\\) to write it in the form \\(y = mx + c\\).",
+    "options": [
+      {
+        "text": "\\(-y = y = -\\frac{1}{3}x, m = -\\frac{1}{3}, c = 0\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = y = -\\frac{1}{3}x, m = -\\frac{1}{3}, c = 0\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = y = -\\frac{1}{3}x, m = -\\frac{1}{3}, c = 0 + 1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = y = -\\frac{3}{1}x, m = -\\frac{1}{3}, c = 0\\)",
+        "imageUrl": ""
+      }
+    ],
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "updatedAt": {
+      "_seconds": 1784364622,
+      "_nanoseconds": 926000000
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The equation of a straight line: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(m = -\\frac{1}{3}, quad c = 0\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(y = y = -\\frac{1}{3}x, m = -\\frac{1}{3}, c = 0\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: y = y = -\\frac{1}{3}x, m = -\\frac{1}{3}, c = 0. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(y = y = -\\frac{1}{3}x, m = -\\frac{1}{3}, c = 0\\)",
+        "graphData": null
+      }
+    ],
+    "isNew": false
+  },
+  "y9-11d-q12j": {
+    "topicTitle": "The equation of a straight line",
+    "year": "Year 9",
+    "isManual": true,
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "requiresManualGrading": false,
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830225,
+      "_nanoseconds": 399000000
+    },
+    "origin": "seed",
+    "source": "",
+    "isActive": true,
+    "topicCode": "11D",
+    "question": "Rewrite the equation \\(x = -5y\\) in the form \\(y = mx + c\\) and write down the gradient and \\(y\\)-intercept. Format: y = [eq], m = [val], c = [val]",
+    "title": "Rewrite the equation x = -5y in the form...",
+    "type": "multiple_choice",
+    "topicId": "y9-11d",
+    "answer": "1",
+    "solution": "Rearrange the equation to isolate \\(y\\):\n\\(x = -5y\\) becomes \\(y = -\\frac{1}{5}x\\).\n\nFrom this form:\n- Gradient \\(m = -\\frac{1}{5}\\)\n- \\(y\\)-intercept \\(c = 0\\).",
+    "chapterId": "y9-11",
+    "hint": "Solve the equation for \\(y\\) to write it in the form \\(y = mx + c\\).",
+    "options": [
+      {
+        "text": "\\(-y = y = -\\frac{1}{5}x, m = -\\frac{1}{5}, c = 0\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = y = -\\frac{1}{5}x, m = -\\frac{1}{5}, c = 0\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = y = -\\frac{1}{5}x, m = -\\frac{1}{5}, c = 0 + 1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = y = -\\frac{5}{1}x, m = -\\frac{1}{5}, c = 0\\)",
+        "imageUrl": ""
+      }
+    ],
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "updatedAt": {
+      "_seconds": 1784364622,
+      "_nanoseconds": 926000000
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The equation of a straight line: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(m = -\\frac{1}{5}, quad c = 0\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(y = y = -\\frac{1}{5}x, m = -\\frac{1}{5}, c = 0\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: y = y = -\\frac{1}{5}x, m = -\\frac{1}{5}, c = 0. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(y = y = -\\frac{1}{5}x, m = -\\frac{1}{5}, c = 0\\)",
+        "graphData": null
+      }
+    ],
+    "isNew": false
+  },
+  "y9-11d-q12k": {
+    "topicTitle": "The equation of a straight line",
+    "year": "Year 9",
+    "isManual": true,
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "requiresManualGrading": false,
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830225,
+      "_nanoseconds": 399000000
+    },
+    "origin": "seed",
+    "source": "",
+    "isActive": true,
+    "topicCode": "11D",
+    "question": "Rewrite the equation \\(y + 4x = 0\\) in the form \\(y = mx + c\\) and write down the gradient and \\(y\\)-intercept. Format: y = [eq], m = [val], c = [val]",
+    "title": "Rewrite the equation y + 4x = 0 in the f...",
+    "type": "multiple_choice",
+    "topicId": "y9-11d",
+    "answer": "2",
+    "solution": "Rearrange the equation to isolate \\(y\\):\n\\(y + 4x = 0\\) becomes \\(y = -4x\\).\n\nFrom this form:\n- Gradient \\(m = -4\\)\n- \\(y\\)-intercept \\(c = 0\\).",
+    "chapterId": "y9-11",
+    "hint": "Solve the equation for \\(y\\) to write it in the form \\(y = mx + c\\).",
+    "options": [
+      {
+        "text": "\\(\\dfrac{12}{5}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\dfrac{13}{6}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = y = -4x, m = -4, c = 0\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = y = -4x, m = -4, c = 0 + 1\\)",
+        "imageUrl": ""
+      }
+    ],
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "updatedAt": {
+      "_seconds": 1784364622,
+      "_nanoseconds": 926000000
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The equation of a straight line: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "m = -4, quad c = 0",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(y = y = -4x, m = -4, c = 0\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: y = y = -4x, m = -4, c = 0. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(y = y = -4x, m = -4, c = 0\\)",
+        "graphData": null
+      }
+    ],
+    "isNew": false
+  },
+  "y9-11d-q12l": {
+    "topicTitle": "The equation of a straight line",
+    "year": "Year 9",
+    "isManual": true,
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "requiresManualGrading": false,
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830225,
+      "_nanoseconds": 399000000
+    },
+    "origin": "seed",
+    "source": "",
+    "isActive": true,
+    "topicCode": "11D",
+    "question": "Rewrite the equation \\(x - 3y = 0\\) in the form \\(y = mx + c\\) and write down the gradient and \\(y\\)-intercept. Format: y = [eq], m = [val], c = [val]",
+    "title": "Rewrite the equation x - 3y = 0 in the f...",
+    "type": "multiple_choice",
+    "topicId": "y9-11d",
+    "answer": "1",
+    "solution": "Rearrange the equation to isolate \\(y\\):\n\\(x - 3y = 0\\) becomes \\(y = \\frac{1}{3}x\\).\n\nFrom this form:\n- Gradient \\(m = \\frac{1}{3}\\)\n- \\(y\\)-intercept \\(c = 0\\).",
+    "chapterId": "y9-11",
+    "hint": "Solve the equation for \\(y\\) to write it in the form \\(y = mx + c\\).",
+    "options": [
+      {
+        "text": "\\(-y = y = \\frac{1}{3}x, m = \\frac{1}{3}, c = 0\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = y = \\frac{1}{3}x, m = \\frac{1}{3}, c = 0\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = y = \\frac{1}{3}x, m = \\frac{1}{3}, c = 0 + 1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = y = \\frac{3}{1}x, m = \\frac{1}{3}, c = 0\\)",
+        "imageUrl": ""
+      }
+    ],
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "updatedAt": {
+      "_seconds": 1784364622,
+      "_nanoseconds": 926000000
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The equation of a straight line: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(m = \\frac{1}{3}, quad c = 0\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(y = y = \\frac{1}{3}x, m = \\frac{1}{3}, c = 0\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: y = y = \\frac{1}{3}x, m = \\frac{1}{3}, c = 0. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(y = y = \\frac{1}{3}x, m = \\frac{1}{3}, c = 0\\)",
+        "graphData": null
+      }
+    ],
+    "isNew": false
+  }
+}

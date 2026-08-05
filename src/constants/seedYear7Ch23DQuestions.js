@@ -1,11 +1,13 @@
 export const Y7_CH23D_QUESTIONS = [
   {
     "id": "y7-23d-q1a",
+    "topicId": "y7-23d",
+    "c": "23D",
     "t": "Collecting like terms",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Collect like terms to simplify the following.\\n\\n\\(p + p + q + q + q\\)",
+    "question": "Collect like terms to simplify the following.<br /><br />\\(p + p + q + q + q\\)",
     "a": 0,
     "answer": "0",
     "opts": [
@@ -38,11 +40,13 @@ export const Y7_CH23D_QUESTIONS = [
   },
   {
     "id": "y7-23d-q1b",
+    "topicId": "y7-23d",
+    "c": "23D",
     "t": "Collecting like terms",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Collect like terms to simplify the following.\\n\\n\\(a + a + a + b + b\\)",
+    "question": "Collect like terms to simplify the following.<br /><br />\\(a + a + a + b + b\\)",
     "a": 1,
     "answer": "1",
     "opts": [
@@ -75,11 +79,13 @@ export const Y7_CH23D_QUESTIONS = [
   },
   {
     "id": "y7-23d-q1c",
+    "topicId": "y7-23d",
+    "c": "23D",
     "t": "Collecting like terms",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Collect like terms to simplify the following.\\n\\n\\(x + x + x + x + y\\)",
+    "question": "Collect like terms to simplify the following.<br /><br />\\(x + x + x + x + y\\)",
     "a": 2,
     "answer": "2",
     "opts": [
@@ -112,11 +118,13 @@ export const Y7_CH23D_QUESTIONS = [
   },
   {
     "id": "y7-23d-q1d",
+    "topicId": "y7-23d",
+    "c": "23D",
     "t": "Collecting like terms",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Collect like terms to simplify the following.\\n\\n\\(u + u + v + v + v\\)",
+    "question": "Collect like terms to simplify the following.<br /><br />\\(u + u + v + v + v\\)",
     "a": 3,
     "answer": "3",
     "opts": [
@@ -149,11 +157,13 @@ export const Y7_CH23D_QUESTIONS = [
   },
   {
     "id": "y7-23d-q1e",
+    "topicId": "y7-23d",
+    "c": "23D",
     "t": "Collecting like terms",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Collect like terms to simplify the following.\\n\\n\\(c + c + c + d + d\\)",
+    "question": "Collect like terms to simplify the following.<br /><br />\\(c + c + c + d + d\\)",
     "a": 0,
     "answer": "0",
     "opts": [
@@ -186,11 +196,13 @@ export const Y7_CH23D_QUESTIONS = [
   },
   {
     "id": "y7-23d-q1f",
+    "topicId": "y7-23d",
+    "c": "23D",
     "t": "Collecting like terms",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Collect like terms to simplify the following.\\n\\n\\(m + m + n + n + n + n\\)",
+    "question": "Collect like terms to simplify the following.<br /><br />\\(m + m + n + n + n + n\\)",
     "a": 1,
     "answer": "1",
     "opts": [
@@ -223,11 +235,13 @@ export const Y7_CH23D_QUESTIONS = [
   },
   {
     "id": "y7-23d-q2a",
+    "topicId": "y7-23d",
+    "c": "23D",
     "t": "Collecting like terms",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the following by collecting like terms.\\n\\n\\(6y + 8 + 3y + 12\\)",
+    "question": "Simplify the following by collecting like terms.<br /><br />\\(6y + 8 + 3y + 12\\)",
     "a": 3,
     "answer": "3",
     "opts": [
@@ -260,11 +274,13 @@ export const Y7_CH23D_QUESTIONS = [
   },
   {
     "id": "y7-23d-q2b",
+    "topicId": "y7-23d",
+    "c": "23D",
     "t": "Collecting like terms",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the following by collecting like terms.\\n\\n\\(7m + 14 + 5m + 10\\)",
+    "question": "Simplify the following by collecting like terms.<br /><br />\\(7m + 14 + 5m + 10\\)",
     "a": 0,
     "answer": "0",
     "opts": [
@@ -297,11 +313,13 @@ export const Y7_CH23D_QUESTIONS = [
   },
   {
     "id": "y7-23d-q2c",
+    "topicId": "y7-23d",
+    "c": "23D",
     "t": "Collecting like terms",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the following by collecting like terms.\\n\\n\\(5p + 4q + 7p + 3q\\)",
+    "question": "Simplify the following by collecting like terms.<br /><br />\\(5p + 4q + 7p + 3q\\)",
     "a": 1,
     "answer": "1",
     "opts": [
@@ -334,11 +352,13 @@ export const Y7_CH23D_QUESTIONS = [
   },
   {
     "id": "y7-23d-q2d",
+    "topicId": "y7-23d",
+    "c": "23D",
     "t": "Collecting like terms",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the following by collecting like terms.\\n\\n\\(9a + 4b + 5a\\)",
+    "question": "Simplify the following by collecting like terms.<br /><br />\\(9a + 4b + 5a\\)",
     "a": 2,
     "answer": "2",
     "opts": [
@@ -371,11 +391,13 @@ export const Y7_CH23D_QUESTIONS = [
   },
   {
     "id": "y7-23d-q2e",
+    "topicId": "y7-23d",
+    "c": "23D",
     "t": "Collecting like terms",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the following by collecting like terms.\\n\\n\\(4x + 6y + 7x + 2y\\)",
+    "question": "Simplify the following by collecting like terms.<br /><br />\\(4x + 6y + 7x + 2y\\)",
     "a": 3,
     "answer": "3",
     "opts": [
@@ -408,11 +430,13 @@ export const Y7_CH23D_QUESTIONS = [
   },
   {
     "id": "y7-23d-q2f",
+    "topicId": "y7-23d",
+    "c": "23D",
     "t": "Collecting like terms",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the following by collecting like terms.\\n\\n\\(3k + 5m + 8k + 12m\\)",
+    "question": "Simplify the following by collecting like terms.<br /><br />\\(3k + 5m + 8k + 12m\\)",
     "a": 0,
     "answer": "0",
     "opts": [
@@ -445,11 +469,13 @@ export const Y7_CH23D_QUESTIONS = [
   },
   {
     "id": "y7-23d-q3a",
+    "topicId": "y7-23d",
+    "c": "23D",
     "t": "Collecting like terms",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the following.\\n\\n\\(15m - 6m - 3m + 4n\\)",
+    "question": "Simplify the following.<br /><br />\\(15m - 6m - 3m + 4n\\)",
     "a": 2,
     "answer": "2",
     "opts": [
@@ -482,11 +508,13 @@ export const Y7_CH23D_QUESTIONS = [
   },
   {
     "id": "y7-23d-q3b",
+    "topicId": "y7-23d",
+    "c": "23D",
     "t": "Collecting like terms",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the following.\\n\\n\\(8a + 5b - 4a + 11b\\)",
+    "question": "Simplify the following.<br /><br />\\(8a + 5b - 4a + 11b\\)",
     "a": 3,
     "answer": "3",
     "opts": [
@@ -519,11 +547,13 @@ export const Y7_CH23D_QUESTIONS = [
   },
   {
     "id": "y7-23d-q3c",
+    "topicId": "y7-23d",
+    "c": "23D",
     "t": "Collecting like terms",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the following.\\n\\n\\(7x + 8y + 5x - 2y\\)",
+    "question": "Simplify the following.<br /><br />\\(7x + 8y + 5x - 2y\\)",
     "a": 0,
     "answer": "0",
     "opts": [
@@ -556,11 +586,13 @@ export const Y7_CH23D_QUESTIONS = [
   },
   {
     "id": "y7-23d-q3d",
+    "topicId": "y7-23d",
+    "c": "23D",
     "t": "Collecting like terms",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the following.\\n\\n\\(9c - 4c + 12d - 5d\\)",
+    "question": "Simplify the following.<br /><br />\\(9c - 4c + 12d - 5d\\)",
     "a": 1,
     "answer": "1",
     "opts": [
@@ -593,11 +625,13 @@ export const Y7_CH23D_QUESTIONS = [
   },
   {
     "id": "y7-23d-q3e",
+    "topicId": "y7-23d",
+    "c": "23D",
     "t": "Collecting like terms",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the following.\\n\\n\\(14y + 35y + 20\\)",
+    "question": "Simplify the following.<br /><br />\\(14y + 35y + 20\\)",
     "a": 2,
     "answer": "2",
     "opts": [
@@ -630,25 +664,27 @@ export const Y7_CH23D_QUESTIONS = [
   },
   {
     "id": "y7-23d-q3f",
+    "topicId": "y7-23d",
+    "c": "23D",
     "t": "Collecting like terms",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the following.\\n\\n\\(18xyz - 11xyz\\)",
-    "a": 3,
-    "answer": "3",
+    "question": "Simplify the following.<br /><br />\\(18xyz - 11xyz\\)",
+    "a": 2,
+    "answer": "2",
     "opts": [
-      "\\(-7xyz\\)",
       "\\(8xyz\\)",
-      "\\(opt2\\)",
-      "\\(7xyz\\)"
+      "\\(9xyz\\)",
+      "\\(7xyz\\)",
+      "\\(10xyz\\)"
     ],
     "hint": "These are like terms, so just subtract the coefficients.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Subtract the numbers and keep the variable part \\(xyz\\).",
-        "workingOut": "\\((18 - 11)xyz = 7xyz\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -667,11 +703,13 @@ export const Y7_CH23D_QUESTIONS = [
   },
   {
     "id": "y7-23d-q3g",
+    "topicId": "y7-23d",
+    "c": "23D",
     "t": "Collecting like terms",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the following.\\n\\n\\(15p - 5p + 7q + 18q - 4q\\)",
+    "question": "Simplify the following.<br /><br />\\(15p - 5p + 7q + 18q - 4q\\)",
     "a": 0,
     "answer": "0",
     "opts": [
@@ -704,11 +742,13 @@ export const Y7_CH23D_QUESTIONS = [
   },
   {
     "id": "y7-23d-q3h",
+    "topicId": "y7-23d",
+    "c": "23D",
     "t": "Collecting like terms",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the following.\\n\\n\\(9a + 6b + 12a - 3b - 2b\\)",
+    "question": "Simplify the following.<br /><br />\\(9a + 6b + 12a - 3b - 2b\\)",
     "a": 1,
     "answer": "1",
     "opts": [
@@ -741,18 +781,20 @@ export const Y7_CH23D_QUESTIONS = [
   },
   {
     "id": "y7-23d-q4a",
+    "topicId": "y7-23d",
+    "c": "23D",
     "t": "Collecting like terms",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the following.\\n\\n\\(9y - y - 4y\\)",
+    "question": "Simplify the following.<br /><br />\\(9y - y - 4y\\)",
     "a": 1,
     "answer": "1",
     "opts": [
-      "\\(-4y\\)",
-      "\\(4y\\)",
       "\\(5y\\)",
-      "\\(opt2\\)"
+      "\\(4y\\)",
+      "\\(6y\\)",
+      "\\(7y\\)"
     ],
     "hint": "Remember that \\(y\\) has an invisible coefficient of \\(1\\).",
     "solution": "",
@@ -778,18 +820,20 @@ export const Y7_CH23D_QUESTIONS = [
   },
   {
     "id": "y7-23d-q4b",
+    "topicId": "y7-23d",
+    "c": "23D",
     "t": "Collecting like terms",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the following.\\n\\n\\(7w - 3w + 8w\\)",
+    "question": "Simplify the following.<br /><br />\\(7w - 3w + 8w\\)",
     "a": 2,
     "answer": "2",
     "opts": [
-      "\\(-12w\\)",
       "\\(13w\\)",
+      "\\(14w\\)",
       "\\(12w\\)",
-      "\\(opt2\\)"
+      "\\(15w\\)"
     ],
     "hint": "Work from left to right.",
     "solution": "",
@@ -815,25 +859,27 @@ export const Y7_CH23D_QUESTIONS = [
   },
   {
     "id": "y7-23d-q4c",
+    "topicId": "y7-23d",
+    "c": "23D",
     "t": "Collecting like terms",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the following.\\n\\n\\(6m^2 + 9m^2 - 4m^2\\)",
-    "a": 3,
-    "answer": "3",
+    "question": "Simplify the following.<br /><br />\\(6m^2 + 9m^2 - 4m^2\\)",
+    "a": 2,
+    "answer": "2",
     "opts": [
       "\\(-11m^2\\)",
       "\\(12m^2\\)",
-      "\\(opt2\\)",
-      "\\(11m^2\\)"
+      "\\(11m^2\\)",
+      "\\(13m^2\\)"
     ],
     "hint": "All the terms have the same variable \\(m^2\\), so combine their coefficients.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Add and subtract the coefficients.",
-        "workingOut": "\\((6 + 9 - 4)m^2\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -852,18 +898,20 @@ export const Y7_CH23D_QUESTIONS = [
   },
   {
     "id": "y7-23d-q4d",
+    "topicId": "y7-23d",
+    "c": "23D",
     "t": "Collecting like terms",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the following.\\n\\n\\(8p - 5p - 2p\\)",
+    "question": "Simplify the following.<br /><br />\\(8p - 5p - 2p\\)",
     "a": 0,
     "answer": "0",
     "opts": [
       "\\(p\\)",
-      "\\(-p\\)",
-      "\\(opt1\\)",
-      "\\(opt2\\)"
+      "\\(2p\\)",
+      "\\(3p\\)",
+      "\\(4p\\)"
     ],
     "hint": "Work from left to right. What happens if the coefficient is \\(1\\)?",
     "solution": "",
@@ -889,18 +937,20 @@ export const Y7_CH23D_QUESTIONS = [
   },
   {
     "id": "y7-23d-q4e",
+    "topicId": "y7-23d",
+    "c": "23D",
     "t": "Collecting like terms",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the following.\\n\\n\\(4x - 5y - 6x - y\\)",
+    "question": "Simplify the following.<br /><br />\\(4x - 5y - 6x - y\\)",
     "a": 1,
     "answer": "1",
     "opts": [
       "\\(2x - 6y\\)",
       "\\(-2x - 6y\\)",
       "\\(-3x - 6y\\)",
-      "\\(opt2\\)"
+      "\\(-4x - 6y\\)"
     ],
     "hint": "Be careful with negative signs when grouping.",
     "solution": "",
@@ -926,18 +976,20 @@ export const Y7_CH23D_QUESTIONS = [
   },
   {
     "id": "y7-23d-q4f",
+    "topicId": "y7-23d",
+    "c": "23D",
     "t": "Collecting like terms",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the following.\\n\\n\\(y + 6y - 9y\\)",
+    "question": "Simplify the following.<br /><br />\\(y + 6y - 9y\\)",
     "a": 2,
     "answer": "2",
     "opts": [
       "\\(2y\\)",
       "\\(-3y\\)",
       "\\(-2y\\)",
-      "\\(opt2\\)"
+      "\\(-4y\\)"
     ],
     "hint": "Remember \\(y\\) is \\(1y\\). The result can be negative.",
     "solution": "",
@@ -963,18 +1015,20 @@ export const Y7_CH23D_QUESTIONS = [
   },
   {
     "id": "y7-23d-q4g",
+    "topicId": "y7-23d",
+    "c": "23D",
     "t": "Collecting like terms",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the following.\\n\\n\\(7m + 8m - m\\)",
-    "a": 3,
-    "answer": "3",
+    "question": "Simplify the following.<br /><br />\\(7m + 8m - m\\)",
+    "a": 2,
+    "answer": "2",
     "opts": [
-      "\\(-14m\\)",
       "\\(15m\\)",
-      "\\(opt2\\)",
-      "\\(14m\\)"
+      "\\(16m\\)",
+      "\\(14m\\)",
+      "\\(17m\\)"
     ],
     "hint": "Remember that \\(- m\\) means subtract \\(1m\\).",
     "solution": "",
@@ -1000,18 +1054,20 @@ export const Y7_CH23D_QUESTIONS = [
   },
   {
     "id": "y7-23d-q4h",
+    "topicId": "y7-23d",
+    "c": "23D",
     "t": "Collecting like terms",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the following.\\n\\n\\(8k - k - 5k - 3k\\)",
+    "question": "Simplify the following.<br /><br />\\(8k - k - 5k - 3k\\)",
     "a": 0,
     "answer": "0",
     "opts": [
       "\\(-k\\)",
       "\\(k\\)",
-      "\\(opt1\\)",
-      "\\(opt2\\)"
+      "\\(2-k\\)",
+      "\\(3-k\\)"
     ],
     "hint": "Subtract the coefficients one by one.",
     "solution": "",
@@ -1037,18 +1093,20 @@ export const Y7_CH23D_QUESTIONS = [
   },
   {
     "id": "y7-23d-q5a",
+    "topicId": "y7-23d",
+    "c": "23D",
     "t": "Collecting like terms",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the following.\\n\\n\\(7c - c - 4c\\)",
+    "question": "Simplify the following.<br /><br />\\(7c - c - 4c\\)",
     "a": 0,
     "answer": "0",
     "opts": [
       "\\(2c\\)",
-      "\\(-2c\\)",
       "\\(3c\\)",
-      "\\(opt2\\)"
+      "\\(4c\\)",
+      "\\(5c\\)"
     ],
     "hint": "Remember that \\(- c\\) is the same as \\(- 1c\\).",
     "solution": "",
@@ -1074,11 +1132,13 @@ export const Y7_CH23D_QUESTIONS = [
   },
   {
     "id": "y7-23d-q5b",
+    "topicId": "y7-23d",
+    "c": "23D",
     "t": "Collecting like terms",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the following.\\n\\n\\(x^2 - 5x - x + 10\\)",
+    "question": "Simplify the following.<br /><br />\\(x^2 - 5x - x + 10\\)",
     "a": 1,
     "answer": "1",
     "opts": [
@@ -1092,7 +1152,7 @@ export const Y7_CH23D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Group the like terms (the \\(x\\) terms).",
-        "workingOut": "\\(x^2 + (-5x - 1x) + 10\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -1111,18 +1171,20 @@ export const Y7_CH23D_QUESTIONS = [
   },
   {
     "id": "y7-23d-q5c",
+    "topicId": "y7-23d",
+    "c": "23D",
     "t": "Collecting like terms",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the following.\\n\\n\\(9p - 5q - q\\)",
+    "question": "Simplify the following.<br /><br />\\(9p - 5q - q\\)",
     "a": 2,
     "answer": "2",
     "opts": [
       "\\(-9p - 6q\\)",
       "\\(10p - 6q\\)",
       "\\(9p - 6q\\)",
-      "\\(opt2\\)"
+      "\\(11p - 6q\\)"
     ],
     "hint": "Combine the \\(q\\) terms. Keep their signs.",
     "solution": "",
@@ -1148,11 +1210,13 @@ export const Y7_CH23D_QUESTIONS = [
   },
   {
     "id": "y7-23d-q5d",
+    "topicId": "y7-23d",
+    "c": "23D",
     "t": "Collecting like terms",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the following.\\n\\n\\(k^2 - 3k + 8k - 5\\)",
+    "question": "Simplify the following.<br /><br />\\(k^2 - 3k + 8k - 5\\)",
     "a": 3,
     "answer": "3",
     "opts": [
@@ -1166,7 +1230,7 @@ export const Y7_CH23D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Group the \\(k\\) terms. Simplify carefully and match the option.",
-        "workingOut": "\\(k^2 + (-3k + 8k) - 5\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -1185,18 +1249,20 @@ export const Y7_CH23D_QUESTIONS = [
   },
   {
     "id": "y7-23d-q5e",
+    "topicId": "y7-23d",
+    "c": "23D",
     "t": "Collecting like terms",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the following.\\n\\n\\(8m + n - 5n - 7m\\)",
+    "question": "Simplify the following.<br /><br />\\(8m + n - 5n - 7m\\)",
     "a": 0,
     "answer": "0",
     "opts": [
       "\\(m - 4n\\)",
       "\\(-m - 4n\\)",
       "\\(m - 5n\\)",
-      "\\(opt2\\)"
+      "\\(m - 6n\\)"
     ],
     "hint": "Group the \\(m\\) terms and group the \\(n\\) terms.",
     "solution": "",
@@ -1222,11 +1288,13 @@ export const Y7_CH23D_QUESTIONS = [
   },
   {
     "id": "y7-23d-q5f",
+    "topicId": "y7-23d",
+    "c": "23D",
     "t": "Collecting like terms",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the following.\\n\\n\\(5a + 7b + 4a - 2b\\)",
+    "question": "Simplify the following.<br /><br />\\(5a + 7b + 4a - 2b\\)",
     "a": 1,
     "answer": "1",
     "opts": [
@@ -1259,11 +1327,13 @@ export const Y7_CH23D_QUESTIONS = [
   },
   {
     "id": "y7-23d-q5g",
+    "topicId": "y7-23d",
+    "c": "23D",
     "t": "Collecting like terms",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the following.\\n\\n\\(mn + 6n + 5mn\\)",
+    "question": "Simplify the following.<br /><br />\\(mn + 6n + 5mn\\)",
     "a": 2,
     "answer": "2",
     "opts": [
@@ -1296,11 +1366,13 @@ export const Y7_CH23D_QUESTIONS = [
   },
   {
     "id": "y7-23d-q5h",
+    "topicId": "y7-23d",
+    "c": "23D",
     "t": "Collecting like terms",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the following.\\n\\n\\(xy + 4y - 5xy + 8y\\)",
+    "question": "Simplify the following.<br /><br />\\(xy + 4y - 5xy + 8y\\)",
     "a": 3,
     "answer": "3",
     "opts": [
@@ -1333,18 +1405,20 @@ export const Y7_CH23D_QUESTIONS = [
   },
   {
     "id": "y7-23d-q6a",
+    "topicId": "y7-23d",
+    "c": "23D",
     "t": "Collecting like terms",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Collect like terms and simplify.\\n\\n\\(xy + yz - xy - yz + xz\\)",
-    "a": 3,
-    "answer": "3",
+    "question": "Collect like terms and simplify.<br /><br />\\(xy + yz - xy - yz + xz\\)",
+    "a": 1,
+    "answer": "1",
     "opts": [
-      "\\(-xz\\)",
-      "\\(opt1\\)",
-      "\\(opt2\\)",
-      "\\(xz\\)"
+      "\\(2xz\\)",
+      "\\(xz\\)",
+      "\\(3xz\\)",
+      "\\(4xz\\)"
     ],
     "hint": "Look for terms that cancel each other out.",
     "solution": "",
@@ -1370,25 +1444,27 @@ export const Y7_CH23D_QUESTIONS = [
   },
   {
     "id": "y7-23d-q6b",
+    "topicId": "y7-23d",
+    "c": "23D",
     "t": "Collecting like terms",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Collect like terms and simplify.\\n\\n\\(8m^2n - 4mn^2 - 2mn^2 + 3m^2n\\)",
+    "question": "Collect like terms and simplify.<br /><br />\\(8m^2n - 4mn^2 - 2mn^2 + 3m^2n\\)",
     "a": 0,
     "answer": "0",
     "opts": [
       "\\(11m^2n - 6mn^2\\)",
       "\\(-11m^2n - 6mn^2\\)",
       "\\(12m^2n - 6mn^2\\)",
-      "\\(opt2\\)"
+      "\\(13m^2n - 6mn^2\\)"
     ],
     "hint": "Be careful! \\(m^2n\\) is different from \\(mn^2\\).",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Group the \\(m^2n\\) terms and the \\(mn^2\\) terms.",
-        "workingOut": "\\((8m^2n + 3m^2n) + (-4mn^2 - 2mn^2)\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -1407,25 +1483,27 @@ export const Y7_CH23D_QUESTIONS = [
   },
   {
     "id": "y7-23d-q6c",
+    "topicId": "y7-23d",
+    "c": "23D",
     "t": "Collecting like terms",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Collect like terms and simplify.\\n\\n\\(7p^2 + 11p^2 - 4p^2\\)",
+    "question": "Collect like terms and simplify.<br /><br />\\(7p^2 + 11p^2 - 4p^2\\)",
     "a": 1,
     "answer": "1",
     "opts": [
       "\\(-14p^2\\)",
       "\\(14p^2\\)",
       "\\(15p^2\\)",
-      "\\(opt2\\)"
+      "\\(16p^2\\)"
     ],
     "hint": "All terms have \\(p^2\\), so combine their coefficients.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Combine the coefficients: \\(7 + 11 - 4\\).",
-        "workingOut": "\\((7 + 11 - 4)p^2\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -1444,11 +1522,13 @@ export const Y7_CH23D_QUESTIONS = [
   },
   {
     "id": "y7-23d-q6d",
+    "topicId": "y7-23d",
+    "c": "23D",
     "t": "Collecting like terms",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Collect like terms and simplify.\\n\\n\\(16abc + 8b + 5abc - 3b\\)",
+    "question": "Collect like terms and simplify.<br /><br />\\(16abc + 8b + 5abc - 3b\\)",
     "a": 2,
     "answer": "2",
     "opts": [
@@ -1481,18 +1561,20 @@ export const Y7_CH23D_QUESTIONS = [
   },
   {
     "id": "y7-23d-q6e",
+    "topicId": "y7-23d",
+    "c": "23D",
     "t": "Collecting like terms",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Collect like terms and simplify.\\n\\n\\(14pqr + 12pqr - 5pq\\)",
-    "a": 3,
-    "answer": "3",
+    "question": "Collect like terms and simplify.<br /><br />\\(14pqr + 12pqr - 5pq\\)",
+    "a": 2,
+    "answer": "2",
     "opts": [
       "\\(-26pqr - 5pq\\)",
       "\\(27pqr - 5pq\\)",
-      "\\(opt2\\)",
-      "\\(26pqr - 5pq\\)"
+      "\\(26pqr - 5pq\\)",
+      "\\(28pqr - 5pq\\)"
     ],
     "hint": "Only combine the \\(pqr\\) terms. The \\(pq\\) term is different.",
     "solution": "",
@@ -1518,11 +1600,13 @@ export const Y7_CH23D_QUESTIONS = [
   },
   {
     "id": "y7-23d-q6f",
+    "topicId": "y7-23d",
+    "c": "23D",
     "t": "Collecting like terms",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Collect like terms and simplify.\\n\\n\\(32x^2 + 18y^2 - 12x^2\\)",
+    "question": "Collect like terms and simplify.<br /><br />\\(32x^2 + 18y^2 - 12x^2\\)",
     "a": 0,
     "answer": "0",
     "opts": [
@@ -1536,7 +1620,7 @@ export const Y7_CH23D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Group the \\(x^2\\) terms. Simplify carefully and match the option.",
-        "workingOut": "\\((32x^2 - 12x^2) + 18y^2\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -1555,11 +1639,13 @@ export const Y7_CH23D_QUESTIONS = [
   },
   {
     "id": "y7-23d-q6g",
+    "topicId": "y7-23d",
+    "c": "23D",
     "t": "Collecting like terms",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Collect like terms and simplify.\\n\\n\\(7m^2n^2 + 8m + 5m^2n^2 + 4m\\)",
+    "question": "Collect like terms and simplify.<br /><br />\\(7m^2n^2 + 8m + 5m^2n^2 + 4m\\)",
     "a": 1,
     "answer": "1",
     "opts": [
@@ -1573,7 +1659,7 @@ export const Y7_CH23D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Group like terms together.",
-        "workingOut": "\\((7m^2n^2 + 5m^2n^2) + (8m + 4m)\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -1592,11 +1678,13 @@ export const Y7_CH23D_QUESTIONS = [
   },
   {
     "id": "y7-23d-q6h",
+    "topicId": "y7-23d",
+    "c": "23D",
     "t": "Collecting like terms",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Collect like terms and simplify.\\n\\n\\(8x^3 + 7x^3 - 4y^3 + 5y^3\\)",
+    "question": "Collect like terms and simplify.<br /><br />\\(8x^3 + 7x^3 - 4y^3 + 5y^3\\)",
     "a": 2,
     "answer": "2",
     "opts": [
@@ -1610,7 +1698,7 @@ export const Y7_CH23D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Group like terms together.",
-        "workingOut": "\\((8x^3 + 7x^3) + (-4y^3 + 5y^3)\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {

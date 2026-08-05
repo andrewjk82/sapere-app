@@ -4,7 +4,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Let \\(S_{6} = 3 + 9 + 27 + 81 + 243 + 729\\).\\nBy calculating \\(3S_{6}\\) and subtracting \\(S_{6}\\) in columns, evaluate \\(S_{6}\\).",
+    "question": "Let \\(S_{6} = 3 + 9 + 27 + 81 + 243 + 729\\).\nBy calculating \\(3S_{6}\\) and subtracting \\(S_{6}\\) in columns, evaluate \\(S_{6}\\).",
     "options": [
       {
         "text": "\\(1089\\)",
@@ -30,7 +30,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write down the expressions for \\(S_{6}\\) and \\(3S_{6}\\).",
-        "workingOut": "\\(S_{6} = 3 + 9 + 27 + 81 + 243 + 729\\)\\n\\(3S_{6} = 9 + 27 + 81 + 243 + 729 + 2187\\)",
+        "workingOut": "\\(S_{6} = 3 + 9 + 27 + 81 + 243 + 729\\)\n\\(3S_{6} = 9 + 27 + 81 + 243 + 729 + 2187\\)",
         "graphData": null
       },
       {
@@ -40,7 +40,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Simplify the right-hand side and solve for \\(S_{6}\\).",
-        "workingOut": "\\(2S_{6} = 2184\\)\\n\\(S_{6} = \\frac{2184}{2} = 1092\\)",
+        "workingOut": "\\(2S_{6} = 2184\\)\n\\(S_{6} = \\frac{2184}{2} = 1092\\)",
         "graphData": null
       }
     ],
@@ -53,7 +53,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Let \\(S_{7} = 4 + 16 + 64 + 256 + 1024 + 4096 + 16384\\).\\nBy calculating \\(4S_{7}\\) and subtracting \\(S_{7}\\) in columns, evaluate \\(S_{7}\\).",
+    "question": "Let \\(S_{7} = 4 + 16 + 64 + 256 + 1024 + 4096 + 16384\\).\nBy calculating \\(4S_{7}\\) and subtracting \\(S_{7}\\) in columns, evaluate \\(S_{7}\\).",
     "options": [
       {
         "text": "\\(87376\\)",
@@ -79,7 +79,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write down the expressions for \\(S_{7}\\) and \\(4S_{7}\\).",
-        "workingOut": "\\(S_{7} = 4 + 16 + 64 + 256 + 1024 + 4096 + 16384\\)\\n\\(4S_{7} = 16 + 64 + 256 + 1024 + 4096 + 16384 + 65536\\)",
+        "workingOut": "\\(S_{7} = 4 + 16 + 64 + 256 + 1024 + 4096 + 16384\\)\n\\(4S_{7} = 16 + 64 + 256 + 1024 + 4096 + 16384 + 65536\\)",
         "graphData": null
       },
       {
@@ -89,7 +89,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Simplify the right-hand side and solve for \\(S_{7}\\).",
-        "workingOut": "\\(3S_{7} = 65532\\)\\n\\(S_{7} = \\frac{65532}{3} = 21844\\)",
+        "workingOut": "\\(3S_{7} = 65532\\)\n\\(S_{7} = \\frac{65532}{3} = 21844\\)",
         "graphData": null
       }
     ],
@@ -102,7 +102,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Let \\(S_{5} = 5 + 10 + 20 + 40 + 80\\).\\nBy calculating \\(2S_{5}\\) and subtracting \\(S_{5}\\) in columns, evaluate \\(S_{5}\\).",
+    "question": "Let \\(S_{5} = 5 + 10 + 20 + 40 + 80\\).\nBy calculating \\(2S_{5}\\) and subtracting \\(S_{5}\\) in columns, evaluate \\(S_{5}\\).",
     "options": [
       {
         "text": "\\(310\\)",
@@ -128,7 +128,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write down the expressions for \\(S_{5}\\) and \\(2S_{5}\\).",
-        "workingOut": "\\(S_{5} = 5 + 10 + 20 + 40 + 80\\)\\n\\(2S_{5} = 10 + 20 + 40 + 80 + 160\\)",
+        "workingOut": "\\(S_{5} = 5 + 10 + 20 + 40 + 80\\)\n\\(2S_{5} = 10 + 20 + 40 + 80 + 160\\)",
         "graphData": null
       },
       {
@@ -138,7 +138,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Simplify the right-hand side and solve for \\(S_{5}\\).",
-        "workingOut": "\\(1S_{5} = 155\\)\\n\\(S_{5} = \\frac{155}{1} = 155\\)",
+        "workingOut": "\\(1S_{5} = 155\\)\n\\(S_{5} = \\frac{155}{1} = 155\\)",
         "graphData": null
       }
     ],
@@ -151,7 +151,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Let \\(S_{6} = 6 + 18 + 54 + 162 + 486 + 1458\\).\\nBy calculating \\(3S_{6}\\) and subtracting \\(S_{6}\\) in columns, evaluate \\(S_{6}\\).",
+    "question": "Let \\(S_{6} = 6 + 18 + 54 + 162 + 486 + 1458\\).\nBy calculating \\(3S_{6}\\) and subtracting \\(S_{6}\\) in columns, evaluate \\(S_{6}\\).",
     "options": [
       {
         "text": "\\(2184\\)",
@@ -177,7 +177,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write down the expressions for \\(S_{6}\\) and \\(3S_{6}\\).",
-        "workingOut": "\\(S_{6} = 6 + 18 + 54 + 162 + 486 + 1458\\)\\n\\(3S_{6} = 18 + 54 + 162 + 486 + 1458 + 4374\\)",
+        "workingOut": "\\(S_{6} = 6 + 18 + 54 + 162 + 486 + 1458\\)\n\\(3S_{6} = 18 + 54 + 162 + 486 + 1458 + 4374\\)",
         "graphData": null
       },
       {
@@ -187,7 +187,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Simplify the right-hand side and solve for \\(S_{6}\\).",
-        "workingOut": "\\(2S_{6} = 4368\\)\\n\\(S_{6} = \\frac{4368}{2} = 2184\\)",
+        "workingOut": "\\(2S_{6} = 4368\\)\n\\(S_{6} = \\frac{4368}{2} = 2184\\)",
         "graphData": null
       }
     ],
@@ -200,7 +200,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Let \\(S_{7} = 7 + 28 + 112 + 448 + 1792 + 7168 + 28672\\).\\nBy calculating \\(4S_{7}\\) and subtracting \\(S_{7}\\) in columns, evaluate \\(S_{7}\\).",
+    "question": "Let \\(S_{7} = 7 + 28 + 112 + 448 + 1792 + 7168 + 28672\\).\nBy calculating \\(4S_{7}\\) and subtracting \\(S_{7}\\) in columns, evaluate \\(S_{7}\\).",
     "options": [
       {
         "text": "\\(152908\\)",
@@ -226,7 +226,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write down the expressions for \\(S_{7}\\) and \\(4S_{7}\\).",
-        "workingOut": "\\(S_{7} = 7 + 28 + 112 + 448 + 1792 + 7168 + 28672\\)\\n\\(4S_{7} = 28 + 112 + 448 + 1792 + 7168 + 28672 + 114688\\)",
+        "workingOut": "\\(S_{7} = 7 + 28 + 112 + 448 + 1792 + 7168 + 28672\\)\n\\(4S_{7} = 28 + 112 + 448 + 1792 + 7168 + 28672 + 114688\\)",
         "graphData": null
       },
       {
@@ -236,7 +236,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Simplify the right-hand side and solve for \\(S_{7}\\).",
-        "workingOut": "\\(3S_{7} = 114681\\)\\n\\(S_{7} = \\frac{114681}{3} = 38227\\)",
+        "workingOut": "\\(3S_{7} = 114681\\)\n\\(S_{7} = \\frac{114681}{3} = 38227\\)",
         "graphData": null
       }
     ],
@@ -249,7 +249,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Let \\(S_{5} = 8 + 16 + 32 + 64 + 128\\).\\nBy calculating \\(2S_{5}\\) and subtracting \\(S_{5}\\) in columns, evaluate \\(S_{5}\\).",
+    "question": "Let \\(S_{5} = 8 + 16 + 32 + 64 + 128\\).\nBy calculating \\(2S_{5}\\) and subtracting \\(S_{5}\\) in columns, evaluate \\(S_{5}\\).",
     "options": [
       {
         "text": "\\(250\\)",
@@ -275,7 +275,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write down the expressions for \\(S_{5}\\) and \\(2S_{5}\\).",
-        "workingOut": "\\(S_{5} = 8 + 16 + 32 + 64 + 128\\)\\n\\(2S_{5} = 16 + 32 + 64 + 128 + 256\\)",
+        "workingOut": "\\(S_{5} = 8 + 16 + 32 + 64 + 128\\)\n\\(2S_{5} = 16 + 32 + 64 + 128 + 256\\)",
         "graphData": null
       },
       {
@@ -285,7 +285,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Simplify the right-hand side and solve for \\(S_{5}\\).",
-        "workingOut": "\\(1S_{5} = 248\\)\\n\\(S_{5} = \\frac{248}{1} = 248\\)",
+        "workingOut": "\\(1S_{5} = 248\\)\n\\(S_{5} = \\frac{248}{1} = 248\\)",
         "graphData": null
       }
     ],
@@ -298,7 +298,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Let \\(S_{6} = 9 + 27 + 81 + 243 + 729 + 2187\\).\\nBy calculating \\(3S_{6}\\) and subtracting \\(S_{6}\\) in columns, evaluate \\(S_{6}\\).",
+    "question": "Let \\(S_{6} = 9 + 27 + 81 + 243 + 729 + 2187\\).\nBy calculating \\(3S_{6}\\) and subtracting \\(S_{6}\\) in columns, evaluate \\(S_{6}\\).",
     "options": [
       {
         "text": "\\(3276\\)",
@@ -324,7 +324,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write down the expressions for \\(S_{6}\\) and \\(3S_{6}\\).",
-        "workingOut": "\\(S_{6} = 9 + 27 + 81 + 243 + 729 + 2187\\)\\n\\(3S_{6} = 27 + 81 + 243 + 729 + 2187 + 6561\\)",
+        "workingOut": "\\(S_{6} = 9 + 27 + 81 + 243 + 729 + 2187\\)\n\\(3S_{6} = 27 + 81 + 243 + 729 + 2187 + 6561\\)",
         "graphData": null
       },
       {
@@ -334,7 +334,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Simplify the right-hand side and solve for \\(S_{6}\\).",
-        "workingOut": "\\(2S_{6} = 6552\\)\\n\\(S_{6} = \\frac{6552}{2} = 3276\\)",
+        "workingOut": "\\(2S_{6} = 6552\\)\n\\(S_{6} = \\frac{6552}{2} = 3276\\)",
         "graphData": null
       }
     ],
@@ -347,7 +347,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Let \\(S_{7} = 10 + 40 + 160 + 640 + 2560 + 10240 + 40960\\).\\nBy calculating \\(4S_{7}\\) and subtracting \\(S_{7}\\) in columns, evaluate \\(S_{7}\\).",
+    "question": "Let \\(S_{7} = 10 + 40 + 160 + 640 + 2560 + 10240 + 40960\\).\nBy calculating \\(4S_{7}\\) and subtracting \\(S_{7}\\) in columns, evaluate \\(S_{7}\\).",
     "options": [
       {
         "text": "\\(54610\\)",
@@ -373,7 +373,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write down the expressions for \\(S_{7}\\) and \\(4S_{7}\\).",
-        "workingOut": "\\(S_{7} = 10 + 40 + 160 + 640 + 2560 + 10240 + 40960\\)\\n\\(4S_{7} = 40 + 160 + 640 + 2560 + 10240 + 40960 + 163840\\)",
+        "workingOut": "\\(S_{7} = 10 + 40 + 160 + 640 + 2560 + 10240 + 40960\\)\n\\(4S_{7} = 40 + 160 + 640 + 2560 + 10240 + 40960 + 163840\\)",
         "graphData": null
       },
       {
@@ -383,7 +383,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Simplify the right-hand side and solve for \\(S_{7}\\).",
-        "workingOut": "\\(3S_{7} = 163830\\)\\n\\(S_{7} = \\frac{163830}{3} = 54610\\)",
+        "workingOut": "\\(3S_{7} = 163830\\)\n\\(S_{7} = \\frac{163830}{3} = 54610\\)",
         "graphData": null
       }
     ],
@@ -396,7 +396,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Let \\(S_{5} = 11 + 22 + 44 + 88 + 176\\).\\nBy calculating \\(2S_{5}\\) and subtracting \\(S_{5}\\) in columns, evaluate \\(S_{5}\\).",
+    "question": "Let \\(S_{5} = 11 + 22 + 44 + 88 + 176\\).\nBy calculating \\(2S_{5}\\) and subtracting \\(S_{5}\\) in columns, evaluate \\(S_{5}\\).",
     "options": [
       {
         "text": "\\(341\\)",
@@ -422,7 +422,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write down the expressions for \\(S_{5}\\) and \\(2S_{5}\\).",
-        "workingOut": "\\(S_{5} = 11 + 22 + 44 + 88 + 176\\)\\n\\(2S_{5} = 22 + 44 + 88 + 176 + 352\\)",
+        "workingOut": "\\(S_{5} = 11 + 22 + 44 + 88 + 176\\)\n\\(2S_{5} = 22 + 44 + 88 + 176 + 352\\)",
         "graphData": null
       },
       {
@@ -432,7 +432,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Simplify the right-hand side and solve for \\(S_{5}\\).",
-        "workingOut": "\\(1S_{5} = 341\\)\\n\\(S_{5} = \\frac{341}{1} = 341\\)",
+        "workingOut": "\\(1S_{5} = 341\\)\n\\(S_{5} = \\frac{341}{1} = 341\\)",
         "graphData": null
       }
     ],
@@ -445,7 +445,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Let \\(S_{6} = 12 + 36 + 108 + 324 + 972 + 2916\\).\\nBy calculating \\(3S_{6}\\) and subtracting \\(S_{6}\\) in columns, evaluate \\(S_{6}\\).",
+    "question": "Let \\(S_{6} = 12 + 36 + 108 + 324 + 972 + 2916\\).\nBy calculating \\(3S_{6}\\) and subtracting \\(S_{6}\\) in columns, evaluate \\(S_{6}\\).",
     "options": [
       {
         "text": "\\(4368\\)",
@@ -471,7 +471,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write down the expressions for \\(S_{6}\\) and \\(3S_{6}\\).",
-        "workingOut": "\\(S_{6} = 12 + 36 + 108 + 324 + 972 + 2916\\)\\n\\(3S_{6} = 36 + 108 + 324 + 972 + 2916 + 8748\\)",
+        "workingOut": "\\(S_{6} = 12 + 36 + 108 + 324 + 972 + 2916\\)\n\\(3S_{6} = 36 + 108 + 324 + 972 + 2916 + 8748\\)",
         "graphData": null
       },
       {
@@ -481,7 +481,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Simplify the right-hand side and solve for \\(S_{6}\\).",
-        "workingOut": "\\(2S_{6} = 8736\\)\\n\\(S_{6} = \\frac{8736}{2} = 4368\\)",
+        "workingOut": "\\(2S_{6} = 8736\\)\n\\(S_{6} = \\frac{8736}{2} = 4368\\)",
         "graphData": null
       }
     ],
@@ -494,7 +494,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "A traveler met a group on a journey. The group consisted of \\(6\\) guides. Each guide carried \\(6\\) containers. Inside each container were \\(6\\) boxes, and each box held \\(6\\) mechanical parts.\\nCalculate the total sum of guides, containers, boxes, and mechanical parts.",
+    "question": "A traveler met a group on a journey. The group consisted of \\(6\\) guides. Each guide carried \\(6\\) containers. Inside each container were \\(6\\) boxes, and each box held \\(6\\) mechanical parts.\nCalculate the total sum of guides, containers, boxes, and mechanical parts.",
     "options": [
       {
         "text": "\\(7776\\)",
@@ -520,7 +520,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the terms of the geometric series from the description.",
-        "workingOut": "\\(\\text{Guides} = 6\\)\\n\\(\\text{Containers} = 36\\)\\n\\(\\text{Boxes} = 216\\)\\n\\(\\text{Parts} = 1296\\)",
+        "workingOut": "\\(\\text{Guides} = 6\\)\n\\(\\text{Containers} = 36\\)\n\\(\\text{Boxes} = 216\\)\n\\(\\text{Parts} = 1296\\)",
         "graphData": null
       },
       {
@@ -543,7 +543,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "A traveler met a group on a journey. The group consisted of \\(7\\) guides. Each guide carried \\(7\\) containers. Inside each container were \\(7\\) boxes, and each box held \\(7\\) mechanical parts.\\nCalculate the total sum of guides, containers, boxes, and mechanical parts.",
+    "question": "A traveler met a group on a journey. The group consisted of \\(7\\) guides. Each guide carried \\(7\\) containers. Inside each container were \\(7\\) boxes, and each box held \\(7\\) mechanical parts.\nCalculate the total sum of guides, containers, boxes, and mechanical parts.",
     "options": [
       {
         "text": "\\(16807\\)",
@@ -569,7 +569,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the terms of the geometric series from the description.",
-        "workingOut": "\\(\\text{Guides} = 7\\)\\n\\(\\text{Containers} = 49\\)\\n\\(\\text{Boxes} = 343\\)\\n\\(\\text{Parts} = 2401\\)",
+        "workingOut": "\\(\\text{Guides} = 7\\)\n\\(\\text{Containers} = 49\\)\n\\(\\text{Boxes} = 343\\)\n\\(\\text{Parts} = 2401\\)",
         "graphData": null
       },
       {
@@ -592,7 +592,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "A traveler met a group on a journey. The group consisted of \\(8\\) guides. Each guide carried \\(8\\) containers. Inside each container were \\(8\\) boxes, and each box held \\(8\\) mechanical parts.\\nCalculate the total sum of guides, containers, boxes, and mechanical parts.",
+    "question": "A traveler met a group on a journey. The group consisted of \\(8\\) guides. Each guide carried \\(8\\) containers. Inside each container were \\(8\\) boxes, and each box held \\(8\\) mechanical parts.\nCalculate the total sum of guides, containers, boxes, and mechanical parts.",
     "options": [
       {
         "text": "\\(4680\\)",
@@ -618,7 +618,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the terms of the geometric series from the description.",
-        "workingOut": "\\(\\text{Guides} = 8\\)\\n\\(\\text{Containers} = 64\\)\\n\\(\\text{Boxes} = 512\\)\\n\\(\\text{Parts} = 4096\\)",
+        "workingOut": "\\(\\text{Guides} = 8\\)\n\\(\\text{Containers} = 64\\)\n\\(\\text{Boxes} = 512\\)\n\\(\\text{Parts} = 4096\\)",
         "graphData": null
       },
       {
@@ -641,7 +641,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "A traveler met a group on a journey. The group consisted of \\(9\\) guides. Each guide carried \\(9\\) containers. Inside each container were \\(9\\) boxes, and each box held \\(9\\) mechanical parts.\\nCalculate the total sum of guides, containers, boxes, and mechanical parts.",
+    "question": "A traveler met a group on a journey. The group consisted of \\(9\\) guides. Each guide carried \\(9\\) containers. Inside each container were \\(9\\) boxes, and each box held \\(9\\) mechanical parts.\nCalculate the total sum of guides, containers, boxes, and mechanical parts.",
     "options": [
       {
         "text": "\\(7381\\)",
@@ -667,7 +667,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the terms of the geometric series from the description.",
-        "workingOut": "\\(\\text{Guides} = 9\\)\\n\\(\\text{Containers} = 81\\)\\n\\(\\text{Boxes} = 729\\)\\n\\(\\text{Parts} = 6561\\)",
+        "workingOut": "\\(\\text{Guides} = 9\\)\n\\(\\text{Containers} = 81\\)\n\\(\\text{Boxes} = 729\\)\n\\(\\text{Parts} = 6561\\)",
         "graphData": null
       },
       {
@@ -690,7 +690,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "A traveler met a group on a journey. The group consisted of \\(10\\) guides. Each guide carried \\(10\\) containers. Inside each container were \\(10\\) boxes, and each box held \\(10\\) mechanical parts.\\nCalculate the total sum of guides, containers, boxes, and mechanical parts.",
+    "question": "A traveler met a group on a journey. The group consisted of \\(10\\) guides. Each guide carried \\(10\\) containers. Inside each container were \\(10\\) boxes, and each box held \\(10\\) mechanical parts.\nCalculate the total sum of guides, containers, boxes, and mechanical parts.",
     "options": [
       {
         "text": "\\(11111\\)",
@@ -716,7 +716,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the terms of the geometric series from the description.",
-        "workingOut": "\\(\\text{Guides} = 10\\)\\n\\(\\text{Containers} = 100\\)\\n\\(\\text{Boxes} = 1000\\)\\n\\(\\text{Parts} = 10000\\)",
+        "workingOut": "\\(\\text{Guides} = 10\\)\n\\(\\text{Containers} = 100\\)\n\\(\\text{Boxes} = 1000\\)\n\\(\\text{Parts} = 10000\\)",
         "graphData": null
       },
       {
@@ -739,7 +739,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Use the formula \\(S_n = \\frac{a(r^n - 1)}{r - 1}\\) to evaluate the following geometric series:\\n\\(1 + 4 + 16 + 64 + \\dots + 4096\\)",
+    "question": "Use the formula \\(S_n = \\frac{a(r^n - 1)}{r - 1}\\) to evaluate the following geometric series:\n\\(1 + 4 + 16 + 64 + \\dots + 4096\\)",
     "options": [
       {
         "text": "\\(5461\\)",
@@ -788,7 +788,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Use the formula \\(S_n = \\frac{a(r^n - 1)}{r - 1}\\) to evaluate the following geometric series:\\n\\(1 + 3 + 9 + 27 + \\dots + 729\\)",
+    "question": "Use the formula \\(S_n = \\frac{a(r^n - 1)}{r - 1}\\) to evaluate the following geometric series:\n\\(1 + 3 + 9 + 27 + \\dots + 729\\)",
     "options": [
       {
         "text": "\\(1093\\)",
@@ -837,7 +837,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Use the formula \\(S_n = \\frac{a(r^n - 1)}{r - 1}\\) to evaluate the following geometric series:\\n\\(1 + 4 + 16 + 64 + \\dots + 4096\\)",
+    "question": "Use the formula \\(S_n = \\frac{a(r^n - 1)}{r - 1}\\) to evaluate the following geometric series:\n\\(1 + 4 + 16 + 64 + \\dots + 4096\\)",
     "options": [
       {
         "text": "\\(5461\\)",
@@ -886,7 +886,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Use the formula \\(S_n = \\frac{a(r^n - 1)}{r - 1}\\) to evaluate the following geometric series:\\n\\(1 + 3 + 9 + 27 + \\dots + 729\\)",
+    "question": "Use the formula \\(S_n = \\frac{a(r^n - 1)}{r - 1}\\) to evaluate the following geometric series:\n\\(1 + 3 + 9 + 27 + \\dots + 729\\)",
     "options": [
       {
         "text": "\\(\\frac{1093}{2}\\)",
@@ -935,7 +935,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Use the formula \\(S_n = \\frac{a(r^n - 1)}{r - 1}\\) to evaluate the following geometric series:\\n\\(1 + 4 + 16 + 64 + \\dots + 4096\\)",
+    "question": "Use the formula \\(S_n = \\frac{a(r^n - 1)}{r - 1}\\) to evaluate the following geometric series:\n\\(1 + 4 + 16 + 64 + \\dots + 4096\\)",
     "options": [
       {
         "text": "\\(\\frac{5461}{2}\\)",
@@ -984,7 +984,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Use the formula \\(S_n = \\frac{a(1 - r^n)}{1 - r}\\) to evaluate the following alternating series:\\n\\(1 - 3 + 9 - 27 + 81 - 243 + 729\\)",
+    "question": "Use the formula \\(S_n = \\frac{a(1 - r^n)}{1 - r}\\) to evaluate the following alternating series:\n\\(1 - 3 + 9 - 27 + 81 - 243 + 729\\)",
     "options": [
       {
         "text": "\\(547\\)",
@@ -1033,7 +1033,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Use the formula \\(S_n = \\frac{a(1 - r^n)}{1 - r}\\) to evaluate the following alternating series:\\n\\(1 - 4 + 16 - 64 + 256 - 1024 + 4096\\)",
+    "question": "Use the formula \\(S_n = \\frac{a(1 - r^n)}{1 - r}\\) to evaluate the following alternating series:\n\\(1 - 4 + 16 - 64 + 256 - 1024 + 4096\\)",
     "options": [
       {
         "text": "\\(3277\\)",
@@ -1082,7 +1082,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Use the formula \\(S_n = \\frac{a(1 - r^n)}{1 - r}\\) to evaluate the following alternating series:\\n\\(1 - 2 + 4 - 8 + 16 - 32 + 64\\)",
+    "question": "Use the formula \\(S_n = \\frac{a(1 - r^n)}{1 - r}\\) to evaluate the following alternating series:\n\\(1 - 2 + 4 - 8 + 16 - 32 + 64\\)",
     "options": [
       {
         "text": "\\(53\\)",
@@ -1131,7 +1131,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Use the formula \\(S_n = \\frac{a(1 - r^n)}{1 - r}\\) to evaluate the following alternating series:\\n\\(1 - 3 + 9 - 27 + 81 - 243 + 729\\)",
+    "question": "Use the formula \\(S_n = \\frac{a(1 - r^n)}{1 - r}\\) to evaluate the following alternating series:\n\\(1 - 3 + 9 - 27 + 81 - 243 + 729\\)",
     "options": [
       {
         "text": "\\(557\\)",
@@ -1180,7 +1180,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Use the formula \\(S_n = \\frac{a(1 - r^n)}{1 - r}\\) to evaluate the following alternating series:\\n\\(1 - 4 + 16 - 64 + 256 - 1024 + 4096\\)",
+    "question": "Use the formula \\(S_n = \\frac{a(1 - r^n)}{1 - r}\\) to evaluate the following alternating series:\n\\(1 - 4 + 16 - 64 + 256 - 1024 + 4096\\)",
     "options": [
       {
         "text": "\\(6554\\)",
@@ -1229,7 +1229,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Find the sum of the first \\(10\\) terms of the geometric series starting with:\\n\\(1 + 2 + 4 + 8 + \\dots\\)\\nAlso state the formula for the general sum \\(S_n\\).",
+    "question": "Find the sum of the first \\(10\\) terms of the geometric series starting with:\n\\(1 + 2 + 4 + 8 + \\dots\\)\nAlso state the formula for the general sum \\(S_n\\).",
     "options": [
       {
         "text": "\\(1023\\)",
@@ -1255,7 +1255,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Determine the first term a and the common ratio r by dividing consecutive terms.",
-        "workingOut": "\\(a = 1\\)\\n\\(r = \\frac{2}{1} = 2\\)",
+        "workingOut": "\\(a = 1\\)\n\\(r = \\frac{2}{1} = 2\\)",
         "graphData": null
       },
       {
@@ -1265,7 +1265,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Simplify the expression to find the numerical sum and write the general formula.",
-        "workingOut": "\\(S_{10} = 1023\\)\\n\\(S_n = \\frac{1(1 - 2^n)}{-1}\\)",
+        "workingOut": "\\(S_{10} = 1023\\)\n\\(S_n = \\frac{1(1 - 2^n)}{-1}\\)",
         "graphData": null
       }
     ],
@@ -1278,7 +1278,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Find the sum of the first \\(5\\) terms of the geometric series starting with:\\n\\(2 + 6 + 18 + 54 + \\dots\\)\\nAlso state the formula for the general sum \\(S_n\\).",
+    "question": "Find the sum of the first \\(5\\) terms of the geometric series starting with:\n\\(2 + 6 + 18 + 54 + \\dots\\)\nAlso state the formula for the general sum \\(S_n\\).",
     "options": [
       {
         "text": "\\(266.2\\)",
@@ -1304,7 +1304,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Determine the first term a and the common ratio r by dividing consecutive terms.",
-        "workingOut": "\\(a = 2\\)\\n\\(r = \\frac{6}{2} = 3\\)",
+        "workingOut": "\\(a = 2\\)\n\\(r = \\frac{6}{2} = 3\\)",
         "graphData": null
       },
       {
@@ -1314,7 +1314,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Simplify the expression to find the numerical sum and write the general formula.",
-        "workingOut": "\\(S_{5} = 242\\)\\n\\(S_n = \\frac{2(1 - 3^n)}{-2}\\)",
+        "workingOut": "\\(S_{5} = 242\\)\n\\(S_n = \\frac{2(1 - 3^n)}{-2}\\)",
         "graphData": null
       }
     ],
@@ -1327,7 +1327,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Find the sum of the first \\(5\\) terms of the geometric series starting with:\\n\\(-1 + -10 + -100 + -1000 + \\dots\\)\\nAlso state the formula for the general sum \\(S_n\\).",
+    "question": "Find the sum of the first \\(5\\) terms of the geometric series starting with:\n\\(-1 + -10 + -100 + -1000 + \\dots\\)\nAlso state the formula for the general sum \\(S_n\\).",
     "options": [
       {
         "text": "\\(-11110\\)",
@@ -1353,7 +1353,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Determine the first term a and the common ratio r by dividing consecutive terms.",
-        "workingOut": "\\(a = -1\\)\\n\\(r = \\frac{-10}{-1} = 10\\)",
+        "workingOut": "\\(a = -1\\)\n\\(r = \\frac{-10}{-1} = 10\\)",
         "graphData": null
       },
       {
@@ -1363,7 +1363,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Simplify the expression to find the numerical sum and write the general formula.",
-        "workingOut": "\\(S_{5} = -11111\\)\\n\\(S_n = \\frac{-1(1 - 10^n)}{-9}\\)",
+        "workingOut": "\\(S_{5} = -11111\\)\n\\(S_n = \\frac{-1(1 - 10^n)}{-9}\\)",
         "graphData": null
       }
     ],
@@ -1376,7 +1376,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Find the sum of the first \\(5\\) terms of the geometric series starting with:\\n\\(-1 + -5 + -25 + -125 + \\dots\\)\\nAlso state the formula for the general sum \\(S_n\\).",
+    "question": "Find the sum of the first \\(5\\) terms of the geometric series starting with:\n\\(-1 + -5 + -25 + -125 + \\dots\\)\nAlso state the formula for the general sum \\(S_n\\).",
     "options": [
       {
         "text": "\\(-859.1\\)",
@@ -1402,7 +1402,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Determine the first term a and the common ratio r by dividing consecutive terms.",
-        "workingOut": "\\(a = -1\\)\\n\\(r = \\frac{-5}{-1} = 5\\)",
+        "workingOut": "\\(a = -1\\)\n\\(r = \\frac{-5}{-1} = 5\\)",
         "graphData": null
       },
       {
@@ -1412,7 +1412,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Simplify the expression to find the numerical sum and write the general formula.",
-        "workingOut": "\\(S_{5} = -781\\)\\n\\(S_n = \\frac{-1(1 - 5^n)}{-4}\\)",
+        "workingOut": "\\(S_{5} = -781\\)\n\\(S_n = \\frac{-1(1 - 5^n)}{-4}\\)",
         "graphData": null
       }
     ],
@@ -1425,7 +1425,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Find the sum of the first \\(10\\) terms of the geometric series starting with:\\n\\(1 + -2 + 4 + -8 + \\dots\\)\\nAlso state the formula for the general sum \\(S_n\\).",
+    "question": "Find the sum of the first \\(10\\) terms of the geometric series starting with:\n\\(1 + -2 + 4 + -8 + \\dots\\)\nAlso state the formula for the general sum \\(S_n\\).",
     "options": [
       {
         "text": "\\(-341\\)",
@@ -1451,7 +1451,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Determine the first term a and the common ratio r by dividing consecutive terms.",
-        "workingOut": "\\(a = 1\\)\\n\\(r = \\frac{-2}{1} = -2\\)",
+        "workingOut": "\\(a = 1\\)\n\\(r = \\frac{-2}{1} = -2\\)",
         "graphData": null
       },
       {
@@ -1461,7 +1461,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Simplify the expression to find the numerical sum and write the general formula.",
-        "workingOut": "\\(S_{10} = -341\\)\\n\\(S_n = \\frac{1(1 - (-2)^n)}{3}\\)",
+        "workingOut": "\\(S_{10} = -341\\)\n\\(S_n = \\frac{1(1 - (-2)^n)}{3}\\)",
         "graphData": null
       }
     ],
@@ -1474,7 +1474,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Find the sum of the first \\(5\\) terms of the geometric series starting with:\\n\\(2 + -6 + 18 + -54 + \\dots\\)\\nAlso state the formula for the general sum \\(S_n\\).",
+    "question": "Find the sum of the first \\(5\\) terms of the geometric series starting with:\n\\(2 + -6 + 18 + -54 + \\dots\\)\nAlso state the formula for the general sum \\(S_n\\).",
     "options": [
       {
         "text": "\\(109.8\\)",
@@ -1500,7 +1500,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Determine the first term a and the common ratio r by dividing consecutive terms.",
-        "workingOut": "\\(a = 2\\)\\n\\(r = \\frac{-6}{2} = -3\\)",
+        "workingOut": "\\(a = 2\\)\n\\(r = \\frac{-6}{2} = -3\\)",
         "graphData": null
       },
       {
@@ -1510,7 +1510,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Simplify the expression to find the numerical sum and write the general formula.",
-        "workingOut": "\\(S_{5} = 122\\)\\n\\(S_n = \\frac{2(1 - (-3)^n)}{4}\\)",
+        "workingOut": "\\(S_{5} = 122\\)\n\\(S_n = \\frac{2(1 - (-3)^n)}{4}\\)",
         "graphData": null
       }
     ],
@@ -1523,7 +1523,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Find the sum of the first \\(5\\) terms of the geometric series starting with:\\n\\(-1 + 10 + -100 + 1000 + \\dots\\)\\nAlso state the formula for the general sum \\(S_n\\).",
+    "question": "Find the sum of the first \\(5\\) terms of the geometric series starting with:\n\\(-1 + 10 + -100 + 1000 + \\dots\\)\nAlso state the formula for the general sum \\(S_n\\).",
     "options": [
       {
         "text": "\\(-8181.9\\)",
@@ -1549,7 +1549,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Determine the first term a and the common ratio r by dividing consecutive terms.",
-        "workingOut": "\\(a = -1\\)\\n\\(r = \\frac{10}{-1} = -10\\)",
+        "workingOut": "\\(a = -1\\)\n\\(r = \\frac{10}{-1} = -10\\)",
         "graphData": null
       },
       {
@@ -1559,7 +1559,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Simplify the expression to find the numerical sum and write the general formula.",
-        "workingOut": "\\(S_{5} = -9091\\)\\n\\(S_n = \\frac{-1(1 - (-10)^n)}{11}\\)",
+        "workingOut": "\\(S_{5} = -9091\\)\n\\(S_n = \\frac{-1(1 - (-10)^n)}{11}\\)",
         "graphData": null
       }
     ],
@@ -1572,7 +1572,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Find the sum of the first \\(5\\) terms of the geometric series starting with:\\n\\(-1 + 5 + -25 + 125 + \\dots\\)\\nAlso state the formula for the general sum \\(S_n\\).",
+    "question": "Find the sum of the first \\(5\\) terms of the geometric series starting with:\n\\(-1 + 5 + -25 + 125 + \\dots\\)\nAlso state the formula for the general sum \\(S_n\\).",
     "options": [
       {
         "text": "\\(-468.9\\)",
@@ -1598,7 +1598,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Determine the first term a and the common ratio r by dividing consecutive terms.",
-        "workingOut": "\\(a = -1\\)\\n\\(r = \\frac{5}{-1} = -5\\)",
+        "workingOut": "\\(a = -1\\)\n\\(r = \\frac{5}{-1} = -5\\)",
         "graphData": null
       },
       {
@@ -1608,7 +1608,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Simplify the expression to find the numerical sum and write the general formula.",
-        "workingOut": "\\(S_{5} = -521\\)\\n\\(S_n = \\frac{-1(1 - (-5)^n)}{6}\\)",
+        "workingOut": "\\(S_{5} = -521\\)\n\\(S_n = \\frac{-1(1 - (-5)^n)}{6}\\)",
         "graphData": null
       }
     ],
@@ -1621,7 +1621,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the sum of the first \\(10\\) terms of the geometric series starting with:\\n\\(8 + 4 + 2 + 1 + \\dots\\)\\nAlso state the formula for the general sum \\(S_n\\).",
+    "question": "Find the sum of the first \\(10\\) terms of the geometric series starting with:\n\\(8 + 4 + 2 + 1 + \\dots\\)\nAlso state the formula for the general sum \\(S_n\\).",
     "options": [
       {
         "text": "\\(15.9844\\)",
@@ -1647,7 +1647,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Determine the first term a and the common ratio r by dividing consecutive terms.",
-        "workingOut": "\\(a = 8\\)\\n\\(r = \\frac{4}{8} = 0.5\\)",
+        "workingOut": "\\(a = 8\\)\n\\(r = \\frac{4}{8} = 0.5\\)",
         "graphData": null
       },
       {
@@ -1657,7 +1657,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Simplify the expression to find the numerical sum and write the general formula.",
-        "workingOut": "\\(S_{10} = 15.9844\\)\\n\\(S_n = \\frac{8(1 - 0.5^n)}{0.5}\\)",
+        "workingOut": "\\(S_{10} = 15.9844\\)\n\\(S_n = \\frac{8(1 - 0.5^n)}{0.5}\\)",
         "graphData": null
       }
     ],
@@ -1670,7 +1670,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the sum of the first \\(6\\) terms of the geometric series starting with:\\n\\(9 + 3 + 1 + 0.3333 + \\dots\\)\\nAlso state the formula for the general sum \\(S_n\\).",
+    "question": "Find the sum of the first \\(6\\) terms of the geometric series starting with:\n\\(9 + 3 + 1 + 0.3333 + \\dots\\)\nAlso state the formula for the general sum \\(S_n\\).",
     "options": [
       {
         "text": "\\(14.8296\\)",
@@ -1696,7 +1696,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Determine the first term a and the common ratio r by dividing consecutive terms.",
-        "workingOut": "\\(a = 9\\)\\n\\(r = \\frac{3}{9} = 0.3333333333333333\\)",
+        "workingOut": "\\(a = 9\\)\n\\(r = \\frac{3}{9} = 0.3333333333333333\\)",
         "graphData": null
       },
       {
@@ -1706,7 +1706,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Simplify the expression to find the numerical sum and write the general formula.",
-        "workingOut": "\\(S_{6} = 13.4815\\)\\n\\(S_n = \\frac{9(1 - 0.3333333333333333^n)}{0.6666666666666667}\\)",
+        "workingOut": "\\(S_{6} = 13.4815\\)\n\\(S_n = \\frac{9(1 - 0.3333333333333333^n)}{0.6666666666666667}\\)",
         "graphData": null
       }
     ],
@@ -1719,7 +1719,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the sum of the first \\(5\\) terms of the geometric series starting with:\\n\\(45 + 15 + 5 + 1.6667 + \\dots\\)\\nAlso state the formula for the general sum \\(S_n\\).",
+    "question": "Find the sum of the first \\(5\\) terms of the geometric series starting with:\n\\(45 + 15 + 5 + 1.6667 + \\dots\\)\nAlso state the formula for the general sum \\(S_n\\).",
     "options": [
       {
         "text": "\\(67.2222\\)",
@@ -1745,7 +1745,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Determine the first term a and the common ratio r by dividing consecutive terms.",
-        "workingOut": "\\(a = 45\\)\\n\\(r = \\frac{15}{45} = 0.3333333333333333\\)",
+        "workingOut": "\\(a = 45\\)\n\\(r = \\frac{15}{45} = 0.3333333333333333\\)",
         "graphData": null
       },
       {
@@ -1755,7 +1755,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Simplify the expression to find the numerical sum and write the general formula.",
-        "workingOut": "\\(S_{5} = 67.2222\\)\\n\\(S_n = \\frac{45(1 - 0.3333333333333333^n)}{0.6666666666666667}\\)",
+        "workingOut": "\\(S_{5} = 67.2222\\)\n\\(S_n = \\frac{45(1 - 0.3333333333333333^n)}{0.6666666666666667}\\)",
         "graphData": null
       }
     ],
@@ -1768,7 +1768,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the sum of the first \\(10\\) terms of the geometric series starting with:\\n\\(8 + -4 + 2 + -1 + \\dots\\)\\nAlso state the formula for the general sum \\(S_n\\).",
+    "question": "Find the sum of the first \\(10\\) terms of the geometric series starting with:\n\\(8 + -4 + 2 + -1 + \\dots\\)\nAlso state the formula for the general sum \\(S_n\\).",
     "options": [
       {
         "text": "\\(-2.6719\\)",
@@ -1794,7 +1794,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Determine the first term a and the common ratio r by dividing consecutive terms.",
-        "workingOut": "\\(a = 8\\)\\n\\(r = \\frac{-4}{8} = -0.5\\)",
+        "workingOut": "\\(a = 8\\)\n\\(r = \\frac{-4}{8} = -0.5\\)",
         "graphData": null
       },
       {
@@ -1804,7 +1804,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Simplify the expression to find the numerical sum and write the general formula.",
-        "workingOut": "\\(S_{10} = 5.3281\\)\\n\\(S_n = \\frac{8(1 - (-0.5)^n)}{1.5}\\)",
+        "workingOut": "\\(S_{10} = 5.3281\\)\n\\(S_n = \\frac{8(1 - (-0.5)^n)}{1.5}\\)",
         "graphData": null
       }
     ],
@@ -1817,7 +1817,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the sum of the first \\(6\\) terms of the geometric series starting with:\\n\\(9 + -3 + 1 + -0.3333 + \\dots\\)\\nAlso state the formula for the general sum \\(S_n\\).",
+    "question": "Find the sum of the first \\(6\\) terms of the geometric series starting with:\n\\(9 + -3 + 1 + -0.3333 + \\dots\\)\nAlso state the formula for the general sum \\(S_n\\).",
     "options": [
       {
         "text": "\\(6.0667\\)",
@@ -1843,7 +1843,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Determine the first term a and the common ratio r by dividing consecutive terms.",
-        "workingOut": "\\(a = 9\\)\\n\\(r = \\frac{-3}{9} = -0.3333333333333333\\)",
+        "workingOut": "\\(a = 9\\)\n\\(r = \\frac{-3}{9} = -0.3333333333333333\\)",
         "graphData": null
       },
       {
@@ -1853,7 +1853,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Simplify the expression to find the numerical sum and write the general formula.",
-        "workingOut": "\\(S_{6} = 6.7407\\)\\n\\(S_n = \\frac{9(1 - (-0.3333333333333333)^n)}{1.3333333333333333}\\)",
+        "workingOut": "\\(S_{6} = 6.7407\\)\n\\(S_n = \\frac{9(1 - (-0.3333333333333333)^n)}{1.3333333333333333}\\)",
         "graphData": null
       }
     ],
@@ -1866,7 +1866,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the sum of the first \\(5\\) terms of the geometric series starting with:\\n\\(-45 + 15 + -5 + 1.6667 + \\dots\\)\\nAlso state the formula for the general sum \\(S_n\\).",
+    "question": "Find the sum of the first \\(5\\) terms of the geometric series starting with:\n\\(-45 + 15 + -5 + 1.6667 + \\dots\\)\nAlso state the formula for the general sum \\(S_n\\).",
     "options": [
       {
         "text": "\\(-33.8889\\)",
@@ -1892,7 +1892,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Determine the first term a and the common ratio r by dividing consecutive terms.",
-        "workingOut": "\\(a = -45\\)\\n\\(r = \\frac{15}{-45} = -0.3333333333333333\\)",
+        "workingOut": "\\(a = -45\\)\n\\(r = \\frac{15}{-45} = -0.3333333333333333\\)",
         "graphData": null
       },
       {
@@ -1902,7 +1902,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Simplify the expression to find the numerical sum and write the general formula.",
-        "workingOut": "\\(S_{5} = -33.8889\\)\\n\\(S_n = \\frac{-45(1 - (-0.3333333333333333)^n)}{1.3333333333333333}\\)",
+        "workingOut": "\\(S_{5} = -33.8889\\)\n\\(S_n = \\frac{-45(1 - (-0.3333333333333333)^n)}{1.3333333333333333}\\)",
         "graphData": null
       }
     ],
@@ -1915,7 +1915,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Find the sum of the first \\(10\\) terms of the geometric series starting with:\\n\\(2 + 4 + 8 + 16 + \\dots\\)\\nAlso state the formula for the general sum \\(S_n\\).",
+    "question": "Find the sum of the first \\(10\\) terms of the geometric series starting with:\n\\(2 + 4 + 8 + 16 + \\dots\\)\nAlso state the formula for the general sum \\(S_n\\).",
     "options": [
       {
         "text": "\\(2046\\)",
@@ -1941,7 +1941,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Determine the first term a and the common ratio r by dividing consecutive terms.",
-        "workingOut": "\\(a = 2\\)\\n\\(r = \\frac{4}{2} = 2\\)",
+        "workingOut": "\\(a = 2\\)\n\\(r = \\frac{4}{2} = 2\\)",
         "graphData": null
       },
       {
@@ -1951,7 +1951,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Simplify the expression to find the numerical sum and write the general formula.",
-        "workingOut": "\\(S_{10} = 2046\\)\\n\\(S_n = \\frac{2(1 - 2^n)}{-1}\\)",
+        "workingOut": "\\(S_{10} = 2046\\)\n\\(S_n = \\frac{2(1 - 2^n)}{-1}\\)",
         "graphData": null
       }
     ],
@@ -1964,7 +1964,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Find the sum of the first \\(5\\) terms of the geometric series starting with:\\n\\(4 + 12 + 36 + 108 + \\dots\\)\\nAlso state the formula for the general sum \\(S_n\\).",
+    "question": "Find the sum of the first \\(5\\) terms of the geometric series starting with:\n\\(4 + 12 + 36 + 108 + \\dots\\)\nAlso state the formula for the general sum \\(S_n\\).",
     "options": [
       {
         "text": "\\(435.6\\)",
@@ -1990,7 +1990,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Determine the first term a and the common ratio r by dividing consecutive terms.",
-        "workingOut": "\\(a = 4\\)\\n\\(r = \\frac{12}{4} = 3\\)",
+        "workingOut": "\\(a = 4\\)\n\\(r = \\frac{12}{4} = 3\\)",
         "graphData": null
       },
       {
@@ -2000,7 +2000,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Simplify the expression to find the numerical sum and write the general formula.",
-        "workingOut": "\\(S_{5} = 484\\)\\n\\(S_n = \\frac{4(1 - 3^n)}{-2}\\)",
+        "workingOut": "\\(S_{5} = 484\\)\n\\(S_n = \\frac{4(1 - 3^n)}{-2}\\)",
         "graphData": null
       }
     ],
@@ -2013,7 +2013,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Find the sum of the first \\(5\\) terms of the geometric series starting with:\\n\\(-2 + -20 + -200 + -2000 + \\dots\\)\\nAlso state the formula for the general sum \\(S_n\\).",
+    "question": "Find the sum of the first \\(5\\) terms of the geometric series starting with:\n\\(-2 + -20 + -200 + -2000 + \\dots\\)\nAlso state the formula for the general sum \\(S_n\\).",
     "options": [
       {
         "text": "\\(-22222\\)",
@@ -2039,7 +2039,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Determine the first term a and the common ratio r by dividing consecutive terms.",
-        "workingOut": "\\(a = -2\\)\\n\\(r = \\frac{-20}{-2} = 10\\)",
+        "workingOut": "\\(a = -2\\)\n\\(r = \\frac{-20}{-2} = 10\\)",
         "graphData": null
       },
       {
@@ -2049,7 +2049,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Simplify the expression to find the numerical sum and write the general formula.",
-        "workingOut": "\\(S_{5} = -22222\\)\\n\\(S_n = \\frac{-2(1 - 10^n)}{-9}\\)",
+        "workingOut": "\\(S_{5} = -22222\\)\n\\(S_n = \\frac{-2(1 - 10^n)}{-9}\\)",
         "graphData": null
       }
     ],
@@ -2062,7 +2062,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Find the sum of the first \\(5\\) terms of the geometric series starting with:\\n\\(-2 + -10 + -50 + -250 + \\dots\\)\\nAlso state the formula for the general sum \\(S_n\\).",
+    "question": "Find the sum of the first \\(5\\) terms of the geometric series starting with:\n\\(-2 + -10 + -50 + -250 + \\dots\\)\nAlso state the formula for the general sum \\(S_n\\).",
     "options": [
       {
         "text": "\\(-1562\\)",
@@ -2088,7 +2088,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Determine the first term a and the common ratio r by dividing consecutive terms.",
-        "workingOut": "\\(a = -2\\)\\n\\(r = \\frac{-10}{-2} = 5\\)",
+        "workingOut": "\\(a = -2\\)\n\\(r = \\frac{-10}{-2} = 5\\)",
         "graphData": null
       },
       {
@@ -2098,7 +2098,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Simplify the expression to find the numerical sum and write the general formula.",
-        "workingOut": "\\(S_{5} = -1562\\)\\n\\(S_n = \\frac{-2(1 - 5^n)}{-4}\\)",
+        "workingOut": "\\(S_{5} = -1562\\)\n\\(S_n = \\frac{-2(1 - 5^n)}{-4}\\)",
         "graphData": null
       }
     ],
@@ -2111,7 +2111,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Find the sum of the first \\(10\\) terms of the geometric series starting with:\\n\\(2 + -4 + 8 + -16 + \\dots\\)\\nAlso state the formula for the general sum \\(S_n\\).",
+    "question": "Find the sum of the first \\(10\\) terms of the geometric series starting with:\n\\(2 + -4 + 8 + -16 + \\dots\\)\nAlso state the formula for the general sum \\(S_n\\).",
     "options": [
       {
         "text": "\\(-750.2\\)",
@@ -2137,7 +2137,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Determine the first term a and the common ratio r by dividing consecutive terms.",
-        "workingOut": "\\(a = 2\\)\\n\\(r = \\frac{-4}{2} = -2\\)",
+        "workingOut": "\\(a = 2\\)\n\\(r = \\frac{-4}{2} = -2\\)",
         "graphData": null
       },
       {
@@ -2147,7 +2147,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Simplify the expression to find the numerical sum and write the general formula.",
-        "workingOut": "\\(S_{10} = -682\\)\\n\\(S_n = \\frac{2(1 - (-2)^n)}{3}\\)",
+        "workingOut": "\\(S_{10} = -682\\)\n\\(S_n = \\frac{2(1 - (-2)^n)}{3}\\)",
         "graphData": null
       }
     ],
@@ -2160,7 +2160,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Find the sum of the first \\(5\\) terms of the geometric series starting with:\\n\\(4 + -12 + 36 + -108 + \\dots\\)\\nAlso state the formula for the general sum \\(S_n\\).",
+    "question": "Find the sum of the first \\(5\\) terms of the geometric series starting with:\n\\(4 + -12 + 36 + -108 + \\dots\\)\nAlso state the formula for the general sum \\(S_n\\).",
     "options": [
       {
         "text": "\\(244\\)",
@@ -2186,7 +2186,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Determine the first term a and the common ratio r by dividing consecutive terms.",
-        "workingOut": "\\(a = 4\\)\\n\\(r = \\frac{-12}{4} = -3\\)",
+        "workingOut": "\\(a = 4\\)\n\\(r = \\frac{-12}{4} = -3\\)",
         "graphData": null
       },
       {
@@ -2196,7 +2196,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Simplify the expression to find the numerical sum and write the general formula.",
-        "workingOut": "\\(S_{5} = 244\\)\\n\\(S_n = \\frac{4(1 - (-3)^n)}{4}\\)",
+        "workingOut": "\\(S_{5} = 244\\)\n\\(S_n = \\frac{4(1 - (-3)^n)}{4}\\)",
         "graphData": null
       }
     ],
@@ -2209,7 +2209,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Find the sum of the first \\(5\\) terms of the geometric series starting with:\\n\\(-2 + 20 + -200 + 2000 + \\dots\\)\\nAlso state the formula for the general sum \\(S_n\\).",
+    "question": "Find the sum of the first \\(5\\) terms of the geometric series starting with:\n\\(-2 + 20 + -200 + 2000 + \\dots\\)\nAlso state the formula for the general sum \\(S_n\\).",
     "options": [
       {
         "text": "\\(-20000.2\\)",
@@ -2235,7 +2235,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Determine the first term a and the common ratio r by dividing consecutive terms.",
-        "workingOut": "\\(a = -2\\)\\n\\(r = \\frac{20}{-2} = -10\\)",
+        "workingOut": "\\(a = -2\\)\n\\(r = \\frac{20}{-2} = -10\\)",
         "graphData": null
       },
       {
@@ -2245,7 +2245,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Simplify the expression to find the numerical sum and write the general formula.",
-        "workingOut": "\\(S_{5} = -18182\\)\\n\\(S_n = \\frac{-2(1 - (-10)^n)}{11}\\)",
+        "workingOut": "\\(S_{5} = -18182\\)\n\\(S_n = \\frac{-2(1 - (-10)^n)}{11}\\)",
         "graphData": null
       }
     ],
@@ -2258,7 +2258,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Find the sum of the first \\(5\\) terms of the geometric series starting with:\\n\\(-2 + 10 + -50 + 250 + \\dots\\)\\nAlso state the formula for the general sum \\(S_n\\).",
+    "question": "Find the sum of the first \\(5\\) terms of the geometric series starting with:\n\\(-2 + 10 + -50 + 250 + \\dots\\)\nAlso state the formula for the general sum \\(S_n\\).",
     "options": [
       {
         "text": "\\(-1040\\)",
@@ -2284,7 +2284,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Determine the first term a and the common ratio r by dividing consecutive terms.",
-        "workingOut": "\\(a = -2\\)\\n\\(r = \\frac{10}{-2} = -5\\)",
+        "workingOut": "\\(a = -2\\)\n\\(r = \\frac{10}{-2} = -5\\)",
         "graphData": null
       },
       {
@@ -2294,7 +2294,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Simplify the expression to find the numerical sum and write the general formula.",
-        "workingOut": "\\(S_{5} = -1042\\)\\n\\(S_n = \\frac{-2(1 - (-5)^n)}{6}\\)",
+        "workingOut": "\\(S_{5} = -1042\\)\n\\(S_n = \\frac{-2(1 - (-5)^n)}{6}\\)",
         "graphData": null
       }
     ],
@@ -2307,7 +2307,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the sum of the first \\(10\\) terms of the geometric series starting with:\\n\\(16 + 8 + 4 + 2 + \\dots\\)\\nAlso state the formula for the general sum \\(S_n\\).",
+    "question": "Find the sum of the first \\(10\\) terms of the geometric series starting with:\n\\(16 + 8 + 4 + 2 + \\dots\\)\nAlso state the formula for the general sum \\(S_n\\).",
     "options": [
       {
         "text": "\\(31.9688\\)",
@@ -2333,7 +2333,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Determine the first term a and the common ratio r by dividing consecutive terms.",
-        "workingOut": "\\(a = 16\\)\\n\\(r = \\frac{8}{16} = 0.5\\)",
+        "workingOut": "\\(a = 16\\)\n\\(r = \\frac{8}{16} = 0.5\\)",
         "graphData": null
       },
       {
@@ -2343,7 +2343,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Simplify the expression to find the numerical sum and write the general formula.",
-        "workingOut": "\\(S_{10} = 31.9688\\)\\n\\(S_n = \\frac{16(1 - 0.5^n)}{0.5}\\)",
+        "workingOut": "\\(S_{10} = 31.9688\\)\n\\(S_n = \\frac{16(1 - 0.5^n)}{0.5}\\)",
         "graphData": null
       }
     ],
@@ -2356,7 +2356,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the sum of the first \\(6\\) terms of the geometric series starting with:\\n\\(18 + 6 + 2 + 0.6667 + \\dots\\)\\nAlso state the formula for the general sum \\(S_n\\).",
+    "question": "Find the sum of the first \\(6\\) terms of the geometric series starting with:\n\\(18 + 6 + 2 + 0.6667 + \\dots\\)\nAlso state the formula for the general sum \\(S_n\\).",
     "options": [
       {
         "text": "\\(26.963\\)",
@@ -2382,7 +2382,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Determine the first term a and the common ratio r by dividing consecutive terms.",
-        "workingOut": "\\(a = 18\\)\\n\\(r = \\frac{6}{18} = 0.3333333333333333\\)",
+        "workingOut": "\\(a = 18\\)\n\\(r = \\frac{6}{18} = 0.3333333333333333\\)",
         "graphData": null
       },
       {
@@ -2392,7 +2392,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Simplify the expression to find the numerical sum and write the general formula.",
-        "workingOut": "\\(S_{6} = 26.963\\)\\n\\(S_n = \\frac{18(1 - 0.3333333333333333^n)}{0.6666666666666667}\\)",
+        "workingOut": "\\(S_{6} = 26.963\\)\n\\(S_n = \\frac{18(1 - 0.3333333333333333^n)}{0.6666666666666667}\\)",
         "graphData": null
       }
     ],
@@ -2405,7 +2405,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the sum of the first \\(5\\) terms of the geometric series starting with:\\n\\(90 + 30 + 10 + 3.3333 + \\dots\\)\\nAlso state the formula for the general sum \\(S_n\\).",
+    "question": "Find the sum of the first \\(5\\) terms of the geometric series starting with:\n\\(90 + 30 + 10 + 3.3333 + \\dots\\)\nAlso state the formula for the general sum \\(S_n\\).",
     "options": [
       {
         "text": "\\(121\\)",
@@ -2431,7 +2431,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Determine the first term a and the common ratio r by dividing consecutive terms.",
-        "workingOut": "\\(a = 90\\)\\n\\(r = \\frac{30}{90} = 0.3333333333333333\\)",
+        "workingOut": "\\(a = 90\\)\n\\(r = \\frac{30}{90} = 0.3333333333333333\\)",
         "graphData": null
       },
       {
@@ -2441,7 +2441,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Simplify the expression to find the numerical sum and write the general formula.",
-        "workingOut": "\\(S_{5} = 134.4444\\)\\n\\(S_n = \\frac{90(1 - 0.3333333333333333^n)}{0.6666666666666667}\\)",
+        "workingOut": "\\(S_{5} = 134.4444\\)\n\\(S_n = \\frac{90(1 - 0.3333333333333333^n)}{0.6666666666666667}\\)",
         "graphData": null
       }
     ],
@@ -2454,7 +2454,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the sum of the first \\(10\\) terms of the geometric series starting with:\\n\\(16 + -8 + 4 + -2 + \\dots\\)\\nAlso state the formula for the general sum \\(S_n\\).",
+    "question": "Find the sum of the first \\(10\\) terms of the geometric series starting with:\n\\(16 + -8 + 4 + -2 + \\dots\\)\nAlso state the formula for the general sum \\(S_n\\).",
     "options": [
       {
         "text": "\\(10.6563\\)",
@@ -2480,7 +2480,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Determine the first term a and the common ratio r by dividing consecutive terms.",
-        "workingOut": "\\(a = 16\\)\\n\\(r = \\frac{-8}{16} = -0.5\\)",
+        "workingOut": "\\(a = 16\\)\n\\(r = \\frac{-8}{16} = -0.5\\)",
         "graphData": null
       },
       {
@@ -2490,7 +2490,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Simplify the expression to find the numerical sum and write the general formula.",
-        "workingOut": "\\(S_{10} = 10.6563\\)\\n\\(S_n = \\frac{16(1 - (-0.5)^n)}{1.5}\\)",
+        "workingOut": "\\(S_{10} = 10.6563\\)\n\\(S_n = \\frac{16(1 - (-0.5)^n)}{1.5}\\)",
         "graphData": null
       }
     ],
@@ -2503,7 +2503,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the sum of the first \\(6\\) terms of the geometric series starting with:\\n\\(18 + -6 + 2 + -0.6667 + \\dots\\)\\nAlso state the formula for the general sum \\(S_n\\).",
+    "question": "Find the sum of the first \\(6\\) terms of the geometric series starting with:\n\\(18 + -6 + 2 + -0.6667 + \\dots\\)\nAlso state the formula for the general sum \\(S_n\\).",
     "options": [
       {
         "text": "\\(13.4815\\)",
@@ -2529,7 +2529,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Determine the first term a and the common ratio r by dividing consecutive terms.",
-        "workingOut": "\\(a = 18\\)\\n\\(r = \\frac{-6}{18} = -0.3333333333333333\\)",
+        "workingOut": "\\(a = 18\\)\n\\(r = \\frac{-6}{18} = -0.3333333333333333\\)",
         "graphData": null
       },
       {
@@ -2539,7 +2539,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Simplify the expression to find the numerical sum and write the general formula.",
-        "workingOut": "\\(S_{6} = 13.4815\\)\\n\\(S_n = \\frac{18(1 - (-0.3333333333333333)^n)}{1.3333333333333333}\\)",
+        "workingOut": "\\(S_{6} = 13.4815\\)\n\\(S_n = \\frac{18(1 - (-0.3333333333333333)^n)}{1.3333333333333333}\\)",
         "graphData": null
       }
     ],
@@ -2552,7 +2552,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the sum of the first \\(5\\) terms of the geometric series starting with:\\n\\(-90 + 30 + -10 + 3.3333 + \\dots\\)\\nAlso state the formula for the general sum \\(S_n\\).",
+    "question": "Find the sum of the first \\(5\\) terms of the geometric series starting with:\n\\(-90 + 30 + -10 + 3.3333 + \\dots\\)\nAlso state the formula for the general sum \\(S_n\\).",
     "options": [
       {
         "text": "\\(-67.7778\\)",
@@ -2578,7 +2578,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Determine the first term a and the common ratio r by dividing consecutive terms.",
-        "workingOut": "\\(a = -90\\)\\n\\(r = \\frac{30}{-90} = -0.3333333333333333\\)",
+        "workingOut": "\\(a = -90\\)\n\\(r = \\frac{30}{-90} = -0.3333333333333333\\)",
         "graphData": null
       },
       {
@@ -2588,7 +2588,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Simplify the expression to find the numerical sum and write the general formula.",
-        "workingOut": "\\(S_{5} = -67.7778\\)\\n\\(S_n = \\frac{-90(1 - (-0.3333333333333333)^n)}{1.3333333333333333}\\)",
+        "workingOut": "\\(S_{5} = -67.7778\\)\n\\(S_n = \\frac{-90(1 - (-0.3333333333333333)^n)}{1.3333333333333333}\\)",
         "graphData": null
       }
     ],
@@ -2601,7 +2601,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Find the sum of the first \\(10\\) terms of the geometric series starting with:\\n\\(3 + 6 + 12 + 24 + \\dots\\)\\nAlso state the formula for the general sum \\(S_n\\).",
+    "question": "Find the sum of the first \\(10\\) terms of the geometric series starting with:\n\\(3 + 6 + 12 + 24 + \\dots\\)\nAlso state the formula for the general sum \\(S_n\\).",
     "options": [
       {
         "text": "\\(3069\\)",
@@ -2627,7 +2627,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Determine the first term a and the common ratio r by dividing consecutive terms.",
-        "workingOut": "\\(a = 3\\)\\n\\(r = \\frac{6}{3} = 2\\)",
+        "workingOut": "\\(a = 3\\)\n\\(r = \\frac{6}{3} = 2\\)",
         "graphData": null
       },
       {
@@ -2637,7 +2637,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Simplify the expression to find the numerical sum and write the general formula.",
-        "workingOut": "\\(S_{10} = 3069\\)\\n\\(S_n = \\frac{3(1 - 2^n)}{-1}\\)",
+        "workingOut": "\\(S_{10} = 3069\\)\n\\(S_n = \\frac{3(1 - 2^n)}{-1}\\)",
         "graphData": null
       }
     ],
@@ -2650,7 +2650,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Find the sum of the first \\(5\\) terms of the geometric series starting with:\\n\\(6 + 18 + 54 + 162 + \\dots\\)\\nAlso state the formula for the general sum \\(S_n\\).",
+    "question": "Find the sum of the first \\(5\\) terms of the geometric series starting with:\n\\(6 + 18 + 54 + 162 + \\dots\\)\nAlso state the formula for the general sum \\(S_n\\).",
     "options": [
       {
         "text": "\\(726\\)",
@@ -2676,7 +2676,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Determine the first term a and the common ratio r by dividing consecutive terms.",
-        "workingOut": "\\(a = 6\\)\\n\\(r = \\frac{18}{6} = 3\\)",
+        "workingOut": "\\(a = 6\\)\n\\(r = \\frac{18}{6} = 3\\)",
         "graphData": null
       },
       {
@@ -2686,7 +2686,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Simplify the expression to find the numerical sum and write the general formula.",
-        "workingOut": "\\(S_{5} = 726\\)\\n\\(S_n = \\frac{6(1 - 3^n)}{-2}\\)",
+        "workingOut": "\\(S_{5} = 726\\)\n\\(S_n = \\frac{6(1 - 3^n)}{-2}\\)",
         "graphData": null
       }
     ],
@@ -2699,7 +2699,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Find the sum of the first \\(5\\) terms of the geometric series starting with:\\n\\(-3 + -30 + -300 + -3000 + \\dots\\)\\nAlso state the formula for the general sum \\(S_n\\).",
+    "question": "Find the sum of the first \\(5\\) terms of the geometric series starting with:\n\\(-3 + -30 + -300 + -3000 + \\dots\\)\nAlso state the formula for the general sum \\(S_n\\).",
     "options": [
       {
         "text": "\\(-33333\\)",
@@ -2725,7 +2725,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Determine the first term a and the common ratio r by dividing consecutive terms.",
-        "workingOut": "\\(a = -3\\)\\n\\(r = \\frac{-30}{-3} = 10\\)",
+        "workingOut": "\\(a = -3\\)\n\\(r = \\frac{-30}{-3} = 10\\)",
         "graphData": null
       },
       {
@@ -2735,7 +2735,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Simplify the expression to find the numerical sum and write the general formula.",
-        "workingOut": "\\(S_{5} = -33333\\)\\n\\(S_n = \\frac{-3(1 - 10^n)}{-9}\\)",
+        "workingOut": "\\(S_{5} = -33333\\)\n\\(S_n = \\frac{-3(1 - 10^n)}{-9}\\)",
         "graphData": null
       }
     ],
@@ -2748,7 +2748,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Find the sum of the first \\(5\\) terms of the geometric series starting with:\\n\\(-3 + -15 + -75 + -375 + \\dots\\)\\nAlso state the formula for the general sum \\(S_n\\).",
+    "question": "Find the sum of the first \\(5\\) terms of the geometric series starting with:\n\\(-3 + -15 + -75 + -375 + \\dots\\)\nAlso state the formula for the general sum \\(S_n\\).",
     "options": [
       {
         "text": "\\(-2340\\)",
@@ -2774,7 +2774,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Determine the first term a and the common ratio r by dividing consecutive terms.",
-        "workingOut": "\\(a = -3\\)\\n\\(r = \\frac{-15}{-3} = 5\\)",
+        "workingOut": "\\(a = -3\\)\n\\(r = \\frac{-15}{-3} = 5\\)",
         "graphData": null
       },
       {
@@ -2784,7 +2784,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Simplify the expression to find the numerical sum and write the general formula.",
-        "workingOut": "\\(S_{5} = -2343\\)\\n\\(S_n = \\frac{-3(1 - 5^n)}{-4}\\)",
+        "workingOut": "\\(S_{5} = -2343\\)\n\\(S_n = \\frac{-3(1 - 5^n)}{-4}\\)",
         "graphData": null
       }
     ],
@@ -2797,7 +2797,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Find the sum of the first \\(10\\) terms of the geometric series starting with:\\n\\(3 + -6 + 12 + -24 + \\dots\\)\\nAlso state the formula for the general sum \\(S_n\\).",
+    "question": "Find the sum of the first \\(10\\) terms of the geometric series starting with:\n\\(3 + -6 + 12 + -24 + \\dots\\)\nAlso state the formula for the general sum \\(S_n\\).",
     "options": [
       {
         "text": "\\(-1023\\)",
@@ -2823,7 +2823,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Determine the first term a and the common ratio r by dividing consecutive terms.",
-        "workingOut": "\\(a = 3\\)\\n\\(r = \\frac{-6}{3} = -2\\)",
+        "workingOut": "\\(a = 3\\)\n\\(r = \\frac{-6}{3} = -2\\)",
         "graphData": null
       },
       {
@@ -2833,7 +2833,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Simplify the expression to find the numerical sum and write the general formula.",
-        "workingOut": "\\(S_{10} = -1023\\)\\n\\(S_n = \\frac{3(1 - (-2)^n)}{3}\\)",
+        "workingOut": "\\(S_{10} = -1023\\)\n\\(S_n = \\frac{3(1 - (-2)^n)}{3}\\)",
         "graphData": null
       }
     ],
@@ -2846,7 +2846,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Find the sum of the first \\(5\\) terms of the geometric series starting with:\\n\\(6 + -18 + 54 + -162 + \\dots\\)\\nAlso state the formula for the general sum \\(S_n\\).",
+    "question": "Find the sum of the first \\(5\\) terms of the geometric series starting with:\n\\(6 + -18 + 54 + -162 + \\dots\\)\nAlso state the formula for the general sum \\(S_n\\).",
     "options": [
       {
         "text": "\\(329.4\\)",
@@ -2872,7 +2872,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Determine the first term a and the common ratio r by dividing consecutive terms.",
-        "workingOut": "\\(a = 6\\)\\n\\(r = \\frac{-18}{6} = -3\\)",
+        "workingOut": "\\(a = 6\\)\n\\(r = \\frac{-18}{6} = -3\\)",
         "graphData": null
       },
       {
@@ -2882,7 +2882,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Simplify the expression to find the numerical sum and write the general formula.",
-        "workingOut": "\\(S_{5} = 366\\)\\n\\(S_n = \\frac{6(1 - (-3)^n)}{4}\\)",
+        "workingOut": "\\(S_{5} = 366\\)\n\\(S_n = \\frac{6(1 - (-3)^n)}{4}\\)",
         "graphData": null
       }
     ],
@@ -2895,7 +2895,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Find the sum of the first \\(5\\) terms of the geometric series starting with:\\n\\(-3 + 30 + -300 + 3000 + \\dots\\)\\nAlso state the formula for the general sum \\(S_n\\).",
+    "question": "Find the sum of the first \\(5\\) terms of the geometric series starting with:\n\\(-3 + 30 + -300 + 3000 + \\dots\\)\nAlso state the formula for the general sum \\(S_n\\).",
     "options": [
       {
         "text": "\\(-24545.7\\)",
@@ -2921,7 +2921,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Determine the first term a and the common ratio r by dividing consecutive terms.",
-        "workingOut": "\\(a = -3\\)\\n\\(r = \\frac{30}{-3} = -10\\)",
+        "workingOut": "\\(a = -3\\)\n\\(r = \\frac{30}{-3} = -10\\)",
         "graphData": null
       },
       {
@@ -2931,7 +2931,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Simplify the expression to find the numerical sum and write the general formula.",
-        "workingOut": "\\(S_{5} = -27273\\)\\n\\(S_n = \\frac{-3(1 - (-10)^n)}{11}\\)",
+        "workingOut": "\\(S_{5} = -27273\\)\n\\(S_n = \\frac{-3(1 - (-10)^n)}{11}\\)",
         "graphData": null
       }
     ],
@@ -2944,7 +2944,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Find the sum of the first \\(5\\) terms of the geometric series starting with:\\n\\(-3 + 15 + -75 + 375 + \\dots\\)\\nAlso state the formula for the general sum \\(S_n\\).",
+    "question": "Find the sum of the first \\(5\\) terms of the geometric series starting with:\n\\(-3 + 15 + -75 + 375 + \\dots\\)\nAlso state the formula for the general sum \\(S_n\\).",
     "options": [
       {
         "text": "\\(-1560\\)",
@@ -2970,7 +2970,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Determine the first term a and the common ratio r by dividing consecutive terms.",
-        "workingOut": "\\(a = -3\\)\\n\\(r = \\frac{15}{-3} = -5\\)",
+        "workingOut": "\\(a = -3\\)\n\\(r = \\frac{15}{-3} = -5\\)",
         "graphData": null
       },
       {
@@ -2980,7 +2980,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Simplify the expression to find the numerical sum and write the general formula.",
-        "workingOut": "\\(S_{5} = -1563\\)\\n\\(S_n = \\frac{-3(1 - (-5)^n)}{6}\\)",
+        "workingOut": "\\(S_{5} = -1563\\)\n\\(S_n = \\frac{-3(1 - (-5)^n)}{6}\\)",
         "graphData": null
       }
     ],
@@ -2993,7 +2993,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the sum of the first \\(10\\) terms of the geometric series starting with:\\n\\(24 + 12 + 6 + 3 + \\dots\\)\\nAlso state the formula for the general sum \\(S_n\\).",
+    "question": "Find the sum of the first \\(10\\) terms of the geometric series starting with:\n\\(24 + 12 + 6 + 3 + \\dots\\)\nAlso state the formula for the general sum \\(S_n\\).",
     "options": [
       {
         "text": "\\(47.9531\\)",
@@ -3019,7 +3019,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Determine the first term a and the common ratio r by dividing consecutive terms.",
-        "workingOut": "\\(a = 24\\)\\n\\(r = \\frac{12}{24} = 0.5\\)",
+        "workingOut": "\\(a = 24\\)\n\\(r = \\frac{12}{24} = 0.5\\)",
         "graphData": null
       },
       {
@@ -3029,7 +3029,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Simplify the expression to find the numerical sum and write the general formula.",
-        "workingOut": "\\(S_{10} = 47.9531\\)\\n\\(S_n = \\frac{24(1 - 0.5^n)}{0.5}\\)",
+        "workingOut": "\\(S_{10} = 47.9531\\)\n\\(S_n = \\frac{24(1 - 0.5^n)}{0.5}\\)",
         "graphData": null
       }
     ],
@@ -3042,7 +3042,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the sum of the first \\(6\\) terms of the geometric series starting with:\\n\\(27 + 9 + 3 + 1 + \\dots\\)\\nAlso state the formula for the general sum \\(S_n\\).",
+    "question": "Find the sum of the first \\(6\\) terms of the geometric series starting with:\n\\(27 + 9 + 3 + 1 + \\dots\\)\nAlso state the formula for the general sum \\(S_n\\).",
     "options": [
       {
         "text": "\\(40.4444\\)",
@@ -3068,7 +3068,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Determine the first term a and the common ratio r by dividing consecutive terms.",
-        "workingOut": "\\(a = 27\\)\\n\\(r = \\frac{9}{27} = 0.3333333333333333\\)",
+        "workingOut": "\\(a = 27\\)\n\\(r = \\frac{9}{27} = 0.3333333333333333\\)",
         "graphData": null
       },
       {
@@ -3078,7 +3078,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Simplify the expression to find the numerical sum and write the general formula.",
-        "workingOut": "\\(S_{6} = 40.4444\\)\\n\\(S_n = \\frac{27(1 - 0.3333333333333333^n)}{0.6666666666666667}\\)",
+        "workingOut": "\\(S_{6} = 40.4444\\)\n\\(S_n = \\frac{27(1 - 0.3333333333333333^n)}{0.6666666666666667}\\)",
         "graphData": null
       }
     ],
@@ -3091,7 +3091,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the sum of the first \\(5\\) terms of the geometric series starting with:\\n\\(135 + 45 + 15 + 5 + \\dots\\)\\nAlso state the formula for the general sum \\(S_n\\).",
+    "question": "Find the sum of the first \\(5\\) terms of the geometric series starting with:\n\\(135 + 45 + 15 + 5 + \\dots\\)\nAlso state the formula for the general sum \\(S_n\\).",
     "options": [
       {
         "text": "\\(181.5\\)",
@@ -3117,7 +3117,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Determine the first term a and the common ratio r by dividing consecutive terms.",
-        "workingOut": "\\(a = 135\\)\\n\\(r = \\frac{45}{135} = 0.3333333333333333\\)",
+        "workingOut": "\\(a = 135\\)\n\\(r = \\frac{45}{135} = 0.3333333333333333\\)",
         "graphData": null
       },
       {
@@ -3127,7 +3127,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Simplify the expression to find the numerical sum and write the general formula.",
-        "workingOut": "\\(S_{5} = 201.6667\\)\\n\\(S_n = \\frac{135(1 - 0.3333333333333333^n)}{0.6666666666666667}\\)",
+        "workingOut": "\\(S_{5} = 201.6667\\)\n\\(S_n = \\frac{135(1 - 0.3333333333333333^n)}{0.6666666666666667}\\)",
         "graphData": null
       }
     ],
@@ -3140,7 +3140,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the sum of the first \\(10\\) terms of the geometric series starting with:\\n\\(24 + -12 + 6 + -3 + \\dots\\)\\nAlso state the formula for the general sum \\(S_n\\).",
+    "question": "Find the sum of the first \\(10\\) terms of the geometric series starting with:\n\\(24 + -12 + 6 + -3 + \\dots\\)\nAlso state the formula for the general sum \\(S_n\\).",
     "options": [
       {
         "text": "\\(17.5828\\)",
@@ -3166,7 +3166,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Determine the first term a and the common ratio r by dividing consecutive terms.",
-        "workingOut": "\\(a = 24\\)\\n\\(r = \\frac{-12}{24} = -0.5\\)",
+        "workingOut": "\\(a = 24\\)\n\\(r = \\frac{-12}{24} = -0.5\\)",
         "graphData": null
       },
       {
@@ -3176,7 +3176,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Simplify the expression to find the numerical sum and write the general formula.",
-        "workingOut": "\\(S_{10} = 15.9844\\)\\n\\(S_n = \\frac{24(1 - (-0.5)^n)}{1.5}\\)",
+        "workingOut": "\\(S_{10} = 15.9844\\)\n\\(S_n = \\frac{24(1 - (-0.5)^n)}{1.5}\\)",
         "graphData": null
       }
     ],
@@ -3999,7 +3999,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A chessboard has \\(64\\) squares. We place \\(1\\) grain of wheat on the first square, \\(2\\) on the second, \\(4\\) on the third, and so on.\\nIf \\(1\\) litre of wheat contains approximately \\(31000\\) grains, find the total volume of wheat on the chessboard in cubic kilometres (\\(1\\text{ km}^3 = 10^{12}\\text{ litres}\\)).",
+    "question": "A chessboard has \\(64\\) squares. We place \\(1\\) grain of wheat on the first square, \\(2\\) on the second, \\(4\\) on the third, and so on.\nIf \\(1\\) litre of wheat contains approximately \\(31000\\) grains, find the total volume of wheat on the chessboard in cubic kilometres (\\(1\\text{ km}^3 = 10^{12}\\text{ litres}\\)).",
     "options": [
       {
         "text": "\\(5.95e+3\\text{ km}^3\\)",
@@ -4048,7 +4048,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A chessboard has \\(64\\) squares. We place \\(1\\) grain of wheat on the first square, \\(2\\) on the second, \\(4\\) on the third, and so on.\\nIf \\(1\\) litre of wheat contains approximately \\(32000\\) grains, find the total volume of wheat on the chessboard in cubic kilometres (\\(1\\text{ km}^3 = 10^{12}\\text{ litres}\\)).",
+    "question": "A chessboard has \\(64\\) squares. We place \\(1\\) grain of wheat on the first square, \\(2\\) on the second, \\(4\\) on the third, and so on.\nIf \\(1\\) litre of wheat contains approximately \\(32000\\) grains, find the total volume of wheat on the chessboard in cubic kilometres (\\(1\\text{ km}^3 = 10^{12}\\text{ litres}\\)).",
     "options": [
       {
         "text": "\\(5.76e+3\\text{ km}^3\\)",
@@ -4097,7 +4097,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A chessboard has \\(64\\) squares. We place \\(1\\) grain of wheat on the first square, \\(2\\) on the second, \\(4\\) on the third, and so on.\\nIf \\(1\\) litre of wheat contains approximately \\(33000\\) grains, find the total volume of wheat on the chessboard in cubic kilometres (\\(1\\text{ km}^3 = 10^{12}\\text{ litres}\\)).",
+    "question": "A chessboard has \\(64\\) squares. We place \\(1\\) grain of wheat on the first square, \\(2\\) on the second, \\(4\\) on the third, and so on.\nIf \\(1\\) litre of wheat contains approximately \\(33000\\) grains, find the total volume of wheat on the chessboard in cubic kilometres (\\(1\\text{ km}^3 = 10^{12}\\text{ litres}\\)).",
     "options": [
       {
         "text": "\\(5.59e+2\\text{ km}^3\\)",
@@ -4146,7 +4146,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A chessboard has \\(64\\) squares. We place \\(1\\) grain of wheat on the first square, \\(2\\) on the second, \\(4\\) on the third, and so on.\\nIf \\(1\\) litre of wheat contains approximately \\(34000\\) grains, find the total volume of wheat on the chessboard in cubic kilometres (\\(1\\text{ km}^3 = 10^{12}\\text{ litres}\\)).",
+    "question": "A chessboard has \\(64\\) squares. We place \\(1\\) grain of wheat on the first square, \\(2\\) on the second, \\(4\\) on the third, and so on.\nIf \\(1\\) litre of wheat contains approximately \\(34000\\) grains, find the total volume of wheat on the chessboard in cubic kilometres (\\(1\\text{ km}^3 = 10^{12}\\text{ litres}\\)).",
     "options": [
       {
         "text": "\\(5.43e+1\\text{ km}^3\\)",
@@ -4195,7 +4195,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A chessboard has \\(64\\) squares. We place \\(1\\) grain of wheat on the first square, \\(2\\) on the second, \\(4\\) on the third, and so on.\\nIf \\(1\\) litre of wheat contains approximately \\(35000\\) grains, find the total volume of wheat on the chessboard in cubic kilometres (\\(1\\text{ km}^3 = 10^{12}\\text{ litres}\\)).",
+    "question": "A chessboard has \\(64\\) squares. We place \\(1\\) grain of wheat on the first square, \\(2\\) on the second, \\(4\\) on the third, and so on.\nIf \\(1\\) litre of wheat contains approximately \\(35000\\) grains, find the total volume of wheat on the chessboard in cubic kilometres (\\(1\\text{ km}^3 = 10^{12}\\text{ litres}\\)).",
     "options": [
       {
         "text": "\\(1.05e+3\\text{ km}^3\\)",
@@ -4244,7 +4244,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A chessboard has \\(64\\) squares. We place \\(1\\) grain of wheat on the first square, \\(2\\) on the second, \\(4\\) on the third, and so on.\\nIf \\(1\\) litre of wheat contains approximately \\(36000\\) grains, find the total volume of wheat on the chessboard in cubic kilometres (\\(1\\text{ km}^3 = 10^{12}\\text{ litres}\\)).",
+    "question": "A chessboard has \\(64\\) squares. We place \\(1\\) grain of wheat on the first square, \\(2\\) on the second, \\(4\\) on the third, and so on.\nIf \\(1\\) litre of wheat contains approximately \\(36000\\) grains, find the total volume of wheat on the chessboard in cubic kilometres (\\(1\\text{ km}^3 = 10^{12}\\text{ litres}\\)).",
     "options": [
       {
         "text": "\\(1.02e+3\\text{ km}^3\\)",
@@ -4293,7 +4293,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A chessboard has \\(64\\) squares. We place \\(1\\) grain of wheat on the first square, \\(2\\) on the second, \\(4\\) on the third, and so on.\\nIf \\(1\\) litre of wheat contains approximately \\(37000\\) grains, find the total volume of wheat on the chessboard in cubic kilometres (\\(1\\text{ km}^3 = 10^{12}\\text{ litres}\\)).",
+    "question": "A chessboard has \\(64\\) squares. We place \\(1\\) grain of wheat on the first square, \\(2\\) on the second, \\(4\\) on the third, and so on.\nIf \\(1\\) litre of wheat contains approximately \\(37000\\) grains, find the total volume of wheat on the chessboard in cubic kilometres (\\(1\\text{ km}^3 = 10^{12}\\text{ litres}\\)).",
     "options": [
       {
         "text": "\\(9.97e+2\\text{ km}^3\\)",
@@ -4342,7 +4342,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A chessboard has \\(64\\) squares. We place \\(1\\) grain of wheat on the first square, \\(2\\) on the second, \\(4\\) on the third, and so on.\\nIf \\(1\\) litre of wheat contains approximately \\(38000\\) grains, find the total volume of wheat on the chessboard in cubic kilometres (\\(1\\text{ km}^3 = 10^{12}\\text{ litres}\\)).",
+    "question": "A chessboard has \\(64\\) squares. We place \\(1\\) grain of wheat on the first square, \\(2\\) on the second, \\(4\\) on the third, and so on.\nIf \\(1\\) litre of wheat contains approximately \\(38000\\) grains, find the total volume of wheat on the chessboard in cubic kilometres (\\(1\\text{ km}^3 = 10^{12}\\text{ litres}\\)).",
     "options": [
       {
         "text": "\\(4.85e+3\\text{ km}^3\\)",
@@ -4391,7 +4391,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A chessboard has \\(64\\) squares. We place \\(1\\) grain of wheat on the first square, \\(2\\) on the second, \\(4\\) on the third, and so on.\\nIf \\(1\\) litre of wheat contains approximately \\(39000\\) grains, find the total volume of wheat on the chessboard in cubic kilometres (\\(1\\text{ km}^3 = 10^{12}\\text{ litres}\\)).",
+    "question": "A chessboard has \\(64\\) squares. We place \\(1\\) grain of wheat on the first square, \\(2\\) on the second, \\(4\\) on the third, and so on.\nIf \\(1\\) litre of wheat contains approximately \\(39000\\) grains, find the total volume of wheat on the chessboard in cubic kilometres (\\(1\\text{ km}^3 = 10^{12}\\text{ litres}\\)).",
     "options": [
       {
         "text": "\\(4.73e+2\\text{ km}^3\\)",
@@ -4440,7 +4440,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A chessboard has \\(64\\) squares. We place \\(1\\) grain of wheat on the first square, \\(2\\) on the second, \\(4\\) on the third, and so on.\\nIf \\(1\\) litre of wheat contains approximately \\(40000\\) grains, find the total volume of wheat on the chessboard in cubic kilometres (\\(1\\text{ km}^3 = 10^{12}\\text{ litres}\\)).",
+    "question": "A chessboard has \\(64\\) squares. We place \\(1\\) grain of wheat on the first square, \\(2\\) on the second, \\(4\\) on the third, and so on.\nIf \\(1\\) litre of wheat contains approximately \\(40000\\) grains, find the total volume of wheat on the chessboard in cubic kilometres (\\(1\\text{ km}^3 = 10^{12}\\text{ litres}\\)).",
     "options": [
       {
         "text": "\\(4.61e+3\\text{ km}^3\\)",
@@ -4489,7 +4489,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the sum of the first \\(10\\) terms of the geometric series:\\n\\(1 + 1\\sqrt{2} + 2 + \\dots\\)\\nExpress your answer with a rationalised denominator.",
+    "question": "Find the sum of the first \\(10\\) terms of the geometric series:\n\\(1 + 1\\sqrt{2} + 2 + \\dots\\)\nExpress your answer with a rationalised denominator.",
     "options": [
       {
         "text": "\\(32(\\sqrt{2} + 1)\\)",
@@ -4543,7 +4543,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the sum of the first \\(10\\) terms of the geometric series:\\n\\(2 + 2\\sqrt{2} + 4 + \\dots\\)\\nExpress your answer with a rationalised denominator.",
+    "question": "Find the sum of the first \\(10\\) terms of the geometric series:\n\\(2 + 2\\sqrt{2} + 4 + \\dots\\)\nExpress your answer with a rationalised denominator.",
     "options": [
       {
         "text": "\\(30(\\sqrt{2} + 1)\\)",
@@ -4597,7 +4597,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the sum of the first \\(10\\) terms of the geometric series:\\n\\(3 + 3\\sqrt{2} + 6 + \\dots\\)\\nExpress your answer with a rationalised denominator.",
+    "question": "Find the sum of the first \\(10\\) terms of the geometric series:\n\\(3 + 3\\sqrt{2} + 6 + \\dots\\)\nExpress your answer with a rationalised denominator.",
     "options": [
       {
         "text": "\\(45(\\sqrt{2} + 1)\\)",
@@ -4651,7 +4651,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the sum of the first \\(10\\) terms of the geometric series:\\n\\(4 + 4\\sqrt{2} + 8 + \\dots\\)\\nExpress your answer with a rationalised denominator.",
+    "question": "Find the sum of the first \\(10\\) terms of the geometric series:\n\\(4 + 4\\sqrt{2} + 8 + \\dots\\)\nExpress your answer with a rationalised denominator.",
     "options": [
       {
         "text": "\\(128(\\sqrt{2} + 1)\\)",
@@ -4705,7 +4705,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the sum of the first \\(10\\) terms of the geometric series:\\n\\(5 + 5\\sqrt{2} + 10 + \\dots\\)\\nExpress your answer with a rationalised denominator.",
+    "question": "Find the sum of the first \\(10\\) terms of the geometric series:\n\\(5 + 5\\sqrt{2} + 10 + \\dots\\)\nExpress your answer with a rationalised denominator.",
     "options": [
       {
         "text": "\\(155(\\sqrt{2} - 1)\\)",
@@ -4759,7 +4759,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the sum of the first \\(10\\) terms of the geometric series:\\n\\(6 + 6\\sqrt{2} + 12 + \\dots\\)\\nExpress your answer with a rationalised denominator.",
+    "question": "Find the sum of the first \\(10\\) terms of the geometric series:\n\\(6 + 6\\sqrt{2} + 12 + \\dots\\)\nExpress your answer with a rationalised denominator.",
     "options": [
       {
         "text": "\\(186(\\sqrt{2} + 1)\\)",
@@ -4813,7 +4813,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the sum of the first \\(10\\) terms of the geometric series:\\n\\(7 + 7\\sqrt{2} + 14 + \\dots\\)\\nExpress your answer with a rationalised denominator.",
+    "question": "Find the sum of the first \\(10\\) terms of the geometric series:\n\\(7 + 7\\sqrt{2} + 14 + \\dots\\)\nExpress your answer with a rationalised denominator.",
     "options": [
       {
         "text": "\\(224(\\sqrt{2} + 1)\\)",
@@ -4867,7 +4867,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the sum of the first \\(10\\) terms of the geometric series:\\n\\(8 + 8\\sqrt{2} + 16 + \\dots\\)\\nExpress your answer with a rationalised denominator.",
+    "question": "Find the sum of the first \\(10\\) terms of the geometric series:\n\\(8 + 8\\sqrt{2} + 16 + \\dots\\)\nExpress your answer with a rationalised denominator.",
     "options": [
       {
         "text": "\\(256(\\sqrt{2} + 1)\\)",
@@ -4921,7 +4921,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the sum of the first \\(10\\) terms of the geometric series:\\n\\(9 + 9\\sqrt{2} + 18 + \\dots\\)\\nExpress your answer with a rationalised denominator.",
+    "question": "Find the sum of the first \\(10\\) terms of the geometric series:\n\\(9 + 9\\sqrt{2} + 18 + \\dots\\)\nExpress your answer with a rationalised denominator.",
     "options": [
       {
         "text": "\\(279(\\sqrt{2} + 1)\\)",
@@ -4975,7 +4975,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the sum of the first \\(10\\) terms of the geometric series:\\n\\(10 + 10\\sqrt{2} + 20 + \\dots\\)\\nExpress your answer with a rationalised denominator.",
+    "question": "Find the sum of the first \\(10\\) terms of the geometric series:\n\\(10 + 10\\sqrt{2} + 20 + \\dots\\)\nExpress your answer with a rationalised denominator.",
     "options": [
       {
         "text": "\\(310(\\sqrt{2} + 1)\\)",
@@ -5029,7 +5029,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Evaluate the following sum expressed in sigma notation by first identifying \\(a\\) and \\(r\\):\\n\\(\\sum_{n=1}^{8} 3 \\times 2^n\\)",
+    "question": "Evaluate the following sum expressed in sigma notation by first identifying \\(a\\) and \\(r\\):\n\\(\\sum_{n=1}^{8} 3 \\times 2^n\\)",
     "options": [
       {
         "text": "\\(1530\\)",
@@ -5055,7 +5055,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write down the first three terms of the series.",
-        "workingOut": "\\(T_1 = 3 \\times 2^1 = 6\\)\\n\\(T_2 = 3 \\times 2^2 = 12\\)\\n\\(T_3 = 3 \\times 2^3 = 24\\)",
+        "workingOut": "\\(T_1 = 3 \\times 2^1 = 6\\)\n\\(T_2 = 3 \\times 2^2 = 12\\)\n\\(T_3 = 3 \\times 2^3 = 24\\)",
         "graphData": null
       },
       {
@@ -5078,7 +5078,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Evaluate the following sum expressed in sigma notation by first identifying \\(a\\) and \\(r\\):\\n\\(\\sum_{n=1}^{9} 4 \\times 2^n\\)",
+    "question": "Evaluate the following sum expressed in sigma notation by first identifying \\(a\\) and \\(r\\):\n\\(\\sum_{n=1}^{9} 4 \\times 2^n\\)",
     "options": [
       {
         "text": "\\(4088\\)",
@@ -5104,7 +5104,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write down the first three terms of the series.",
-        "workingOut": "\\(T_1 = 4 \\times 2^1 = 8\\)\\n\\(T_2 = 4 \\times 2^2 = 16\\)\\n\\(T_3 = 4 \\times 2^3 = 32\\)",
+        "workingOut": "\\(T_1 = 4 \\times 2^1 = 8\\)\n\\(T_2 = 4 \\times 2^2 = 16\\)\n\\(T_3 = 4 \\times 2^3 = 32\\)",
         "graphData": null
       },
       {
@@ -5127,7 +5127,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Evaluate the following sum expressed in sigma notation by first identifying \\(a\\) and \\(r\\):\\n\\(\\sum_{n=1}^{7} 2 \\times 2^n\\)",
+    "question": "Evaluate the following sum expressed in sigma notation by first identifying \\(a\\) and \\(r\\):\n\\(\\sum_{n=1}^{7} 2 \\times 2^n\\)",
     "options": [
       {
         "text": "\\(518\\)",
@@ -5153,7 +5153,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write down the first three terms of the series.",
-        "workingOut": "\\(T_1 = 2 \\times 2^1 = 4\\)\\n\\(T_2 = 2 \\times 2^2 = 8\\)\\n\\(T_3 = 2 \\times 2^3 = 16\\)",
+        "workingOut": "\\(T_1 = 2 \\times 2^1 = 4\\)\n\\(T_2 = 2 \\times 2^2 = 8\\)\n\\(T_3 = 2 \\times 2^3 = 16\\)",
         "graphData": null
       },
       {
@@ -5176,7 +5176,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Evaluate the following sum expressed in sigma notation by first identifying \\(a\\) and \\(r\\):\\n\\(\\sum_{n=1}^{8} 3 \\times 2^n\\)",
+    "question": "Evaluate the following sum expressed in sigma notation by first identifying \\(a\\) and \\(r\\):\n\\(\\sum_{n=1}^{8} 3 \\times 2^n\\)",
     "options": [
       {
         "text": "\\(1530\\)",
@@ -5202,7 +5202,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write down the first three terms of the series.",
-        "workingOut": "\\(T_1 = 3 \\times 2^1 = 6\\)\\n\\(T_2 = 3 \\times 2^2 = 12\\)\\n\\(T_3 = 3 \\times 2^3 = 24\\)",
+        "workingOut": "\\(T_1 = 3 \\times 2^1 = 6\\)\n\\(T_2 = 3 \\times 2^2 = 12\\)\n\\(T_3 = 3 \\times 2^3 = 24\\)",
         "graphData": null
       },
       {
@@ -5225,7 +5225,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Evaluate the following sum expressed in sigma notation by first identifying \\(a\\) and \\(r\\):\\n\\(\\sum_{n=1}^{9} 4 \\times 2^n\\)",
+    "question": "Evaluate the following sum expressed in sigma notation by first identifying \\(a\\) and \\(r\\):\n\\(\\sum_{n=1}^{9} 4 \\times 2^n\\)",
     "options": [
       {
         "text": "\\(4088\\)",
@@ -5251,7 +5251,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write down the first three terms of the series.",
-        "workingOut": "\\(T_1 = 4 \\times 2^1 = 8\\)\\n\\(T_2 = 4 \\times 2^2 = 16\\)\\n\\(T_3 = 4 \\times 2^3 = 32\\)",
+        "workingOut": "\\(T_1 = 4 \\times 2^1 = 8\\)\n\\(T_2 = 4 \\times 2^2 = 16\\)\n\\(T_3 = 4 \\times 2^3 = 32\\)",
         "graphData": null
       },
       {
@@ -5274,7 +5274,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Evaluate the following sum expressed in sigma notation by first identifying \\(a\\) and \\(r\\):\\n\\(\\sum_{n=1}^{7} 2 \\times 2^n\\)",
+    "question": "Evaluate the following sum expressed in sigma notation by first identifying \\(a\\) and \\(r\\):\n\\(\\sum_{n=1}^{7} 2 \\times 2^n\\)",
     "options": [
       {
         "text": "\\(518\\)",
@@ -5300,7 +5300,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write down the first three terms of the series.",
-        "workingOut": "\\(T_1 = 2 \\times 2^1 = 4\\)\\n\\(T_2 = 2 \\times 2^2 = 8\\)\\n\\(T_3 = 2 \\times 2^3 = 16\\)",
+        "workingOut": "\\(T_1 = 2 \\times 2^1 = 4\\)\n\\(T_2 = 2 \\times 2^2 = 8\\)\n\\(T_3 = 2 \\times 2^3 = 16\\)",
         "graphData": null
       },
       {
@@ -5323,7 +5323,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Evaluate the following sum expressed in sigma notation by first identifying \\(a\\) and \\(r\\):\\n\\(\\sum_{n=1}^{8} 3 \\times 2^n\\)",
+    "question": "Evaluate the following sum expressed in sigma notation by first identifying \\(a\\) and \\(r\\):\n\\(\\sum_{n=1}^{8} 3 \\times 2^n\\)",
     "options": [
       {
         "text": "\\(1540\\)",
@@ -5349,7 +5349,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write down the first three terms of the series.",
-        "workingOut": "\\(T_1 = 3 \\times 2^1 = 6\\)\\n\\(T_2 = 3 \\times 2^2 = 12\\)\\n\\(T_3 = 3 \\times 2^3 = 24\\)",
+        "workingOut": "\\(T_1 = 3 \\times 2^1 = 6\\)\n\\(T_2 = 3 \\times 2^2 = 12\\)\n\\(T_3 = 3 \\times 2^3 = 24\\)",
         "graphData": null
       },
       {
@@ -5372,7 +5372,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Evaluate the following sum expressed in sigma notation by first identifying \\(a\\) and \\(r\\):\\n\\(\\sum_{n=1}^{9} 4 \\times 2^n\\)",
+    "question": "Evaluate the following sum expressed in sigma notation by first identifying \\(a\\) and \\(r\\):\n\\(\\sum_{n=1}^{9} 4 \\times 2^n\\)",
     "options": [
       {
         "text": "\\(4098\\)",
@@ -5398,7 +5398,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write down the first three terms of the series.",
-        "workingOut": "\\(T_1 = 4 \\times 2^1 = 8\\)\\n\\(T_2 = 4 \\times 2^2 = 16\\)\\n\\(T_3 = 4 \\times 2^3 = 32\\)",
+        "workingOut": "\\(T_1 = 4 \\times 2^1 = 8\\)\n\\(T_2 = 4 \\times 2^2 = 16\\)\n\\(T_3 = 4 \\times 2^3 = 32\\)",
         "graphData": null
       },
       {
@@ -5421,7 +5421,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Evaluate the following sum expressed in sigma notation by first identifying \\(a\\) and \\(r\\):\\n\\(\\sum_{n=1}^{7} 2 \\times 2^n\\)",
+    "question": "Evaluate the following sum expressed in sigma notation by first identifying \\(a\\) and \\(r\\):\n\\(\\sum_{n=1}^{7} 2 \\times 2^n\\)",
     "options": [
       {
         "text": "\\(518\\)",
@@ -5447,7 +5447,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write down the first three terms of the series.",
-        "workingOut": "\\(T_1 = 2 \\times 2^1 = 4\\)\\n\\(T_2 = 2 \\times 2^2 = 8\\)\\n\\(T_3 = 2 \\times 2^3 = 16\\)",
+        "workingOut": "\\(T_1 = 2 \\times 2^1 = 4\\)\n\\(T_2 = 2 \\times 2^2 = 8\\)\n\\(T_3 = 2 \\times 2^3 = 16\\)",
         "graphData": null
       },
       {
@@ -5470,7 +5470,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Evaluate the following sum expressed in sigma notation by first identifying \\(a\\) and \\(r\\):\\n\\(\\sum_{n=1}^{8} 3 \\times 2^n\\)",
+    "question": "Evaluate the following sum expressed in sigma notation by first identifying \\(a\\) and \\(r\\):\n\\(\\sum_{n=1}^{8} 3 \\times 2^n\\)",
     "options": [
       {
         "text": "\\(1540\\)",
@@ -5496,7 +5496,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write down the first three terms of the series.",
-        "workingOut": "\\(T_1 = 3 \\times 2^1 = 6\\)\\n\\(T_2 = 3 \\times 2^2 = 12\\)\\n\\(T_3 = 3 \\times 2^3 = 24\\)",
+        "workingOut": "\\(T_1 = 3 \\times 2^1 = 6\\)\n\\(T_2 = 3 \\times 2^2 = 12\\)\n\\(T_3 = 3 \\times 2^3 = 24\\)",
         "graphData": null
       },
       {
@@ -5519,7 +5519,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Evaluate the following sum expressed in sigma notation by first identifying \\(a\\) and \\(r\\):\\n\\(\\sum_{n=1}^{9} 4 \\times 2^n\\)",
+    "question": "Evaluate the following sum expressed in sigma notation by first identifying \\(a\\) and \\(r\\):\n\\(\\sum_{n=1}^{9} 4 \\times 2^n\\)",
     "options": [
       {
         "text": "\\(4080\\)",
@@ -5545,7 +5545,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write down the first three terms of the series.",
-        "workingOut": "\\(T_1 = 4 \\times 2^1 = 8\\)\\n\\(T_2 = 4 \\times 2^2 = 16\\)\\n\\(T_3 = 4 \\times 2^3 = 32\\)",
+        "workingOut": "\\(T_1 = 4 \\times 2^1 = 8\\)\n\\(T_2 = 4 \\times 2^2 = 16\\)\n\\(T_3 = 4 \\times 2^3 = 32\\)",
         "graphData": null
       },
       {
@@ -5568,7 +5568,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Evaluate the following sum expressed in sigma notation by first identifying \\(a\\) and \\(r\\):\\n\\(\\sum_{n=1}^{7} 2 \\times 2^n\\)",
+    "question": "Evaluate the following sum expressed in sigma notation by first identifying \\(a\\) and \\(r\\):\n\\(\\sum_{n=1}^{7} 2 \\times 2^n\\)",
     "options": [
       {
         "text": "\\(508\\)",
@@ -5594,7 +5594,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write down the first three terms of the series.",
-        "workingOut": "\\(T_1 = 2 \\times 2^1 = 4\\)\\n\\(T_2 = 2 \\times 2^2 = 8\\)\\n\\(T_3 = 2 \\times 2^3 = 16\\)",
+        "workingOut": "\\(T_1 = 2 \\times 2^1 = 4\\)\n\\(T_2 = 2 \\times 2^2 = 8\\)\n\\(T_3 = 2 \\times 2^3 = 16\\)",
         "graphData": null
       },
       {
@@ -5617,7 +5617,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Evaluate the following sum expressed in sigma notation by first identifying \\(a\\) and \\(r\\):\\n\\(\\sum_{n=1}^{8} 3 \\times 2^n\\)",
+    "question": "Evaluate the following sum expressed in sigma notation by first identifying \\(a\\) and \\(r\\):\n\\(\\sum_{n=1}^{8} 3 \\times 2^n\\)",
     "options": [
       {
         "text": "\\(1540\\)",
@@ -5643,7 +5643,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write down the first three terms of the series.",
-        "workingOut": "\\(T_1 = 3 \\times 2^1 = 6\\)\\n\\(T_2 = 3 \\times 2^2 = 12\\)\\n\\(T_3 = 3 \\times 2^3 = 24\\)",
+        "workingOut": "\\(T_1 = 3 \\times 2^1 = 6\\)\n\\(T_2 = 3 \\times 2^2 = 12\\)\n\\(T_3 = 3 \\times 2^3 = 24\\)",
         "graphData": null
       },
       {
@@ -5666,7 +5666,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Evaluate the following sum expressed in sigma notation by first identifying \\(a\\) and \\(r\\):\\n\\(\\sum_{n=1}^{9} 4 \\times 2^n\\)",
+    "question": "Evaluate the following sum expressed in sigma notation by first identifying \\(a\\) and \\(r\\):\n\\(\\sum_{n=1}^{9} 4 \\times 2^n\\)",
     "options": [
       {
         "text": "\\(4088\\)",
@@ -5692,7 +5692,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write down the first three terms of the series.",
-        "workingOut": "\\(T_1 = 4 \\times 2^1 = 8\\)\\n\\(T_2 = 4 \\times 2^2 = 16\\)\\n\\(T_3 = 4 \\times 2^3 = 32\\)",
+        "workingOut": "\\(T_1 = 4 \\times 2^1 = 8\\)\n\\(T_2 = 4 \\times 2^2 = 16\\)\n\\(T_3 = 4 \\times 2^3 = 32\\)",
         "graphData": null
       },
       {
@@ -5715,7 +5715,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Evaluate the following sum expressed in sigma notation by first identifying \\(a\\) and \\(r\\):\\n\\(\\sum_{n=1}^{7} 2 \\times 2^n\\)",
+    "question": "Evaluate the following sum expressed in sigma notation by first identifying \\(a\\) and \\(r\\):\n\\(\\sum_{n=1}^{7} 2 \\times 2^n\\)",
     "options": [
       {
         "text": "\\(1016\\)",
@@ -5741,7 +5741,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write down the first three terms of the series.",
-        "workingOut": "\\(T_1 = 2 \\times 2^1 = 4\\)\\n\\(T_2 = 2 \\times 2^2 = 8\\)\\n\\(T_3 = 2 \\times 2^3 = 16\\)",
+        "workingOut": "\\(T_1 = 2 \\times 2^1 = 4\\)\n\\(T_2 = 2 \\times 2^2 = 8\\)\n\\(T_3 = 2 \\times 2^3 = 16\\)",
         "graphData": null
       },
       {
@@ -5764,7 +5764,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "The first term of a geometric progression is \\(-\\frac{3}{4}\\) and the fourth term is \\(6\\).\\nFind the sum of the first six terms.",
+    "question": "The first term of a geometric progression is \\(-\\frac{3}{4}\\) and the fourth term is \\(6\\).\nFind the sum of the first six terms.",
     "options": [
       {
         "text": "\\(17.75\\)",
@@ -5813,7 +5813,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "The second term of a geometric progression is \\(0.16\\) and the third term is \\(0.8\\).\\nFind the sum of the first eight terms.",
+    "question": "The second term of a geometric progression is \\(0.16\\) and the third term is \\(0.8\\).\nFind the sum of the first eight terms.",
     "options": [
       {
         "text": "\\(3437.4912\\)",
@@ -5862,7 +5862,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "The common ratio of a geometric progression is \\(2\\) and the sum of the first \\(8\\) terms is \\(1785\\).\\nFind the first term of the progression.",
+    "question": "The common ratio of a geometric progression is \\(2\\) and the sum of the first \\(8\\) terms is \\(1785\\).\nFind the first term of the progression.",
     "options": [
       {
         "text": "\\(14\\)",
@@ -5911,7 +5911,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "The common ratio of a geometric progression is \\(-\\frac{1}{2}\\) and the sum of the first \\(8\\) terms is \\(425\\).\\nFind the first term of the progression.",
+    "question": "The common ratio of a geometric progression is \\(-\\frac{1}{2}\\) and the sum of the first \\(8\\) terms is \\(425\\).\nFind the first term of the progression.",
     "options": [
       {
         "text": "\\(640\\)",
@@ -5960,7 +5960,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "The first term of a geometric progression is \\(0.25\\) and the fifth term is \\(20.25\\).\\nFind the sum of the first five terms.",
+    "question": "The first term of a geometric progression is \\(0.25\\) and the fifth term is \\(20.25\\).\nFind the sum of the first five terms.",
     "options": [
       {
         "text": "\\(90.75\\)",
@@ -5986,7 +5986,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "State the term formula for a GP and substitute the given values.",
-        "workingOut": "\\(T_5 = a r^4 = 20.25\\)\\n\\(a = 0.25\\)",
+        "workingOut": "\\(T_5 = a r^4 = 20.25\\)\n\\(a = 0.25\\)",
         "graphData": null
       },
       {
@@ -6009,7 +6009,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "The first term of a geometric progression is \\(-\\frac{3}{4}\\) and the fourth term is \\(6\\).\\nFind the sum of the first six terms.",
+    "question": "The first term of a geometric progression is \\(-\\frac{3}{4}\\) and the fourth term is \\(6\\).\nFind the sum of the first six terms.",
     "options": [
       {
         "text": "\\(14.75\\)",
@@ -6058,7 +6058,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "The second term of a geometric progression is \\(0.56\\) and the third term is \\(2.8000000000000003\\).\\nFind the sum of the first eight terms.",
+    "question": "The second term of a geometric progression is \\(0.56\\) and the third term is \\(2.8000000000000003\\).\nFind the sum of the first eight terms.",
     "options": [
       {
         "text": "\\(10937.472\\)",
@@ -6107,7 +6107,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "The common ratio of a geometric progression is \\(2\\) and the sum of the first \\(8\\) terms is \\(1785\\).\\nFind the first term of the progression.",
+    "question": "The common ratio of a geometric progression is \\(2\\) and the sum of the first \\(8\\) terms is \\(1785\\).\nFind the first term of the progression.",
     "options": [
       {
         "text": "\\(14\\)",
@@ -6156,7 +6156,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "The common ratio of a geometric progression is \\(-\\frac{1}{2}\\) and the sum of the first \\(8\\) terms is \\(425\\).\\nFind the first term of the progression.",
+    "question": "The common ratio of a geometric progression is \\(-\\frac{1}{2}\\) and the sum of the first \\(8\\) terms is \\(425\\).\nFind the first term of the progression.",
     "options": [
       {
         "text": "\\(640\\)",
@@ -6205,7 +6205,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "The first term of a geometric progression is \\(0.3333333333333333\\) and the fifth term is \\(27\\).\\nFind the sum of the first five terms.",
+    "question": "The first term of a geometric progression is \\(0.3333333333333333\\) and the fifth term is \\(27\\).\nFind the sum of the first five terms.",
     "options": [
       {
         "text": "\\(50.33333333333333\\)",
@@ -6231,7 +6231,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "State the term formula for a GP and substitute the given values.",
-        "workingOut": "\\(T_5 = a r^4 = 27\\)\\n\\(a = 0.3333333333333333\\)",
+        "workingOut": "\\(T_5 = a r^4 = 27\\)\n\\(a = 0.3333333333333333\\)",
         "graphData": null
       },
       {
@@ -6254,7 +6254,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "The first term of a geometric progression is \\(-\\frac{3}{4}\\) and the fourth term is \\(6\\).\\nFind the sum of the first six terms.",
+    "question": "The first term of a geometric progression is \\(-\\frac{3}{4}\\) and the fourth term is \\(6\\).\nFind the sum of the first six terms.",
     "options": [
       {
         "text": "\\(15.75\\)",
@@ -6303,7 +6303,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "The second term of a geometric progression is \\(0.96\\) and the third term is \\(4.800000000000001\\).\\nFind the sum of the first eight terms.",
+    "question": "The second term of a geometric progression is \\(0.96\\) and the third term is \\(4.800000000000001\\).\nFind the sum of the first eight terms.",
     "options": [
       {
         "text": "\\(16874.9568\\)",
@@ -6352,7 +6352,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "The common ratio of a geometric progression is \\(2\\) and the sum of the first \\(8\\) terms is \\(1785\\).\\nFind the first term of the progression.",
+    "question": "The common ratio of a geometric progression is \\(2\\) and the sum of the first \\(8\\) terms is \\(1785\\).\nFind the first term of the progression.",
     "options": [
       {
         "text": "\\(6\\)",
@@ -6401,7 +6401,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "The common ratio of a geometric progression is \\(-\\frac{1}{2}\\) and the sum of the first \\(8\\) terms is \\(425\\).\\nFind the first term of the progression.",
+    "question": "The common ratio of a geometric progression is \\(-\\frac{1}{2}\\) and the sum of the first \\(8\\) terms is \\(425\\).\nFind the first term of the progression.",
     "options": [
       {
         "text": "\\(540\\)",
@@ -6450,7 +6450,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "The first term of a geometric progression is \\(0.5\\) and the fifth term is \\(40.5\\).\\nFind the sum of the first five terms.",
+    "question": "The first term of a geometric progression is \\(0.5\\) and the fifth term is \\(40.5\\).\nFind the sum of the first five terms.",
     "options": [
       {
         "text": "\\(70.5\\)",
@@ -6476,7 +6476,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "State the term formula for a GP and substitute the given values.",
-        "workingOut": "\\(T_5 = a r^4 = 40.5\\)\\n\\(a = 0.5\\)",
+        "workingOut": "\\(T_5 = a r^4 = 40.5\\)\n\\(a = 0.5\\)",
         "graphData": null
       },
       {
@@ -6499,7 +6499,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "The first term of a geometric progression is \\(-\\frac{3}{4}\\) and the fourth term is \\(6\\).\\nFind the sum of the first six terms.",
+    "question": "The first term of a geometric progression is \\(-\\frac{3}{4}\\) and the fourth term is \\(6\\).\nFind the sum of the first six terms.",
     "options": [
       {
         "text": "\\(7.875\\)",
@@ -6548,7 +6548,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "The second term of a geometric progression is \\(1.36\\) and the third term is \\(6.800000000000001\\).\\nFind the sum of the first eight terms.",
+    "question": "The second term of a geometric progression is \\(1.36\\) and the third term is \\(6.800000000000001\\).\nFind the sum of the first eight terms.",
     "options": [
       {
         "text": "\\(26562.16\\)",
@@ -6597,7 +6597,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "The common ratio of a geometric progression is \\(2\\) and the sum of the first \\(8\\) terms is \\(1785\\).\\nFind the first term of the progression.",
+    "question": "The common ratio of a geometric progression is \\(2\\) and the sum of the first \\(8\\) terms is \\(1785\\).\nFind the first term of the progression.",
     "options": [
       {
         "text": "\\(9\\)",
@@ -6646,7 +6646,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "The common ratio of a geometric progression is \\(-\\frac{1}{2}\\) and the sum of the first \\(8\\) terms is \\(425\\).\\nFind the first term of the progression.",
+    "question": "The common ratio of a geometric progression is \\(-\\frac{1}{2}\\) and the sum of the first \\(8\\) terms is \\(425\\).\nFind the first term of the progression.",
     "options": [
       {
         "text": "\\(640\\)",
@@ -6695,7 +6695,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "The first term of a geometric progression is \\(0.25\\) and the fifth term is \\(20.25\\).\\nFind the sum of the first five terms.",
+    "question": "The first term of a geometric progression is \\(0.25\\) and the fifth term is \\(20.25\\).\nFind the sum of the first five terms.",
     "options": [
       {
         "text": "\\(30.25\\)",
@@ -6721,7 +6721,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "State the term formula for a GP and substitute the given values.",
-        "workingOut": "\\(T_5 = a r^4 = 20.25\\)\\n\\(a = 0.25\\)",
+        "workingOut": "\\(T_5 = a r^4 = 20.25\\)\n\\(a = 0.25\\)",
         "graphData": null
       },
       {
@@ -6744,7 +6744,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "The first term of a geometric progression is \\(-\\frac{3}{4}\\) and the fourth term is \\(6\\).\\nFind the sum of the first six terms.",
+    "question": "The first term of a geometric progression is \\(-\\frac{3}{4}\\) and the fourth term is \\(6\\).\nFind the sum of the first six terms.",
     "options": [
       {
         "text": "\\(7.875\\)",
@@ -6793,7 +6793,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "The second term of a geometric progression is \\(1.76\\) and the third term is \\(8.8\\).\\nFind the sum of the first eight terms.",
+    "question": "The second term of a geometric progression is \\(1.76\\) and the third term is \\(8.8\\).\nFind the sum of the first eight terms.",
     "options": [
       {
         "text": "\\(30937.4208\\)",
@@ -6842,7 +6842,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "The common ratio of a geometric progression is \\(2\\) and the sum of the first \\(8\\) terms is \\(1785\\).\\nFind the first term of the progression.",
+    "question": "The common ratio of a geometric progression is \\(2\\) and the sum of the first \\(8\\) terms is \\(1785\\).\nFind the first term of the progression.",
     "options": [
       {
         "text": "\\(14\\)",
@@ -6891,7 +6891,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "The common ratio of a geometric progression is \\(-\\frac{1}{2}\\) and the sum of the first \\(8\\) terms is \\(425\\).\\nFind the first term of the progression.",
+    "question": "The common ratio of a geometric progression is \\(-\\frac{1}{2}\\) and the sum of the first \\(8\\) terms is \\(425\\).\nFind the first term of the progression.",
     "options": [
       {
         "text": "\\(320\\)",
@@ -6940,7 +6940,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "The first term of a geometric progression is \\(0.3333333333333333\\) and the fifth term is \\(27\\).\\nFind the sum of the first five terms.",
+    "question": "The first term of a geometric progression is \\(0.3333333333333333\\) and the fifth term is \\(27\\).\nFind the sum of the first five terms.",
     "options": [
       {
         "text": "\\(40.33333333333333\\)",
@@ -6966,7 +6966,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "State the term formula for a GP and substitute the given values.",
-        "workingOut": "\\(T_5 = a r^4 = 27\\)\\n\\(a = 0.3333333333333333\\)",
+        "workingOut": "\\(T_5 = a r^4 = 27\\)\n\\(a = 0.3333333333333333\\)",
         "graphData": null
       },
       {
@@ -7087,7 +7087,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Each year when a sunflower paddock is weeded, only half the previous weight of weed is dug out. In the first year, \\(6\\) tonnes of weed is dug out.\\nFind the total weight of weeds dug out over \\(10\\) years (correct to four significant figures).",
+    "question": "Each year when a sunflower paddock is weeded, only half the previous weight of weed is dug out. In the first year, \\(6\\) tonnes of weed is dug out.\nFind the total weight of weeds dug out over \\(10\\) years (correct to four significant figures).",
     "options": [
       {
         "text": "\\(11.99\\text{ tonnes}\\)",
@@ -7234,7 +7234,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Each year when a sunflower paddock is weeded, only half the previous weight of weed is dug out. In the first year, \\(6\\) tonnes of weed is dug out.\\nFind the total weight of weeds dug out over \\(10\\) years (correct to four significant figures).",
+    "question": "Each year when a sunflower paddock is weeded, only half the previous weight of weed is dug out. In the first year, \\(6\\) tonnes of weed is dug out.\nFind the total weight of weeds dug out over \\(10\\) years (correct to four significant figures).",
     "options": [
       {
         "text": "\\(9.988\\text{ tonnes}\\)",
@@ -7381,7 +7381,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Each year when a sunflower paddock is weeded, only half the previous weight of weed is dug out. In the first year, \\(6\\) tonnes of weed is dug out.\\nFind the total weight of weeds dug out over \\(10\\) years (correct to four significant figures).",
+    "question": "Each year when a sunflower paddock is weeded, only half the previous weight of weed is dug out. In the first year, \\(6\\) tonnes of weed is dug out.\nFind the total weight of weeds dug out over \\(10\\) years (correct to four significant figures).",
     "options": [
       {
         "text": "\\(12.59\\text{ tonnes}\\)",
@@ -7528,7 +7528,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Each year when a sunflower paddock is weeded, only half the previous weight of weed is dug out. In the first year, \\(6\\) tonnes of weed is dug out.\\nFind the total weight of weeds dug out over \\(10\\) years (correct to four significant figures).",
+    "question": "Each year when a sunflower paddock is weeded, only half the previous weight of weed is dug out. In the first year, \\(6\\) tonnes of weed is dug out.\nFind the total weight of weeds dug out over \\(10\\) years (correct to four significant figures).",
     "options": [
       {
         "text": "\\(11.99\\text{ tonnes}\\)",
@@ -7675,7 +7675,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Each year when a sunflower paddock is weeded, only half the previous weight of weed is dug out. In the first year, \\(6\\) tonnes of weed is dug out.\\nFind the total weight of weeds dug out over \\(10\\) years (correct to four significant figures).",
+    "question": "Each year when a sunflower paddock is weeded, only half the previous weight of weed is dug out. In the first year, \\(6\\) tonnes of weed is dug out.\nFind the total weight of weeds dug out over \\(10\\) years (correct to four significant figures).",
     "options": [
       {
         "text": "\\(9.988\\text{ tonnes}\\)",
@@ -7724,7 +7724,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the number of terms \\(n\\) in the alternating geometric series:\\n\\(5 - 10 + 20 - \\dots\\)\\nIf the cumulative sum \\(S_n\\) is equal to \\(-425\\).",
+    "question": "Find the number of terms \\(n\\) in the alternating geometric series:\n\\(5 - 10 + 20 - \\dots\\)\nIf the cumulative sum \\(S_n\\) is equal to \\(-425\\).",
     "options": [
       {
         "text": "\\(7\\)",
@@ -7778,7 +7778,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the number of terms \\(n\\) in the geometric series:\\n\\(18 + 6 + 2 + \\dots\\)\\nIf the cumulative sum \\(S_n\\) is equal to \\(26\\frac{8}{9}\\).",
+    "question": "Find the number of terms \\(n\\) in the geometric series:\n\\(18 + 6 + 2 + \\dots\\)\nIf the cumulative sum \\(S_n\\) is equal to \\(26\\frac{8}{9}\\).",
     "options": [
       {
         "text": "\\(7\\)",
@@ -7832,7 +7832,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the number of terms \\(n\\) in the alternating series:\\n\\(48 - 24 + 12 - \\dots\\)\\nIf the cumulative sum \\(S_n\\) is equal to \\(32\\frac{1}{4}\\).",
+    "question": "Find the number of terms \\(n\\) in the alternating series:\n\\(48 - 24 + 12 - \\dots\\)\nIf the cumulative sum \\(S_n\\) is equal to \\(32\\frac{1}{4}\\).",
     "options": [
       {
         "text": "\\(6\\)",
@@ -7886,7 +7886,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the number of terms \\(n\\) in the geometric series:\\n\\(5 + 10 + 20 + \\dots\\)\\nIf the cumulative sum \\(S_n\\) is equal to \\(315\\).",
+    "question": "Find the number of terms \\(n\\) in the geometric series:\n\\(5 + 10 + 20 + \\dots\\)\nIf the cumulative sum \\(S_n\\) is equal to \\(315\\).",
     "options": [
       {
         "text": "\\(8\\)",
@@ -7935,7 +7935,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the number of terms \\(n\\) in the alternating geometric series:\\n\\(5 - 10 + 20 - \\dots\\)\\nIf the cumulative sum \\(S_n\\) is equal to \\(-425\\).",
+    "question": "Find the number of terms \\(n\\) in the alternating geometric series:\n\\(5 - 10 + 20 - \\dots\\)\nIf the cumulative sum \\(S_n\\) is equal to \\(-425\\).",
     "options": [
       {
         "text": "\\(9\\)",
@@ -7989,7 +7989,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the number of terms \\(n\\) in the geometric series:\\n\\(18 + 6 + 2 + \\dots\\)\\nIf the cumulative sum \\(S_n\\) is equal to \\(26\\frac{8}{9}\\).",
+    "question": "Find the number of terms \\(n\\) in the geometric series:\n\\(18 + 6 + 2 + \\dots\\)\nIf the cumulative sum \\(S_n\\) is equal to \\(26\\frac{8}{9}\\).",
     "options": [
       {
         "text": "\\(4\\)",
@@ -8043,7 +8043,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the number of terms \\(n\\) in the alternating series:\\n\\(48 - 24 + 12 - \\dots\\)\\nIf the cumulative sum \\(S_n\\) is equal to \\(32\\frac{1}{4}\\).",
+    "question": "Find the number of terms \\(n\\) in the alternating series:\n\\(48 - 24 + 12 - \\dots\\)\nIf the cumulative sum \\(S_n\\) is equal to \\(32\\frac{1}{4}\\).",
     "options": [
       {
         "text": "\\(7\\)",
@@ -8097,7 +8097,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the number of terms \\(n\\) in the geometric series:\\n\\(5 + 10 + 20 + \\dots\\)\\nIf the cumulative sum \\(S_n\\) is equal to \\(315\\).",
+    "question": "Find the number of terms \\(n\\) in the geometric series:\n\\(5 + 10 + 20 + \\dots\\)\nIf the cumulative sum \\(S_n\\) is equal to \\(315\\).",
     "options": [
       {
         "text": "\\(7\\)",
@@ -8146,7 +8146,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the number of terms \\(n\\) in the alternating geometric series:\\n\\(5 - 10 + 20 - \\dots\\)\\nIf the cumulative sum \\(S_n\\) is equal to \\(-425\\).",
+    "question": "Find the number of terms \\(n\\) in the alternating geometric series:\n\\(5 - 10 + 20 - \\dots\\)\nIf the cumulative sum \\(S_n\\) is equal to \\(-425\\).",
     "options": [
       {
         "text": "\\(10\\)",
@@ -8200,7 +8200,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the number of terms \\(n\\) in the geometric series:\\n\\(18 + 6 + 2 + \\dots\\)\\nIf the cumulative sum \\(S_n\\) is equal to \\(26\\frac{8}{9}\\).",
+    "question": "Find the number of terms \\(n\\) in the geometric series:\n\\(18 + 6 + 2 + \\dots\\)\nIf the cumulative sum \\(S_n\\) is equal to \\(26\\frac{8}{9}\\).",
     "options": [
       {
         "text": "\\(4\\)",
@@ -8254,7 +8254,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the number of terms \\(n\\) in the alternating series:\\n\\(48 - 24 + 12 - \\dots\\)\\nIf the cumulative sum \\(S_n\\) is equal to \\(32\\frac{1}{4}\\).",
+    "question": "Find the number of terms \\(n\\) in the alternating series:\n\\(48 - 24 + 12 - \\dots\\)\nIf the cumulative sum \\(S_n\\) is equal to \\(32\\frac{1}{4}\\).",
     "options": [
       {
         "text": "\\(8\\)",
@@ -8308,7 +8308,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the number of terms \\(n\\) in the geometric series:\\n\\(5 + 10 + 20 + \\dots\\)\\nIf the cumulative sum \\(S_n\\) is equal to \\(315\\).",
+    "question": "Find the number of terms \\(n\\) in the geometric series:\n\\(5 + 10 + 20 + \\dots\\)\nIf the cumulative sum \\(S_n\\) is equal to \\(315\\).",
     "options": [
       {
         "text": "\\(6\\)",
@@ -8357,7 +8357,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the number of terms \\(n\\) in the alternating geometric series:\\n\\(5 - 10 + 20 - \\dots\\)\\nIf the cumulative sum \\(S_n\\) is equal to \\(-425\\).",
+    "question": "Find the number of terms \\(n\\) in the alternating geometric series:\n\\(5 - 10 + 20 - \\dots\\)\nIf the cumulative sum \\(S_n\\) is equal to \\(-425\\).",
     "options": [
       {
         "text": "\\(10\\)",
@@ -8411,7 +8411,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the number of terms \\(n\\) in the geometric series:\\n\\(18 + 6 + 2 + \\dots\\)\\nIf the cumulative sum \\(S_n\\) is equal to \\(26\\frac{8}{9}\\).",
+    "question": "Find the number of terms \\(n\\) in the geometric series:\n\\(18 + 6 + 2 + \\dots\\)\nIf the cumulative sum \\(S_n\\) is equal to \\(26\\frac{8}{9}\\).",
     "options": [
       {
         "text": "\\(6\\)",
@@ -8465,7 +8465,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the number of terms \\(n\\) in the alternating series:\\n\\(48 - 24 + 12 - \\dots\\)\\nIf the cumulative sum \\(S_n\\) is equal to \\(32\\frac{1}{4}\\).",
+    "question": "Find the number of terms \\(n\\) in the alternating series:\n\\(48 - 24 + 12 - \\dots\\)\nIf the cumulative sum \\(S_n\\) is equal to \\(32\\frac{1}{4}\\).",
     "options": [
       {
         "text": "\\(7\\)",
@@ -8519,7 +8519,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the number of terms \\(n\\) in the geometric series:\\n\\(5 + 10 + 20 + \\dots\\)\\nIf the cumulative sum \\(S_n\\) is equal to \\(315\\).",
+    "question": "Find the number of terms \\(n\\) in the geometric series:\n\\(5 + 10 + 20 + \\dots\\)\nIf the cumulative sum \\(S_n\\) is equal to \\(315\\).",
     "options": [
       {
         "text": "\\(5\\)",
@@ -8568,7 +8568,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the number of terms \\(n\\) in the alternating geometric series:\\n\\(5 - 10 + 20 - \\dots\\)\\nIf the cumulative sum \\(S_n\\) is equal to \\(-425\\).",
+    "question": "Find the number of terms \\(n\\) in the alternating geometric series:\n\\(5 - 10 + 20 - \\dots\\)\nIf the cumulative sum \\(S_n\\) is equal to \\(-425\\).",
     "options": [
       {
         "text": "\\(8\\)",
@@ -8622,7 +8622,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the number of terms \\(n\\) in the geometric series:\\n\\(18 + 6 + 2 + \\dots\\)\\nIf the cumulative sum \\(S_n\\) is equal to \\(26\\frac{8}{9}\\).",
+    "question": "Find the number of terms \\(n\\) in the geometric series:\n\\(18 + 6 + 2 + \\dots\\)\nIf the cumulative sum \\(S_n\\) is equal to \\(26\\frac{8}{9}\\).",
     "options": [
       {
         "text": "\\(5\\)",
@@ -8676,7 +8676,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the number of terms \\(n\\) in the alternating series:\\n\\(48 - 24 + 12 - \\dots\\)\\nIf the cumulative sum \\(S_n\\) is equal to \\(32\\frac{1}{4}\\).",
+    "question": "Find the number of terms \\(n\\) in the alternating series:\n\\(48 - 24 + 12 - \\dots\\)\nIf the cumulative sum \\(S_n\\) is equal to \\(32\\frac{1}{4}\\).",
     "options": [
       {
         "text": "\\(6\\)",
@@ -8730,7 +8730,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the number of terms \\(n\\) in the geometric series:\\n\\(5 + 10 + 20 + \\dots\\)\\nIf the cumulative sum \\(S_n\\) is equal to \\(315\\).",
+    "question": "Find the number of terms \\(n\\) in the geometric series:\n\\(5 + 10 + 20 + \\dots\\)\nIf the cumulative sum \\(S_n\\) is equal to \\(315\\).",
     "options": [
       {
         "text": "\\(6\\)",
@@ -8815,7 +8815,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Apply logarithms to solve the exponential inequality.",
-        "workingOut": "\\(n - 1 < \\log_2(10000) \\approx 13.29\\)\\n\\(n - 1 \\leq 13 \\implies n \\leq 14\\)",
+        "workingOut": "\\(n - 1 < \\log_2(10000) \\approx 13.29\\)\n\\(n - 1 \\leq 13 \\implies n \\leq 14\\)",
         "graphData": null
       },
       {
@@ -8887,7 +8887,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Consider the geometric series \\(7 + 14 + 28 + \\dots\\).\\nDetermine the value of \\(n\\) for which the cumulative sum \\(S_n\\) is exactly equal to \\(1785\\).",
+    "question": "Consider the geometric series \\(7 + 14 + 28 + \\dots\\).\nDetermine the value of \\(n\\) for which the cumulative sum \\(S_n\\) is exactly equal to \\(1785\\).",
     "options": [
       {
         "text": "\\(7\\)",
@@ -8972,7 +8972,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Apply logarithms to solve the exponential inequality.",
-        "workingOut": "\\(n - 1 < \\log_2(10000) \\approx 13.29\\)\\n\\(n - 1 \\leq 13 \\implies n \\leq 14\\)",
+        "workingOut": "\\(n - 1 < \\log_2(10000) \\approx 13.29\\)\n\\(n - 1 \\leq 13 \\implies n \\leq 14\\)",
         "graphData": null
       },
       {
@@ -9044,7 +9044,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Consider the geometric series \\(7 + 14 + 28 + \\dots\\).\\nDetermine the value of \\(n\\) for which the cumulative sum \\(S_n\\) is exactly equal to \\(1785\\).",
+    "question": "Consider the geometric series \\(7 + 14 + 28 + \\dots\\).\nDetermine the value of \\(n\\) for which the cumulative sum \\(S_n\\) is exactly equal to \\(1785\\).",
     "options": [
       {
         "text": "\\(8\\)",
@@ -9129,7 +9129,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Apply logarithms to solve the exponential inequality.",
-        "workingOut": "\\(n - 1 < \\log_2(10000) \\approx 13.29\\)\\n\\(n - 1 \\leq 13 \\implies n \\leq 14\\)",
+        "workingOut": "\\(n - 1 < \\log_2(10000) \\approx 13.29\\)\n\\(n - 1 \\leq 13 \\implies n \\leq 14\\)",
         "graphData": null
       },
       {
@@ -9201,7 +9201,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Consider the geometric series \\(7 + 14 + 28 + \\dots\\).\\nDetermine the value of \\(n\\) for which the cumulative sum \\(S_n\\) is exactly equal to \\(1785\\).",
+    "question": "Consider the geometric series \\(7 + 14 + 28 + \\dots\\).\nDetermine the value of \\(n\\) for which the cumulative sum \\(S_n\\) is exactly equal to \\(1785\\).",
     "options": [
       {
         "text": "\\(9\\)",
@@ -9286,7 +9286,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Apply logarithms to solve the exponential inequality.",
-        "workingOut": "\\(n - 1 < \\log_2(10000) \\approx 13.29\\)\\n\\(n - 1 \\leq 13 \\implies n \\leq 14\\)",
+        "workingOut": "\\(n - 1 < \\log_2(10000) \\approx 13.29\\)\n\\(n - 1 \\leq 13 \\implies n \\leq 14\\)",
         "graphData": null
       },
       {
@@ -9358,7 +9358,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Consider the geometric series \\(7 + 14 + 28 + \\dots\\).\\nDetermine the value of \\(n\\) for which the cumulative sum \\(S_n\\) is exactly equal to \\(1785\\).",
+    "question": "Consider the geometric series \\(7 + 14 + 28 + \\dots\\).\nDetermine the value of \\(n\\) for which the cumulative sum \\(S_n\\) is exactly equal to \\(1785\\).",
     "options": [
       {
         "text": "\\(8\\)",
@@ -9443,7 +9443,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Apply logarithms to solve the exponential inequality.",
-        "workingOut": "\\(n - 1 < \\log_2(10000) \\approx 13.29\\)\\n\\(n - 1 \\leq 13 \\implies n \\leq 14\\)",
+        "workingOut": "\\(n - 1 < \\log_2(10000) \\approx 13.29\\)\n\\(n - 1 \\leq 13 \\implies n \\leq 14\\)",
         "graphData": null
       },
       {
@@ -9515,7 +9515,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Consider the geometric series \\(7 + 14 + 28 + \\dots\\).\\nDetermine the value of \\(n\\) for which the cumulative sum \\(S_n\\) is exactly equal to \\(1785\\).",
+    "question": "Consider the geometric series \\(7 + 14 + 28 + \\dots\\).\nDetermine the value of \\(n\\) for which the cumulative sum \\(S_n\\) is exactly equal to \\(1785\\).",
     "options": [
       {
         "text": "\\(8\\)",
@@ -9564,7 +9564,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In the performance calibration of a Aerospace cabin decompression, the cumulative cabin pressure drop factor is measured. The sum of the first \\(3\\) readings is \\(21\\) kPa, and the sum of the first \\(6\\) readings is \\(189\\) kPa.\\nAssuming the readings form a geometric progression with a positive common ratio, find the cumulative sum of the first \\(4\\) readings.",
+    "question": "In the performance calibration of a Aerospace cabin decompression, the cumulative cabin pressure drop factor is measured. The sum of the first \\(3\\) readings is \\(21\\) kPa, and the sum of the first \\(6\\) readings is \\(189\\) kPa.\nAssuming the readings form a geometric progression with a positive common ratio, find the cumulative sum of the first \\(4\\) readings.",
     "options": [
       {
         "text": "\\(55\\)",
@@ -9590,7 +9590,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "State the expressions for S_3 and S_6 using the GP sum formula.",
-        "workingOut": "\\(S_3 = \\frac{a(r^3 - 1)}{r - 1} = 21\\)\\n\\(S_6 = \\frac{a(r^6 - 1)}{r - 1} = 189\\)",
+        "workingOut": "\\(S_3 = \\frac{a(r^3 - 1)}{r - 1} = 21\\)\n\\(S_6 = \\frac{a(r^6 - 1)}{r - 1} = 189\\)",
         "graphData": null
       },
       {
@@ -9600,7 +9600,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Solve the resulting equation for the common ratio r, then substitute it back to determine the first term a.",
-        "workingOut": "\\(r^3 + 1 = 9 \\implies r^3 = 8 \\implies r = 2\\)\\n\\(\\frac{a(2^3 - 1)}{2 - 1} = 21 \\implies 7a = 21 \\implies a = 3\\)",
+        "workingOut": "\\(r^3 + 1 = 9 \\implies r^3 = 8 \\implies r = 2\\)\n\\(\\frac{a(2^3 - 1)}{2 - 1} = 21 \\implies 7a = 21 \\implies a = 3\\)",
         "graphData": null
       },
       {
@@ -9618,7 +9618,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a composite simulation of Deep-space communication link, the signal power attenuation rate is recorded sequentially. The readings alternate between two distinct geometric progressions:\\n\\(4,\\, 6,\\, 16,\\, 18,\\, 64,\\, 54,\\, \\dots\\)\\nFind the sum of the first \\(8\\) terms of this combined series.",
+    "question": "In a composite simulation of Deep-space communication link, the signal power attenuation rate is recorded sequentially. The readings alternate between two distinct geometric progressions:\n\\(4,\\, 6,\\, 16,\\, 18,\\, 64,\\, 54,\\, \\dots\\)\nFind the sum of the first \\(8\\) terms of this combined series.",
     "options": [
       {
         "text": "\\(522\\)",
@@ -9644,7 +9644,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify and separate the odd-positioned and even-positioned terms into two separate geometric series.",
-        "workingOut": "\\(\\text{Odd series: } 4 + 16 + 64 + \\dots \\implies a_1 = 4, r_1 = 4\\)\\n\\(\\text{Even series: } 6 + 18 + 54 + \\dots \\implies a_2 = 6, r_2 = 3\\)",
+        "workingOut": "\\(\\text{Odd series: } 4 + 16 + 64 + \\dots \\implies a_1 = 4, r_1 = 4\\)\n\\(\\text{Even series: } 6 + 18 + 54 + \\dots \\implies a_2 = 6, r_2 = 3\\)",
         "graphData": null
       },
       {
@@ -9672,7 +9672,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An optimization run of a Blockchain transaction queue yields daily processing latency multiplier increments. The daily gains form a geometric series with first term \\(6\\) ms and common ratio \\(3\\).\\nIf the cumulative gain over the run is exactly \\(726\\) ms, find the duration of the run \\(n\\) in days.",
+    "question": "An optimization run of a Blockchain transaction queue yields daily processing latency multiplier increments. The daily gains form a geometric series with first term \\(6\\) ms and common ratio \\(3\\).\nIf the cumulative gain over the run is exactly \\(726\\) ms, find the duration of the run \\(n\\) in days.",
     "options": [
       {
         "text": "\\(7\\)",
@@ -9726,7 +9726,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Evaluate the following exponential geometric series by first simplifying the logarithmic terms in the exponents:\\n\\(e^{1 \\ln(2)} + e^{2 \\ln(2)} + e^{3 \\ln(2)} + e^{4 \\ln(2)}\\)",
+    "question": "Evaluate the following exponential geometric series by first simplifying the logarithmic terms in the exponents:\n\\(e^{1 \\ln(2)} + e^{2 \\ln(2)} + e^{3 \\ln(2)} + e^{4 \\ln(2)}\\)",
     "options": [
       {
         "text": "\\(30\\)",
@@ -9752,7 +9752,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Simplify each term using the identity \\(e^{k \\ln(x)} = x^k\\) to rewrite the series in a simpler form.",
-        "workingOut": "\\(e^{1 \\ln(2)} = 2^1 = 2\\)\\n\\(e^{2 \\ln(2)} = 2^2 = 4\\)\\n\\(e^{4 \\ln(2)} = 2^4 = 16\\)",
+        "workingOut": "\\(e^{1 \\ln(2)} = 2^1 = 2\\)\n\\(e^{2 \\ln(2)} = 2^2 = 4\\)\n\\(e^{4 \\ln(2)} = 2^4 = 16\\)",
         "graphData": null
       },
       {
@@ -9775,7 +9775,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a simulation of Hydroelectric turbine efficiency, the friction energy loss factor is recorded. The measurements form a geometric series where the first value is \\(8\\) kW and the common ratio is \\(1.5\\).\\nFind the smallest number of intervals \\(n\\) required for the cumulative sum \\(S_n\\) to exceed \\(1250\\) kW.",
+    "question": "In a simulation of Hydroelectric turbine efficiency, the friction energy loss factor is recorded. The measurements form a geometric series where the first value is \\(8\\) kW and the common ratio is \\(1.5\\).\nFind the smallest number of intervals \\(n\\) required for the cumulative sum \\(S_n\\) to exceed \\(1250\\) kW.",
     "options": [
       {
         "text": "\\(10\\)",
@@ -9801,7 +9801,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Set up the geometric progression sum formula with the given parameters and write down the inequality.",
-        "workingOut": "\\(S_n = \\frac{a(r^n - 1)}{r - 1} > K\\)\\n\\(\\frac{8(1.5^n - 1)}{1.5 - 1} > 1250\\)",
+        "workingOut": "\\(S_n = \\frac{a(r^n - 1)}{r - 1} > K\\)\n\\(\\frac{8(1.5^n - 1)}{1.5 - 1} > 1250\\)",
         "graphData": null
       },
       {
@@ -9829,7 +9829,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In the performance calibration of a Geothermal energy depletion, the cumulative heat extraction rate decay is measured. The sum of the first \\(3\\) readings is \\(14\\) MW, and the sum of the first \\(6\\) readings is \\(126\\) MW.\\nAssuming the readings form a geometric progression with a positive common ratio, find the cumulative sum of the first \\(4\\) readings.",
+    "question": "In the performance calibration of a Geothermal energy depletion, the cumulative heat extraction rate decay is measured. The sum of the first \\(3\\) readings is \\(14\\) MW, and the sum of the first \\(6\\) readings is \\(126\\) MW.\nAssuming the readings form a geometric progression with a positive common ratio, find the cumulative sum of the first \\(4\\) readings.",
     "options": [
       {
         "text": "\\(60\\)",
@@ -9855,7 +9855,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "State the expressions for S_3 and S_6 using the GP sum formula.",
-        "workingOut": "\\(S_3 = \\frac{a(r^3 - 1)}{r - 1} = 14\\)\\n\\(S_6 = \\frac{a(r^6 - 1)}{r - 1} = 126\\)",
+        "workingOut": "\\(S_3 = \\frac{a(r^3 - 1)}{r - 1} = 14\\)\n\\(S_6 = \\frac{a(r^6 - 1)}{r - 1} = 126\\)",
         "graphData": null
       },
       {
@@ -9865,7 +9865,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Solve the resulting equation for the common ratio r, then substitute it back to determine the first term a.",
-        "workingOut": "\\(r^3 + 1 = 9 \\implies r^3 = 8 \\implies r = 2\\)\\n\\(\\frac{a(2^3 - 1)}{2 - 1} = 14 \\implies 7a = 14 \\implies a = 2\\)",
+        "workingOut": "\\(r^3 + 1 = 9 \\implies r^3 = 8 \\implies r = 2\\)\n\\(\\frac{a(2^3 - 1)}{2 - 1} = 14 \\implies 7a = 14 \\implies a = 2\\)",
         "graphData": null
       },
       {
@@ -9883,7 +9883,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a composite simulation of Cybersecurity defense simulation, the intrusion detection latency growth is recorded sequentially. The readings alternate between two distinct geometric progressions:\\n\\(14,\\, 21,\\, 56,\\, 63,\\, 224,\\, 189,\\, \\dots\\)\\nFind the sum of the first \\(8\\) terms of this combined series.",
+    "question": "In a composite simulation of Cybersecurity defense simulation, the intrusion detection latency growth is recorded sequentially. The readings alternate between two distinct geometric progressions:\n\\(14,\\, 21,\\, 56,\\, 63,\\, 224,\\, 189,\\, \\dots\\)\nFind the sum of the first \\(8\\) terms of this combined series.",
     "options": [
       {
         "text": "\\(1827\\)",
@@ -9909,7 +9909,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify and separate the odd-positioned and even-positioned terms into two separate geometric series.",
-        "workingOut": "\\(\\text{Odd series: } 14 + 56 + 224 + \\dots \\implies a_1 = 14, r_1 = 4\\)\\n\\(\\text{Even series: } 21 + 63 + 189 + \\dots \\implies a_2 = 21, r_2 = 3\\)",
+        "workingOut": "\\(\\text{Odd series: } 14 + 56 + 224 + \\dots \\implies a_1 = 14, r_1 = 4\\)\n\\(\\text{Even series: } 21 + 63 + 189 + \\dots \\implies a_2 = 21, r_2 = 3\\)",
         "graphData": null
       },
       {
@@ -9937,7 +9937,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An optimization run of a Silicon wafer photolithography yields daily nanometer lens distortion expansion increments. The daily gains form a geometric series with first term \\(16\\) nm and common ratio \\(3\\).\\nIf the cumulative gain over the run is exactly \\(1936\\) nm, find the duration of the run \\(n\\) in days.",
+    "question": "An optimization run of a Silicon wafer photolithography yields daily nanometer lens distortion expansion increments. The daily gains form a geometric series with first term \\(16\\) nm and common ratio \\(3\\).\nIf the cumulative gain over the run is exactly \\(1936\\) nm, find the duration of the run \\(n\\) in days.",
     "options": [
       {
         "text": "\\(7\\)",
@@ -9991,7 +9991,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Evaluate the following exponential geometric series by first simplifying the logarithmic terms in the exponents:\\n\\(e^{1 \\ln(3)} + e^{2 \\ln(3)} + e^{3 \\ln(3)}\\)",
+    "question": "Evaluate the following exponential geometric series by first simplifying the logarithmic terms in the exponents:\n\\(e^{1 \\ln(3)} + e^{2 \\ln(3)} + e^{3 \\ln(3)}\\)",
     "options": [
       {
         "text": "\\(49\\)",
@@ -10017,7 +10017,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Simplify each term using the identity \\(e^{k \\ln(x)} = x^k\\) to rewrite the series in a simpler form.",
-        "workingOut": "\\(e^{1 \\ln(3)} = 3^1 = 3\\)\\n\\(e^{2 \\ln(3)} = 3^2 = 9\\)\\n\\(e^{3 \\ln(3)} = 3^3 = 27\\)",
+        "workingOut": "\\(e^{1 \\ln(3)} = 3^1 = 3\\)\n\\(e^{2 \\ln(3)} = 3^2 = 9\\)\n\\(e^{3 \\ln(3)} = 3^3 = 27\\)",
         "graphData": null
       },
       {
@@ -10040,7 +10040,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a simulation of Nanomedicine cancer cell targeting, the molecular binding decay rate is recorded. The measurements form a geometric series where the first value is \\(8\\) mol/L and the common ratio is \\(1.5\\).\\nFind the smallest number of intervals \\(n\\) required for the cumulative sum \\(S_n\\) to exceed \\(1500\\) mol/L.",
+    "question": "In a simulation of Nanomedicine cancer cell targeting, the molecular binding decay rate is recorded. The measurements form a geometric series where the first value is \\(8\\) mol/L and the common ratio is \\(1.5\\).\nFind the smallest number of intervals \\(n\\) required for the cumulative sum \\(S_n\\) to exceed \\(1500\\) mol/L.",
     "options": [
       {
         "text": "\\(12\\)",
@@ -10066,7 +10066,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Set up the geometric progression sum formula with the given parameters and write down the inequality.",
-        "workingOut": "\\(S_n = \\frac{a(r^n - 1)}{r - 1} > K\\)\\n\\(\\frac{8(1.5^n - 1)}{1.5 - 1} > 1500\\)",
+        "workingOut": "\\(S_n = \\frac{a(r^n - 1)}{r - 1} > K\\)\n\\(\\frac{8(1.5^n - 1)}{1.5 - 1} > 1500\\)",
         "graphData": null
       },
       {
@@ -10094,7 +10094,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In the performance calibration of a Fusion reactor plasma confinement, the cumulative ion temperature decay rate is measured. The sum of the first \\(3\\) readings is \\(28\\) keV, and the sum of the first \\(6\\) readings is \\(252\\) keV.\\nAssuming the readings form a geometric progression with a positive common ratio, find the cumulative sum of the first \\(4\\) readings.",
+    "question": "In the performance calibration of a Fusion reactor plasma confinement, the cumulative ion temperature decay rate is measured. The sum of the first \\(3\\) readings is \\(28\\) keV, and the sum of the first \\(6\\) readings is \\(252\\) keV.\nAssuming the readings form a geometric progression with a positive common ratio, find the cumulative sum of the first \\(4\\) readings.",
     "options": [
       {
         "text": "\\(60\\)",
@@ -10120,7 +10120,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "State the expressions for S_3 and S_6 using the GP sum formula.",
-        "workingOut": "\\(S_3 = \\frac{a(r^3 - 1)}{r - 1} = 28\\)\\n\\(S_6 = \\frac{a(r^6 - 1)}{r - 1} = 252\\)",
+        "workingOut": "\\(S_3 = \\frac{a(r^3 - 1)}{r - 1} = 28\\)\n\\(S_6 = \\frac{a(r^6 - 1)}{r - 1} = 252\\)",
         "graphData": null
       },
       {
@@ -10130,7 +10130,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Solve the resulting equation for the common ratio r, then substitute it back to determine the first term a.",
-        "workingOut": "\\(r^3 + 1 = 9 \\implies r^3 = 8 \\implies r = 2\\)\\n\\(\\frac{a(2^3 - 1)}{2 - 1} = 28 \\implies 7a = 28 \\implies a = 4\\)",
+        "workingOut": "\\(r^3 + 1 = 9 \\implies r^3 = 8 \\implies r = 2\\)\n\\(\\frac{a(2^3 - 1)}{2 - 1} = 28 \\implies 7a = 28 \\implies a = 4\\)",
         "graphData": null
       },
       {
@@ -10148,7 +10148,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a composite simulation of Biopolymer chain polymerization, the reaction speed decrement factor is recorded sequentially. The readings alternate between two distinct geometric progressions:\\n\\(24,\\, 36,\\, 96,\\, 108,\\, 384,\\, 324,\\, \\dots\\)\\nFind the sum of the first \\(8\\) terms of this combined series.",
+    "question": "In a composite simulation of Biopolymer chain polymerization, the reaction speed decrement factor is recorded sequentially. The readings alternate between two distinct geometric progressions:\n\\(24,\\, 36,\\, 96,\\, 108,\\, 384,\\, 324,\\, \\dots\\)\nFind the sum of the first \\(8\\) terms of this combined series.",
     "options": [
       {
         "text": "\\(3480\\)",
@@ -10174,7 +10174,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify and separate the odd-positioned and even-positioned terms into two separate geometric series.",
-        "workingOut": "\\(\\text{Odd series: } 24 + 96 + 384 + \\dots \\implies a_1 = 24, r_1 = 4\\)\\n\\(\\text{Even series: } 36 + 108 + 324 + \\dots \\implies a_2 = 36, r_2 = 3\\)",
+        "workingOut": "\\(\\text{Odd series: } 24 + 96 + 384 + \\dots \\implies a_1 = 24, r_1 = 4\\)\n\\(\\text{Even series: } 36 + 108 + 324 + \\dots \\implies a_2 = 36, r_2 = 3\\)",
         "graphData": null
       },
       {
@@ -10202,7 +10202,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An optimization run of a Deep-ocean seismic activity monitoring yields daily hydroacoustic wave amplitude decay increments. The daily gains form a geometric series with first term \\(26\\) Pa and common ratio \\(3\\).\\nIf the cumulative gain over the run is exactly \\(3146\\) Pa, find the duration of the run \\(n\\) in days.",
+    "question": "An optimization run of a Deep-ocean seismic activity monitoring yields daily hydroacoustic wave amplitude decay increments. The daily gains form a geometric series with first term \\(26\\) Pa and common ratio \\(3\\).\nIf the cumulative gain over the run is exactly \\(3146\\) Pa, find the duration of the run \\(n\\) in days.",
     "options": [
       {
         "text": "\\(4\\)",
@@ -10256,7 +10256,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Evaluate the following exponential geometric series by first simplifying the logarithmic terms in the exponents:\\n\\(e^{1 \\ln(2)} + e^{2 \\ln(2)} + e^{3 \\ln(2)} + e^{4 \\ln(2)} + e^{5 \\ln(2)}\\)",
+    "question": "Evaluate the following exponential geometric series by first simplifying the logarithmic terms in the exponents:\n\\(e^{1 \\ln(2)} + e^{2 \\ln(2)} + e^{3 \\ln(2)} + e^{4 \\ln(2)} + e^{5 \\ln(2)}\\)",
     "options": [
       {
         "text": "\\(62\\)",
@@ -10282,7 +10282,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Simplify each term using the identity \\(e^{k \\ln(x)} = x^k\\) to rewrite the series in a simpler form.",
-        "workingOut": "\\(e^{1 \\ln(2)} = 2^1 = 2\\)\\n\\(e^{2 \\ln(2)} = 2^2 = 4\\)\\n\\(e^{5 \\ln(2)} = 2^5 = 32\\)",
+        "workingOut": "\\(e^{1 \\ln(2)} = 2^1 = 2\\)\n\\(e^{2 \\ln(2)} = 2^2 = 4\\)\n\\(e^{5 \\ln(2)} = 2^5 = 32\\)",
         "graphData": null
       },
       {
@@ -10305,7 +10305,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a simulation of Wind farm wake interference, the downwind kinetic energy depletion is recorded. The measurements form a geometric series where the first value is \\(8\\) m/s and the common ratio is \\(1.5\\).\\nFind the smallest number of intervals \\(n\\) required for the cumulative sum \\(S_n\\) to exceed \\(1750\\) m/s.",
+    "question": "In a simulation of Wind farm wake interference, the downwind kinetic energy depletion is recorded. The measurements form a geometric series where the first value is \\(8\\) m/s and the common ratio is \\(1.5\\).\nFind the smallest number of intervals \\(n\\) required for the cumulative sum \\(S_n\\) to exceed \\(1750\\) m/s.",
     "options": [
       {
         "text": "\\(12\\)",
@@ -10331,7 +10331,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Set up the geometric progression sum formula with the given parameters and write down the inequality.",
-        "workingOut": "\\(S_n = \\frac{a(r^n - 1)}{r - 1} > K\\)\\n\\(\\frac{8(1.5^n - 1)}{1.5 - 1} > 1750\\)",
+        "workingOut": "\\(S_n = \\frac{a(r^n - 1)}{r - 1} > K\\)\n\\(\\frac{8(1.5^n - 1)}{1.5 - 1} > 1750\\)",
         "graphData": null
       },
       {
@@ -10359,7 +10359,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In the performance calibration of a Deep neural network gradient scaling, the cumulative backpropagation weight decay is measured. The sum of the first \\(3\\) readings is \\(21\\) factor, and the sum of the first \\(6\\) readings is \\(189\\) factor.\\nAssuming the readings form a geometric progression with a positive common ratio, find the cumulative sum of the first \\(4\\) readings.",
+    "question": "In the performance calibration of a Deep neural network gradient scaling, the cumulative backpropagation weight decay is measured. The sum of the first \\(3\\) readings is \\(21\\) factor, and the sum of the first \\(6\\) readings is \\(189\\) factor.\nAssuming the readings form a geometric progression with a positive common ratio, find the cumulative sum of the first \\(4\\) readings.",
     "options": [
       {
         "text": "\\(45\\)",
@@ -10385,7 +10385,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "State the expressions for S_3 and S_6 using the GP sum formula.",
-        "workingOut": "\\(S_3 = \\frac{a(r^3 - 1)}{r - 1} = 21\\)\\n\\(S_6 = \\frac{a(r^6 - 1)}{r - 1} = 189\\)",
+        "workingOut": "\\(S_3 = \\frac{a(r^3 - 1)}{r - 1} = 21\\)\n\\(S_6 = \\frac{a(r^6 - 1)}{r - 1} = 189\\)",
         "graphData": null
       },
       {
@@ -10395,7 +10395,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Solve the resulting equation for the common ratio r, then substitute it back to determine the first term a.",
-        "workingOut": "\\(r^3 + 1 = 9 \\implies r^3 = 8 \\implies r = 2\\)\\n\\(\\frac{a(2^3 - 1)}{2 - 1} = 21 \\implies 7a = 21 \\implies a = 3\\)",
+        "workingOut": "\\(r^3 + 1 = 9 \\implies r^3 = 8 \\implies r = 2\\)\n\\(\\frac{a(2^3 - 1)}{2 - 1} = 21 \\implies 7a = 21 \\implies a = 3\\)",
         "graphData": null
       },
       {
@@ -10413,7 +10413,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a composite simulation of Optical fiber wavelength multiplexing, the crosstalk signal power scaling is recorded sequentially. The readings alternate between two distinct geometric progressions:\\n\\(34,\\, 51,\\, 136,\\, 153,\\, 544,\\, 459,\\, \\dots\\)\\nFind the sum of the first \\(8\\) terms of this combined series.",
+    "question": "In a composite simulation of Optical fiber wavelength multiplexing, the crosstalk signal power scaling is recorded sequentially. The readings alternate between two distinct geometric progressions:\n\\(34,\\, 51,\\, 136,\\, 153,\\, 544,\\, 459,\\, \\dots\\)\nFind the sum of the first \\(8\\) terms of this combined series.",
     "options": [
       {
         "text": "\\(4920\\)",
@@ -10439,7 +10439,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify and separate the odd-positioned and even-positioned terms into two separate geometric series.",
-        "workingOut": "\\(\\text{Odd series: } 34 + 136 + 544 + \\dots \\implies a_1 = 34, r_1 = 4\\)\\n\\(\\text{Even series: } 51 + 153 + 459 + \\dots \\implies a_2 = 51, r_2 = 3\\)",
+        "workingOut": "\\(\\text{Odd series: } 34 + 136 + 544 + \\dots \\implies a_1 = 34, r_1 = 4\\)\n\\(\\text{Even series: } 51 + 153 + 459 + \\dots \\implies a_2 = 51, r_2 = 3\\)",
         "graphData": null
       },
       {
@@ -10467,7 +10467,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An optimization run of a High-speed rail magnetic levitation yields daily magnetic flux decay over heat cycles increments. The daily gains form a geometric series with first term \\(36\\) mT and common ratio \\(3\\).\\nIf the cumulative gain over the run is exactly \\(4356\\) mT, find the duration of the run \\(n\\) in days.",
+    "question": "An optimization run of a High-speed rail magnetic levitation yields daily magnetic flux decay over heat cycles increments. The daily gains form a geometric series with first term \\(36\\) mT and common ratio \\(3\\).\nIf the cumulative gain over the run is exactly \\(4356\\) mT, find the duration of the run \\(n\\) in days.",
     "options": [
       {
         "text": "\\(7\\)",
@@ -10521,7 +10521,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Evaluate the following exponential geometric series by first simplifying the logarithmic terms in the exponents:\\n\\(e^{1 \\ln(3)} + e^{2 \\ln(3)} + e^{3 \\ln(3)} + e^{4 \\ln(3)}\\)",
+    "question": "Evaluate the following exponential geometric series by first simplifying the logarithmic terms in the exponents:\n\\(e^{1 \\ln(3)} + e^{2 \\ln(3)} + e^{3 \\ln(3)} + e^{4 \\ln(3)}\\)",
     "options": [
       {
         "text": "\\(120\\)",
@@ -10547,7 +10547,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Simplify each term using the identity \\(e^{k \\ln(x)} = x^k\\) to rewrite the series in a simpler form.",
-        "workingOut": "\\(e^{1 \\ln(3)} = 3^1 = 3\\)\\n\\(e^{2 \\ln(3)} = 3^2 = 9\\)\\n\\(e^{4 \\ln(3)} = 3^4 = 81\\)",
+        "workingOut": "\\(e^{1 \\ln(3)} = 3^1 = 3\\)\n\\(e^{2 \\ln(3)} = 3^2 = 9\\)\n\\(e^{4 \\ln(3)} = 3^4 = 81\\)",
         "graphData": null
       },
       {
@@ -10570,7 +10570,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a simulation of Photovoltaic cell thermal degradation, the electric current decay multiplier is recorded. The measurements form a geometric series where the first value is \\(8\\) A and the common ratio is \\(1.5\\).\\nFind the smallest number of intervals \\(n\\) required for the cumulative sum \\(S_n\\) to exceed \\(2000\\) A.",
+    "question": "In a simulation of Photovoltaic cell thermal degradation, the electric current decay multiplier is recorded. The measurements form a geometric series where the first value is \\(8\\) A and the common ratio is \\(1.5\\).\nFind the smallest number of intervals \\(n\\) required for the cumulative sum \\(S_n\\) to exceed \\(2000\\) A.",
     "options": [
       {
         "text": "\\(12\\)",
@@ -10596,7 +10596,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Set up the geometric progression sum formula with the given parameters and write down the inequality.",
-        "workingOut": "\\(S_n = \\frac{a(r^n - 1)}{r - 1} > K\\)\\n\\(\\frac{8(1.5^n - 1)}{1.5 - 1} > 2000\\)",
+        "workingOut": "\\(S_n = \\frac{a(r^n - 1)}{r - 1} > K\\)\n\\(\\frac{8(1.5^n - 1)}{1.5 - 1} > 2000\\)",
         "graphData": null
       },
       {
@@ -10624,7 +10624,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In the performance calibration of a Automated logistics warehouse conveyers, the cumulative sorting error probability scaling is measured. The sum of the first \\(3\\) readings is \\(14\\) errors/hour, and the sum of the first \\(6\\) readings is \\(126\\) errors/hour.\\nAssuming the readings form a geometric progression with a positive common ratio, find the cumulative sum of the first \\(4\\) readings.",
+    "question": "In the performance calibration of a Automated logistics warehouse conveyers, the cumulative sorting error probability scaling is measured. The sum of the first \\(3\\) readings is \\(14\\) errors/hour, and the sum of the first \\(6\\) readings is \\(126\\) errors/hour.\nAssuming the readings form a geometric progression with a positive common ratio, find the cumulative sum of the first \\(4\\) readings.",
     "options": [
       {
         "text": "\\(30\\)",
@@ -10650,7 +10650,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "State the expressions for S_3 and S_6 using the GP sum formula.",
-        "workingOut": "\\(S_3 = \\frac{a(r^3 - 1)}{r - 1} = 14\\)\\n\\(S_6 = \\frac{a(r^6 - 1)}{r - 1} = 126\\)",
+        "workingOut": "\\(S_3 = \\frac{a(r^3 - 1)}{r - 1} = 14\\)\n\\(S_6 = \\frac{a(r^6 - 1)}{r - 1} = 126\\)",
         "graphData": null
       },
       {
@@ -10660,7 +10660,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Solve the resulting equation for the common ratio r, then substitute it back to determine the first term a.",
-        "workingOut": "\\(r^3 + 1 = 9 \\implies r^3 = 8 \\implies r = 2\\)\\n\\(\\frac{a(2^3 - 1)}{2 - 1} = 14 \\implies 7a = 14 \\implies a = 2\\)",
+        "workingOut": "\\(r^3 + 1 = 9 \\implies r^3 = 8 \\implies r = 2\\)\n\\(\\frac{a(2^3 - 1)}{2 - 1} = 14 \\implies 7a = 14 \\implies a = 2\\)",
         "graphData": null
       },
       {
@@ -10678,7 +10678,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a composite simulation of Meteorological weather balloon telemetry, the sensor calibration drift factor is recorded sequentially. The readings alternate between two distinct geometric progressions:\\n\\(44,\\, 66,\\, 176,\\, 198,\\, 704,\\, 594,\\, \\dots\\)\\nFind the sum of the first \\(8\\) terms of this combined series.",
+    "question": "In a composite simulation of Meteorological weather balloon telemetry, the sensor calibration drift factor is recorded sequentially. The readings alternate between two distinct geometric progressions:\n\\(44,\\, 66,\\, 176,\\, 198,\\, 704,\\, 594,\\, \\dots\\)\nFind the sum of the first \\(8\\) terms of this combined series.",
     "options": [
       {
         "text": "\\(6380\\)",
@@ -10704,7 +10704,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify and separate the odd-positioned and even-positioned terms into two separate geometric series.",
-        "workingOut": "\\(\\text{Odd series: } 44 + 176 + 704 + \\dots \\implies a_1 = 44, r_1 = 4\\)\\n\\(\\text{Even series: } 66 + 198 + 594 + \\dots \\implies a_2 = 66, r_2 = 3\\)",
+        "workingOut": "\\(\\text{Odd series: } 44 + 176 + 704 + \\dots \\implies a_1 = 44, r_1 = 4\\)\n\\(\\text{Even series: } 66 + 198 + 594 + \\dots \\implies a_2 = 66, r_2 = 3\\)",
         "graphData": null
       },
       {
@@ -10732,7 +10732,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An optimization run of a Laser cavity modal drift yields daily frequency displacement factor increments. The daily gains form a geometric series with first term \\(46\\) MHz and common ratio \\(3\\).\\nIf the cumulative gain over the run is exactly \\(5566\\) MHz, find the duration of the run \\(n\\) in days.",
+    "question": "An optimization run of a Laser cavity modal drift yields daily frequency displacement factor increments. The daily gains form a geometric series with first term \\(46\\) MHz and common ratio \\(3\\).\nIf the cumulative gain over the run is exactly \\(5566\\) MHz, find the duration of the run \\(n\\) in days.",
     "options": [
       {
         "text": "\\(6\\)",
@@ -10786,7 +10786,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Evaluate the following exponential geometric series by first simplifying the logarithmic terms in the exponents:\\n\\(e^{1 \\ln(2)} + e^{2 \\ln(2)} + e^{3 \\ln(2)}\\)",
+    "question": "Evaluate the following exponential geometric series by first simplifying the logarithmic terms in the exponents:\n\\(e^{1 \\ln(2)} + e^{2 \\ln(2)} + e^{3 \\ln(2)}\\)",
     "options": [
       {
         "text": "\\(12\\)",
@@ -10812,7 +10812,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Simplify each term using the identity \\(e^{k \\ln(x)} = x^k\\) to rewrite the series in a simpler form.",
-        "workingOut": "\\(e^{1 \\ln(2)} = 2^1 = 2\\)\\n\\(e^{2 \\ln(2)} = 2^2 = 4\\)\\n\\(e^{3 \\ln(2)} = 2^3 = 8\\)",
+        "workingOut": "\\(e^{1 \\ln(2)} = 2^1 = 2\\)\n\\(e^{2 \\ln(2)} = 2^2 = 4\\)\n\\(e^{3 \\ln(2)} = 2^3 = 8\\)",
         "graphData": null
       },
       {
@@ -10835,7 +10835,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a simulation of Subsea acoustic telemetry transponder, the battery voltage decay coefficient is recorded. The measurements form a geometric series where the first value is \\(8\\) mV and the common ratio is \\(1.5\\).\\nFind the smallest number of intervals \\(n\\) required for the cumulative sum \\(S_n\\) to exceed \\(2250\\) mV.",
+    "question": "In a simulation of Subsea acoustic telemetry transponder, the battery voltage decay coefficient is recorded. The measurements form a geometric series where the first value is \\(8\\) mV and the common ratio is \\(1.5\\).\nFind the smallest number of intervals \\(n\\) required for the cumulative sum \\(S_n\\) to exceed \\(2250\\) mV.",
     "options": [
       {
         "text": "\\(14\\)",
@@ -10861,7 +10861,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Set up the geometric progression sum formula with the given parameters and write down the inequality.",
-        "workingOut": "\\(S_n = \\frac{a(r^n - 1)}{r - 1} > K\\)\\n\\(\\frac{8(1.5^n - 1)}{1.5 - 1} > 2250\\)",
+        "workingOut": "\\(S_n = \\frac{a(r^n - 1)}{r - 1} > K\\)\n\\(\\frac{8(1.5^n - 1)}{1.5 - 1} > 2250\\)",
         "graphData": null
       },
       {
@@ -10889,7 +10889,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In the performance calibration of a Micro-seismic fault slip displacement, the cumulative stress release energy decay is measured. The sum of the first \\(3\\) readings is \\(28\\) J, and the sum of the first \\(6\\) readings is \\(252\\) J.\\nAssuming the readings form a geometric progression with a positive common ratio, find the cumulative sum of the first \\(4\\) readings.",
+    "question": "In the performance calibration of a Micro-seismic fault slip displacement, the cumulative stress release energy decay is measured. The sum of the first \\(3\\) readings is \\(28\\) J, and the sum of the first \\(6\\) readings is \\(252\\) J.\nAssuming the readings form a geometric progression with a positive common ratio, find the cumulative sum of the first \\(4\\) readings.",
     "options": [
       {
         "text": "\\(60\\)",
@@ -10915,7 +10915,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "State the expressions for S_3 and S_6 using the GP sum formula.",
-        "workingOut": "\\(S_3 = \\frac{a(r^3 - 1)}{r - 1} = 28\\)\\n\\(S_6 = \\frac{a(r^6 - 1)}{r - 1} = 252\\)",
+        "workingOut": "\\(S_3 = \\frac{a(r^3 - 1)}{r - 1} = 28\\)\n\\(S_6 = \\frac{a(r^6 - 1)}{r - 1} = 252\\)",
         "graphData": null
       },
       {
@@ -10925,7 +10925,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Solve the resulting equation for the common ratio r, then substitute it back to determine the first term a.",
-        "workingOut": "\\(r^3 + 1 = 9 \\implies r^3 = 8 \\implies r = 2\\)\\n\\(\\frac{a(2^3 - 1)}{2 - 1} = 28 \\implies 7a = 28 \\implies a = 4\\)",
+        "workingOut": "\\(r^3 + 1 = 9 \\implies r^3 = 8 \\implies r = 2\\)\n\\(\\frac{a(2^3 - 1)}{2 - 1} = 28 \\implies 7a = 28 \\implies a = 4\\)",
         "graphData": null
       },
       {
@@ -10943,7 +10943,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a composite simulation of Aviation wing flutter simulation, the structural deflection damping ratio is recorded sequentially. The readings alternate between two distinct geometric progressions:\\n\\(54,\\, 81,\\, 216,\\, 243,\\, 864,\\, 729,\\, \\dots\\)\\nFind the sum of the first \\(8\\) terms of this combined series.",
+    "question": "In a composite simulation of Aviation wing flutter simulation, the structural deflection damping ratio is recorded sequentially. The readings alternate between two distinct geometric progressions:\n\\(54,\\, 81,\\, 216,\\, 243,\\, 864,\\, 729,\\, \\dots\\)\nFind the sum of the first \\(8\\) terms of this combined series.",
     "options": [
       {
         "text": "\\(7830\\)",
@@ -10969,7 +10969,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify and separate the odd-positioned and even-positioned terms into two separate geometric series.",
-        "workingOut": "\\(\\text{Odd series: } 54 + 216 + 864 + \\dots \\implies a_1 = 54, r_1 = 4\\)\\n\\(\\text{Even series: } 81 + 243 + 729 + \\dots \\implies a_2 = 81, r_2 = 3\\)",
+        "workingOut": "\\(\\text{Odd series: } 54 + 216 + 864 + \\dots \\implies a_1 = 54, r_1 = 4\\)\n\\(\\text{Even series: } 81 + 243 + 729 + \\dots \\implies a_2 = 81, r_2 = 3\\)",
         "graphData": null
       },
       {
@@ -10997,7 +10997,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An optimization run of a Reverse osmosis water filtration yields daily membrane permeation rate decline increments. The daily gains form a geometric series with first term \\(56\\) LMH and common ratio \\(3\\).\\nIf the cumulative gain over the run is exactly \\(6776\\) LMH, find the duration of the run \\(n\\) in days.",
+    "question": "An optimization run of a Reverse osmosis water filtration yields daily membrane permeation rate decline increments. The daily gains form a geometric series with first term \\(56\\) LMH and common ratio \\(3\\).\nIf the cumulative gain over the run is exactly \\(6776\\) LMH, find the duration of the run \\(n\\) in days.",
     "options": [
       {
         "text": "\\(7\\)",
@@ -11051,7 +11051,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Evaluate the following exponential geometric series by first simplifying the logarithmic terms in the exponents:\\n\\(e^{1 \\ln(3)} + e^{2 \\ln(3)} + e^{3 \\ln(3)} + e^{4 \\ln(3)} + e^{5 \\ln(3)}\\)",
+    "question": "Evaluate the following exponential geometric series by first simplifying the logarithmic terms in the exponents:\n\\(e^{1 \\ln(3)} + e^{2 \\ln(3)} + e^{3 \\ln(3)} + e^{4 \\ln(3)} + e^{5 \\ln(3)}\\)",
     "options": [
       {
         "text": "\\(373\\)",
@@ -11077,7 +11077,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Simplify each term using the identity \\(e^{k \\ln(x)} = x^k\\) to rewrite the series in a simpler form.",
-        "workingOut": "\\(e^{1 \\ln(3)} = 3^1 = 3\\)\\n\\(e^{2 \\ln(3)} = 3^2 = 9\\)\\n\\(e^{5 \\ln(3)} = 3^5 = 243\\)",
+        "workingOut": "\\(e^{1 \\ln(3)} = 3^1 = 3\\)\n\\(e^{2 \\ln(3)} = 3^2 = 9\\)\n\\(e^{5 \\ln(3)} = 3^5 = 243\\)",
         "graphData": null
       },
       {
@@ -11100,7 +11100,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a simulation of Smart electrical grid load balancing, the line power loss propagation factor is recorded. The measurements form a geometric series where the first value is \\(8\\) kW and the common ratio is \\(1.5\\).\\nFind the smallest number of intervals \\(n\\) required for the cumulative sum \\(S_n\\) to exceed \\(2500\\) kW.",
+    "question": "In a simulation of Smart electrical grid load balancing, the line power loss propagation factor is recorded. The measurements form a geometric series where the first value is \\(8\\) kW and the common ratio is \\(1.5\\).\nFind the smallest number of intervals \\(n\\) required for the cumulative sum \\(S_n\\) to exceed \\(2500\\) kW.",
     "options": [
       {
         "text": "\\(15\\)",
@@ -11126,7 +11126,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Set up the geometric progression sum formula with the given parameters and write down the inequality.",
-        "workingOut": "\\(S_n = \\frac{a(r^n - 1)}{r - 1} > K\\)\\n\\(\\frac{8(1.5^n - 1)}{1.5 - 1} > 2500\\)",
+        "workingOut": "\\(S_n = \\frac{a(r^n - 1)}{r - 1} > K\\)\n\\(\\frac{8(1.5^n - 1)}{1.5 - 1} > 2500\\)",
         "graphData": null
       },
       {
@@ -11154,7 +11154,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In the performance calibration of a Superconducting qubit coherence time, the cumulative phase relaxation rate scaling is measured. The sum of the first \\(3\\) readings is \\(21\\) µs, and the sum of the first \\(6\\) readings is \\(189\\) µs.\\nAssuming the readings form a geometric progression with a positive common ratio, find the cumulative sum of the first \\(4\\) readings.",
+    "question": "In the performance calibration of a Superconducting qubit coherence time, the cumulative phase relaxation rate scaling is measured. The sum of the first \\(3\\) readings is \\(21\\) µs, and the sum of the first \\(6\\) readings is \\(189\\) µs.\nAssuming the readings form a geometric progression with a positive common ratio, find the cumulative sum of the first \\(4\\) readings.",
     "options": [
       {
         "text": "\\(45\\)",
@@ -11180,7 +11180,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "State the expressions for S_3 and S_6 using the GP sum formula.",
-        "workingOut": "\\(S_3 = \\frac{a(r^3 - 1)}{r - 1} = 21\\)\\n\\(S_6 = \\frac{a(r^6 - 1)}{r - 1} = 189\\)",
+        "workingOut": "\\(S_3 = \\frac{a(r^3 - 1)}{r - 1} = 21\\)\n\\(S_6 = \\frac{a(r^6 - 1)}{r - 1} = 189\\)",
         "graphData": null
       },
       {
@@ -11190,7 +11190,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Solve the resulting equation for the common ratio r, then substitute it back to determine the first term a.",
-        "workingOut": "\\(r^3 + 1 = 9 \\implies r^3 = 8 \\implies r = 2\\)\\n\\(\\frac{a(2^3 - 1)}{2 - 1} = 21 \\implies 7a = 21 \\implies a = 3\\)",
+        "workingOut": "\\(r^3 + 1 = 9 \\implies r^3 = 8 \\implies r = 2\\)\n\\(\\frac{a(2^3 - 1)}{2 - 1} = 21 \\implies 7a = 21 \\implies a = 3\\)",
         "graphData": null
       },
       {
@@ -11208,7 +11208,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a composite simulation of Low Earth Orbit satellite drag, the orbital velocity decay multiplier is recorded sequentially. The readings alternate between two distinct geometric progressions:\\n\\(64,\\, 96,\\, 256,\\, 288,\\, 1024,\\, 864,\\, \\dots\\)\\nFind the sum of the first \\(8\\) terms of this combined series.",
+    "question": "In a composite simulation of Low Earth Orbit satellite drag, the orbital velocity decay multiplier is recorded sequentially. The readings alternate between two distinct geometric progressions:\n\\(64,\\, 96,\\, 256,\\, 288,\\, 1024,\\, 864,\\, \\dots\\)\nFind the sum of the first \\(8\\) terms of this combined series.",
     "options": [
       {
         "text": "\\(9270\\)",
@@ -11234,7 +11234,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify and separate the odd-positioned and even-positioned terms into two separate geometric series.",
-        "workingOut": "\\(\\text{Odd series: } 64 + 256 + 1024 + \\dots \\implies a_1 = 64, r_1 = 4\\)\\n\\(\\text{Even series: } 96 + 288 + 864 + \\dots \\implies a_2 = 96, r_2 = 3\\)",
+        "workingOut": "\\(\\text{Odd series: } 64 + 256 + 1024 + \\dots \\implies a_1 = 64, r_1 = 4\\)\n\\(\\text{Even series: } 96 + 288 + 864 + \\dots \\implies a_2 = 96, r_2 = 3\\)",
         "graphData": null
       },
       {
@@ -11262,7 +11262,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An optimization run of a Anechoic chamber acoustic insulation yields daily refraction noise level damping increments. The daily gains form a geometric series with first term \\(66\\) dB and common ratio \\(3\\).\\nIf the cumulative gain over the run is exactly \\(7986\\) dB, find the duration of the run \\(n\\) in days.",
+    "question": "An optimization run of a Anechoic chamber acoustic insulation yields daily refraction noise level damping increments. The daily gains form a geometric series with first term \\(66\\) dB and common ratio \\(3\\).\nIf the cumulative gain over the run is exactly \\(7986\\) dB, find the duration of the run \\(n\\) in days.",
     "options": [
       {
         "text": "\\(5\\)",
@@ -11316,7 +11316,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Evaluate the following exponential geometric series by first simplifying the logarithmic terms in the exponents:\\n\\(e^{1 \\ln(2)} + e^{2 \\ln(2)} + e^{3 \\ln(2)} + e^{4 \\ln(2)}\\)",
+    "question": "Evaluate the following exponential geometric series by first simplifying the logarithmic terms in the exponents:\n\\(e^{1 \\ln(2)} + e^{2 \\ln(2)} + e^{3 \\ln(2)} + e^{4 \\ln(2)}\\)",
     "options": [
       {
         "text": "\\(60\\)",
@@ -11342,7 +11342,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Simplify each term using the identity \\(e^{k \\ln(x)} = x^k\\) to rewrite the series in a simpler form.",
-        "workingOut": "\\(e^{1 \\ln(2)} = 2^1 = 2\\)\\n\\(e^{2 \\ln(2)} = 2^2 = 4\\)\\n\\(e^{4 \\ln(2)} = 2^4 = 16\\)",
+        "workingOut": "\\(e^{1 \\ln(2)} = 2^1 = 2\\)\n\\(e^{2 \\ln(2)} = 2^2 = 4\\)\n\\(e^{4 \\ln(2)} = 2^4 = 16\\)",
         "graphData": null
       },
       {
@@ -11365,7 +11365,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a simulation of Bacterial bio-film drug resistance, the cellular metabolic activity decay is recorded. The measurements form a geometric series where the first value is \\(8\\) % and the common ratio is \\(1.5\\).\\nFind the smallest number of intervals \\(n\\) required for the cumulative sum \\(S_n\\) to exceed \\(2750\\) %.",
+    "question": "In a simulation of Bacterial bio-film drug resistance, the cellular metabolic activity decay is recorded. The measurements form a geometric series where the first value is \\(8\\) % and the common ratio is \\(1.5\\).\nFind the smallest number of intervals \\(n\\) required for the cumulative sum \\(S_n\\) to exceed \\(2750\\) %.",
     "options": [
       {
         "text": "\\(14\\)",
@@ -11391,7 +11391,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Set up the geometric progression sum formula with the given parameters and write down the inequality.",
-        "workingOut": "\\(S_n = \\frac{a(r^n - 1)}{r - 1} > K\\)\\n\\(\\frac{8(1.5^n - 1)}{1.5 - 1} > 2750\\)",
+        "workingOut": "\\(S_n = \\frac{a(r^n - 1)}{r - 1} > K\\)\n\\(\\frac{8(1.5^n - 1)}{1.5 - 1} > 2750\\)",
         "graphData": null
       },
       {
@@ -11419,7 +11419,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In the performance calibration of a Geothermal heat exchange loop fluid, the cumulative viscosity expansion rate per cycle is measured. The sum of the first \\(3\\) readings is \\(14\\) cSt, and the sum of the first \\(6\\) readings is \\(126\\) cSt.\\nAssuming the readings form a geometric progression with a positive common ratio, find the cumulative sum of the first \\(4\\) readings.",
+    "question": "In the performance calibration of a Geothermal heat exchange loop fluid, the cumulative viscosity expansion rate per cycle is measured. The sum of the first \\(3\\) readings is \\(14\\) cSt, and the sum of the first \\(6\\) readings is \\(126\\) cSt.\nAssuming the readings form a geometric progression with a positive common ratio, find the cumulative sum of the first \\(4\\) readings.",
     "options": [
       {
         "text": "\\(30\\)",
@@ -11445,7 +11445,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "State the expressions for S_3 and S_6 using the GP sum formula.",
-        "workingOut": "\\(S_3 = \\frac{a(r^3 - 1)}{r - 1} = 14\\)\\n\\(S_6 = \\frac{a(r^6 - 1)}{r - 1} = 126\\)",
+        "workingOut": "\\(S_3 = \\frac{a(r^3 - 1)}{r - 1} = 14\\)\n\\(S_6 = \\frac{a(r^6 - 1)}{r - 1} = 126\\)",
         "graphData": null
       },
       {
@@ -11455,7 +11455,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Solve the resulting equation for the common ratio r, then substitute it back to determine the first term a.",
-        "workingOut": "\\(r^3 + 1 = 9 \\implies r^3 = 8 \\implies r = 2\\)\\n\\(\\frac{a(2^3 - 1)}{2 - 1} = 14 \\implies 7a = 14 \\implies a = 2\\)",
+        "workingOut": "\\(r^3 + 1 = 9 \\implies r^3 = 8 \\implies r = 2\\)\n\\(\\frac{a(2^3 - 1)}{2 - 1} = 14 \\implies 7a = 14 \\implies a = 2\\)",
         "graphData": null
       },
       {
@@ -11473,7 +11473,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a composite simulation of Wireless sensor ad-hoc routing, the packet collision probability factor is recorded sequentially. The readings alternate between two distinct geometric progressions:\\n\\(74,\\, 111,\\, 296,\\, 333,\\, 1184,\\, 999,\\, \\dots\\)\\nFind the sum of the first \\(8\\) terms of this combined series.",
+    "question": "In a composite simulation of Wireless sensor ad-hoc routing, the packet collision probability factor is recorded sequentially. The readings alternate between two distinct geometric progressions:\n\\(74,\\, 111,\\, 296,\\, 333,\\, 1184,\\, 999,\\, \\dots\\)\nFind the sum of the first \\(8\\) terms of this combined series.",
     "options": [
       {
         "text": "\\(9657\\)",
@@ -11499,7 +11499,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify and separate the odd-positioned and even-positioned terms into two separate geometric series.",
-        "workingOut": "\\(\\text{Odd series: } 74 + 296 + 1184 + \\dots \\implies a_1 = 74, r_1 = 4\\)\\n\\(\\text{Even series: } 111 + 333 + 999 + \\dots \\implies a_2 = 111, r_2 = 3\\)",
+        "workingOut": "\\(\\text{Odd series: } 74 + 296 + 1184 + \\dots \\implies a_1 = 74, r_1 = 4\\)\n\\(\\text{Even series: } 111 + 333 + 999 + \\dots \\implies a_2 = 111, r_2 = 3\\)",
         "graphData": null
       },
       {
@@ -11527,7 +11527,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An optimization run of a Nuclear fuel rod isotope decay yields daily thermal power decay factor per year increments. The daily gains form a geometric series with first term \\(76\\) kW and common ratio \\(3\\).\\nIf the cumulative gain over the run is exactly \\(9196\\) kW, find the duration of the run \\(n\\) in days.",
+    "question": "An optimization run of a Nuclear fuel rod isotope decay yields daily thermal power decay factor per year increments. The daily gains form a geometric series with first term \\(76\\) kW and common ratio \\(3\\).\nIf the cumulative gain over the run is exactly \\(9196\\) kW, find the duration of the run \\(n\\) in days.",
     "options": [
       {
         "text": "\\(7\\)",
@@ -11581,7 +11581,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Evaluate the following exponential geometric series by first simplifying the logarithmic terms in the exponents:\\n\\(e^{1 \\ln(3)} + e^{2 \\ln(3)} + e^{3 \\ln(3)}\\)",
+    "question": "Evaluate the following exponential geometric series by first simplifying the logarithmic terms in the exponents:\n\\(e^{1 \\ln(3)} + e^{2 \\ln(3)} + e^{3 \\ln(3)}\\)",
     "options": [
       {
         "text": "\\(39\\)",
@@ -11607,7 +11607,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Simplify each term using the identity \\(e^{k \\ln(x)} = x^k\\) to rewrite the series in a simpler form.",
-        "workingOut": "\\(e^{1 \\ln(3)} = 3^1 = 3\\)\\n\\(e^{2 \\ln(3)} = 3^2 = 9\\)\\n\\(e^{3 \\ln(3)} = 3^3 = 27\\)",
+        "workingOut": "\\(e^{1 \\ln(3)} = 3^1 = 3\\)\n\\(e^{2 \\ln(3)} = 3^2 = 9\\)\n\\(e^{3 \\ln(3)} = 3^3 = 27\\)",
         "graphData": null
       },
       {
@@ -11630,7 +11630,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a simulation of Heavy duty gas turbine combustor, the fuel injection velocity decay is recorded. The measurements form a geometric series where the first value is \\(8\\) m/s and the common ratio is \\(1.5\\).\\nFind the smallest number of intervals \\(n\\) required for the cumulative sum \\(S_n\\) to exceed \\(3000\\) m/s.",
+    "question": "In a simulation of Heavy duty gas turbine combustor, the fuel injection velocity decay is recorded. The measurements form a geometric series where the first value is \\(8\\) m/s and the common ratio is \\(1.5\\).\nFind the smallest number of intervals \\(n\\) required for the cumulative sum \\(S_n\\) to exceed \\(3000\\) m/s.",
     "options": [
       {
         "text": "\\(13\\)",
@@ -11656,7 +11656,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Set up the geometric progression sum formula with the given parameters and write down the inequality.",
-        "workingOut": "\\(S_n = \\frac{a(r^n - 1)}{r - 1} > K\\)\\n\\(\\frac{8(1.5^n - 1)}{1.5 - 1} > 3000\\)",
+        "workingOut": "\\(S_n = \\frac{a(r^n - 1)}{r - 1} > K\\)\n\\(\\frac{8(1.5^n - 1)}{1.5 - 1} > 3000\\)",
         "graphData": null
       },
       {
@@ -11684,7 +11684,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In the performance calibration of a Industrial robotic arm servo backlash, the cumulative repositioning angular deviation is measured. The sum of the first \\(3\\) readings is \\(28\\) arcmin, and the sum of the first \\(6\\) readings is \\(252\\) arcmin.\\nAssuming the readings form a geometric progression with a positive common ratio, find the cumulative sum of the first \\(4\\) readings.",
+    "question": "In the performance calibration of a Industrial robotic arm servo backlash, the cumulative repositioning angular deviation is measured. The sum of the first \\(3\\) readings is \\(28\\) arcmin, and the sum of the first \\(6\\) readings is \\(252\\) arcmin.\nAssuming the readings form a geometric progression with a positive common ratio, find the cumulative sum of the first \\(4\\) readings.",
     "options": [
       {
         "text": "\\(120\\)",
@@ -11710,7 +11710,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "State the expressions for S_3 and S_6 using the GP sum formula.",
-        "workingOut": "\\(S_3 = \\frac{a(r^3 - 1)}{r - 1} = 28\\)\\n\\(S_6 = \\frac{a(r^6 - 1)}{r - 1} = 252\\)",
+        "workingOut": "\\(S_3 = \\frac{a(r^3 - 1)}{r - 1} = 28\\)\n\\(S_6 = \\frac{a(r^6 - 1)}{r - 1} = 252\\)",
         "graphData": null
       },
       {
@@ -11720,7 +11720,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Solve the resulting equation for the common ratio r, then substitute it back to determine the first term a.",
-        "workingOut": "\\(r^3 + 1 = 9 \\implies r^3 = 8 \\implies r = 2\\)\\n\\(\\frac{a(2^3 - 1)}{2 - 1} = 28 \\implies 7a = 28 \\implies a = 4\\)",
+        "workingOut": "\\(r^3 + 1 = 9 \\implies r^3 = 8 \\implies r = 2\\)\n\\(\\frac{a(2^3 - 1)}{2 - 1} = 28 \\implies 7a = 28 \\implies a = 4\\)",
         "graphData": null
       },
       {
@@ -11738,7 +11738,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a composite simulation of Satellite synthetic aperture radar processing, the phase noise multiplier is recorded sequentially. The readings alternate between two distinct geometric progressions:\\n\\(84,\\, 126,\\, 336,\\, 378,\\, 1344,\\, 1134,\\, \\dots\\)\\nFind the sum of the first \\(8\\) terms of this combined series.",
+    "question": "In a composite simulation of Satellite synthetic aperture radar processing, the phase noise multiplier is recorded sequentially. The readings alternate between two distinct geometric progressions:\n\\(84,\\, 126,\\, 336,\\, 378,\\, 1344,\\, 1134,\\, \\dots\\)\nFind the sum of the first \\(8\\) terms of this combined series.",
     "options": [
       {
         "text": "\\(12170\\)",
@@ -11764,7 +11764,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify and separate the odd-positioned and even-positioned terms into two separate geometric series.",
-        "workingOut": "\\(\\text{Odd series: } 84 + 336 + 1344 + \\dots \\implies a_1 = 84, r_1 = 4\\)\\n\\(\\text{Even series: } 126 + 378 + 1134 + \\dots \\implies a_2 = 126, r_2 = 3\\)",
+        "workingOut": "\\(\\text{Odd series: } 84 + 336 + 1344 + \\dots \\implies a_1 = 84, r_1 = 4\\)\n\\(\\text{Even series: } 126 + 378 + 1134 + \\dots \\implies a_2 = 126, r_2 = 3\\)",
         "graphData": null
       },
       {
@@ -11792,7 +11792,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An optimization run of a Hydroponics nutrient solution salinity yields daily electrical conductivity decay factor increments. The daily gains form a geometric series with first term \\(86\\) mS/cm and common ratio \\(3\\).\\nIf the cumulative gain over the run is exactly \\(10406\\) mS/cm, find the duration of the run \\(n\\) in days.",
+    "question": "An optimization run of a Hydroponics nutrient solution salinity yields daily electrical conductivity decay factor increments. The daily gains form a geometric series with first term \\(86\\) mS/cm and common ratio \\(3\\).\nIf the cumulative gain over the run is exactly \\(10406\\) mS/cm, find the duration of the run \\(n\\) in days.",
     "options": [
       {
         "text": "\\(7\\)",
@@ -11846,7 +11846,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Evaluate the following exponential geometric series by first simplifying the logarithmic terms in the exponents:\\n\\(e^{1 \\ln(2)} + e^{2 \\ln(2)} + e^{3 \\ln(2)} + e^{4 \\ln(2)} + e^{5 \\ln(2)}\\)",
+    "question": "Evaluate the following exponential geometric series by first simplifying the logarithmic terms in the exponents:\n\\(e^{1 \\ln(2)} + e^{2 \\ln(2)} + e^{3 \\ln(2)} + e^{4 \\ln(2)} + e^{5 \\ln(2)}\\)",
     "options": [
       {
         "text": "\\(124\\)",
@@ -11872,7 +11872,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Simplify each term using the identity \\(e^{k \\ln(x)} = x^k\\) to rewrite the series in a simpler form.",
-        "workingOut": "\\(e^{1 \\ln(2)} = 2^1 = 2\\)\\n\\(e^{2 \\ln(2)} = 2^2 = 4\\)\\n\\(e^{5 \\ln(2)} = 2^5 = 32\\)",
+        "workingOut": "\\(e^{1 \\ln(2)} = 2^1 = 2\\)\n\\(e^{2 \\ln(2)} = 2^2 = 4\\)\n\\(e^{5 \\ln(2)} = 2^5 = 32\\)",
         "graphData": null
       },
       {
@@ -11895,7 +11895,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a simulation of Liquid nitrogen cooling tube pressure, the boil-off gas volume expansion rate is recorded. The measurements form a geometric series where the first value is \\(8\\) L/min and the common ratio is \\(1.5\\).\\nFind the smallest number of intervals \\(n\\) required for the cumulative sum \\(S_n\\) to exceed \\(3250\\) L/min.",
+    "question": "In a simulation of Liquid nitrogen cooling tube pressure, the boil-off gas volume expansion rate is recorded. The measurements form a geometric series where the first value is \\(8\\) L/min and the common ratio is \\(1.5\\).\nFind the smallest number of intervals \\(n\\) required for the cumulative sum \\(S_n\\) to exceed \\(3250\\) L/min.",
     "options": [
       {
         "text": "\\(13\\)",
@@ -11921,7 +11921,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Set up the geometric progression sum formula with the given parameters and write down the inequality.",
-        "workingOut": "\\(S_n = \\frac{a(r^n - 1)}{r - 1} > K\\)\\n\\(\\frac{8(1.5^n - 1)}{1.5 - 1} > 3250\\)",
+        "workingOut": "\\(S_n = \\frac{a(r^n - 1)}{r - 1} > K\\)\n\\(\\frac{8(1.5^n - 1)}{1.5 - 1} > 3250\\)",
         "graphData": null
       },
       {
@@ -11949,7 +11949,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In the performance calibration of a Microservice container orchestration latency, the cumulative request queue length scaling is measured. The sum of the first \\(3\\) readings is \\(21\\) requests, and the sum of the first \\(6\\) readings is \\(189\\) requests.\\nAssuming the readings form a geometric progression with a positive common ratio, find the cumulative sum of the first \\(4\\) readings.",
+    "question": "In the performance calibration of a Microservice container orchestration latency, the cumulative request queue length scaling is measured. The sum of the first \\(3\\) readings is \\(21\\) requests, and the sum of the first \\(6\\) readings is \\(189\\) requests.\nAssuming the readings form a geometric progression with a positive common ratio, find the cumulative sum of the first \\(4\\) readings.",
     "options": [
       {
         "text": "\\(55\\)",
@@ -11975,7 +11975,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "State the expressions for S_3 and S_6 using the GP sum formula.",
-        "workingOut": "\\(S_3 = \\frac{a(r^3 - 1)}{r - 1} = 21\\)\\n\\(S_6 = \\frac{a(r^6 - 1)}{r - 1} = 189\\)",
+        "workingOut": "\\(S_3 = \\frac{a(r^3 - 1)}{r - 1} = 21\\)\n\\(S_6 = \\frac{a(r^6 - 1)}{r - 1} = 189\\)",
         "graphData": null
       },
       {
@@ -11985,7 +11985,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Solve the resulting equation for the common ratio r, then substitute it back to determine the first term a.",
-        "workingOut": "\\(r^3 + 1 = 9 \\implies r^3 = 8 \\implies r = 2\\)\\n\\(\\frac{a(2^3 - 1)}{2 - 1} = 21 \\implies 7a = 21 \\implies a = 3\\)",
+        "workingOut": "\\(r^3 + 1 = 9 \\implies r^3 = 8 \\implies r = 2\\)\n\\(\\frac{a(2^3 - 1)}{2 - 1} = 21 \\implies 7a = 21 \\implies a = 3\\)",
         "graphData": null
       },
       {
@@ -12003,7 +12003,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a composite simulation of Subglacial water flow friction, the hydraulic pressure drop factor is recorded sequentially. The readings alternate between two distinct geometric progressions:\\n\\(94,\\, 141,\\, 376,\\, 423,\\, 1504,\\, 1269,\\, \\dots\\)\\nFind the sum of the first \\(8\\) terms of this combined series.",
+    "question": "In a composite simulation of Subglacial water flow friction, the hydraulic pressure drop factor is recorded sequentially. The readings alternate between two distinct geometric progressions:\n\\(94,\\, 141,\\, 376,\\, 423,\\, 1504,\\, 1269,\\, \\dots\\)\nFind the sum of the first \\(8\\) terms of this combined series.",
     "options": [
       {
         "text": "\\(13680\\)",
@@ -12029,7 +12029,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify and separate the odd-positioned and even-positioned terms into two separate geometric series.",
-        "workingOut": "\\(\\text{Odd series: } 94 + 376 + 1504 + \\dots \\implies a_1 = 94, r_1 = 4\\)\\n\\(\\text{Even series: } 141 + 423 + 1269 + \\dots \\implies a_2 = 141, r_2 = 3\\)",
+        "workingOut": "\\(\\text{Odd series: } 94 + 376 + 1504 + \\dots \\implies a_1 = 94, r_1 = 4\\)\n\\(\\text{Even series: } 141 + 423 + 1269 + \\dots \\implies a_2 = 141, r_2 = 3\\)",
         "graphData": null
       },
       {
@@ -12057,7 +12057,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An optimization run of a Centrifugal fan impeller wear calibration yields daily rotational slip factor increment increments. The daily gains form a geometric series with first term \\(96\\) rpm and common ratio \\(3\\).\\nIf the cumulative gain over the run is exactly \\(11616\\) rpm, find the duration of the run \\(n\\) in days.",
+    "question": "An optimization run of a Centrifugal fan impeller wear calibration yields daily rotational slip factor increment increments. The daily gains form a geometric series with first term \\(96\\) rpm and common ratio \\(3\\).\nIf the cumulative gain over the run is exactly \\(11616\\) rpm, find the duration of the run \\(n\\) in days.",
     "options": [
       {
         "text": "\\(7\\)",
@@ -12111,7 +12111,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Evaluate the following exponential geometric series by first simplifying the logarithmic terms in the exponents:\\n\\(e^{1 \\ln(3)} + e^{2 \\ln(3)} + e^{3 \\ln(3)} + e^{4 \\ln(3)}\\)",
+    "question": "Evaluate the following exponential geometric series by first simplifying the logarithmic terms in the exponents:\n\\(e^{1 \\ln(3)} + e^{2 \\ln(3)} + e^{3 \\ln(3)} + e^{4 \\ln(3)}\\)",
     "options": [
       {
         "text": "\\(120\\)",
@@ -12137,7 +12137,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Simplify each term using the identity \\(e^{k \\ln(x)} = x^k\\) to rewrite the series in a simpler form.",
-        "workingOut": "\\(e^{1 \\ln(3)} = 3^1 = 3\\)\\n\\(e^{2 \\ln(3)} = 3^2 = 9\\)\\n\\(e^{4 \\ln(3)} = 3^4 = 81\\)",
+        "workingOut": "\\(e^{1 \\ln(3)} = 3^1 = 3\\)\n\\(e^{2 \\ln(3)} = 3^2 = 9\\)\n\\(e^{4 \\ln(3)} = 3^4 = 81\\)",
         "graphData": null
       },
       {
@@ -12160,7 +12160,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a simulation of Volcanic magma conduit flow stress, the shear viscosity multiplier is recorded. The measurements form a geometric series where the first value is \\(8\\) Pa·s and the common ratio is \\(1.5\\).\\nFind the smallest number of intervals \\(n\\) required for the cumulative sum \\(S_n\\) to exceed \\(3500\\) Pa·s.",
+    "question": "In a simulation of Volcanic magma conduit flow stress, the shear viscosity multiplier is recorded. The measurements form a geometric series where the first value is \\(8\\) Pa·s and the common ratio is \\(1.5\\).\nFind the smallest number of intervals \\(n\\) required for the cumulative sum \\(S_n\\) to exceed \\(3500\\) Pa·s.",
     "options": [
       {
         "text": "\\(15\\)",
@@ -12186,7 +12186,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Set up the geometric progression sum formula with the given parameters and write down the inequality.",
-        "workingOut": "\\(S_n = \\frac{a(r^n - 1)}{r - 1} > K\\)\\n\\(\\frac{8(1.5^n - 1)}{1.5 - 1} > 3500\\)",
+        "workingOut": "\\(S_n = \\frac{a(r^n - 1)}{r - 1} > K\\)\n\\(\\frac{8(1.5^n - 1)}{1.5 - 1} > 3500\\)",
         "graphData": null
       },
       {
@@ -12214,7 +12214,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In the performance calibration of a Bioreactor cell biomass growth suspension, the cumulative nutrient consumption rate decay is measured. The sum of the first \\(3\\) readings is \\(14\\) g/L/h, and the sum of the first \\(6\\) readings is \\(126\\) g/L/h.\\nAssuming the readings form a geometric progression with a positive common ratio, find the cumulative sum of the first \\(4\\) readings.",
+    "question": "In the performance calibration of a Bioreactor cell biomass growth suspension, the cumulative nutrient consumption rate decay is measured. The sum of the first \\(3\\) readings is \\(14\\) g/L/h, and the sum of the first \\(6\\) readings is \\(126\\) g/L/h.\nAssuming the readings form a geometric progression with a positive common ratio, find the cumulative sum of the first \\(4\\) readings.",
     "options": [
       {
         "text": "\\(40\\)",
@@ -12240,7 +12240,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "State the expressions for S_3 and S_6 using the GP sum formula.",
-        "workingOut": "\\(S_3 = \\frac{a(r^3 - 1)}{r - 1} = 14\\)\\n\\(S_6 = \\frac{a(r^6 - 1)}{r - 1} = 126\\)",
+        "workingOut": "\\(S_3 = \\frac{a(r^3 - 1)}{r - 1} = 14\\)\n\\(S_6 = \\frac{a(r^6 - 1)}{r - 1} = 126\\)",
         "graphData": null
       },
       {
@@ -12250,7 +12250,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Solve the resulting equation for the common ratio r, then substitute it back to determine the first term a.",
-        "workingOut": "\\(r^3 + 1 = 9 \\implies r^3 = 8 \\implies r = 2\\)\\n\\(\\frac{a(2^3 - 1)}{2 - 1} = 14 \\implies 7a = 14 \\implies a = 2\\)",
+        "workingOut": "\\(r^3 + 1 = 9 \\implies r^3 = 8 \\implies r = 2\\)\n\\(\\frac{a(2^3 - 1)}{2 - 1} = 14 \\implies 7a = 14 \\implies a = 2\\)",
         "graphData": null
       },
       {
@@ -12268,7 +12268,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a composite simulation of Subsea gas pipeline hydrate formation, the flow rate constriction multiplier is recorded sequentially. The readings alternate between two distinct geometric progressions:\\n\\(104,\\, 156,\\, 416,\\, 468,\\, 1664,\\, 1404,\\, \\dots\\)\\nFind the sum of the first \\(8\\) terms of this combined series.",
+    "question": "In a composite simulation of Subsea gas pipeline hydrate formation, the flow rate constriction multiplier is recorded sequentially. The readings alternate between two distinct geometric progressions:\n\\(104,\\, 156,\\, 416,\\, 468,\\, 1664,\\, 1404,\\, \\dots\\)\nFind the sum of the first \\(8\\) terms of this combined series.",
     "options": [
       {
         "text": "\\(15070\\)",
@@ -12294,7 +12294,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify and separate the odd-positioned and even-positioned terms into two separate geometric series.",
-        "workingOut": "\\(\\text{Odd series: } 104 + 416 + 1664 + \\dots \\implies a_1 = 104, r_1 = 4\\)\\n\\(\\text{Even series: } 156 + 468 + 1404 + \\dots \\implies a_2 = 156, r_2 = 3\\)",
+        "workingOut": "\\(\\text{Odd series: } 104 + 416 + 1664 + \\dots \\implies a_1 = 104, r_1 = 4\\)\n\\(\\text{Even series: } 156 + 468 + 1404 + \\dots \\implies a_2 = 156, r_2 = 3\\)",
         "graphData": null
       },
       {
@@ -12322,7 +12322,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An optimization run of a Autonomous tractor lidar scan range yields daily signal reflection attenuation increments. The daily gains form a geometric series with first term \\(106\\) dB and common ratio \\(3\\).\\nIf the cumulative gain over the run is exactly \\(12826\\) dB, find the duration of the run \\(n\\) in days.",
+    "question": "An optimization run of a Autonomous tractor lidar scan range yields daily signal reflection attenuation increments. The daily gains form a geometric series with first term \\(106\\) dB and common ratio \\(3\\).\nIf the cumulative gain over the run is exactly \\(12826\\) dB, find the duration of the run \\(n\\) in days.",
     "options": [
       {
         "text": "\\(6\\)",
@@ -12376,7 +12376,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Evaluate the following exponential geometric series by first simplifying the logarithmic terms in the exponents:\\n\\(e^{1 \\ln(2)} + e^{2 \\ln(2)} + e^{3 \\ln(2)}\\)",
+    "question": "Evaluate the following exponential geometric series by first simplifying the logarithmic terms in the exponents:\n\\(e^{1 \\ln(2)} + e^{2 \\ln(2)} + e^{3 \\ln(2)}\\)",
     "options": [
       {
         "text": "\\(28\\)",
@@ -12402,7 +12402,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Simplify each term using the identity \\(e^{k \\ln(x)} = x^k\\) to rewrite the series in a simpler form.",
-        "workingOut": "\\(e^{1 \\ln(2)} = 2^1 = 2\\)\\n\\(e^{2 \\ln(2)} = 2^2 = 4\\)\\n\\(e^{3 \\ln(2)} = 2^3 = 8\\)",
+        "workingOut": "\\(e^{1 \\ln(2)} = 2^1 = 2\\)\n\\(e^{2 \\ln(2)} = 2^2 = 4\\)\n\\(e^{3 \\ln(2)} = 2^3 = 8\\)",
         "graphData": null
       },
       {
@@ -12425,7 +12425,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a simulation of Nickel-alloy high-temperature creep, the plastic strain deformation scaling is recorded. The measurements form a geometric series where the first value is \\(8\\) µm and the common ratio is \\(1.5\\).\\nFind the smallest number of intervals \\(n\\) required for the cumulative sum \\(S_n\\) to exceed \\(3750\\) µm.",
+    "question": "In a simulation of Nickel-alloy high-temperature creep, the plastic strain deformation scaling is recorded. The measurements form a geometric series where the first value is \\(8\\) µm and the common ratio is \\(1.5\\).\nFind the smallest number of intervals \\(n\\) required for the cumulative sum \\(S_n\\) to exceed \\(3750\\) µm.",
     "options": [
       {
         "text": "\\(16\\)",
@@ -12451,7 +12451,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Set up the geometric progression sum formula with the given parameters and write down the inequality.",
-        "workingOut": "\\(S_n = \\frac{a(r^n - 1)}{r - 1} > K\\)\\n\\(\\frac{8(1.5^n - 1)}{1.5 - 1} > 3750\\)",
+        "workingOut": "\\(S_n = \\frac{a(r^n - 1)}{r - 1} > K\\)\n\\(\\frac{8(1.5^n - 1)}{1.5 - 1} > 3750\\)",
         "graphData": null
       },
       {
@@ -12479,7 +12479,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In the performance calibration of a High-voltage electric substation insulator, the cumulative leakage current growth multiplier is measured. The sum of the first \\(3\\) readings is \\(28\\) µA, and the sum of the first \\(6\\) readings is \\(252\\) µA.\\nAssuming the readings form a geometric progression with a positive common ratio, find the cumulative sum of the first \\(4\\) readings.",
+    "question": "In the performance calibration of a High-voltage electric substation insulator, the cumulative leakage current growth multiplier is measured. The sum of the first \\(3\\) readings is \\(28\\) µA, and the sum of the first \\(6\\) readings is \\(252\\) µA.\nAssuming the readings form a geometric progression with a positive common ratio, find the cumulative sum of the first \\(4\\) readings.",
     "options": [
       {
         "text": "\\(70\\)",
@@ -12505,7 +12505,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "State the expressions for S_3 and S_6 using the GP sum formula.",
-        "workingOut": "\\(S_3 = \\frac{a(r^3 - 1)}{r - 1} = 28\\)\\n\\(S_6 = \\frac{a(r^6 - 1)}{r - 1} = 252\\)",
+        "workingOut": "\\(S_3 = \\frac{a(r^3 - 1)}{r - 1} = 28\\)\n\\(S_6 = \\frac{a(r^6 - 1)}{r - 1} = 252\\)",
         "graphData": null
       },
       {
@@ -12515,7 +12515,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Solve the resulting equation for the common ratio r, then substitute it back to determine the first term a.",
-        "workingOut": "\\(r^3 + 1 = 9 \\implies r^3 = 8 \\implies r = 2\\)\\n\\(\\frac{a(2^3 - 1)}{2 - 1} = 28 \\implies 7a = 28 \\implies a = 4\\)",
+        "workingOut": "\\(r^3 + 1 = 9 \\implies r^3 = 8 \\implies r = 2\\)\n\\(\\frac{a(2^3 - 1)}{2 - 1} = 28 \\implies 7a = 28 \\implies a = 4\\)",
         "graphData": null
       },
       {
@@ -12533,7 +12533,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a composite simulation of 3D game engine voxel raymarching, the depth buffer sample load multiplier is recorded sequentially. The readings alternate between two distinct geometric progressions:\\n\\(114,\\, 171,\\, 456,\\, 513,\\, 1824,\\, 1539,\\, \\dots\\)\\nFind the sum of the first \\(8\\) terms of this combined series.",
+    "question": "In a composite simulation of 3D game engine voxel raymarching, the depth buffer sample load multiplier is recorded sequentially. The readings alternate between two distinct geometric progressions:\n\\(114,\\, 171,\\, 456,\\, 513,\\, 1824,\\, 1539,\\, \\dots\\)\nFind the sum of the first \\(8\\) terms of this combined series.",
     "options": [
       {
         "text": "\\(14877\\)",
@@ -12559,7 +12559,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify and separate the odd-positioned and even-positioned terms into two separate geometric series.",
-        "workingOut": "\\(\\text{Odd series: } 114 + 456 + 1824 + \\dots \\implies a_1 = 114, r_1 = 4\\)\\n\\(\\text{Even series: } 171 + 513 + 1539 + \\dots \\implies a_2 = 171, r_2 = 3\\)",
+        "workingOut": "\\(\\text{Odd series: } 114 + 456 + 1824 + \\dots \\implies a_1 = 114, r_1 = 4\\)\n\\(\\text{Even series: } 171 + 513 + 1539 + \\dots \\implies a_2 = 171, r_2 = 3\\)",
         "graphData": null
       },
       {
@@ -12587,7 +12587,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An optimization run of a Electric arc steel melting furnace yields daily electrode length consumption rate increments. The daily gains form a geometric series with first term \\(116\\) cm/hour and common ratio \\(3\\).\\nIf the cumulative gain over the run is exactly \\(14036\\) cm/hour, find the duration of the run \\(n\\) in days.",
+    "question": "An optimization run of a Electric arc steel melting furnace yields daily electrode length consumption rate increments. The daily gains form a geometric series with first term \\(116\\) cm/hour and common ratio \\(3\\).\nIf the cumulative gain over the run is exactly \\(14036\\) cm/hour, find the duration of the run \\(n\\) in days.",
     "options": [
       {
         "text": "\\(7\\)",
@@ -12641,7 +12641,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Evaluate the following exponential geometric series by first simplifying the logarithmic terms in the exponents:\\n\\(e^{1 \\ln(3)} + e^{2 \\ln(3)} + e^{3 \\ln(3)} + e^{4 \\ln(3)} + e^{5 \\ln(3)}\\)",
+    "question": "Evaluate the following exponential geometric series by first simplifying the logarithmic terms in the exponents:\n\\(e^{1 \\ln(3)} + e^{2 \\ln(3)} + e^{3 \\ln(3)} + e^{4 \\ln(3)} + e^{5 \\ln(3)}\\)",
     "options": [
       {
         "text": "\\(1089\\)",
@@ -12667,7 +12667,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Simplify each term using the identity \\(e^{k \\ln(x)} = x^k\\) to rewrite the series in a simpler form.",
-        "workingOut": "\\(e^{1 \\ln(3)} = 3^1 = 3\\)\\n\\(e^{2 \\ln(3)} = 3^2 = 9\\)\\n\\(e^{5 \\ln(3)} = 3^5 = 243\\)",
+        "workingOut": "\\(e^{1 \\ln(3)} = 3^1 = 3\\)\n\\(e^{2 \\ln(3)} = 3^2 = 9\\)\n\\(e^{5 \\ln(3)} = 3^5 = 243\\)",
         "graphData": null
       },
       {
@@ -12690,7 +12690,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a simulation of Bus transit line traffic delay propagation, the bus headway expansion factor is recorded. The measurements form a geometric series where the first value is \\(8\\) minutes and the common ratio is \\(1.5\\).\\nFind the smallest number of intervals \\(n\\) required for the cumulative sum \\(S_n\\) to exceed \\(4000\\) minutes.",
+    "question": "In a simulation of Bus transit line traffic delay propagation, the bus headway expansion factor is recorded. The measurements form a geometric series where the first value is \\(8\\) minutes and the common ratio is \\(1.5\\).\nFind the smallest number of intervals \\(n\\) required for the cumulative sum \\(S_n\\) to exceed \\(4000\\) minutes.",
     "options": [
       {
         "text": "\\(14\\)",
@@ -12716,7 +12716,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Set up the geometric progression sum formula with the given parameters and write down the inequality.",
-        "workingOut": "\\(S_n = \\frac{a(r^n - 1)}{r - 1} > K\\)\\n\\(\\frac{8(1.5^n - 1)}{1.5 - 1} > 4000\\)",
+        "workingOut": "\\(S_n = \\frac{a(r^n - 1)}{r - 1} > K\\)\n\\(\\frac{8(1.5^n - 1)}{1.5 - 1} > 4000\\)",
         "graphData": null
       },
       {
@@ -12744,7 +12744,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In the performance calibration of a Waste-to-energy boiler ash accumulation, the cumulative steam heat transfer reduction factor is measured. The sum of the first \\(3\\) readings is \\(21\\) %, and the sum of the first \\(6\\) readings is \\(189\\) %.\\nAssuming the readings form a geometric progression with a positive common ratio, find the cumulative sum of the first \\(4\\) readings.",
+    "question": "In the performance calibration of a Waste-to-energy boiler ash accumulation, the cumulative steam heat transfer reduction factor is measured. The sum of the first \\(3\\) readings is \\(21\\) %, and the sum of the first \\(6\\) readings is \\(189\\) %.\nAssuming the readings form a geometric progression with a positive common ratio, find the cumulative sum of the first \\(4\\) readings.",
     "options": [
       {
         "text": "\\(90\\)",
@@ -12770,7 +12770,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "State the expressions for S_3 and S_6 using the GP sum formula.",
-        "workingOut": "\\(S_3 = \\frac{a(r^3 - 1)}{r - 1} = 21\\)\\n\\(S_6 = \\frac{a(r^6 - 1)}{r - 1} = 189\\)",
+        "workingOut": "\\(S_3 = \\frac{a(r^3 - 1)}{r - 1} = 21\\)\n\\(S_6 = \\frac{a(r^6 - 1)}{r - 1} = 189\\)",
         "graphData": null
       },
       {
@@ -12780,7 +12780,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Solve the resulting equation for the common ratio r, then substitute it back to determine the first term a.",
-        "workingOut": "\\(r^3 + 1 = 9 \\implies r^3 = 8 \\implies r = 2\\)\\n\\(\\frac{a(2^3 - 1)}{2 - 1} = 21 \\implies 7a = 21 \\implies a = 3\\)",
+        "workingOut": "\\(r^3 + 1 = 9 \\implies r^3 = 8 \\implies r = 2\\)\n\\(\\frac{a(2^3 - 1)}{2 - 1} = 21 \\implies 7a = 21 \\implies a = 3\\)",
         "graphData": null
       },
       {
@@ -12798,7 +12798,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a composite simulation of Undersea acoustic positioning system, the signal multi-path fading factor is recorded sequentially. The readings alternate between two distinct geometric progressions:\\n\\(124,\\, 186,\\, 496,\\, 558,\\, 1984,\\, 1674,\\, \\dots\\)\\nFind the sum of the first \\(8\\) terms of this combined series.",
+    "question": "In a composite simulation of Undersea acoustic positioning system, the signal multi-path fading factor is recorded sequentially. The readings alternate between two distinct geometric progressions:\n\\(124,\\, 186,\\, 496,\\, 558,\\, 1984,\\, 1674,\\, \\dots\\)\nFind the sum of the first \\(8\\) terms of this combined series.",
     "options": [
       {
         "text": "\\(17980\\)",
@@ -12824,7 +12824,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify and separate the odd-positioned and even-positioned terms into two separate geometric series.",
-        "workingOut": "\\(\\text{Odd series: } 124 + 496 + 1984 + \\dots \\implies a_1 = 124, r_1 = 4\\)\\n\\(\\text{Even series: } 186 + 558 + 1674 + \\dots \\implies a_2 = 186, r_2 = 3\\)",
+        "workingOut": "\\(\\text{Odd series: } 124 + 496 + 1984 + \\dots \\implies a_1 = 124, r_1 = 4\\)\n\\(\\text{Even series: } 186 + 558 + 1674 + \\dots \\implies a_2 = 186, r_2 = 3\\)",
         "graphData": null
       },
       {
@@ -12852,7 +12852,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An optimization run of a Microfluidic droplet generator channel yields daily droplet formation rate scaling increments. The daily gains form a geometric series with first term \\(126\\) Hz and common ratio \\(3\\).\\nIf the cumulative gain over the run is exactly \\(15246\\) Hz, find the duration of the run \\(n\\) in days.",
+    "question": "An optimization run of a Microfluidic droplet generator channel yields daily droplet formation rate scaling increments. The daily gains form a geometric series with first term \\(126\\) Hz and common ratio \\(3\\).\nIf the cumulative gain over the run is exactly \\(15246\\) Hz, find the duration of the run \\(n\\) in days.",
     "options": [
       {
         "text": "\\(6\\)",
@@ -12906,7 +12906,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Evaluate the following exponential geometric series by first simplifying the logarithmic terms in the exponents:\\n\\(e^{1 \\ln(2)} + e^{2 \\ln(2)} + e^{3 \\ln(2)} + e^{4 \\ln(2)}\\)",
+    "question": "Evaluate the following exponential geometric series by first simplifying the logarithmic terms in the exponents:\n\\(e^{1 \\ln(2)} + e^{2 \\ln(2)} + e^{3 \\ln(2)} + e^{4 \\ln(2)}\\)",
     "options": [
       {
         "text": "\\(40\\)",
@@ -12932,7 +12932,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Simplify each term using the identity \\(e^{k \\ln(x)} = x^k\\) to rewrite the series in a simpler form.",
-        "workingOut": "\\(e^{1 \\ln(2)} = 2^1 = 2\\)\\n\\(e^{2 \\ln(2)} = 2^2 = 4\\)\\n\\(e^{4 \\ln(2)} = 2^4 = 16\\)",
+        "workingOut": "\\(e^{1 \\ln(2)} = 2^1 = 2\\)\n\\(e^{2 \\ln(2)} = 2^2 = 4\\)\n\\(e^{4 \\ln(2)} = 2^4 = 16\\)",
         "graphData": null
       },
       {
@@ -12955,7 +12955,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a simulation of Solid state radar signal pulse synthesis, the phase noise expansion factor is recorded. The measurements form a geometric series where the first value is \\(8\\) dBc/Hz and the common ratio is \\(1.5\\).\\nFind the smallest number of intervals \\(n\\) required for the cumulative sum \\(S_n\\) to exceed \\(4250\\) dBc/Hz.",
+    "question": "In a simulation of Solid state radar signal pulse synthesis, the phase noise expansion factor is recorded. The measurements form a geometric series where the first value is \\(8\\) dBc/Hz and the common ratio is \\(1.5\\).\nFind the smallest number of intervals \\(n\\) required for the cumulative sum \\(S_n\\) to exceed \\(4250\\) dBc/Hz.",
     "options": [
       {
         "text": "\\(16\\)",
@@ -12981,7 +12981,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Set up the geometric progression sum formula with the given parameters and write down the inequality.",
-        "workingOut": "\\(S_n = \\frac{a(r^n - 1)}{r - 1} > K\\)\\n\\(\\frac{8(1.5^n - 1)}{1.5 - 1} > 4250\\)",
+        "workingOut": "\\(S_n = \\frac{a(r^n - 1)}{r - 1} > K\\)\n\\(\\frac{8(1.5^n - 1)}{1.5 - 1} > 4250\\)",
         "graphData": null
       },
       {
@@ -13009,7 +13009,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In the performance calibration of a Tidal stream turbine blade fatigue, the cumulative mechanical torque reduction factor is measured. The sum of the first \\(3\\) readings is \\(14\\) kN·m, and the sum of the first \\(6\\) readings is \\(126\\) kN·m.\\nAssuming the readings form a geometric progression with a positive common ratio, find the cumulative sum of the first \\(4\\) readings.",
+    "question": "In the performance calibration of a Tidal stream turbine blade fatigue, the cumulative mechanical torque reduction factor is measured. The sum of the first \\(3\\) readings is \\(14\\) kN·m, and the sum of the first \\(6\\) readings is \\(126\\) kN·m.\nAssuming the readings form a geometric progression with a positive common ratio, find the cumulative sum of the first \\(4\\) readings.",
     "options": [
       {
         "text": "\\(40\\)",
@@ -13035,7 +13035,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "State the expressions for S_3 and S_6 using the GP sum formula.",
-        "workingOut": "\\(S_3 = \\frac{a(r^3 - 1)}{r - 1} = 14\\)\\n\\(S_6 = \\frac{a(r^6 - 1)}{r - 1} = 126\\)",
+        "workingOut": "\\(S_3 = \\frac{a(r^3 - 1)}{r - 1} = 14\\)\n\\(S_6 = \\frac{a(r^6 - 1)}{r - 1} = 126\\)",
         "graphData": null
       },
       {
@@ -13045,7 +13045,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Solve the resulting equation for the common ratio r, then substitute it back to determine the first term a.",
-        "workingOut": "\\(r^3 + 1 = 9 \\implies r^3 = 8 \\implies r = 2\\)\\n\\(\\frac{a(2^3 - 1)}{2 - 1} = 14 \\implies 7a = 14 \\implies a = 2\\)",
+        "workingOut": "\\(r^3 + 1 = 9 \\implies r^3 = 8 \\implies r = 2\\)\n\\(\\frac{a(2^3 - 1)}{2 - 1} = 14 \\implies 7a = 14 \\implies a = 2\\)",
         "graphData": null
       },
       {
@@ -13063,7 +13063,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a composite simulation of Magnetron sputtering thin-film process, the deposition thickness growth rate is recorded sequentially. The readings alternate between two distinct geometric progressions:\\n\\(134,\\, 201,\\, 536,\\, 603,\\, 2144,\\, 1809,\\, \\dots\\)\\nFind the sum of the first \\(8\\) terms of this combined series.",
+    "question": "In a composite simulation of Magnetron sputtering thin-film process, the deposition thickness growth rate is recorded sequentially. The readings alternate between two distinct geometric progressions:\n\\(134,\\, 201,\\, 536,\\, 603,\\, 2144,\\, 1809,\\, \\dots\\)\nFind the sum of the first \\(8\\) terms of this combined series.",
     "options": [
       {
         "text": "\\(19480\\)",
@@ -13089,7 +13089,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify and separate the odd-positioned and even-positioned terms into two separate geometric series.",
-        "workingOut": "\\(\\text{Odd series: } 134 + 536 + 2144 + \\dots \\implies a_1 = 134, r_1 = 4\\)\\n\\(\\text{Even series: } 201 + 603 + 1809 + \\dots \\implies a_2 = 201, r_2 = 3\\)",
+        "workingOut": "\\(\\text{Odd series: } 134 + 536 + 2144 + \\dots \\implies a_1 = 134, r_1 = 4\\)\n\\(\\text{Even series: } 201 + 603 + 1809 + \\dots \\implies a_2 = 201, r_2 = 3\\)",
         "graphData": null
       },
       {
@@ -13117,7 +13117,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An optimization run of a Rainforest biomass carbon absorption capacity yields daily photosynthesis yield decay factor increments. The daily gains form a geometric series with first term \\(136\\) kg/m^2 and common ratio \\(3\\).\\nIf the cumulative gain over the run is exactly \\(16456\\) kg/m^2, find the duration of the run \\(n\\) in days.",
+    "question": "An optimization run of a Rainforest biomass carbon absorption capacity yields daily photosynthesis yield decay factor increments. The daily gains form a geometric series with first term \\(136\\) kg/m^2 and common ratio \\(3\\).\nIf the cumulative gain over the run is exactly \\(16456\\) kg/m^2, find the duration of the run \\(n\\) in days.",
     "options": [
       {
         "text": "\\(5\\)",
@@ -13171,7 +13171,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Evaluate the following exponential geometric series by first simplifying the logarithmic terms in the exponents:\\n\\(e^{1 \\ln(3)} + e^{2 \\ln(3)} + e^{3 \\ln(3)}\\)",
+    "question": "Evaluate the following exponential geometric series by first simplifying the logarithmic terms in the exponents:\n\\(e^{1 \\ln(3)} + e^{2 \\ln(3)} + e^{3 \\ln(3)}\\)",
     "options": [
       {
         "text": "\\(39\\)",
@@ -13197,7 +13197,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Simplify each term using the identity \\(e^{k \\ln(x)} = x^k\\) to rewrite the series in a simpler form.",
-        "workingOut": "\\(e^{1 \\ln(3)} = 3^1 = 3\\)\\n\\(e^{2 \\ln(3)} = 3^2 = 9\\)\\n\\(e^{3 \\ln(3)} = 3^3 = 27\\)",
+        "workingOut": "\\(e^{1 \\ln(3)} = 3^1 = 3\\)\n\\(e^{2 \\ln(3)} = 3^2 = 9\\)\n\\(e^{3 \\ln(3)} = 3^3 = 27\\)",
         "graphData": null
       },
       {
@@ -13220,7 +13220,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a simulation of Tunneling shield machine face pressure, the excavation torque decay scaling is recorded. The measurements form a geometric series where the first value is \\(8\\) N·m and the common ratio is \\(1.5\\).\\nFind the smallest number of intervals \\(n\\) required for the cumulative sum \\(S_n\\) to exceed \\(4500\\) N·m.",
+    "question": "In a simulation of Tunneling shield machine face pressure, the excavation torque decay scaling is recorded. The measurements form a geometric series where the first value is \\(8\\) N·m and the common ratio is \\(1.5\\).\nFind the smallest number of intervals \\(n\\) required for the cumulative sum \\(S_n\\) to exceed \\(4500\\) N·m.",
     "options": [
       {
         "text": "\\(15\\)",
@@ -13246,7 +13246,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Set up the geometric progression sum formula with the given parameters and write down the inequality.",
-        "workingOut": "\\(S_n = \\frac{a(r^n - 1)}{r - 1} > K\\)\\n\\(\\frac{8(1.5^n - 1)}{1.5 - 1} > 4500\\)",
+        "workingOut": "\\(S_n = \\frac{a(r^n - 1)}{r - 1} > K\\)\n\\(\\frac{8(1.5^n - 1)}{1.5 - 1} > 4500\\)",
         "graphData": null
       },
       {
@@ -13274,7 +13274,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In the performance calibration of a Cellular base station beamforming, the cumulative signal signal-to-noise decay is measured. The sum of the first \\(3\\) readings is \\(28\\) dB, and the sum of the first \\(6\\) readings is \\(252\\) dB.\\nAssuming the readings form a geometric progression with a positive common ratio, find the cumulative sum of the first \\(4\\) readings.",
+    "question": "In the performance calibration of a Cellular base station beamforming, the cumulative signal signal-to-noise decay is measured. The sum of the first \\(3\\) readings is \\(28\\) dB, and the sum of the first \\(6\\) readings is \\(252\\) dB.\nAssuming the readings form a geometric progression with a positive common ratio, find the cumulative sum of the first \\(4\\) readings.",
     "options": [
       {
         "text": "\\(60\\)",
@@ -13300,7 +13300,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "State the expressions for S_3 and S_6 using the GP sum formula.",
-        "workingOut": "\\(S_3 = \\frac{a(r^3 - 1)}{r - 1} = 28\\)\\n\\(S_6 = \\frac{a(r^6 - 1)}{r - 1} = 252\\)",
+        "workingOut": "\\(S_3 = \\frac{a(r^3 - 1)}{r - 1} = 28\\)\n\\(S_6 = \\frac{a(r^6 - 1)}{r - 1} = 252\\)",
         "graphData": null
       },
       {
@@ -13310,7 +13310,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Solve the resulting equation for the common ratio r, then substitute it back to determine the first term a.",
-        "workingOut": "\\(r^3 + 1 = 9 \\implies r^3 = 8 \\implies r = 2\\)\\n\\(\\frac{a(2^3 - 1)}{2 - 1} = 28 \\implies 7a = 28 \\implies a = 4\\)",
+        "workingOut": "\\(r^3 + 1 = 9 \\implies r^3 = 8 \\implies r = 2\\)\n\\(\\frac{a(2^3 - 1)}{2 - 1} = 28 \\implies 7a = 28 \\implies a = 4\\)",
         "graphData": null
       },
       {
@@ -13328,7 +13328,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a composite simulation of High-frequency algorithmic trading order book, the order cancellation rate scaling is recorded sequentially. The readings alternate between two distinct geometric progressions:\\n\\(144,\\, 216,\\, 576,\\, 648,\\, 2304,\\, 1944,\\, \\dots\\)\\nFind the sum of the first \\(8\\) terms of this combined series.",
+    "question": "In a composite simulation of High-frequency algorithmic trading order book, the order cancellation rate scaling is recorded sequentially. The readings alternate between two distinct geometric progressions:\n\\(144,\\, 216,\\, 576,\\, 648,\\, 2304,\\, 1944,\\, \\dots\\)\nFind the sum of the first \\(8\\) terms of this combined series.",
     "options": [
       {
         "text": "\\(20870\\)",
@@ -13354,7 +13354,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify and separate the odd-positioned and even-positioned terms into two separate geometric series.",
-        "workingOut": "\\(\\text{Odd series: } 144 + 576 + 2304 + \\dots \\implies a_1 = 144, r_1 = 4\\)\\n\\(\\text{Even series: } 216 + 648 + 1944 + \\dots \\implies a_2 = 216, r_2 = 3\\)",
+        "workingOut": "\\(\\text{Odd series: } 144 + 576 + 2304 + \\dots \\implies a_1 = 144, r_1 = 4\\)\n\\(\\text{Even series: } 216 + 648 + 1944 + \\dots \\implies a_2 = 216, r_2 = 3\\)",
         "graphData": null
       },
       {
@@ -13382,7 +13382,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An optimization run of a Deep-well aquifer water level drawdown yields daily discharge head flow rate decay increments. The daily gains form a geometric series with first term \\(146\\) m^3/day and common ratio \\(3\\).\\nIf the cumulative gain over the run is exactly \\(17666\\) m^3/day, find the duration of the run \\(n\\) in days.",
+    "question": "An optimization run of a Deep-well aquifer water level drawdown yields daily discharge head flow rate decay increments. The daily gains form a geometric series with first term \\(146\\) m^3/day and common ratio \\(3\\).\nIf the cumulative gain over the run is exactly \\(17666\\) m^3/day, find the duration of the run \\(n\\) in days.",
     "options": [
       {
         "text": "\\(7\\)",
@@ -13436,7 +13436,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Evaluate the following exponential geometric series by first simplifying the logarithmic terms in the exponents:\\n\\(e^{1 \\ln(2)} + e^{2 \\ln(2)} + e^{3 \\ln(2)} + e^{4 \\ln(2)} + e^{5 \\ln(2)}\\)",
+    "question": "Evaluate the following exponential geometric series by first simplifying the logarithmic terms in the exponents:\n\\(e^{1 \\ln(2)} + e^{2 \\ln(2)} + e^{3 \\ln(2)} + e^{4 \\ln(2)} + e^{5 \\ln(2)}\\)",
     "options": [
       {
         "text": "\\(60\\)",
@@ -13462,7 +13462,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Simplify each term using the identity \\(e^{k \\ln(x)} = x^k\\) to rewrite the series in a simpler form.",
-        "workingOut": "\\(e^{1 \\ln(2)} = 2^1 = 2\\)\\n\\(e^{2 \\ln(2)} = 2^2 = 4\\)\\n\\(e^{5 \\ln(2)} = 2^5 = 32\\)",
+        "workingOut": "\\(e^{1 \\ln(2)} = 2^1 = 2\\)\n\\(e^{2 \\ln(2)} = 2^2 = 4\\)\n\\(e^{5 \\ln(2)} = 2^5 = 32\\)",
         "graphData": null
       },
       {
@@ -13485,7 +13485,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a simulation of Marine drift buoy telemetry current drift, the positional offset factor per hour is recorded. The measurements form a geometric series where the first value is \\(8\\) meters and the common ratio is \\(1.5\\).\\nFind the smallest number of intervals \\(n\\) required for the cumulative sum \\(S_n\\) to exceed \\(4750\\) meters.",
+    "question": "In a simulation of Marine drift buoy telemetry current drift, the positional offset factor per hour is recorded. The measurements form a geometric series where the first value is \\(8\\) meters and the common ratio is \\(1.5\\).\nFind the smallest number of intervals \\(n\\) required for the cumulative sum \\(S_n\\) to exceed \\(4750\\) meters.",
     "options": [
       {
         "text": "\\(17\\)",
@@ -13511,7 +13511,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Set up the geometric progression sum formula with the given parameters and write down the inequality.",
-        "workingOut": "\\(S_n = \\frac{a(r^n - 1)}{r - 1} > K\\)\\n\\(\\frac{8(1.5^n - 1)}{1.5 - 1} > 4750\\)",
+        "workingOut": "\\(S_n = \\frac{a(r^n - 1)}{r - 1} > K\\)\n\\(\\frac{8(1.5^n - 1)}{1.5 - 1} > 4750\\)",
         "graphData": null
       },
       {
@@ -13539,7 +13539,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In the performance calibration of a Coal power plant exhaust gas desulfurization, the cumulative sorbent reaction rate decline is measured. The sum of the first \\(3\\) readings is \\(21\\) %, and the sum of the first \\(6\\) readings is \\(189\\) %.\\nAssuming the readings form a geometric progression with a positive common ratio, find the cumulative sum of the first \\(4\\) readings.",
+    "question": "In the performance calibration of a Coal power plant exhaust gas desulfurization, the cumulative sorbent reaction rate decline is measured. The sum of the first \\(3\\) readings is \\(21\\) %, and the sum of the first \\(6\\) readings is \\(189\\) %.\nAssuming the readings form a geometric progression with a positive common ratio, find the cumulative sum of the first \\(4\\) readings.",
     "options": [
       {
         "text": "\\(45\\)",
@@ -13565,7 +13565,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "State the expressions for S_3 and S_6 using the GP sum formula.",
-        "workingOut": "\\(S_3 = \\frac{a(r^3 - 1)}{r - 1} = 21\\)\\n\\(S_6 = \\frac{a(r^6 - 1)}{r - 1} = 189\\)",
+        "workingOut": "\\(S_3 = \\frac{a(r^3 - 1)}{r - 1} = 21\\)\n\\(S_6 = \\frac{a(r^6 - 1)}{r - 1} = 189\\)",
         "graphData": null
       },
       {
@@ -13575,7 +13575,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Solve the resulting equation for the common ratio r, then substitute it back to determine the first term a.",
-        "workingOut": "\\(r^3 + 1 = 9 \\implies r^3 = 8 \\implies r = 2\\)\\n\\(\\frac{a(2^3 - 1)}{2 - 1} = 21 \\implies 7a = 21 \\implies a = 3\\)",
+        "workingOut": "\\(r^3 + 1 = 9 \\implies r^3 = 8 \\implies r = 2\\)\n\\(\\frac{a(2^3 - 1)}{2 - 1} = 21 \\implies 7a = 21 \\implies a = 3\\)",
         "graphData": null
       },
       {
@@ -13593,7 +13593,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a composite simulation of Sewage sludge digester biogas generation, the methane production decay factor is recorded sequentially. The readings alternate between two distinct geometric progressions:\\n\\(154,\\, 231,\\, 616,\\, 693,\\, 2464,\\, 2079,\\, \\dots\\)\\nFind the sum of the first \\(8\\) terms of this combined series.",
+    "question": "In a composite simulation of Sewage sludge digester biogas generation, the methane production decay factor is recorded sequentially. The readings alternate between two distinct geometric progressions:\n\\(154,\\, 231,\\, 616,\\, 693,\\, 2464,\\, 2079,\\, \\dots\\)\nFind the sum of the first \\(8\\) terms of this combined series.",
     "options": [
       {
         "text": "\\(20097\\)",
@@ -13619,7 +13619,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify and separate the odd-positioned and even-positioned terms into two separate geometric series.",
-        "workingOut": "\\(\\text{Odd series: } 154 + 616 + 2464 + \\dots \\implies a_1 = 154, r_1 = 4\\)\\n\\(\\text{Even series: } 231 + 693 + 2079 + \\dots \\implies a_2 = 231, r_2 = 3\\)",
+        "workingOut": "\\(\\text{Odd series: } 154 + 616 + 2464 + \\dots \\implies a_1 = 154, r_1 = 4\\)\n\\(\\text{Even series: } 231 + 693 + 2079 + \\dots \\implies a_2 = 231, r_2 = 3\\)",
         "graphData": null
       },
       {
@@ -13647,7 +13647,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An optimization run of a Aviation turboprop engine propeller thrust yields daily aerodynamic slip penalty increments. The daily gains form a geometric series with first term \\(156\\) N and common ratio \\(3\\).\\nIf the cumulative gain over the run is exactly \\(18876\\) N, find the duration of the run \\(n\\) in days.",
+    "question": "An optimization run of a Aviation turboprop engine propeller thrust yields daily aerodynamic slip penalty increments. The daily gains form a geometric series with first term \\(156\\) N and common ratio \\(3\\).\nIf the cumulative gain over the run is exactly \\(18876\\) N, find the duration of the run \\(n\\) in days.",
     "options": [
       {
         "text": "\\(7\\)",
@@ -13701,7 +13701,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Evaluate the following exponential geometric series by first simplifying the logarithmic terms in the exponents:\\n\\(e^{1 \\ln(3)} + e^{2 \\ln(3)} + e^{3 \\ln(3)} + e^{4 \\ln(3)}\\)",
+    "question": "Evaluate the following exponential geometric series by first simplifying the logarithmic terms in the exponents:\n\\(e^{1 \\ln(3)} + e^{2 \\ln(3)} + e^{3 \\ln(3)} + e^{4 \\ln(3)}\\)",
     "options": [
       {
         "text": "\\(117\\)",
@@ -13727,7 +13727,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Simplify each term using the identity \\(e^{k \\ln(x)} = x^k\\) to rewrite the series in a simpler form.",
-        "workingOut": "\\(e^{1 \\ln(3)} = 3^1 = 3\\)\\n\\(e^{2 \\ln(3)} = 3^2 = 9\\)\\n\\(e^{4 \\ln(3)} = 3^4 = 81\\)",
+        "workingOut": "\\(e^{1 \\ln(3)} = 3^1 = 3\\)\n\\(e^{2 \\ln(3)} = 3^2 = 9\\)\n\\(e^{4 \\ln(3)} = 3^4 = 81\\)",
         "graphData": null
       },
       {
@@ -13750,7 +13750,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a simulation of Satellite synthetic aperture radar scan beam, the antenna pattern gain decay is recorded. The measurements form a geometric series where the first value is \\(8\\) dB and the common ratio is \\(1.5\\).\\nFind the smallest number of intervals \\(n\\) required for the cumulative sum \\(S_n\\) to exceed \\(5000\\) dB.",
+    "question": "In a simulation of Satellite synthetic aperture radar scan beam, the antenna pattern gain decay is recorded. The measurements form a geometric series where the first value is \\(8\\) dB and the common ratio is \\(1.5\\).\nFind the smallest number of intervals \\(n\\) required for the cumulative sum \\(S_n\\) to exceed \\(5000\\) dB.",
     "options": [
       {
         "text": "\\(16\\)",
@@ -13776,7 +13776,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Set up the geometric progression sum formula with the given parameters and write down the inequality.",
-        "workingOut": "\\(S_n = \\frac{a(r^n - 1)}{r - 1} > K\\)\\n\\(\\frac{8(1.5^n - 1)}{1.5 - 1} > 5000\\)",
+        "workingOut": "\\(S_n = \\frac{a(r^n - 1)}{r - 1} > K\\)\n\\(\\frac{8(1.5^n - 1)}{1.5 - 1} > 5000\\)",
         "graphData": null
       },
       {
@@ -13804,7 +13804,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In the performance calibration of a Hydraulic excavator arm load force, the cumulative seal pressure leakage decay factor is measured. The sum of the first \\(3\\) readings is \\(14\\) bar, and the sum of the first \\(6\\) readings is \\(126\\) bar.\\nAssuming the readings form a geometric progression with a positive common ratio, find the cumulative sum of the first \\(4\\) readings.",
+    "question": "In the performance calibration of a Hydraulic excavator arm load force, the cumulative seal pressure leakage decay factor is measured. The sum of the first \\(3\\) readings is \\(14\\) bar, and the sum of the first \\(6\\) readings is \\(126\\) bar.\nAssuming the readings form a geometric progression with a positive common ratio, find the cumulative sum of the first \\(4\\) readings.",
     "options": [
       {
         "text": "\\(40\\)",
@@ -13830,7 +13830,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "State the expressions for S_3 and S_6 using the GP sum formula.",
-        "workingOut": "\\(S_3 = \\frac{a(r^3 - 1)}{r - 1} = 14\\)\\n\\(S_6 = \\frac{a(r^6 - 1)}{r - 1} = 126\\)",
+        "workingOut": "\\(S_3 = \\frac{a(r^3 - 1)}{r - 1} = 14\\)\n\\(S_6 = \\frac{a(r^6 - 1)}{r - 1} = 126\\)",
         "graphData": null
       },
       {
@@ -13840,7 +13840,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Solve the resulting equation for the common ratio r, then substitute it back to determine the first term a.",
-        "workingOut": "\\(r^3 + 1 = 9 \\implies r^3 = 8 \\implies r = 2\\)\\n\\(\\frac{a(2^3 - 1)}{2 - 1} = 14 \\implies 7a = 14 \\implies a = 2\\)",
+        "workingOut": "\\(r^3 + 1 = 9 \\implies r^3 = 8 \\implies r = 2\\)\n\\(\\frac{a(2^3 - 1)}{2 - 1} = 14 \\implies 7a = 14 \\implies a = 2\\)",
         "graphData": null
       },
       {
@@ -13858,7 +13858,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a composite simulation of Laser cladding nozzle metal powder feed, the powder capture rate decline is recorded sequentially. The readings alternate between two distinct geometric progressions:\\n\\(164,\\, 246,\\, 656,\\, 738,\\, 2624,\\, 2214,\\, \\dots\\)\\nFind the sum of the first \\(8\\) terms of this combined series.",
+    "question": "In a composite simulation of Laser cladding nozzle metal powder feed, the powder capture rate decline is recorded sequentially. The readings alternate between two distinct geometric progressions:\n\\(164,\\, 246,\\, 656,\\, 738,\\, 2624,\\, 2214,\\, \\dots\\)\nFind the sum of the first \\(8\\) terms of this combined series.",
     "options": [
       {
         "text": "\\(23780\\)",
@@ -13884,7 +13884,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify and separate the odd-positioned and even-positioned terms into two separate geometric series.",
-        "workingOut": "\\(\\text{Odd series: } 164 + 656 + 2624 + \\dots \\implies a_1 = 164, r_1 = 4\\)\\n\\(\\text{Even series: } 246 + 738 + 2214 + \\dots \\implies a_2 = 246, r_2 = 3\\)",
+        "workingOut": "\\(\\text{Odd series: } 164 + 656 + 2624 + \\dots \\implies a_1 = 164, r_1 = 4\\)\n\\(\\text{Even series: } 246 + 738 + 2214 + \\dots \\implies a_2 = 246, r_2 = 3\\)",
         "graphData": null
       },
       {
@@ -13912,7 +13912,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An optimization run of a Municipal sewage pipeline gravity flow capacity yields daily roughness coefficient growth factor increments. The daily gains form a geometric series with first term \\(166\\) % and common ratio \\(3\\).\\nIf the cumulative gain over the run is exactly \\(20086\\) %, find the duration of the run \\(n\\) in days.",
+    "question": "An optimization run of a Municipal sewage pipeline gravity flow capacity yields daily roughness coefficient growth factor increments. The daily gains form a geometric series with first term \\(166\\) % and common ratio \\(3\\).\nIf the cumulative gain over the run is exactly \\(20086\\) %, find the duration of the run \\(n\\) in days.",
     "options": [
       {
         "text": "\\(5\\)",
@@ -13966,7 +13966,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Evaluate the following exponential geometric series by first simplifying the logarithmic terms in the exponents:\\n\\(e^{1 \\ln(2)} + e^{2 \\ln(2)} + e^{3 \\ln(2)}\\)",
+    "question": "Evaluate the following exponential geometric series by first simplifying the logarithmic terms in the exponents:\n\\(e^{1 \\ln(2)} + e^{2 \\ln(2)} + e^{3 \\ln(2)}\\)",
     "options": [
       {
         "text": "\\(28\\)",
@@ -13992,7 +13992,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Simplify each term using the identity \\(e^{k \\ln(x)} = x^k\\) to rewrite the series in a simpler form.",
-        "workingOut": "\\(e^{1 \\ln(2)} = 2^1 = 2\\)\\n\\(e^{2 \\ln(2)} = 2^2 = 4\\)\\n\\(e^{3 \\ln(2)} = 2^3 = 8\\)",
+        "workingOut": "\\(e^{1 \\ln(2)} = 2^1 = 2\\)\n\\(e^{2 \\ln(2)} = 2^2 = 4\\)\n\\(e^{3 \\ln(2)} = 2^3 = 8\\)",
         "graphData": null
       },
       {
@@ -14015,7 +14015,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a simulation of Thermoelectric generation cold plate thermal resistance, the heat rejection decline factor is recorded. The measurements form a geometric series where the first value is \\(8\\) W/K and the common ratio is \\(1.5\\).\\nFind the smallest number of intervals \\(n\\) required for the cumulative sum \\(S_n\\) to exceed \\(5250\\) W/K.",
+    "question": "In a simulation of Thermoelectric generation cold plate thermal resistance, the heat rejection decline factor is recorded. The measurements form a geometric series where the first value is \\(8\\) W/K and the common ratio is \\(1.5\\).\nFind the smallest number of intervals \\(n\\) required for the cumulative sum \\(S_n\\) to exceed \\(5250\\) W/K.",
     "options": [
       {
         "text": "\\(15\\)",
@@ -14041,7 +14041,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Set up the geometric progression sum formula with the given parameters and write down the inequality.",
-        "workingOut": "\\(S_n = \\frac{a(r^n - 1)}{r - 1} > K\\)\\n\\(\\frac{8(1.5^n - 1)}{1.5 - 1} > 5250\\)",
+        "workingOut": "\\(S_n = \\frac{a(r^n - 1)}{r - 1} > K\\)\n\\(\\frac{8(1.5^n - 1)}{1.5 - 1} > 5250\\)",
         "graphData": null
       },
       {
@@ -14069,7 +14069,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In the performance calibration of a Gas switchgear sulfur hexafluoride gas density, the cumulative leakage volume decay factor is measured. The sum of the first \\(3\\) readings is \\(28\\) kg/year, and the sum of the first \\(6\\) readings is \\(252\\) kg/year.\\nAssuming the readings form a geometric progression with a positive common ratio, find the cumulative sum of the first \\(4\\) readings.",
+    "question": "In the performance calibration of a Gas switchgear sulfur hexafluoride gas density, the cumulative leakage volume decay factor is measured. The sum of the first \\(3\\) readings is \\(28\\) kg/year, and the sum of the first \\(6\\) readings is \\(252\\) kg/year.\nAssuming the readings form a geometric progression with a positive common ratio, find the cumulative sum of the first \\(4\\) readings.",
     "options": [
       {
         "text": "\\(56\\)",
@@ -14095,7 +14095,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "State the expressions for S_3 and S_6 using the GP sum formula.",
-        "workingOut": "\\(S_3 = \\frac{a(r^3 - 1)}{r - 1} = 28\\)\\n\\(S_6 = \\frac{a(r^6 - 1)}{r - 1} = 252\\)",
+        "workingOut": "\\(S_3 = \\frac{a(r^3 - 1)}{r - 1} = 28\\)\n\\(S_6 = \\frac{a(r^6 - 1)}{r - 1} = 252\\)",
         "graphData": null
       },
       {
@@ -14105,7 +14105,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Solve the resulting equation for the common ratio r, then substitute it back to determine the first term a.",
-        "workingOut": "\\(r^3 + 1 = 9 \\implies r^3 = 8 \\implies r = 2\\)\\n\\(\\frac{a(2^3 - 1)}{2 - 1} = 28 \\implies 7a = 28 \\implies a = 4\\)",
+        "workingOut": "\\(r^3 + 1 = 9 \\implies r^3 = 8 \\implies r = 2\\)\n\\(\\frac{a(2^3 - 1)}{2 - 1} = 28 \\implies 7a = 28 \\implies a = 4\\)",
         "graphData": null
       },
       {
@@ -14123,7 +14123,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a composite simulation of Automated vertical hydroponic farm light canopy, the micro-mol photosynthetic flux decay is recorded sequentially. The readings alternate between two distinct geometric progressions:\\n\\(174,\\, 261,\\, 696,\\, 783,\\, 2784,\\, 2349,\\, \\dots\\)\\nFind the sum of the first \\(8\\) terms of this combined series.",
+    "question": "In a composite simulation of Automated vertical hydroponic farm light canopy, the micro-mol photosynthetic flux decay is recorded sequentially. The readings alternate between two distinct geometric progressions:\n\\(174,\\, 261,\\, 696,\\, 783,\\, 2784,\\, 2349,\\, \\dots\\)\nFind the sum of the first \\(8\\) terms of this combined series.",
     "options": [
       {
         "text": "\\(25230\\)",
@@ -14149,7 +14149,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify and separate the odd-positioned and even-positioned terms into two separate geometric series.",
-        "workingOut": "\\(\\text{Odd series: } 174 + 696 + 2784 + \\dots \\implies a_1 = 174, r_1 = 4\\)\\n\\(\\text{Even series: } 261 + 783 + 2349 + \\dots \\implies a_2 = 261, r_2 = 3\\)",
+        "workingOut": "\\(\\text{Odd series: } 174 + 696 + 2784 + \\dots \\implies a_1 = 174, r_1 = 4\\)\n\\(\\text{Even series: } 261 + 783 + 2349 + \\dots \\implies a_2 = 261, r_2 = 3\\)",
         "graphData": null
       },
       {
@@ -14177,7 +14177,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An optimization run of a Automotive engine turbocharger turbine pressure yields daily compressor wheel boost scaling increments. The daily gains form a geometric series with first term \\(176\\) psi and common ratio \\(3\\).\\nIf the cumulative gain over the run is exactly \\(21296\\) psi, find the duration of the run \\(n\\) in days.",
+    "question": "An optimization run of a Automotive engine turbocharger turbine pressure yields daily compressor wheel boost scaling increments. The daily gains form a geometric series with first term \\(176\\) psi and common ratio \\(3\\).\nIf the cumulative gain over the run is exactly \\(21296\\) psi, find the duration of the run \\(n\\) in days.",
     "options": [
       {
         "text": "\\(6\\)",
@@ -14231,7 +14231,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Evaluate the following exponential geometric series by first simplifying the logarithmic terms in the exponents:\\n\\(e^{1 \\ln(3)} + e^{2 \\ln(3)} + e^{3 \\ln(3)} + e^{4 \\ln(3)} + e^{5 \\ln(3)}\\)",
+    "question": "Evaluate the following exponential geometric series by first simplifying the logarithmic terms in the exponents:\n\\(e^{1 \\ln(3)} + e^{2 \\ln(3)} + e^{3 \\ln(3)} + e^{4 \\ln(3)} + e^{5 \\ln(3)}\\)",
     "options": [
       {
         "text": "\\(1089\\)",
@@ -14257,7 +14257,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Simplify each term using the identity \\(e^{k \\ln(x)} = x^k\\) to rewrite the series in a simpler form.",
-        "workingOut": "\\(e^{1 \\ln(3)} = 3^1 = 3\\)\\n\\(e^{2 \\ln(3)} = 3^2 = 9\\)\\n\\(e^{5 \\ln(3)} = 3^5 = 243\\)",
+        "workingOut": "\\(e^{1 \\ln(3)} = 3^1 = 3\\)\n\\(e^{2 \\ln(3)} = 3^2 = 9\\)\n\\(e^{5 \\ln(3)} = 3^5 = 243\\)",
         "graphData": null
       },
       {
@@ -14280,7 +14280,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a simulation of Industrial glass manufacturing furnace melting tank, the refractory wall erosion expansion is recorded. The measurements form a geometric series where the first value is \\(8\\) mm/year and the common ratio is \\(1.5\\).\\nFind the smallest number of intervals \\(n\\) required for the cumulative sum \\(S_n\\) to exceed \\(5500\\) mm/year.",
+    "question": "In a simulation of Industrial glass manufacturing furnace melting tank, the refractory wall erosion expansion is recorded. The measurements form a geometric series where the first value is \\(8\\) mm/year and the common ratio is \\(1.5\\).\nFind the smallest number of intervals \\(n\\) required for the cumulative sum \\(S_n\\) to exceed \\(5500\\) mm/year.",
     "options": [
       {
         "text": "\\(15\\)",
@@ -14306,7 +14306,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Set up the geometric progression sum formula with the given parameters and write down the inequality.",
-        "workingOut": "\\(S_n = \\frac{a(r^n - 1)}{r - 1} > K\\)\\n\\(\\frac{8(1.5^n - 1)}{1.5 - 1} > 5500\\)",
+        "workingOut": "\\(S_n = \\frac{a(r^n - 1)}{r - 1} > K\\)\n\\(\\frac{8(1.5^n - 1)}{1.5 - 1} > 5500\\)",
         "graphData": null
       },
       {
@@ -14334,7 +14334,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In the performance calibration of a Electric rail transit traction substation thermal energy, the cumulative regenerative grid feedback loss is measured. The sum of the first \\(3\\) readings is \\(21\\) kWh, and the sum of the first \\(6\\) readings is \\(189\\) kWh.\\nAssuming the readings form a geometric progression with a positive common ratio, find the cumulative sum of the first \\(4\\) readings.",
+    "question": "In the performance calibration of a Electric rail transit traction substation thermal energy, the cumulative regenerative grid feedback loss is measured. The sum of the first \\(3\\) readings is \\(21\\) kWh, and the sum of the first \\(6\\) readings is \\(189\\) kWh.\nAssuming the readings form a geometric progression with a positive common ratio, find the cumulative sum of the first \\(4\\) readings.",
     "options": [
       {
         "text": "\\(90\\)",
@@ -14360,7 +14360,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "State the expressions for S_3 and S_6 using the GP sum formula.",
-        "workingOut": "\\(S_3 = \\frac{a(r^3 - 1)}{r - 1} = 21\\)\\n\\(S_6 = \\frac{a(r^6 - 1)}{r - 1} = 189\\)",
+        "workingOut": "\\(S_3 = \\frac{a(r^3 - 1)}{r - 1} = 21\\)\n\\(S_6 = \\frac{a(r^6 - 1)}{r - 1} = 189\\)",
         "graphData": null
       },
       {
@@ -14370,7 +14370,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Solve the resulting equation for the common ratio r, then substitute it back to determine the first term a.",
-        "workingOut": "\\(r^3 + 1 = 9 \\implies r^3 = 8 \\implies r = 2\\)\\n\\(\\frac{a(2^3 - 1)}{2 - 1} = 21 \\implies 7a = 21 \\implies a = 3\\)",
+        "workingOut": "\\(r^3 + 1 = 9 \\implies r^3 = 8 \\implies r = 2\\)\n\\(\\frac{a(2^3 - 1)}{2 - 1} = 21 \\implies 7a = 21 \\implies a = 3\\)",
         "graphData": null
       },
       {
@@ -14388,7 +14388,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a composite simulation of Wastewater electrocoagulation metal plate scaling, the passivation resistance growth is recorded sequentially. The readings alternate between two distinct geometric progressions:\\n\\(184,\\, 276,\\, 736,\\, 828,\\, 2944,\\, 2484,\\, \\dots\\)\\nFind the sum of the first \\(8\\) terms of this combined series.",
+    "question": "In a composite simulation of Wastewater electrocoagulation metal plate scaling, the passivation resistance growth is recorded sequentially. The readings alternate between two distinct geometric progressions:\n\\(184,\\, 276,\\, 736,\\, 828,\\, 2944,\\, 2484,\\, \\dots\\)\nFind the sum of the first \\(8\\) terms of this combined series.",
     "options": [
       {
         "text": "\\(26730\\)",
@@ -14414,7 +14414,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify and separate the odd-positioned and even-positioned terms into two separate geometric series.",
-        "workingOut": "\\(\\text{Odd series: } 184 + 736 + 2944 + \\dots \\implies a_1 = 184, r_1 = 4\\)\\n\\(\\text{Even series: } 276 + 828 + 2484 + \\dots \\implies a_2 = 276, r_2 = 3\\)",
+        "workingOut": "\\(\\text{Odd series: } 184 + 736 + 2944 + \\dots \\implies a_1 = 184, r_1 = 4\\)\n\\(\\text{Even series: } 276 + 828 + 2484 + \\dots \\implies a_2 = 276, r_2 = 3\\)",
         "graphData": null
       },
       {
@@ -14442,7 +14442,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An optimization run of a Large commercial aircraft carbon fiber composite tail yields daily stress strain curve scaling increments. The daily gains form a geometric series with first term \\(186\\) MPa and common ratio \\(3\\).\\nIf the cumulative gain over the run is exactly \\(22506\\) MPa, find the duration of the run \\(n\\) in days.",
+    "question": "An optimization run of a Large commercial aircraft carbon fiber composite tail yields daily stress strain curve scaling increments. The daily gains form a geometric series with first term \\(186\\) MPa and common ratio \\(3\\).\nIf the cumulative gain over the run is exactly \\(22506\\) MPa, find the duration of the run \\(n\\) in days.",
     "options": [
       {
         "text": "\\(4\\)",
@@ -14496,7 +14496,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Evaluate the following exponential geometric series by first simplifying the logarithmic terms in the exponents:\\n\\(e^{1 \\ln(2)} + e^{2 \\ln(2)} + e^{3 \\ln(2)} + e^{4 \\ln(2)}\\)",
+    "question": "Evaluate the following exponential geometric series by first simplifying the logarithmic terms in the exponents:\n\\(e^{1 \\ln(2)} + e^{2 \\ln(2)} + e^{3 \\ln(2)} + e^{4 \\ln(2)}\\)",
     "options": [
       {
         "text": "\\(28\\)",
@@ -14522,7 +14522,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Simplify each term using the identity \\(e^{k \\ln(x)} = x^k\\) to rewrite the series in a simpler form.",
-        "workingOut": "\\(e^{1 \\ln(2)} = 2^1 = 2\\)\\n\\(e^{2 \\ln(2)} = 2^2 = 4\\)\\n\\(e^{4 \\ln(2)} = 2^4 = 16\\)",
+        "workingOut": "\\(e^{1 \\ln(2)} = 2^1 = 2\\)\n\\(e^{2 \\ln(2)} = 2^2 = 4\\)\n\\(e^{4 \\ln(2)} = 2^4 = 16\\)",
         "graphData": null
       },
       {
@@ -14545,7 +14545,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a simulation of High-altitude military surveillance drone hydrogen propulsion, the combustion exhaust thrust multiplier is recorded. The measurements form a geometric series where the first value is \\(8\\) N and the common ratio is \\(1.5\\).\\nFind the smallest number of intervals \\(n\\) required for the cumulative sum \\(S_n\\) to exceed \\(5750\\) N.",
+    "question": "In a simulation of High-altitude military surveillance drone hydrogen propulsion, the combustion exhaust thrust multiplier is recorded. The measurements form a geometric series where the first value is \\(8\\) N and the common ratio is \\(1.5\\).\nFind the smallest number of intervals \\(n\\) required for the cumulative sum \\(S_n\\) to exceed \\(5750\\) N.",
     "options": [
       {
         "text": "\\(15\\)",
@@ -14571,7 +14571,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Set up the geometric progression sum formula with the given parameters and write down the inequality.",
-        "workingOut": "\\(S_n = \\frac{a(r^n - 1)}{r - 1} > K\\)\\n\\(\\frac{8(1.5^n - 1)}{1.5 - 1} > 5750\\)",
+        "workingOut": "\\(S_n = \\frac{a(r^n - 1)}{r - 1} > K\\)\n\\(\\frac{8(1.5^n - 1)}{1.5 - 1} > 5750\\)",
         "graphData": null
       },
       {
@@ -14599,7 +14599,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In the performance calibration of a Micro-electro-mechanical systems capacitive accelerometer, the cumulative calibration bias drift multiplier is measured. The sum of the first \\(3\\) readings is \\(14\\) mg, and the sum of the first \\(6\\) readings is \\(126\\) mg.\\nAssuming the readings form a geometric progression with a positive common ratio, find the cumulative sum of the first \\(4\\) readings.",
+    "question": "In the performance calibration of a Micro-electro-mechanical systems capacitive accelerometer, the cumulative calibration bias drift multiplier is measured. The sum of the first \\(3\\) readings is \\(14\\) mg, and the sum of the first \\(6\\) readings is \\(126\\) mg.\nAssuming the readings form a geometric progression with a positive common ratio, find the cumulative sum of the first \\(4\\) readings.",
     "options": [
       {
         "text": "\\(30\\)",
@@ -14625,7 +14625,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "State the expressions for S_3 and S_6 using the GP sum formula.",
-        "workingOut": "\\(S_3 = \\frac{a(r^3 - 1)}{r - 1} = 14\\)\\n\\(S_6 = \\frac{a(r^6 - 1)}{r - 1} = 126\\)",
+        "workingOut": "\\(S_3 = \\frac{a(r^3 - 1)}{r - 1} = 14\\)\n\\(S_6 = \\frac{a(r^6 - 1)}{r - 1} = 126\\)",
         "graphData": null
       },
       {
@@ -14635,7 +14635,7 @@ export const Y12A_CH1G_QUESTIONS = [
       },
       {
         "explanation": "Solve the resulting equation for the common ratio r, then substitute it back to determine the first term a.",
-        "workingOut": "\\(r^3 + 1 = 9 \\implies r^3 = 8 \\implies r = 2\\)\\n\\(\\frac{a(2^3 - 1)}{2 - 1} = 14 \\implies 7a = 14 \\implies a = 2\\)",
+        "workingOut": "\\(r^3 + 1 = 9 \\implies r^3 = 8 \\implies r = 2\\)\n\\(\\frac{a(2^3 - 1)}{2 - 1} = 14 \\implies 7a = 14 \\implies a = 2\\)",
         "graphData": null
       },
       {
@@ -14653,7 +14653,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a composite simulation of Urban drinking water treatment plant sand filter beds, the head loss pressure decay factor is recorded sequentially. The readings alternate between two distinct geometric progressions:\\n\\(194,\\, 291,\\, 776,\\, 873,\\, 3104,\\, 2619,\\, \\dots\\)\\nFind the sum of the first \\(8\\) terms of this combined series.",
+    "question": "In a composite simulation of Urban drinking water treatment plant sand filter beds, the head loss pressure decay factor is recorded sequentially. The readings alternate between two distinct geometric progressions:\n\\(194,\\, 291,\\, 776,\\, 873,\\, 3104,\\, 2619,\\, \\dots\\)\nFind the sum of the first \\(8\\) terms of this combined series.",
     "options": [
       {
         "text": "\\(25317\\)",
@@ -14679,7 +14679,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify and separate the odd-positioned and even-positioned terms into two separate geometric series.",
-        "workingOut": "\\(\\text{Odd series: } 194 + 776 + 3104 + \\dots \\implies a_1 = 194, r_1 = 4\\)\\n\\(\\text{Even series: } 291 + 873 + 2619 + \\dots \\implies a_2 = 291, r_2 = 3\\)",
+        "workingOut": "\\(\\text{Odd series: } 194 + 776 + 3104 + \\dots \\implies a_1 = 194, r_1 = 4\\)\n\\(\\text{Even series: } 291 + 873 + 2619 + \\dots \\implies a_2 = 291, r_2 = 3\\)",
         "graphData": null
       },
       {
@@ -14707,7 +14707,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An optimization run of a Marine container ship main propulsion slow speed diesel yields daily fuel consumption penalty scaling increments. The daily gains form a geometric series with first term \\(196\\) g/kWh and common ratio \\(3\\).\\nIf the cumulative gain over the run is exactly \\(23716\\) g/kWh, find the duration of the run \\(n\\) in days.",
+    "question": "An optimization run of a Marine container ship main propulsion slow speed diesel yields daily fuel consumption penalty scaling increments. The daily gains form a geometric series with first term \\(196\\) g/kWh and common ratio \\(3\\).\nIf the cumulative gain over the run is exactly \\(23716\\) g/kWh, find the duration of the run \\(n\\) in days.",
     "options": [
       {
         "text": "\\(5\\)",
@@ -14761,7 +14761,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Evaluate the following exponential geometric series by first simplifying the logarithmic terms in the exponents:\\n\\(e^{1 \\ln(3)} + e^{2 \\ln(3)} + e^{3 \\ln(3)}\\)",
+    "question": "Evaluate the following exponential geometric series by first simplifying the logarithmic terms in the exponents:\n\\(e^{1 \\ln(3)} + e^{2 \\ln(3)} + e^{3 \\ln(3)}\\)",
     "options": [
       {
         "text": "\\(49\\)",
@@ -14787,7 +14787,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Simplify each term using the identity \\(e^{k \\ln(x)} = x^k\\) to rewrite the series in a simpler form.",
-        "workingOut": "\\(e^{1 \\ln(3)} = 3^1 = 3\\)\\n\\(e^{2 \\ln(3)} = 3^2 = 9\\)\\n\\(e^{3 \\ln(3)} = 3^3 = 27\\)",
+        "workingOut": "\\(e^{1 \\ln(3)} = 3^1 = 3\\)\n\\(e^{2 \\ln(3)} = 3^2 = 9\\)\n\\(e^{3 \\ln(3)} = 3^3 = 27\\)",
         "graphData": null
       },
       {
@@ -14810,7 +14810,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In a simulation of Advanced aerospace titanium alloy laser metal sintering, the surface micro-porosity growth factor is recorded. The measurements form a geometric series where the first value is \\(8\\) µm and the common ratio is \\(1.5\\).\\nFind the smallest number of intervals \\(n\\) required for the cumulative sum \\(S_n\\) to exceed \\(6000\\) µm.",
+    "question": "In a simulation of Advanced aerospace titanium alloy laser metal sintering, the surface micro-porosity growth factor is recorded. The measurements form a geometric series where the first value is \\(8\\) µm and the common ratio is \\(1.5\\).\nFind the smallest number of intervals \\(n\\) required for the cumulative sum \\(S_n\\) to exceed \\(6000\\) µm.",
     "options": [
       {
         "text": "\\(16\\)",
@@ -14836,7 +14836,7 @@ export const Y12A_CH1G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Set up the geometric progression sum formula with the given parameters and write down the inequality.",
-        "workingOut": "\\(S_n = \\frac{a(r^n - 1)}{r - 1} > K\\)\\n\\(\\frac{8(1.5^n - 1)}{1.5 - 1} > 6000\\)",
+        "workingOut": "\\(S_n = \\frac{a(r^n - 1)}{r - 1} > K\\)\n\\(\\frac{8(1.5^n - 1)}{1.5 - 1} > 6000\\)",
         "graphData": null
       },
       {

@@ -3121,10 +3121,10 @@ export const Y12A_CH1_QUESTIONS = [
     "timeLimit": 90,
     "question": "The nth term of a sequence is given by \\(T_n = 4n + 2\\).\n\nShow that 54 is the 13th term of the sequence.",
     "options": [],
-    "answer": "By setting \\(T_n = 54\\), we get \\(4n + 2 = 54\\).\\nSubtracting 2 gives \\(4n = 52\\), and dividing by 4 yields \\(n = 13\\).\\nSince \\(n = 13\\) is a positive integer, 54 is indeed the 13th term.",
+    "answer": "By setting \\(T_n = 54\\), we get \\(4n + 2 = 54\\).\nSubtracting 2 gives \\(4n = 52\\), and dividing by 4 yields \\(n = 13\\).\nSince \\(n = 13\\) is a positive integer, 54 is indeed the 13th term.",
     "blanks": [],
     "hint": "Substitute T_n = 54 and solve the linear equation for n.",
-    "solution": "By setting \\(T_n = 54\\), we get \\(4n + 2 = 54\\).\\nSubtracting 2 gives \\(4n = 52\\), and dividing by 4 yields \\(n = 13\\).\\nSince \\(n = 13\\) is a positive integer, 54 is indeed the 13th term.",
+    "solution": "By setting \\(T_n = 54\\), we get \\(4n + 2 = 54\\).\nSubtracting 2 gives \\(4n = 52\\), and dividing by 4 yields \\(n = 13\\).\nSince \\(n = 13\\) is a positive integer, 54 is indeed the 13th term.",
     "solutionSteps": [
       {
         "explanation": "Understand the goal: we need to find if there is a positive integer \\( n \\) such that \\( T_n = 54 \\).",
@@ -3163,10 +3163,10 @@ export const Y12A_CH1_QUESTIONS = [
     "timeLimit": 90,
     "question": "The nth term of a sequence is given by \\(T_n = 4n + 2\\).\n\nShow that 45 is not a term of the sequence.",
     "options": [],
-    "answer": "By setting \\(T_n = 45\\), we get \\[4n + 2 = 45 \\implies 4n = 43 \\implies n = 10.75\\].\\nSince \\(n = 10.75\\) is not an integer, 45 is not a term of the sequence.",
+    "answer": "By setting \\(T_n = 45\\), we get \\[4n + 2 = 45 \\implies 4n = 43 \\implies n = 10.75\\].\nSince \\(n = 10.75\\) is not an integer, 45 is not a term of the sequence.",
     "blanks": [],
     "hint": "Substitute T_n = 45 and check if n is an integer.",
-    "solution": "By setting \\(T_n = 45\\), we get \\[4n + 2 = 45 \\implies 4n = 43 \\implies n = 10.75\\].\\nSince \\(n = 10.75\\) is not an integer, 45 is not a term of the sequence.",
+    "solution": "By setting \\(T_n = 45\\), we get \\[4n + 2 = 45 \\implies 4n = 43 \\implies n = 10.75\\].\nSince \\(n = 10.75\\) is not an integer, 45 is not a term of the sequence.",
     "solutionSteps": [
       {
         "explanation": "Understand the goal: check if there is an integer index \\( n \\) such that \\( T_n = 45 \\).",
@@ -3190,7 +3190,7 @@ export const Y12A_CH1_QUESTIONS = [
       },
       {
         "explanation": "Since \\( n = 10.75 \\) is a decimal and not a positive integer, 45 cannot be a term of the sequence.",
-        "workingOut": "\\[n = 10.75 \\notin \\mathbb{Z}^+\\]",
+        "workingOut": "\\[n = 10.75 \notin \\mathbb{Z}^+\\]",
         "graphData": null
       }
     ],
@@ -3470,10 +3470,10 @@ export const Y12A_CH1_QUESTIONS = [
     "timeLimit": 90,
     "question": "The nth term of a sequence is given by \\(T_n = 8n + 6\\).\n\nShow that the eleven terms \\(T_1\\) to \\(T_{11}\\) are less than 100.",
     "options": [],
-    "answer": "Setting \\(T_n < 100\\) gives \\(8n + 6 < 100 \\implies 8n < 94 \\implies n < 11.75\\).\\nSince \\(n\\) must be an integer, the terms satisfying this inequality are \\(n \\le 11\\), which corresponds to the first 11 terms \\(T_1\\) to \\(T_{11}\\).",
+    "answer": "Setting \\(T_n < 100\\) gives \\(8n + 6 < 100 \\implies 8n < 94 \\implies n < 11.75\\).\nSince \\(n\\) must be an integer, the terms satisfying this inequality are \\(n \\le 11\\), which corresponds to the first 11 terms \\(T_1\\) to \\(T_{11}\\).",
     "blanks": [],
     "hint": "Set up the inequality T_n < 100 and find the range of integer values for n.",
-    "solution": "Setting \\(T_n < 100\\) gives \\(8n + 6 < 100 \\implies 8n < 94 \\implies n < 11.75\\).\\nSince \\(n\\) must be an integer, the terms satisfying this inequality are \\(n \\le 11\\), which corresponds to the first 11 terms \\(T_1\\) to \\(T_{11}\\).",
+    "solution": "Setting \\(T_n < 100\\) gives \\(8n + 6 < 100 \\implies 8n < 94 \\implies n < 11.75\\).\nSince \\(n\\) must be an integer, the terms satisfying this inequality are \\(n \\le 11\\), which corresponds to the first 11 terms \\(T_1\\) to \\(T_{11}\\).",
     "solutionSteps": [
       {
         "explanation": "Set up the inequality stating that the terms of the sequence are strictly less than 100.",
@@ -3496,7 +3496,7 @@ export const Y12A_CH1_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Since the term index \\( n \\) must be a positive integer, the condition \\( n < 11.75 \\) is satisfied by the integers \\( n \\in \\{1, 2, dots, 11\\}\\).\\nThis proves that exactly the first 11 terms are less than 100.",
+        "explanation": "Since the term index \\( n \\) must be a positive integer, the condition \\( n < 11.75 \\) is satisfied by the integers \\( n \\in \\{1, 2, dots, 11\\}\\).\nThis proves that exactly the first 11 terms are less than 100.",
         "workingOut": "\\(n \\le 11\\)",
         "graphData": null
       }
@@ -3512,10 +3512,10 @@ export const Y12A_CH1_QUESTIONS = [
     "timeLimit": 90,
     "question": "The nth term of a sequence is given by \\(T_n = 8n + 6\\).\n\nShow that the first term greater than 70 is \\(T_9 = 78\\).",
     "options": [],
-    "answer": "Setting \\(T_n > 70\\) gives \\(8n + 6 > 70 \\implies 8n > 64 \\implies n > 8\\).\\nThe smallest integer satisfying this is \\(n = 9\\), and the term value is \\(T_9 = 8(9) + 6 = 78\\).",
+    "answer": "Setting \\(T_n > 70\\) gives \\(8n + 6 > 70 \\implies 8n > 64 \\implies n > 8\\).\nThe smallest integer satisfying this is \\(n = 9\\), and the term value is \\(T_9 = 8(9) + 6 = 78\\).",
     "blanks": [],
     "hint": "Set up the inequality T_n > 70 and find the smallest integer value for n.",
-    "solution": "Setting \\(T_n > 70\\) gives \\(8n + 6 > 70 \\implies 8n > 64 \\implies n > 8\\).\\nThe smallest integer satisfying this is \\(n = 9\\), and the term value is \\(T_9 = 8(9) + 6 = 78\\).",
+    "solution": "Setting \\(T_n > 70\\) gives \\(8n + 6 > 70 \\implies 8n > 64 \\implies n > 8\\).\nThe smallest integer satisfying this is \\(n = 9\\), and the term value is \\(T_9 = 8(9) + 6 = 78\\).",
     "solutionSteps": [
       {
         "explanation": "Set up the inequality stating that the terms of the sequence are strictly greater than 70.",
@@ -3538,7 +3538,7 @@ export const Y12A_CH1_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "The smallest positive integer \\( n \\) strictly greater than 8 is \\( n = 9 \\).\\nCalculate its value: \\( T_9 = 8(9) + 6 = 78 \\).",
+        "explanation": "The smallest positive integer \\( n \\) strictly greater than 8 is \\( n = 9 \\).\nCalculate its value: \\( T_9 = 8(9) + 6 = 78 \\).",
         "workingOut": "\\(n = 9 \\implies T_9 = 78\\)",
         "graphData": null
       }
@@ -4610,10 +4610,10 @@ export const Y12A_CH1_QUESTIONS = [
     "timeLimit": 120,
     "question": "The Fibonacci sequence is defined by:\n\\[F_1 = 1, \\quad F_2 = 1, \\quad F_n = F_{n-1} + F_{n-2}\\] for \\(n \\ge 3\\).\n\nExplain why every third term of the sequence is even and the rest are odd.",
     "options": [],
-    "answer": "Starting with two odd numbers, the parity pattern follows: Odd + Odd = Even (third term), Odd + Even = Odd (fourth term), Even + Odd = Odd (fifth term), and Odd + Odd = Even (sixth term).\\nThis creates a repeating three-term parity cycle: Odd, Odd, Even.",
+    "answer": "Starting with two odd numbers, the parity pattern follows: Odd + Odd = Even (third term), Odd + Even = Odd (fourth term), Even + Odd = Odd (fifth term), and Odd + Odd = Even (sixth term).\nThis creates a repeating three-term parity cycle: Odd, Odd, Even.",
     "blanks": [],
     "hint": "Examine the parity (odd/even) of the sum of two integers recursively.",
-    "solution": "Starting with two odd numbers, the parity pattern follows: Odd + Odd = Even (third term), Odd + Even = Odd (fourth term), Even + Odd = Odd (fifth term), and Odd + Odd = Even (sixth term).\\nThis creates a repeating three-term parity cycle: Odd, Odd, Even.",
+    "solution": "Starting with two odd numbers, the parity pattern follows: Odd + Odd = Even (third term), Odd + Even = Odd (fourth term), Even + Odd = Odd (fifth term), and Odd + Odd = Even (sixth term).\nThis creates a repeating three-term parity cycle: Odd, Odd, Even.",
     "solutionSteps": [
       {
         "explanation": "State the addition rules for even and odd numbers.",
@@ -4636,7 +4636,7 @@ export const Y12A_CH1_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Notice that the terms \\(F_4, F_5, F_6\\) have the same parity pattern (Odd, Odd, Even) as \\(F_1, F_2, F_3\\).\\nSince each term depends only on the parity of the previous two, this 3-cycle (Odd, Odd, Even) repeats indefinitely.",
+        "explanation": "Notice that the terms \\(F_4, F_5, F_6\\) have the same parity pattern (Odd, Odd, Even) as \\(F_1, F_2, F_3\\).\nSince each term depends only on the parity of the previous two, this 3-cycle (Odd, Odd, Even) repeats indefinitely.",
         "workingOut": "\\(\\text{Pattern: } \\text{Odd}, text{Odd}, text{Even}, text{Odd}, text{Odd}, text{Even}, dots\\)",
         "graphData": null
       }
@@ -5109,10 +5109,10 @@ export const Y12A_CH1_QUESTIONS = [
     "timeLimit": 120,
     "question": "For the sequence defined by \\(T_1 = 1\\), \\(T_2 = 3\\), and \\(T_n = T_{n-1} + T_{n-2}\\) for \\(n \\ge 3\\), show that every fourth term is a multiple of \\(3\\).",
     "options": [],
-    "answer": "Evaluating the first few terms gives the pattern of remainders modulo \\(3\\): \\(1, 0, 1, 1, 2, 0, 2, 2, 1, 0, \\dots\\) which repeats.\\nListing the actual terms: \\(T_1 = 1\\), \\(T_2 = 3\\), \\(T_3 = 4\\), \\(T_4 = 7\\), \\(T_5 = 11\\), \\(T_6 = 18\\), \\(T_7 = 29\\), \\(T_8 = 47\\), \\(T_9 = 76\\), \\(T_{10} = 123\\).\\nWe observe that the multiples of \\(3\\) are \\(T_2 = 3\\), \\(T_6 = 18\\), \\(T_{10} = 123\\), occurring at indices \\(n = 2, 6, 10, \\dots\\) (every fourth term).",
+    "answer": "Evaluating the first few terms gives the pattern of remainders modulo \\(3\\): \\(1, 0, 1, 1, 2, 0, 2, 2, 1, 0, \\dots\\) which repeats.\nListing the actual terms: \\(T_1 = 1\\), \\(T_2 = 3\\), \\(T_3 = 4\\), \\(T_4 = 7\\), \\(T_5 = 11\\), \\(T_6 = 18\\), \\(T_7 = 29\\), \\(T_8 = 47\\), \\(T_9 = 76\\), \\(T_{10} = 123\\).\nWe observe that the multiples of \\(3\\) are \\(T_2 = 3\\), \\(T_6 = 18\\), \\(T_{10} = 123\\), occurring at indices \\(n = 2, 6, 10, \\dots\\) (every fourth term).",
     "blanks": [],
     "hint": "List out the first 10 terms of the sequence and identify their divisibility by 3.",
-    "solution": "Evaluating the first few terms gives the pattern of remainders modulo \\(3\\): \\(1, 0, 1, 1, 2, 0, 2, 2, 1, 0, \\dots\\) which repeats.\\nListing the actual terms: \\(T_1 = 1\\), \\(T_2 = 3\\), \\(T_3 = 4\\), \\(T_4 = 7\\), \\(T_5 = 11\\), \\(T_6 = 18\\), \\(T_7 = 29\\), \\(T_8 = 47\\), \\(T_9 = 76\\), \\(T_{10} = 123\\).\\nWe observe that the multiples of \\(3\\) are \\(T_2 = 3\\), \\(T_6 = 18\\), \\(T_{10} = 123\\), occurring at indices \\(n = 2, 6, 10, \\dots\\) (every fourth term).",
+    "solution": "Evaluating the first few terms gives the pattern of remainders modulo \\(3\\): \\(1, 0, 1, 1, 2, 0, 2, 2, 1, 0, \\dots\\) which repeats.\nListing the actual terms: \\(T_1 = 1\\), \\(T_2 = 3\\), \\(T_3 = 4\\), \\(T_4 = 7\\), \\(T_5 = 11\\), \\(T_6 = 18\\), \\(T_7 = 29\\), \\(T_8 = 47\\), \\(T_9 = 76\\), \\(T_{10} = 123\\).\nWe observe that the multiples of \\(3\\) are \\(T_2 = 3\\), \\(T_6 = 18\\), \\(T_{10} = 123\\), occurring at indices \\(n = 2, 6, 10, \\dots\\) (every fourth term).",
     "solutionSteps": [
       {
         "explanation": "Calculate the first 8 terms of the sequence.",
@@ -5146,10 +5146,10 @@ export const Y12A_CH1_QUESTIONS = [
     "timeLimit": 120,
     "question": "Show that the recurrence relation \\(T_1 = 2\\) and \\[T_n = \\dfrac{T_{n-1}}{1 + T_{n-1}}\\] for \\(n \\ge 2\\) has the closed-form formula \\(T_n = \\dfrac{2}{2n - 1}\\).",
     "options": [],
-    "answer": "By writing the recurrence for the reciprocals, let \\(U_n = \\dfrac{1}{T_n}\\).\\nThen \\[U_n = \\dfrac{1 + T_{n-1}}{T_{n-1}} = U_{n-1} + 1\\].\\nSince \\(U_1 = \\dfrac{1}{2}\\), this is an AP with \\[U_n = \\dfrac{1}{2} + (n - 1) = \\dfrac{2n - 1}{2}\\].\\nTaking the reciprocal gives \\(T_n = \\dfrac{2}{2n - 1}\\).",
+    "answer": "By writing the recurrence for the reciprocals, let \\(U_n = \\dfrac{1}{T_n}\\).\nThen \\[U_n = \\dfrac{1 + T_{n-1}}{T_{n-1}} = U_{n-1} + 1\\].\nSince \\(U_1 = \\dfrac{1}{2}\\), this is an AP with \\[U_n = \\dfrac{1}{2} + (n - 1) = \\dfrac{2n - 1}{2}\\].\nTaking the reciprocal gives \\(T_n = \\dfrac{2}{2n - 1}\\).",
     "blanks": [],
     "hint": "Analyze the reciprocal of the terms, letting \\(U_n = \\dfrac{1}{T_n}\\).",
-    "solution": "By writing the recurrence for the reciprocals, let \\(U_n = \\dfrac{1}{T_n}\\).\\nThen \\[U_n = \\dfrac{1 + T_{n-1}}{T_{n-1}} = U_{n-1} + 1\\].\\nSince \\(U_1 = \\dfrac{1}{2}\\), this is an AP with \\[U_n = \\dfrac{1}{2} + (n - 1) = \\dfrac{2n - 1}{2}\\].\\nTaking the reciprocal gives \\(T_n = \\dfrac{2}{2n - 1}\\).",
+    "solution": "By writing the recurrence for the reciprocals, let \\(U_n = \\dfrac{1}{T_n}\\).\nThen \\[U_n = \\dfrac{1 + T_{n-1}}{T_{n-1}} = U_{n-1} + 1\\].\nSince \\(U_1 = \\dfrac{1}{2}\\), this is an AP with \\[U_n = \\dfrac{1}{2} + (n - 1) = \\dfrac{2n - 1}{2}\\].\nTaking the reciprocal gives \\(T_n = \\dfrac{2}{2n - 1}\\).",
     "solutionSteps": [
       {
         "explanation": "Define a new sequence for the reciprocals of the terms.",
@@ -5353,7 +5353,7 @@ export const Y12A_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "If the sum of the first \\(p\\) terms of an arithmetic progression is equal to the sum of the first \\(q\\) terms (where \\(p \\ne q\\)), state the sum of the first \\(p+q\\) terms.",
+    "question": "If the sum of the first \\(p\\) terms of an arithmetic progression is equal to the sum of the first \\(q\\) terms (where \\(p \ne q\\)), state the sum of the first \\(p+q\\) terms.",
     "options": [
       {
         "text": "\\(0\\)",
@@ -5393,7 +5393,7 @@ export const Y12A_CH1_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Divide by \\(p-q\\) since \\(p \\ne q\\).",
+        "explanation": "Divide by \\(p-q\\) since \\(p \ne q\\).",
         "workingOut": "\\(2a + d(p+q-1) = 0\\).",
         "graphData": null
       },
@@ -5471,7 +5471,7 @@ export const Y12A_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In an arithmetic sequence:\n- The \\(m\\)-th term is \\(\\dfrac{1}{n}\\)\n- The \\(n\\)-th term is \\(\\dfrac{1}{m}\\) (with \\(m \\ne n\\))\n\nFind the sum of the first \\(mn\\) terms.",
+    "question": "In an arithmetic sequence:\n- The \\(m\\)-th term is \\(\\dfrac{1}{n}\\)\n- The \\(n\\)-th term is \\(\\dfrac{1}{m}\\) (with \\(m \ne n\\))\n\nFind the sum of the first \\(mn\\) terms.",
     "options": [
       {
         "text": "\\(\\dfrac{mn+1}{2}\\)",
@@ -5650,10 +5650,10 @@ export const Y12A_CH1_QUESTIONS = [
     "timeLimit": 120,
     "question": "Prove that for any arithmetic sequence, \\(T_{n+k} + T_{n-k} = 2T_n\\) for all integers \\(k\\) such that \\(1 \\le k < n\\).",
     "options": [],
-    "answer": "By substituting the general term formula: T_{n+k} = a + (n + k - 1)d and T_{n-k} = a + (n - k - 1)d.\\nAdding these gives 2a + (2n - 2)d = 2(a + (n - 1)d) = 2T_n.",
+    "answer": "By substituting the general term formula: T_{n+k} = a + (n + k - 1)d and T_{n-k} = a + (n - k - 1)d.\nAdding these gives 2a + (2n - 2)d = 2(a + (n - 1)d) = 2T_n.",
     "blanks": [],
     "hint": "Use the general term formula \\(T_m = a + (m-1)d\\) for both terms on the left-hand side.",
-    "solution": "By substituting the general term formula: T_{n+k} = a + (n + k - 1)d and T_{n-k} = a + (n - k - 1)d.\\nAdding these gives 2a + (2n - 2)d = 2(a + (n - 1)d) = 2T_n.",
+    "solution": "By substituting the general term formula: T_{n+k} = a + (n + k - 1)d and T_{n-k} = a + (n - k - 1)d.\nAdding these gives 2a + (2n - 2)d = 2(a + (n - 1)d) = 2T_n.",
     "solutionSteps": [
       {
         "explanation": "Write the expression for \\(T_{n+k}\\).",
@@ -5692,10 +5692,10 @@ export const Y12A_CH1_QUESTIONS = [
     "timeLimit": 120,
     "question": "Show that if the numbers \\(\\dfrac{1}{b+c}\\), \\(\\dfrac{1}{c+a}\\), and \\(\\dfrac{1}{a+b}\\) form an arithmetic progression, then \\(a^2\\), \\(b^2\\), and \\(c^2\\) also form an arithmetic progression.",
     "options": [],
-    "answer": "Using the AP property: 2/(c+a) = 1/(b+c) + 1/(a+b).\\nCross-multiplying and simplifying leads to 2(b+c)(a+b) = (c+a)(a + 2b + c), which expands and reduces directly to b^2 - a^2 = c^2 - b^2, showing that a^2, b^2, c^2 are in AP.",
+    "answer": "Using the AP property: 2/(c+a) = 1/(b+c) + 1/(a+b).\nCross-multiplying and simplifying leads to 2(b+c)(a+b) = (c+a)(a + 2b + c), which expands and reduces directly to b^2 - a^2 = c^2 - b^2, showing that a^2, b^2, c^2 are in AP.",
     "blanks": [],
     "hint": "Set up the condition for three numbers to be in AP: \\(2M = L + R\\), where \\(M\\) is the middle term.",
-    "solution": "Using the AP property: 2/(c+a) = 1/(b+c) + 1/(a+b).\\nCross-multiplying and simplifying leads to 2(b+c)(a+b) = (c+a)(a + 2b + c), which expands and reduces directly to b^2 - a^2 = c^2 - b^2, showing that a^2, b^2, c^2 are in AP.",
+    "solution": "Using the AP property: 2/(c+a) = 1/(b+c) + 1/(a+b).\nCross-multiplying and simplifying leads to 2(b+c)(a+b) = (c+a)(a + 2b + c), which expands and reduces directly to b^2 - a^2 = c^2 - b^2, showing that a^2, b^2, c^2 are in AP.",
     "solutionSteps": [
       {
         "explanation": "Set up the arithmetic progression relation.",
@@ -6181,10 +6181,10 @@ export const Y12A_CH1_QUESTIONS = [
     "timeLimit": 120,
     "question": "Show that if \\(S\\) is the sum to infinity of a geometric series with positive first term \\(a\\) and positive common ratio \\(r < 1\\), then the sum of the squares of the terms is \\(\\dfrac{a^2}{1 - r^2}\\).",
     "options": [],
-    "answer": "If the original series is \\(a, ar, ar^2, \\dots\\), then the series of squares is \\(a^2, a^2r^2, a^2r^4, \\dots\\).\\nThis is a geometric series with first term \\(A = a^2\\) and common ratio \\(R = r^2\\).\\nSince \\(0 < r < 1 \\implies 0 < r^2 < 1\\), it converges.\\nIts sum to infinity is \\[\\dfrac{A}{1 - R} = \\dfrac{a^2}{1 - r^2}\\].",
+    "answer": "If the original series is \\(a, ar, ar^2, \\dots\\), then the series of squares is \\(a^2, a^2r^2, a^2r^4, \\dots\\).\nThis is a geometric series with first term \\(A = a^2\\) and common ratio \\(R = r^2\\).\nSince \\(0 < r < 1 \\implies 0 < r^2 < 1\\), it converges.\nIts sum to infinity is \\[\\dfrac{A}{1 - R} = \\dfrac{a^2}{1 - r^2}\\].",
     "blanks": [],
     "hint": "Write out the first few terms of both the original series and the squared series.",
-    "solution": "If the original series is \\(a, ar, ar^2, \\dots\\), then the series of squares is \\(a^2, a^2r^2, a^2r^4, \\dots\\).\\nThis is a geometric series with first term \\(A = a^2\\) and common ratio \\(R = r^2\\).\\nSince \\(0 < r < 1 \\implies 0 < r^2 < 1\\), it converges.\\nIts sum to infinity is \\[\\dfrac{A}{1 - R} = \\dfrac{a^2}{1 - r^2}\\].",
+    "solution": "If the original series is \\(a, ar, ar^2, \\dots\\), then the series of squares is \\(a^2, a^2r^2, a^2r^4, \\dots\\).\nThis is a geometric series with first term \\(A = a^2\\) and common ratio \\(R = r^2\\).\nSince \\(0 < r < 1 \\implies 0 < r^2 < 1\\), it converges.\nIts sum to infinity is \\[\\dfrac{A}{1 - R} = \\dfrac{a^2}{1 - r^2}\\].",
     "solutionSteps": [
       {
         "explanation": "List the terms of the original geometric series.",
@@ -6223,10 +6223,10 @@ export const Y12A_CH1_QUESTIONS = [
     "timeLimit": 120,
     "question": "Prove that the decimal expansion \\(0.142857142857\\dots\\) can be written as a limiting sum of a geometric progression, and find its value as a simplified fraction.",
     "options": [],
-    "answer": "The decimal can be written as the sum of a geometric series: \\(\\dfrac{142857}{10^6} + \\dfrac{142857}{10^{12}} + \\dots\\) with first term \\(a = \\dfrac{142857}{10^6}\\) and common ratio \\(r = \\dfrac{1}{10^6}\\).\\nThe limiting sum is: \\[S_{\\infty} = \\dfrac{a}{1-r} = \\dfrac{\\dfrac{142857}{10^6}}{1 - \\dfrac{1}{10^6}} = \\dfrac{142857}{10^6 - 1} = \\dfrac{142857}{999999} = \\dfrac{1}{7}\\].",
+    "answer": "The decimal can be written as the sum of a geometric series: \\(\\dfrac{142857}{10^6} + \\dfrac{142857}{10^{12}} + \\dots\\) with first term \\(a = \\dfrac{142857}{10^6}\\) and common ratio \\(r = \\dfrac{1}{10^6}\\).\nThe limiting sum is: \\[S_{\\infty} = \\dfrac{a}{1-r} = \\dfrac{\\dfrac{142857}{10^6}}{1 - \\dfrac{1}{10^6}} = \\dfrac{142857}{10^6 - 1} = \\dfrac{142857}{999999} = \\dfrac{1}{7}\\].",
     "blanks": [],
     "hint": "Express the repeating decimal as a sum of fractional parts.",
-    "solution": "The decimal can be written as the sum of a geometric series: \\(\\dfrac{142857}{10^6} + \\dfrac{142857}{10^{12}} + \\dots\\) with first term \\(a = \\dfrac{142857}{10^6}\\) and common ratio \\(r = \\dfrac{1}{10^6}\\).\\nThe limiting sum is: \\[S_{\\infty} = \\dfrac{a}{1-r} = \\dfrac{\\dfrac{142857}{10^6}}{1 - \\dfrac{1}{10^6}} = \\dfrac{142857}{10^6 - 1} = \\dfrac{142857}{999999} = \\dfrac{1}{7}\\].",
+    "solution": "The decimal can be written as the sum of a geometric series: \\(\\dfrac{142857}{10^6} + \\dfrac{142857}{10^{12}} + \\dots\\) with first term \\(a = \\dfrac{142857}{10^6}\\) and common ratio \\(r = \\dfrac{1}{10^6}\\).\nThe limiting sum is: \\[S_{\\infty} = \\dfrac{a}{1-r} = \\dfrac{\\dfrac{142857}{10^6}}{1 - \\dfrac{1}{10^6}} = \\dfrac{142857}{10^6 - 1} = \\dfrac{142857}{999999} = \\dfrac{1}{7}\\].",
     "solutionSteps": [
       {
         "explanation": "Express the decimal as an infinite series.",
@@ -6440,7 +6440,7 @@ export const Y12A_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The first term of an arithmetic progression is \\(2\\). If the first, third, and eleventh terms of this AP form consecutive terms of a GP, find the common difference of the AP (assume \\(d \\ne 0\\)).",
+    "question": "The first term of an arithmetic progression is \\(2\\). If the first, third, and eleventh terms of this AP form consecutive terms of a GP, find the common difference of the AP (assume \\(d \ne 0\\)).",
     "options": [
       {
         "text": "\\(1\\)",
@@ -6486,7 +6486,7 @@ export const Y12A_CH1_QUESTIONS = [
       },
       {
         "explanation": "Find the non-zero common difference.",
-        "workingOut": "Since \\(d \\ne 0\\), we have \\(d = 3\\). (Let's change answer/options to match 3)",
+        "workingOut": "Since \\(d \ne 0\\), we have \\(d = 3\\). (Let's change answer/options to match 3)",
         "graphData": null
       }
     ],
@@ -6535,7 +6535,7 @@ export const Y12A_CH1_QUESTIONS = [
       },
       {
         "explanation": "Expand and simplify the equation.",
-        "workingOut": "\\[a^2 + 8ad + 16d^2 = a^2 + 24ad \\implies 16d^2 = 16ad \\implies d = a\\] (assuming \\(d \\ne 0\\)).",
+        "workingOut": "\\[a^2 + 8ad + 16d^2 = a^2 + 24ad \\implies 16d^2 = 16ad \\implies d = a\\] (assuming \\(d \ne 0\\)).",
         "graphData": null
       },
       {
@@ -6722,10 +6722,10 @@ export const Y12A_CH1_QUESTIONS = [
     "timeLimit": 120,
     "question": "Explain why three non-zero numbers \\(a, b, c\\) can be in both arithmetic progression and geometric progression if and only if they are all equal.",
     "options": [],
-    "answer": "If they are in AP, \\(2b = a + c\\).\\nIf they are in GP, \\(b^2 = ac\\).\\nSubstituting \\(b = \\dfrac{a+c}{2}\\) gives \\[\\left(\\dfrac{a+c}{2}\\right)^2 = ac \\implies (a+c)^2 = 4ac \\implies a^2 - 2ac + c^2 = 0 \\implies (a-c)^2 = 0 \\implies a = c\\].\\nSince \\(a = c\\), we have \\(2b = 2a \\implies b = a\\).\\nThus, \\(a = b = c\\).",
+    "answer": "If they are in AP, \\(2b = a + c\\).\nIf they are in GP, \\(b^2 = ac\\).\nSubstituting \\(b = \\dfrac{a+c}{2}\\) gives \\[\\left(\\dfrac{a+c}{2}\\right)^2 = ac \\implies (a+c)^2 = 4ac \\implies a^2 - 2ac + c^2 = 0 \\implies (a-c)^2 = 0 \\implies a = c\\].\nSince \\(a = c\\), we have \\(2b = 2a \\implies b = a\\).\nThus, \\(a = b = c\\).",
     "blanks": [],
     "hint": "Set up the conditions for both progressions and solve the resulting system of equations.",
-    "solution": "If they are in AP, \\(2b = a + c\\).\\nIf they are in GP, \\(b^2 = ac\\).\\nSubstituting \\(b = \\dfrac{a+c}{2}\\) gives \\[\\left(\\dfrac{a+c}{2}\\right)^2 = ac \\implies (a+c)^2 = 4ac \\implies a^2 - 2ac + c^2 = 0 \\implies (a-c)^2 = 0 \\implies a = c\\].\\nSince \\(a = c\\), we have \\(2b = 2a \\implies b = a\\).\\nThus, \\(a = b = c\\).",
+    "solution": "If they are in AP, \\(2b = a + c\\).\nIf they are in GP, \\(b^2 = ac\\).\nSubstituting \\(b = \\dfrac{a+c}{2}\\) gives \\[\\left(\\dfrac{a+c}{2}\\right)^2 = ac \\implies (a+c)^2 = 4ac \\implies a^2 - 2ac + c^2 = 0 \\implies (a-c)^2 = 0 \\implies a = c\\].\nSince \\(a = c\\), we have \\(2b = 2a \\implies b = a\\).\nThus, \\(a = b = c\\).",
     "solutionSteps": [
       {
         "explanation": "State the condition for \\(a, b, c\\) to be in AP.",
@@ -6764,10 +6764,10 @@ export const Y12A_CH1_QUESTIONS = [
     "timeLimit": 120,
     "question": "Show that if \\(a, b, c\\) are in geometric progression, then \\(\\log a\\), \\(\\log b\\), and \\(\\log c\\) are in arithmetic progression (assume \\(a, b, c > 0\\)).",
     "options": [],
-    "answer": "Since \\(a, b, c\\) are in GP, \\(b^2 = ac\\).\\nTaking the logarithm of both sides gives \\[\\log(b^2) = \\log(ac) \\implies 2 \\log b = \\log a + \\log c\\].\\nThis is the exact condition for \\(\\log a\\), \\(\\log b\\), and \\(\\log c\\) to be in arithmetic progression.",
+    "answer": "Since \\(a, b, c\\) are in GP, \\(b^2 = ac\\).\nTaking the logarithm of both sides gives \\[\\log(b^2) = \\log(ac) \\implies 2 \\log b = \\log a + \\log c\\].\nThis is the exact condition for \\(\\log a\\), \\(\\log b\\), and \\(\\log c\\) to be in arithmetic progression.",
     "blanks": [],
     "hint": "Start with the geometric progression condition \\(b^2 = ac\\) and apply logarithms to both sides.",
-    "solution": "Since \\(a, b, c\\) are in GP, \\(b^2 = ac\\).\\nTaking the logarithm of both sides gives \\[\\log(b^2) = \\log(ac) \\implies 2 \\log b = \\log a + \\log c\\].\\nThis is the exact condition for \\(\\log a\\), \\(\\log b\\), and \\(\\log c\\) to be in arithmetic progression.",
+    "solution": "Since \\(a, b, c\\) are in GP, \\(b^2 = ac\\).\nTaking the logarithm of both sides gives \\[\\log(b^2) = \\log(ac) \\implies 2 \\log b = \\log a + \\log c\\].\nThis is the exact condition for \\(\\log a\\), \\(\\log b\\), and \\(\\log c\\) to be in arithmetic progression.",
     "solutionSteps": [
       {
         "explanation": "State the GP condition for \\(a, b, c\\).",
@@ -7238,10 +7238,10 @@ export const Y12A_CH1_QUESTIONS = [
     "timeLimit": 120,
     "question": "Explain how to derive the sum formula of a finite geometric progression using algebraic manipulation.",
     "options": [],
-    "answer": "Let \\[S_n = a + ar + \\dots + ar^{n-1}\\].\\nMultiplying by \\(r\\) gives \\[r S_n = ar + ar^2 + \\dots + ar^n\\].\\nSubtracting the second equation from the first yields \\(S_n(1 - r) = a - ar^n\\), which simplifies to \\[S_n = \\dfrac{a(1 - r^n)}{1 - r}\\] for \\(r \\ne 1\\).",
+    "answer": "Let \\[S_n = a + ar + \\dots + ar^{n-1}\\].\nMultiplying by \\(r\\) gives \\[r S_n = ar + ar^2 + \\dots + ar^n\\].\nSubtracting the second equation from the first yields \\(S_n(1 - r) = a - ar^n\\), which simplifies to \\[S_n = \\dfrac{a(1 - r^n)}{1 - r}\\] for \\(r \ne 1\\).",
     "blanks": [],
     "hint": "Write down the series expression for \\(S_n\\), multiply by \\(r\\), and subtract the two equations.",
-    "solution": "Let \\[S_n = a + ar + \\dots + ar^{n-1}\\].\\nMultiplying by \\(r\\) gives \\[r S_n = ar + ar^2 + \\dots + ar^n\\].\\nSubtracting the second equation from the first yields \\(S_n(1 - r) = a - ar^n\\), which simplifies to \\[S_n = \\dfrac{a(1 - r^n)}{1 - r}\\] for \\(r \\ne 1\\).",
+    "solution": "Let \\[S_n = a + ar + \\dots + ar^{n-1}\\].\nMultiplying by \\(r\\) gives \\[r S_n = ar + ar^2 + \\dots + ar^n\\].\nSubtracting the second equation from the first yields \\(S_n(1 - r) = a - ar^n\\), which simplifies to \\[S_n = \\dfrac{a(1 - r^n)}{1 - r}\\] for \\(r \ne 1\\).",
     "solutionSteps": [
       {
         "explanation": "Write down the sum of the first \\(n\\) terms.",
@@ -7265,7 +7265,7 @@ export const Y12A_CH1_QUESTIONS = [
       },
       {
         "explanation": "Divide by \\(1-r\\) to find the final formula.",
-        "workingOut": "\\[S_n = \\dfrac{a(1 - r^n)}{1 - r}\\] (valid for \\(r \\ne 1\\)).",
+        "workingOut": "\\[S_n = \\dfrac{a(1 - r^n)}{1 - r}\\] (valid for \\(r \ne 1\\)).",
         "graphData": null
       }
     ],
@@ -7280,10 +7280,10 @@ export const Y12A_CH1_QUESTIONS = [
     "timeLimit": 120,
     "question": "A mortgage of \\(\\$200,000\\) is repaid by monthly installments of \\(\\$M\\) at an interest rate of \\(12\\%\\) per annum compounded monthly. Show that the balance outstanding after \\(n\\) months is given by \\[B_n = 200000(1.01)^n - M \\dfrac{1.01^n - 1}{0.01}\\].",
     "options": [],
-    "answer": "Using the recursive relation: \\(B_1 = 200000(1.01) - M\\), \\[B_2 = B_1(1.01) - M = 200000(1.01)^2 - M(1 + 1.01)\\].\\nBy induction, \\[B_n = 200000(1.01)^n - M(1 + 1.01 + \\dots + 1.01^{n-1})\\].\\nSimplifying the geometric series inside the brackets yields the required formula: \\[B_n = 200000(1.01)^n - M \\dfrac{1.01^n - 1}{0.01}\\].",
+    "answer": "Using the recursive relation: \\(B_1 = 200000(1.01) - M\\), \\[B_2 = B_1(1.01) - M = 200000(1.01)^2 - M(1 + 1.01)\\].\nBy induction, \\[B_n = 200000(1.01)^n - M(1 + 1.01 + \\dots + 1.01^{n-1})\\].\nSimplifying the geometric series inside the brackets yields the required formula: \\[B_n = 200000(1.01)^n - M \\dfrac{1.01^n - 1}{0.01}\\].",
     "blanks": [],
     "hint": "Calculate the outstanding balance for the first two months recursively and look for a pattern.",
-    "solution": "Using the recursive relation: \\(B_1 = 200000(1.01) - M\\), \\[B_2 = B_1(1.01) - M = 200000(1.01)^2 - M(1 + 1.01)\\].\\nBy induction, \\[B_n = 200000(1.01)^n - M(1 + 1.01 + \\dots + 1.01^{n-1})\\].\\nSimplifying the geometric series inside the brackets yields the required formula: \\[B_n = 200000(1.01)^n - M \\dfrac{1.01^n - 1}{0.01}\\].",
+    "solution": "Using the recursive relation: \\(B_1 = 200000(1.01) - M\\), \\[B_2 = B_1(1.01) - M = 200000(1.01)^2 - M(1 + 1.01)\\].\nBy induction, \\[B_n = 200000(1.01)^n - M(1 + 1.01 + \\dots + 1.01^{n-1})\\].\nSimplifying the geometric series inside the brackets yields the required formula: \\[B_n = 200000(1.01)^n - M \\dfrac{1.01^n - 1}{0.01}\\].",
     "solutionSteps": [
       {
         "explanation": "Find the monthly interest rate.",
@@ -7546,7 +7546,7 @@ export const Y12A_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "If \\(x, 2y, 3z\\) are in arithmetic progression, and \\(x, y, z\\) are in geometric progression, find the common ratio of the geometric progression (assume \\(r \\ne 1\\)).",
+    "question": "If \\(x, 2y, 3z\\) are in arithmetic progression, and \\(x, y, z\\) are in geometric progression, find the common ratio of the geometric progression (assume \\(r \ne 1\\)).",
     "options": [
       {
         "text": "\\(\\dfrac{1}{3}\\)",
@@ -7592,7 +7592,7 @@ export const Y12A_CH1_QUESTIONS = [
       },
       {
         "explanation": "Solve the quadratic equation.",
-        "workingOut": "\\[(3r - 1)(r - 1) = 0 \\implies r = \\dfrac{1}{3}\\] (since \\(r \\ne 1\\)).",
+        "workingOut": "\\[(3r - 1)(r - 1) = 0 \\implies r = \\dfrac{1}{3}\\] (since \\(r \ne 1\\)).",
         "graphData": null
       }
     ],
@@ -7769,10 +7769,10 @@ export const Y12A_CH1_QUESTIONS = [
     "timeLimit": 120,
     "question": "Show that for positive numbers \\(a, b\\), the arithmetic mean \\(A = \\dfrac{a+b}{2}\\) and geometric mean \\(G = \\sqrt{ab}\\) satisfy \\(A \\ge G\\).",
     "options": [],
-    "answer": "By analyzing the difference: \\[A - G = \\dfrac{a+b}{2} - \\sqrt{ab} = \\dfrac{a - 2\\sqrt{ab} + b}{2} = \\dfrac{(\\sqrt{a} - \\sqrt{b})^2}{2}\\].\\nSince any squared real number is non-negative, \\(\\dfrac{(\\sqrt{a} - \\sqrt{b})^2}{2} \\ge 0\\), proving \\(A - G \\ge 0 \\implies A \\ge G\\).",
+    "answer": "By analyzing the difference: \\[A - G = \\dfrac{a+b}{2} - \\sqrt{ab} = \\dfrac{a - 2\\sqrt{ab} + b}{2} = \\dfrac{(\\sqrt{a} - \\sqrt{b})^2}{2}\\].\nSince any squared real number is non-negative, \\(\\dfrac{(\\sqrt{a} - \\sqrt{b})^2}{2} \\ge 0\\), proving \\(A - G \\ge 0 \\implies A \\ge G\\).",
     "blanks": [],
     "hint": "Consider the squared difference of the square roots: \\((\\sqrt{a} - \\sqrt{b})^2\\).",
-    "solution": "By analyzing the difference: \\[A - G = \\dfrac{a+b}{2} - \\sqrt{ab} = \\dfrac{a - 2\\sqrt{ab} + b}{2} = \\dfrac{(\\sqrt{a} - \\sqrt{b})^2}{2}\\].\\nSince any squared real number is non-negative, \\(\\dfrac{(\\sqrt{a} - \\sqrt{b})^2}{2} \\ge 0\\), proving \\(A - G \\ge 0 \\implies A \\ge G\\).",
+    "solution": "By analyzing the difference: \\[A - G = \\dfrac{a+b}{2} - \\sqrt{ab} = \\dfrac{a - 2\\sqrt{ab} + b}{2} = \\dfrac{(\\sqrt{a} - \\sqrt{b})^2}{2}\\].\nSince any squared real number is non-negative, \\(\\dfrac{(\\sqrt{a} - \\sqrt{b})^2}{2} \\ge 0\\), proving \\(A - G \\ge 0 \\implies A \\ge G\\).",
     "solutionSteps": [
       {
         "explanation": "State the non-negative property of squares.",
@@ -7811,10 +7811,10 @@ export const Y12A_CH1_QUESTIONS = [
     "timeLimit": 120,
     "question": "Prove that the sum of the first \\(n\\) odd natural numbers is \\(n^2\\).",
     "options": [],
-    "answer": "The first \\(n\\) odd numbers form an AP with \\(a = 1\\) and \\(d = 2\\).\\nThe sum is \\[S_n = \\dfrac{n}{2}[2a + (n-1)d] = \\dfrac{n}{2}[2 + 2n - 2] = n^2\\].",
+    "answer": "The first \\(n\\) odd numbers form an AP with \\(a = 1\\) and \\(d = 2\\).\nThe sum is \\[S_n = \\dfrac{n}{2}[2a + (n-1)d] = \\dfrac{n}{2}[2 + 2n - 2] = n^2\\].",
     "blanks": [],
     "hint": "Write the sequence of odd numbers as an arithmetic progression with \\(a = 1\\) and \\(d = 2\\).",
-    "solution": "The first \\(n\\) odd numbers form an AP with \\(a = 1\\) and \\(d = 2\\).\\nThe sum is \\[S_n = \\dfrac{n}{2}[2a + (n-1)d] = \\dfrac{n}{2}[2 + 2n - 2] = n^2\\].",
+    "solution": "The first \\(n\\) odd numbers form an AP with \\(a = 1\\) and \\(d = 2\\).\nThe sum is \\[S_n = \\dfrac{n}{2}[2a + (n-1)d] = \\dfrac{n}{2}[2 + 2n - 2] = n^2\\].",
     "solutionSteps": [
       {
         "explanation": "Identify parameters of the progression.",
@@ -8072,7 +8072,7 @@ export const Y12A_CH1_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "In an arithmetic progression, the sum of the first \\(p\\) terms is \\(q\\) and the sum of the first \\(q\\) terms is \\(p\\) (where \\(p \\ne q\\)). Find the sum of the first \\(p+q\\) terms.",
+    "question": "In an arithmetic progression, the sum of the first \\(p\\) terms is \\(q\\) and the sum of the first \\(q\\) terms is \\(p\\) (where \\(p \ne q\\)). Find the sum of the first \\(p+q\\) terms.",
     "options": [
       {
         "text": "\\(-(p+q)\\)",
@@ -8274,7 +8274,7 @@ export const Y12A_CH1_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Divide both sides by \\(a\\) (since \\(a \\ne 0\\)).",
+        "explanation": "Divide both sides by \\(a\\) (since \\(a \ne 0\\)).",
         "workingOut": "\\(\\dfrac{1}{1-r} = 4r\\).",
         "graphData": null
       },
@@ -8811,10 +8811,10 @@ export const Y12A_CH1_QUESTIONS = [
     "timeLimit": 120,
     "question": "Show that for the sequence \\[T_n = \\sin(180n^\\circ) + \\cos(180n^\\circ)\\] for \\(n \\ge 1\\), every term has a value of \\(-1\\) or \\(1\\).",
     "options": [],
-    "answer": "Evaluating the terms: \\[T_n = \\sin(180n^\\circ) + \\cos(180n^\\circ) = 0 + (-1)^n = (-1)^n\\].\\nSince \\((-1)^n\\) is \\(-1\\) for odd \\(n\\) and \\(1\\) for even \\(n\\), every term is either \\(-1\\) or \\(1\\).",
+    "answer": "Evaluating the terms: \\[T_n = \\sin(180n^\\circ) + \\cos(180n^\\circ) = 0 + (-1)^n = (-1)^n\\].\nSince \\((-1)^n\\) is \\(-1\\) for odd \\(n\\) and \\(1\\) for even \\(n\\), every term is either \\(-1\\) or \\(1\\).",
     "blanks": [],
     "hint": "Evaluate the sine and cosine terms separately for positive integers \\(n\\).",
-    "solution": "Evaluating the terms: \\[T_n = \\sin(180n^\\circ) + \\cos(180n^\\circ) = 0 + (-1)^n = (-1)^n\\].\\nSince \\((-1)^n\\) is \\(-1\\) for odd \\(n\\) and \\(1\\) for even \\(n\\), every term is either \\(-1\\) or \\(1\\).",
+    "solution": "Evaluating the terms: \\[T_n = \\sin(180n^\\circ) + \\cos(180n^\\circ) = 0 + (-1)^n = (-1)^n\\].\nSince \\((-1)^n\\) is \\(-1\\) for odd \\(n\\) and \\(1\\) for even \\(n\\), every term is either \\(-1\\) or \\(1\\).",
     "solutionSteps": [
       {
         "explanation": "Evaluate the sine term for any integer \\(n\\).",
@@ -8853,10 +8853,10 @@ export const Y12A_CH1_QUESTIONS = [
     "timeLimit": 120,
     "question": "Prove that the sequence \\[T_n = \\sin\\left(\\dfrac{n\\pi}{4}\\right)\\] is periodic with period \\(8\\).",
     "options": [],
-    "answer": "By evaluating at \\(n + 8\\): \\[T_{n+8} = \\sin\\left(\\dfrac{(n+8)\\pi}{4}\\right) = \\sin\\left(\\dfrac{n\\pi}{4} + 2\\pi\\right)\\].\\nSince the sine function is periodic with period \\(2\\pi\\), we have \\[\\sin\\left(\\dfrac{n\\pi}{4} + 2\\pi\\right) = \\sin\\left(\\dfrac{n\\pi}{4}\\right) = T_n\\].\\nThis proves the period is \\(8\\).",
+    "answer": "By evaluating at \\(n + 8\\): \\[T_{n+8} = \\sin\\left(\\dfrac{(n+8)\\pi}{4}\\right) = \\sin\\left(\\dfrac{n\\pi}{4} + 2\\pi\\right)\\].\nSince the sine function is periodic with period \\(2\\pi\\), we have \\[\\sin\\left(\\dfrac{n\\pi}{4} + 2\\pi\\right) = \\sin\\left(\\dfrac{n\\pi}{4}\\right) = T_n\\].\nThis proves the period is \\(8\\).",
     "blanks": [],
     "hint": "Substitute \\(n + 8\\) for \\(n\\) in the general term formula and use the periodicity of the sine function.",
-    "solution": "By evaluating at \\(n + 8\\): \\[T_{n+8} = \\sin\\left(\\dfrac{(n+8)\\pi}{4}\\right) = \\sin\\left(\\dfrac{n\\pi}{4} + 2\\pi\\right)\\].\\nSince the sine function is periodic with period \\(2\\pi\\), we have \\[\\sin\\left(\\dfrac{n\\pi}{4} + 2\\pi\\right) = \\sin\\left(\\dfrac{n\\pi}{4}\\right) = T_n\\].\\nThis proves the period is \\(8\\).",
+    "solution": "By evaluating at \\(n + 8\\): \\[T_{n+8} = \\sin\\left(\\dfrac{(n+8)\\pi}{4}\\right) = \\sin\\left(\\dfrac{n\\pi}{4} + 2\\pi\\right)\\].\nSince the sine function is periodic with period \\(2\\pi\\), we have \\[\\sin\\left(\\dfrac{n\\pi}{4} + 2\\pi\\right) = \\sin\\left(\\dfrac{n\\pi}{4}\\right) = T_n\\].\nThis proves the period is \\(8\\).",
     "solutionSteps": [
       {
         "explanation": "Write down the expression for \\(T_{n+8}\\).",
@@ -9322,10 +9322,10 @@ export const Y12A_CH1_QUESTIONS = [
     "timeLimit": 120,
     "question": "Show that the series \\[\\sum_{n=1}^{\\infty} \\dfrac{1}{n(n+1)(n+2)}\\] converges to \\(\\dfrac{1}{4}\\).",
     "options": [],
-    "answer": "Using partial fraction decomposition: \\[\\dfrac{1}{n(n+1)(n+2)} = \\dfrac{1}{2} \\left( \\dfrac{1}{n(n+1)} - \\dfrac{1}{(n+1)(n+2)} \\right)\\].\\nThe partial sum of the first \\(k\\) terms telescopes to \\(\\dfrac{1}{2} \\left( \\dfrac{1}{2} - \\dfrac{1}{(k+1)(k+2)} \\right)\\).\\nTaking the limit as \\(k \\to \\infty\\) yields \\[\\dfrac{1}{2} \\times \\dfrac{1}{2} = \\dfrac{1}{4}\\].",
+    "answer": "Using partial fraction decomposition: \\[\\dfrac{1}{n(n+1)(n+2)} = \\dfrac{1}{2} \\left( \\dfrac{1}{n(n+1)} - \\dfrac{1}{(n+1)(n+2)} \\right)\\].\nThe partial sum of the first \\(k\\) terms telescopes to \\(\\dfrac{1}{2} \\left( \\dfrac{1}{2} - \\dfrac{1}{(k+1)(k+2)} \\right)\\).\nTaking the limit as \\(k \\to \\infty\\) yields \\[\\dfrac{1}{2} \\times \\dfrac{1}{2} = \\dfrac{1}{4}\\].",
     "blanks": [],
     "hint": "Use partial fraction decomposition to write the term as \\(\\dfrac{1}{2}\\left(\\dfrac{1}{n(n+1)} - \\dfrac{1}{(n+1)(n+2)}\\right)\\).",
-    "solution": "Using partial fraction decomposition: \\[\\dfrac{1}{n(n+1)(n+2)} = \\dfrac{1}{2} \\left( \\dfrac{1}{n(n+1)} - \\dfrac{1}{(n+1)(n+2)} \\right)\\].\\nThe partial sum of the first \\(k\\) terms telescopes to \\(\\dfrac{1}{2} \\left( \\dfrac{1}{2} - \\dfrac{1}{(k+1)(k+2)} \\right)\\).\\nTaking the limit as \\(k \\to \\infty\\) yields \\[\\dfrac{1}{2} \\times \\dfrac{1}{2} = \\dfrac{1}{4}\\].",
+    "solution": "Using partial fraction decomposition: \\[\\dfrac{1}{n(n+1)(n+2)} = \\dfrac{1}{2} \\left( \\dfrac{1}{n(n+1)} - \\dfrac{1}{(n+1)(n+2)} \\right)\\].\nThe partial sum of the first \\(k\\) terms telescopes to \\(\\dfrac{1}{2} \\left( \\dfrac{1}{2} - \\dfrac{1}{(k+1)(k+2)} \\right)\\).\nTaking the limit as \\(k \\to \\infty\\) yields \\[\\dfrac{1}{2} \\times \\dfrac{1}{2} = \\dfrac{1}{4}\\].",
     "solutionSteps": [
       {
         "explanation": "Decompose the general term.",
@@ -9359,10 +9359,10 @@ export const Y12A_CH1_QUESTIONS = [
     "timeLimit": 120,
     "question": "Prove that the sum of the first \\(n\\) terms of the arithmetic-geometric progression satisfies \\\\[\\sum_{k=1}^{n} \\dfrac{k}{2^k} = 2 - \\dfrac{n+2}{2^n}\\\\].",
     "options": [],
-    "answer": "Let \\[S_n = \\sum_{k=1}^n \\dfrac{k}{2^k}\\].\\nThen \\[\\dfrac{1}{2}S_n = \\sum_{k=1}^n \\dfrac{k}{2^{k+1}}\\].\\nSubtracting the second equation from the first yields \\[\\dfrac{1}{2}S_n = \\dfrac{1}{2} + \\sum_{k=2}^n \\dfrac{1}{2^k} - \\dfrac{n}{2^{n+1}} = \\left(1 - \\dfrac{1}{2^n}\\right) - \\dfrac{n}{2^{n+1}}\\], which simplifies to \\[S_n = 2 - \\dfrac{n+2}{2^n}\\].",
+    "answer": "Let \\[S_n = \\sum_{k=1}^n \\dfrac{k}{2^k}\\].\nThen \\[\\dfrac{1}{2}S_n = \\sum_{k=1}^n \\dfrac{k}{2^{k+1}}\\].\nSubtracting the second equation from the first yields \\[\\dfrac{1}{2}S_n = \\dfrac{1}{2} + \\sum_{k=2}^n \\dfrac{1}{2^k} - \\dfrac{n}{2^{n+1}} = \\left(1 - \\dfrac{1}{2^n}\\right) - \\dfrac{n}{2^{n+1}}\\], which simplifies to \\[S_n = 2 - \\dfrac{n+2}{2^n}\\].",
     "blanks": [],
     "hint": "Set the sum equal to \\(S_n\\), write \\(\\dfrac{1}{2}S_n\\), and subtract the two equations.",
-    "solution": "Let \\[S_n = \\sum_{k=1}^n \\dfrac{k}{2^k}\\].\\nThen \\[\\dfrac{1}{2}S_n = \\sum_{k=1}^n \\dfrac{k}{2^{k+1}}\\].\\nSubtracting the second equation from the first yields \\[\\dfrac{1}{2}S_n = \\dfrac{1}{2} + \\sum_{k=2}^n \\dfrac{1}{2^k} - \\dfrac{n}{2^{n+1}} = \\left(1 - \\dfrac{1}{2^n}\\right) - \\dfrac{n}{2^{n+1}}\\], which simplifies to \\[S_n = 2 - \\dfrac{n+2}{2^n}\\].",
+    "solution": "Let \\[S_n = \\sum_{k=1}^n \\dfrac{k}{2^k}\\].\nThen \\[\\dfrac{1}{2}S_n = \\sum_{k=1}^n \\dfrac{k}{2^{k+1}}\\].\nSubtracting the second equation from the first yields \\[\\dfrac{1}{2}S_n = \\dfrac{1}{2} + \\sum_{k=2}^n \\dfrac{1}{2^k} - \\dfrac{n}{2^{n+1}} = \\left(1 - \\dfrac{1}{2^n}\\right) - \\dfrac{n}{2^{n+1}}\\], which simplifies to \\[S_n = 2 - \\dfrac{n+2}{2^n}\\].",
     "solutionSteps": [
       {
         "explanation": "Write the sum equation.",
@@ -9738,12 +9738,12 @@ export const Y12A_CH1_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Prove that for the recurrence relation \\(T_1 = a\\) and \\(T_n = r T_{n-1} + d\\) for \\(n \\ge 2\\), the general term is given by \\[T_n = a r^{n-1} + d \\dfrac{r^{n-1} - 1}{r - 1}\\] (assume \\(r \\ne 1\\)).",
+    "question": "Prove that for the recurrence relation \\(T_1 = a\\) and \\(T_n = r T_{n-1} + d\\) for \\(n \\ge 2\\), the general term is given by \\[T_n = a r^{n-1} + d \\dfrac{r^{n-1} - 1}{r - 1}\\] (assume \\(r \ne 1\\)).",
     "options": [],
-    "answer": "By writing out the first few terms: \\(T_2 = ar + d\\), \\(T_3 = ar^2 + dr + d\\), and in general \\[T_n = ar^{n-1} + d(r^{n-2} + \\dots + 1)\\].\\nThe expression in brackets is a geometric series with first term \\(1\\) and common ratio \\(r\\), which sums to \\(\\dfrac{r^{n-1} - 1}{r - 1}\\), yielding the required formula.",
+    "answer": "By writing out the first few terms: \\(T_2 = ar + d\\), \\(T_3 = ar^2 + dr + d\\), and in general \\[T_n = ar^{n-1} + d(r^{n-2} + \\dots + 1)\\].\nThe expression in brackets is a geometric series with first term \\(1\\) and common ratio \\(r\\), which sums to \\(\\dfrac{r^{n-1} - 1}{r - 1}\\), yielding the required formula.",
     "blanks": [],
     "hint": "Write out the first three terms recursively and look at how the constant term \\(d\\) accumulates.",
-    "solution": "By writing out the first few terms: \\(T_2 = ar + d\\), \\(T_3 = ar^2 + dr + d\\), and in general \\[T_n = ar^{n-1} + d(r^{n-2} + \\dots + 1)\\].\\nThe expression in brackets is a geometric series with first term \\(1\\) and common ratio \\(r\\), which sums to \\(\\dfrac{r^{n-1} - 1}{r - 1}\\), yielding the required formula.",
+    "solution": "By writing out the first few terms: \\(T_2 = ar + d\\), \\(T_3 = ar^2 + dr + d\\), and in general \\[T_n = ar^{n-1} + d(r^{n-2} + \\dots + 1)\\].\nThe expression in brackets is a geometric series with first term \\(1\\) and common ratio \\(r\\), which sums to \\(\\dfrac{r^{n-1} - 1}{r - 1}\\), yielding the required formula.",
     "solutionSteps": [
       {
         "explanation": "Write the first few terms.",
@@ -9782,10 +9782,10 @@ export const Y12A_CH1_QUESTIONS = [
     "timeLimit": 120,
     "question": "Show that the sequence defined by \\(T_1 = 1\\) and \\(T_n = \\sqrt{2 + T_{n-1}}\\) is bounded above by \\(2\\).",
     "options": [],
-    "answer": "We prove \\(T_n < 2\\) by induction.\\nBase case: \\(T_1 = 1 < 2\\) (holds).\\nInductive step: Assume \\(T_k < 2\\).\\nThen \\[T_{k+1} = \\sqrt{2 + T_k} < \\sqrt{2 + 2} = 2\\].\\nBy mathematical induction, \\(T_n < 2\\) for all positive integers \\(n\\).",
+    "answer": "We prove \\(T_n < 2\\) by induction.\nBase case: \\(T_1 = 1 < 2\\) (holds).\nInductive step: Assume \\(T_k < 2\\).\nThen \\[T_{k+1} = \\sqrt{2 + T_k} < \\sqrt{2 + 2} = 2\\].\nBy mathematical induction, \\(T_n < 2\\) for all positive integers \\(n\\).",
     "blanks": [],
     "hint": "Use mathematical induction. Assume \\(T_k < 2\\) and show that this implies \\(T_{k+1} < 2\\).",
-    "solution": "We prove \\(T_n < 2\\) by induction.\\nBase case: \\(T_1 = 1 < 2\\) (holds).\\nInductive step: Assume \\(T_k < 2\\).\\nThen \\[T_{k+1} = \\sqrt{2 + T_k} < \\sqrt{2 + 2} = 2\\].\\nBy mathematical induction, \\(T_n < 2\\) for all positive integers \\(n\\).",
+    "solution": "We prove \\(T_n < 2\\) by induction.\nBase case: \\(T_1 = 1 < 2\\) (holds).\nInductive step: Assume \\(T_k < 2\\).\nThen \\[T_{k+1} = \\sqrt{2 + T_k} < \\sqrt{2 + 2} = 2\\].\nBy mathematical induction, \\(T_n < 2\\) for all positive integers \\(n\\).",
     "solutionSteps": [
       {
         "explanation": "Establish the base case of the induction.",
@@ -9866,10 +9866,10 @@ export const Y12A_CH1_QUESTIONS = [
     "timeLimit": 120,
     "question": "Show that the sequence given by \\(T_n = \\dfrac{n}{n+1}\\) is strictly increasing and has a supremum of \\(1\\).",
     "options": [],
-    "answer": "The difference is \\[T_{n+1} - T_n = \\dfrac{n+1}{n+2} - \\dfrac{n}{n+1} = \\dfrac{1}{(n+1)(n+2)} > 0\\], showing it is strictly increasing.\\nSince \\[\\lim_{n \\to \\infty} \\dfrac{n}{n+1} = 1\\], the supremum is \\(1\\).",
+    "answer": "The difference is \\[T_{n+1} - T_n = \\dfrac{n+1}{n+2} - \\dfrac{n}{n+1} = \\dfrac{1}{(n+1)(n+2)} > 0\\], showing it is strictly increasing.\nSince \\[\\lim_{n \\to \\infty} \\dfrac{n}{n+1} = 1\\], the supremum is \\(1\\).",
     "blanks": [],
     "hint": "Evaluate the difference \\(T_{n+1} - T_n\\) to show it is always positive, and find the limit of \\(T_n\\) as \\(n \\to \\infty\\).",
-    "solution": "The difference is \\[T_{n+1} - T_n = \\dfrac{n+1}{n+2} - \\dfrac{n}{n+1} = \\dfrac{1}{(n+1)(n+2)} > 0\\], showing it is strictly increasing.\\nSince \\[\\lim_{n \\to \\infty} \\dfrac{n}{n+1} = 1\\], the supremum is \\(1\\).",
+    "solution": "The difference is \\[T_{n+1} - T_n = \\dfrac{n+1}{n+2} - \\dfrac{n}{n+1} = \\dfrac{1}{(n+1)(n+2)} > 0\\], showing it is strictly increasing.\nSince \\[\\lim_{n \\to \\infty} \\dfrac{n}{n+1} = 1\\], the supremum is \\(1\\).",
     "solutionSteps": [
       {
         "explanation": "Set up the difference of consecutive terms.",

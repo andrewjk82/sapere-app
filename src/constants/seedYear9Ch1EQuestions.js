@@ -1850,12 +1850,22 @@ export const Y9_CH1E_QUESTIONS = [
     ],
     "solutionSteps": [
       {
-        "explanation": "Multiply first terms, outer/inner sums, and last terms.",
-        "workingOut": "\\(x^2 + (3+6)x + (3 \\times 6)\\)",
+        "explanation": "Identify the operation: We need to expand the binomial product using the distributive law.",
+        "workingOut": "\\(((x+3)(x+6)\\)",
         "graphData": null
       },
       {
-        "explanation": "Simplify coefficients to find the binomial product.",
+        "explanation": "Apply the distributive law: Multiply each term in the first bracket by each term in the second bracket.",
+        "workingOut": "\\text{Multiply out using FOIL or distributive expansion.}",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate/Simplify: Combine the middle like terms.",
+        "workingOut": "\\text{Collect like terms.}",
+        "graphData": null
+      },
+      {
+        "explanation": "Final Answer: State the fully simplified expanded expression. **Pitfall:** Make sure every term in the first bracket multiplies every term in the second bracket. Do not miss the cross terms!",
         "workingOut": "\\(x^2+9x+18\\)",
         "graphData": null
       }
@@ -1879,12 +1889,22 @@ export const Y9_CH1E_QUESTIONS = [
     ],
     "solutionSteps": [
       {
-        "explanation": "Multiply first terms, outer/inner sums, and last terms.",
-        "workingOut": "\\(x^2 + (4-8)x + (4 \\times -8)\\)",
+        "explanation": "Identify the operation: We need to expand the binomial product using the distributive law.",
+        "workingOut": "\\(((x+4)(x-8)\\)",
         "graphData": null
       },
       {
-        "explanation": "Simplify coefficients to find the binomial product.",
+        "explanation": "Apply the distributive law: Multiply each term in the first bracket by each term in the second bracket.",
+        "workingOut": "\\text{Multiply out using FOIL or distributive expansion.}",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate/Simplify: Combine the middle like terms.",
+        "workingOut": "\\text{Collect like terms.}",
+        "graphData": null
+      },
+      {
+        "explanation": "Final Answer: State the fully simplified expanded expression. **Pitfall:** Make sure every term in the first bracket multiplies every term in the second bracket. Do not miss the cross terms!",
         "workingOut": "\\(x^2-4x-32\\)",
         "graphData": null
       }
@@ -1908,12 +1928,22 @@ export const Y9_CH1E_QUESTIONS = [
     ],
     "solutionSteps": [
       {
-        "explanation": "Multiply first terms, outer/inner sums, and last terms.",
-        "workingOut": "\\(x^2 + (-7-5)x + (-7 \\times -5)\\)",
+        "explanation": "Identify the operation: We need to expand the binomial product using the distributive law.",
+        "workingOut": "\\(((x-7)(x-5)\\)",
         "graphData": null
       },
       {
-        "explanation": "Simplify coefficients to find the binomial product.",
+        "explanation": "Apply the distributive law: Multiply each term in the first bracket by each term in the second bracket.",
+        "workingOut": "\\text{Multiply out using FOIL or distributive expansion.}",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate/Simplify: Combine the middle like terms.",
+        "workingOut": "\\text{Collect like terms.}",
+        "graphData": null
+      },
+      {
+        "explanation": "Final Answer: State the fully simplified expanded expression. **Pitfall:** Make sure every term in the first bracket multiplies every term in the second bracket. Do not miss the cross terms!",
         "workingOut": "\\(x^2-12x+35\\)",
         "graphData": null
       }
@@ -1937,12 +1967,22 @@ export const Y9_CH1E_QUESTIONS = [
     ],
     "solutionSteps": [
       {
-        "explanation": "Multiply first terms, outer/inner sums, and last terms.",
-        "workingOut": "\\(2x^2 + (2 \\times 4 + 1 \\times 1)x + 4\\)",
+        "explanation": "Identify the operation: We need to expand the binomial product using the distributive law.",
+        "workingOut": "\\(((2x+1)(x+4)\\)",
         "graphData": null
       },
       {
-        "explanation": "Simplify coefficients to find the binomial product.",
+        "explanation": "Apply the distributive law: Multiply each term in the first bracket by each term in the second bracket.",
+        "workingOut": "\\text{Multiply out using FOIL or distributive expansion.}",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate/Simplify: Combine the middle like terms.",
+        "workingOut": "\\text{Collect like terms.}",
+        "graphData": null
+      },
+      {
+        "explanation": "Final Answer: State the fully simplified expanded expression. **Pitfall:** Make sure every term in the first bracket multiplies every term in the second bracket. Do not miss the cross terms!",
         "workingOut": "\\(2x^2+9x+4\\)",
         "graphData": null
       }
@@ -1966,12 +2006,22 @@ export const Y9_CH1E_QUESTIONS = [
     ],
     "solutionSteps": [
       {
-        "explanation": "Multiply first terms, outer/inner sums, and last terms.",
-        "workingOut": "\\(3x^2 + (3 \\times 6 + 2 \\times 1)x + 12\\)",
+        "explanation": "Identify the operation: We need to expand the binomial product using the distributive law.",
+        "workingOut": "\\(((3x+2)(x+6)\\)",
         "graphData": null
       },
       {
-        "explanation": "Simplify coefficients to find the binomial product.",
+        "explanation": "Apply the distributive law: Multiply each term in the first bracket by each term in the second bracket.",
+        "workingOut": "\\text{Multiply out using FOIL or distributive expansion.}",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate/Simplify: Combine the middle like terms.",
+        "workingOut": "\\text{Collect like terms.}",
+        "graphData": null
+      },
+      {
+        "explanation": "Final Answer: State the fully simplified expanded expression. **Pitfall:** Make sure every term in the first bracket multiplies every term in the second bracket. Do not miss the cross terms!",
         "workingOut": "\\(3x^2+20x+12\\)",
         "graphData": null
       }
@@ -1995,12 +2045,22 @@ export const Y9_CH1E_QUESTIONS = [
     ],
     "solutionSteps": [
       {
-        "explanation": "Multiply first terms, outer/inner sums, and last terms.",
-        "workingOut": "\\(8x^2 + (4 \\times -1 + 1 \\times 2)x - 1\\)",
+        "explanation": "Identify the operation: We need to expand the binomial product using the distributive law.",
+        "workingOut": "\\(((4x+1)(2x-1)\\)",
         "graphData": null
       },
       {
-        "explanation": "Simplify coefficients to find the binomial product.",
+        "explanation": "Apply the distributive law: Multiply each term in the first bracket by each term in the second bracket.",
+        "workingOut": "\\text{Multiply out using FOIL or distributive expansion.}",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate/Simplify: Combine the middle like terms.",
+        "workingOut": "\\text{Collect like terms.}",
+        "graphData": null
+      },
+      {
+        "explanation": "Final Answer: State the fully simplified expanded expression. **Pitfall:** Make sure every term in the first bracket multiplies every term in the second bracket. Do not miss the cross terms!",
         "workingOut": "\\(8x^2-2x-1\\)",
         "graphData": null
       }
@@ -2024,12 +2084,22 @@ export const Y9_CH1E_QUESTIONS = [
     ],
     "solutionSteps": [
       {
-        "explanation": "Multiply first terms, outer/inner sums, and last terms.",
-        "workingOut": "\\(6x^2 + (2 \\times -4 - 3 \\times 3)x + 12\\)",
+        "explanation": "Identify the operation: We need to expand the binomial product using the distributive law.",
+        "workingOut": "\\(((2x-3)(3x-4)\\)",
         "graphData": null
       },
       {
-        "explanation": "Simplify coefficients to find the binomial product.",
+        "explanation": "Apply the distributive law: Multiply each term in the first bracket by each term in the second bracket.",
+        "workingOut": "\\text{Multiply out using FOIL or distributive expansion.}",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate/Simplify: Combine the middle like terms.",
+        "workingOut": "\\text{Collect like terms.}",
+        "graphData": null
+      },
+      {
+        "explanation": "Final Answer: State the fully simplified expanded expression. **Pitfall:** Make sure every term in the first bracket multiplies every term in the second bracket. Do not miss the cross terms!",
         "workingOut": "\\(6x^2-17x+12\\)",
         "graphData": null
       }
@@ -2053,12 +2123,22 @@ export const Y9_CH1E_QUESTIONS = [
     ],
     "solutionSteps": [
       {
-        "explanation": "Multiply first terms, outer/inner sums, and last terms.",
-        "workingOut": "\\(10x^2 + (5 \\times 7 - 2 \\times 2)x - 14\\)",
+        "explanation": "Identify the operation: We need to expand the binomial product using the distributive law.",
+        "workingOut": "\\(((5x-2)(2x+7)\\)",
         "graphData": null
       },
       {
-        "explanation": "Simplify coefficients to find the binomial product.",
+        "explanation": "Apply the distributive law: Multiply each term in the first bracket by each term in the second bracket.",
+        "workingOut": "\\text{Multiply out using FOIL or distributive expansion.}",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate/Simplify: Combine the middle like terms.",
+        "workingOut": "\\text{Collect like terms.}",
+        "graphData": null
+      },
+      {
+        "explanation": "Final Answer: State the fully simplified expanded expression. **Pitfall:** Make sure every term in the first bracket multiplies every term in the second bracket. Do not miss the cross terms!",
         "workingOut": "\\(10x^2+31x-14\\)",
         "graphData": null
       }
@@ -2082,12 +2162,22 @@ export const Y9_CH1E_QUESTIONS = [
     ],
     "solutionSteps": [
       {
-        "explanation": "Multiply first terms, outer/inner sums, and last terms.",
-        "workingOut": "\\(6x^2 + (3 \\times -1 + 4 \\times 2)x - 4\\)",
+        "explanation": "Identify the operation: We need to expand the binomial product using the distributive law.",
+        "workingOut": "\\(((3x+4)(2x-1)\\)",
         "graphData": null
       },
       {
-        "explanation": "Simplify coefficients to find the binomial product.",
+        "explanation": "Apply the distributive law: Multiply each term in the first bracket by each term in the second bracket.",
+        "workingOut": "\\text{Multiply out using FOIL or distributive expansion.}",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate/Simplify: Combine the middle like terms.",
+        "workingOut": "\\text{Collect like terms.}",
+        "graphData": null
+      },
+      {
+        "explanation": "Final Answer: State the fully simplified expanded expression. **Pitfall:** Make sure every term in the first bracket multiplies every term in the second bracket. Do not miss the cross terms!",
         "workingOut": "\\(6x^2+5x-4\\)",
         "graphData": null
       }
@@ -2111,12 +2201,22 @@ export const Y9_CH1E_QUESTIONS = [
     ],
     "solutionSteps": [
       {
-        "explanation": "Multiply first terms, outer/inner sums, and last terms.",
-        "workingOut": "\\(12x^2 + (4 \\times 6 - 5 \\times 3)x - 30\\)",
+        "explanation": "Identify the operation: We need to expand the binomial product using the distributive law.",
+        "workingOut": "\\(((4x-5)(3x+6)\\)",
         "graphData": null
       },
       {
-        "explanation": "Simplify coefficients to find the binomial product.",
+        "explanation": "Apply the distributive law: Multiply each term in the first bracket by each term in the second bracket.",
+        "workingOut": "\\text{Multiply out using FOIL or distributive expansion.}",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate/Simplify: Combine the middle like terms.",
+        "workingOut": "\\text{Collect like terms.}",
+        "graphData": null
+      },
+      {
+        "explanation": "Final Answer: State the fully simplified expanded expression. **Pitfall:** Make sure every term in the first bracket multiplies every term in the second bracket. Do not miss the cross terms!",
         "workingOut": "\\(12x^2+9x-30\\)",
         "graphData": null
       }
@@ -2140,12 +2240,22 @@ export const Y9_CH1E_QUESTIONS = [
     ],
     "solutionSteps": [
       {
-        "explanation": "Multiply first terms, outer/inner sums, and last terms.",
-        "workingOut": "\\((3x)^2 - 1^2\\)",
+        "explanation": "Identify the operation: We need to expand the binomial product using the distributive law.",
+        "workingOut": "\\(((3x-1)(3x+1)\\)",
         "graphData": null
       },
       {
-        "explanation": "Simplify coefficients to find the binomial product.",
+        "explanation": "Apply the distributive law: Multiply each term in the first bracket by each term in the second bracket.",
+        "workingOut": "\\text{Multiply out using FOIL or distributive expansion.}",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate/Simplify: Combine the middle like terms.",
+        "workingOut": "\\text{Collect like terms.}",
+        "graphData": null
+      },
+      {
+        "explanation": "Final Answer: State the fully simplified expanded expression. **Pitfall:** Make sure every term in the first bracket multiplies every term in the second bracket. Do not miss the cross terms!",
         "workingOut": "\\(9x^2-1\\)",
         "graphData": null
       }
@@ -2169,12 +2279,22 @@ export const Y9_CH1E_QUESTIONS = [
     ],
     "solutionSteps": [
       {
-        "explanation": "Multiply first terms, outer/inner sums, and last terms.",
-        "workingOut": "\\(2x^2 + (1 \\times 6 - 5 \\times 2)x - 30\\)",
+        "explanation": "Identify the operation: We need to expand the binomial product using the distributive law.",
+        "workingOut": "\\(((x-5)(2x+6)\\)",
         "graphData": null
       },
       {
-        "explanation": "Simplify coefficients to find the binomial product.",
+        "explanation": "Apply the distributive law: Multiply each term in the first bracket by each term in the second bracket.",
+        "workingOut": "\\text{Multiply out using FOIL or distributive expansion.}",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate/Simplify: Combine the middle like terms.",
+        "workingOut": "\\text{Collect like terms.}",
+        "graphData": null
+      },
+      {
+        "explanation": "Final Answer: State the fully simplified expanded expression. **Pitfall:** Make sure every term in the first bracket multiplies every term in the second bracket. Do not miss the cross terms!",
         "workingOut": "\\(2x^2-4x-30\\)",
         "graphData": null
       }
@@ -3258,28 +3378,28 @@ export const Y9_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Expand and collect like terms: \\((\\frac{a}{2}+3)(\\frac{a}{3}+2)\\).",
+    "question": "Expand and collect like terms: \\\\left\\left(\\right)\\left\\left(\\right)\\).",
     "a": "0",
     "opts": [
-      "\\(\\frac{a^2}{6}+2a+6\\)",
-      "\\(\\frac{a^2}{6}+6\\)",
-      "\\(\\frac{a^2}{5}+2a+6\\)",
-      "\\(\\frac{a^2}{6}+\\frac{5}{6}a+6\\)"
+      "\\\\left\\left(\\right)",
+      "\\\\left\\left(\\right)",
+      "\\\\left\\left(\\right)",
+      "\\\\left\\left(\\right)"
     ],
     "solutionSteps": [
       {
         "explanation": "Multiply the fractional terms sequentially.",
-        "workingOut": "\\(\\frac{a}{2} \\times \\frac{a}{3} + \\frac{a}{2} \\times 2 + 3 \\times \\frac{a}{3} + 3 \\times 2\\)",
+        "workingOut": "\\\\left\\left(\\right)",
         "graphData": null
       },
       {
         "explanation": "Simplify the intermediate products.",
-        "workingOut": "\\(\\frac{a^2}{6} + a + a + 6\\)",
+        "workingOut": "\\\\left\\left(\\right)",
         "graphData": null
       },
       {
         "explanation": "Find a common denominator to combine the linear terms.",
-        "workingOut": "\\(\\frac{a^2}{6}+2a+6\\)",
+        "workingOut": "\\\\left\\left(\\right)",
         "graphData": null
       }
     ],
@@ -3292,28 +3412,28 @@ export const Y9_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Expand and collect like terms: \\((\\frac{3b}{4}+2)(\\frac{b}{5}-1)\\).",
+    "question": "Expand and collect like terms: \\\\left\\left(\\right)\\left\\left(\\right)\\).",
     "a": "1",
     "opts": [
-      "\\(\\frac{3b^2}{9} - \\frac{7b}{20} - 2\\)",
-      "\\(\\frac{3b^2}{20}-\\frac{3b}{4}+\\frac{2b}{5}-2\\)",
-      "\\(\\frac{3b^2}{20} - \\frac{7b}{20} + 2\\)",
-      "\\(\\frac{3b^2}{20} - 2\\)"
+      "\\\\left\\left(\\right)",
+      "\\\\left\\left(\\right)",
+      "\\\\left\\left(\\right)",
+      "\\\\left\\left(\\right)"
     ],
     "solutionSteps": [
       {
         "explanation": "Multiply the fractional terms sequentially.",
-        "workingOut": "\\(\\frac{3b}{4} \\times \\frac{b}{5} + \\frac{3b}{4} \\times (-1) + 2 \\times \\frac{b}{5} + 2 \\times (-1)\\)",
+        "workingOut": "\\\\left\\left(\\right) + 2 \\times \\frac{b}{5} + 2 \\times (-1)\\)",
         "graphData": null
       },
       {
         "explanation": "Simplify the intermediate products.",
-        "workingOut": "\\(\\frac{3b^2}{20} - \\frac{3b}{4} + \\frac{2b}{5} - 2\\)",
+        "workingOut": "\\\\left\\left(\\right)",
         "graphData": null
       },
       {
         "explanation": "Find a common denominator to combine the linear terms.",
-        "workingOut": "\\(\\frac{3b^2}{20} - \\frac{7b}{20} - 2\\)",
+        "workingOut": "\\\\left\\left(\\right)",
         "graphData": null
       }
     ],
@@ -3326,28 +3446,28 @@ export const Y9_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Expand and collect like terms: \\((\\frac{3x}{5}+\\frac{1}{2})(\\frac{x}{5}-2)\\).",
+    "question": "Expand and collect like terms: \\\\left\\left(\\right)\\left\\left(\\right)\\).",
     "a": "1",
     "opts": [
-      "\\(\\frac{3x^2}{25}-1\\)",
-      "\\(\\frac{3x^2}{25}-\\frac{11x}{10}-1\\)",
-      "\\(\\frac{3x^2}{25}-\\frac{11x}{10}+1\\)",
-      "\\(\\frac{3x^2}{10}-\\frac{11x}{10}-1\\)"
+      "\\\\left\\left(\\right)",
+      "\\\\left\\left(\\right)",
+      "\\\\left\\left(\\right)",
+      "\\\\left\\left(\\right)"
     ],
     "solutionSteps": [
       {
         "explanation": "Multiply the fractional terms sequentially.",
-        "workingOut": "\\(\\frac{3x}{5} \\times \\frac{x}{5} + \\frac{3x}{5} \\times (-2) + \\frac{1}{2} \\times \\frac{x}{5} + \\frac{1}{2} \\times (-2)\\)",
+        "workingOut": "\\\\left\\left(\\right) + \\frac{1}{2} \\times \\frac{x}{5} + \\frac{1}{2} \\times (-2)\\)",
         "graphData": null
       },
       {
         "explanation": "Simplify the intermediate products.",
-        "workingOut": "\\(\\frac{3x^2}{25} - \\frac{6x}{5} + \\frac{x}{10} - 1\\)",
+        "workingOut": "\\\\left\\left(\\right)",
         "graphData": null
       },
       {
         "explanation": "Find a common denominator to combine the linear terms.",
-        "workingOut": "\\(\\frac{3x^2}{25} - \\frac{11x}{10} - 1\\)",
+        "workingOut": "\\\\left\\left(\\right)",
         "graphData": null
       }
     ],
@@ -3360,28 +3480,28 @@ export const Y9_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Expand and collect like terms: \\((\\frac{y}{3}+4)(\\frac{y}{2}-\\frac{1}{2)\\).",
+    "question": "Expand and collect like terms: \\\\left\\left(\\right)\\left\\left(\\right)\\).",
     "a": "0",
     "opts": [
-      "\\(\\frac{y^2}{6}+\\frac{11y}{6}-2\\)",
-      "\\(\\frac{y^2}{5}+\\frac{11y}{6}-2\\)",
-      "\\(\\frac{y^2}{6}-2\\)",
-      "\\(\\frac{y^2}{6}+\\frac{11y}{6}+2\\)"
+      "\\\\left\\left(\\right)",
+      "\\\\left\\left(\\right)",
+      "\\\\left\\left(\\right)",
+      "\\\\left\\left(\\right)"
     ],
     "solutionSteps": [
       {
         "explanation": "Multiply the fractional terms sequentially.",
-        "workingOut": "\\(\\frac{y}{3} \\times \\frac{y}{2} + \\frac{y}{3} \\times (-\\frac{1}{2}) + 4 \\times \\frac{y}{2} + 4 \\times (-\\frac{1}{2})\\)",
+        "workingOut": "\\\\left\\left(\\right) + 4 \\times \\frac{y}{2} + 4 \\times \\left\\left(\\right)\\)",
         "graphData": null
       },
       {
         "explanation": "Simplify the intermediate products.",
-        "workingOut": "\\(\\frac{y^2}{6} - \\frac{y}{6} + 2y - 2\\)",
+        "workingOut": "\\\\left\\left(\\right)",
         "graphData": null
       },
       {
         "explanation": "Find a common denominator to combine the linear terms.",
-        "workingOut": "\\(\\frac{y^2}{6} + \\frac{11y}{6} - 2\\)",
+        "workingOut": "\\\\left\\left(\\right)",
         "graphData": null
       }
     ],
@@ -3394,28 +3514,28 @@ export const Y9_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Expand and collect like terms: \\((\\frac{2m}{3}+2)(\\frac{3m}{4}-4)\\).",
+    "question": "Expand and collect like terms: \\\\left\\left(\\right)\\left\\left(\\right)\\).",
     "a": "0",
     "opts": [
-      "\\(\\frac{m^2}{2}-\\frac{7m}{6}-8\\)",
-      "\\(\\frac{m^2}{2}-8\\)",
-      "\\(\\frac{m^2}{2}-\\frac{7m}{6}+8\\)",
-      "\\(\\frac{m^2}{7}-\\frac{7m}{6}-8\\)"
+      "\\\\left\\left(\\right)",
+      "\\\\left\\left(\\right)",
+      "\\\\left\\left(\\right)",
+      "\\\\left\\left(\\right)"
     ],
     "solutionSteps": [
       {
         "explanation": "Multiply the fractional terms sequentially.",
-        "workingOut": "\\(\\frac{2m}{3} \\times \\frac{3m}{4} + \\frac{2m}{3} \\times (-4) + 2 \\times \\frac{3m}{4} + 2 \\times (-4)\\)",
+        "workingOut": "\\\\left\\left(\\right) + 2 \\times \\frac{3m}{4} + 2 \\times (-4)\\)",
         "graphData": null
       },
       {
         "explanation": "Simplify the intermediate products.",
-        "workingOut": "\\(\\frac{m^2}{2} - \\frac{8m}{3} + \\frac{3m}{2} - 8\\)",
+        "workingOut": "\\\\left\\left(\\right)",
         "graphData": null
       },
       {
         "explanation": "Find a common denominator to combine the linear terms.",
-        "workingOut": "\\(\\frac{m^2}{2} - \\frac{7m}{6} - 8\\)",
+        "workingOut": "\\\\left\\left(\\right)",
         "graphData": null
       }
     ],
@@ -3428,28 +3548,28 @@ export const Y9_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Expand and collect like terms: \\((\\frac{3b}{2}+\\frac{1}{4})(\\frac{b}{4}-\\frac{1}{3)\\).",
+    "question": "Expand and collect like terms: \\\\left\\left(\\right)\\left\\left(\\right)\\).",
     "a": "0",
     "opts": [
-      "\\(\\frac{3b^2}{8}-\\frac{7b}{16}-\\frac{1}{12}\\)",
-      "\\(\\frac{3b^2}{8}-\\frac{1}{12}\\)",
-      "\\(\\frac{3b^2}{8}-\\frac{7b}{16}+\\frac{1}{12}\\)",
-      "\\(\\frac{3b^2}{6}-\\frac{7b}{16}-\\frac{1}{12}\\)"
+      "\\\\left\\left(\\right)",
+      "\\\\left\\left(\\right)",
+      "\\\\left\\left(\\right)",
+      "\\\\left\\left(\\right)"
     ],
     "solutionSteps": [
       {
         "explanation": "Multiply the fractional terms sequentially.",
-        "workingOut": "\\(\\frac{3b}{2} \\times \\frac{b}{4} + \\frac{3b}{2} \\times (-\\frac{1}{3}) + \\frac{1}{4} \\times \\frac{b}{4} + \\frac{1}{4} \\times (-\\frac{1}{3})\\)",
+        "workingOut": "\\\\left\\left(\\right) + \\frac{1}{4} \\times \\frac{b}{4} + \\frac{1}{4} \\times \\left\\left(\\right)\\)",
         "graphData": null
       },
       {
         "explanation": "Simplify the intermediate products.",
-        "workingOut": "\\(\\frac{3b^2}{8} - \\frac{b}{2} + \\frac{b}{16} - \\frac{1}{12}\\)",
+        "workingOut": "\\\\left\\left(\\right)",
         "graphData": null
       },
       {
         "explanation": "Find a common denominator to combine the linear terms.",
-        "workingOut": "\\(\\frac{3b^2}{8} - \\frac{7b}{16} - \\frac{1}{12}\\)",
+        "workingOut": "\\\\left\\left(\\right)",
         "graphData": null
       }
     ],

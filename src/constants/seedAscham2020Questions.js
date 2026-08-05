@@ -481,7 +481,7 @@ export const ASCHAM_2020_QUESTIONS = [
       },
       {
         "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(0.23 + 0.16 + 0.35 + 0.25 = 0.99 \\neq 1 \\Rightarrow \\text{invalid}\\)",
+        "workingOut": "\\(0.23 + 0.16 + 0.35 + 0.25 = 0.99 \neq 1 \\Rightarrow \\text{invalid}\\)",
         "graphData": null
       },
       {
@@ -521,12 +521,12 @@ export const ASCHAM_2020_QUESTIONS = [
       },
       {
         "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(4 \\times 0.3 = 1.2 \\neq 1\\)",
+        "workingOut": "\\(4 \\times 0.3 = 1.2 \neq 1\\)",
         "graphData": null
       },
       {
         "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(4 \\times 0.5 = 2.0 \\neq 1\\)",
+        "workingOut": "\\(4 \\times 0.5 = 2.0 \neq 1\\)",
         "graphData": null
       },
       {
@@ -1187,7 +1187,7 @@ export const ASCHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Given $f(x) = \\dfrac{x}{\\ln x}$, solve $f'(x) = 0$ in the domain $x > 0, x \\neq 1$.",
+    "question": "Given $f(x) = \\dfrac{x}{\\ln x}$, solve $f'(x) = 0$ in the domain $x > 0, x \neq 1$.",
     "opts": [
       "\\(-x = e\\)",
       "\\(\\dfrac{13}{x + 3}\\)",
@@ -2155,7 +2155,7 @@ export const ASCHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "Find the value(s) of $k$, where $k \\neq 0$, given that $x^2 + 8kx + k = 0$ has two equal roots.",
+    "question": "Find the value(s) of $k$, where $k \neq 0$, given that $x^2 + 8kx + k = 0$ has two equal roots.",
     "opts": [
       "\\(-k = \\dfrac{1}{16}\\)",
       "\\(k = \\dfrac{1}{16}\\)",
@@ -2200,7 +2200,7 @@ export const ASCHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "Find the value(s) of $m$, where $m \\neq 0$, given that $x^2 + 6mx + 4m = 0$ has two equal roots.",
+    "question": "Find the value(s) of $m$, where $m \neq 0$, given that $x^2 + 6mx + 4m = 0$ has two equal roots.",
     "opts": [
       "\\(-m = \\dfrac{4}{9}\\)",
       "\\(m = \\dfrac{4}{9}\\)",
@@ -3654,7 +3654,7 @@ export const ASCHAM_2020_QUESTIONS = [
     "solution": "The correct answer is \\(t = 30\\) minutes after 9:45 am (10:15 am).",
     "solutionSteps": [
       {
-        "explanation": "Flow rate zero means \\(\\dfrac{dV}{dt} = 0\\). Given \\(\\dfrac{dV}{dt} = -0.3\\sin\\dfrac{\\pi t}{30}\\), and \\(-0.3 \\neq 0\\), we need \\(\\sin\\dfrac{\\pi t}{30} = 0\\).",
+        "explanation": "Flow rate zero means \\(\\dfrac{dV}{dt} = 0\\). Given \\(\\dfrac{dV}{dt} = -0.3\\sin\\dfrac{\\pi t}{30}\\), and \\(-0.3 \neq 0\\), we need \\(\\sin\\dfrac{\\pi t}{30} = 0\\).",
         "workingOut": "\\(\\sin\\dfrac{\\pi t}{30} = 0\\)",
         "graphData": null
       },
@@ -3949,7 +3949,7 @@ export const ASCHAM_2020_QUESTIONS = [
         "solution": "The correct answer is \\(t = 30\\) minutes after 9:45 am (10:15 am).",
         "solutionSteps": [
           {
-            "explanation": "Flow rate zero means \\(\\dfrac{dV}{dt} = 0\\). Given \\(\\dfrac{dV}{dt} = -0.3\\sin\\dfrac{\\pi t}{30}\\), and \\(-0.3 \\neq 0\\), we need \\(\\sin\\dfrac{\\pi t}{30} = 0\\).",
+            "explanation": "Flow rate zero means \\(\\dfrac{dV}{dt} = 0\\). Given \\(\\dfrac{dV}{dt} = -0.3\\sin\\dfrac{\\pi t}{30}\\), and \\(-0.3 \neq 0\\), we need \\(\\sin\\dfrac{\\pi t}{30} = 0\\).",
             "workingOut": "\\(\\sin\\dfrac{\\pi t}{30} = 0\\)",
             "graphData": null
           },

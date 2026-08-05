@@ -1,18 +1,20 @@
 export const Y7_CH23I_QUESTIONS = [
   {
     "id": "y7-23i-q1a",
+    "topicId": "y7-23i",
+    "c": "23I",
     "t": "Applying algebra",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "The perimeter of a rectangle is given by the expression \\(2l + 2b\\) where \\(l\\) is the length and \\(b\\) is the breadth.\\n\\nFind the perimeter of a rectangle if \\(l = 10\\) cm and \\(b = 6\\) cm.",
+    "question": "The perimeter of a rectangle is given by the expression \\(2l + 2b\\) where \\(l\\) is the length and \\(b\\) is the breadth.<br /><br />Find the perimeter of a rectangle if \\(l = 10\\) cm and \\(b = 6\\) cm.",
     "a": 1,
     "answer": "1",
     "opts": [
       "\\(33\\)",
       "\\(32\\)",
       "\\(31\\)",
-      "\\(-32\\)"
+      "\\(34\\)"
     ],
     "hint": "Substitute the values of \\(l\\) and \\(b\\) into the given expression.",
     "solution": "",
@@ -38,18 +40,20 @@ export const Y7_CH23I_QUESTIONS = [
   },
   {
     "id": "y7-23i-q1b",
+    "topicId": "y7-23i",
+    "c": "23I",
     "t": "Applying algebra",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "The perimeter of a rectangle is given by the expression \\(2l + 2b\\) where \\(l\\) is the length and \\(b\\) is the breadth.\\n\\nFind the perimeter of a rectangle with length \\(15\\) cm and breadth \\(11\\) cm.",
+    "question": "The perimeter of a rectangle is given by the expression \\(2l + 2b\\) where \\(l\\) is the length and \\(b\\) is the breadth.<br /><br />Find the perimeter of a rectangle with length \\(15\\) cm and breadth \\(11\\) cm.",
     "a": 2,
     "answer": "2",
     "opts": [
       "\\(53\\)",
       "\\(51\\)",
       "\\(52\\)",
-      "\\(-52\\)"
+      "\\(54\\)"
     ],
     "hint": "Substitute \\(l = 15\\) and \\(b = 11\\).",
     "solution": "",
@@ -75,6 +79,8 @@ export const Y7_CH23I_QUESTIONS = [
   },
   {
     "id": "y7-23i-q2",
+    "topicId": "y7-23i",
+    "c": "23I",
     "t": "Applying algebra",
     "type": "multiple_choice",
     "difficulty": "easy",
@@ -83,17 +89,17 @@ export const Y7_CH23I_QUESTIONS = [
     "a": 1,
     "answer": "1",
     "opts": [
-      "\\(-4k\\)",
-      "\\(4k\\)",
       "\\(5k\\)",
-      "\\(opt2\\)"
+      "\\(4k\\)",
+      "\\(6k\\)",
+      "\\(7k\\)"
     ],
     "hint": "Multiply the cost of one notebook by the number of notebooks.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Cost is \\(4 multiplied by \\)k\\(.\\).",
-        "workingOut": "\\(4 \\times k\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -112,25 +118,27 @@ export const Y7_CH23I_QUESTIONS = [
   },
   {
     "id": "y7-23i-q3a",
+    "topicId": "y7-23i",
+    "c": "23I",
     "t": "Applying algebra",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "If markers cost \\(m\\) dollars each, find the cost of:\\n\\n\\(5\\) markers",
-    "a": 3,
-    "answer": "3",
+    "question": "If markers cost \\(m\\) dollars each, find the cost of:<br /><br />\\(5\\) markers",
+    "a": 2,
+    "answer": "2",
     "opts": [
-      "\\(-5m\\)",
       "\\(6m\\)",
-      "\\(opt2\\)",
-      "\\(5m\\)"
+      "\\(7m\\)",
+      "\\(5m\\)",
+      "\\(8m\\)"
     ],
     "hint": "Multiply the number of markers by the cost of each.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Multiply \\(5\\) by \\(m\\). Simplify carefully and match the option.",
-        "workingOut": "\\(5 \\times m\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -149,25 +157,27 @@ export const Y7_CH23I_QUESTIONS = [
   },
   {
     "id": "y7-23i-q3b",
+    "topicId": "y7-23i",
+    "c": "23I",
     "t": "Applying algebra",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "If markers cost \\(m\\) dollars each, find the cost of:\\n\\n\\(y\\) markers",
+    "question": "If markers cost \\(m\\) dollars each, find the cost of:<br /><br />\\(y\\) markers",
     "a": 0,
     "answer": "0",
     "opts": [
       "\\(my\\)",
-      "\\(-my\\)",
-      "\\(opt1\\)",
-      "\\(opt2\\)"
+      "\\(2my\\)",
+      "\\(3my\\)",
+      "\\(4my\\)"
     ],
     "hint": "Multiply the number of markers by the cost of each.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Multiply \\(y\\) by \\(m\\). Simplify carefully and match the option.",
-        "workingOut": "\\(y \\times m\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -186,6 +196,8 @@ export const Y7_CH23I_QUESTIONS = [
   },
   {
     "id": "y7-23i-q4",
+    "topicId": "y7-23i",
+    "c": "23I",
     "t": "Applying algebra",
     "type": "multiple_choice",
     "difficulty": "easy",
@@ -223,18 +235,20 @@ export const Y7_CH23I_QUESTIONS = [
   },
   {
     "id": "y7-23i-q5a",
+    "topicId": "y7-23i",
+    "c": "23I",
     "t": "Applying algebra",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "A square has side length \\(p\\) cm. Find:\\n\\nits perimeter",
+    "question": "A square has side length \\(p\\) cm. Find:<br /><br />its perimeter",
     "a": 1,
     "answer": "1",
     "opts": [
-      "\\(-4p\\)",
-      "\\(4p\\)",
       "\\(5p\\)",
-      "\\(opt2\\)"
+      "\\(4p\\)",
+      "\\(6p\\)",
+      "\\(7p\\)"
     ],
     "hint": "A square has four equal sides.",
     "solution": "",
@@ -260,25 +274,27 @@ export const Y7_CH23I_QUESTIONS = [
   },
   {
     "id": "y7-23i-q5b",
+    "topicId": "y7-23i",
+    "c": "23I",
     "t": "Applying algebra",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "A square has side length \\(p\\) cm. Find:\\n\\nits area",
+    "question": "A square has side length \\(p\\) cm. Find:<br /><br />its area",
     "a": 2,
     "answer": "2",
     "opts": [
       "\\(-p^2\\)",
       "\\(p^3\\)",
       "\\(p^2\\)",
-      "\\(opt2\\)"
+      "\\(p^4\\)"
     ],
     "hint": "The area of a square is its side length multiplied by itself.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Multiply the side length by itself.",
-        "workingOut": "\\(p \\times p\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -297,6 +313,8 @@ export const Y7_CH23I_QUESTIONS = [
   },
   {
     "id": "y7-23i-q6",
+    "topicId": "y7-23i",
+    "c": "23I",
     "t": "Applying algebra",
     "type": "multiple_choice",
     "difficulty": "easy",
@@ -308,7 +326,7 @@ export const Y7_CH23I_QUESTIONS = [
       "\\(-x + y + z\\)",
       "\\(x + y + z\\)",
       "\\(x - y - z\\)",
-      "\\(opt2\\)"
+      "\\(2x + y + z\\)"
     ],
     "hint": "Total means you need to add all their amounts together.",
     "solution": "",
@@ -334,6 +352,8 @@ export const Y7_CH23I_QUESTIONS = [
   },
   {
     "id": "y7-23i-q7",
+    "topicId": "y7-23i",
+    "c": "23I",
     "t": "Applying algebra",
     "type": "multiple_choice",
     "difficulty": "easy",
@@ -342,17 +362,17 @@ export const Y7_CH23I_QUESTIONS = [
     "a": 2,
     "answer": "2",
     "opts": [
-      "\\(-6m\\)",
       "\\(7m\\)",
+      "\\(8m\\)",
       "\\(6m\\)",
-      "\\(opt2\\)"
+      "\\(9m\\)"
     ],
     "hint": "Multiply the number of boxes by the number of laptops in each box.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Multiply \\(6\\) by \\(m\\). Simplify carefully and match the option.",
-        "workingOut": "\\(6 \\times m\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -371,18 +391,20 @@ export const Y7_CH23I_QUESTIONS = [
   },
   {
     "id": "y7-23i-q8",
+    "topicId": "y7-23i",
+    "c": "23I",
     "t": "Applying algebra",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
     "question": "The sum of two whole numbers is \\(42\\). If one of the numbers is \\(x\\), what is the other number?",
-    "a": 3,
-    "answer": "3",
+    "a": 2,
+    "answer": "2",
     "opts": [
       "\\(-42 - x\\)",
       "\\(43 - x\\)",
-      "\\(opt2\\)",
-      "\\(42 - x\\)"
+      "\\(42 - x\\)",
+      "\\(44 - x\\)"
     ],
     "hint": "If the total is 42, subtract the known number to find the other.",
     "solution": "",
@@ -408,6 +430,8 @@ export const Y7_CH23I_QUESTIONS = [
   },
   {
     "id": "y7-23i-q9",
+    "topicId": "y7-23i",
+    "c": "23I",
     "t": "Applying algebra",
     "type": "multiple_choice",
     "difficulty": "easy",
@@ -419,14 +443,14 @@ export const Y7_CH23I_QUESTIONS = [
       "\\(28\\)",
       "\\(29\\)",
       "\\(27\\)",
-      "\\(-28\\)"
+      "\\(30\\)"
     ],
     "hint": "Subtract the known numbers from the total.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Let the unknown number be \\(n\\). Then \\(n + 15 + 18 = 61\\).",
-        "workingOut": "\\(n + 33 = 61\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -445,6 +469,8 @@ export const Y7_CH23I_QUESTIONS = [
   },
   {
     "id": "y7-23i-q10",
+    "topicId": "y7-23i",
+    "c": "23I",
     "t": "Applying algebra",
     "type": "multiple_choice",
     "difficulty": "easy",
@@ -456,14 +482,14 @@ export const Y7_CH23I_QUESTIONS = [
       "\\(9\\)",
       "\\(10\\)",
       "\\(8\\)",
-      "\\(-9\\)"
+      "\\(11\\)"
     ],
     "hint": "Product means multiplication. Use division to find the unknown number.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Let the number be \\(n\\). Then \\(14n = 126\\).",
-        "workingOut": "\\(14n = 126\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -482,6 +508,8 @@ export const Y7_CH23I_QUESTIONS = [
   },
   {
     "id": "y7-23i-q11",
+    "topicId": "y7-23i",
+    "c": "23I",
     "t": "Applying algebra",
     "type": "multiple_choice",
     "difficulty": "easy",
@@ -493,14 +521,14 @@ export const Y7_CH23I_QUESTIONS = [
       "\\(18\\)",
       "\\(17\\)",
       "\\(16\\)",
-      "\\(-17\\)"
+      "\\(19\\)"
     ],
     "hint": "Let Sarah's age be \\(x\\). Emma's age is \\(x + 5\\).",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Set up an equation for the sum of their ages.",
-        "workingOut": "\\(x + (x + 5) = 29\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -529,6 +557,8 @@ export const Y7_CH23I_QUESTIONS = [
   },
   {
     "id": "y7-23i-q12",
+    "topicId": "y7-23i",
+    "c": "23I",
     "t": "Applying algebra",
     "type": "multiple_choice",
     "difficulty": "easy",
@@ -540,7 +570,7 @@ export const Y7_CH23I_QUESTIONS = [
       "\\(-x + y\\)",
       "\\(x - y\\)",
       "\\(x + y\\)",
-      "\\(opt2\\)"
+      "\\(2x + y\\)"
     ],
     "hint": "Total means you need to add the numbers together.",
     "solution": "",
@@ -566,25 +596,27 @@ export const Y7_CH23I_QUESTIONS = [
   },
   {
     "id": "y7-23i-q13",
+    "topicId": "y7-23i",
+    "c": "23I",
     "t": "Applying algebra",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
     "question": "If a car travels at \\(60\\) km/h, how far will it travel in \\(t\\) number of hours?",
-    "a": 3,
-    "answer": "3",
+    "a": 2,
+    "answer": "2",
     "opts": [
-      "\\(-60t\\)",
       "\\(61t\\)",
-      "\\(opt2\\)",
-      "\\(60t\\)"
+      "\\(62t\\)",
+      "\\(60t\\)",
+      "\\(63t\\)"
     ],
     "hint": "Distance is speed multiplied by time.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Multiply the speed (\\(60\\)) by the time (\\(t\\)).",
-        "workingOut": "\\(60 \\times t\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -603,6 +635,8 @@ export const Y7_CH23I_QUESTIONS = [
   },
   {
     "id": "y7-23i-q14",
+    "topicId": "y7-23i",
+    "c": "23I",
     "t": "Word problems",
     "type": "multiple_choice",
     "difficulty": "easy",
@@ -640,6 +674,8 @@ export const Y7_CH23I_QUESTIONS = [
   },
   {
     "id": "y7-23i-q15",
+    "topicId": "y7-23i",
+    "c": "23I",
     "t": "Word problems",
     "type": "multiple_choice",
     "difficulty": "easy",
@@ -648,17 +684,17 @@ export const Y7_CH23I_QUESTIONS = [
     "a": 1,
     "answer": "1",
     "opts": [
-      "\\(-35m\\)",
-      "\\(35m\\)",
       "\\(36m\\)",
-      "\\(opt2\\)"
+      "\\(35m\\)",
+      "\\(37m\\)",
+      "\\(38m\\)"
     ],
     "hint": "Multiply the number of boxes by the number of balls in one box.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Multiply \\(7\\) by \\(5m\\).",
-        "workingOut": "\\(7 \\times 5m\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {

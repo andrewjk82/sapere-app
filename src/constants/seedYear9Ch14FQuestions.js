@@ -265,7 +265,7 @@ export const Y9_CH14F_QUESTIONS = [
     "a": 2,
     "answer": "2",
     "hint": "Lines intersect if they have different gradients.",
-    "solution": "Two lines will intersect at exactly one point if they are not parallel (different gradients).\nThe gradient of the first line is \\( 1 \\).\nThe gradient of the second line is \\( m \\).\nFor the lines to intersect, their gradients must be different:\n\\( m \\neq 1 \\).",
+    "solution": "Two lines will intersect at exactly one point if they are not parallel (different gradients).\nThe gradient of the first line is \\( 1 \\).\nThe gradient of the second line is \\( m \\).\nFor the lines to intersect, their gradients must be different:\n\\( m \neq 1 \\).",
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Families of straight lines: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
@@ -286,7 +286,7 @@ export const Y9_CH14F_QUESTIONS = [
       },
       {
         "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(m \\neq 1\\)",
+        "workingOut": "\\(m \neq 1\\)",
         "graphData": null
       },
       {
@@ -458,7 +458,7 @@ export const Y9_CH14F_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "Since both lines pass through the point (0, -2), they always intersect regardless of the gradient.",
-    "solution": "Rearrange the second equation to \\( y = \\frac{m}{3}x - 2 \\).\nBoth lines share the same y-intercept \\( (0, -2) \\).\n- If \\( m \\neq 3 \\), the gradients are different, so the lines intersect at exactly one point: \\( (0, -2) \\).\n- If \\( m = 3 \\), the lines are identical, so they intersect at infinitely many points.\nIn either case, the lines intersect. Thus, they intersect for **all values of m**.",
+    "solution": "Rearrange the second equation to \\( y = \\frac{m}{3}x - 2 \\).\nBoth lines share the same y-intercept \\( (0, -2) \\).\n- If \\( m \neq 3 \\), the gradients are different, so the lines intersect at exactly one point: \\( (0, -2) \\).\n- If \\( m = 3 \\), the lines are identical, so they intersect at infinitely many points.\nIn either case, the lines intersect. Thus, they intersect for **all values of m**.",
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Families of straight lines: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
@@ -676,7 +676,7 @@ export const Y9_CH14F_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Families of straight lines: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(m \\neq -2 \\implies \\text{One intersection point at } (0, 4)\\)",
+        "workingOut": "\\(m \neq -2 \\implies \\text{One intersection point at } (0, 4)\\)",
         "graphData": null
       },
       {
@@ -762,11 +762,11 @@ export const Y9_CH14F_QUESTIONS = [
     "a": 1,
     "answer": "1",
     "hint": "The lines do not intersect if they are parallel but not identical.",
-    "solution": "The lines are parallel since they both have a gradient of \\( -\\frac{1}{3} \\).\nThey will not intersect if they are parallel and distinct (different y-intercepts).\nThis happens when \\( k \\neq 12 \\).",
+    "solution": "The lines are parallel since they both have a gradient of \\( -\\frac{1}{3} \\).\nThey will not intersect if they are parallel and distinct (different y-intercepts).\nThis happens when \\( k \neq 12 \\).",
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Families of straight lines: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(\\frac{k}{6} \\neq 2 \\implies k \\neq 12\\)",
+        "workingOut": "\\(\\frac{k}{6} \neq 2 \\implies k \neq 12\\)",
         "graphData": null
       },
       {

@@ -2387,9 +2387,12 @@ export const Y9_CH1B_QUESTIONS = [
       },
       {
         "explanation": "Set up the algebraic addition or subtraction to solve for the target box.",
-        "workingOut": "\\(3m + 4n\\)"
+        "workingOut": "\\( (m + 3n) + (2m + n) = 3m + 4n \\)"
       }
-    ]
+    ],
+    "graphData": {
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"-10 -10 380 200\" width=\"400\" height=\"210\">\n  <style>\n    .box { fill: #ffffff; stroke: #94a3b8; stroke-width: 2px; }\n    .text { font-family: 'Times New Roman', Times, serif; font-size: 19px; fill: #0f172a; text-anchor: middle; dominant-baseline: middle; }\n    .target { font-family: sans-serif; font-size: 32px; fill: #ef4444; font-weight: bold; }\n  </style>\n\n  <rect x=\"0\" y=\"120\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"120\" y=\"120\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"240\" y=\"120\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"60\" y=\"60\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"180\" y=\"60\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"120\" y=\"0\" width=\"120\" height=\"60\" class=\"box\" />\n\n  <text x=\"60\" y=\"152\" class=\"text\"><tspan font-style=\"italic\">m</tspan> + 3<tspan font-style=\"italic\">n</tspan></text>\n  <text x=\"180\" y=\"152\" class=\"text\">2<tspan font-style=\"italic\">m</tspan> + <tspan font-style=\"italic\">n</tspan></text>\n  \n  <text x=\"120\" y=\"94\" class=\"text target\">?</text>\n  \n  \n</svg>"
+    }
   },
   {
     "id": "y9-1b-q9b2",
@@ -2411,9 +2414,12 @@ export const Y9_CH1B_QUESTIONS = [
       },
       {
         "explanation": "Set up the algebraic addition or subtraction to solve for the target box.",
-        "workingOut": "\\(6m + 4n\\)"
+        "workingOut": "\\( (2m + n) + (4m + 3n) = 6m + 4n \\)"
       }
-    ]
+    ],
+    "graphData": {
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"-10 -10 380 200\" width=\"400\" height=\"210\">\n  <style>\n    .box { fill: #ffffff; stroke: #94a3b8; stroke-width: 2px; }\n    .text { font-family: 'Times New Roman', Times, serif; font-size: 19px; fill: #0f172a; text-anchor: middle; dominant-baseline: middle; }\n    .target { font-family: sans-serif; font-size: 32px; fill: #ef4444; font-weight: bold; }\n  </style>\n\n  <rect x=\"0\" y=\"120\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"120\" y=\"120\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"240\" y=\"120\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"60\" y=\"60\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"180\" y=\"60\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"120\" y=\"0\" width=\"120\" height=\"60\" class=\"box\" />\n\n  \n  <text x=\"180\" y=\"152\" class=\"text\">2<tspan font-style=\"italic\">m</tspan> + <tspan font-style=\"italic\">n</tspan></text>\n  <text x=\"300\" y=\"152\" class=\"text\">4<tspan font-style=\"italic\">m</tspan> + 3<tspan font-style=\"italic\">n</tspan></text>\n  \n  <text x=\"240\" y=\"94\" class=\"text target\">?</text>\n  \n</svg>"
+    }
   },
   {
     "id": "y9-1b-q9b3",
@@ -2435,9 +2441,12 @@ export const Y9_CH1B_QUESTIONS = [
       },
       {
         "explanation": "Set up the algebraic addition or subtraction to solve for the target box.",
-        "workingOut": "\\(9m + 8n\\)"
+        "workingOut": "\\( (3m + 4n) + (6m + 4n) = 9m + 8n \\)"
       }
-    ]
+    ],
+    "graphData": {
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"-10 -10 380 200\" width=\"400\" height=\"210\">\n  <style>\n    .box { fill: #ffffff; stroke: #94a3b8; stroke-width: 2px; }\n    .text { font-family: 'Times New Roman', Times, serif; font-size: 19px; fill: #0f172a; text-anchor: middle; dominant-baseline: middle; }\n    .target { font-family: sans-serif; font-size: 32px; fill: #ef4444; font-weight: bold; }\n  </style>\n\n  <rect x=\"0\" y=\"120\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"120\" y=\"120\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"240\" y=\"120\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"60\" y=\"60\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"180\" y=\"60\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"120\" y=\"0\" width=\"120\" height=\"60\" class=\"box\" />\n\n  \n  \n  \n  <text x=\"120\" y=\"92\" class=\"text\">3<tspan font-style=\"italic\">m</tspan> + 4<tspan font-style=\"italic\">n</tspan></text>\n  <text x=\"240\" y=\"92\" class=\"text\">6<tspan font-style=\"italic\">m</tspan> + 4<tspan font-style=\"italic\">n</tspan></text>\n  <text x=\"180\" y=\"34\" class=\"text target\">?</text>\n</svg>"
+    }
   },
   {
     "id": "y9-1b-q9c1",
@@ -2459,9 +2468,12 @@ export const Y9_CH1B_QUESTIONS = [
       },
       {
         "explanation": "Set up the algebraic addition or subtraction to solve for the target box.",
-        "workingOut": "\\(6p - 2q\\)"
+        "workingOut": "\\( (2p - 3q) + (4p + q) = 6p - 2q \\)"
       }
-    ]
+    ],
+    "graphData": {
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"-10 -10 380 200\" width=\"400\" height=\"210\">\n  <style>\n    .box { fill: #ffffff; stroke: #94a3b8; stroke-width: 2px; }\n    .text { font-family: 'Times New Roman', Times, serif; font-size: 19px; fill: #0f172a; text-anchor: middle; dominant-baseline: middle; }\n    .target { font-family: sans-serif; font-size: 32px; fill: #ef4444; font-weight: bold; }\n  </style>\n\n  <rect x=\"0\" y=\"120\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"120\" y=\"120\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"240\" y=\"120\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"60\" y=\"60\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"180\" y=\"60\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"120\" y=\"0\" width=\"120\" height=\"60\" class=\"box\" />\n\n  <text x=\"60\" y=\"152\" class=\"text\">2<tspan font-style=\"italic\">p</tspan> - 3<tspan font-style=\"italic\">q</tspan></text>\n  <text x=\"180\" y=\"152\" class=\"text\">4<tspan font-style=\"italic\">p</tspan> + <tspan font-style=\"italic\">q</tspan></text>\n  \n  <text x=\"120\" y=\"94\" class=\"text target\">?</text>\n  \n  \n</svg>"
+    }
   },
   {
     "id": "y9-1b-q9c2",
@@ -2483,9 +2495,12 @@ export const Y9_CH1B_QUESTIONS = [
       },
       {
         "explanation": "Set up the algebraic addition or subtraction to solve for the target box.",
-        "workingOut": "\\(9p - q\\)"
+        "workingOut": "\\( (4p + q) + (5p - 2q) = 9p - q \\)"
       }
-    ]
+    ],
+    "graphData": {
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"-10 -10 380 200\" width=\"400\" height=\"210\">\n  <style>\n    .box { fill: #ffffff; stroke: #94a3b8; stroke-width: 2px; }\n    .text { font-family: 'Times New Roman', Times, serif; font-size: 19px; fill: #0f172a; text-anchor: middle; dominant-baseline: middle; }\n    .target { font-family: sans-serif; font-size: 32px; fill: #ef4444; font-weight: bold; }\n  </style>\n\n  <rect x=\"0\" y=\"120\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"120\" y=\"120\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"240\" y=\"120\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"60\" y=\"60\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"180\" y=\"60\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"120\" y=\"0\" width=\"120\" height=\"60\" class=\"box\" />\n\n  \n  <text x=\"180\" y=\"152\" class=\"text\">4<tspan font-style=\"italic\">p</tspan> + <tspan font-style=\"italic\">q</tspan></text>\n  <text x=\"300\" y=\"152\" class=\"text\">5<tspan font-style=\"italic\">p</tspan> - 2<tspan font-style=\"italic\">q</tspan></text>\n  \n  <text x=\"240\" y=\"94\" class=\"text target\">?</text>\n  \n</svg>"
+    }
   },
   {
     "id": "y9-1b-q9c3",
@@ -2507,9 +2522,12 @@ export const Y9_CH1B_QUESTIONS = [
       },
       {
         "explanation": "Set up the algebraic addition or subtraction to solve for the target box.",
-        "workingOut": "\\(15p - 3q\\)"
+        "workingOut": "\\( (6p - 2q) + (9p - q) = 15p - 3q \\)"
       }
-    ]
+    ],
+    "graphData": {
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"-10 -10 380 200\" width=\"400\" height=\"210\">\n  <style>\n    .box { fill: #ffffff; stroke: #94a3b8; stroke-width: 2px; }\n    .text { font-family: 'Times New Roman', Times, serif; font-size: 19px; fill: #0f172a; text-anchor: middle; dominant-baseline: middle; }\n    .target { font-family: sans-serif; font-size: 32px; fill: #ef4444; font-weight: bold; }\n  </style>\n\n  <rect x=\"0\" y=\"120\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"120\" y=\"120\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"240\" y=\"120\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"60\" y=\"60\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"180\" y=\"60\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"120\" y=\"0\" width=\"120\" height=\"60\" class=\"box\" />\n\n  \n  \n  \n  <text x=\"120\" y=\"92\" class=\"text\">6<tspan font-style=\"italic\">p</tspan> - 2<tspan font-style=\"italic\">q</tspan></text>\n  <text x=\"240\" y=\"92\" class=\"text\">9<tspan font-style=\"italic\">p</tspan> - <tspan font-style=\"italic\">q</tspan></text>\n  <text x=\"180\" y=\"34\" class=\"text target\">?</text>\n</svg>"
+    }
   },
   {
     "id": "y9-1b-q9d1",
@@ -2531,9 +2549,12 @@ export const Y9_CH1B_QUESTIONS = [
       },
       {
         "explanation": "Set up the algebraic addition or subtraction to solve for the target box.",
-        "workingOut": "\\(2a + b\\)"
+        "workingOut": "\\( (6a + 2b) - (4a + b) = 2a + b \\)"
       }
-    ]
+    ],
+    "graphData": {
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"-10 -10 380 200\" width=\"400\" height=\"210\">\n  <style>\n    .box { fill: #ffffff; stroke: #94a3b8; stroke-width: 2px; }\n    .text { font-family: 'Times New Roman', Times, serif; font-size: 19px; fill: #0f172a; text-anchor: middle; dominant-baseline: middle; }\n    .target { font-family: sans-serif; font-size: 32px; fill: #ef4444; font-weight: bold; }\n  </style>\n\n  <rect x=\"0\" y=\"120\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"120\" y=\"120\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"240\" y=\"120\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"60\" y=\"60\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"180\" y=\"60\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"120\" y=\"0\" width=\"120\" height=\"60\" class=\"box\" />\n\n  \n  <text x=\"180\" y=\"154\" class=\"text target\">?</text>\n  <text x=\"300\" y=\"152\" class=\"text\">4<tspan font-style=\"italic\">a</tspan> + <tspan font-style=\"italic\">b</tspan></text>\n  \n  <text x=\"240\" y=\"92\" class=\"text\">6<tspan font-style=\"italic\">a</tspan> + 2<tspan font-style=\"italic\">b</tspan></text>\n  \n</svg>"
+    }
   },
   {
     "id": "y9-1b-q9d2",
@@ -2555,9 +2576,12 @@ export const Y9_CH1B_QUESTIONS = [
       },
       {
         "explanation": "Set up the algebraic addition or subtraction to solve for the target box.",
-        "workingOut": "\\(5a + 3b\\)"
+        "workingOut": "\\( (3a + 2b) + (2a + b) = 5a + 3b \\)"
       }
-    ]
+    ],
+    "graphData": {
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"-10 -10 380 200\" width=\"400\" height=\"210\">\n  <style>\n    .box { fill: #ffffff; stroke: #94a3b8; stroke-width: 2px; }\n    .text { font-family: 'Times New Roman', Times, serif; font-size: 19px; fill: #0f172a; text-anchor: middle; dominant-baseline: middle; }\n    .target { font-family: sans-serif; font-size: 32px; fill: #ef4444; font-weight: bold; }\n  </style>\n\n  <rect x=\"0\" y=\"120\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"120\" y=\"120\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"240\" y=\"120\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"60\" y=\"60\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"180\" y=\"60\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"120\" y=\"0\" width=\"120\" height=\"60\" class=\"box\" />\n\n  <text x=\"60\" y=\"152\" class=\"text\">3<tspan font-style=\"italic\">a</tspan> + 2<tspan font-style=\"italic\">b</tspan></text>\n  <text x=\"180\" y=\"152\" class=\"text\">2<tspan font-style=\"italic\">a</tspan> + <tspan font-style=\"italic\">b</tspan></text>\n  \n  <text x=\"120\" y=\"94\" class=\"text target\">?</text>\n  \n  \n</svg>"
+    }
   },
   {
     "id": "y9-1b-q9d3",
@@ -2579,9 +2603,12 @@ export const Y9_CH1B_QUESTIONS = [
       },
       {
         "explanation": "Set up the algebraic addition or subtraction to solve for the target box.",
-        "workingOut": "\\(11a + 5b\\)"
+        "workingOut": "\\( (5a + 3b) + (6a + 2b) = 11a + 5b \\)"
       }
-    ]
+    ],
+    "graphData": {
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"-10 -10 380 200\" width=\"400\" height=\"210\">\n  <style>\n    .box { fill: #ffffff; stroke: #94a3b8; stroke-width: 2px; }\n    .text { font-family: 'Times New Roman', Times, serif; font-size: 19px; fill: #0f172a; text-anchor: middle; dominant-baseline: middle; }\n    .target { font-family: sans-serif; font-size: 32px; fill: #ef4444; font-weight: bold; }\n  </style>\n\n  <rect x=\"0\" y=\"120\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"120\" y=\"120\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"240\" y=\"120\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"60\" y=\"60\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"180\" y=\"60\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"120\" y=\"0\" width=\"120\" height=\"60\" class=\"box\" />\n\n  \n  \n  \n  <text x=\"120\" y=\"92\" class=\"text\">5<tspan font-style=\"italic\">a</tspan> + 3<tspan font-style=\"italic\">b</tspan></text>\n  <text x=\"240\" y=\"92\" class=\"text\">6<tspan font-style=\"italic\">a</tspan> + 2<tspan font-style=\"italic\">b</tspan></text>\n  <text x=\"180\" y=\"34\" class=\"text target\">?</text>\n</svg>"
+    }
   },
   {
     "id": "y9-1b-q9e1",
@@ -2603,9 +2630,12 @@ export const Y9_CH1B_QUESTIONS = [
       },
       {
         "explanation": "Set up the algebraic addition or subtraction to solve for the target box.",
-        "workingOut": "\\(5x + 5y\\)"
+        "workingOut": "\\( (11x + 2y) - (6x - 3y) = 5x + 5y \\)"
       }
-    ]
+    ],
+    "graphData": {
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"-10 -10 380 200\" width=\"400\" height=\"210\">\n  <style>\n    .box { fill: #ffffff; stroke: #94a3b8; stroke-width: 2px; }\n    .text { font-family: 'Times New Roman', Times, serif; font-size: 19px; fill: #0f172a; text-anchor: middle; dominant-baseline: middle; }\n    .target { font-family: sans-serif; font-size: 32px; fill: #ef4444; font-weight: bold; }\n  </style>\n\n  <rect x=\"0\" y=\"120\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"120\" y=\"120\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"240\" y=\"120\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"60\" y=\"60\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"180\" y=\"60\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"120\" y=\"0\" width=\"120\" height=\"60\" class=\"box\" />\n\n  \n  \n  \n  <text x=\"120\" y=\"94\" class=\"text target\">?</text>\n  <text x=\"240\" y=\"92\" class=\"text\">6<tspan font-style=\"italic\">x</tspan> - 3<tspan font-style=\"italic\">y</tspan></text>\n  <text x=\"180\" y=\"32\" class=\"text\">11<tspan font-style=\"italic\">x</tspan> + 2<tspan font-style=\"italic\">y</tspan></text>\n</svg>"
+    }
   },
   {
     "id": "y9-1b-q9e2",
@@ -2627,9 +2657,12 @@ export const Y9_CH1B_QUESTIONS = [
       },
       {
         "explanation": "Set up the algebraic addition or subtraction to solve for the target box.",
-        "workingOut": "\\(x + 6y\\)"
+        "workingOut": "\\( (5x + 5y) - (4x - y) = x + 6y \\)"
       }
-    ]
+    ],
+    "graphData": {
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"-10 -10 380 200\" width=\"400\" height=\"210\">\n  <style>\n    .box { fill: #ffffff; stroke: #94a3b8; stroke-width: 2px; }\n    .text { font-family: 'Times New Roman', Times, serif; font-size: 19px; fill: #0f172a; text-anchor: middle; dominant-baseline: middle; }\n    .target { font-family: sans-serif; font-size: 32px; fill: #ef4444; font-weight: bold; }\n  </style>\n\n  <rect x=\"0\" y=\"120\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"120\" y=\"120\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"240\" y=\"120\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"60\" y=\"60\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"180\" y=\"60\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"120\" y=\"0\" width=\"120\" height=\"60\" class=\"box\" />\n\n  <text x=\"60\" y=\"152\" class=\"text\">4<tspan font-style=\"italic\">x</tspan> - <tspan font-style=\"italic\">y</tspan></text>\n  <text x=\"180\" y=\"154\" class=\"text target\">?</text>\n  \n  <text x=\"120\" y=\"92\" class=\"text\">5<tspan font-style=\"italic\">x</tspan> + 5<tspan font-style=\"italic\">y</tspan></text>\n  \n  \n</svg>"
+    }
   },
   {
     "id": "y9-1b-q9e3",
@@ -2651,9 +2684,12 @@ export const Y9_CH1B_QUESTIONS = [
       },
       {
         "explanation": "Set up the algebraic addition or subtraction to solve for the target box.",
-        "workingOut": "\\(5x - 9y\\)"
+        "workingOut": "\\( (6x - 3y) - (x + 6y) = 5x - 9y \\)"
       }
-    ]
+    ],
+    "graphData": {
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"-10 -10 380 200\" width=\"400\" height=\"210\">\n  <style>\n    .box { fill: #ffffff; stroke: #94a3b8; stroke-width: 2px; }\n    .text { font-family: 'Times New Roman', Times, serif; font-size: 19px; fill: #0f172a; text-anchor: middle; dominant-baseline: middle; }\n    .target { font-family: sans-serif; font-size: 32px; fill: #ef4444; font-weight: bold; }\n  </style>\n\n  <rect x=\"0\" y=\"120\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"120\" y=\"120\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"240\" y=\"120\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"60\" y=\"60\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"180\" y=\"60\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"120\" y=\"0\" width=\"120\" height=\"60\" class=\"box\" />\n\n  \n  <text x=\"180\" y=\"152\" class=\"text\"><tspan font-style=\"italic\">x</tspan> + 6<tspan font-style=\"italic\">y</tspan></text>\n  <text x=\"300\" y=\"154\" class=\"text target\">?</text>\n  \n  <text x=\"240\" y=\"92\" class=\"text\">6<tspan font-style=\"italic\">x</tspan> - 3<tspan font-style=\"italic\">y</tspan></text>\n  \n</svg>"
+    }
   },
   {
     "id": "y9-1b-q9f1",
@@ -2675,9 +2711,12 @@ export const Y9_CH1B_QUESTIONS = [
       },
       {
         "explanation": "Set up the algebraic addition or subtraction to solve for the target box.",
-        "workingOut": "\\(2d - 2e\\)"
+        "workingOut": "\\( (7d + e) - (5d + 3e) = 2d - 2e \\)"
       }
-    ]
+    ],
+    "graphData": {
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"-10 -10 380 200\" width=\"400\" height=\"210\">\n  <style>\n    .box { fill: #ffffff; stroke: #94a3b8; stroke-width: 2px; }\n    .text { font-family: 'Times New Roman', Times, serif; font-size: 19px; fill: #0f172a; text-anchor: middle; dominant-baseline: middle; }\n    .target { font-family: sans-serif; font-size: 32px; fill: #ef4444; font-weight: bold; }\n  </style>\n\n  <rect x=\"0\" y=\"120\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"120\" y=\"120\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"240\" y=\"120\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"60\" y=\"60\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"180\" y=\"60\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"120\" y=\"0\" width=\"120\" height=\"60\" class=\"box\" />\n\n  <text x=\"60\" y=\"154\" class=\"text target\">?</text>\n  <text x=\"180\" y=\"152\" class=\"text\">5<tspan font-style=\"italic\">d</tspan> + 3<tspan font-style=\"italic\">e</tspan></text>\n  \n  <text x=\"120\" y=\"92\" class=\"text\">7<tspan font-style=\"italic\">d</tspan> + <tspan font-style=\"italic\">e</tspan></text>\n  \n  \n</svg>"
+    }
   },
   {
     "id": "y9-1b-q9f2",
@@ -2699,9 +2738,12 @@ export const Y9_CH1B_QUESTIONS = [
       },
       {
         "explanation": "Set up the algebraic addition or subtraction to solve for the target box.",
-        "workingOut": "\\(-d - 8e\\)"
+        "workingOut": "\\( (4d - 5e) - (5d + 3e) = -d - 8e \\)"
       }
-    ]
+    ],
+    "graphData": {
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"-10 -10 380 200\" width=\"400\" height=\"210\">\n  <style>\n    .box { fill: #ffffff; stroke: #94a3b8; stroke-width: 2px; }\n    .text { font-family: 'Times New Roman', Times, serif; font-size: 19px; fill: #0f172a; text-anchor: middle; dominant-baseline: middle; }\n    .target { font-family: sans-serif; font-size: 32px; fill: #ef4444; font-weight: bold; }\n  </style>\n\n  <rect x=\"0\" y=\"120\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"120\" y=\"120\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"240\" y=\"120\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"60\" y=\"60\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"180\" y=\"60\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"120\" y=\"0\" width=\"120\" height=\"60\" class=\"box\" />\n\n  \n  <text x=\"180\" y=\"152\" class=\"text\">5<tspan font-style=\"italic\">d</tspan> + 3<tspan font-style=\"italic\">e</tspan></text>\n  <text x=\"300\" y=\"154\" class=\"text target\">?</text>\n  \n  <text x=\"240\" y=\"92\" class=\"text\">4<tspan font-style=\"italic\">d</tspan> - 5<tspan font-style=\"italic\">e</tspan></text>\n  \n</svg>"
+    }
   },
   {
     "id": "y9-1b-q9f3",
@@ -2723,9 +2765,12 @@ export const Y9_CH1B_QUESTIONS = [
       },
       {
         "explanation": "Set up the algebraic addition or subtraction to solve for the target box.",
-        "workingOut": "\\(11d - 4e\\)"
+        "workingOut": "\\( (7d + e) + (4d - 5e) = 11d - 4e \\)"
       }
-    ]
+    ],
+    "graphData": {
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"-10 -10 380 200\" width=\"400\" height=\"210\">\n  <style>\n    .box { fill: #ffffff; stroke: #94a3b8; stroke-width: 2px; }\n    .text { font-family: 'Times New Roman', Times, serif; font-size: 19px; fill: #0f172a; text-anchor: middle; dominant-baseline: middle; }\n    .target { font-family: sans-serif; font-size: 32px; fill: #ef4444; font-weight: bold; }\n  </style>\n\n  <rect x=\"0\" y=\"120\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"120\" y=\"120\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"240\" y=\"120\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"60\" y=\"60\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"180\" y=\"60\" width=\"120\" height=\"60\" class=\"box\" />\n  <rect x=\"120\" y=\"0\" width=\"120\" height=\"60\" class=\"box\" />\n\n  \n  \n  \n  <text x=\"120\" y=\"92\" class=\"text\">7<tspan font-style=\"italic\">d</tspan> + <tspan font-style=\"italic\">e</tspan></text>\n  <text x=\"240\" y=\"92\" class=\"text\">4<tspan font-style=\"italic\">d</tspan> - 5<tspan font-style=\"italic\">e</tspan></text>\n  <text x=\"180\" y=\"34\" class=\"text target\">?</text>\n</svg>"
+    }
   },
   {
     "id": "y9-1b-q112-0",

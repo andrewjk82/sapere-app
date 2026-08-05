@@ -1,0 +1,353 @@
+{
+  "y9-11d-q1f": {
+    "topicTitle": "The equation of a straight line",
+    "year": "Year 9",
+    "isManual": true,
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "requiresManualGrading": false,
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830225,
+      "_nanoseconds": 399000000
+    },
+    "origin": "seed",
+    "source": "",
+    "isActive": true,
+    "topicCode": "11D",
+    "question": "Write down the equation of the line that has gradient \\(-\\frac{2}{5}\\) and \\(y\\)-intercept \\(0\\).",
+    "title": "Write down the equation of the line that...",
+    "type": "multiple_choice",
+    "topicId": "y9-11d",
+    "answer": "1",
+    "solution": "Using the gradient-intercept form of a straight line:\n\\(y = mx + c\\)\nwhere \\(m\\) is the gradient and \\(c\\) is the \\(y\\)-intercept.\n\nSubstituting \\(m = -\\frac{2}{5}\\) and \\(c = 0\\):\n\\(y = -2/5x\\).",
+    "chapterId": "y9-11",
+    "hint": "Substitute the gradient for \\(m\\) and the \\(y\\)-intercept for \\(c\\) in \\(y = mx + c\\).",
+    "options": [
+      {
+        "text": "\\(\\dfrac{13}{6}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = -2/5x\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = -2/5x + 1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = -3/5x\\)",
+        "imageUrl": ""
+      }
+    ],
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "updatedAt": {
+      "_seconds": 1784364622,
+      "_nanoseconds": 926000000
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The equation of a straight line: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(m = -\\frac{2}{5}, quad c = 0 \\implies y = -2/5x\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(y = -2/5x\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: y = -2/5x. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(y = -2/5x\\)",
+        "graphData": null
+      }
+    ],
+    "isNew": false
+  },
+  "y9-11d-q2a": {
+    "topicTitle": "The equation of a straight line",
+    "year": "Year 9",
+    "isManual": true,
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "type": "teacher_review",
+    "requiresManualGrading": true,
+    "options": [],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": {
+      "jsxGraph": {
+        "width": 300,
+        "height": 300,
+        "boundingbox": [
+          -5,
+          8,
+          5,
+          -7
+        ],
+        "showConstructionPoints": true,
+        "boardOptions": {
+          "axis": true,
+          "grid": true
+        },
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5, 0], [4.5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -6.5], [0, 7.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.2, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 7.2, 'y'], {fontSize: 12});\nboard.create('line', [[0, 2], [1, 5]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 2], {size: 3, color: 'red', name: '(0, 2)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.create('point', [1, 5], {size: 3, color: 'red', name: '(1, 5)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
+      }
+    },
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830225,
+      "_nanoseconds": 399000000
+    },
+    "origin": "seed",
+    "source": "",
+    "isActive": true,
+    "topicCode": "11D",
+    "topicId": "y9-11d",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The equation of a straight line: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "m = 3, quad c = 2",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -5,
+              8,
+              5,
+              -7
+            ],
+            "showConstructionPoints": true,
+            "boardOptions": {
+              "axis": true,
+              "grid": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5, 0], [4.5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -6.5], [0, 7.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.2, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 7.2, 'y'], {fontSize: 12});\nboard.create('line', [[0, 2], [1, 5]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 2], {size: 3, color: 'red', name: '(0, 2)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.create('point', [1, 5], {size: 3, color: 'red', name: '(1, 5)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
+          }
+        }
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(x = 1 \\implies y = 5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "m = 3, y-intercept = 2.\nLine passes through \\((0, 2)\\) and \\((1, 5)\\).",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: m = 3, y-intercept = 2.\nLine passes through \\((0, 2)\\) and \\((1, 5)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "m = 3, y-intercept = 2.\nLine passes through \\((0, 2)\\) and \\((1, 5)\\).",
+        "graphData": null
+      }
+    ],
+    "question": "Write down the gradient and \\(y\\)-intercept of the line \\(y = 3x + 2\\). Sketch the graph of the line by plotting two points.",
+    "answer": "m = 3, y-intercept = 2.\nLine passes through \\((0, 2)\\) and \\((1, 5)\\).",
+    "solution": "m = 3, y-intercept = 2.\nLine passes through \\((0, 2)\\) and \\((1, 5)\\).",
+    "chapterId": "y9-11",
+    "hint": "Identify \\(m\\) and \\(c\\) directly from the equation, plot the \\(y\\)-intercept, and substitute another \\(x\\) value to find a second point.",
+    "title": "Write down the gradient and y-intercept ...",
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "updatedAt": {
+      "_seconds": 1784364622,
+      "_nanoseconds": 926000000
+    },
+    "isNew": false
+  },
+  "y9-11d-q2b": {
+    "topicTitle": "The equation of a straight line",
+    "year": "Year 9",
+    "isManual": true,
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "type": "teacher_review",
+    "requiresManualGrading": true,
+    "options": [],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": {
+      "jsxGraph": {
+        "width": 300,
+        "height": 300,
+        "boundingbox": [
+          -5,
+          10,
+          5,
+          -7
+        ],
+        "showConstructionPoints": true,
+        "boardOptions": {
+          "axis": true,
+          "grid": true
+        },
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5, 0], [4.5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -6.5], [0, 9.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.2, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 9.2, 'y'], {fontSize: 12});\nboard.create('line', [[0, 5], [1, 7]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 5], {size: 3, color: 'red', name: '(0, 5)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.create('point', [1, 7], {size: 3, color: 'red', name: '(1, 7)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
+      }
+    },
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830225,
+      "_nanoseconds": 399000000
+    },
+    "origin": "seed",
+    "source": "",
+    "isActive": true,
+    "topicCode": "11D",
+    "topicId": "y9-11d",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The equation of a straight line: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "m = 2, quad c = 5",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -5,
+              10,
+              5,
+              -7
+            ],
+            "showConstructionPoints": true,
+            "boardOptions": {
+              "axis": true,
+              "grid": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5, 0], [4.5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -6.5], [0, 9.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.2, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 9.2, 'y'], {fontSize: 12});\nboard.create('line', [[0, 5], [1, 7]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 5], {size: 3, color: 'red', name: '(0, 5)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.create('point', [1, 7], {size: 3, color: 'red', name: '(1, 7)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
+          }
+        }
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(x = 1 \\implies y = 7\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "m = 2, y-intercept = 5.\nLine passes through \\((0, 5)\\) and \\((1, 7)\\).",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: m = 2, y-intercept = 5.\nLine passes through \\((0, 5)\\) and \\((1, 7)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "m = 2, y-intercept = 5.\nLine passes through \\((0, 5)\\) and \\((1, 7)\\).",
+        "graphData": null
+      }
+    ],
+    "question": "Write down the gradient and \\(y\\)-intercept of the line \\(y = 2x + 5\\). Sketch the graph of the line by plotting two points.",
+    "answer": "m = 2, y-intercept = 5.\nLine passes through \\((0, 5)\\) and \\((1, 7)\\).",
+    "solution": "m = 2, y-intercept = 5.\nLine passes through \\((0, 5)\\) and \\((1, 7)\\).",
+    "chapterId": "y9-11",
+    "hint": "Identify \\(m\\) and \\(c\\) directly from the equation, plot the \\(y\\)-intercept, and substitute another \\(x\\) value to find a second point.",
+    "title": "Write down the gradient and y-intercept ...",
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "updatedAt": {
+      "_seconds": 1784364622,
+      "_nanoseconds": 926000000
+    },
+    "isNew": false
+  },
+  "y9-11d-q2c": {
+    "topicTitle": "The equation of a straight line",
+    "year": "Year 9",
+    "isManual": true,
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "type": "teacher_review",
+    "requiresManualGrading": true,
+    "options": [],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": {
+      "jsxGraph": {
+        "width": 300,
+        "height": 300,
+        "boundingbox": [
+          -5,
+          7,
+          5,
+          -7
+        ],
+        "showConstructionPoints": true,
+        "boardOptions": {
+          "axis": true,
+          "grid": true
+        },
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5, 0], [4.5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -6.5], [0, 6.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.2, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 6.2, 'y'], {fontSize: 12});\nboard.create('line', [[0, 4], [1, 1]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 4], {size: 3, color: 'red', name: '(0, 4)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.create('point', [1, 1], {size: 3, color: 'red', name: '(1, 1)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
+      }
+    },
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830225,
+      "_nanoseconds": 399000000
+    },
+    "origin": "seed",
+    "source": "",
+    "isActive": true,
+    "topicCode": "11D",
+    "topicId": "y9-11d",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The equation of a straight line: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "m = -3, quad c = 4",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -5,
+              7,
+              5,
+              -7
+            ],
+            "showConstructionPoints": true,
+            "boardOptions": {
+              "axis": true,
+              "grid": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5, 0], [4.5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -6.5], [0, 6.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.2, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 6.2, 'y'], {fontSize: 12});\nboard.create('line', [[0, 4], [1, 1]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 4], {size: 3, color: 'red', name: '(0, 4)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.create('point', [1, 1], {size: 3, color: 'red', name: '(1, 1)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
+          }
+        }
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(x = 1 \\implies y = 1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "m = -3, y-intercept = 4.\nLine passes through \\((0, 4)\\) and \\((1, 1)\\).",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: m = -3, y-intercept = 4.\nLine passes through \\((0, 4)\\) and \\((1, 1)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "m = -3, y-intercept = 4.\nLine passes through \\((0, 4)\\) and \\((1, 1)\\).",
+        "graphData": null
+      }
+    ],
+    "question": "Write down the gradient and \\(y\\)-intercept of the line \\(y = -3x + 4\\). Sketch the graph of the line by plotting two points.",
+    "answer": "m = -3, y-intercept = 4.\nLine passes through \\((0, 4)\\) and \\((1, 1)\\).",
+    "solution": "m = -3, y-intercept = 4.\nLine passes through \\((0, 4)\\) and \\((1, 1)\\).",
+    "chapterId": "y9-11",
+    "hint": "Identify \\(m\\) and \\(c\\) directly from the equation, plot the \\(y\\)-intercept, and substitute another \\(x\\) value to find a second point.",
+    "title": "Write down the gradient and y-intercept ...",
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "updatedAt": {
+      "_seconds": 1784364622,
+      "_nanoseconds": 926000000
+    },
+    "isNew": false
+  }
+}

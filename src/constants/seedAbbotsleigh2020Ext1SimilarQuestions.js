@@ -187,11 +187,11 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The polynomial $P(x) = 3x^4 - x^3 + px + q$ has a double root at $x = \\beta$. Which of the following must be true?\n\n(A) $P(\\beta) \\neq 0$\n\n(B) $P'(\\beta) = 0$\n\n(C) $P''(\\beta) \\neq 0$\n\n(D) $P'''(\\beta) = 0$",
+    "question": "The polynomial $P(x) = 3x^4 - x^3 + px + q$ has a double root at $x = \\beta$. Which of the following must be true?\n\n(A) $P(\\beta) \neq 0$\n\n(B) $P'(\\beta) = 0$\n\n(C) $P''(\\beta) \neq 0$\n\n(D) $P'''(\\beta) = 0$",
     "opts": [
-      "\\(P(\\beta) \\neq 0\\)",
+      "\\(P(\\beta) \neq 0\\)",
       "\\(P'(\\beta) = 0\\)",
-      "\\(\\(P''(\\beta) \\neq 0\\) always\\)",
+      "\\(\\(P''(\\beta) \neq 0\\) always\\)",
       "\\(P'''(\\beta) = 0\\)"
     ],
     "a": 1,

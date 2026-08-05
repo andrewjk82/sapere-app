@@ -8,12 +8,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "Write this expression using algebraic notation: A number is multiplied by 5 and then divided by 4. Use the pronumeral \\(x\\).",
     "a": 3,
     "answer": "3",
-    "opts": [
-      "\\(-\\frac{5x}{4}\\)",
-      "\\(\\frac{6x}{4}\\)",
-      "\\(-\\frac{6x}{4}\\)",
-      "\\(\\frac{5x}{4}\\)"
-    ],
     "hint": "Multiplication is written adjacent to the variable, and division is represented as a fraction.",
     "solution": "",
     "solutionSteps": [
@@ -26,15 +20,28 @@ export const Y7_CH6B_QUESTIONS = [
         "explanation": "Divide the result by 4. Simplify carefully and match the option.",
         "workingOut": "\\(\\frac{5x}{4}\\)",
         "graphData": null
-      },
-      {
-        "explanation": "Confirm the final answer.",
-        "workingOut": "\\(\\frac{5x}{4}\\)",
-        "graphData": null
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(\\frac{4}{5x}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{6x}{4}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-\\frac{6x}{4}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{5x}{4}\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q1b",
@@ -45,12 +52,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "Write this expression using algebraic notation: A number is divided by 5 and then multiplied by 2. Use the pronumeral \\(x\\).",
     "a": 0,
     "answer": "0",
-    "opts": [
-      "\\(\\frac{2x}{5}\\)",
-      "\\(-\\frac{2x}{5}\\)",
-      "\\(\\frac{3x}{5}\\)",
-      "\\(\\frac{4x}{5}\\)"
-    ],
     "hint": "First divide \\(x\\) by 5, then multiply the entire term by 2.",
     "solution": "",
     "solutionSteps": [
@@ -65,13 +66,31 @@ export const Y7_CH6B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Confirm the final answer.",
+        "explanation": "State the final simplified answer and match it to the correct option.",
         "workingOut": "\\(\\frac{2x}{5}\\)",
         "graphData": null
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(\\frac{2x}{5}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{5}{2x}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{3x}{5}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{4x}{5}\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q1c",
@@ -82,12 +101,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "Write this expression using algebraic notation: A number is multiplied by 4, then divided by 3, and 7 is added to the result. Use the pronumeral \\(x\\).",
     "a": 1,
     "answer": "1",
-    "opts": [
-      "\\(-\\frac{4x}{3} + 7\\)",
-      "\\(\\frac{4x}{3} + 7\\)",
-      "\\(\\frac{4x}{3} - 7\\)",
-      "\\(\\frac{5x}{3} + 7\\)"
-    ],
     "hint": "Multiply by 4 and divide by 3 first, then add 7.",
     "solution": "",
     "solutionSteps": [
@@ -100,15 +113,28 @@ export const Y7_CH6B_QUESTIONS = [
         "explanation": "Add 7 to the expression. Simplify carefully and match the option.",
         "workingOut": "\\(\\frac{4x}{3} + 7\\)",
         "graphData": null
-      },
-      {
-        "explanation": "Confirm the final answer.",
-        "workingOut": "\\(\\frac{4x}{3} + 7\\)",
-        "graphData": null
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(\\frac{3}{4x} + 7\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{4x}{3} + 7\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{4x}{3} - 7\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{5x}{3} + 7\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q1d",
@@ -119,12 +145,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "Write this expression using algebraic notation: A number is multiplied by 3, then 4 is subtracted from the result, and the result is divided by 7. Use the pronumeral \\(x\\).",
     "a": 2,
     "answer": "2",
-    "opts": [
-      "\\(-(3x-\\frac{4)}{7}\\)",
-      "\\((4x-\\frac{4)}{7}\\)",
-      "\\((3x-\\frac{4)}{7}\\)",
-      "\\(-\\frac{x}{2}\\)"
-    ],
     "hint": "Perform the multiplication and subtraction in the numerator, then place the entire term over 7.",
     "solution": "",
     "solutionSteps": [
@@ -145,7 +165,25 @@ export const Y7_CH6B_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(\\frac{3x - 7}{4}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{4x - 4}{7}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{3x - 4}{7}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-\\frac{x}{2}\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q1e",
@@ -156,12 +194,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "Write this expression using algebraic notation: \\(\\frac{2}{5}\\) of a number. Use the pronumeral \\(x\\).",
     "a": 3,
     "answer": "3",
-    "opts": [
-      "\\(-\\frac{2x}{5}\\)",
-      "\\(\\frac{3x}{5}\\)",
-      "\\(-\\frac{3x}{5}\\)",
-      "\\(\\frac{2x}{5}\\)"
-    ],
     "hint": "Taking a fraction of a number means multiplying the fraction by the variable.",
     "solution": "",
     "solutionSteps": [
@@ -171,18 +203,31 @@ export const Y7_CH6B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Confirm the final answer.",
-        "workingOut": "\\(\\frac{2x}{5}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Confirm the final answer.",
+        "explanation": "State the final simplified answer and match it to the correct option.",
         "workingOut": "\\(\\frac{2x}{5}\\)",
         "graphData": null
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(\\frac{5}{2x}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{3x}{5}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-\\frac{3x}{5}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{2x}{5}\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q1f",
@@ -193,12 +238,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "Write this expression using algebraic notation: 4 is added to \\(\\frac{3}{5}\\) of a number. Use the pronumeral \\(x\\).",
     "a": 0,
     "answer": "0",
-    "opts": [
-      "\\(\\frac{3x}{5} + 4\\)",
-      "\\(-\\frac{3x}{5} + 4\\)",
-      "\\(\\frac{3x}{5} - 4\\)",
-      "\\(\\frac{4x}{5} + 4\\)"
-    ],
     "hint": "Write the fraction multiplication first, then add 4.",
     "solution": "",
     "solutionSteps": [
@@ -211,15 +250,28 @@ export const Y7_CH6B_QUESTIONS = [
         "explanation": "Add 4. Simplify carefully and match the option.",
         "workingOut": "\\(\\frac{3x}{5} + 4\\)",
         "graphData": null
-      },
-      {
-        "explanation": "Confirm the final answer.",
-        "workingOut": "\\(\\frac{3x}{5} + 4\\)",
-        "graphData": null
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(\\frac{3x}{5} + 4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{5}{3x} + 4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{3x}{5} - 4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{4x}{5} + 4\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q1g",
@@ -230,12 +282,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "Write this expression using algebraic notation: 5 is added to a number multiplied by \\(\\frac{2}{7}\\). Use the pronumeral \\(x\\).",
     "a": 1,
     "answer": "1",
-    "opts": [
-      "\\(-\\frac{2x}{7} + 5\\)",
-      "\\(\\frac{2x}{7} + 5\\)",
-      "\\(\\frac{2x}{7} - 5\\)",
-      "\\(\\frac{3x}{7} + 5\\)"
-    ],
     "hint": "Identify that 'a number multiplied by \\(\\frac{2}{7}\\)' is \\(\\frac{2x}{7}\\).",
     "solution": "",
     "solutionSteps": [
@@ -248,15 +294,28 @@ export const Y7_CH6B_QUESTIONS = [
         "explanation": "Add 5. Simplify carefully and match the option.",
         "workingOut": "\\(\\frac{2x}{7} + 5\\)",
         "graphData": null
-      },
-      {
-        "explanation": "Confirm the final answer.",
-        "workingOut": "\\(\\frac{2x}{7} + 5\\)",
-        "graphData": null
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(\\frac{7}{2x} + 5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{2x}{7} + 5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{2x}{7} - 5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{3x}{7} + 5\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q1h",
@@ -267,12 +326,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "Write this expression using algebraic notation: A number is divided by 5, then 4 is added to the result, and the result is then multiplied by 3. Use the pronumeral \\(x\\).",
     "a": 2,
     "answer": "2",
-    "opts": [
-      "\\(-3(\\frac{x}{5} + 4)\\)",
-      "\\(3(\\frac{x}{5} - 4)\\)",
-      "\\(3(\\frac{x}{5} + 4)\\)",
-      "\\(4(\\frac{x}{5} + 4)\\)"
-    ],
     "hint": "Place the division and addition inside brackets, then multiply by 3.",
     "solution": "",
     "solutionSteps": [
@@ -287,13 +340,31 @@ export const Y7_CH6B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Confirm the final answer.",
+        "explanation": "State the final simplified answer and match it to the correct option.",
         "workingOut": "\\(3(\\frac{x}{5} + 4)\\)",
         "graphData": null
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(3(\\frac{5}{x} + 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3(\\frac{x}{5} - 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3(\\frac{x}{5} + 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4(\\frac{x}{5} + 4)\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q1i",
@@ -304,12 +375,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "Write this expression using algebraic notation: A number is divided by 6, then 2 is subtracted from the result, and the result is then multiplied by 5. Use the pronumeral \\(x\\).",
     "a": 3,
     "answer": "3",
-    "opts": [
-      "\\(-5(\\frac{x}{6} - 2)\\)",
-      "\\(6(\\frac{x}{6} - 2)\\)",
-      "\\(-\\frac{x}{2}\\)",
-      "\\(5(\\frac{x}{6} - 2)\\)"
-    ],
     "hint": "Perform the subtraction first inside brackets, then multiply.",
     "solution": "",
     "solutionSteps": [
@@ -324,13 +389,31 @@ export const Y7_CH6B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Confirm the final answer.",
+        "explanation": "State the final simplified answer and match it to the correct option.",
         "workingOut": "\\(5(\\frac{x}{6} - 2)\\)",
         "graphData": null
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(5(\\frac{6}{x} - 2)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6(\\frac{x}{6} - 2)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-\\frac{x}{2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5(\\frac{x}{6} - 2)\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q1j",
@@ -341,12 +424,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "Write this expression using algebraic notation: 7 is taken away from \\(\\frac{3}{8}\\) of a number, and the result is then multiplied by 5. Use the pronumeral \\(x\\).",
     "a": 0,
     "answer": "0",
-    "opts": [
-      "\\(5(\\frac{3x}{8} - 7)\\)",
-      "\\(-5(\\frac{3x}{8} - 7)\\)",
-      "\\(6(\\frac{3x}{8} - 7)\\)",
-      "\\(-\\frac{x}{2}\\)"
-    ],
     "hint": "Subtract 7 from the fraction expression inside brackets, then multiply the whole term by 5.",
     "solution": "",
     "solutionSteps": [
@@ -361,13 +438,31 @@ export const Y7_CH6B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Confirm the final answer.",
+        "explanation": "State the final simplified answer and match it to the correct option.",
         "workingOut": "\\(5(\\frac{3x}{8} - 7)\\)",
         "graphData": null
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(5(\\frac{3x}{8} - 7)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5(\\frac{8}{3x} - 7)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6(\\frac{3x}{8} - 7)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-\\frac{x}{2}\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q1k",
@@ -378,12 +473,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "Write this expression using algebraic notation: \\(\\frac{2}{5}\\) of a number is subtracted from 18, and the result is then multiplied by \\(\\frac{4}{9}\\). Use the pronumeral \\(x\\).",
     "a": 1,
     "answer": "1",
-    "opts": [
-      "\\(-\\frac{4}{9}(18 - \\frac{2x}{5})\\)",
-      "\\(\\frac{4}{9}(18 - \\frac{2x}{5})\\)",
-      "\\(\\frac{5}{9}(18 - \\frac{2x}{5})\\)",
-      "\\(-\\frac{x}{2}\\)"
-    ],
     "hint": "Place the subtraction inside brackets and multiply by the fraction on the outside.",
     "solution": "",
     "solutionSteps": [
@@ -398,13 +487,31 @@ export const Y7_CH6B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Confirm the final answer.",
+        "explanation": "State the final simplified answer and match it to the correct option.",
         "workingOut": "\\(\\frac{4}{9}(18 - \\frac{2x}{5})\\)",
         "graphData": null
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(\\frac{9}{4}(18 - \\frac{2x}{5})\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{4}{9}(18 - \\frac{2x}{5})\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{5}{9}(18 - \\frac{2x}{5})\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-\\frac{x}{2}\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q1l",
@@ -415,12 +522,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "Write this expression using algebraic notation: \\(\\frac{3}{7}\\) of a number is subtracted from \\(\\frac{4}{5}\\), and the result is then multiplied by \\(\\frac{3}{11}\\). Use the pronumeral \\(x\\).",
     "a": 2,
     "answer": "2",
-    "opts": [
-      "\\(-\\frac{3}{11}(\\frac{4}{5} - \\frac{3x}{7})\\)",
-      "\\(\\frac{4}{11}(\\frac{4}{5} - \\frac{3x}{7})\\)",
-      "\\(\\frac{3}{11}(\\frac{4}{5} - \\frac{3x}{7})\\)",
-      "\\(-\\frac{x}{2}\\)"
-    ],
     "hint": "Express both fractions and use brackets to denote multiplication of the difference.",
     "solution": "",
     "solutionSteps": [
@@ -435,13 +536,31 @@ export const Y7_CH6B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Confirm the final answer.",
+        "explanation": "State the final simplified answer and match it to the correct option.",
         "workingOut": "\\(\\frac{3}{11}(\\frac{4}{5} - \\frac{3x}{7})\\)",
         "graphData": null
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(\\frac{11}{3}(\\frac{4}{5} - \\frac{3x}{7})\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{4}{11}(\\frac{4}{5} - \\frac{3x}{7})\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{3}{11}(\\frac{4}{5} - \\frac{3x}{7})\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-\\frac{x}{2}\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q1m",
@@ -452,12 +571,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "Write this expression using algebraic notation: A number is multiplied by itself, and the result is then multiplied by \\(\\frac{3}{5}\\). Use the pronumeral \\(x\\).",
     "a": 3,
     "answer": "3",
-    "opts": [
-      "\\(-3x^\\frac{2}{5}\\)",
-      "\\(4x^\\frac{2}{5}\\)",
-      "\\(-4x^\\frac{2}{5}\\)",
-      "\\(3x^\\frac{2}{5}\\)"
-    ],
     "hint": "Multiplying a number by itself gives a squared term.",
     "solution": "",
     "solutionSteps": [
@@ -472,13 +585,31 @@ export const Y7_CH6B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Confirm the final answer.",
+        "explanation": "State the final simplified answer and match it to the correct option.",
         "workingOut": "\\(3x^\\frac{2}{5}\\)",
         "graphData": null
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(3x^\\frac{5}{2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4x^\\frac{2}{5}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-4x^\\frac{2}{5}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3x^\\frac{2}{5}\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q2a",
@@ -489,12 +620,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "Evaluate \\(\\frac{5x}{3}\\) for \\(x = 9\\).",
     "a": 2,
     "answer": "2",
-    "opts": [
-      "\\(16\\)",
-      "\\(14\\)",
-      "\\(15\\)",
-      "\\(-15\\)"
-    ],
     "hint": "Substitute 9 into the numerator, then perform the operations.",
     "solution": "",
     "solutionSteps": [
@@ -515,7 +640,25 @@ export const Y7_CH6B_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(16\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(14\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(15\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(17\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q2b",
@@ -526,12 +669,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "Evaluate \\(\\frac{5x}{3} - 7\\) for \\(x = 9\\).",
     "a": 3,
     "answer": "3",
-    "opts": [
-      "\\(9\\)",
-      "\\(7\\)",
-      "\\(-8\\)",
-      "\\(8\\)"
-    ],
     "hint": "Substitute 9 for \\(x\\) and apply the correct order of operations.",
     "solution": "",
     "solutionSteps": [
@@ -552,7 +689,25 @@ export const Y7_CH6B_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(9\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(10\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q2c",
@@ -563,12 +718,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "Evaluate \\(\\frac{4(x+3)}{8}\\) for \\(x = 9\\).",
     "a": 0,
     "answer": "0",
-    "opts": [
-      "\\(6\\)",
-      "\\(7\\)",
-      "\\(5\\)",
-      "\\(-6\\)"
-    ],
     "hint": "First evaluate the brackets, then multiply, then divide.",
     "solution": "",
     "solutionSteps": [
@@ -589,7 +738,25 @@ export const Y7_CH6B_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q3a",
@@ -600,12 +767,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "Evaluate \\(\\frac{3(x+7)}{5}\\) for \\(x = 3\\).",
     "a": 1,
     "answer": "1",
-    "opts": [
-      "\\(7\\)",
-      "\\(6\\)",
-      "\\(5\\)",
-      "\\(-6\\)"
-    ],
     "hint": "First add 7 to \\(x\\).",
     "solution": "",
     "solutionSteps": [
@@ -626,7 +787,25 @@ export const Y7_CH6B_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(7\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q3b",
@@ -637,12 +816,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "Evaluate \\(\\frac{4x}{8} + 12\\) for \\(x = 6\\).",
     "a": 2,
     "answer": "2",
-    "opts": [
-      "\\(16\\)",
-      "\\(14\\)",
-      "\\(15\\)",
-      "\\(-15\\)"
-    ],
     "hint": "First evaluate the fraction, then add 12.",
     "solution": "",
     "solutionSteps": [
@@ -663,7 +836,25 @@ export const Y7_CH6B_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(16\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(14\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(15\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(17\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q3c",
@@ -674,12 +865,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "Evaluate \\(8\\left(\\frac{x-2}{6}\\right)\\) for \\(x = 8\\).",
     "a": 3,
     "answer": "3",
-    "opts": [
-      "\\(9\\)",
-      "\\(7\\)",
-      "\\(-8\\)",
-      "\\(8\\)"
-    ],
     "hint": "Simplify inside brackets first.",
     "solution": "",
     "solutionSteps": [
@@ -700,7 +885,25 @@ export const Y7_CH6B_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(9\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(10\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q3d",
@@ -711,12 +914,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "Evaluate \\(10 - \\frac{4x}{3}\\) for \\(x = 6\\).",
     "a": 0,
     "answer": "0",
-    "opts": [
-      "\\(2\\)",
-      "\\(3\\)",
-      "\\(1\\)",
-      "\\(-2\\)"
-    ],
     "hint": "Substitute and calculate the fraction first.",
     "solution": "",
     "solutionSteps": [
@@ -737,7 +934,25 @@ export const Y7_CH6B_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q4a",
@@ -748,12 +963,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "Evaluate \\(\\frac{3(x+40)}{5}\\) for \\(x = 60\\).",
     "a": 0,
     "answer": "0",
-    "opts": [
-      "\\(60\\)",
-      "\\(61\\)",
-      "\\(59\\)",
-      "\\(-60\\)"
-    ],
     "hint": "Add 40 to \\(x\\) first.",
     "solution": "",
     "solutionSteps": [
@@ -774,7 +983,25 @@ export const Y7_CH6B_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(60\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(61\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(59\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(62\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q4b",
@@ -785,12 +1012,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "Evaluate \\(\\frac{3x}{20} + 15\\) for \\(x = 80\\).",
     "a": 1,
     "answer": "1",
-    "opts": [
-      "\\(28\\)",
-      "\\(27\\)",
-      "\\(26\\)",
-      "\\(-27\\)"
-    ],
     "hint": "Find the fraction value first.",
     "solution": "",
     "solutionSteps": [
@@ -811,7 +1032,25 @@ export const Y7_CH6B_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(28\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(27\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(26\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(29\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q4c",
@@ -822,12 +1061,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "Evaluate \\(4\\left(\\frac{x-30}{6}\\right)\\) for \\(x = 90\\).",
     "a": 2,
     "answer": "2",
-    "opts": [
-      "\\(41\\)",
-      "\\(39\\)",
-      "\\(40\\)",
-      "\\(-40\\)"
-    ],
     "hint": "Evaluate the subtraction in the numerator first.",
     "solution": "",
     "solutionSteps": [
@@ -848,7 +1081,25 @@ export const Y7_CH6B_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(41\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(39\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(40\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(42\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q4d",
@@ -859,12 +1110,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "Evaluate \\(50 - \\frac{4x}{5}\\) for \\(x = 50\\).",
     "a": 3,
     "answer": "3",
-    "opts": [
-      "\\(11\\)",
-      "\\(9\\)",
-      "\\(-10\\)",
-      "\\(10\\)"
-    ],
     "hint": "Substitute 50 and evaluate the fraction term.",
     "solution": "",
     "solutionSteps": [
@@ -885,7 +1130,25 @@ export const Y7_CH6B_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(11\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(9\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(12\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(10\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q4e",
@@ -896,12 +1159,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "Evaluate \\(8 - \\frac{400}{2x}\\) for \\(x = 25\\).",
     "a": 0,
     "answer": "0",
-    "opts": [
-      "\\(0\\)",
-      "\\(1\\)",
-      "\\(-1\\)",
-      "\\(-0\\)"
-    ],
     "hint": "Multiply \\(x\\) by 2 in the denominator first.",
     "solution": "",
     "solutionSteps": [
@@ -922,7 +1179,25 @@ export const Y7_CH6B_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(0\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-2\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q4f",
@@ -933,12 +1208,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "Evaluate \\(\\frac{3x+45}{15} + 8\\) for \\(x = 35\\).",
     "a": 1,
     "answer": "1",
-    "opts": [
-      "\\(19\\)",
-      "\\(18\\)",
-      "\\(17\\)",
-      "\\(-18\\)"
-    ],
     "hint": "Calculate the numerator before dividing.",
     "solution": "",
     "solutionSteps": [
@@ -959,7 +1228,25 @@ export const Y7_CH6B_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(19\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(18\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(17\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(20\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q4g",
@@ -970,12 +1257,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "Evaluate \\(\\frac{4(150-2x)}{5}\\) for \\(x = 50\\).",
     "a": 2,
     "answer": "2",
-    "opts": [
-      "\\(41\\)",
-      "\\(39\\)",
-      "\\(40\\)",
-      "\\(-40\\)"
-    ],
     "hint": "Multiply 2 by \\(x\\) inside brackets first.",
     "solution": "",
     "solutionSteps": [
@@ -996,7 +1277,25 @@ export const Y7_CH6B_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(41\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(39\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(40\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(42\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q4h",
@@ -1007,12 +1306,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "Evaluate \\(2\\left(\\frac{210-3x}{8} - 5\\right)\\) for \\(x = 30\\).",
     "a": 3,
     "answer": "3",
-    "opts": [
-      "\\(21\\)",
-      "\\(19\\)",
-      "\\(-20\\)",
-      "\\(20\\)"
-    ],
     "hint": "Substitute \\(x = 30\\) and simplify inside brackets.",
     "solution": "",
     "solutionSteps": [
@@ -1038,7 +1331,25 @@ export const Y7_CH6B_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(21\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(19\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(22\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(20\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q5a",
@@ -1049,12 +1360,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "Evaluate \\(m+n\\) for \\(m = 6\\) and \\(n = \\frac{1}{3}\\).",
     "a": 3,
     "answer": "3",
-    "opts": [
-      "\\(-\\frac{19}{3}\\)",
-      "\\(\\frac{20}{3}\\)",
-      "\\(-\\frac{20}{3}\\)",
-      "\\(\\frac{19}{3}\\)"
-    ],
     "hint": "Find a common denominator to add the terms.",
     "solution": "",
     "solutionSteps": [
@@ -1069,13 +1374,31 @@ export const Y7_CH6B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Confirm the final answer.",
+        "explanation": "State the final simplified answer and match it to the correct option.",
         "workingOut": "\\(\\frac{19}{3}\\)",
         "graphData": null
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(\\frac{3}{19}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{20}{3}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-\\frac{20}{3}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{19}{3}\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q5b",
@@ -1086,12 +1409,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "Evaluate \\(3m+n\\) for \\(m = 4\\) and \\(n = \\frac{1}{5}\\).",
     "a": 0,
     "answer": "0",
-    "opts": [
-      "\\(\\frac{61}{5}\\)",
-      "\\(-\\frac{61}{5}\\)",
-      "\\(\\frac{62}{5}\\)",
-      "\\(\\frac{63}{5}\\)"
-    ],
     "hint": "Multiply \\(m\\) by 3, then add \\(n\\).",
     "solution": "",
     "solutionSteps": [
@@ -1106,13 +1423,31 @@ export const Y7_CH6B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Confirm the final answer.",
+        "explanation": "State the final simplified answer and match it to the correct option.",
         "workingOut": "\\(\\frac{61}{5}\\)",
         "graphData": null
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(\\frac{61}{5}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{5}{61}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{62}{5}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{63}{5}\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q5c",
@@ -1123,12 +1458,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "Evaluate \\(2m-4n\\) for \\(m = 5\\) and \\(n = \\frac{1}{2}\\).",
     "a": 1,
     "answer": "1",
-    "opts": [
-      "\\(9\\)",
-      "\\(8\\)",
-      "\\(7\\)",
-      "\\(-8\\)"
-    ],
     "hint": "Perform both multiplications before subtracting.",
     "solution": "",
     "solutionSteps": [
@@ -1149,7 +1478,25 @@ export const Y7_CH6B_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(9\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(10\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q5d",
@@ -1160,12 +1507,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "Evaluate \\(\\frac{m}{6}\\) for \\(m = 4\\) and \\(n = \\frac{1}{3}\\).",
     "a": 2,
     "answer": "2",
-    "opts": [
-      "\\(-\\frac{2}{3}\\)",
-      "\\(\\frac{3}{3}\\)",
-      "\\(\\frac{2}{3}\\)",
-      "\\(-\\frac{3}{3}\\)"
-    ],
     "hint": "Substitute \\(m\\) and simplify the fraction.",
     "solution": "",
     "solutionSteps": [
@@ -1178,15 +1519,28 @@ export const Y7_CH6B_QUESTIONS = [
         "explanation": "Simplify the fraction. Simplify carefully and match the option.",
         "workingOut": "\\(\\frac{2}{3}\\)",
         "graphData": null
-      },
-      {
-        "explanation": "Confirm the final answer.",
-        "workingOut": "\\(\\frac{2}{3}\\)",
-        "graphData": null
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(\\frac{3}{2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{3}{3}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{2}{3}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-\\frac{3}{3}\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q5e",
@@ -1197,12 +1551,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "Evaluate \\(n \\div 6\\) for \\(m = 5\\) and \\(n = \\frac{1}{3}\\).",
     "a": 3,
     "answer": "3",
-    "opts": [
-      "\\(-\\frac{1}{18}\\)",
-      "\\(\\frac{2}{18}\\)",
-      "\\(-\\frac{2}{18}\\)",
-      "\\(\\frac{1}{18}\\)"
-    ],
     "hint": "Dividing by 6 is equivalent to multiplying by \\(\\frac{1}{6}\\).",
     "solution": "",
     "solutionSteps": [
@@ -1217,13 +1565,31 @@ export const Y7_CH6B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Confirm the final answer.",
+        "explanation": "State the final simplified answer and match it to the correct option.",
         "workingOut": "\\(\\frac{1}{18}\\)",
         "graphData": null
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(\\frac{18}{1}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{2}{18}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-\\frac{2}{18}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{1}{18}\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q5f",
@@ -1234,12 +1600,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "Evaluate \\(mn\\) for \\(m = 9\\) and \\(n = \\frac{1}{3}\\).",
     "a": 0,
     "answer": "0",
-    "opts": [
-      "\\(3\\)",
-      "\\(4\\)",
-      "\\(2\\)",
-      "\\(-3\\)"
-    ],
     "hint": "Multiply \\(m\\) and \\(n\\).",
     "solution": "",
     "solutionSteps": [
@@ -1254,13 +1614,31 @@ export const Y7_CH6B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Confirm the final answer.",
+        "explanation": "State the final simplified answer and match it to the correct option.",
         "workingOut": "\\(3\\)",
         "graphData": null
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q5g",
@@ -1271,12 +1649,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "Evaluate \\(n \\div m\\) for \\(m = 8\\) and \\(n = \\frac{1}{2}\\).",
     "a": 1,
     "answer": "1",
-    "opts": [
-      "\\(-\\frac{1}{16}\\)",
-      "\\(\\frac{1}{16}\\)",
-      "\\(\\frac{2}{16}\\)",
-      "\\(\\frac{3}{16}\\)"
-    ],
     "hint": "Write as a product with the reciprocal of \\(m\\).",
     "solution": "",
     "solutionSteps": [
@@ -1291,13 +1663,31 @@ export const Y7_CH6B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Confirm the final answer.",
+        "explanation": "State the final simplified answer and match it to the correct option.",
         "workingOut": "\\(\\frac{1}{16}\\)",
         "graphData": null
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(\\frac{16}{1}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{1}{16}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{2}{16}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{3}{16}\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q5h",
@@ -1308,12 +1698,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "Evaluate \\(\\frac{m+n}{5}\\) for \\(m = 8\\) and \\(n = \\frac{1}{3}\\).",
     "a": 2,
     "answer": "2",
-    "opts": [
-      "\\(-\\frac{5}{3}\\)",
-      "\\(\\frac{6}{3}\\)",
-      "\\(\\frac{5}{3}\\)",
-      "\\(-\\frac{6}{3}\\)"
-    ],
     "hint": "Simplify the numerator first.",
     "solution": "",
     "solutionSteps": [
@@ -1334,7 +1718,25 @@ export const Y7_CH6B_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(\\frac{3}{5}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{6}{3}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{5}{3}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-\\frac{6}{3}\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q6a",
@@ -1345,12 +1747,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "The perimeter of a square, with all sides of equal length, is \\(y\\) cm. What is the length of each side, in terms of \\(y\\)?",
     "a": 2,
     "answer": "2",
-    "opts": [
-      "\\(-\\frac{y}{4}\\)",
-      "\\(\\frac{y}{5}\\)",
-      "\\(\\frac{y}{4}\\)",
-      "\\(-\\frac{y}{5}\\)"
-    ],
     "hint": "A square has 4 sides of equal length.",
     "solution": "",
     "solutionSteps": [
@@ -1358,20 +1754,28 @@ export const Y7_CH6B_QUESTIONS = [
         "explanation": "Divide the total perimeter \\(y\\) by 4.",
         "workingOut": "\\(\\frac{y}{4}\\)",
         "graphData": null
-      },
-      {
-        "explanation": "Confirm the final answer.",
-        "workingOut": "\\(\\frac{y}{4}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Confirm the final answer.",
-        "workingOut": "\\(\\frac{y}{4}\\)",
-        "graphData": null
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(\\frac{4}{y}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{y}{5}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{y}{4}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-\\frac{y}{5}\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q6b",
@@ -1382,12 +1786,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "The perimeter of a square, with all sides of equal length, is \\(y\\) cm. If \\(y = 30\\), what is the length of each side?",
     "a": 3,
     "answer": "3",
-    "opts": [
-      "\\(8.5\\)",
-      "\\(6.5\\)",
-      "\\(-7.5\\)",
-      "\\(7.5\\)"
-    ],
     "hint": "Substitute 30 into your side length expression \\(\\frac{y}{4}\\).",
     "solution": "",
     "solutionSteps": [
@@ -1402,13 +1800,31 @@ export const Y7_CH6B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Confirm the final answer.",
+        "explanation": "State the final simplified answer and match it to the correct option.",
         "workingOut": "\\(7.5\\)",
         "graphData": null
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(8.5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6.5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(9.5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7.5\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q7a",
@@ -1419,12 +1835,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "A piece of wire is \\(z\\) metres in length. It is divided into 6 equal parts. Find the length of each part, in terms of \\(z\\).",
     "a": 1,
     "answer": "1",
-    "opts": [
-      "\\(-\\frac{z}{6}\\)",
-      "\\(\\frac{z}{6}\\)",
-      "\\(\\frac{z}{7}\\)",
-      "\\(\\frac{z}{8}\\)"
-    ],
     "hint": "Divide the total length \\(z\\) by the number of parts.",
     "solution": "",
     "solutionSteps": [
@@ -1432,20 +1842,28 @@ export const Y7_CH6B_QUESTIONS = [
         "explanation": "Write as a fraction. Simplify carefully and match the option.",
         "workingOut": "\\(\\frac{z}{6}\\)",
         "graphData": null
-      },
-      {
-        "explanation": "Confirm the final answer.",
-        "workingOut": "\\(\\frac{z}{6}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Confirm the final answer.",
-        "workingOut": "\\(\\frac{z}{6}\\)",
-        "graphData": null
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(\\frac{6}{z}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{z}{6}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{z}{7}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{z}{8}\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q7bi",
@@ -1456,12 +1874,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "A piece of wire is \\(z\\) metres in length and is divided into 6 equal parts. Find the length of each part if \\(z = 24\\).",
     "a": 3,
     "answer": "3",
-    "opts": [
-      "\\(5\\)",
-      "\\(3\\)",
-      "\\(-4\\)",
-      "\\(4\\)"
-    ],
     "hint": "Substitute 24 for \\(z\\).",
     "solution": "",
     "solutionSteps": [
@@ -1471,18 +1883,31 @@ export const Y7_CH6B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Confirm the final answer.",
-        "workingOut": "\\(4\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Confirm the final answer.",
+        "explanation": "State the final simplified answer and match it to the correct option.",
         "workingOut": "\\(4\\)",
         "graphData": null
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q7bii",
@@ -1493,12 +1918,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "A piece of wire is \\(z\\) metres in length and is divided into 6 equal parts. Find the length of each part if \\(z = 45\\).",
     "a": 2,
     "answer": "2",
-    "opts": [
-      "\\(8.5\\)",
-      "\\(6.5\\)",
-      "\\(7.5\\)",
-      "\\(-7.5\\)"
-    ],
     "hint": "Substitute 45 for \\(z\\) and simplify.",
     "solution": "",
     "solutionSteps": [
@@ -1508,18 +1927,31 @@ export const Y7_CH6B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Confirm the final answer.",
-        "workingOut": "\\(7.5\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Confirm the final answer.",
+        "explanation": "State the final simplified answer and match it to the correct option.",
         "workingOut": "\\(7.5\\)",
         "graphData": null
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(8.5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6.5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7.5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(9.5\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q7biii",
@@ -1530,12 +1962,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "A piece of wire is \\(z\\) metres in length and is divided into 6 equal parts. Find the length of each part if \\(z = 80\\).",
     "a": 3,
     "answer": "3",
-    "opts": [
-      "\\(-\\frac{40}{3}\\)",
-      "\\(\\frac{41}{3}\\)",
-      "\\(-\\frac{41}{3}\\)",
-      "\\(\\frac{40}{3}\\)"
-    ],
     "hint": "Substitute 80 and write in simplest fraction form.",
     "solution": "",
     "solutionSteps": [
@@ -1548,15 +1974,28 @@ export const Y7_CH6B_QUESTIONS = [
         "explanation": "Divide both numerator and denominator by 2.",
         "workingOut": "\\(\\frac{40}{3}\\)",
         "graphData": null
-      },
-      {
-        "explanation": "Confirm the final answer.",
-        "workingOut": "\\(\\frac{40}{3}\\)",
-        "graphData": null
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(\\frac{3}{40}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{41}{3}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-\\frac{41}{3}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{40}{3}\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q8a",
@@ -1567,12 +2006,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "A number, \\(y\\), is tripled and the result is divided by 6. Write this using algebraic notation.",
     "a": 0,
     "answer": "0",
-    "opts": [
-      "\\(\\frac{3y}{6}\\)",
-      "\\(-\\frac{3y}{6}\\)",
-      "\\(\\frac{4y}{6}\\)",
-      "\\(\\frac{5y}{6}\\)"
-    ],
     "hint": "Write 'tripled' as multiplication by 3, then write as a fraction over 6.",
     "solution": "",
     "solutionSteps": [
@@ -1585,15 +2018,28 @@ export const Y7_CH6B_QUESTIONS = [
         "explanation": "Divide the result by 6. Simplify carefully and match the option.",
         "workingOut": "\\(\\frac{3y}{6}\\)",
         "graphData": null
-      },
-      {
-        "explanation": "Confirm the final answer.",
-        "workingOut": "\\(\\frac{3y}{6}\\)",
-        "graphData": null
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(\\frac{3y}{6}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{6}{3y}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{4y}{6}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{5y}{6}\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q8b",
@@ -1604,12 +2050,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "A number, \\(y\\), is tripled and the result is divided by 6. If \\(y = 8\\), what is the final result?",
     "a": 1,
     "answer": "1",
-    "opts": [
-      "\\(5\\)",
-      "\\(4\\)",
-      "\\(3\\)",
-      "\\(-4\\)"
-    ],
     "hint": "Substitute 8 in place of \\(y\\) in the expression \\(\\frac{3y}{6}\\).",
     "solution": "",
     "solutionSteps": [
@@ -1624,13 +2064,31 @@ export const Y7_CH6B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Confirm the final answer.",
+        "explanation": "State the final simplified answer and match it to the correct option.",
         "workingOut": "\\(4\\)",
         "graphData": null
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q9a",
@@ -1641,12 +2099,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "A number, \\(x\\), is multiplied by \\(\\frac{3}{5}\\), and 4 is subtracted from the result. Write this using algebraic notation.",
     "a": 3,
     "answer": "3",
-    "opts": [
-      "\\(-\\frac{3x}{5} - 4\\)",
-      "\\(\\frac{4x}{5} - 4\\)",
-      "\\(-\\frac{x}{2}\\)",
-      "\\(\\frac{3x}{5} - 4\\)"
-    ],
     "hint": "Write the fraction multiplication first, then subtract 4.",
     "solution": "",
     "solutionSteps": [
@@ -1659,15 +2111,28 @@ export const Y7_CH6B_QUESTIONS = [
         "explanation": "Subtract 4. Simplify carefully and match the option.",
         "workingOut": "\\(\\frac{3x}{5} - 4\\)",
         "graphData": null
-      },
-      {
-        "explanation": "Confirm the final answer.",
-        "workingOut": "\\(\\frac{3x}{5} - 4\\)",
-        "graphData": null
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(\\frac{5}{3x} - 4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{4x}{5} - 4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-\\frac{x}{2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{3x}{5} - 4\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q9b",
@@ -1678,12 +2143,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "A number, \\(x\\), is multiplied by \\(\\frac{3}{5}\\), and 4 is subtracted from the result. If \\(x = 15\\), find the final result.",
     "a": 0,
     "answer": "0",
-    "opts": [
-      "\\(5\\)",
-      "\\(6\\)",
-      "\\(4\\)",
-      "\\(-5\\)"
-    ],
     "hint": "Substitute 15 in the expression.",
     "solution": "",
     "solutionSteps": [
@@ -1704,7 +2163,25 @@ export const Y7_CH6B_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q10a",
@@ -1715,12 +2192,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "Evaluate \\(2\\left(\\frac{m}{n} + 6\\right)\\) for \\(m = 4\\) and \\(n = \\frac{1}{3}\\).",
     "a": 3,
     "answer": "3",
-    "opts": [
-      "\\(37\\)",
-      "\\(35\\)",
-      "\\(-36\\)",
-      "\\(36\\)"
-    ],
     "hint": "Recall that dividing by \\(\\frac{1}{3}\\) is equivalent to multiplying by 3.",
     "solution": "",
     "solutionSteps": [
@@ -1741,7 +2212,25 @@ export const Y7_CH6B_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(37\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(35\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(38\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(36\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q10b",
@@ -1752,12 +2241,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "Evaluate \\(n\\left(\\frac{25-m}{4}\\right)\\) for \\(m = 5\\) and \\(n = \\frac{1}{2}\\).",
     "a": 0,
     "answer": "0",
-    "opts": [
-      "\\(\\frac{5}{2}\\)",
-      "\\(-\\frac{5}{2}\\)",
-      "\\(\\frac{6}{2}\\)",
-      "\\(\\frac{7}{2}\\)"
-    ],
     "hint": "Perform operations inside the brackets first.",
     "solution": "",
     "solutionSteps": [
@@ -1778,7 +2261,25 @@ export const Y7_CH6B_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(\\frac{5}{2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{2}{5}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{6}{2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{7}{2}\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q10c",
@@ -1789,12 +2290,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "Evaluate \\(m + \\frac{3m-9n}{5}\\) for \\(m = 6\\) and \\(n = \\frac{1}{3}\\).",
     "a": 1,
     "answer": "1",
-    "opts": [
-      "\\(10\\)",
-      "\\(9\\)",
-      "\\(8\\)",
-      "\\(-9\\)"
-    ],
     "hint": "Substitute the variables and simplify the fraction.",
     "solution": "",
     "solutionSteps": [
@@ -1815,7 +2310,25 @@ export const Y7_CH6B_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(10\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(9\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(11\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q10d",
@@ -1826,12 +2339,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "Evaluate \\(\\frac{m+17}{n} - 5m\\) for \\(m = 3\\) and \\(n = \\frac{1}{4}\\).",
     "a": 2,
     "answer": "2",
-    "opts": [
-      "\\(66\\)",
-      "\\(64\\)",
-      "\\(65\\)",
-      "\\(-65\\)"
-    ],
     "hint": "Substitute values and evaluate the division.",
     "solution": "",
     "solutionSteps": [
@@ -1852,7 +2359,25 @@ export const Y7_CH6B_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(66\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(64\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(65\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(67\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q11",
@@ -1863,12 +2388,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "A supermarket charges \\(\\frac{b}{4}\\) dollars for \\(b\\) kg of potatoes, and \\(\\frac{c}{3}\\) dollars for \\(c\\) kg of oranges. If 16 kg of potatoes and 15 kg of oranges are bought, what is the total cost in dollars?",
     "a": 3,
     "answer": "3",
-    "opts": [
-      "\\(10\\)",
-      "\\(8\\)",
-      "\\(-9\\)",
-      "\\(9\\)"
-    ],
     "hint": "Substitute \\(b = 16\\) and \\(c = 15\\) into the cost expressions.",
     "solution": "",
     "solutionSteps": [
@@ -1889,7 +2408,25 @@ export const Y7_CH6B_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(10\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(11\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(9\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q12a",
@@ -1900,12 +2437,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "A ribbon of length 15 m is divided into \\(y\\) parts of equal length. What is the length of each part, in terms of \\(y\\)?",
     "a": 1,
     "answer": "1",
-    "opts": [
-      "\\(-\\frac{15}{y}\\)",
-      "\\(\\frac{15}{y}\\)",
-      "\\(\\frac{16}{y}\\)",
-      "\\(\\frac{17}{y}\\)"
-    ],
     "hint": "Divide the total length of the ribbon by \\(y\\).",
     "solution": "",
     "solutionSteps": [
@@ -1913,20 +2444,28 @@ export const Y7_CH6B_QUESTIONS = [
         "explanation": "Write the division as a fraction.",
         "workingOut": "\\(\\frac{15}{y}\\)",
         "graphData": null
-      },
-      {
-        "explanation": "Confirm the final answer.",
-        "workingOut": "\\(\\frac{15}{y}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Confirm the final answer.",
-        "workingOut": "\\(\\frac{15}{y}\\)",
-        "graphData": null
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(\\frac{y}{15}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{15}{y}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{16}{y}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{17}{y}\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q12b",
@@ -1937,12 +2476,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "A ribbon of length 15 m is divided into \\(y\\) parts of equal length. If \\(y = 6\\), what is the length of each part in metres?",
     "a": 2,
     "answer": "2",
-    "opts": [
-      "\\(3.5\\)",
-      "\\(1.5\\)",
-      "\\(2.5\\)",
-      "\\(-2.5\\)"
-    ],
     "hint": "Substitute 6 for \\(y\\) and simplify.",
     "solution": "",
     "solutionSteps": [
@@ -1957,13 +2490,31 @@ export const Y7_CH6B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Confirm the final answer.",
+        "explanation": "State the final simplified answer and match it to the correct option.",
         "workingOut": "\\(2.5\\)",
         "graphData": null
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(3.5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1.5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2.5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4.5\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q13",
@@ -1974,12 +2525,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "\\(w\\) kg of a fertilizer cost 80 dollars. How much, in terms of \\(w\\), did 1 kg cost?",
     "a": 1,
     "answer": "1",
-    "opts": [
-      "\\(-\\frac{80}{w}\\)",
-      "\\(\\frac{80}{w}\\)",
-      "\\(\\frac{81}{w}\\)",
-      "\\(\\frac{82}{w}\\)"
-    ],
     "hint": "Divide the total cost by the weight to find the unit cost.",
     "solution": "",
     "solutionSteps": [
@@ -1987,20 +2532,28 @@ export const Y7_CH6B_QUESTIONS = [
         "explanation": "Write the fraction expressing cost per kilogram.",
         "workingOut": "\\(\\frac{80}{w}\\)",
         "graphData": null
-      },
-      {
-        "explanation": "Confirm the final answer.",
-        "workingOut": "\\(\\frac{80}{w}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Confirm the final answer.",
-        "workingOut": "\\(\\frac{80}{w}\\)",
-        "graphData": null
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(\\frac{w}{80}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{80}{w}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{81}{w}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{82}{w}\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q14a",
@@ -2011,12 +2564,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "The area of a rectangle is \\(8y^2\\) cm\\(^2\\). The width of the rectangle is 4 cm. What is the length of the rectangle, in terms of \\(y\\)?",
     "a": 3,
     "answer": "3",
-    "opts": [
-      "\\(-2y^2\\)",
-      "\\(3y^2\\)",
-      "\\(-3y^2\\)",
-      "\\(2y^2\\)"
-    ],
     "hint": "Recall that Area = length * width. To find the length, divide Area by width.",
     "solution": "",
     "solutionSteps": [
@@ -2029,15 +2576,28 @@ export const Y7_CH6B_QUESTIONS = [
         "explanation": "Simplify by dividing the coefficient.",
         "workingOut": "\\(2y^2\\)",
         "graphData": null
-      },
-      {
-        "explanation": "Confirm the final answer.",
-        "workingOut": "\\(2y^2\\)",
-        "graphData": null
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(1y^2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3y^2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-3y^2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2y^2\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q14b",
@@ -2048,12 +2608,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "The area of a rectangle is \\(8y^2\\) cm\\(^2\\) and the width is 4 cm. What is the length of the rectangle if \\(y = 3\\)?",
     "a": 0,
     "answer": "0",
-    "opts": [
-      "\\(18\\)",
-      "\\(19\\)",
-      "\\(17\\)",
-      "\\(-18\\)"
-    ],
     "hint": "Substitute 3 for \\(y\\) in the length expression \\(2y^2\\).",
     "solution": "",
     "solutionSteps": [
@@ -2068,13 +2622,31 @@ export const Y7_CH6B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Confirm the final answer.",
+        "explanation": "State the final simplified answer and match it to the correct option.",
         "workingOut": "\\(18\\)",
         "graphData": null
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(18\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(19\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(17\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(20\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q15a",
@@ -2085,12 +2657,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "The area of a rectangle is \\(12z^2\\) cm\\(^2\\). The width of the rectangle is 5 cm. What is the length of the rectangle, in terms of \\(z\\)?",
     "a": 2,
     "answer": "2",
-    "opts": [
-      "\\(-12z^\\frac{2}{5}\\)",
-      "\\(13z^\\frac{2}{5}\\)",
-      "\\(12z^\\frac{2}{5}\\)",
-      "\\(-13z^\\frac{2}{5}\\)"
-    ],
     "hint": "Divide the area by the width to get the length.",
     "solution": "",
     "solutionSteps": [
@@ -2100,18 +2666,31 @@ export const Y7_CH6B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Confirm the final answer.",
-        "workingOut": "\\(12z^\\frac{2}{5}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Confirm the final answer.",
+        "explanation": "State the final simplified answer and match it to the correct option.",
         "workingOut": "\\(12z^\\frac{2}{5}\\)",
         "graphData": null
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(12z^\\frac{5}{2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(13z^\\frac{2}{5}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(12z^\\frac{2}{5}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-13z^\\frac{2}{5}\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q15b",
@@ -2122,12 +2701,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "The area of a rectangle is \\(12z^2\\) cm\\(^2\\) and the width is 5 cm. What is the length of the rectangle if \\(z = 5\\)?",
     "a": 3,
     "answer": "3",
-    "opts": [
-      "\\(61\\)",
-      "\\(59\\)",
-      "\\(-60\\)",
-      "\\(60\\)"
-    ],
     "hint": "Substitute 5 for \\(z\\) and simplify.",
     "solution": "",
     "solutionSteps": [
@@ -2148,7 +2721,25 @@ export const Y7_CH6B_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(61\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(59\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(62\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(60\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q16a",
@@ -2159,12 +2750,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "Evaluate \\(a-b\\) for \\(a = \\frac{3}{4}\\) and \\(b = \\frac{2}{5}\\).",
     "a": 1,
     "answer": "1",
-    "opts": [
-      "\\(-\\frac{7}{20}\\)",
-      "\\(\\frac{7}{20}\\)",
-      "\\(\\frac{8}{20}\\)",
-      "\\(\\frac{9}{20}\\)"
-    ],
     "hint": "Subtract the fractions by finding a common denominator (20).",
     "solution": "",
     "solutionSteps": [
@@ -2185,7 +2770,25 @@ export const Y7_CH6B_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(\\frac{20}{7}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{7}{20}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{8}{20}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{9}{20}\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q16b",
@@ -2196,12 +2799,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "Evaluate \\(3a\\) for \\(a = \\frac{3}{4}\\) and \\(b = \\frac{2}{5}\\).",
     "a": 2,
     "answer": "2",
-    "opts": [
-      "\\(-\\frac{9}{4}\\)",
-      "\\(\\frac{10}{4}\\)",
-      "\\(\\frac{9}{4}\\)",
-      "\\(-\\frac{10}{4}\\)"
-    ],
     "hint": "Multiply 3 by the fraction \\(a\\).",
     "solution": "",
     "solutionSteps": [
@@ -2214,15 +2811,28 @@ export const Y7_CH6B_QUESTIONS = [
         "explanation": "Multiply. Simplify carefully and match the option.",
         "workingOut": "\\(\\frac{9}{4}\\)",
         "graphData": null
-      },
-      {
-        "explanation": "Confirm the final answer.",
-        "workingOut": "\\(\\frac{9}{4}\\)",
-        "graphData": null
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(\\frac{4}{9}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{10}{4}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{9}{4}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-\\frac{10}{4}\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q16c",
@@ -2233,12 +2843,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "Evaluate \\(2a + 3b\\) for \\(a = \\frac{3}{4}\\) and \\(b = \\frac{2}{5}\\).",
     "a": 3,
     "answer": "3",
-    "opts": [
-      "\\(-\\frac{27}{10}\\)",
-      "\\(\\frac{28}{10}\\)",
-      "\\(-\\frac{28}{10}\\)",
-      "\\(\\frac{27}{10}\\)"
-    ],
     "hint": "Calculate both multiplications first, then add.",
     "solution": "",
     "solutionSteps": [
@@ -2259,7 +2863,25 @@ export const Y7_CH6B_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(\\frac{10}{27}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{28}{10}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-\\frac{28}{10}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{27}{10}\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q16d",
@@ -2270,12 +2892,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "Evaluate \\(4a - b\\) for \\(a = \\frac{3}{4}\\) and \\(b = \\frac{2}{5}\\).",
     "a": 0,
     "answer": "0",
-    "opts": [
-      "\\(\\frac{13}{5}\\)",
-      "\\(-\\frac{13}{5}\\)",
-      "\\(\\frac{14}{5}\\)",
-      "\\(\\frac{15}{5}\\)"
-    ],
     "hint": "Perform the multiplication first.",
     "solution": "",
     "solutionSteps": [
@@ -2296,7 +2912,25 @@ export const Y7_CH6B_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(\\frac{13}{5}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{5}{13}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{14}{5}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{15}{5}\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q16e",
@@ -2307,12 +2941,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "Evaluate \\(ab\\) for \\(a = \\frac{3}{4}\\) and \\(b = \\frac{2}{5}\\).",
     "a": 1,
     "answer": "1",
-    "opts": [
-      "\\(-\\frac{3}{10}\\)",
-      "\\(\\frac{3}{10}\\)",
-      "\\(\\frac{4}{10}\\)",
-      "\\(\\frac{5}{10}\\)"
-    ],
     "hint": "Multiply the numerators together and the denominators together, then simplify.",
     "solution": "",
     "solutionSteps": [
@@ -2327,13 +2955,31 @@ export const Y7_CH6B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Confirm the final answer.",
+        "explanation": "State the final simplified answer and match it to the correct option.",
         "workingOut": "\\(\\frac{3}{10}\\)",
         "graphData": null
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(\\frac{10}{3}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{3}{10}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{4}{10}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{5}{10}\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q16f",
@@ -2344,12 +2990,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "Evaluate \\(a \\div b\\) for \\(a = \\frac{3}{4}\\) and \\(b = \\frac{2}{5}\\).",
     "a": 2,
     "answer": "2",
-    "opts": [
-      "\\(-\\frac{15}{8}\\)",
-      "\\(\\frac{16}{8}\\)",
-      "\\(\\frac{15}{8}\\)",
-      "\\(-\\frac{16}{8}\\)"
-    ],
     "hint": "Multiply by the reciprocal of \\(b\\).",
     "solution": "",
     "solutionSteps": [
@@ -2370,7 +3010,25 @@ export const Y7_CH6B_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(\\frac{8}{15}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{16}{8}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{15}{8}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-\\frac{16}{8}\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q16g",
@@ -2381,12 +3039,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "Evaluate \\(b \\div a\\) for \\(a = \\frac{3}{4}\\) and \\(b = \\frac{2}{5}\\).",
     "a": 3,
     "answer": "3",
-    "opts": [
-      "\\(-\\frac{8}{15}\\)",
-      "\\(\\frac{9}{15}\\)",
-      "\\(-\\frac{9}{15}\\)",
-      "\\(\\frac{8}{15}\\)"
-    ],
     "hint": "Multiply by the reciprocal of \\(a\\).",
     "solution": "",
     "solutionSteps": [
@@ -2407,7 +3059,25 @@ export const Y7_CH6B_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(\\frac{15}{8}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{9}{15}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-\\frac{9}{15}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{8}{15}\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q17",
@@ -2418,12 +3088,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "Sarah spends \\(\\frac{3}{5}\\) of her monthly income on rent. If she earns \\(y\\) dollars a month, how much does she spend on rent each month?",
     "a": 1,
     "answer": "1",
-    "opts": [
-      "\\(-\\frac{3y}{5}\\)",
-      "\\(\\frac{3y}{5}\\)",
-      "\\(\\frac{4y}{5}\\)",
-      "\\(\\frac{5y}{3}\\)"
-    ],
     "hint": "Calculate \\(\\frac{3}{5}\\) of \\(y\\).",
     "solution": "",
     "solutionSteps": [
@@ -2433,18 +3097,31 @@ export const Y7_CH6B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Confirm the final answer.",
-        "workingOut": "\\(\\frac{3y}{5}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Confirm the final answer.",
+        "explanation": "State the final simplified answer and match it to the correct option.",
         "workingOut": "\\(\\frac{3y}{5}\\)",
         "graphData": null
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(\\frac{5}{3y}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{3y}{5}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{4y}{5}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{5y}{3}\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q18",
@@ -2455,12 +3132,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "A certain type of fabric for clothing costs \\(y\\) dollars a metre. How much would \\(2\\frac{1}{3}\\) metres cost?",
     "a": 2,
     "answer": "2",
-    "opts": [
-      "\\(-\\frac{7y}{3}\\)",
-      "\\(\\frac{8y}{3}\\)",
-      "\\(\\frac{7y}{3}\\)",
-      "\\(\\frac{3y}{7}\\)"
-    ],
     "hint": "Convert the mixed number to an improper fraction, then multiply by the cost per metre.",
     "solution": "",
     "solutionSteps": [
@@ -2475,13 +3146,31 @@ export const Y7_CH6B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Confirm the final answer.",
+        "explanation": "State the final simplified answer and match it to the correct option.",
         "workingOut": "\\(\\frac{7y}{3}\\)",
         "graphData": null
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(\\frac{3}{7y}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{8y}{3}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{7y}{3}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{3y}{7}\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q19",
@@ -2492,12 +3181,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "Twelve people go to a concert. Each ticket costs \\(w\\) dollars. The total cost of the tickets is to be shared equally among 8 people. How much does each of these people pay?",
     "a": 3,
     "answer": "3",
-    "opts": [
-      "\\(-\\frac{3w}{2}\\)",
-      "\\(\\frac{4w}{2}\\)",
-      "\\(-\\frac{4w}{2}\\)",
-      "\\(\\frac{3w}{2}\\)"
-    ],
     "hint": "Find the total cost of all 12 tickets first, then divide that cost by 8.",
     "solution": "",
     "solutionSteps": [
@@ -2518,7 +3201,25 @@ export const Y7_CH6B_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(\\frac{2}{3w}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{4w}{2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-\\frac{4w}{2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{3w}{2}\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q20a",
@@ -2529,12 +3230,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "A delivery service employs a team of \\(k\\) couriers. The team has to deliver \\(8z\\) packages every afternoon. How many packages on average does each courier have to deliver?",
     "a": 0,
     "answer": "0",
-    "opts": [
-      "\\(\\frac{8z}{k}\\)",
-      "\\(-\\frac{8z}{k}\\)",
-      "\\(\\frac{9z}{k}\\)",
-      "\\(\\frac{10z}{k}\\)"
-    ],
     "hint": "Divide the total number of packages by the number of couriers.",
     "solution": "",
     "solutionSteps": [
@@ -2542,20 +3237,28 @@ export const Y7_CH6B_QUESTIONS = [
         "explanation": "Divide the total packages \\(8z\\) by \\(k\\).",
         "workingOut": "\\(\\frac{8z}{k}\\)",
         "graphData": null
-      },
-      {
-        "explanation": "Confirm the final answer.",
-        "workingOut": "\\(\\frac{8z}{k}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Confirm the final answer.",
-        "workingOut": "\\(\\frac{8z}{k}\\)",
-        "graphData": null
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(\\frac{8z}{k}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{k}{8z}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{9z}{k}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{10z}{k}\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6b-q20b",
@@ -2566,12 +3269,6 @@ export const Y7_CH6B_QUESTIONS = [
     "question": "A delivery service employs a team of \\(k\\) couriers. The team has to deliver \\(8z\\) packages every afternoon. Find the average number of packages each courier delivers if \\(z = 15\\) and \\(k = 6\\).",
     "a": 1,
     "answer": "1",
-    "opts": [
-      "\\(21\\)",
-      "\\(20\\)",
-      "\\(19\\)",
-      "\\(-20\\)"
-    ],
     "hint": "Substitute the values into the formula \\(\\frac{8z}{k}\\).",
     "solution": "",
     "solutionSteps": [
@@ -2592,6 +3289,24 @@ export const Y7_CH6B_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(21\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(20\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(19\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(22\\)",
+        "imageUrl": ""
+      }
+    ]
   }
 ];

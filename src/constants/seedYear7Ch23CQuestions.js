@@ -1,17 +1,19 @@
 export const Y7_CH23C_QUESTIONS = [
   {
     "id": "y7-23c-q1a",
+    "topicId": "y7-23c",
+    "c": "23C",
     "t": "Simplifying algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write down the coefficient for the following term.\\n\\n\\(7m\\)",
+    "question": "Write down the coefficient for the following term.<br /><br />\\(7m\\)",
     "a": 3,
     "answer": "3",
     "opts": [
       "\\(8\\)",
       "\\(6\\)",
-      "\\(-7\\)",
+      "\\(9\\)",
       "\\(7\\)"
     ],
     "hint": "The coefficient is the number part of the term.",
@@ -19,7 +21,7 @@ export const Y7_CH23C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "The term is \\(7m\\). The number multiplying the variable is the coefficient.",
-        "workingOut": "\\(\\text{Coefficient} = 7\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -38,25 +40,27 @@ export const Y7_CH23C_QUESTIONS = [
   },
   {
     "id": "y7-23c-q1b",
+    "topicId": "y7-23c",
+    "c": "23C",
     "t": "Simplifying algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write down the coefficient for the following term.\\n\\n\\(4p\\)",
+    "question": "Write down the coefficient for the following term.<br /><br />\\(4p\\)",
     "a": 0,
     "answer": "0",
     "opts": [
       "\\(4\\)",
       "\\(5\\)",
       "\\(3\\)",
-      "\\(-4\\)"
+      "\\(6\\)"
     ],
     "hint": "Identify the numerical multiplier in front of the letter.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "In the term \\(4p\\), the number \\(4\\) is multiplying \\(p\\).",
-        "workingOut": "\\(\\text{Coefficient} = 4\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -75,25 +79,27 @@ export const Y7_CH23C_QUESTIONS = [
   },
   {
     "id": "y7-23c-q1c",
+    "topicId": "y7-23c",
+    "c": "23C",
     "t": "Simplifying algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write down the coefficient for the following term.\\n\\n\\(15k\\)",
+    "question": "Write down the coefficient for the following term.<br /><br />\\(15k\\)",
     "a": 1,
     "answer": "1",
     "opts": [
       "\\(16\\)",
       "\\(15\\)",
       "\\(14\\)",
-      "\\(-15\\)"
+      "\\(17\\)"
     ],
     "hint": "The coefficient is the number part of the term.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "In the term \\(15k\\), the number \\(15\\) is multiplying \\(k\\).",
-        "workingOut": "\\(\\text{Coefficient} = 15\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -112,25 +118,27 @@ export const Y7_CH23C_QUESTIONS = [
   },
   {
     "id": "y7-23c-q1d",
+    "topicId": "y7-23c",
+    "c": "23C",
     "t": "Simplifying algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write down the coefficient for the following term.\\n\\n\\(62y\\)",
+    "question": "Write down the coefficient for the following term.<br /><br />\\(62y\\)",
     "a": 2,
     "answer": "2",
     "opts": [
       "\\(63\\)",
       "\\(61\\)",
       "\\(62\\)",
-      "\\(-62\\)"
+      "\\(64\\)"
     ],
     "hint": "Identify the numerical multiplier.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "In the term \\(62y\\), the number \\(62\\) is multiplying \\(y\\).",
-        "workingOut": "\\(\\text{Coefficient} = 62\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -149,17 +157,19 @@ export const Y7_CH23C_QUESTIONS = [
   },
   {
     "id": "y7-23c-q1e",
+    "topicId": "y7-23c",
+    "c": "23C",
     "t": "Simplifying algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write down the coefficient for the following term.\\n\\n\\(41z\\)",
+    "question": "Write down the coefficient for the following term.<br /><br />\\(41z\\)",
     "a": 3,
     "answer": "3",
     "opts": [
       "\\(42\\)",
       "\\(40\\)",
-      "\\(-41\\)",
+      "\\(43\\)",
       "\\(41\\)"
     ],
     "hint": "The coefficient is the number part of the term.",
@@ -167,7 +177,7 @@ export const Y7_CH23C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "In the term \\(41z\\), the number \\(41\\) is multiplying \\(z\\).",
-        "workingOut": "\\(\\text{Coefficient} = 41\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -186,25 +196,27 @@ export const Y7_CH23C_QUESTIONS = [
   },
   {
     "id": "y7-23c-q1f",
+    "topicId": "y7-23c",
+    "c": "23C",
     "t": "Simplifying algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write down the coefficient for the following term.\\n\\n\\(28n\\)",
+    "question": "Write down the coefficient for the following term.<br /><br />\\(28n\\)",
     "a": 0,
     "answer": "0",
     "opts": [
       "\\(28\\)",
       "\\(29\\)",
       "\\(27\\)",
-      "\\(-28\\)"
+      "\\(30\\)"
     ],
     "hint": "Identify the numerical multiplier.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "In the term \\(28n\\), the number \\(28\\) is multiplying \\(n\\).",
-        "workingOut": "\\(\\text{Coefficient} = 28\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -223,25 +235,27 @@ export const Y7_CH23C_QUESTIONS = [
   },
   {
     "id": "y7-23c-q1g",
+    "topicId": "y7-23c",
+    "c": "23C",
     "t": "Simplifying algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write down the coefficient for the following term.\\n\\n\\(75d\\)",
+    "question": "Write down the coefficient for the following term.<br /><br />\\(75d\\)",
     "a": 1,
     "answer": "1",
     "opts": [
       "\\(76\\)",
       "\\(75\\)",
       "\\(74\\)",
-      "\\(-75\\)"
+      "\\(77\\)"
     ],
     "hint": "The coefficient is the number part of the term.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "In the term \\(75d\\), the number \\(75\\) is multiplying \\(d\\).",
-        "workingOut": "\\(\\text{Coefficient} = 75\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -260,25 +274,27 @@ export const Y7_CH23C_QUESTIONS = [
   },
   {
     "id": "y7-23c-q1h",
+    "topicId": "y7-23c",
+    "c": "23C",
     "t": "Simplifying algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write down the coefficient for the following term.\\n\\n\\(8x\\)",
+    "question": "Write down the coefficient for the following term.<br /><br />\\(8x\\)",
     "a": 2,
     "answer": "2",
     "opts": [
       "\\(9\\)",
       "\\(7\\)",
       "\\(8\\)",
-      "\\(-8\\)"
+      "\\(10\\)"
     ],
     "hint": "Identify the numerical multiplier.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "In the term \\(8x\\), the number \\(8\\) is multiplying \\(x\\).",
-        "workingOut": "\\(\\text{Coefficient} = 8\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -297,17 +313,19 @@ export const Y7_CH23C_QUESTIONS = [
   },
   {
     "id": "y7-23c-q1i",
+    "topicId": "y7-23c",
+    "c": "23C",
     "t": "Simplifying algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write down the coefficient for the following term.\\n\\n\\(19w\\)",
+    "question": "Write down the coefficient for the following term.<br /><br />\\(19w\\)",
     "a": 3,
     "answer": "3",
     "opts": [
       "\\(20\\)",
       "\\(18\\)",
-      "\\(-19\\)",
+      "\\(21\\)",
       "\\(19\\)"
     ],
     "hint": "The coefficient is the number part of the term.",
@@ -315,7 +333,7 @@ export const Y7_CH23C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "In the term \\(19w\\), the number \\(19\\) is multiplying \\(w\\).",
-        "workingOut": "\\(\\text{Coefficient} = 19\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -334,25 +352,27 @@ export const Y7_CH23C_QUESTIONS = [
   },
   {
     "id": "y7-23c-q1j",
+    "topicId": "y7-23c",
+    "c": "23C",
     "t": "Simplifying algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write down the coefficient for the following term.\\n\\n\\(37b\\)",
+    "question": "Write down the coefficient for the following term.<br /><br />\\(37b\\)",
     "a": 0,
     "answer": "0",
     "opts": [
       "\\(37\\)",
       "\\(38\\)",
       "\\(36\\)",
-      "\\(-37\\)"
+      "\\(39\\)"
     ],
     "hint": "Identify the numerical multiplier.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "In the term \\(37b\\), the number \\(37\\) is multiplying \\(b\\).",
-        "workingOut": "\\(\\text{Coefficient} = 37\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -371,25 +391,27 @@ export const Y7_CH23C_QUESTIONS = [
   },
   {
     "id": "y7-23c-q1k",
+    "topicId": "y7-23c",
+    "c": "23C",
     "t": "Simplifying algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write down the coefficient for the following term.\\n\\n\\(21c\\)",
+    "question": "Write down the coefficient for the following term.<br /><br />\\(21c\\)",
     "a": 1,
     "answer": "1",
     "opts": [
       "\\(22\\)",
       "\\(21\\)",
       "\\(20\\)",
-      "\\(-21\\)"
+      "\\(23\\)"
     ],
     "hint": "The coefficient is the number part of the term.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "In the term \\(21c\\), the number \\(21\\) is multiplying \\(c\\).",
-        "workingOut": "\\(\\text{Coefficient} = 21\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -408,25 +430,27 @@ export const Y7_CH23C_QUESTIONS = [
   },
   {
     "id": "y7-23c-q1l",
+    "topicId": "y7-23c",
+    "c": "23C",
     "t": "Simplifying algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write down the coefficient for the following term.\\n\\n\\(44p\\)",
+    "question": "Write down the coefficient for the following term.<br /><br />\\(44p\\)",
     "a": 2,
     "answer": "2",
     "opts": [
       "\\(45\\)",
       "\\(43\\)",
       "\\(44\\)",
-      "\\(-44\\)"
+      "\\(46\\)"
     ],
     "hint": "Identify the numerical multiplier.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "In the term \\(44p\\), the number \\(44\\) is multiplying \\(p\\).",
-        "workingOut": "\\(\\text{Coefficient} = 44\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -445,11 +469,13 @@ export const Y7_CH23C_QUESTIONS = [
   },
   {
     "id": "y7-23c-q2a",
+    "topicId": "y7-23c",
+    "c": "23C",
     "t": "Simplifying algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "List the like terms from the following set, separated by a comma.\\n\\n\\(4m, 7n, 8n\\)",
+    "question": "List the like terms from the following set, separated by a comma.<br /><br />\\(4m, 7n, 8n\\)",
     "a": 2,
     "answer": "2",
     "opts": [
@@ -463,7 +489,7 @@ export const Y7_CH23C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Look at the variables for each term: \\(m, n, n\\).",
-        "workingOut": "\\(\\text{Variables: } m, n, n\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -482,11 +508,13 @@ export const Y7_CH23C_QUESTIONS = [
   },
   {
     "id": "y7-23c-q2b",
+    "topicId": "y7-23c",
+    "c": "23C",
     "t": "Simplifying algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "List the like terms from the following set, separated by a comma.\\n\\n\\(3p, 8q, 5p\\)",
+    "question": "List the like terms from the following set, separated by a comma.<br /><br />\\(3p, 8q, 5p\\)",
     "a": 3,
     "answer": "3",
     "opts": [
@@ -500,7 +528,7 @@ export const Y7_CH23C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Look at the variables for each term: \\(p, q, p\\).",
-        "workingOut": "\\(\\text{Variables: } p, q, p\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -519,11 +547,13 @@ export const Y7_CH23C_QUESTIONS = [
   },
   {
     "id": "y7-23c-q2c",
+    "topicId": "y7-23c",
+    "c": "23C",
     "t": "Simplifying algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "List the like terms from the following set, separated by a comma.\\n\\n\\(8y, 2b, 4y\\)",
+    "question": "List the like terms from the following set, separated by a comma.<br /><br />\\(8y, 2b, 4y\\)",
     "a": 0,
     "answer": "0",
     "opts": [
@@ -537,7 +567,7 @@ export const Y7_CH23C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "The variables are \\(y, b, y\\).",
-        "workingOut": "\\(\\text{Variables: } y, b, y\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -556,11 +586,13 @@ export const Y7_CH23C_QUESTIONS = [
   },
   {
     "id": "y7-23c-q2d",
+    "topicId": "y7-23c",
+    "c": "23C",
     "t": "Simplifying algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "List the like terms from the following set, separated by a comma.\\n\\n\\(7k, 5m, 2k\\)",
+    "question": "List the like terms from the following set, separated by a comma.<br /><br />\\(7k, 5m, 2k\\)",
     "a": 1,
     "answer": "1",
     "opts": [
@@ -574,7 +606,7 @@ export const Y7_CH23C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "The variables are \\(k, m, k\\).",
-        "workingOut": "\\(\\text{Variables: } k, m, k\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -593,11 +625,13 @@ export const Y7_CH23C_QUESTIONS = [
   },
   {
     "id": "y7-23c-q2e",
+    "topicId": "y7-23c",
+    "c": "23C",
     "t": "Simplifying algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "List the like terms from the following set, separated by a comma.\\n\\n\\(6w, 4c, 2w\\)",
+    "question": "List the like terms from the following set, separated by a comma.<br /><br />\\(6w, 4c, 2w\\)",
     "a": 2,
     "answer": "2",
     "opts": [
@@ -611,7 +645,7 @@ export const Y7_CH23C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "The variables are \\(w, c, w\\).",
-        "workingOut": "\\(\\text{Variables: } w, c, w\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -630,11 +664,13 @@ export const Y7_CH23C_QUESTIONS = [
   },
   {
     "id": "y7-23c-q2f",
+    "topicId": "y7-23c",
+    "c": "23C",
     "t": "Simplifying algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "List the like terms from the following set, separated by a comma.\\n\\n\\(4x, 7y, 2x\\)",
+    "question": "List the like terms from the following set, separated by a comma.<br /><br />\\(4x, 7y, 2x\\)",
     "a": 3,
     "answer": "3",
     "opts": [
@@ -648,7 +684,7 @@ export const Y7_CH23C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "The variables are \\(x, y, x\\).",
-        "workingOut": "\\(\\text{Variables: } x, y, x\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -667,11 +703,13 @@ export const Y7_CH23C_QUESTIONS = [
   },
   {
     "id": "y7-23c-q2g",
+    "topicId": "y7-23c",
+    "c": "23C",
     "t": "Simplifying algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "List the like terms from the following set, separated by a comma.\\n\\n\\(6p, 3q, 8q\\)",
+    "question": "List the like terms from the following set, separated by a comma.<br /><br />\\(6p, 3q, 8q\\)",
     "a": 0,
     "answer": "0",
     "opts": [
@@ -685,7 +723,7 @@ export const Y7_CH23C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "The variables are \\(p, q, q\\).",
-        "workingOut": "\\(\\text{Variables: } p, q, q\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -704,11 +742,13 @@ export const Y7_CH23C_QUESTIONS = [
   },
   {
     "id": "y7-23c-q2h",
+    "topicId": "y7-23c",
+    "c": "23C",
     "t": "Simplifying algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "List the like terms from the following set, separated by a comma.\\n\\n\\(7, 4y, 9y\\)",
+    "question": "List the like terms from the following set, separated by a comma.<br /><br />\\(7, 4y, 9y\\)",
     "a": 1,
     "answer": "1",
     "opts": [
@@ -722,7 +762,7 @@ export const Y7_CH23C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "The first term is a constant, while the others have the variable \\(y\\).",
-        "workingOut": "\\(\\text{Variables: none}, y, y\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -741,11 +781,13 @@ export const Y7_CH23C_QUESTIONS = [
   },
   {
     "id": "y7-23c-q2i",
+    "topicId": "y7-23c",
+    "c": "23C",
     "t": "Simplifying algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "List the like terms from the following set, separated by a comma.\\n\\n\\(8m, m, n\\)",
+    "question": "List the like terms from the following set, separated by a comma.<br /><br />\\(8m, m, n\\)",
     "a": 2,
     "answer": "2",
     "opts": [
@@ -759,7 +801,7 @@ export const Y7_CH23C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "The variables are \\(m, m, n\\).",
-        "workingOut": "\\(\\text{Variables: } m, m, n\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -778,25 +820,27 @@ export const Y7_CH23C_QUESTIONS = [
   },
   {
     "id": "y7-23c-q3a",
+    "topicId": "y7-23c",
+    "c": "23C",
     "t": "Simplifying algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the following.\\n\\n\\(4y + 5y\\)",
+    "question": "Simplify the following.<br /><br />\\(4y + 5y\\)",
     "a": 1,
     "answer": "1",
     "opts": [
-      "\\(-9y\\)",
-      "\\(9y\\)",
       "\\(10y\\)",
-      "\\(opt2\\)"
+      "\\(9y\\)",
+      "\\(11y\\)",
+      "\\(12y\\)"
     ],
     "hint": "Add the coefficients of the like terms.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Both are like terms since they have the variable \\(y\\). Add their coefficients.",
-        "workingOut": "\\((4 + 5)y = 9y\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -815,25 +859,27 @@ export const Y7_CH23C_QUESTIONS = [
   },
   {
     "id": "y7-23c-q3b",
+    "topicId": "y7-23c",
+    "c": "23C",
     "t": "Simplifying algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the following.\\n\\n\\(m + m + m\\)",
+    "question": "Simplify the following.<br /><br />\\(m + m + m\\)",
     "a": 2,
     "answer": "2",
     "opts": [
-      "\\(-3m\\)",
       "\\(4m\\)",
+      "\\(5m\\)",
       "\\(3m\\)",
-      "\\(opt2\\)"
+      "\\(6m\\)"
     ],
     "hint": "Each \\(m\\) has an invisible coefficient of 1.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Add the coefficients: \\(1 + 1 + 1\\).",
-        "workingOut": "\\((1 + 1 + 1)m = 3m\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -852,25 +898,27 @@ export const Y7_CH23C_QUESTIONS = [
   },
   {
     "id": "y7-23c-q3c",
+    "topicId": "y7-23c",
+    "c": "23C",
     "t": "Simplifying algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the following.\\n\\n\\(p + p + p + p + p\\)",
-    "a": 3,
-    "answer": "3",
+    "question": "Simplify the following.<br /><br />\\(p + p + p + p + p\\)",
+    "a": 2,
+    "answer": "2",
     "opts": [
-      "\\(-5p\\)",
       "\\(6p\\)",
-      "\\(opt2\\)",
-      "\\(5p\\)"
+      "\\(7p\\)",
+      "\\(5p\\)",
+      "\\(8p\\)"
     ],
     "hint": "Count how many times \\(p\\) is being added.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "There are 5 terms, each with a coefficient of 1.",
-        "workingOut": "\\((1 + 1 + 1 + 1 + 1)p = 5p\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -889,25 +937,27 @@ export const Y7_CH23C_QUESTIONS = [
   },
   {
     "id": "y7-23c-q3d",
+    "topicId": "y7-23c",
+    "c": "23C",
     "t": "Simplifying algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the following.\\n\\n\\(k + k + k + k + k + k\\)",
+    "question": "Simplify the following.<br /><br />\\(k + k + k + k + k + k\\)",
     "a": 0,
     "answer": "0",
     "opts": [
       "\\(6k\\)",
-      "\\(-6k\\)",
       "\\(7k\\)",
-      "\\(opt2\\)"
+      "\\(8k\\)",
+      "\\(9k\\)"
     ],
     "hint": "Count how many times \\(k\\) is being added.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "There are 6 terms, each with a coefficient of 1.",
-        "workingOut": "\\(6 \\times k = 6k\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -926,25 +976,27 @@ export const Y7_CH23C_QUESTIONS = [
   },
   {
     "id": "y7-23c-q3e",
+    "topicId": "y7-23c",
+    "c": "23C",
     "t": "Simplifying algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the following.\\n\\n\\(x + x + x + x\\)",
+    "question": "Simplify the following.<br /><br />\\(x + x + x + x\\)",
     "a": 1,
     "answer": "1",
     "opts": [
-      "\\(-4x\\)",
-      "\\(4x\\)",
       "\\(5x\\)",
-      "\\(opt2\\)"
+      "\\(4x\\)",
+      "\\(6x\\)",
+      "\\(7x\\)"
     ],
     "hint": "Each \\(x\\) has an invisible coefficient of 1.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Add the coefficients: \\(1 + 1 + 1 + 1\\).",
-        "workingOut": "\\((1 + 1 + 1 + 1)x = 4x\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -963,25 +1015,27 @@ export const Y7_CH23C_QUESTIONS = [
   },
   {
     "id": "y7-23c-q3f",
+    "topicId": "y7-23c",
+    "c": "23C",
     "t": "Simplifying algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the following.\\n\\n\\(w + w + w\\)",
+    "question": "Simplify the following.<br /><br />\\(w + w + w\\)",
     "a": 2,
     "answer": "2",
     "opts": [
-      "\\(-3w\\)",
       "\\(4w\\)",
+      "\\(5w\\)",
       "\\(3w\\)",
-      "\\(opt2\\)"
+      "\\(6w\\)"
     ],
     "hint": "Count how many times \\(w\\) is being added.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "There are 3 terms, each with a coefficient of 1.",
-        "workingOut": "\\(3 \\times w = 3w\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -1000,25 +1054,27 @@ export const Y7_CH23C_QUESTIONS = [
   },
   {
     "id": "y7-23c-q3g",
+    "topicId": "y7-23c",
+    "c": "23C",
     "t": "Simplifying algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the following.\\n\\n\\(5n + 8n\\)",
-    "a": 3,
-    "answer": "3",
+    "question": "Simplify the following.<br /><br />\\(5n + 8n\\)",
+    "a": 2,
+    "answer": "2",
     "opts": [
-      "\\(-13n\\)",
       "\\(14n\\)",
-      "\\(opt2\\)",
-      "\\(13n\\)"
+      "\\(15n\\)",
+      "\\(13n\\)",
+      "\\(16n\\)"
     ],
     "hint": "Add the coefficients of the like terms.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Both are like terms since they have the variable \\(n\\). Add their coefficients.",
-        "workingOut": "\\((5 + 8)n = 13n\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -1037,25 +1093,27 @@ export const Y7_CH23C_QUESTIONS = [
   },
   {
     "id": "y7-23c-q3h",
+    "topicId": "y7-23c",
+    "c": "23C",
     "t": "Simplifying algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the following.\\n\\n\\(6a + 4a + 5a\\)",
+    "question": "Simplify the following.<br /><br />\\(6a + 4a + 5a\\)",
     "a": 0,
     "answer": "0",
     "opts": [
       "\\(15a\\)",
-      "\\(-15a\\)",
       "\\(16a\\)",
-      "\\(opt2\\)"
+      "\\(17a\\)",
+      "\\(18a\\)"
     ],
     "hint": "Add all the coefficients together.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "All three terms are like terms. Add their coefficients.",
-        "workingOut": "\\((6 + 4 + 5)a = 15a\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -1074,25 +1132,27 @@ export const Y7_CH23C_QUESTIONS = [
   },
   {
     "id": "y7-23c-q3i",
+    "topicId": "y7-23c",
+    "c": "23C",
     "t": "Simplifying algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the following.\\n\\n\\(7b + 12b\\)",
+    "question": "Simplify the following.<br /><br />\\(7b + 12b\\)",
     "a": 1,
     "answer": "1",
     "opts": [
-      "\\(-19b\\)",
-      "\\(19b\\)",
       "\\(20b\\)",
-      "\\(opt2\\)"
+      "\\(19b\\)",
+      "\\(21b\\)",
+      "\\(22b\\)"
     ],
     "hint": "Add the coefficients of the like terms.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Both are like terms. Add their coefficients.",
-        "workingOut": "\\((7 + 12)b = 19b\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -1111,25 +1171,27 @@ export const Y7_CH23C_QUESTIONS = [
   },
   {
     "id": "y7-23c-q4a",
+    "topicId": "y7-23c",
+    "c": "23C",
     "t": "Simplifying algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the following expression.\\n\\n\\(18y - 5y\\)",
+    "question": "Simplify the following expression.<br /><br />\\(18y - 5y\\)",
     "a": 0,
     "answer": "0",
     "opts": [
       "\\(13y\\)",
-      "\\(-13y\\)",
       "\\(14y\\)",
-      "\\(opt2\\)"
+      "\\(15y\\)",
+      "\\(16y\\)"
     ],
     "hint": "Subtract the coefficients of the like terms.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Since they are like terms, subtract the coefficients.",
-        "workingOut": "\\((18 - 5)y = 13y\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -1148,25 +1210,27 @@ export const Y7_CH23C_QUESTIONS = [
   },
   {
     "id": "y7-23c-q4b",
+    "topicId": "y7-23c",
+    "c": "23C",
     "t": "Simplifying algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the following expression.\\n\\n\\(32c - 15c\\)",
+    "question": "Simplify the following expression.<br /><br />\\(32c - 15c\\)",
     "a": 1,
     "answer": "1",
     "opts": [
-      "\\(-17c\\)",
-      "\\(17c\\)",
       "\\(18c\\)",
-      "\\(opt2\\)"
+      "\\(17c\\)",
+      "\\(19c\\)",
+      "\\(20c\\)"
     ],
     "hint": "Subtract the coefficients of the like terms.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Since they are like terms, subtract the coefficients.",
-        "workingOut": "\\((32 - 15)c = 17c\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -1185,25 +1249,27 @@ export const Y7_CH23C_QUESTIONS = [
   },
   {
     "id": "y7-23c-q4c",
+    "topicId": "y7-23c",
+    "c": "23C",
     "t": "Simplifying algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the following expression.\\n\\n\\(25m - 12m\\)",
+    "question": "Simplify the following expression.<br /><br />\\(25m - 12m\\)",
     "a": 2,
     "answer": "2",
     "opts": [
-      "\\(-13m\\)",
       "\\(14m\\)",
+      "\\(15m\\)",
       "\\(13m\\)",
-      "\\(opt2\\)"
+      "\\(16m\\)"
     ],
     "hint": "Subtract the coefficients of the like terms.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Since they are like terms, subtract the coefficients.",
-        "workingOut": "\\((25 - 12)m = 13m\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -1222,25 +1288,27 @@ export const Y7_CH23C_QUESTIONS = [
   },
   {
     "id": "y7-23c-q4d",
+    "topicId": "y7-23c",
+    "c": "23C",
     "t": "Simplifying algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the following expression.\\n\\n\\(21p - 7p\\)",
-    "a": 3,
-    "answer": "3",
+    "question": "Simplify the following expression.<br /><br />\\(21p - 7p\\)",
+    "a": 2,
+    "answer": "2",
     "opts": [
-      "\\(-14p\\)",
       "\\(15p\\)",
-      "\\(opt2\\)",
-      "\\(14p\\)"
+      "\\(16p\\)",
+      "\\(14p\\)",
+      "\\(17p\\)"
     ],
     "hint": "Subtract the coefficients of the like terms.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Since they are like terms, subtract the coefficients.",
-        "workingOut": "\\((21 - 7)p = 14p\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -1259,25 +1327,27 @@ export const Y7_CH23C_QUESTIONS = [
   },
   {
     "id": "y7-23c-q4e",
+    "topicId": "y7-23c",
+    "c": "23C",
     "t": "Simplifying algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the following expression.\\n\\n\\(19k - 8k\\)",
+    "question": "Simplify the following expression.<br /><br />\\(19k - 8k\\)",
     "a": 0,
     "answer": "0",
     "opts": [
       "\\(11k\\)",
-      "\\(-11k\\)",
       "\\(12k\\)",
-      "\\(opt2\\)"
+      "\\(13k\\)",
+      "\\(14k\\)"
     ],
     "hint": "Subtract the coefficients of the like terms.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Since they are like terms, subtract the coefficients.",
-        "workingOut": "\\((19 - 8)k = 11k\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -1296,25 +1366,27 @@ export const Y7_CH23C_QUESTIONS = [
   },
   {
     "id": "y7-23c-q4f",
+    "topicId": "y7-23c",
+    "c": "23C",
     "t": "Simplifying algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the following expression.\\n\\n\\(16n - 9n\\)",
+    "question": "Simplify the following expression.<br /><br />\\(16n - 9n\\)",
     "a": 1,
     "answer": "1",
     "opts": [
-      "\\(-7n\\)",
-      "\\(7n\\)",
       "\\(8n\\)",
-      "\\(opt2\\)"
+      "\\(7n\\)",
+      "\\(9n\\)",
+      "\\(10n\\)"
     ],
     "hint": "Subtract the coefficients of the like terms.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Since they are like terms, subtract the coefficients.",
-        "workingOut": "\\((16 - 9)n = 7n\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -1333,25 +1405,27 @@ export const Y7_CH23C_QUESTIONS = [
   },
   {
     "id": "y7-23c-q4g",
+    "topicId": "y7-23c",
+    "c": "23C",
     "t": "Simplifying algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the following expression.\\n\\n\\(14w - 6w\\)",
+    "question": "Simplify the following expression.<br /><br />\\(14w - 6w\\)",
     "a": 2,
     "answer": "2",
     "opts": [
-      "\\(-8w\\)",
       "\\(9w\\)",
+      "\\(10w\\)",
       "\\(8w\\)",
-      "\\(opt2\\)"
+      "\\(11w\\)"
     ],
     "hint": "Subtract the coefficients of the like terms.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Since they are like terms, subtract the coefficients.",
-        "workingOut": "\\((14 - 6)w = 8w\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -1370,25 +1444,27 @@ export const Y7_CH23C_QUESTIONS = [
   },
   {
     "id": "y7-23c-q4h",
+    "topicId": "y7-23c",
+    "c": "23C",
     "t": "Simplifying algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the following expression.\\n\\n\\(17x - 8x\\)",
-    "a": 3,
-    "answer": "3",
+    "question": "Simplify the following expression.<br /><br />\\(17x - 8x\\)",
+    "a": 2,
+    "answer": "2",
     "opts": [
-      "\\(-9x\\)",
       "\\(10x\\)",
-      "\\(opt2\\)",
-      "\\(9x\\)"
+      "\\(11x\\)",
+      "\\(9x\\)",
+      "\\(12x\\)"
     ],
     "hint": "Subtract the coefficients of the like terms.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Since they are like terms, subtract the coefficients.",
-        "workingOut": "\\((17 - 8)x = 9x\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -1407,25 +1483,27 @@ export const Y7_CH23C_QUESTIONS = [
   },
   {
     "id": "y7-23c-q4i",
+    "topicId": "y7-23c",
+    "c": "23C",
     "t": "Simplifying algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the following expression.\\n\\n\\(24z - z\\)",
+    "question": "Simplify the following expression.<br /><br />\\(24z - z\\)",
     "a": 0,
     "answer": "0",
     "opts": [
       "\\(23z\\)",
-      "\\(-23z\\)",
       "\\(24z\\)",
-      "\\(opt2\\)"
+      "\\(25z\\)",
+      "\\(26z\\)"
     ],
     "hint": "Remember that \\(z\\) is the same as \\(1z\\).",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Since they are like terms, subtract the coefficients. The second term has a coefficient of 1.",
-        "workingOut": "\\((24 - 1)z = 23z\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -1444,18 +1522,20 @@ export const Y7_CH23C_QUESTIONS = [
   },
   {
     "id": "y7-23c-q5a",
+    "topicId": "y7-23c",
+    "c": "23C",
     "t": "Simplifying algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the following.\\n\\n\\(7 \\times m\\)",
-    "a": 3,
-    "answer": "3",
+    "question": "Simplify the following.<br /><br />\\(7 \\times m\\)",
+    "a": 2,
+    "answer": "2",
     "opts": [
-      "\\(-7m\\)",
       "\\(8m\\)",
-      "\\(opt2\\)",
-      "\\(7m\\)"
+      "\\(9m\\)",
+      "\\(7m\\)",
+      "\\(10m\\)"
     ],
     "hint": "In algebra, we leave out the multiplication sign between a number and a variable.",
     "solution": "",
@@ -1481,18 +1561,20 @@ export const Y7_CH23C_QUESTIONS = [
   },
   {
     "id": "y7-23c-q5b",
+    "topicId": "y7-23c",
+    "c": "23C",
     "t": "Simplifying algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the following.\\n\\n\\(5 \\times p \\times q\\)",
+    "question": "Simplify the following.<br /><br />\\(5 \\times p \\times q\\)",
     "a": 0,
     "answer": "0",
     "opts": [
       "\\(5pq\\)",
-      "\\(-5pq\\)",
       "\\(6pq\\)",
-      "\\(opt2\\)"
+      "\\(7pq\\)",
+      "\\(8pq\\)"
     ],
     "hint": "Leave out the multiplication signs and write the letters together.",
     "solution": "",
@@ -1518,18 +1600,20 @@ export const Y7_CH23C_QUESTIONS = [
   },
   {
     "id": "y7-23c-q5c",
+    "topicId": "y7-23c",
+    "c": "23C",
     "t": "Simplifying algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the following.\\n\\n\\(a \\times b \\times c\\)",
+    "question": "Simplify the following.<br /><br />\\(a \\times b \\times c\\)",
     "a": 1,
     "answer": "1",
     "opts": [
-      "\\(-abc\\)",
+      "\\(2abc\\)",
       "\\(abc\\)",
-      "\\(opt1\\)",
-      "\\(opt2\\)"
+      "\\(3abc\\)",
+      "\\(4abc\\)"
     ],
     "hint": "Leave out the multiplication signs between variables.",
     "solution": "",
@@ -1555,18 +1639,20 @@ export const Y7_CH23C_QUESTIONS = [
   },
   {
     "id": "y7-23c-q5d",
+    "topicId": "y7-23c",
+    "c": "23C",
     "t": "Simplifying algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the following.\\n\\n\\(6 \\times m \\times n\\)",
+    "question": "Simplify the following.<br /><br />\\(6 \\times m \\times n\\)",
     "a": 2,
     "answer": "2",
     "opts": [
-      "\\(-6mn\\)",
       "\\(7mn\\)",
+      "\\(8mn\\)",
       "\\(6mn\\)",
-      "\\(opt2\\)"
+      "\\(9mn\\)"
     ],
     "hint": "Leave out the multiplication signs and write the letters together.",
     "solution": "",
@@ -1592,18 +1678,20 @@ export const Y7_CH23C_QUESTIONS = [
   },
   {
     "id": "y7-23c-q5e",
+    "topicId": "y7-23c",
+    "c": "23C",
     "t": "Simplifying algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the following.\\n\\n\\(32 \\times x \\times y \\times z\\)",
-    "a": 3,
-    "answer": "3",
+    "question": "Simplify the following.<br /><br />\\(32 \\times x \\times y \\times z\\)",
+    "a": 2,
+    "answer": "2",
     "opts": [
-      "\\(-32xyz\\)",
       "\\(33xyz\\)",
-      "\\(opt2\\)",
-      "\\(32xyz\\)"
+      "\\(34xyz\\)",
+      "\\(32xyz\\)",
+      "\\(35xyz\\)"
     ],
     "hint": "Leave out all multiplication signs.",
     "solution": "",
@@ -1629,18 +1717,20 @@ export const Y7_CH23C_QUESTIONS = [
   },
   {
     "id": "y7-23c-q5f",
+    "topicId": "y7-23c",
+    "c": "23C",
     "t": "Simplifying algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the following.\\n\\n\\(8 \\times j \\times k\\)",
+    "question": "Simplify the following.<br /><br />\\(8 \\times j \\times k\\)",
     "a": 0,
     "answer": "0",
     "opts": [
       "\\(8jk\\)",
-      "\\(-8jk\\)",
       "\\(9jk\\)",
-      "\\(opt2\\)"
+      "\\(10jk\\)",
+      "\\(11jk\\)"
     ],
     "hint": "Leave out the multiplication signs and write the letters together.",
     "solution": "",
@@ -1666,18 +1756,20 @@ export const Y7_CH23C_QUESTIONS = [
   },
   {
     "id": "y7-23c-q5g",
+    "topicId": "y7-23c",
+    "c": "23C",
     "t": "Simplifying algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the following.\\n\\n\\(p \\times q \\times 12\\)",
+    "question": "Simplify the following.<br /><br />\\(p \\times q \\times 12\\)",
     "a": 1,
     "answer": "1",
     "opts": [
-      "\\(-12pq\\)",
-      "\\(12pq\\)",
       "\\(13pq\\)",
-      "\\(opt2\\)"
+      "\\(12pq\\)",
+      "\\(14pq\\)",
+      "\\(15pq\\)"
     ],
     "hint": "The number (coefficient) always goes first in an algebraic term.",
     "solution": "",
@@ -1703,18 +1795,20 @@ export const Y7_CH23C_QUESTIONS = [
   },
   {
     "id": "y7-23c-q5h",
+    "topicId": "y7-23c",
+    "c": "23C",
     "t": "Simplifying algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the following.\\n\\n\\(7 \\times 3 \\times a \\times b\\)",
+    "question": "Simplify the following.<br /><br />\\(7 \\times 3 \\times a \\times b\\)",
     "a": 2,
     "answer": "2",
     "opts": [
-      "\\(-21ab\\)",
       "\\(22ab\\)",
+      "\\(23ab\\)",
       "\\(21ab\\)",
-      "\\(opt2\\)"
+      "\\(24ab\\)"
     ],
     "hint": "Multiply the numbers together first.",
     "solution": "",
@@ -1740,18 +1834,20 @@ export const Y7_CH23C_QUESTIONS = [
   },
   {
     "id": "y7-23c-q5i",
+    "topicId": "y7-23c",
+    "c": "23C",
     "t": "Simplifying algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the following.\\n\\n\\(11 \\times x \\times y \\times w\\)",
-    "a": 3,
-    "answer": "3",
+    "question": "Simplify the following.<br /><br />\\(11 \\times x \\times y \\times w\\)",
+    "a": 2,
+    "answer": "2",
     "opts": [
-      "\\(-11xyw\\)",
       "\\(12xyw\\)",
-      "\\(opt2\\)",
-      "\\(11xyw\\)"
+      "\\(13xyw\\)",
+      "\\(11xyw\\)",
+      "\\(14xyw\\)"
     ],
     "hint": "Leave out the multiplication signs.",
     "solution": "",
@@ -1777,25 +1873,27 @@ export const Y7_CH23C_QUESTIONS = [
   },
   {
     "id": "y7-23c-q6a",
+    "topicId": "y7-23c",
+    "c": "23C",
     "t": "Simplifying algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following expression in expanded form.\\n\\n\\(12ab\\)",
+    "question": "Write the following expression in expanded form.<br /><br />\\(12ab\\)",
     "a": 2,
     "answer": "2",
     "opts": [
       "\\(-12 \\times a \\times b\\)",
       "\\(13 \\times a \\times b\\)",
       "\\(12 \\times a \\times b\\)",
-      "\\(opt2\\)"
+      "\\(14 \\times a \\times b\\)"
     ],
     "hint": "Put the multiplication signs back in.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Insert multiplication signs between the number and each variable.",
-        "workingOut": "\\(12 \\times a \\times b\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -1814,25 +1912,27 @@ export const Y7_CH23C_QUESTIONS = [
   },
   {
     "id": "y7-23c-q6b",
+    "topicId": "y7-23c",
+    "c": "23C",
     "t": "Simplifying algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following expression in expanded form.\\n\\n\\(8xyz\\)",
-    "a": 3,
-    "answer": "3",
+    "question": "Write the following expression in expanded form.<br /><br />\\(8xyz\\)",
+    "a": 2,
+    "answer": "2",
     "opts": [
       "\\(-8 \\times x \\times y \\times z\\)",
       "\\(9 \\times x \\times y \\times z\\)",
-      "\\(opt2\\)",
-      "\\(8 \\times x \\times y \\times z\\)"
+      "\\(8 \\times x \\times y \\times z\\)",
+      "\\(10 \\times x \\times y \\times z\\)"
     ],
     "hint": "Put the multiplication signs back in.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Insert multiplication signs between the number and each variable.",
-        "workingOut": "\\(8 \\times x \\times y \\times z\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -1851,25 +1951,27 @@ export const Y7_CH23C_QUESTIONS = [
   },
   {
     "id": "y7-23c-q6c",
+    "topicId": "y7-23c",
+    "c": "23C",
     "t": "Simplifying algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following expression in expanded form.\\n\\n\\(7mn\\)",
+    "question": "Write the following expression in expanded form.<br /><br />\\(7mn\\)",
     "a": 0,
     "answer": "0",
     "opts": [
       "\\(7 \\times m \\times n\\)",
       "\\(-7 \\times m \\times n\\)",
       "\\(8 \\times m \\times n\\)",
-      "\\(opt2\\)"
+      "\\(9 \\times m \\times n\\)"
     ],
     "hint": "Put the multiplication signs back in.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Insert multiplication signs between the number and each variable.",
-        "workingOut": "\\(7 \\times m \\times n\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -1888,25 +1990,27 @@ export const Y7_CH23C_QUESTIONS = [
   },
   {
     "id": "y7-23c-q6d",
+    "topicId": "y7-23c",
+    "c": "23C",
     "t": "Simplifying algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following expression in expanded form.\\n\\n\\(15pqr\\)",
+    "question": "Write the following expression in expanded form.<br /><br />\\(15pqr\\)",
     "a": 1,
     "answer": "1",
     "opts": [
       "\\(-15 \\times p \\times q \\times r\\)",
       "\\(15 \\times p \\times q \\times r\\)",
       "\\(16 \\times p \\times q \\times r\\)",
-      "\\(opt2\\)"
+      "\\(17 \\times p \\times q \\times r\\)"
     ],
     "hint": "Put the multiplication signs back in.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Insert multiplication signs between the number and each variable.",
-        "workingOut": "\\(15 \\times p \\times q \\times r\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -1925,25 +2029,27 @@ export const Y7_CH23C_QUESTIONS = [
   },
   {
     "id": "y7-23c-q6e",
+    "topicId": "y7-23c",
+    "c": "23C",
     "t": "Simplifying algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following expression in expanded form.\\n\\n\\(6abc\\)",
+    "question": "Write the following expression in expanded form.<br /><br />\\(6abc\\)",
     "a": 2,
     "answer": "2",
     "opts": [
       "\\(-6 \\times a \\times b \\times c\\)",
       "\\(7 \\times a \\times b \\times c\\)",
       "\\(6 \\times a \\times b \\times c\\)",
-      "\\(opt2\\)"
+      "\\(8 \\times a \\times b \\times c\\)"
     ],
     "hint": "Put the multiplication signs back in.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Insert multiplication signs between the number and each variable.",
-        "workingOut": "\\(6 \\times a \\times b \\times c\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -1962,25 +2068,27 @@ export const Y7_CH23C_QUESTIONS = [
   },
   {
     "id": "y7-23c-q6f",
+    "topicId": "y7-23c",
+    "c": "23C",
     "t": "Simplifying algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following expression in expanded form.\\n\\n\\(30xy^2\\)",
-    "a": 3,
-    "answer": "3",
+    "question": "Write the following expression in expanded form.<br /><br />\\(30xy^2\\)",
+    "a": 2,
+    "answer": "2",
     "opts": [
       "\\(-30 \\times x \\times y \\times y\\)",
       "\\(31 \\times x \\times y \\times y\\)",
-      "\\(opt2\\)",
-      "\\(30 \\times x \\times y \\times y\\)"
+      "\\(30 \\times x \\times y \\times y\\)",
+      "\\(32 \\times x \\times y \\times y\\)"
     ],
     "hint": "Expand the power (\\(y^2 = y \\times y\\)) as well.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "The term \\(y^2\\) means \\(y \\times y\\). Insert multiplication signs between all parts.",
-        "workingOut": "\\(30 \\times x \\times y \\times y\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -1999,25 +2107,27 @@ export const Y7_CH23C_QUESTIONS = [
   },
   {
     "id": "y7-23c-q6g",
+    "topicId": "y7-23c",
+    "c": "23C",
     "t": "Simplifying algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following expression in expanded form.\\n\\n\\(5jkl\\)",
+    "question": "Write the following expression in expanded form.<br /><br />\\(5jkl\\)",
     "a": 0,
     "answer": "0",
     "opts": [
       "\\(5 \\times j \\times k \\times l\\)",
       "\\(-5 \\times j \\times k \\times l\\)",
       "\\(6 \\times j \\times k \\times l\\)",
-      "\\(opt2\\)"
+      "\\(7 \\times j \\times k \\times l\\)"
     ],
     "hint": "Put the multiplication signs back in.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Insert multiplication signs between the number and each variable.",
-        "workingOut": "\\(5 \\times j \\times k \\times l\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -2036,25 +2146,27 @@ export const Y7_CH23C_QUESTIONS = [
   },
   {
     "id": "y7-23c-q6h",
+    "topicId": "y7-23c",
+    "c": "23C",
     "t": "Simplifying algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following expression in expanded form.\\n\\n\\(4m^2n\\)",
+    "question": "Write the following expression in expanded form.<br /><br />\\(4m^2n\\)",
     "a": 1,
     "answer": "1",
     "opts": [
       "\\(-4 \\times m \\times m \\times n\\)",
       "\\(4 \\times m \\times m \\times n\\)",
       "\\(5 \\times m \\times m \\times n\\)",
-      "\\(opt2\\)"
+      "\\(6 \\times m \\times m \\times n\\)"
     ],
     "hint": "Expand the power (\\(m^2 = m \\times m\\)) as well.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "The term \\(m^2\\) means \\(m \\times m\\). Insert multiplication signs between all parts.",
-        "workingOut": "\\(4 \\times m \\times m \\times n\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -2073,25 +2185,27 @@ export const Y7_CH23C_QUESTIONS = [
   },
   {
     "id": "y7-23c-q6i",
+    "topicId": "y7-23c",
+    "c": "23C",
     "t": "Simplifying algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following expression in expanded form.\\n\\n\\(9pqr\\)",
+    "question": "Write the following expression in expanded form.<br /><br />\\(9pqr\\)",
     "a": 2,
     "answer": "2",
     "opts": [
       "\\(-9 \\times p \\times q \\times r\\)",
       "\\(10 \\times p \\times q \\times r\\)",
       "\\(9 \\times p \\times q \\times r\\)",
-      "\\(opt2\\)"
+      "\\(11 \\times p \\times q \\times r\\)"
     ],
     "hint": "Put the multiplication signs back in.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Insert multiplication signs between the number and each variable.",
-        "workingOut": "\\(9 \\times p \\times q \\times r\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -2110,25 +2224,27 @@ export const Y7_CH23C_QUESTIONS = [
   },
   {
     "id": "y7-23c-q6j",
+    "topicId": "y7-23c",
+    "c": "23C",
     "t": "Simplifying algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following expression in expanded form.\\n\\n\\(7x^3\\)",
-    "a": 3,
-    "answer": "3",
+    "question": "Write the following expression in expanded form.<br /><br />\\(7x^3\\)",
+    "a": 2,
+    "answer": "2",
     "opts": [
       "\\(-7 \\times x \\times x \\times x\\)",
       "\\(8 \\times x \\times x \\times x\\)",
-      "\\(opt2\\)",
-      "\\(7 \\times x \\times x \\times x\\)"
+      "\\(7 \\times x \\times x \\times x\\)",
+      "\\(9 \\times x \\times x \\times x\\)"
     ],
     "hint": "Expand the power (\\(x^3\\)).",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "The term \\(x^3\\) means \\(x\\) multiplied by itself three times.",
-        "workingOut": "\\(7 \\times x \\times x \\times x\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -2147,25 +2263,27 @@ export const Y7_CH23C_QUESTIONS = [
   },
   {
     "id": "y7-23c-q6k",
+    "topicId": "y7-23c",
+    "c": "23C",
     "t": "Simplifying algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following expression in expanded form.\\n\\n\\(14xyz\\)",
+    "question": "Write the following expression in expanded form.<br /><br />\\(14xyz\\)",
     "a": 0,
     "answer": "0",
     "opts": [
       "\\(14 \\times x \\times y \\times z\\)",
       "\\(-14 \\times x \\times y \\times z\\)",
       "\\(15 \\times x \\times y \\times z\\)",
-      "\\(opt2\\)"
+      "\\(16 \\times x \\times y \\times z\\)"
     ],
     "hint": "Put the multiplication signs back in.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Insert multiplication signs between the number and each variable.",
-        "workingOut": "\\(14 \\times x \\times y \\times z\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -2184,25 +2302,27 @@ export const Y7_CH23C_QUESTIONS = [
   },
   {
     "id": "y7-23c-q6l",
+    "topicId": "y7-23c",
+    "c": "23C",
     "t": "Simplifying algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following expression in expanded form.\\n\\n\\(10m^2n^2\\)",
+    "question": "Write the following expression in expanded form.<br /><br />\\(10m^2n^2\\)",
     "a": 1,
     "answer": "1",
     "opts": [
       "\\(-10 \\times m \\times m \\times n \\times n\\)",
       "\\(10 \\times m \\times m \\times n \\times n\\)",
       "\\(11 \\times m \\times m \\times n \\times n\\)",
-      "\\(opt2\\)"
+      "\\(12 \\times m \\times m \\times n \\times n\\)"
     ],
     "hint": "Expand all powers: \\(m^2\\) and \\(n^2\\).",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "The term \\(m^2\\) means \\(m \\times m\\), and \\(n^2\\) means \\(n \\times n\\).",
-        "workingOut": "\\(10 \\times m \\times m \\times n \\times n\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -2221,25 +2341,27 @@ export const Y7_CH23C_QUESTIONS = [
   },
   {
     "id": "y7-23c-q6m",
+    "topicId": "y7-23c",
+    "c": "23C",
     "t": "Simplifying algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following expression in expanded form.\\n\\n\\(8p\\)",
+    "question": "Write the following expression in expanded form.<br /><br />\\(8p\\)",
     "a": 2,
     "answer": "2",
     "opts": [
       "\\(-8 \\times p\\)",
       "\\(9 \\times p\\)",
       "\\(8 \\times p\\)",
-      "\\(opt2\\)"
+      "\\(10 \\times p\\)"
     ],
     "hint": "Put the multiplication sign back in.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Insert a multiplication sign between the number and the variable.",
-        "workingOut": "\\(8 \\times p\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -2258,25 +2380,27 @@ export const Y7_CH23C_QUESTIONS = [
   },
   {
     "id": "y7-23c-q6n",
+    "topicId": "y7-23c",
+    "c": "23C",
     "t": "Simplifying algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following expression in expanded form.\\n\\n\\(15a^2b^3\\)",
-    "a": 3,
-    "answer": "3",
+    "question": "Write the following expression in expanded form.<br /><br />\\(15a^2b^3\\)",
+    "a": 2,
+    "answer": "2",
     "opts": [
       "\\(-15 \\times a \\times a \\times b \\times b \\times b\\)",
       "\\(16 \\times a \\times a \\times b \\times b \\times b\\)",
-      "\\(opt2\\)",
-      "\\(15 \\times a \\times a \\times b \\times b \\times b\\)"
+      "\\(15 \\times a \\times a \\times b \\times b \\times b\\)",
+      "\\(17 \\times a \\times a \\times b \\times b \\times b\\)"
     ],
     "hint": "Expand the powers: \\(a^2\\) means \\(a \\times a\\) and \\(b^3\\) means \\(b \\times b \\times b\\).",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Write out the factors for \\(a^2\\) and \\(b^3\\), separated by multiplication signs.",
-        "workingOut": "\\(15 \\times a \\times a \\times b \\times b \\times b\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {

@@ -820,7 +820,7 @@ export const Y11_CH7B_QUESTIONS = [
     "question": "Determine if the line through \\(A(2, 3)\\) and \\(B(2, 5)\\) is horizontal, vertical, or neither.",
     "answer": "2",
     "hint": "Check if the x-coordinates are equal (vertical) or if the y-coordinates are equal (horizontal).",
-    "solution": "### Step-by-Step Solution\n\n**Step 1:** Compare the coordinates of the two points.\n\\(A(2, 3),\\; B(2, 5)\\)\n\n**Step 2:** A line is vertical if the \\(x\\)-coordinates are equal (undefined gradient).\n\\(x_1 = x_2\\)\n\n**Step 3:** A line is horizontal if the \\(y\\)-coordinates are equal (gradient zero).\n\\(y_1 \\neq y_2\\)\n\n**Step 4:** Same \\(x\\)-coordinate \\(x = 2\\), different \\(y\\)-coordinates, so the line is vertical.\nvertical",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Compare the coordinates of the two points.\n\\(A(2, 3),\\; B(2, 5)\\)\n\n**Step 2:** A line is vertical if the \\(x\\)-coordinates are equal (undefined gradient).\n\\(x_1 = x_2\\)\n\n**Step 3:** A line is horizontal if the \\(y\\)-coordinates are equal (gradient zero).\n\\(y_1 \neq y_2\\)\n\n**Step 4:** Same \\(x\\)-coordinate \\(x = 2\\), different \\(y\\)-coordinates, so the line is vertical.\nvertical",
     "solutionSteps": [
       {
         "explanation": "Compare the coordinates of the two points.",
@@ -834,7 +834,7 @@ export const Y11_CH7B_QUESTIONS = [
       },
       {
         "explanation": "A line is horizontal if the \\(y\\)-coordinates are equal (gradient zero).",
-        "workingOut": "\\(y_1 \\neq y_2\\)",
+        "workingOut": "\\(y_1 \neq y_2\\)",
         "graphData": null
       },
       {
@@ -858,7 +858,7 @@ export const Y11_CH7B_QUESTIONS = [
     "question": "Determine if the line through \\(A(3, 4)\\) and \\(B(8, 4)\\) is horizontal, vertical, or neither.",
     "answer": "2",
     "hint": "Check if the x-coordinates are equal (vertical) or if the y-coordinates are equal (horizontal).",
-    "solution": "### Step-by-Step Solution\n\n**Step 1:** Compare the coordinates of the two points.\n\\(A(3, 4),\\; B(8, 4)\\)\n\n**Step 2:** A line is vertical if the \\(x\\)-coordinates are equal (undefined gradient).\n\\(x_1 \\neq x_2\\)\n\n**Step 3:** A line is horizontal if the \\(y\\)-coordinates are equal (gradient zero).\n\\(y_1 = y_2\\)\n\n**Step 4:** Same \\(y\\)-coordinate \\(y = 4\\), different \\(x\\)-coordinates, so the line is horizontal.\nhorizontal",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Compare the coordinates of the two points.\n\\(A(3, 4),\\; B(8, 4)\\)\n\n**Step 2:** A line is vertical if the \\(x\\)-coordinates are equal (undefined gradient).\n\\(x_1 \neq x_2\\)\n\n**Step 3:** A line is horizontal if the \\(y\\)-coordinates are equal (gradient zero).\n\\(y_1 = y_2\\)\n\n**Step 4:** Same \\(y\\)-coordinate \\(y = 4\\), different \\(x\\)-coordinates, so the line is horizontal.\nhorizontal",
     "solutionSteps": [
       {
         "explanation": "Compare the coordinates of the two points.",
@@ -867,7 +867,7 @@ export const Y11_CH7B_QUESTIONS = [
       },
       {
         "explanation": "A line is vertical if the \\(x\\)-coordinates are equal (undefined gradient).",
-        "workingOut": "\\(x_1 \\neq x_2\\)",
+        "workingOut": "\\(x_1 \neq x_2\\)",
         "graphData": null
       },
       {
@@ -896,7 +896,7 @@ export const Y11_CH7B_QUESTIONS = [
     "question": "Determine if the line through \\(A(4, 2)\\) and \\(B(3, 6)\\) is horizontal, vertical, or neither.",
     "answer": "2",
     "hint": "Check if the x-coordinates are equal (vertical) or if the y-coordinates are equal (horizontal).",
-    "solution": "### Step-by-Step Solution\n\n**Step 1:** Compare the coordinates of the two points.\n\\(A(4, 2),\\; B(3, 6)\\)\n\n**Step 2:** A line is vertical if the \\(x\\)-coordinates are equal (undefined gradient).\n\\(x_1 \\neq x_2\\)\n\n**Step 3:** A line is horizontal if the \\(y\\)-coordinates are equal (gradient zero).\n\\(y_1 \\neq y_2\\)\n\n**Step 4:** Both \\(x\\) and \\(y\\) differ, so the line is neither horizontal nor vertical.\nneither",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Compare the coordinates of the two points.\n\\(A(4, 2),\\; B(3, 6)\\)\n\n**Step 2:** A line is vertical if the \\(x\\)-coordinates are equal (undefined gradient).\n\\(x_1 \neq x_2\\)\n\n**Step 3:** A line is horizontal if the \\(y\\)-coordinates are equal (gradient zero).\n\\(y_1 \neq y_2\\)\n\n**Step 4:** Both \\(x\\) and \\(y\\) differ, so the line is neither horizontal nor vertical.\nneither",
     "solutionSteps": [
       {
         "explanation": "Compare the coordinates of the two points.",
@@ -905,12 +905,12 @@ export const Y11_CH7B_QUESTIONS = [
       },
       {
         "explanation": "A line is vertical if the \\(x\\)-coordinates are equal (undefined gradient).",
-        "workingOut": "\\(x_1 \\neq x_2\\)",
+        "workingOut": "\\(x_1 \neq x_2\\)",
         "graphData": null
       },
       {
         "explanation": "A line is horizontal if the \\(y\\)-coordinates are equal (gradient zero).",
-        "workingOut": "\\(y_1 \\neq y_2\\)",
+        "workingOut": "\\(y_1 \neq y_2\\)",
         "graphData": null
       },
       {
@@ -934,7 +934,7 @@ export const Y11_CH7B_QUESTIONS = [
     "question": "Determine if the line through \\(A(5, -2)\\) and \\(B(2, -2)\\) is horizontal, vertical, or neither.",
     "answer": "2",
     "hint": "Check if the x-coordinates are equal (vertical) or if the y-coordinates are equal (horizontal).",
-    "solution": "### Step-by-Step Solution\n\n**Step 1:** Compare the coordinates of the two points.\n\\(A(5, -2),\\; B(2, -2)\\)\n\n**Step 2:** A line is vertical if the \\(x\\)-coordinates are equal (undefined gradient).\n\\(x_1 \\neq x_2\\)\n\n**Step 3:** A line is horizontal if the \\(y\\)-coordinates are equal (gradient zero).\n\\(y_1 = y_2\\)\n\n**Step 4:** Same \\(y\\)-coordinate \\(y = -2\\), so the line is horizontal.\nhorizontal",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Compare the coordinates of the two points.\n\\(A(5, -2),\\; B(2, -2)\\)\n\n**Step 2:** A line is vertical if the \\(x\\)-coordinates are equal (undefined gradient).\n\\(x_1 \neq x_2\\)\n\n**Step 3:** A line is horizontal if the \\(y\\)-coordinates are equal (gradient zero).\n\\(y_1 = y_2\\)\n\n**Step 4:** Same \\(y\\)-coordinate \\(y = -2\\), so the line is horizontal.\nhorizontal",
     "solutionSteps": [
       {
         "explanation": "Compare the coordinates of the two points.",
@@ -943,7 +943,7 @@ export const Y11_CH7B_QUESTIONS = [
       },
       {
         "explanation": "A line is vertical if the \\(x\\)-coordinates are equal (undefined gradient).",
-        "workingOut": "\\(x_1 \\neq x_2\\)",
+        "workingOut": "\\(x_1 \neq x_2\\)",
         "graphData": null
       },
       {
@@ -972,7 +972,7 @@ export const Y11_CH7B_QUESTIONS = [
     "question": "Determine if the line through \\(A(-3, 3)\\) and \\(B(3, -3)\\) is horizontal, vertical, or neither.",
     "answer": "1",
     "hint": "Check if the x-coordinates are equal (vertical) or if the y-coordinates are equal (horizontal).",
-    "solution": "### Step-by-Step Solution\n\n**Step 1:** Compare the coordinates of the two points.\n\\(A(-3, 3),\\; B(3, -3)\\)\n\n**Step 2:** A line is vertical if the \\(x\\)-coordinates are equal (undefined gradient).\n\\(x_1 \\neq x_2\\)\n\n**Step 3:** A line is horizontal if the \\(y\\)-coordinates are equal (gradient zero).\n\\(y_1 \\neq y_2\\)\n\n**Step 4:** Both coordinates change (\\(x\\) and \\(y\\) both differ), so the line is neither horizontal nor vertical.\nneither",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Compare the coordinates of the two points.\n\\(A(-3, 3),\\; B(3, -3)\\)\n\n**Step 2:** A line is vertical if the \\(x\\)-coordinates are equal (undefined gradient).\n\\(x_1 \neq x_2\\)\n\n**Step 3:** A line is horizontal if the \\(y\\)-coordinates are equal (gradient zero).\n\\(y_1 \neq y_2\\)\n\n**Step 4:** Both coordinates change (\\(x\\) and \\(y\\) both differ), so the line is neither horizontal nor vertical.\nneither",
     "solutionSteps": [
       {
         "explanation": "Compare the coordinates of the two points.",
@@ -981,12 +981,12 @@ export const Y11_CH7B_QUESTIONS = [
       },
       {
         "explanation": "A line is vertical if the \\(x\\)-coordinates are equal (undefined gradient).",
-        "workingOut": "\\(x_1 \\neq x_2\\)",
+        "workingOut": "\\(x_1 \neq x_2\\)",
         "graphData": null
       },
       {
         "explanation": "A line is horizontal if the \\(y\\)-coordinates are equal (gradient zero).",
-        "workingOut": "\\(y_1 \\neq y_2\\)",
+        "workingOut": "\\(y_1 \neq y_2\\)",
         "graphData": null
       },
       {
@@ -1010,7 +1010,7 @@ export const Y11_CH7B_QUESTIONS = [
     "question": "Determine if the line through \\(A(0, 5)\\) and \\(B(0, -5)\\) is horizontal, vertical, or neither.",
     "answer": "0",
     "hint": "Check if the x-coordinates are equal (vertical) or if the y-coordinates are equal (horizontal).",
-    "solution": "### Step-by-Step Solution\n\n**Step 1:** Compare the coordinates of the two points.\n\\(A(0, 5),\\; B(0, -5)\\)\n\n**Step 2:** A line is vertical if the \\(x\\)-coordinates are equal (undefined gradient).\n\\(x_1 = x_2\\)\n\n**Step 3:** A line is horizontal if the \\(y\\)-coordinates are equal (gradient zero).\n\\(y_1 \\neq y_2\\)\n\n**Step 4:** Same \\(x\\)-coordinate \\(x = 0\\) (the \\(y\\)-axis), so the line is vertical.\nvertical",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Compare the coordinates of the two points.\n\\(A(0, 5),\\; B(0, -5)\\)\n\n**Step 2:** A line is vertical if the \\(x\\)-coordinates are equal (undefined gradient).\n\\(x_1 = x_2\\)\n\n**Step 3:** A line is horizontal if the \\(y\\)-coordinates are equal (gradient zero).\n\\(y_1 \neq y_2\\)\n\n**Step 4:** Same \\(x\\)-coordinate \\(x = 0\\) (the \\(y\\)-axis), so the line is vertical.\nvertical",
     "solutionSteps": [
       {
         "explanation": "Compare the coordinates of the two points.",
@@ -1024,7 +1024,7 @@ export const Y11_CH7B_QUESTIONS = [
       },
       {
         "explanation": "A line is horizontal if the \\(y\\)-coordinates are equal (gradient zero).",
-        "workingOut": "\\(y_1 \\neq y_2\\)",
+        "workingOut": "\\(y_1 \neq y_2\\)",
         "graphData": null
       },
       {
@@ -1288,7 +1288,7 @@ export const Y11_CH7B_QUESTIONS = [
     "question": "Show that \\(A(3, 6)\\), \\(B(4, 8)\\), \\(C(-3, 0)\\), and \\(D(-4, 3)\\) do not form a parallelogram.",
     "answer": "m_AB = 2, m_CD = 3.\nSince gradients of opposite sides are not equal, AB is not parallel to CD, so it is not a parallelogram.",
     "hint": "Compute the gradients of opposite sides and show they are not equal.",
-    "solution": "### Step-by-Step Solution\n\n**Step 1:** Compute the gradient of \\(AB\\) with \\(A(3, 6)\\), \\(B(4, 8)\\).\n\\(m_{AB} = \\dfrac{8-6}{4-3} = 2\\)\n\n**Step 2:** Compute the gradient of opposite side \\(CD\\) with \\(C(-3, 0)\\), \\(D(-4, 3)\\).\n\\(m_{CD} = \\dfrac{3-0}{-4-(-3)} = \\dfrac{3}{-1} = -3\\)\n\n**Step 3:** The gradients are not equal, so \\(AB\\) is not parallel to \\(CD\\).\n\\(m_{AB} \\neq m_{CD}\\)\n\n**Step 4:** A quadrilateral needs both pairs of opposite sides parallel to be a parallelogram. Therefore these points do not form a parallelogram.\nnot a parallelogram",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Compute the gradient of \\(AB\\) with \\(A(3, 6)\\), \\(B(4, 8)\\).\n\\(m_{AB} = \\dfrac{8-6}{4-3} = 2\\)\n\n**Step 2:** Compute the gradient of opposite side \\(CD\\) with \\(C(-3, 0)\\), \\(D(-4, 3)\\).\n\\(m_{CD} = \\dfrac{3-0}{-4-(-3)} = \\dfrac{3}{-1} = -3\\)\n\n**Step 3:** The gradients are not equal, so \\(AB\\) is not parallel to \\(CD\\).\n\\(m_{AB} \neq m_{CD}\\)\n\n**Step 4:** A quadrilateral needs both pairs of opposite sides parallel to be a parallelogram. Therefore these points do not form a parallelogram.\nnot a parallelogram",
     "solutionSteps": [
       {
         "explanation": "Compute the gradient of \\(AB\\) with \\(A(3, 6)\\), \\(B(4, 8)\\).",
@@ -1302,7 +1302,7 @@ export const Y11_CH7B_QUESTIONS = [
       },
       {
         "explanation": "The gradients are not equal, so \\(AB\\) is not parallel to \\(CD\\).",
-        "workingOut": "\\(m_{AB} \\neq m_{CD}\\)",
+        "workingOut": "\\(m_{AB} \neq m_{CD}\\)",
         "graphData": null
       },
       {
@@ -2132,7 +2132,7 @@ export const Y11_CH7B_QUESTIONS = [
     "question": "Find the gradients of \\(PQ\\) and \\(QR\\) to determine whether the points \\(P(-4, -3)\\), \\(Q(-1, -1)\\), and \\(R(2, 2)\\) are collinear ('yes' or 'no').",
     "answer": "0",
     "hint": "Compute gradients of PQ and QR. If they are equal, the points are collinear.",
-    "solution": "### Step-by-Step Solution\n\n**Step 1:** Compute gradient of \\(PQ\\) with \\(P(-4, -3)\\), \\(Q(-1, -1)\\).\n\\(m_{PQ} = \\dfrac{-1-(-3)}{-1-(-4)} = \\dfrac{2}{3}\\)\n\n**Step 2:** Compute gradient of \\(QR\\) with \\(Q(-1, -1)\\), \\(R(2, 2)\\).\n\\(m_{QR} = \\dfrac{2-(-1)}{2-(-1)} = \\dfrac{3}{3} = 1\\)\n\n**Step 3:** The gradients are different.\n\\(m_{PQ} \\neq m_{QR}\\)\n\n**Step 4:** Therefore the three points are not collinear.\nno",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Compute gradient of \\(PQ\\) with \\(P(-4, -3)\\), \\(Q(-1, -1)\\).\n\\(m_{PQ} = \\dfrac{-1-(-3)}{-1-(-4)} = \\dfrac{2}{3}\\)\n\n**Step 2:** Compute gradient of \\(QR\\) with \\(Q(-1, -1)\\), \\(R(2, 2)\\).\n\\(m_{QR} = \\dfrac{2-(-1)}{2-(-1)} = \\dfrac{3}{3} = 1\\)\n\n**Step 3:** The gradients are different.\n\\(m_{PQ} \neq m_{QR}\\)\n\n**Step 4:** Therefore the three points are not collinear.\nno",
     "solutionSteps": [
       {
         "explanation": "Compute gradient of \\(PQ\\) with \\(P(-4, -3)\\), \\(Q(-1, -1)\\).",
@@ -2146,7 +2146,7 @@ export const Y11_CH7B_QUESTIONS = [
       },
       {
         "explanation": "The gradients are different.",
-        "workingOut": "\\(m_{PQ} \\neq m_{QR}\\)",
+        "workingOut": "\\(m_{PQ} \neq m_{QR}\\)",
         "graphData": null
       },
       {
@@ -2502,7 +2502,7 @@ export const Y11_CH7B_QUESTIONS = [
     "question": "Which of the following pairs of points \\(A\\) and \\(B\\) gives a line segment \\(AB\\) with gradient \\(4\\)?",
     "answer": "0",
     "hint": "Check each pair with \\(m = \\dfrac{y_2 - y_1}{x_2 - x_1}\\). You need rise/run equal to 4.",
-    "solution": "### Step-by-Step Solution\n\n**Step 1:** The gradient of a segment joining \\(A(x_1, y_1)\\) and \\(B(x_2, y_2)\\) is \\(m = \\dfrac{y_2 - y_1}{x_2 - x_1}\\). We need this equal to 4.\n\\(m = 4\\)\n\n**Step 2:** Test option \\(A(0, 0)\\) and \\(B(1, 4)\\).\n\\(m = \\dfrac{4 - 0}{1 - 0} = 4\\)\n\n**Step 3:** Reject the distractors: e.g. \\(A(0, 0)\\), \\(B(4, 1)\\) gives \\(m = \\frac{1}{4}\\); \\(A(1, 1)\\), \\(B(2, 3)\\) gives \\(m = 2\\); \\(A(0, 0)\\), \\(B(2, 4)\\) gives \\(m = 2\\).\n\\(\\dfrac{1}{4} \\neq 4,\\; 2 \\neq 4,\\; 2 \\neq 4\\)\n\n**Step 4:** Only the pair with rise 4 and run 1 has gradient 4.\n\\(A(0, 0)\\) and \\(B(1, 4)\\)",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** The gradient of a segment joining \\(A(x_1, y_1)\\) and \\(B(x_2, y_2)\\) is \\(m = \\dfrac{y_2 - y_1}{x_2 - x_1}\\). We need this equal to 4.\n\\(m = 4\\)\n\n**Step 2:** Test option \\(A(0, 0)\\) and \\(B(1, 4)\\).\n\\(m = \\dfrac{4 - 0}{1 - 0} = 4\\)\n\n**Step 3:** Reject the distractors: e.g. \\(A(0, 0)\\), \\(B(4, 1)\\) gives \\(m = \\frac{1}{4}\\); \\(A(1, 1)\\), \\(B(2, 3)\\) gives \\(m = 2\\); \\(A(0, 0)\\), \\(B(2, 4)\\) gives \\(m = 2\\).\n\\(\\dfrac{1}{4} \neq 4,\\; 2 \neq 4,\\; 2 \neq 4\\)\n\n**Step 4:** Only the pair with rise 4 and run 1 has gradient 4.\n\\(A(0, 0)\\) and \\(B(1, 4)\\)",
     "solutionSteps": [
       {
         "explanation": "The gradient of a segment joining \\(A(x_1, y_1)\\) and \\(B(x_2, y_2)\\) is \\(m = \\dfrac{y_2 - y_1}{x_2 - x_1}\\). We need this equal to 4.",
@@ -2516,7 +2516,7 @@ export const Y11_CH7B_QUESTIONS = [
       },
       {
         "explanation": "Reject the distractors: e.g. \\(A(0, 0)\\), \\(B(4, 1)\\) gives \\(m = \\frac{1}{4}\\); \\(A(1, 1)\\), \\(B(2, 3)\\) gives \\(m = 2\\); \\(A(0, 0)\\), \\(B(2, 4)\\) gives \\(m = 2\\).",
-        "workingOut": "\\(\\dfrac{1}{4} \\neq 4,\\; 2 \\neq 4,\\; 2 \\neq 4\\)",
+        "workingOut": "\\(\\dfrac{1}{4} \neq 4,\\; 2 \neq 4,\\; 2 \neq 4\\)",
         "graphData": null
       },
       {
@@ -2547,7 +2547,7 @@ export const Y11_CH7B_QUESTIONS = [
     "question": "Which of the following pairs of points \\(A\\) and \\(B\\) gives a horizontal line segment \\(AB\\)?",
     "answer": "0",
     "hint": "A horizontal segment has equal \\(y\\)-coordinates (gradient 0).",
-    "solution": "### Step-by-Step Solution\n\n**Step 1:** A horizontal line segment has gradient 0, which means the \\(y\\)-coordinates of the endpoints must be equal.\n\\(m = 0 \\Leftrightarrow y_1 = y_2\\)\n\n**Step 2:** Test option \\(A(0, 0)\\) and \\(B(1, 0)\\): both have \\(y = 0\\).\n\\(m = \\dfrac{0 - 0}{1 - 0} = 0\\) (horizontal)\n\n**Step 3:** Reject the distractors: \\(A(0, 0)\\), \\(B(0, 1)\\) is vertical; \\(A(1, 2)\\), \\(B(3, 4)\\) has \\(m = 1\\); \\(A(0, 0)\\), \\(B(1, 1)\\) has \\(m = 1\\).\nvertical or \\(m = 1 \\neq 0\\)\n\n**Step 4:** Only the pair with equal \\(y\\)-coordinates (and different \\(x\\)) is horizontal.\n\\(A(0, 0)\\) and \\(B(1, 0)\\)",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** A horizontal line segment has gradient 0, which means the \\(y\\)-coordinates of the endpoints must be equal.\n\\(m = 0 \\Leftrightarrow y_1 = y_2\\)\n\n**Step 2:** Test option \\(A(0, 0)\\) and \\(B(1, 0)\\): both have \\(y = 0\\).\n\\(m = \\dfrac{0 - 0}{1 - 0} = 0\\) (horizontal)\n\n**Step 3:** Reject the distractors: \\(A(0, 0)\\), \\(B(0, 1)\\) is vertical; \\(A(1, 2)\\), \\(B(3, 4)\\) has \\(m = 1\\); \\(A(0, 0)\\), \\(B(1, 1)\\) has \\(m = 1\\).\nvertical or \\(m = 1 \neq 0\\)\n\n**Step 4:** Only the pair with equal \\(y\\)-coordinates (and different \\(x\\)) is horizontal.\n\\(A(0, 0)\\) and \\(B(1, 0)\\)",
     "solutionSteps": [
       {
         "explanation": "A horizontal line segment has gradient 0, which means the \\(y\\)-coordinates of the endpoints must be equal.",
@@ -2561,7 +2561,7 @@ export const Y11_CH7B_QUESTIONS = [
       },
       {
         "explanation": "Reject the distractors: \\(A(0, 0)\\), \\(B(0, 1)\\) is vertical; \\(A(1, 2)\\), \\(B(3, 4)\\) has \\(m = 1\\); \\(A(0, 0)\\), \\(B(1, 1)\\) has \\(m = 1\\).",
-        "workingOut": "vertical or \\(m = 1 \\neq 0\\)",
+        "workingOut": "vertical or \\(m = 1 \neq 0\\)",
         "graphData": null
       },
       {

@@ -1,0 +1,293 @@
+{
+  "y9-11d-q10": {
+    "chapterId": "y9-11",
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "topicId": "y9-11d",
+    "topicCode": "11D",
+    "topicTitle": "The equation of a straight line",
+    "year": "Year 9",
+    "isManual": true,
+    "question": "The graph of \\(y = 3x + 6\\) is shown. Find the values of \\(a\\), \\(b\\) and \\(c\\) corresponding to the highlighted intercepts \\((0, a)\\), \\((b, 0)\\), and point \\((1, c)\\). Format: a = [val], b = [val], c = [val]",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "requiresManualGrading": false,
+    "hint": "Substitute \\(x=0\\) to find \\(a\\), set \\(y=0\\) to find \\(b\\), and substitute \\(x=1\\) to find \\(c\\).",
+    "solution": "1. The point \\((0, a)\\) is the \\(y\\)-intercept. Setting \\(x = 0\\):\n   \\(y = 3(0) + 6 = 6 \\implies a = 6\\).\n\n2. The point \\((b, 0)\\) is the \\(x\\)-intercept. Setting \\(y = 0\\):\n   \\(0 = 3b + 6 \\implies 3b = -6 \\implies b = -2\\).\n\n3. The point \\((1, c)\\) lies on the line. Setting \\(x = 1\\):\n   \\(c = 3(1) + 6 = 9 \\implies c = 9\\).",
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": {
+      "jsxGraph": {
+        "width": 350,
+        "height": 300,
+        "boundingbox": [
+          -4,
+          11,
+          3,
+          -3
+        ],
+        "showConstructionPoints": true,
+        "boardOptions": {
+          "axis": true,
+          "grid": true
+        },
+        "script": "board.suspendUpdate();\nboard.create('line', [[0, 6], [1, 9]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 6], {size: 3, color: 'red', name: '(0, a)', withLabel: true, label: {autoPosition: false, offset: [10, 0]}});\nboard.create('point', [-2, 0], {size: 3, color: 'red', name: '(b, 0)', withLabel: true, label: {autoPosition: false, offset: [-10, 10]}});\nboard.create('point', [1, 9], {size: 3, color: 'red', name: '(1, c)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
+      }
+    },
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830225,
+      "_nanoseconds": 399000000
+    },
+    "answer": "1",
+    "origin": "seed",
+    "options": [
+      {
+        "text": "\\(\\dfrac{13}{6}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(a = 6, b = -2, c = 9\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(a = 6, b = -2, c = 9 + 1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(a = 6, b = -3, c = 9\\)",
+        "imageUrl": ""
+      }
+    ],
+    "isActive": true,
+    "title": "The graph of y = 3x + 6 is shown. Find t...",
+    "type": "multiple_choice",
+    "updatedAt": {
+      "_seconds": 1784364622,
+      "_nanoseconds": 926000000
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The equation of a straight line: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": {
+          "jsxGraph": {
+            "width": 350,
+            "height": 300,
+            "boundingbox": [
+              -4,
+              11,
+              3,
+              -3
+            ],
+            "showConstructionPoints": true,
+            "boardOptions": {
+              "axis": true,
+              "grid": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('line', [[0, 6], [1, 9]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 6], {size: 3, color: 'red', name: '(0, a)', withLabel: true, label: {autoPosition: false, offset: [10, 0]}});\nboard.create('point', [-2, 0], {size: 3, color: 'red', name: '(b, 0)', withLabel: true, label: {autoPosition: false, offset: [-10, 10]}});\nboard.create('point', [1, 9], {size: 3, color: 'red', name: '(1, c)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
+          }
+        }
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(3b + 6 = 0 \\implies b = -2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(c = 3(1) + 6 = 9\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: a = 6, b = -2, c = 9. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(a = 6, b = -2, c = 9\\)",
+        "graphData": null
+      }
+    ],
+    "isNew": false
+  },
+  "y9-11d-q11": {
+    "chapterId": "y9-11",
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "topicId": "y9-11d",
+    "topicCode": "11D",
+    "topicTitle": "The equation of a straight line",
+    "year": "Year 9",
+    "isManual": true,
+    "question": "The graph of \\(y = -2x + 8\\) is shown. Find the values of \\(a\\), \\(b\\) and \\(c\\) corresponding to the highlighted intercepts \\((0, a)\\), \\((b, 0)\\), and point \\((-1, c)\\). Format: a = [val], b = [val], c = [val]",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "requiresManualGrading": false,
+    "hint": "Determine each value by substituting the corresponding coordinates into the equation \\(y = -2x + 8\\).",
+    "solution": "1. The point \\((0, a)\\) is the \\(y\\)-intercept. Setting \\(x = 0\\):\n   \\(y = -2(0) + 8 = 8 \\implies a = 8\\).\n\n2. The point \\((b, 0)\\) is the \\(x\\)-intercept. Setting \\(y = 0\\):\n   \\(0 = -2b + 8 \\implies 2b = 8 \\implies b = 4\\).\n\n3. The point \\((-1, c)\\) lies on the line. Setting \\(x = -1\\):\n   \\(c = -2(-1) + 8 = 2 + 8 = 10 \\implies c = 10\\).",
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": {
+      "jsxGraph": {
+        "width": 350,
+        "height": 300,
+        "boundingbox": [
+          -3,
+          12,
+          6,
+          -2
+        ],
+        "showConstructionPoints": true,
+        "boardOptions": {
+          "axis": true,
+          "grid": true
+        },
+        "script": "board.suspendUpdate();\nboard.create('line', [[0, 8], [4, 0]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 8], {size: 3, color: 'red', name: '(0, a)', withLabel: true, label: {autoPosition: false, offset: [10, 0]}});\nboard.create('point', [4, 0], {size: 3, color: 'red', name: '(b, 0)', withLabel: true, label: {autoPosition: false, offset: [-10, 10]}});\nboard.create('point', [-1, 10], {size: 3, color: 'red', name: '(-1, c)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
+      }
+    },
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830225,
+      "_nanoseconds": 399000000
+    },
+    "answer": "2",
+    "origin": "seed",
+    "options": [
+      {
+        "text": "\\(\\dfrac{12}{5}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\dfrac{13}{6}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(a = 8, b = 4, c = 10\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(a = 8, b = 4, c = 10 + 1\\)",
+        "imageUrl": ""
+      }
+    ],
+    "isActive": true,
+    "title": "The graph of y = -2x + 8 is shown. Find ...",
+    "type": "multiple_choice",
+    "updatedAt": {
+      "_seconds": 1784364622,
+      "_nanoseconds": 926000000
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The equation of a straight line: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": {
+          "jsxGraph": {
+            "width": 350,
+            "height": 300,
+            "boundingbox": [
+              -3,
+              12,
+              6,
+              -2
+            ],
+            "showConstructionPoints": true,
+            "boardOptions": {
+              "axis": true,
+              "grid": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('line', [[0, 8], [4, 0]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 8], {size: 3, color: 'red', name: '(0, a)', withLabel: true, label: {autoPosition: false, offset: [10, 0]}});\nboard.create('point', [4, 0], {size: 3, color: 'red', name: '(b, 0)', withLabel: true, label: {autoPosition: false, offset: [-10, 10]}});\nboard.create('point', [-1, 10], {size: 3, color: 'red', name: '(-1, c)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
+          }
+        }
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(-2b + 8 = 0 \\implies b = 4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(c = -2(-1) + 8 = 10\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: a = 8, b = 4, c = 10. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(a = 8, b = 4, c = 10\\)",
+        "graphData": null
+      }
+    ],
+    "isNew": false
+  },
+  "y9-11d-q12a": {
+    "topicTitle": "The equation of a straight line",
+    "year": "Year 9",
+    "isManual": true,
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "requiresManualGrading": false,
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830225,
+      "_nanoseconds": 399000000
+    },
+    "origin": "seed",
+    "source": "",
+    "isActive": true,
+    "topicCode": "11D",
+    "question": "Rewrite the equation \\(3x + y = 12\\) in the form \\(y = mx + c\\) and write down the gradient and \\(y\\)-intercept. Format: y = [eq], m = [val], c = [val]",
+    "title": "Rewrite the equation 3x + y = 12 in the ...",
+    "type": "multiple_choice",
+    "topicId": "y9-11d",
+    "answer": "1",
+    "solution": "Rearrange the equation to isolate \\(y\\):\n\\(3x + y = 12\\) becomes \\(y = -3x + 12\\).\n\nFrom this form:\n- Gradient \\(m = -3\\)\n- \\(y\\)-intercept \\(c = 12\\).",
+    "chapterId": "y9-11",
+    "hint": "Solve the equation for \\(y\\) to write it in the form \\(y = mx + c\\).",
+    "options": [
+      {
+        "text": "\\(\\dfrac{13}{6}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = y = -3x + 12, m = -3, c = 12\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = y = -3x + 12, m = -3, c = 12 + 1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = y = -3x + 13, m = -3, c = 13\\)",
+        "imageUrl": ""
+      }
+    ],
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "updatedAt": {
+      "_seconds": 1784364622,
+      "_nanoseconds": 926000000
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The equation of a straight line: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "m = -3, quad c = 12",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(y = y = -3x + 12, m = -3, c = 12\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: y = y = -3x + 12, m = -3, c = 12. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(y = y = -3x + 12, m = -3, c = 12\\)",
+        "graphData": null
+      }
+    ],
+    "isNew": false
+  }
+}

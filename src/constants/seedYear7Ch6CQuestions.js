@@ -8,12 +8,6 @@ export const Y7_CH6C_QUESTIONS = [
     "question": "Simplify the expression: \\(\\frac{6x}{8}\\)",
     "a": 0,
     "answer": "0",
-    "opts": [
-      "\\(\\frac{3x}{4}\\)",
-      "\\(-\\frac{3x}{4}\\)",
-      "\\(\\frac{4x}{4}\\)",
-      "\\(\\frac{5x}{4}\\)"
-    ],
     "hint": "Divide the numerator and denominator by their highest common factor, which is 2.",
     "solution": "",
     "solutionSteps": [
@@ -28,13 +22,31 @@ export const Y7_CH6C_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Confirm the final answer.",
+        "explanation": "State the final simplified answer and match it to the correct option.",
         "workingOut": "\\(\\frac{3x}{4}\\)",
         "graphData": null
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(\\frac{3x}{4}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{4}{3x}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{4x}{4}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{5x}{4}\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6c-q1b",
@@ -45,12 +57,6 @@ export const Y7_CH6C_QUESTIONS = [
     "question": "Simplify the expression: \\(\\frac{18y}{6}\\)",
     "a": 1,
     "answer": "1",
-    "opts": [
-      "\\(-3y\\)",
-      "\\(3y\\)",
-      "\\(4y\\)",
-      "\\(5y\\)"
-    ],
     "hint": "Divide 18 by 6.",
     "solution": "",
     "solutionSteps": [
@@ -65,13 +71,31 @@ export const Y7_CH6C_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Confirm the final answer.",
+        "explanation": "State the final simplified answer and match it to the correct option.",
         "workingOut": "\\(3y\\)",
         "graphData": null
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(2y\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3y\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4y\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5y\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6c-q1c",
@@ -82,12 +106,6 @@ export const Y7_CH6C_QUESTIONS = [
     "question": "Simplify the expression: \\(\\frac{6a}{15}\\)",
     "a": 2,
     "answer": "2",
-    "opts": [
-      "\\(-\\frac{2a}{5}\\)",
-      "\\(\\frac{3a}{5}\\)",
-      "\\(\\frac{2a}{5}\\)",
-      "\\(-\\frac{3a}{5}\\)"
-    ],
     "hint": "Divide both parts of the fraction by 3.",
     "solution": "",
     "solutionSteps": [
@@ -102,13 +120,31 @@ export const Y7_CH6C_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Confirm the final answer.",
+        "explanation": "State the final simplified answer and match it to the correct option.",
         "workingOut": "\\(\\frac{2a}{5}\\)",
         "graphData": null
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(\\frac{5}{2a}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{3a}{5}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{2a}{5}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-\\frac{3a}{5}\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6c-q1d",
@@ -119,12 +155,6 @@ export const Y7_CH6C_QUESTIONS = [
     "question": "Simplify the expression: \\(\\frac{3ab}{a}\\)",
     "a": 3,
     "answer": "3",
-    "opts": [
-      "\\(-3b\\)",
-      "\\(4b\\)",
-      "\\(-4b\\)",
-      "\\(3b\\)"
-    ],
     "hint": "Cancel out the common variable a from the numerator and the denominator.",
     "solution": "",
     "solutionSteps": [
@@ -139,13 +169,31 @@ export const Y7_CH6C_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Confirm the final answer.",
+        "explanation": "State the final simplified answer and match it to the correct option.",
         "workingOut": "\\(3b\\)",
         "graphData": null
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(2b\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4b\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-4b\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3b\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6c-q1e",
@@ -156,12 +204,6 @@ export const Y7_CH6C_QUESTIONS = [
     "question": "Simplify the expression: \\(\\frac{5xy}{y}\\)",
     "a": 0,
     "answer": "0",
-    "opts": [
-      "\\(5x\\)",
-      "\\(-5x\\)",
-      "\\(6x\\)",
-      "\\(7x\\)"
-    ],
     "hint": "Cancel out the variable y.",
     "solution": "",
     "solutionSteps": [
@@ -171,18 +213,31 @@ export const Y7_CH6C_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Confirm the final answer.",
-        "workingOut": "\\(5x\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Confirm the final answer.",
+        "explanation": "State the final simplified answer and match it to the correct option.",
         "workingOut": "\\(5x\\)",
         "graphData": null
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(5x\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4x\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6x\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7x\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6c-q1f",
@@ -193,12 +248,6 @@ export const Y7_CH6C_QUESTIONS = [
     "question": "Simplify the expression: \\(\\frac{6p}{18}\\)",
     "a": 1,
     "answer": "1",
-    "opts": [
-      "\\(-\\frac{p}{3}\\)",
-      "\\(\\frac{p}{3}\\)",
-      "\\(\\frac{p}{4}\\)",
-      "\\(\\frac{p}{5}\\)"
-    ],
     "hint": "Simplify the fraction by dividing the top and bottom by 6.",
     "solution": "",
     "solutionSteps": [
@@ -213,13 +262,31 @@ export const Y7_CH6C_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Confirm the final answer.",
+        "explanation": "State the final simplified answer and match it to the correct option.",
         "workingOut": "\\(\\frac{p}{3}\\)",
         "graphData": null
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(\\frac{3}{p}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{p}{3}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{p}{4}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{p}{5}\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6c-q1g",
@@ -230,12 +297,6 @@ export const Y7_CH6C_QUESTIONS = [
     "question": "Simplify the expression: \\(\\frac{8mn}{m}\\)",
     "a": 2,
     "answer": "2",
-    "opts": [
-      "\\(-8n\\)",
-      "\\(9n\\)",
-      "\\(8n\\)",
-      "\\(-9n\\)"
-    ],
     "hint": "Cancel the common factor m.",
     "solution": "",
     "solutionSteps": [
@@ -245,18 +306,31 @@ export const Y7_CH6C_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Confirm the final answer.",
-        "workingOut": "\\(8n\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Confirm the final answer.",
+        "explanation": "State the final simplified answer and match it to the correct option.",
         "workingOut": "\\(8n\\)",
         "graphData": null
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(7n\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(9n\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8n\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-9n\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6c-q1h",
@@ -267,12 +341,6 @@ export const Y7_CH6C_QUESTIONS = [
     "question": "Simplify the expression: \\(\\frac{5k}{15k}\\)",
     "a": 3,
     "answer": "3",
-    "opts": [
-      "\\(-\\frac{1}{3}\\)",
-      "\\(\\frac{2}{3}\\)",
-      "\\(-\\frac{2}{3}\\)",
-      "\\(\\frac{1}{3}\\)"
-    ],
     "hint": "Both the number and the variable k can be simplified.",
     "solution": "",
     "solutionSteps": [
@@ -287,13 +355,31 @@ export const Y7_CH6C_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Confirm the final answer.",
+        "explanation": "State the final simplified answer and match it to the correct option.",
         "workingOut": "\\(\\frac{1}{3}\\)",
         "graphData": null
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(\\frac{3}{1}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{2}{3}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-\\frac{2}{3}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{1}{3}\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6c-q2a",
@@ -304,12 +390,6 @@ export const Y7_CH6C_QUESTIONS = [
     "question": "Simplify the expression: \\(\\frac{8y}{y}\\)",
     "a": 3,
     "answer": "3",
-    "opts": [
-      "\\(9\\)",
-      "\\(7\\)",
-      "\\(-8\\)",
-      "\\(8\\)"
-    ],
     "hint": "Cancel the variable y.",
     "solution": "",
     "solutionSteps": [
@@ -319,18 +399,31 @@ export const Y7_CH6C_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Confirm the final answer.",
-        "workingOut": "\\(8\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Confirm the final answer.",
+        "explanation": "State the final simplified answer and match it to the correct option.",
         "workingOut": "\\(8\\)",
         "graphData": null
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(9\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(10\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6c-q2b",
@@ -341,12 +434,6 @@ export const Y7_CH6C_QUESTIONS = [
     "question": "Simplify the expression: \\(\\frac{6ab}{b}\\)",
     "a": 0,
     "answer": "0",
-    "opts": [
-      "\\(6a\\)",
-      "\\(-6a\\)",
-      "\\(7a\\)",
-      "\\(8a\\)"
-    ],
     "hint": "Cancel the variable b.",
     "solution": "",
     "solutionSteps": [
@@ -356,18 +443,31 @@ export const Y7_CH6C_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Confirm the final answer.",
-        "workingOut": "\\(6a\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Confirm the final answer.",
+        "explanation": "State the final simplified answer and match it to the correct option.",
         "workingOut": "\\(6a\\)",
         "graphData": null
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(6a\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5a\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7a\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8a\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6c-q2c",
@@ -378,12 +478,6 @@ export const Y7_CH6C_QUESTIONS = [
     "question": "Simplify the expression: \\(\\frac{15abc}{ac}\\)",
     "a": 1,
     "answer": "1",
-    "opts": [
-      "\\(-15b\\)",
-      "\\(15b\\)",
-      "\\(16b\\)",
-      "\\(17b\\)"
-    ],
     "hint": "Cancel the common variables a and c.",
     "solution": "",
     "solutionSteps": [
@@ -398,13 +492,31 @@ export const Y7_CH6C_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Confirm the final answer.",
+        "explanation": "State the final simplified answer and match it to the correct option.",
         "workingOut": "\\(15b\\)",
         "graphData": null
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(14b\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(15b\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(16b\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(17b\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6c-q2d",
@@ -415,12 +527,6 @@ export const Y7_CH6C_QUESTIONS = [
     "question": "Simplify the expression: \\(\\frac{xyz}{4x}\\)",
     "a": 2,
     "answer": "2",
-    "opts": [
-      "\\(-\\frac{yz}{4}\\)",
-      "\\(\\frac{yz}{5}\\)",
-      "\\(\\frac{yz}{4}\\)",
-      "\\(-\\frac{yz}{5}\\)"
-    ],
     "hint": "Cancel the common variable x.",
     "solution": "",
     "solutionSteps": [
@@ -435,13 +541,31 @@ export const Y7_CH6C_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Confirm the final answer.",
+        "explanation": "State the final simplified answer and match it to the correct option.",
         "workingOut": "\\(\\frac{yz}{4}\\)",
         "graphData": null
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(\\frac{4}{yz}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{yz}{5}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{yz}{4}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-\\frac{yz}{5}\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6c-q2e",
@@ -452,12 +576,6 @@ export const Y7_CH6C_QUESTIONS = [
     "question": "Simplify the expression: \\(\\frac{8ab}{2a}\\)",
     "a": 3,
     "answer": "3",
-    "opts": [
-      "\\(-4b\\)",
-      "\\(5b\\)",
-      "\\(-5b\\)",
-      "\\(4b\\)"
-    ],
     "hint": "Divide the numbers and cancel a.",
     "solution": "",
     "solutionSteps": [
@@ -478,7 +596,25 @@ export const Y7_CH6C_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(3b\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5b\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-5b\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4b\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6c-q2f",
@@ -489,12 +625,6 @@ export const Y7_CH6C_QUESTIONS = [
     "question": "Simplify the expression: \\(\\frac{12pq}{q}\\)",
     "a": 0,
     "answer": "0",
-    "opts": [
-      "\\(12p\\)",
-      "\\(-12p\\)",
-      "\\(13p\\)",
-      "\\(14p\\)"
-    ],
     "hint": "Cancel the variable q.",
     "solution": "",
     "solutionSteps": [
@@ -504,18 +634,31 @@ export const Y7_CH6C_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Confirm the final answer.",
-        "workingOut": "\\(12p\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Confirm the final answer.",
+        "explanation": "State the final simplified answer and match it to the correct option.",
         "workingOut": "\\(12p\\)",
         "graphData": null
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(12p\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(11p\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(13p\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(14p\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6c-q2g",
@@ -526,12 +669,6 @@ export const Y7_CH6C_QUESTIONS = [
     "question": "Simplify the expression: \\(\\frac{20abc}{bc}\\)",
     "a": 1,
     "answer": "1",
-    "opts": [
-      "\\(-20a\\)",
-      "\\(20a\\)",
-      "\\(21a\\)",
-      "\\(22a\\)"
-    ],
     "hint": "Cancel the variables b and c.",
     "solution": "",
     "solutionSteps": [
@@ -541,18 +678,31 @@ export const Y7_CH6C_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Confirm the final answer.",
-        "workingOut": "\\(20a\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Confirm the final answer.",
+        "explanation": "State the final simplified answer and match it to the correct option.",
         "workingOut": "\\(20a\\)",
         "graphData": null
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(19a\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(20a\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(21a\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(22a\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6c-q2h",
@@ -563,12 +713,6 @@ export const Y7_CH6C_QUESTIONS = [
     "question": "Simplify the expression: \\(\\frac{48xyz}{16z}\\)",
     "a": 2,
     "answer": "2",
-    "opts": [
-      "\\(-3xy\\)",
-      "\\(4xy\\)",
-      "\\(3xy\\)",
-      "\\(-4xy\\)"
-    ],
     "hint": "Divide 48 by 16 and cancel z.",
     "solution": "",
     "solutionSteps": [
@@ -589,7 +733,25 @@ export const Y7_CH6C_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(2xy\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4xy\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3xy\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-4xy\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6c-q2i",
@@ -600,12 +762,6 @@ export const Y7_CH6C_QUESTIONS = [
     "question": "Simplify the expression: \\(\\frac{45cba}{9cbx}\\)",
     "a": 3,
     "answer": "3",
-    "opts": [
-      "\\(-\\frac{5a}{x}\\)",
-      "\\(\\frac{6a}{x}\\)",
-      "\\(-\\frac{6a}{x}\\)",
-      "\\(\\frac{5a}{x}\\)"
-    ],
     "hint": "Note that cba and cbx contain common variables b and c that can be cancelled.",
     "solution": "",
     "solutionSteps": [
@@ -626,7 +782,25 @@ export const Y7_CH6C_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(\\frac{x}{5a}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{6a}{x}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-\\frac{6a}{x}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{5a}{x}\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6c-q2j",
@@ -637,12 +811,6 @@ export const Y7_CH6C_QUESTIONS = [
     "question": "Simplify the expression: \\(\\frac{36mnpq}{6pqab}\\)",
     "a": 0,
     "answer": "0",
-    "opts": [
-      "\\(\\frac{6mn}{(ab})\\)",
-      "\\(-\\frac{6mn}{(ab})\\)",
-      "\\(\\frac{7mn}{(ab})\\)",
-      "\\(\\frac{8mn}{(ab})\\)"
-    ],
     "hint": "Divide the numbers, then cancel the common variables p and q.",
     "solution": "",
     "solutionSteps": [
@@ -663,7 +831,25 @@ export const Y7_CH6C_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(\\left(\\frac{6mn}{ab}\\right)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\left(\\frac{ab}{6mn}\\right)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\left(\\frac{7mn}{ab}\\right)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\left(\\frac{8mn}{ab}\\right)\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6c-q2k",
@@ -674,12 +860,6 @@ export const Y7_CH6C_QUESTIONS = [
     "question": "Simplify the expression: \\(\\frac{60abc}{40acxy}\\)",
     "a": 1,
     "answer": "1",
-    "opts": [
-      "\\(-\\frac{3b}{(2xy})\\)",
-      "\\(\\frac{3b}{(2xy})\\)",
-      "\\(\\frac{4b}{(2xy})\\)",
-      "\\(\\frac{5b}{(2xy})\\)"
-    ],
     "hint": "Simplify the fraction 60/40 and cancel the variables a and c.",
     "solution": "",
     "solutionSteps": [
@@ -700,7 +880,25 @@ export const Y7_CH6C_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(\\left(\\frac{2xy}{3b}\\right)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\left(\\frac{3b}{2xy}\\right)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\left(\\frac{4b}{2xy}\\right)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\left(\\frac{5b}{2xy}\\right)\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6c-q2l",
@@ -711,12 +909,6 @@ export const Y7_CH6C_QUESTIONS = [
     "question": "Simplify the expression: \\(\\frac{38abc}{8bcd}\\)",
     "a": 2,
     "answer": "2",
-    "opts": [
-      "\\(-\\frac{19a}{(4d})\\)",
-      "\\(\\frac{20a}{(4d})\\)",
-      "\\(\\frac{19a}{(4d})\\)",
-      "\\(-\\frac{20a}{(4d})\\)"
-    ],
     "hint": "Simplify the coefficient fraction first, then cancel the common variables b and c.",
     "solution": "",
     "solutionSteps": [
@@ -737,7 +929,25 @@ export const Y7_CH6C_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(\\left(\\frac{4d}{19a}\\right)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\left(\\frac{20a}{4d}\\right)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\left(\\frac{19a}{4d}\\right)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-\\left(\\frac{20a}{4d}\\right)\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6c-q3a",
@@ -748,12 +958,6 @@ export const Y7_CH6C_QUESTIONS = [
     "question": "Simplify the expression: \\(\\frac{x^2}{x}\\)",
     "a": 2,
     "answer": "2",
-    "opts": [
-      "\\(-x\\)",
-      "\\(opt1\\)",
-      "\\(x\\)",
-      "\\(-opt1\\)"
-    ],
     "hint": "Remember that x^2 = x * x.",
     "solution": "",
     "solutionSteps": [
@@ -768,13 +972,31 @@ export const Y7_CH6C_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Confirm the final answer.",
+        "explanation": "State the final simplified answer and match it to the correct option.",
         "workingOut": "\\(x\\)",
         "graphData": null
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(2x\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-x\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{2x}{4}\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6c-q3b",
@@ -785,12 +1007,6 @@ export const Y7_CH6C_QUESTIONS = [
     "question": "Simplify the expression: \\(\\frac{y^3}{y^2}\\)",
     "a": 3,
     "answer": "3",
-    "opts": [
-      "\\(-y\\)",
-      "\\(opt1\\)",
-      "\\(-opt1\\)",
-      "\\(y\\)"
-    ],
     "hint": "Subtract the powers of the variable: 3 - 2 = 1.",
     "solution": "",
     "solutionSteps": [
@@ -805,13 +1021,31 @@ export const Y7_CH6C_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Confirm the final answer.",
+        "explanation": "State the final simplified answer and match it to the correct option.",
         "workingOut": "\\(y\\)",
         "graphData": null
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(2y\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-y\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{2x}{4}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6c-q3c",
@@ -822,12 +1056,6 @@ export const Y7_CH6C_QUESTIONS = [
     "question": "Simplify the expression: \\(\\frac{z^3}{z}\\)",
     "a": 0,
     "answer": "0",
-    "opts": [
-      "\\(z^2\\)",
-      "\\(-z^2\\)",
-      "\\(z^3\\)",
-      "\\(z^4\\)"
-    ],
     "hint": "Subtract the power in the denominator from the power in the numerator.",
     "solution": "",
     "solutionSteps": [
@@ -840,15 +1068,28 @@ export const Y7_CH6C_QUESTIONS = [
         "explanation": "Cancel one z from both the numerator and denominator.",
         "workingOut": "\\(z^2\\)",
         "graphData": null
-      },
-      {
-        "explanation": "Confirm the final answer.",
-        "workingOut": "\\(z^2\\)",
-        "graphData": null
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(z^2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(z^1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(z^3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(z^4\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6c-q3d",
@@ -859,12 +1100,6 @@ export const Y7_CH6C_QUESTIONS = [
     "question": "Simplify the expression: \\(\\frac{5xy}{xy}\\)",
     "a": 1,
     "answer": "1",
-    "opts": [
-      "\\(6\\)",
-      "\\(5\\)",
-      "\\(4\\)",
-      "\\(-5\\)"
-    ],
     "hint": "Cancel the common variables x and y.",
     "solution": "",
     "solutionSteps": [
@@ -874,18 +1109,31 @@ export const Y7_CH6C_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Confirm the final answer.",
-        "workingOut": "\\(5\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Confirm the final answer.",
+        "explanation": "State the final simplified answer and match it to the correct option.",
         "workingOut": "\\(5\\)",
         "graphData": null
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6c-q3e",
@@ -896,12 +1144,6 @@ export const Y7_CH6C_QUESTIONS = [
     "question": "Simplify the expression: \\(\\frac{4x^2 y}{x}\\)",
     "a": 2,
     "answer": "2",
-    "opts": [
-      "\\(-4xy\\)",
-      "\\(5xy\\)",
-      "\\(4xy\\)",
-      "\\(-5xy\\)"
-    ],
     "hint": "Cancel one x from the numerator.",
     "solution": "",
     "solutionSteps": [
@@ -916,13 +1158,31 @@ export const Y7_CH6C_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Confirm the final answer.",
+        "explanation": "State the final simplified answer and match it to the correct option.",
         "workingOut": "\\(4xy\\)",
         "graphData": null
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(3xy\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5xy\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4xy\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-5xy\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6c-q3f",
@@ -933,12 +1193,6 @@ export const Y7_CH6C_QUESTIONS = [
     "question": "Simplify the expression: \\(\\frac{6xy}{x^2}\\)",
     "a": 3,
     "answer": "3",
-    "opts": [
-      "\\(-\\frac{6y}{x}\\)",
-      "\\(\\frac{7y}{x}\\)",
-      "\\(-\\frac{7y}{x}\\)",
-      "\\(\\frac{6y}{x}\\)"
-    ],
     "hint": "Cancel x from the numerator with one x in the denominator.",
     "solution": "",
     "solutionSteps": [
@@ -951,15 +1205,28 @@ export const Y7_CH6C_QUESTIONS = [
         "explanation": "Cancel the common variable x to get the simplified expression.",
         "workingOut": "\\(\\frac{6y}{x}\\)",
         "graphData": null
-      },
-      {
-        "explanation": "Confirm the final answer.",
-        "workingOut": "\\(\\frac{6y}{x}\\)",
-        "graphData": null
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(\\frac{x}{6y}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{7y}{x}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-\\frac{7y}{x}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{6y}{x}\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6c-q3g",
@@ -970,12 +1237,6 @@ export const Y7_CH6C_QUESTIONS = [
     "question": "Simplify the expression: \\(\\frac{pqrs}{rstu}\\)",
     "a": 0,
     "answer": "0",
-    "opts": [
-      "\\(\\frac{pq}{tu}\\)",
-      "\\(-\\frac{pq}{tu}\\)",
-      "\\(\\frac{pr}{tu}\\)",
-      "\\(\\frac{qr}{tu}\\)"
-    ],
     "hint": "Identify the variables that appear in both the numerator and denominator.",
     "solution": "",
     "solutionSteps": [
@@ -990,13 +1251,31 @@ export const Y7_CH6C_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Confirm the final answer.",
+        "explanation": "State the final simplified answer and match it to the correct option.",
         "workingOut": "\\(\\frac{pq}{tu}\\)",
         "graphData": null
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(\\frac{pq}{tu}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{tu}{pq}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{pr}{tu}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{qr}{tu}\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6c-q4a",
@@ -1007,12 +1286,6 @@ export const Y7_CH6C_QUESTIONS = [
     "question": "Simplify the expression: \\(\\frac{36a^2 b}{9a}\\)",
     "a": 1,
     "answer": "1",
-    "opts": [
-      "\\(-4ab\\)",
-      "\\(4ab\\)",
-      "\\(5ab\\)",
-      "\\(6ab\\)"
-    ],
     "hint": "Divide 36 by 9 and cancel one a.",
     "solution": "",
     "solutionSteps": [
@@ -1033,7 +1306,25 @@ export const Y7_CH6C_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(3ab\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4ab\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5ab\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6ab\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6c-q4b",
@@ -1044,12 +1335,6 @@ export const Y7_CH6C_QUESTIONS = [
     "question": "Simplify the expression: \\(\\frac{16m^2 n^2}{12mk}\\)",
     "a": 2,
     "answer": "2",
-    "opts": [
-      "\\(-4mn^\\frac{2}{(3k})\\)",
-      "\\(5mn^\\frac{2}{(3k})\\)",
-      "\\(4mn^\\frac{2}{(3k})\\)",
-      "\\(-5mn^\\frac{2}{(3k})\\)"
-    ],
     "hint": "Simplify the fraction 16/12 and cancel one m.",
     "solution": "",
     "solutionSteps": [
@@ -1070,7 +1355,25 @@ export const Y7_CH6C_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(4mn^{\\left(\\frac{3k}{2}\\right)}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5mn^{\\left(\\frac{2}{3k}\\right)}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4mn^{\\left(\\frac{2}{3k}\\right)}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-5mn^{\\left(\\frac{2}{3k}\\right)}\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6c-q4c",
@@ -1081,12 +1384,6 @@ export const Y7_CH6C_QUESTIONS = [
     "question": "Simplify the expression: \\(\\frac{28a^3 b^2}{8ab}\\)",
     "a": 3,
     "answer": "3",
-    "opts": [
-      "\\(-7a^2\\frac{b}{2}\\)",
-      "\\(8a^2\\frac{b}{2}\\)",
-      "\\(-8a^2\\frac{b}{2}\\)",
-      "\\(7a^2\\frac{b}{2}\\)"
-    ],
     "hint": "Simplify 28/8 and subtract powers for a and b.",
     "solution": "",
     "solutionSteps": [
@@ -1107,7 +1404,25 @@ export const Y7_CH6C_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(7a^2\\frac{2}{b}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8a^2\\frac{b}{2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-8a^2\\frac{b}{2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7a^2\\frac{b}{2}\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6c-q5a",
@@ -1118,12 +1433,6 @@ export const Y7_CH6C_QUESTIONS = [
     "question": "Simplify the expression: \\(\\frac{2}{3} \\times \\frac{9x}{10}\\)",
     "a": 0,
     "answer": "0",
-    "opts": [
-      "\\(\\frac{3x}{5}\\)",
-      "\\(-\\frac{3x}{5}\\)",
-      "\\(\\frac{4x}{5}\\)",
-      "\\(\\frac{5x}{5}\\)"
-    ],
     "hint": "Multiply the numerators and the denominators, then simplify.",
     "solution": "",
     "solutionSteps": [
@@ -1138,13 +1447,31 @@ export const Y7_CH6C_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Confirm the final answer.",
+        "explanation": "State the final simplified answer and match it to the correct option.",
         "workingOut": "\\(\\frac{3x}{5}\\)",
         "graphData": null
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(\\frac{3x}{5}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{5}{3x}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{4x}{5}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{5x}{5}\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6c-q5b",
@@ -1155,12 +1482,6 @@ export const Y7_CH6C_QUESTIONS = [
     "question": "Simplify the expression: \\(\\frac{3x}{4} \\times \\frac{4y}{9}\\)",
     "a": 1,
     "answer": "1",
-    "opts": [
-      "\\(-\\frac{xy}{3}\\)",
-      "\\(\\frac{xy}{3}\\)",
-      "\\(\\frac{xy}{4}\\)",
-      "\\(\\frac{xy}{5}\\)"
-    ],
     "hint": "Cancel the common factors diagonally.",
     "solution": "",
     "solutionSteps": [
@@ -1175,13 +1496,31 @@ export const Y7_CH6C_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Confirm the final answer.",
+        "explanation": "State the final simplified answer and match it to the correct option.",
         "workingOut": "\\(\\frac{xy}{3}\\)",
         "graphData": null
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(\\frac{3}{xy}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{xy}{3}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{xy}{4}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{xy}{5}\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6c-q5c",
@@ -1192,12 +1531,6 @@ export const Y7_CH6C_QUESTIONS = [
     "question": "Simplify the expression: \\(\\frac{3y}{4} \\times \\frac{y}{5}\\)",
     "a": 2,
     "answer": "2",
-    "opts": [
-      "\\(-3y^\\frac{2}{20}\\)",
-      "\\(4y^\\frac{2}{20}\\)",
-      "\\(3y^\\frac{2}{20}\\)",
-      "\\(-4y^\\frac{2}{20}\\)"
-    ],
     "hint": "Multiply the numerators together, and the denominators together.",
     "solution": "",
     "solutionSteps": [
@@ -1218,7 +1551,25 @@ export const Y7_CH6C_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(3y^\\frac{20}{2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4y^\\frac{2}{20}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3y^\\frac{2}{20}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-4y^\\frac{2}{20}\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6c-q5d",
@@ -1229,12 +1580,6 @@ export const Y7_CH6C_QUESTIONS = [
     "question": "Simplify the expression: \\(x \\times \\frac{x}{5}\\)",
     "a": 3,
     "answer": "3",
-    "opts": [
-      "\\(-x^\\frac{2}{5}\\)",
-      "\\(x^\\frac{3}{5}\\)",
-      "\\(-x^\\frac{3}{5}\\)",
-      "\\(x^\\frac{2}{5}\\)"
-    ],
     "hint": "Treat x as x/1.",
     "solution": "",
     "solutionSteps": [
@@ -1255,7 +1600,25 @@ export const Y7_CH6C_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(x^\\frac{5}{2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^\\frac{3}{5}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-x^\\frac{3}{5}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^\\frac{2}{5}\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6c-q5e",
@@ -1266,12 +1629,6 @@ export const Y7_CH6C_QUESTIONS = [
     "question": "Simplify the expression: \\(\\frac{3x}{4} \\times \\frac{4y}{15}\\)",
     "a": 0,
     "answer": "0",
-    "opts": [
-      "\\(\\frac{xy}{5}\\)",
-      "\\(-\\frac{xy}{5}\\)",
-      "\\(\\frac{xy}{6}\\)",
-      "\\(\\frac{xy}{7}\\)"
-    ],
     "hint": "Cancel the common factors diagonally.",
     "solution": "",
     "solutionSteps": [
@@ -1286,13 +1643,31 @@ export const Y7_CH6C_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Confirm the final answer.",
+        "explanation": "State the final simplified answer and match it to the correct option.",
         "workingOut": "\\(\\frac{xy}{5}\\)",
         "graphData": null
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(\\frac{xy}{5}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{5}{xy}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{xy}{6}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{xy}{7}\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6c-q5f",
@@ -1303,12 +1678,6 @@ export const Y7_CH6C_QUESTIONS = [
     "question": "Simplify the expression: \\(\\frac{4y}{7} \\times \\frac{7y}{9}\\)",
     "a": 1,
     "answer": "1",
-    "opts": [
-      "\\(-4y^\\frac{2}{9}\\)",
-      "\\(4y^\\frac{2}{9}\\)",
-      "\\(5y^\\frac{2}{9}\\)",
-      "\\(6y^\\frac{2}{9}\\)"
-    ],
     "hint": "Cancel the common number 7.",
     "solution": "",
     "solutionSteps": [
@@ -1323,13 +1692,31 @@ export const Y7_CH6C_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Confirm the final answer.",
+        "explanation": "State the final simplified answer and match it to the correct option.",
         "workingOut": "\\(4y^\\frac{2}{9}\\)",
         "graphData": null
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(4y^\\frac{9}{2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4y^\\frac{2}{9}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5y^\\frac{2}{9}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6y^\\frac{2}{9}\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6c-q5g",
@@ -1340,12 +1727,6 @@ export const Y7_CH6C_QUESTIONS = [
     "question": "Simplify the expression: \\(\\frac{2}{3}\\) of \\(18x\\)",
     "a": 2,
     "answer": "2",
-    "opts": [
-      "\\(-12x\\)",
-      "\\(13x\\)",
-      "\\(12x\\)",
-      "\\(-13x\\)"
-    ],
     "hint": "'of' means multiplication.",
     "solution": "",
     "solutionSteps": [
@@ -1366,7 +1747,25 @@ export const Y7_CH6C_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(11x\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(13x\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(12x\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-13x\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6c-q5h",
@@ -1377,12 +1776,6 @@ export const Y7_CH6C_QUESTIONS = [
     "question": "Simplify the expression: \\(\\frac{2}{5}\\) of \\(\\frac{5b}{12}\\)",
     "a": 3,
     "answer": "3",
-    "opts": [
-      "\\(-\\frac{b}{6}\\)",
-      "\\(\\frac{b}{7}\\)",
-      "\\(-\\frac{b}{7}\\)",
-      "\\(\\frac{b}{6}\\)"
-    ],
     "hint": "Replace 'of' with multiplication and cancel the 5's.",
     "solution": "",
     "solutionSteps": [
@@ -1403,7 +1796,25 @@ export const Y7_CH6C_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(\\frac{6}{b}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{b}{7}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-\\frac{b}{7}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{b}{6}\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6c-q6a",
@@ -1414,12 +1825,6 @@ export const Y7_CH6C_QUESTIONS = [
     "question": "Evaluate the expression \\(\\frac{x^2}{3}\\) for \\(x = 3\\) and \\(y = 4\\).",
     "a": 3,
     "answer": "3",
-    "opts": [
-      "\\(4\\)",
-      "\\(2\\)",
-      "\\(-3\\)",
-      "\\(3\\)"
-    ],
     "hint": "Substitute the value of x into the expression and calculate.",
     "solution": "",
     "solutionSteps": [
@@ -1440,7 +1845,25 @@ export const Y7_CH6C_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6c-q6b",
@@ -1451,12 +1874,6 @@ export const Y7_CH6C_QUESTIONS = [
     "question": "Evaluate the expression \\(\\frac{x^2 y}{4}\\) for \\(x = 3\\) and \\(y = 4\\).",
     "a": 0,
     "answer": "0",
-    "opts": [
-      "\\(9\\)",
-      "\\(10\\)",
-      "\\(8\\)",
-      "\\(-9\\)"
-    ],
     "hint": "Substitute both x and y and perform the calculations.",
     "solution": "",
     "solutionSteps": [
@@ -1477,7 +1894,25 @@ export const Y7_CH6C_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(9\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(10\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(11\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6c-q6c",
@@ -1488,12 +1923,6 @@ export const Y7_CH6C_QUESTIONS = [
     "question": "Evaluate the expression \\(\\frac{2x^2 y^2}{9}\\) for \\(x = 3\\) and \\(y = 4\\).",
     "a": 1,
     "answer": "1",
-    "opts": [
-      "\\(33\\)",
-      "\\(32\\)",
-      "\\(31\\)",
-      "\\(-32\\)"
-    ],
     "hint": "Substitute the values of x and y first.",
     "solution": "",
     "solutionSteps": [
@@ -1519,7 +1948,25 @@ export const Y7_CH6C_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(33\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(32\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(31\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(34\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6c-q6d",
@@ -1530,12 +1977,6 @@ export const Y7_CH6C_QUESTIONS = [
     "question": "Evaluate the expression \\(\\frac{2x + y}{2x}\\) for \\(x = 3\\) and \\(y = 4\\).",
     "a": 2,
     "answer": "2",
-    "opts": [
-      "\\(-\\frac{5}{3}\\)",
-      "\\(\\frac{6}{3}\\)",
-      "\\(\\frac{5}{3}\\)",
-      "\\(-\\frac{6}{3}\\)"
-    ],
     "hint": "Substitute the variables and simplify the numerator before dividing.",
     "solution": "",
     "solutionSteps": [
@@ -1561,7 +2002,25 @@ export const Y7_CH6C_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(\\frac{3}{5}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{6}{3}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{5}{3}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-\\frac{6}{3}\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6c-q6e",
@@ -1572,12 +2031,6 @@ export const Y7_CH6C_QUESTIONS = [
     "question": "Evaluate the expression \\(\\frac{24}{xy}\\) for \\(x = 3\\) and \\(y = 4\\).",
     "a": 3,
     "answer": "3",
-    "opts": [
-      "\\(3\\)",
-      "\\(1\\)",
-      "\\(-2\\)",
-      "\\(2\\)"
-    ],
     "hint": "Multiply x and y in the denominator first.",
     "solution": "",
     "solutionSteps": [
@@ -1598,7 +2051,25 @@ export const Y7_CH6C_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6c-q6f",
@@ -1609,12 +2080,6 @@ export const Y7_CH6C_QUESTIONS = [
     "question": "Evaluate the expression \\(\\frac{2x^2}{3y^2}\\) for \\(x = 3\\) and \\(y = 4\\).",
     "a": 0,
     "answer": "0",
-    "opts": [
-      "\\(\\frac{3}{8}\\)",
-      "\\(-\\frac{3}{8}\\)",
-      "\\(\\frac{4}{8}\\)",
-      "\\(\\frac{5}{8}\\)"
-    ],
     "hint": "Substitute x and y, evaluate the squares, then simplify.",
     "solution": "",
     "solutionSteps": [
@@ -1640,7 +2105,25 @@ export const Y7_CH6C_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(\\frac{3}{8}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{8}{3}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{4}{8}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{5}{8}\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6c-q7a",
@@ -1651,12 +2134,6 @@ export const Y7_CH6C_QUESTIONS = [
     "question": "A rectangle has length \\(y\\) cm and width \\(\\frac{y}{4}\\) cm. Find an expression for the area of the rectangle, in terms of \\(y\\).",
     "a": 2,
     "answer": "2",
-    "opts": [
-      "\\(-y^\\frac{2}{4}\\)",
-      "\\(y^\\frac{3}{4}\\)",
-      "\\(y^\\frac{2}{4}\\)",
-      "\\(-y^\\frac{3}{4}\\)"
-    ],
     "hint": "The area of a rectangle is found by multiplying its length by its width.",
     "solution": "",
     "solutionSteps": [
@@ -1677,7 +2154,25 @@ export const Y7_CH6C_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(y^\\frac{4}{2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y^\\frac{3}{4}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y^\\frac{2}{4}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-y^\\frac{3}{4}\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6c-q7b",
@@ -1688,12 +2183,6 @@ export const Y7_CH6C_QUESTIONS = [
     "question": "A rectangle has length \\(y\\) cm and width \\(\\frac{y}{4}\\) cm. Find the area of the rectangle if \\(y = 12\\).",
     "a": 3,
     "answer": "3",
-    "opts": [
-      "\\(37\\)",
-      "\\(35\\)",
-      "\\(-36\\)",
-      "\\(36\\)"
-    ],
     "hint": "Substitute 12 in place of y in your expression \\(\\frac{y^2}{4}\\).",
     "solution": "",
     "solutionSteps": [
@@ -1719,7 +2208,25 @@ export const Y7_CH6C_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(37\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(35\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(38\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(36\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6c-q8a",
@@ -1730,12 +2237,6 @@ export const Y7_CH6C_QUESTIONS = [
     "question": "A rectangle has length \\(\\frac{3x}{5}\\) m and width \\(\\frac{5x}{6}\\) m. Find an expression for the area of the rectangle, in terms of \\(x\\).",
     "a": 1,
     "answer": "1",
-    "opts": [
-      "\\(-x^\\frac{2}{2}\\)",
-      "\\(x^\\frac{2}{2}\\)",
-      "\\(x^\\frac{3}{2}\\)",
-      "\\(x^\\frac{4}{2}\\)"
-    ],
     "hint": "Multiply length by width and simplify the fraction.",
     "solution": "",
     "solutionSteps": [
@@ -1756,7 +2257,25 @@ export const Y7_CH6C_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(x^\\frac{5}{2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^\\frac{2}{2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^\\frac{3}{2}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x^\\frac{4}{2}\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6c-q8b",
@@ -1767,12 +2286,6 @@ export const Y7_CH6C_QUESTIONS = [
     "question": "A rectangle has length \\(\\frac{3x}{5}\\) m and width \\(\\frac{5x}{6}\\) m. Find the area of the rectangle if \\(x = 10\\).",
     "a": 2,
     "answer": "2",
-    "opts": [
-      "\\(51\\)",
-      "\\(49\\)",
-      "\\(50\\)",
-      "\\(-50\\)"
-    ],
     "hint": "Substitute 10 into your simplified area expression \\(\\frac{x^2}{2}\\).",
     "solution": "",
     "solutionSteps": [
@@ -1798,7 +2311,25 @@ export const Y7_CH6C_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(51\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(49\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(50\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(52\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6c-q9a",
@@ -1809,12 +2340,6 @@ export const Y7_CH6C_QUESTIONS = [
     "question": "The cost of \\(x\\) kg of apples is \\(\\frac{3x}{4}\\) dollars. How much would 1 kg of apples cost?",
     "a": 0,
     "answer": "0",
-    "opts": [
-      "\\(\\frac{3}{4}\\)",
-      "\\(-\\frac{3}{4}\\)",
-      "\\(\\frac{4}{4}\\)",
-      "\\(\\frac{5}{4}\\)"
-    ],
     "hint": "Divide the total cost by the number of kilograms x.",
     "solution": "",
     "solutionSteps": [
@@ -1829,13 +2354,31 @@ export const Y7_CH6C_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Confirm the final answer.",
+        "explanation": "State the final simplified answer and match it to the correct option.",
         "workingOut": "\\(\\frac{3}{4}\\)",
         "graphData": null
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(\\frac{3}{4}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{4}{3}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{4}{4}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{5}{4}\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y7-6c-q9b",
@@ -1846,12 +2389,6 @@ export const Y7_CH6C_QUESTIONS = [
     "question": "The cost of \\(x\\) kg of apples is \\(\\frac{3x}{4}\\) dollars. How much would \\(y\\) kg of apples cost?",
     "a": 1,
     "answer": "1",
-    "opts": [
-      "\\(-\\frac{3y}{4}\\)",
-      "\\(\\frac{3y}{4}\\)",
-      "\\(\\frac{4y}{4}\\)",
-      "\\(\\frac{5y}{4}\\)"
-    ],
     "hint": "Multiply the cost of 1 kg by y.",
     "solution": "",
     "solutionSteps": [
@@ -1872,6 +2409,24 @@ export const Y7_CH6C_QUESTIONS = [
       }
     ],
     "graphData": null,
-    "isNew": true
+    "isNew": true,
+    "options": [
+      {
+        "text": "\\(\\frac{4}{3y}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{3y}{4}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{4y}{4}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\frac{5y}{4}\\)",
+        "imageUrl": ""
+      }
+    ]
   }
 ];

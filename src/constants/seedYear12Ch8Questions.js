@@ -509,7 +509,7 @@ export const Y12_CH8_QUESTIONS = [
     "solution": "The correct answer is \\(1456\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: \\(a = 4\\), \\(r = 3\\), \\(n = 6\\). Why this sum formula? For a finite GP with \\(r \\ne 1\\), the closed form \\(S_n = \\dfrac{a(r^n-1)}{r-1}\\) avoids adding six growing terms by hand. Strategy: evaluate \\(r^n\\) first. A common slip is using the infinite-sum formula or the version for \\(|r|<1\\) with \\(1-r^n\\) without adjusting the denominator.",
+        "explanation": "Given: \\(a = 4\\), \\(r = 3\\), \\(n = 6\\). Why this sum formula? For a finite GP with \\(r \ne 1\\), the closed form \\(S_n = \\dfrac{a(r^n-1)}{r-1}\\) avoids adding six growing terms by hand. Strategy: evaluate \\(r^n\\) first. A common slip is using the infinite-sum formula or the version for \\(|r|<1\\) with \\(1-r^n\\) without adjusting the denominator.",
         "workingOut": "\\(S_n = \\dfrac{a(r^n-1)}{r-1}\\)",
         "graphData": null
       },
@@ -4930,7 +4930,7 @@ export const Y12_CH8_QUESTIONS = [
             "graphData": null
           },
           {
-            "explanation": "Use the identity \\(1 - \\cos^{2} x = \\sin^{2} x\\):\\[S_{\\infty} = \\dfrac{1}{\\sin^{2} x} = \\operatorname{cosec}^{2} x.\\]This holds for all angles in the domain where the series converges (\\(\\sin x \\ne 0\\) is automatic when \\(\\cos^{2} x < 1\\) fails only at cos = ±1; when cos = 0 we have sin = ±1 and cosec² = 1, handled in the next part).",
+            "explanation": "Use the identity \\(1 - \\cos^{2} x = \\sin^{2} x\\):\\[S_{\\infty} = \\dfrac{1}{\\sin^{2} x} = \\operatorname{cosec}^{2} x.\\]This holds for all angles in the domain where the series converges (\\(\\sin x \ne 0\\) is automatic when \\(\\cos^{2} x < 1\\) fails only at cos = ±1; when cos = 0 we have sin = ±1 and cosec² = 1, handled in the next part).",
             "workingOut": "\\(S_{\\infty} = \\operatorname{cosec}^{2} x\\)",
             "graphData": null
           },

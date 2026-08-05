@@ -1,0 +1,423 @@
+{
+  "scannedAt": "2026-07-24T00:54:18.138Z",
+  "totalDocs": 23568,
+  "candidates": [
+    {
+      "normalizedId": "asc2020q17a",
+      "count": 2,
+      "sameContent": false,
+      "teacherOrigin": false,
+      "members": [
+        {
+          "id": "asc2020-q17-a",
+          "chapterId": "exam:asc-2020",
+          "topicId": "y12a-exam",
+          "origin": "seed",
+          "question": "(a) Determine Pearson's correlation coefficient for this data correct to 3 decimal places.",
+          "createdAt": {
+            "_seconds": 1784363601,
+            "_nanoseconds": 29000000
+          }
+        },
+        {
+          "id": "asc2020-q17a",
+          "chapterId": "y12a-9",
+          "topicId": "y12a-9D",
+          "origin": null,
+          "question": "The table below shows data for 10 countries: research spending (% of GDP) $x$ and cases of Figtree Syndrome (1000s) $y$.\n\n| $x$ | 2.0 | 2.4 | 3.0 | 3.2 | 3.5 | 3.8 | 4.1 | 4.5 | 4.6 | 5.0 |\n|---|---|---|---|---|---|---|---|---|---|---|\n| $y$ | 7.8 | 6.8 | 7.2 | 6.6 | 5.8 | 5.6 | 4.6 | 5.0 | 4.0 | 4.2 |\n\n(a) Determine Pearson's correlation coefficient for this data correct to 3 decimal places.",
+          "createdAt": {
+            "_seconds": 1780105040,
+            "_nanoseconds": 592000000
+          }
+        }
+      ]
+    },
+    {
+      "normalizedId": "asc2020q17b",
+      "count": 2,
+      "sameContent": false,
+      "teacherOrigin": false,
+      "members": [
+        {
+          "id": "asc2020-q17-b",
+          "chapterId": "exam:asc-2020",
+          "topicId": "y12a-exam",
+          "origin": "seed",
+          "question": "(b) Find the least squares regression line for this data. Round values to 3 significant figures.",
+          "createdAt": {
+            "_seconds": 1784363601,
+            "_nanoseconds": 29000000
+          }
+        },
+        {
+          "id": "asc2020-q17b",
+          "chapterId": "y12a-9",
+          "topicId": "y12a-9E",
+          "origin": null,
+          "question": "Figtree Syndrome is a rare disease. The table shows research spending (% of GDP) $x$ and cases of Figtree Syndrome (1000s) $y$ for 10 countries.\n\n| $x$ | 2.0 | 2.4 | 3.0 | 3.2 | 3.5 | 3.8 | 4.1 | 4.5 | 4.6 | 5.0 |\n|---|---|---|---|---|---|---|---|---|---|---|\n| $y$ | 7.8 | 6.8 | 7.2 | 6.6 | 5.8 | 5.6 | 4.6 | 5.0 | 4.0 | 4.2 |",
+          "createdAt": {
+            "_seconds": 1780105040,
+            "_nanoseconds": 592000000
+          }
+        }
+      ]
+    },
+    {
+      "normalizedId": "asc2020q22a",
+      "count": 2,
+      "sameContent": false,
+      "teacherOrigin": false,
+      "members": [
+        {
+          "id": "asc2020-q22-a",
+          "chapterId": "exam:asc-2020",
+          "topicId": "y12a-exam",
+          "origin": "seed",
+          "question": "(a) \\(y = -2f(x)\\)",
+          "createdAt": {
+            "_seconds": 1784363601,
+            "_nanoseconds": 29000000
+          }
+        },
+        {
+          "id": "asc2020-q22a",
+          "chapterId": "y12a-2",
+          "topicId": "y12a-2F",
+          "origin": null,
+          "question": "Point \\((-1, 3)\\) on \\(y = f(x)\\) maps under \\(y = -2f(x)\\) to which point, with which transforms?",
+          "createdAt": {
+            "_seconds": 1780105040,
+            "_nanoseconds": 592000000
+          }
+        }
+      ]
+    },
+    {
+      "normalizedId": "asc2020q22b",
+      "count": 2,
+      "sameContent": false,
+      "teacherOrigin": false,
+      "members": [
+        {
+          "id": "asc2020-q22-b",
+          "chapterId": "exam:asc-2020",
+          "topicId": "y12a-exam",
+          "origin": "seed",
+          "question": "(b) \\(y = f\\!\\left(\\dfrac{x}{2} + 2\\right)\\)",
+          "createdAt": {
+            "_seconds": 1784363601,
+            "_nanoseconds": 29000000
+          }
+        },
+        {
+          "id": "asc2020-q22b",
+          "chapterId": "y12a-2",
+          "topicId": "y12a-2G",
+          "origin": null,
+          "question": "Point \\((-1, 3)\\) on \\(y = f(x)\\) maps under \\(y = f\\!\\left(\\dfrac{x}{2} + 2\\right)\\) to:",
+          "createdAt": {
+            "_seconds": 1780105040,
+            "_nanoseconds": 592000000
+          }
+        }
+      ]
+    },
+    {
+      "normalizedId": "asc2020q28a",
+      "count": 2,
+      "sameContent": false,
+      "teacherOrigin": false,
+      "members": [
+        {
+          "id": "asc2020-q28-a",
+          "chapterId": "exam:asc-2020",
+          "topicId": "y12a-exam",
+          "origin": "seed",
+          "question": "(a) Find the expected number of lounge suites sold per week. Give your answer to the nearest whole number.",
+          "createdAt": {
+            "_seconds": 1784363601,
+            "_nanoseconds": 29000000
+          }
+        },
+        {
+          "id": "asc2020-q28a",
+          "chapterId": "y12a-10",
+          "topicId": "y12a-10C",
+          "origin": null,
+          "question": "Kelly has been offered two part-time jobs at local furniture shops. At shop \\\\(X\\\\) she receives a retainer of \\\\(\\$300\\\\) per week plus \\\\(\\$200\\\\) for each lounge suite sold. At shop \\\\(Y\\\\) she receives \\\\(\\$450\\\\) per week plus \\\\(\\$100\\\\) per suite sold.\\\\n\\\\nPast weekly sales follow this probability distribution:\\\\n\\\\n| Suites sold | 0 | 1 | 2 | 3 | 4 | 5 |\\\\n|---|---|---|---|---|---|---|\\\\n| Probability | 0.1 | 0.2 | 0.5 | 0.15 | 0.04 | 0.01 |\\\\n\\\\nFind the expected number of lounge suites sold per week, rounded to the nearest whole number.",
+          "createdAt": {
+            "_seconds": 1780105040,
+            "_nanoseconds": 592000000
+          }
+        }
+      ]
+    },
+    {
+      "normalizedId": "asc2020q28b",
+      "count": 2,
+      "sameContent": false,
+      "teacherOrigin": false,
+      "members": [
+        {
+          "id": "asc2020-q28-b",
+          "chapterId": "exam:asc-2020",
+          "topicId": "y12a-exam",
+          "origin": "seed",
+          "question": "(b) Find the variance for this data.",
+          "createdAt": {
+            "_seconds": 1784363601,
+            "_nanoseconds": 29000000
+          }
+        },
+        {
+          "id": "asc2020-q28b",
+          "chapterId": "y12a-10",
+          "topicId": "y12a-10C",
+          "origin": null,
+          "question": "Using the probability distribution from the previous part (Kelly's sales probability distribution), find the variance for this data.",
+          "createdAt": {
+            "_seconds": 1780105040,
+            "_nanoseconds": 592000000
+          }
+        }
+      ]
+    },
+    {
+      "normalizedId": "asc2020q28c",
+      "count": 2,
+      "sameContent": false,
+      "teacherOrigin": false,
+      "members": [
+        {
+          "id": "asc2020-q28-c",
+          "chapterId": "exam:asc-2020",
+          "topicId": "y12a-exam",
+          "origin": "seed",
+          "question": "(c) Which furniture shop job should Kelly take? Justify your answer by referring to the expected weekly pay based on your result from part (a).",
+          "createdAt": {
+            "_seconds": 1784363601,
+            "_nanoseconds": 29000000
+          }
+        },
+        {
+          "id": "asc2020-q28c",
+          "chapterId": "y12a-10",
+          "topicId": "y12a-10C",
+          "origin": null,
+          "question": "Using the expected value result \\\\(E(X) \\\\approx 2\\\\): which furniture shop job should Kelly take? Justify your answer by referring to her expected weekly pay.",
+          "createdAt": {
+            "_seconds": 1780105040,
+            "_nanoseconds": 592000000
+          }
+        }
+      ]
+    },
+    {
+      "normalizedId": "asc2020q30a",
+      "count": 2,
+      "sameContent": false,
+      "teacherOrigin": false,
+      "members": [
+        {
+          "id": "asc2020-q30-a",
+          "chapterId": "exam:asc-2020",
+          "topicId": "y12a-exam",
+          "origin": "seed",
+          "question": "(a) Show that the drop-bear population remaining after two years is given by: \\(T_2 = 1000 \\times (1.05)^2 - 100 \\times (1.05 + 1)\\).",
+          "createdAt": {
+            "_seconds": 1784363601,
+            "_nanoseconds": 29000000
+          }
+        },
+        {
+          "id": "asc2020-q30a",
+          "chapterId": "exam:ascham2020",
+          "topicId": "y12a-8A",
+          "origin": "seed",
+          "question": "The drop-bear population is endangered. On 1 January 2003 there were 1000 drop-bears. Each year the population increases by \\(5\\%\\), but 100 drop-bears are poached. Let \\(T_n\\) be the population remaining after \\(n\\) years. Find a simplified expression for \\(T_n\\).",
+          "createdAt": null
+        }
+      ]
+    },
+    {
+      "normalizedId": "asc2020q31a",
+      "count": 2,
+      "sameContent": false,
+      "teacherOrigin": false,
+      "members": [
+        {
+          "id": "asc2020-q31-a",
+          "chapterId": "exam:asc-2020",
+          "topicId": "y12a-exam",
+          "origin": "seed",
+          "question": "(a) Show that the value of \\(a\\) is \\(\\dfrac{3}{500}\\).",
+          "createdAt": {
+            "_seconds": 1784363601,
+            "_nanoseconds": 29000000
+          }
+        },
+        {
+          "id": "asc2020-q31a",
+          "chapterId": "y12a-10",
+          "topicId": "y12a-10B",
+          "origin": null,
+          "question": "A continuous random variable \\(X\\) has a probability density function defined by:\n\n\\(f(x) = \\begin{cases} ax(10-x) & 0 \\leq x \\leq 10 \\\\ 0 & \\text{otherwise} \\end{cases}\\)\n\nIf the total probability is normalized, which of the following expressions correctly verifies the value of \\(a\\)?",
+          "createdAt": {
+            "_seconds": 1780105040,
+            "_nanoseconds": 592000000
+          }
+        }
+      ]
+    },
+    {
+      "normalizedId": "asc2020q31b",
+      "count": 2,
+      "sameContent": false,
+      "teacherOrigin": false,
+      "members": [
+        {
+          "id": "asc2020-q31-b",
+          "chapterId": "exam:asc-2020",
+          "topicId": "y12a-exam",
+          "origin": "seed",
+          "question": "(b) Find the cumulative distribution function.",
+          "createdAt": {
+            "_seconds": 1784363601,
+            "_nanoseconds": 29000000
+          }
+        },
+        {
+          "id": "asc2020-q31b",
+          "chapterId": "y12a-10",
+          "topicId": "y12a-10B",
+          "origin": null,
+          "question": "Using the probability density function \\(f(x) = \\dfrac{3}{500}x(10-x)\\) for \\(0 \\leq x \\leq 10\\), find the cumulative distribution function \\(F(x)\\) within this domain.",
+          "createdAt": {
+            "_seconds": 1780105040,
+            "_nanoseconds": 592000000
+          }
+        }
+      ]
+    },
+    {
+      "normalizedId": "asc2020q31c",
+      "count": 2,
+      "sameContent": false,
+      "teacherOrigin": false,
+      "members": [
+        {
+          "id": "asc2020-q31-c",
+          "chapterId": "exam:asc-2020",
+          "topicId": "y12a-exam",
+          "origin": "seed",
+          "question": "(c) Find the probability, as a decimal, that a person will have to wait more than 7 minutes.",
+          "createdAt": {
+            "_seconds": 1784363601,
+            "_nanoseconds": 29000000
+          }
+        },
+        {
+          "id": "asc2020-q31c",
+          "chapterId": "y12a-10",
+          "topicId": "y12a-10B",
+          "origin": null,
+          "question": "Using the cumulative distribution function \\(F(x) = \\dfrac{x^2(15-x)}{500}\\) for \\(0 \\leq x \\leq 10\\), find the probability that a randomly selected wait time is more than 7 minutes.",
+          "createdAt": {
+            "_seconds": 1780105040,
+            "_nanoseconds": 592000000
+          }
+        }
+      ]
+    },
+    {
+      "normalizedId": "asc2020q33a",
+      "count": 2,
+      "sameContent": false,
+      "teacherOrigin": true,
+      "members": [
+        {
+          "id": "asc2020-q33-a",
+          "chapterId": "exam:asc-2020",
+          "topicId": "y12a-exam",
+          "origin": "seed",
+          "question": "(a) Find the standard deviation of swim times for this race.",
+          "createdAt": {
+            "_seconds": 1784363601,
+            "_nanoseconds": 29000000
+          }
+        },
+        {
+          "id": "asc2020-q33a",
+          "chapterId": "y12a-10",
+          "topicId": "y12a-10E",
+          "origin": "teacher",
+          "question": "Swimmers who took longer than 16.5 minutes were disqualified. About 16% of swimmers were disqualified. The mean time was 15 minutes. Solve the following sub-questions.",
+          "createdAt": {
+            "_seconds": 1780105040,
+            "_nanoseconds": 592000000
+          }
+        }
+      ]
+    },
+    {
+      "normalizedId": "asc2020q33b",
+      "count": 2,
+      "sameContent": false,
+      "teacherOrigin": false,
+      "members": [
+        {
+          "id": "asc2020-q33-b",
+          "chapterId": "exam:asc-2020",
+          "topicId": "y12a-exam",
+          "origin": "seed",
+          "question": "(b) Sketch the normal distribution curve for this information.",
+          "createdAt": {
+            "_seconds": 1784363601,
+            "_nanoseconds": 29000000
+          }
+        },
+        {
+          "id": "asc2020-q33b",
+          "chapterId": "y12a-10",
+          "topicId": "y12a-10E",
+          "origin": null,
+          "question": "(b) Sketch the normal distribution curve for the swim time data, with \\\\(\\mu = 15\\\\) min and \\\\(\\sigma = 1.5\\\\) min. Label the mean and mark the disqualification threshold at 16.5 min.",
+          "createdAt": {
+            "_seconds": 1780105040,
+            "_nanoseconds": 592000000
+          }
+        }
+      ]
+    },
+    {
+      "normalizedId": "asc2020q33c",
+      "count": 2,
+      "sameContent": false,
+      "teacherOrigin": false,
+      "members": [
+        {
+          "id": "asc2020-q33-c",
+          "chapterId": "exam:asc-2020",
+          "topicId": "y12a-exam",
+          "origin": "seed",
+          "question": "(c) The fastest 1% of swimmers immediately qualify for the next level. Use the probability tables for the standard normal distribution to determine the qualifying time.",
+          "createdAt": {
+            "_seconds": 1784363601,
+            "_nanoseconds": 29000000
+          }
+        },
+        {
+          "id": "asc2020-q33c",
+          "chapterId": "y12a-10",
+          "topicId": "y12a-10F",
+          "origin": null,
+          "question": "The fastest 1% of swimmers immediately qualify for the next competition. Using the standard normal distribution tables, determine the qualifying time, given \\\\(\\mu = 15\\\\) min and \\\\(\\sigma = 1.5\\\\) min.",
+          "createdAt": {
+            "_seconds": 1780105040,
+            "_nanoseconds": 592000000
+          }
+        }
+      ]
+    }
+  ]
+}

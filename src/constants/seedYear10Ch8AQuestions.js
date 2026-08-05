@@ -20,80 +20,22 @@ export const Y10_CH8A_QUESTIONS = [
     "solution": "The correct answer is \\(12\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of triangles: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(AB = BC = 12\\)",
-        "graphData": {
-          "geometry": {
-            "width": 300,
-            "points": {
-              "A": [
-                0,
-                4
-              ],
-              "B": [
-                0,
-                0
-              ],
-              "C": [
-                4,
-                0
-              ]
-            },
-            "segments": [
-              {
-                "from": "A",
-                "to": "B"
-              },
-              {
-                "from": "B",
-                "to": "C"
-              },
-              {
-                "from": "C",
-                "to": "A"
-              }
-            ],
-            "sideLabels": [
-              {
-                "between": [
-                  "A",
-                  "B"
-                ],
-                "text": "x"
-              },
-              {
-                "between": [
-                  "B",
-                  "C"
-                ],
-                "text": "12"
-              }
-            ],
-            "angles": [
-              {
-                "at": "B",
-                "right": true
-              },
-              {
-                "at": "A",
-                "text": "45°"
-              }
-            ]
-          }
-        }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Identify the shape: State the polygon type and the relevant angle rule.",
+        "workingOut": "Angle sum of triangle = 180^{\\circ}, quadrilateral = 360^{\\circ}.",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(12\\)",
+        "explanation": "Set up the equation: Write the algebraic equation for the unknown angles.",
+        "workingOut": "\\text{Sum of known angles} + \\text{Unknown} = \\text{Total Sum}",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 12. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Solve algebraically: Simplify and solve for the variable.",
+        "workingOut": "\\text{Isolate the variable to find the answer.}",
+        "graphData": null
+      },
+      {
+        "explanation": "Final Answer & Pitfall: When finding base angles of an isosceles triangle, remember to subtract the vertex angle from 180^{\\circ} *before* dividing by 2.",
         "workingOut": "\\(12\\)",
         "graphData": null
       }
@@ -181,71 +123,22 @@ export const Y10_CH8A_QUESTIONS = [
     "solution": "The correct answer is \\(60,60,60\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of triangles: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(180/3 = 60^\\circ\\)",
-        "graphData": {
-          "geometry": {
-            "width": 300,
-            "points": {
-              "R": [
-                3,
-                5
-              ],
-              "S": [
-                0,
-                0
-              ],
-              "T": [
-                6,
-                0
-              ]
-            },
-            "segments": [
-              {
-                "from": "R",
-                "to": "S",
-                "ticks": 1
-              },
-              {
-                "from": "S",
-                "to": "T",
-                "ticks": 1
-              },
-              {
-                "from": "T",
-                "to": "R",
-                "ticks": 1
-              }
-            ],
-            "angles": [
-              {
-                "at": "R",
-                "text": "\\alpha"
-              },
-              {
-                "at": "S",
-                "text": "\\beta"
-              },
-              {
-                "at": "T",
-                "text": "\\gamma"
-              }
-            ]
-          }
-        }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Identify the shape: State the polygon type and the relevant angle rule.",
+        "workingOut": "Angle sum of triangle = 180^{\\circ}, quadrilateral = 360^{\\circ}.",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(60,60,60\\)",
+        "explanation": "Set up the equation: Write the algebraic equation for the unknown angles.",
+        "workingOut": "\\text{Sum of known angles} + \\text{Unknown} = \\text{Total Sum}",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 60,60,60. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Solve algebraically: Simplify and solve for the variable.",
+        "workingOut": "\\text{Isolate the variable to find the answer.}",
+        "graphData": null
+      },
+      {
+        "explanation": "Final Answer & Pitfall: When finding base angles of an isosceles triangle, remember to subtract the vertex angle from 180^{\\circ} *before* dividing by 2.",
         "workingOut": "\\(60,60,60\\)",
         "graphData": null
       }
@@ -324,75 +217,22 @@ export const Y10_CH8A_QUESTIONS = [
     "solution": "The correct answer is \\(50\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of triangles: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(\\theta = (180 - 100) / 2 = 40^\\circ\\)",
-        "graphData": {
-          "geometry": {
-            "width": 300,
-            "points": {
-              "W": [
-                0,
-                0
-              ],
-              "X": [
-                4,
-                3
-              ],
-              "Y": [
-                7,
-                0
-              ],
-              "Z": [
-                5.33,
-                4
-              ]
-            },
-            "segments": [
-              {
-                "from": "W",
-                "to": "X",
-                "ticks": 1
-              },
-              {
-                "from": "X",
-                "to": "Y",
-                "ticks": 1
-              },
-              {
-                "from": "Y",
-                "to": "W"
-              },
-              {
-                "from": "W",
-                "to": "Z",
-                "dashed": true
-              }
-            ],
-            "angles": [
-              {
-                "at": "X",
-                "text": "80°"
-              },
-              {
-                "at": "W",
-                "text": "\\theta"
-              }
-            ]
-          }
-        }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Identify the shape: State the polygon type and the relevant angle rule.",
+        "workingOut": "Angle sum of triangle = 180^{\\circ}, quadrilateral = 360^{\\circ}.",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(50\\)",
+        "explanation": "Set up the equation: Write the algebraic equation for the unknown angles.",
+        "workingOut": "\\text{Sum of known angles} + \\text{Unknown} = \\text{Total Sum}",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 50. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Solve algebraically: Simplify and solve for the variable.",
+        "workingOut": "\\text{Isolate the variable to find the answer.}",
+        "graphData": null
+      },
+      {
+        "explanation": "Final Answer & Pitfall: When finding base angles of an isosceles triangle, remember to subtract the vertex angle from 180^{\\circ} *before* dividing by 2.",
         "workingOut": "\\(50\\)",
         "graphData": null
       }
@@ -475,66 +315,22 @@ export const Y10_CH8A_QUESTIONS = [
     "solution": "The correct answer is \\(60\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of triangles: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(\\theta = 60^\\circ\\)",
-        "graphData": {
-          "geometry": {
-            "width": 300,
-            "points": {
-              "P": [
-                2,
-                4
-              ],
-              "Q": [
-                0,
-                0
-              ],
-              "R": [
-                4,
-                0
-              ]
-            },
-            "segments": [
-              {
-                "from": "P",
-                "to": "Q",
-                "ticks": 1
-              },
-              {
-                "from": "Q",
-                "to": "R",
-                "ticks": 1
-              },
-              {
-                "from": "R",
-                "to": "P"
-              }
-            ],
-            "angles": [
-              {
-                "at": "Q",
-                "text": "60°"
-              },
-              {
-                "at": "P",
-                "text": "\\theta"
-              }
-            ]
-          }
-        }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Identify the shape: State the polygon type and the relevant angle rule.",
+        "workingOut": "Angle sum of triangle = 180^{\\circ}, quadrilateral = 360^{\\circ}.",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(60\\)",
+        "explanation": "Set up the equation: Write the algebraic equation for the unknown angles.",
+        "workingOut": "\\text{Sum of known angles} + \\text{Unknown} = \\text{Total Sum}",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 60. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Solve algebraically: Simplify and solve for the variable.",
+        "workingOut": "\\text{Isolate the variable to find the answer.}",
+        "graphData": null
+      },
+      {
+        "explanation": "Final Answer & Pitfall: When finding base angles of an isosceles triangle, remember to subtract the vertex angle from 180^{\\circ} *before* dividing by 2.",
         "workingOut": "\\(60\\)",
         "graphData": null
       }
@@ -608,66 +404,22 @@ export const Y10_CH8A_QUESTIONS = [
     "solution": "The correct answer is \\(7\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of triangles: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(PR = 7\\)",
-        "graphData": {
-          "geometry": {
-            "width": 300,
-            "points": {
-              "P": [
-                2,
-                4
-              ],
-              "Q": [
-                0,
-                0
-              ],
-              "R": [
-                4,
-                0
-              ]
-            },
-            "segments": [
-              {
-                "from": "P",
-                "to": "Q",
-                "ticks": 1
-              },
-              {
-                "from": "Q",
-                "to": "R",
-                "ticks": 1
-              },
-              {
-                "from": "R",
-                "to": "P"
-              }
-            ],
-            "angles": [
-              {
-                "at": "Q",
-                "text": "60°"
-              },
-              {
-                "at": "P",
-                "text": "\\theta"
-              }
-            ]
-          }
-        }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Identify the shape: State the polygon type and the relevant angle rule.",
+        "workingOut": "Angle sum of triangle = 180^{\\circ}, quadrilateral = 360^{\\circ}.",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(7\\)",
+        "explanation": "Set up the equation: Write the algebraic equation for the unknown angles.",
+        "workingOut": "\\text{Sum of known angles} + \\text{Unknown} = \\text{Total Sum}",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 7. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Solve algebraically: Simplify and solve for the variable.",
+        "workingOut": "\\text{Isolate the variable to find the answer.}",
+        "graphData": null
+      },
+      {
+        "explanation": "Final Answer & Pitfall: When finding base angles of an isosceles triangle, remember to subtract the vertex angle from 180^{\\circ} *before* dividing by 2.",
         "workingOut": "\\(7\\)",
         "graphData": null
       }
@@ -741,96 +493,22 @@ export const Y10_CH8A_QUESTIONS = [
     "solution": "The correct answer is \\(60\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of triangles: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(\\alpha = 60^\\circ\\)",
-        "graphData": {
-          "geometry": {
-            "width": 300,
-            "points": {
-              "L": [
-                3,
-                5.2
-              ],
-              "N": [
-                0,
-                0
-              ],
-              "Q": [
-                6,
-                0
-              ],
-              "M": [
-                12,
-                0
-              ]
-            },
-            "segments": [
-              {
-                "from": "L",
-                "to": "N",
-                "ticks": 1
-              },
-              {
-                "from": "N",
-                "to": "Q",
-                "ticks": 1
-              },
-              {
-                "from": "Q",
-                "to": "L",
-                "ticks": 1
-              },
-              {
-                "from": "Q",
-                "to": "M",
-                "ticks": 1
-              },
-              {
-                "from": "L",
-                "to": "M"
-              }
-            ],
-            "angles": [
-              {
-                "at": "N",
-                "text": "\\alpha"
-              },
-              {
-                "at": "M",
-                "text": "\\beta"
-              }
-            ],
-            "sideLabels": [
-              {
-                "between": [
-                  "L",
-                  "N"
-                ],
-                "text": "5"
-              },
-              {
-                "between": [
-                  "N",
-                  "M"
-                ],
-                "text": "y"
-              }
-            ]
-          }
-        }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Identify the shape: State the polygon type and the relevant angle rule.",
+        "workingOut": "Angle sum of triangle = 180^{\\circ}, quadrilateral = 360^{\\circ}.",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(60\\)",
+        "explanation": "Set up the equation: Write the algebraic equation for the unknown angles.",
+        "workingOut": "\\text{Sum of known angles} + \\text{Unknown} = \\text{Total Sum}",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 60. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Solve algebraically: Simplify and solve for the variable.",
+        "workingOut": "\\text{Isolate the variable to find the answer.}",
+        "graphData": null
+      },
+      {
+        "explanation": "Final Answer & Pitfall: When finding base angles of an isosceles triangle, remember to subtract the vertex angle from 180^{\\circ} *before* dividing by 2.",
         "workingOut": "\\(60\\)",
         "graphData": null
       }
@@ -934,96 +612,22 @@ export const Y10_CH8A_QUESTIONS = [
     "solution": "The correct answer is \\(30\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of triangles: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(\\beta = (180 - 120) / 2 = 30^\\circ\\)",
-        "graphData": {
-          "geometry": {
-            "width": 300,
-            "points": {
-              "L": [
-                3,
-                5.2
-              ],
-              "N": [
-                0,
-                0
-              ],
-              "Q": [
-                6,
-                0
-              ],
-              "M": [
-                12,
-                0
-              ]
-            },
-            "segments": [
-              {
-                "from": "L",
-                "to": "N",
-                "ticks": 1
-              },
-              {
-                "from": "N",
-                "to": "Q",
-                "ticks": 1
-              },
-              {
-                "from": "Q",
-                "to": "L",
-                "ticks": 1
-              },
-              {
-                "from": "Q",
-                "to": "M",
-                "ticks": 1
-              },
-              {
-                "from": "L",
-                "to": "M"
-              }
-            ],
-            "angles": [
-              {
-                "at": "N",
-                "text": "\\alpha"
-              },
-              {
-                "at": "M",
-                "text": "\\beta"
-              }
-            ],
-            "sideLabels": [
-              {
-                "between": [
-                  "L",
-                  "N"
-                ],
-                "text": "5"
-              },
-              {
-                "between": [
-                  "N",
-                  "M"
-                ],
-                "text": "y"
-              }
-            ]
-          }
-        }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Identify the shape: State the polygon type and the relevant angle rule.",
+        "workingOut": "Angle sum of triangle = 180^{\\circ}, quadrilateral = 360^{\\circ}.",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(30\\)",
+        "explanation": "Set up the equation: Write the algebraic equation for the unknown angles.",
+        "workingOut": "\\text{Sum of known angles} + \\text{Unknown} = \\text{Total Sum}",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 30. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Solve algebraically: Simplify and solve for the variable.",
+        "workingOut": "\\text{Isolate the variable to find the answer.}",
+        "graphData": null
+      },
+      {
+        "explanation": "Final Answer & Pitfall: When finding base angles of an isosceles triangle, remember to subtract the vertex angle from 180^{\\circ} *before* dividing by 2.",
         "workingOut": "\\(30\\)",
         "graphData": null
       }
@@ -1127,96 +731,22 @@ export const Y10_CH8A_QUESTIONS = [
     "solution": "The correct answer is \\(10\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of triangles: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(y = 10\\)",
-        "graphData": {
-          "geometry": {
-            "width": 300,
-            "points": {
-              "L": [
-                3,
-                5.2
-              ],
-              "N": [
-                0,
-                0
-              ],
-              "Q": [
-                6,
-                0
-              ],
-              "M": [
-                12,
-                0
-              ]
-            },
-            "segments": [
-              {
-                "from": "L",
-                "to": "N",
-                "ticks": 1
-              },
-              {
-                "from": "N",
-                "to": "Q",
-                "ticks": 1
-              },
-              {
-                "from": "Q",
-                "to": "L",
-                "ticks": 1
-              },
-              {
-                "from": "Q",
-                "to": "M",
-                "ticks": 1
-              },
-              {
-                "from": "L",
-                "to": "M"
-              }
-            ],
-            "angles": [
-              {
-                "at": "N",
-                "text": "\\alpha"
-              },
-              {
-                "at": "M",
-                "text": "\\beta"
-              }
-            ],
-            "sideLabels": [
-              {
-                "between": [
-                  "L",
-                  "N"
-                ],
-                "text": "5"
-              },
-              {
-                "between": [
-                  "N",
-                  "M"
-                ],
-                "text": "y"
-              }
-            ]
-          }
-        }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Identify the shape: State the polygon type and the relevant angle rule.",
+        "workingOut": "Angle sum of triangle = 180^{\\circ}, quadrilateral = 360^{\\circ}.",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(10\\)",
+        "explanation": "Set up the equation: Write the algebraic equation for the unknown angles.",
+        "workingOut": "\\text{Sum of known angles} + \\text{Unknown} = \\text{Total Sum}",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 10. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Solve algebraically: Simplify and solve for the variable.",
+        "workingOut": "\\text{Isolate the variable to find the answer.}",
+        "graphData": null
+      },
+      {
+        "explanation": "Final Answer & Pitfall: When finding base angles of an isosceles triangle, remember to subtract the vertex angle from 180^{\\circ} *before* dividing by 2.",
         "workingOut": "\\(10\\)",
         "graphData": null
       }
@@ -1320,108 +850,22 @@ export const Y10_CH8A_QUESTIONS = [
     "solution": "The correct answer is \\(125\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of triangles: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "Angle ADC = 55°",
-        "graphData": {
-          "geometry": {
-            "width": 300,
-            "points": {
-              "C": [
-                2,
-                0
-              ],
-              "E": [
-                10,
-                0
-              ],
-              "D": [
-                6,
-                0
-              ],
-              "A": [
-                4,
-                3
-              ],
-              "F": [
-                8,
-                0
-              ],
-              "G": [
-                7,
-                -1.5
-              ],
-              "H": [
-                7,
-                -3
-              ],
-              "J": [
-                9,
-                3
-              ]
-            },
-            "segments": [
-              {
-                "from": "C",
-                "to": "E"
-              },
-              {
-                "from": "C",
-                "to": "A",
-                "ticks": 2
-              },
-              {
-                "from": "A",
-                "to": "D",
-                "ticks": 2
-              },
-              {
-                "from": "A",
-                "to": "G"
-              },
-              {
-                "from": "H",
-                "to": "J"
-              }
-            ],
-            "arrows": [
-              {
-                "from": "C",
-                "to": "A"
-              },
-              {
-                "from": "H",
-                "to": "J"
-              }
-            ],
-            "angles": [
-              {
-                "at": "C",
-                "text": "55°"
-              },
-              {
-                "at": "D",
-                "text": "\\theta"
-              },
-              {
-                "at": "G",
-                "text": "\\alpha"
-              }
-            ]
-          }
-        }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(\\theta = 180 - 55 = 125^\\circ\\)",
+        "explanation": "Identify the shape: State the polygon type and the relevant angle rule.",
+        "workingOut": "Angle sum of triangle = 180^{\\circ}, quadrilateral = 360^{\\circ}.",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(125\\)",
+        "explanation": "Set up the equation: Write the algebraic equation for the unknown angles.",
+        "workingOut": "\\text{Sum of known angles} + \\text{Unknown} = \\text{Total Sum}",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 125. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Solve algebraically: Simplify and solve for the variable.",
+        "workingOut": "\\text{Isolate the variable to find the answer.}",
+        "graphData": null
+      },
+      {
+        "explanation": "Final Answer & Pitfall: When finding base angles of an isosceles triangle, remember to subtract the vertex angle from 180^{\\circ} *before* dividing by 2.",
         "workingOut": "\\(125\\)",
         "graphData": null
       }
@@ -1537,108 +981,22 @@ export const Y10_CH8A_QUESTIONS = [
     "solution": "The correct answer is \\(110\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of triangles: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "Alt. int. angle HGA = 70°",
-        "graphData": {
-          "geometry": {
-            "width": 300,
-            "points": {
-              "C": [
-                2,
-                0
-              ],
-              "E": [
-                10,
-                0
-              ],
-              "D": [
-                6,
-                0
-              ],
-              "A": [
-                4,
-                3
-              ],
-              "F": [
-                8,
-                0
-              ],
-              "G": [
-                7,
-                -1.5
-              ],
-              "H": [
-                7,
-                -3
-              ],
-              "J": [
-                9,
-                3
-              ]
-            },
-            "segments": [
-              {
-                "from": "C",
-                "to": "E"
-              },
-              {
-                "from": "C",
-                "to": "A",
-                "ticks": 2
-              },
-              {
-                "from": "A",
-                "to": "D",
-                "ticks": 2
-              },
-              {
-                "from": "A",
-                "to": "G"
-              },
-              {
-                "from": "H",
-                "to": "J"
-              }
-            ],
-            "arrows": [
-              {
-                "from": "C",
-                "to": "A"
-              },
-              {
-                "from": "H",
-                "to": "J"
-              }
-            ],
-            "angles": [
-              {
-                "at": "C",
-                "text": "55°"
-              },
-              {
-                "at": "D",
-                "text": "\\theta"
-              },
-              {
-                "at": "G",
-                "text": "\\alpha"
-              }
-            ]
-          }
-        }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(\\alpha = 180 - 70 = 110^\\circ\\)",
+        "explanation": "Identify the shape: State the polygon type and the relevant angle rule.",
+        "workingOut": "Angle sum of triangle = 180^{\\circ}, quadrilateral = 360^{\\circ}.",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(110\\)",
+        "explanation": "Set up the equation: Write the algebraic equation for the unknown angles.",
+        "workingOut": "\\text{Sum of known angles} + \\text{Unknown} = \\text{Total Sum}",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 110. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Solve algebraically: Simplify and solve for the variable.",
+        "workingOut": "\\text{Isolate the variable to find the answer.}",
+        "graphData": null
+      },
+      {
+        "explanation": "Final Answer & Pitfall: When finding base angles of an isosceles triangle, remember to subtract the vertex angle from 180^{\\circ} *before* dividing by 2.",
         "workingOut": "\\(110\\)",
         "graphData": null
       }
@@ -1754,110 +1112,22 @@ export const Y10_CH8A_QUESTIONS = [
     "solution": "The correct answer is \\(55\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of triangles: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(\\alpha = 55^\\circ\\)",
-        "graphData": {
-          "geometry": {
-            "width": 300,
-            "points": {
-              "H": [
-                0,
-                4
-              ],
-              "A": [
-                8,
-                4
-              ],
-              "D": [
-                4,
-                8
-              ],
-              "B": [
-                8,
-                0
-              ],
-              "E": [
-                2,
-                0
-              ],
-              "F": [
-                6,
-                8
-              ],
-              "G": [
-                5,
-                4
-              ],
-              "C": [
-                6,
-                4
-              ]
-            },
-            "segments": [
-              {
-                "from": "H",
-                "to": "A"
-              },
-              {
-                "from": "D",
-                "to": "B"
-              },
-              {
-                "from": "E",
-                "to": "F"
-              },
-              {
-                "from": "D",
-                "to": "G",
-                "ticks": 1
-              },
-              {
-                "from": "D",
-                "to": "C",
-                "ticks": 1
-              }
-            ],
-            "arrows": [
-              {
-                "from": "D",
-                "to": "B"
-              },
-              {
-                "from": "E",
-                "to": "F"
-              }
-            ],
-            "angles": [
-              {
-                "at": "C",
-                "text": "55°"
-              },
-              {
-                "at": "G",
-                "text": "\\alpha",
-                "color": "black"
-              },
-              {
-                "at": "G",
-                "text": "\\beta",
-                "color": "red"
-              }
-            ]
-          }
-        }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Identify the shape: State the polygon type and the relevant angle rule.",
+        "workingOut": "Angle sum of triangle = 180^{\\circ}, quadrilateral = 360^{\\circ}.",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(55\\)",
+        "explanation": "Set up the equation: Write the algebraic equation for the unknown angles.",
+        "workingOut": "\\text{Sum of known angles} + \\text{Unknown} = \\text{Total Sum}",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 55. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Solve algebraically: Simplify and solve for the variable.",
+        "workingOut": "\\text{Isolate the variable to find the answer.}",
+        "graphData": null
+      },
+      {
+        "explanation": "Final Answer & Pitfall: When finding base angles of an isosceles triangle, remember to subtract the vertex angle from 180^{\\circ} *before* dividing by 2.",
         "workingOut": "\\(55\\)",
         "graphData": null
       }
@@ -1975,110 +1245,22 @@ export const Y10_CH8A_QUESTIONS = [
     "solution": "The correct answer is \\(125\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of triangles: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(\\beta = 180 - 55 = 125^\\circ\\)",
-        "graphData": {
-          "geometry": {
-            "width": 300,
-            "points": {
-              "H": [
-                0,
-                4
-              ],
-              "A": [
-                8,
-                4
-              ],
-              "D": [
-                4,
-                8
-              ],
-              "B": [
-                8,
-                0
-              ],
-              "E": [
-                2,
-                0
-              ],
-              "F": [
-                6,
-                8
-              ],
-              "G": [
-                5,
-                4
-              ],
-              "C": [
-                6,
-                4
-              ]
-            },
-            "segments": [
-              {
-                "from": "H",
-                "to": "A"
-              },
-              {
-                "from": "D",
-                "to": "B"
-              },
-              {
-                "from": "E",
-                "to": "F"
-              },
-              {
-                "from": "D",
-                "to": "G",
-                "ticks": 1
-              },
-              {
-                "from": "D",
-                "to": "C",
-                "ticks": 1
-              }
-            ],
-            "arrows": [
-              {
-                "from": "D",
-                "to": "B"
-              },
-              {
-                "from": "E",
-                "to": "F"
-              }
-            ],
-            "angles": [
-              {
-                "at": "C",
-                "text": "55°"
-              },
-              {
-                "at": "G",
-                "text": "\\alpha",
-                "color": "black"
-              },
-              {
-                "at": "G",
-                "text": "\\beta",
-                "color": "red"
-              }
-            ]
-          }
-        }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Identify the shape: State the polygon type and the relevant angle rule.",
+        "workingOut": "Angle sum of triangle = 180^{\\circ}, quadrilateral = 360^{\\circ}.",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(125\\)",
+        "explanation": "Set up the equation: Write the algebraic equation for the unknown angles.",
+        "workingOut": "\\text{Sum of known angles} + \\text{Unknown} = \\text{Total Sum}",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 125. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Solve algebraically: Simplify and solve for the variable.",
+        "workingOut": "\\text{Isolate the variable to find the answer.}",
+        "graphData": null
+      },
+      {
+        "explanation": "Final Answer & Pitfall: When finding base angles of an isosceles triangle, remember to subtract the vertex angle from 180^{\\circ} *before* dividing by 2.",
         "workingOut": "\\(125\\)",
         "graphData": null
       }
@@ -2196,106 +1378,22 @@ export const Y10_CH8A_QUESTIONS = [
     "solution": "The correct answer is \\(50\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of triangles: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(\\alpha = 180 - 90 - 40 = 50^\\circ\\)",
-        "graphData": {
-          "geometry": {
-            "width": 300,
-            "points": {
-              "F": [
-                0,
-                6
-              ],
-              "A": [
-                0,
-                0
-              ],
-              "B": [
-                6,
-                0
-              ],
-              "C": [
-                0,
-                3
-              ],
-              "E": [
-                6,
-                3
-              ],
-              "D": [
-                3,
-                3
-              ]
-            },
-            "segments": [
-              {
-                "from": "F",
-                "to": "A"
-              },
-              {
-                "from": "A",
-                "to": "B"
-              },
-              {
-                "from": "C",
-                "to": "E"
-              },
-              {
-                "from": "F",
-                "to": "D",
-                "ticks": 1
-              },
-              {
-                "from": "A",
-                "to": "D",
-                "ticks": 1
-              }
-            ],
-            "arrows": [
-              {
-                "from": "C",
-                "to": "E"
-              },
-              {
-                "from": "A",
-                "to": "B"
-              }
-            ],
-            "angles": [
-              {
-                "at": "A",
-                "right": true
-              },
-              {
-                "at": "A",
-                "text": "40°"
-              },
-              {
-                "at": "D",
-                "text": "\\alpha",
-                "color": "black"
-              },
-              {
-                "at": "D",
-                "text": "\\theta",
-                "color": "red"
-              }
-            ]
-          }
-        }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Identify the shape: State the polygon type and the relevant angle rule.",
+        "workingOut": "Angle sum of triangle = 180^{\\circ}, quadrilateral = 360^{\\circ}.",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(50\\)",
+        "explanation": "Set up the equation: Write the algebraic equation for the unknown angles.",
+        "workingOut": "\\text{Sum of known angles} + \\text{Unknown} = \\text{Total Sum}",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 50. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Solve algebraically: Simplify and solve for the variable.",
+        "workingOut": "\\text{Isolate the variable to find the answer.}",
+        "graphData": null
+      },
+      {
+        "explanation": "Final Answer & Pitfall: When finding base angles of an isosceles triangle, remember to subtract the vertex angle from 180^{\\circ} *before* dividing by 2.",
         "workingOut": "\\(50\\)",
         "graphData": null
       }
@@ -2409,106 +1507,22 @@ export const Y10_CH8A_QUESTIONS = [
     "solution": "The correct answer is \\(130\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of triangles: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(\\theta = 180 - 50 = 130^\\circ\\)",
-        "graphData": {
-          "geometry": {
-            "width": 300,
-            "points": {
-              "F": [
-                0,
-                6
-              ],
-              "A": [
-                0,
-                0
-              ],
-              "B": [
-                6,
-                0
-              ],
-              "C": [
-                0,
-                3
-              ],
-              "E": [
-                6,
-                3
-              ],
-              "D": [
-                3,
-                3
-              ]
-            },
-            "segments": [
-              {
-                "from": "F",
-                "to": "A"
-              },
-              {
-                "from": "A",
-                "to": "B"
-              },
-              {
-                "from": "C",
-                "to": "E"
-              },
-              {
-                "from": "F",
-                "to": "D",
-                "ticks": 1
-              },
-              {
-                "from": "A",
-                "to": "D",
-                "ticks": 1
-              }
-            ],
-            "arrows": [
-              {
-                "from": "C",
-                "to": "E"
-              },
-              {
-                "from": "A",
-                "to": "B"
-              }
-            ],
-            "angles": [
-              {
-                "at": "A",
-                "right": true
-              },
-              {
-                "at": "A",
-                "text": "40°"
-              },
-              {
-                "at": "D",
-                "text": "\\alpha",
-                "color": "black"
-              },
-              {
-                "at": "D",
-                "text": "\\theta",
-                "color": "red"
-              }
-            ]
-          }
-        }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Identify the shape: State the polygon type and the relevant angle rule.",
+        "workingOut": "Angle sum of triangle = 180^{\\circ}, quadrilateral = 360^{\\circ}.",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(130\\)",
+        "explanation": "Set up the equation: Write the algebraic equation for the unknown angles.",
+        "workingOut": "\\text{Sum of known angles} + \\text{Unknown} = \\text{Total Sum}",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 130. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Solve algebraically: Simplify and solve for the variable.",
+        "workingOut": "\\text{Isolate the variable to find the answer.}",
+        "graphData": null
+      },
+      {
+        "explanation": "Final Answer & Pitfall: When finding base angles of an isosceles triangle, remember to subtract the vertex angle from 180^{\\circ} *before* dividing by 2.",
         "workingOut": "\\(130\\)",
         "graphData": null
       }
@@ -2611,10 +1625,10 @@ export const Y10_CH8A_QUESTIONS = [
     "timeLimit": 120,
     "question": "Points \\(A, B, C\\) are on a circle center \\(O\\). Angle \\(AOB = 130^\\circ\\), Angle \\(BOC = 60^\\circ\\). Find \\(\\alpha\\) (Angle \\(OBC\\)).",
     "opts": [
-      "\\(-60\\)",
-      "\\(59\\)",
+      "\\(30\\)",
+      "\\(45\\)",
       "\\(60\\)",
-      "\\(61\\)"
+      "\\(90\\)"
     ],
     "a": 2,
     "answer": "2",
@@ -2622,96 +1636,22 @@ export const Y10_CH8A_QUESTIONS = [
     "solution": "The correct answer is \\(60\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of triangles: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(\\alpha = 60^\\circ\\)",
-        "graphData": {
-          "geometry": {
-            "width": 300,
-            "points": {
-              "O": [
-                4,
-                4
-              ],
-              "A": [
-                4,
-                8
-              ],
-              "B": [
-                0.5,
-                2
-              ],
-              "C": [
-                7.5,
-                2
-              ]
-            },
-            "segments": [
-              {
-                "from": "O",
-                "to": "A"
-              },
-              {
-                "from": "O",
-                "to": "B"
-              },
-              {
-                "from": "O",
-                "to": "C"
-              },
-              {
-                "from": "A",
-                "to": "B"
-              },
-              {
-                "from": "B",
-                "to": "C"
-              },
-              {
-                "from": "C",
-                "to": "A"
-              }
-            ],
-            "angles": [
-              {
-                "at": "O",
-                "text": "130°",
-                "color": "black"
-              },
-              {
-                "at": "O",
-                "text": "60°",
-                "color": "red"
-              },
-              {
-                "at": "B",
-                "text": "\\alpha"
-              },
-              {
-                "at": "B",
-                "text": "\\beta"
-              }
-            ],
-            "circles": [
-              {
-                "center": "O",
-                "through": "A"
-              }
-            ]
-          }
-        }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Identify the shape: State the polygon type and the relevant angle rule.",
+        "workingOut": "Angle sum of triangle = 180^{\\circ}, quadrilateral = 360^{\\circ}.",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(60\\)",
+        "explanation": "Set up the equation: Write the algebraic equation for the unknown angles.",
+        "workingOut": "\\text{Sum of known angles} + \\text{Unknown} = \\text{Total Sum}",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 60. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Solve algebraically: Simplify and solve for the variable.",
+        "workingOut": "\\text{Isolate the variable to find the answer.}",
+        "graphData": null
+      },
+      {
+        "explanation": "Final Answer & Pitfall: When finding base angles of an isosceles triangle, remember to subtract the vertex angle from 180^{\\circ} *before* dividing by 2.",
         "workingOut": "\\(60\\)",
         "graphData": null
       }
@@ -2815,96 +1755,22 @@ export const Y10_CH8A_QUESTIONS = [
     "solution": "The correct answer is \\(25\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of triangles: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(\\beta = (180 - 130) / 2 = 25^\\circ\\)",
-        "graphData": {
-          "geometry": {
-            "width": 300,
-            "points": {
-              "O": [
-                4,
-                4
-              ],
-              "A": [
-                4,
-                8
-              ],
-              "B": [
-                0.5,
-                2
-              ],
-              "C": [
-                7.5,
-                2
-              ]
-            },
-            "segments": [
-              {
-                "from": "O",
-                "to": "A"
-              },
-              {
-                "from": "O",
-                "to": "B"
-              },
-              {
-                "from": "O",
-                "to": "C"
-              },
-              {
-                "from": "A",
-                "to": "B"
-              },
-              {
-                "from": "B",
-                "to": "C"
-              },
-              {
-                "from": "C",
-                "to": "A"
-              }
-            ],
-            "angles": [
-              {
-                "at": "O",
-                "text": "130°",
-                "color": "black"
-              },
-              {
-                "at": "O",
-                "text": "60°",
-                "color": "red"
-              },
-              {
-                "at": "B",
-                "text": "\\alpha"
-              },
-              {
-                "at": "B",
-                "text": "\\beta"
-              }
-            ],
-            "circles": [
-              {
-                "center": "O",
-                "through": "A"
-              }
-            ]
-          }
-        }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Identify the shape: State the polygon type and the relevant angle rule.",
+        "workingOut": "Angle sum of triangle = 180^{\\circ}, quadrilateral = 360^{\\circ}.",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(25\\)",
+        "explanation": "Set up the equation: Write the algebraic equation for the unknown angles.",
+        "workingOut": "\\text{Sum of known angles} + \\text{Unknown} = \\text{Total Sum}",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 25. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Solve algebraically: Simplify and solve for the variable.",
+        "workingOut": "\\text{Isolate the variable to find the answer.}",
+        "graphData": null
+      },
+      {
+        "explanation": "Final Answer & Pitfall: When finding base angles of an isosceles triangle, remember to subtract the vertex angle from 180^{\\circ} *before* dividing by 2.",
         "workingOut": "\\(25\\)",
         "graphData": null
       }
@@ -3008,90 +1874,22 @@ export const Y10_CH8A_QUESTIONS = [
     "solution": "The correct answer is \\(36\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of triangles: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(5\\alpha = 180 \\implies \\alpha = 36^\\circ\\)",
-        "graphData": {
-          "geometry": {
-            "width": 300,
-            "points": {
-              "A": [
-                4,
-                6
-              ],
-              "B": [
-                0,
-                0
-              ],
-              "C": [
-                8,
-                0
-              ],
-              "D": [
-                8,
-                6
-              ]
-            },
-            "segments": [
-              {
-                "from": "A",
-                "to": "B",
-                "ticks": 1
-              },
-              {
-                "from": "A",
-                "to": "C",
-                "ticks": 1
-              },
-              {
-                "from": "B",
-                "to": "C"
-              },
-              {
-                "from": "A",
-                "to": "D"
-              }
-            ],
-            "arrows": [
-              {
-                "from": "A",
-                "to": "D"
-              },
-              {
-                "from": "B",
-                "to": "C"
-              }
-            ],
-            "angles": [
-              {
-                "at": "A",
-                "text": "\\alpha",
-                "color": "black"
-              },
-              {
-                "at": "A",
-                "text": "2\\alpha",
-                "color": "red"
-              },
-              {
-                "at": "B",
-                "text": "\\beta"
-              }
-            ]
-          }
-        }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Identify the shape: State the polygon type and the relevant angle rule.",
+        "workingOut": "Angle sum of triangle = 180^{\\circ}, quadrilateral = 360^{\\circ}.",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(36\\)",
+        "explanation": "Set up the equation: Write the algebraic equation for the unknown angles.",
+        "workingOut": "\\text{Sum of known angles} + \\text{Unknown} = \\text{Total Sum}",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 36. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Solve algebraically: Simplify and solve for the variable.",
+        "workingOut": "\\text{Isolate the variable to find the answer.}",
+        "graphData": null
+      },
+      {
+        "explanation": "Final Answer & Pitfall: When finding base angles of an isosceles triangle, remember to subtract the vertex angle from 180^{\\circ} *before* dividing by 2.",
         "workingOut": "\\(36\\)",
         "graphData": null
       }
@@ -3189,90 +1987,22 @@ export const Y10_CH8A_QUESTIONS = [
     "solution": "The correct answer is \\(72\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of triangles: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(\\beta = 72^\\circ\\)",
-        "graphData": {
-          "geometry": {
-            "width": 300,
-            "points": {
-              "A": [
-                4,
-                6
-              ],
-              "B": [
-                0,
-                0
-              ],
-              "C": [
-                8,
-                0
-              ],
-              "D": [
-                8,
-                6
-              ]
-            },
-            "segments": [
-              {
-                "from": "A",
-                "to": "B",
-                "ticks": 1
-              },
-              {
-                "from": "A",
-                "to": "C",
-                "ticks": 1
-              },
-              {
-                "from": "B",
-                "to": "C"
-              },
-              {
-                "from": "A",
-                "to": "D"
-              }
-            ],
-            "arrows": [
-              {
-                "from": "A",
-                "to": "D"
-              },
-              {
-                "from": "B",
-                "to": "C"
-              }
-            ],
-            "angles": [
-              {
-                "at": "A",
-                "text": "\\alpha",
-                "color": "black"
-              },
-              {
-                "at": "A",
-                "text": "2\\alpha",
-                "color": "red"
-              },
-              {
-                "at": "B",
-                "text": "\\beta"
-              }
-            ]
-          }
-        }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Identify the shape: State the polygon type and the relevant angle rule.",
+        "workingOut": "Angle sum of triangle = 180^{\\circ}, quadrilateral = 360^{\\circ}.",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(72\\)",
+        "explanation": "Set up the equation: Write the algebraic equation for the unknown angles.",
+        "workingOut": "\\text{Sum of known angles} + \\text{Unknown} = \\text{Total Sum}",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 72. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Solve algebraically: Simplify and solve for the variable.",
+        "workingOut": "\\text{Isolate the variable to find the answer.}",
+        "graphData": null
+      },
+      {
+        "explanation": "Final Answer & Pitfall: When finding base angles of an isosceles triangle, remember to subtract the vertex angle from 180^{\\circ} *before* dividing by 2.",
         "workingOut": "\\(72\\)",
         "graphData": null
       }
@@ -3370,101 +2100,22 @@ export const Y10_CH8A_QUESTIONS = [
     "solution": "The correct answer is \\(60\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of triangles: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(\\alpha = 120 / 2 = 60^\\circ\\)",
-        "graphData": {
-          "geometry": {
-            "width": 300,
-            "points": {
-              "O": [
-                4,
-                4
-              ],
-              "A": [
-                1,
-                2
-              ],
-              "B": [
-                7,
-                2
-              ],
-              "C": [
-                2,
-                7.5
-              ],
-              "D": [
-                8,
-                7.5
-              ]
-            },
-            "segments": [
-              {
-                "from": "O",
-                "to": "A"
-              },
-              {
-                "from": "O",
-                "to": "B"
-              },
-              {
-                "from": "A",
-                "to": "C"
-              },
-              {
-                "from": "B",
-                "to": "C"
-              },
-              {
-                "from": "C",
-                "to": "D"
-              }
-            ],
-            "arrows": [
-              {
-                "from": "A",
-                "to": "B"
-              },
-              {
-                "from": "C",
-                "to": "D"
-              }
-            ],
-            "angles": [
-              {
-                "at": "O",
-                "text": "120°"
-              },
-              {
-                "at": "C",
-                "text": "80°",
-                "color": "black"
-              },
-              {
-                "at": "C",
-                "text": "\\alpha"
-              }
-            ],
-            "circles": [
-              {
-                "center": "O",
-                "through": "A"
-              }
-            ]
-          }
-        }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Identify the shape: State the polygon type and the relevant angle rule.",
+        "workingOut": "Angle sum of triangle = 180^{\\circ}, quadrilateral = 360^{\\circ}.",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(60\\)",
+        "explanation": "Set up the equation: Write the algebraic equation for the unknown angles.",
+        "workingOut": "\\text{Sum of known angles} + \\text{Unknown} = \\text{Total Sum}",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 60. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Solve algebraically: Simplify and solve for the variable.",
+        "workingOut": "\\text{Isolate the variable to find the answer.}",
+        "graphData": null
+      },
+      {
+        "explanation": "Final Answer & Pitfall: When finding base angles of an isosceles triangle, remember to subtract the vertex angle from 180^{\\circ} *before* dividing by 2.",
         "workingOut": "\\(60\\)",
         "graphData": null
       }
@@ -3573,80 +2224,22 @@ export const Y10_CH8A_QUESTIONS = [
     "solution": "The correct answer is \\(130\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of triangles: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(\\alpha = 360 - (80 + 110 + 40) = 130^\\circ\\)",
-        "graphData": {
-          "geometry": {
-            "width": 300,
-            "points": {
-              "A": [
-                0,
-                0
-              ],
-              "B": [
-                2,
-                4
-              ],
-              "C": [
-                6,
-                4
-              ],
-              "D": [
-                8,
-                0
-              ]
-            },
-            "segments": [
-              {
-                "from": "A",
-                "to": "B"
-              },
-              {
-                "from": "B",
-                "to": "C"
-              },
-              {
-                "from": "C",
-                "to": "D"
-              },
-              {
-                "from": "D",
-                "to": "A"
-              }
-            ],
-            "angles": [
-              {
-                "at": "A",
-                "text": "80°"
-              },
-              {
-                "at": "B",
-                "text": "110°"
-              },
-              {
-                "at": "D",
-                "text": "40°"
-              },
-              {
-                "at": "C",
-                "text": "\\alpha"
-              }
-            ]
-          }
-        }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Identify the shape: State the polygon type and the relevant angle rule.",
+        "workingOut": "Angle sum of triangle = 180^{\\circ}, quadrilateral = 360^{\\circ}.",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(130\\)",
+        "explanation": "Set up the equation: Write the algebraic equation for the unknown angles.",
+        "workingOut": "\\text{Sum of known angles} + \\text{Unknown} = \\text{Total Sum}",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 130. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Solve algebraically: Simplify and solve for the variable.",
+        "workingOut": "\\text{Isolate the variable to find the answer.}",
+        "graphData": null
+      },
+      {
+        "explanation": "Final Answer & Pitfall: When finding base angles of an isosceles triangle, remember to subtract the vertex angle from 180^{\\circ} *before* dividing by 2.",
         "workingOut": "\\(130\\)",
         "graphData": null
       }
@@ -3734,22 +2327,22 @@ export const Y10_CH8A_QUESTIONS = [
     "solution": "The correct answer is \\(108\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of triangles: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(\\alpha = 180 \\times (5-2) / 5 = 108^\\circ\\)",
+        "explanation": "Identify the shape: State the polygon type and the relevant angle rule.",
+        "workingOut": "Angle sum of triangle = 180^{\\circ}, quadrilateral = 360^{\\circ}.",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Set up the equation: Write the algebraic equation for the unknown angles.",
+        "workingOut": "\\text{Sum of known angles} + \\text{Unknown} = \\text{Total Sum}",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(108\\)",
+        "explanation": "Solve algebraically: Simplify and solve for the variable.",
+        "workingOut": "\\text{Isolate the variable to find the answer.}",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 108. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Final Answer & Pitfall: When finding base angles of an isosceles triangle, remember to subtract the vertex angle from 180^{\\circ} *before* dividing by 2.",
         "workingOut": "\\(108\\)",
         "graphData": null
       }
@@ -3779,96 +2372,22 @@ export const Y10_CH8A_QUESTIONS = [
     "solution": "The correct answer is \\(120\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of triangles: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(\\alpha = 180 - 60 = 120^\\circ\\)",
-        "graphData": {
-          "geometry": {
-            "width": 300,
-            "points": {
-              "A": [
-                0,
-                0
-              ],
-              "B": [
-                2,
-                4
-              ],
-              "C": [
-                8,
-                4
-              ],
-              "D": [
-                6,
-                0
-              ]
-            },
-            "segments": [
-              {
-                "from": "A",
-                "to": "B"
-              },
-              {
-                "from": "B",
-                "to": "C"
-              },
-              {
-                "from": "C",
-                "to": "D"
-              },
-              {
-                "from": "D",
-                "to": "A"
-              }
-            ],
-            "arrows": [
-              {
-                "from": "A",
-                "to": "B"
-              },
-              {
-                "from": "C",
-                "to": "D"
-              },
-              {
-                "from": "B",
-                "to": "C",
-                "ticks": 2
-              },
-              {
-                "from": "A",
-                "to": "D",
-                "ticks": 2
-              }
-            ],
-            "angles": [
-              {
-                "at": "A",
-                "text": "60°"
-              },
-              {
-                "at": "D",
-                "text": "\\alpha"
-              },
-              {
-                "at": "C",
-                "text": "\\beta"
-              }
-            ]
-          }
-        }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Identify the shape: State the polygon type and the relevant angle rule.",
+        "workingOut": "Angle sum of triangle = 180^{\\circ}, quadrilateral = 360^{\\circ}.",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(120\\)",
+        "explanation": "Set up the equation: Write the algebraic equation for the unknown angles.",
+        "workingOut": "\\text{Sum of known angles} + \\text{Unknown} = \\text{Total Sum}",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 120. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Solve algebraically: Simplify and solve for the variable.",
+        "workingOut": "\\text{Isolate the variable to find the answer.}",
+        "graphData": null
+      },
+      {
+        "explanation": "Final Answer & Pitfall: When finding base angles of an isosceles triangle, remember to subtract the vertex angle from 180^{\\circ} *before* dividing by 2.",
         "workingOut": "\\(120\\)",
         "graphData": null
       }
@@ -3972,96 +2491,22 @@ export const Y10_CH8A_QUESTIONS = [
     "solution": "The correct answer is \\(60\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of triangles: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(\\beta = 60^\\circ\\)",
-        "graphData": {
-          "geometry": {
-            "width": 300,
-            "points": {
-              "A": [
-                0,
-                0
-              ],
-              "B": [
-                2,
-                4
-              ],
-              "C": [
-                8,
-                4
-              ],
-              "D": [
-                6,
-                0
-              ]
-            },
-            "segments": [
-              {
-                "from": "A",
-                "to": "B"
-              },
-              {
-                "from": "B",
-                "to": "C"
-              },
-              {
-                "from": "C",
-                "to": "D"
-              },
-              {
-                "from": "D",
-                "to": "A"
-              }
-            ],
-            "arrows": [
-              {
-                "from": "A",
-                "to": "B"
-              },
-              {
-                "from": "C",
-                "to": "D"
-              },
-              {
-                "from": "B",
-                "to": "C",
-                "ticks": 2
-              },
-              {
-                "from": "A",
-                "to": "D",
-                "ticks": 2
-              }
-            ],
-            "angles": [
-              {
-                "at": "A",
-                "text": "60°"
-              },
-              {
-                "at": "D",
-                "text": "\\alpha"
-              },
-              {
-                "at": "C",
-                "text": "\\beta"
-              }
-            ]
-          }
-        }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Identify the shape: State the polygon type and the relevant angle rule.",
+        "workingOut": "Angle sum of triangle = 180^{\\circ}, quadrilateral = 360^{\\circ}.",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(60\\)",
+        "explanation": "Set up the equation: Write the algebraic equation for the unknown angles.",
+        "workingOut": "\\text{Sum of known angles} + \\text{Unknown} = \\text{Total Sum}",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 60. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Solve algebraically: Simplify and solve for the variable.",
+        "workingOut": "\\text{Isolate the variable to find the answer.}",
+        "graphData": null
+      },
+      {
+        "explanation": "Final Answer & Pitfall: When finding base angles of an isosceles triangle, remember to subtract the vertex angle from 180^{\\circ} *before* dividing by 2.",
         "workingOut": "\\(60\\)",
         "graphData": null
       }
@@ -4165,22 +2610,22 @@ export const Y10_CH8A_QUESTIONS = [
     "solution": "The correct answer is \\(8\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of triangles: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(n = 8\\)",
+        "explanation": "Identify the shape: State the polygon type and the relevant angle rule.",
+        "workingOut": "Angle sum of triangle = 180^{\\circ}, quadrilateral = 360^{\\circ}.",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Set up the equation: Write the algebraic equation for the unknown angles.",
+        "workingOut": "\\text{Sum of known angles} + \\text{Unknown} = \\text{Total Sum}",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(8\\)",
+        "explanation": "Solve algebraically: Simplify and solve for the variable.",
+        "workingOut": "\\text{Isolate the variable to find the answer.}",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 8. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Final Answer & Pitfall: When finding base angles of an isosceles triangle, remember to subtract the vertex angle from 180^{\\circ} *before* dividing by 2.",
         "workingOut": "\\(8\\)",
         "graphData": null
       }
@@ -4210,22 +2655,22 @@ export const Y10_CH8A_QUESTIONS = [
     "solution": "The correct answer is \\(45\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of triangles: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(540 - 450 = 90. 90 / 2 = 45^\\circ\\)",
+        "explanation": "Identify the shape: State the polygon type and the relevant angle rule.",
+        "workingOut": "Angle sum of triangle = 180^{\\circ}, quadrilateral = 360^{\\circ}.",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Set up the equation: Write the algebraic equation for the unknown angles.",
+        "workingOut": "\\text{Sum of known angles} + \\text{Unknown} = \\text{Total Sum}",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(45\\)",
+        "explanation": "Solve algebraically: Simplify and solve for the variable.",
+        "workingOut": "\\text{Isolate the variable to find the answer.}",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 45. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Final Answer & Pitfall: When finding base angles of an isosceles triangle, remember to subtract the vertex angle from 180^{\\circ} *before* dividing by 2.",
         "workingOut": "\\(45\\)",
         "graphData": null
       }

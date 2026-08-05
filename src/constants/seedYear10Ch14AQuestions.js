@@ -1473,7 +1473,7 @@ export const Y10_CH14A_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Solve for \\(x\\) by taking the appropriate root (or writing \\(N\\) as a pure power). The base of a logarithm must satisfy \\(x > 0\\) and \\(x \\neq 1\\).",
+        "explanation": "Solve for \\(x\\) by taking the appropriate root (or writing \\(N\\) as a pure power). The base of a logarithm must satisfy \\(x > 0\\) and \\(x \neq 1\\).",
         "workingOut": "\\(x = \\sqrt{81}\\)",
         "graphData": null
       },
@@ -1511,7 +1511,7 @@ export const Y10_CH14A_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Solve for \\(x\\) by taking the appropriate root (or writing \\(N\\) as a pure power). The base of a logarithm must satisfy \\(x > 0\\) and \\(x \\neq 1\\).",
+        "explanation": "Solve for \\(x\\) by taking the appropriate root (or writing \\(N\\) as a pure power). The base of a logarithm must satisfy \\(x > 0\\) and \\(x \neq 1\\).",
         "workingOut": "\\(x = \\sqrt[4]{16}\\)",
         "graphData": null
       },
@@ -1556,7 +1556,7 @@ export const Y10_CH14A_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Solve for \\(x\\) by taking the appropriate root (or writing \\(N\\) as a pure power). The base of a logarithm must satisfy \\(x > 0\\) and \\(x \\neq 1\\).",
+        "explanation": "Solve for \\(x\\) by taking the appropriate root (or writing \\(N\\) as a pure power). The base of a logarithm must satisfy \\(x > 0\\) and \\(x \neq 1\\).",
         "workingOut": "\\(x = \\sqrt[5]{1024}\\)",
         "graphData": null
       },
@@ -1594,7 +1594,7 @@ export const Y10_CH14A_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Solve for \\(x\\) by taking the appropriate root (or writing \\(N\\) as a pure power). The base of a logarithm must satisfy \\(x > 0\\) and \\(x \\neq 1\\).",
+        "explanation": "Solve for \\(x\\) by taking the appropriate root (or writing \\(N\\) as a pure power). The base of a logarithm must satisfy \\(x > 0\\) and \\(x \neq 1\\).",
         "workingOut": "\\(x = \\sqrt[10]{1024}\\)",
         "graphData": null
       },
@@ -1639,7 +1639,7 @@ export const Y10_CH14A_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Solve for \\(x\\) by taking the appropriate root (or writing \\(N\\) as a pure power). The base of a logarithm must satisfy \\(x > 0\\) and \\(x \\neq 1\\).",
+        "explanation": "Solve for \\(x\\) by taking the appropriate root (or writing \\(N\\) as a pure power). The base of a logarithm must satisfy \\(x > 0\\) and \\(x \neq 1\\).",
         "workingOut": "\\(x = \\sqrt{25}\\)",
         "graphData": null
       },
@@ -1684,7 +1684,7 @@ export const Y10_CH14A_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Solve for \\(x\\) by taking the appropriate root (or writing \\(N\\) as a pure power). The base of a logarithm must satisfy \\(x > 0\\) and \\(x \\neq 1\\).",
+        "explanation": "Solve for \\(x\\) by taking the appropriate root (or writing \\(N\\) as a pure power). The base of a logarithm must satisfy \\(x > 0\\) and \\(x \neq 1\\).",
         "workingOut": "\\(x = \\sqrt[3]{1000}\\)",
         "graphData": null
       },

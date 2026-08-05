@@ -98,7 +98,7 @@ export const robustNormalize = (str, isAlgebraic = false) => {
     .replace(/\\\$/g, '').replace(/\$/g, '')
     .replace(/[{}]/g, '')
     .replace(/\s+/g, '')
-    .replace(/[,.;]/g, '')
+    .replace(/[,;]/g, '')
     .replace(/\\ge|\\geq|≥/g, '>=')
     .replace(/\\le|\\leq|≤/g, '<=')
     .trim();
@@ -225,8 +225,10 @@ export const expandAnswerCandidates = (value) => {
   // one-letter fragment and grade as matching each other — a wrong option
   // silently grades correct (728 seed option/answer strings affected;
   // caught via abb2020e1s-mc10, 2026-07-21).
-  const parts = stripped
+  const withPlaceholder = stripped.replace(/\\text\s*\{\s*or\s*\}/gi, '__LATEX_OR__');
+  const parts = withPlaceholder
     .split(/\s*\(?\s*\bor\b\s*\)?\s*/i)
+    .map((p) => p.replace(/__LATEX_OR__/g, '\\text{ or }'))
     .map((p) => stripOuterParens(p))
     .filter(Boolean);
   const out = [];

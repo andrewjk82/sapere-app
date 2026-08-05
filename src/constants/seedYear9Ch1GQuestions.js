@@ -4,7 +4,7 @@ export const Y9_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Expand the binomial product using the difference of two squares identity:\\n\\((x-5)(x+5)\\).",
+    "question": "Expand the binomial product using the difference of two squares identity:\n\\((x-5)(x+5)\\).",
     "a": "3",
     "opts": [
       "\\(x^2+25\\)",
@@ -33,7 +33,7 @@ export const Y9_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Expand the binomial product using the difference of two squares identity:\\n\\((y-8)(y+8)\\).",
+    "question": "Expand the binomial product using the difference of two squares identity:\n\\((y-8)(y+8)\\).",
     "a": "3",
     "opts": [
       "\\(y^2-8\\)",
@@ -62,7 +62,7 @@ export const Y9_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Expand the binomial product using the difference of two squares identity:\\n\\((a-4)(a+4)\\).",
+    "question": "Expand the binomial product using the difference of two squares identity:\n\\((a-4)(a+4)\\).",
     "a": "0",
     "opts": [
       "\\(a^2-16\\)",
@@ -91,7 +91,7 @@ export const Y9_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Expand the binomial product using the difference of two squares identity:\\n\\((b-9)(b+9)\\).",
+    "question": "Expand the binomial product using the difference of two squares identity:\n\\((b-9)(b+9)\\).",
     "a": "0",
     "opts": [
       "\\(b^2-81\\)",
@@ -120,7 +120,7 @@ export const Y9_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Expand the binomial product using the difference of two squares identity:\\n\\((z-6)(z+6)\\).",
+    "question": "Expand the binomial product using the difference of two squares identity:\n\\((z-6)(z+6)\\).",
     "a": "3",
     "opts": [
       "\\(z^2-6\\)",
@@ -149,7 +149,7 @@ export const Y9_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Expand the binomial product using the difference of two squares identity:\\n\\((p-3)(p+3)\\).",
+    "question": "Expand the binomial product using the difference of two squares identity:\n\\((p-3)(p+3)\\).",
     "a": "3",
     "opts": [
       "\\(p^2-3\\)",
@@ -178,7 +178,7 @@ export const Y9_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Expand the binomial product using the difference of two squares identity:\\n\\((w-8)(8+w)\\).",
+    "question": "Expand the binomial product using the difference of two squares identity:\n\\((w-8)(8+w)\\).",
     "a": "3",
     "opts": [
       "\\(w^2+64\\)",
@@ -207,7 +207,7 @@ export const Y9_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Expand the binomial product using the difference of two squares identity:\\n\\((12+x)(12-x)\\).",
+    "question": "Expand the binomial product using the difference of two squares identity:\n\\((12+x)(12-x)\\).",
     "a": "2",
     "opts": [
       "\\(144+x^2\\)",
@@ -236,7 +236,7 @@ export const Y9_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Expand the binomial product using the difference of two squares identity:\\n\\((m-7)(m+7)\\).",
+    "question": "Expand the binomial product using the difference of two squares identity:\n\\((m-7)(m+7)\\).",
     "a": "3",
     "opts": [
       "\\(m^2+49\\)",
@@ -265,7 +265,7 @@ export const Y9_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Expand:\\n\\((3x-1)(3x+1)\\).",
+    "question": "Expand:\n\\((3x-1)(3x+1)\\).",
     "a": "3",
     "opts": [
       "\\(3x^2-1\\)",
@@ -294,7 +294,7 @@ export const Y9_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Expand:\\n\\((4m-3)(4m+3)\\).",
+    "question": "Expand:\n\\((4m-3)(4m+3)\\).",
     "a": "0",
     "opts": [
       "\\(16m^2-9\\)",
@@ -323,7 +323,7 @@ export const Y9_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Expand:\\n\\((2a-5)(2a+5)\\).",
+    "question": "Expand:\n\\((2a-5)(2a+5)\\).",
     "a": "1",
     "opts": [
       "\\(4a^2+25\\)",
@@ -352,7 +352,7 @@ export const Y9_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Expand:\\n\\((5x-3)(5x+3)\\).",
+    "question": "Expand:\n\\((5x-3)(5x+3)\\).",
     "a": 3,
     "opts": [
       "\\(25x^2+9\\)",
@@ -381,7 +381,7 @@ export const Y9_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Expand:\\n\\((3y+5)(3y-5)\\).",
+    "question": "Expand:\n\\((3y+5)(3y-5)\\).",
     "a": "3",
     "opts": [
       "\\(9y^2+25\\)",
@@ -410,7 +410,7 @@ export const Y9_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Expand:\\n\\((6b+5)(6b-5)\\).",
+    "question": "Expand:\n\\((6b+5)(6b-5)\\).",
     "a": "1",
     "opts": [
       "\\(36b^2+25\\)",
@@ -439,7 +439,7 @@ export const Y9_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Expand and simplify:\\n\\((7-2x)(7+2x)\\).",
+    "question": "Expand and simplify:\n\\((7-2x)(7+2x)\\).",
     "a": "1",
     "opts": [
       "\\(49+4x^2\\)",
@@ -468,7 +468,7 @@ export const Y9_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Expand and simplify:\\n\\((2a+5b)(2a-5b)\\).",
+    "question": "Expand and simplify:\n\\((2a+5b)(2a-5b)\\).",
     "a": "1",
     "opts": [
       "\\(4a^2+25b^2\\)",
@@ -497,7 +497,7 @@ export const Y9_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Expand and simplify:\\n\\((8x+y)(8x-y)\\).",
+    "question": "Expand and simplify:\n\\((8x+y)(8x-y)\\).",
     "a": "0",
     "opts": [
       "\\(64x^2-y^2\\)",
@@ -526,7 +526,7 @@ export const Y9_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Expand and simplify:\\n\\((3m-4n)(3m+4n)\\).",
+    "question": "Expand and simplify:\n\\((3m-4n)(3m+4n)\\).",
     "a": "1",
     "opts": [
       "\\(9m^2-24mn+16n^2\\)",
@@ -555,7 +555,7 @@ export const Y9_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Expand and simplify:\\n\\((3x+5y)(3x-5y)\\).",
+    "question": "Expand and simplify:\n\\((3x+5y)(3x-5y)\\).",
     "a": "3",
     "opts": [
       "\\(3x^2-5y^2\\)",
@@ -584,7 +584,7 @@ export const Y9_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Expand and simplify:\\n\\((4p+3q)(4p-3q)\\).",
+    "question": "Expand and simplify:\n\\((4p+3q)(4p-3q)\\).",
     "a": "1",
     "opts": [
       "\\(16p^2-24pq+9q^2\\)",
@@ -613,7 +613,7 @@ export const Y9_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Expand using the difference of two squares:\\n\\((\\frac{3x}{2}+1)(\\frac{3x}{2}-1)\\).",
+    "question": "Expand using the difference of two squares:\n\\((\\frac{3x}{2}+1)(\\frac{3x}{2}-1)\\).",
     "a": "1",
     "opts": [
       "\\(\\frac{9x^2}{2}-1\\)",
@@ -642,7 +642,7 @@ export const Y9_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Expand using the difference of two squares:\\n\\((\\frac{x}{3}+4)(\\frac{x}{3}-4)\\).",
+    "question": "Expand using the difference of two squares:\n\\((\\frac{x}{3}+4)(\\frac{x}{3}-4)\\).",
     "a": "0",
     "opts": [
       "\\(\\frac{x^2}{9}-16\\)",
@@ -671,7 +671,7 @@ export const Y9_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Expand using the difference of two squares:\\n\\((\\frac{x}{2}+\\frac{1}{3})(\\frac{x}{2}-\\frac{1}{3)\\).",
+    "question": "Expand using the difference of two squares:\n\\((\\frac{x}{2}+\\frac{1}{3})(\\frac{x}{2}-\\frac{1}{3)\\).",
     "a": "2",
     "opts": [
       "\\(\\frac{x^2}{4}-\\frac{1}{6}\\)",
@@ -700,7 +700,7 @@ export const Y9_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Expand using the difference of two squares:\\n\\((\\frac{3x}{5}+\\frac{2}{3})(\\frac{3x}{5}-\\frac{2}{3)\\).",
+    "question": "Expand using the difference of two squares:\n\\((\\frac{3x}{5}+\\frac{2}{3})(\\frac{3x}{5}-\\frac{2}{3)\\).",
     "a": "1",
     "opts": [
       "\\(\\frac{3x^2}{5}-\\frac{4}{9}\\)",
@@ -729,7 +729,7 @@ export const Y9_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Identify which algebraic expansion type matches:\\n\\(y^2-1\\).",
+    "question": "Identify which algebraic expansion type matches:\n\\(y^2-1\\).",
     "a": "0",
     "opts": [
       "Difference of squares expansion",
@@ -758,7 +758,7 @@ export const Y9_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Identify which algebraic expansion type matches:\\n\\(y^2-4y+4\\).",
+    "question": "Identify which algebraic expansion type matches:\n\\(y^2-4y+4\\).",
     "a": "1",
     "opts": [
       "Difference of squares expansion",
@@ -787,7 +787,7 @@ export const Y9_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Identify which algebraic expansion type matches:\\n\\(x^2-16\\).",
+    "question": "Identify which algebraic expansion type matches:\n\\(x^2-16\\).",
     "a": "0",
     "opts": [
       "Difference of squares expansion",
@@ -816,7 +816,7 @@ export const Y9_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Identify which algebraic expansion type matches:\\n\\(9x^2-36\\).",
+    "question": "Identify which algebraic expansion type matches:\n\\(9x^2-36\\).",
     "a": "0",
     "opts": [
       "Difference of squares expansion",
@@ -845,7 +845,7 @@ export const Y9_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Identify which algebraic expansion type matches:\\n\\(9a^2+24a+16\\).",
+    "question": "Identify which algebraic expansion type matches:\n\\(9a^2+24a+16\\).",
     "a": "1",
     "opts": [
       "Difference of squares expansion",
@@ -874,7 +874,7 @@ export const Y9_CH1G_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Identify which algebraic expansion type matches:\\n\\(16b^2-8b+1\\).",
+    "question": "Identify which algebraic expansion type matches:\n\\(16b^2-8b+1\\).",
     "a": "1",
     "opts": [
       "Difference of squares expansion",

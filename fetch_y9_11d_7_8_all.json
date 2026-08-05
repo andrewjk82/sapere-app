@@ -1,0 +1,538 @@
+{
+  "y9-11d-q7a": {
+    "chapterId": "y9-11",
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "topicId": "y9-11d",
+    "topicCode": "11D",
+    "topicTitle": "The equation of a straight line",
+    "year": "Year 9",
+    "isManual": true,
+    "question": "Find the \\(y\\)-coordinate of the point on the line \\(y = -4x + 3\\) with \\(x\\)-coordinate \\(4\\).",
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "requiresManualGrading": false,
+    "hint": "Substitute the x-value and evaluate y.",
+    "solution": "Substitute \\(x = 4\\) into the equation:\n\\(y = -4(4) + 3 = -13\\).",
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830225,
+      "_nanoseconds": 399000000
+    },
+    "answer": "1",
+    "origin": "seed",
+    "isActive": true,
+    "title": "Find the y-coordinate of the point on th...",
+    "type": "multiple_choice",
+    "isNew": false,
+    "solutionSteps": [
+      {
+        "explanation": "Substitute the $x$-coordinate of the point $(0, 0)$ into the equation.",
+        "workingOut": "x = 0",
+        "graphData": {
+          "jsxGraph": {
+            "width": 360,
+            "height": 280,
+            "boundingbox": [
+              -6,
+              6,
+              6,
+              -6
+            ],
+            "script": "board.suspendUpdate(); board.create('arrow', [[-6,0],[6,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-6],[0,6]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [5.28, -2.0999999999999996, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 5.4, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return (-4)*x + (+3); }, -5.5, 5.5], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [2.2, 3.5, 'y = -4x++3'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+          }
+        }
+      },
+      {
+        "explanation": "Calculate the corresponding $y$-value.",
+        "workingOut": "y = 0",
+        "graphData": null
+      },
+      {
+        "explanation": "Since the calculated $y$-value does not match the $y$-coordinate of the given point $(0, 0)$, it does not lie on the line.",
+        "workingOut": "0 \\neq 0 \\implies \\text{No}",
+        "graphData": {
+          "jsxGraph": {
+            "boundingbox": [
+              -6,
+              6,
+              6,
+              -6
+            ],
+            "width": 360,
+            "script": "board.suspendUpdate(); board.create('arrow', [[-6,0],[6,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-6],[0,6]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [5.28, -2.0999999999999996, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 5.4, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return (-4)*x + (+3); }, -5.5, 5.5], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [2.2, 3.5, 'y = -4x++3'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();",
+            "height": 280
+          }
+        }
+      },
+      {
+        "explanation": "Final answer: -13. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(-13\\)",
+        "graphData": null
+      }
+    ],
+    "options": [
+      {
+        "text": "Yes",
+        "imageUrl": ""
+      },
+      {
+        "text": "No",
+        "imageUrl": ""
+      }
+    ],
+    "graphData": null,
+    "updatedAt": {
+      "_seconds": 1784970702,
+      "_nanoseconds": 84000000
+    }
+  },
+  "y9-11d-q7b": {
+    "chapterId": "y9-11",
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "topicId": "y9-11d",
+    "topicCode": "11D",
+    "topicTitle": "The equation of a straight line",
+    "year": "Year 9",
+    "isManual": true,
+    "question": "Find the \\(y\\)-coordinate of the point on the line \\(y = -4x + 3\\) with \\(x\\)-coordinate \\(-2\\).",
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "requiresManualGrading": false,
+    "hint": "Substitute the x-value and evaluate y.",
+    "solution": "Substitute \\(x = -2\\) into the equation:\n\\(y = -4(-2) + 3 = 11\\).",
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830225,
+      "_nanoseconds": 399000000
+    },
+    "origin": "seed",
+    "isActive": true,
+    "title": "Find the y-coordinate of the point on th...",
+    "type": "multiple_choice",
+    "isNew": false,
+    "solutionSteps": [
+      {
+        "explanation": "Substitute the $x$-coordinate of the point $(0, 0)$ into the equation.",
+        "workingOut": "x = 0",
+        "graphData": {
+          "jsxGraph": {
+            "width": 360,
+            "height": 280,
+            "boundingbox": [
+              -6,
+              6,
+              6,
+              -6
+            ],
+            "script": "board.suspendUpdate(); board.create('arrow', [[-6,0],[6,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-6],[0,6]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [5.28, -2.0999999999999996, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 5.4, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return (-4)*x + (+3); }, -5.5, 5.5], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [2.2, 3.5, 'y = -4x++3'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+          }
+        }
+      },
+      {
+        "explanation": "Calculate the corresponding $y$-value.",
+        "workingOut": "y = 0",
+        "graphData": null
+      },
+      {
+        "explanation": "Since the calculated $y$-value matches the $y$-coordinate of the given point $(0, 0)$, it lies on the line.",
+        "workingOut": "0 = 0 \\implies \\text{Yes}",
+        "graphData": {
+          "jsxGraph": {
+            "boundingbox": [
+              -6,
+              6,
+              6,
+              -6
+            ],
+            "width": 360,
+            "script": "board.suspendUpdate(); board.create('arrow', [[-6,0],[6,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-6],[0,6]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [5.28, -2.0999999999999996, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 5.4, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return (-4)*x + (+3); }, -5.5, 5.5], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [2.2, 3.5, 'y = -4x++3'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();",
+            "height": 280
+          }
+        }
+      },
+      {
+        "explanation": "Final answer: 11. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(11\\)",
+        "graphData": null
+      }
+    ],
+    "answer": "0",
+    "options": [
+      {
+        "text": "Yes",
+        "imageUrl": ""
+      },
+      {
+        "text": "No",
+        "imageUrl": ""
+      }
+    ],
+    "graphData": null,
+    "updatedAt": {
+      "_seconds": 1784970702,
+      "_nanoseconds": 84000000
+    }
+  },
+  "y9-11d-q7c": {
+    "chapterId": "y9-11",
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "topicId": "y9-11d",
+    "topicCode": "11D",
+    "topicTitle": "The equation of a straight line",
+    "year": "Year 9",
+    "isManual": true,
+    "question": "Find the \\(y\\)-coordinate of the point on the line \\(y = -4x + 3\\) with \\(x\\)-coordinate \\(0\\).",
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "hint": "Substitute the x-value and evaluate y.",
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830225,
+      "_nanoseconds": 399000000
+    },
+    "solution": "3",
+    "isActive": true,
+    "title": "Find the y-coordinate of the point on th...",
+    "isNew": false,
+    "answer": "0",
+    "graphData": null,
+    "type": "multiple_choice",
+    "requiresManualGrading": false,
+    "solutionSteps": [
+      {
+        "explanation": "To find the $y$-coordinate, substitute the given $x$-coordinate into the equation of the line.",
+        "workingOut": "y = -4x + 3 \\\\ x = 0",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the $y$-value.",
+        "workingOut": "y = -4(0) + 3 \\\\ y = 3",
+        "graphData": null
+      },
+      {
+        "explanation": "Therefore, the $y$-coordinate is $3$.",
+        "workingOut": "3",
+        "graphData": {
+          "jsxGraph": {
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-6,0],[6,0]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('arrow', [[0,-6],[0,6]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('text', [5.28, -2.1, 'x'], {fontSize:13, color:'#64748b'});\nboard.create('text', [0.12, 5.4, 'y'], {fontSize:13, color:'#64748b'});\nboard.create('functiongraph', [function(x){ return -4*x + 3; }, -5.5, 5.5], {strokeColor:'#6366f1', strokeWidth:2.6});\nboard.unsuspendUpdate();",
+            "width": 360,
+            "boundingbox": [
+              -6,
+              6,
+              6,
+              -6
+            ],
+            "height": 280
+          }
+        }
+      }
+    ],
+    "acceptedAnswers": [],
+    "origin": "teacher",
+    "options": [
+      {
+        "imageUrl": "",
+        "text": "$3$"
+      },
+      {
+        "imageUrl": "",
+        "text": "$-4$"
+      },
+      {
+        "imageUrl": "",
+        "text": "$0$"
+      },
+      {
+        "text": "$4$",
+        "imageUrl": ""
+      }
+    ],
+    "updatedAt": {
+      "_methodName": "serverTimestamp"
+    }
+  },
+  "y9-11d-q8a": {
+    "chapterId": "y9-11",
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "topicId": "y9-11d",
+    "topicCode": "11D",
+    "topicTitle": "The equation of a straight line",
+    "year": "Year 9",
+    "isManual": true,
+    "question": "Find the \\(x\\)-coordinate of the point on the line \\(y = 3x + 9\\) with \\(y\\)-coordinate \\(12\\).",
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "hint": "Substitute the y-value and solve the linear equation for x.",
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830225,
+      "_nanoseconds": 399000000
+    },
+    "solution": "1",
+    "origin": "seed",
+    "isActive": true,
+    "title": "Find the x-coordinate of the point on th...",
+    "isNew": false,
+    "solutionSteps": [
+      {
+        "explanation": "To find the $x$-coordinate, substitute the given $y$-coordinate into the equation of the line.",
+        "workingOut": "y = 3x + 9 \\\\ y = 12"
+      },
+      {
+        "explanation": "Set up the equation and isolate $x$.",
+        "workingOut": "12 = 3x + 9 \\\\ 12 - 9 = 3x \\\\ 3 = 3x"
+      },
+      {
+        "explanation": "Solve for $x$.",
+        "workingOut": "x = \\frac{3}{3} \\\\ x = 1",
+        "graphData": {
+          "jsxGraph": {
+            "width": 360,
+            "height": 280,
+            "boundingbox": [
+              -6,
+              6,
+              6,
+              -6
+            ],
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-6,0],[6,0]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('arrow', [[0,-6],[0,6]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('text', [5.28, -2.1, 'x'], {fontSize:13, color:'#64748b'});\nboard.create('text', [0.12, 5.4, 'y'], {fontSize:13, color:'#64748b'});\nboard.create('functiongraph', [function(x){ return 3*x + 9; }, -5.5, 5.5], {strokeColor:'#6366f1', strokeWidth:2.6});\nboard.unsuspendUpdate();"
+          }
+        }
+      }
+    ],
+    "answer": "0",
+    "options": [
+      {
+        "text": "$1$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$2$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$3$",
+        "imageUrl": ""
+      },
+      {
+        "text": "$4$",
+        "imageUrl": ""
+      }
+    ],
+    "graphData": null,
+    "type": "multiple_choice",
+    "requiresManualGrading": false,
+    "updatedAt": {
+      "_seconds": 1784971016,
+      "_nanoseconds": 154000000
+    }
+  },
+  "y9-11d-q8b": {
+    "chapterId": "y9-11",
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "topicId": "y9-11d",
+    "topicCode": "11D",
+    "topicTitle": "The equation of a straight line",
+    "year": "Year 9",
+    "isManual": true,
+    "question": "Find the \\(x\\)-coordinate of the point on the line \\(y = 3x + 9\\) with \\(y\\)-coordinate \\(0\\).",
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "requiresManualGrading": false,
+    "hint": "Substitute the y-value and solve the linear equation for x.",
+    "solution": "Substitute \\(y = 0\\) into the equation and solve for \\(x\\):\n\\(0 = 3x + 9\\)\n\\(3x = -9\\)\n\\(x = -3\\).",
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830225,
+      "_nanoseconds": 399000000
+    },
+    "answer": "1",
+    "graphData": {
+      "jsxGraph": {
+        "boundingbox": [
+          -6,
+          6,
+          6,
+          -6
+        ],
+        "width": 360,
+        "script": "board.suspendUpdate(); board.create('arrow', [[-6,0],[6,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-6],[0,6]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [5.28, -2.0999999999999996, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 5.4, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return (3)*x + (+9); }, -5.5, 5.5], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [2.2, 3.5, 'y = 3x++9'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();",
+        "height": 280
+      }
+    },
+    "isActive": true,
+    "title": "Find the x-coordinate of the point on th...",
+    "type": "multiple_choice",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The equation of a straight line: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": {
+          "jsxGraph": {
+            "width": 360,
+            "height": 280,
+            "boundingbox": [
+              -6,
+              6,
+              6,
+              -6
+            ],
+            "script": "board.suspendUpdate(); board.create('arrow', [[-6,0],[6,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-6],[0,6]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [5.28, -2.0999999999999996, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 5.4, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return (3)*x + (+9); }, -5.5, 5.5], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [2.2, 3.5, 'y = 3x++9'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+          }
+        }
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(3x = -9 \\implies x = -3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(-3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: -3. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(-3\\)",
+        "graphData": null
+      }
+    ],
+    "isNew": false,
+    "acceptedAnswers": [],
+    "origin": "teacher",
+    "options": [
+      {
+        "imageUrl": "",
+        "text": "\\(4\\)"
+      },
+      {
+        "imageUrl": "",
+        "text": "\\(-3\\)"
+      },
+      {
+        "imageUrl": "",
+        "text": "\\(-4\\)"
+      },
+      {
+        "imageUrl": "",
+        "text": "\\(3\\)"
+      }
+    ],
+    "updatedAt": {
+      "_methodName": "serverTimestamp"
+    }
+  },
+  "y9-11d-q8c": {
+    "chapterId": "y9-11",
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "topicId": "y9-11d",
+    "topicCode": "11D",
+    "topicTitle": "The equation of a straight line",
+    "year": "Year 9",
+    "isManual": true,
+    "question": "Find the \\(x\\)-coordinate of the point on the line \\(y = 3x + 9\\) with \\(y\\)-coordinate \\(-3\\).",
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "requiresManualGrading": false,
+    "hint": "Substitute the y-value and solve the linear equation for x.",
+    "solution": "Substitute \\(y = -3\\) into the equation and solve for \\(x\\):\n\\(-3 = 3x + 9\\)\n\\(3x = -12\\)\n\\(x = -4\\).",
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830225,
+      "_nanoseconds": 399000000
+    },
+    "answer": "1",
+    "graphData": {
+      "jsxGraph": {
+        "boundingbox": [
+          -6,
+          6,
+          6,
+          -6
+        ],
+        "width": 360,
+        "script": "board.suspendUpdate(); board.create('arrow', [[-6,0],[6,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-6],[0,6]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [5.28, -2.0999999999999996, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 5.4, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return (3)*x + (+9); }, -5.5, 5.5], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [2.2, 3.5, 'y = 3x++9'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();",
+        "height": 280
+      }
+    },
+    "isActive": true,
+    "title": "Find the x-coordinate of the point on th...",
+    "type": "multiple_choice",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The equation of a straight line: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": {
+          "jsxGraph": {
+            "width": 360,
+            "height": 280,
+            "boundingbox": [
+              -6,
+              6,
+              6,
+              -6
+            ],
+            "script": "board.suspendUpdate(); board.create('arrow', [[-6,0],[6,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-6],[0,6]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [5.28, -2.0999999999999996, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 5.4, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return (3)*x + (+9); }, -5.5, 5.5], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [2.2, 3.5, 'y = 3x++9'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+          }
+        }
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(3x = -12 \\implies x = -4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(-4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: -4. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(-4\\)",
+        "graphData": null
+      }
+    ],
+    "isNew": false,
+    "acceptedAnswers": [],
+    "origin": "teacher",
+    "options": [
+      {
+        "imageUrl": "",
+        "text": "\\(5\\)"
+      },
+      {
+        "text": "\\(-4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-5\\)",
+        "imageUrl": ""
+      },
+      {
+        "imageUrl": "",
+        "text": "\\(4\\)"
+      }
+    ],
+    "updatedAt": {
+      "_methodName": "serverTimestamp"
+    }
+  }
+}

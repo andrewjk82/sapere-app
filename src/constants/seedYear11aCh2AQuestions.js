@@ -28,7 +28,7 @@ export const Y11A_CH2A_QUESTIONS = [
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "A rational number can be expressed as \\(p/q\\) where \\(p, q\\) are integers and \\(q \\ne 0\\).",
+        "explanation": "A rational number can be expressed as \\(p/q\\) where \\(p, q\\) are integers and \\(q \ne 0\\).",
         "workingOut": "",
         "graphData": null
       },

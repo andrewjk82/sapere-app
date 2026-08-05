@@ -4,114 +4,141 @@ export const Y11_CH7C_QUESTIONS = [
     "topicId": "y11a-7C",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Determine, by substitution, whether the point \\(A(2, -3)\\) lies on the line: \\(y = 3x - 9\\) (enter 'yes' or 'no').",
-    "answer": "1",
+    "question": "Determine, by substitution, whether the point \\(A(2, -3)\\) lies on the line \\(y = 3x - 9\\).",
+    "answer": 0,
     "hint": "Substitute x = 2 and y = -3 into the equation and check if the LHS equals the RHS.",
-    "solution": "1",
+    "solution": "Yes",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "x = 2, quad y = -3",
+        "explanation": "Substitute the coordinates of \\(A(2, -3)\\) into the right hand side (RHS) of the equation.",
+        "workingOut": "\\( \\text{RHS} = 3(2) - 9 \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(\\text{Answer: } yes\\)",
+        "explanation": "Evaluate the RHS.",
+        "workingOut": "\\( \\text{RHS} = 6 - 9 = -3 \\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(1\\)",
+        "explanation": "Compare with the LHS (y-coordinate).",
+        "workingOut": "\\( \\text{LHS} = -3 \\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 1. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(1\\)",
+        "explanation": "Since LHS = RHS, the point lies on the line.",
+        "workingOut": "\\( -3 = -3 \\implies \\text{Yes} \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": true
+    "options": [
+      {
+        "text": "Yes",
+        "imageUrl": ""
+      },
+      {
+        "text": "No",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q1b",
     "topicId": "y11a-7C",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Determine, by substitution, whether the point \\(A(2, -3)\\) lies on the line: \\(5x + 3y - 1 = 0\\) (enter 'yes' or 'no').",
-    "answer": "0",
+    "question": "Determine, by substitution, whether the point \\(A(2, -3)\\) lies on the line \\(5x + 3y - 1 = 0\\).",
+    "answer": 0,
     "hint": "Substitute x = 2 and y = -3 into the equation and check if the LHS equals the RHS.",
-    "solution": "0",
+    "solution": "Yes",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "x = 2, quad y = -3",
+        "explanation": "Substitute the coordinates of \\(A(2, -3)\\) into the left hand side (LHS) of the equation.",
+        "workingOut": "\\( \\text{LHS} = 5(2) + 3(-3) - 1 \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(\\text{Answer: } yes\\)",
+        "explanation": "Evaluate the LHS.",
+        "workingOut": "\\( \\text{LHS} = 10 - 9 - 1 = 0 \\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(0\\)",
+        "explanation": "Compare with the RHS.",
+        "workingOut": "\\( \\text{RHS} = 0 \\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 0. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(0\\)",
+        "explanation": "Since LHS = RHS, the point lies on the line.",
+        "workingOut": "\\( 0 = 0 \\implies \\text{Yes} \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": true
+    "options": [
+      {
+        "text": "Yes",
+        "imageUrl": ""
+      },
+      {
+        "text": "No",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q1c",
     "topicId": "y11a-7C",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Determine, by substitution, whether the point \\(A(2, -3)\\) lies on the line: \\(x = 4\\) (enter 'yes' or 'no').",
-    "answer": "1",
+    "question": "Determine, by substitution, whether the point \\(A(2, -3)\\) lies on the line \\(x = 4\\).",
+    "answer": 1,
     "hint": "Substitute x = 2 and y = -3 into the equation and check if the LHS equals the RHS.",
-    "solution": "1",
+    "solution": "No",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "x = 2, quad y = -3",
+        "explanation": "The equation of the line is a vertical line \\(x = 4\\).",
+        "workingOut": "\\( x = 4 \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(\\text{Answer: } no\\)",
+        "explanation": "The x-coordinate of point \\(A(2, -3)\\) is 2.",
+        "workingOut": "\\( x = 2 \\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(1\\)",
+        "explanation": "Compare the x-coordinates.",
+        "workingOut": "\\( 2 \\neq 4 \\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 1. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(1\\)",
+        "explanation": "Since they are not equal, the point does not lie on the line.",
+        "workingOut": "\\( \\text{No} \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": true
+    "options": [
+      {
+        "text": "Yes",
+        "imageUrl": ""
+      },
+      {
+        "text": "No",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q2a-xint",
@@ -129,34 +156,46 @@ export const Y11_CH7C_QUESTIONS = [
       "\\(-5\\)"
     ],
     "a": 2,
-    "answer": "2",
+    "answer": 0,
     "hint": "To find the x-intercept, substitute y = 0 into the equation and solve for x.",
-    "solution": "Set \\(y = 0\\): 2x + 5(0) = 10 \\implies 2x = 10 \\implies x = 5",
+    "solution": "\\( x = 5 \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(y = 0\\)",
+        "explanation": "To find the x-intercept, set \\(y = 0\\).",
+        "workingOut": "\\( 2x + 5(0) = 10 \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(2x + 5(0) = 10 \\implies 2x = 10 \\implies x = 5\\)",
+        "explanation": "Simplify the equation.",
+        "workingOut": "\\( 2x = 10 \\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(5\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: 5. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(5\\)",
+        "explanation": "Solve for \\(x\\).",
+        "workingOut": "\\( x = 5 \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( x = 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -2 \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q2a-yint",
@@ -174,34 +213,46 @@ export const Y11_CH7C_QUESTIONS = [
       "\\(1\\)"
     ],
     "a": 1,
-    "answer": "1",
+    "answer": 1,
     "hint": "To find the y-intercept, substitute x = 0 into the equation and solve for y.",
-    "solution": "Set \\(x = 0\\): 2(0) + 5y = 10 \\implies 5y = 10 \\implies y = 2",
+    "solution": "\\( y = 2 \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(x = 0\\)",
+        "explanation": "To find the y-intercept, set \\(x = 0\\).",
+        "workingOut": "\\( 2(0) + 5y = 10 \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(2(0) + 5y = 10 \\implies 5y = 10 \\implies y = 2\\)",
+        "explanation": "Simplify the equation.",
+        "workingOut": "\\( 5y = 10 \\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(2\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: 2. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(2\\)",
+        "explanation": "Solve for \\(y\\).",
+        "workingOut": "\\( y = 2 \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( y = 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = -5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = -2 \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q2b-xint",
@@ -219,34 +270,46 @@ export const Y11_CH7C_QUESTIONS = [
       "\\(2\\)"
     ],
     "a": 0,
-    "answer": "0",
+    "answer": 0,
     "hint": "To find the x-intercept, substitute y = 0 into the equation and solve for x.",
-    "solution": "Set \\(y = 0\\): 0 = 3x - 9 \\implies 3x = 9 \\implies x = 3",
+    "solution": "\\( x = 3 \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(y = 0\\)",
+        "explanation": "To find the x-intercept, set \\(y = 0\\).",
+        "workingOut": "\\( 0 = 3x - 9 \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(0 = 3x - 9 \\implies 3x = 9 \\implies x = 3\\)",
+        "explanation": "Rearrange to solve for x.",
+        "workingOut": "\\( 3x = 9 \\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(3\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: 3. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(3\\)",
+        "explanation": "Divide by 3.",
+        "workingOut": "\\( x = 3 \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( x = 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -9 \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q2b-yint",
@@ -264,34 +327,41 @@ export const Y11_CH7C_QUESTIONS = [
       "\\(-10\\)"
     ],
     "a": 0,
-    "answer": "0",
+    "answer": 0,
     "hint": "To find the y-intercept, substitute x = 0 into the equation and solve for y.",
-    "solution": "Set \\(x = 0\\): y = 3(0) - 9 \\implies y = -9",
+    "solution": "\\( y = -9 \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(x = 0\\)",
+        "explanation": "To find the y-intercept, set \\(x = 0\\).",
+        "workingOut": "\\( y = 3(0) - 9 \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(y = 3(0) - 9 \\implies y = -9\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(-9\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: -9. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(-9\\)",
+        "explanation": "Simplify.",
+        "workingOut": "\\( y = -9 \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( y = -9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 3 \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q2c-xint",
@@ -309,34 +379,41 @@ export const Y11_CH7C_QUESTIONS = [
       "\\(7\\)"
     ],
     "a": 0,
-    "answer": "0",
+    "answer": 0,
     "hint": "To find the x-intercept, substitute y = 0 into the equation and solve for x.",
-    "solution": "Set \\(y = 0\\): x - 3(0) = 6 \\implies x = 6",
+    "solution": "\\( x = 6 \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(y = 0\\)",
+        "explanation": "To find the x-intercept, set \\(y = 0\\).",
+        "workingOut": "\\( x - 3(0) = 6 \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(x - 3(0) = 6 \\implies x = 6\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(6\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: 6. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(6\\)",
+        "explanation": "Simplify.",
+        "workingOut": "\\( x = 6 \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( x = 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -2 \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q2c-yint",
@@ -354,72 +431,96 @@ export const Y11_CH7C_QUESTIONS = [
       "\\(-1\\)"
     ],
     "a": 1,
-    "answer": "1",
+    "answer": 0,
     "hint": "To find the y-intercept, substitute x = 0 into the equation and solve for y.",
-    "solution": "Set \\(x = 0\\): 0 - 3y = 6 \\implies -3y = 6 \\implies y = -2",
+    "solution": "\\( y = -2 \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(x = 0\\)",
+        "explanation": "To find the y-intercept, set \\(x = 0\\).",
+        "workingOut": "\\( 0 - 3y = 6 \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(0 - 3y = 6 \\implies -3y = 6 \\implies y = -2\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(-2\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: -2. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(-2\\)",
+        "explanation": "Divide by -3.",
+        "workingOut": "\\( y = -2 \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( y = -2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = -6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 6 \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q3",
     "topicId": "y11a-7C",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Write down the coordinates of any three distinct points on the line \\(x + 2y = 12\\).",
-    "answer": "Example: (12, 0), (0, 6), (6, 3)",
+    "question": "Which of the following sets contains three distinct points that all lie on the line \\(x + 2y = 12\\)?",
+    "answer": 0,
     "hint": "Choose three different values for x (or y) and calculate the corresponding y (or x) values.",
-    "solution": "Example: (12, 0), (0, 6), (6, 3)",
+    "solution": "\\( (12, 0), (0, 6), (2, 5) \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(0 + 2y = 12 \\implies y = 6 \\implies (0, 6)\\)",
+        "explanation": "Test the point \\((12, 0)\\) by substituting \\(x = 12\\) and \\(y = 0\\).",
+        "workingOut": "\\( 12 + 2(0) = 12 \\implies \\text{Valid} \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(x + 2(0) = 12 \\implies x = 12 \\implies (12, 0)\\)",
+        "explanation": "Test the point \\((0, 6)\\) by substituting \\(x = 0\\) and \\(y = 6\\).",
+        "workingOut": "\\( 0 + 2(6) = 12 \\implies \\text{Valid} \\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(6 + 2y = 12 \\implies 2y = 6 \\implies y = 3 \\implies (6, 3)\\)",
+        "explanation": "Test the point \\((2, 5)\\) by substituting \\(x = 2\\) and \\(y = 5\\).",
+        "workingOut": "\\( 2 + 2(5) = 12 \\implies \\text{Valid} \\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: Example: (12, 0), (0, 6), (6, 3). Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "Example: (12, 0), (0, 6), (6, 3)",
+        "explanation": "All three points satisfy the equation.",
+        "workingOut": "",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": true
+    "options": [
+      {
+        "text": "\\( (12, 0), (0, 6), (2, 5) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( (-12, 0), (0, -6), (-2, 5) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( (0, 12), (6, 0), (5, 2) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( (12, 0), (0, 6), (1, 10) \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q4a-vert",
@@ -437,34 +538,41 @@ export const Y11_CH7C_QUESTIONS = [
       "\\(x=3 + 2\\)"
     ],
     "a": 2,
-    "answer": "2",
+    "answer": 0,
     "hint": "A vertical line has the equation x = c, where c is the constant x-coordinate of all points on the line.",
-    "solution": "Since the x-coordinate of the point is \\(3\\), the equation of the vertical line is \\(x = 3\\).",
+    "solution": "\\( x = 3 \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(x = x_0\\)",
+        "explanation": "A vertical line has the form \\( x = a \\), where \\(a\\) is the x-coordinate of any point on the line.",
+        "workingOut": "\\( x = a \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(x = 3\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(x=3\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: x=3. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(x=3\\)",
+        "explanation": "The x-coordinate of the point \\((3, 4)\\) is 3.",
+        "workingOut": "\\( x = 3 \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( x = 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 4 \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q4a-horiz",
@@ -482,34 +590,41 @@ export const Y11_CH7C_QUESTIONS = [
       "\\(y=4 + 2\\)"
     ],
     "a": 0,
-    "answer": "0",
+    "answer": 0,
     "hint": "A horizontal line has the equation y = c, where c is the constant y-coordinate of all points on the line.",
-    "solution": "Since the y-coordinate of the point is \\(4\\), the equation of the horizontal line is \\(y = 4\\).",
+    "solution": "\\( y = 4 \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(y = y_0\\)",
+        "explanation": "A horizontal line has the form \\( y = b \\), where \\(b\\) is the y-coordinate of any point on the line.",
+        "workingOut": "\\( y = b \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(y = 4\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(y=4\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: y=4. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(y=4\\)",
+        "explanation": "The y-coordinate of the point \\((3, 4)\\) is 4.",
+        "workingOut": "\\( y = 4 \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( y = 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 3 \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q4b-vert",
@@ -527,34 +642,41 @@ export const Y11_CH7C_QUESTIONS = [
       "\\(x=0\\)"
     ],
     "a": 3,
-    "answer": "3",
+    "answer": 0,
     "hint": "A vertical line has the equation x = c, where c is the constant x-coordinate of all points on the line.",
-    "solution": "Since the x-coordinate of the point is \\(0\\), the equation of the vertical line is \\(x = 0\\).",
+    "solution": "\\( x = 0 \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(x = x_0\\)",
+        "explanation": "A vertical line has the form \\( x = a \\).",
+        "workingOut": "\\( x = a \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(x = 0\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(x=0\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: x=0. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(x=0\\)",
+        "explanation": "The x-coordinate of the point \\((0, -2)\\) is 0.",
+        "workingOut": "\\( x = 0 \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( x = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = -2 \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q4b-horiz",
@@ -572,34 +694,41 @@ export const Y11_CH7C_QUESTIONS = [
       "\\(y=-2 + 1\\)"
     ],
     "a": 1,
-    "answer": "1",
+    "answer": 0,
     "hint": "A horizontal line has the equation y = c, where c is the constant y-coordinate of all points on the line.",
-    "solution": "Since the y-coordinate of the point is \\(-2\\), the equation of the horizontal line is \\(y = -2\\).",
+    "solution": "\\( y = -2 \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(y = y_0\\)",
+        "explanation": "A horizontal line has the form \\( y = b \\).",
+        "workingOut": "\\( y = b \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(y = -2\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(y=-2\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: y=-2. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(y=-2\\)",
+        "explanation": "The y-coordinate of the point \\((0, -2)\\) is -2.",
+        "workingOut": "\\( y = -2 \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( y = -2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 0 \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q4c-vert",
@@ -617,34 +746,41 @@ export const Y11_CH7C_QUESTIONS = [
       "\\(x=4 + 2\\)"
     ],
     "a": 2,
-    "answer": "2",
+    "answer": 0,
     "hint": "A vertical line has the equation x = c, where c is the constant x-coordinate of all points on the line.",
-    "solution": "Since the x-coordinate of the point is \\(4\\), the equation of the vertical line is \\(x = 4\\).",
+    "solution": "\\( x = 4 \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(x = x_0\\)",
+        "explanation": "A vertical line has the form \\( x = a \\).",
+        "workingOut": "\\( x = a \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(x = 4\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(x=4\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: x=4. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(x=4\\)",
+        "explanation": "The x-coordinate of the point \\((4, 0)\\) is 4.",
+        "workingOut": "\\( x = 4 \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( x = 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 0 \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q4c-horiz",
@@ -662,34 +798,41 @@ export const Y11_CH7C_QUESTIONS = [
       "\\(y=0\\)"
     ],
     "a": 3,
-    "answer": "3",
+    "answer": 0,
     "hint": "A horizontal line has the equation y = c, where c is the constant y-coordinate of all points on the line.",
-    "solution": "Since the y-coordinate of the point is \\(0\\), the equation of the horizontal line is \\(y = 0\\).",
+    "solution": "\\( y = 0 \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(y = y_0\\)",
+        "explanation": "A horizontal line has the form \\( y = b \\).",
+        "workingOut": "\\( y = b \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(y = 0\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(y=0\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: y=0. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(y=0\\)",
+        "explanation": "The y-coordinate of the point \\((4, 0)\\) is 0.",
+        "workingOut": "\\( y = 0 \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( y = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 4 \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q5a-grad",
@@ -707,34 +850,41 @@ export const Y11_CH7C_QUESTIONS = [
       "\\(-3\\)"
     ],
     "a": 0,
-    "answer": "0",
+    "answer": 0,
     "hint": "Compare the equation with the gradient-intercept form y = mx + b, where m is the gradient.",
-    "solution": "The equation is in the form \\(y = mx + b\\). The coefficient of x is the gradient, which is \\(3\\).",
+    "solution": "\\( 3 \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(m = 3\\)",
+        "explanation": "The equation is in the gradient-intercept form \\( y = mx + b \\).",
+        "workingOut": "\\( y = mx + b \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(3\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: 3. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(3\\)",
+        "explanation": "The gradient \\(m\\) is the coefficient of \\(x\\).",
+        "workingOut": "\\( m = 3 \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 5 \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q5a-yint",
@@ -752,34 +902,41 @@ export const Y11_CH7C_QUESTIONS = [
       "\\(5\\)"
     ],
     "a": 1,
-    "answer": "1",
+    "answer": 0,
     "hint": "Compare the equation with the gradient-intercept form y = mx + b, where b is the y-intercept.",
-    "solution": "The constant term in the equation \\(y = mx + b\\) is the y-intercept, which is \\(-5\\).",
+    "solution": "\\( -5 \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(b = -5\\)",
+        "explanation": "The equation is in the gradient-intercept form \\( y = mx + b \\).",
+        "workingOut": "\\( y = mx + b \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(-5\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: -5. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(-5\\)",
+        "explanation": "The y-intercept \\(b\\) is the constant term.",
+        "workingOut": "\\( b = -5 \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( -5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -3 \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q5b-grad",
@@ -797,34 +954,41 @@ export const Y11_CH7C_QUESTIONS = [
       "\\(2/4\\)"
     ],
     "a": 2,
-    "answer": "2",
+    "answer": 0,
     "hint": "Compare the equation with the gradient-intercept form y = mx + b, where m is the gradient.",
-    "solution": "The equation is in the form \\(y = mx + b\\). The coefficient of x is the gradient, which is \\(1/4\\).",
+    "solution": "\\( \\frac{1}{4} \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(m = 1/4\\)",
+        "explanation": "The equation is in the gradient-intercept form \\( y = mx + b \\).",
+        "workingOut": "\\( y = mx + b \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(1/4\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: 1/4. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(1/4\\)",
+        "explanation": "The gradient \\(m\\) is the coefficient of \\(x\\).",
+        "workingOut": "\\( m = \\frac{1}{4} \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( \\frac{1}{4} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -\\frac{1}{4} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 2 \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q5b-yint",
@@ -842,34 +1006,41 @@ export const Y11_CH7C_QUESTIONS = [
       "\\(-3\\)"
     ],
     "a": 2,
-    "answer": "2",
+    "answer": 0,
     "hint": "Compare the equation with the gradient-intercept form y = mx + b, where b is the y-intercept.",
-    "solution": "The constant term in the equation \\(y = mx + b\\) is the y-intercept, which is \\(-2\\).",
+    "solution": "\\( -2 \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(b = -2\\)",
+        "explanation": "The equation is in the gradient-intercept form \\( y = mx + b \\).",
+        "workingOut": "\\( y = mx + b \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(-2\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: -2. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(-2\\)",
+        "explanation": "The y-intercept \\(b\\) is the constant term.",
+        "workingOut": "\\( b = -2 \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( -2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( \\frac{1}{4} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -\\frac{1}{4} \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q5c-grad",
@@ -880,41 +1051,42 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Write down the gradient of the line \\(y = 5 - x\\).",
-    "opts": [
-      "\\(-1.5\\)",
-      "\\(-1\\)",
-      "\\(1\\)",
-      "\\(-0.5\\)"
-    ],
     "a": 1,
-    "answer": "1",
+    "answer": 0,
     "hint": "Compare the equation with the gradient-intercept form y = mx + b, where m is the gradient.",
-    "solution": "The equation is in the form \\(y = mx + b\\). The coefficient of x is the gradient, which is \\(-1\\).",
+    "solution": "\\( -1 \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(m = -1\\)",
+        "explanation": "Rewrite the equation in the gradient-intercept form \\( y = mx + b \\).",
+        "workingOut": "\\( y = -x + 5 \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(-1\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: -1. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(-1\\)",
+        "explanation": "The gradient \\(m\\) is the coefficient of \\(x\\).",
+        "workingOut": "\\( m = -1 \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( -1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -5 \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q5c-yint",
@@ -925,41 +1097,37 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Write down the y-intercept of the line \\(y = 5 - x\\).",
-    "opts": [
-      "\\(5\\)",
-      "\\(4\\)",
-      "\\(6\\)",
-      "\\(-5\\)"
-    ],
     "a": 0,
-    "answer": "0",
+    "answer": 0,
     "hint": "Compare the equation with the gradient-intercept form y = mx + b, where b is the y-intercept.",
-    "solution": "The constant term in the equation \\(y = mx + b\\) is the y-intercept, which is \\(5\\).",
+    "solution": "\\( 5 \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(b = 5\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(5\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: 5. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(5\\)",
+        "explanation": "The equation is \\( y = 5 - x \\). The y-intercept is the constant term.",
+        "workingOut": "\\( b = 5 \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -1 \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q5d-grad",
@@ -970,41 +1138,37 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Write down the gradient of the line \\(y = -\\frac{3}{8}x\\).",
-    "opts": [
-      "\\(3/8\\)",
-      "\\(8/3\\)",
-      "\\(-3/8\\)",
-      "\\(4/8\\)"
-    ],
     "a": 2,
-    "answer": "2",
+    "answer": 0,
     "hint": "Compare the equation with the gradient-intercept form y = mx + b, where m is the gradient.",
-    "solution": "The equation is in the form \\(y = mx + b\\). The coefficient of x is the gradient, which is \\(-3/8\\).",
+    "solution": "\\( -\\frac{3}{8} \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(m = -3/8\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(-3/8\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: -3/8. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(-3/8\\)",
+        "explanation": "The equation is \\( y = -\\frac{3}{8}x \\). The gradient \\(m\\) is the coefficient of \\(x\\).",
+        "workingOut": "\\( m = -\\frac{3}{8} \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( -\\frac{3}{8} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( \\frac{3}{8} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( \\frac{8}{3} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -\\frac{8}{3} \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q5d-yint",
@@ -1015,41 +1179,42 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Write down the y-intercept of the line \\(y = -\\frac{3}{8}x\\).",
-    "opts": [
-      "\\(0\\)",
-      "\\(3\\)",
-      "\\(-1\\)",
-      "\\(1\\)"
-    ],
     "a": 0,
-    "answer": "0",
+    "answer": 0,
     "hint": "Compare the equation with the gradient-intercept form y = mx + b, where b is the y-intercept.",
-    "solution": "The constant term in the equation \\(y = mx + b\\) is the y-intercept, which is \\(0\\).",
+    "solution": "\\( 0 \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(b = 0\\)",
+        "explanation": "The equation is \\( y = -\\frac{3}{8}x \\), which can be written as \\( y = -\\frac{3}{8}x + 0 \\).",
+        "workingOut": "\\( y = mx + 0 \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(0\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: 0. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(0\\)",
+        "explanation": "The constant term is 0.",
+        "workingOut": "\\( b = 0 \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -\\frac{3}{8} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( \\frac{3}{8} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 1 \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q6a",
@@ -1060,41 +1225,42 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Use the formula \\(y = mx + b\\) to write down the equation of the line with a gradient of \\(-4\\) and y-intercept \\(6\\).",
-    "opts": [
-      "\\(y=-4x+6\\)",
-      "\\(y=-4x-6\\)",
-      "\\(-y=-4x+6\\)",
-      "\\(y=+4x+6\\)"
-    ],
     "a": 0,
-    "answer": "0",
+    "answer": 0,
     "hint": "Substitute m = -4 and b equal to the given y-intercept into the equation y = mx + b.",
-    "solution": "Substituting \\(m = -4\\) and \\(b = 6\\) into \\(y = mx + b\\) gives \\(y=-4x+6\\).",
+    "solution": "\\( y = -4x + 6 \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(y = -4x + (6)\\)",
+        "explanation": "Use the gradient-intercept form \\( y = mx + b \\).",
+        "workingOut": "\\( y = mx + b \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(y=-4x+6\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(y=-4x+6\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: y=-4x+6. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(y=-4x+6\\)",
+        "explanation": "Substitute the gradient \\(m = -4\\) and y-intercept \\(b = 6\\).",
+        "workingOut": "\\( y = -4x + 6 \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( y = -4x + 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 4x + 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = -4x - 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 6x - 4 \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q6b",
@@ -1105,41 +1271,42 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Use the formula \\(y = mx + b\\) to write down the equation of the line with a gradient of \\(-4\\) and y-intercept \\(-\\frac{3}{5}\\).",
-    "opts": [
-      "\\(y=-4x-3/-5\\)",
-      "\\(-y=-4x-3/5\\)",
-      "\\(y=-4x-3/5\\)",
-      "\\(y=+4x+3/5\\)"
-    ],
     "a": 1,
-    "answer": "1",
+    "answer": 0,
     "hint": "Substitute m = -4 and b equal to the given y-intercept into the equation y = mx + b.",
-    "solution": "Substituting \\(m = -4\\) and \\(b = -\\frac{3}{5}\\) into \\(y = mx + b\\) gives \\(y=-4x-3/5\\).",
+    "solution": "\\( y = -4x - \\frac{3}{5} \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(y = -4x + (-\\frac{3}{5})\\)",
+        "explanation": "Use the gradient-intercept form \\( y = mx + b \\).",
+        "workingOut": "\\( y = mx + b \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(y=-4x-3/5\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(-y=-4x-3/5\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: -y=-4x-3/5. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(-y=-4x-3/5\\)",
+        "explanation": "Substitute \\(m = -4\\) and \\(b = -\\frac{3}{5}\\).",
+        "workingOut": "\\( y = -4x - \\frac{3}{5} \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( y = -4x - \\frac{3}{5} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = -4x + \\frac{3}{5} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 4x - \\frac{3}{5} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = -\\frac{3}{5}x - 4 \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q6c",
@@ -1150,41 +1317,42 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Use the formula \\(y = mx + b\\) to write down the equation of the line with a gradient of \\(-4\\) and y-intercept \\(0\\).",
-    "opts": [
-      "\\(-y=-4x\\)",
-      "\\(y=-4x + 1\\)",
-      "\\(y=+4x\\)",
-      "\\(y=-4x\\)"
-    ],
     "a": 0,
-    "answer": "0",
+    "answer": 0,
     "hint": "Substitute m = -4 and b equal to the given y-intercept into the equation y = mx + b.",
-    "solution": "Substituting \\(m = -4\\) and \\(b = 0\\) into \\(y = mx + b\\) gives \\(y=-4x\\).",
+    "solution": "\\( y = -4x \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(y = -4x + (0)\\)",
+        "explanation": "Use the gradient-intercept form \\( y = mx + b \\).",
+        "workingOut": "\\( y = mx + b \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(y=-4x\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(-y=-4x\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: -y=-4x. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(-y=-4x\\)",
+        "explanation": "Substitute \\(m = -4\\) and \\(b = 0\\).",
+        "workingOut": "\\( y = -4x + 0 \\implies y = -4x \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( y = -4x \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 4x \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = -4x + 1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -4y \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q7a",
@@ -1195,41 +1363,42 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Use the formula \\(y = mx + b\\) to write down the equation of the line with y-intercept \\(-5\\) and gradient \\(6\\).",
-    "opts": [
-      "\\(y=6x-5\\)",
-      "\\(y=6x-5 + 1\\)",
-      "\\(-y=6x-5\\)",
-      "\\(y=6x+5\\)"
-    ],
     "a": 0,
-    "answer": "0",
+    "answer": 0,
     "hint": "Substitute b = -5 and m equal to the given gradient into the equation y = mx + b.",
-    "solution": "Substituting \\(m = 6\\) and \\(b = -5\\) into \\(y = mx + b\\) gives \\(y=6x-5\\).",
+    "solution": "\\( y = 6x - 5 \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(y = (6)x - 5\\)",
+        "explanation": "Use the gradient-intercept form \\( y = mx + b \\).",
+        "workingOut": "\\( y = mx + b \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(y=6x-5\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(y=6x-5\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: y=6x-5. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(y=6x-5\\)",
+        "explanation": "Here, gradient \\(m = 6\\) and y-intercept \\(b = -5\\). Substitute them into the formula.",
+        "workingOut": "\\( y = 6x - 5 \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( y = 6x - 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = -5x + 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 6x + 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = -5x - 6 \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q7b",
@@ -1240,41 +1409,42 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Use the formula \\(y = mx + b\\) to write down the equation of the line with y-intercept \\(-5\\) and gradient \\(-\\frac{3}{4}\\).",
-    "opts": [
-      "\\(-y=-3/4x-5\\)",
-      "\\(y=-3/4x+5\\)",
-      "\\(y=+3/4x+5\\)",
-      "\\(y=-3/4x-5\\)"
-    ],
     "a": 0,
-    "answer": "0",
+    "answer": 0,
     "hint": "Substitute b = -5 and m equal to the given gradient into the equation y = mx + b.",
-    "solution": "Substituting \\(m = -\\frac{3}{4}\\) and \\(b = -5\\) into \\(y = mx + b\\) gives \\(y=-3/4x-5\\).",
+    "solution": "\\( y = -\\frac{3}{4}x - 5 \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(y = (-\\frac{3}{4})x - 5\\)",
+        "explanation": "Use the gradient-intercept form \\( y = mx + b \\).",
+        "workingOut": "\\( y = mx + b \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(y=-3/4x-5\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(-y=-3/4x-5\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: -y=-3/4x-5. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(-y=-3/4x-5\\)",
+        "explanation": "Substitute \\(m = -\\frac{3}{4}\\) and \\(b = -5\\).",
+        "workingOut": "\\( y = -\\frac{3}{4}x - 5 \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( y = -\\frac{3}{4}x - 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = -\\frac{3}{4}x + 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = \\frac{3}{4}x - 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = -5x - \\frac{3}{4} \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q7c",
@@ -1285,41 +1455,42 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Use the formula \\(y = mx + b\\) to write down the equation of the line with y-intercept \\(-5\\) and gradient \\(0\\).",
-    "opts": [
-      "\\(y=-5 + 1\\)",
-      "\\(y=-5 + 2\\)",
-      "\\(y=-5\\)",
-      "\\(y=+5\\)"
-    ],
     "a": 2,
-    "answer": "2",
+    "answer": 0,
     "hint": "Substitute b = -5 and m equal to the given gradient into the equation y = mx + b.",
-    "solution": "Substituting \\(m = 0\\) and \\(b = -5\\) into \\(y = mx + b\\) gives \\(y=-5\\).",
+    "solution": "\\( y = -5 \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(y = (0)x - 5\\)",
+        "explanation": "Use the gradient-intercept form \\( y = mx + b \\).",
+        "workingOut": "\\( y = mx + b \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(y=-5\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(y=-5\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: y=-5. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(y=-5\\)",
+        "explanation": "Substitute \\(m = 0\\) and \\(b = -5\\).",
+        "workingOut": "\\( y = 0x - 5 \\implies y = -5 \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( y = -5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = -5x \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 5 \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q8a",
@@ -1330,41 +1501,42 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Use the formula \\(y = mx + b\\) to write down the equation of the line with a gradient of \\(1\\) and y-intercept \\(4\\), giving your answer in general form (e.g. Ax + By + C = 0 with A > 0).",
-    "opts": [
-      "\\(x-y+4=+0\\)",
-      "\\(x-y+4=0\\)",
-      "\\(x-y+4=0 + 1\\)",
-      "\\(x+y+4=0\\)"
-    ],
     "a": 1,
-    "answer": "1",
+    "answer": 0,
     "hint": "Write the equation in y = mx + b, then rearrange terms to the form Ax + By + C = 0.",
-    "solution": "The equation is \\(x-y+4=0\\).",
+    "solution": "\\( x - y + 4 = 0 \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(y = x + 4\\)",
+        "explanation": "Use the gradient-intercept form \\( y = mx + b \\) with \\(m = 1\\) and \\(b = 4\\).",
+        "workingOut": "\\( y = 1x + 4 \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(x - y + 4 = 0\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(x-y+4=0\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: x-y+4=0. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(x-y+4=0\\)",
+        "explanation": "Rearrange the equation so that all terms are on one side, and the coefficient of \\(x\\) is positive.",
+        "workingOut": "\\( x - y + 4 = 0 \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( x - y + 4 = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x + y + 4 = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x - y - 4 = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y - x + 4 = 0 \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q8b",
@@ -1375,41 +1547,42 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Use the formula \\(y = mx + b\\) to write down the equation of the line with a gradient of \\(-3\\) and y-intercept \\(6\\), giving your answer in general form (e.g. Ax + By + C = 0 with A > 0).",
-    "opts": [
-      "\\(3x+y-6=+0\\)",
-      "\\(3x-y-6=0\\)",
-      "\\(3x+y+6=0\\)",
-      "\\(3x+y-6=0\\)"
-    ],
     "a": 3,
-    "answer": "3",
+    "answer": 0,
     "hint": "Write the equation in y = mx + b, then rearrange terms to the form Ax + By + C = 0.",
-    "solution": "The equation is \\(3x+y-6=0\\).",
+    "solution": "\\( 3x + y - 6 = 0 \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(y = -3x + 6\\)",
+        "explanation": "Use the gradient-intercept form \\( y = mx + b \\) with \\(m = -3\\) and \\(b = 6\\).",
+        "workingOut": "\\( y = -3x + 6 \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(3x + y - 6 = 0\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(3x+y-6=0\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: 3x+y-6=0. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(3x+y-6=0\\)",
+        "explanation": "Rearrange the equation so the coefficient of \\(x\\) is positive \\( (A > 0) \\).",
+        "workingOut": "\\( 3x + y - 6 = 0 \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( 3x + y - 6 = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 3x - y - 6 = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 3x + y + 6 = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x + 3y - 6 = 0 \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q8c",
@@ -1420,41 +1593,47 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Use the formula \\(y = mx + b\\) to write down the equation of the line with a gradient of \\(\\frac{1}{4}\\) and y-intercept \\(-2\\), giving your answer in general form (e.g. Ax + By + C = 0 with A > 0).",
-    "opts": [
-      "\\(x-4y-8=0\\)",
-      "\\(x+4y+8=0\\)",
-      "\\(x-4-y-8=0\\)",
-      "\\(x-4y-8=+0\\)"
-    ],
     "a": 0,
-    "answer": "0",
+    "answer": 0,
     "hint": "Write the equation in y = mx + b, then rearrange terms to the form Ax + By + C = 0.",
-    "solution": "The equation is \\(x-4y-8=0\\).",
+    "solution": "\\( x - 4y - 8 = 0 \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(y = \\frac{1}{4}x - 2\\)",
+        "explanation": "Use the gradient-intercept form \\( y = mx + b \\) with \\(m = \\frac{1}{4}\\) and \\(b = -2\\).",
+        "workingOut": "\\( y = \\frac{1}{4}x - 2 \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(4y = x - 8\\)",
+        "explanation": "Multiply the entire equation by 4 to remove the fraction.",
+        "workingOut": "\\( 4y = x - 8 \\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(x - 4y - 8 = 0\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: x-4y-8=0. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(x-4y-8=0\\)",
+        "explanation": "Rearrange into general form \\(Ax + By + C = 0\\) with \\(A > 0\\).",
+        "workingOut": "\\( x - 4y - 8 = 0 \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( x - 4y - 8 = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x + 4y - 8 = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x - 4y + 8 = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 4x - y - 8 = 0 \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q8d",
@@ -1465,41 +1644,47 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Use the formula \\(y = mx + b\\) to write down the equation of the line with a gradient of \\(-\\frac{1}{3}\\) and y-intercept \\(2\\), giving your answer in general form (e.g. Ax + By + C = 0 with A > 0).",
-    "opts": [
-      "\\(x+3y+6=0\\)",
-      "\\(x+3-y-6=0\\)",
-      "\\(x+3y-6=0\\)",
-      "\\(x+3y-6=+0\\)"
-    ],
     "a": 2,
-    "answer": "2",
+    "answer": 0,
     "hint": "Write the equation in y = mx + b, then rearrange terms to the form Ax + By + C = 0.",
-    "solution": "The equation is \\(x+3y-6=0\\).",
+    "solution": "\\( x + 3y - 6 = 0 \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(y = -\\frac{1}{3}x + 2\\)",
+        "explanation": "Use the gradient-intercept form \\( y = mx + b \\) with \\(m = -\\frac{1}{3}\\) and \\(b = 2\\).",
+        "workingOut": "\\( y = -\\frac{1}{3}x + 2 \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(3y = -x + 6\\)",
+        "explanation": "Multiply the entire equation by 3.",
+        "workingOut": "\\( 3y = -x + 6 \\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(x + 3y - 6 = 0\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: x+3y-6=0. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(x+3y-6=0\\)",
+        "explanation": "Rearrange into general form with \\(A > 0\\).",
+        "workingOut": "\\( x + 3y - 6 = 0 \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( x + 3y - 6 = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x - 3y - 6 = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x + 3y + 6 = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 3x + y - 6 = 0 \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q9a-grad",
@@ -1510,41 +1695,42 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Solve the equation \\(x - y + 4 = 0\\) for \\(y\\), and hence write down its gradient \\(m\\).",
-    "opts": [
-      "\\(-1\\)",
-      "\\(1\\)",
-      "\\(1.5\\)",
-      "\\(0.5\\)"
-    ],
     "a": 1,
-    "answer": "1",
+    "answer": 0,
     "hint": "Rearrange the equation to make y the subject, i.e., y = mx + b.",
-    "solution": "Rearranging gives y = x + 4. The gradient is \\(1\\).",
+    "solution": "\\( 1 \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(y = x + 4\\)",
+        "explanation": "Solve the equation \\(x - y + 4 = 0\\) for \\(y\\).",
+        "workingOut": "\\( y = x + 4 \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(m = 1\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(1\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: 1. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(1\\)",
+        "explanation": "Identify the gradient \\(m\\) from \\(y = mx + b\\).",
+        "workingOut": "\\( m = 1 \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( 1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -4 \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q9a-yint",
@@ -1555,41 +1741,42 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Solve the equation \\(x - y + 4 = 0\\) for \\(y\\), and hence write down its y-intercept \\(b\\).",
-    "opts": [
-      "\\(4\\)",
-      "\\(5\\)",
-      "\\(3\\)",
-      "\\(-4\\)"
-    ],
     "a": 0,
-    "answer": "0",
+    "answer": 0,
     "hint": "Rearrange the equation to make y the subject, i.e., y = mx + b.",
-    "solution": "Rearranging gives y = x + 4. The y-intercept is \\(4\\).",
+    "solution": "\\( 4 \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(y = x + 4\\)",
+        "explanation": "Solve the equation \\(x - y + 4 = 0\\) for \\(y\\).",
+        "workingOut": "\\( y = x + 4 \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(b = 4\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(4\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: 4. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(4\\)",
+        "explanation": "Identify the y-intercept \\(b\\) from \\(y = mx + b\\).",
+        "workingOut": "\\( b = 4 \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -1 \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q9b-grad",
@@ -1600,41 +1787,42 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Solve the equation \\(y + x - 3 = 0\\) for \\(y\\), and hence write down its gradient \\(m\\).",
-    "opts": [
-      "\\(-0.5\\)",
-      "\\(-1.5\\)",
-      "\\(-1\\)",
-      "\\(1\\)"
-    ],
     "a": 2,
-    "answer": "2",
+    "answer": 0,
     "hint": "Rearrange the equation to make y the subject, i.e., y = mx + b.",
-    "solution": "Rearranging gives y = -x + 3. The gradient is \\(-1\\).",
+    "solution": "\\( -1 \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(y = -x + 3\\)",
+        "explanation": "Solve the equation \\(y + x - 3 = 0\\) for \\(y\\).",
+        "workingOut": "\\( y = -x + 3 \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(m = -1\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(-1\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: -1. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(-1\\)",
+        "explanation": "Identify the gradient \\(m\\) from \\(y = mx + b\\).",
+        "workingOut": "\\( m = -1 \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( -1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -3 \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q9b-yint",
@@ -1645,41 +1833,42 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Solve the equation \\(y + x - 3 = 0\\) for \\(y\\), and hence write down its y-intercept \\(b\\).",
-    "opts": [
-      "\\(-3\\)",
-      "\\(3\\)",
-      "\\(4\\)",
-      "\\(2\\)"
-    ],
     "a": 1,
-    "answer": "1",
+    "answer": 0,
     "hint": "Rearrange the equation to make y the subject, i.e., y = mx + b.",
-    "solution": "Rearranging gives y = -x + 3. The y-intercept is \\(3\\).",
+    "solution": "\\( 3 \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(y = -x + 3\\)",
+        "explanation": "Solve the equation \\(y + x - 3 = 0\\) for \\(y\\).",
+        "workingOut": "\\( y = -x + 3 \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(b = 3\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(3\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: 3. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(3\\)",
+        "explanation": "Identify the y-intercept \\(b\\) from \\(y = mx + b\\).",
+        "workingOut": "\\( b = 3 \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -1 \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q9c-grad",
@@ -1690,41 +1879,42 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Solve the equation \\(x - 2y = 0\\) for \\(y\\), and hence write down its gradient \\(m\\).",
-    "opts": [
-      "\\(-1/2\\)",
-      "\\(2/2\\)",
-      "\\(1/2\\)",
-      "\\(-2/1\\)"
-    ],
     "a": 2,
-    "answer": "2",
+    "answer": 0,
     "hint": "Rearrange the equation to make y the subject, i.e., y = mx + b.",
-    "solution": "Rearranging gives 2y = x \\implies y = \\frac{1}{2}x. The gradient is \\(1/2\\).",
+    "solution": "\\( \\frac{1}{2} \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(2y = x \\implies y = \\frac{1}{2}x\\)",
+        "explanation": "Solve the equation \\(x - 2y = 0\\) for \\(y\\).",
+        "workingOut": "\\( 2y = x \\implies y = \\frac{1}{2}x \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(m = 1/2\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(1/2\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: 1/2. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(1/2\\)",
+        "explanation": "Identify the gradient \\(m\\) from \\(y = mx + b\\).",
+        "workingOut": "\\( m = \\frac{1}{2} \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( \\frac{1}{2} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -\\frac{1}{2} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -2 \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q9c-yint",
@@ -1735,41 +1925,42 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Solve the equation \\(x - 2y = 0\\) for \\(y\\), and hence write down its y-intercept \\(b\\).",
-    "opts": [
-      "\\(1\\)",
-      "\\(0\\)",
-      "\\(3\\)",
-      "\\(-1\\)"
-    ],
     "a": 1,
-    "answer": "1",
+    "answer": 0,
     "hint": "Rearrange the equation to make y the subject, i.e., y = mx + b.",
-    "solution": "Rearranging gives 2y = x \\implies y = \\frac{1}{2}x. The y-intercept is \\(0\\).",
+    "solution": "\\( 0 \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(2y = x \\implies y = \\frac{1}{2}x\\)",
+        "explanation": "Solve the equation \\(x - 2y = 0\\) for \\(y\\).",
+        "workingOut": "\\( 2y = x \\implies y = \\frac{1}{2}x + 0 \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(b = 0\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(0\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: 0. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(0\\)",
+        "explanation": "Identify the y-intercept \\(b\\).",
+        "workingOut": "\\( b = 0 \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -2 \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q9d-grad",
@@ -1780,41 +1971,47 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Solve the equation \\(2x + 5y = 4\\) for \\(y\\), and hence write down its gradient \\(m\\).",
-    "opts": [
-      "\\(-2/5\\)",
-      "\\(2/5\\)",
-      "\\(5/2\\)",
-      "\\(3/5\\)"
-    ],
     "a": 0,
-    "answer": "0",
+    "answer": 0,
     "hint": "Rearrange the equation to make y the subject, i.e., y = mx + b.",
-    "solution": "Rearranging gives 5y = -2x + 4 \\implies y = -\\frac{2}{5}x + \\frac{4}{5}. The gradient is \\(-2/5\\).",
+    "solution": "\\( -\\frac{2}{5} \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(5y = -2x + 4 \\implies y = -\\frac{2}{5}x + \\frac{4}{5}\\)",
+        "explanation": "Solve the equation \\(2x + 5y = 4\\) for \\(y\\).",
+        "workingOut": "\\( 5y = -2x + 4 \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(m = -2/5\\)",
+        "explanation": "Divide by 5.",
+        "workingOut": "\\( y = -\\frac{2}{5}x + \\frac{4}{5} \\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(-2/5\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: -2/5. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(-2/5\\)",
+        "explanation": "Identify the gradient \\(m\\) from \\(y = mx + b\\).",
+        "workingOut": "\\( m = -\\frac{2}{5} \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( -\\frac{2}{5} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( \\frac{2}{5} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -\\frac{5}{2} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( \\frac{4}{5} \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q9d-yint",
@@ -1825,41 +2022,42 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Solve the equation \\(2x + 5y = 4\\) for \\(y\\), and hence write down its y-intercept \\(b\\).",
-    "opts": [
-      "\\(4/5\\)",
-      "\\(5/5\\)",
-      "\\(-5/4\\)",
-      "\\(-4/5\\)"
-    ],
     "a": 0,
-    "answer": "0",
+    "answer": 0,
     "hint": "Rearrange the equation to make y the subject, i.e., y = mx + b.",
-    "solution": "Rearranging gives 5y = -2x + 4 \\implies y = -\\frac{2}{5}x + \\frac{4}{5}. The y-intercept is \\(4/5\\).",
+    "solution": "\\( \\frac{4}{5} \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(5y = -2x + 4 \\implies y = -\\frac{2}{5}x + \\frac{4}{5}\\)",
+        "explanation": "Solve the equation \\(2x + 5y = 4\\) for \\(y\\).",
+        "workingOut": "\\( 5y = -2x + 4 \\implies y = -\\frac{2}{5}x + \\frac{4}{5} \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(b = 4/5\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(4/5\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: 4/5. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(4/5\\)",
+        "explanation": "Identify the y-intercept \\(b\\) from \\(y = mx + b\\).",
+        "workingOut": "\\( b = \\frac{4}{5} \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( \\frac{4}{5} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -\\frac{4}{5} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( \\frac{5}{4} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -\\frac{2}{5} \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q10a-grad",
@@ -1870,41 +2068,42 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Write down the gradient \\(m\\) of the line \\(y = x + 5\\).",
-    "opts": [
-      "\\(-1\\)",
-      "\\(1.5\\)",
-      "\\(0.5\\)",
-      "\\(1\\)"
-    ],
     "a": 3,
-    "answer": "3",
+    "answer": 0,
     "hint": "Rearrange the equation into y = mx + b if necessary and read the coefficient of x.",
-    "solution": "The gradient is \\(1\\).",
+    "solution": "\\( 1 \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(m = 1\\)",
+        "explanation": "The equation is in the gradient-intercept form \\( y = mx + b \\).",
+        "workingOut": "\\( y = 1x + 5 \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(\\tan \\alpha = 1\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(1\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: 1. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(1\\)",
+        "explanation": "The gradient \\(m\\) is the coefficient of \\(x\\).",
+        "workingOut": "\\( m = 1 \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( 1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 5 \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q10a-angle",
@@ -1915,41 +2114,42 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Use the formula \\(\\text{gradient} = \\tan \\alpha\\) to find the angle of inclination \\(\\alpha\\) (correct to the nearest degree) of the line \\(y = x + 5\\).",
-    "opts": [
-      "\\(45°\\)",
-      "\\(45° + 1\\)",
-      "\\(-45°\\)",
-      "\\(45° - 1\\)"
-    ],
     "a": 0,
-    "answer": "0",
+    "answer": 0,
     "hint": "Find the gradient, then solve tan(alpha) = m for alpha where 0 <= alpha < 180 degrees.",
-    "solution": "Since \\(m = 1\\), we solve \\(\\tan \\alpha = 1\\) which gives \\(\\alpha \\approx 45°\\).",
+    "solution": "\\( 45^\\circ \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(m = 1\\)",
+        "explanation": "Use the formula \\( \\tan \\alpha = m \\).",
+        "workingOut": "\\( \\tan \\alpha = 1 \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(\\tan \\alpha = 1\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(\\alpha = 45^{\\circ}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: 45°. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(45°\\)",
+        "explanation": "Find the acute angle \\(\\alpha\\).",
+        "workingOut": "\\( \\alpha = 45^\\circ \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( 45^\\circ \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 135^\\circ \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 90^\\circ \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 60^\\circ \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q10b-grad",
@@ -1960,41 +2160,42 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Write down the gradient \\(m\\) of the line \\(y = -x - 12\\).",
-    "opts": [
-      "\\(1\\)",
-      "\\(-1.5\\)",
-      "\\(-0.5\\)",
-      "\\(-1\\)"
-    ],
     "a": 3,
-    "answer": "3",
+    "answer": 0,
     "hint": "Rearrange the equation into y = mx + b if necessary and read the coefficient of x.",
-    "solution": "The gradient is \\(-1\\).",
+    "solution": "\\( -1 \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(m = -1\\)",
+        "explanation": "The equation is in the gradient-intercept form \\( y = mx + b \\).",
+        "workingOut": "\\( y = -1x - 12 \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(\\tan \\alpha = -1\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(-1\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: -1. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(-1\\)",
+        "explanation": "The gradient \\(m\\) is the coefficient of \\(x\\).",
+        "workingOut": "\\( m = -1 \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( -1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -12 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 0 \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q10b-angle",
@@ -2005,41 +2206,42 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Use the formula \\(\\text{gradient} = \\tan \\alpha\\) to find the angle of inclination \\(\\alpha\\) (correct to the nearest degree) of the line \\(y = -x - 12\\).",
-    "opts": [
-      "\\(-135°\\)",
-      "\\(135° - 1\\)",
-      "\\(135° + 1\\)",
-      "\\(135°\\)"
-    ],
     "a": 3,
-    "answer": "3",
+    "answer": 0,
     "hint": "Find the gradient, then solve tan(alpha) = m for alpha where 0 <= alpha < 180 degrees.",
-    "solution": "Since \\(m = -1\\), we solve \\(\\tan \\alpha = -1\\) which gives \\(\\alpha \\approx 135°\\).",
+    "solution": "\\( 135^\\circ \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(m = -1\\)",
+        "explanation": "Use the formula \\( \\tan \\alpha = m \\).",
+        "workingOut": "\\( \\tan \\alpha = -1 \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(\\tan \\alpha = -1\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(\\alpha = 135^{\\circ}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: 135°. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(135°\\)",
+        "explanation": "Since the gradient is negative, the angle is obtuse.",
+        "workingOut": "\\( \\alpha = 180^\\circ - 45^\\circ = 135^\\circ \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( 135^\\circ \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 45^\\circ \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 90^\\circ \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 150^\\circ \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q10c-grad",
@@ -2050,41 +2252,37 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Write down the gradient \\(m\\) of the line \\(y = 3x\\).",
-    "opts": [
-      "\\(4\\)",
-      "\\(3\\)",
-      "\\(2\\)",
-      "\\(-3\\)"
-    ],
     "a": 1,
-    "answer": "1",
+    "answer": 0,
     "hint": "Rearrange the equation into y = mx + b if necessary and read the coefficient of x.",
-    "solution": "The gradient is \\(3\\).",
+    "solution": "\\( 3 \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(m = 3\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(\\tan \\alpha = 3\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(3\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: 3. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(3\\)",
+        "explanation": "The equation is \\( y = 3x \\). The gradient \\(m\\) is the coefficient of \\(x\\).",
+        "workingOut": "\\( m = 3 \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( \\frac{1}{3} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 0 \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q10c-angle",
@@ -2095,41 +2293,47 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Use the formula \\(\\text{gradient} = \\tan \\alpha\\) to find the angle of inclination \\(\\alpha\\) (correct to the nearest degree) of the line \\(y = 3x\\).",
-    "opts": [
-      "\\(72° - 1\\)",
-      "\\(72° + 1\\)",
-      "\\(-72°\\)",
-      "\\(72°\\)"
-    ],
     "a": 3,
-    "answer": "3",
+    "answer": 0,
     "hint": "Find the gradient, then solve tan(alpha) = m for alpha where 0 <= alpha < 180 degrees.",
-    "solution": "Since \\(m = 3\\), we solve \\(\\tan \\alpha = 3\\) which gives \\(\\alpha \\approx 72°\\).",
+    "solution": "\\( 72^\\circ \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(m = 3\\)",
+        "explanation": "Use the formula \\( \\tan \\alpha = m \\).",
+        "workingOut": "\\( \\tan \\alpha = 3 \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(\\tan \\alpha = 3\\)",
+        "explanation": "Use a calculator to find \\(\\alpha\\).",
+        "workingOut": "\\( \\alpha \\approx 71.565^\\circ \\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(\\alpha = \\tan^{-1}(3) \\approx 72^{\\circ}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: 72°. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(72°\\)",
+        "explanation": "Round to the nearest degree.",
+        "workingOut": "\\( \\alpha \\approx 72^\\circ \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( 72^\\circ \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 108^\\circ \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 18^\\circ \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 71^\\circ \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q10d-grad",
@@ -2140,41 +2344,37 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Write down the gradient \\(m\\) of the line \\(y = -\\frac{1}{2}x\\).",
-    "opts": [
-      "\\(1/2\\)",
-      "\\(2/1\\)",
-      "\\(-1/2\\)",
-      "\\(2/2\\)"
-    ],
     "a": 2,
-    "answer": "2",
+    "answer": 0,
     "hint": "Rearrange the equation into y = mx + b if necessary and read the coefficient of x.",
-    "solution": "The gradient is \\(-1/2\\).",
+    "solution": "\\( -\\frac{1}{2} \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(m = -\\frac{1}{2}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(\\tan \\alpha = -0.5\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(-1/2\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: -1/2. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(-1/2\\)",
+        "explanation": "The equation is \\( y = -\\frac{1}{2}x \\). The gradient \\(m\\) is the coefficient of \\(x\\).",
+        "workingOut": "\\( m = -\\frac{1}{2} \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( -\\frac{1}{2} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( \\frac{1}{2} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 2 \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q10d-angle",
@@ -2185,155 +2385,202 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Use the formula \\(\\text{gradient} = \\tan \\alpha\\) to find the angle of inclination \\(\\alpha\\) (correct to the nearest degree) of the line \\(y = -\\frac{1}{2}x\\).",
-    "opts": [
-      "\\(153°\\)",
-      "\\(-153°\\)",
-      "\\(153° + 1\\)",
-      "\\(153° - 1\\)"
-    ],
     "a": 0,
-    "answer": "0",
+    "answer": 0,
     "hint": "Find the gradient, then solve tan(alpha) = m for alpha where 0 <= alpha < 180 degrees.",
-    "solution": "Since \\(m = -1/2\\), we solve \\(\\tan \\alpha = -1/2\\) which gives \\(\\alpha \\approx 153°\\).",
+    "solution": "\\( 153^\\circ \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(m = -\\frac{1}{2}\\)",
+        "explanation": "Use the formula \\( \\tan \\alpha = m \\).",
+        "workingOut": "\\( \\tan \\alpha = -0.5 \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(\\tan \\alpha = -0.5\\)",
+        "explanation": "Use a calculator to find the principal angle.",
+        "workingOut": "\\( \\tan^{-1}(-0.5) \\approx -26.565^\\circ \\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(\\alpha = 180^{\\circ} - \\tan^{-1}(0.5) \\approx 153^{\\circ}\\)",
+        "explanation": "Since the angle of inclination must be between \\(0^\\circ\\) and \\(180^\\circ\\), add \\(180^\\circ\\).",
+        "workingOut": "\\( \\alpha \\approx 180^\\circ - 26.565^\\circ = 153.435^\\circ \\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 153°. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(153°\\)",
+        "explanation": "Round to the nearest degree.",
+        "workingOut": "\\( \\alpha \\approx 153^\\circ \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( 153^\\circ \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 27^\\circ \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 63^\\circ \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 117^\\circ \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q11a",
     "topicId": "y11a-7C",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Substitute \\(y = 0\\) and \\(x = 0\\) into the equation \\(4x + 3y - 12 = 0\\) to find the points \\(A\\) (x-intercept) and \\(B\\) (y-intercept) where the line crosses the x-axis and y-axis respectively. Hence, explain how you would sketch the line.",
-    "answer": "A(3, 0), B(0, 4).\nPlot A and B on the Cartesian plane and draw a straight line through them.",
+    "question": "Find the points \\(A\\) (x-intercept) and \\(B\\) (y-intercept) where the line \\(4x + 3y - 12 = 0\\) crosses the x-axis and y-axis respectively.",
+    "answer": 0,
     "hint": "Set y=0 to find point A on the x-axis. Set x=0 to find point B on the y-axis.",
-    "solution": "A(3, 0), B(0, 4).\nPlot A and B on the Cartesian plane and draw a straight line through them.",
+    "solution": "\\( A(3, 0), B(0, 4) \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(4x - 12 = 0 \\implies 4x = 12 \\implies x = 3 \\implies A(3, 0)\\)",
+        "explanation": "To find the x-intercept \\(A\\), set \\(y = 0\\).",
+        "workingOut": "\\( 4x + 3(0) - 12 = 0 \\implies 4x = 12 \\implies x = 3 \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(3y - 12 = 0 \\implies 3y = 12 \\implies y = 4 \\implies B(0, 4)\\)",
+        "explanation": "To find the y-intercept \\(B\\), set \\(x = 0\\).",
+        "workingOut": "\\( 4(0) + 3y - 12 = 0 \\implies 3y = 12 \\implies y = 4 \\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(\\text{Plot } A(3,0) \\text{ and } B(0,4) \\text{ and draw a line through them.}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: A(3, 0), B(0, 4).\nPlot A and B on the Cartesian plane and draw a straight line through them.. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "A(3, 0), B(0, 4).\nPlot A and B on the Cartesian plane and draw a straight line through them.",
+        "explanation": "The points are \\(A(3, 0)\\) and \\(B(0, 4)\\).",
+        "workingOut": "\\( A(3, 0), B(0, 4) \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": true
+    "options": [
+      {
+        "text": "\\( A(3, 0), B(0, 4) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( A(4, 0), B(0, 3) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( A(-3, 0), B(0, -4) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( A(-4, 0), B(0, -3) \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q11b",
     "topicId": "y11a-7C",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Substitute \\(y = 0\\) and \\(x = 0\\) into the equation \\(3x - y + 9 = 0\\) to find the points \\(A\\) (x-intercept) and \\(B\\) (y-intercept) where the line crosses the x-axis and y-axis respectively. Hence, explain how you would sketch the line.",
-    "answer": "A(-3, 0), B(0, 9).\nPlot A and B on the Cartesian plane and draw a straight line through them.",
+    "question": "Find the points \\(A\\) (x-intercept) and \\(B\\) (y-intercept) where the line \\(3x - y + 9 = 0\\) crosses the x-axis and y-axis respectively.",
+    "answer": 0,
     "hint": "Set y=0 to find point A on the x-axis. Set x=0 to find point B on the y-axis.",
-    "solution": "A(-3, 0), B(0, 9).\nPlot A and B on the Cartesian plane and draw a straight line through them.",
+    "solution": "\\( A(-3, 0), B(0, 9) \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(3x + 9 = 0 \\implies 3x = -9 \\implies x = -3 \\implies A(-3, 0)\\)",
+        "explanation": "To find the x-intercept \\(A\\), set \\(y = 0\\).",
+        "workingOut": "\\( 3x - 0 + 9 = 0 \\implies 3x = -9 \\implies x = -3 \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(-y + 9 = 0 \\implies y = 9 \\implies B(0, 9)\\)",
+        "explanation": "To find the y-intercept \\(B\\), set \\(x = 0\\).",
+        "workingOut": "\\( 3(0) - y + 9 = 0 \\implies y = 9 \\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(\\text{Plot } A(-3,0) \\text{ and } B(0,9) \\text{ and draw a line through them.}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: A(-3, 0), B(0, 9).\nPlot A and B on the Cartesian plane and draw a straight line through them.. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "A(-3, 0), B(0, 9).\nPlot A and B on the Cartesian plane and draw a straight line through them.",
+        "explanation": "The points are \\(A(-3, 0)\\) and \\(B(0, 9)\\).",
+        "workingOut": "\\( A(-3, 0), B(0, 9) \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": true
+    "options": [
+      {
+        "text": "\\( A(-3, 0), B(0, 9) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( A(3, 0), B(0, -9) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( A(-9, 0), B(0, 3) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( A(9, 0), B(0, -3) \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q11c",
     "topicId": "y11a-7C",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Substitute \\(y = 0\\) and \\(x = 0\\) into the equation \\(2x - 5y + 10 = 0\\) to find the points \\(A\\) (x-intercept) and \\(B\\) (y-intercept) where the line crosses the x-axis and y-axis respectively. Hence, explain how you would sketch the line.",
-    "answer": "A(-5, 0), B(0, 2).\nPlot A and B on the Cartesian plane and draw a straight line through them.",
+    "question": "Find the points \\(A\\) (x-intercept) and \\(B\\) (y-intercept) where the line \\(2x - 5y + 10 = 0\\) crosses the x-axis and y-axis respectively.",
+    "answer": 0,
     "hint": "Set y=0 to find point A on the x-axis. Set x=0 to find point B on the y-axis.",
-    "solution": "A(-5, 0), B(0, 2).\nPlot A and B on the Cartesian plane and draw a straight line through them.",
+    "solution": "\\( A(-5, 0), B(0, 2) \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(2x + 10 = 0 \\implies 2x = -10 \\implies x = -5 \\implies A(-5, 0)\\)",
+        "explanation": "To find the x-intercept \\(A\\), set \\(y = 0\\).",
+        "workingOut": "\\( 2x - 5(0) + 10 = 0 \\implies 2x = -10 \\implies x = -5 \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(-5y + 10 = 0 \\implies 5y = 10 \\implies y = 2 \\implies B(0, 2)\\)",
+        "explanation": "To find the y-intercept \\(B\\), set \\(x = 0\\).",
+        "workingOut": "\\( 2(0) - 5y + 10 = 0 \\implies 5y = 10 \\implies y = 2 \\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(\\text{Plot } A(-5,0) \\text{ and } B(0,2) \\text{ and draw a line through them.}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: A(-5, 0), B(0, 2).\nPlot A and B on the Cartesian plane and draw a straight line through them.. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "A(-5, 0), B(0, 2).\nPlot A and B on the Cartesian plane and draw a straight line through them.",
+        "explanation": "The points are \\(A(-5, 0)\\) and \\(B(0, 2)\\).",
+        "workingOut": "\\( A(-5, 0), B(0, 2) \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": true
+    "options": [
+      {
+        "text": "\\( A(-5, 0), B(0, 2) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( A(5, 0), B(0, -2) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( A(-2, 0), B(0, 5) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( A(2, 0), B(0, -5) \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q12a-grad",
@@ -2344,41 +2591,42 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Find the gradient of the line through the pair of points \\(A(0, 3)\\) and \\(B(3, 9)\\).",
-    "opts": [
-      "\\(2\\)",
-      "\\(3\\)",
-      "\\(-2\\)",
-      "\\(1\\)"
-    ],
     "a": 0,
-    "answer": "0",
+    "answer": 0,
     "hint": "Use the gradient formula m = (y2 - y1) / (x2 - x1).",
-    "solution": "The gradient \\(m = \\frac{9 - 3}{3 - 0} = 2\\).",
+    "solution": "\\( 2 \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(m = \\frac{y_2 - y_1}{x_2 - x_1}\\)",
+        "explanation": "Use the gradient formula \\( m = \\frac{y_2 - y_1}{x_2 - x_1} \\).",
+        "workingOut": "\\( m = \\frac{9 - 3}{3 - 0} \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(m = \\frac{9-3}{3-0} = \\frac{6}{3} = 2\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(2\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: 2. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(2\\)",
+        "explanation": "Simplify the fraction.",
+        "workingOut": "\\( m = \\frac{6}{3} = 2 \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 1 \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q12a-eq",
@@ -2389,41 +2637,42 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Find the equation of the line through \\(A(0, 3)\\) and \\(B(3, 9)\\), giving your answer in general form (e.g. Ax + By + C = 0 with A > 0).",
-    "opts": [
-      "\\(2x-y+3=+0\\)",
-      "\\(2x-y+3=0 + 1\\)",
-      "\\(2x+y+3=0\\)",
-      "\\(2x-y+3=0\\)"
-    ],
     "a": 3,
-    "answer": "3",
+    "answer": 0,
     "hint": "Use the point-gradient formula y - y1 = m(x - x1) with one of the points and the gradient.",
-    "solution": "Using the point-gradient formula gives \\(2x-y+3=0\\).",
+    "solution": "\\( 2x - y + 3 = 0 \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(m = \\frac{y_2 - y_1}{x_2 - x_1}\\)",
+        "explanation": "The gradient is \\(m = 2\\) and the y-intercept is \\(b = 3\\) (from point A).",
+        "workingOut": "\\( y = 2x + 3 \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(m = \\frac{9-3}{3-0} = \\frac{6}{3} = 2\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(y - 3 = 2(x - 0)\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: 2x-y+3=0. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(2x-y+3=0\\)",
+        "explanation": "Rearrange to general form \\(Ax + By + C = 0\\) with \\(A > 0\\).",
+        "workingOut": "\\( 2x - y + 3 = 0 \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( 2x - y + 3 = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 2x + y + 3 = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x - 2y + 3 = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 2x - y - 3 = 0 \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q12b-grad",
@@ -2434,41 +2683,42 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Find the gradient of the line through the pair of points \\(A(0, 0)\\) and \\(B(1, -2)\\).",
-    "opts": [
-      "\\(2\\)",
-      "\\(-3\\)",
-      "\\(-2\\)",
-      "\\(-1\\)"
-    ],
     "a": 2,
-    "answer": "2",
+    "answer": 0,
     "hint": "Use the gradient formula m = (y2 - y1) / (x2 - x1).",
-    "solution": "The gradient \\(m = \\frac{-2 - 0}{1 - 0} = -2\\).",
+    "solution": "\\( -2 \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(m = \\frac{-2 - 0}{1 - 0} = -2\\)",
+        "explanation": "Use the gradient formula.",
+        "workingOut": "\\( m = \\frac{-2 - 0}{1 - 0} \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(y - 0 = -2(x - 0)\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(-2\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: -2. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(-2\\)",
+        "explanation": "Simplify.",
+        "workingOut": "\\( m = -2 \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( -2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -\\frac{1}{2} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( \\frac{1}{2} \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q12b-eq",
@@ -2479,41 +2729,42 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Find the equation of the line through \\(A(0, 0)\\) and \\(B(1, -2)\\), giving your answer in general form (e.g. Ax + By + C = 0 with A > 0).",
-    "opts": [
-      "\\(2x+y=+0\\)",
-      "\\(2x+y=0\\)",
-      "\\(2x-y=0\\)",
-      "\\(2x+y=0 + 1\\)"
-    ],
     "a": 1,
-    "answer": "1",
+    "answer": 0,
     "hint": "Use the point-gradient formula y - y1 = m(x - x1) with one of the points and the gradient.",
-    "solution": "Using the point-gradient formula gives \\(2x+y=0\\).",
+    "solution": "\\( 2x + y = 0 \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(m = \\frac{-2 - 0}{1 - 0} = -2\\)",
+        "explanation": "The gradient is \\(m = -2\\) and the y-intercept is \\(b = 0\\) (from point A).",
+        "workingOut": "\\( y = -2x \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(y - 0 = -2(x - 0)\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(2x + y = 0\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: 2x+y=0. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(2x+y=0\\)",
+        "explanation": "Rearrange to general form.",
+        "workingOut": "\\( 2x + y = 0 \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( 2x + y = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 2x - y = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x + 2y = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x - 2y = 0 \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q12c-grad",
@@ -2524,41 +2775,42 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Find the gradient of the line through the pair of points \\(A(-6, -1)\\) and \\(B(0, -3)\\).",
-    "opts": [
-      "\\(1/3\\)",
-      "\\(2/3\\)",
-      "\\(3/1\\)",
-      "\\(-1/3\\)"
-    ],
     "a": 3,
-    "answer": "3",
+    "answer": 0,
     "hint": "Use the gradient formula m = (y2 - y1) / (x2 - x1).",
-    "solution": "The gradient \\(m = \\frac{-3 - -1}{0 - -6} = -1/3\\).",
+    "solution": "\\( -\\frac{1}{3} \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(m = \\frac{-3 - (-1)}{0 - (-6)} = \\frac{-2}{6} = -\\frac{1}{3}\\)",
+        "explanation": "Use the gradient formula.",
+        "workingOut": "\\( m = \\frac{-3 - (-1)}{0 - (-6)} \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(y - (-3) = -\\frac{1}{3}(x - 0)\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(-1/3\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: -1/3. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(-1/3\\)",
+        "explanation": "Simplify.",
+        "workingOut": "\\( m = \\frac{-2}{6} = -\\frac{1}{3} \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( -\\frac{1}{3} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( \\frac{1}{3} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 3 \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q12c-eq",
@@ -2569,41 +2821,47 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Find the equation of the line through \\(A(-6, -1)\\) and \\(B(0, -3)\\), giving your answer in general form (e.g. Ax + By + C = 0 with A > 0).",
-    "opts": [
-      "\\(x-3y-9=0\\)",
-      "\\(x+3y+9=+0\\)",
-      "\\(x+3y+9=0\\)",
-      "\\(x+3-y+9=0\\)"
-    ],
     "a": 2,
-    "answer": "2",
+    "answer": 0,
     "hint": "Use the point-gradient formula y - y1 = m(x - x1) with one of the points and the gradient.",
-    "solution": "Using the point-gradient formula gives \\(x+3y+9=0\\).",
+    "solution": "\\( x + 3y + 9 = 0 \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(m = \\frac{-3 - (-1)}{0 - (-6)} = \\frac{-2}{6} = -\\frac{1}{3}\\)",
+        "explanation": "The gradient is \\(m = -\\frac{1}{3}\\) and the y-intercept is \\(b = -3\\) (from point B).",
+        "workingOut": "\\( y = -\\frac{1}{3}x - 3 \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(y - (-3) = -\\frac{1}{3}(x - 0)\\)",
+        "explanation": "Multiply by 3.",
+        "workingOut": "\\( 3y = -x - 9 \\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(3(y + 3) = -x \\implies 3y + 9 = -x\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: x+3y+9=0. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(x+3y+9=0\\)",
+        "explanation": "Rearrange to general form with \\(A > 0\\).",
+        "workingOut": "\\( x + 3y + 9 = 0 \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( x + 3y + 9 = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x - 3y - 9 = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 3x + y + 9 = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x + 3y - 9 = 0 \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q13a-par",
@@ -2614,41 +2872,47 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "For the line \\(3x + y + 2 = 0\\), find the equation of a line passing through \\(A(0, 4)\\) that is: parallel to it (answer in gradient-intercept form, e.g. y = mx + b).",
-    "opts": [
-      "\\(y=-3x-4\\)",
-      "\\(y=+3x+4\\)",
-      "\\(-y=-3x+4\\)",
-      "\\(y=-3x+4\\)"
-    ],
     "a": 2,
-    "answer": "2",
+    "answer": 0,
     "hint": "Parallel lines have the same gradient. Find the gradient of the given line, then use y = mx + b with the point A(0, 4) which is the y-intercept.",
-    "solution": "The parallel gradient is \\(-3\\). Since the line passes through \\(A(0,4)\\), its y-intercept is \\(4\\). The equation is \\(y=-3x+4\\).",
+    "solution": "\\( y = -3x + 4 \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(y = -3x - 2 \\implies m = -3\\)",
+        "explanation": "Find the gradient of the given line.",
+        "workingOut": "\\( y = -3x - 2 \\implies m = -3 \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(m_{\\parallel} = -3\\)",
+        "explanation": "A parallel line has the same gradient.",
+        "workingOut": "\\( m = -3 \\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(y = -3x + 4\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: -y=-3x+4. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(-y=-3x+4\\)",
+        "explanation": "The y-intercept of the new line is given by point A as 4.",
+        "workingOut": "\\( y = -3x + 4 \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( y = -3x + 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 3x + 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = -3x - 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = \\frac{1}{3}x + 4 \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q13a-perp",
@@ -2659,41 +2923,47 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "For the line \\(3x + y + 2 = 0\\), find the equation of a line passing through \\(A(0, 4)\\) that is: perpendicular to it (answer in gradient-intercept form, e.g. y = mx + b).",
-    "opts": [
-      "\\(-y=1/3x+4\\)",
-      "\\(y=1/3x+4\\)",
-      "\\(y=1/3x-4\\)",
-      "\\(y=1/3x+4 + 1\\)"
-    ],
     "a": 0,
-    "answer": "0",
+    "answer": 0,
     "hint": "Perpendicular lines have gradients that multiply to -1. Find the negative reciprocal of the given line's gradient, then use the y-intercept 4.",
-    "solution": "The perpendicular gradient is \\(1/3\\). The equation is \\(y=1/3x+4\\).",
+    "solution": "\\( y = \\frac{1}{3}x + 4 \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(m = -3\\)",
+        "explanation": "Find the gradient of the given line.",
+        "workingOut": "\\( y = -3x - 2 \\implies m_1 = -3 \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(m_{\\perp} = -\\frac{1}{-3} = \\frac{1}{3}\\)",
+        "explanation": "A perpendicular line has gradient \\(m_2\\) such that \\(m_1 m_2 = -1\\).",
+        "workingOut": "\\( m_2 = \\frac{1}{3} \\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(y = \\frac{1}{3}x + 4\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: -y=1/3x+4. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(-y=1/3x+4\\)",
+        "explanation": "Substitute the gradient and the y-intercept (from point A) into \\(y = mx + b\\).",
+        "workingOut": "\\( y = \\frac{1}{3}x + 4 \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( y = \\frac{1}{3}x + 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = -\\frac{1}{3}x + 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 3x + 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = -3x + 4 \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q13b-par",
@@ -2704,41 +2974,47 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "For the line \\(4x - 3y - 2 = 0\\), find the equation of a line passing through \\(A(0, 4)\\) that is: parallel to it (answer in gradient-intercept form, e.g. y = mx + b).",
-    "opts": [
-      "\\(-y=4/3x+4\\)",
-      "\\(y=4/3x+4 + 1\\)",
-      "\\(y=4/3x+4\\)",
-      "\\(y=4/3x-4\\)"
-    ],
     "a": 0,
-    "answer": "0",
+    "answer": 0,
     "hint": "Parallel lines have the same gradient. Find the gradient of the given line, then use y = mx + b with the point A(0, 4) which is the y-intercept.",
-    "solution": "The parallel gradient is \\(4/3\\). Since the line passes through \\(A(0,4)\\), its y-intercept is \\(4\\). The equation is \\(y=4/3x+4\\).",
+    "solution": "\\( y = \\frac{4}{3}x + 4 \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(3y = 4x - 2 \\implies y = \\frac{4}{3}x - \\frac{2}{3} \\implies m = \\frac{4}{3}\\)",
+        "explanation": "Find the gradient of the given line by rearranging into \\(y = mx + b\\).",
+        "workingOut": "\\( 3y = 4x - 2 \\implies y = \\frac{4}{3}x - \\frac{2}{3} \\implies m = \\frac{4}{3} \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(y = \\frac{4}{3}x + 4\\)",
+        "explanation": "A parallel line has the same gradient.",
+        "workingOut": "\\( m = \\frac{4}{3} \\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(-y=4/3x+4\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: -y=4/3x+4. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(-y=4/3x+4\\)",
+        "explanation": "Substitute into \\(y = mx + b\\) with \\(b = 4\\).",
+        "workingOut": "\\( y = \\frac{4}{3}x + 4 \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( y = \\frac{4}{3}x + 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = -\\frac{4}{3}x + 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = \\frac{3}{4}x + 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = -\\frac{3}{4}x + 4 \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q13b-perp",
@@ -2749,41 +3025,47 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "For the line \\(4x - 3y - 2 = 0\\), find the equation of a line passing through \\(A(0, 4)\\) that is: perpendicular to it (answer in gradient-intercept form, e.g. y = mx + b).",
-    "opts": [
-      "\\(y=-3/4x+4\\)",
-      "\\(y=+3/4x+4\\)",
-      "\\(y=-3/4x-4\\)",
-      "\\(-y=-3/4x+4\\)"
-    ],
     "a": 0,
-    "answer": "0",
+    "answer": 0,
     "hint": "Perpendicular lines have gradients that multiply to -1. Find the negative reciprocal of the given line's gradient, then use the y-intercept 4.",
-    "solution": "The perpendicular gradient is \\(-3/4\\). The equation is \\(y=-3/4x+4\\).",
+    "solution": "\\( y = -\\frac{3}{4}x + 4 \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(m = \\frac{4}{3}\\)",
+        "explanation": "Find the gradient of the given line.",
+        "workingOut": "\\( y = \\frac{4}{3}x - \\frac{2}{3} \\implies m_1 = \\frac{4}{3} \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(m_{\\perp} = -\\frac{1}{4/3} = -\\frac{3}{4}\\)",
+        "explanation": "A perpendicular line has the negative reciprocal gradient.",
+        "workingOut": "\\( m_2 = -\\frac{3}{4} \\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(y = -\\frac{3}{4}x + 4\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: y=-3/4x+4. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(y=-3/4x+4\\)",
+        "explanation": "Substitute into \\(y = mx + b\\) with \\(b = 4\\).",
+        "workingOut": "\\( y = -\\frac{3}{4}x + 4 \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( y = -\\frac{3}{4}x + 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = \\frac{3}{4}x + 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = -\\frac{4}{3}x + 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = \\frac{4}{3}x + 4 \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q13c-par",
@@ -2794,41 +3076,47 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "For the line \\(2x + 5y - 3 = 0\\), find the equation of a line passing through \\(A(0, 4)\\) that is: parallel to it (answer in gradient-intercept form, e.g. y = mx + b).",
-    "opts": [
-      "\\(y=+2/5x+4\\)",
-      "\\(-y=-2/5x+4\\)",
-      "\\(y=-2/5x-4\\)",
-      "\\(y=-2/5x+4\\)"
-    ],
     "a": 1,
-    "answer": "1",
+    "answer": 0,
     "hint": "Parallel lines have the same gradient. Find the gradient of the given line, then use y = mx + b with the point A(0, 4) which is the y-intercept.",
-    "solution": "The parallel gradient is \\(-2/5\\). Since the line passes through \\(A(0,4)\\), its y-intercept is \\(4\\). The equation is \\(y=-2/5x+4\\).",
+    "solution": "\\( y = -\\frac{2}{5}x + 4 \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(5y = -2x + 3 \\implies y = -\\frac{2}{5}x + \\frac{3}{5} \\implies m = -\\frac{2}{5}\\)",
+        "explanation": "Find the gradient of the given line.",
+        "workingOut": "\\( 5y = -2x + 3 \\implies y = -\\frac{2}{5}x + \\frac{3}{5} \\implies m = -\\frac{2}{5} \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(y = -\\frac{2}{5}x + 4\\)",
+        "explanation": "A parallel line has the same gradient.",
+        "workingOut": "\\( m = -\\frac{2}{5} \\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(-y=-2/5x+4\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: -y=-2/5x+4. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(-y=-2/5x+4\\)",
+        "explanation": "Substitute into \\(y = mx + b\\) with \\(b = 4\\).",
+        "workingOut": "\\( y = -\\frac{2}{5}x + 4 \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( y = -\\frac{2}{5}x + 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = \\frac{2}{5}x + 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = \\frac{5}{2}x + 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = -\\frac{5}{2}x + 4 \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q13c-perp",
@@ -2839,41 +3127,47 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "For the line \\(2x + 5y - 3 = 0\\), find the equation of a line passing through \\(A(0, 4)\\) that is: perpendicular to it (answer in gradient-intercept form, e.g. y = mx + b).",
-    "opts": [
-      "\\(y=5/2x-4\\)",
-      "\\(-y=5/2x+4\\)",
-      "\\(y=5/2x+4 + 1\\)",
-      "\\(y=5/2x+4\\)"
-    ],
     "a": 1,
-    "answer": "1",
+    "answer": 0,
     "hint": "Perpendicular lines have gradients that multiply to -1. Find the negative reciprocal of the given line's gradient, then use the y-intercept 4.",
-    "solution": "The perpendicular gradient is \\(5/2\\). The equation is \\(y=5/2x+4\\).",
+    "solution": "\\( y = \\frac{5}{2}x + 4 \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(m = -\\frac{2}{5}\\)",
+        "explanation": "Find the gradient of the given line.",
+        "workingOut": "\\( m_1 = -\\frac{2}{5} \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(m_{\\perp} = -\\frac{1}{-2/5} = \\frac{5}{2}\\)",
+        "explanation": "A perpendicular line has the negative reciprocal gradient.",
+        "workingOut": "\\( m_2 = \\frac{5}{2} \\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(y = \\frac{5}{2}x + 4\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: -y=5/2x+4. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(-y=5/2x+4\\)",
+        "explanation": "Substitute into \\(y = mx + b\\) with \\(b = 4\\).",
+        "workingOut": "\\( y = \\frac{5}{2}x + 4 \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( y = \\frac{5}{2}x + 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = -\\frac{5}{2}x + 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = \\frac{2}{5}x + 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = -\\frac{2}{5}x + 4 \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q14a",
@@ -2884,41 +3178,52 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Find the gradients of the four lines: \\(2x + y + 5 = 0\\), \\(x - 3y - 2 = 0\\), \\(2x + y + 9 = 0\\), and \\(x - 3y + 6 = 0\\). Hence state what sort of special quadrilateral they enclose.",
-    "opts": [
-      "\\(parallelogram\\)",
-      "\\(rhombus\\)",
-      "\\(rectangle\\)",
-      "\\(square\\)"
-    ],
     "a": 0,
-    "answer": "0",
+    "answer": 0,
     "hint": "Find the gradient of each line by rearranging into y = mx + b. Compare the gradients of opposite sides and adjacent sides.",
-    "solution": "The gradients are: -2, 1/3, -2, 1/3. Since opposite sides are parallel, the shape is a parallelogram.",
+    "solution": "Parallelogram",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(m_1 = -2, \\; m_2 = \\frac{1}{3}, \\; m_3 = -2, \\; m_4 = \\frac{1}{3}\\)",
+        "explanation": "Find the gradients of the four lines.",
+        "workingOut": "\\( m_1 = -2, \\; m_2 = \\frac{1}{3}, \\; m_3 = -2, \\; m_4 = \\frac{1}{3} \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(m_1 = m_3 = -2 \\implies L_1 \\parallel L_3, quad m_2 = m_4 = \\frac{1}{3} \\implies L_2 \\parallel L_4\\)",
+        "explanation": "Since the opposite sides have equal gradients, they are parallel.",
+        "workingOut": "\\( m_1 = m_3 \\) and \\( m_2 = m_4 \\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(m_1 \\times m_2 = -2 \\times \\frac{1}{3} = -\\frac{2}{3} \\ne -1\\)",
+        "explanation": "Check if adjacent sides are perpendicular.",
+        "workingOut": "\\( -2 \\times \\frac{1}{3} \\neq -1 \\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: parallelogram. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(parallelogram\\)",
+        "explanation": "Therefore, the quadrilateral is a parallelogram but not a rectangle.",
+        "workingOut": "\\text{Parallelogram}",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "Parallelogram",
+        "imageUrl": ""
+      },
+      {
+        "text": "Rectangle",
+        "imageUrl": ""
+      },
+      {
+        "text": "Rhombus",
+        "imageUrl": ""
+      },
+      {
+        "text": "Square",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q14b",
@@ -2929,155 +3234,207 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Find the gradients of the four lines: \\(3x - 2y + 6 = 0\\), \\(2x + 3y + 4 = 0\\), \\(3x - 2y - 4 = 0\\), and \\(2x + 3y - 2 = 0\\). Hence state what sort of special quadrilateral they enclose.",
-    "opts": [
-      "\\(rectangle\\)",
-      "\\(square\\)",
-      "\\(parallelogram\\)",
-      "\\(rhombus\\)"
-    ],
     "a": 0,
-    "answer": "0",
+    "answer": 0,
     "hint": "Find the gradient of each line by rearranging into y = mx + b. Compare the gradients of opposite sides and adjacent sides.",
-    "solution": "The gradients are: 3/2, -2/3, 3/2, -2/3. Since opposite sides are parallel, the shape is a rectangle.",
+    "solution": "Rectangle",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(m_1 = \\frac{3}{2}, \\; m_2 = -\\frac{2}{3}, \\; m_3 = \\frac{3}{2}, \\; m_4 = -\\frac{2}{3}\\)",
+        "explanation": "Find the gradients of the four lines.",
+        "workingOut": "\\( m_1 = \\frac{3}{2}, \\; m_2 = -\\frac{2}{3}, \\; m_3 = \\frac{3}{2}, \\; m_4 = -\\frac{2}{3} \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(m_1 = m_3, \\; m_2 = m_4, quad m_1 \\times m_2 = \\frac{3}{2} \\times \\left(-\\frac{2}{3}\\right) = -1\\)",
+        "explanation": "Since the opposite sides have equal gradients, it is a parallelogram.",
+        "workingOut": "\\( m_1 = m_3 \\) and \\( m_2 = m_4 \\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(\\text{Rectangle}\\)",
+        "explanation": "Check if adjacent sides are perpendicular.",
+        "workingOut": "\\( \\frac{3}{2} \\times \\left(-\\frac{2}{3}\\right) = -1 \\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: rectangle. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(rectangle\\)",
+        "explanation": "Therefore, it is a rectangle.",
+        "workingOut": "\\text{Rectangle}",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "Rectangle",
+        "imageUrl": ""
+      },
+      {
+        "text": "Parallelogram",
+        "imageUrl": ""
+      },
+      {
+        "text": "Rhombus",
+        "imageUrl": ""
+      },
+      {
+        "text": "Kite",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q15",
     "topicId": "y11a-7C",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Find the gradients of the three lines \\(3x - 4y + 6 = 0\\), \\(2x - 5y + 8 = 0\\), and \\(4x + 3y + 1 = 0\\). Hence show that they enclose a right-angled triangle.",
-    "answer": "m1 = 3/4, m2 = 2/5, m3 = -4/3.\nSince m1 * m3 = -1, the first and third lines are perpendicular, so they enclose a right-angled triangle.",
+    "question": "Find the gradients of the three lines \\(3x - 4y + 6 = 0\\), \\(2x - 5y + 8 = 0\\), and \\(4x + 3y + 1 = 0\\). Which pair of lines are perpendicular, showing they enclose a right-angled triangle?",
+    "answer": 0,
     "hint": "Find the gradients of all three lines. Show that the product of two of the gradients is -1.",
-    "solution": "m1 = 3/4, m2 = 2/5, m3 = -4/3.\nSince m1 * m3 = -1, the first and third lines are perpendicular, so they enclose a right-angled triangle.",
+    "solution": "\\( 3x - 4y + 6 = 0 \\) and \\( 4x + 3y + 1 = 0 \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(4y = 3x + 6 \\implies y = \\frac{3}{4}x + 1.5 \\implies m_1 = \\frac{3}{4}\\)",
+        "explanation": "Find the gradients of all three lines.",
+        "workingOut": "\\( m_1 = \\frac{3}{4}, \\; m_2 = \\frac{2}{5}, \\; m_3 = -\\frac{4}{3} \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(5y = 2x + 8 \\implies y = \\frac{2}{5}x + 1.6 \\implies m_2 = \\frac{2}{5}\\)",
+        "explanation": "Check for perpendicular pairs by checking if \\( m_a m_b = -1 \\).",
+        "workingOut": "\\( \\frac{3}{4} \\times \\left(-\\frac{4}{3}\\right) = -1 \\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(3y = -4x - 1 \\implies y = -\\frac{4}{3}x - \\frac{1}{3} \\implies m_3 = -\\frac{4}{3}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: m1 = 3/4, m2 = 2/5, m3 = -4/3.\nSince m1 * m3 = -1, the first and third lines are perpendicular, so they enclose a right-angled triangle.. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "m1 = 3/4, m2 = 2/5, m3 = -4/3.\nSince m1 * m3 = -1, the first and third lines are perpendicular, so they enclose a right-angled triangle.",
+        "explanation": "Since two lines are perpendicular, they enclose a right-angled triangle.",
+        "workingOut": "\\text{The lines are } 3x - 4y + 6 = 0 \\text{ and } 4x + 3y + 1 = 0.",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": true
+    "options": [
+      {
+        "text": "\\( 3x - 4y + 6 = 0 \\) and \\( 4x + 3y + 1 = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 3x - 4y + 6 = 0 \\) and \\( 2x - 5y + 8 = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 2x - 5y + 8 = 0 \\) and \\( 4x + 3y + 1 = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "None of the lines are perpendicular.",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q16a",
     "topicId": "y11a-7C",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Using a sketch, find the equations of the sides of the rectangle with vertices \\(P(4, -5)\\), \\(Q(1, -5)\\), \\(R(1, -1)\\), and \\(S(4, -1)\\).",
-    "answer": "PQ: y = -5, RS: y = -1, QR: x = 1, SP: x = 4",
+    "question": "Which of the following sets of equations describes the sides of the rectangle with vertices \\(P(4, -5)\\), \\(Q(1, -5)\\), \\(R(1, -1)\\), and \\(S(4, -1)\\)?",
+    "answer": 0,
     "hint": "Plot the points to see which lines are horizontal (y = constant) and which are vertical (x = constant).",
-    "solution": "PQ: y = -5, RS: y = -1, QR: x = 1, SP: x = 4",
+    "solution": "\\( x = 1, \\; x = 4, \\; y = -5, \\; y = -1 \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(\\text{Side PQ passes through (4, -5) and (1, -5) } \\implies y = -5\\)",
+        "explanation": "Identify the horizontal lines by looking at points with the same y-coordinates.",
+        "workingOut": "\\( P(4, -5) \\) and \\( Q(1, -5) \\implies y = -5 \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(\\text{Side RS passes through (1, -1) and (4, -1) } \\implies y = -1\\)",
+        "explanation": "Identify the other horizontal line.",
+        "workingOut": "\\( R(1, -1) \\) and \\( S(4, -1) \\implies y = -1 \\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(\\text{Side QR passes through (1, -5) and (1, -1) } \\implies x = 1\\)",
+        "explanation": "Identify the vertical lines by looking at points with the same x-coordinates.",
+        "workingOut": "\\( Q(1, -5) \\) and \\( R(1, -1) \\implies x = 1 \\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: PQ: y = -5, RS: y = -1, QR: x = 1, SP: x = 4. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(PQ: y = -5, RS: y = -1, QR: x = 1, SP: x = 4\\)",
+        "explanation": "Identify the other vertical line.",
+        "workingOut": "\\( S(4, -1) \\) and \\( P(4, -5) \\implies x = 4 \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": true
+    "options": [
+      {
+        "text": "\\( x = 1, \\; x = 4, \\; y = -5, \\; y = -1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -5, \\; x = -1, \\; y = 1, \\; y = 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -1, \\; x = 4, \\; y = 1, \\; y = 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 1, \\; x = 5, \\; y = -4, \\; y = -1 \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q16b",
     "topicId": "y11a-7C",
     "c": "7C",
     "t": "Equations of lines",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Using a sketch, find the equations of the sides of the triangle with vertices \\(F(4, 0)\\), \\(G(-8, 0)\\), and \\(H(0, 8)\\).",
-    "answer": "FG: y = 0, FH: 2x + y - 8 = 0, GH: x - y + 8 = 0",
+    "question": "Find the general form equations of the sides of the triangle with vertices \\(F(4, 0)\\), \\(G(-8, 0)\\), and \\(H(0, 8)\\).",
+    "answer": 0,
     "hint": "Find the equations of the lines connecting FG, FH, and GH. Note FG lies on the x-axis.",
-    "solution": "FG: y = 0, FH: 2x + y - 8 = 0, GH: x - y + 8 = 0",
+    "solution": "\\( y = 0, \\; 2x + y - 8 = 0, \\; x - y + 8 = 0 \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(y = 0\\)",
+        "explanation": "Find the equation of the side \\(FG\\). The points \\(F(4, 0)\\) and \\(G(-8, 0)\\) lie on the x-axis.",
+        "workingOut": "\\( y = 0 \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(m_{FH} = \\frac{8-0}{0-4} = -2 \\implies y = -2x + 8 \\implies 2x + y - 8 = 0\\)",
+        "explanation": "Find the equation of \\(FH\\). The gradient \\(m = \\frac{8 - 0}{0 - 4} = -2\\) and y-intercept is 8.",
+        "workingOut": "\\( y = -2x + 8 \\implies 2x + y - 8 = 0 \\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(m_{GH} = \\frac{8-0}{0-(-8)} = 1 \\implies y = x + 8 \\implies x - y + 8 = 0\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: FG: y = 0, FH: 2x + y - 8 = 0, GH: x - y + 8 = 0. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(FG: y = 0, FH: 2x + y - 8 = 0, GH: x - y + 8 = 0\\)",
+        "explanation": "Find the equation of \\(GH\\). The gradient \\(m = \\frac{8 - 0}{0 - (-8)} = 1\\) and y-intercept is 8.",
+        "workingOut": "\\( y = 1x + 8 \\implies x - y + 8 = 0 \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": true
+    "options": [
+      {
+        "text": "\\( y = 0, \\; 2x + y - 8 = 0, \\; x - y + 8 = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 0, \\; x + 2y - 8 = 0, \\; x - y + 8 = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 0, \\; 2x - y - 8 = 0, \\; x + y + 8 = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 0, \\; 2x + y + 8 = 0, \\; x - y - 8 = 0 \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q17a-grad",
@@ -3088,41 +3445,42 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "A line has an angle of inclination \\(\\alpha = 45^{\\circ}\\) and y-intercept \\(A(0, 4)\\). Find the gradient \\(m\\) of the line.",
-    "opts": [
-      "\\(-1\\)",
-      "\\(1\\)",
-      "\\(0.5\\)",
-      "\\(1.5\\)"
-    ],
     "a": 1,
-    "answer": "1",
+    "answer": 0,
     "hint": "Use the formula m = tan(alpha) to find the gradient.",
-    "solution": "The gradient \\(m = \\tan 45^{\\circ} = 1\\).",
+    "solution": "\\( 1 \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(m = \\tan 45^{\\circ} = 1\\)",
+        "explanation": "Use the formula \\( m = \\tan \\alpha \\).",
+        "workingOut": "\\( m = \\tan 45^{\\circ} \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(y = x + 4\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(1\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: 1. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(1\\)",
+        "explanation": "Evaluate \\( \\tan 45^{\\circ} \\).",
+        "workingOut": "\\( m = 1 \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( 1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( \\frac{\\sqrt{2}}{2} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 0 \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q17a-eq",
@@ -3133,41 +3491,42 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "A line has an angle of inclination \\(\\alpha = 45^{\\circ}\\) and y-intercept \\(A(0, 4)\\). Find the equation of the line in general form (e.g. Ax + By + C = 0 with A > 0).",
-    "opts": [
-      "\\(x-y+4=+0\\)",
-      "\\(x-y+4=0\\)",
-      "\\(x-y+4=0 + 1\\)",
-      "\\(x+y+4=0\\)"
-    ],
     "a": 1,
-    "answer": "1",
+    "answer": 0,
     "hint": "Use the gradient-intercept form y = mx + b, then rearrange to general form.",
-    "solution": "The equation in general form is \\(x-y+4=0\\).",
+    "solution": "\\( x - y + 4 = 0 \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(m = \\tan 45^{\\circ} = 1\\)",
+        "explanation": "Use the gradient-intercept form \\( y = mx + b \\) with \\( m = 1 \\) and \\( b = 4 \\).",
+        "workingOut": "\\( y = 1x + 4 \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(y = x + 4\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(x - y + 4 = 0\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: x-y+4=0. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(x-y+4=0\\)",
+        "explanation": "Rearrange to general form \\(Ax + By + C = 0\\) with \\( A > 0 \\).",
+        "workingOut": "\\( x - y + 4 = 0 \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( x - y + 4 = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x + y - 4 = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x - y - 4 = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x + y + 4 = 0 \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q17b-grad",
@@ -3178,41 +3537,42 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "A line has an angle of inclination \\(\\alpha = 60^{\\circ}\\) and y-intercept \\(A(0, -2)\\). Find the gradient \\(m\\) of the line.",
-    "opts": [
-      "\\(\\sqrt{3}\\)",
-      "\\(-\\sqrt{3}\\)",
-      "\\(\\sqrt{3} - 1\\)",
-      "\\(\\sqrt{3} + 1\\)"
-    ],
     "a": 0,
-    "answer": "0",
+    "answer": 0,
     "hint": "Use the formula m = tan(alpha) to find the gradient.",
-    "solution": "The gradient \\(m = \\tan 60^{\\circ} = \\sqrt{3}\\).",
+    "solution": "\\( \\sqrt{3} \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(m = \\tan 60^{\\circ} = \\sqrt{3}\\)",
+        "explanation": "Use the formula \\( m = \\tan \\alpha \\).",
+        "workingOut": "\\( m = \\tan 60^{\\circ} \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(y = \\sqrt{3}x - 2\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(\\sqrt{3}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: \\sqrt{3}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(\\sqrt{3}\\)",
+        "explanation": "Evaluate \\( \\tan 60^{\\circ} \\).",
+        "workingOut": "\\( m = \\sqrt{3} \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( \\sqrt{3} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -\\sqrt{3} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( \\frac{1}{\\sqrt{3}} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -\\frac{1}{\\sqrt{3}} \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q17b-eq",
@@ -3223,41 +3583,42 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "A line has an angle of inclination \\(\\alpha = 60^{\\circ}\\) and y-intercept \\(A(0, -2)\\). Find the equation of the line in general form (e.g. Ax + By + C = 0 with A > 0).",
-    "opts": [
-      "\\(sqrt(3)x-y-2=0\\)",
-      "\\(sqrt(3)x+y+2=0\\)",
-      "\\(sqrt(3)x+y-2=0\\)",
-      "\\(sqrt(3)x-y-2=+0\\)"
-    ],
     "a": 0,
-    "answer": "0",
+    "answer": 0,
     "hint": "Use the gradient-intercept form y = mx + b, then rearrange to general form.",
-    "solution": "The equation in general form is \\(sqrt(3)x-y-2=0\\).",
+    "solution": "\\( \\sqrt{3}x - y - 2 = 0 \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(m = \\tan 60^{\\circ} = \\sqrt{3}\\)",
+        "explanation": "Use \\( y = mx + b \\) with \\( m = \\sqrt{3} \\) and \\( b = -2 \\).",
+        "workingOut": "\\( y = \\sqrt{3}x - 2 \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(y = \\sqrt{3}x - 2\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(\\sqrt{3}x - y - 2 = 0\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: sqrt(3)x-y-2=0. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(sqrt(3)x-y-2=0\\)",
+        "explanation": "Rearrange to general form.",
+        "workingOut": "\\( \\sqrt{3}x - y - 2 = 0 \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( \\sqrt{3}x - y - 2 = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( \\sqrt{3}x + y + 2 = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( \\sqrt{3}x - y + 2 = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x - \\sqrt{3}y - 2 = 0 \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q17c-grad",
@@ -3268,41 +3629,42 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "A line has an angle of inclination \\(\\alpha = 30^{\\circ}\\) and y-intercept \\(A(0, -3)\\). Find the gradient \\(m\\) of the line.",
-    "opts": [
-      "\\(1/\\sqrt{3} - 1\\)",
-      "\\(-1/\\sqrt{3}\\)",
-      "\\(1/\\sqrt{3} + 1\\)",
-      "\\(1/\\sqrt{3}\\)"
-    ],
     "a": 3,
-    "answer": "3",
+    "answer": 0,
     "hint": "Use the formula m = tan(alpha) to find the gradient.",
-    "solution": "The gradient \\(m = \\tan 30^{\\circ} = 1/\\sqrt{3}\\).",
+    "solution": "\\( \\frac{1}{\\sqrt{3}} \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(m = \\tan 30^{\\circ} = \\frac{1}{\\sqrt{3}}\\)",
+        "explanation": "Use the formula \\( m = \\tan \\alpha \\).",
+        "workingOut": "\\( m = \\tan 30^{\\circ} \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(y = \\frac{1}{\\sqrt{3}}x - 3\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(1/\\sqrt{3}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: 1/\\sqrt{3}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(1/\\sqrt{3}\\)",
+        "explanation": "Evaluate \\( \\tan 30^{\\circ} \\).",
+        "workingOut": "\\( m = \\frac{1}{\\sqrt{3}} \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( \\frac{1}{\\sqrt{3}} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( \\sqrt{3} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -\\frac{1}{\\sqrt{3}} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -\\sqrt{3} \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q17c-eq",
@@ -3313,41 +3675,47 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "A line has an angle of inclination \\(\\alpha = 30^{\\circ}\\) and y-intercept \\(A(0, -3)\\). Find the equation of the line in general form (e.g. Ax + By + C = 0 with A > 0).",
-    "opts": [
-      "\\(x+sqrt(3)y+3sqrt(3)=0\\)",
-      "\\(x-sqrt(3)y-3sqrt(3)=+0\\)",
-      "\\(x-sqrt(3)y-3sqrt(3)=0\\)",
-      "\\(x-sqrt(3)-y-3sqrt(3)=0\\)"
-    ],
     "a": 2,
-    "answer": "2",
+    "answer": 0,
     "hint": "Use the gradient-intercept form y = mx + b, then rearrange to general form.",
-    "solution": "The equation in general form is \\(x-sqrt(3)y-3sqrt(3)=0\\).",
+    "solution": "\\( x - \\sqrt{3}y - 3\\sqrt{3} = 0 \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(m = \\tan 30^{\\circ} = \\frac{1}{\\sqrt{3}}\\)",
+        "explanation": "Use \\( y = mx + b \\) with \\( m = \\frac{1}{\\sqrt{3}} \\) and \\( b = -3 \\).",
+        "workingOut": "\\( y = \\frac{1}{\\sqrt{3}}x - 3 \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(y = \\frac{1}{\\sqrt{3}}x - 3\\)",
+        "explanation": "Multiply by \\( \\sqrt{3} \\) to remove the fraction.",
+        "workingOut": "\\( \\sqrt{3}y = x - 3\\sqrt{3} \\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(\\sqrt{3}y = x - 3\\sqrt{3}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: x-sqrt(3)y-3sqrt(3)=0. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(x-sqrt(3)y-3sqrt(3)=0\\)",
+        "explanation": "Rearrange to general form with \\( A > 0 \\).",
+        "workingOut": "\\( x - \\sqrt{3}y - 3\\sqrt{3} = 0 \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( x - \\sqrt{3}y - 3\\sqrt{3} = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x + \\sqrt{3}y + 3\\sqrt{3} = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( \\sqrt{3}x - y - 3 = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x - \\sqrt{3}y + 3\\sqrt{3} = 0 \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q17d-grad",
@@ -3358,41 +3726,42 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "A line has an angle of inclination \\(\\alpha = 135^{\\circ}\\) and y-intercept \\(A(0, 2)\\). Find the gradient \\(m\\) of the line.",
-    "opts": [
-      "\\(-1\\)",
-      "\\(1\\)",
-      "\\(-1.5\\)",
-      "\\(-0.5\\)"
-    ],
     "a": 0,
-    "answer": "0",
+    "answer": 0,
     "hint": "Use the formula m = tan(alpha) to find the gradient.",
-    "solution": "The gradient \\(m = \\tan 135^{\\circ} = -1\\).",
+    "solution": "\\( -1 \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(m = \\tan 135^{\\circ} = -1\\)",
+        "explanation": "Use the formula \\( m = \\tan \\alpha \\).",
+        "workingOut": "\\( m = \\tan 135^{\\circ} \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(y = -x + 2\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(-1\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: -1. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(-1\\)",
+        "explanation": "Evaluate \\( \\tan 135^{\\circ} \\).",
+        "workingOut": "\\( m = -1 \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( -1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -\\sqrt{2} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -\\frac{1}{\\sqrt{2}} \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q17d-eq",
@@ -3403,41 +3772,42 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "A line has an angle of inclination \\(\\alpha = 135^{\\circ}\\) and y-intercept \\(A(0, 2)\\). Find the equation of the line in general form (e.g. Ax + By + C = 0 with A > 0).",
-    "opts": [
-      "\\(x+y-2=+0\\)",
-      "\\(x+y-2=0\\)",
-      "\\(x+y+2=0\\)",
-      "\\(x-y-2=0\\)"
-    ],
     "a": 1,
-    "answer": "1",
+    "answer": 0,
     "hint": "Use the gradient-intercept form y = mx + b, then rearrange to general form.",
-    "solution": "The equation in general form is \\(x+y-2=0\\).",
+    "solution": "\\( x + y - 2 = 0 \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(m = \\tan 135^{\\circ} = -1\\)",
+        "explanation": "Use \\( y = mx + b \\) with \\( m = -1 \\) and \\( b = 2 \\).",
+        "workingOut": "\\( y = -1x + 2 \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(y = -x + 2\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(x + y - 2 = 0\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: x+y-2=0. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(x+y-2=0\\)",
+        "explanation": "Rearrange to general form with \\( A > 0 \\).",
+        "workingOut": "\\( x + y - 2 = 0 \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( x + y - 2 = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x - y - 2 = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x + y + 2 = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x - y + 2 = 0 \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q18a",
@@ -3448,41 +3818,52 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A triangle is formed by the x-axis and the lines \\(3y = 4x\\) and \\(3y + 4x = 24\\). Find (correct to the nearest degree) the angles of inclination of the two lines (enter as 'angle1, angle2').",
-    "opts": [
-      "\\(53°, 127°\\)",
-      "\\(53°, 127°+1\\)",
-      "\\(37°, 53°\\)",
-      "\\(127°, 53°\\)"
-    ],
     "a": 0,
-    "answer": "0",
+    "answer": 0,
     "hint": "Find the gradient of each line, then solve tan(alpha) = m to find the angles of inclination.",
-    "solution": "First line: \\(y = \\frac{4}{3}x \\implies m_1 = \\frac{4}{3} \\implies \\alpha_1 = \\tan^{-1}(4/3) \\approx 53^{\\circ}\\).\nSecond line: \\(y = -\\frac{4}{3}x + 8 \\implies m_2 = -\\frac{4}{3} \\implies \\alpha_2 = 180^{\\circ} - 53^{\\circ} = 127^{\\circ}\\).",
+    "solution": "\\( 53^{\\circ}, 127^{\\circ} \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(3y = 4x \\implies y = \\frac{4}{3}x \\implies m = \\frac{4}{3} \\implies \\alpha_1 \\approx 53^{\\circ}\\)",
+        "explanation": "Find the gradient of the first line \\( 3y = 4x \\).",
+        "workingOut": "\\( y = \\frac{4}{3}x \\implies m_1 = \\frac{4}{3} \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(3y + 4x = 24 \\implies y = -\\frac{4}{3}x + 8 \\implies m = -\\frac{4}{3} \\implies \\alpha_2 \\approx 127^{\\circ}\\)",
+        "explanation": "Calculate its angle of inclination.",
+        "workingOut": "\\( \\tan \\alpha_1 = \\frac{4}{3} \\implies \\alpha_1 \\approx 53.13^{\\circ} \\approx 53^{\\circ} \\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(53°, 127°\\)",
+        "explanation": "Find the gradient of the second line \\( 3y + 4x = 24 \\).",
+        "workingOut": "\\( 3y = -4x + 24 \\implies m_2 = -\\frac{4}{3} \\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 53°, 127°. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(53°, 127°\\)",
+        "explanation": "Calculate its angle of inclination.",
+        "workingOut": "\\( \\tan \\alpha_2 = -\\frac{4}{3} \\implies \\alpha_2 \\approx 180^{\\circ} - 53.13^{\\circ} \\approx 127^{\\circ} \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( 53^{\\circ}, 127^{\\circ} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 37^{\\circ}, 143^{\\circ} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 37^{\\circ}, 127^{\\circ} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 53^{\\circ}, 143^{\\circ} \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q18b",
@@ -3493,41 +3874,47 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "A triangle is formed by the x-axis and the lines \\(3y = 4x\\) and \\(3y + 4x = 24\\). Knowing their angles of inclination are \\(53^{\\circ}\\) and \\(127^{\\circ}\\), what sort of triangle has been formed?",
-    "opts": [
-      "\\(right-angled\\)",
-      "\\(equilateral\\)",
-      "\\(isosceles\\)",
-      "\\(scalene\\)"
-    ],
     "a": 2,
-    "answer": "2",
+    "answer": 0,
     "hint": "Calculate the base angles of the triangle formed with the x-axis.",
-    "solution": "The base angles are \\(53^{\\circ}\\) and \\(180^{\\circ} - 127^{\\circ} = 53^{\\circ}\\). Since two base angles are equal, the triangle is isosceles.",
+    "solution": "Isosceles",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(\\theta_1 = 53^{\\circ}, quad \\theta_2 = 180^{\\circ} - 127^{\\circ} = 53^{\\circ}\\)",
+        "explanation": "The angles of inclination are \\( 53^{\\circ} \\) and \\( 127^{\\circ} \\).",
+        "workingOut": "\\( \\alpha_1 = 53^{\\circ}, \\alpha_2 = 127^{\\circ} \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(\\text{Isosceles triangle}\\)",
+        "explanation": "The base of the triangle is the x-axis. The interior angles at the base are the acute angles made with the x-axis.",
+        "workingOut": "Interior angles: \\( 53^{\\circ} \\) and \\( 180^{\\circ} - 127^{\\circ} = 53^{\\circ} \\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(isosceles\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: isosceles. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(isosceles\\)",
+        "explanation": "Since two base angles are equal, the triangle is isosceles.",
+        "workingOut": "\\text{Isosceles}",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "Isosceles",
+        "imageUrl": ""
+      },
+      {
+        "text": "Equilateral",
+        "imageUrl": ""
+      },
+      {
+        "text": "Scalene",
+        "imageUrl": ""
+      },
+      {
+        "text": "Right-angled",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q19a",
@@ -3538,41 +3925,47 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Consider the two lines \\(\\ell_1: 2x - y + 5 = 0\\) and \\(\\ell_2: x + ky + c = 0\\). Find the value of \\(k\\) if \\(\\ell_1\\) is parallel to \\(\\ell_2\\) (enter as a fraction or decimal, e.g. -1/2).",
-    "opts": [
-      "\\(1/2\\)",
-      "\\(2/2\\)",
-      "\\(2/1\\)",
-      "\\(-1/2\\)"
-    ],
     "a": 3,
-    "answer": "3",
+    "answer": 0,
     "hint": "Find gradients m1 and m2 of the two lines, equate them, and solve for k.",
-    "solution": "\\(m_1 = 2\\), \\(m_2 = -\\frac{1}{k}\\). Since they are parallel, \\(2 = -\\frac{1}{k} \\implies k = -\\frac{1}{2}\\).",
+    "solution": "\\( -\\frac{1}{2} \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(y = 2x + 5 \\implies m_1 = 2\\)",
+        "explanation": "Find the gradient of \\( \\ell_1: 2x - y + 5 = 0 \\).",
+        "workingOut": "\\( y = 2x + 5 \\implies m_1 = 2 \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(ky = -x - c \\implies y = -\\frac{1}{k}x - \\frac{c}{k} \\implies m_2 = -\\frac{1}{k}\\)",
+        "explanation": "Find the gradient of \\( \\ell_2: x + ky + c = 0 \\).",
+        "workingOut": "\\( ky = -x - c \\implies y = -\\frac{1}{k}x - \\frac{c}{k} \\implies m_2 = -\\frac{1}{k} \\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(2 = -\\frac{1}{k} \\implies k = -\\frac{1}{2}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: -1/2. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(-1/2\\)",
+        "explanation": "If parallel, the gradients are equal.",
+        "workingOut": "\\( m_1 = m_2 \\implies 2 = -\\frac{1}{k} \\implies k = -\\frac{1}{2} \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( -\\frac{1}{2} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( \\frac{1}{2} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -2 \\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y11a-7c-q19b",
@@ -3583,40 +3976,46 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Consider the two lines \\(\\ell_1: 2x - y + 5 = 0\\) and \\(\\ell_2: x + ky + c = 0\\). Find the value of \\(k\\) if \\(\\ell_1\\) is perpendicular to \\(\\ell_2\\).",
-    "opts": [
-      "\\(2\\)",
-      "\\(1\\)",
-      "\\(3\\)",
-      "\\(-2\\)"
-    ],
     "a": 0,
-    "answer": "0",
+    "answer": 0,
     "hint": "Find gradients m1 and m2, then solve the perpendicular condition m1 * m2 = -1.",
-    "solution": "\\(m_1 = 2\\), \\(m_2 = -\\frac{1}{k}\\). Since they are perpendicular, \\(2 \\times \\left(-\\frac{1}{k}\\right) = -1 \\implies -\\frac{2}{k} = -1 \\implies k = 2\\).",
+    "solution": "\\( 2 \\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Equations of lines: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(m_1 \\times m_2 = -1\\)",
+        "explanation": "The gradients are \\( m_1 = 2 \\) and \\( m_2 = -\\frac{1}{k} \\).",
+        "workingOut": "\\( m_1 = 2, \\; m_2 = -\\frac{1}{k} \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(2 \\times \\left(-\\frac{1}{k}\\right) = -1\\)",
+        "explanation": "If perpendicular, the product of the gradients is -1.",
+        "workingOut": "\\( m_1 m_2 = -1 \\implies 2 \\left(-\\frac{1}{k}\\right) = -1 \\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(-\\frac{2}{k} = -1 \\implies k = 2\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: 2. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(2\\)",
+        "explanation": "Solve for \\(k\\).",
+        "workingOut": "\\( -\\frac{2}{k} = -1 \\implies k = 2 \\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "options": [
+      {
+        "text": "\\( 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( \\frac{1}{2} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -\\frac{1}{2} \\)",
+        "imageUrl": ""
+      }
+    ]
   }
 ];

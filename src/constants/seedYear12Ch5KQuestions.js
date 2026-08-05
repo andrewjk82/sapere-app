@@ -640,7 +640,7 @@ export const Y12A_CH5K_QUESTIONS = [
     "solution": "The correct answer is \\(\\dfrac{3^{x}}{\\ln 3}+C\\).",
     "solutionSteps": [
       {
-        "explanation": "Standard form: \\(\\displaystyle\\int a^{x}\\,dx = \\dfrac{a^{x}}{\\ln a} + C\\) for \\(a>0,\\ a\\neq 1\\).",
+        "explanation": "Standard form: \\(\\displaystyle\\int a^{x}\\,dx = \\dfrac{a^{x}}{\\ln a} + C\\) for \\(a>0,\\ a\neq 1\\).",
         "workingOut": "\\(\\int 3^{x}\\,dx\\)",
         "graphData": null
       },
@@ -680,7 +680,7 @@ export const Y12A_CH5K_QUESTIONS = [
     "solution": "The correct answer is \\(\\dfrac{5^{x}}{\\ln 5}+C\\).",
     "solutionSteps": [
       {
-        "explanation": "Standard form: \\(\\displaystyle\\int a^{x}\\,dx = \\dfrac{a^{x}}{\\ln a} + C\\) for \\(a>0,\\ a\\neq 1\\).",
+        "explanation": "Standard form: \\(\\displaystyle\\int a^{x}\\,dx = \\dfrac{a^{x}}{\\ln a} + C\\) for \\(a>0,\\ a\neq 1\\).",
         "workingOut": "\\(\\int 5^{x}\\,dx\\)",
         "graphData": null
       },
@@ -720,7 +720,7 @@ export const Y12A_CH5K_QUESTIONS = [
     "solution": "The correct answer is \\(\\dfrac{4^{x}}{\\ln 4}+C\\).",
     "solutionSteps": [
       {
-        "explanation": "Standard form: \\(\\displaystyle\\int a^{x}\\,dx = \\dfrac{a^{x}}{\\ln a} + C\\) for \\(a>0,\\ a\\neq 1\\).",
+        "explanation": "Standard form: \\(\\displaystyle\\int a^{x}\\,dx = \\dfrac{a^{x}}{\\ln a} + C\\) for \\(a>0,\\ a\neq 1\\).",
         "workingOut": "\\(\\int 4^{x}\\,dx\\)",
         "graphData": null
       },
@@ -760,7 +760,7 @@ export const Y12A_CH5K_QUESTIONS = [
     "solution": "The correct answer is \\(\\dfrac{8^{x}}{\\ln 8}+C\\).",
     "solutionSteps": [
       {
-        "explanation": "Standard form: \\(\\displaystyle\\int a^{x}\\,dx = \\dfrac{a^{x}}{\\ln a} + C\\) for \\(a>0,\\ a\\neq 1\\).",
+        "explanation": "Standard form: \\(\\displaystyle\\int a^{x}\\,dx = \\dfrac{a^{x}}{\\ln a} + C\\) for \\(a>0,\\ a\neq 1\\).",
         "workingOut": "\\(\\int 8^{x}\\,dx\\)",
         "graphData": null
       },
@@ -1107,7 +1107,7 @@ export const Y12A_CH5K_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "For \\(y=\\log_a x\\) (\\(a>0,\\ a\\neq 1\\)), the tangent at \\(x=e\\) always passes through which point?",
+    "question": "For \\(y=\\log_a x\\) (\\(a>0,\\ a\neq 1\\)), the tangent at \\(x=e\\) always passes through which point?",
     "a": 0,
     "answer": "0",
     "opts": [

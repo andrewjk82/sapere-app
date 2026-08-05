@@ -1,0 +1,292 @@
+y11a-6e-q1a-sin
+Q: A ray passing through the point \((5, 12)\) on a circle of radius \(13\) forms an angle \(\theta\) with the positive x-axis. Find the value of \(\sin \theta\).
+S: Using the definition \(\sin \theta = \frac{y}{r}\) with \(y = 12\) and \(r = 13\), we get \(\sin \theta = \frac{12}{13}\).
+
+y11a-6e-q1a-cos
+Q: A ray passing through the point \((5, 12)\) on a circle of radius \(13\) forms an angle \(\theta\) with the positive x-axis. Find the value of \(\cos \theta\).
+S: Using the definition \(\cos \theta = \frac{x}{r}\) with \(x = 5\) and \(r = 13\), we get \(\cos \theta = \frac{5}{13}\).
+
+y11a-6e-q1a-tan
+Q: A ray passing through the point \((5, 12)\) on a circle of radius \(13\) forms an angle \(\theta\) with the positive x-axis. Find the value of \(\tan \theta\).
+S: Using the definition \(\tan \theta = \frac{y}{x}\) with \(x = 5\) and \(y = 12\), we get \(\tan \theta = \frac{12}{5}\).
+
+y11a-6e-q1b-sin
+Q: A ray passing through the point \((-8, 15)\) on a circle of radius \(17\) forms an angle \(\theta\) with the positive x-axis. Find the value of \(\sin \theta\).
+S: Since \(y = 15\) and \(r = 17\), \(\sin \theta = \frac{15}{17}\).
+
+y11a-6e-q1b-cos
+Q: A ray passing through the point \((-8, 15)\) on a circle of radius \(17\) forms an angle \(\theta\) with the positive x-axis. Find the value of \(\cos \theta\).
+S: Since \(x = -8\) and \(r = 17\), \(\cos \theta = \frac{-8}{17} = -\frac{8}{17}\).
+
+y11a-6e-q1b-tan
+Q: A ray passing through the point \((-8, 15)\) on a circle of radius \(17\) forms an angle \(\theta\) with the positive x-axis. Find the value of \(\tan \theta\).
+S: Since \(x = -8\) and \(y = 15\), \(\tan \theta = \frac{15}{-8} = -\frac{15}{8}\).
+
+y11a-6e-q1c-sin
+Q: A ray passing through the point \((-12, -5)\) on a circle of radius \(13\) forms an angle \(\theta\) with the positive x-axis. Find the value of \(\sin \theta\).
+S: With \(y = -5\) and \(r = 13\), \(\sin \theta = -\frac{5}{13}\).
+
+y11a-6e-q1c-cos
+Q: A ray passing through the point \((-12, -5)\) on a circle of radius \(13\) forms an angle \(\theta\) with the positive x-axis. Find the value of \(\cos \theta\).
+S: With \(x = -12\) and \(r = 13\), \(\cos \theta = -\frac{12}{13}\).
+
+y11a-6e-q1c-tan
+Q: A ray passing through the point \((-12, -5)\) on a circle of radius \(13\) forms an angle \(\theta\) with the positive x-axis. Find the value of \(\tan \theta\).
+S: With \(x = -12\) and \(y = -5\), \(\tan \theta = \frac{-5}{-12} = \frac{5}{12}\).
+
+y11a-6e-q1d-sin
+Q: A ray passing through the point \((7, -24)\) on a circle of radius \(25\) forms an angle \(\theta\) with the positive x-axis. Find the value of \(\sin \theta\).
+S: With \(y = -24\) and \(r = 25\), \(\sin \theta = -\frac{24}{25}\).
+
+y11a-6e-q1d-cos
+Q: A ray passing through the point \((7, -24)\) on a circle of radius \(25\) forms an angle \(\theta\) with the positive x-axis. Find the value of \(\cos \theta\).
+S: With \(x = 7\) and \(r = 25\), \(\cos \theta = \frac{7}{25}\).
+
+y11a-6e-q1d-tan
+Q: A ray passing through the point \((7, -24)\) on a circle of radius \(25\) forms an angle \(\theta\) with the positive x-axis. Find the value of \(\tan \theta\).
+S: With \(x = 7\) and \(y = -24\), \(\tan \theta = -\frac{24}{7}\).
+
+y11a-6e-q2a-side
+Q: In Quadrant I, a point on a circle of radius \(r = 17\) has an x-coordinate of \(x = 8\). Use Pythagoras' theorem to find the unknown positive y-coordinate.
+S: Using \(x^2 + y^2 = r^2\): \(8^2 + y^2 = 17^2 \implies 64 + y^2 = 289 \implies y^2 = 225 \implies y = 15\) (since it is in Quadrant I, \(y > 0\)).
+
+y11a-6e-q2a-sin
+Q: Using \(x = 8\), \(y = 15\), and \(r = 17\) in Quadrant I, find \(\sin \alpha\).
+S: From the coordinates, \(\sin \alpha = \frac{y}{r} = \frac{15}{17}\).
+
+y11a-6e-q2a-cos
+Q: Using \(x = 8\), \(y = 15\), and \(r = 17\) in Quadrant I, find \(\cos \alpha\).
+S: From the coordinates, \(\cos \alpha = \frac{x}{r} = \frac{8}{17}\).
+
+y11a-6e-q2a-tan
+Q: Using \(x = 8\), \(y = 15\), and \(r = 17\) in Quadrant I, find \(\tan \alpha\).
+S: From the coordinates, \(\tan \alpha = \frac{y}{x} = \frac{15}{8}\).
+
+y11a-6e-q2b-side
+Q: In Quadrant II, a point on a circle has coordinates \((-\sqrt{7}, 3)\). Use Pythagoras' theorem to find the radius \(r\).
+S: Using \(r^2 = x^2 + y^2 = (-\sqrt{7})^2 + 3^2 = 7 + 9 = 16 \implies r = 4\) (radius is always positive).
+
+y11a-6e-q2b-sin
+Q: Using \(x = -\sqrt{7}\), \(y = 3\), and \(r = 4\) in Quadrant II, find \(\sin \alpha\).
+S: Sine is \(\frac{y}{r} = \frac{3}{4}\).
+
+y11a-6e-q2b-cos
+Q: Using \(x = -\sqrt{7}\), \(y = 3\), and \(r = 4\) in Quadrant II, find \(\cos \alpha\).
+S: Cosine is \(\frac{x}{r} = -\frac{\sqrt{7}}{4}\).
+
+y11a-6e-q2b-tan
+Q: Using \(x = -\sqrt{7}\), \(y = 3\), and \(r = 4\) in Quadrant II, find \(\tan \alpha\).
+S: Tangent is \(\frac{y}{x} = \frac{3}{-\sqrt{7}} = -\frac{3}{\sqrt{7}}\).
+
+y11a-6e-q2c-side
+Q: In Quadrant III, a point on a circle of radius \(r = 5\) has a y-coordinate of \(y = -4\). Use Pythagoras' theorem to find the unknown x-coordinate.
+S: Using \(x^2 + y^2 = r^2\): \(x^2 + (-4)^2 = 5^2 \implies x^2 + 16 = 25 \implies x^2 = 9 \implies x = -3\) (since it is in Quadrant III, \(x < 0\)).
+
+y11a-6e-q2c-sin
+Q: Using \(x = -3\), \(y = -4\), and \(r = 5\) in Quadrant III, find \(\sin \alpha\).
+S: Sine is \(\frac{y}{r} = \frac{-4}{5} = -\frac{4}{5}\).
+
+y11a-6e-q2c-cos
+Q: Using \(x = -3\), \(y = -4\), and \(r = 5\) in Quadrant III, find \(\cos \alpha\).
+S: Cosine is \(\frac{x}{r} = -\frac{3}{5}\).
+
+y11a-6e-q2c-tan
+Q: Using \(x = -3\), \(y = -4\), and \(r = 5\) in Quadrant III, find \(\tan \alpha\).
+S: Tangent is \(\frac{y}{x} = \frac{-4}{-3} = \frac{4}{3}\).
+
+y11a-6e-q2d-side
+Q: In Quadrant IV, a point on a circle of radius \(r = \sqrt{10}\) has an x-coordinate of \(x = 3\). Use Pythagoras' theorem to find the unknown y-coordinate.
+S: Using \(x^2 + y^2 = r^2\): \(3^2 + y^2 = (\sqrt{10})^2 \implies 9 + y^2 = 10 \implies y^2 = 1 \implies y = -1\) (since it is in Quadrant IV, \(y < 0\)).
+
+y11a-6e-q2d-sin
+Q: Using \(x = 3\), \(y = -1\), and \(r = \sqrt{10}\) in Quadrant IV, find \(\sin \alpha\).
+S: Sine is \(\frac{y}{r} = -\frac{1}{\sqrt{10}}\).
+
+y11a-6e-q2d-cos
+Q: Using \(x = 3\), \(y = -1\), and \(r = \sqrt{10}\) in Quadrant IV, find \(\cos \alpha\).
+S: Cosine is \(\frac{x}{r} = \frac{3}{\sqrt{10}}\).
+
+y11a-6e-q2d-tan
+Q: Using \(x = 3\), \(y = -1\), and \(r = \sqrt{10}\) in Quadrant IV, find \(\tan \alpha\).
+S: Tangent is \(\frac{y}{x} = -\frac{1}{3}\).
+
+y11a-6e-q3ai
+Q: Let \(\cos \theta = \frac{5}{13}\), where \(270^{\circ} < \theta < 360^{\circ}\). Find the value of \(\sin \theta\).
+S: In Quadrant IV, sine is negative. Since \(\cos \theta = \frac{5}{13}\), \(\sin \theta = -\sqrt{1 - \cos^2 \theta} = -\sqrt{1 - \left(\frac{5}{13}\right)^2} = -\sqrt{1 - \frac{25}{169}} = -\sqrt{\frac{144}{169}} = -\frac{12}{13}\).
+
+y11a-6e-q3aii
+Q: Let \(\cos \theta = \frac{5}{13}\), where \(270^{\circ} < \theta < 360^{\circ}\). Find \(\tan \theta\).
+S: Since \(\sin \theta = -\frac{12}{13}\) and \(\cos \theta = \frac{5}{13}\), we get \(\tan \theta = \frac{\sin \theta}{\cos \theta} = \frac{-12/13}{5/13} = -\frac{12}{5}\).
+
+y11a-6e-q3bi
+Q: Let \(\tan \theta = -\frac{3}{4}\), where \(\theta\) is obtuse. Find \(\sin \theta\).
+S: In Quadrant II, sine is positive. Given \(\tan \theta = -\frac{3}{4}\), the opposite side is \(3\) and the adjacent is \(4\). The hypotenuse is \(\sqrt{3^2 + 4^2} = 5\). Thus, \(\sin \theta = \frac{3}{5}\).
+
+y11a-6e-q3bii
+Q: Let \(\tan \theta = -\frac{3}{4}\), where \(\theta\) is obtuse. Find \(\cos \theta\).
+S: In Quadrant II, cosine is negative. With \(\text{Adjacent} = 4\) and \(\text{Hypotenuse} = 5\), \(\cos \theta = -\frac{4}{5}\).
+
+y11a-6e-q4ai
+Q: Suppose that \(\sin \theta = -\frac{\sqrt{5}}{3}\). Find the possible values of \(\cos \theta\) (express as 'value or -value').
+S: Using \(\cos^2 \theta = 1 - \sin^2 \theta = 1 - \left(-\frac{\sqrt{5}}{3}\right)^2 = 1 - \frac{5}{9} = \frac{4}{9}\). Taking the square root, \(\cos \theta = \pm \frac{2}{3}\). Hence, the possible values are \(2/3 \text{ or } -2/3\).
+
+y11a-6e-q4aii
+Q: Suppose that \(\sin \theta = -\frac{\sqrt{5}}{3}\). Find the possible values of \(\tan \theta\).
+S: Since \(\sin \theta = -\frac{\sqrt{5}}{3}\) and \(\cos \theta = \pm \frac{2}{3}\), \(\tan \theta = \frac{-\sqrt{5}/3}{\pm 2/3} = \pm \frac{\sqrt{5}}{2}\). Hence, \(\sqrt{5}/2 \text{ or } -\sqrt{5}/2\).
+
+y11a-6e-q4bi
+Q: Suppose that \(\cos \theta = -\frac{1}{3}\). Find the possible values of \(\sin \theta\).
+S: We have \(\sin^2 \theta = 1 - \cos^2 \theta = 1 - \left(-\frac{1}{3}\right)^2 = 1 - \frac{1}{9} = \frac{8}{9}\). Thus, \(\sin \theta = \pm \frac{\sqrt{8}}{3}\).
+
+y11a-6e-q4bii
+Q: Suppose that \(\cos \theta = -\frac{1}{3}\). Find the possible values of \(\tan \theta\).
+S: Since \(\cos \theta = -\frac{1}{3}\) and \(\sin \theta = \pm \frac{\sqrt{8}}{3}\), \(\tan \theta = \frac{\pm \sqrt{8}/3}{-1/3} = \pm \sqrt{8}\).
+
+y11a-6e-q5a
+Q: If \(\cos \theta = \frac{1}{4}\) and \(\theta\) is acute, find the exact value of \(\tan \theta\).
+S: Since \(\theta\) is acute (Quadrant I), \(\tan \theta\) is positive. \(\sin \theta = \sqrt{1 - \cos^2 \theta} = \sqrt{1 - \frac{1}{16}} = \frac{\sqrt{15}}{4}\). Thus, \(\tan \theta = \frac{\sin \theta}{\cos \theta} = \frac{\sqrt{15}/4}{1/4} = \sqrt{15}\).
+
+y11a-6e-q5b
+Q: If \(\cos \theta = -\frac{3}{5}\) and \(\theta\) is obtuse, find the exact value of \(\tan \theta\).
+S: In Quadrant II, tangent is negative. Since \(\cos \theta = -\frac{3}{5}\), \(\sin \theta = \frac{4}{5}\). Therefore, \(\tan \theta = \frac{\sin \theta}{\cos \theta} = \frac{4/5}{-3/5} = -\frac{4}{3}\).
+
+y11a-6e-q5c
+Q: If \(\cos \theta = \frac{1}{3}\) and \(\theta\) is reflex, find the exact value of \(\sin \theta\).
+S: A reflex angle is between 180° and 360°. Since \(\cos \theta = \frac{1}{3}\) is positive, \(\theta\) must lie in Quadrant IV. In Quadrant IV, sine is negative. Thus, \(\sin \theta = -\sqrt{1 - \cos^2 \theta} = -\sqrt{1 - \frac{1}{9}} = -\frac{\sqrt{8}}{3}\).
+
+y11a-6e-q5d
+Q: Find the exact value of \(\cos \theta\) if \(\tan \theta = -\frac{3}{4}\) and \(\theta\) is reflex.
+S: Reflex and negative tangent means Quadrant IV. In Quadrant IV, cosine is positive. \(\text{Adjacent} = 4\), \(\text{Opposite} = 3\), so \(\text{Hypotenuse} = 5\). Thus, \(\cos \theta = \frac{4}{5}\).
+
+y11a-6e-q5e
+Q: Find \(\sin \theta\), given that \(\cos \theta = -\frac{24}{25}\) and \(0^{\circ} \le \theta \le 180^{\circ}\).
+S: Since \(\cos \theta < 0\) and \(0^{\circ} \le \theta \le 180^{\circ}\), \(\theta\) must be in Quadrant II. In Quadrant II, sine is positive. Thus, \(\sin \theta = \sqrt{1 - \cos^2 \theta} = \sqrt{1 - \left(-\frac{24}{25}\right)^2} = \sqrt{\frac{49}{625}} = \frac{7}{25}\).
+
+y11a-6e-q5f
+Q: Find \(\tan \theta\), given that \(\sin \theta = \frac{1}{\sqrt{10}}\) and \(-90^{\circ} \le \theta \le 90^{\circ}\).
+S: Sine is positive in \([-90^{\circ}, 90^{\circ}]\), placing it in Quadrant I. \(\cos \theta = \sqrt{1 - \sin^2 \theta} = \sqrt{1 - \frac{1}{10}} = \frac{3}{\sqrt{10}}\). Thus, \(\tan \theta = \frac{\sin \theta}{\cos \theta} = \frac{1/\sqrt{10}}{3/\sqrt{10}} = \frac{1}{3}\).
+
+y11a-6e-q6a
+Q: If \(\tan \alpha = \frac{1}{2}\), find the possible values of \(\sin \alpha\). (Express as 'value or -value')
+S: Given \(\tan \alpha = \frac{1}{2}\), the hypotenuse is \(\sqrt{1^2 + 2^2} = \sqrt{5}\). Tangent is positive in Quadrants I and III. Thus, \(\sin \alpha\) can be positive or negative: \(\sin \alpha = \pm \frac{1}{\sqrt{5}}\). Hence, \(1/\sqrt{5} \text{ or } -1/\sqrt{5}\).
+
+y11a-6e-q6b
+Q: If \(\cos \theta = \frac{3}{\sqrt{10}}\), find the possible values of \(\sin \theta\).
+S: Cosine is positive in Quadrants I and IV. \(\sin \theta = \pm \sqrt{1 - \cos^2 \theta} = \pm \sqrt{1 - \frac{9}{10}} = \pm \frac{1}{\sqrt{10}}\).
+
+y11a-6e-q6c
+Q: If \(\sin \theta = \frac{4}{5}\), find the possible values of \(\cos \theta\).
+S: Sine is positive in Quadrants I and II. \(\cos \theta = \pm \sqrt{1 - \sin^2 \theta} = \pm \sqrt{1 - \frac{16}{25}} = \pm \frac{3}{5}\).
+
+y11a-6e-q6d
+Q: Find the possible values of \(\tan \theta\), given that \(\cos \theta = -\frac{3}{4}\).
+S: Cosine is negative in Quadrants II and III. \(\sin \theta = \pm \sqrt{1 - \cos^2 \theta} = \pm \sqrt{1 - \frac{9}{16}} = \pm \frac{\sqrt{7}}{4}\). Thus, \(\tan \theta = \frac{\sin \theta}{\cos \theta} = \frac{\pm \sqrt{7}/4}{-3/4} = \mp \frac{\sqrt{7}}{3}\).
+
+y11a-6e-q6e
+Q: Find the possible values of \(\tan \theta\), given that \(\sin \theta = -\frac{5}{13}\).
+S: Sine is negative in Quadrants III and IV. \(\cos \theta = \pm \sqrt{1 - \sin^2 \theta} = \pm \frac{12}{13}\). Thus, \(\tan \theta = \frac{\sin \theta}{\cos \theta} = \frac{-5/13}{\pm 12/13} = \mp \frac{5}{12}\).
+
+y11a-6e-q6f
+Q: Find the possible values of \(\cos \theta\), given that \(\tan \theta = -\frac{3}{\sqrt{2}}\).
+S: Given \(\tan \theta = -\frac{3}{\sqrt{2}}\), \(\text{Opposite} = 3\) and \(\text{Adjacent} = \sqrt{2}\). The hypotenuse is \(\sqrt{3^2 + (\sqrt{2})^2} = \sqrt{9 + 2} = \sqrt{11}\). Tangent is negative in Quadrants II and IV, so cosine can be negative or positive: \(\cos \theta = \pm \frac{\sqrt{2}}{\sqrt{11}}\).
+
+y11a-6e-q7a
+Q: If \(\cos \alpha = \frac{3}{5}\) and \(\sin \alpha < 0\), find the value of \(\tan \alpha\).
+S: Cosine is positive and sine is negative in Quadrant IV. In Quadrant IV, tangent is negative. Since \(\cos \alpha = \frac{3}{5}\), \(\sin \alpha = -\frac{4}{5}\). Thus, \(\tan \alpha = \frac{\sin \alpha}{\cos \alpha} = -\frac{4}{3}\).
+
+y11a-6e-q7b
+Q: If \(\tan \theta = -\frac{12}{5}\) and \(\sin \theta > 0\), find the value of \(\cos \theta\).
+S: In Quadrant II, cosine is negative. With \(\text{Opposite} = 12\), \(\text{Adjacent} = 5\), the hypotenuse is \(13\). Thus, \(\cos \theta = -\frac{5}{13}\).
+
+y11a-6e-q7c
+Q: Find the value of \(\cos \theta\), given that \(\sin \theta = \frac{1}{3}\) and \(\tan \theta < 0\).
+S: In Quadrant II, cosine is negative. Thus, \(\cos \theta = -\sqrt{1 - \sin^2 \theta} = -\sqrt{1 - \frac{1}{9}} = -\frac{\sqrt{8}}{3}\).
+
+y11a-6e-q7d
+Q: Find the value of \(\sin \theta\), given that \(\tan \theta = \frac{15}{8}\) and \(\cos \theta > 0\).
+S: In Quadrant I, sine is positive. With \(\text{Opposite} = 15\), \(\text{Adjacent} = 8\), the hypotenuse is \(17\). Thus, \(\sin \theta = \frac{15}{17}\).
+
+y11a-6e-q7e
+Q: Find the value of \(\tan \theta\), given that \(\sin \theta = -\frac{7}{25}\) and \(\cos \theta > 0\).
+S: In Quadrant IV, tangent is negative. Since \(\sin \theta = -\frac{7}{25}\), the adjacent side is \(\sqrt{25^2 - 7^2} = 24\), so \(\cos \theta = \frac{24}{25}\). Thus, \(\tan \theta = \frac{\sin \theta}{\cos \theta} = -\frac{7}{24}\).
+
+y11a-6e-q7f
+Q: Find the value of \(\sin \theta\), given that \(\cos \theta = -\frac{4}{5}\) and \(\tan \theta < 0\).
+S: In Quadrant II, sine is positive. Since \(\cos \theta = -\frac{4}{5}\), \(\sin \theta = \sqrt{1 - \cos^2 \theta} = \frac{3}{5}\).
+
+y11a-6e-q8a
+Q: Find the possible values of \(\sec \theta\), given that \(\sin \theta = \frac{1}{\sqrt{3}}\).
+S: We have \(\cos^2 \theta = 1 - \sin^2 \theta = 1 - \frac{1}{3} = \frac{2}{3} \implies \cos \theta = pm \frac{\sqrt{2}}{\sqrt{3}}\). Thus, \(\sec \theta = \frac{1}{\cos \theta} = pm \frac{\sqrt{3}}{\sqrt{2}}\).
+
+y11a-6e-q8b
+Q: Find the possible values of \(\tan \theta\), given that \(\sec \theta = -\frac{13}{5}\).
+S: Since \(\sec \theta = -\frac{13}{5}\), \(\cos \theta = -\frac{5}{13}\). Thus, \(\sin \theta = pm \frac{12}{13}\). Therefore, \(\tan \theta = \frac{\sin \theta}{\cos \theta} = pm \frac{12}{5}\).
+
+y11a-6e-q8c
+Q: If \(\sec C = -\frac{\sqrt{5}}{\sqrt{2}}\), find the possible values of \(\text{cot } C\).
+S: We have \(\cos C = -\frac{\sqrt{2}}{\sqrt{5}}\). Thus, \(\sin C = pm \sqrt{1 - \frac{2}{5}} = pm \frac{\sqrt{3}}{\sqrt{5}}\). Consequently, \(\cot C = \frac{\cos C}{\sin C} = \frac{-\sqrt{2}/\sqrt{5}}{pm \sqrt{3}/\sqrt{5}} = pm \frac{\sqrt{2}}{\sqrt{3}}\).
+
+y11a-6e-q8d
+Q: If \(\cot D = \frac{\sqrt{7}}{3}\), find the possible values of \(\csc D\).
+S: Using the identity \(\csc^2 D = 1 + \cot^2 D = 1 + \left(\frac{\sqrt{7}}{3}\right)^2 = 1 + \frac{7}{9} = \frac{16}{9}\). Taking the square root gives \(\csc D = pm \frac{4}{3}\).
+
+y11a-6e-q9a
+Q: Find \(\sec \theta\), given that \(\csc \theta = \frac{4}{3}\) and \(\theta\) is obtuse.
+S: Since \(\csc \theta = \frac{4}{3}\), \(\sin \theta = \frac{3}{4}\). In Quadrant II, cosine (and secant) is negative. \(\cos \theta = -\sqrt{1 - (3/4)^2} = -\frac{\sqrt{7}}{4}\). Thus, \(\sec \theta = -\frac{4}{\sqrt{7}}\).
+
+y11a-6e-q9b
+Q: Find \(\sec \theta\), given that \(\cot \theta = \frac{5}{12}\) and \(\theta\) is reflex.
+S: A reflex angle with positive cotangent lies in Quadrant III. In Quadrant III, cosine (and secant) is negative. Using a 5-12-13 triangle, \(\cos \theta = -\frac{5}{13}\). Thus, \(\sec \theta = -\frac{13}{5}\).
+
+y11a-6e-q9c
+Q: Find \(\tan \theta\), given that \(\sec \theta = -\frac{13}{5}\) and \(0^{\circ} \le \theta \le 180^{\circ}\).
+S: Since \(\sec \theta < 0\) and \(0^{\circ} \le \theta \le 180^{\circ}\), \(\theta\) lies in Quadrant II. In Quadrant II, tangent is negative. \(\cos \theta = -\frac{5}{13} \implies \sin \theta = \frac{12}{13}\). Thus, \(\tan \theta = -\frac{12}{5}\).
+
+y11a-6e-q9d
+Q: Find \(\csc \theta\), given that \(\cot \theta = \frac{3}{4}\) and \(-90^{\circ} \le \theta \le 90^{\circ}\).
+S: Since \(\cot \theta > 0\) and \(-90^{\circ} \le \theta \le 90^{\circ}\), \(\theta\) is in Quadrant I. All ratios are positive. With opposite = 4, adjacent = 3, hypotenuse = 5, we have \(\sin \theta = \frac{4}{5}\), so \(\csc \theta = \frac{5}{4}\).
+
+y11a-6e-q10a
+Q: If \(\sin A = -\frac{1}{4}\) and \(\tan A < 0\), find \(\sec A\).
+S: In Quadrant IV, secant (reciprocal of cosine) is positive. \(\cos A = \sqrt{1 - (-1/4)^2} = \frac{\sqrt{15}}{4}\). Thus, \(\sec A = \frac{4}{\sqrt{15}}\).
+
+y11a-6e-q10b
+Q: If \(\csc B = \frac{5}{2}\) and \(\cos B < 0\), find \(\tan B\).
+S: In Quadrant II, tangent is negative. Since \(\sin B = \frac{2}{5}\), \(\cos B = -\sqrt{1 - (2/5)^2} = -\frac{\sqrt{21}}{5}\). Thus, \(\tan B = \frac{\sin B}{\cos B} = -\frac{2}{\sqrt{21}}\).
+
+y11a-6e-q10c
+Q: Find \(\cot \theta\), given that \(\sec \theta = -\sqrt{3}\) and \(\csc \theta < 0\).
+S: In Quadrant III, cotangent is positive. \(\cos \theta = -\frac{1}{\sqrt{3}}\). \(\sin \theta = -\sqrt{1 - \cos^2 \theta} = -\sqrt{1 - \frac{1}{3}} = -\frac{\sqrt{2}}{\sqrt{3}}\). Thus, \(\cot \theta = \frac{\cos \theta}{\sin \theta} = \frac{-1/\sqrt{3}}{-\sqrt{2}/\sqrt{3}} = \frac{1}{\sqrt{2}}\).
+
+y11a-6e-q10d
+Q: Find \(\cos \theta\), given that \(\csc \theta = -\frac{17}{8}\) and \(\cot \theta < 0\).
+S: In Quadrant IV, cosine is positive. Since \(\sin \theta = -\frac{8}{17}\), the adjacent side is \(15\), so \(\cos \theta = \frac{15}{17}\).
+
+y11a-6e-q11-cos
+Q: Given that \(\sin \theta = \frac{a}{b}\), with \(\theta\) obtuse and \(a\) and \(b\) both positive, find an expression for \(\cos \theta\) in terms of \(a\) and \(b\).
+S: In Quadrant II, cosine is negative. Since \(\sin \theta = \frac{a}{b}\), we have \(\cos \theta = -\sqrt{1 - \sin^2 \theta} = -\sqrt{1 - \frac{a^2}{b^2}} = -\sqrt{\frac{b^2 - a^2}{b^2}} = -\frac{\sqrt{b^2 - a^2}}{b}\).
+
+y11a-6e-q11-tan
+Q: Given that \(\sin \theta = \frac{a}{b}\), with \(\theta\) obtuse and \(a\) and \(b\) both positive, find an expression for \(\tan \theta\) in terms of \(a\) and \(b\).
+S: Since \(\sin \theta = \frac{a}{b}\) and \(\cos \theta = -\frac{\sqrt{b^2 - a^2}}{b}\), \(\tan \theta = \frac{\sin \theta}{\cos \theta} = \frac{a/b}{-\sqrt{b^2-a^2}/b} = -\frac{a}{\sqrt{b^2 - a^2}}\).
+
+y11a-6e-q12-sin
+Q: If \(\tan \alpha = m\), where \(m > 0\), find the possible values of \(\sin \alpha\) in terms of \(m\). (Express as 'value or -value')
+S: Given \(\tan \alpha = m\), the opposite side is \(m\) and the adjacent is \(1\). The hypotenuse is \(\sqrt{1 + m^2}\). Tangent is positive in Quadrants I and III, so sine is positive or negative: \(\sin \alpha = \pm \frac{m}{\sqrt{1 + m^2}}\).
+
+y11a-6e-q12-sec
+Q: If \(\tan \alpha = m\), where \(m > 0\), find the possible values of \(\sec \alpha\) in terms of \(m\).
+S: Using the identity \(\sec^2 \alpha = 1 + \tan^2 \alpha = 1 + m^2\). Taking the square root gives \(\sec \alpha = \pm \sqrt{1 + m^2}\).
+
+y11a-6e-q13a
+Q: Prove the algebraic identity \((k^2 - 1)^2 + (2k)^2 = (k^2 + 1)^2\). Show all expansion steps.
+S: LHS = k^4 - 2k^2 + 1 + 4k^2 = k^4 + 2k^2 + 1 = (k^2 + 1)^2 = RHS
+
+y11a-6e-q13b-sin
+Q: If \(\cos x = \frac{k^2 - 1}{k^2 + 1}\), where \(x\) is acute and \(k > 1\), find an expression for \(\sin x\) in terms of \(k\).
+S: Since \(x\) is acute, \(\sin x\) is positive. Let the adjacent side be \(k^2 - 1\) and the hypotenuse be \(k^2 + 1\). From part (a), the opposite side is \(2k\). Thus, \(\sin x = \frac{\text{Opposite}}{\text{Hypotenuse}} = \frac{2k}{k^2 + 1}\).
+
+y11a-6e-q13b-tan
+Q: If \(\cos x = \frac{k^2 - 1}{k^2 + 1}\), where \(x\) is acute and \(k > 1\), find an expression for \(\tan x\) in terms of \(k\).
+S: Since \(\sin x = \frac{2k}{k^2 + 1}\) and \(\cos x = \frac{k^2 - 1}{k^2 + 1}\), \(\tan x = \frac{2k}{k^2 - 1}\).
+

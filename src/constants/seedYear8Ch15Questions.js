@@ -8,12 +8,6 @@ export const Y8_CH15A_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 120,
     "question": "Find the area of the shaded region in the figure below.",
-    "opts": [
-      "\\(-32\\)",
-      "\\(31\\)",
-      "\\(32\\)",
-      "\\(33\\)"
-    ],
     "a": 2,
     "answer": "2",
     "hint": "Subtract the area of the two squares from the area of the outer rectangle.",
@@ -187,17 +181,17 @@ export const Y8_CH15A_QUESTIONS = [
         }
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(\\text{Area}_{\\text{squares}} = 2 \\times (2^2) = 8\\text{ m}^2\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(\\text{Area}_{\\text{shaded}} = 40 - 8 = 32\\text{ m}^2\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 32. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(32\\)",
         "graphData": null
       }
@@ -377,12 +371,6 @@ export const Y8_CH15A_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 120,
     "question": "Find the area of the shaded region in the figure below.",
-    "opts": [
-      "\\(-30\\)",
-      "\\(29\\)",
-      "\\(30\\)",
-      "\\(31\\)"
-    ],
     "a": 2,
     "answer": "2",
     "hint": "The shaded area is the total rectangle area minus the unshaded triangle area.",
@@ -486,17 +474,17 @@ export const Y8_CH15A_QUESTIONS = [
         }
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(\\text{Area}_{\\text{tri}} = \\frac{1}{2} \\times 10 \\times 6 = 30\\text{ cm}^2\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(\\text{Area}_{\\text{shaded}} = 60 - 30 = 30\\text{ cm}^2\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 30. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(30\\)",
         "graphData": null
       }
@@ -606,12 +594,6 @@ export const Y8_CH15A_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 120,
     "question": "Find the area of the shaded region (the border) in the figure below.",
-    "opts": [
-      "\\(-144\\)",
-      "\\(143\\)",
-      "\\(144\\)",
-      "\\(145\\)"
-    ],
     "a": 2,
     "answer": "2",
     "hint": "Subtract the area of the smaller inner square from the larger outer square.",
@@ -731,17 +713,17 @@ export const Y8_CH15A_QUESTIONS = [
         }
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(\\text{Area}_{\\text{inner}} = 9^2 = 81\\text{ mm}^2\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(\\text{Area}_{\\text{shaded}} = 225 - 81 = 144\\text{ mm}^2\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 144. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(144\\)",
         "graphData": null
       }
@@ -867,12 +849,6 @@ export const Y8_CH15A_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 120,
     "question": "Find the area of the shaded trapezoid in the figure below.",
-    "opts": [
-      "\\(-99\\)",
-      "\\(100\\)",
-      "\\(98\\)",
-      "\\(99\\)"
-    ],
     "a": 3,
     "answer": "3",
     "hint": "Find the area of the outer rectangle and subtract the areas of the two unshaded corner triangles.",
@@ -994,17 +970,17 @@ export const Y8_CH15A_QUESTIONS = [
         }
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(\\text{Area}_{\\text{left}} = \\frac{1}{2} \\times 6 \\times 9 = 27\\text{ cm}^2\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(\\text{Area}_{\\text{right}} = \\frac{1}{2} \\times 4 \\times 9 = 18\\text{ cm}^2\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 99. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(99\\)",
         "graphData": null
       }
@@ -1132,12 +1108,6 @@ export const Y8_CH15A_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "A rectangular orchard is \\(720\\text{ m}\\) long and \\(350\\text{ m}\\) wide. Find the area of the orchard in hectares. (Recall that \\(1\\text{ hectare} = 10\\,000\\text{ m}^2\\).)",
-    "opts": [
-      "\\(-25.2\\)",
-      "\\(24.2\\)",
-      "\\(25.2\\)",
-      "\\(26.2\\)"
-    ],
     "a": 2,
     "answer": "2",
     "hint": "Calculate the area in square metres first, then divide by \\(10\\,000\\).",
@@ -1149,17 +1119,17 @@ export const Y8_CH15A_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(\\text{Area in hectares} = \\frac{252\\,000}{10\\,000} = 25.2\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(25.2\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 25.2. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(25.2\\)",
         "graphData": null
       }
@@ -1177,12 +1147,6 @@ export const Y8_CH15A_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "The base and height of a triangle are whole numbers, and its area is \\(10\\). Find all possible pairs of values for the base and height \\((b, h)\\).",
-    "opts": [
-      "\\((1, 20), (2, 10), (4, 5) and their reverses\\)",
-      "\\((1, 10), (2, 5) and their reverses\\)",
-      "\\((1, 40), (2, 20), (4, 10), (5, 8) and their reverses\\)",
-      "\\((2, 10), (4, 5) and their reverses\\)"
-    ],
     "a": 0,
     "answer": "0",
     "hint": "Set up the area formula \\(0.5 \\times b \\times h = 10\\) and solve for \\(b \\times h\\).",
@@ -1194,17 +1158,17 @@ export const Y8_CH15A_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(b \\times h = 20\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(\\text{Pairs: } (1, 20), (2, 10), (4, 5) \\text{ and reverses}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: (1, 20), (2, 10), (4, 5) and their reverses. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\((1, 20), (2, 10), (4, 5) and their reverses\\)",
         "graphData": null
       }
@@ -1222,12 +1186,6 @@ export const Y8_CH15A_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "Write down an algebraic formula, in simplest form, for the area of the rectangle shown.",
-    "opts": [
-      "\\(-15xy\\)",
-      "\\(15xy\\)",
-      "\\(15xy + 1\\)",
-      "\\(\\dfrac{13}{6}\\)"
-    ],
     "a": 1,
     "answer": "1",
     "hint": "Multiply the two algebraic side lengths together.",
@@ -1307,17 +1265,17 @@ export const Y8_CH15A_QUESTIONS = [
         }
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(\\text{Area} = 15xy\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(15xy\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 15xy. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(15xy\\)",
         "graphData": null
       }
@@ -1403,12 +1361,6 @@ export const Y8_CH15A_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "Write down an algebraic formula, in simplest form, for the area of the square shown.",
-    "opts": [
-      "\\(-16a^2\\)",
-      "\\(16a^2\\)",
-      "\\(16a^2 + 1\\)",
-      "\\(16a^3\\)"
-    ],
     "a": 1,
     "answer": "1",
     "hint": "Square the algebraic side length of the square.",
@@ -1476,17 +1428,17 @@ export const Y8_CH15A_QUESTIONS = [
         }
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(\\text{Area} = 16a^2\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(16a^2\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 16a^2. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(16a^2\\)",
         "graphData": null
       }
@@ -1560,12 +1512,6 @@ export const Y8_CH15A_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "Write down an algebraic formula, in simplest form, for the area of the triangle shown.",
-    "opts": [
-      "\\(-45xy\\)",
-      "\\(45xy\\)",
-      "\\(45xy + 1\\)",
-      "\\(\\dfrac{13}{6}\\)"
-    ],
     "a": 1,
     "answer": "1",
     "hint": "Use the formula \\(\\text{Area} = 0.5 \\times b \\times h\\) with the given algebraic expressions.",
@@ -1642,17 +1588,17 @@ export const Y8_CH15A_QUESTIONS = [
         }
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(\\text{Area} = 5y \\times 9x = 45xy\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(45xy\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 45xy. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(45xy\\)",
         "graphData": null
       }
@@ -1735,12 +1681,6 @@ export const Y8_CH15A_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "Write down an algebraic formula, in simplest form, for the area of the compound figure shown.",
-    "opts": [
-      "\\(-24m^2\\)",
-      "\\(24m^2\\)",
-      "\\(24m^2 + 1\\)",
-      "\\(34m^3\\)"
-    ],
     "a": 1,
     "answer": "1",
     "hint": "Calculate the area of the square and the triangle separately, then add them together.",
@@ -1829,17 +1769,17 @@ export const Y8_CH15A_QUESTIONS = [
         }
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(\\text{Area}_{\\text{triangle}} = \\frac{1}{2} \\times 4m \\times 4m = 8m^2\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(\\text{Area}_{\\text{total}} = 16m^2 + 8m^2 = 24m^2\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 24m^2. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(24m^2\\)",
         "graphData": null
       }
@@ -1934,12 +1874,6 @@ export const Y8_CH15A_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "A room has 4 walls and 2 doorways. The walls each have dimensions \\(8\\text{ m}\\) by \\(4\\text{ m}\\), and the doorways have dimensions \\(1\\text{ m}\\) by \\(2\\text{ m}\\). If the inside walls of the room must be painted, how much will this cost (in dollars) if the rate for painting is 6 per square metre?",
-    "opts": [
-      "\\(-744\\)",
-      "\\(743\\)",
-      "\\(744\\)",
-      "\\(745\\)"
-    ],
     "a": 2,
     "answer": "2",
     "hint": "Subtract the area of the doorways from the total wall area, then multiply by the cost per square metre.",
@@ -1951,17 +1885,17 @@ export const Y8_CH15A_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(\\text{Doorway Area} = 2 \\times 1 \\times 2 = 4\\text{ m}^2\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(\\text{Net Area} = 128 - 4 = 124\\text{ m}^2\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 744. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(744\\)",
         "graphData": null
       }
@@ -1979,12 +1913,6 @@ export const Y8_CH15A_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "a) Use Pythagoras' theorem to find \\(h\\).",
-    "opts": [
-      "\\(-12\\)",
-      "\\(11\\)",
-      "\\(12\\)",
-      "\\(13\\)"
-    ],
     "a": 2,
     "answer": "2",
     "hint": "",
@@ -1992,21 +1920,21 @@ export const Y8_CH15A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of area and length: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "Identify given data",
+        "workingOut": "\\(Identify given data\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
+        "workingOut": "\\(State the rule\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(12\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 12. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(12\\)",
         "graphData": null
       }
@@ -2024,12 +1952,6 @@ export const Y8_CH15A_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "Use Pythagoras' theorem to find \\(h\\) and hence find the area of the triangle in the diagram.\nb) Hence find the area of the triangle.",
-    "opts": [
-      "\\(-120\\)",
-      "\\(119\\)",
-      "\\(120\\)",
-      "\\(121\\)"
-    ],
     "a": 2,
     "answer": "2",
     "hint": "",
@@ -2037,21 +1959,21 @@ export const Y8_CH15A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of area and length: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "Identify given data",
+        "workingOut": "\\(Identify given data\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
+        "workingOut": "\\(State the rule\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(120\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 120. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(120\\)",
         "graphData": null
       }
@@ -2069,12 +1991,6 @@ export const Y8_CH15A_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Find \\(x\\) and hence find the area of the rectangle shown.\na) Find \\(x\\).",
-    "opts": [
-      "\\(-15\\)",
-      "\\(14\\)",
-      "\\(15\\)",
-      "\\(16\\)"
-    ],
     "a": 2,
     "answer": "2",
     "hint": "",
@@ -2082,21 +1998,21 @@ export const Y8_CH15A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of area and length: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "Identify given data",
+        "workingOut": "\\(Identify given data\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
+        "workingOut": "\\(State the rule\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(15\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 15. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(15\\)",
         "graphData": null
       }
@@ -2114,12 +2030,6 @@ export const Y8_CH15A_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Find \\(x\\) and hence find the area of the rectangle shown.\nb) Hence find the area of the rectangle.",
-    "opts": [
-      "\\(-120\\)",
-      "\\(119\\)",
-      "\\(120\\)",
-      "\\(121\\)"
-    ],
     "a": 2,
     "answer": "2",
     "hint": "",
@@ -2127,21 +2037,21 @@ export const Y8_CH15A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of area and length: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "Identify given data",
+        "workingOut": "\\(Identify given data\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
+        "workingOut": "\\(State the rule\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(120\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 120. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(120\\)",
         "graphData": null
       }
@@ -2159,12 +2069,6 @@ export const Y8_CH15A_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Find the area of the floor of a room (in square metres) that is left uncovered if a carpet measuring \\(5\\text{ m}\\) by \\(4\\text{ m}\\) is laid in a room that is \\(6\\text{ m}\\) square.",
-    "opts": [
-      "\\(-16\\)",
-      "\\(15\\)",
-      "\\(16\\)",
-      "\\(17\\)"
-    ],
     "a": 2,
     "answer": "2",
     "hint": "Subtract the area of the rectangular carpet from the area of the square room.",
@@ -2176,17 +2080,17 @@ export const Y8_CH15A_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(\\text{Area}_{\\text{carpet}} = 5 \\times 4 = 20\\text{ m}^2\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(\\text{Uncovered Area} = 36 - 20 = 16\\text{ m}^2\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 16. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(16\\)",
         "graphData": null
       }
@@ -2204,12 +2108,6 @@ export const Y8_CH15A_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "This diagram is the ground floor plan of a house drawn to a scale of \\(1\\text{ cm}\\) to represent \\(3\\text{ metres}\\). The plan has the following measured dimensions on the paper:\n- Total length of the house: \\(10\\text{ cm}\\)\n- Total width of the house: \\(7\\text{ cm}\\)\n- Family room: length \\(5\\text{ cm}\\), width \\(3.5\\text{ cm}\\)\n- Kitchen: length \\(3.5\\text{ cm}\\), width \\(3\\text{ cm}\\)\n- Hall: length \\(1.5\\text{ cm}\\), width \\(3.5\\text{ cm}\\)\n- Lounge: width \\(5\\text{ cm}\\) at its widest point\n- Patio: length \\(5\\text{ cm}\\), width \\(3.5\\text{ cm}\\)\n\nAnswer the questions below using the scale.\na) What is the length of the house (in metres)?",
-    "opts": [
-      "\\(-30\\)",
-      "\\(29\\)",
-      "\\(30\\)",
-      "\\(31\\)"
-    ],
     "a": 2,
     "answer": "2",
     "hint": "",
@@ -2217,21 +2115,21 @@ export const Y8_CH15A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of area and length: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "Identify given data",
+        "workingOut": "\\(Identify given data\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
+        "workingOut": "\\(State the rule\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(30\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 30. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(30\\)",
         "graphData": null
       }
@@ -2249,12 +2147,6 @@ export const Y8_CH15A_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "This diagram is the ground floor plan of a house drawn to a scale of \\(1\\text{ cm}\\) to represent \\(3\\text{ metres}\\). The plan has the following measured dimensions on the paper:\n- Total length of the house: \\(10\\text{ cm}\\)\n- Total width of the house: \\(7\\text{ cm}\\)\n- Family room: length \\(5\\text{ cm}\\), width \\(3.5\\text{ cm}\\)\n- Kitchen: length \\(3.5\\text{ cm}\\), width \\(3\\text{ cm}\\)\n- Hall: length \\(1.5\\text{ cm}\\), width \\(3.5\\text{ cm}\\)\n- Lounge: width \\(5\\text{ cm}\\) at its widest point\n- Patio: length \\(5\\text{ cm}\\), width \\(3.5\\text{ cm}\\)\n\nAnswer the questions below using the scale.\nb) What is the width of the house (in metres)?",
-    "opts": [
-      "\\(-21\\)",
-      "\\(20\\)",
-      "\\(21\\)",
-      "\\(22\\)"
-    ],
     "a": 2,
     "answer": "2",
     "hint": "",
@@ -2262,21 +2154,21 @@ export const Y8_CH15A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of area and length: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "Identify given data",
+        "workingOut": "\\(Identify given data\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
+        "workingOut": "\\(State the rule\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(21\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 21. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(21\\)",
         "graphData": null
       }
@@ -2293,13 +2185,7 @@ export const Y8_CH15A_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "This diagram is the ground floor plan of a house drawn to a scale of \\(1\\text{ cm}\\) to represent \\(3\\text{ metres}\\). The plan has the following measured dimensions on the paper:\n- Total length of the house: \\(10\\text{ cm}\\)\n- Total width of the house: \\(7\\text{ cm}\\)\n- Family room: length \\(5\\text{ cm}\\), width \\(3.5\\text{ cm}\\)\n- Kitchen: length \\(3.5\\text{ cm}\\), width \\(3\\text{ cm}\\)\n- Hall: length \\(1.5\\text{ cm}\\), width \\(3.5\\text{ cm}\\)\n- Lounge: width \\(5\\text{ cm}\\) at its widest point\n- Patio: length \\(5\\text{ cm}\\), width \\(3.5\\text{ cm}\\)\n\nAnswer the questions below using the scale.\nc) Find the length and width of the family room in the form 'L by W' (e.g. '15 by 10.5').",
-    "opts": [
-      "\\(-15 by 10.5\\)",
-      "\\(15 by 10.5\\)",
-      "\\(15 by 10.5 + 1\\)",
-      "\\(\\dfrac{13}{6}\\)"
-    ],
+    "question": "This diagram is the ground floor plan of a house drawn to a scale of \\(1\\text{ cm}\\) to represent \\(3\\text{ metres}\\). The plan has the following measured dimensions on the paper:\n- Total length of the house: \\(10\\text{ cm}\\)\n- Total width of the house: \\(7\\text{ cm}\\)\n- Family room: length \\(5\\text{ cm}\\), width \\(3.5\\text{ cm}\\)\n- Kitchen: length \\(3.5\\text{ cm}\\), width \\(3\\text{ cm}\\)\n- Hall: length \\(1.5\\text{ cm}\\), width \\(3.5\\text{ cm}\\)\n- Lounge: width \\(5\\text{ cm}\\) at its widest point\n- Patio: length \\(5\\text{ cm}\\), width \\(3.5\\text{ cm}\\)\n\nAnswer the questions below using the scale.\nc) Find the length and width of the family room in the form 'L by W'.",
     "a": 1,
     "answer": "1",
     "hint": "",
@@ -2307,21 +2193,21 @@ export const Y8_CH15A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of area and length: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "Identify given data",
+        "workingOut": "\\(Identify given data\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
+        "workingOut": "\\(State the rule\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(15 by 10.5\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 15 by 10.5. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(15 by 10.5\\)",
         "graphData": null
       }
@@ -2339,12 +2225,6 @@ export const Y8_CH15A_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "This diagram is the ground floor plan of a house drawn to a scale of \\(1\\text{ cm}\\) to represent \\(3\\text{ metres}\\). The plan has the following measured dimensions on the paper:\n- Total length of the house: \\(10\\text{ cm}\\)\n- Total width of the house: \\(7\\text{ cm}\\)\n- Family room: length \\(5\\text{ cm}\\), width \\(3.5\\text{ cm}\\)\n- Kitchen: length \\(3.5\\text{ cm}\\), width \\(3\\text{ cm}\\)\n- Hall: length \\(1.5\\text{ cm}\\), width \\(3.5\\text{ cm}\\)\n- Lounge: width \\(5\\text{ cm}\\) at its widest point\n- Patio: length \\(5\\text{ cm}\\), width \\(3.5\\text{ cm}\\)\n\nAnswer the questions below using the scale.\nd) What is the area of the kitchen (in square metres)?",
-    "opts": [
-      "\\(-94.5\\)",
-      "\\(93.5\\)",
-      "\\(94.5\\)",
-      "\\(95.5\\)"
-    ],
     "a": 2,
     "answer": "2",
     "hint": "",
@@ -2352,21 +2232,21 @@ export const Y8_CH15A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of area and length: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "Identify given data",
+        "workingOut": "\\(Identify given data\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
+        "workingOut": "\\(State the rule\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(94.5\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 94.5. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(94.5\\)",
         "graphData": null
       }
@@ -2384,12 +2264,6 @@ export const Y8_CH15A_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "This diagram is the ground floor plan of a house drawn to a scale of \\(1\\text{ cm}\\) to represent \\(3\\text{ metres}\\). The plan has the following measured dimensions on the paper:\n- Total length of the house: \\(10\\text{ cm}\\)\n- Total width of the house: \\(7\\text{ cm}\\)\n- Family room: length \\(5\\text{ cm}\\), width \\(3.5\\text{ cm}\\)\n- Kitchen: length \\(3.5\\text{ cm}\\), width \\(3\\text{ cm}\\)\n- Hall: length \\(1.5\\text{ cm}\\), width \\(3.5\\text{ cm}\\)\n- Lounge: width \\(5\\text{ cm}\\) at its widest point\n- Patio: length \\(5\\text{ cm}\\), width \\(3.5\\text{ cm}\\)\n\nAnswer the questions below using the scale.\ne) What is the width of the lounge at its widest point (in metres)?",
-    "opts": [
-      "\\(-15\\)",
-      "\\(14\\)",
-      "\\(15\\)",
-      "\\(16\\)"
-    ],
     "a": 2,
     "answer": "2",
     "hint": "",
@@ -2397,21 +2271,21 @@ export const Y8_CH15A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of area and length: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "Identify given data",
+        "workingOut": "\\(Identify given data\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
+        "workingOut": "\\(State the rule\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(15\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 15. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(15\\)",
         "graphData": null
       }
@@ -2429,12 +2303,6 @@ export const Y8_CH15A_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "This diagram is the ground floor plan of a house drawn to a scale of \\(1\\text{ cm}\\) to represent \\(3\\text{ metres}\\). The plan has the following measured dimensions on the paper:\n- Total length of the house: \\(10\\text{ cm}\\)\n- Total width of the house: \\(7\\text{ cm}\\)\n- Family room: length \\(5\\text{ cm}\\), width \\(3.5\\text{ cm}\\)\n- Kitchen: length \\(3.5\\text{ cm}\\), width \\(3\\text{ cm}\\)\n- Hall: length \\(1.5\\text{ cm}\\), width \\(3.5\\text{ cm}\\)\n- Lounge: width \\(5\\text{ cm}\\) at its widest point\n- Patio: length \\(5\\text{ cm}\\), width \\(3.5\\text{ cm}\\)\n\nAnswer the questions below using the scale.\nf) What is the area of the patio (in square metres)?",
-    "opts": [
-      "\\(-157.5\\)",
-      "\\(156.5\\)",
-      "\\(157.5\\)",
-      "\\(158.5\\)"
-    ],
     "a": 2,
     "answer": "2",
     "hint": "",
@@ -2442,21 +2310,21 @@ export const Y8_CH15A_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of area and length: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "Identify given data",
+        "workingOut": "\\(Identify given data\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
+        "workingOut": "\\(State the rule\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(157.5\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 157.5. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(157.5\\)",
         "graphData": null
       }

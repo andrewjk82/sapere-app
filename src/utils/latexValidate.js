@@ -53,6 +53,9 @@ export const validateLatexValue = (value, renderToString) => {
   const segments = extractMathSegments(processed);
   const errors = [];
   for (const { tex, displayMode } of segments) {
+    if (tex.match(/\\frac\{\([^}]*\}\{[^}]*\}\)/) || tex.match(/\\frac\{[^}]*\}\{\([^}]*\}\)/)) {
+      errors.push({ tex, error: 'Misplaced parenthesis detected in fraction. Avoid \\frac{(A}{B}) or \\frac{A}{(B}).' });
+    }
     try {
       renderToString(tex, { throwOnError: true, displayMode });
     } catch (err) {

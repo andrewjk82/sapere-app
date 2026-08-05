@@ -1911,7 +1911,7 @@ export const Y11_CH6C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric functions of a general angle: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(x \\neq 90^{\\circ} + 180^{\\circ}n\\)",
+        "workingOut": "\\(x \neq 90^{\\circ} + 180^{\\circ}n\\)",
         "graphData": {
           "jsxGraph": {
             "width": 360,
@@ -2232,7 +2232,7 @@ export const Y11_CH6C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric functions of a general angle: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(x \\neq 180^{\\circ}n\\)",
+        "workingOut": "\\(x \neq 180^{\\circ}n\\)",
         "graphData": null
       },
       {
@@ -2412,7 +2412,7 @@ export const Y11_CH6C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric functions of a general angle: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(x \\neq 90^{\\circ} + 180^{\\circ}n\\)",
+        "workingOut": "\\(x \neq 90^{\\circ} + 180^{\\circ}n\\)",
         "graphData": null
       },
       {
@@ -2592,7 +2592,7 @@ export const Y11_CH6C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric functions of a general angle: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(x \\neq 180^{\\circ}n\\)",
+        "workingOut": "\\(x \neq 180^{\\circ}n\\)",
         "graphData": null
       },
       {

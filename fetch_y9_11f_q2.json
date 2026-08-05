@@ -1,0 +1,381 @@
+{
+  "y9-11f-q2a": {
+    "topicTitle": "The equation of a line using the gradient and a point",
+    "year": "Year 9",
+    "isManual": true,
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "requiresManualGrading": false,
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830226,
+      "_nanoseconds": 609000000
+    },
+    "origin": "seed",
+    "source": "",
+    "isActive": true,
+    "topicCode": "11F",
+    "question": "What is the \\(y\\)-intercept of the line \\(\\ell: y = 2x + 6\\)?",
+    "title": "What is the y-intercept of the line \\ell...",
+    "type": "multiple_choice",
+    "topicId": "y9-11f",
+    "answer": "2",
+    "solution": "By comparing \\(y = 2x + 6\\) to \\(y = mx + c\\), the \\(y\\)-intercept is \\(c = 6\\).",
+    "chapterId": "y9-11",
+    "hint": "Identify the gradient \\(m\\) and y-intercept \\(c\\) from \\(y = mx + c\\) to answer the sub-questions.",
+    "options": [
+      {
+        "text": "\\(-6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7\\)",
+        "imageUrl": ""
+      }
+    ],
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "isNew": false,
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The equation of a line using the gradient and a point: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": {
+          "jsxGraph": {
+            "width": 360,
+            "height": 280,
+            "boundingbox": [
+              -6,
+              6,
+              6,
+              -6
+            ],
+            "script": "board.suspendUpdate(); board.create('arrow', [[-6,0],[6,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-6],[0,6]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [5.28, -2.0999999999999996, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 5.4, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return (2)*x + (+6); }, -5.5, 5.5], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [2.2, 3.5, 'y = 2x+6'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+          }
+        }
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(6\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 6. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(6\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": {
+      "jsxGraph": {
+        "boundingbox": [
+          -6,
+          6,
+          6,
+          -6
+        ],
+        "width": 360,
+        "script": "board.suspendUpdate(); board.create('arrow', [[-6,0],[6,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-6],[0,6]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [5.28, -2.0999999999999996, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 5.4, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return (2)*x + (+6); }, -5.5, 5.5], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [2.2, 3.5, 'y = 2x+6'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();",
+        "height": 280
+      }
+    },
+    "updatedAt": {
+      "_seconds": 1784974603,
+      "_nanoseconds": 143000000
+    }
+  },
+  "y9-11f-q2b": {
+    "topicTitle": "The equation of a line using the gradient and a point",
+    "year": "Year 9",
+    "isManual": true,
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "options": [],
+    "answer": "2",
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830226,
+      "_nanoseconds": 609000000
+    },
+    "origin": "seed",
+    "source": "",
+    "isActive": true,
+    "topicCode": "11F",
+    "question": "What is the gradient of the line \\(\\ell: y = 2x + 6\\)?",
+    "title": "What is the gradient of the line \\ell: y...",
+    "type": "teacher_review",
+    "requiresManualGrading": true,
+    "topicId": "y9-11f",
+    "solution": "2",
+    "chapterId": "y9-11",
+    "hint": "Identify the gradient \\(m\\) and y-intercept \\(c\\) from \\(y = mx + c\\) to answer the sub-questions.",
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "isNew": false,
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The equation of a line using the gradient and a point: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": {
+          "jsxGraph": {
+            "width": 360,
+            "height": 280,
+            "boundingbox": [
+              -6,
+              6,
+              6,
+              -6
+            ],
+            "script": "board.suspendUpdate(); board.create('arrow', [[-6,0],[6,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-6],[0,6]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [5.28, -2.0999999999999996, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 5.4, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return (2)*x + (+6); }, -5.5, 5.5], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [2.2, 3.5, 'y = 2x+6'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+          }
+        }
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 2. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(2\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": {
+      "jsxGraph": {
+        "boundingbox": [
+          -6,
+          6,
+          6,
+          -6
+        ],
+        "width": 360,
+        "script": "board.suspendUpdate(); board.create('arrow', [[-6,0],[6,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-6],[0,6]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [5.28, -2.0999999999999996, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 5.4, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return (2)*x + (+6); }, -5.5, 5.5], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [2.2, 3.5, 'y = 2x+6'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();",
+        "height": 280
+      }
+    },
+    "updatedAt": {
+      "_seconds": 1784974603,
+      "_nanoseconds": 143000000
+    }
+  },
+  "y9-11f-q2c": {
+    "topicTitle": "The equation of a line using the gradient and a point",
+    "year": "Year 9",
+    "isManual": true,
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "requiresManualGrading": false,
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830226,
+      "_nanoseconds": 609000000
+    },
+    "origin": "seed",
+    "source": "",
+    "isActive": true,
+    "topicCode": "11F",
+    "question": "Find the equation of the line that has the same \\(y\\)-intercept as \\(\\ell: y = 2x + 6\\) but has a gradient of \\(\\frac{1}{3}\\).",
+    "title": "Find the equation of the line that has t...",
+    "type": "multiple_choice",
+    "topicId": "y9-11f",
+    "answer": "1",
+    "solution": "The \\(y\\)-intercept is \\(6\\) and gradient is \\(\\frac{1}{3}\\). Substituting into \\(y = mx + c\\) gives \\(y = \\frac{1}{3}x + 6\\).",
+    "chapterId": "y9-11",
+    "hint": "Identify the gradient \\(m\\) and y-intercept \\(c\\) from \\(y = mx + c\\) to answer the sub-questions.",
+    "options": [
+      {
+        "text": "\\(-y = \\frac{1}{3}x + 6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = \\frac{1}{3}x + 6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = \\frac{1}{3}x + 6 + 1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = \\frac{3}{1}x + 6\\)",
+        "imageUrl": ""
+      }
+    ],
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "isNew": false,
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The equation of a line using the gradient and a point: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": {
+          "jsxGraph": {
+            "width": 360,
+            "height": 280,
+            "boundingbox": [
+              -6,
+              6,
+              6,
+              -6
+            ],
+            "script": "board.suspendUpdate(); board.create('arrow', [[-6,0],[6,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-6],[0,6]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [5.28, -2.0999999999999996, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 5.4, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return (2)*x + (+6); }, -5.5, 5.5], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [2.2, 3.5, 'y = 2x+6'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+          }
+        }
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(y = \\frac{1}{3}x + 6\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: y = \\frac{1}{3}x + 6. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(y = \\frac{1}{3}x + 6\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": {
+      "jsxGraph": {
+        "boundingbox": [
+          -6,
+          6,
+          6,
+          -6
+        ],
+        "width": 360,
+        "script": "board.suspendUpdate(); board.create('arrow', [[-6,0],[6,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-6],[0,6]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [5.28, -2.0999999999999996, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 5.4, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return (2)*x + (+6); }, -5.5, 5.5], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [2.2, 3.5, 'y = 2x+6'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();",
+        "height": 280
+      }
+    },
+    "updatedAt": {
+      "_seconds": 1784974603,
+      "_nanoseconds": 143000000
+    }
+  },
+  "y9-11f-q2d": {
+    "topicTitle": "The equation of a line using the gradient and a point",
+    "year": "Year 9",
+    "isManual": true,
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "requiresManualGrading": false,
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830226,
+      "_nanoseconds": 609000000
+    },
+    "origin": "seed",
+    "source": "",
+    "isActive": true,
+    "topicCode": "11F",
+    "question": "Find the equation of the line that has the same gradient as \\(\\ell: y = 2x + 6\\) but has a \\(y\\)-intercept of \\(-4\\).",
+    "title": "Find the equation of the line that has t...",
+    "type": "multiple_choice",
+    "topicId": "y9-11f",
+    "answer": "1",
+    "solution": "The gradient is \\(2\\) and \\(y\\)-intercept is \\(-4\\). Substituting into \\(y = mx + c\\) gives \\(y = 2x - 4\\).",
+    "chapterId": "y9-11",
+    "hint": "Identify the gradient \\(m\\) and y-intercept \\(c\\) from \\(y = mx + c\\) to answer the sub-questions.",
+    "options": [
+      {
+        "text": "\\(\\dfrac{13}{6}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = 2x - 4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = 2x - 4 + 1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = 3x - 4\\)",
+        "imageUrl": ""
+      }
+    ],
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "isNew": false,
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The equation of a line using the gradient and a point: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": {
+          "jsxGraph": {
+            "width": 360,
+            "height": 280,
+            "boundingbox": [
+              -6,
+              6,
+              6,
+              -6
+            ],
+            "script": "board.suspendUpdate(); board.create('arrow', [[-6,0],[6,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-6],[0,6]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [5.28, -2.0999999999999996, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 5.4, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return (2)*x + (+6); }, -5.5, 5.5], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [2.2, 3.5, 'y = 2x+6'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+          }
+        }
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(y = 2x - 4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: y = 2x - 4. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(y = 2x - 4\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": {
+      "jsxGraph": {
+        "boundingbox": [
+          -6,
+          6,
+          6,
+          -6
+        ],
+        "width": 360,
+        "script": "board.suspendUpdate(); board.create('arrow', [[-6,0],[6,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-6],[0,6]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [5.28, -2.0999999999999996, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 5.4, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return (2)*x + (+6); }, -5.5, 5.5], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [2.2, 3.5, 'y = 2x+6'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();",
+        "height": 280
+      }
+    },
+    "updatedAt": {
+      "_seconds": 1784974603,
+      "_nanoseconds": 143000000
+    }
+  }
+}

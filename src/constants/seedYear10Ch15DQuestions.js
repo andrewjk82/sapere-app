@@ -23,8 +23,8 @@ export const Y10_CH15D_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Since \\(\\frac{7}{40} \\neq \\frac{8}{40}\\), the condition for independence is not satisfied. Therefore, attitude to headgear is not independent of sex.",
-        "workingOut": "\\(\\frac{7}{40} \\neq \\frac{8}{40}\\)",
+        "explanation": "Since \\(\\frac{7}{40} \neq \\frac{8}{40}\\), the condition for independence is not satisfied. Therefore, attitude to headgear is not independent of sex.",
+        "workingOut": "\\(\\frac{7}{40} \neq \\frac{8}{40}\\)",
         "graphData": null
       }
     ],
@@ -184,8 +184,8 @@ export const Y10_CH15D_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Since \\(\\frac{14}{50} \\neq \\frac{27}{50}\\), the condition for independence fails. This means the severity of an accident is not independent of whether the vehicle was travelling more than 10 km/h over the speed limit.",
-        "workingOut": "\\(\\frac{14}{50} \\neq \\frac{27}{50}\\)",
+        "explanation": "Since \\(\\frac{14}{50} \neq \\frac{27}{50}\\), the condition for independence fails. This means the severity of an accident is not independent of whether the vehicle was travelling more than 10 km/h over the speed limit.",
+        "workingOut": "\\(\\frac{14}{50} \neq \\frac{27}{50}\\)",
         "graphData": null
       }
     ],
@@ -217,8 +217,8 @@ export const Y10_CH15D_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Convert \\(\\frac{26}{125}\\) to the same denominator: \\(\\frac{26}{125} = \\frac{130}{625}\\). Since \\(\\frac{130}{625} \\neq \\frac{99}{625}\\), the events 'Minor' and 'Not speeding' are not independent.",
-        "workingOut": "\\(\\frac{26}{125} = \\frac{130}{625} \\neq \\frac{99}{625}\\)",
+        "explanation": "Convert \\(\\frac{26}{125}\\) to the same denominator: \\(\\frac{26}{125} = \\frac{130}{625}\\). Since \\(\\frac{130}{625} \neq \\frac{99}{625}\\), the events 'Minor' and 'Not speeding' are not independent.",
+        "workingOut": "\\(\\frac{26}{125} = \\frac{130}{625} \neq \\frac{99}{625}\\)",
         "graphData": null
       }
     ],
@@ -671,8 +671,8 @@ export const Y10_CH15D_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Convert \\(\\frac{1}{36}\\) to the same denominator: \\(\\frac{1}{36} = \\frac{3}{108}\\). Since \\(\\frac{3}{108} \\neq \\frac{5}{108}\\), events \\(A\\) and \\(B\\) are not independent.",
-        "workingOut": "\\(\\frac{1}{36} = \\frac{3}{108} \\neq \\frac{5}{108}\\)",
+        "explanation": "Convert \\(\\frac{1}{36}\\) to the same denominator: \\(\\frac{1}{36} = \\frac{3}{108}\\). Since \\(\\frac{3}{108} \neq \\frac{5}{108}\\), events \\(A\\) and \\(B\\) are not independent.",
+        "workingOut": "\\(\\frac{1}{36} = \\frac{3}{108} \neq \\frac{5}{108}\\)",
         "graphData": null
       }
     ],
@@ -704,8 +704,8 @@ export const Y10_CH15D_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Since \\(A \\cap B = {(3, 6)} \\neq \\emptyset\\), the events can occur at the same time. Therefore, events \\(A\\) and \\(B\\) are not mutually exclusive.",
-        "workingOut": "\\(A \\cap B \\neq \\emptyset\\)",
+        "explanation": "Since \\(A \\cap B = {(3, 6)} \neq \\emptyset\\), the events can occur at the same time. Therefore, events \\(A\\) and \\(B\\) are not mutually exclusive.",
+        "workingOut": "\\(A \\cap B \neq \\emptyset\\)",
         "graphData": null
       }
     ],

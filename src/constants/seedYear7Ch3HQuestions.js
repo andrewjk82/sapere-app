@@ -4,7 +4,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following using algebra:\\n\\n\\\\(4\\\\) is added to \\\\(y\\\\)",
+    "question": "Write the following using algebra:\n\n\\\\(4\\\\) is added to \\\\(y\\\\)",
     "t": "Chapter review",
     "hint": "Translate the words into algebraic operations.",
     "solutionSteps": [
@@ -47,7 +47,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following using algebra:\\n\\n\\\\(5\\\\) is subtracted from \\\\(m\\\\)",
+    "question": "Write the following using algebra:\n\n\\\\(5\\\\) is subtracted from \\\\(m\\\\)",
     "t": "Chapter review",
     "hint": "Translate the words into algebraic operations.",
     "solutionSteps": [
@@ -90,7 +90,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following using algebra:\\n\\n\\\\(y\\\\) is multiplied by \\\\(5\\\\)",
+    "question": "Write the following using algebra:\n\n\\\\(y\\\\) is multiplied by \\\\(5\\\\)",
     "t": "Chapter review",
     "hint": "Translate the words into algebraic operations.",
     "solutionSteps": [
@@ -133,7 +133,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following using algebra:\\n\\n\\\\(k\\\\) is subtracted from \\\\(15\\\\)",
+    "question": "Write the following using algebra:\n\n\\\\(k\\\\) is subtracted from \\\\(15\\\\)",
     "t": "Chapter review",
     "hint": "Translate the words into algebraic operations.",
     "solutionSteps": [
@@ -176,7 +176,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following using algebra:\\n\\n\\\\(4\\\\) is multiplied by \\\\(a\\\\), and \\\\(5\\\\) is added to the result",
+    "question": "Write the following using algebra:\n\n\\\\(4\\\\) is multiplied by \\\\(a\\\\), and \\\\(5\\\\) is added to the result",
     "t": "Chapter review",
     "hint": "Translate the words into algebraic operations.",
     "solutionSteps": [
@@ -219,7 +219,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following using algebra:\\n\\n\\\\(3\\\\) is added to \\\\(m\\\\), and the result is multiplied by \\\\(5\\\\)",
+    "question": "Write the following using algebra:\n\n\\\\(3\\\\) is added to \\\\(m\\\\), and the result is multiplied by \\\\(5\\\\)",
     "t": "Chapter review",
     "hint": "Translate the words into algebraic operations.",
     "solutionSteps": [
@@ -262,7 +262,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following using algebra:\\n\\n\\\\(y\\\\) is multiplied by \\\\(y\\\\), and \\\\(2\\\\) is added to the result",
+    "question": "Write the following using algebra:\n\n\\\\(y\\\\) is multiplied by \\\\(y\\\\), and \\\\(2\\\\) is added to the result",
     "t": "Chapter review",
     "hint": "Translate the words into algebraic operations.",
     "solutionSteps": [
@@ -305,7 +305,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following using algebra:\\n\\n\\\\(a\\\\) is divided by a number, \\\\(b\\\\), and then \\\\(4\\\\) is added to it",
+    "question": "Write the following using algebra:\n\n\\\\(a\\\\) is divided by a number, \\\\(b\\\\), and then \\\\(4\\\\) is added to it",
     "t": "Chapter review",
     "hint": "Translate the words into algebraic operations.",
     "solutionSteps": [
@@ -348,7 +348,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Evaluate the following expression, given that \\\\(p = 3\\\\) and \\\\(q = 5\\\\).\\n\\n\\\\(q - 2\\\\)",
+    "question": "Evaluate the following expression, given that \\\\(p = 3\\\\) and \\\\(q = 5\\\\).\n\n\\\\(q - 2\\\\)",
     "t": "Chapter review",
     "hint": "Substitute the given values into the expression.",
     "solutionSteps": [
@@ -387,7 +387,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Evaluate the following expression, given that \\\\(p = 3\\\\) and \\\\(q = 5\\\\).\\n\\n\\\\(p + q\\\\)",
+    "question": "Evaluate the following expression, given that \\\\(p = 3\\\\) and \\\\(q = 5\\\\).\n\n\\\\(p + q\\\\)",
     "t": "Chapter review",
     "hint": "Substitute the given values into the expression.",
     "solutionSteps": [
@@ -426,7 +426,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Evaluate the following expression, given that \\\\(p = 3\\\\) and \\\\(q = 5\\\\).\\n\\n\\\\(qp\\\\)",
+    "question": "Evaluate the following expression, given that \\\\(p = 3\\\\) and \\\\(q = 5\\\\).\n\n\\\\(qp\\\\)",
     "t": "Chapter review",
     "hint": "Substitute the given values into the expression.",
     "solutionSteps": [
@@ -465,7 +465,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Evaluate the following expression, given that \\\\(p = 3\\\\) and \\\\(q = 5\\\\).\\n\\n\\\\(2q - p\\\\)",
+    "question": "Evaluate the following expression, given that \\\\(p = 3\\\\) and \\\\(q = 5\\\\).\n\n\\\\(2q - p\\\\)",
     "t": "Chapter review",
     "hint": "Substitute the given values into the expression.",
     "solutionSteps": [
@@ -508,7 +508,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Evaluate the following expression, given that \\\\(p = 3\\\\) and \\\\(q = 5\\\\).\\n\\n\\\\(p^2 - 5\\\\)",
+    "question": "Evaluate the following expression, given that \\\\(p = 3\\\\) and \\\\(q = 5\\\\).\n\n\\\\(p^2 - 5\\\\)",
     "t": "Chapter review",
     "hint": "Substitute the given values into the expression.",
     "solutionSteps": [
@@ -551,7 +551,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Evaluate the following expression, given that \\\\(p = 3\\\\) and \\\\(q = 5\\\\).\\n\\n\\\\(4p + 3q\\\\)",
+    "question": "Evaluate the following expression, given that \\\\(p = 3\\\\) and \\\\(q = 5\\\\).\n\n\\\\(4p + 3q\\\\)",
     "t": "Chapter review",
     "hint": "Substitute the given values into the expression.",
     "solutionSteps": [
@@ -594,7 +594,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Evaluate the following expression, given that \\\\(p = 3\\\\) and \\\\(q = 5\\\\).\\n\\n\\\\((3p)^2 - 5\\\\)",
+    "question": "Evaluate the following expression, given that \\\\(p = 3\\\\) and \\\\(q = 5\\\\).\n\n\\\\((3p)^2 - 5\\\\)",
     "t": "Chapter review",
     "hint": "Substitute the given values into the expression.",
     "solutionSteps": [
@@ -641,7 +641,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Evaluate the following expression, given that \\\\(p = 3\\\\) and \\\\(q = 5\\\\).\\n\\n\\\\(3p^2 - 2\\\\)",
+    "question": "Evaluate the following expression, given that \\\\(p = 3\\\\) and \\\\(q = 5\\\\).\n\n\\\\(3p^2 - 2\\\\)",
     "t": "Chapter review",
     "hint": "Substitute the given values into the expression.",
     "solutionSteps": [
@@ -883,7 +883,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify:\\n\\n\\\\(a \\times b\\\\)",
+    "question": "Simplify:\n\n\\\\(a \\times b\\\\)",
     "t": "Chapter review",
     "hint": "Multiply numbers and group like variables using indices.",
     "solutionSteps": [
@@ -918,7 +918,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify:\\n\\n\\\\(5 \\times p \\times p \\times p\\\\)",
+    "question": "Simplify:\n\n\\\\(5 \\times p \\times p \\times p\\\\)",
     "t": "Chapter review",
     "hint": "Multiply numbers and group like variables using indices.",
     "solutionSteps": [
@@ -957,7 +957,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify:\\n\\n\\\\(8 \\times k \\times k \\times k\\\\)",
+    "question": "Simplify:\n\n\\\\(8 \\times k \\times k \\times k\\\\)",
     "t": "Chapter review",
     "hint": "Multiply numbers and group like variables using indices.",
     "solutionSteps": [
@@ -996,7 +996,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify:\\n\\n\\\\(3 \\times m \\times m \\times 5 \\times m\\\\)",
+    "question": "Simplify:\n\n\\\\(3 \\times m \\times m \\times 5 \\times m\\\\)",
     "t": "Chapter review",
     "hint": "Multiply numbers and group like variables using indices.",
     "solutionSteps": [
@@ -1039,7 +1039,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify:\\n\\n\\\\(4 \\times a \\times a \\times b \\times 5\\\\)",
+    "question": "Simplify:\n\n\\\\(4 \\times a \\times a \\times b \\times 5\\\\)",
     "t": "Chapter review",
     "hint": "Multiply numbers and group like variables using indices.",
     "solutionSteps": [
@@ -1082,7 +1082,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify:\\n\\n\\\\(2 \\times y \\times y \\times y \\times y \\times 7\\\\)",
+    "question": "Simplify:\n\n\\\\(2 \\times y \\times y \\times y \\times y \\times 7\\\\)",
     "t": "Chapter review",
     "hint": "Multiply numbers and group like variables using indices.",
     "solutionSteps": [
@@ -1125,7 +1125,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Rewrite the expression using the algebraic way of representing division.\\n\\n\\\\(m \\div 4\\\\)",
+    "question": "Rewrite the expression using the algebraic way of representing division.\n\n\\\\(m \\div 4\\\\)",
     "t": "Chapter review",
     "hint": "Use a fraction bar instead of the division sign.",
     "solutionSteps": [
@@ -1164,7 +1164,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Rewrite the expression using the algebraic way of representing division.\\n\\n\\\\(15 \\div k\\\\)",
+    "question": "Rewrite the expression using the algebraic way of representing division.\n\n\\\\(15 \\div k\\\\)",
     "t": "Chapter review",
     "hint": "Use a fraction bar instead of the division sign.",
     "solutionSteps": [
@@ -1203,7 +1203,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Rewrite the expression using the algebraic way of representing division.\\n\\n\\\\(a \\div b\\\\)",
+    "question": "Rewrite the expression using the algebraic way of representing division.\n\n\\\\(a \\div b\\\\)",
     "t": "Chapter review",
     "hint": "Use a fraction bar instead of the division sign.",
     "solutionSteps": [
@@ -1242,7 +1242,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following in simplified form:\\n\\nThe product of \\\\(12\\\\) and \\\\(m\\\\)",
+    "question": "Write the following in simplified form:\n\nThe product of \\\\(12\\\\) and \\\\(m\\\\)",
     "t": "Chapter review",
     "hint": "Translate the math vocabulary into algebra.",
     "solutionSteps": [
@@ -1281,7 +1281,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following in simplified form:\\n\\nThe quotient of \\\\(y\\\\) divided by \\\\(4\\\\)",
+    "question": "Write the following in simplified form:\n\nThe quotient of \\\\(y\\\\) divided by \\\\(4\\\\)",
     "t": "Chapter review",
     "hint": "Translate the math vocabulary into algebra.",
     "solutionSteps": [
@@ -1320,7 +1320,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following in simplified form:\\n\\nThe cube of \\\\(m\\\\)",
+    "question": "Write the following in simplified form:\n\nThe cube of \\\\(m\\\\)",
     "t": "Chapter review",
     "hint": "Translate the math vocabulary into algebra.",
     "solutionSteps": [
@@ -1359,7 +1359,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following in simplified form:\\n\\nThe fourth power of \\\\(y\\\\)",
+    "question": "Write the following in simplified form:\n\nThe fourth power of \\\\(y\\\\)",
     "t": "Chapter review",
     "hint": "Translate the math vocabulary into algebra.",
     "solutionSteps": [
@@ -1398,7 +1398,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following in simplified form:\\n\\nThe product of \\\\(5k\\\\) and \\\\(4k\\\\)",
+    "question": "Write the following in simplified form:\n\nThe product of \\\\(5k\\\\) and \\\\(4k\\\\)",
     "t": "Chapter review",
     "hint": "Translate the math vocabulary into algebra.",
     "solutionSteps": [
@@ -1441,7 +1441,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following in simplified form:\\n\\nThe cube of \\\\(2a\\\\)",
+    "question": "Write the following in simplified form:\n\nThe cube of \\\\(2a\\\\)",
     "t": "Chapter review",
     "hint": "Translate the math vocabulary into algebra.",
     "solutionSteps": [
@@ -1488,7 +1488,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "If \\\\(y = 4\\\\), evaluate:\\n\\n\\\\(8y + 5\\\\)",
+    "question": "If \\\\(y = 4\\\\), evaluate:\n\n\\\\(8y + 5\\\\)",
     "t": "Chapter review",
     "hint": "Substitute $y = 4$ into the expression.",
     "solutionSteps": [
@@ -1531,7 +1531,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "If \\\\(y = 4\\\\), evaluate:\\n\\n\\\\(20 - y\\\\)",
+    "question": "If \\\\(y = 4\\\\), evaluate:\n\n\\\\(20 - y\\\\)",
     "t": "Chapter review",
     "hint": "Substitute $y = 4$ into the expression.",
     "solutionSteps": [
@@ -1570,7 +1570,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "If \\\\(y = 4\\\\), evaluate:\\n\\n\\\\(2y^2 + 5\\\\)",
+    "question": "If \\\\(y = 4\\\\), evaluate:\n\n\\\\(2y^2 + 5\\\\)",
     "t": "Chapter review",
     "hint": "Substitute $y = 4$ into the expression.",
     "solutionSteps": [
@@ -1617,7 +1617,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "If \\\\(y = 4\\\\), evaluate:\\n\\n\\\\(y^3\\\\)",
+    "question": "If \\\\(y = 4\\\\), evaluate:\n\n\\\\(y^3\\\\)",
     "t": "Chapter review",
     "hint": "Substitute $y = 4$ into the expression.",
     "solutionSteps": [
@@ -1656,7 +1656,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "If \\\\(y = 4\\\\), evaluate:\\n\\n\\\\(40 - 5y\\\\)",
+    "question": "If \\\\(y = 4\\\\), evaluate:\n\n\\\\(40 - 5y\\\\)",
     "t": "Chapter review",
     "hint": "Substitute $y = 4$ into the expression.",
     "solutionSteps": [
@@ -1699,7 +1699,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "If \\\\(y = 4\\\\), evaluate:\\n\\n\\\\(5y^2 + 3\\\\)",
+    "question": "If \\\\(y = 4\\\\), evaluate:\n\n\\\\(5y^2 + 3\\\\)",
     "t": "Chapter review",
     "hint": "Substitute $y = 4$ into the expression.",
     "solutionSteps": [
@@ -1746,7 +1746,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "If \\\\(y = 4\\\\), evaluate:\\n\\n\\\\(y^4\\\\)",
+    "question": "If \\\\(y = 4\\\\), evaluate:\n\n\\\\(y^4\\\\)",
     "t": "Chapter review",
     "hint": "Substitute $y = 4$ into the expression.",
     "solutionSteps": [
@@ -1785,7 +1785,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "If \\\\(y = 4\\\\), evaluate:\\n\\n\\\\(y^5\\\\)",
+    "question": "If \\\\(y = 4\\\\), evaluate:\n\n\\\\(y^5\\\\)",
     "t": "Chapter review",
     "hint": "Substitute $y = 4$ into the expression.",
     "solutionSteps": [
@@ -1824,7 +1824,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Simplify the expression by adding or subtracting like terms.\\n\\n\\\\(8y + 5y - 3y\\\\)",
+    "question": "Simplify the expression by adding or subtracting like terms.\n\n\\\\(8y + 5y - 3y\\\\)",
     "t": "Chapter review",
     "hint": "Combine the coefficients of the like terms.",
     "solutionSteps": [
@@ -1867,7 +1867,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Simplify the expression by adding or subtracting like terms.\\n\\n\\\\(5ab - 2ab + 4ab\\\\)",
+    "question": "Simplify the expression by adding or subtracting like terms.\n\n\\\\(5ab - 2ab + 4ab\\\\)",
     "t": "Chapter review",
     "hint": "Combine the coefficients of the like terms.",
     "solutionSteps": [
@@ -1910,7 +1910,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Simplify the expression by adding or subtracting like terms.\\n\\n\\\\(5m^2 + 8m^2 - 3m^2\\\\)",
+    "question": "Simplify the expression by adding or subtracting like terms.\n\n\\\\(5m^2 + 8m^2 - 3m^2\\\\)",
     "t": "Chapter review",
     "hint": "Combine the coefficients of the like terms.",
     "solutionSteps": [
@@ -1953,7 +1953,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Simplify the expression by adding or subtracting like terms.\\n\\n\\\\(4pq - pq\\\\)",
+    "question": "Simplify the expression by adding or subtracting like terms.\n\n\\\\(4pq - pq\\\\)",
     "t": "Chapter review",
     "hint": "Combine the coefficients of the like terms.",
     "solutionSteps": [
@@ -1992,7 +1992,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Simplify the expression by adding or subtracting like terms.\\n\\n\\\\(3mn + 5mn - mn\\\\)",
+    "question": "Simplify the expression by adding or subtracting like terms.\n\n\\\\(3mn + 5mn - mn\\\\)",
     "t": "Chapter review",
     "hint": "Combine the coefficients of the like terms.",
     "solutionSteps": [
@@ -2035,7 +2035,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Simplify the expression by adding or subtracting like terms.\\n\\n\\\\(10a + 40b + 30a + 10b\\\\)",
+    "question": "Simplify the expression by adding or subtracting like terms.\n\n\\\\(10a + 40b + 30a + 10b\\\\)",
     "t": "Chapter review",
     "hint": "Combine the coefficients of the like terms.",
     "solutionSteps": [
@@ -2082,7 +2082,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Rewrite the statement using brackets and algebra:\\n\\n\\\\(7\\\\) is added to \\\\(p\\\\) and the result is multiplied by \\\\(5\\\\).",
+    "question": "Rewrite the statement using brackets and algebra:\n\n\\\\(7\\\\) is added to \\\\(p\\\\) and the result is multiplied by \\\\(5\\\\).",
     "t": "Chapter review",
     "hint": "Use brackets for the addition so it happens first.",
     "solutionSteps": [
@@ -2125,7 +2125,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Rewrite the statement using brackets and algebra:\\n\\n\\\\(4\\\\) is subtracted from a number, \\\\(k\\\\), and the result is multiplied by \\\\(8\\\\).",
+    "question": "Rewrite the statement using brackets and algebra:\n\n\\\\(4\\\\) is subtracted from a number, \\\\(k\\\\), and the result is multiplied by \\\\(8\\\\).",
     "t": "Chapter review",
     "hint": "Use brackets for the subtraction so it happens first.",
     "solutionSteps": [
@@ -2168,7 +2168,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Rewrite the expression without brackets.\\n\\n\\\\((5m)^2\\\\)",
+    "question": "Rewrite the expression without brackets.\n\n\\\\((5m)^2\\\\)",
     "t": "Chapter review",
     "hint": "Apply the power to both the coefficient and the variable.",
     "solutionSteps": [
@@ -2211,7 +2211,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Rewrite the expression without brackets.\\n\\n\\\\((3p)^3\\\\)",
+    "question": "Rewrite the expression without brackets.\n\n\\\\((3p)^3\\\\)",
     "t": "Chapter review",
     "hint": "Apply the power to both the coefficient and the variable.",
     "solutionSteps": [
@@ -2254,7 +2254,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Rewrite the expression without brackets.\\n\\n\\\\((3m)^2 \\times 2m\\\\)",
+    "question": "Rewrite the expression without brackets.\n\n\\\\((3m)^2 \\times 2m\\\\)",
     "t": "Chapter review",
     "hint": "Apply the power to both the coefficient and the variable.",
     "solutionSteps": [
@@ -2301,7 +2301,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Rewrite the expression without brackets.\\n\\n\\\\((4y)^2 \\times 3y^2\\\\)",
+    "question": "Rewrite the expression without brackets.\n\n\\\\((4y)^2 \\times 3y^2\\\\)",
     "t": "Chapter review",
     "hint": "Apply the power to both the coefficient and the variable.",
     "solutionSteps": [
@@ -2344,7 +2344,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Evaluate the expression by substituting \\\\(m = 5\\\\).\\n\\n\\\\(3(m + 2)\\\\)",
+    "question": "Evaluate the expression by substituting \\\\(m = 5\\\\).\n\n\\\\(3(m + 2)\\\\)",
     "t": "Chapter review",
     "hint": "Substitute $m = 5$ into the expression.",
     "solutionSteps": [
@@ -2387,7 +2387,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Evaluate the expression by substituting \\\\(m = 5\\\\).\\n\\n\\\\(3m + 2\\\\)",
+    "question": "Evaluate the expression by substituting \\\\(m = 5\\\\).\n\n\\\\(3m + 2\\\\)",
     "t": "Chapter review",
     "hint": "Substitute $m = 5$ into the expression.",
     "solutionSteps": [
@@ -2430,7 +2430,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Evaluate the expression by substituting \\\\(m = 5\\\\).\\n\\n\\\\(m^2 + 4\\\\)",
+    "question": "Evaluate the expression by substituting \\\\(m = 5\\\\).\n\n\\\\(m^2 + 4\\\\)",
     "t": "Chapter review",
     "hint": "Substitute $m = 5$ into the expression.",
     "solutionSteps": [
@@ -2473,7 +2473,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Evaluate the expression by substituting \\\\(m = 5\\\\).\\n\\n\\\\(5 + 3(m - 1)\\\\)",
+    "question": "Evaluate the expression by substituting \\\\(m = 5\\\\).\n\n\\\\(5 + 3(m - 1)\\\\)",
     "t": "Chapter review",
     "hint": "Substitute $m = 5$ into the expression.",
     "solutionSteps": [
@@ -2980,7 +2980,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Evaluate the expression by substituting \\\\(y = 6\\\\).\\n\\n\\\\(3(10 - y)\\\\)",
+    "question": "Evaluate the expression by substituting \\\\(y = 6\\\\).\n\n\\\\(3(10 - y)\\\\)",
     "t": "Chapter review",
     "hint": "Substitute $y = 6$ into the expression.",
     "solutionSteps": [
@@ -3023,7 +3023,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Evaluate the expression by substituting \\\\(y = 6\\\\).\\n\\n\\\\(4(2y - 5)\\\\)",
+    "question": "Evaluate the expression by substituting \\\\(y = 6\\\\).\n\n\\\\(4(2y - 5)\\\\)",
     "t": "Chapter review",
     "hint": "Substitute $y = 6$ into the expression.",
     "solutionSteps": [
@@ -3070,7 +3070,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Evaluate the expression by substituting \\\\(y = 6\\\\).\\n\\n\\\\((3y)^2\\\\)",
+    "question": "Evaluate the expression by substituting \\\\(y = 6\\\\).\n\n\\\\((3y)^2\\\\)",
     "t": "Chapter review",
     "hint": "Substitute $y = 6$ into the expression.",
     "solutionSteps": [
@@ -3113,7 +3113,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Evaluate the expression by substituting \\\\(y = 6\\\\).\\n\\n\\\\(2y^2\\\\)",
+    "question": "Evaluate the expression by substituting \\\\(y = 6\\\\).\n\n\\\\(2y^2\\\\)",
     "t": "Chapter review",
     "hint": "Substitute $y = 6$ into the expression.",
     "solutionSteps": [
@@ -3156,7 +3156,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Evaluate the expression by substituting \\\\(p = 5\\\\).\\n\\n\\\\(8p + 2\\\\)",
+    "question": "Evaluate the expression by substituting \\\\(p = 5\\\\).\n\n\\\\(8p + 2\\\\)",
     "t": "Chapter review",
     "hint": "Substitute $p = 5$ into the expression.",
     "solutionSteps": [
@@ -3199,7 +3199,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Evaluate the expression by substituting \\\\(p = 5\\\\).\\n\\n\\\\((4p)^2\\\\)",
+    "question": "Evaluate the expression by substituting \\\\(p = 5\\\\).\n\n\\\\((4p)^2\\\\)",
     "t": "Chapter review",
     "hint": "Substitute $p = 5$ into the expression.",
     "solutionSteps": [
@@ -3242,7 +3242,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Evaluate the expression by substituting \\\\(p = 5\\\\).\\n\\n\\\\(4(15 - p)\\\\)",
+    "question": "Evaluate the expression by substituting \\\\(p = 5\\\\).\n\n\\\\(4(15 - p)\\\\)",
     "t": "Chapter review",
     "hint": "Substitute $p = 5$ into the expression.",
     "solutionSteps": [
@@ -3285,7 +3285,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Evaluate the expression by substituting \\\\(p = 5\\\\).\\n\\n\\\\(\\frac{3p}{5}\\\\)",
+    "question": "Evaluate the expression by substituting \\\\(p = 5\\\\).\n\n\\\\(\\frac{3p}{5}\\\\)",
     "t": "Chapter review",
     "hint": "Substitute $p = 5$ into the expression.",
     "solutionSteps": [
@@ -3328,7 +3328,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "If \\\\(m = 24\\\\) and \\\\(n = 6\\\\), find the value of:\\n\\n\\\\(m - n\\\\)",
+    "question": "If \\\\(m = 24\\\\) and \\\\(n = 6\\\\), find the value of:\n\n\\\\(m - n\\\\)",
     "t": "Chapter review",
     "hint": "Substitute the values of $m$ and $n$ into the expression.",
     "solutionSteps": [
@@ -3367,7 +3367,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "If \\\\(m = 24\\\\) and \\\\(n = 6\\\\), find the value of:\\n\\n\\\\(\\frac{m + 6}{6}\\\\)",
+    "question": "If \\\\(m = 24\\\\) and \\\\(n = 6\\\\), find the value of:\n\n\\\\(\\frac{m + 6}{6}\\\\)",
     "t": "Chapter review",
     "hint": "Substitute the values of $m$ and $n$ into the expression.",
     "solutionSteps": [
@@ -3410,7 +3410,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "If \\\\(m = 24\\\\) and \\\\(n = 6\\\\), find the value of:\\n\\n\\\\(\\frac{m}{6} + 6\\\\)",
+    "question": "If \\\\(m = 24\\\\) and \\\\(n = 6\\\\), find the value of:\n\n\\\\(\\frac{m}{6} + 6\\\\)",
     "t": "Chapter review",
     "hint": "Substitute the values of $m$ and $n$ into the expression.",
     "solutionSteps": [
@@ -3453,7 +3453,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "If \\\\(m = 24\\\\) and \\\\(n = 6\\\\), find the value of:\\n\\n\\\\(m^2 - n^2\\\\)",
+    "question": "If \\\\(m = 24\\\\) and \\\\(n = 6\\\\), find the value of:\n\n\\\\(m^2 - n^2\\\\)",
     "t": "Chapter review",
     "hint": "Substitute the values of $m$ and $n$ into the expression.",
     "solutionSteps": [
@@ -3496,7 +3496,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Simplify the expression by collecting like terms.\\n\\n\\\\(8m - m + 3n - n\\\\)",
+    "question": "Simplify the expression by collecting like terms.\n\n\\\\(8m - m + 3n - n\\\\)",
     "t": "Chapter review",
     "hint": "Add or subtract the coefficients of the matching algebraic parts.",
     "solutionSteps": [
@@ -3539,7 +3539,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Simplify the expression by collecting like terms.\\n\\n\\\\(15p^2 + 5p^2 + 12p^2 - 3p^2\\\\)",
+    "question": "Simplify the expression by collecting like terms.\n\n\\\\(15p^2 + 5p^2 + 12p^2 - 3p^2\\\\)",
     "t": "Chapter review",
     "hint": "Add or subtract the coefficients of the matching algebraic parts.",
     "solutionSteps": [
@@ -3582,7 +3582,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Simplify the expression by collecting like terms.\\n\\n\\\\(3m^2n + 5m^2n + 9m^2n + m^2n\\\\)",
+    "question": "Simplify the expression by collecting like terms.\n\n\\\\(3m^2n + 5m^2n + 9m^2n + m^2n\\\\)",
     "t": "Chapter review",
     "hint": "Add or subtract the coefficients of the matching algebraic parts.",
     "solutionSteps": [
@@ -3625,7 +3625,7 @@ export const Y7_CH3H_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Simplify the expression by collecting like terms.\\n\\n\\\\(3p^2q + 4pq + 5qp^2 + 2qp\\\\)",
+    "question": "Simplify the expression by collecting like terms.\n\n\\\\(3p^2q + 4pq + 5qp^2 + 2qp\\\\)",
     "t": "Chapter review",
     "hint": "Add or subtract the coefficients of the matching algebraic parts.",
     "solutionSteps": [

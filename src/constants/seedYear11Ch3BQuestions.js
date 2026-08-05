@@ -9,28 +9,23 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "0",
     "solutionSteps": [
       {
-        "explanation": "Recall: the vertical line test states a graph represents a function only if every possible vertical line crosses it at most once. If any vertical line crosses the graph twice or more, the graph is not a function.",
+        "explanation": "Identify the relation and the goal. We need to determine if the given graph or relation represents a function.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "A relation is a function if and only if every vertical line intersects its graph at most once.",
+        "explanation": "Apply the vertical line test: a function must pass the vertical line test, meaning no vertical line can cross the graph more than once.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Draw a vertical line, for example at \\( x = 2 \\). It cuts the circle at two distinct points: \\( (2, sqrt{12}) \\) and \\( (2, -\\sqrt{12}) \\).",
+        "explanation": "Examine the specific intersections. If a vertical line is drawn, check how many times it intersects the curve.",
         "workingOut": "\\(x^2 + y^2 = 16 \\implies 2^2 + y^2 = 16 \\implies y = \\pm \\sqrt{12}\\)",
         "graphData": null
       },
       {
-        "explanation": "Because one \\( x \\)-value corresponds to more than one \\( y \\)-value, the relation is not a function.",
-        "workingOut": "",
-        "graphData": null
-      },
-      {
-        "explanation": "Applying the vertical line test confirms: No — a vertical line (e.g. \\( x = 2 \\)) crosses the circle twice, at \\( (2, \\sqrt{12}) \\) and \\( (2, -\\sqrt{12}) \\).",
-        "workingOut": "",
+        "explanation": "Conclude based on the test. **Warning:** Remember, circles and sideways parabolas fail the vertical line test. If a vertical line intersects the curve more than once, it is a relation, not a function.",
+        "workingOut": "\\( \\text{Final Answer} \\)",
         "graphData": null
       }
     ],
@@ -47,12 +42,26 @@ export const Y11_CH3B_QUESTIONS = [
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-5,0], [5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-5], [0,5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('circle', [[0,0], 4], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.create('text', [0.2, 4.2, '4'], {fontSize: 12});\nboard.create('text', [0.2, -4.2, '-4'], {fontSize: 12});\nboard.create('text', [4.2, 0.2, '4'], {fontSize: 12});\nboard.create('text', [-4.7, 0.2, '-4'], {fontSize: 12});\nboard.unsuspendUpdate();"
       }
     },
-    "opts": [
-      "No — a vertical line (e.g. \\( x = 2 \\)) crosses the circle twice, at \\( (2, \\sqrt{12}) \\) and \\( (2, -\\sqrt{12}) \\).",
-      "Yes — every \\( x \\)-value on the circle has exactly one \\( y \\)-value.",
-      "No — the circle is not centred at the origin.",
-      "Yes — the circle passes the horizontal line test."
-    ]
+    "options": [
+      {
+        "text": "No — a vertical line (e.g. \\( x = 2 \\)) crosses the circle twice, at \\( (2, \\sqrt{12}) \\) and \\( (2, -\\sqrt{12}) \\).",
+        "imageUrl": ""
+      },
+      {
+        "text": "Yes — every \\( x \\)-value on the circle has exactly one \\( y \\)-value.",
+        "imageUrl": ""
+      },
+      {
+        "text": "No — the circle is not centred at the origin.",
+        "imageUrl": ""
+      },
+      {
+        "text": "Yes — the circle passes the horizontal line test.",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q1b",
@@ -64,28 +73,23 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "1",
     "solutionSteps": [
       {
-        "explanation": "Recall: the vertical line test states a graph represents a function only if every possible vertical line crosses it at most once. If any vertical line crosses the graph twice or more, the graph is not a function.",
+        "explanation": "Identify the relation and the goal. We need to determine if the given graph or relation represents a function.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Apply the vertical line test to the semicircle on the right of the y-axis.",
+        "explanation": "Apply the vertical line test: a function must pass the vertical line test, meaning no vertical line can cross the graph more than once.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Any vertical line drawn for \\( 0 < x < 3 \\) (for example, \\( x = 1.5 \\)) will intersect the curve at two distinct y-coordinates.",
+        "explanation": "Examine the specific intersections. If a vertical line is drawn, check how many times it intersects the curve.",
         "workingOut": "\\(x = \\sqrt{9-y^2} \\implies 1.5^2 + y^2 = 9 \\implies y = \\pm \\sqrt{6.75} \\approx \\pm 2.6\\)",
         "graphData": null
       },
       {
-        "explanation": "Thus, the relation fails the vertical line test and is not a function.",
-        "workingOut": "",
-        "graphData": null
-      },
-      {
-        "explanation": "Applying the vertical line test confirms: No — a vertical line (e.g. \\( x = 1.5 \\)) crosses the semicircle twice.",
-        "workingOut": "",
+        "explanation": "Conclude based on the test. **Warning:** Remember, circles and sideways parabolas fail the vertical line test. If a vertical line intersects the curve more than once, it is a relation, not a function.",
+        "workingOut": "\\( \\text{Final Answer} \\)",
         "graphData": null
       }
     ],
@@ -102,12 +106,26 @@ export const Y11_CH3B_QUESTIONS = [
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.5,0], [4,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3.5], [0,3.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('curve', [function(t){ return 3*Math.cos(t); }, function(t){ return 3*Math.sin(t); }, Math.PI/2, 3*Math.PI/2], {strokeColor: '#4f46e5', strokeWidth: 2, firstArrow: false, lastArrow: false});\nboard.create('text', [0.2, 3.1, '3'], {fontSize: 12});\nboard.create('text', [0.2, -3.1, '-3'], {fontSize: 12});\nboard.create('text', [3.1, 0.2, '3'], {fontSize: 12});\nboard.unsuspendUpdate();"
       }
     },
-    "opts": [
-      "Yes — a semicircle always passes the vertical line test.",
-      "No — a vertical line (e.g. \\( x = 1.5 \\)) crosses the semicircle twice.",
-      "No — the semicircle has open endpoints.",
-      "Yes — every \\( x \\)-value gives a unique \\( y \\)-value."
-    ]
+    "options": [
+      {
+        "text": "Yes — a semicircle always passes the vertical line test.",
+        "imageUrl": ""
+      },
+      {
+        "text": "No — a vertical line (e.g. \\( x = 1.5 \\)) crosses the semicircle twice.",
+        "imageUrl": ""
+      },
+      {
+        "text": "No — the semicircle has open endpoints.",
+        "imageUrl": ""
+      },
+      {
+        "text": "Yes — every \\( x \\)-value gives a unique \\( y \\)-value.",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q1c",
@@ -119,28 +137,23 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "1",
     "solutionSteps": [
       {
-        "explanation": "Recall: the vertical line test states a graph represents a function only if every possible vertical line crosses it at most once. If any vertical line crosses the graph twice or more, the graph is not a function.",
+        "explanation": "Identify the relation and the goal. We need to determine if the given graph or relation represents a function.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Examine the S-shaped curve of the relation \\( x = y^3 - 4y \\).",
+        "explanation": "Apply the vertical line test: a function must pass the vertical line test, meaning no vertical line can cross the graph more than once.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "If we draw a vertical line near the y-axis, such as \\( x = 1 \\), it intersects the curve three times because the curve curves back on itself.",
+        "explanation": "Examine the specific intersections. If a vertical line is drawn, check how many times it intersects the curve.",
         "workingOut": "\\(y^3 - 4y = 1 \\implies \\text{three real solutions for } y\\)",
         "graphData": null
       },
       {
-        "explanation": "Since one value of \\( x \\) produces three values of \\( y \\), this relation is not a function.",
-        "workingOut": "",
-        "graphData": null
-      },
-      {
-        "explanation": "Applying the vertical line test confirms: No — a vertical line (e.g. \\( x = 1 \\)) crosses the curve three times.",
-        "workingOut": "",
+        "explanation": "Conclude based on the test. **Warning:** Remember, circles and sideways parabolas fail the vertical line test. If a vertical line intersects the curve more than once, it is a relation, not a function.",
+        "workingOut": "\\( \\text{Final Answer} \\)",
         "graphData": null
       }
     ],
@@ -157,12 +170,26 @@ export const Y11_CH3B_QUESTIONS = [
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5,0], [4.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3.5], [0,3.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('curve', [function(t){ return t*t*t - 4*t; }, function(t){ return t; }, -2.5, 2.5], {strokeColor: '#4f46e5', strokeWidth: 2, firstArrow: false, lastArrow: false});\nboard.unsuspendUpdate();"
       }
     },
-    "opts": [
-      "Yes — the curve is symmetric about the origin.",
-      "No — a vertical line (e.g. \\( x = 1 \\)) crosses the curve three times.",
-      "No — the curve does not pass through the origin.",
-      "Yes — every \\( x \\)-value gives one \\( y \\)-value."
-    ]
+    "options": [
+      {
+        "text": "Yes — the curve is symmetric about the origin.",
+        "imageUrl": ""
+      },
+      {
+        "text": "No — a vertical line (e.g. \\( x = 1 \\)) crosses the curve three times.",
+        "imageUrl": ""
+      },
+      {
+        "text": "No — the curve does not pass through the origin.",
+        "imageUrl": ""
+      },
+      {
+        "text": "Yes — every \\( x \\)-value gives one \\( y \\)-value.",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q1d",
@@ -174,28 +201,23 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "0",
     "solutionSteps": [
       {
-        "explanation": "Recall: the vertical line test states a graph represents a function only if every possible vertical line crosses it at most once. If any vertical line crosses the graph twice or more, the graph is not a function.",
+        "explanation": "Identify the relation and the goal. We need to determine if the given graph or relation represents a function.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Observe the sideways parabola \\( x = 3 - \\frac{y^2}{2} \\).",
+        "explanation": "Apply the vertical line test: a function must pass the vertical line test, meaning no vertical line can cross the graph more than once.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Draw a vertical line at \\( x = 1 \\). Find the corresponding y-values.",
+        "explanation": "Examine the specific intersections. If a vertical line is drawn, check how many times it intersects the curve.",
         "workingOut": "\\(1 = 3 - \\frac{y^2}{2} \\implies y^2 = 4 \\implies y = \\pm 2\\)",
         "graphData": null
       },
       {
-        "explanation": "Since \\( x = 1 \\) maps to both \\( y = 2 \\) and \\( y = -2 \\), the relation is not a function.",
-        "workingOut": "",
-        "graphData": null
-      },
-      {
-        "explanation": "Applying the vertical line test confirms: No — a vertical line (e.g. \\( x = 1 \\)) crosses the parabola twice, at \\( y = 2 \\) and \\( y = -2 \\).",
-        "workingOut": "",
+        "explanation": "Conclude based on the test. **Warning:** Remember, circles and sideways parabolas fail the vertical line test. If a vertical line intersects the curve more than once, it is a relation, not a function.",
+        "workingOut": "\\( \\text{Final Answer} \\)",
         "graphData": null
       }
     ],
@@ -212,12 +234,26 @@ export const Y11_CH3B_QUESTIONS = [
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5,0], [4.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3.5], [0,3.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('curve', [function(t){ return 3 - t*t/2; }, function(t){ return t; }, -3.5, 3.5], {strokeColor: '#4f46e5', strokeWidth: 2, firstArrow: false, lastArrow: false});\nboard.create('text', [3.1, 0.2, '3'], {fontSize: 12});\nboard.unsuspendUpdate();"
       }
     },
-    "opts": [
-      "No — a vertical line (e.g. \\( x = 1 \\)) crosses the parabola twice, at \\( y = 2 \\) and \\( y = -2 \\).",
-      "Yes — parabolas always pass the vertical line test.",
-      "No — the parabola only exists for \\( x < 0 \\).",
-      "Yes — this parabola opens upwards."
-    ]
+    "options": [
+      {
+        "text": "No — a vertical line (e.g. \\( x = 1 \\)) crosses the parabola twice, at \\( y = 2 \\) and \\( y = -2 \\).",
+        "imageUrl": ""
+      },
+      {
+        "text": "Yes — parabolas always pass the vertical line test.",
+        "imageUrl": ""
+      },
+      {
+        "text": "No — the parabola only exists for \\( x < 0 \\).",
+        "imageUrl": ""
+      },
+      {
+        "text": "Yes — this parabola opens upwards.",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q1e",
@@ -229,28 +265,23 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "2",
     "solutionSteps": [
       {
-        "explanation": "Recall: the vertical line test states a graph represents a function only if every possible vertical line crosses it at most once. If any vertical line crosses the graph twice or more, the graph is not a function.",
+        "explanation": "Identify the relation and the goal. We need to determine if the given graph or relation represents a function.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Consider the vertical hyperbola \\( y^2 - x^2 = 4 \\).",
+        "explanation": "Apply the vertical line test: a function must pass the vertical line test, meaning no vertical line can cross the graph more than once.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Choose a vertical line like \\( x = 1 \\). Substitute it to find the points of intersection.",
+        "explanation": "Examine the specific intersections. If a vertical line is drawn, check how many times it intersects the curve.",
         "workingOut": "\\(y^2 - 1^2 = 4 \\implies y^2 = 5 \\implies y = \\pm \\sqrt{5}\\)",
         "graphData": null
       },
       {
-        "explanation": "Since there are two y-values for a single x-value, this hyperbola is not a function.",
-        "workingOut": "",
-        "graphData": null
-      },
-      {
-        "explanation": "Applying the vertical line test confirms: No — a vertical line (e.g. \\( x = 1 \\)) crosses both branches, at \\( (1, \\sqrt{5}) \\) and \\( (1, -\\sqrt{5}) \\).",
-        "workingOut": "",
+        "explanation": "Conclude based on the test. **Warning:** Remember, circles and sideways parabolas fail the vertical line test. If a vertical line intersects the curve more than once, it is a relation, not a function.",
+        "workingOut": "\\( \\text{Final Answer} \\)",
         "graphData": null
       }
     ],
@@ -267,12 +298,26 @@ export const Y11_CH3B_QUESTIONS = [
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5,0], [4.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-5.5], [0,5.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('functiongraph', [function(x){ return Math.sqrt(4 + x*x); }, -5, 5], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.create('functiongraph', [function(x){ return -Math.sqrt(4 + x*x); }, -5, 5], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.create('text', [0.2, 2.2, '2'], {fontSize: 12});\nboard.create('text', [0.2, -2.2, '-2'], {fontSize: 12});\nboard.unsuspendUpdate();"
       }
     },
-    "opts": [
-      "No — a hyperbola has no \\( y \\)-intercepts.",
-      "Yes — the two branches never share an \\( x \\)-value.",
-      "No — a vertical line (e.g. \\( x = 1 \\)) crosses both branches, at \\( (1, \\sqrt{5}) \\) and \\( (1, -\\sqrt{5}) \\).",
-      "Yes — a hyperbola opens along the \\( x \\)-axis only."
-    ]
+    "options": [
+      {
+        "text": "No — a hyperbola has no \\( y \\)-intercepts.",
+        "imageUrl": ""
+      },
+      {
+        "text": "Yes — the two branches never share an \\( x \\)-value.",
+        "imageUrl": ""
+      },
+      {
+        "text": "No — a vertical line (e.g. \\( x = 1 \\)) crosses both branches, at \\( (1, \\sqrt{5}) \\) and \\( (1, -\\sqrt{5}) \\).",
+        "imageUrl": ""
+      },
+      {
+        "text": "Yes — a hyperbola opens along the \\( x \\)-axis only.",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q1f",
@@ -284,28 +329,23 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "2",
     "solutionSteps": [
       {
-        "explanation": "Recall: the vertical line test states a graph represents a function only if every possible vertical line crosses it at most once. If any vertical line crosses the graph twice or more, the graph is not a function.",
+        "explanation": "Identify the relation and the goal. We need to determine if the given graph or relation represents a function.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Examine the loop curve defined by \\( x = t^2 - 1, y = t^3 - t \\).",
+        "explanation": "Apply the vertical line test: a function must pass the vertical line test, meaning no vertical line can cross the graph more than once.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Any vertical line drawn for \\( -1 < x < 0 \\) (such as \\( x = -0.5 \\)) intersects the loop at two distinct points.",
+        "explanation": "Examine the specific intersections. If a vertical line is drawn, check how many times it intersects the curve.",
         "workingOut": "\\(t^2 - 1 = -0.5 \\implies t = \\pm \\frac{1}{\\sqrt{2}} \\implies y = \\pm \\frac{1}{2\\sqrt{2}} - (\\pm \\frac{1}{\\sqrt{2}}) \\implies y = \\pm \\frac{1}{2\\sqrt{2}}\\)",
         "graphData": null
       },
       {
-        "explanation": "Because a single input \\( x \\) maps to multiple outputs \\( y \\), it is not a function.",
-        "workingOut": "",
-        "graphData": null
-      },
-      {
-        "explanation": "Applying the vertical line test confirms: No — a vertical line (e.g. \\( x = -0.5 \\)) crosses the loop at two points.",
-        "workingOut": "",
+        "explanation": "Conclude based on the test. **Warning:** Remember, circles and sideways parabolas fail the vertical line test. If a vertical line intersects the curve more than once, it is a relation, not a function.",
+        "workingOut": "\\( \\text{Final Answer} \\)",
         "graphData": null
       }
     ],
@@ -322,12 +362,26 @@ export const Y11_CH3B_QUESTIONS = [
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-2,0], [2,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-1.5], [0,1.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('curve', [function(t){ return t*t - 1; }, function(t){ return t*t*t - t; }, -1.5, 1.5], {strokeColor: '#4f46e5', strokeWidth: 2, firstArrow: false, lastArrow: false});\nboard.unsuspendUpdate();"
       }
     },
-    "opts": [
-      "Yes — the loop only touches itself once.",
-      "No — the loop is not a closed curve.",
-      "No — a vertical line (e.g. \\( x = -0.5 \\)) crosses the loop at two points.",
-      "Yes — every \\( x \\)-value in the loop gives one \\( y \\)-value."
-    ]
+    "options": [
+      {
+        "text": "Yes — the loop only touches itself once.",
+        "imageUrl": ""
+      },
+      {
+        "text": "No — the loop is not a closed curve.",
+        "imageUrl": ""
+      },
+      {
+        "text": "No — a vertical line (e.g. \\( x = -0.5 \\)) crosses the loop at two points.",
+        "imageUrl": ""
+      },
+      {
+        "text": "Yes — every \\( x \\)-value in the loop gives one \\( y \\)-value.",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q2a",
@@ -339,23 +393,35 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "0",
     "solutionSteps": [
       {
-        "explanation": "General rule: the vertical line test says a graph represents a function only if every possible vertical line crosses it at most once anywhere along the curve.",
+        "explanation": "Identify the relation and the goal. We need to determine if the given graph or relation represents a function.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Look at the parabola opening upwards. Any vertical line drawn on this graph will intersect the curve at most once.",
+        "explanation": "Apply the vertical line test: a function must pass the vertical line test, meaning no vertical line can cross the graph more than once.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Therefore, the relation represents a function.",
+        "explanation": "Examine the specific intersections. If a vertical line is drawn, check how many times it intersects the curve.",
         "workingOut": "",
-        "graphData": null
+        "graphData": {
+          "jsxGraph": {
+            "width": 207,
+            "height": 380,
+            "boundingbox": [
+              -1,
+              8,
+              5,
+              -3
+            ],
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.5,0], [5.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-2.5], [0,5.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('functiongraph', [function(x){ return x*x - 4*x + 2; }, -1.5, 5.5], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.create('line', [[2, -10], [2, 10]], {strokeColor: 'red', strokeWidth: 2, dash: 2});\nboard.create('point', [2, -2], {size: 4, face: 'o', color: 'red', fixed: true, withLabel: false});\nboard.unsuspendUpdate();"
+          }
+        }
       },
       {
-        "explanation": "Applying the test to this curve, the correct answer is \"Yes\".",
-        "workingOut": "",
+        "explanation": "Conclude based on the test. **Warning:** Remember, circles and sideways parabolas fail the vertical line test. If a vertical line intersects the curve more than once, it is a relation, not a function.",
+        "workingOut": "\\( \\text{Final Answer} \\)",
         "graphData": null
       }
     ],
@@ -372,10 +438,18 @@ export const Y11_CH3B_QUESTIONS = [
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.5,0], [5.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-2.5], [0,5.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('functiongraph', [function(x){ return x*x - 4*x + 2; }, -1.5, 5.5], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.unsuspendUpdate();"
       }
     },
-    "opts": [
-      "Yes",
-      "No"
-    ]
+    "options": [
+      {
+        "text": "Yes",
+        "imageUrl": ""
+      },
+      {
+        "text": "No",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q2b",
@@ -387,23 +461,35 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "0",
     "solutionSteps": [
       {
-        "explanation": "General rule: the vertical line test says a graph represents a function only if every possible vertical line crosses it at most once anywhere along the curve.",
+        "explanation": "Identify the relation and the goal. We need to determine if the given graph or relation represents a function.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "A vertical line can be drawn (e.g. at \\( x = 0 \\)) that cuts the upper and lower halves of this circular shape.",
+        "explanation": "Apply the vertical line test: a function must pass the vertical line test, meaning no vertical line can cross the graph more than once.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Since some vertical lines intersect the graph at two points, it does not represent a function.",
+        "explanation": "Examine the specific intersections. If a vertical line is drawn, check how many times it intersects the curve.",
         "workingOut": "",
-        "graphData": null
+        "graphData": {
+          "jsxGraph": {
+            "width": 350,
+            "height": 292,
+            "boundingbox": [
+              -6,
+              4,
+              6,
+              -6
+            ],
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-6.5,0], [6.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-6.5], [0,6.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('curve', [function(t){ return 5*Math.cos(t); }, function(t){ return 5*Math.sin(t); }, Math.atan2(3,-4), Math.atan2(3,-4) + (2*Math.PI - (Math.atan2(3,-4) - Math.atan2(3,4)))], {strokeColor: '#4f46e5', strokeWidth: 2, firstArrow: false, lastArrow: false});\nboard.create('point', [-4, 3], {size: 3, face: 'o', color: '#4f46e5', fixed: true});\nboard.create('point', [4, 3], {size: 3, face: 'o', color: '#4f46e5', fixed: true});\nboard.create('line', [[0, -10], [0, 10]], {strokeColor: 'red', strokeWidth: 2, dash: 2});\nboard.create('point', [0, 5], {size: 4, face: 'o', color: 'red', fixed: true, withLabel: false});\nboard.create('point', [0, -5], {size: 4, face: 'o', color: 'red', fixed: true, withLabel: false});\nboard.unsuspendUpdate();"
+          }
+        }
       },
       {
-        "explanation": "Applying the test to this curve, the correct answer is \"No\".",
-        "workingOut": "",
+        "explanation": "Conclude based on the test. **Warning:** Remember, circles and sideways parabolas fail the vertical line test. If a vertical line intersects the curve more than once, it is a relation, not a function.",
+        "workingOut": "\\( \\text{Final Answer} \\)",
         "graphData": null
       }
     ],
@@ -420,10 +506,18 @@ export const Y11_CH3B_QUESTIONS = [
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-6.5,0], [6.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-6.5], [0,6.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('curve', [function(t){ return 5*Math.cos(t); }, function(t){ return 5*Math.sin(t); }, Math.atan2(3,-4), Math.atan2(3,-4) + (2*Math.PI - (Math.atan2(3,-4) - Math.atan2(3,4)))], {strokeColor: '#4f46e5', strokeWidth: 2, firstArrow: false, lastArrow: false});\nboard.create('point', [-4, 3], {size: 3, face: 'o', color: '#4f46e5', fixed: true});\nboard.create('point', [4, 3], {size: 3, face: 'o', color: '#4f46e5', fixed: true});\nboard.unsuspendUpdate();"
       }
     },
-    "opts": [
-      "No",
-      "Yes"
-    ]
+    "options": [
+      {
+        "text": "No",
+        "imageUrl": ""
+      },
+      {
+        "text": "Yes",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q2c",
@@ -435,23 +529,35 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "0",
     "solutionSteps": [
       {
-        "explanation": "General rule: the vertical line test says a graph represents a function only if every possible vertical line crosses it at most once anywhere along the curve.",
+        "explanation": "Identify the relation and the goal. We need to determine if the given graph or relation represents a function.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "This is a linear relation representing a straight line with a negative gradient.",
+        "explanation": "Apply the vertical line test: a function must pass the vertical line test, meaning no vertical line can cross the graph more than once.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Every vertical line intersects this straight line exactly once. Thus, it represents a function.",
+        "explanation": "Examine the specific intersections. If a vertical line is drawn, check how many times it intersects the curve.",
         "workingOut": "",
-        "graphData": null
+        "graphData": {
+          "jsxGraph": {
+            "width": 350,
+            "height": 350,
+            "boundingbox": [
+              -2,
+              5,
+              5,
+              -2
+            ],
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.5,0], [4.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-1.5], [0,4.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('functiongraph', [function(x){ return 3 - x; }, -1.5, 4.5], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.create('line', [[1, -10], [1, 10]], {strokeColor: 'red', strokeWidth: 2, dash: 2});\nboard.create('point', [1, 1], {size: 4, face: 'o', color: 'red', fixed: true, withLabel: false});\nboard.unsuspendUpdate();"
+          }
+        }
       },
       {
-        "explanation": "Applying the test to this curve, the correct answer is \"Yes\".",
-        "workingOut": "",
+        "explanation": "Conclude based on the test. **Warning:** Remember, circles and sideways parabolas fail the vertical line test. If a vertical line intersects the curve more than once, it is a relation, not a function.",
+        "workingOut": "\\( \\text{Final Answer} \\)",
         "graphData": null
       }
     ],
@@ -468,10 +574,18 @@ export const Y11_CH3B_QUESTIONS = [
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.5,0], [4.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-1.5], [0,4.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('functiongraph', [function(x){ return 3 - x; }, -1.5, 4.5], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.unsuspendUpdate();"
       }
     },
-    "opts": [
-      "Yes",
-      "No"
-    ]
+    "options": [
+      {
+        "text": "Yes",
+        "imageUrl": ""
+      },
+      {
+        "text": "No",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q2d",
@@ -483,23 +597,35 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "0",
     "solutionSteps": [
       {
-        "explanation": "General rule: the vertical line test says a graph represents a function only if every possible vertical line crosses it at most once anywhere along the curve.",
+        "explanation": "Identify the relation and the goal. We need to determine if the given graph or relation represents a function.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "For any value \\( x > -2 \\) (where the vertex is at \\( x = -2 \\)), a vertical line intersects the curve at two distinct points.",
+        "explanation": "Apply the vertical line test: a function must pass the vertical line test, meaning no vertical line can cross the graph more than once.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Therefore, the relation fails the vertical line test and is not a function.",
+        "explanation": "Examine the specific intersections. If a vertical line is drawn, check how many times it intersects the curve.",
         "workingOut": "",
-        "graphData": null
+        "graphData": {
+          "jsxGraph": {
+            "width": 350,
+            "height": 350,
+            "boundingbox": [
+              -3,
+              5,
+              7,
+              -5
+            ],
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-3.5,0], [4.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3.5], [0,3.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('curve', [function(t){ return t*t - 2; }, function(t){ return t; }, -3, 3], {strokeColor: '#4f46e5', strokeWidth: 2, firstArrow: false, lastArrow: false});\nboard.create('line', [[5, -10], [5, 10]], {strokeColor: 'red', strokeWidth: 2, dash: 2});\nboard.create('point', [5, 2], {size: 4, face: 'o', color: 'red', fixed: true, withLabel: false});\nboard.create('point', [5, -2], {size: 4, face: 'o', color: 'red', fixed: true, withLabel: false});\nboard.unsuspendUpdate();"
+          }
+        }
       },
       {
-        "explanation": "Applying the test to this curve, the correct answer is \"No\".",
-        "workingOut": "",
+        "explanation": "Conclude based on the test. **Warning:** Remember, circles and sideways parabolas fail the vertical line test. If a vertical line intersects the curve more than once, it is a relation, not a function.",
+        "workingOut": "\\( \\text{Final Answer} \\)",
         "graphData": null
       }
     ],
@@ -516,10 +642,18 @@ export const Y11_CH3B_QUESTIONS = [
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-3.5,0], [4.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3.5], [0,3.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('curve', [function(t){ return t*t - 2; }, function(t){ return t; }, -3, 3], {strokeColor: '#4f46e5', strokeWidth: 2, firstArrow: false, lastArrow: false});\nboard.unsuspendUpdate();"
       }
     },
-    "opts": [
-      "No",
-      "Yes"
-    ]
+    "options": [
+      {
+        "text": "No",
+        "imageUrl": ""
+      },
+      {
+        "text": "Yes",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q2e",
@@ -531,23 +665,35 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "0",
     "solutionSteps": [
       {
-        "explanation": "General rule: the vertical line test says a graph represents a function only if every possible vertical line crosses it at most once anywhere along the curve.",
+        "explanation": "Identify the relation and the goal. We need to determine if the given graph or relation represents a function.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "The wave oscillates horizontally as it goes vertically.",
+        "explanation": "Apply the vertical line test: a function must pass the vertical line test, meaning no vertical line can cross the graph more than once.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "A vertical line like \\( x = 1 \\) intersects this curve infinitely many times. So it is not a function.",
+        "explanation": "Examine the specific intersections. If a vertical line is drawn, check how many times it intersects the curve.",
         "workingOut": "",
-        "graphData": null
+        "graphData": {
+          "jsxGraph": {
+            "width": 253,
+            "height": 380,
+            "boundingbox": [
+              -3,
+              4.5,
+              3,
+              -4.5
+            ],
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-3.5,0], [3.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-4.5], [0,4.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('curve', [function(t){ return 2*Math.sin(t); }, function(t){ return t; }, -4.5, 4.5], {strokeColor: '#4f46e5', strokeWidth: 2, firstArrow: false, lastArrow: false});\nboard.create('line', [[0, -10], [0, 10]], {strokeColor: 'red', strokeWidth: 2, dash: 2});\nboard.create('point', [0, 0], {size: 4, face: 'o', color: 'red', fixed: true, withLabel: false});\nboard.create('point', [0, 3.1415], {size: 4, face: 'o', color: 'red', fixed: true, withLabel: false});\nboard.create('point', [0, -3.1415], {size: 4, face: 'o', color: 'red', fixed: true, withLabel: false});\nboard.unsuspendUpdate();"
+          }
+        }
       },
       {
-        "explanation": "Applying the test to this curve, the correct answer is \"No\".",
-        "workingOut": "",
+        "explanation": "Conclude based on the test. **Warning:** Remember, circles and sideways parabolas fail the vertical line test. If a vertical line intersects the curve more than once, it is a relation, not a function.",
+        "workingOut": "\\( \\text{Final Answer} \\)",
         "graphData": null
       }
     ],
@@ -564,10 +710,18 @@ export const Y11_CH3B_QUESTIONS = [
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-3.5,0], [3.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-4.5], [0,4.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('curve', [function(t){ return 2*Math.sin(t); }, function(t){ return t; }, -4.5, 4.5], {strokeColor: '#4f46e5', strokeWidth: 2, firstArrow: false, lastArrow: false});\nboard.unsuspendUpdate();"
       }
     },
-    "opts": [
-      "No",
-      "Yes"
-    ]
+    "options": [
+      {
+        "text": "No",
+        "imageUrl": ""
+      },
+      {
+        "text": "Yes",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q2f",
@@ -579,23 +733,35 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "0",
     "solutionSteps": [
       {
-        "explanation": "General rule: the vertical line test says a graph represents a function only if every possible vertical line crosses it at most once anywhere along the curve.",
+        "explanation": "Identify the relation and the goal. We need to determine if the given graph or relation represents a function.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "This cubic curve goes from top-left to bottom-right.",
+        "explanation": "Apply the vertical line test: a function must pass the vertical line test, meaning no vertical line can cross the graph more than once.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "For any value of \\( x \\), there is exactly one value of \\( y \\). A vertical line intersects this curve exactly once everywhere, so it is a function.",
+        "explanation": "Examine the specific intersections. If a vertical line is drawn, check how many times it intersects the curve.",
         "workingOut": "",
-        "graphData": null
+        "graphData": {
+          "jsxGraph": {
+            "width": 350,
+            "height": 350,
+            "boundingbox": [
+              -3,
+              3,
+              3,
+              -3
+            ],
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-3.5,0], [3.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-5.5], [0,5.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('functiongraph', [function(x){ return -x*x*x + 3*x; }, -3.5, 3.5], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.create('line', [[1, -10], [1, 10]], {strokeColor: 'red', strokeWidth: 2, dash: 2});\nboard.create('point', [1, -1], {size: 4, face: 'o', color: 'red', fixed: true, withLabel: false});\nboard.unsuspendUpdate();"
+          }
+        }
       },
       {
-        "explanation": "Applying the test to this curve, the correct answer is \"Yes\".",
-        "workingOut": "",
+        "explanation": "Conclude based on the test. **Warning:** Remember, circles and sideways parabolas fail the vertical line test. If a vertical line intersects the curve more than once, it is a relation, not a function.",
+        "workingOut": "\\( \\text{Final Answer} \\)",
         "graphData": null
       }
     ],
@@ -612,10 +778,18 @@ export const Y11_CH3B_QUESTIONS = [
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-3.5,0], [3.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-5.5], [0,5.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('functiongraph', [function(x){ return -x*x*x + 3*x; }, -3.5, 3.5], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.unsuspendUpdate();"
       }
     },
-    "opts": [
-      "Yes",
-      "No"
-    ]
+    "options": [
+      {
+        "text": "Yes",
+        "imageUrl": ""
+      },
+      {
+        "text": "No",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q2g",
@@ -627,23 +801,35 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "0",
     "solutionSteps": [
       {
-        "explanation": "General rule: the vertical line test says a graph represents a function only if every possible vertical line crosses it at most once anywhere along the curve.",
+        "explanation": "Identify the relation and the goal. We need to determine if the given graph or relation represents a function.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "This semicircle has endpoints at \\( (0, 3) \\) and \\( (0, -3) \\) and curves to the left.",
+        "explanation": "Apply the vertical line test: a function must pass the vertical line test, meaning no vertical line can cross the graph more than once.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "For any value \\( -3 < x < 0 \\), a vertical line cuts the semicircle twice. Hence, it is not a function.",
+        "explanation": "Examine the specific intersections. If a vertical line is drawn, check how many times it intersects the curve.",
         "workingOut": "",
-        "graphData": null
+        "graphData": {
+          "jsxGraph": {
+            "width": 350,
+            "height": 350,
+            "boundingbox": [
+              -4,
+              4,
+              4,
+              -4
+            ],
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5,0], [1.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3.5], [0,3.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('curve', [function(t){ return 3*Math.cos(t); }, function(t){ return 3*Math.sin(t); }, Math.PI/2, 3*Math.PI/2], {strokeColor: '#4f46e5', strokeWidth: 2, firstArrow: false, lastArrow: false});\nboard.create('text', [-3.2, 0.2, '-3'], {fontSize: 12});\nboard.create('text', [0.2, 3.1, '3'], {fontSize: 12});\nboard.create('text', [0.2, -3.1, '-3'], {fontSize: 12});\nboard.create('line', [[-3, -10], [-3, 10]], {strokeColor: 'red', strokeWidth: 2, dash: 2});\nboard.create('point', [-3, 3], {size: 4, face: 'o', color: 'red', fixed: true, withLabel: false});\nboard.create('point', [-3, -3], {size: 4, face: 'o', color: 'red', fixed: true, withLabel: false});\nboard.unsuspendUpdate();"
+          }
+        }
       },
       {
-        "explanation": "Applying the test to this curve, the correct answer is \"No\".",
-        "workingOut": "",
+        "explanation": "Conclude based on the test. **Warning:** Remember, circles and sideways parabolas fail the vertical line test. If a vertical line intersects the curve more than once, it is a relation, not a function.",
+        "workingOut": "\\( \\text{Final Answer} \\)",
         "graphData": null
       }
     ],
@@ -660,10 +846,18 @@ export const Y11_CH3B_QUESTIONS = [
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5,0], [1.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3.5], [0,3.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('curve', [function(t){ return 3*Math.cos(t); }, function(t){ return 3*Math.sin(t); }, Math.PI/2, 3*Math.PI/2], {strokeColor: '#4f46e5', strokeWidth: 2, firstArrow: false, lastArrow: false});\nboard.create('text', [-3.2, 0.2, '-3'], {fontSize: 12});\nboard.create('text', [0.2, 3.1, '3'], {fontSize: 12});\nboard.create('text', [0.2, -3.1, '-3'], {fontSize: 12});\nboard.unsuspendUpdate();"
       }
     },
-    "opts": [
-      "No",
-      "Yes"
-    ]
+    "options": [
+      {
+        "text": "No",
+        "imageUrl": ""
+      },
+      {
+        "text": "Yes",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q2h",
@@ -675,23 +869,35 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "0",
     "solutionSteps": [
       {
-        "explanation": "General rule: the vertical line test says a graph represents a function only if every possible vertical line crosses it at most once anywhere along the curve.",
+        "explanation": "Identify the relation and the goal. We need to determine if the given graph or relation represents a function.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "This semicircle is on the upper half of the plane, starting at \\( (-3, 0) \\) and ending at \\( (3, 0) \\).",
+        "explanation": "Apply the vertical line test: a function must pass the vertical line test, meaning no vertical line can cross the graph more than once.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Any vertical line drawn through this graph will intersect the curve at most once. Hence, it represents a function.",
+        "explanation": "Examine the specific intersections. If a vertical line is drawn, check how many times it intersects the curve.",
         "workingOut": "",
-        "graphData": null
+        "graphData": {
+          "jsxGraph": {
+            "width": 350,
+            "height": 241,
+            "boundingbox": [
+              -4,
+              4,
+              4,
+              -1.5
+            ],
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5,0], [4.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-1.5], [0,3.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('curve', [function(t){ return 3*Math.cos(t); }, function(t){ return 3*Math.sin(t); }, 0, Math.PI], {strokeColor: '#4f46e5', strokeWidth: 2, firstArrow: false, lastArrow: false});\nboard.create('text', [-3.2, -0.4, '-3'], {fontSize: 12});\nboard.create('text', [3.1, -0.4, '3'], {fontSize: 12});\nboard.create('text', [-0.4, 3.1, '3'], {fontSize: 12});\nboard.create('line', [[2, -10], [2, 10]], {strokeColor: 'red', strokeWidth: 2, dash: 2});\nboard.create('point', [2, 3.4641016151377544], {size: 4, face: 'o', color: 'red', fixed: true, withLabel: false});\nboard.unsuspendUpdate();"
+          }
+        }
       },
       {
-        "explanation": "Applying the test to this curve, the correct answer is \"Yes\".",
-        "workingOut": "",
+        "explanation": "Conclude based on the test. **Warning:** Remember, circles and sideways parabolas fail the vertical line test. If a vertical line intersects the curve more than once, it is a relation, not a function.",
+        "workingOut": "\\( \\text{Final Answer} \\)",
         "graphData": null
       }
     ],
@@ -708,10 +914,18 @@ export const Y11_CH3B_QUESTIONS = [
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5,0], [4.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-1.5], [0,3.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('curve', [function(t){ return 3*Math.cos(t); }, function(t){ return 3*Math.sin(t); }, 0, Math.PI], {strokeColor: '#4f46e5', strokeWidth: 2, firstArrow: false, lastArrow: false});\nboard.create('text', [-3.2, -0.4, '-3'], {fontSize: 12});\nboard.create('text', [3.1, -0.4, '3'], {fontSize: 12});\nboard.create('text', [-0.4, 3.1, '3'], {fontSize: 12});\nboard.unsuspendUpdate();"
       }
     },
-    "opts": [
-      "Yes",
-      "No"
-    ]
+    "options": [
+      {
+        "text": "Yes",
+        "imageUrl": ""
+      },
+      {
+        "text": "No",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q3a",
@@ -761,12 +975,26 @@ export const Y11_CH3B_QUESTIONS = [
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.5,0], [5.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-2.5], [0,5.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('functiongraph', [function(x){ return x*x - 4*x + 2; }, -1.5, 5.5], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.unsuspendUpdate();"
       }
     },
-    "opts": [
-      "\\( \\text{Domain: all real } x,\\ \\text{Range: } y \\leq -2 \\)",
-      "\\( \\text{Domain: all real } x,\\ \\text{Range: } y \\geq -2 \\)",
-      "\\( \\text{Domain: } y \\geq -2,\\ \\text{Range: all real } x \\)",
-      "\\( \\text{Domain: } x \\geq -2,\\ \\text{Range: all real } y \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( \\text{Domain: all real } x,\\ \\text{Range: } y \\leq -2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( \\text{Domain: all real } x,\\ \\text{Range: } y \\geq -2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( \\text{Domain: } y \\geq -2,\\ \\text{Range: all real } x \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( \\text{Domain: } x \\geq -2,\\ \\text{Range: all real } y \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q3b",
@@ -816,12 +1044,26 @@ export const Y11_CH3B_QUESTIONS = [
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-6.5,0], [6.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-6.5], [0,6.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('curve', [function(t){ return 5*Math.cos(t); }, function(t){ return 5*Math.sin(t); }, Math.atan2(3,-4), Math.atan2(3,-4) + (2*Math.PI - (Math.atan2(3,-4) - Math.atan2(3,4)))], {strokeColor: '#4f46e5', strokeWidth: 2, firstArrow: false, lastArrow: false});\nboard.create('point', [-4, 3], {size: 3, face: 'o', color: '#4f46e5', fixed: true});\nboard.create('point', [4, 3], {size: 3, face: 'o', color: '#4f46e5', fixed: true});\nboard.unsuspendUpdate();"
       }
     },
-    "opts": [
-      "\\( \\text{Domain: } -5 < x < 5,\\ \\text{Range: } -5 \\leq y < 3 \\)",
-      "\\( \\text{Domain: } -5 \\leq x \\leq 5,\\ \\text{Range: } -5 < y \\leq 3 \\)",
-      "\\( \\text{Domain: } -5 \\leq y < 3,\\ \\text{Range: } -5 < x < 5 \\)",
-      "\\( \\text{Domain: } -5 \\leq x \\leq 5,\\ \\text{Range: } -5 \\leq y \\leq 3 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( \\text{Domain: } -5 < x < 5,\\ \\text{Range: } -5 \\leq y < 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( \\text{Domain: } -5 \\leq x \\leq 5,\\ \\text{Range: } -5 < y \\leq 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( \\text{Domain: } -5 \\leq y < 3,\\ \\text{Range: } -5 < x < 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( \\text{Domain: } -5 \\leq x \\leq 5,\\ \\text{Range: } -5 \\leq y \\leq 3 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q3c",
@@ -866,12 +1108,26 @@ export const Y11_CH3B_QUESTIONS = [
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.5,0], [4.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-1.5], [0,4.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('functiongraph', [function(x){ return 3 - x; }, -1.5, 4.5], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.unsuspendUpdate();"
       }
     },
-    "opts": [
-      "\\( \\text{Domain: all real } x,\\ \\text{Range: all real } y \\)",
-      "\\( \\text{Domain: } x \\geq 0,\\ \\text{Range: all real } y \\)",
-      "\\( \\text{Domain: all real } x,\\ \\text{Range: } y \\geq 0 \\)",
-      "\\( \\text{Domain: all real } x,\\ \\text{Range: } y \\neq 0 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( \\text{Domain: all real } x,\\ \\text{Range: all real } y \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( \\text{Domain: } x \\geq 0,\\ \\text{Range: all real } y \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( \\text{Domain: all real } x,\\ \\text{Range: } y \\geq 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( \\text{Domain: all real } x,\\ \\text{Range: } y \\neq 0 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q3d",
@@ -921,12 +1177,26 @@ export const Y11_CH3B_QUESTIONS = [
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-3.5,0], [4.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3.5], [0,3.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('curve', [function(t){ return t*t - 2; }, function(t){ return t; }, -3, 3], {strokeColor: '#4f46e5', strokeWidth: 2, firstArrow: false, lastArrow: false});\nboard.unsuspendUpdate();"
       }
     },
-    "opts": [
-      "\\( \\text{Domain: } x > -2,\\ \\text{Range: all real } y \\)",
-      "\\( \\text{Domain: } x \\geq -2,\\ \\text{Range: all real } y \\)",
-      "\\( \\text{Domain: all real } x,\\ \\text{Range: } y \\geq -2 \\)",
-      "\\( \\text{Domain: } x \\leq -2,\\ \\text{Range: all real } y \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( \\text{Domain: } x > -2,\\ \\text{Range: all real } y \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( \\text{Domain: } x \\geq -2,\\ \\text{Range: all real } y \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( \\text{Domain: all real } x,\\ \\text{Range: } y \\geq -2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( \\text{Domain: } x \\leq -2,\\ \\text{Range: all real } y \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q3e",
@@ -976,12 +1246,26 @@ export const Y11_CH3B_QUESTIONS = [
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-3.5,0], [3.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-4.5], [0,4.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('curve', [function(t){ return 2*Math.sin(t); }, function(t){ return t; }, -4.5, 4.5], {strokeColor: '#4f46e5', strokeWidth: 2, firstArrow: false, lastArrow: false});\nboard.unsuspendUpdate();"
       }
     },
-    "opts": [
-      "\\( \\text{Domain: } -2 \\leq x \\leq 2,\\ \\text{Range: all real } y \\)",
-      "\\( \\text{Domain: all real } x,\\ \\text{Range: } -2 \\leq y \\leq 2 \\)",
-      "\\( \\text{Domain: } -2 < x < 2,\\ \\text{Range: all real } y \\)",
-      "\\( \\text{Domain: } -2 \\leq x \\leq 2,\\ \\text{Range: } -2 \\leq y \\leq 2 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( \\text{Domain: } -2 \\leq x \\leq 2,\\ \\text{Range: all real } y \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( \\text{Domain: all real } x,\\ \\text{Range: } -2 \\leq y \\leq 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( \\text{Domain: } -2 < x < 2,\\ \\text{Range: all real } y \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( \\text{Domain: } -2 \\leq x \\leq 2,\\ \\text{Range: } -2 \\leq y \\leq 2 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q3f",
@@ -1026,12 +1310,26 @@ export const Y11_CH3B_QUESTIONS = [
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-3.5,0], [3.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-5.5], [0,5.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('functiongraph', [function(x){ return -x*x*x + 3*x; }, -3.5, 3.5], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.unsuspendUpdate();"
       }
     },
-    "opts": [
-      "\\( \\text{Domain: all real } x,\\ \\text{Range: all real } y \\)",
-      "\\( \\text{Domain: all real } x,\\ \\text{Range: } y \\geq 0 \\)",
-      "\\( \\text{Domain: } x \\geq 0,\\ \\text{Range: all real } y \\)",
-      "\\( \\text{Domain: all real } x,\\ \\text{Range: } y \\neq 0 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( \\text{Domain: all real } x,\\ \\text{Range: all real } y \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( \\text{Domain: all real } x,\\ \\text{Range: } y \\geq 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( \\text{Domain: } x \\geq 0,\\ \\text{Range: all real } y \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( \\text{Domain: all real } x,\\ \\text{Range: } y \\neq 0 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q3g",
@@ -1081,12 +1379,26 @@ export const Y11_CH3B_QUESTIONS = [
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5,0], [1.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3.5], [0,3.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('curve', [function(t){ return 3*Math.cos(t); }, function(t){ return 3*Math.sin(t); }, Math.PI/2, 3*Math.PI/2], {strokeColor: '#4f46e5', strokeWidth: 2, firstArrow: false, lastArrow: false});\nboard.create('text', [-3.2, 0.2, '-3'], {fontSize: 12});\nboard.create('text', [0.2, 3.1, '3'], {fontSize: 12});\nboard.create('text', [0.2, -3.1, '-3'], {fontSize: 12});\nboard.unsuspendUpdate();"
       }
     },
-    "opts": [
-      "\\( \\text{Domain: } -3 \\leq y \\leq 3,\\ \\text{Range: } -3 \\leq x \\leq 0 \\)",
-      "\\( \\text{Domain: } -3 \\leq x \\leq 0,\\ \\text{Range: } -3 \\leq y \\leq 3 \\)",
-      "\\( \\text{Domain: } 0 \\leq x \\leq 3,\\ \\text{Range: } -3 \\leq y \\leq 3 \\)",
-      "\\( \\text{Domain: } -3 < x < 0,\\ \\text{Range: } -3 \\leq y \\leq 3 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( \\text{Domain: } -3 \\leq y \\leq 3,\\ \\text{Range: } -3 \\leq x \\leq 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( \\text{Domain: } -3 \\leq x \\leq 0,\\ \\text{Range: } -3 \\leq y \\leq 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( \\text{Domain: } 0 \\leq x \\leq 3,\\ \\text{Range: } -3 \\leq y \\leq 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( \\text{Domain: } -3 < x < 0,\\ \\text{Range: } -3 \\leq y \\leq 3 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q3h",
@@ -1136,95 +1448,207 @@ export const Y11_CH3B_QUESTIONS = [
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5,0], [4.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-1.5], [0,3.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('curve', [function(t){ return 3*Math.cos(t); }, function(t){ return 3*Math.sin(t); }, 0, Math.PI], {strokeColor: '#4f46e5', strokeWidth: 2, firstArrow: false, lastArrow: false});\nboard.create('text', [-3.2, -0.4, '-3'], {fontSize: 12});\nboard.create('text', [3.1, -0.4, '3'], {fontSize: 12});\nboard.create('text', [-0.4, 3.1, '3'], {fontSize: 12});\nboard.unsuspendUpdate();"
       }
     },
-    "opts": [
-      "\\( \\text{Domain: } 0 \\leq y \\leq 3,\\ \\text{Range: } -3 \\leq x \\leq 3 \\)",
-      "\\( \\text{Domain: } -3 \\leq x \\leq 3,\\ \\text{Range: } 0 \\leq y \\leq 3 \\)",
-      "\\( \\text{Domain: } -3 \\leq x \\leq 3,\\ \\text{Range: } -3 \\leq y \\leq 3 \\)",
-      "\\( \\text{Domain: } -3 \\leq x \\leq 3,\\ \\text{Range: } 0 \\leq y < 3 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( \\text{Domain: } 0 \\leq y \\leq 3,\\ \\text{Range: } -3 \\leq x \\leq 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( \\text{Domain: } -3 \\leq x \\leq 3,\\ \\text{Range: } 0 \\leq y \\leq 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( \\text{Domain: } -3 \\leq x \\leq 3,\\ \\text{Range: } -3 \\leq y \\leq 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( \\text{Domain: } -3 \\leq x \\leq 3,\\ \\text{Range: } 0 \\leq y < 3 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q4a",
-    "type": "multiple_choice",
+    "type": "parent",
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Functions, relations, and graphs",
-    "question": "For the linear function \\( y = -3x + 2 \\):\n\n(i) Copy and complete the table of values for \\( x = 0, 1, 2 \\).\n(ii) Plot the points and sketch the function.\n(iii) Write down the domain and range.",
-    "a": "2",
-    "solutionSteps": [
+    "question": "For the linear function \\( y = -3x + 2 \\):",
+    "subQuestions": [
       {
-        "explanation": "Substitute \\( x = 0, 1, 2 \\) into \\( y = -3x + 2 \\).",
-        "workingOut": "\\(\\begin{aligned} x=0 \\implies y &= -3(0)+2 = 2 \\\\ x=1 \\implies y &= -3(1)+2 = -1 \\\\ x=2 \\implies y &= -3(2)+2 = -4 \\end{aligned}\\)",
-        "graphData": null
+        "id": "y11a-3b-q4a-1",
+        "type": "teacher_review",
+        "question": "(i) Copy and complete the table of values for \\( x = 0, 1, 2 \\).",
+        "a": "See solution",
+        "solution": "Substitute \\( x = 0, 1, 2 \\) into \\( y = -3x + 2 \\) to get \\( y = 2, -1, -4 \\).",
+        "solutionSteps": [
+          {
+            "explanation": "Substitute \\( x = 0, 1, 2 \\) into \\( y = -3x + 2 \\).",
+            "workingOut": "\\(\\begin{aligned} x=0 \\implies y &= -3(0)+2 = 2 \\\\ x=1 \\implies y &= -3(1)+2 = -1 \\\\ x=2 \\implies y &= -3(2)+2 = -4 \\end{aligned}\\)\n\n\\(\\begin{array}{|c|c|c|c|}\\hline x & 0 & 1 & 2 \\\\ \\hline y & 2 & -1 & -4 \\\\ \\hline \\end{array}\\)",
+            "graphData": null
+          }
+        ]
       },
       {
-        "explanation": "Plot the points \\( (0, 2) \\), \\( (1, -1) \\), and \\( (2, -4) \\) and connect them with a straight line.",
-        "workingOut": "",
-        "graphData": null
+        "id": "y11a-3b-q4a-2",
+        "type": "teacher_review",
+        "question": "(ii) Plot the points and sketch the function.",
+        "a": "See solution",
+        "solution": "Plot \\( (0, 2) \\), \\( (1, -1) \\), and \\( (2, -4) \\) and connect them with a straight line.",
+        "solutionSteps": [
+          {
+            "explanation": "Plot the points \\( (0, 2) \\), \\( (1, -1) \\), and \\( (2, -4) \\) and connect them with a straight line.",
+            "workingOut": "",
+            "graphData": {
+              "jsxGraph": {
+                "width": 300,
+                "height": 300,
+                "boundingbox": [
+                  -2,
+                  5,
+                  4,
+                  -6
+                ],
+                "script": "board.suspendUpdate();\nboard.create('arrow', [[-2,0], [4,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-6], [0,5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('functiongraph', [function(x){ return -3*x + 2; }, -2, 4], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.create('point', [0, 2], {size: 3, face: 'o', color: '#4f46e5', fixed: true, withLabel: true, name: '(0,2)'});\nboard.create('point', [1, -1], {size: 3, face: 'o', color: '#4f46e5', fixed: true, withLabel: true, name: '(1,-1)'});\nboard.create('point', [2, -4], {size: 3, face: 'o', color: '#4f46e5', fixed: true, withLabel: true, name: '(2,-4)'});\nboard.unsuspendUpdate();"
+              }
+            }
+          }
+        ]
       },
       {
-        "explanation": "Since it is a non-vertical straight line, the domain and range are both all real numbers.",
-        "workingOut": "\\(\\text{Domain: all real } x, \\quad \\text{Range: all real } y\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Recognising the general shape of this function family (linear, quadratic, exponential, or cubic) helps you predict the domain and range quickly, even before plotting every point.",
-        "workingOut": "",
-        "graphData": null
-      },
-      {
-        "explanation": "Reading the extent of the curve along each axis gives \\( \\text{Domain: all real } x,\\ \\text{Range: all real } y \\).",
-        "workingOut": "",
-        "graphData": null
+        "id": "y11a-3b-q4a-3",
+        "type": "multiple_choice",
+        "question": "(iii) Write down the domain and range.",
+        "a": "2",
+        "options": [
+          {
+            "text": "\\( \\text{Domain: all real } x,\\ \\text{Range: } y \\geq 0 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( \\text{Domain: } x \\geq 0,\\ \\text{Range: all real } y \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( \\text{Domain: all real } x,\\ \\text{Range: all real } y \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( \\text{Domain: all real } x,\\ \\text{Range: } y \\neq 0 \\)",
+            "imageUrl": ""
+          }
+        ],
+        "solutionSteps": [
+          {
+            "explanation": "Since it is a non-vertical straight line, the domain and range are both all real numbers.",
+            "workingOut": "\\(\\text{Domain: all real } x, \\quad \\text{Range: all real } y\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Recognising the general shape of this function family (linear, quadratic, exponential, or cubic) helps you predict the domain and range quickly, even before plotting every point.",
+            "workingOut": "",
+            "graphData": null
+          },
+          {
+            "explanation": "Reading the extent of the curve along each axis gives \\( \\text{Domain: all real } x,\\ \\text{Range: all real } y \\).",
+            "workingOut": "",
+            "graphData": null
+          }
+        ]
       }
-    ],
-    "opts": [
-      "\\( \\text{Domain: all real } x,\\ \\text{Range: } y \\geq 0 \\)",
-      "\\( \\text{Domain: } x \\geq 0,\\ \\text{Range: all real } y \\)",
-      "\\( \\text{Domain: all real } x,\\ \\text{Range: all real } y \\)",
-      "\\( \\text{Domain: all real } x,\\ \\text{Range: } y \\neq 0 \\)"
     ]
   },
   {
     "id": "y11a-3b-q4b",
-    "type": "multiple_choice",
+    "type": "parent",
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Functions, relations, and graphs",
-    "question": "For the quadratic function \\( y = x^2 - 2x + 3 \\):\n\n(i) Copy and complete the table of values for \\( x = -1, 0, 1, 2, 3 \\).\n(ii) Plot the points and sketch the parabola.\n(iii) Write down the domain and range.",
-    "a": "2",
-    "solutionSteps": [
+    "question": "For the quadratic function \\( y = x^2 - 2x + 3 \\):",
+    "subQuestions": [
       {
-        "explanation": "Substitute \\( x \\) values into \\( y = x^2 - 2x + 3 \\).",
-        "workingOut": "\\(\\begin{aligned} x=-1 \\implies y &= (-1)^2 - 2(-1) + 3 = 6 \\\\ x=0 \\implies y &= (0)^2 - 2(0) + 3 = 3 \\\\ x=1 \\implies y &= (1)^2 - 2(1) + 3 = 2 \\\\ x=2 \\implies y &= (2)^2 - 2(2) + 3 = 3 \\\\ x=3 \\implies y &= (3)^2 - 2(3) + 3 = 6 \\end{aligned}\\)",
-        "graphData": null
+        "id": "y11a-3b-q4b-1",
+        "type": "teacher_review",
+        "question": "(i) Copy and complete the table of values for \\( x = -1, 0, 1, 2, 3 \\).",
+        "a": "See solution",
+        "solution": "Substitute the x values to get y = 6, 3, 2, 3, 6.",
+        "solutionSteps": [
+          {
+            "explanation": "Substitute \\( x \\) values into \\( y = x^2 - 2x + 3 \\).",
+            "workingOut": "\\(\\begin{aligned} x=-1 \\implies y &= (-1)^2 - 2(-1) + 3 = 6 \\\\ x=0 \\implies y &= (0)^2 - 2(0) + 3 = 3 \\\\ x=1 \\implies y &= (1)^2 - 2(1) + 3 = 2 \\\\ x=2 \\implies y &= (2)^2 - 2(2) + 3 = 3 \\\\ x=3 \\implies y &= (3)^2 - 2(3) + 3 = 6 \\end{aligned}\\)\n\n\\(\\begin{array}{|c|c|c|c|c|c|}\\hline x & -1 & 0 & 1 & 2 & 3 \\\\ \\hline y & 6 & 3 & 2 & 3 & 6 \\\\ \\hline \\end{array}\\)",
+            "graphData": null
+          }
+        ]
       },
       {
-        "explanation": "The vertex is at \\( (1, 2) \\) and the y-intercept is at \\( (0, 3) \\). Plot the points and draw a smooth parabola opening upwards.",
-        "workingOut": "",
-        "graphData": null
+        "id": "y11a-3b-q4b-2",
+        "type": "teacher_review",
+        "question": "(ii) Plot the points and sketch the parabola.",
+        "a": "See solution",
+        "solution": "Plot the points with the vertex at (1, 2) and draw a smooth upward-opening parabola.",
+        "solutionSteps": [
+          {
+            "explanation": "The vertex is at \\( (1, 2) \\) and the y-intercept is at \\( (0, 3) \\). Plot the points and draw a smooth parabola opening upwards.",
+            "workingOut": "",
+            "graphData": {
+              "jsxGraph": {
+                "width": 300,
+                "height": 300,
+                "boundingbox": [
+                  -3,
+                  8,
+                  5,
+                  -2
+                ],
+                "script": "board.suspendUpdate();\nboard.create('arrow', [[-3,0], [5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-2], [0,8]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('functiongraph', [function(x){ return x*x - 2*x + 3; }, -3, 5], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.create('point', [-1, 6], {size: 3, face: 'o', color: '#4f46e5', fixed: true, withLabel: true, name: '(-1,6)'});\nboard.create('point', [0, 3], {size: 3, face: 'o', color: '#4f46e5', fixed: true, withLabel: true, name: '(0,3)'});\nboard.create('point', [1, 2], {size: 3, face: 'o', color: '#4f46e5', fixed: true, withLabel: true, name: '(1,2)'});\nboard.create('point', [2, 3], {size: 3, face: 'o', color: '#4f46e5', fixed: true, withLabel: true, name: '(2,3)'});\nboard.create('point', [3, 6], {size: 3, face: 'o', color: '#4f46e5', fixed: true, withLabel: true, name: '(3,6)'});\nboard.unsuspendUpdate();"
+              }
+            }
+          }
+        ]
       },
       {
-        "explanation": "Identify the domain and range. The graph extends horizontally infinitely, and vertically starts from its minimum at \\( y = 2 \\).",
-        "workingOut": "\\(\\text{Domain: all real } x, \\quad \\text{Range: } y \\ge 2\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Recognising the general shape of this function family (linear, quadratic, exponential, or cubic) helps you predict the domain and range quickly, even before plotting every point.",
-        "workingOut": "",
-        "graphData": null
-      },
-      {
-        "explanation": "Reading the extent of the curve along each axis gives \\( \\text{Domain: all real } x,\\ \\text{Range: } y \\geq 2 \\).",
-        "workingOut": "",
-        "graphData": null
+        "id": "y11a-3b-q4b-3",
+        "type": "multiple_choice",
+        "question": "(iii) Write down the domain and range.",
+        "a": "2",
+        "options": [
+          {
+            "text": "\\( \\text{Domain: all real } x,\\ \\text{Range: } y \\leq 2 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( \\text{Domain: } x \\geq 2,\\ \\text{Range: all real } y \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( \\text{Domain: all real } x,\\ \\text{Range: } y \\geq 2 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( \\text{Domain: all real } x,\\ \\text{Range: } y > 2 \\)",
+            "imageUrl": ""
+          }
+        ],
+        "solutionSteps": [
+          {
+            "explanation": "Identify the domain and range. The graph extends horizontally infinitely, and vertically starts from its minimum at \\( y = 2 \\).",
+            "workingOut": "\\(\\text{Domain: all real } x, \\quad \\text{Range: } y \\ge 2\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Recognising the general shape of this function family (linear, quadratic, exponential, or cubic) helps you predict the domain and range quickly, even before plotting every point.",
+            "workingOut": "",
+            "graphData": null
+          },
+          {
+            "explanation": "Reading the extent of the curve along each axis gives \\( \\text{Domain: all real } x,\\ \\text{Range: } y \\geq 2 \\).",
+            "workingOut": "",
+            "graphData": null
+          }
+        ]
       }
-    ],
-    "opts": [
-      "\\( \\text{Domain: all real } x,\\ \\text{Range: } y \\leq 2 \\)",
-      "\\( \\text{Domain: } x \\geq 2,\\ \\text{Range: all real } y \\)",
-      "\\( \\text{Domain: all real } x,\\ \\text{Range: } y \\geq 2 \\)",
-      "\\( \\text{Domain: all real } x,\\ \\text{Range: } y > 2 \\)"
     ]
   },
   {
@@ -1237,32 +1661,46 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "0",
     "solutionSteps": [
       {
-        "explanation": "General rule: for an expression under a square root, the radicand must be \\( \\geq 0 \\); for an expression in a denominator, the denominator must be \\( \\neq 0 \\). Combine every such restriction to get the natural domain.",
+        "explanation": "Identify the function type to find the natural domain. Check if the function contains fractions, square roots, or both.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Division by zero is undefined, so the denominator cannot be zero.",
-        "workingOut": "\\( x \\neq 0 \\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Thus, the domain includes all real numbers except \\( 0 \\).",
+        "explanation": "Apply the analytical rules for natural domains: denominators cannot equal zero, and values inside a square root must be non-negative (greater than or equal to zero).",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "The natural domain is \\( x \\neq 0 \\).",
+        "explanation": "Set up and solve the resulting inequality or equation to find the restrictions on \\( x \\).",
         "workingOut": "",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final domain. **Warning:** Always check the natural domain carefully. Missing a zero denominator or a negative radicand is a common pitfall.",
+        "workingOut": "\\( \\text{Final Domain} \\)",
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( x \\neq 0 \\)",
-      "\\( x \\neq 5 \\)",
-      "\\( x \\in \\mathbb{R}\\ (\\text{all real } x) \\)",
-      "\\( x = 0 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( x \\neq 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\neq 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\in \\mathbb{R}\\ (\\text{all real } x) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 0 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q5b",
@@ -1274,32 +1712,46 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "2",
     "solutionSteps": [
       {
-        "explanation": "General rule: for an expression under a square root, the radicand must be \\( \\geq 0 \\); for an expression in a denominator, the denominator must be \\( \\neq 0 \\). Combine every such restriction to get the natural domain.",
+        "explanation": "Identify the function type to find the natural domain. Check if the function contains fractions, square roots, or both.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "The denominator cannot be zero.",
-        "workingOut": "\\( x - 4 \\neq 0 \\implies x \\neq 4 \\)",
-        "graphData": null
-      },
-      {
-        "explanation": "The natural domain is all real numbers except \\( 4 \\).",
+        "explanation": "Apply the analytical rules for natural domains: denominators cannot equal zero, and values inside a square root must be non-negative (greater than or equal to zero).",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "The natural domain is \\( x \\neq 4 \\).",
+        "explanation": "Set up and solve the resulting inequality or equation to find the restrictions on \\( x \\).",
         "workingOut": "",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final domain. **Warning:** Always check the natural domain carefully. Missing a zero denominator or a negative radicand is a common pitfall.",
+        "workingOut": "\\( \\text{Final Domain} \\)",
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( x \\neq -4 \\)",
-      "\\( x \\in \\mathbb{R}\\ (\\text{all real } x) \\)",
-      "\\( x \\neq 4 \\)",
-      "\\( x = 4 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( x \\neq -4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\in \\mathbb{R}\\ (\\text{all real } x) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\neq 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 4 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q5c",
@@ -1311,32 +1763,46 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "2",
     "solutionSteps": [
       {
-        "explanation": "General rule: for an expression under a square root, the radicand must be \\( \\geq 0 \\); for an expression in a denominator, the denominator must be \\( \\neq 0 \\). Combine every such restriction to get the natural domain.",
+        "explanation": "Identify the function type to find the natural domain. Check if the function contains fractions, square roots, or both.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Set the denominator to not equal zero.",
-        "workingOut": "\\( x + 2 \\neq 0 \\implies x \\neq -2 \\)",
-        "graphData": null
-      },
-      {
-        "explanation": "The natural domain is all real numbers except \\( -2 \\).",
+        "explanation": "Apply the analytical rules for natural domains: denominators cannot equal zero, and values inside a square root must be non-negative (greater than or equal to zero).",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "The natural domain is \\( x \\neq -2 \\).",
+        "explanation": "Set up and solve the resulting inequality or equation to find the restrictions on \\( x \\).",
         "workingOut": "",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final domain. **Warning:** Always check the natural domain carefully. Missing a zero denominator or a negative radicand is a common pitfall.",
+        "workingOut": "\\( \\text{Final Domain} \\)",
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( x \\neq 2 \\)",
-      "\\( x \\in \\mathbb{R}\\ (\\text{all real } x) \\)",
-      "\\( x \\neq -2 \\)",
-      "\\( x = -2 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( x \\neq 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\in \\mathbb{R}\\ (\\text{all real } x) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\neq -2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -2 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q5d",
@@ -1348,32 +1814,46 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "2",
     "solutionSteps": [
       {
-        "explanation": "General rule: for an expression under a square root, the radicand must be \\( \\geq 0 \\); for an expression in a denominator, the denominator must be \\( \\neq 0 \\). Combine every such restriction to get the natural domain.",
+        "explanation": "Identify the function type to find the natural domain. Check if the function contains fractions, square roots, or both.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Find values of \\( x \\) that make the denominator zero.",
-        "workingOut": "\\( 3 + x \\neq 0 \\implies x \\neq -3 \\)",
-        "graphData": null
-      },
-      {
-        "explanation": "The natural domain is all real numbers except \\( -3 \\).",
+        "explanation": "Apply the analytical rules for natural domains: denominators cannot equal zero, and values inside a square root must be non-negative (greater than or equal to zero).",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "The natural domain is \\( x \\neq -3 \\).",
+        "explanation": "Set up and solve the resulting inequality or equation to find the restrictions on \\( x \\).",
         "workingOut": "",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final domain. **Warning:** Always check the natural domain carefully. Missing a zero denominator or a negative radicand is a common pitfall.",
+        "workingOut": "\\( \\text{Final Domain} \\)",
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( x \\in \\mathbb{R}\\ (\\text{all real } x) \\)",
-      "\\( x \\neq 3 \\)",
-      "\\( x \\neq -3 \\)",
-      "\\( x = -3 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( x \\in \\mathbb{R}\\ (\\text{all real } x) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\neq 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\neq -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = -3 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q6a",
@@ -1385,32 +1865,46 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "0",
     "solutionSteps": [
       {
-        "explanation": "General rule: for an expression under a square root, the radicand must be \\( \\geq 0 \\); for an expression in a denominator, the denominator must be \\( \\neq 0 \\). Combine every such restriction to get the natural domain.",
+        "explanation": "Identify the function type to find the natural domain. Check if the function contains fractions, square roots, or both.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "The expression inside the square root must be non-negative.",
-        "workingOut": "\\( 2x \\ge 0 \\)",
+        "explanation": "Apply the analytical rules for natural domains: denominators cannot equal zero, and values inside a square root must be non-negative (greater than or equal to zero).",
+        "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Divide by 2.",
+        "explanation": "Set up and solve the resulting inequality or equation to find the restrictions on \\( x \\).",
         "workingOut": "\\( x \\ge 0 \\)",
         "graphData": null
       },
       {
-        "explanation": "The natural domain is \\( x \\geq 0 \\).",
-        "workingOut": "",
+        "explanation": "State the final domain. **Warning:** Always check the natural domain carefully. Missing a zero denominator or a negative radicand is a common pitfall.",
+        "workingOut": "\\( \\text{Final Domain} \\)",
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( x \\geq 0 \\)",
-      "\\( x \\leq 0 \\)",
-      "\\( x > 0 \\)",
-      "\\( x \\geq 5 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( x \\geq 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\leq 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x > 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\geq 5 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q6b",
@@ -1422,32 +1916,46 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "0",
     "solutionSteps": [
       {
-        "explanation": "General rule: for an expression under a square root, the radicand must be \\( \\geq 0 \\); for an expression in a denominator, the denominator must be \\( \\neq 0 \\). Combine every such restriction to get the natural domain.",
+        "explanation": "Identify the function type to find the natural domain. Check if the function contains fractions, square roots, or both.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "The radicand must be non-negative.",
-        "workingOut": "\\( x - 4 \\ge 0 \\)",
+        "explanation": "Apply the analytical rules for natural domains: denominators cannot equal zero, and values inside a square root must be non-negative (greater than or equal to zero).",
+        "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Solve for \\( x \\).",
+        "explanation": "Set up and solve the resulting inequality or equation to find the restrictions on \\( x \\).",
         "workingOut": "\\( x \\ge 4 \\)",
         "graphData": null
       },
       {
-        "explanation": "The natural domain is \\( x \\geq 4 \\).",
-        "workingOut": "",
+        "explanation": "State the final domain. **Warning:** Always check the natural domain carefully. Missing a zero denominator or a negative radicand is a common pitfall.",
+        "workingOut": "\\( \\text{Final Domain} \\)",
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( x \\geq 4 \\)",
-      "\\( x \\leq 4 \\)",
-      "\\( x > 4 \\)",
-      "\\( x \\geq -4 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( x \\geq 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\leq 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x > 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\geq -4 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q6c",
@@ -1459,32 +1967,46 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "1",
     "solutionSteps": [
       {
-        "explanation": "General rule: for an expression under a square root, the radicand must be \\( \\geq 0 \\); for an expression in a denominator, the denominator must be \\( \\neq 0 \\). Combine every such restriction to get the natural domain.",
+        "explanation": "Identify the function type to find the natural domain. Check if the function contains fractions, square roots, or both.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Set the term under the radical to be greater than or equal to zero.",
-        "workingOut": "\\( x + 5 \\ge 0 \\)",
+        "explanation": "Apply the analytical rules for natural domains: denominators cannot equal zero, and values inside a square root must be non-negative (greater than or equal to zero).",
+        "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Solve the inequality.",
+        "explanation": "Set up and solve the resulting inequality or equation to find the restrictions on \\( x \\).",
         "workingOut": "\\( x \\ge -5 \\)",
         "graphData": null
       },
       {
-        "explanation": "The natural domain is \\( x \\geq -5 \\).",
-        "workingOut": "",
+        "explanation": "State the final domain. **Warning:** Always check the natural domain carefully. Missing a zero denominator or a negative radicand is a common pitfall.",
+        "workingOut": "\\( \\text{Final Domain} \\)",
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( x \\leq -5 \\)",
-      "\\( x \\geq -5 \\)",
-      "\\( x > -5 \\)",
-      "\\( x \\geq 5 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( x \\leq -5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\geq -5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x > -5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\geq 5 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q6d",
@@ -1496,32 +2018,46 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "2",
     "solutionSteps": [
       {
-        "explanation": "General rule: for an expression under a square root, the radicand must be \\( \\geq 0 \\); for an expression in a denominator, the denominator must be \\( \\neq 0 \\). Combine every such restriction to get the natural domain.",
+        "explanation": "Identify the function type to find the natural domain. Check if the function contains fractions, square roots, or both.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Set the radical expression greater than or equal to zero.",
-        "workingOut": "\\( 3 + x \\ge 0 \\)",
+        "explanation": "Apply the analytical rules for natural domains: denominators cannot equal zero, and values inside a square root must be non-negative (greater than or equal to zero).",
+        "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Solve for \\( x \\).",
+        "explanation": "Set up and solve the resulting inequality or equation to find the restrictions on \\( x \\).",
         "workingOut": "\\( x \\ge -3 \\)",
         "graphData": null
       },
       {
-        "explanation": "The natural domain is \\( x \\geq -3 \\).",
-        "workingOut": "",
+        "explanation": "State the final domain. **Warning:** Always check the natural domain carefully. Missing a zero denominator or a negative radicand is a common pitfall.",
+        "workingOut": "\\( \\text{Final Domain} \\)",
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( x > -3 \\)",
-      "\\( x \\leq -3 \\)",
-      "\\( x \\geq -3 \\)",
-      "\\( x \\geq 3 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( x > -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\leq -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\geq -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\geq 3 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q7a",
@@ -1530,12 +2066,6 @@ export const Y11_CH3B_QUESTIONS = [
     "timeLimit": 60,
     "t": "Functions, relations, and graphs",
     "question": "A mapping diagram shows domain elements \\({-3, 3, -2, 2, 0}\\) mapping to range elements \\({9, 4, 0}\\) as follows:\n\n- \\(-3 \\rightarrow 9\\)\n- \\(3 \\rightarrow 9\\)\n- \\(-2 \\rightarrow 4\\)\n- \\(2 \\rightarrow 4\\)\n- \\(0 \\rightarrow 0\\)\n\nIs this relation also a function? Explain why.",
-    "opts": [
-      "Yes, because each element in the domain maps to exactly one element in the range.",
-      "No, because two different domain elements map to the same range element.",
-      "Yes, because it is a one-to-many mapping.",
-      "No, because 0 maps to 0."
-    ],
     "a": "0",
     "solutionSteps": [
       {
@@ -1563,7 +2093,27 @@ export const Y11_CH3B_QUESTIONS = [
         "workingOut": "",
         "graphData": null
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "Yes, because each element in the domain maps to exactly one element in the range.",
+        "imageUrl": ""
+      },
+      {
+        "text": "No, because two different domain elements map to the same range element.",
+        "imageUrl": ""
+      },
+      {
+        "text": "Yes, because it is a one-to-many mapping.",
+        "imageUrl": ""
+      },
+      {
+        "text": "No, because 0 maps to 0.",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q7b",
@@ -1572,12 +2122,6 @@ export const Y11_CH3B_QUESTIONS = [
     "timeLimit": 60,
     "t": "Functions, relations, and graphs",
     "question": "A relation is described by a diagram where domain elements \\({9, 4, 0}\\) map to range elements \\({-3, 3, -2, 2, 0}\\) as follows:\n\n- \\(9 \\rightarrow -3\\) and \\(9 \\rightarrow 3\\)\n- \\(4 \\rightarrow -2\\) and \\(4 \\rightarrow 2\\)\n- \\(0 \\rightarrow 0\\)\n\nIs this relation a function? Explain why.",
-    "opts": [
-      "No, because the inputs 9 and 4 map to more than one output value.",
-      "Yes, because every element in the domain has an output.",
-      "No, because it is a many-to-one relation.",
-      "Yes, because it represents a vertical line."
-    ],
     "a": "0",
     "solutionSteps": [
       {
@@ -1605,7 +2149,27 @@ export const Y11_CH3B_QUESTIONS = [
         "workingOut": "",
         "graphData": null
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "No, because the inputs 9 and 4 map to more than one output value.",
+        "imageUrl": ""
+      },
+      {
+        "text": "Yes, because every element in the domain has an output.",
+        "imageUrl": ""
+      },
+      {
+        "text": "No, because it is a many-to-one relation.",
+        "imageUrl": ""
+      },
+      {
+        "text": "Yes, because it represents a vertical line.",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q7c",
@@ -1614,12 +2178,6 @@ export const Y11_CH3B_QUESTIONS = [
     "timeLimit": 60,
     "t": "Functions, relations, and graphs",
     "question": "A relation maps \\({-1, 1, 2}\\) to \\({3, 5, 8}\\) as follows:\n\n- \\(-1 \\rightarrow 3\\)\n- \\(1 \\rightarrow 5\\)\n- \\(2 \\rightarrow 8\\)\n\nIs this relation a function?",
-    "opts": [
-      "Yes, it is a one-to-one function.",
-      "No, it is not a function.",
-      "Yes, but it is not a relation.",
-      "No, because the inputs are not symmetrical."
-    ],
     "a": "0",
     "solutionSteps": [
       {
@@ -1642,7 +2200,27 @@ export const Y11_CH3B_QUESTIONS = [
         "workingOut": "",
         "graphData": null
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "Yes, it is a one-to-one function.",
+        "imageUrl": ""
+      },
+      {
+        "text": "No, it is not a function.",
+        "imageUrl": ""
+      },
+      {
+        "text": "Yes, but it is not a relation.",
+        "imageUrl": ""
+      },
+      {
+        "text": "No, because the inputs are not symmetrical.",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q7d",
@@ -1651,12 +2229,6 @@ export const Y11_CH3B_QUESTIONS = [
     "timeLimit": 60,
     "t": "Functions, relations, and graphs",
     "question": "A mapping diagram contains domain elements \\({-2, 2, 0}\\) and range elements \\({-3, 3, -4, 4}\\) as follows:\n\n- \\(-2 \\rightarrow -3\\)\n- \\(2 \\rightarrow 3\\)\n- \\(0 \\rightarrow -4\\) and \\(0 \\rightarrow 4\\)\n\nIs this relation a function?",
-    "opts": [
-      "No, because the domain element 0 maps to two range elements.",
-      "Yes, because every element in the range has a preimage.",
-      "Yes, it is a function.",
-      "No, because the number of elements in the domain is less than the range."
-    ],
     "a": "0",
     "solutionSteps": [
       {
@@ -1679,7 +2251,27 @@ export const Y11_CH3B_QUESTIONS = [
         "workingOut": "",
         "graphData": null
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "No, because the domain element 0 maps to two range elements.",
+        "imageUrl": ""
+      },
+      {
+        "text": "Yes, because every element in the range has a preimage.",
+        "imageUrl": ""
+      },
+      {
+        "text": "Yes, it is a function.",
+        "imageUrl": ""
+      },
+      {
+        "text": "No, because the number of elements in the domain is less than the range.",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q8",
@@ -1693,11 +2285,19 @@ export const Y11_CH3B_QUESTIONS = [
         "id": "y11a-3b-q8a",
         "type": "multiple_choice",
         "question": "a) Consider the set of points \\({(1, 3), (2, 4), (3, 1), (5, 3)}\\). Is this a function or a relation?",
-        "opts": [
-          "It is a function.",
-          "It is a relation but not a function."
+        "a": "0",
+        "options": [
+          {
+            "text": "It is a function.",
+            "imageUrl": ""
+          },
+          {
+            "text": "It is a relation but not a function.",
+            "imageUrl": ""
+          }
         ],
-        "a": "0"
+        "isManual": false,
+        "requiresManualGrading": false
       },
       {
         "id": "y11a-3b-q8b",
@@ -1716,29 +2316,26 @@ export const Y11_CH3B_QUESTIONS = [
             "graphData": null
           }
         ],
-        "opts": [
-          "Relation, not a function — because \\( x = 2 \\) maps to two different \\( y \\)-values.",
-          "Relation, not a function — the input \\( x = 1 \\) maps to both \\( y = 3 \\) and \\( y = 4 \\).",
-          "Function — every \\( x \\)-value maps to exactly one \\( y \\)-value.",
-          "Function — this is a one-to-one mapping."
-        ]
-      }
-    ],
-    "solutionSteps": [
-      {
-        "explanation": "For part a, check if any x-coordinate repeats with a different y-value in the set \\({(1, 3), (2, 4), (3, 1), (5, 3)}\\).",
-        "workingOut": "\\(\\text{x-coordinates: } 1, 2, 3, 5 \\quad \\text{(no repeats) } \\implies \\text{Function}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "For part b(i), find combinations of numbers on two dice (values 1 to 6) that sum to 4 or multiply to 4.",
-        "workingOut": "\\(\\begin{aligned} \\text{Sum to 4: } &(1, 3), (2, 2), (3, 1) \\\\ \\text{Multiply to 4: } &(1, 4), (2, 2), (4, 1) \\\\ \\text{Combined: } &{(1,3), (1,4), (2,2), (3,1), (4,1)} \\end{aligned}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "For part b(ii), look at \\( x = 1 \\). It maps to both \\( y = 3 \\) and \\( y = 4 \\).",
-        "workingOut": "\\(x=1 \\implies y=3 \\text{ and } y=4 \\implies \\text{Relation, not a function}\\)",
-        "graphData": null
+        "options": [
+          {
+            "text": "Relation, not a function — because \\( x = 2 \\) maps to two different \\( y \\)-values.",
+            "imageUrl": ""
+          },
+          {
+            "text": "Relation, not a function — the input \\( x = 1 \\) maps to both \\( y = 3 \\) and \\( y = 4 \\).",
+            "imageUrl": ""
+          },
+          {
+            "text": "Function — every \\( x \\)-value maps to exactly one \\( y \\)-value.",
+            "imageUrl": ""
+          },
+          {
+            "text": "Function — this is a one-to-one mapping.",
+            "imageUrl": ""
+          }
+        ],
+        "isManual": false,
+        "requiresManualGrading": false
       }
     ]
   },
@@ -1790,12 +2387,26 @@ export const Y11_CH3B_QUESTIONS = [
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-5,0], [5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-5], [0,5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('circle', [[0,0], 4], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.create('text', [0.2, 4.2, '4'], {fontSize: 12});\nboard.create('text', [0.2, -4.2, '-4'], {fontSize: 12});\nboard.create('text', [4.2, 0.2, '4'], {fontSize: 12});\nboard.create('text', [-4.7, 0.2, '-4'], {fontSize: 12});\nboard.unsuspendUpdate();"
       }
     },
-    "opts": [
-      "\\( (0, 4) \\text{ and } (4, 0) \\)",
-      "\\( (4, 0) \\text{ and } (-4, 0) \\)",
-      "\\( (0, 4) \\text{ and } (0, -4) \\)",
-      "\\( (0, 4) \\text{ and } (0, 0) \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( (0, 4) \\text{ and } (4, 0) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( (4, 0) \\text{ and } (-4, 0) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( (0, 4) \\text{ and } (0, -4) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( (0, 4) \\text{ and } (0, 0) \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q9b",
@@ -1840,12 +2451,26 @@ export const Y11_CH3B_QUESTIONS = [
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5,0], [2.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3.5], [0,3.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('curve', [function(t){ return t*t - 4; }, function(t){ return t; }, -3, 3], {strokeColor: '#4f46e5', strokeWidth: 2, firstArrow: false, lastArrow: false});\nboard.create('text', [-4.2, 0.2, '-4'], {fontSize: 12});\nboard.create('text', [0.2, 2.1, '2'], {fontSize: 12});\nboard.create('text', [0.2, -2.1, '-2'], {fontSize: 12});\nboard.unsuspendUpdate();"
       }
     },
-    "opts": [
-      "\\( (2, 0) \\text{ and } (-2, 0) \\)",
-      "\\( (0, 2) \\text{ and } (2, 0) \\)",
-      "\\( (0, 2) \\text{ and } (0, -2) \\)",
-      "\\( (0, 2) \\text{ and } (0, 0) \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( (2, 0) \\text{ and } (-2, 0) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( (0, 2) \\text{ and } (2, 0) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( (0, 2) \\text{ and } (0, -2) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( (0, 2) \\text{ and } (0, 0) \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q9c",
@@ -1900,12 +2525,26 @@ export const Y11_CH3B_QUESTIONS = [
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-0.5,0], [7.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-2.5], [0,6.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('circle', [[3,2], 3], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.create('point', [3,2], {name: '(3,2)', size: 2, color: 'black', label: {autoPosition: false, offset: [0, 10]}});\nboard.unsuspendUpdate();"
       }
     },
-    "opts": [
-      "\\( (3, 5) \\text{ and } (3, -1) \\)",
-      "\\( (3, 5) \\text{ and } (3, 2) \\)",
-      "\\( (5, 2) \\text{ and } (-1, 2) \\)",
-      "\\( (3, 2) \\text{ and } (3, -2) \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( (3, 5) \\text{ and } (3, -1) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( (3, 5) \\text{ and } (3, 2) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( (5, 2) \\text{ and } (-1, 2) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( (3, 2) \\text{ and } (3, -2) \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q9d",
@@ -1950,12 +2589,26 @@ export const Y11_CH3B_QUESTIONS = [
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-0.5,0], [4.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-1.5], [0,4.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('line', [[3,-2], [3,5]], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.create('text', [3.2, 0.2, '3'], {fontSize: 12});\nboard.unsuspendUpdate();"
       }
     },
-    "opts": [
-      "\\( (3, 1) \\text{ and } (3, 2) \\)",
-      "\\( (3, 0) \\text{ and } (0, 3) \\)",
-      "\\( (1, 3) \\text{ and } (2, 3) \\)",
-      "\\( (1, 3) \\text{ and } (3, 1) \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( (3, 1) \\text{ and } (3, 2) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( (3, 0) \\text{ and } (0, 3) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( (1, 3) \\text{ and } (2, 3) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( (1, 3) \\text{ and } (3, 1) \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q10a",
@@ -1967,32 +2620,46 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "0",
     "solutionSteps": [
       {
-        "explanation": "General rule: for an expression under a square root, the radicand must be \\( \\geq 0 \\); for an expression in a denominator, the denominator must be \\( \\neq 0 \\). Combine every such restriction to get the natural domain.",
+        "explanation": "Identify the function type to find the natural domain. Check if the function contains fractions, square roots, or both.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "The function \\( f(x) = 5x \\) is a linear polynomial.",
+        "explanation": "Apply the analytical rules for natural domains: denominators cannot equal zero, and values inside a square root must be non-negative (greater than or equal to zero).",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Polynomial functions are defined for all real values of \\( x \\).",
+        "explanation": "Set up and solve the resulting inequality or equation to find the restrictions on \\( x \\).",
         "workingOut": "\\(\\text{Domain: all real } x\\)",
         "graphData": null
       },
       {
-        "explanation": "The natural domain is \\( x \\in \\mathbb{R}\\ (\\text{all real } x) \\).",
-        "workingOut": "",
+        "explanation": "State the final domain. **Warning:** Always check the natural domain carefully. Missing a zero denominator or a negative radicand is a common pitfall.",
+        "workingOut": "\\( \\text{Final Domain} \\)",
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( x \\in \\mathbb{R}\\ (\\text{all real } x) \\)",
-      "\\( x \\neq 0 \\)",
-      "\\( x \\leq 0 \\)",
-      "\\( x \\geq 0 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( x \\in \\mathbb{R}\\ (\\text{all real } x) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\neq 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\leq 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\geq 0 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q10b",
@@ -2004,32 +2671,46 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "1",
     "solutionSteps": [
       {
-        "explanation": "General rule: for an expression under a square root, the radicand must be \\( \\geq 0 \\); for an expression in a denominator, the denominator must be \\( \\neq 0 \\). Combine every such restriction to get the natural domain.",
+        "explanation": "Identify the function type to find the natural domain. Check if the function contains fractions, square roots, or both.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "This is a linear polynomial function.",
+        "explanation": "Apply the analytical rules for natural domains: denominators cannot equal zero, and values inside a square root must be non-negative (greater than or equal to zero).",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "There are no fractions or square roots to restrict the input. The domain is all real numbers.",
+        "explanation": "Set up and solve the resulting inequality or equation to find the restrictions on \\( x \\).",
         "workingOut": "\\(\\text{Domain: all real } x\\)",
         "graphData": null
       },
       {
-        "explanation": "The natural domain is \\( x \\in \\mathbb{R}\\ (\\text{all real } x) \\).",
-        "workingOut": "",
+        "explanation": "State the final domain. **Warning:** Always check the natural domain carefully. Missing a zero denominator or a negative radicand is a common pitfall.",
+        "workingOut": "\\( \\text{Final Domain} \\)",
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( x \\neq 0 \\)",
-      "\\( x \\in \\mathbb{R}\\ (\\text{all real } x) \\)",
-      "\\( x \\leq 0 \\)",
-      "\\( x \\geq 0 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( x \\neq 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\in \\mathbb{R}\\ (\\text{all real } x) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\leq 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\geq 0 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q10c",
@@ -2041,27 +2722,46 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "2",
     "solutionSteps": [
       {
-        "explanation": "General rule: for an expression under a square root, the radicand must be \\( \\geq 0 \\); for an expression in a denominator, the denominator must be \\( \\neq 0 \\). Combine every such restriction to get the natural domain.",
+        "explanation": "Identify the function type to find the natural domain. Check if the function contains fractions, square roots, or both.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "The denominator cannot be equal to zero.",
-        "workingOut": "\\( 5 - x \\neq 0 \\implies x \\neq 5 \\)",
+        "explanation": "Apply the analytical rules for natural domains: denominators cannot equal zero, and values inside a square root must be non-negative (greater than or equal to zero).",
+        "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "The natural domain is \\( x \\neq 5 \\).",
+        "explanation": "Set up and solve the resulting inequality or equation to find the restrictions on \\( x \\).",
         "workingOut": "",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final domain. **Warning:** Always check the natural domain carefully. Missing a zero denominator or a negative radicand is a common pitfall.",
+        "workingOut": "\\( \\text{Final Domain} \\)",
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( x \\neq -5 \\)",
-      "\\( x = 5 \\)",
-      "\\( x \\neq 5 \\)",
-      "\\( x \\in \\mathbb{R}\\ (\\text{all real } x) \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( x \\neq -5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x = 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\neq 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\in \\mathbb{R}\\ (\\text{all real } x) \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q10d",
@@ -2073,32 +2773,46 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "2",
     "solutionSteps": [
       {
-        "explanation": "General rule: for an expression under a square root, the radicand must be \\( \\geq 0 \\); for an expression in a denominator, the denominator must be \\( \\neq 0 \\). Combine every such restriction to get the natural domain.",
+        "explanation": "Identify the function type to find the natural domain. Check if the function contains fractions, square roots, or both.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Set the denominator to not equal zero.",
-        "workingOut": "\\( 3x - 2 \\neq 0 \\)",
+        "explanation": "Apply the analytical rules for natural domains: denominators cannot equal zero, and values inside a square root must be non-negative (greater than or equal to zero).",
+        "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Solve for \\( x \\).",
+        "explanation": "Set up and solve the resulting inequality or equation to find the restrictions on \\( x \\).",
         "workingOut": "\\(3x \\neq 2 \\implies x \\neq \\frac{2}{3}\\)",
         "graphData": null
       },
       {
-        "explanation": "The natural domain is \\( x \\neq \\frac{2}{3} \\).",
-        "workingOut": "",
+        "explanation": "State the final domain. **Warning:** Always check the natural domain carefully. Missing a zero denominator or a negative radicand is a common pitfall.",
+        "workingOut": "\\( \\text{Final Domain} \\)",
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( x = \\frac{2}{3} \\)",
-      "\\( x \\neq -\\frac{2}{3} \\)",
-      "\\( x \\neq \\frac{2}{3} \\)",
-      "\\( x \\in \\mathbb{R}\\ (\\text{all real } x) \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( x = \\frac{2}{3} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\neq -\\frac{2}{3} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\neq \\frac{2}{3} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\in \\mathbb{R}\\ (\\text{all real } x) \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q10e",
@@ -2110,32 +2824,46 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "2",
     "solutionSteps": [
       {
-        "explanation": "General rule: for an expression under a square root, the radicand must be \\( \\geq 0 \\); for an expression in a denominator, the denominator must be \\( \\neq 0 \\). Combine every such restriction to get the natural domain.",
+        "explanation": "Identify the function type to find the natural domain. Check if the function contains fractions, square roots, or both.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "The quantity under the square root must be non-negative.",
-        "workingOut": "\\( x + 6 \\ge 0 \\)",
+        "explanation": "Apply the analytical rules for natural domains: denominators cannot equal zero, and values inside a square root must be non-negative (greater than or equal to zero).",
+        "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Solve for \\( x \\).",
+        "explanation": "Set up and solve the resulting inequality or equation to find the restrictions on \\( x \\).",
         "workingOut": "\\( x \\ge -6 \\)",
         "graphData": null
       },
       {
-        "explanation": "The natural domain is \\( x \\geq -6 \\).",
-        "workingOut": "",
+        "explanation": "State the final domain. **Warning:** Always check the natural domain carefully. Missing a zero denominator or a negative radicand is a common pitfall.",
+        "workingOut": "\\( \\text{Final Domain} \\)",
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( x \\leq -6 \\)",
-      "\\( x \\geq 6 \\)",
-      "\\( x \\geq -6 \\)",
-      "\\( x > -6 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( x \\leq -6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\geq 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\geq -6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x > -6 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q10f",
@@ -2147,32 +2875,46 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "2",
     "solutionSteps": [
       {
-        "explanation": "General rule: for an expression under a square root, the radicand must be \\( \\geq 0 \\); for an expression in a denominator, the denominator must be \\( \\neq 0 \\). Combine every such restriction to get the natural domain.",
+        "explanation": "Identify the function type to find the natural domain. Check if the function contains fractions, square roots, or both.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "The term inside the radical must be greater than or equal to zero.",
-        "workingOut": "\\( 3x + 2 \\ge 0 \\)",
+        "explanation": "Apply the analytical rules for natural domains: denominators cannot equal zero, and values inside a square root must be non-negative (greater than or equal to zero).",
+        "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Solve the linear inequality.",
+        "explanation": "Set up and solve the resulting inequality or equation to find the restrictions on \\( x \\).",
         "workingOut": "\\(3x \\ge -2 \\implies x \\ge -\\frac{2}{3}\\)",
         "graphData": null
       },
       {
-        "explanation": "The natural domain is \\( x \\geq -\\frac{2}{3} \\).",
-        "workingOut": "",
+        "explanation": "State the final domain. **Warning:** Always check the natural domain carefully. Missing a zero denominator or a negative radicand is a common pitfall.",
+        "workingOut": "\\( \\text{Final Domain} \\)",
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( x \\leq -\\frac{2}{3} \\)",
-      "\\( x \\geq \\frac{2}{3} \\)",
-      "\\( x \\geq -\\frac{2}{3} \\)",
-      "\\( x > -\\frac{2}{3} \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( x \\leq -\\frac{2}{3} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\geq \\frac{2}{3} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\geq -\\frac{2}{3} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x > -\\frac{2}{3} \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q10g",
@@ -2184,32 +2926,46 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "0",
     "solutionSteps": [
       {
-        "explanation": "General rule: for an expression under a square root, the radicand must be \\( \\geq 0 \\); for an expression in a denominator, the denominator must be \\( \\neq 0 \\). Combine every such restriction to get the natural domain.",
+        "explanation": "Identify the function type to find the natural domain. Check if the function contains fractions, square roots, or both.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Ensure the radicand is non-negative.",
-        "workingOut": "\\( 6 - x \\ge 0 \\)",
+        "explanation": "Apply the analytical rules for natural domains: denominators cannot equal zero, and values inside a square root must be non-negative (greater than or equal to zero).",
+        "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Rearrange to solve for \\( x \\).",
+        "explanation": "Set up and solve the resulting inequality or equation to find the restrictions on \\( x \\).",
         "workingOut": "\\( 6 \\ge x \\implies x \\le 6 \\)",
         "graphData": null
       },
       {
-        "explanation": "The natural domain is \\( x \\leq 6 \\).",
-        "workingOut": "",
+        "explanation": "State the final domain. **Warning:** Always check the natural domain carefully. Missing a zero denominator or a negative radicand is a common pitfall.",
+        "workingOut": "\\( \\text{Final Domain} \\)",
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( x \\leq 6 \\)",
-      "\\( x \\leq -6 \\)",
-      "\\( x \\geq 6 \\)",
-      "\\( x < 6 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( x \\leq 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\leq -6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\geq 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x < 6 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q10h",
@@ -2221,32 +2977,46 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "1",
     "solutionSteps": [
       {
-        "explanation": "General rule: for an expression under a square root, the radicand must be \\( \\geq 0 \\); for an expression in a denominator, the denominator must be \\( \\neq 0 \\). Combine every such restriction to get the natural domain.",
+        "explanation": "Identify the function type to find the natural domain. Check if the function contains fractions, square roots, or both.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Set the inside of the square root to be greater than or equal to zero.",
-        "workingOut": "\\( 9 - 3x \\ge 0 \\)",
+        "explanation": "Apply the analytical rules for natural domains: denominators cannot equal zero, and values inside a square root must be non-negative (greater than or equal to zero).",
+        "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Solve for \\( x \\).",
+        "explanation": "Set up and solve the resulting inequality or equation to find the restrictions on \\( x \\).",
         "workingOut": "\\( 9 \\ge 3x \\implies 3 \\ge x \\implies x \\le 3 \\)",
         "graphData": null
       },
       {
-        "explanation": "The natural domain is \\( x \\leq 3 \\).",
-        "workingOut": "",
+        "explanation": "State the final domain. **Warning:** Always check the natural domain carefully. Missing a zero denominator or a negative radicand is a common pitfall.",
+        "workingOut": "\\( \\text{Final Domain} \\)",
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( x \\leq -3 \\)",
-      "\\( x \\leq 3 \\)",
-      "\\( x \\geq 3 \\)",
-      "\\( x < 3 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( x \\leq -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\leq 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\geq 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x < 3 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q10i",
@@ -2258,27 +3028,46 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "1",
     "solutionSteps": [
       {
-        "explanation": "General rule: for an expression under a square root, the radicand must be \\( \\geq 0 \\); for an expression in a denominator, the denominator must be \\( \\neq 0 \\). Combine every such restriction to get the natural domain.",
+        "explanation": "Identify the function type to find the natural domain. Check if the function contains fractions, square roots, or both.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "For a square root in the denominator, the value inside must be strictly positive (since it cannot be negative, and division by zero is undefined).",
-        "workingOut": "x > 0",
+        "explanation": "Apply the analytical rules for natural domains: denominators cannot equal zero, and values inside a square root must be non-negative (greater than or equal to zero).",
+        "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "The natural domain is \\( x > 0 \\).",
+        "explanation": "Set up and solve the resulting inequality or equation to find the restrictions on \\( x \\).",
         "workingOut": "",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final domain. **Warning:** Always check the natural domain carefully. Missing a zero denominator or a negative radicand is a common pitfall.",
+        "workingOut": "\\( \\text{Final Domain} \\)",
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( x > 5 \\)",
-      "\\( x > 0 \\)",
-      "\\( x < 0 \\)",
-      "\\( x \\geq 0 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( x > 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x > 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x < 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\geq 0 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q10j",
@@ -2290,32 +3079,46 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "0",
     "solutionSteps": [
       {
-        "explanation": "General rule: for an expression under a square root, the radicand must be \\( \\geq 0 \\); for an expression in a denominator, the denominator must be \\( \\neq 0 \\). Combine every such restriction to get the natural domain.",
+        "explanation": "Identify the function type to find the natural domain. Check if the function contains fractions, square roots, or both.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "The quantity under the radical in the denominator must be strictly positive.",
-        "workingOut": "x + 3 > 0",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve for \\( x \\).",
-        "workingOut": "x > -3",
-        "graphData": null
-      },
-      {
-        "explanation": "The natural domain is \\( x > -3 \\).",
+        "explanation": "Apply the analytical rules for natural domains: denominators cannot equal zero, and values inside a square root must be non-negative (greater than or equal to zero).",
         "workingOut": "",
+        "graphData": null
+      },
+      {
+        "explanation": "Set up and solve the resulting inequality or equation to find the restrictions on \\( x \\).",
+        "workingOut": "\\\\( x > -3 \\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final domain. **Warning:** Always check the natural domain carefully. Missing a zero denominator or a negative radicand is a common pitfall.",
+        "workingOut": "\\( \\text{Final Domain} \\)",
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( x > -3 \\)",
-      "\\( x > 3 \\)",
-      "\\( x < -3 \\)",
-      "\\( x \\geq -3 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( x > -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x > 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x < -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\geq -3 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q10k",
@@ -2327,32 +3130,46 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "0",
     "solutionSteps": [
       {
-        "explanation": "General rule: for an expression under a square root, the radicand must be \\( \\geq 0 \\); for an expression in a denominator, the denominator must be \\( \\neq 0 \\). Combine every such restriction to get the natural domain.",
+        "explanation": "Identify the function type to find the natural domain. Check if the function contains fractions, square roots, or both.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "The radicand in the denominator must be strictly positive.",
-        "workingOut": "2 - x > 0",
+        "explanation": "Apply the analytical rules for natural domains: denominators cannot equal zero, and values inside a square root must be non-negative (greater than or equal to zero).",
+        "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Rearrange to solve the inequality.",
+        "explanation": "Set up and solve the resulting inequality or equation to find the restrictions on \\( x \\).",
         "workingOut": "\\( 2 > x \\implies x < 2 \\)",
         "graphData": null
       },
       {
-        "explanation": "The natural domain is \\( x < 2 \\).",
-        "workingOut": "",
+        "explanation": "State the final domain. **Warning:** Always check the natural domain carefully. Missing a zero denominator or a negative radicand is a common pitfall.",
+        "workingOut": "\\( \\text{Final Domain} \\)",
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( x < 2 \\)",
-      "\\( x > 2 \\)",
-      "\\( x < -2 \\)",
-      "\\( x \\leq 2 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( x < 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x > 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x < -2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\leq 2 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q10l",
@@ -2364,115 +3181,295 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "1",
     "solutionSteps": [
       {
-        "explanation": "General rule: for an expression under a square root, the radicand must be \\( \\geq 0 \\); for an expression in a denominator, the denominator must be \\( \\neq 0 \\). Combine every such restriction to get the natural domain.",
+        "explanation": "Identify the function type to find the natural domain. Check if the function contains fractions, square roots, or both.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Set the denominator radicand to be strictly greater than zero.",
-        "workingOut": "3x - 4 > 0",
+        "explanation": "Apply the analytical rules for natural domains: denominators cannot equal zero, and values inside a square root must be non-negative (greater than or equal to zero).",
+        "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Solve the inequality.",
+        "explanation": "Set up and solve the resulting inequality or equation to find the restrictions on \\( x \\).",
         "workingOut": "\\(3x > 4 \\implies x > \\frac{4}{3}\\)",
         "graphData": null
       },
       {
-        "explanation": "The natural domain is \\( x > \\frac{4}{3} \\).",
-        "workingOut": "",
+        "explanation": "State the final domain. **Warning:** Always check the natural domain carefully. Missing a zero denominator or a negative radicand is a common pitfall.",
+        "workingOut": "\\( \\text{Final Domain} \\)",
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( x < \\frac{4}{3} \\)",
-      "\\( x > \\frac{4}{3} \\)",
-      "\\( x > -\\frac{4}{3} \\)",
-      "\\( x \\geq \\frac{4}{3} \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( x < \\frac{4}{3} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x > \\frac{4}{3} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x > -\\frac{4}{3} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\geq \\frac{4}{3} \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q11a",
-    "type": "multiple_choice",
+    "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Functions, relations, and graphs",
-    "question": "For the exponential function \\( y = 3^x \\):\n\n(i) Copy and complete the table of values for \\( x = -2, -1, 0, 1, 2 \\).\n(ii) Plot the points and sketch the function.\n(iii) Write down the domain and range.",
-    "a": "0",
-    "solutionSteps": [
+    "question": "For the exponential function \\( y = 3^x \\):",
+    "isManual": false,
+    "requiresManualGrading": true,
+    "subQuestions": [
       {
-        "explanation": "Evaluate \\( y = 3^x \\) for each given \\( x \\) value.",
-        "workingOut": "\\(\\begin{aligned} x=-2 \\implies y &= 3^{-2} = \\frac{1}{9} \\\\ x=-1 \\implies y &= 3^{-1} = \\frac{1}{3} \\\\ x=0 \\implies y &= 3^0 = 1 \\\\ x=1 \\implies y &= 3^1 = 3 \\\\ x=2 \\implies y &= 3^2 = 9 \\end{aligned}\\)",
-        "graphData": null
+        "id": "y11a-3b-q11a-i",
+        "type": "teacher_review",
+        "difficulty": "easy",
+        "timeLimit": 30,
+        "question": "(i) Copy and complete the table of values for \\( x = -2, -1, 0, 1, 2 \\).",
+        "solutionSteps": [
+          {
+            "explanation": "Evaluate \\( y = 3^x \\) for each given \\( x \\) value.",
+            "workingOut": "\\(\\begin{array}{|c|c|c|c|c|c|}\\hline x & -2 & -1 & 0 & 1 & 2 \\\\ \\hline y & \\frac{1}{9} & \\frac{1}{3} & 1 & 3 & 9 \\\\ \\hline \\end{array}\\)\n\n\\(\\begin{aligned} x=-2 &\\implies y = 3^{-2} = \\frac{1}{9} \\\\ x=-1 &\\implies y = 3^{-1} = \\frac{1}{3} \\\\ x=0 &\\implies y = 3^0 = 1 \\\\ x=1 &\\implies y = 3^1 = 3 \\\\ x=2 &\\implies y = 3^2 = 9 \\end{aligned}\\)",
+            "graphData": null
+          }
+        ],
+        "isManual": false,
+        "requiresManualGrading": true
       },
       {
-        "explanation": "Plot these points. Draw a smooth curve passing through them. The curve approaches the negative x-axis asymptotically (y = 0).",
-        "workingOut": "",
-        "graphData": null
+        "id": "y11a-3b-q11a-ii",
+        "type": "graph_sketch",
+        "difficulty": "medium",
+        "timeLimit": 30,
+        "question": "(ii) Plot the points and sketch the function.",
+        "solutionSteps": [
+          {
+            "explanation": "**Step 1: Identify the function and goals**\nThe equation \\( y = 3^x \\) is an exponential function. We need to plot the calculated points from part (i) and sketch its curve.",
+            "workingOut": "",
+            "graphData": null
+          },
+          {
+            "explanation": "**Step 2: Apply the core analytical tool**\nFor an exponential function \\( y = a^x \\) where \\( a > 1 \\), the graph will grow rapidly as \\( x \\) increases and approach a horizontal asymptote as \\( x \\) decreases.",
+            "workingOut": "\\( y = 0 \\text{ is the horizontal asymptote.} \\)",
+            "graphData": null
+          },
+          {
+            "explanation": "**Step 3: Perform calculations and extract features**\nThe y-intercept occurs at \\( x = 0 \\), which gives \\( y = 3^0 = 1 \\). Plot the coordinates \\( (-2, \\frac{1}{9}) \\), \\( (-1, \\frac{1}{3}) \\), \\( (0, 1) \\), \\( (1, 3) \\), and \\( (2, 9) \\).",
+            "workingOut": "",
+            "graphData": null
+          },
+          {
+            "explanation": "**Step 4: Final Answer & Pitfall Warning**\nDraw a smooth curve through the points.\n*Warning: A common pitfall is drawing the curve crossing the x-axis. Remember that \\( 3^x \\) is strictly positive, so the curve approaches the negative x-axis asymptotically (\\( y = 0 \\)) but never touches it.*",
+            "workingOut": "",
+            "graphData": {
+              "jsxGraph": {
+                "width": 400,
+                "height": 400,
+                "boundingbox": [
+                  -3,
+                  10,
+                  3,
+                  -2
+                ],
+                "boardOptions": {
+                  "keepaspectratio": true
+                },
+                "script": "board.suspendUpdate();\nboard.create('axis', [[0, 0], [1, 0]]);\nboard.create('axis', [[0, 0], [0, 1]]);\nboard.create('functiongraph', [function(x){ return Math.pow(3, x); }, -3, 3], {strokeColor: '#007FFF', strokeWidth: 2});\nboard.create('point', [-2, 1/9], {name: '', size: 2, color: 'red'});\nboard.create('point', [-1, 1/3], {name: '', size: 2, color: 'red'});\nboard.create('point', [0, 1], {name: '(0, 1)', size: 2, color: 'red'});\nboard.create('point', [1, 3], {name: '', size: 2, color: 'red'});\nboard.create('point', [2, 9], {name: '', size: 2, color: 'red'});\nboard.unsuspendUpdate();"
+              }
+            }
+          }
+        ],
+        "graphData": null,
+        "isManual": false,
+        "requiresManualGrading": true
       },
       {
-        "explanation": "Identify the domain and range.",
-        "workingOut": "\\(\\text{Domain: all real } x, \\quad \\text{Range: } y > 0\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Recognising the general shape of this function family (linear, quadratic, exponential, or cubic) helps you predict the domain and range quickly, even before plotting every point.",
-        "workingOut": "",
-        "graphData": null
-      },
-      {
-        "explanation": "Reading the extent of the curve along each axis gives \\( \\text{Domain: all real } x,\\ \\text{Range: } y > 0 \\).",
-        "workingOut": "",
-        "graphData": null
+        "id": "y11a-3b-q11a-iii",
+        "type": "multiple_choice",
+        "difficulty": "medium",
+        "timeLimit": 30,
+        "question": "(iii) State the domain and range.",
+        "options": [
+          {
+            "text": "\\( \\text{Domain: all real } x,\\ \\text{Range: } y > 0 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( \\text{Domain: all real } x,\\ \\text{Range: all real } y \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( \\text{Domain: all real } x,\\ \\text{Range: } y \\geq 0 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( \\text{Domain: } x > 0,\\ \\text{Range: all real } y \\)",
+            "imageUrl": ""
+          }
+        ],
+        "a": "0",
+        "solutionSteps": [
+          {
+            "explanation": "**Step 1: Identify the function and goals**\nThe given equation \\( y = 3^x \\) is an exponential function. We need to determine its natural domain (all valid x-values) and range (all possible y-values).",
+            "workingOut": "",
+            "graphData": null
+          },
+          {
+            "explanation": "**Step 2: Apply the core analytical tool**\nFor the domain, check if there are any mathematical restrictions on \\( x \\) (e.g., denominators or square roots). For the range, consider the behavior of the exponential curve.",
+            "workingOut": "",
+            "graphData": null
+          },
+          {
+            "explanation": "**Step 3: Perform calculations and extract features**\nSince \\( x \\) is in the exponent, any real number can be substituted without yielding undefined results, so the domain is unrestricted. For the range, \\( 3^x \\) is strictly positive for any real \\( x \\). It asymptotically approaches \\( y = 0 \\) as \\( x \\to -\\infty \\), but never reaches it.",
+            "workingOut": "",
+            "graphData": null
+          },
+          {
+            "explanation": "**Step 4: Final Answer & Pitfall Warning**\nBased on our analysis, the domain is all real numbers, and the range is all positive real numbers.\n*Warning: A common pitfall is forgetting that an exponential function cannot equal zero. The range is strictly \\( y > 0 \\), not \\( y \\ge 0 \\).*.",
+            "workingOut": "\\( \\text{Domain: all real } x, \\quad \\text{Range: } y > 0 \\)",
+            "graphData": null
+          }
+        ],
+        "isManual": false,
+        "requiresManualGrading": false
       }
-    ],
-    "opts": [
-      "\\( \\text{Domain: all real } x,\\ \\text{Range: } y > 0 \\)",
-      "\\( \\text{Domain: all real } x,\\ \\text{Range: all real } y \\)",
-      "\\( \\text{Domain: all real } x,\\ \\text{Range: } y \\geq 0 \\)",
-      "\\( \\text{Domain: } x > 0,\\ \\text{Range: all real } y \\)"
     ]
   },
   {
     "id": "y11a-3b-q11b",
-    "type": "multiple_choice",
+    "type": "teacher_review",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
-    "question": "For the cubic function \\( y = \\frac{1}{4}(3x - x^3) \\):\n\n(i) Copy and complete the table of values for \\( x = -3, -2, -1, 0, 1, 2, 3 \\).\n(ii) Plot the points and sketch the function.\n(iii) State the domain and range of this function.",
-    "a": "0",
-    "solutionSteps": [
+    "question": "For the cubic function \\( y = \\frac{1}{4}(3x - x^3) \\):",
+    "isManual": false,
+    "requiresManualGrading": true,
+    "subQuestions": [
       {
-        "explanation": "Substitute \\( x \\) values into the function expression.",
-        "workingOut": "\\(\\begin{aligned} x=-3 \\implies y &= 0.25 \\times (3(-3) - (-3)^3) = 0.25 \\times (-9 + 27) = 4.5 \\\\ x=-2 \\implies y &= 0.25 \\times (3(-2) - (-2)^3) = 0.25 \\times (-6 + 8) = 0.5 \\\\ x=-1 \\implies y &= 0.25 \\times (3(-1) - (-1)^3) = 0.25 \\times (-3 + 1) = -0.5 \\\\ x=0 \\implies y &= 0.25 \\times (0) = 0 \\\\ x=1 \\implies y &= 0.25 \\times (3(1) - 1^3) = 0.25 \\times (3 - 1) = 0.5 \\\\ x=2 \\implies y &= 0.25 \\times (3(2) - 2^3) = 0.25 \\times (6 - 8) = -0.5 \\\\ x=3 \\implies y &= 0.25 \\times (3(3) - 3^3) = 0.25 \\times (9 - 27) = -4.5 \\end{aligned}\\)",
-        "graphData": null
+        "id": "y11a-3b-q11b-i",
+        "type": "teacher_review",
+        "difficulty": "easy",
+        "timeLimit": 30,
+        "question": "(i) Copy and complete the table of values for \\( x = -3, -2, -1, 0, 1, 2, 3 \\).",
+        "solutionSteps": [
+          {
+            "explanation": "Substitute \\( x \\) values into the function expression.",
+            "workingOut": "\\(\\begin{array}{|c|c|c|c|c|c|c|c|}\\hline x & -3 & -2 & -1 & 0 & 1 & 2 & 3 \\\\ \\hline y & 4.5 & 0.5 & -0.5 & 0 & 0.5 & -0.5 & -4.5 \\\\ \\hline \\end{array}\\)\n\n\\(\\begin{aligned} x=-3 &\\implies y = \\frac{1}{4}(3(-3) - (-3)^3) = 4.5 \\\\ x=-2 &\\implies y = \\frac{1}{4}(3(-2) - (-2)^3) = 0.5 \\\\ x=-1 &\\implies y = \\frac{1}{4}(3(-1) - (-1)^3) = -0.5 \\\\ x=0 &\\implies y = 0 \\\\ x=1 &\\implies y = 0.5 \\\\ x=2 &\\implies y = -0.5 \\\\ x=3 &\\implies y = -4.5 \\end{aligned}\\)",
+            "graphData": null
+          }
+        ],
+        "isManual": false,
+        "requiresManualGrading": true
       },
       {
-        "explanation": "Plot the coordinates and draw a smooth curve. It has turning points between \\( x = -1 \\) and \\( x = 1 \\).",
-        "workingOut": "",
-        "graphData": null
+        "id": "y11a-3b-q11b-ii",
+        "type": "graph_sketch",
+        "difficulty": "medium",
+        "timeLimit": 30,
+        "question": "(ii) Plot the points and sketch the function.",
+        "solutionSteps": [
+          {
+            "explanation": "**Step 1: Identify the function and goals**\nThe equation \\( y = \\frac{1}{4}(3x - x^3) \\) is a cubic polynomial. We need to plot the calculated points from part (i) and sketch the shape of the cubic curve.",
+            "workingOut": "",
+            "graphData": null
+          },
+          {
+            "explanation": "**Step 2: Apply the core analytical tool**\nSince the highest power is 3 and its coefficient is negative (\\( -\\frac{1}{4}x^3 \\)), the curve will start in the top-left quadrant and end in the bottom-right quadrant.",
+            "workingOut": "",
+            "graphData": null
+          },
+          {
+            "explanation": "**Step 3: Perform calculations and extract features**\nPlot the points from the table: \\( (-3, 4.5), (-2, 0.5), (-1, -0.5), (0, 0), (1, 0.5), (2, -0.5) \\), and \\( (3, -4.5) \\). Note the turning points (local minimum and maximum) around \\( x = -1 \\) and \\( x = 1 \\).",
+            "workingOut": "",
+            "graphData": null
+          },
+          {
+            "explanation": "**Step 4: Final Answer & Pitfall Warning**\nDraw a smooth cubic curve passing through all points.\n*Warning: Do not connect the points with straight lines. Polynomial functions must be sketched as continuous, smooth curves.*",
+            "workingOut": "",
+            "graphData": {
+              "jsxGraph": {
+                "width": 400,
+                "height": 400,
+                "boundingbox": [
+                  -4,
+                  5,
+                  4,
+                  -5
+                ],
+                "boardOptions": {
+                  "keepaspectratio": true
+                },
+                "script": "board.suspendUpdate();\nboard.create('axis', [[0, 0], [1, 0]]);\nboard.create('axis', [[0, 0], [0, 1]]);\nboard.create('functiongraph', [function(x){ return 0.25 * (3*x - Math.pow(x, 3)); }, -4, 4], {strokeColor: '#007FFF', strokeWidth: 2});\nboard.create('point', [-3, 4.5], {name: '', size: 2, color: 'red'});\nboard.create('point', [-2, 0.5], {name: '', size: 2, color: 'red'});\nboard.create('point', [-1, -0.5], {name: 'Min (-1, -0.5)', size: 2, color: 'red'});\nboard.create('point', [0, 0], {name: 'Origin', size: 2, color: 'red'});\nboard.create('point', [1, 0.5], {name: 'Max (1, 0.5)', size: 2, color: 'red'});\nboard.create('point', [2, -0.5], {name: '', size: 2, color: 'red'});\nboard.create('point', [3, -4.5], {name: '', size: 2, color: 'red'});\nboard.unsuspendUpdate();"
+              }
+            }
+          }
+        ],
+        "graphData": null,
+        "isManual": false,
+        "requiresManualGrading": true
       },
       {
-        "explanation": "Since it is a cubic polynomial, the domain and range are both unrestricted.",
-        "workingOut": "\\(\\text{Domain: all real } x, \\quad \\text{Range: all real } y\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Recognising the general shape of this function family (linear, quadratic, exponential, or cubic) helps you predict the domain and range quickly, even before plotting every point.",
-        "workingOut": "",
-        "graphData": null
-      },
-      {
-        "explanation": "Reading the extent of the curve along each axis gives \\( \\text{Domain: all real } x,\\ \\text{Range: all real } y \\).",
-        "workingOut": "",
-        "graphData": null
+        "id": "y11a-3b-q11b-iii",
+        "type": "multiple_choice",
+        "difficulty": "hard",
+        "timeLimit": 30,
+        "question": "(iii) State the domain and range of this function.",
+        "options": [
+          {
+            "text": "\\( \\text{Domain: all real } x,\\ \\text{Range: all real } y \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( \\text{Domain: all real } x,\\ \\text{Range: } y \\geq 0 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( \\text{Domain: all real } x,\\ \\text{Range: } y \\neq 0 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( \\text{Domain: } x \\geq 0,\\ \\text{Range: all real } y \\)",
+            "imageUrl": ""
+          }
+        ],
+        "a": "0",
+        "solutionSteps": [
+          {
+            "explanation": "**Step 1: Identify the function and goals**\nThe given equation \\( y = \\frac{1}{4}(3x - x^3) \\) is a cubic polynomial. We need to determine its domain and range.",
+            "workingOut": "",
+            "graphData": null
+          },
+          {
+            "explanation": "**Step 2: Apply the core analytical tool**\nFor polynomials, we analyze the natural domain (checking for undefined operations like dividing by zero) and the end behavior of the curve to determine the range.",
+            "workingOut": "",
+            "graphData": null
+          },
+          {
+            "explanation": "**Step 3: Perform calculations and extract features**\nA cubic function has no variables in a denominator and no square roots, so there are no restrictions on \\( x \\). As \\( x \\to \\infty \\), the dominant term \\( -x^3 \\) dominates and \\( y \\to -\\infty \\). As \\( x \\to -\\infty \\), \\( y \\to \\infty \\). Thus, the graph extends infinitely in both vertical directions.",
+            "workingOut": "",
+            "graphData": null
+          },
+          {
+            "explanation": "**Step 4: Final Answer & Pitfall Warning**\nSince there are no restrictions horizontally or vertically, both the domain and range are all real numbers.\n*Warning: Unlike quadratics (parabolas) which always have a minimum or maximum value and a restricted range, odd-degree polynomials like cubics typically have a range of all real numbers.*",
+            "workingOut": "\\( \\text{Domain: all real } x, \\quad \\text{Range: all real } y \\)",
+            "graphData": null
+          }
+        ],
+        "isManual": false,
+        "requiresManualGrading": false
       }
-    ],
-    "opts": [
-      "\\( \\text{Domain: all real } x,\\ \\text{Range: all real } y \\)",
-      "\\( \\text{Domain: all real } x,\\ \\text{Range: } y \\geq 0 \\)",
-      "\\( \\text{Domain: all real } x,\\ \\text{Range: } y \\neq 0 \\)",
-      "\\( \\text{Domain: } x \\geq 0,\\ \\text{Range: all real } y \\)"
     ]
   },
   {
@@ -2488,12 +3485,6 @@ export const Y11_CH3B_QUESTIONS = [
         "type": "multiple_choice",
         "question": "a) What is the natural domain of \\( R(x) \\)?",
         "a": "1",
-        "opts": [
-          "\\( x \\geq 5 \\)",
-          "\\( x \\geq 0 \\)",
-          "\\( x \\leq 0 \\)",
-          "\\( x > 0 \\)"
-        ],
         "solutionSteps": [
           {
             "explanation": "General rule: for an expression under a square root, the radicand must be \\( \\geq 0 \\); for an expression in a denominator, the denominator must be \\( \\neq 0 \\). Combine every such restriction to get the natural domain.",
@@ -2505,31 +3496,60 @@ export const Y11_CH3B_QUESTIONS = [
             "workingOut": "",
             "graphData": null
           }
-        ]
+        ],
+        "options": [
+          {
+            "text": "\\( x \\geq 5 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( x \\geq 0 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( x \\leq 0 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( x > 0 \\)",
+            "imageUrl": ""
+          }
+        ],
+        "isManual": false,
+        "requiresManualGrading": false
       },
       {
         "id": "y11a-3b-q12b",
         "type": "multiple_choice",
-        "question": "b) Copy and complete the table of values (round to 1 decimal place where necessary) for \\( x = 0, 0.5, 1, 2, 3, 4.5, 8 \\).",
+        "question": "b) Copy and complete the table of values (round to 1 decimal place where necessary) for \\( R(x) = \\sqrt{2x} \\).\n\n\\(\\begin{array}{|c|c|c|c|c|c|c|c|}\\hline x & 0 & 0.5 & 1 & 2 & 3 & 4.5 & 8 \\\\ \\hline y & a & b & c & d & e & f & g \\\\ \\hline \\end{array}\\)",
         "a": "0",
         "solutionSteps": [
           {
-            "explanation": "Comparing the table of values to the sketch confirms the shape and direction of the curve described in the answer.",
-            "workingOut": "",
-            "graphData": null
-          },
-          {
-            "explanation": "Evaluating \\( R(x)=\\sqrt{2x} \\) at each \\( x \\)-value gives the table \\( (0,0),\\ (0.5,1),\\ (1,1.4),\\ (2,2),\\ (3,2.4),\\ (4.5,3),\\ (8,4) \\).",
-            "workingOut": "",
+            "explanation": "Evaluate \\( R(x) = \\sqrt{2x} \\) at each given \\( x \\)-value.",
+            "workingOut": "\\(\\begin{aligned} a & = R(0) = \\sqrt{0} = 0 \\\\ b & = R(0.5) = \\sqrt{1} = 1 \\\\ c & = R(1) = \\sqrt{2} \\approx 1.4 \\\\ d & = R(2) = \\sqrt{4} = 2 \\\\ e & = R(3) = \\sqrt{6} \\approx 2.4 \\\\ f & = R(4.5) = \\sqrt{9} = 3 \\\\ g & = R(8) = \\sqrt{16} = 4 \\end{aligned}\\)",
             "graphData": null
           }
         ],
-        "opts": [
-          "\\( (0,0),\\ (0.5,1),\\ (1,1.4),\\ (2,2),\\ (3,2.4),\\ (4.5,3),\\ (8,4) \\)",
-          "\\( (0,0),\\ (0.5,1),\\ (1,1.4),\\ (2,2),\\ (3,2.4),\\ (4.5,3),\\ (8,4.5) \\)",
-          "\\( (0,0),\\ (0.5,1),\\ (1,1.4),\\ (2,2),\\ (3,2.2),\\ (4.5,3),\\ (8,4) \\)",
-          "\\( (0,0),\\ (0.5,0.7),\\ (1,1),\\ (2,1.4),\\ (3,1.7),\\ (4.5,2.1),\\ (8,2.8) \\)"
-        ]
+        "options": [
+          {
+            "text": "\\( a=0,\\ b=1,\\ c=1.4,\\ d=2,\\ e=2.4,\\ f=3,\\ g=4 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( a=0,\\ b=1,\\ c=1.4,\\ d=2,\\ e=2.4,\\ f=3,\\ g=4.5 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( a=0,\\ b=1,\\ c=1.4,\\ d=2,\\ e=2.2,\\ f=3,\\ g=4 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( a=0,\\ b=0.7,\\ c=1,\\ d=1.4,\\ e=1.7,\\ f=2.1,\\ g=2.8 \\)",
+            "imageUrl": ""
+          }
+        ],
+        "isManual": false,
+        "requiresManualGrading": false
       },
       {
         "id": "y11a-3b-q12c",
@@ -2545,47 +3565,46 @@ export const Y11_CH3B_QUESTIONS = [
           {
             "explanation": "Squaring \\( y=\\sqrt{2x} \\) gives \\( y^2=2x \\) with \\( y \\geq 0 \\), which is the upper half of a rightward-opening parabola: The curve is the upper half of a parabola opening to the right.",
             "workingOut": "",
-            "graphData": null
+            "graphData": {
+              "jsxGraph": {
+                "width": 400,
+                "height": 400,
+                "boundingbox": [
+                  -1,
+                  5,
+                  9,
+                  -1
+                ],
+                "boardOptions": {
+                  "keepaspectratio": true
+                },
+                "script": "board.suspendUpdate();\nboard.create('axis', [[0, 0], [1, 0]]);\nboard.create('axis', [[0, 0], [0, 1]]);\nboard.create('functiongraph', [function(x){ return Math.sqrt(2 * x); }, 0, 8], {strokeColor: '#007FFF', strokeWidth: 2});\nboard.create('point', [0, 0], {name: 'Origin (0,0)', size: 2, color: 'red'});\nboard.create('point', [0.5, 1], {name: '(0.5, 1)', size: 2, color: 'red'});\nboard.create('point', [2, 2], {name: '(2, 2)', size: 2, color: 'red'});\nboard.create('point', [4.5, 3], {name: '(4.5, 3)', size: 2, color: 'red'});\nboard.create('point', [8, 4], {name: '(8, 4)', size: 2, color: 'red'});\nboard.unsuspendUpdate();"
+              }
+            }
           }
         ],
-        "opts": [
-          "The curve is the upper half of a parabola opening to the right.",
-          "The curve is a semicircle centred at the origin.",
-          "The curve is a full parabola opening upwards.",
-          "The curve is one branch of a hyperbola."
-        ]
-      }
-    ],
-    "solutionSteps": [
-      {
-        "explanation": "For part a, find when the inside of the square root is non-negative.",
-        "workingOut": "\\( 2x \\ge 0 \\implies x \\ge 0 \\)",
-        "graphData": null
-      },
-      {
-        "explanation": "For part b, calculate \\( R(x) = \\sqrt{2x} \\) for each input.",
-        "workingOut": "\\(\\begin{aligned} R(0) &= \\sqrt{0} = 0 \\\\ R(0.5) &= \\sqrt{1} = 1 \\\\ R(1) &= \\sqrt{2} \\approx 1.4 \\\\ R(2) &= \\sqrt{4} = 2 \\\\ R(3) &= \\sqrt{6} \\approx 2.4 \\\\ R(4.5) &= \\sqrt{9} = 3 \\\\ R(8) &= \\sqrt{16} = 4 \\end{aligned}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "For part c, plotting \\( y = \\sqrt{2x} \\) and squaring both sides gives \\( y^2 = 2x \\), which is a horizontal parabola.",
-        "workingOut": "\\(y = \\sqrt{2x} \\implies y^2 = 2x \\quad (y \\ge 0)\\)",
-        "graphData": null
-      }
-    ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 400,
-        "height": 240,
-        "boundingbox": [
-          -1,
-          5,
-          9,
-          -1
+        "options": [
+          {
+            "text": "The curve is the upper half of a parabola opening to the right.",
+            "imageUrl": ""
+          },
+          {
+            "text": "The curve is a semicircle centred at the origin.",
+            "imageUrl": ""
+          },
+          {
+            "text": "The curve is a full parabola opening upwards.",
+            "imageUrl": ""
+          },
+          {
+            "text": "The curve is one branch of a hyperbola.",
+            "imageUrl": ""
+          }
         ],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-0.5,0], [8.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-0.5], [0,4.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('functiongraph', [function(x){ return Math.sqrt(2*x); }, 0, 8.5], {strokeColor: '#4f46e5', strokeWidth: 2, firstArrow: false});\nboard.create('point', [0.5, 1], {size: 2, color: 'black'});\nboard.create('point', [2, 2], {size: 2, color: 'black'});\nboard.create('point', [4.5, 3], {size: 2, color: 'black'});\nboard.create('point', [8, 4], {size: 2, color: 'black'});\nboard.unsuspendUpdate();"
+        "isManual": false,
+        "requiresManualGrading": false
       }
-    }
+    ]
   },
   {
     "id": "y11a-3b-q13",
@@ -2600,12 +3619,6 @@ export const Y11_CH3B_QUESTIONS = [
         "type": "multiple_choice",
         "question": "a) What is the natural domain of \\( h(x) \\)?",
         "a": "2",
-        "opts": [
-          "\\( x \\neq 5 \\)",
-          "\\( x = 0 \\)",
-          "\\( x \\neq 0 \\)",
-          "\\( x \\in \\mathbb{R}\\ (\\text{all real } x) \\)"
-        ],
         "solutionSteps": [
           {
             "explanation": "General rule: for an expression under a square root, the radicand must be \\( \\geq 0 \\); for an expression in a denominator, the denominator must be \\( \\neq 0 \\). Combine every such restriction to get the natural domain.",
@@ -2617,31 +3630,60 @@ export const Y11_CH3B_QUESTIONS = [
             "workingOut": "",
             "graphData": null
           }
-        ]
+        ],
+        "options": [
+          {
+            "text": "\\( x \\neq 5 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( x = 0 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( x \\neq 0 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( x \\in \\mathbb{R}\\ (\\text{all real } x) \\)",
+            "imageUrl": ""
+          }
+        ],
+        "isManual": false,
+        "requiresManualGrading": false
       },
       {
         "id": "y11a-3b-q13b",
         "type": "multiple_choice",
-        "question": "b) Copy and complete the table of values (use '*' or 'undefined' for \\( x = 0 \\)) for \\( x = -6, -3, -1.5, -1, 0, 1, 1.5, 3, 6 \\). Explain why \\( x = 0 \\) is undefined.",
+        "question": "b) Copy and complete the table of values (use '*' or 'undefined' for \\( x = 0 \\)) for \\( h(x) = \\frac{3}{x} \\). Explain why \\( x = 0 \\) is undefined.\n\n\\(\\begin{array}{|c|c|c|c|c|c|c|c|c|c|}\\hline x & -6 & -3 & -1.5 & -1 & 0 & 1 & 1.5 & 3 & 6 \\\\ \\hline y & a & b & c & d & e & f & g & h & i \\\\ \\hline \\end{array}\\)",
         "a": "1",
         "solutionSteps": [
           {
-            "explanation": "Comparing the table of values to the sketch confirms the shape and direction of the curve described in the answer.",
-            "workingOut": "",
-            "graphData": null
-          },
-          {
-            "explanation": "Evaluating \\( h(x)=\\frac{3}{x} \\) at each \\( x \\)-value (undefined at \\( x=0 \\), since division by zero is undefined) gives \\( (-6,-0.5),\\ (-3,-1),\\ (-1.5,-2),\\ (-1,-3),\\ (0,\\text{undefined}),\\ (1,3),\\ (1.5,2),\\ (3,1),\\ (6,0.5) \\).",
-            "workingOut": "",
+            "explanation": "Evaluate \\( h(x) = \\frac{3}{x} \\) at each given \\( x \\)-value. Remember that dividing by zero is undefined.",
+            "workingOut": "\\(\\begin{aligned} a & = \\frac{3}{-6} = -0.5 \\\\ b & = \\frac{3}{-3} = -1 \\\\ c & = \\frac{3}{-1.5} = -2 \\\\ d & = \\frac{3}{-1} = -3 \\\\ e & = \\frac{3}{0} \\implies \\text{undefined} \\\\ f & = \\frac{3}{1} = 3 \\\\ g & = \\frac{3}{1.5} = 2 \\\\ h & = \\frac{3}{3} = 1 \\\\ i & = \\frac{3}{6} = 0.5 \\end{aligned}\\)",
             "graphData": null
           }
         ],
-        "opts": [
-          "\\( (-6,-0.5),\\ (-3,-1),\\ (-1.5,-2),\\ (-1,-3),\\ (0,\\text{undefined}),\\ (1,3),\\ (1.5,1.5),\\ (3,1),\\ (6,0.5) \\)",
-          "\\( (-6,-0.5),\\ (-3,-1),\\ (-1.5,-2),\\ (-1,-3),\\ (0,\\text{undefined}),\\ (1,3),\\ (1.5,2),\\ (3,1),\\ (6,0.5) \\)",
-          "\\( (-6,0.5),\\ (-3,1),\\ (-1.5,2),\\ (-1,3),\\ (0,\\text{undefined}),\\ (1,-3),\\ (1.5,-2),\\ (3,-1),\\ (6,-0.5) \\)",
-          "\\( (-6,-0.5),\\ (-3,-1),\\ (-1.5,-2),\\ (-1,-3),\\ (0,0),\\ (1,3),\\ (1.5,2),\\ (3,1),\\ (6,0.5) \\)"
-        ]
+        "options": [
+          {
+            "text": "\\( a=-0.5,\\ b=-1,\\ c=-2,\\ d=-3,\\ e=\\text{undefined},\\ f=3,\\ g=1.5,\\ h=1,\\ i=0.5 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( a=-0.5,\\ b=-1,\\ c=-2,\\ d=-3,\\ e=\\text{undefined},\\ f=3,\\ g=2,\\ h=1,\\ i=0.5 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( a=0.5,\\ b=1,\\ c=2,\\ d=3,\\ e=\\text{undefined},\\ f=-3,\\ g=-2,\\ h=-1,\\ i=-0.5 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( a=-0.5,\\ b=-1,\\ c=-2,\\ d=-3,\\ e=0,\\ f=3,\\ g=2,\\ h=1,\\ i=0.5 \\)",
+            "imageUrl": ""
+          }
+        ],
+        "isManual": false,
+        "requiresManualGrading": false
       },
       {
         "id": "y11a-3b-q13c",
@@ -2657,47 +3699,43 @@ export const Y11_CH3B_QUESTIONS = [
           {
             "explanation": "As \\( x \\to 0 \\), \\( y \\to \\pm\\infty \\), and as \\( x \\to \\pm\\infty \\), \\( y \\to 0 \\): The curve is a rectangular hyperbola with asymptotes along the \\( x \\)-axis and \\( y \\)-axis.",
             "workingOut": "",
-            "graphData": null
+            "graphData": {
+              "jsxGraph": {
+                "width": 400,
+                "height": 229,
+                "boundingbox": [
+                  -7,
+                  4,
+                  7,
+                  -4
+                ],
+                "script": "board.suspendUpdate();\nboard.create('arrow', [[-6.5,0], [6.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3.5], [0,3.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('functiongraph', [function(x){ return 3/x; }, 0.1, 6.5], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.create('functiongraph', [function(x){ return 3/x; }, -6.5, -0.1], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.unsuspendUpdate();"
+              }
+            }
           }
         ],
-        "opts": [
-          "The curve is a rectangular hyperbola with asymptotes along the \\( x \\)-axis and \\( y \\)-axis.",
-          "The curve is a full circle centred at the origin.",
-          "The curve is a parabola with vertex at the origin.",
-          "The curve is a straight line through the origin."
-        ]
-      }
-    ],
-    "solutionSteps": [
-      {
-        "explanation": "For part a, find when the denominator is zero.",
-        "workingOut": "\\( x \\neq 0 \\)",
-        "graphData": null
-      },
-      {
-        "explanation": "For part b, calculate \\( h(x) = \\frac{3}{x} \\) for each input value.",
-        "workingOut": "\\(\\begin{aligned} h(-6) &= -0.5, \\quad h(-3) = -1, \\quad h(-1.5) = -2, \\quad h(-1) = -3 \\\\ h(0) &\\rightarrow \\text{division by zero } \\implies \\text{undefined} \\\\ h(1) &= 3, \\quad h(1.5) = 2, \\quad h(3) = 1, \\quad h(6) = 0.5 \\end{aligned}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "For part c, describe the hyperbola shape. As \\( x \\to 0 \\), \\( y \\to \\pm\\infty \\). As \\( x \\to \\pm\\infty \\), \\( y \\to 0 \\).",
-        "workingOut": "",
-        "graphData": null
-      }
-    ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 400,
-        "height": 229,
-        "boundingbox": [
-          -7,
-          4,
-          7,
-          -4
+        "options": [
+          {
+            "text": "The curve is a rectangular hyperbola with asymptotes along the \\( x \\)-axis and \\( y \\)-axis.",
+            "imageUrl": ""
+          },
+          {
+            "text": "The curve is a full circle centred at the origin.",
+            "imageUrl": ""
+          },
+          {
+            "text": "The curve is a parabola with vertex at the origin.",
+            "imageUrl": ""
+          },
+          {
+            "text": "The curve is a straight line through the origin.",
+            "imageUrl": ""
+          }
         ],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-6.5,0], [6.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3.5], [0,3.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('functiongraph', [function(x){ return 3/x; }, 0.1, 6.5], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.create('functiongraph', [function(x){ return 3/x; }, -6.5, -0.1], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.unsuspendUpdate();"
+        "isManual": false,
+        "requiresManualGrading": false
       }
-    }
+    ]
   },
   {
     "id": "y11a-3b-q14",
@@ -2712,76 +3750,132 @@ export const Y11_CH3B_QUESTIONS = [
         "type": "multiple_choice",
         "question": "a) Write an expression for the length of the opposite side.",
         "a": "2",
-        "opts": [
-          "\\( 24 - x \\)",
-          "\\( 12 - x \\)",
-          "\\( x \\)",
-          "\\( 2x \\)"
-        ],
         "solutionSteps": [
           {
             "explanation": "Opposite sides of a rectangle are always equal in length, so the opposite side is also \\( x \\).",
             "workingOut": "",
             "graphData": null
           }
-        ]
+        ],
+        "options": [
+          {
+            "text": "\\( 24 - x \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( 12 - x \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( x \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( 2x \\)",
+            "imageUrl": ""
+          }
+        ],
+        "isManual": false,
+        "requiresManualGrading": false
       },
       {
         "id": "y11a-3b-q14b",
         "type": "multiple_choice",
         "question": "b) Write an expression for the length of each of the remaining sides in terms of \\( x \\).",
         "a": "2",
-        "opts": [
-          "\\( 24 - x \\)",
-          "\\( x \\)",
-          "\\( 12 - x \\)",
-          "\\( 12 - 2x \\)"
-        ],
         "solutionSteps": [
           {
             "explanation": "Half the perimeter (\\(12\\text{ cm}\\)) is shared between one pair of adjacent sides, so the remaining side is \\( 12 - x \\).",
             "workingOut": "",
             "graphData": null
           }
-        ]
+        ],
+        "options": [
+          {
+            "text": "\\( 24 - x \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( x \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( 12 - x \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( 12 - 2x \\)",
+            "imageUrl": ""
+          }
+        ],
+        "isManual": false,
+        "requiresManualGrading": false
       },
       {
         "id": "y11a-3b-q14c",
         "type": "multiple_choice",
         "question": "c) Express the area \\( A \\) of the rectangle as a function of \\( x \\).",
         "a": "2",
-        "opts": [
-          "\\( x^2(12 - x) \\)",
-          "\\( 2x(12 - x) \\)",
-          "\\( x(12 - x) \\)",
-          "\\( x + (12 - x) \\)"
-        ],
         "solutionSteps": [
           {
             "explanation": "Area \\( = \\) length \\( \\times \\) width \\( = x(12-x) \\).",
             "workingOut": "",
             "graphData": null
           }
-        ]
+        ],
+        "options": [
+          {
+            "text": "\\( x^2(12 - x) \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( 2x(12 - x) \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( x(12 - x) \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( x + (12 - x) \\)",
+            "imageUrl": ""
+          }
+        ],
+        "isManual": false,
+        "requiresManualGrading": false
       },
       {
         "id": "y11a-3b-q14d",
         "type": "multiple_choice",
         "question": "d) Using the fact that physical lengths must be positive, state the domain of \\( A \\).",
         "a": "0",
-        "opts": [
-          "\\( 0 < x < 12 \\)",
-          "\\( x > 0 \\)",
-          "\\( 0 \\leq x \\leq 12 \\)",
-          "\\( 0 < x < 24 \\)"
-        ],
         "solutionSteps": [
           {
             "explanation": "Both side lengths \\( x \\) and \\( 12-x \\) must be strictly positive, giving \\( 0 < x < 12 \\).",
             "workingOut": "",
             "graphData": null
           }
-        ]
+        ],
+        "options": [
+          {
+            "text": "\\( 0 < x < 12 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( x > 0 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( 0 \\leq x \\leq 12 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( 0 < x < 24 \\)",
+            "imageUrl": ""
+          }
+        ],
+        "isManual": false,
+        "requiresManualGrading": false
       },
       {
         "id": "y11a-3b-q14e",
@@ -2790,58 +3884,43 @@ export const Y11_CH3B_QUESTIONS = [
         "a": "Parabola opening downwards with x-intercepts at (0, 0) and (12, 0), and vertex (maximum area) at (6, 36).",
         "solutionSteps": [
           {
-            "explanation": "Since A(x) = 12x - x^2 is a downward-opening parabola, its maximum value occurs exactly at the vertex, halfway between the two x-intercepts (x = 0 and x = 12).",
+            "explanation": "We need to sketch the quadratic function \\( A(x) = 12x - x^2 \\) over the restricted domain \\( 0 < x < 12 \\).",
             "workingOut": "",
             "graphData": null
           },
           {
-            "explanation": "The roots are at x = 0 and x = 12, and the vertex (maximum area) is at the midpoint x = 6.",
-            "workingOut": "\\( A(6) = 6(12-6) = 36 \\)",
+            "explanation": "First, find the key features: the \\( x \\)-intercepts and the vertex (turning point).\nThe \\( x \\)-intercepts occur when \\( A(x) = 0 \\).\nThe vertex is exactly halfway between the intercepts.",
+            "workingOut": "\\(\\begin{aligned} x(12-x) & = 0 \\\\ x & = 0 \\text{ or } x = 12 \\end{aligned}\\)\n\n\\(\\begin{aligned} x_{\\text{vertex}} & = \\frac{0 + 12}{2} = 6 \\\\ y_{\\text{vertex}} & = A(6) = 6(12-6) = 36 \\end{aligned}\\)",
             "graphData": null
+          },
+          {
+            "explanation": "Plot the intercepts \\( (0,0) \\) and \\( (12,0) \\) as **open circles**, because the domain is strictly \\( 0 < x < 12 \\). Plot the vertex \\( (6,36) \\) and draw a smooth, downward-opening parabola connecting them.",
+            "workingOut": "",
+            "graphData": null
+          },
+          {
+            "explanation": "The graph is an inverted parabola representing the area. Notice that the curve only exists for positive area values.\n\n**Pitfall**: Do not draw arrows at the ends of the curve or extend it below the \\( x \\)-axis. Physical dimensions (length and area) cannot be negative or zero in this context.",
+            "workingOut": "",
+            "graphData": {
+              "jsxGraph": {
+                "width": 400,
+                "height": 380,
+                "boundingbox": [
+                  -2,
+                  45,
+                  14,
+                  -5
+                ],
+                "boardOptions": {
+                  "keepaspectratio": false
+                },
+                "script": "board.suspendUpdate();\nboard.create('arrow', [[-1,0], [13,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3], [0,42]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [-0.4, 40, 'A'], {fontSize: 14});\nboard.create('functiongraph', [function(x){ return 12*x - x*x; }, 0, 12], {strokeColor: '#007FFF', strokeWidth: 2, firstArrow: false, lastArrow: false});\nboard.create('point', [6, 36], {name: '(6,36)', size: 3, color: 'red', label: {autoPosition: false, offset: [0, 10]}});\nboard.create('point', [0, 0], {name: '(0,0)', size: 3, face: 'o', color: '#007FFF', fixed: true, strokeWidth: 2, fillColor: 'white'});\nboard.create('point', [12, 0], {name: '(12,0)', size: 3, face: 'o', color: '#007FFF', fixed: true, strokeWidth: 2, fillColor: 'white'});\nboard.unsuspendUpdate();"
+              }
+            }
           }
         ]
       }
-    ],
-    "solutionSteps": [
-      {
-        "explanation": "For part a, opposite sides of a rectangle are equal in length, so the opposite side must be \\( x \\).",
-        "workingOut": "",
-        "graphData": null
-      },
-      {
-        "explanation": "For part b, the total perimeter is \\( 24 \\text{ cm} \\). Thus, the sum of adjacent sides is half the perimeter.",
-        "workingOut": "\\(\\text{Adjacent side} = \\frac{24 - 2x}{2} = 12 - x\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "For part c, the area is length multiplied by width.",
-        "workingOut": "A(x) = x(12 - x) = 12x - x^2",
-        "graphData": null
-      },
-      {
-        "explanation": "For part d, physical dimensions must be positive, so both \\( x > 0 \\) and \\( 12 - x > 0 \\).",
-        "workingOut": "\\(x > 0 \\quad \\text{and} \\quad 12 - x > 0 \\implies 0 < x < 12\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "For part e, the graph of \\( A(x) = 12x - x^2 \\) is a downward-opening parabola with roots at \\( x = 0, 12 \\) and its vertex at the midpoint \\( x = 6 \\).",
-        "workingOut": "A(6) = 6(12 - 6) = 36",
-        "graphData": null
-      }
-    ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 150,
-        "height": 380,
-        "boundingbox": [
-          -2,
-          45,
-          14,
-          -5
-        ],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-1,0], [13,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3], [0,42]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [-0.4, 40, 'A'], {fontSize: 14});\nboard.create('functiongraph', [function(x){ return 12*x - x*x; }, 0, 12], {strokeColor: '#4f46e5', strokeWidth: 2, firstArrow: false, lastArrow: false});\nboard.create('point', [6, 36], {name: '(6,36)', size: 3, color: 'red', label: {autoPosition: false, offset: [0, 10]}});\nboard.create('point', [0, 0], {size: 3, face: 'o', color: '#4f46e5', fixed: true});\nboard.create('point', [12, 0], {size: 3, face: 'o', color: '#4f46e5', fixed: true});\nboard.unsuspendUpdate();"
-      }
-    }
+    ]
   },
   {
     "id": "y11a-3b-q15a",
@@ -2853,37 +3932,46 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "0",
     "solutionSteps": [
       {
-        "explanation": "General principle: once an equation is rearranged into the form y = (a single expression in x), every input x produces exactly one output y, so the relation is a function.",
+        "explanation": "To determine if the equation represents a function, we must first make \\( y \\) the subject (isolate \\( y \\)).",
+        "workingOut": "\\( 3x - y + 4 = 0 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add \\( y \\) to both sides to isolate it.",
+        "workingOut": "\\( y = 3x + 4 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Analyze the resulting equation. For every real number we substitute for \\( x \\), the expression \\( 3x + 4 \\) will evaluate to exactly one unique real number for \\( y \\).",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Isolate \\( y \\) in the equation.",
-        "workingOut": "\\( 3x - y + 4 = 0 \\implies y = 3x + 4 \\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Analyze the result. For any real number \\( x \\), multiplying by 3 and adding 4 gives a single, unique real number.",
-        "workingOut": "",
-        "graphData": null
-      },
-      {
-        "explanation": "Since each input has exactly one output, the equation represents a function (specifically, a linear function).",
-        "workingOut": "",
-        "graphData": null
-      },
-      {
-        "explanation": "Solving explicitly for \\( y \\) gives a single expression in \\( x \\): \\( y = 3x + 4 \\). It represents a function because for every input \\( x \\), there is exactly one corresponding value of \\( y \\).",
+        "explanation": "Since each valid input \\( x \\) produces exactly one output \\( y \\), this equation represents a function.",
         "workingOut": "",
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( y = 3x + 4 \\). It represents a function because for every input \\( x \\), there is exactly one corresponding value of \\( y \\).",
-      "\\( y = 3x + 4 \\). It represents a relation but not a function because some \\( x \\)-values give two \\( y \\)-values.",
-      "\\( y = 3x - 4 \\). It represents a function because for every input \\( x \\), there is exactly one corresponding value of \\( y \\).",
-      "\\( y = -3x - 4 \\). It represents a function because it is linear."
-    ]
+    "options": [
+      {
+        "text": "\\( y = 3x + 4 \\). It represents a function because for every input \\( x \\), there is exactly one corresponding value of \\( y \\).",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 3x + 4 \\). It represents a relation but not a function because it is a straight line.",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = 3x - 4 \\). It represents a function because for every input \\( x \\), there is exactly one corresponding value of \\( y \\).",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = -3x + 4 \\). It represents a function because for every input \\( x \\), there is exactly one corresponding value of \\( y \\).",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q15b",
@@ -2895,37 +3983,46 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "0",
     "solutionSteps": [
       {
-        "explanation": "General principle: once an equation is rearranged into the form y = (a single expression in x), every input x produces exactly one output y, so the relation is a function.",
+        "explanation": "We start by making \\( y \\) the subject of the formula.",
+        "workingOut": "\\( xy = 6 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Divide both sides by \\( x \\). Note that this means \\( x \\neq 0 \\).",
+        "workingOut": "\\( y = \\frac{6}{x} \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "For any valid input \\( x \\) in the domain (i.e., all real numbers except \\( 0 \\)), the fraction \\( \\frac{6}{x} \\) evaluates to a single, unique value of \\( y \\).",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Divide both sides by \\( x \\), noting that \\( x \\neq 0 \\).",
-        "workingOut": "\\(y = \\frac{6}{x} \\quad (x \\neq 0)\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "For any non-zero input \\( x \\), \\( \\frac{6}{x} \\) yields a unique single output \\( y \\).",
-        "workingOut": "",
-        "graphData": null
-      },
-      {
-        "explanation": "Since every value in the domain maps to exactly one value in the range, it is a function.",
-        "workingOut": "",
-        "graphData": null
-      },
-      {
-        "explanation": "Solving explicitly for \\( y \\) gives a single expression in \\( x \\): \\( y = \\frac{6}{x} \\). It represents a function because for every input \\( x \\) (except \\( x = 0 \\)), there is exactly one value of \\( y \\).",
+        "explanation": "Since there is exactly one \\( y \\)-value for every valid \\( x \\)-value, it represents a function.",
         "workingOut": "",
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( y = \\frac{6}{x} \\). It represents a function because for every input \\( x \\) (except \\( x = 0 \\)), there is exactly one value of \\( y \\).",
-      "\\( y = \\frac{6}{x} \\). It represents a relation but not a function because \\( x = 0 \\) gives two values of \\( y \\).",
-      "\\( y = -\\frac{6}{x} \\). It represents a function because for every input \\( x \\) (except \\( x = 0 \\)), there is exactly one value of \\( y \\).",
-      "\\( y = \\frac{x}{6} \\). It represents a function because for every input \\( x \\), there is exactly one value of \\( y \\)."
-    ]
+    "options": [
+      {
+        "text": "\\( y = \\frac{6}{x} \\). It represents a function because for every input \\( x \\) (except \\( x = 0 \\)), there is exactly one value of \\( y \\).",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = \\frac{6}{x} \\). It represents a relation but not a function because \\( x = 0 \\) gives undefined values.",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = -\\frac{6}{x} \\). It represents a function because for every input \\( x \\) (except \\( x = 0 \\)), there is exactly one value of \\( y \\).",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = \\frac{x}{6} \\). It represents a function because for every input \\( x \\), there is exactly one value of \\( y \\).",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q15c",
@@ -2937,42 +4034,46 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "2",
     "solutionSteps": [
       {
-        "explanation": "General principle: once an equation is rearranged into the form y = (a single expression in x), every input x produces exactly one output y, so the relation is a function.",
-        "workingOut": "",
+        "explanation": "We want to make \\( y \\) the subject. Notice that \\( y \\) appears in two terms.",
+        "workingOut": "\\( xy - 3y = 4 \\)",
         "graphData": null
       },
       {
-        "explanation": "Factor out \\( y \\) on the left-hand side.",
-        "workingOut": "y(x - 3) = 4",
+        "explanation": "Factor out \\( y \\) on the left hand side.",
+        "workingOut": "\\( y(x - 3) = 4 \\)",
         "graphData": null
       },
       {
-        "explanation": "Divide by \\( x - 3 \\) to solve for \\( y \\).",
-        "workingOut": "\\(y = \\frac{4}{x - 3} \\quad (x \\neq 3)\\)",
+        "explanation": "Divide both sides by \\( x - 3 \\). (This restricts the domain to \\( x \\neq 3 \\)).",
+        "workingOut": "\\( y = \\frac{4}{x - 3} \\)",
         "graphData": null
       },
       {
-        "explanation": "For any input \\( x \\neq 3 \\), \\( \\frac{4}{x-3} \\) produces a single, unique real number.",
-        "workingOut": "",
-        "graphData": null
-      },
-      {
-        "explanation": "Thus, the relation is a function.",
-        "workingOut": "",
-        "graphData": null
-      },
-      {
-        "explanation": "Solving explicitly for \\( y \\) gives a single expression in \\( x \\): \\( y = \\frac{4}{x-3} \\). It represents a function because for any input \\( x \\) (except \\( x = 3 \\)), there is exactly one value of \\( y \\).",
+        "explanation": "For any valid input \\( x \\neq 3 \\), the expression yields exactly one output \\( y \\). Therefore, it is a function.",
         "workingOut": "",
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( y = \\frac{4}{x+3} \\). It represents a function because for any input \\( x \\) (except \\( x = -3 \\)), there is exactly one value of \\( y \\).",
-      "\\( y = \\frac{x-3}{4} \\). It represents a function because it is linear.",
-      "\\( y = \\frac{4}{x-3} \\). It represents a function because for any input \\( x \\) (except \\( x = 3 \\)), there is exactly one value of \\( y \\).",
-      "\\( y = \\frac{4}{x-3} \\). It represents a relation but not a function because \\( x = 3 \\) gives two values of \\( y \\)."
-    ]
+    "options": [
+      {
+        "text": "\\( y = \\frac{4}{x+3} \\). It represents a function because for any input \\( x \\) (except \\( x = -3 \\)), there is exactly one value of \\( y \\).",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = \\frac{x-3}{4} \\). It represents a function because for any input \\( x \\), there is exactly one value of \\( y \\).",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = \\frac{4}{x-3} \\). It represents a function because for any input \\( x \\) (except \\( x = 3 \\)), there is exactly one value of \\( y \\).",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = \\frac{4}{x-3} \\). It represents a relation but not a function because \\( x = 3 \\) is undefined.",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q15d",
@@ -2984,42 +4085,46 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "2",
     "solutionSteps": [
       {
-        "explanation": "General principle: once an equation is rearranged into the form y = (a single expression in x), every input x produces exactly one output y, so the relation is a function.",
+        "explanation": "Isolate \\( y \\) to determine whether the equation represents a function.",
+        "workingOut": "\\( y + 3 = \\sqrt{16 - x^2} \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract 3 from both sides.",
+        "workingOut": "\\( y = \\sqrt{16 - x^2} - 3 \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Observe the square root symbol. Unlike introducing a square root (which requires \\( \\pm \\)), the symbol \\( \\sqrt{} \\) already present in the question explicitly refers only to the **principal (positive)** square root.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Subtract 3 from both sides of the equation.",
-        "workingOut": "\\(y = \\sqrt{16 - x^2} - 3\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Find the domain restrictions. The expression inside the radical must be non-negative.",
-        "workingOut": "\\( 16 - x^2 \\ge 0 \\implies x^2 \\le 16 \\implies -4 \\le x \\le 4 \\)",
-        "graphData": null
-      },
-      {
-        "explanation": "The symbol \\( \\sqrt{} \\) represents the principal (positive) square root only. Therefore, for each \\( x \\in [-4, 4] \\), there is exactly one real value for \\( y \\).",
-        "workingOut": "",
-        "graphData": null
-      },
-      {
-        "explanation": "Hence, it represents a function (specifically, the upper semicircle centered at (0, -3)).",
-        "workingOut": "",
-        "graphData": null
-      },
-      {
-        "explanation": "Solving explicitly for \\( y \\) gives a single expression in \\( x \\): \\( y = \\sqrt{16-x^2} - 3 \\). It represents a function because the positive square root sign specifies a single principal output value of \\( y \\) for each input \\( x \\) in the domain \\( [-4, 4] \\).",
+        "explanation": "For any \\( x \\) in the domain (\\( -4 \\le x \\le 4 \\)), the principal square root yields exactly one value. Subtracting 3 still leaves exactly one value for \\( y \\). Thus, it is a function.",
         "workingOut": "",
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( y = \\sqrt{16+x^2} - 3 \\). It represents a function because the positive square root sign specifies a single principal output value of \\( y \\).",
-      "\\( y = \\pm\\sqrt{16-x^2} - 3 \\). It represents a relation but not a function because each \\( x \\)-value (except the endpoints) gives two \\( y \\)-values.",
-      "\\( y = \\sqrt{16-x^2} - 3 \\). It represents a function because the positive square root sign specifies a single principal output value of \\( y \\) for each input \\( x \\) in the domain \\( [-4, 4] \\).",
-      "\\( y = \\sqrt{16-x^2} + 3 \\). It represents a function because the positive square root sign specifies a single principal output value of \\( y \\)."
-    ]
+    "options": [
+      {
+        "text": "\\( y = \\sqrt{16+x^2} - 3 \\). It represents a function because the positive square root sign specifies a single principal output value of \\( y \\).",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = \\pm\\sqrt{16-x^2} - 3 \\). It represents a relation but not a function because each \\( x \\)-value gives two \\( y \\)-values.",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = \\sqrt{16-x^2} - 3 \\). It represents a function because the positive square root sign specifies a single principal output value of \\( y \\) for each input \\( x \\) in the domain \\( [-4, 4] \\).",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y = \\sqrt{16-x^2} + 3 \\). It represents a function because the positive square root sign specifies a single principal output value of \\( y \\).",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q16a",
@@ -3031,32 +4136,46 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "1",
     "solutionSteps": [
       {
-        "explanation": "General rule: for an expression under a square root, the radicand must be \\( \\geq 0 \\); for an expression in a denominator, the denominator must be \\( \\neq 0 \\). Combine every such restriction to get the natural domain.",
+        "explanation": "Identify the function type to find the natural domain. Check if the function contains fractions, square roots, or both.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Consider the restrictions. The denominator cannot be zero, and the radicand must be non-negative.",
-        "workingOut": "\\\\( \\\\text{Radicand: } x + 3 \\\\ge 0 \\\\implies x \\\\ge -3 \\\\\\\\ \\\\text{Denominator } \\\\neq 0 \\\\implies \\\\sqrt{x+3} \\\\neq 0 \\\\implies x \\\\neq -3 \\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Combine both conditions.",
-        "workingOut": "x > -3",
-        "graphData": null
-      },
-      {
-        "explanation": "The natural domain is \\( x > -3 \\).",
+        "explanation": "Apply the analytical rules for natural domains: denominators cannot equal zero, and values inside a square root must be non-negative (greater than or equal to zero).",
         "workingOut": "",
+        "graphData": null
+      },
+      {
+        "explanation": "Set up and solve the resulting inequality or equation to find the restrictions on \\( x \\).",
+        "workingOut": "\\\\( x > -3 \\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final domain. **Warning:** Always check the natural domain carefully. Missing a zero denominator or a negative radicand is a common pitfall.",
+        "workingOut": "\\( \\text{Final Domain} \\)",
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( x < -3 \\)",
-      "\\( x > -3 \\)",
-      "\\( x > 3 \\)",
-      "\\( x \\geq -3 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( x < -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x > -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x > 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\geq -3 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q16b",
@@ -3068,32 +4187,46 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "0",
     "solutionSteps": [
       {
-        "explanation": "General rule: for an expression under a square root, the radicand must be \\( \\geq 0 \\); for an expression in a denominator, the denominator must be \\( \\neq 0 \\). Combine every such restriction to get the natural domain.",
+        "explanation": "Identify the function type to find the natural domain. Check if the function contains fractions, square roots, or both.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Set the quadratic denominator to not equal zero.",
-        "workingOut": "\\( x^2 - 9 \\neq 0 \\)",
+        "explanation": "Apply the analytical rules for natural domains: denominators cannot equal zero, and values inside a square root must be non-negative (greater than or equal to zero).",
+        "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Factorise and solve.",
+        "explanation": "Set up and solve the resulting inequality or equation to find the restrictions on \\( x \\).",
         "workingOut": "\\((x - 3)(x + 3) \\neq 0 \\implies x \\neq 3 \\text{ and } x \\neq -3\\)",
         "graphData": null
       },
       {
-        "explanation": "The natural domain is \\( x \\neq 3 \\text{ and } x \\neq -3 \\).",
-        "workingOut": "",
+        "explanation": "State the final domain. **Warning:** Always check the natural domain carefully. Missing a zero denominator or a negative radicand is a common pitfall.",
+        "workingOut": "\\( \\text{Final Domain} \\)",
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( x \\neq 3 \\text{ and } x \\neq -3 \\)",
-      "\\( x \\neq 3 \\)",
-      "\\( x \\in \\mathbb{R}\\ (\\text{all real } x) \\)",
-      "\\( x \\neq -3 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( x \\neq 3 \\text{ and } x \\neq -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\neq 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\in \\mathbb{R}\\ (\\text{all real } x) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\neq -3 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q16c",
@@ -3105,37 +4238,46 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "1",
     "solutionSteps": [
       {
-        "explanation": "General rule: for an expression under a square root, the radicand must be \\( \\geq 0 \\); for an expression in a denominator, the denominator must be \\( \\neq 0 \\). Combine every such restriction to get the natural domain.",
+        "explanation": "Identify the function type to find the natural domain. Check if the function contains fractions, square roots, or both.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Set the denominator to be non-zero.",
-        "workingOut": "\\( x^2 + 2x \\neq 0 \\)",
+        "explanation": "Apply the analytical rules for natural domains: denominators cannot equal zero, and values inside a square root must be non-negative (greater than or equal to zero).",
+        "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Factorise the quadratic expression.",
+        "explanation": "Set up and solve the resulting inequality or equation to find the restrictions on \\( x \\).",
         "workingOut": "\\( x(x + 2) \\neq 0 \\)",
         "graphData": null
       },
       {
-        "explanation": "Identify the values to exclude.",
-        "workingOut": "\\(x \\neq 0 \\text{ and } x \\neq -2\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "The natural domain is \\( x \\neq 0 \\text{ and } x \\neq -2 \\).",
-        "workingOut": "",
+        "explanation": "State the final domain. **Warning:** Always check the natural domain carefully. Missing a zero denominator or a negative radicand is a common pitfall.",
+        "workingOut": "\\( \\text{Final Domain} \\)",
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( x \\neq 0 \\)",
-      "\\( x \\neq 0 \\text{ and } x \\neq -2 \\)",
-      "\\( x \\in \\mathbb{R}\\ (\\text{all real } x) \\)",
-      "\\( x \\neq -2 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( x \\neq 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\neq 0 \\text{ and } x \\neq -2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\in \\mathbb{R}\\ (\\text{all real } x) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\neq -2 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q16d",
@@ -3147,37 +4289,46 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "1",
     "solutionSteps": [
       {
-        "explanation": "General rule: for an expression under a square root, the radicand must be \\( \\geq 0 \\); for an expression in a denominator, the denominator must be \\( \\neq 0 \\). Combine every such restriction to get the natural domain.",
+        "explanation": "Identify the function type to find the natural domain. Check if the function contains fractions, square roots, or both.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Set the denominator expression to not equal zero.",
-        "workingOut": "\\( x^2 - 6x + 8 \\neq 0 \\)",
+        "explanation": "Apply the analytical rules for natural domains: denominators cannot equal zero, and values inside a square root must be non-negative (greater than or equal to zero).",
+        "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Factorise the quadratic trinomial.",
+        "explanation": "Set up and solve the resulting inequality or equation to find the restrictions on \\( x \\).",
         "workingOut": "\\( (x - 2)(x - 4) \\neq 0 \\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the exclusions.",
-        "workingOut": "\\(x \\neq 2 \\text{ and } x \\neq -4 \\implies x \\neq 2, 4\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "The natural domain is \\( x \\neq 2 \\text{ and } x \\neq 4 \\).",
-        "workingOut": "",
+        "explanation": "State the final domain. **Warning:** Always check the natural domain carefully. Missing a zero denominator or a negative radicand is a common pitfall.",
+        "workingOut": "\\( \\text{Final Domain} \\)",
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( x \\neq 2 \\)",
-      "\\( x \\neq 2 \\text{ and } x \\neq 4 \\)",
-      "\\( x \\in \\mathbb{R}\\ (\\text{all real } x) \\)",
-      "\\( x \\neq 4 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( x \\neq 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\neq 2 \\text{ and } x \\neq 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\in \\mathbb{R}\\ (\\text{all real } x) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\neq 4 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q16e",
@@ -3189,37 +4340,46 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "2",
     "solutionSteps": [
       {
-        "explanation": "General rule: for an expression under a square root, the radicand must be \\( \\geq 0 \\); for an expression in a denominator, the denominator must be \\( \\neq 0 \\). Combine every such restriction to get the natural domain.",
+        "explanation": "Identify the function type to find the natural domain. Check if the function contains fractions, square roots, or both.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "The quantity under the square root must be non-negative.",
-        "workingOut": "\\( x^2 - 9 \\ge 0 \\)",
+        "explanation": "Apply the analytical rules for natural domains: denominators cannot equal zero, and values inside a square root must be non-negative (greater than or equal to zero).",
+        "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Factorise the difference of squares.",
+        "explanation": "Set up and solve the resulting inequality or equation to find the restrictions on \\( x \\).",
         "workingOut": "\\( (x - 3)(x + 3) \\ge 0 \\)",
         "graphData": null
       },
       {
-        "explanation": "For the product to be positive or zero, \\( x \\) must lie outside the roots \\( -3 \\) and \\( 3 \\).",
-        "workingOut": "\\(x \\le -3 \\quad \\text{or} \\quad x \\ge 3\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "The natural domain is \\( x \\leq -3 \\text{ or } x \\geq 3 \\).",
-        "workingOut": "",
+        "explanation": "State the final domain. **Warning:** Always check the natural domain carefully. Missing a zero denominator or a negative radicand is a common pitfall.",
+        "workingOut": "\\( \\text{Final Domain} \\)",
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( x \\geq 3 \\)",
-      "\\( -3 \\leq x \\leq 3 \\)",
-      "\\( x \\leq -3 \\text{ or } x \\geq 3 \\)",
-      "\\( x < -3 \\text{ or } x > 3 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( x \\geq 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -3 \\leq x \\leq 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\leq -3 \\text{ or } x \\geq 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x < -3 \\text{ or } x > 3 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q16f",
@@ -3231,37 +4391,46 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "2",
     "solutionSteps": [
       {
-        "explanation": "General rule: for an expression under a square root, the radicand must be \\( \\geq 0 \\); for an expression in a denominator, the denominator must be \\( \\neq 0 \\). Combine every such restriction to get the natural domain.",
+        "explanation": "Identify the function type to find the natural domain. Check if the function contains fractions, square roots, or both.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "The radicand in the denominator must be strictly positive.",
-        "workingOut": "4 - x^2 > 0",
-        "graphData": null
-      },
-      {
-        "explanation": "Factorise the inequality.",
-        "workingOut": "(2 - x)(2 + x) > 0",
-        "graphData": null
-      },
-      {
-        "explanation": "For the product to be positive, \\( x \\) must lie strictly between the roots \\( -2 \\) and \\( 2 \\).",
-        "workingOut": "-2 < x < 2",
-        "graphData": null
-      },
-      {
-        "explanation": "The natural domain is \\( -2 < x < 2 \\).",
+        "explanation": "Apply the analytical rules for natural domains: denominators cannot equal zero, and values inside a square root must be non-negative (greater than or equal to zero).",
         "workingOut": "",
+        "graphData": null
+      },
+      {
+        "explanation": "Set up and solve the resulting inequality or equation to find the restrictions on \\( x \\).",
+        "workingOut": "\\\\( (2 - x)(2 + x) > 0 \\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final domain. **Warning:** Always check the natural domain carefully. Missing a zero denominator or a negative radicand is a common pitfall.",
+        "workingOut": "\\( \\text{Final Domain} \\)",
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( x \\leq -2 \\text{ or } x \\geq 2 \\)",
-      "\\( x < 2 \\)",
-      "\\( -2 < x < 2 \\)",
-      "\\( -2 \\leq x \\leq 2 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( x \\leq -2 \\text{ or } x \\geq 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x < 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -2 < x < 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -2 \\leq x \\leq 2 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q17a",
@@ -3273,42 +4442,46 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "1",
     "solutionSteps": [
       {
-        "explanation": "The expression under the square root, \\( \\frac{x-2}{x-3} \\), must be \\( \\geq 0 \\), and since it is also a denominator, \\( x \\neq 3 \\).",
-        "workingOut": "",
+        "explanation": "First, rationalize the denominator by multiplying the numerator and denominator inside the square root by \\( (x - 3) \\).",
+        "workingOut": "\\( \\sqrt{\\frac{x - 2}{x - 3}} = \\sqrt{\\frac{(x - 2)(x - 3)}{(x - 3)^2}} = \\frac{\\sqrt{(x - 2)(x - 3)}}{|x - 3|} \\)",
         "graphData": null
       },
       {
-        "explanation": "Identify the conditions under which the expression inside the square root is defined.",
-        "workingOut": "\\(\\frac{x - 2}{x - 3} \\ge 0 \\quad \\text{and} \\quad x - 3 \\neq 0\\)",
+        "explanation": "From this rationalized form, identify the two conditions required for the natural domain: the expression inside the square root (surd) in the numerator must be non-negative, and the denominator cannot be zero.",
+        "workingOut": "\\begin{aligned} \\text{Numerator condition: } & (x - 2)(x - 3) \\ge 0 \\\\ \\text{Denominator condition: } & x - 3 \\neq 0 \\implies x \\neq 3 \\end{aligned}",
         "graphData": null
       },
       {
-        "explanation": "Determine the critical points where the numerator or denominator is zero.",
-        "workingOut": "\\(x = 2 \\quad \\text{and} \\quad x = 3\\)",
+        "explanation": "Solve the quadratic inequality \\( (x - 2)(x - 3) \\ge 0 \\). This represents a parabola opening upwards with roots at \\( x = 2 \\) and \\( x = 3 \\).",
+        "workingOut": "\\( (x - 2)(x - 3) \\ge 0 \\implies x \\le 2 \\text{ or } x \\ge 3 \\)",
         "graphData": null
       },
       {
-        "explanation": "Test the intervals defined by the critical points.",
-        "workingOut": "\\(\\text{For } x < 2: \\frac{-}{-} > 0, \\quad \\text{For } 2 \\le x < 3: \\frac{+}{-} \\le 0, \\quad \\text{For } x > 3: \\frac{+}{+} > 0\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "State the domain using inequalities, keeping in mind that the denominator cannot be zero.",
-        "workingOut": "\\(x \\le 2 \\quad \\text{or} \\quad x > 3\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Testing the sign of \\( \\frac{x-2}{x-3} \\) on each interval gives the domain \\( x \\leq 2 \\text{ or } x > 3 \\).",
-        "workingOut": "",
+        "explanation": "Combine the inequality solution with the denominator restriction to state the final natural domain. We must exclude \\( x = 3 \\).",
+        "workingOut": "\\( x \\le 2 \\text{ or } x > 3 \\)",
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( x \\neq 3 \\)",
-      "\\( x \\leq 2 \\text{ or } x > 3 \\)",
-      "\\( x < 2 \\text{ or } x \\geq 3 \\)",
-      "\\( 2 \\leq x < 3 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( x \\neq 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\leq 2 \\text{ or } x > 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x < 2 \\text{ or } x \\geq 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 2 \\leq x < 3 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q17b",
@@ -3320,42 +4493,46 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "0",
     "solutionSteps": [
       {
-        "explanation": "The expression under the square root, \\( \\frac{x-4}{x-6} \\), must be \\( \\geq 0 \\), and since it is also a denominator, \\( x \\neq 6 \\).",
-        "workingOut": "",
+        "explanation": "First, rationalize the denominator by multiplying the numerator and denominator inside the square root by \\( (x - 6) \\).",
+        "workingOut": "\\( \\sqrt{\\frac{x - 4}{x - 6}} = \\sqrt{\\frac{(x - 4)(x - 6)}{(x - 6)^2}} = \\frac{\\sqrt{(x - 4)(x - 6)}}{|x - 6|} \\)",
         "graphData": null
       },
       {
-        "explanation": "Identify the conditions under which the expression inside the square root is defined.",
-        "workingOut": "\\(\\frac{x - 4}{x - 6} \\ge 0 \\quad \\text{and} \\quad x - 6 \\neq 0\\)",
+        "explanation": "From this rationalized form, identify the two conditions required for the natural domain: the expression inside the square root (surd) in the numerator must be non-negative, and the denominator cannot be zero.",
+        "workingOut": "\\begin{aligned} \\text{Numerator condition: } & (x - 4)(x - 6) \\ge 0 \\\\ \\text{Denominator condition: } & x - 6 \\neq 0 \\implies x \\neq 6 \\end{aligned}",
         "graphData": null
       },
       {
-        "explanation": "Determine the critical points where the numerator or denominator is zero.",
-        "workingOut": "\\(x = 4 \\quad \\text{and} \\quad x = 6\\)",
+        "explanation": "Solve the quadratic inequality \\( (x - 4)(x - 6) \\ge 0 \\). This represents a parabola opening upwards with roots at \\( x = 4 \\) and \\( x = 6 \\).",
+        "workingOut": "\\( (x - 4)(x - 6) \\ge 0 \\implies x \\le 4 \\text{ or } x \\ge 6 \\)",
         "graphData": null
       },
       {
-        "explanation": "Test the intervals defined by the critical points.",
-        "workingOut": "\\(\\text{For } x < 4: \\frac{-}{-} > 0, \\quad \\text{For } 4 \\le x < 6: \\frac{+}{-} \\le 0, \\quad \\text{For } x > 6: \\frac{+}{+} > 0\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "State the domain using inequalities, keeping in mind that the denominator cannot be zero.",
-        "workingOut": "\\(x \\le 4 \\quad \\text{or} \\quad x > 6\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Testing the sign of \\( \\frac{x-4}{x-6} \\) on each interval gives the domain \\( x \\leq 4 \\text{ or } x > 6 \\).",
-        "workingOut": "",
+        "explanation": "Combine the inequality solution with the denominator restriction to state the final natural domain. We must exclude \\( x = 6 \\).",
+        "workingOut": "\\( x \\le 4 \\text{ or } x > 6 \\)",
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( x \\leq 4 \\text{ or } x > 6 \\)",
-      "\\( x \\neq 6 \\)",
-      "\\( x < 4 \\text{ or } x \\geq 6 \\)",
-      "\\( 4 \\leq x < 6 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( x \\leq 4 \\text{ or } x > 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\neq 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x < 4 \\text{ or } x \\geq 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 4 \\leq x < 6 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q17c",
@@ -3367,42 +4544,46 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "0",
     "solutionSteps": [
       {
-        "explanation": "The expression under the square root, \\( \\frac{x-6}{x-9} \\), must be \\( \\geq 0 \\), and since it is also a denominator, \\( x \\neq 9 \\).",
-        "workingOut": "",
+        "explanation": "First, rationalize the denominator by multiplying the numerator and denominator inside the square root by \\( (x - 9) \\).",
+        "workingOut": "\\( \\sqrt{\\frac{x - 6}{x - 9}} = \\sqrt{\\frac{(x - 6)(x - 9)}{(x - 9)^2}} = \\frac{\\sqrt{(x - 6)(x - 9)}}{|x - 9|} \\)",
         "graphData": null
       },
       {
-        "explanation": "Identify the conditions under which the expression inside the square root is defined.",
-        "workingOut": "\\(\\frac{x - 6}{x - 9} \\ge 0 \\quad \\text{and} \\quad x - 9 \\neq 0\\)",
+        "explanation": "From this rationalized form, identify the two conditions required for the natural domain: the expression inside the square root (surd) in the numerator must be non-negative, and the denominator cannot be zero.",
+        "workingOut": "\\begin{aligned} \\text{Numerator condition: } & (x - 6)(x - 9) \\ge 0 \\\\ \\text{Denominator condition: } & x - 9 \\neq 0 \\implies x \\neq 9 \\end{aligned}",
         "graphData": null
       },
       {
-        "explanation": "Determine the critical points where the numerator or denominator is zero.",
-        "workingOut": "\\(x = 6 \\quad \\text{and} \\quad x = 9\\)",
+        "explanation": "Solve the quadratic inequality \\( (x - 6)(x - 9) \\ge 0 \\). This represents a parabola opening upwards with roots at \\( x = 6 \\) and \\( x = 9 \\).",
+        "workingOut": "\\( (x - 6)(x - 9) \\ge 0 \\implies x \\le 6 \\text{ or } x \\ge 9 \\)",
         "graphData": null
       },
       {
-        "explanation": "Test the intervals defined by the critical points.",
-        "workingOut": "\\(\\text{For } x < 6: \\frac{-}{-} > 0, \\quad \\text{For } 6 \\le x < 9: \\frac{+}{-} \\le 0, \\quad \\text{For } x > 9: \\frac{+}{+} > 0\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "State the domain using inequalities, keeping in mind that the denominator cannot be zero.",
-        "workingOut": "\\(x \\le 6 \\quad \\text{or} \\quad x > 9\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Testing the sign of \\( \\frac{x-6}{x-9} \\) on each interval gives the domain \\( x \\leq 6 \\text{ or } x > 9 \\).",
-        "workingOut": "",
+        "explanation": "Combine the inequality solution with the denominator restriction to state the final natural domain. We must exclude \\( x = 9 \\).",
+        "workingOut": "\\( x \\le 6 \\text{ or } x > 9 \\)",
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( x \\leq 6 \\text{ or } x > 9 \\)",
-      "\\( x < 6 \\text{ or } x \\geq 9 \\)",
-      "\\( x \\neq 9 \\)",
-      "\\( 6 \\leq x < 9 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( x \\leq 6 \\text{ or } x > 9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x < 6 \\text{ or } x \\geq 9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\neq 9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 6 \\leq x < 9 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q17d",
@@ -3414,42 +4595,46 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "1",
     "solutionSteps": [
       {
-        "explanation": "The expression under the square root, \\( \\frac{x-8}{x-12} \\), must be \\( \\geq 0 \\), and since it is also a denominator, \\( x \\neq 12 \\).",
-        "workingOut": "",
+        "explanation": "First, rationalize the denominator by multiplying the numerator and denominator inside the square root by \\( (x - 12) \\).",
+        "workingOut": "\\( \\sqrt{\\frac{x - 8}{x - 12}} = \\sqrt{\\frac{(x - 8)(x - 12)}{(x - 12)^2}} = \\frac{\\sqrt{(x - 8)(x - 12)}}{|x - 12|} \\)",
         "graphData": null
       },
       {
-        "explanation": "Identify the conditions under which the expression inside the square root is defined.",
-        "workingOut": "\\(\\frac{x - 8}{x - 12} \\ge 0 \\quad \\text{and} \\quad x - 12 \\neq 0\\)",
+        "explanation": "From this rationalized form, identify the two conditions required for the natural domain: the expression inside the square root (surd) in the numerator must be non-negative, and the denominator cannot be zero.",
+        "workingOut": "\\begin{aligned} \\text{Numerator condition: } & (x - 8)(x - 12) \\ge 0 \\\\ \\text{Denominator condition: } & x - 12 \\neq 0 \\implies x \\neq 12 \\end{aligned}",
         "graphData": null
       },
       {
-        "explanation": "Determine the critical points where the numerator or denominator is zero.",
-        "workingOut": "\\(x = 8 \\quad \\text{and} \\quad x = 12\\)",
+        "explanation": "Solve the quadratic inequality \\( (x - 8)(x - 12) \\ge 0 \\). This represents a parabola opening upwards with roots at \\( x = 8 \\) and \\( x = 12 \\).",
+        "workingOut": "\\( (x - 8)(x - 12) \\ge 0 \\implies x \\le 8 \\text{ or } x \\ge 12 \\)",
         "graphData": null
       },
       {
-        "explanation": "Test the intervals defined by the critical points.",
-        "workingOut": "\\(\\text{For } x < 8: \\frac{-}{-} > 0, \\quad \\text{For } 8 \\le x < 12: \\frac{+}{-} \\le 0, \\quad \\text{For } x > 12: \\frac{+}{+} > 0\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "State the domain using inequalities, keeping in mind that the denominator cannot be zero.",
-        "workingOut": "\\(x \\le 8 \\quad \\text{or} \\quad x > 12\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Testing the sign of \\( \\frac{x-8}{x-12} \\) on each interval gives the domain \\( x \\leq 8 \\text{ or } x > 12 \\).",
-        "workingOut": "",
+        "explanation": "Combine the inequality solution with the denominator restriction to state the final natural domain. We must exclude \\( x = 12 \\).",
+        "workingOut": "\\( x \\le 8 \\text{ or } x > 12 \\)",
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( x < 8 \\text{ or } x \\geq 12 \\)",
-      "\\( x \\leq 8 \\text{ or } x > 12 \\)",
-      "\\( 8 \\leq x < 12 \\)",
-      "\\( x \\neq 12 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( x < 8 \\text{ or } x \\geq 12 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\leq 8 \\text{ or } x > 12 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 8 \\leq x < 12 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\neq 12 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q17e",
@@ -3461,42 +4646,46 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "1",
     "solutionSteps": [
       {
-        "explanation": "The expression under the square root, \\( \\frac{x-10}{x-15} \\), must be \\( \\geq 0 \\), and since it is also a denominator, \\( x \\neq 15 \\).",
-        "workingOut": "",
+        "explanation": "First, rationalize the denominator by multiplying the numerator and denominator inside the square root by \\( (x - 15) \\).",
+        "workingOut": "\\( \\sqrt{\\frac{x - 10}{x - 15}} = \\sqrt{\\frac{(x - 10)(x - 15)}{(x - 15)^2}} = \\frac{\\sqrt{(x - 10)(x - 15)}}{|x - 15|} \\)",
         "graphData": null
       },
       {
-        "explanation": "Identify the conditions under which the expression inside the square root is defined.",
-        "workingOut": "\\(\\frac{x - 10}{x - 15} \\ge 0 \\quad \\text{and} \\quad x - 15 \\neq 0\\)",
+        "explanation": "From this rationalized form, identify the two conditions required for the natural domain: the expression inside the square root (surd) in the numerator must be non-negative, and the denominator cannot be zero.",
+        "workingOut": "\\begin{aligned} \\text{Numerator condition: } & (x - 10)(x - 15) \\ge 0 \\\\ \\text{Denominator condition: } & x - 15 \\neq 0 \\implies x \\neq 15 \\end{aligned}",
         "graphData": null
       },
       {
-        "explanation": "Determine the critical points where the numerator or denominator is zero.",
-        "workingOut": "\\(x = 10 \\quad \\text{and} \\quad x = 15\\)",
+        "explanation": "Solve the quadratic inequality \\( (x - 10)(x - 15) \\ge 0 \\). This represents a parabola opening upwards with roots at \\( x = 10 \\) and \\( x = 15 \\).",
+        "workingOut": "\\( (x - 10)(x - 15) \\ge 0 \\implies x \\le 10 \\text{ or } x \\ge 15 \\)",
         "graphData": null
       },
       {
-        "explanation": "Test the intervals defined by the critical points.",
-        "workingOut": "\\(\\text{For } x < 10: \\frac{-}{-} > 0, \\quad \\text{For } 10 \\le x < 15: \\frac{+}{-} \\le 0, \\quad \\text{For } x > 15: \\frac{+}{+} > 0\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "State the domain using inequalities, keeping in mind that the denominator cannot be zero.",
-        "workingOut": "\\(x \\le 10 \\quad \\text{or} \\quad x > 15\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Testing the sign of \\( \\frac{x-10}{x-15} \\) on each interval gives the domain \\( x \\leq 10 \\text{ or } x > 15 \\).",
-        "workingOut": "",
+        "explanation": "Combine the inequality solution with the denominator restriction to state the final natural domain. We must exclude \\( x = 15 \\).",
+        "workingOut": "\\( x \\le 10 \\text{ or } x > 15 \\)",
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( x < 10 \\text{ or } x \\geq 15 \\)",
-      "\\( x \\leq 10 \\text{ or } x > 15 \\)",
-      "\\( 10 \\leq x < 15 \\)",
-      "\\( x \\neq 15 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( x < 10 \\text{ or } x \\geq 15 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\leq 10 \\text{ or } x > 15 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 10 \\leq x < 15 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\neq 15 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q17f",
@@ -3508,42 +4697,46 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "0",
     "solutionSteps": [
       {
-        "explanation": "The expression under the square root, \\( \\frac{x-12}{x-18} \\), must be \\( \\geq 0 \\), and since it is also a denominator, \\( x \\neq 18 \\).",
-        "workingOut": "",
+        "explanation": "First, rationalize the denominator by multiplying the numerator and denominator inside the square root by \\( (x - 18) \\).",
+        "workingOut": "\\( \\sqrt{\\frac{x - 12}{x - 18}} = \\sqrt{\\frac{(x - 12)(x - 18)}{(x - 18)^2}} = \\frac{\\sqrt{(x - 12)(x - 18)}}{|x - 18|} \\)",
         "graphData": null
       },
       {
-        "explanation": "Identify the conditions under which the expression inside the square root is defined.",
-        "workingOut": "\\(\\frac{x - 12}{x - 18} \\ge 0 \\quad \\text{and} \\quad x - 18 \\neq 0\\)",
+        "explanation": "From this rationalized form, identify the two conditions required for the natural domain: the expression inside the square root (surd) in the numerator must be non-negative, and the denominator cannot be zero.",
+        "workingOut": "\\begin{aligned} \\text{Numerator condition: } & (x - 12)(x - 18) \\ge 0 \\\\ \\text{Denominator condition: } & x - 18 \\neq 0 \\implies x \\neq 18 \\end{aligned}",
         "graphData": null
       },
       {
-        "explanation": "Determine the critical points where the numerator or denominator is zero.",
-        "workingOut": "\\(x = 12 \\quad \\text{and} \\quad x = 18\\)",
+        "explanation": "Solve the quadratic inequality \\( (x - 12)(x - 18) \\ge 0 \\). This represents a parabola opening upwards with roots at \\( x = 12 \\) and \\( x = 18 \\).",
+        "workingOut": "\\( (x - 12)(x - 18) \\ge 0 \\implies x \\le 12 \\text{ or } x \\ge 18 \\)",
         "graphData": null
       },
       {
-        "explanation": "Test the intervals defined by the critical points.",
-        "workingOut": "\\(\\text{For } x < 12: \\frac{-}{-} > 0, \\quad \\text{For } 12 \\le x < 18: \\frac{+}{-} \\le 0, \\quad \\text{For } x > 18: \\frac{+}{+} > 0\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "State the domain using inequalities, keeping in mind that the denominator cannot be zero.",
-        "workingOut": "\\(x \\le 12 \\quad \\text{or} \\quad x > 18\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Testing the sign of \\( \\frac{x-12}{x-18} \\) on each interval gives the domain \\( x \\leq 12 \\text{ or } x > 18 \\).",
-        "workingOut": "",
+        "explanation": "Combine the inequality solution with the denominator restriction to state the final natural domain. We must exclude \\( x = 18 \\).",
+        "workingOut": "\\( x \\le 12 \\text{ or } x > 18 \\)",
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( x \\leq 12 \\text{ or } x > 18 \\)",
-      "\\( x < 12 \\text{ or } x \\geq 18 \\)",
-      "\\( 12 \\leq x < 18 \\)",
-      "\\( x \\neq 18 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( x \\leq 12 \\text{ or } x > 18 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x < 12 \\text{ or } x \\geq 18 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 12 \\leq x < 18 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\neq 18 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q17g",
@@ -3555,42 +4748,46 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "2",
     "solutionSteps": [
       {
-        "explanation": "The expression under the square root, \\( \\frac{x-14}{x-21} \\), must be \\( \\geq 0 \\), and since it is also a denominator, \\( x \\neq 21 \\).",
-        "workingOut": "",
+        "explanation": "First, rationalize the denominator by multiplying the numerator and denominator inside the square root by \\( (x - 21) \\).",
+        "workingOut": "\\( \\sqrt{\\frac{x - 14}{x - 21}} = \\sqrt{\\frac{(x - 14)(x - 21)}{(x - 21)^2}} = \\frac{\\sqrt{(x - 14)(x - 21)}}{|x - 21|} \\)",
         "graphData": null
       },
       {
-        "explanation": "Identify the conditions under which the expression inside the square root is defined.",
-        "workingOut": "\\(\\frac{x - 14}{x - 21} \\ge 0 \\quad \\text{and} \\quad x - 21 \\neq 0\\)",
+        "explanation": "From this rationalized form, identify the two conditions required for the natural domain: the expression inside the square root (surd) in the numerator must be non-negative, and the denominator cannot be zero.",
+        "workingOut": "\\begin{aligned} \\text{Numerator condition: } & (x - 14)(x - 21) \\ge 0 \\\\ \\text{Denominator condition: } & x - 21 \\neq 0 \\implies x \\neq 21 \\end{aligned}",
         "graphData": null
       },
       {
-        "explanation": "Determine the critical points where the numerator or denominator is zero.",
-        "workingOut": "\\(x = 14 \\quad \\text{and} \\quad x = 21\\)",
+        "explanation": "Solve the quadratic inequality \\( (x - 14)(x - 21) \\ge 0 \\). This represents a parabola opening upwards with roots at \\( x = 14 \\) and \\( x = 21 \\).",
+        "workingOut": "\\( (x - 14)(x - 21) \\ge 0 \\implies x \\le 14 \\text{ or } x \\ge 21 \\)",
         "graphData": null
       },
       {
-        "explanation": "Test the intervals defined by the critical points.",
-        "workingOut": "\\(\\text{For } x < 14: \\frac{-}{-} > 0, \\quad \\text{For } 14 \\le x < 21: \\frac{+}{-} \\le 0, \\quad \\text{For } x > 21: \\frac{+}{+} > 0\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "State the domain using inequalities, keeping in mind that the denominator cannot be zero.",
-        "workingOut": "\\(x \\le 14 \\quad \\text{or} \\quad x > 21\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Testing the sign of \\( \\frac{x-14}{x-21} \\) on each interval gives the domain \\( x \\leq 14 \\text{ or } x > 21 \\).",
-        "workingOut": "",
+        "explanation": "Combine the inequality solution with the denominator restriction to state the final natural domain. We must exclude \\( x = 21 \\).",
+        "workingOut": "\\( x \\le 14 \\text{ or } x > 21 \\)",
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( x < 14 \\text{ or } x \\geq 21 \\)",
-      "\\( 14 \\leq x < 21 \\)",
-      "\\( x \\leq 14 \\text{ or } x > 21 \\)",
-      "\\( x \\neq 21 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( x < 14 \\text{ or } x \\geq 21 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 14 \\leq x < 21 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\leq 14 \\text{ or } x > 21 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\neq 21 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q17h",
@@ -3602,42 +4799,46 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "2",
     "solutionSteps": [
       {
-        "explanation": "The expression under the square root, \\( \\frac{x-16}{x-24} \\), must be \\( \\geq 0 \\), and since it is also a denominator, \\( x \\neq 24 \\).",
-        "workingOut": "",
+        "explanation": "First, rationalize the denominator by multiplying the numerator and denominator inside the square root by \\( (x - 24) \\).",
+        "workingOut": "\\( \\sqrt{\\frac{x - 16}{x - 24}} = \\sqrt{\\frac{(x - 16)(x - 24)}{(x - 24)^2}} = \\frac{\\sqrt{(x - 16)(x - 24)}}{|x - 24|} \\)",
         "graphData": null
       },
       {
-        "explanation": "Identify the conditions under which the expression inside the square root is defined.",
-        "workingOut": "\\(\\frac{x - 16}{x - 24} \\ge 0 \\quad \\text{and} \\quad x - 24 \\neq 0\\)",
+        "explanation": "From this rationalized form, identify the two conditions required for the natural domain: the expression inside the square root (surd) in the numerator must be non-negative, and the denominator cannot be zero.",
+        "workingOut": "\\begin{aligned} \\text{Numerator condition: } & (x - 16)(x - 24) \\ge 0 \\\\ \\text{Denominator condition: } & x - 24 \\neq 0 \\implies x \\neq 24 \\end{aligned}",
         "graphData": null
       },
       {
-        "explanation": "Determine the critical points where the numerator or denominator is zero.",
-        "workingOut": "\\(x = 16 \\quad \\text{and} \\quad x = 24\\)",
+        "explanation": "Solve the quadratic inequality \\( (x - 16)(x - 24) \\ge 0 \\). This represents a parabola opening upwards with roots at \\( x = 16 \\) and \\( x = 24 \\).",
+        "workingOut": "\\( (x - 16)(x - 24) \\ge 0 \\implies x \\le 16 \\text{ or } x \\ge 24 \\)",
         "graphData": null
       },
       {
-        "explanation": "Test the intervals defined by the critical points.",
-        "workingOut": "\\(\\text{For } x < 16: \\frac{-}{-} > 0, \\quad \\text{For } 16 \\le x < 24: \\frac{+}{-} \\le 0, \\quad \\text{For } x > 24: \\frac{+}{+} > 0\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "State the domain using inequalities, keeping in mind that the denominator cannot be zero.",
-        "workingOut": "\\(x \\le 16 \\quad \\text{or} \\quad x > 24\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Testing the sign of \\( \\frac{x-16}{x-24} \\) on each interval gives the domain \\( x \\leq 16 \\text{ or } x > 24 \\).",
-        "workingOut": "",
+        "explanation": "Combine the inequality solution with the denominator restriction to state the final natural domain. We must exclude \\( x = 24 \\).",
+        "workingOut": "\\( x \\le 16 \\text{ or } x > 24 \\)",
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( x < 16 \\text{ or } x \\geq 24 \\)",
-      "\\( 16 \\leq x < 24 \\)",
-      "\\( x \\leq 16 \\text{ or } x > 24 \\)",
-      "\\( x \\neq 24 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( x < 16 \\text{ or } x \\geq 24 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 16 \\leq x < 24 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\leq 16 \\text{ or } x > 24 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\neq 24 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q17i",
@@ -3649,42 +4850,46 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "2",
     "solutionSteps": [
       {
-        "explanation": "The expression under the square root, \\( \\frac{x-18}{x-27} \\), must be \\( \\geq 0 \\), and since it is also a denominator, \\( x \\neq 27 \\).",
-        "workingOut": "",
+        "explanation": "First, rationalize the denominator by multiplying the numerator and denominator inside the square root by \\( (x - 27) \\).",
+        "workingOut": "\\( \\sqrt{\\frac{x - 18}{x - 27}} = \\sqrt{\\frac{(x - 18)(x - 27)}{(x - 27)^2}} = \\frac{\\sqrt{(x - 18)(x - 27)}}{|x - 27|} \\)",
         "graphData": null
       },
       {
-        "explanation": "Identify the conditions under which the expression inside the square root is defined.",
-        "workingOut": "\\(\\frac{x - 18}{x - 27} \\ge 0 \\quad \\text{and} \\quad x - 27 \\neq 0\\)",
+        "explanation": "From this rationalized form, identify the two conditions required for the natural domain: the expression inside the square root (surd) in the numerator must be non-negative, and the denominator cannot be zero.",
+        "workingOut": "\\begin{aligned} \\text{Numerator condition: } & (x - 18)(x - 27) \\ge 0 \\\\ \\text{Denominator condition: } & x - 27 \\neq 0 \\implies x \\neq 27 \\end{aligned}",
         "graphData": null
       },
       {
-        "explanation": "Determine the critical points where the numerator or denominator is zero.",
-        "workingOut": "\\(x = 18 \\quad \\text{and} \\quad x = 27\\)",
+        "explanation": "Solve the quadratic inequality \\( (x - 18)(x - 27) \\ge 0 \\). This represents a parabola opening upwards with roots at \\( x = 18 \\) and \\( x = 27 \\).",
+        "workingOut": "\\( (x - 18)(x - 27) \\ge 0 \\implies x \\le 18 \\text{ or } x \\ge 27 \\)",
         "graphData": null
       },
       {
-        "explanation": "Test the intervals defined by the critical points.",
-        "workingOut": "\\(\\text{For } x < 18: \\frac{-}{-} > 0, \\quad \\text{For } 18 \\le x < 27: \\frac{+}{-} \\le 0, \\quad \\text{For } x > 27: \\frac{+}{+} > 0\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "State the domain using inequalities, keeping in mind that the denominator cannot be zero.",
-        "workingOut": "\\(x \\le 18 \\quad \\text{or} \\quad x > 27\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Testing the sign of \\( \\frac{x-18}{x-27} \\) on each interval gives the domain \\( x \\leq 18 \\text{ or } x > 27 \\).",
-        "workingOut": "",
+        "explanation": "Combine the inequality solution with the denominator restriction to state the final natural domain. We must exclude \\( x = 27 \\).",
+        "workingOut": "\\( x \\le 18 \\text{ or } x > 27 \\)",
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( 18 \\leq x < 27 \\)",
-      "\\( x < 18 \\text{ or } x \\geq 27 \\)",
-      "\\( x \\leq 18 \\text{ or } x > 27 \\)",
-      "\\( x \\neq 27 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( 18 \\leq x < 27 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x < 18 \\text{ or } x \\geq 27 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\leq 18 \\text{ or } x > 27 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\neq 27 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q17j",
@@ -3696,42 +4901,46 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "2",
     "solutionSteps": [
       {
-        "explanation": "The expression under the square root, \\( \\frac{x-20}{x-30} \\), must be \\( \\geq 0 \\), and since it is also a denominator, \\( x \\neq 30 \\).",
-        "workingOut": "",
+        "explanation": "First, rationalize the denominator by multiplying the numerator and denominator inside the square root by \\( (x - 30) \\).",
+        "workingOut": "\\( \\sqrt{\\frac{x - 20}{x - 30}} = \\sqrt{\\frac{(x - 20)(x - 30)}{(x - 30)^2}} = \\frac{\\sqrt{(x - 20)(x - 30)}}{|x - 30|} \\)",
         "graphData": null
       },
       {
-        "explanation": "Identify the conditions under which the expression inside the square root is defined.",
-        "workingOut": "\\(\\frac{x - 20}{x - 30} \\ge 0 \\quad \\text{and} \\quad x - 30 \\neq 0\\)",
+        "explanation": "From this rationalized form, identify the two conditions required for the natural domain: the expression inside the square root (surd) in the numerator must be non-negative, and the denominator cannot be zero.",
+        "workingOut": "\\begin{aligned} \\text{Numerator condition: } & (x - 20)(x - 30) \\ge 0 \\\\ \\text{Denominator condition: } & x - 30 \\neq 0 \\implies x \\neq 30 \\end{aligned}",
         "graphData": null
       },
       {
-        "explanation": "Determine the critical points where the numerator or denominator is zero.",
-        "workingOut": "\\(x = 20 \\quad \\text{and} \\quad x = 30\\)",
+        "explanation": "Solve the quadratic inequality \\( (x - 20)(x - 30) \\ge 0 \\). This represents a parabola opening upwards with roots at \\( x = 20 \\) and \\( x = 30 \\).",
+        "workingOut": "\\( (x - 20)(x - 30) \\ge 0 \\implies x \\le 20 \\text{ or } x \\ge 30 \\)",
         "graphData": null
       },
       {
-        "explanation": "Test the intervals defined by the critical points.",
-        "workingOut": "\\(\\text{For } x < 20: \\frac{-}{-} > 0, \\quad \\text{For } 20 \\le x < 30: \\frac{+}{-} \\le 0, \\quad \\text{For } x > 30: \\frac{+}{+} > 0\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "State the domain using inequalities, keeping in mind that the denominator cannot be zero.",
-        "workingOut": "\\(x \\le 20 \\quad \\text{or} \\quad x > 30\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Testing the sign of \\( \\frac{x-20}{x-30} \\) on each interval gives the domain \\( x \\leq 20 \\text{ or } x > 30 \\).",
-        "workingOut": "",
+        "explanation": "Combine the inequality solution with the denominator restriction to state the final natural domain. We must exclude \\( x = 30 \\).",
+        "workingOut": "\\( x \\le 20 \\text{ or } x > 30 \\)",
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( x < 20 \\text{ or } x \\geq 30 \\)",
-      "\\( 20 \\leq x < 30 \\)",
-      "\\( x \\leq 20 \\text{ or } x > 30 \\)",
-      "\\( x \\neq 30 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( x < 20 \\text{ or } x \\geq 30 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 20 \\leq x < 30 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\leq 20 \\text{ or } x > 30 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( x \\neq 30 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q18a",
@@ -3743,42 +4952,46 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "0",
     "solutionSteps": [
       {
-        "explanation": "General rule: for a rational function of the form \\( \\frac{ax+b}{cx+d} \\), the range excludes the horizontal asymptote \\( y = \\frac{a}{c} \\) (the ratio of the \\(x\\)-coefficients).",
-        "workingOut": "",
+        "explanation": "To find the range of this rational function, we find its horizontal asymptote by evaluating the limit as \\( x \\to \\infty \\).",
+        "workingOut": "\\( \\lim_{x \\to \\infty} \\frac{x + 3}{5x - 1} \\)",
         "graphData": null
       },
       {
-        "explanation": "Set y equal to f(x) and rearrange the equation to express x in terms of y.",
-        "workingOut": "\\(y = \\frac{1x + 3}{5x - 1} \\implies y(5x - 1) = 1x + 3\\)",
+        "explanation": "Divide every term in the numerator and the denominator by \\( x \\) (the leading term's variable of the denominator).",
+        "workingOut": "\\( = \\lim_{x \\to \\infty} \\frac{1 + \\frac{3}{x}}{5 + \\frac{-1}{x}} \\)",
         "graphData": null
       },
       {
-        "explanation": "Expand the left side and group all terms containing x on one side.",
-        "workingOut": "\\(5xy - 1y = 1x + 3 \\implies 5xy - 1x = 1y + 3\\)",
+        "explanation": "As \\( x \\) approaches infinity, any term with \\( x \\) in the denominator approaches zero.",
+        "workingOut": "\\( = \\frac{1 + 0}{5 + 0} = \\frac{1}{5} \\)",
         "graphData": null
       },
       {
-        "explanation": "Factor out x and solve.",
-        "workingOut": "\\(x(5y - 1) = 1y + 3 \\implies x = \\frac{1y + 3}{5y - 1}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Determine the restriction on y such that x is a real value.",
-        "workingOut": "\\(5y - 1 \\neq 0 \\implies y \\neq \\frac{1}{5}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "The range excludes \\( y = \\frac{1}{5} \\), so the answer is \\( y \\neq \\frac{1}{5} \\).",
-        "workingOut": "",
+        "explanation": "The horizontal asymptote is \\( y = \\frac{1}{5} \\). Since the graph approaches but never touches this line, this value is excluded from the range.",
+        "workingOut": "\\( y \\neq \\frac{1}{5} \\)",
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( y \\neq \\frac{1}{5} \\)",
-      "\\( y \\neq \\frac{5}{1} \\)",
-      "\\( y \\in \\mathbb{R}\\ (\\text{all real } y) \\)",
-      "\\( y \\neq \\frac{3}{5} \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( y \\neq \\frac{1}{5} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y \\neq \\frac{5}{1} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y \\in \\mathbb{R}\\ (\\text{all real } y) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y \\neq \\frac{3}{5} \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q18b",
@@ -3790,42 +5003,46 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "0",
     "solutionSteps": [
       {
-        "explanation": "General rule: for a rational function of the form \\( \\frac{ax+b}{cx+d} \\), the range excludes the horizontal asymptote \\( y = \\frac{a}{c} \\) (the ratio of the \\(x\\)-coefficients).",
-        "workingOut": "",
+        "explanation": "To find the range of this rational function, we find its horizontal asymptote by evaluating the limit as \\( x \\to \\infty \\).",
+        "workingOut": "\\( \\lim_{x \\to \\infty} \\frac{2x + 4}{6x - 2} \\)",
         "graphData": null
       },
       {
-        "explanation": "Set y equal to f(x) and rearrange the equation to express x in terms of y.",
-        "workingOut": "\\(y = \\frac{2x + 4}{6x - 2} \\implies y(6x - 2) = 2x + 4\\)",
+        "explanation": "Divide every term in the numerator and the denominator by \\( x \\) (the leading term's variable of the denominator).",
+        "workingOut": "\\( = \\lim_{x \\to \\infty} \\frac{2 + \\frac{4}{x}}{6 + \\frac{-2}{x}} \\)",
         "graphData": null
       },
       {
-        "explanation": "Expand the left side and group all terms containing x on one side.",
-        "workingOut": "\\(6xy - 2y = 2x + 4 \\implies 6xy - 2x = 2y + 4\\)",
+        "explanation": "As \\( x \\) approaches infinity, any term with \\( x \\) in the denominator approaches zero.",
+        "workingOut": "\\( = \\frac{2 + 0}{6 + 0} = \\frac{2}{6} \\)",
         "graphData": null
       },
       {
-        "explanation": "Factor out x and solve.",
-        "workingOut": "\\(x(6y - 2) = 2y + 4 \\implies x = \\frac{2y + 4}{6y - 2}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Determine the restriction on y such that x is a real value.",
-        "workingOut": "\\(6y - 2 \\neq 0 \\implies y \\neq \\frac{2}{6}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "The range excludes \\( y = \\frac{2}{6} \\), so the answer is \\( y \\neq \\frac{2}{6} \\).",
-        "workingOut": "",
+        "explanation": "The horizontal asymptote is \\( y = \\frac{2}{6} \\). Since the graph approaches but never touches this line, this value is excluded from the range.",
+        "workingOut": "\\( y \\neq \\frac{2}{6} \\)",
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( y \\neq \\frac{2}{6} \\)",
-      "\\( y \\in \\mathbb{R}\\ (\\text{all real } y) \\)",
-      "\\( y \\neq \\frac{4}{6} \\)",
-      "\\( y \\neq \\frac{6}{2} \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( y \\neq \\frac{2}{6} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y \\in \\mathbb{R}\\ (\\text{all real } y) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y \\neq \\frac{4}{6} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y \\neq \\frac{6}{2} \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q18c",
@@ -3837,42 +5054,46 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "2",
     "solutionSteps": [
       {
-        "explanation": "General rule: for a rational function of the form \\( \\frac{ax+b}{cx+d} \\), the range excludes the horizontal asymptote \\( y = \\frac{a}{c} \\) (the ratio of the \\(x\\)-coefficients).",
-        "workingOut": "",
+        "explanation": "To find the range of this rational function, we find its horizontal asymptote by evaluating the limit as \\( x \\to \\infty \\).",
+        "workingOut": "\\( \\lim_{x \\to \\infty} \\frac{3x + 5}{7x - 3} \\)",
         "graphData": null
       },
       {
-        "explanation": "Set y equal to f(x) and rearrange the equation to express x in terms of y.",
-        "workingOut": "\\(y = \\frac{3x + 5}{7x - 3} \\implies y(7x - 3) = 3x + 5\\)",
+        "explanation": "Divide every term in the numerator and the denominator by \\( x \\) (the leading term's variable of the denominator).",
+        "workingOut": "\\( = \\lim_{x \\to \\infty} \\frac{3 + \\frac{5}{x}}{7 + \\frac{-3}{x}} \\)",
         "graphData": null
       },
       {
-        "explanation": "Expand the left side and group all terms containing x on one side.",
-        "workingOut": "\\(7xy - 3y = 3x + 5 \\implies 7xy - 3x = 3y + 5\\)",
+        "explanation": "As \\( x \\) approaches infinity, any term with \\( x \\) in the denominator approaches zero.",
+        "workingOut": "\\( = \\frac{3 + 0}{7 + 0} = \\frac{3}{7} \\)",
         "graphData": null
       },
       {
-        "explanation": "Factor out x and solve.",
-        "workingOut": "\\(x(7y - 3) = 3y + 5 \\implies x = \\frac{3y + 5}{7y - 3}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Determine the restriction on y such that x is a real value.",
-        "workingOut": "\\(7y - 3 \\neq 0 \\implies y \\neq \\frac{3}{7}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "The range excludes \\( y = \\frac{3}{7} \\), so the answer is \\( y \\neq \\frac{3}{7} \\).",
-        "workingOut": "",
+        "explanation": "The horizontal asymptote is \\( y = \\frac{3}{7} \\). Since the graph approaches but never touches this line, this value is excluded from the range.",
+        "workingOut": "\\( y \\neq \\frac{3}{7} \\)",
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( y \\neq \\frac{5}{7} \\)",
-      "\\( y \\neq \\frac{7}{3} \\)",
-      "\\( y \\neq \\frac{3}{7} \\)",
-      "\\( y \\in \\mathbb{R}\\ (\\text{all real } y) \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( y \\neq \\frac{5}{7} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y \\neq \\frac{7}{3} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y \\neq \\frac{3}{7} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y \\in \\mathbb{R}\\ (\\text{all real } y) \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q18d",
@@ -3884,42 +5105,46 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "2",
     "solutionSteps": [
       {
-        "explanation": "General rule: for a rational function of the form \\( \\frac{ax+b}{cx+d} \\), the range excludes the horizontal asymptote \\( y = \\frac{a}{c} \\) (the ratio of the \\(x\\)-coefficients).",
-        "workingOut": "",
+        "explanation": "To find the range of this rational function, we find its horizontal asymptote by evaluating the limit as \\( x \\to \\infty \\).",
+        "workingOut": "\\( \\lim_{x \\to \\infty} \\frac{4x + 6}{8x - 4} \\)",
         "graphData": null
       },
       {
-        "explanation": "Set y equal to f(x) and rearrange the equation to express x in terms of y.",
-        "workingOut": "\\(y = \\frac{4x + 6}{8x - 4} \\implies y(8x - 4) = 4x + 6\\)",
+        "explanation": "Divide every term in the numerator and the denominator by \\( x \\) (the leading term's variable of the denominator).",
+        "workingOut": "\\( = \\lim_{x \\to \\infty} \\frac{4 + \\frac{6}{x}}{8 + \\frac{-4}{x}} \\)",
         "graphData": null
       },
       {
-        "explanation": "Expand the left side and group all terms containing x on one side.",
-        "workingOut": "\\(8xy - 4y = 4x + 6 \\implies 8xy - 4x = 4y + 6\\)",
+        "explanation": "As \\( x \\) approaches infinity, any term with \\( x \\) in the denominator approaches zero.",
+        "workingOut": "\\( = \\frac{4 + 0}{8 + 0} = \\frac{4}{8} \\)",
         "graphData": null
       },
       {
-        "explanation": "Factor out x and solve.",
-        "workingOut": "\\(x(8y - 4) = 4y + 6 \\implies x = \\frac{4y + 6}{8y - 4}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Determine the restriction on y such that x is a real value.",
-        "workingOut": "\\(8y - 4 \\neq 0 \\implies y \\neq \\frac{4}{8}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "The range excludes \\( y = \\frac{4}{8} \\), so the answer is \\( y \\neq \\frac{4}{8} \\).",
-        "workingOut": "",
+        "explanation": "The horizontal asymptote is \\( y = \\frac{4}{8} \\). Since the graph approaches but never touches this line, this value is excluded from the range.",
+        "workingOut": "\\( y \\neq \\frac{4}{8} \\)",
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( y \\in \\mathbb{R}\\ (\\text{all real } y) \\)",
-      "\\( y \\neq \\frac{6}{8} \\)",
-      "\\( y \\neq \\frac{4}{8} \\)",
-      "\\( y \\neq \\frac{8}{4} \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( y \\in \\mathbb{R}\\ (\\text{all real } y) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y \\neq \\frac{6}{8} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y \\neq \\frac{4}{8} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y \\neq \\frac{8}{4} \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q18e",
@@ -3931,42 +5156,46 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "1",
     "solutionSteps": [
       {
-        "explanation": "General rule: for a rational function of the form \\( \\frac{ax+b}{cx+d} \\), the range excludes the horizontal asymptote \\( y = \\frac{a}{c} \\) (the ratio of the \\(x\\)-coefficients).",
-        "workingOut": "",
+        "explanation": "To find the range of this rational function, we find its horizontal asymptote by evaluating the limit as \\( x \\to \\infty \\).",
+        "workingOut": "\\( \\lim_{x \\to \\infty} \\frac{5x + 7}{9x - 5} \\)",
         "graphData": null
       },
       {
-        "explanation": "Set y equal to f(x) and rearrange the equation to express x in terms of y.",
-        "workingOut": "\\(y = \\frac{5x + 7}{9x - 5} \\implies y(9x - 5) = 5x + 7\\)",
+        "explanation": "Divide every term in the numerator and the denominator by \\( x \\) (the leading term's variable of the denominator).",
+        "workingOut": "\\( = \\lim_{x \\to \\infty} \\frac{5 + \\frac{7}{x}}{9 + \\frac{-5}{x}} \\)",
         "graphData": null
       },
       {
-        "explanation": "Expand the left side and group all terms containing x on one side.",
-        "workingOut": "\\(9xy - 5y = 5x + 7 \\implies 9xy - 5x = 5y + 7\\)",
+        "explanation": "As \\( x \\) approaches infinity, any term with \\( x \\) in the denominator approaches zero.",
+        "workingOut": "\\( = \\frac{5 + 0}{9 + 0} = \\frac{5}{9} \\)",
         "graphData": null
       },
       {
-        "explanation": "Factor out x and solve.",
-        "workingOut": "\\(x(9y - 5) = 5y + 7 \\implies x = \\frac{5y + 7}{9y - 5}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Determine the restriction on y such that x is a real value.",
-        "workingOut": "\\(9y - 5 \\neq 0 \\implies y \\neq \\frac{5}{9}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "The range excludes \\( y = \\frac{5}{9} \\), so the answer is \\( y \\neq \\frac{5}{9} \\).",
-        "workingOut": "",
+        "explanation": "The horizontal asymptote is \\( y = \\frac{5}{9} \\). Since the graph approaches but never touches this line, this value is excluded from the range.",
+        "workingOut": "\\( y \\neq \\frac{5}{9} \\)",
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( y \\neq \\frac{7}{9} \\)",
-      "\\( y \\neq \\frac{5}{9} \\)",
-      "\\( y \\neq \\frac{9}{5} \\)",
-      "\\( y \\in \\mathbb{R}\\ (\\text{all real } y) \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( y \\neq \\frac{7}{9} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y \\neq \\frac{5}{9} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y \\neq \\frac{9}{5} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y \\in \\mathbb{R}\\ (\\text{all real } y) \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q18f",
@@ -3978,42 +5207,46 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "1",
     "solutionSteps": [
       {
-        "explanation": "General rule: for a rational function of the form \\( \\frac{ax+b}{cx+d} \\), the range excludes the horizontal asymptote \\( y = \\frac{a}{c} \\) (the ratio of the \\(x\\)-coefficients).",
-        "workingOut": "",
+        "explanation": "To find the range of this rational function, we find its horizontal asymptote by evaluating the limit as \\( x \\to \\infty \\).",
+        "workingOut": "\\( \\lim_{x \\to \\infty} \\frac{6x + 8}{10x - 6} \\)",
         "graphData": null
       },
       {
-        "explanation": "Set y equal to f(x) and rearrange the equation to express x in terms of y.",
-        "workingOut": "\\(y = \\frac{6x + 8}{10x - 6} \\implies y(10x - 6) = 6x + 8\\)",
+        "explanation": "Divide every term in the numerator and the denominator by \\( x \\) (the leading term's variable of the denominator).",
+        "workingOut": "\\( = \\lim_{x \\to \\infty} \\frac{6 + \\frac{8}{x}}{10 + \\frac{-6}{x}} \\)",
         "graphData": null
       },
       {
-        "explanation": "Expand the left side and group all terms containing x on one side.",
-        "workingOut": "\\(10xy - 6y = 6x + 8 \\implies 10xy - 6x = 6y + 8\\)",
+        "explanation": "As \\( x \\) approaches infinity, any term with \\( x \\) in the denominator approaches zero.",
+        "workingOut": "\\( = \\frac{6 + 0}{10 + 0} = \\frac{6}{10} \\)",
         "graphData": null
       },
       {
-        "explanation": "Factor out x and solve.",
-        "workingOut": "\\(x(10y - 6) = 6y + 8 \\implies x = \\frac{6y + 8}{10y - 6}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Determine the restriction on y such that x is a real value.",
-        "workingOut": "\\(10y - 6 \\neq 0 \\implies y \\neq \\frac{6}{10}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "The range excludes \\( y = \\frac{6}{10} \\), so the answer is \\( y \\neq \\frac{6}{10} \\).",
-        "workingOut": "",
+        "explanation": "The horizontal asymptote is \\( y = \\frac{6}{10} \\). Since the graph approaches but never touches this line, this value is excluded from the range.",
+        "workingOut": "\\( y \\neq \\frac{6}{10} \\)",
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( y \\neq \\frac{8}{10} \\)",
-      "\\( y \\neq \\frac{6}{10} \\)",
-      "\\( y \\in \\mathbb{R}\\ (\\text{all real } y) \\)",
-      "\\( y \\neq \\frac{10}{6} \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( y \\neq \\frac{8}{10} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y \\neq \\frac{6}{10} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y \\in \\mathbb{R}\\ (\\text{all real } y) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y \\neq \\frac{10}{6} \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q18g",
@@ -4025,42 +5258,46 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "0",
     "solutionSteps": [
       {
-        "explanation": "General rule: for a rational function of the form \\( \\frac{ax+b}{cx+d} \\), the range excludes the horizontal asymptote \\( y = \\frac{a}{c} \\) (the ratio of the \\(x\\)-coefficients).",
-        "workingOut": "",
+        "explanation": "To find the range of this rational function, we find its horizontal asymptote by evaluating the limit as \\( x \\to \\infty \\).",
+        "workingOut": "\\( \\lim_{x \\to \\infty} \\frac{7x + 9}{11x - 7} \\)",
         "graphData": null
       },
       {
-        "explanation": "Set y equal to f(x) and rearrange the equation to express x in terms of y.",
-        "workingOut": "\\(y = \\frac{7x + 9}{11x - 7} \\implies y(11x - 7) = 7x + 9\\)",
+        "explanation": "Divide every term in the numerator and the denominator by \\( x \\) (the leading term's variable of the denominator).",
+        "workingOut": "\\( = \\lim_{x \\to \\infty} \\frac{7 + \\frac{9}{x}}{11 + \\frac{-7}{x}} \\)",
         "graphData": null
       },
       {
-        "explanation": "Expand the left side and group all terms containing x on one side.",
-        "workingOut": "\\(11xy - 7y = 7x + 9 \\implies 11xy - 7x = 7y + 9\\)",
+        "explanation": "As \\( x \\) approaches infinity, any term with \\( x \\) in the denominator approaches zero.",
+        "workingOut": "\\( = \\frac{7 + 0}{11 + 0} = \\frac{7}{11} \\)",
         "graphData": null
       },
       {
-        "explanation": "Factor out x and solve.",
-        "workingOut": "\\(x(11y - 7) = 7y + 9 \\implies x = \\frac{7y + 9}{11y - 7}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Determine the restriction on y such that x is a real value.",
-        "workingOut": "\\(11y - 7 \\neq 0 \\implies y \\neq \\frac{7}{11}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "The range excludes \\( y = \\frac{7}{11} \\), so the answer is \\( y \\neq \\frac{7}{11} \\).",
-        "workingOut": "",
+        "explanation": "The horizontal asymptote is \\( y = \\frac{7}{11} \\). Since the graph approaches but never touches this line, this value is excluded from the range.",
+        "workingOut": "\\( y \\neq \\frac{7}{11} \\)",
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( y \\neq \\frac{7}{11} \\)",
-      "\\( y \\neq \\frac{9}{11} \\)",
-      "\\( y \\neq \\frac{11}{7} \\)",
-      "\\( y \\in \\mathbb{R}\\ (\\text{all real } y) \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( y \\neq \\frac{7}{11} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y \\neq \\frac{9}{11} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y \\neq \\frac{11}{7} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y \\in \\mathbb{R}\\ (\\text{all real } y) \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q18h",
@@ -4072,42 +5309,46 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "0",
     "solutionSteps": [
       {
-        "explanation": "General rule: for a rational function of the form \\( \\frac{ax+b}{cx+d} \\), the range excludes the horizontal asymptote \\( y = \\frac{a}{c} \\) (the ratio of the \\(x\\)-coefficients).",
-        "workingOut": "",
+        "explanation": "To find the range of this rational function, we find its horizontal asymptote by evaluating the limit as \\( x \\to \\infty \\).",
+        "workingOut": "\\( \\lim_{x \\to \\infty} \\frac{8x + 10}{12x - 8} \\)",
         "graphData": null
       },
       {
-        "explanation": "Set y equal to f(x) and rearrange the equation to express x in terms of y.",
-        "workingOut": "\\(y = \\frac{8x + 10}{12x - 8} \\implies y(12x - 8) = 8x + 10\\)",
+        "explanation": "Divide every term in the numerator and the denominator by \\( x \\) (the leading term's variable of the denominator).",
+        "workingOut": "\\( = \\lim_{x \\to \\infty} \\frac{8 + \\frac{10}{x}}{12 + \\frac{-8}{x}} \\)",
         "graphData": null
       },
       {
-        "explanation": "Expand the left side and group all terms containing x on one side.",
-        "workingOut": "\\(12xy - 8y = 8x + 10 \\implies 12xy - 8x = 8y + 10\\)",
+        "explanation": "As \\( x \\) approaches infinity, any term with \\( x \\) in the denominator approaches zero.",
+        "workingOut": "\\( = \\frac{8 + 0}{12 + 0} = \\frac{8}{12} \\)",
         "graphData": null
       },
       {
-        "explanation": "Factor out x and solve.",
-        "workingOut": "\\(x(12y - 8) = 8y + 10 \\implies x = \\frac{8y + 10}{12y - 8}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Determine the restriction on y such that x is a real value.",
-        "workingOut": "\\(12y - 8 \\neq 0 \\implies y \\neq \\frac{8}{12}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "The range excludes \\( y = \\frac{8}{12} \\), so the answer is \\( y \\neq \\frac{8}{12} \\).",
-        "workingOut": "",
+        "explanation": "The horizontal asymptote is \\( y = \\frac{8}{12} \\). Since the graph approaches but never touches this line, this value is excluded from the range.",
+        "workingOut": "\\( y \\neq \\frac{8}{12} \\)",
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( y \\neq \\frac{8}{12} \\)",
-      "\\( y \\neq \\frac{12}{8} \\)",
-      "\\( y \\in \\mathbb{R}\\ (\\text{all real } y) \\)",
-      "\\( y \\neq \\frac{10}{12} \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( y \\neq \\frac{8}{12} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y \\neq \\frac{12}{8} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y \\in \\mathbb{R}\\ (\\text{all real } y) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y \\neq \\frac{10}{12} \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q18i",
@@ -4119,42 +5360,46 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "3",
     "solutionSteps": [
       {
-        "explanation": "General rule: for a rational function of the form \\( \\frac{ax+b}{cx+d} \\), the range excludes the horizontal asymptote \\( y = \\frac{a}{c} \\) (the ratio of the \\(x\\)-coefficients).",
-        "workingOut": "",
+        "explanation": "To find the range of this rational function, we find its horizontal asymptote by evaluating the limit as \\( x \\to \\infty \\).",
+        "workingOut": "\\( \\lim_{x \\to \\infty} \\frac{9x + 11}{13x - 9} \\)",
         "graphData": null
       },
       {
-        "explanation": "Set y equal to f(x) and rearrange the equation to express x in terms of y.",
-        "workingOut": "\\(y = \\frac{9x + 11}{13x - 9} \\implies y(13x - 9) = 9x + 11\\)",
+        "explanation": "Divide every term in the numerator and the denominator by \\( x \\) (the leading term's variable of the denominator).",
+        "workingOut": "\\( = \\lim_{x \\to \\infty} \\frac{9 + \\frac{11}{x}}{13 + \\frac{-9}{x}} \\)",
         "graphData": null
       },
       {
-        "explanation": "Expand the left side and group all terms containing x on one side.",
-        "workingOut": "\\(13xy - 9y = 9x + 11 \\implies 13xy - 9x = 9y + 11\\)",
+        "explanation": "As \\( x \\) approaches infinity, any term with \\( x \\) in the denominator approaches zero.",
+        "workingOut": "\\( = \\frac{9 + 0}{13 + 0} = \\frac{9}{13} \\)",
         "graphData": null
       },
       {
-        "explanation": "Factor out x and solve.",
-        "workingOut": "\\(x(13y - 9) = 9y + 11 \\implies x = \\frac{9y + 11}{13y - 9}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Determine the restriction on y such that x is a real value.",
-        "workingOut": "\\(13y - 9 \\neq 0 \\implies y \\neq \\frac{9}{13}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "The range excludes \\( y = \\frac{9}{13} \\), so the answer is \\( y \\neq \\frac{9}{13} \\).",
-        "workingOut": "",
+        "explanation": "The horizontal asymptote is \\( y = \\frac{9}{13} \\). Since the graph approaches but never touches this line, this value is excluded from the range.",
+        "workingOut": "\\( y \\neq \\frac{9}{13} \\)",
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( y \\in \\mathbb{R}\\ (\\text{all real } y) \\)",
-      "\\( y \\neq \\frac{13}{9} \\)",
-      "\\( y \\neq \\frac{11}{13} \\)",
-      "\\( y \\neq \\frac{9}{13} \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( y \\in \\mathbb{R}\\ (\\text{all real } y) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y \\neq \\frac{13}{9} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y \\neq \\frac{11}{13} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y \\neq \\frac{9}{13} \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q18j",
@@ -4166,42 +5411,46 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "2",
     "solutionSteps": [
       {
-        "explanation": "General rule: for a rational function of the form \\( \\frac{ax+b}{cx+d} \\), the range excludes the horizontal asymptote \\( y = \\frac{a}{c} \\) (the ratio of the \\(x\\)-coefficients).",
-        "workingOut": "",
+        "explanation": "To find the range of this rational function, we find its horizontal asymptote by evaluating the limit as \\( x \\to \\infty \\).",
+        "workingOut": "\\( \\lim_{x \\to \\infty} \\frac{10x + 12}{14x - 10} \\)",
         "graphData": null
       },
       {
-        "explanation": "Set y equal to f(x) and rearrange the equation to express x in terms of y.",
-        "workingOut": "\\(y = \\frac{10x + 12}{14x - 10} \\implies y(14x - 10) = 10x + 12\\)",
+        "explanation": "Divide every term in the numerator and the denominator by \\( x \\) (the leading term's variable of the denominator).",
+        "workingOut": "\\( = \\lim_{x \\to \\infty} \\frac{10 + \\frac{12}{x}}{14 + \\frac{-10}{x}} \\)",
         "graphData": null
       },
       {
-        "explanation": "Expand the left side and group all terms containing x on one side.",
-        "workingOut": "\\(14xy - 10y = 10x + 12 \\implies 14xy - 10x = 10y + 12\\)",
+        "explanation": "As \\( x \\) approaches infinity, any term with \\( x \\) in the denominator approaches zero.",
+        "workingOut": "\\( = \\frac{10 + 0}{14 + 0} = \\frac{10}{14} \\)",
         "graphData": null
       },
       {
-        "explanation": "Factor out x and solve.",
-        "workingOut": "\\(x(14y - 10) = 10y + 12 \\implies x = \\frac{10y + 12}{14y - 10}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Determine the restriction on y such that x is a real value.",
-        "workingOut": "\\(14y - 10 \\neq 0 \\implies y \\neq \\frac{10}{14}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "The range excludes \\( y = \\frac{10}{14} \\), so the answer is \\( y \\neq \\frac{10}{14} \\).",
-        "workingOut": "",
+        "explanation": "The horizontal asymptote is \\( y = \\frac{10}{14} \\). Since the graph approaches but never touches this line, this value is excluded from the range.",
+        "workingOut": "\\( y \\neq \\frac{10}{14} \\)",
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( y \\in \\mathbb{R}\\ (\\text{all real } y) \\)",
-      "\\( y \\neq \\frac{14}{10} \\)",
-      "\\( y \\neq \\frac{10}{14} \\)",
-      "\\( y \\neq \\frac{12}{14} \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( y \\in \\mathbb{R}\\ (\\text{all real } y) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y \\neq \\frac{14}{10} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y \\neq \\frac{10}{14} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y \\neq \\frac{12}{14} \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q19a",
@@ -4243,12 +5492,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( k = 8 \\)",
-      "\\( k = 1 \\)",
-      "\\( k = 7 \\)",
-      "\\( k = 6 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( k = 8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( k = 1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( k = 7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( k = 6 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q19b",
@@ -4290,12 +5553,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( k = 0 \\)",
-      "\\( k = 13 \\)",
-      "\\( k = 12 \\)",
-      "\\( k = 11 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( k = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( k = 13 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( k = 12 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( k = 11 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q19c",
@@ -4337,12 +5614,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( k = -1 \\)",
-      "\\( k = 18 \\)",
-      "\\( k = 17 \\)",
-      "\\( k = 16 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( k = -1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( k = 18 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( k = 17 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( k = 16 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q19d",
@@ -4384,12 +5675,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( k = 22 \\)",
-      "\\( k = 23 \\)",
-      "\\( k = -2 \\)",
-      "\\( k = 21 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( k = 22 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( k = 23 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( k = -2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( k = 21 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q19e",
@@ -4431,12 +5736,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( k = 28 \\)",
-      "\\( k = 27 \\)",
-      "\\( k = -3 \\)",
-      "\\( k = 26 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( k = 28 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( k = 27 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( k = -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( k = 26 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q19f",
@@ -4478,12 +5797,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( k = 33 \\)",
-      "\\( k = 32 \\)",
-      "\\( k = -4 \\)",
-      "\\( k = 31 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( k = 33 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( k = 32 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( k = -4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( k = 31 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q19g",
@@ -4525,12 +5858,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( k = 37 \\)",
-      "\\( k = -5 \\)",
-      "\\( k = 38 \\)",
-      "\\( k = 36 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( k = 37 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( k = -5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( k = 38 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( k = 36 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q19h",
@@ -4572,12 +5919,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( k = 42 \\)",
-      "\\( k = -6 \\)",
-      "\\( k = 43 \\)",
-      "\\( k = 41 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( k = 42 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( k = -6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( k = 43 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( k = 41 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q19i",
@@ -4619,12 +5980,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( k = -7 \\)",
-      "\\( k = 47 \\)",
-      "\\( k = 48 \\)",
-      "\\( k = 46 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( k = -7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( k = 47 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( k = 48 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( k = 46 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q19j",
@@ -4666,12 +6041,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( k = 52 \\)",
-      "\\( k = -8 \\)",
-      "\\( k = 53 \\)",
-      "\\( k = 51 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( k = 52 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( k = -8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( k = 53 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( k = 51 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q20a",
@@ -4713,12 +6102,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( d = 0 \\)",
-      "\\( d = -3 \\)",
-      "\\( d = 4 \\)",
-      "\\( d = 3 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( d = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( d = -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( d = 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( d = 3 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q20b",
@@ -4760,12 +6163,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( d = -6 \\)",
-      "\\( d = 8 \\)",
-      "\\( d = 0 \\)",
-      "\\( d = 6 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( d = -6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( d = 8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( d = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( d = 6 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q20c",
@@ -4807,12 +6224,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( d = -9 \\)",
-      "\\( d = 12 \\)",
-      "\\( d = 0 \\)",
-      "\\( d = 9 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( d = -9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( d = 12 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( d = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( d = 9 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q20d",
@@ -4854,12 +6285,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( d = 16 \\)",
-      "\\( d = -12 \\)",
-      "\\( d = 0 \\)",
-      "\\( d = 12 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( d = 16 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( d = -12 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( d = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( d = 12 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q20e",
@@ -4901,12 +6346,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( d = 20 \\)",
-      "\\( d = 0 \\)",
-      "\\( d = -15 \\)",
-      "\\( d = 15 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( d = 20 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( d = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( d = -15 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( d = 15 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q20f",
@@ -4948,12 +6407,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( d = 24 \\)",
-      "\\( d = 0 \\)",
-      "\\( d = -18 \\)",
-      "\\( d = 18 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( d = 24 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( d = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( d = -18 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( d = 18 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q20g",
@@ -4995,12 +6468,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( d = 0 \\)",
-      "\\( d = 28 \\)",
-      "\\( d = -21 \\)",
-      "\\( d = 21 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( d = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( d = 28 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( d = -21 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( d = 21 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q20h",
@@ -5042,12 +6529,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( d = 32 \\)",
-      "\\( d = 0 \\)",
-      "\\( d = -24 \\)",
-      "\\( d = 24 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( d = 32 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( d = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( d = -24 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( d = 24 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q20i",
@@ -5089,12 +6590,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( d = -27 \\)",
-      "\\( d = 0 \\)",
-      "\\( d = 36 \\)",
-      "\\( d = 27 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( d = -27 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( d = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( d = 36 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( d = 27 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q20j",
@@ -5136,12 +6651,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( d = 0 \\)",
-      "\\( d = -30 \\)",
-      "\\( d = 40 \\)",
-      "\\( d = 30 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( d = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( d = -30 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( d = 40 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( d = 30 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q21a",
@@ -5183,12 +6712,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( f^{-1}(x) = (x-2)^2+1,\\ \\ x \\geq 2 \\)",
-      "\\( f^{-1}(x) = (x-1)^2+2,\\ \\ x \\geq 1 \\)",
-      "\\( f^{-1}(x) = (x-2)^2-1,\\ \\ x \\geq 2 \\)",
-      "\\( f^{-1}(x) = (x-2)^2+1,\\ \\ x \\in \\mathbb{R} \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( f^{-1}(x) = (x-2)^2+1,\\ \\ x \\geq 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f^{-1}(x) = (x-1)^2+2,\\ \\ x \\geq 1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f^{-1}(x) = (x-2)^2-1,\\ \\ x \\geq 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f^{-1}(x) = (x-2)^2+1,\\ \\ x \\in \\mathbb{R} \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q21b",
@@ -5230,12 +6773,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( f^{-1}(x) = (x-2)^2+3,\\ \\ x \\geq 2 \\)",
-      "\\( f^{-1}(x) = (x-3)^2-2,\\ \\ x \\geq 3 \\)",
-      "\\( f^{-1}(x) = (x-3)^2+2,\\ \\ x \\in \\mathbb{R} \\)",
-      "\\( f^{-1}(x) = (x-3)^2+2,\\ \\ x \\geq 3 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( f^{-1}(x) = (x-2)^2+3,\\ \\ x \\geq 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f^{-1}(x) = (x-3)^2-2,\\ \\ x \\geq 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f^{-1}(x) = (x-3)^2+2,\\ \\ x \\in \\mathbb{R} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f^{-1}(x) = (x-3)^2+2,\\ \\ x \\geq 3 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q21c",
@@ -5277,12 +6834,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( f^{-1}(x) = (x-3)^2+4,\\ \\ x \\geq 3 \\)",
-      "\\( f^{-1}(x) = (x-4)^2-3,\\ \\ x \\geq 4 \\)",
-      "\\( f^{-1}(x) = (x-4)^2+3,\\ \\ x \\geq 4 \\)",
-      "\\( f^{-1}(x) = (x-4)^2+3,\\ \\ x \\in \\mathbb{R} \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( f^{-1}(x) = (x-3)^2+4,\\ \\ x \\geq 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f^{-1}(x) = (x-4)^2-3,\\ \\ x \\geq 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f^{-1}(x) = (x-4)^2+3,\\ \\ x \\geq 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f^{-1}(x) = (x-4)^2+3,\\ \\ x \\in \\mathbb{R} \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q21d",
@@ -5324,12 +6895,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( f^{-1}(x) = (x-5)^2-4,\\ \\ x \\geq 5 \\)",
-      "\\( f^{-1}(x) = (x-5)^2+4,\\ \\ x \\in \\mathbb{R} \\)",
-      "\\( f^{-1}(x) = (x-5)^2+4,\\ \\ x \\geq 5 \\)",
-      "\\( f^{-1}(x) = (x-4)^2+5,\\ \\ x \\geq 4 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( f^{-1}(x) = (x-5)^2-4,\\ \\ x \\geq 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f^{-1}(x) = (x-5)^2+4,\\ \\ x \\in \\mathbb{R} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f^{-1}(x) = (x-5)^2+4,\\ \\ x \\geq 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f^{-1}(x) = (x-4)^2+5,\\ \\ x \\geq 4 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q21e",
@@ -5371,12 +6956,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( f^{-1}(x) = (x-5)^2+6,\\ \\ x \\geq 5 \\)",
-      "\\( f^{-1}(x) = (x-6)^2+5,\\ \\ x \\in \\mathbb{R} \\)",
-      "\\( f^{-1}(x) = (x-6)^2+5,\\ \\ x \\geq 6 \\)",
-      "\\( f^{-1}(x) = (x-6)^2-5,\\ \\ x \\geq 6 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( f^{-1}(x) = (x-5)^2+6,\\ \\ x \\geq 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f^{-1}(x) = (x-6)^2+5,\\ \\ x \\in \\mathbb{R} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f^{-1}(x) = (x-6)^2+5,\\ \\ x \\geq 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f^{-1}(x) = (x-6)^2-5,\\ \\ x \\geq 6 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q21f",
@@ -5418,12 +7017,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( f^{-1}(x) = (x-7)^2+6,\\ \\ x \\geq 7 \\)",
-      "\\( f^{-1}(x) = (x-7)^2+6,\\ \\ x \\in \\mathbb{R} \\)",
-      "\\( f^{-1}(x) = (x-7)^2-6,\\ \\ x \\geq 7 \\)",
-      "\\( f^{-1}(x) = (x-6)^2+7,\\ \\ x \\geq 6 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( f^{-1}(x) = (x-7)^2+6,\\ \\ x \\geq 7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f^{-1}(x) = (x-7)^2+6,\\ \\ x \\in \\mathbb{R} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f^{-1}(x) = (x-7)^2-6,\\ \\ x \\geq 7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f^{-1}(x) = (x-6)^2+7,\\ \\ x \\geq 6 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q21g",
@@ -5465,12 +7078,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( f^{-1}(x) = (x-8)^2+7,\\ \\ x \\geq 8 \\)",
-      "\\( f^{-1}(x) = (x-8)^2+7,\\ \\ x \\in \\mathbb{R} \\)",
-      "\\( f^{-1}(x) = (x-7)^2+8,\\ \\ x \\geq 7 \\)",
-      "\\( f^{-1}(x) = (x-8)^2-7,\\ \\ x \\geq 8 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( f^{-1}(x) = (x-8)^2+7,\\ \\ x \\geq 8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f^{-1}(x) = (x-8)^2+7,\\ \\ x \\in \\mathbb{R} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f^{-1}(x) = (x-7)^2+8,\\ \\ x \\geq 7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f^{-1}(x) = (x-8)^2-7,\\ \\ x \\geq 8 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q21h",
@@ -5512,12 +7139,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( f^{-1}(x) = (x-9)^2+8,\\ \\ x \\geq 9 \\)",
-      "\\( f^{-1}(x) = (x-9)^2-8,\\ \\ x \\geq 9 \\)",
-      "\\( f^{-1}(x) = (x-9)^2+8,\\ \\ x \\in \\mathbb{R} \\)",
-      "\\( f^{-1}(x) = (x-8)^2+9,\\ \\ x \\geq 8 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( f^{-1}(x) = (x-9)^2+8,\\ \\ x \\geq 9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f^{-1}(x) = (x-9)^2-8,\\ \\ x \\geq 9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f^{-1}(x) = (x-9)^2+8,\\ \\ x \\in \\mathbb{R} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f^{-1}(x) = (x-8)^2+9,\\ \\ x \\geq 8 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q21i",
@@ -5559,12 +7200,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( f^{-1}(x) = (x-9)^2+10,\\ \\ x \\geq 9 \\)",
-      "\\( f^{-1}(x) = (x-10)^2+9,\\ \\ x \\geq 10 \\)",
-      "\\( f^{-1}(x) = (x-10)^2+9,\\ \\ x \\in \\mathbb{R} \\)",
-      "\\( f^{-1}(x) = (x-10)^2-9,\\ \\ x \\geq 10 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( f^{-1}(x) = (x-9)^2+10,\\ \\ x \\geq 9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f^{-1}(x) = (x-10)^2+9,\\ \\ x \\geq 10 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f^{-1}(x) = (x-10)^2+9,\\ \\ x \\in \\mathbb{R} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f^{-1}(x) = (x-10)^2-9,\\ \\ x \\geq 10 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q21j",
@@ -5606,12 +7261,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( f^{-1}(x) = (x-10)^2+11,\\ \\ x \\geq 10 \\)",
-      "\\( f^{-1}(x) = (x-11)^2-10,\\ \\ x \\geq 11 \\)",
-      "\\( f^{-1}(x) = (x-11)^2+10,\\ \\ x \\geq 11 \\)",
-      "\\( f^{-1}(x) = (x-11)^2+10,\\ \\ x \\in \\mathbb{R} \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( f^{-1}(x) = (x-10)^2+11,\\ \\ x \\geq 10 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f^{-1}(x) = (x-11)^2-10,\\ \\ x \\geq 11 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f^{-1}(x) = (x-11)^2+10,\\ \\ x \\geq 11 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f^{-1}(x) = (x-11)^2+10,\\ \\ x \\in \\mathbb{R} \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q22a",
@@ -5629,36 +7298,50 @@ export const Y11_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Apply vertical dilation by a factor of the coefficient.",
-        "workingOut": "\\(y = 1f(x)\\)",
+        "workingOut": "\\(y = f(x)\\)",
         "graphData": null
       },
       {
         "explanation": "Apply reflection in the x-axis.",
-        "workingOut": "\\(y = -1f(x)\\)",
+        "workingOut": "\\(y = -f(x)\\)",
         "graphData": null
       },
       {
         "explanation": "Apply horizontal translation to the right.",
-        "workingOut": "\\(y = -1f(x - 2)\\)",
+        "workingOut": "\\(y = -f(x - 2)\\)",
         "graphData": null
       },
       {
         "explanation": "Apply vertical translation upwards to get the final function.",
-        "workingOut": "\\(g(x) = -1f(x - 2) + 3\\)",
+        "workingOut": "\\(g(x) = -f(x - 2) + 3\\)",
         "graphData": null
       },
       {
-        "explanation": "Dilate by 1, reflect in the \\(x\\)-axis, shift right 2, then shift up 3: \\( g(x) = -1f(x-2)+3 \\).",
+        "explanation": "Dilate by 1, reflect in the \\(x\\)-axis, shift right 2, then shift up 3: \\( g(x) = -f(x-2)+3 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( g(x) = -1f(x+2)+3 \\)",
-      "\\( g(x) = -1f(x-3)+2 \\)",
-      "\\( g(x) = 1f(x-2)+3 \\)",
-      "\\( g(x) = -1f(x-2)+3 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( g(x) = -f(x+2)+3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( g(x) = -f(x-3)+2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( g(x) = f(x-2)+3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( g(x) = -f(x-2)+3 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q22b",
@@ -5700,12 +7383,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( g(x) = -2f(x-4)+3 \\)",
-      "\\( g(x) = 2f(x-3)+4 \\)",
-      "\\( g(x) = -2f(x+3)+4 \\)",
-      "\\( g(x) = -2f(x-3)+4 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( g(x) = -2f(x-4)+3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( g(x) = 2f(x-3)+4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( g(x) = -2f(x+3)+4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( g(x) = -2f(x-3)+4 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q22c",
@@ -5747,12 +7444,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( g(x) = -3f(x-5)+4 \\)",
-      "\\( g(x) = 3f(x-4)+5 \\)",
-      "\\( g(x) = -3f(x+4)+5 \\)",
-      "\\( g(x) = -3f(x-4)+5 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( g(x) = -3f(x-5)+4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( g(x) = 3f(x-4)+5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( g(x) = -3f(x+4)+5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( g(x) = -3f(x-4)+5 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q22d",
@@ -5794,12 +7505,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( g(x) = 4f(x-5)+6 \\)",
-      "\\( g(x) = -4f(x-6)+5 \\)",
-      "\\( g(x) = -4f(x+5)+6 \\)",
-      "\\( g(x) = -4f(x-5)+6 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( g(x) = 4f(x-5)+6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( g(x) = -4f(x-6)+5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( g(x) = -4f(x+5)+6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( g(x) = -4f(x-5)+6 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q22e",
@@ -5841,12 +7566,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( g(x) = -5f(x-7)+6 \\)",
-      "\\( g(x) = 5f(x-6)+7 \\)",
-      "\\( g(x) = -5f(x+6)+7 \\)",
-      "\\( g(x) = -5f(x-6)+7 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( g(x) = -5f(x-7)+6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( g(x) = 5f(x-6)+7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( g(x) = -5f(x+6)+7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( g(x) = -5f(x-6)+7 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q22f",
@@ -5888,12 +7627,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( g(x) = -6f(x+7)+8 \\)",
-      "\\( g(x) = 6f(x-7)+8 \\)",
-      "\\( g(x) = -6f(x-8)+7 \\)",
-      "\\( g(x) = -6f(x-7)+8 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( g(x) = -6f(x+7)+8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( g(x) = 6f(x-7)+8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( g(x) = -6f(x-8)+7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( g(x) = -6f(x-7)+8 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q22g",
@@ -5935,12 +7688,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( g(x) = 7f(x-8)+9 \\)",
-      "\\( g(x) = -7f(x+8)+9 \\)",
-      "\\( g(x) = -7f(x-9)+8 \\)",
-      "\\( g(x) = -7f(x-8)+9 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( g(x) = 7f(x-8)+9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( g(x) = -7f(x+8)+9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( g(x) = -7f(x-9)+8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( g(x) = -7f(x-8)+9 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q22h",
@@ -5982,12 +7749,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( g(x) = -8f(x+9)+10 \\)",
-      "\\( g(x) = 8f(x-9)+10 \\)",
-      "\\( g(x) = -8f(x-10)+9 \\)",
-      "\\( g(x) = -8f(x-9)+10 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( g(x) = -8f(x+9)+10 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( g(x) = 8f(x-9)+10 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( g(x) = -8f(x-10)+9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( g(x) = -8f(x-9)+10 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q22i",
@@ -6029,12 +7810,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( g(x) = -9f(x-11)+10 \\)",
-      "\\( g(x) = -9f(x+10)+11 \\)",
-      "\\( g(x) = 9f(x-10)+11 \\)",
-      "\\( g(x) = -9f(x-10)+11 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( g(x) = -9f(x-11)+10 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( g(x) = -9f(x+10)+11 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( g(x) = 9f(x-10)+11 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( g(x) = -9f(x-10)+11 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q22j",
@@ -6076,12 +7871,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( g(x) = -10f(x+11)+12 \\)",
-      "\\( g(x) = -10f(x-12)+11 \\)",
-      "\\( g(x) = 10f(x-11)+12 \\)",
-      "\\( g(x) = -10f(x-11)+12 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( g(x) = -10f(x+11)+12 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( g(x) = -10f(x-12)+11 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( g(x) = 10f(x-11)+12 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( g(x) = -10f(x-11)+12 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q23a",
@@ -6118,12 +7927,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( 3x + 4y = -25 \\)",
-      "\\( 3x + 4y = 5 \\)",
-      "\\( 4x + 3y = 25 \\)",
-      "\\( 3x + 4y = 25 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( 3x + 4y = -25 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 3x + 4y = 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 4x + 3y = 25 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 3x + 4y = 25 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q23b",
@@ -6160,12 +7983,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( 3x + 4y = -50 \\)",
-      "\\( 3x + 4y = 5 \\)",
-      "\\( 4x + 3y = 50 \\)",
-      "\\( 3x + 4y = 50 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( 3x + 4y = -50 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 3x + 4y = 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 4x + 3y = 50 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 3x + 4y = 50 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q23c",
@@ -6202,12 +8039,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( 3x + 4y = 5 \\)",
-      "\\( 3x + 4y = -75 \\)",
-      "\\( 4x + 3y = 75 \\)",
-      "\\( 3x + 4y = 75 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( 3x + 4y = 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 3x + 4y = -75 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 4x + 3y = 75 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 3x + 4y = 75 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q23d",
@@ -6244,12 +8095,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( 4x + 3y = 100 \\)",
-      "\\( 3x + 4y = 5 \\)",
-      "\\( 3x + 4y = -100 \\)",
-      "\\( 3x + 4y = 100 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( 4x + 3y = 100 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 3x + 4y = 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 3x + 4y = -100 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 3x + 4y = 100 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q23e",
@@ -6286,12 +8151,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( 4x + 3y = 125 \\)",
-      "\\( 3x + 4y = 5 \\)",
-      "\\( 3x + 4y = -125 \\)",
-      "\\( 3x + 4y = 125 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( 4x + 3y = 125 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 3x + 4y = 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 3x + 4y = -125 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 3x + 4y = 125 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q23f",
@@ -6328,12 +8207,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( 3x + 4y = 5 \\)",
-      "\\( 4x + 3y = 150 \\)",
-      "\\( 3x + 4y = -150 \\)",
-      "\\( 3x + 4y = 150 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( 3x + 4y = 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 4x + 3y = 150 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 3x + 4y = -150 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 3x + 4y = 150 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q23g",
@@ -6370,12 +8263,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( 4x + 3y = 175 \\)",
-      "\\( 3x + 4y = 5 \\)",
-      "\\( 3x + 4y = -175 \\)",
-      "\\( 3x + 4y = 175 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( 4x + 3y = 175 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 3x + 4y = 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 3x + 4y = -175 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 3x + 4y = 175 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q23h",
@@ -6412,12 +8319,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( 4x + 3y = 200 \\)",
-      "\\( 3x + 4y = -200 \\)",
-      "\\( 3x + 4y = 5 \\)",
-      "\\( 3x + 4y = 200 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( 4x + 3y = 200 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 3x + 4y = -200 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 3x + 4y = 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 3x + 4y = 200 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q23i",
@@ -6454,12 +8375,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( 3x + 4y = -225 \\)",
-      "\\( 4x + 3y = 225 \\)",
-      "\\( 3x + 4y = 5 \\)",
-      "\\( 3x + 4y = 225 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( 3x + 4y = -225 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 4x + 3y = 225 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 3x + 4y = 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 3x + 4y = 225 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q23j",
@@ -6496,12 +8431,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( 3x + 4y = -250 \\)",
-      "\\( 4x + 3y = 250 \\)",
-      "\\( 3x + 4y = 5 \\)",
-      "\\( 3x + 4y = 250 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( 3x + 4y = -250 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 4x + 3y = 250 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 3x + 4y = 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 3x + 4y = 250 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q24a",
@@ -6543,12 +8492,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( (-3, 3) \\text{ and } (-4, 4) \\)",
-      "\\( (4, -3) \\text{ and } (3, -4) \\)",
-      "\\( (-4, 4) \\text{ and } (-3, 3) \\)",
-      "\\( (-4, 3) \\text{ and } (-3, 4) \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( (-3, 3) \\text{ and } (-4, 4) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( (4, -3) \\text{ and } (3, -4) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( (-4, 4) \\text{ and } (-3, 3) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( (-4, 3) \\text{ and } (-3, 4) \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q24b",
@@ -6590,12 +8553,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( (8, -6) \\text{ and } (6, -8) \\)",
-      "\\( (-6, 6) \\text{ and } (-8, 8) \\)",
-      "\\( (-8, 8) \\text{ and } (-6, 6) \\)",
-      "\\( (-8, 6) \\text{ and } (-6, 8) \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( (8, -6) \\text{ and } (6, -8) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( (-6, 6) \\text{ and } (-8, 8) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( (-8, 8) \\text{ and } (-6, 6) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( (-8, 6) \\text{ and } (-6, 8) \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q24c",
@@ -6637,12 +8614,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( (-12, 12) \\text{ and } (-9, 9) \\)",
-      "\\( (-9, 9) \\text{ and } (-12, 12) \\)",
-      "\\( (12, -9) \\text{ and } (9, -12) \\)",
-      "\\( (-12, 9) \\text{ and } (-9, 12) \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( (-12, 12) \\text{ and } (-9, 9) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( (-9, 9) \\text{ and } (-12, 12) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( (12, -9) \\text{ and } (9, -12) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( (-12, 9) \\text{ and } (-9, 12) \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q24d",
@@ -6684,12 +8675,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( (-16, 16) \\text{ and } (-12, 12) \\)",
-      "\\( (-12, 12) \\text{ and } (-16, 16) \\)",
-      "\\( (16, -12) \\text{ and } (12, -16) \\)",
-      "\\( (-16, 12) \\text{ and } (-12, 16) \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( (-16, 16) \\text{ and } (-12, 12) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( (-12, 12) \\text{ and } (-16, 16) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( (16, -12) \\text{ and } (12, -16) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( (-16, 12) \\text{ and } (-12, 16) \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q24e",
@@ -6731,12 +8736,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( (-15, 15) \\text{ and } (-20, 20) \\)",
-      "\\( (-20, 20) \\text{ and } (-15, 15) \\)",
-      "\\( (20, -15) \\text{ and } (15, -20) \\)",
-      "\\( (-20, 15) \\text{ and } (-15, 20) \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( (-15, 15) \\text{ and } (-20, 20) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( (-20, 20) \\text{ and } (-15, 15) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( (20, -15) \\text{ and } (15, -20) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( (-20, 15) \\text{ and } (-15, 20) \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q24f",
@@ -6778,12 +8797,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( (24, -18) \\text{ and } (18, -24) \\)",
-      "\\( (-24, 24) \\text{ and } (-18, 18) \\)",
-      "\\( (-18, 18) \\text{ and } (-24, 24) \\)",
-      "\\( (-24, 18) \\text{ and } (-18, 24) \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( (24, -18) \\text{ and } (18, -24) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( (-24, 24) \\text{ and } (-18, 18) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( (-18, 18) \\text{ and } (-24, 24) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( (-24, 18) \\text{ and } (-18, 24) \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q24g",
@@ -6825,12 +8858,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( (-28, 28) \\text{ and } (-21, 21) \\)",
-      "\\( (28, -21) \\text{ and } (21, -28) \\)",
-      "\\( (-21, 21) \\text{ and } (-28, 28) \\)",
-      "\\( (-28, 21) \\text{ and } (-21, 28) \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( (-28, 28) \\text{ and } (-21, 21) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( (28, -21) \\text{ and } (21, -28) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( (-21, 21) \\text{ and } (-28, 28) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( (-28, 21) \\text{ and } (-21, 28) \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q24h",
@@ -6872,12 +8919,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( (32, -24) \\text{ and } (24, -32) \\)",
-      "\\( (-32, 32) \\text{ and } (-24, 24) \\)",
-      "\\( (-24, 24) \\text{ and } (-32, 32) \\)",
-      "\\( (-32, 24) \\text{ and } (-24, 32) \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( (32, -24) \\text{ and } (24, -32) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( (-32, 32) \\text{ and } (-24, 24) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( (-24, 24) \\text{ and } (-32, 32) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( (-32, 24) \\text{ and } (-24, 32) \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q24i",
@@ -6919,12 +8980,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( (36, -27) \\text{ and } (27, -36) \\)",
-      "\\( (-36, 36) \\text{ and } (-27, 27) \\)",
-      "\\( (-27, 27) \\text{ and } (-36, 36) \\)",
-      "\\( (-36, 27) \\text{ and } (-27, 36) \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( (36, -27) \\text{ and } (27, -36) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( (-36, 36) \\text{ and } (-27, 27) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( (-27, 27) \\text{ and } (-36, 36) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( (-36, 27) \\text{ and } (-27, 36) \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q24j",
@@ -6966,12 +9041,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( (-30, 30) \\text{ and } (-40, 40) \\)",
-      "\\( (40, -30) \\text{ and } (30, -40) \\)",
-      "\\( (-40, 40) \\text{ and } (-30, 30) \\)",
-      "\\( (-40, 30) \\text{ and } (-30, 40) \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( (-30, 30) \\text{ and } (-40, 40) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( (40, -30) \\text{ and } (30, -40) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( (-40, 40) \\text{ and } (-30, 30) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( (-40, 30) \\text{ and } (-30, 40) \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q25a",
@@ -6980,12 +9069,6 @@ export const Y11_CH3B_QUESTIONS = [
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
     "question": "Determine the symmetries of the relation defined by the equation \\( \\frac{x^2}{4} + \\frac{y^2}{9} = 1 \\).",
-    "opts": [
-      "Symmetric with respect to the x-axis, y-axis, and the origin.",
-      "Symmetric with respect to the y-axis only.",
-      "Symmetric with respect to the x-axis only.",
-      "Symmetric with respect to the origin only."
-    ],
     "a": "0",
     "solutionSteps": [
       {
@@ -7013,7 +9096,27 @@ export const Y11_CH3B_QUESTIONS = [
         "workingOut": "",
         "graphData": null
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "Symmetric with respect to the x-axis, y-axis, and the origin.",
+        "imageUrl": ""
+      },
+      {
+        "text": "Symmetric with respect to the y-axis only.",
+        "imageUrl": ""
+      },
+      {
+        "text": "Symmetric with respect to the x-axis only.",
+        "imageUrl": ""
+      },
+      {
+        "text": "Symmetric with respect to the origin only.",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q25b",
@@ -7022,12 +9125,6 @@ export const Y11_CH3B_QUESTIONS = [
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
     "question": "Determine the symmetries of the relation defined by the equation \\( \\frac{x^2}{16} + \\frac{y^2}{36} = 1 \\).",
-    "opts": [
-      "Symmetric with respect to the x-axis, y-axis, and the origin.",
-      "Symmetric with respect to the y-axis only.",
-      "Symmetric with respect to the x-axis only.",
-      "Symmetric with respect to the origin only."
-    ],
     "a": "0",
     "solutionSteps": [
       {
@@ -7055,7 +9152,27 @@ export const Y11_CH3B_QUESTIONS = [
         "workingOut": "",
         "graphData": null
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "Symmetric with respect to the x-axis, y-axis, and the origin.",
+        "imageUrl": ""
+      },
+      {
+        "text": "Symmetric with respect to the y-axis only.",
+        "imageUrl": ""
+      },
+      {
+        "text": "Symmetric with respect to the x-axis only.",
+        "imageUrl": ""
+      },
+      {
+        "text": "Symmetric with respect to the origin only.",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q25c",
@@ -7064,12 +9181,6 @@ export const Y11_CH3B_QUESTIONS = [
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
     "question": "Determine the symmetries of the relation defined by the equation \\( \\frac{x^2}{36} + \\frac{y^2}{81} = 1 \\).",
-    "opts": [
-      "Symmetric with respect to the x-axis, y-axis, and the origin.",
-      "Symmetric with respect to the y-axis only.",
-      "Symmetric with respect to the x-axis only.",
-      "Symmetric with respect to the origin only."
-    ],
     "a": "0",
     "solutionSteps": [
       {
@@ -7097,7 +9208,27 @@ export const Y11_CH3B_QUESTIONS = [
         "workingOut": "",
         "graphData": null
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "Symmetric with respect to the x-axis, y-axis, and the origin.",
+        "imageUrl": ""
+      },
+      {
+        "text": "Symmetric with respect to the y-axis only.",
+        "imageUrl": ""
+      },
+      {
+        "text": "Symmetric with respect to the x-axis only.",
+        "imageUrl": ""
+      },
+      {
+        "text": "Symmetric with respect to the origin only.",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q25d",
@@ -7106,12 +9237,6 @@ export const Y11_CH3B_QUESTIONS = [
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
     "question": "Determine the symmetries of the relation defined by the equation \\( \\frac{x^2}{64} + \\frac{y^2}{144} = 1 \\).",
-    "opts": [
-      "Symmetric with respect to the x-axis, y-axis, and the origin.",
-      "Symmetric with respect to the y-axis only.",
-      "Symmetric with respect to the x-axis only.",
-      "Symmetric with respect to the origin only."
-    ],
     "a": "0",
     "solutionSteps": [
       {
@@ -7139,7 +9264,27 @@ export const Y11_CH3B_QUESTIONS = [
         "workingOut": "",
         "graphData": null
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "Symmetric with respect to the x-axis, y-axis, and the origin.",
+        "imageUrl": ""
+      },
+      {
+        "text": "Symmetric with respect to the y-axis only.",
+        "imageUrl": ""
+      },
+      {
+        "text": "Symmetric with respect to the x-axis only.",
+        "imageUrl": ""
+      },
+      {
+        "text": "Symmetric with respect to the origin only.",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q25e",
@@ -7148,12 +9293,6 @@ export const Y11_CH3B_QUESTIONS = [
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
     "question": "Determine the symmetries of the relation defined by the equation \\( \\frac{x^2}{100} + \\frac{y^2}{225} = 1 \\).",
-    "opts": [
-      "Symmetric with respect to the x-axis, y-axis, and the origin.",
-      "Symmetric with respect to the y-axis only.",
-      "Symmetric with respect to the x-axis only.",
-      "Symmetric with respect to the origin only."
-    ],
     "a": "0",
     "solutionSteps": [
       {
@@ -7181,7 +9320,27 @@ export const Y11_CH3B_QUESTIONS = [
         "workingOut": "",
         "graphData": null
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "Symmetric with respect to the x-axis, y-axis, and the origin.",
+        "imageUrl": ""
+      },
+      {
+        "text": "Symmetric with respect to the y-axis only.",
+        "imageUrl": ""
+      },
+      {
+        "text": "Symmetric with respect to the x-axis only.",
+        "imageUrl": ""
+      },
+      {
+        "text": "Symmetric with respect to the origin only.",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q25f",
@@ -7190,12 +9349,6 @@ export const Y11_CH3B_QUESTIONS = [
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
     "question": "Determine the symmetries of the relation defined by the equation \\( \\frac{x^2}{144} + \\frac{y^2}{324} = 1 \\).",
-    "opts": [
-      "Symmetric with respect to the x-axis, y-axis, and the origin.",
-      "Symmetric with respect to the y-axis only.",
-      "Symmetric with respect to the x-axis only.",
-      "Symmetric with respect to the origin only."
-    ],
     "a": "0",
     "solutionSteps": [
       {
@@ -7223,7 +9376,27 @@ export const Y11_CH3B_QUESTIONS = [
         "workingOut": "",
         "graphData": null
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "Symmetric with respect to the x-axis, y-axis, and the origin.",
+        "imageUrl": ""
+      },
+      {
+        "text": "Symmetric with respect to the y-axis only.",
+        "imageUrl": ""
+      },
+      {
+        "text": "Symmetric with respect to the x-axis only.",
+        "imageUrl": ""
+      },
+      {
+        "text": "Symmetric with respect to the origin only.",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q25g",
@@ -7232,12 +9405,6 @@ export const Y11_CH3B_QUESTIONS = [
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
     "question": "Determine the symmetries of the relation defined by the equation \\( \\frac{x^2}{196} + \\frac{y^2}{441} = 1 \\).",
-    "opts": [
-      "Symmetric with respect to the x-axis, y-axis, and the origin.",
-      "Symmetric with respect to the y-axis only.",
-      "Symmetric with respect to the x-axis only.",
-      "Symmetric with respect to the origin only."
-    ],
     "a": "0",
     "solutionSteps": [
       {
@@ -7265,7 +9432,27 @@ export const Y11_CH3B_QUESTIONS = [
         "workingOut": "",
         "graphData": null
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "Symmetric with respect to the x-axis, y-axis, and the origin.",
+        "imageUrl": ""
+      },
+      {
+        "text": "Symmetric with respect to the y-axis only.",
+        "imageUrl": ""
+      },
+      {
+        "text": "Symmetric with respect to the x-axis only.",
+        "imageUrl": ""
+      },
+      {
+        "text": "Symmetric with respect to the origin only.",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q25h",
@@ -7274,12 +9461,6 @@ export const Y11_CH3B_QUESTIONS = [
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
     "question": "Determine the symmetries of the relation defined by the equation \\( \\frac{x^2}{256} + \\frac{y^2}{576} = 1 \\).",
-    "opts": [
-      "Symmetric with respect to the x-axis, y-axis, and the origin.",
-      "Symmetric with respect to the y-axis only.",
-      "Symmetric with respect to the x-axis only.",
-      "Symmetric with respect to the origin only."
-    ],
     "a": "0",
     "solutionSteps": [
       {
@@ -7307,7 +9488,27 @@ export const Y11_CH3B_QUESTIONS = [
         "workingOut": "",
         "graphData": null
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "Symmetric with respect to the x-axis, y-axis, and the origin.",
+        "imageUrl": ""
+      },
+      {
+        "text": "Symmetric with respect to the y-axis only.",
+        "imageUrl": ""
+      },
+      {
+        "text": "Symmetric with respect to the x-axis only.",
+        "imageUrl": ""
+      },
+      {
+        "text": "Symmetric with respect to the origin only.",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q25i",
@@ -7316,12 +9517,6 @@ export const Y11_CH3B_QUESTIONS = [
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
     "question": "Determine the symmetries of the relation defined by the equation \\( \\frac{x^2}{324} + \\frac{y^2}{729} = 1 \\).",
-    "opts": [
-      "Symmetric with respect to the x-axis, y-axis, and the origin.",
-      "Symmetric with respect to the y-axis only.",
-      "Symmetric with respect to the x-axis only.",
-      "Symmetric with respect to the origin only."
-    ],
     "a": "0",
     "solutionSteps": [
       {
@@ -7349,7 +9544,27 @@ export const Y11_CH3B_QUESTIONS = [
         "workingOut": "",
         "graphData": null
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "Symmetric with respect to the x-axis, y-axis, and the origin.",
+        "imageUrl": ""
+      },
+      {
+        "text": "Symmetric with respect to the y-axis only.",
+        "imageUrl": ""
+      },
+      {
+        "text": "Symmetric with respect to the x-axis only.",
+        "imageUrl": ""
+      },
+      {
+        "text": "Symmetric with respect to the origin only.",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q25j",
@@ -7358,12 +9573,6 @@ export const Y11_CH3B_QUESTIONS = [
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
     "question": "Determine the symmetries of the relation defined by the equation \\( \\frac{x^2}{400} + \\frac{y^2}{900} = 1 \\).",
-    "opts": [
-      "Symmetric with respect to the x-axis, y-axis, and the origin.",
-      "Symmetric with respect to the y-axis only.",
-      "Symmetric with respect to the x-axis only.",
-      "Symmetric with respect to the origin only."
-    ],
     "a": "0",
     "solutionSteps": [
       {
@@ -7391,7 +9600,27 @@ export const Y11_CH3B_QUESTIONS = [
         "workingOut": "",
         "graphData": null
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "Symmetric with respect to the x-axis, y-axis, and the origin.",
+        "imageUrl": ""
+      },
+      {
+        "text": "Symmetric with respect to the y-axis only.",
+        "imageUrl": ""
+      },
+      {
+        "text": "Symmetric with respect to the x-axis only.",
+        "imageUrl": ""
+      },
+      {
+        "text": "Symmetric with respect to the origin only.",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q26a",
@@ -7433,12 +9662,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( 0 \\leq y \\leq 4 \\)",
-      "\\( 1 \\leq y \\leq 3 \\)",
-      "\\( -2 \\leq y \\leq 2 \\)",
-      "\\( 0 \\leq y \\leq 2 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( 0 \\leq y \\leq 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 1 \\leq y \\leq 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -2 \\leq y \\leq 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 0 \\leq y \\leq 2 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q26b",
@@ -7480,12 +9723,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( 2 \\leq y \\leq 5 \\)",
-      "\\( 1 \\leq y \\leq 6 \\)",
-      "\\( -3 \\leq y \\leq 3 \\)",
-      "\\( 1 \\leq y \\leq 4 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( 2 \\leq y \\leq 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 1 \\leq y \\leq 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -3 \\leq y \\leq 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 1 \\leq y \\leq 4 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q26c",
@@ -7527,12 +9784,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( 2 \\leq y \\leq 8 \\)",
-      "\\( -4 \\leq y \\leq 4 \\)",
-      "\\( 3 \\leq y \\leq 7 \\)",
-      "\\( 2 \\leq y \\leq 6 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( 2 \\leq y \\leq 8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -4 \\leq y \\leq 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 3 \\leq y \\leq 7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 2 \\leq y \\leq 6 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q26d",
@@ -7574,12 +9845,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( 3 \\leq y \\leq 10 \\)",
-      "\\( -5 \\leq y \\leq 5 \\)",
-      "\\( 4 \\leq y \\leq 9 \\)",
-      "\\( 3 \\leq y \\leq 8 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( 3 \\leq y \\leq 10 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -5 \\leq y \\leq 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 4 \\leq y \\leq 9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 3 \\leq y \\leq 8 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q26e",
@@ -7621,12 +9906,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( -6 \\leq y \\leq 6 \\)",
-      "\\( 4 \\leq y \\leq 12 \\)",
-      "\\( 5 \\leq y \\leq 11 \\)",
-      "\\( 4 \\leq y \\leq 10 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( -6 \\leq y \\leq 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 4 \\leq y \\leq 12 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 5 \\leq y \\leq 11 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 4 \\leq y \\leq 10 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q26f",
@@ -7668,12 +9967,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( 5 \\leq y \\leq 14 \\)",
-      "\\( -7 \\leq y \\leq 7 \\)",
-      "\\( 6 \\leq y \\leq 13 \\)",
-      "\\( 5 \\leq y \\leq 12 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( 5 \\leq y \\leq 14 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -7 \\leq y \\leq 7 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 6 \\leq y \\leq 13 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 5 \\leq y \\leq 12 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q26g",
@@ -7715,12 +10028,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( -8 \\leq y \\leq 8 \\)",
-      "\\( 7 \\leq y \\leq 15 \\)",
-      "\\( 6 \\leq y \\leq 16 \\)",
-      "\\( 6 \\leq y \\leq 14 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( -8 \\leq y \\leq 8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 7 \\leq y \\leq 15 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 6 \\leq y \\leq 16 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 6 \\leq y \\leq 14 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q26h",
@@ -7762,12 +10089,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( 8 \\leq y \\leq 17 \\)",
-      "\\( -9 \\leq y \\leq 9 \\)",
-      "\\( 7 \\leq y \\leq 18 \\)",
-      "\\( 7 \\leq y \\leq 16 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( 8 \\leq y \\leq 17 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -9 \\leq y \\leq 9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 7 \\leq y \\leq 18 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 7 \\leq y \\leq 16 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q26i",
@@ -7809,12 +10150,26 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( 9 \\leq y \\leq 19 \\)",
-      "\\( -10 \\leq y \\leq 10 \\)",
-      "\\( 8 \\leq y \\leq 20 \\)",
-      "\\( 8 \\leq y \\leq 18 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( 9 \\leq y \\leq 19 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -10 \\leq y \\leq 10 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 8 \\leq y \\leq 20 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 8 \\leq y \\leq 18 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-3b-q26j",
@@ -7856,11 +10211,25 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "opts": [
-      "\\( 9 \\leq y \\leq 22 \\)",
-      "\\( 10 \\leq y \\leq 21 \\)",
-      "\\( -11 \\leq y \\leq 11 \\)",
-      "\\( 9 \\leq y \\leq 20 \\)"
-    ]
+    "options": [
+      {
+        "text": "\\( 9 \\leq y \\leq 22 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 10 \\leq y \\leq 21 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -11 \\leq y \\leq 11 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 9 \\leq y \\leq 20 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "isManual": false,
+    "requiresManualGrading": false
   }
 ];

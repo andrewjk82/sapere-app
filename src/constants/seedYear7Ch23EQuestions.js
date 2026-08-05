@@ -1,18 +1,20 @@
 export const Y7_CH23E_QUESTIONS = [
   {
     "id": "y7-23e-q1a",
+    "topicId": "y7-23e",
+    "c": "23E",
     "t": "Writing algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following in a shorter way.\\n\\n\\(15 \\times m\\)",
+    "question": "Write the following in a shorter way.<br /><br />\\(15 \\times m\\)",
     "a": 1,
     "answer": "1",
     "opts": [
-      "\\(-15m\\)",
-      "\\(15m\\)",
       "\\(16m\\)",
-      "\\(opt2\\)"
+      "\\(15m\\)",
+      "\\(17m\\)",
+      "\\(18m\\)"
     ],
     "hint": "In algebra, we don't write the multiplication sign between a number and a letter.",
     "solution": "",
@@ -38,18 +40,20 @@ export const Y7_CH23E_QUESTIONS = [
   },
   {
     "id": "y7-23e-q1b",
+    "topicId": "y7-23e",
+    "c": "23E",
     "t": "Writing algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following in a shorter way.\\n\\n\\(4 \\times 7 \\times k\\)",
+    "question": "Write the following in a shorter way.<br /><br />\\(4 \\times 7 \\times k\\)",
     "a": 2,
     "answer": "2",
     "opts": [
-      "\\(-28k\\)",
       "\\(29k\\)",
+      "\\(30k\\)",
       "\\(28k\\)",
-      "\\(opt2\\)"
+      "\\(31k\\)"
     ],
     "hint": "Multiply the numbers first, then attach the letter.",
     "solution": "",
@@ -75,25 +79,27 @@ export const Y7_CH23E_QUESTIONS = [
   },
   {
     "id": "y7-23e-q1c",
+    "topicId": "y7-23e",
+    "c": "23E",
     "t": "Writing algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following in another way.\\n\\n\\(6 \\times p \\times p \\times p\\)",
-    "a": 3,
-    "answer": "3",
+    "question": "Write the following in another way.<br /><br />\\(6 \\times p \\times p \\times p\\)",
+    "a": 2,
+    "answer": "2",
     "opts": [
       "\\(-6p^3\\)",
       "\\(7p^3\\)",
-      "\\(opt2\\)",
-      "\\(6p^3\\)"
+      "\\(6p^3\\)",
+      "\\(8p^3\\)"
     ],
     "hint": "Use indices (powers) for repeated multiplication of the same variable.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "The variable \\(p\\) is multiplied by itself 3 times, which can be written as \\(p^3\\).",
-        "workingOut": "\\(p \\times p \\times p = p^3\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -112,25 +118,27 @@ export const Y7_CH23E_QUESTIONS = [
   },
   {
     "id": "y7-23e-q1d",
+    "topicId": "y7-23e",
+    "c": "23E",
     "t": "Writing algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following, showing all multiplication signs.\\n\\n\\(5xy\\)",
+    "question": "Write the following, showing all multiplication signs.<br /><br />\\(5xy\\)",
     "a": 0,
     "answer": "0",
     "opts": [
       "\\(5 \\times x \\times y\\)",
       "\\(-5 \\times x \\times y\\)",
       "\\(6 \\times x \\times y\\)",
-      "\\(opt2\\)"
+      "\\(7 \\times x \\times y\\)"
     ],
     "hint": "Insert a multiplication sign between every number and variable.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "\\(5xy\\) means 5 multiplied by \\(x\\), and then multiplied by \\(y\\).",
-        "workingOut": "\\(5 \\times x \\times y\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -148,44 +156,21 @@ export const Y7_CH23E_QUESTIONS = [
     "isNew": true
   },
   {
-    "id": "y7-23e-q1e",
-    "type": "teacher_review",
-    "difficulty": "easy",
-    "timeLimit": 30,
-    "question": "Explain the difference between $45y$ and $4 \\times 5 \\times y$.",
-    "a": "45y means 45 multiplied by y. 4 \\times 5 \\times y evaluates to 20y.",
-    "t": "Writing algebraic expressions",
-    "hint": "What does 45 represent in the first expression? What do you get when you multiply 4 and 5 in the second expression?",
-    "solutionSteps": [
-      {
-        "explanation": "The expression \\(45y\\) has a coefficient of 45.",
-        "workingOut": "45 \\times y"
-      },
-      {
-        "explanation": "The expression \\(4 \\times 5 \\times y\\) has a calculation to perform first.",
-        "workingOut": "(4 \\times 5) \\times y = 20y"
-      },
-      {
-        "explanation": "Therefore, they represent different values (\\(45y\\) vs \\(20y\\)).",
-        "workingOut": "45y \\neq 20y"
-      }
-    ],
-    "graphData": null
-  },
-  {
     "id": "y7-23e-q2a",
+    "topicId": "y7-23e",
+    "c": "23E",
     "t": "Writing algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following expression without multiplication or division signs.\\n\\n\\(6 \\times 3 \\times m\\)",
+    "question": "Write the following expression without multiplication or division signs.<br /><br />\\(6 \\times 3 \\times m\\)",
     "a": 0,
     "answer": "0",
     "opts": [
       "\\(18m\\)",
-      "\\(-18m\\)",
       "\\(19m\\)",
-      "\\(opt2\\)"
+      "\\(20m\\)",
+      "\\(21m\\)"
     ],
     "hint": "Multiply the numbers together first.",
     "solution": "",
@@ -211,25 +196,27 @@ export const Y7_CH23E_QUESTIONS = [
   },
   {
     "id": "y7-23e-q2b",
+    "topicId": "y7-23e",
+    "c": "23E",
     "t": "Writing algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following expression without multiplication or division signs.\\n\\n\\(4 \\times y \\times 9\\)",
+    "question": "Write the following expression without multiplication or division signs.<br /><br />\\(4 \\times y \\times 9\\)",
     "a": 1,
     "answer": "1",
     "opts": [
-      "\\(-36y\\)",
-      "\\(36y\\)",
       "\\(37y\\)",
-      "\\(opt2\\)"
+      "\\(36y\\)",
+      "\\(38y\\)",
+      "\\(39y\\)"
     ],
     "hint": "The order of multiplication doesn't matter. Multiply the numbers first.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Rearrange the expression: \\(4 \\times 9 \\times y\\).",
-        "workingOut": "\\(36 \\times y\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -248,11 +235,13 @@ export const Y7_CH23E_QUESTIONS = [
   },
   {
     "id": "y7-23e-q2c",
+    "topicId": "y7-23e",
+    "c": "23E",
     "t": "Writing algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following expression without multiplication or division signs.\\n\\n\\(p + 7 \\times q\\)",
+    "question": "Write the following expression without multiplication or division signs.<br /><br />\\(p + 7 \\times q\\)",
     "a": 2,
     "answer": "2",
     "opts": [
@@ -285,11 +274,13 @@ export const Y7_CH23E_QUESTIONS = [
   },
   {
     "id": "y7-23e-q2d",
+    "topicId": "y7-23e",
+    "c": "23E",
     "t": "Writing algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following expression without multiplication or division signs.\\n\\n\\(5 \\times (3m + 4)\\)",
+    "question": "Write the following expression without multiplication or division signs.<br /><br />\\(5 \\times (3m + 4)\\)",
     "a": 3,
     "answer": "3",
     "opts": [
@@ -322,25 +313,27 @@ export const Y7_CH23E_QUESTIONS = [
   },
   {
     "id": "y7-23e-q2e",
+    "topicId": "y7-23e",
+    "c": "23E",
     "t": "Writing algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following expression without multiplication or division signs.\\n\\n\\(4x \\div 5\\)",
+    "question": "Write the following expression without multiplication or division signs.<br /><br />\\(4x \\div 5\\)",
     "a": 0,
     "answer": "0",
     "opts": [
       "\\(\\frac{4x}{5}\\)",
-      "\\(-\\frac{4x}{5}\\)",
       "\\(\\frac{5x}{5}\\)",
-      "\\(opt2\\)"
+      "\\(\\frac{6x}{5}\\)",
+      "\\(\\frac{7x}{5}\\)"
     ],
     "hint": "Use a fraction bar for division.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "The first part (\\(4x\\)) goes on the top (numerator), and the second part (\\(5\\)) goes on the bottom (denominator).",
-        "workingOut": "\\(\\frac{4x}{5}\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -359,18 +352,20 @@ export const Y7_CH23E_QUESTIONS = [
   },
   {
     "id": "y7-23e-q2f",
+    "topicId": "y7-23e",
+    "c": "23E",
     "t": "Writing algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following expression without multiplication or division signs.\\n\\n\\(a \\times b \\times c\\)",
+    "question": "Write the following expression without multiplication or division signs.<br /><br />\\(a \\times b \\times c\\)",
     "a": 1,
     "answer": "1",
     "opts": [
-      "\\(-abc\\)",
+      "\\(2abc\\)",
       "\\(abc\\)",
-      "\\(opt1\\)",
-      "\\(opt2\\)"
+      "\\(3abc\\)",
+      "\\(4abc\\)"
     ],
     "hint": "Simply remove all the multiplication signs between letters.",
     "solution": "",
@@ -396,18 +391,20 @@ export const Y7_CH23E_QUESTIONS = [
   },
   {
     "id": "y7-23e-q2g",
+    "topicId": "y7-23e",
+    "c": "23E",
     "t": "Writing algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following expression without multiplication or division signs.\\n\\n\\(8 \\times k \\times 2\\)",
+    "question": "Write the following expression without multiplication or division signs.<br /><br />\\(8 \\times k \\times 2\\)",
     "a": 2,
     "answer": "2",
     "opts": [
-      "\\(-16k\\)",
       "\\(17k\\)",
+      "\\(18k\\)",
       "\\(16k\\)",
-      "\\(opt2\\)"
+      "\\(19k\\)"
     ],
     "hint": "Multiply the numbers first.",
     "solution": "",
@@ -433,25 +430,27 @@ export const Y7_CH23E_QUESTIONS = [
   },
   {
     "id": "y7-23e-q2h",
+    "topicId": "y7-23e",
+    "c": "23E",
     "t": "Writing algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following expression without multiplication or division signs.\\n\\n\\(5m \\times n \\times n\\)",
-    "a": 3,
-    "answer": "3",
+    "question": "Write the following expression without multiplication or division signs.<br /><br />\\(5m \\times n \\times n\\)",
+    "a": 2,
+    "answer": "2",
     "opts": [
       "\\(-5mn^2\\)",
       "\\(6mn^2\\)",
-      "\\(opt2\\)",
-      "\\(5mn^2\\)"
+      "\\(5mn^2\\)",
+      "\\(7mn^2\\)"
     ],
     "hint": "Use a power (index) for \\(n \\times n\\).",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "\\(n \\times n\\) becomes \\(n^2\\).",
-        "workingOut": "\\(5m \\times n^2\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -470,18 +469,20 @@ export const Y7_CH23E_QUESTIONS = [
   },
   {
     "id": "y7-23e-q2i",
+    "topicId": "y7-23e",
+    "c": "23E",
     "t": "Writing algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following expression without multiplication or division signs.\\n\\n\\(4 \\times x \\times 7 \\times y\\)",
+    "question": "Write the following expression without multiplication or division signs.<br /><br />\\(4 \\times x \\times 7 \\times y\\)",
     "a": 0,
     "answer": "0",
     "opts": [
       "\\(28xy\\)",
-      "\\(-28xy\\)",
       "\\(29xy\\)",
-      "\\(opt2\\)"
+      "\\(30xy\\)",
+      "\\(31xy\\)"
     ],
     "hint": "Multiply the numbers together, then write the letters next to each other.",
     "solution": "",
@@ -507,18 +508,20 @@ export const Y7_CH23E_QUESTIONS = [
   },
   {
     "id": "y7-23e-q2j",
+    "topicId": "y7-23e",
+    "c": "23E",
     "t": "Writing algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following expression without multiplication or division signs.\\n\\n\\(8 \\times p - 5\\)",
+    "question": "Write the following expression without multiplication or division signs.<br /><br />\\(8 \\times p - 5\\)",
     "a": 1,
     "answer": "1",
     "opts": [
       "\\(-8p - 5\\)",
       "\\(8p - 5\\)",
       "\\(9p - 5\\)",
-      "\\(opt2\\)"
+      "\\(10p - 5\\)"
     ],
     "hint": "Remove the multiplication sign. Keep the subtraction sign.",
     "solution": "",
@@ -544,11 +547,13 @@ export const Y7_CH23E_QUESTIONS = [
   },
   {
     "id": "y7-23e-q2k",
+    "topicId": "y7-23e",
+    "c": "23E",
     "t": "Writing algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following expression without multiplication or division signs.\\n\\n\\(7 + 9 \\times y\\)",
+    "question": "Write the following expression without multiplication or division signs.<br /><br />\\(7 + 9 \\times y\\)",
     "a": 2,
     "answer": "2",
     "opts": [
@@ -581,11 +586,13 @@ export const Y7_CH23E_QUESTIONS = [
   },
   {
     "id": "y7-23e-q2l",
+    "topicId": "y7-23e",
+    "c": "23E",
     "t": "Writing algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following expression without multiplication or division signs.\\n\\n\\(6 \\times m + 4 \\times n\\)",
+    "question": "Write the following expression without multiplication or division signs.<br /><br />\\(6 \\times m + 4 \\times n\\)",
     "a": 3,
     "answer": "3",
     "opts": [
@@ -618,25 +625,27 @@ export const Y7_CH23E_QUESTIONS = [
   },
   {
     "id": "y7-23e-q2m",
+    "topicId": "y7-23e",
+    "c": "23E",
     "t": "Writing algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following expression without multiplication or division signs.\\n\\n\\(21 \\div y\\)",
+    "question": "Write the following expression without multiplication or division signs.<br /><br />\\(21 \\div y\\)",
     "a": 0,
     "answer": "0",
     "opts": [
       "\\(\\frac{21}{y}\\)",
-      "\\(-\\frac{21}{y}\\)",
       "\\(\\frac{22}{y}\\)",
-      "\\(opt2\\)"
+      "\\(\\frac{23}{y}\\)",
+      "\\(\\frac{24}{y}\\)"
     ],
     "hint": "Use a fraction bar for division.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "The number before the division sign is the numerator, the variable after is the denominator.",
-        "workingOut": "\\(\\frac{21}{y}\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -655,25 +664,27 @@ export const Y7_CH23E_QUESTIONS = [
   },
   {
     "id": "y7-23e-q2n",
+    "topicId": "y7-23e",
+    "c": "23E",
     "t": "Writing algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following expression without multiplication or division signs.\\n\\n\\(8p \\div 13\\)",
+    "question": "Write the following expression without multiplication or division signs.<br /><br />\\(8p \\div 13\\)",
     "a": 1,
     "answer": "1",
     "opts": [
-      "\\(-\\frac{8p}{13}\\)",
-      "\\(\\frac{8p}{13}\\)",
       "\\(\\frac{9p}{13}\\)",
-      "\\(opt2\\)"
+      "\\(\\frac{8p}{13}\\)",
+      "\\(\\frac{10p}{13}\\)",
+      "\\(\\frac{11p}{13}\\)"
     ],
     "hint": "Use a fraction bar.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Place \\(8p\\) on top and \\(13\\) on the bottom.",
-        "workingOut": "\\(\\frac{8p}{13}\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -692,25 +703,27 @@ export const Y7_CH23E_QUESTIONS = [
   },
   {
     "id": "y7-23e-q2o",
+    "topicId": "y7-23e",
+    "c": "23E",
     "t": "Writing algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following expression without multiplication or division signs.\\n\\n\\(m \\div 11\\)",
+    "question": "Write the following expression without multiplication or division signs.<br /><br />\\(m \\div 11\\)",
     "a": 2,
     "answer": "2",
     "opts": [
-      "\\(-\\frac{m}{11}\\)",
       "\\(\\frac{m}{12}\\)",
+      "\\(\\frac{m}{13}\\)",
       "\\(\\frac{m}{11}\\)",
-      "\\(opt2\\)"
+      "\\(\\frac{m}{14}\\)"
     ],
     "hint": "Use a fraction bar.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Place \\(m\\) on top and \\(11\\) on the bottom.",
-        "workingOut": "\\(\\frac{m}{11}\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -729,11 +742,13 @@ export const Y7_CH23E_QUESTIONS = [
   },
   {
     "id": "y7-23e-q2p",
+    "topicId": "y7-23e",
+    "c": "23E",
     "t": "Writing algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following expression without multiplication or division signs.\\n\\n\\((x + y) \\div 5\\)",
+    "question": "Write the following expression without multiplication or division signs.<br /><br />\\((x + y) \\div 5\\)",
     "a": 3,
     "answer": "3",
     "opts": [
@@ -747,7 +762,7 @@ export const Y7_CH23E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Place the contents of the bracket in the numerator. You don't need the brackets anymore since the fraction bar groups them.",
-        "workingOut": "\\(\\frac{x + y}{5}\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -766,11 +781,13 @@ export const Y7_CH23E_QUESTIONS = [
   },
   {
     "id": "y7-23e-q2q",
+    "topicId": "y7-23e",
+    "c": "23E",
     "t": "Writing algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following expression without multiplication or division signs.\\n\\n\\(7m \\div (4m + 5)\\)",
+    "question": "Write the following expression without multiplication or division signs.<br /><br />\\(7m \\div (4m + 5)\\)",
     "a": 0,
     "answer": "0",
     "opts": [
@@ -784,7 +801,7 @@ export const Y7_CH23E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Place \\(7m\\) on top and the expression \\(4m+5\\) on the bottom.",
-        "workingOut": "\\(\\frac{7m}{4m + 5}\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -803,11 +820,13 @@ export const Y7_CH23E_QUESTIONS = [
   },
   {
     "id": "y7-23e-q2r",
+    "topicId": "y7-23e",
+    "c": "23E",
     "t": "Writing algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following expression without multiplication or division signs.\\n\\n\\((8x + 3) \\div 5x\\)",
+    "question": "Write the following expression without multiplication or division signs.<br /><br />\\((8x + 3) \\div 5x\\)",
     "a": 1,
     "answer": "1",
     "opts": [
@@ -821,7 +840,7 @@ export const Y7_CH23E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Place \\(8x+3\\) on top and \\(5x\\) on the bottom.",
-        "workingOut": "\\(\\frac{8x + 3}{5x}\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -840,25 +859,27 @@ export const Y7_CH23E_QUESTIONS = [
   },
   {
     "id": "y7-23e-q3a",
+    "topicId": "y7-23e",
+    "c": "23E",
     "t": "Writing algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following expression by showing all multiplication or division signs.\\n\\n\\(9k\\)",
-    "a": 3,
-    "answer": "3",
+    "question": "Write the following expression by showing all multiplication or division signs.<br /><br />\\(9k\\)",
+    "a": 2,
+    "answer": "2",
     "opts": [
       "\\(-9 \\times k\\)",
       "\\(10 \\times k\\)",
-      "\\(opt2\\)",
-      "\\(9 \\times k\\)"
+      "\\(9 \\times k\\)",
+      "\\(11 \\times k\\)"
     ],
     "hint": "What operation is hidden between the number and letter?",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Insert a multiplication sign between the number and the variable.",
-        "workingOut": "\\(9 \\times k\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -877,25 +898,27 @@ export const Y7_CH23E_QUESTIONS = [
   },
   {
     "id": "y7-23e-q3b",
+    "topicId": "y7-23e",
+    "c": "23E",
     "t": "Writing algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following expression by showing all multiplication or division signs.\\n\\n\\(12p\\)",
+    "question": "Write the following expression by showing all multiplication or division signs.<br /><br />\\(12p\\)",
     "a": 0,
     "answer": "0",
     "opts": [
       "\\(12 \\times p\\)",
       "\\(-12 \\times p\\)",
       "\\(13 \\times p\\)",
-      "\\(opt2\\)"
+      "\\(14 \\times p\\)"
     ],
     "hint": "What operation is hidden between the number and letter?",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Insert a multiplication sign between the number and the variable.",
-        "workingOut": "\\(12 \\times p\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -914,25 +937,27 @@ export const Y7_CH23E_QUESTIONS = [
   },
   {
     "id": "y7-23e-q3c",
+    "topicId": "y7-23e",
+    "c": "23E",
     "t": "Writing algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following expression by showing all multiplication or division signs.\\n\\n\\(15m\\)",
+    "question": "Write the following expression by showing all multiplication or division signs.<br /><br />\\(15m\\)",
     "a": 1,
     "answer": "1",
     "opts": [
       "\\(-15 \\times m\\)",
       "\\(15 \\times m\\)",
       "\\(16 \\times m\\)",
-      "\\(opt2\\)"
+      "\\(17 \\times m\\)"
     ],
     "hint": "What operation is hidden between the number and letter?",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Insert a multiplication sign between the number and the variable.",
-        "workingOut": "\\(15 \\times m\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -951,25 +976,27 @@ export const Y7_CH23E_QUESTIONS = [
   },
   {
     "id": "y7-23e-q3d",
+    "topicId": "y7-23e",
+    "c": "23E",
     "t": "Writing algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following expression by showing all multiplication or division signs.\\n\\n\\(6y - 7\\)",
+    "question": "Write the following expression by showing all multiplication or division signs.<br /><br />\\(6y - 7\\)",
     "a": 2,
     "answer": "2",
     "opts": [
       "\\(-6 \\times y - 7\\)",
       "\\(7 \\times y - 7\\)",
       "\\(6 \\times y - 7\\)",
-      "\\(opt2\\)"
+      "\\(8 \\times y - 7\\)"
     ],
     "hint": "Only expand the term with a variable.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Insert a multiplication sign in the term \\(6y\\).",
-        "workingOut": "\\(6 \\times y - 7\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -988,11 +1015,13 @@ export const Y7_CH23E_QUESTIONS = [
   },
   {
     "id": "y7-23e-q3e",
+    "topicId": "y7-23e",
+    "c": "23E",
     "t": "Writing algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following expression by showing all multiplication or division signs.\\n\\n\\(8p + 5\\)",
+    "question": "Write the following expression by showing all multiplication or division signs.<br /><br />\\(8p + 5\\)",
     "a": 3,
     "answer": "3",
     "opts": [
@@ -1006,7 +1035,7 @@ export const Y7_CH23E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Insert a multiplication sign in the term \\(8p\\).",
-        "workingOut": "\\(8 \\times p + 5\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -1025,25 +1054,27 @@ export const Y7_CH23E_QUESTIONS = [
   },
   {
     "id": "y7-23e-q3f",
+    "topicId": "y7-23e",
+    "c": "23E",
     "t": "Writing algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following expression by showing all multiplication or division signs.\\n\\n\\(24 - 4x\\)",
+    "question": "Write the following expression by showing all multiplication or division signs.<br /><br />\\(24 - 4x\\)",
     "a": 0,
     "answer": "0",
     "opts": [
       "\\(24 - 4 \\times x\\)",
       "\\(-24 - 4 \\times x\\)",
       "\\(25 - 4 \\times x\\)",
-      "\\(opt2\\)"
+      "\\(26 - 4 \\times x\\)"
     ],
     "hint": "Expand the term \\(4x\\).",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Insert a multiplication sign in the term \\(4x\\).",
-        "workingOut": "\\(24 - 4 \\times x\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -1062,25 +1093,27 @@ export const Y7_CH23E_QUESTIONS = [
   },
   {
     "id": "y7-23e-q3g",
+    "topicId": "y7-23e",
+    "c": "23E",
     "t": "Writing algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following expression by showing all multiplication or division signs.\\n\\n\\(mn - 8\\)",
+    "question": "Write the following expression by showing all multiplication or division signs.<br /><br />\\(mn - 8\\)",
     "a": 1,
     "answer": "1",
     "opts": [
       "\\(-m \\times n - 8\\)",
       "\\(m \\times n - 8\\)",
       "\\(m \\times n - 9\\)",
-      "\\(opt2\\)"
+      "\\(m \\times n - 10\\)"
     ],
     "hint": "What operation is between the two letters?",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Insert a multiplication sign between the variables \\(m\\) and \\(n\\).",
-        "workingOut": "\\(m \\times n - 8\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -1099,25 +1132,27 @@ export const Y7_CH23E_QUESTIONS = [
   },
   {
     "id": "y7-23e-q3h",
+    "topicId": "y7-23e",
+    "c": "23E",
     "t": "Writing algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following expression by showing all multiplication or division signs.\\n\\n\\(5a - 7b\\)",
+    "question": "Write the following expression by showing all multiplication or division signs.<br /><br />\\(5a - 7b\\)",
     "a": 2,
     "answer": "2",
     "opts": [
       "\\(-5 \\times a - 7 \\times b\\)",
       "\\(6 \\times a - 7 \\times b\\)",
       "\\(5 \\times a - 7 \\times b\\)",
-      "\\(opt2\\)"
+      "\\(7 \\times a - 7 \\times b\\)"
     ],
     "hint": "Expand both terms.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Insert multiplication signs into both \\(5a\\) and \\(7b\\).",
-        "workingOut": "\\(5 \\times a - 7 \\times b\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -1136,25 +1171,27 @@ export const Y7_CH23E_QUESTIONS = [
   },
   {
     "id": "y7-23e-q3i",
+    "topicId": "y7-23e",
+    "c": "23E",
     "t": "Writing algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following expression by showing all multiplication or division signs.\\n\\n\\(p^2qr\\)",
-    "a": 3,
-    "answer": "3",
+    "question": "Write the following expression by showing all multiplication or division signs.<br /><br />\\(p^2qr\\)",
+    "a": 1,
+    "answer": "1",
     "opts": [
       "\\(-p \\times p \\times q \\times r\\)",
-      "\\(opt1\\)",
-      "\\(opt2\\)",
-      "\\(p \\times p \\times q \\times r\\)"
+      "\\(p \\times p \\times q \\times r\\)",
+      "\\(2p \\times p \\times q \\times r\\)",
+      "\\(3p \\times p \\times q \\times r\\)"
     ],
     "hint": "Expand the power \\(p^2\\) into \\(p \\times p\\).",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Write \\(p^2\\) as \\(p \\times p\\), then add multiplication signs before \\(q\\) and \\(r\\).",
-        "workingOut": "\\(p \\times p \\times q \\times r\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -1173,25 +1210,27 @@ export const Y7_CH23E_QUESTIONS = [
   },
   {
     "id": "y7-23e-q3j",
+    "topicId": "y7-23e",
+    "c": "23E",
     "t": "Writing algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following expression by showing all multiplication or division signs.\\n\\n\\(18abc\\)",
+    "question": "Write the following expression by showing all multiplication or division signs.<br /><br />\\(18abc\\)",
     "a": 0,
     "answer": "0",
     "opts": [
       "\\(18 \\times a \\times b \\times c\\)",
       "\\(-18 \\times a \\times b \\times c\\)",
       "\\(19 \\times a \\times b \\times c\\)",
-      "\\(opt2\\)"
+      "\\(20 \\times a \\times b \\times c\\)"
     ],
     "hint": "Insert a multiplication sign between every number and letter.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Add multiplication signs everywhere an operation is implied.",
-        "workingOut": "\\(18 \\times a \\times b \\times c\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -1210,11 +1249,13 @@ export const Y7_CH23E_QUESTIONS = [
   },
   {
     "id": "y7-23e-q3k",
+    "topicId": "y7-23e",
+    "c": "23E",
     "t": "Writing algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following expression by showing all multiplication or division signs.\\n\\n\\(9x^2 + 4\\)",
+    "question": "Write the following expression by showing all multiplication or division signs.<br /><br />\\(9x^2 + 4\\)",
     "a": 1,
     "answer": "1",
     "opts": [
@@ -1228,7 +1269,7 @@ export const Y7_CH23E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write \\(9x^2\\) as \\(9 \\times x \\times x\\). The \\(+ 4\\) part stays as is.",
-        "workingOut": "\\(9 \\times x \\times x + 4\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -1247,25 +1288,27 @@ export const Y7_CH23E_QUESTIONS = [
   },
   {
     "id": "y7-23e-q3l",
+    "topicId": "y7-23e",
+    "c": "23E",
     "t": "Writing algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following expression by showing all multiplication or division signs.\\n\\n\\(x^3 - y^3\\)",
-    "a": 2,
-    "answer": "2",
+    "question": "Write the following expression by showing all multiplication or division signs.<br /><br />\\(x^3 - y^3\\)",
+    "a": 1,
+    "answer": "1",
     "opts": [
       "\\(-x \\times x \\times x - y \\times y \\times y\\)",
-      "\\(opt1\\)",
       "\\(x \\times x \\times x - y \\times y \\times y\\)",
-      "\\(opt2\\)"
+      "\\(2x \\times x \\times x - y \\times y \\times y\\)",
+      "\\(3x \\times x \\times x - y \\times y \\times y\\)"
     ],
     "hint": "Expand the powers \\(x^3\\) and \\(y^3\\).",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Write \\(x^3\\) as \\(x \\times x \\times x\\) and \\(y^3\\) as \\(y \\times y \\times y\\).",
-        "workingOut": "\\(x \\times x \\times x - y \\times y \\times y\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -1284,25 +1327,27 @@ export const Y7_CH23E_QUESTIONS = [
   },
   {
     "id": "y7-23e-q4a",
+    "topicId": "y7-23e",
+    "c": "23E",
     "t": "Writing algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following in a shortened form.\\n\\n\\(5 \\times x \\times y \\times y \\times z\\)",
+    "question": "Write the following in a shortened form.<br /><br />\\(5 \\times x \\times y \\times y \\times z\\)",
     "a": 2,
     "answer": "2",
     "opts": [
       "\\(-5xy^2z\\)",
       "\\(6xy^2z\\)",
       "\\(5xy^2z\\)",
-      "\\(opt2\\)"
+      "\\(7xy^2z\\)"
     ],
     "hint": "Use indices for \\(y \\times y\\).",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "The \\(y \\times y\\) becomes \\(y^2\\).",
-        "workingOut": "\\(5 \\times x \\times y^2 \\times z\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -1321,25 +1366,27 @@ export const Y7_CH23E_QUESTIONS = [
   },
   {
     "id": "y7-23e-q4b",
+    "topicId": "y7-23e",
+    "c": "23E",
     "t": "Writing algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following in a shortened form.\\n\\n\\(6 \\times p \\times p \\times q \\times q\\)",
-    "a": 3,
-    "answer": "3",
+    "question": "Write the following in a shortened form.<br /><br />\\(6 \\times p \\times p \\times q \\times q\\)",
+    "a": 2,
+    "answer": "2",
     "opts": [
       "\\(-6p^2q^2\\)",
       "\\(7p^2q^2\\)",
-      "\\(opt2\\)",
-      "\\(6p^2q^2\\)"
+      "\\(6p^2q^2\\)",
+      "\\(8p^2q^2\\)"
     ],
     "hint": "Use indices for \\(p \\times p\\) and \\(q \\times q\\).",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Write \\(p \\times p\\) as \\(p^2\\) and \\(q \\times q\\) as \\(q^2\\).",
-        "workingOut": "\\(6 \\times p^2 \\times q^2\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -1358,11 +1405,13 @@ export const Y7_CH23E_QUESTIONS = [
   },
   {
     "id": "y7-23e-q4c",
+    "topicId": "y7-23e",
+    "c": "23E",
     "t": "Writing algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following in a shortened form.\\n\\n\\(8 \\times (m + 5)\\)",
+    "question": "Write the following in a shortened form.<br /><br />\\(8 \\times (m + 5)\\)",
     "a": 0,
     "answer": "0",
     "opts": [
@@ -1395,18 +1444,20 @@ export const Y7_CH23E_QUESTIONS = [
   },
   {
     "id": "y7-23e-q4d",
+    "topicId": "y7-23e",
+    "c": "23E",
     "t": "Writing algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following in a shortened form.\\n\\n\\(7 \\times (y - 2)\\)",
+    "question": "Write the following in a shortened form.<br /><br />\\(7 \\times (y - 2)\\)",
     "a": 1,
     "answer": "1",
     "opts": [
       "\\(-7(y - 2)\\)",
       "\\(7(y - 2)\\)",
       "\\(8(y - 2)\\)",
-      "\\(opt2\\)"
+      "\\(9(y - 2)\\)"
     ],
     "hint": "Remove the multiplication sign in front of the bracket.",
     "solution": "",
@@ -1432,11 +1483,13 @@ export const Y7_CH23E_QUESTIONS = [
   },
   {
     "id": "y7-23e-q4e",
+    "topicId": "y7-23e",
+    "c": "23E",
     "t": "Writing algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following in a shortened form.\\n\\n\\(4 \\times m \\times (n + 6)\\)",
+    "question": "Write the following in a shortened form.<br /><br />\\(4 \\times m \\times (n + 6)\\)",
     "a": 2,
     "answer": "2",
     "opts": [
@@ -1469,25 +1522,27 @@ export const Y7_CH23E_QUESTIONS = [
   },
   {
     "id": "y7-23e-q4f",
+    "topicId": "y7-23e",
+    "c": "23E",
     "t": "Writing algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following in a shortened form.\\n\\n\\(2 \\times 5 \\times (k - 4)\\)",
-    "a": 3,
-    "answer": "3",
+    "question": "Write the following in a shortened form.<br /><br />\\(2 \\times 5 \\times (k - 4)\\)",
+    "a": 2,
+    "answer": "2",
     "opts": [
       "\\(-10(k - 4)\\)",
       "\\(11(k - 4)\\)",
-      "\\(opt2\\)",
-      "\\(10(k - 4)\\)"
+      "\\(10(k - 4)\\)",
+      "\\(12(k - 4)\\)"
     ],
     "hint": "Multiply the numbers first.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "First, multiply \\(2 \\times 5 = 10\\).",
-        "workingOut": "\\(10 \\times (k - 4)\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -1506,11 +1561,13 @@ export const Y7_CH23E_QUESTIONS = [
   },
   {
     "id": "y7-23e-q4g",
+    "topicId": "y7-23e",
+    "c": "23E",
     "t": "Writing algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following in a shortened form.\\n\\n\\(x \\times y \\times (z + 3)\\)",
+    "question": "Write the following in a shortened form.<br /><br />\\(x \\times y \\times (z + 3)\\)",
     "a": 0,
     "answer": "0",
     "opts": [
@@ -1543,25 +1600,27 @@ export const Y7_CH23E_QUESTIONS = [
   },
   {
     "id": "y7-23e-q4h",
+    "topicId": "y7-23e",
+    "c": "23E",
     "t": "Writing algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following in a shortened form.\\n\\n\\(6 \\times (7 \\times p - 4)\\)",
+    "question": "Write the following in a shortened form.<br /><br />\\(6 \\times (7 \\times p - 4)\\)",
     "a": 1,
     "answer": "1",
     "opts": [
       "\\(-6(7p - 4)\\)",
       "\\(6(7p - 4)\\)",
       "\\(7(7p - 4)\\)",
-      "\\(opt2\\)"
+      "\\(8(7p - 4)\\)"
     ],
     "hint": "Remove the multiplication sign outside and inside the bracket.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Inside the bracket, \\(7 \\times p\\) becomes \\(7p\\).",
-        "workingOut": "\\(6 \\times (7p - 4)\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -1580,11 +1639,13 @@ export const Y7_CH23E_QUESTIONS = [
   },
   {
     "id": "y7-23e-q4i",
+    "topicId": "y7-23e",
+    "c": "23E",
     "t": "Writing algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following in a shortened form.\\n\\n\\(8 + (4 \\times 5 + 4 \\times m)\\)",
+    "question": "Write the following in a shortened form.<br /><br />\\(8 + (4 \\times 5 + 4 \\times m)\\)",
     "a": 2,
     "answer": "2",
     "opts": [
@@ -1598,7 +1659,7 @@ export const Y7_CH23E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Calculate \\(4 \\times 5 = 20\\).",
-        "workingOut": "\\(8 + (20 + 4 \\times m)\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -1617,25 +1678,27 @@ export const Y7_CH23E_QUESTIONS = [
   },
   {
     "id": "y7-23e-q4j",
+    "topicId": "y7-23e",
+    "c": "23E",
     "t": "Writing algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following in a shortened form.\\n\\n\\(5 \\times (6 \\times k - 2 \\times j)\\)",
-    "a": 3,
-    "answer": "3",
+    "question": "Write the following in a shortened form.<br /><br />\\(5 \\times (6 \\times k - 2 \\times j)\\)",
+    "a": 2,
+    "answer": "2",
     "opts": [
       "\\(-5(6k - 2j)\\)",
       "\\(6(6k - 2j)\\)",
-      "\\(opt2\\)",
-      "\\(5(6k - 2j)\\)"
+      "\\(5(6k - 2j)\\)",
+      "\\(7(6k - 2j)\\)"
     ],
     "hint": "Remove all multiplication signs.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Inside the bracket, \\(6 \\times k\\) becomes \\(6k\\) and \\(2 \\times j\\) becomes \\(2j\\).",
-        "workingOut": "\\(5 \\times (6k - 2j)\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -1654,11 +1717,13 @@ export const Y7_CH23E_QUESTIONS = [
   },
   {
     "id": "y7-23e-q4k",
+    "topicId": "y7-23e",
+    "c": "23E",
     "t": "Writing algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following in a shortened form.\\n\\n\\((3y + 2) \\times (y + 4)\\)",
+    "question": "Write the following in a shortened form.<br /><br />\\((3y + 2) \\times (y + 4)\\)",
     "a": 0,
     "answer": "0",
     "opts": [
@@ -1691,11 +1756,13 @@ export const Y7_CH23E_QUESTIONS = [
   },
   {
     "id": "y7-23e-q4l",
+    "topicId": "y7-23e",
+    "c": "23E",
     "t": "Writing algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following in a shortened form.\\n\\n\\((4m + 3) \\times (4m - 5)\\)",
+    "question": "Write the following in a shortened form.<br /><br />\\((4m + 3) \\times (4m - 5)\\)",
     "a": 1,
     "answer": "1",
     "opts": [
@@ -1728,25 +1795,27 @@ export const Y7_CH23E_QUESTIONS = [
   },
   {
     "id": "y7-23e-q4m",
+    "topicId": "y7-23e",
+    "c": "23E",
     "t": "Writing algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following in a shortened form.\\n\\n\\(x \\times 6 \\times x \\times x\\)",
+    "question": "Write the following in a shortened form.<br /><br />\\(x \\times 6 \\times x \\times x\\)",
     "a": 2,
     "answer": "2",
     "opts": [
       "\\(-6x^3\\)",
       "\\(7x^3\\)",
       "\\(6x^3\\)",
-      "\\(opt2\\)"
+      "\\(8x^3\\)"
     ],
     "hint": "Count how many \\(x\\)'s there are.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Rearrange the expression: \\(6 \\times x \\times x \\times x\\).",
-        "workingOut": "\\(6 \\times x^3\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -1765,25 +1834,27 @@ export const Y7_CH23E_QUESTIONS = [
   },
   {
     "id": "y7-23e-q4n",
+    "topicId": "y7-23e",
+    "c": "23E",
     "t": "Writing algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following in a shortened form.\\n\\n\\(8 \\times y \\times y \\times y \\times 4\\)",
-    "a": 3,
-    "answer": "3",
+    "question": "Write the following in a shortened form.<br /><br />\\(8 \\times y \\times y \\times y \\times 4\\)",
+    "a": 2,
+    "answer": "2",
     "opts": [
       "\\(-32y^3\\)",
       "\\(33y^3\\)",
-      "\\(opt2\\)",
-      "\\(32y^3\\)"
+      "\\(32y^3\\)",
+      "\\(34y^3\\)"
     ],
     "hint": "Multiply the numbers together first.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Rearrange to multiply the numbers: \\(8 \\times 4 = 32\\).",
-        "workingOut": "\\(32 \\times y \\times y \\times y\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -1802,25 +1873,27 @@ export const Y7_CH23E_QUESTIONS = [
   },
   {
     "id": "y7-23e-q4o",
+    "topicId": "y7-23e",
+    "c": "23E",
     "t": "Writing algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following in a shortened form.\\n\\n\\(m \\times m \\times m \\times m \\times n \\times n\\)",
+    "question": "Write the following in a shortened form.<br /><br />\\(m \\times m \\times m \\times m \\times n \\times n\\)",
     "a": 0,
     "answer": "0",
     "opts": [
       "\\(m^4n^2\\)",
       "\\(-m^4n^2\\)",
       "\\(m^5n^2\\)",
-      "\\(opt2\\)"
+      "\\(m^6n^2\\)"
     ],
     "hint": "Use indices for the repeated variables.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "There are four \\(m\\)'s and two \\(n\\)'s multiplied together.",
-        "workingOut": "\\(m^4 \\times n^2\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -1839,11 +1912,13 @@ export const Y7_CH23E_QUESTIONS = [
   },
   {
     "id": "y7-23e-q4p",
+    "topicId": "y7-23e",
+    "c": "23E",
     "t": "Writing algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following in a shortened form.\\n\\n\\((4 \\times y + 3) \\times (5 \\times y - 1)\\)",
+    "question": "Write the following in a shortened form.<br /><br />\\((4 \\times y + 3) \\times (5 \\times y - 1)\\)",
     "a": 1,
     "answer": "1",
     "opts": [
@@ -1857,7 +1932,7 @@ export const Y7_CH23E_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Inside the brackets, \\(4 \\times y\\) is \\(4y\\) and \\(5 \\times y\\) is \\(5y\\).",
-        "workingOut": "\\((4y + 3) \\times (5y - 1)\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -1876,11 +1951,13 @@ export const Y7_CH23E_QUESTIONS = [
   },
   {
     "id": "y7-23e-q4q",
+    "topicId": "y7-23e",
+    "c": "23E",
     "t": "Writing algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following in a shortened form.\\n\\n\\((k + 4) \\times (3k + 2)\\)",
+    "question": "Write the following in a shortened form.<br /><br />\\((k + 4) \\times (3k + 2)\\)",
     "a": 2,
     "answer": "2",
     "opts": [
@@ -1913,18 +1990,20 @@ export const Y7_CH23E_QUESTIONS = [
   },
   {
     "id": "y7-23e-q4r",
+    "topicId": "y7-23e",
+    "c": "23E",
     "t": "Writing algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the following in a shortened form.\\n\\n\\((p - 6) \\times (2p - 7)\\)",
-    "a": 3,
-    "answer": "3",
+    "question": "Write the following in a shortened form.<br /><br />\\((p - 6) \\times (2p - 7)\\)",
+    "a": 2,
+    "answer": "2",
     "opts": [
       "\\(-(p - 6)(2p - 7)\\)",
       "\\((p - 7)(2p - 7)\\)",
-      "\\(opt2\\)",
-      "\\((p - 6)(2p - 7)\\)"
+      "\\((p - 6)(2p - 7)\\)",
+      "\\((p - 8)(2p - 7)\\)"
     ],
     "hint": "Remove the multiplication sign between the brackets.",
     "solution": "",

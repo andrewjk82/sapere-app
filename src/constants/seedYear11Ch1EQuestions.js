@@ -4,7 +4,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve the simultaneous equations:\\n\\\\(  3x - 5y = 21  \\\\)\\n\\\\(  2x + 3y = -5  \\\\)",
+    "question": "Solve the simultaneous equations:\n\\\\(  3x - 5y = 21  \\\\)\n\\\\(  2x + 3y = -5  \\\\)",
     "options": [
       {
         "text": "\\( x = 2, \\; y = -3 \\)",
@@ -57,7 +57,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve simultaneously for \\\\(  y  \\\\):\\n\\\\(  x - y = 2  \\\\)\\n\\\\(  x^2 + y^2 = 74  \\\\)",
+    "question": "Solve simultaneously for \\\\(  y  \\\\):\n\\\\(  x - y = 2  \\\\)\n\\\\(  x^2 + y^2 = 74  \\\\)",
     "options": [
       {
         "text": "\\( y = -5, \\; -7 \\)",
@@ -105,7 +105,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve simultaneously:\\n\\\\(  2x + y = 8  \\\\)\\n\\\\(  x^2 + xy = 12  \\\\)",
+    "question": "Solve simultaneously:\n\\\\(  2x + y = 8  \\\\)\n\\\\(  x^2 + xy = 12  \\\\)",
     "options": [
       {
         "text": "\\( x = 2, \\; y = 4 \\)",
@@ -206,7 +206,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve simultaneously:\\n\\\\(  x + y = 5  \\\\)\\n\\\\(  x^2 - y^2 = 15  \\\\)",
+    "question": "Solve simultaneously:\n\\\\(  x + y = 5  \\\\)\n\\\\(  x^2 - y^2 = 15  \\\\)",
     "options": [
       {
         "text": "\\( x = 4, \\; y = -1 \\)",
@@ -259,7 +259,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve simultaneously:\\n\\\\(  y = x + 6  \\\\)\\n\\\\(  y = x^2 + 2x  \\\\)",
+    "question": "Solve simultaneously:\n\\\\(  y = x + 6  \\\\)\n\\\\(  y = x^2 + 2x  \\\\)",
     "options": [
       {
         "text": "\\( x = -3, \\; y = 3 \\)",
@@ -312,7 +312,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 150,
-    "question": "Solve simultaneously:\\n\\\\(  x^2 + y^2 = 25  \\\\)\\n\\\\(  xy = 12  \\\\)",
+    "question": "Solve simultaneously:\n\\\\(  x^2 + y^2 = 25  \\\\)\n\\\\(  xy = 12  \\\\)",
     "options": [
       {
         "text": "\\( x = 4, \\; y = -3 \\)",
@@ -365,7 +365,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Solve by substitution for \\\\(  x  \\\\):\\n\\\\(  3x - y = 8  \\\\)\\n\\\\(  2x - 5y = -12  \\\\)",
+    "question": "Solve by substitution for \\\\(  x  \\\\):\n\\\\(  3x - y = 8  \\\\)\n\\\\(  2x - 5y = -12  \\\\)",
     "options": [
       {
         "text": "\\( x = 4 \\)",
@@ -418,7 +418,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Solve the simultaneous equations for \\\\(  b  \\\\):\\n\\\\(  a = 3b + 2  \\\\)\\n\\\\(  a - 2b = 5  \\\\)",
+    "question": "Solve the simultaneous equations for \\\\(  b  \\\\):\n\\\\(  a = 3b + 2  \\\\)\n\\\\(  a - 2b = 5  \\\\)",
     "options": [
       {
         "text": "\\( b = 5 \\)",
@@ -466,7 +466,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 150,
-    "question": "Solve the system:\\n\\\\(  x + y + z = 6  \\\\)\\n\\\\(  x - y + z = 2  \\\\)\\n\\\\(  2x + y - z = 1  \\\\)",
+    "question": "Solve the system:\n\\\\(  x + y + z = 6  \\\\)\n\\\\(  x - y + z = 2  \\\\)\n\\\\(  2x + y - z = 1  \\\\)",
     "options": [
       {
         "text": "\\( x = 1, \\; y = -2 \\)",
@@ -563,7 +563,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve simultaneously:\\n\\\\(  y = x - 1  \\\\)\\n\\\\(  x^2 + y^2 = 13  \\\\)",
+    "question": "Solve simultaneously:\n\\\\(  y = x - 1  \\\\)\n\\\\(  x^2 + y^2 = 13  \\\\)",
     "options": [
       {
         "text": "\\( x = 3, \\; y = -2 \\)",
@@ -616,7 +616,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Solve the simultaneous equations for \\\\(  y  \\\\):\\n\\\\(  3x + y = 11  \\\\)\\n\\\\(  x + y = 5  \\\\)",
+    "question": "Solve the simultaneous equations for \\\\(  y  \\\\):\n\\\\(  3x + y = 11  \\\\)\n\\\\(  x + y = 5  \\\\)",
     "options": [
       {
         "text": "\\( y = 2 \\)",
@@ -664,7 +664,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve simultaneously:\\n\\\\(  y = 3x + 4  \\\\)\\n\\\\(  y = x^2 + 3x  \\\\)",
+    "question": "Solve simultaneously:\n\\\\(  y = 3x + 4  \\\\)\n\\\\(  y = x^2 + 3x  \\\\)",
     "options": [
       {
         "text": "\\( x = 2, \\; y = 10 \\)",
@@ -717,7 +717,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve simultaneously:\\n\\\\(  x + y = 1  \\\\)\\n\\\\(  x^2 + y^2 = 25  \\\\)",
+    "question": "Solve simultaneously:\n\\\\(  x + y = 1  \\\\)\n\\\\(  x^2 + y^2 = 25  \\\\)",
     "options": [
       {
         "text": "\\( x = 4, \\; y = 3 \\)",
@@ -770,7 +770,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Solve the system for \\\\(  y  \\\\):\\n\\\\(  2x + y = 8  \\\\)\\n\\\\(  xy = 6  \\\\)",
+    "question": "Solve the system for \\\\(  y  \\\\):\n\\\\(  2x + y = 8  \\\\)\n\\\\(  xy = 6  \\\\)",
     "options": [
       {
         "text": "\\( y = -6, \\; -2 \\)",
@@ -818,7 +818,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve simultaneously:\\n\\\\(  y = 2 - x  \\\\)\\n\\\\(  y = x^2 - 4x + 2  \\\\)",
+    "question": "Solve simultaneously:\n\\\\(  y = 2 - x  \\\\)\n\\\\(  y = x^2 - 4x + 2  \\\\)",
     "options": [
       {
         "text": "\\( x = 1, \\; y = 1 \\)",
@@ -871,7 +871,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Solve the system for \\\\(  x  \\\\):\\n\\\\(  x - y = 3  \\\\)\\n\\\\(  y = x^2 - 9  \\\\)",
+    "question": "Solve the system for \\\\(  x  \\\\):\n\\\\(  x - y = 3  \\\\)\n\\\\(  y = x^2 - 9  \\\\)",
     "options": [
       {
         "text": "\\( x = -3 \\)",
@@ -924,7 +924,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Solve by substitution for \\\\(  y  \\\\):\\n\\\\(  3x - y = 8  \\\\)\\n\\\\(  2x - 5y = -12  \\\\)",
+    "question": "Solve by substitution for \\\\(  y  \\\\):\n\\\\(  3x - y = 8  \\\\)\n\\\\(  2x - 5y = -12  \\\\)",
     "options": [
       {
         "text": "\\( y = 2 \\)",
@@ -967,7 +967,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve simultaneously:\\n\\\\(  x - y = 3  \\\\)\\n\\\\(  xy = 10  \\\\)",
+    "question": "Solve simultaneously:\n\\\\(  x - y = 3  \\\\)\n\\\\(  xy = 10  \\\\)",
     "options": [
       {
         "text": "\\( x = -5, \\; y = 2 \\)",
@@ -1020,7 +1020,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Solve by substitution for \\\\(  x  \\\\):\\n\\\\(  2x + 3y = 31  \\\\)\\n\\\\(  3x - y = 19  \\\\)",
+    "question": "Solve by substitution for \\\\(  x  \\\\):\n\\\\(  2x + 3y = 31  \\\\)\n\\\\(  3x - y = 19  \\\\)",
     "options": [
       {
         "text": "\\( x = -8 \\)",
@@ -1073,7 +1073,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Solve by substitution for \\\\(  x  \\\\):\\n\\\\(  y = -2x  \\\\)\\n\\\\(  3x + 4y = -10  \\\\)",
+    "question": "Solve by substitution for \\\\(  x  \\\\):\n\\\\(  y = -2x  \\\\)\n\\\\(  3x + 4y = -10  \\\\)",
     "options": [
       {
         "text": "\\( x = 4 \\)",
@@ -1121,7 +1121,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve the simultaneous equations:\\n\\\\(  4x + 6y = 15  \\\\)\\n\\\\(  2x - 2y = 5  \\\\)",
+    "question": "Solve the simultaneous equations:\n\\\\(  4x + 6y = 15  \\\\)\n\\\\(  2x - 2y = 5  \\\\)",
     "options": [
       {
         "text": "\\( x = -3, \\; y = 1 \\)",
@@ -1174,7 +1174,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve simultaneously:\\n\\\\(  x + y = 8  \\\\)\\n\\\\(  x^2 + xy + y^2 = 52  \\\\)",
+    "question": "Solve simultaneously:\n\\\\(  x + y = 8  \\\\)\n\\\\(  x^2 + xy + y^2 = 52  \\\\)",
     "options": [
       {
         "text": "\\( x = -2, \\; y = 6 \\)",
@@ -1227,7 +1227,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Solve the simultaneous equations for \\\\(  y  \\\\):\\n\\\\(  y = x - 2  \\\\)\\n\\\\(  3x + y = 10  \\\\)",
+    "question": "Solve the simultaneous equations for \\\\(  y  \\\\):\n\\\\(  y = x - 2  \\\\)\n\\\\(  3x + y = 10  \\\\)",
     "options": [
       {
         "text": "\\( y = -1 \\)",
@@ -1271,7 +1271,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Solve by substitution for \\\\(  x  \\\\):\\n\\\\(  2x + y = 7  \\\\)\\n\\\\(  5x + 3y = 18  \\\\)",
+    "question": "Solve by substitution for \\\\(  x  \\\\):\n\\\\(  2x + y = 7  \\\\)\n\\\\(  5x + 3y = 18  \\\\)",
     "options": [
       {
         "text": "\\( x = 3 \\)",
@@ -1319,7 +1319,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve simultaneously for \\\\(  x  \\\\):\\n\\\\(  3x + y = 7  \\\\)\\n\\\\(  9x^2 + y^2 = 25  \\\\)",
+    "question": "Solve simultaneously for \\\\(  x  \\\\):\n\\\\(  3x + y = 7  \\\\)\n\\\\(  9x^2 + y^2 = 25  \\\\)",
     "options": [
       {
         "text": "\\( x = 3 \\)",
@@ -1378,7 +1378,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Solve the simultaneous equations for \\\\(  x  \\\\):\\n\\\\(  3x + y = 11  \\\\)\\n\\\\(  x + y = 5  \\\\)",
+    "question": "Solve the simultaneous equations for \\\\(  x  \\\\):\n\\\\(  3x + y = 11  \\\\)\n\\\\(  x + y = 5  \\\\)",
     "options": [
       {
         "text": "\\( x = 5 \\)",
@@ -1421,7 +1421,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Solve by elimination for \\\\(  x  \\\\):\\n\\\\(  3x + 4y = 25  \\\\)\\n\\\\(  4x + 3y = 24  \\\\)",
+    "question": "Solve by elimination for \\\\(  x  \\\\):\n\\\\(  3x + 4y = 25  \\\\)\n\\\\(  4x + 3y = 24  \\\\)",
     "options": [
       {
         "text": "\\( x = -3 \\)",
@@ -1469,7 +1469,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve simultaneously:\\n\\\\(  x^2 + 4y^2 = 20  \\\\)\\n\\\\(  x + 2y = 6  \\\\)",
+    "question": "Solve simultaneously:\n\\\\(  x^2 + 4y^2 = 20  \\\\)\n\\\\(  x + 2y = 6  \\\\)",
     "options": [
       {
         "text": "\\( x = 4, \\; y = -1 \\)",
@@ -1522,7 +1522,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 150,
-    "question": "Solve the system:\\n\\\\(  x + y = 8  \\\\)\\n\\\\(  y + z = 13  \\\\)\\n\\\\(  x + z = 11  \\\\)",
+    "question": "Solve the system:\n\\\\(  x + y = 8  \\\\)\n\\\\(  y + z = 13  \\\\)\n\\\\(  x + z = 11  \\\\)",
     "options": [
       {
         "text": "\\( x = -3, \\; y = -5 \\)",
@@ -1565,7 +1565,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Solve by elimination for \\\\(  x  \\\\):\\n\\\\(  5x - 2y = 26  \\\\)\\n\\\\(  2x - 2y = 14  \\\\)",
+    "question": "Solve by elimination for \\\\(  x  \\\\):\n\\\\(  5x - 2y = 26  \\\\)\n\\\\(  2x - 2y = 14  \\\\)",
     "options": [
       {
         "text": "\\( x = 2 \\)",
@@ -1661,7 +1661,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Solve the simultaneous equations for \\\\(  a  \\\\):\\n\\\\(  a + 4b = 13  \\\\)\\n\\\\(  a + 3b = 10  \\\\)",
+    "question": "Solve the simultaneous equations for \\\\(  a  \\\\):\n\\\\(  a + 4b = 13  \\\\)\n\\\\(  a + 3b = 10  \\\\)",
     "options": [
       {
         "text": "\\( a = -1 \\)",
@@ -1806,7 +1806,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Solve the system for \\\\(  y  \\\\):\\n\\\\(  y = 6 - x  \\\\)\\n\\\\(  y = x^2  \\\\)",
+    "question": "Solve the system for \\\\(  y  \\\\):\n\\\\(  y = 6 - x  \\\\)\n\\\\(  y = x^2  \\\\)",
     "options": [
       {
         "text": "\\( y = -4, \\; -9 \\)",
@@ -1854,7 +1854,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve simultaneously:\\n\\\\(  x + y = 11  \\\\)\\n\\\\(  x^2 + y^2 = 61  \\\\)",
+    "question": "Solve simultaneously:\n\\\\(  x + y = 11  \\\\)\n\\\\(  x^2 + y^2 = 61  \\\\)",
     "options": [
       {
         "text": "\\( x = -5, \\; y = -6 \\)",
@@ -1943,7 +1943,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve the simultaneous equations:\\n\\\\(  4x - 5y = 13  \\\\)\\n\\\\(  6x + 5y = 57  \\\\)",
+    "question": "Solve the simultaneous equations:\n\\\\(  4x - 5y = 13  \\\\)\n\\\\(  6x + 5y = 57  \\\\)",
     "options": [
       {
         "text": "\\( x = 7, \\; y = -3 \\)",
@@ -2027,7 +2027,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve simultaneously for \\\\(  x  \\\\):\\n\\\\(  x - y = 2  \\\\)\\n\\\\(  x^2 + y^2 = 74  \\\\)",
+    "question": "Solve simultaneously for \\\\(  x  \\\\):\n\\\\(  x - y = 2  \\\\)\n\\\\(  x^2 + y^2 = 74  \\\\)",
     "options": [
       {
         "text": "\\( x = 5 \\)",
@@ -2134,7 +2134,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Solve the simultaneous equations for \\\\(  y  \\\\):\\n\\\\(  3x - y = 5  \\\\)\\n\\\\(  2x + y = 10  \\\\)",
+    "question": "Solve the simultaneous equations for \\\\(  y  \\\\):\n\\\\(  3x - y = 5  \\\\)\n\\\\(  2x + y = 10  \\\\)",
     "options": [
       {
         "text": "\\( y = 4 \\)",
@@ -2182,7 +2182,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve simultaneously for \\\\(  y  \\\\):\\n\\\\(  x + 2y = 3  \\\\)\\n\\\\(  2xy - x^2 = 1  \\\\)",
+    "question": "Solve simultaneously for \\\\(  y  \\\\):\n\\\\(  x + 2y = 3  \\\\)\n\\\\(  2xy - x^2 = 1  \\\\)",
     "options": [
       {
         "text": "\\( y = 1, \\; 5 \\)",
@@ -2230,7 +2230,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve simultaneously for \\\\(  x  \\\\):\\n\\\\(  x + 2y = 3  \\\\)\\n\\\\(  2xy - x^2 = 1  \\\\)",
+    "question": "Solve simultaneously for \\\\(  x  \\\\):\n\\\\(  x + 2y = 3  \\\\)\n\\\\(  2xy - x^2 = 1  \\\\)",
     "options": [
       {
         "text": "\\( x = 1 \\)",
@@ -2347,7 +2347,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Solve the simultaneous equations for \\\\(  p  \\\\):\\n\\\\(  p - 3q = 2  \\\\)\\n\\\\(  2p - 3q = 7  \\\\)",
+    "question": "Solve the simultaneous equations for \\\\(  p  \\\\):\n\\\\(  p - 3q = 2  \\\\)\n\\\\(  2p - 3q = 7  \\\\)",
     "options": [
       {
         "text": "\\( p = 7 \\)",
@@ -2390,7 +2390,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Solve the simultaneous equations for \\\\(  y  \\\\):\\n\\\\(  y = 2x  \\\\)\\n\\\\(  3x + y = 15  \\\\)",
+    "question": "Solve the simultaneous equations for \\\\(  y  \\\\):\n\\\\(  y = 2x  \\\\)\n\\\\(  3x + y = 15  \\\\)",
     "options": [
       {
         "text": "\\( y = 8 \\)",
@@ -2438,7 +2438,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve the simultaneous equations:\\n\\\\(  5x - 2y = 1  \\\\)\\n\\\\(  3x + 4y = 24  \\\\)",
+    "question": "Solve the simultaneous equations:\n\\\\(  5x - 2y = 1  \\\\)\n\\\\(  3x + 4y = 24  \\\\)",
     "options": [
       {
         "text": "\\( x = 2, \\; y = -9 \\)",
@@ -2491,7 +2491,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Solve by elimination for \\\\(  x  \\\\):\\n\\\\(  3x - 2y = 8  \\\\)\\n\\\\(  4x + 3y = 22  \\\\)",
+    "question": "Solve by elimination for \\\\(  x  \\\\):\n\\\\(  3x - 2y = 8  \\\\)\n\\\\(  4x + 3y = 22  \\\\)",
     "options": [
       {
         "text": "\\( x = 2 \\)",
@@ -2539,7 +2539,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve simultaneously:\\n\\\\(  x - y = 2  \\\\)\\n\\\\(  x^2 - y^2 = 8  \\\\)",
+    "question": "Solve simultaneously:\n\\\\(  x - y = 2  \\\\)\n\\\\(  x^2 - y^2 = 8  \\\\)",
     "options": [
       {
         "text": "\\( x = 3, \\; y = -1 \\)",
@@ -2587,7 +2587,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Solve the simultaneous equations for \\\\(  x  \\\\):\\n\\\\(  y = 2x  \\\\)\\n\\\\(  3x + y = 15  \\\\)",
+    "question": "Solve the simultaneous equations for \\\\(  x  \\\\):\n\\\\(  y = 2x  \\\\)\n\\\\(  3x + y = 15  \\\\)",
     "options": [
       {
         "text": "\\( x = 1 \\)",
@@ -2635,7 +2635,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 150,
-    "question": "Solve the system:\\n\\\\(  x + 2y + z = 8  \\\\)\\n\\\\(  2x + y + z = 7  \\\\)\\n\\\\(  x + y + 2z = 9  \\\\)",
+    "question": "Solve the system:\n\\\\(  x + 2y + z = 8  \\\\)\n\\\\(  2x + y + z = 7  \\\\)\n\\\\(  x + y + 2z = 9  \\\\)",
     "options": [
       {
         "text": "\\( x = -1, \\; y = -2 \\)",
@@ -2688,7 +2688,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Solve the system for \\\\(  x  \\\\):\\n\\\\(  y = 3x - 2  \\\\)\\n\\\\(  y = x^2 - 2x + 2  \\\\)",
+    "question": "Solve the system for \\\\(  x  \\\\):\n\\\\(  y = 3x - 2  \\\\)\n\\\\(  y = x^2 - 2x + 2  \\\\)",
     "options": [
       {
         "text": "\\( x = 3 \\)",
@@ -2737,7 +2737,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve simultaneously:\\n\\\\(  x + 3y = 10  \\\\)\\n\\\\(  xy = 8  \\\\)",
+    "question": "Solve simultaneously:\n\\\\(  x + 3y = 10  \\\\)\n\\\\(  xy = 8  \\\\)",
     "options": [
       {
         "text": "\\( x = -6, \\; y = 4 \\)",
@@ -2877,7 +2877,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 150,
-    "question": "Solve simultaneously:\\n\\\\(  \\\\\\sqrt{x} + \\\\\\sqrt{y} = 5  \\\\)\\n\\\\(  x + y = 13  \\\\)",
+    "question": "Solve simultaneously:\n\\\\(  \\\\\\sqrt{x} + \\\\\\sqrt{y} = 5  \\\\)\n\\\\(  x + y = 13  \\\\)",
     "options": [
       {
         "text": "\\( x = 4, \\; y = -9 \\)",
@@ -2983,7 +2983,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve simultaneously:\\n\\\\(  x + y = 3  \\\\)\\n\\\\(  x^3 + y^3 = 9  \\\\)",
+    "question": "Solve simultaneously:\n\\\\(  x + y = 3  \\\\)\n\\\\(  x^3 + y^3 = 9  \\\\)",
     "options": [
       {
         "text": "\\( x = 1, \\; y = 2 \\)",
@@ -3036,7 +3036,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 150,
-    "question": "Solve the system:\\n\\\\(  x + y + z = 9  \\\\)\\n\\\\(  x + 2y + 3z = 22  \\\\)\\n\\\\(  2x + y + z = 12  \\\\)",
+    "question": "Solve the system:\n\\\\(  x + y + z = 9  \\\\)\n\\\\(  x + 2y + 3z = 22  \\\\)\n\\\\(  2x + y + z = 12  \\\\)",
     "options": [
       {
         "text": "\\( x = -3, \\; y = 1 \\)",
@@ -3089,7 +3089,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Solve by elimination for \\\\(  x  \\\\):\\n\\\\(  3x + y = 2  \\\\)\\n\\\\(  x - y = -6  \\\\)",
+    "question": "Solve by elimination for \\\\(  x  \\\\):\n\\\\(  3x + y = 2  \\\\)\n\\\\(  x - y = -6  \\\\)",
     "options": [
       {
         "text": "\\( x = -1 \\)",
@@ -3128,7 +3128,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Solve the system for \\\\(  y  \\\\):\\n\\\\(  y = 2x^2  \\\\)\\n\\\\(  y = 6x - x^2  \\\\)",
+    "question": "Solve the system for \\\\(  y  \\\\):\n\\\\(  y = 2x^2  \\\\)\n\\\\(  y = 6x - x^2  \\\\)",
     "options": [
       {
         "text": "\\( y = 0, \\; 8 \\)",
@@ -3163,7 +3163,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Solve by substitution for \\\\(  y  \\\\):\\n\\\\(  2x + 3y = 31  \\\\)\\n\\\\(  3x - y = 19  \\\\)",
+    "question": "Solve by substitution for \\\\(  y  \\\\):\n\\\\(  2x + 3y = 31  \\\\)\n\\\\(  3x - y = 19  \\\\)",
     "options": [
       {
         "text": "\\( y = -5 \\)",
@@ -3206,7 +3206,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve the simultaneous equations:\\n\\\\(  2x + 5y = 19  \\\\)\\n\\\\(  3x - 2y = 0  \\\\)",
+    "question": "Solve the simultaneous equations:\n\\\\(  2x + 5y = 19  \\\\)\n\\\\(  3x - 2y = 0  \\\\)",
     "options": [
       {
         "text": "\\( x = -2, \\; y = 3 \\)",
@@ -3259,7 +3259,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Solve the simultaneous equations for \\\\(  a  \\\\):\\n\\\\(  a = 3b + 2  \\\\)\\n\\\\(  a - 2b = 5  \\\\)",
+    "question": "Solve the simultaneous equations for \\\\(  a  \\\\):\n\\\\(  a = 3b + 2  \\\\)\n\\\\(  a - 2b = 5  \\\\)",
     "options": [
       {
         "text": "\\( a = 13 \\)",
@@ -3307,7 +3307,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Solve the system for \\\\(  x  \\\\):\\n\\\\(  y = 6 - x  \\\\)\\n\\\\(  y = x^2  \\\\)",
+    "question": "Solve the system for \\\\(  x  \\\\):\n\\\\(  y = 6 - x  \\\\)\n\\\\(  y = x^2  \\\\)",
     "options": [
       {
         "text": "\\( x = -2 \\)",
@@ -3360,7 +3360,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 150,
-    "question": "Solve the system:\\n\\\\(  x + y = 5  \\\\)\\n\\\\(  y + z = 7  \\\\)\\n\\\\(  x + z = 6  \\\\)",
+    "question": "Solve the system:\n\\\\(  x + y = 5  \\\\)\n\\\\(  y + z = 7  \\\\)\n\\\\(  x + z = 6  \\\\)",
     "options": [
       {
         "text": "\\( x = -2, \\; y = 3 \\)",
@@ -3403,7 +3403,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve simultaneously for \\\\(  x  \\\\):\\n\\\\(  2x + 3y = 16  \\\\)\\n\\\\(  xy = 10  \\\\)",
+    "question": "Solve simultaneously for \\\\(  x  \\\\):\n\\\\(  2x + 3y = 16  \\\\)\n\\\\(  xy = 10  \\\\)",
     "options": [
       {
         "text": "\\( x = 1 \\)",
@@ -3504,7 +3504,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Solve by substitution for \\\\(  x  \\\\):\\n\\\\(  x = 4y + 3  \\\\)\\n\\\\(  2x - y = 13  \\\\)",
+    "question": "Solve by substitution for \\\\(  x  \\\\):\n\\\\(  x = 4y + 3  \\\\)\n\\\\(  2x - y = 13  \\\\)",
     "options": [
       {
         "text": "\\( x = 7 \\)",
@@ -3552,7 +3552,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Solve by elimination for \\\\(  y  \\\\):\\n\\\\(  3x + 4y = 25  \\\\)\\n\\\\(  4x + 3y = 24  \\\\)",
+    "question": "Solve by elimination for \\\\(  y  \\\\):\n\\\\(  3x + 4y = 25  \\\\)\n\\\\(  4x + 3y = 24  \\\\)",
     "options": [
       {
         "text": "\\( y = 2 \\)",
@@ -3600,7 +3600,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve simultaneously:\\n\\\\(  x - y = 4  \\\\)\\n\\\\(  x^2 + y^2 = 40  \\\\)",
+    "question": "Solve simultaneously:\n\\\\(  x - y = 4  \\\\)\n\\\\(  x^2 + y^2 = 40  \\\\)",
     "options": [
       {
         "text": "\\( x = -6, \\; y = 2 \\)",
@@ -3653,7 +3653,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Solve the simultaneous equations for \\\\(  x  \\\\):\\n\\\\(  3x - y = 5  \\\\)\\n\\\\(  2x + y = 10  \\\\)",
+    "question": "Solve the simultaneous equations for \\\\(  x  \\\\):\n\\\\(  3x - y = 5  \\\\)\n\\\\(  2x + y = 10  \\\\)",
     "options": [
       {
         "text": "\\( x = 5 \\)",
@@ -3701,7 +3701,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Solve by elimination for \\\\(  y  \\\\):\\n\\\\(  3x + 2y = 17  \\\\)\\n\\\\(  3x + 5y = 29  \\\\)",
+    "question": "Solve by elimination for \\\\(  y  \\\\):\n\\\\(  3x + 2y = 17  \\\\)\n\\\\(  3x + 5y = 29  \\\\)",
     "options": [
       {
         "text": "\\( y = -4 \\)",
@@ -3836,7 +3836,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 150,
-    "question": "Solve the system:\\n\\\\(  2x + 3y - z = 9  \\\\)\\n\\\\(  x - 2y + 3z = 8  \\\\)\\n\\\\(  3x + y + 2z = 17  \\\\)",
+    "question": "Solve the system:\n\\\\(  2x + 3y - z = 9  \\\\)\n\\\\(  x - 2y + 3z = 8  \\\\)\n\\\\(  3x + y + 2z = 17  \\\\)",
     "options": [
       {
         "text": "\\( x = 4, \\; y = 1 \\)",
@@ -3894,7 +3894,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Solve by elimination for \\\\(  x  \\\\):\\n\\\\(  5x - 3y = 29  \\\\)\\n\\\\(  2x - y = 11  \\\\)",
+    "question": "Solve by elimination for \\\\(  x  \\\\):\n\\\\(  5x - 3y = 29  \\\\)\n\\\\(  2x - y = 11  \\\\)",
     "options": [
       {
         "text": "\\( x = 2 \\)",
@@ -3995,7 +3995,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Solve by elimination for \\\\(  x  \\\\):\\n\\\\(  4x + 3y = 10  \\\\)\\n\\\\(  3x + y = 5  \\\\)",
+    "question": "Solve by elimination for \\\\(  x  \\\\):\n\\\\(  4x + 3y = 10  \\\\)\n\\\\(  3x + y = 5  \\\\)",
     "options": [
       {
         "text": "\\( x = 1 \\)",
@@ -4039,7 +4039,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Solve the simultaneous equations for \\\\(  v  \\\\):\\n\\\\(  v = 5 - 4u  \\\\)\\n\\\\(  3u + v = 2  \\\\)",
+    "question": "Solve the simultaneous equations for \\\\(  v  \\\\):\n\\\\(  v = 5 - 4u  \\\\)\n\\\\(  3u + v = 2  \\\\)",
     "options": [
       {
         "text": "\\( v = -9 \\)",
@@ -4087,7 +4087,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Solve the simultaneous equations for \\\\(  x  \\\\):\\n\\\\(  y = x - 2  \\\\)\\n\\\\(  3x + y = 10  \\\\)",
+    "question": "Solve the simultaneous equations for \\\\(  x  \\\\):\n\\\\(  y = x - 2  \\\\)\n\\\\(  3x + y = 10  \\\\)",
     "options": [
       {
         "text": "\\( x = 3 \\)",
@@ -4183,7 +4183,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve simultaneously:\\n\\\\(  x - y = 1  \\\\)\\n\\\\(  x^2 + xy + y^2 = 7  \\\\)",
+    "question": "Solve simultaneously:\n\\\\(  x - y = 1  \\\\)\n\\\\(  x^2 + xy + y^2 = 7  \\\\)",
     "options": [
       {
         "text": "\\( x = -2, \\; y = 1 \\)",
@@ -4236,7 +4236,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve simultaneously:\\n\\\\(  2x - y = 3  \\\\)\\n\\\\(  x^2 + y^2 = 18  \\\\)",
+    "question": "Solve simultaneously:\n\\\\(  2x - y = 3  \\\\)\n\\\\(  x^2 + y^2 = 18  \\\\)",
     "options": [
       {
         "text": "\\( x = -3, \\; y = -3 \\)",
@@ -4289,7 +4289,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve simultaneously:\\n\\\\(  y = 5x - 6  \\\\)\\n\\\\(  y = x^2 + x - 6  \\\\)",
+    "question": "Solve simultaneously:\n\\\\(  y = 5x - 6  \\\\)\n\\\\(  y = x^2 + x - 6  \\\\)",
     "options": [
       {
         "text": "\\( x = 0, \\; y = -6 \\)",
@@ -4342,7 +4342,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Solve the simultaneous equations for \\\\(  u  \\\\):\\n\\\\(  v = 5 - 4u  \\\\)\\n\\\\(  3u + v = 2  \\\\)",
+    "question": "Solve the simultaneous equations for \\\\(  u  \\\\):\n\\\\(  v = 5 - 4u  \\\\)\n\\\\(  3u + v = 2  \\\\)",
     "options": [
       {
         "text": "\\( u = -3 \\)",
@@ -4443,7 +4443,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve simultaneously:\\n\\\\( y = 2x \\\\)\\n\\\\( y^2 = 3x + 10 \\\\)",
+    "question": "Solve simultaneously:\n\\\\( y = 2x \\\\)\n\\\\( y^2 = 3x + 10 \\\\)",
     "options": [],
     "answer": "x = 2, y = 4 and x = -5/4, y = -5/2",
     "blanks": [],
@@ -4479,7 +4479,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Solve by elimination for \\\\(  y  \\\\):\\n\\\\(  2x + 3y = 0  \\\\)\\n\\\\(  3x - y = 22  \\\\)",
+    "question": "Solve by elimination for \\\\(  y  \\\\):\n\\\\(  2x + 3y = 0  \\\\)\n\\\\(  3x - y = 22  \\\\)",
     "options": [
       {
         "text": "\\( y = -6 \\)",
@@ -4575,7 +4575,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Solve the system for \\\\(  y  \\\\):\\n\\\\(  y = 3x - 2  \\\\)\\n\\\\(  y = x^2 - 2x + 2  \\\\)",
+    "question": "Solve the system for \\\\(  y  \\\\):\n\\\\(  y = 3x - 2  \\\\)\n\\\\(  y = x^2 - 2x + 2  \\\\)",
     "options": [
       {
         "text": "\\( y = -1, \\; -10 \\)",
@@ -4623,7 +4623,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Solve the system for \\\\(  x  \\\\):\\n\\\\(  x - y = 4  \\\\)\\n\\\\(  xy = 12  \\\\)",
+    "question": "Solve the system for \\\\(  x  \\\\):\n\\\\(  x - y = 4  \\\\)\n\\\\(  xy = 12  \\\\)",
     "options": [
       {
         "text": "\\( x = 6 \\)",
@@ -4676,7 +4676,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Solve by elimination for \\\\(  y  \\\\):\\n\\\\(  5x - 2y = 26  \\\\)\\n\\\\(  2x - 2y = 14  \\\\)",
+    "question": "Solve by elimination for \\\\(  y  \\\\):\n\\\\(  5x - 2y = 26  \\\\)\n\\\\(  2x - 2y = 14  \\\\)",
     "options": [
       {
         "text": "\\( y = -5 \\)",
@@ -4777,7 +4777,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve simultaneously:\\n\\\\(  x^2 - y^2 = 7  \\\\)\\n\\\\(  x + y = 7  \\\\)",
+    "question": "Solve simultaneously:\n\\\\(  x^2 - y^2 = 7  \\\\)\n\\\\(  x + y = 7  \\\\)",
     "options": [
       {
         "text": "\\( x = 4, \\; y = 3 \\)",
@@ -4825,7 +4825,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve simultaneously:\\n\\\\(  x - y = 1  \\\\)\\n\\\\(  x^2 - y^2 = 5  \\\\)",
+    "question": "Solve simultaneously:\n\\\\(  x - y = 1  \\\\)\n\\\\(  x^2 - y^2 = 5  \\\\)",
     "options": [
       {
         "text": "\\( x = 3, \\; y = 2 \\)",
@@ -4878,7 +4878,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve simultaneously:\\n\\\\(  y = 4 - x  \\\\)\\n\\\\(  y = x^2 - 4x + 4  \\\\)",
+    "question": "Solve simultaneously:\n\\\\(  y = 4 - x  \\\\)\n\\\\(  y = x^2 - 4x + 4  \\\\)",
     "options": [
       {
         "text": "\\( x = 0, \\; y = 4 \\)",
@@ -4931,7 +4931,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Solve by substitution for \\\\(  y  \\\\):\\n\\\\(  y = -2x  \\\\)\\n\\\\(  3x + 4y = -10  \\\\)",
+    "question": "Solve by substitution for \\\\(  y  \\\\):\n\\\\(  y = -2x  \\\\)\n\\\\(  3x + 4y = -10  \\\\)",
     "options": [
       {
         "text": "\\( y = -4 \\)",
@@ -4974,7 +4974,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve simultaneously:\\n\\\\(  x + y = 6  \\\\)\\n\\\\(  x^2 - xy + y^2 = 21  \\\\)",
+    "question": "Solve simultaneously:\n\\\\(  x + y = 6  \\\\)\n\\\\(  x^2 - xy + y^2 = 21  \\\\)",
     "options": [
       {
         "text": "\\( x = 1, \\; y = -5 \\)",
@@ -5027,7 +5027,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve simultaneously:\\n\\\\(  y = x^2  \\\\)\\n\\\\(  y = 4x - 4  \\\\)",
+    "question": "Solve simultaneously:\n\\\\(  y = x^2  \\\\)\n\\\\(  y = 4x - 4  \\\\)",
     "options": [
       {
         "text": "\\( x = 2, \\; y = -4 \\)",
@@ -5080,7 +5080,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve simultaneously:\\n\\\\(  x + y = 6  \\\\)\\n\\\\(  x^2 - y^2 = 12  \\\\)",
+    "question": "Solve simultaneously:\n\\\\(  x + y = 6  \\\\)\n\\\\(  x^2 - y^2 = 12  \\\\)",
     "options": [
       {
         "text": "\\( x = 4, \\; y = -2 \\)",
@@ -5128,7 +5128,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Solve the simultaneous equations for \\\\(  x  \\\\):\\n\\\\(  x + y = 7  \\\\)\\n\\\\(  x - y = 3  \\\\)",
+    "question": "Solve the simultaneous equations for \\\\(  x  \\\\):\n\\\\(  x + y = 7  \\\\)\n\\\\(  x - y = 3  \\\\)",
     "options": [
       {
         "text": "\\( x = -5 \\)",
@@ -5176,7 +5176,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Solve by elimination for \\\\(  y  \\\\):\\n\\\\(  3x - 2y = 8  \\\\)\\n\\\\(  4x + 3y = 22  \\\\)",
+    "question": "Solve by elimination for \\\\(  y  \\\\):\n\\\\(  3x - 2y = 8  \\\\)\n\\\\(  4x + 3y = 22  \\\\)",
     "options": [
       {
         "text": "\\( y = 2 \\)",
@@ -5224,7 +5224,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "hard",
     "timeLimit": 150,
-    "question": "Solve simultaneously:\\n\\\\( \\\\frac{1}{x} + \\\\frac{1}{y} = \\\\frac{5}{6} \\\\)\\n\\\\( x + y = 5 \\\\)",
+    "question": "Solve simultaneously:\n\\\\( \\\\frac{1}{x} + \\\\frac{1}{y} = \\\\frac{5}{6} \\\\)\n\\\\( x + y = 5 \\\\)",
     "options": [],
     "answer": "x = 2, y = 3 and x = 3, y = 2",
     "blanks": [],
@@ -5260,7 +5260,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Solve the simultaneous equations for \\\\(  y  \\\\):\\n\\\\(  y = 3x  \\\\)\\n\\\\(  2x + y = 10  \\\\)",
+    "question": "Solve the simultaneous equations for \\\\(  y  \\\\):\n\\\\(  y = 3x  \\\\)\n\\\\(  2x + y = 10  \\\\)",
     "options": [
       {
         "text": "\\( y = 8 \\)",
@@ -5308,7 +5308,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Solve by elimination for \\\\(  x  \\\\):\\n\\\\(  3x + 2y = 17  \\\\)\\n\\\\(  3x + 5y = 29  \\\\)",
+    "question": "Solve by elimination for \\\\(  x  \\\\):\n\\\\(  3x + 2y = 17  \\\\)\n\\\\(  3x + 5y = 29  \\\\)",
     "options": [
       {
         "text": "\\( x = 1 \\)",
@@ -5356,7 +5356,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve simultaneously:\\n\\\\(  x - y = 3  \\\\)\\n\\\\(  x^2 + y^2 = 45  \\\\)",
+    "question": "Solve simultaneously:\n\\\\(  x - y = 3  \\\\)\n\\\\(  x^2 + y^2 = 45  \\\\)",
     "options": [
       {
         "text": "\\( x = -6, \\; y = -3 \\)",
@@ -5409,7 +5409,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Solve by substitution for \\\\(  x  \\\\):\\n\\\\(  y = 5 - x  \\\\)\\n\\\\(  x + 4y = 11  \\\\)",
+    "question": "Solve by substitution for \\\\(  x  \\\\):\n\\\\(  y = 5 - x  \\\\)\n\\\\(  x + 4y = 11  \\\\)",
     "options": [
       {
         "text": "\\( x = -3 \\)",
@@ -5457,7 +5457,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Solve the system for \\\\(  y  \\\\):\\n\\\\(  x - y = 3  \\\\)\\n\\\\(  y = x^2 - 9  \\\\)",
+    "question": "Solve the system for \\\\(  y  \\\\):\n\\\\(  x - y = 3  \\\\)\n\\\\(  y = x^2 - 9  \\\\)",
     "options": [
       {
         "text": "\\( y = 0, \\; -5 \\)",
@@ -5545,7 +5545,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve the simultaneous equations:\\n\\\\(  2x + 3y = 7  \\\\)\\n\\\\(  5x - 4y = 6  \\\\)",
+    "question": "Solve the simultaneous equations:\n\\\\(  2x + 3y = 7  \\\\)\n\\\\(  5x - 4y = 6  \\\\)",
     "options": [
       {
         "text": "\\( x = -2, \\; y = 1 \\)",
@@ -5598,7 +5598,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve the simultaneous equations:\\n\\\\( 6x + y = 4 \\\\)\\n\\\\( 9x - 2y = -1 \\\\)",
+    "question": "Solve the simultaneous equations:\n\\\\( 6x + y = 4 \\\\)\n\\\\( 9x - 2y = -1 \\\\)",
     "options": [],
     "answer": "x = 1/3, y = 2",
     "blanks": [],
@@ -5682,7 +5682,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve the simultaneous equations:\\n\\\\(  3x + 2y = -11  \\\\)\\n\\\\(  5x - 3y = 7  \\\\)",
+    "question": "Solve the simultaneous equations:\n\\\\(  3x + 2y = -11  \\\\)\n\\\\(  5x - 3y = 7  \\\\)",
     "options": [
       {
         "text": "\\( x = -1, \\; y = 4 \\)",
@@ -5788,7 +5788,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Solve by substitution for \\\\(  y  \\\\):\\n\\\\(  x = 4y + 3  \\\\)\\n\\\\(  2x - y = 13  \\\\)",
+    "question": "Solve by substitution for \\\\(  y  \\\\):\n\\\\(  x = 4y + 3  \\\\)\n\\\\(  2x - y = 13  \\\\)",
     "options": [
       {
         "text": "\\( y = 1 \\)",
@@ -5832,7 +5832,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Solve by elimination for \\\\(  x  \\\\):\\n\\\\(  2x + 3y = 0  \\\\)\\n\\\\(  3x - y = 22  \\\\)",
+    "question": "Solve by elimination for \\\\(  x  \\\\):\n\\\\(  2x + 3y = 0  \\\\)\n\\\\(  3x - y = 22  \\\\)",
     "options": [
       {
         "text": "\\( x = 8 \\)",
@@ -5880,7 +5880,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve simultaneously:\\n\\\\(  2x + y = 10  \\\\)\\n\\\\(  xy = 12  \\\\)",
+    "question": "Solve simultaneously:\n\\\\(  2x + y = 10  \\\\)\n\\\\(  xy = 12  \\\\)",
     "options": [
       {
         "text": "\\( x = -2, \\; y = -6 \\)",
@@ -5986,7 +5986,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Solve the simultaneous equations for \\\\(  d  \\\\):\\n\\\\(  5c - d = 11  \\\\)\\n\\\\(  3c - d = 7  \\\\)",
+    "question": "Solve the simultaneous equations for \\\\(  d  \\\\):\n\\\\(  5c - d = 11  \\\\)\n\\\\(  3c - d = 7  \\\\)",
     "options": [
       {
         "text": "\\( d = -3 \\)",
@@ -6073,7 +6073,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Solve the system for \\\\(  y  \\\\):\\n\\\\(  x - y = 4  \\\\)\\n\\\\(  xy = 12  \\\\)",
+    "question": "Solve the system for \\\\(  y  \\\\):\n\\\\(  x - y = 4  \\\\)\n\\\\(  xy = 12  \\\\)",
     "options": [
       {
         "text": "\\( y = 2, \\; -6 \\)",
@@ -6116,7 +6116,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Solve the system for \\\\(  x  \\\\):\\n\\\\(  y = 2x^2  \\\\)\\n\\\\(  y = 6x - x^2  \\\\)",
+    "question": "Solve the system for \\\\(  x  \\\\):\n\\\\(  y = 2x^2  \\\\)\n\\\\(  y = 6x - x^2  \\\\)",
     "options": [
       {
         "text": "\\( x = -2 \\)",
@@ -6266,7 +6266,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Solve by substitution for \\\\(  y  \\\\):\\n\\\\(  2x + y = 7  \\\\)\\n\\\\(  5x + 3y = 18  \\\\)",
+    "question": "Solve by substitution for \\\\(  y  \\\\):\n\\\\(  2x + y = 7  \\\\)\n\\\\(  5x + 3y = 18  \\\\)",
     "options": [
       {
         "text": "\\( y = 3 \\)",
@@ -6349,7 +6349,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve simultaneously:\\n\\\\(  y = x + 2  \\\\)\\n\\\\(  y = x^2  \\\\)",
+    "question": "Solve simultaneously:\n\\\\(  y = x + 2  \\\\)\n\\\\(  y = x^2  \\\\)",
     "options": [
       {
         "text": "\\( x = 2, \\; y = 4 \\)",
@@ -6407,7 +6407,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve simultaneously:\\n\\\\(  x + 3y = 11  \\\\)\\n\\\\(  xy = 6  \\\\)",
+    "question": "Solve simultaneously:\n\\\\(  x + 3y = 11  \\\\)\n\\\\(  xy = 6  \\\\)",
     "options": [
       {
         "text": "\\( x = -9, \\; y = -2 \\)",
@@ -6460,7 +6460,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve simultaneously for \\\\(  y  \\\\):\\n\\\\(  x + y = 8  \\\\)\\n\\\\(  x^2 + xy + y^2 = 49  \\\\)",
+    "question": "Solve simultaneously for \\\\(  y  \\\\):\n\\\\(  x + y = 8  \\\\)\n\\\\(  x^2 + xy + y^2 = 49  \\\\)",
     "options": [
       {
         "text": "\\( y = -5, \\; -3 \\)",
@@ -6503,7 +6503,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Solve the simultaneous equations for \\\\(  c  \\\\):\\n\\\\(  5c - d = 11  \\\\)\\n\\\\(  3c - d = 7  \\\\)",
+    "question": "Solve the simultaneous equations for \\\\(  c  \\\\):\n\\\\(  5c - d = 11  \\\\)\n\\\\(  3c - d = 7  \\\\)",
     "options": [
       {
         "text": "\\( c = 0 \\)",
@@ -6546,7 +6546,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 150,
-    "question": "Solve the system:\\n\\\\(  2x + y + z = 12  \\\\)\\n\\\\(  x + 2y + z = 11  \\\\)\\n\\\\(  x + y + 2z = 13  \\\\)",
+    "question": "Solve the system:\n\\\\(  2x + y + z = 12  \\\\)\n\\\\(  x + 2y + z = 11  \\\\)\n\\\\(  x + y + 2z = 13  \\\\)",
     "options": [
       {
         "text": "\\( x = -3, \\; y = -2 \\)",
@@ -6599,7 +6599,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve simultaneously:\\n\\\\(  x + y = 9  \\\\)\\n\\\\(  xy = 20  \\\\)",
+    "question": "Solve simultaneously:\n\\\\(  x + y = 9  \\\\)\n\\\\(  xy = 20  \\\\)",
     "options": [
       {
         "text": "\\( x = 4, \\; y = -5 \\)",
@@ -6700,7 +6700,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Solve by elimination for \\\\(  y  \\\\):\\n\\\\(  6x + 5y = 21  \\\\)\\n\\\\(  2x + 3y = 11  \\\\)",
+    "question": "Solve by elimination for \\\\(  y  \\\\):\n\\\\(  6x + 5y = 21  \\\\)\n\\\\(  2x + 3y = 11  \\\\)",
     "options": [
       {
         "text": "\\( y = 5 \\)",
@@ -6748,7 +6748,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve simultaneously:\\n\\\\(  x + y = 7  \\\\)\\n\\\\(  x^2 + y^2 = 29  \\\\)",
+    "question": "Solve simultaneously:\n\\\\(  x + y = 7  \\\\)\n\\\\(  x^2 + y^2 = 29  \\\\)",
     "options": [
       {
         "text": "\\( x = 2, \\; y = 5 \\)",
@@ -6801,7 +6801,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Solve by substitution for \\\\(  y  \\\\):\\n\\\\(  y = 3x  \\\\)\\n\\\\(  2x + 3y = 22  \\\\)",
+    "question": "Solve by substitution for \\\\(  y  \\\\):\n\\\\(  y = 3x  \\\\)\n\\\\(  2x + 3y = 22  \\\\)",
     "options": [
       {
         "text": "\\( y = 4 \\)",
@@ -6844,7 +6844,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Solve the simultaneous equations for \\\\(  y  \\\\):\\n\\\\(  x + y = 7  \\\\)\\n\\\\(  x - y = 3  \\\\)",
+    "question": "Solve the simultaneous equations for \\\\(  y  \\\\):\n\\\\(  x + y = 7  \\\\)\n\\\\(  x - y = 3  \\\\)",
     "options": [
       {
         "text": "\\( y = 2 \\)",
@@ -6892,7 +6892,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve the simultaneous equations:\\n\\\\(  3x + 4y = 18  \\\\)\\n\\\\(  5x + 2y = 16  \\\\)",
+    "question": "Solve the simultaneous equations:\n\\\\(  3x + 4y = 18  \\\\)\n\\\\(  5x + 2y = 16  \\\\)",
     "options": [
       {
         "text": "\\( x = 2, \\; y = 3 \\)",
@@ -6984,7 +6984,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve simultaneously:\\n\\\\(  x^2 + y^2 = 50  \\\\)\\n\\\\(  x - y = 0  \\\\)",
+    "question": "Solve simultaneously:\n\\\\(  x^2 + y^2 = 50  \\\\)\n\\\\(  x - y = 0  \\\\)",
     "options": [
       {
         "text": "\\( x = 5, \\; y = -5 \\)",
@@ -7032,7 +7032,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Solve by elimination for \\\\(  x  \\\\):\\n\\\\(  3x + 2y = -4  \\\\)\\n\\\\(  x - 2y = -12  \\\\)",
+    "question": "Solve by elimination for \\\\(  x  \\\\):\n\\\\(  3x + 2y = -4  \\\\)\n\\\\(  x - 2y = -12  \\\\)",
     "options": [
       {
         "text": "\\( x = 4 \\)",
@@ -7075,7 +7075,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve simultaneously for \\\\(  y  \\\\):\\n\\\\(  x + y = 10  \\\\)\\n\\\\(  x^2 + y^2 = 58  \\\\)",
+    "question": "Solve simultaneously for \\\\(  y  \\\\):\n\\\\(  x + y = 10  \\\\)\n\\\\(  x^2 + y^2 = 58  \\\\)",
     "options": [
       {
         "text": "\\( y = -7, \\; -3 \\)",
@@ -7118,7 +7118,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve simultaneously:\\n\\\\(  x + 2y = 7  \\\\)\\n\\\\(  x^2 + 4y^2 = 37  \\\\)",
+    "question": "Solve simultaneously:\n\\\\(  x + 2y = 7  \\\\)\n\\\\(  x^2 + 4y^2 = 37  \\\\)",
     "options": [
       {
         "text": "\\( x = -6, \\; y = 1 \\)",
@@ -7171,7 +7171,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve simultaneously for \\\\(  y  \\\\):\\n\\\\(  3x + y = 7  \\\\)\\n\\\\(  9x^2 + y^2 = 25  \\\\)",
+    "question": "Solve simultaneously for \\\\(  y  \\\\):\n\\\\(  3x + y = 7  \\\\)\n\\\\(  9x^2 + y^2 = 25  \\\\)",
     "options": [
       {
         "text": "\\( y = -4, \\; -3 \\)",
@@ -7214,7 +7214,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 150,
-    "question": "Solve the system:\\n\\\\(  x + y + z = 10  \\\\)\\n\\\\(  2x - y + z = 6  \\\\)\\n\\\\(  x + 2y - z = 3  \\\\)",
+    "question": "Solve the system:\n\\\\(  x + y + z = 10  \\\\)\n\\\\(  2x - y + z = 6  \\\\)\n\\\\(  x + 2y - z = 3  \\\\)",
     "options": [
       {
         "text": "\\( x = 2, \\; y = -3 \\)",
@@ -7267,7 +7267,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve simultaneously:\\n\\\\(  3x + y = 10  \\\\)\\n\\\\(  x^2 + y^2 = 20  \\\\)",
+    "question": "Solve simultaneously:\n\\\\(  3x + y = 10  \\\\)\n\\\\(  x^2 + y^2 = 20  \\\\)",
     "options": [
       {
         "text": "\\( x = -2, \\; y = 4 \\)",
@@ -7320,7 +7320,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Solve the simultaneous equations for \\\\(  q  \\\\):\\n\\\\(  p - 3q = 2  \\\\)\\n\\\\(  2p - 3q = 7  \\\\)",
+    "question": "Solve the simultaneous equations for \\\\(  q  \\\\):\n\\\\(  p - 3q = 2  \\\\)\n\\\\(  2p - 3q = 7  \\\\)",
     "options": [
       {
         "text": "\\( q = 3 \\)",
@@ -7364,7 +7364,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve the simultaneous equations:\\n\\\\(  5x + 3y = 19  \\\\)\\n\\\\(  4x - 9y = 38  \\\\)",
+    "question": "Solve the simultaneous equations:\n\\\\(  5x + 3y = 19  \\\\)\n\\\\(  4x - 9y = 38  \\\\)",
     "options": [
       {
         "text": "\\( x = -5, \\; y = 2 \\)",
@@ -7417,7 +7417,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Solve the simultaneous equations for \\\\(  x  \\\\):\\n\\\\(  y = 3x  \\\\)\\n\\\\(  2x + y = 10  \\\\)",
+    "question": "Solve the simultaneous equations for \\\\(  x  \\\\):\n\\\\(  y = 3x  \\\\)\n\\\\(  2x + y = 10  \\\\)",
     "options": [
       {
         "text": "\\( x = 2 \\)",
@@ -7465,7 +7465,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve simultaneously for \\\\(  x  \\\\):\\n\\\\(  x + y = 10  \\\\)\\n\\\\(  x^2 + y^2 = 58  \\\\)",
+    "question": "Solve simultaneously for \\\\(  x  \\\\):\n\\\\(  x + y = 10  \\\\)\n\\\\(  x^2 + y^2 = 58  \\\\)",
     "options": [
       {
         "text": "\\( x = 5 \\)",
@@ -7581,7 +7581,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve simultaneously:\\n\\\\(  y = 2x + 3  \\\\)\\n\\\\(  y = x^2 + 2x - 1  \\\\)",
+    "question": "Solve simultaneously:\n\\\\(  y = 2x + 3  \\\\)\n\\\\(  y = x^2 + 2x - 1  \\\\)",
     "options": [
       {
         "text": "\\( x = 2, \\; y = 7 \\)",
@@ -7682,7 +7682,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Solve by elimination for \\\\(  x  \\\\):\\n\\\\(  6x + 5y = 21  \\\\)\\n\\\\(  2x + 3y = 11  \\\\)",
+    "question": "Solve by elimination for \\\\(  x  \\\\):\n\\\\(  6x + 5y = 21  \\\\)\n\\\\(  2x + 3y = 11  \\\\)",
     "options": [
       {
         "text": "\\( x = 1 \\)",
@@ -7731,7 +7731,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve simultaneously:\\n\\\\(  y = 2x - 1  \\\\)\\n\\\\(  y = x^2 - 4  \\\\)",
+    "question": "Solve simultaneously:\n\\\\(  y = 2x - 1  \\\\)\n\\\\(  y = x^2 - 4  \\\\)",
     "options": [
       {
         "text": "\\( x = 3, \\; y = 5 \\)",
@@ -7784,7 +7784,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Solve the simultaneous equations for \\\\(  q  \\\\):\\n\\\\(  p = 6 - q  \\\\)\\n\\\\(  p - q = 2  \\\\)",
+    "question": "Solve the simultaneous equations for \\\\(  q  \\\\):\n\\\\(  p = 6 - q  \\\\)\n\\\\(  p - q = 2  \\\\)",
     "options": [
       {
         "text": "\\( q = 4 \\)",
@@ -7832,7 +7832,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 150,
-    "question": "Solve the system:\\n\\\\(  x + y + z = 12  \\\\)\\n\\\\(  x - y + z = 6  \\\\)\\n\\\\(  x + y - z = 4  \\\\)",
+    "question": "Solve the system:\n\\\\(  x + y + z = 12  \\\\)\n\\\\(  x - y + z = 6  \\\\)\n\\\\(  x + y - z = 4  \\\\)",
     "options": [
       {
         "text": "\\( x = -5, \\; y = 3 \\)",
@@ -7978,7 +7978,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve simultaneously:\\n\\\\(  2x + y = 7  \\\\)\\n\\\\(  xy = 6  \\\\)",
+    "question": "Solve simultaneously:\n\\\\(  2x + y = 7  \\\\)\n\\\\(  xy = 6  \\\\)",
     "options": [
       {
         "text": "\\( x = 2, \\; y = 3 \\)",
@@ -8031,7 +8031,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Solve by substitution for \\\\(  y  \\\\):\\n\\\\(  3x - 4y = 2  \\\\)\\n\\\\(  x + 8y = 38  \\\\)",
+    "question": "Solve by substitution for \\\\(  y  \\\\):\n\\\\(  3x - 4y = 2  \\\\)\n\\\\(  x + 8y = 38  \\\\)",
     "options": [
       {
         "text": "\\( y = 6 \\)",
@@ -8132,7 +8132,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve simultaneously:\\n\\\\(  x + 2y = 5  \\\\)\\n\\\\(  x^2 + y^2 = 10  \\\\)",
+    "question": "Solve simultaneously:\n\\\\(  x + 2y = 5  \\\\)\n\\\\(  x^2 + y^2 = 10  \\\\)",
     "options": [
       {
         "text": "\\( x = -3, \\; y = 1 \\)",
@@ -8185,7 +8185,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Solve by substitution for \\\\(  x  \\\\):\\n\\\\(  y = 3x  \\\\)\\n\\\\(  2x + 3y = 22  \\\\)",
+    "question": "Solve by substitution for \\\\(  x  \\\\):\n\\\\(  y = 3x  \\\\)\n\\\\(  2x + 3y = 22  \\\\)",
     "options": [
       {
         "text": "\\( x = 2 \\)",
@@ -8286,7 +8286,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 150,
-    "question": "Solve the system:\\n\\\\(  x + 2y - z = 7  \\\\)\\n\\\\(  3x - y + 2z = 5  \\\\)\\n\\\\(  2x + y + 3z = 10  \\\\)",
+    "question": "Solve the system:\n\\\\(  x + 2y - z = 7  \\\\)\n\\\\(  3x - y + 2z = 5  \\\\)\n\\\\(  2x + y + 3z = 10  \\\\)",
     "options": [
       {
         "text": "\\( x = -2, \\; y = -3 \\)",
@@ -8339,7 +8339,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Solve by elimination for \\\\(  y  \\\\):\\n\\\\(  5x - 3y = 29  \\\\)\\n\\\\(  2x - y = 11  \\\\)",
+    "question": "Solve by elimination for \\\\(  y  \\\\):\n\\\\(  5x - 3y = 29  \\\\)\n\\\\(  2x - y = 11  \\\\)",
     "options": [
       {
         "text": "\\( y = -3 \\)",
@@ -8387,7 +8387,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve simultaneously:\\n\\\\(  x + y = 12  \\\\)\\n\\\\(  x^2 + y^2 = 80  \\\\)",
+    "question": "Solve simultaneously:\n\\\\(  x + y = 12  \\\\)\n\\\\(  x^2 + y^2 = 80  \\\\)",
     "options": [
       {
         "text": "\\( x = 4, \\; y = -8 \\)",
@@ -8440,7 +8440,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Solve the simultaneous equations for \\\\(  p  \\\\):\\n\\\\(  p = 6 - q  \\\\)\\n\\\\(  p - q = 2  \\\\)",
+    "question": "Solve the simultaneous equations for \\\\(  p  \\\\):\n\\\\(  p = 6 - q  \\\\)\n\\\\(  p - q = 2  \\\\)",
     "options": [
       {
         "text": "\\( p = 2 \\)",
@@ -8488,7 +8488,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve simultaneously:\\n\\\\(  |x + y| = 5  \\\\)\\n\\\\(  x - y = 1  \\\\)",
+    "question": "Solve simultaneously:\n\\\\(  |x + y| = 5  \\\\)\n\\\\(  x - y = 1  \\\\)",
     "options": [
       {
         "text": "\\( x = 3, \\; y = 2 \\)",
@@ -8531,7 +8531,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve simultaneously:\\n\\\\(  y = x - 4  \\\\)\\n\\\\(  y = x^2 - 6x + 8  \\\\)",
+    "question": "Solve simultaneously:\n\\\\(  y = x - 4  \\\\)\n\\\\(  y = x^2 - 6x + 8  \\\\)",
     "options": [
       {
         "text": "\\( x = 3, \\; y = 1 \\)",
@@ -8584,7 +8584,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Solve the simultaneous equations for \\\\(  b  \\\\):\\n\\\\(  a + 4b = 13  \\\\)\\n\\\\(  a + 3b = 10  \\\\)",
+    "question": "Solve the simultaneous equations for \\\\(  b  \\\\):\n\\\\(  a + 4b = 13  \\\\)\n\\\\(  a + 3b = 10  \\\\)",
     "options": [
       {
         "text": "\\( b = 5 \\)",
@@ -8627,7 +8627,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve simultaneously for \\\\(  y  \\\\):\\n\\\\(  2x + 3y = 16  \\\\)\\n\\\\(  xy = 10  \\\\)",
+    "question": "Solve simultaneously for \\\\(  y  \\\\):\n\\\\(  2x + 3y = 16  \\\\)\n\\\\(  xy = 10  \\\\)",
     "options": [
       {
         "text": "\\( y = 8 \\)",
@@ -8670,7 +8670,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Solve by elimination for \\\\(  y  \\\\):\\n\\\\(  4x + 3y = 10  \\\\)\\n\\\\(  3x + y = 5  \\\\)",
+    "question": "Solve by elimination for \\\\(  y  \\\\):\n\\\\(  4x + 3y = 10  \\\\)\n\\\\(  3x + y = 5  \\\\)",
     "options": [
       {
         "text": "\\( y = 2 \\)",
@@ -8718,7 +8718,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve simultaneously:\\n\\\\(  y = 2x + 3  \\\\)\\n\\\\(  y = x^2 + x - 3  \\\\)",
+    "question": "Solve simultaneously:\n\\\\(  y = 2x + 3  \\\\)\n\\\\(  y = x^2 + x - 3  \\\\)",
     "options": [
       {
         "text": "\\( x = -3, \\; y = 9 \\)",
@@ -8771,7 +8771,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve simultaneously:\\n\\\\(  2x^2 + 3y^2 = 35  \\\\)\\n\\\\(  x + y = 5  \\\\)",
+    "question": "Solve simultaneously:\n\\\\(  2x^2 + 3y^2 = 35  \\\\)\n\\\\(  x + y = 5  \\\\)",
     "options": [
       {
         "text": "\\( x = 4, \\; y = -1 \\)",
@@ -8824,7 +8824,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve simultaneously:\\n\\\\(  y = 1 - 2x  \\\\)\\n\\\\(  y = x^2 - 2x - 3  \\\\)",
+    "question": "Solve simultaneously:\n\\\\(  y = 1 - 2x  \\\\)\n\\\\(  y = x^2 - 2x - 3  \\\\)",
     "options": [
       {
         "text": "\\( x = 2, \\; y = 3 \\)",
@@ -8877,7 +8877,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve simultaneously:\\n\\\\(  3x - y = 5  \\\\)\\n\\\\(  x^2 + y^2 = 25  \\\\)",
+    "question": "Solve simultaneously:\n\\\\(  3x - y = 5  \\\\)\n\\\\(  x^2 + y^2 = 25  \\\\)",
     "options": [
       {
         "text": "\\( x = -5, \\; y = 0 \\)",
@@ -8930,7 +8930,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Solve by elimination for \\\\(  y  \\\\):\\n\\\\(  3x + y = 2  \\\\)\\n\\\\(  x - y = -6  \\\\)",
+    "question": "Solve by elimination for \\\\(  y  \\\\):\n\\\\(  3x + y = 2  \\\\)\n\\\\(  x - y = -6  \\\\)",
     "options": [
       {
         "text": "\\( y = 3 \\)",
@@ -8978,7 +8978,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Solve by elimination for \\\\(  y  \\\\):\\n\\\\(  3x + 2y = -4  \\\\)\\n\\\\(  x - 2y = -12  \\\\)",
+    "question": "Solve by elimination for \\\\(  y  \\\\):\n\\\\(  3x + 2y = -4  \\\\)\n\\\\(  x - 2y = -12  \\\\)",
     "options": [
       {
         "text": "\\( y = 2 \\)",
@@ -9026,7 +9026,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve simultaneously for \\\\(  x  \\\\):\\n\\\\(  x + y = 8  \\\\)\\n\\\\(  x^2 + xy + y^2 = 49  \\\\)",
+    "question": "Solve simultaneously for \\\\(  x  \\\\):\n\\\\(  x + y = 8  \\\\)\n\\\\(  x^2 + xy + y^2 = 49  \\\\)",
     "options": [
       {
         "text": "\\( x = 3 \\)",
@@ -9089,7 +9089,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve simultaneously:\\n\\\\(  x + y = 5  \\\\)\\n\\\\(  x^2 + 3y^2 = 25  \\\\)",
+    "question": "Solve simultaneously:\n\\\\(  x + y = 5  \\\\)\n\\\\(  x^2 + 3y^2 = 25  \\\\)",
     "options": [
       {
         "text": "\\( x = -5, \\; y = 0 \\)",
@@ -9142,7 +9142,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Solve by substitution for \\\\(  x  \\\\):\\n\\\\(  3x - 4y = 2  \\\\)\\n\\\\(  x + 8y = 38  \\\\)",
+    "question": "Solve by substitution for \\\\(  x  \\\\):\n\\\\(  3x - 4y = 2  \\\\)\n\\\\(  x + 8y = 38  \\\\)",
     "options": [
       {
         "text": "\\( x = -6 \\)",
@@ -9195,7 +9195,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Solve by substitution for \\\\(  y  \\\\):\\n\\\\(  y = 5 - x  \\\\)\\n\\\\(  x + 4y = 11  \\\\)",
+    "question": "Solve by substitution for \\\\(  y  \\\\):\n\\\\(  y = 5 - x  \\\\)\n\\\\(  x + 4y = 11  \\\\)",
     "options": [
       {
         "text": "\\( y = 4 \\)",
@@ -9327,7 +9327,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "short_answer",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Solve simultaneously:\\n\\\\( y = 2x + 1 \\\\)\\n\\\\( x^2 + y^2 = 10 \\\\)",
+    "question": "Solve simultaneously:\n\\\\( y = 2x + 1 \\\\)\n\\\\( x^2 + y^2 = 10 \\\\)",
     "options": [],
     "answer": "x = 1, y = 3 and x = -9/5, y = -13/5",
     "blanks": [],
@@ -9363,7 +9363,7 @@ export const Y11_CH1E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Solve the system for \\\\(  x  \\\\):\\n\\\\(  2x + y = 8  \\\\)\\n\\\\(  xy = 6  \\\\)",
+    "question": "Solve the system for \\\\(  x  \\\\):\n\\\\(  2x + y = 8  \\\\)\n\\\\(  xy = 6  \\\\)",
     "options": [
       {
         "text": "\\( x = 1 \\)",

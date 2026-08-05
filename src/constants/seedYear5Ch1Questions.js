@@ -749,7 +749,7 @@ export const Y5_CH1_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Calculate the value of each term in the sum.",
-        "workingOut": "\\(7 \\times 100 = 700\\) \\n \\(5 \\times 10 = 50\\) \\n \\(4 \\times 1 = 4\\)",
+        "workingOut": "\\(7 \\times 100 = 700\\) \n \\(5 \\times 10 = 50\\) \n \\(4 \\times 1 = 4\\)",
         "graphData": null
       },
       {
@@ -794,7 +794,7 @@ export const Y5_CH1_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Compute each multiplication.",
-        "workingOut": "\\(3 \\times 100 = 300\\) \\n \\(4 \\times 10 = 40\\) \\n \\(7 \\times 1 = 7\\)",
+        "workingOut": "\\(3 \\times 100 = 300\\) \n \\(4 \\times 10 = 40\\) \n \\(7 \\times 1 = 7\\)",
         "graphData": null
       },
       {
@@ -839,7 +839,7 @@ export const Y5_CH1_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the columns for each digit in the number 4973 starting from the right.",
-        "workingOut": "\\(3 \\implies \\text{Units}\\) \\n \\(7 \\implies \\text{Tens}\\) \\n \\(9 \\implies \\text{Hundreds}\\) \\n \\(4 \\implies \\text{Thousands}\\)",
+        "workingOut": "\\(3 \\implies \\text{Units}\\) \n \\(7 \\implies \\text{Tens}\\) \n \\(9 \\implies \\text{Hundreds}\\) \n \\(4 \\implies \\text{Thousands}\\)",
         "graphData": null
       },
       {
@@ -884,7 +884,7 @@ export const Y5_CH1_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "List the place value columns for the number 2549.",
-        "workingOut": "\\(9 \\implies \\text{Units}\\) \\n \\(4 \\implies \\text{Tens}\\) \\n \\(5 \\implies \\text{Hundreds}\\) \\n \\(2 \\implies \\text{Thousands}\\)",
+        "workingOut": "\\(9 \\implies \\text{Units}\\) \n \\(4 \\implies \\text{Tens}\\) \n \\(5 \\implies \\text{Hundreds}\\) \n \\(2 \\implies \\text{Thousands}\\)",
         "graphData": null
       },
       {
@@ -969,7 +969,7 @@ export const Y5_CH1_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "List the place value columns for the number 23569 starting from the right.",
-        "workingOut": "\\(9 \\implies \\text{Units}\\) \\n \\(6 \\implies \\text{Tens}\\) \\n \\(5 \\implies \\text{Hundreds}\\) \\n \\(3 \\implies \\text{Thousands}\\) \\n \\(2 \\implies \\text{Ten Thousands}\\)",
+        "workingOut": "\\(9 \\implies \\text{Units}\\) \n \\(6 \\implies \\text{Tens}\\) \n \\(5 \\implies \\text{Hundreds}\\) \n \\(3 \\implies \\text{Thousands}\\) \n \\(2 \\implies \\text{Ten Thousands}\\)",
         "graphData": null
       },
       {
@@ -2249,7 +2249,7 @@ export const Y5_CH1_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the column weights for 72.",
-        "workingOut": "\\(2 \\implies \\text{Units column}\\) \\n \\(7 \\implies \\text{Tens column}\\)",
+        "workingOut": "\\(2 \\implies \\text{Units column}\\) \n \\(7 \\implies \\text{Tens column}\\)",
         "graphData": null
       },
       {
@@ -2324,7 +2324,7 @@ export const Y5_CH1_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify columns for 702.",
-        "workingOut": "\\(2 \\implies \\text{Units}\\) \\n \\(0 \\implies \\text{Tens}\\) \\n \\(7 \\implies \\text{Hundreds}\\)",
+        "workingOut": "\\(2 \\implies \\text{Units}\\) \n \\(0 \\implies \\text{Tens}\\) \n \\(7 \\implies \\text{Hundreds}\\)",
         "graphData": null
       }
     ]
@@ -2359,7 +2359,7 @@ export const Y5_CH1_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify columns for 4672.",
-        "workingOut": "\\(2 \\implies \\text{Units}\\) \\n \\(7 \\implies \\text{Tens}\\)",
+        "workingOut": "\\(2 \\implies \\text{Units}\\) \n \\(7 \\implies \\text{Tens}\\)",
         "graphData": null
       }
     ]
@@ -2884,7 +2884,7 @@ export const Y5_CH1_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify subtractive combinations in the numeral.",
-        "workingOut": "\\(\\text{XC} = 100 - 10 = 90\\) \\n \\(\\text{IX} = 10 - 1 = 9\\)",
+        "workingOut": "\\(\\text{XC} = 100 - 10 = 90\\) \n \\(\\text{IX} = 10 - 1 = 9\\)",
         "graphData": null
       },
       {
@@ -3448,7 +3448,7 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Place the correct comparison symbol in the blank space:\n\\(7^2 \\quad \\Box \\quad 49\\)",
     "opts": [
       {
-        "text": "\\(\\ne\\)",
+        "text": "\\(\ne\\)",
         "imageUrl": ""
       },
       {

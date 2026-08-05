@@ -626,7 +626,7 @@ export const Y9_CH14E_QUESTIONS = [
       },
       {
         "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(3 \\neq -1 \\implies \\text{Lines intersect at exactly one point}\\)",
+        "workingOut": "\\(3 \neq -1 \\implies \\text{Lines intersect at exactly one point}\\)",
         "graphData": null
       },
       {
@@ -695,7 +695,7 @@ export const Y9_CH14E_QUESTIONS = [
       },
       {
         "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(-2 \\neq 1 \\implies \\text{One solution}\\)",
+        "workingOut": "\\(-2 \neq 1 \\implies \\text{One solution}\\)",
         "graphData": null
       },
       {
@@ -764,7 +764,7 @@ export const Y9_CH14E_QUESTIONS = [
       },
       {
         "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(-\\frac{2}{3} \\neq 2 \\implies \\text{One solution}\\)",
+        "workingOut": "\\(-\\frac{2}{3} \neq 2 \\implies \\text{One solution}\\)",
         "graphData": null
       },
       {
@@ -833,7 +833,7 @@ export const Y9_CH14E_QUESTIONS = [
       },
       {
         "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(m_1 = m_2 = 3 \\text{ but } -2 \\neq 4 \\implies \\text{Parallel lines}\\)",
+        "workingOut": "\\(m_1 = m_2 = 3 \\text{ but } -2 \neq 4 \\implies \\text{Parallel lines}\\)",
         "graphData": null
       },
       {
@@ -1331,7 +1331,7 @@ export const Y9_CH14E_QUESTIONS = [
       },
       {
         "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(y = 3(2) + 3 = 9 \\neq 6 \\implies \\text{Not concurrent}\\)",
+        "workingOut": "\\(y = 3(2) + 3 = 9 \neq 6 \\implies \\text{Not concurrent}\\)",
         "graphData": null
       },
       {

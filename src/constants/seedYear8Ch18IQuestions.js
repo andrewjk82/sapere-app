@@ -978,7 +978,7 @@ export const Y8_CH18I_QUESTIONS = [
       },
       {
         "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(-5 \\neq 5 \\Rightarrow \\text{No}\\)",
+        "workingOut": "\\(-5 \neq 5 \\Rightarrow \\text{No}\\)",
         "graphData": null
       },
       {
@@ -1185,7 +1185,7 @@ export const Y8_CH18I_QUESTIONS = [
       },
       {
         "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(11 \\neq -11 \\Rightarrow \\text{No}\\)",
+        "workingOut": "\\(11 \neq -11 \\Rightarrow \\text{No}\\)",
         "graphData": null
       },
       {

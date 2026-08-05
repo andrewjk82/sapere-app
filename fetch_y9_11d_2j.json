@@ -1,0 +1,94 @@
+{
+  "y9-11d-q2j": {
+    "topicTitle": "The equation of a straight line",
+    "year": "Year 9",
+    "isManual": true,
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "type": "teacher_review",
+    "requiresManualGrading": true,
+    "options": [],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": {
+      "jsxGraph": {
+        "width": 300,
+        "height": 300,
+        "boundingbox": [
+          -5,
+          7,
+          5,
+          -8
+        ],
+        "showConstructionPoints": true,
+        "boardOptions": {
+          "axis": true,
+          "grid": true
+        },
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5, 0], [4.5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -7.5], [0, 6.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.2, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 6.2, 'y'], {fontSize: 12});\nboard.create('line', [[0, 0], [1, -5]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 0], {size: 3, color: 'red', name: '(0, 0)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.create('point', [1, -5], {size: 3, color: 'red', name: '(1, -5)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
+      }
+    },
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830225,
+      "_nanoseconds": 399000000
+    },
+    "origin": "seed",
+    "source": "",
+    "isActive": true,
+    "topicCode": "11D",
+    "topicId": "y9-11d",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The equation of a straight line: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "m = -5, quad c = 0",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -5,
+              7,
+              5,
+              -8
+            ],
+            "showConstructionPoints": true,
+            "boardOptions": {
+              "axis": true,
+              "grid": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5, 0], [4.5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -7.5], [0, 6.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.2, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 6.2, 'y'], {fontSize: 12});\nboard.create('line', [[0, 0], [1, -5]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 0], {size: 3, color: 'red', name: '(0, 0)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.create('point', [1, -5], {size: 3, color: 'red', name: '(1, -5)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
+          }
+        }
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(x = 1 \\implies y = -5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "m = -5, y-intercept = 0.\nLine passes through \\((0, 0)\\) and \\((1, -5)\\).",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: m = -5, y-intercept = 0.\nLine passes through \\((0, 0)\\) and \\((1, -5)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "m = -5, y-intercept = 0.\nLine passes through \\((0, 0)\\) and \\((1, -5)\\).",
+        "graphData": null
+      }
+    ],
+    "question": "Write down the gradient and \\(y\\)-intercept of the line \\(y = -5x\\). Sketch the graph of the line by plotting two points.",
+    "answer": "m = -5, y-intercept = 0.\nLine passes through \\((0, 0)\\) and \\((1, -5)\\).",
+    "solution": "m = -5, y-intercept = 0.\nLine passes through \\((0, 0)\\) and \\((1, -5)\\).",
+    "chapterId": "y9-11",
+    "hint": "Identify \\(m\\) and \\(c\\) directly from the equation, plot the \\(y\\)-intercept, and substitute another \\(x\\) value to find a second point.",
+    "title": "Write down the gradient and y-intercept ...",
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "updatedAt": {
+      "_seconds": 1784364622,
+      "_nanoseconds": 926000000
+    },
+    "isNew": false
+  }
+}

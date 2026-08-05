@@ -1,0 +1,144 @@
+{
+  "y9-11d-q13a": {
+    "year": "Year 9",
+    "origin": "seed",
+    "subQuestions": [],
+    "isActive": true,
+    "title": "Answer the following analytical question...",
+    "type": "multiple_choice",
+    "topicTitle": "The equation of a straight line",
+    "createdAt": {
+      "_seconds": 1784364622,
+      "_nanoseconds": 926000000
+    },
+    "solution": "The correct answer is \\(y = -\\frac{a}{b}x + \\frac{d}{b}\\).",
+    "chapterId": "y9-11",
+    "options": [
+      {
+        "text": "\\(-y = -\\frac{a}{b}x + \\frac{d}{b}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = -\\frac{a}{b}x + \\frac{d}{b}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = -\\frac{a}{b}x + \\frac{d}{b} + 1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = -\\frac{b}{a}x + \\frac{d}{b}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "graphData": null,
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "updatedAt": {
+      "_seconds": 1784364622,
+      "_nanoseconds": 926000000
+    },
+    "topicCode": "11D",
+    "question": "Answer the following analytical questions regarding the general linear equation \\(ax + by = d\\).\na) Express the equation \\(ax + by = d\\), where \\(a\\), \\(b\\) and \\(d\\) are constants (\\(b \\neq 0\\)), in the form \\(y = mx + c\\).",
+    "isManual": true,
+    "requiresManualGrading": false,
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "topicId": "y9-11d",
+    "answer": "1",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The equation of a straight line: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(y = -\\frac{a}{b}x + \\frac{d}{b}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(y = -\\frac{a}{b}x + \\frac{d}{b}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: y = -\\frac{a}{b}x + \\frac{d}{b}. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(y = -\\frac{a}{b}x + \\frac{d}{b}\\)",
+        "graphData": null
+      }
+    ],
+    "isNew": false
+  },
+  "y9-11d-q13b": {
+    "year": "Year 9",
+    "origin": "seed",
+    "subQuestions": [],
+    "isActive": true,
+    "title": "Answer the following analytical question...",
+    "type": "multiple_choice",
+    "topicTitle": "The equation of a straight line",
+    "createdAt": {
+      "_seconds": 1784364622,
+      "_nanoseconds": 926000000
+    },
+    "solution": "The correct answer is \\(m = -\\frac{a}{b}, c = \\frac{d}{b}\\).",
+    "chapterId": "y9-11",
+    "options": [
+      {
+        "text": "\\(-m = -\\frac{a}{b}, c = \\frac{d}{b}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(m = -\\frac{a}{b}, c = \\frac{d}{b}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(m = -\\frac{a}{b}, c = \\frac{d}{b} + 1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(m = -\\frac{b}{a}, c = \\frac{d}{b}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "graphData": null,
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "updatedAt": {
+      "_seconds": 1784364622,
+      "_nanoseconds": 926000000
+    },
+    "topicCode": "11D",
+    "question": "Answer the following analytical questions regarding the general linear equation \\(ax + by = d\\).\nb) Write down the gradient and \\(y\\)-intercept of the line whose equation is \\(ax + by = d\\). Format: m = [val], c = [val]",
+    "isManual": true,
+    "requiresManualGrading": false,
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "topicId": "y9-11d",
+    "answer": "1",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The equation of a straight line: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(m = -\\frac{a}{b}, c = \\frac{d}{b}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: m = -\\frac{a}{b}, c = \\frac{d}{b}. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(m = -\\frac{a}{b}, c = \\frac{d}{b}\\)",
+        "graphData": null
+      }
+    ],
+    "isNew": false
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "y9-11f-q1a": {
+    "chapterId": "y9-11",
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "topicId": "y9-11f",
+    "topicCode": "11F",
+    "topicTitle": "The equation of a line using the gradient and a point",
+    "year": "Year 9",
+    "isManual": true,
+    "question": "Find the equation of the line that passes through the point \\((1, 4)\\) and has gradient \\(2\\).",
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "requiresManualGrading": false,
+    "hint": "Use point-gradient form \\(y - y_1 = m(x - x_1)\\). Make sure to simplify to the final form \\(y = mx + c\\).",
+    "solution": "Using point-gradient form \\(y - y_1 = m(x - x_1)\\) with point \\((1, 4)\\) and \\(m = 2\\):\n\n\\(y - 4 = 2(x - 1)\\)\n\\(y - 4 = 2(x - 1)\\)\n\nSimplifying to slope-intercept form:\n\\(y = 2x + 2\\).",
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830226,
+      "_nanoseconds": 609000000
+    },
+    "answer": "1",
+    "origin": "seed",
+    "options": [
+      {
+        "text": "\\(\\dfrac{13}{6}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = 2x + 2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = 2x + 2 + 1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = 3x + 3\\)",
+        "imageUrl": ""
+      }
+    ],
+    "isActive": true,
+    "title": "Find the equation of the line that passe...",
+    "type": "multiple_choice",
+    "updatedAt": {
+      "_seconds": 1784364625,
+      "_nanoseconds": 396000000
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The equation of a line using the gradient and a point: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(y = 2x + 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(y = 2x + 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: y = 2x + 2. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(y = 2x + 2\\)",
+        "graphData": null
+      }
+    ],
+    "isNew": false
+  },
+  "y9-11f-q1b": {
+    "chapterId": "y9-11",
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "topicId": "y9-11f",
+    "topicCode": "11F",
+    "topicTitle": "The equation of a line using the gradient and a point",
+    "year": "Year 9",
+    "isManual": true,
+    "question": "Find the equation of the line that passes through the point \\((2, 5)\\) and has gradient \\(3\\).",
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "requiresManualGrading": false,
+    "hint": "Use point-gradient form \\(y - y_1 = m(x - x_1)\\). Make sure to simplify to the final form \\(y = mx + c\\).",
+    "solution": "Using point-gradient form \\(y - y_1 = m(x - x_1)\\) with point \\((2, 5)\\) and \\(m = 3\\):\n\n\\(y - 5 = 3(x - 2)\\)\n\\(y - 5 = 3(x - 2)\\)\n\nSimplifying to slope-intercept form:\n\\(y = 3x - 1\\).",
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830226,
+      "_nanoseconds": 609000000
+    },
+    "answer": "2",
+    "origin": "seed",
+    "options": [
+      {
+        "text": "\\(\\dfrac{12}{5}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\dfrac{13}{6}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = 3x - 1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = 3x - 1 + 1\\)",
+        "imageUrl": ""
+      }
+    ],
+    "isActive": true,
+    "title": "Find the equation of the line that passe...",
+    "type": "multiple_choice",
+    "updatedAt": {
+      "_seconds": 1784364625,
+      "_nanoseconds": 396000000
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The equation of a line using the gradient and a point: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(y = 3x - 1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(y = 3x - 1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: y = 3x - 1. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(y = 3x - 1\\)",
+        "graphData": null
+      }
+    ],
+    "isNew": false
+  }
+}

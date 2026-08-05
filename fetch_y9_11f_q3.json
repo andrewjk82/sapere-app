@@ -1,0 +1,210 @@
+{
+  "y9-11f-q3a": {
+    "topicTitle": "The equation of a line using the gradient and a point",
+    "year": "Year 9",
+    "isManual": true,
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "options": [],
+    "answer": "3",
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830226,
+      "_nanoseconds": 609000000
+    },
+    "origin": "seed",
+    "source": "",
+    "isActive": true,
+    "topicCode": "11F",
+    "question": "Find the gradient of the interval \\(AB\\) where \\(A(2, 4)\\) and \\(B(5, 13)\\).",
+    "title": "Find the gradient of the interval AB whe...",
+    "type": "teacher_review",
+    "requiresManualGrading": true,
+    "topicId": "y9-11f",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The equation of a line using the gradient and a point: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "A(2, 4), quad B(5, 13)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 3. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(3\\)",
+        "graphData": null
+      }
+    ],
+    "solution": "3",
+    "chapterId": "y9-11",
+    "hint": "Use coordinates to compute the gradient, then apply the point-gradient formula using either point.",
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "updatedAt": {
+      "_seconds": 1784364625,
+      "_nanoseconds": 396000000
+    },
+    "isNew": false
+  },
+  "y9-11f-q3b": {
+    "topicTitle": "The equation of a line using the gradient and a point",
+    "year": "Year 9",
+    "isManual": true,
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "requiresManualGrading": false,
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830226,
+      "_nanoseconds": 609000000
+    },
+    "origin": "seed",
+    "source": "",
+    "isActive": true,
+    "topicCode": "11F",
+    "question": "Using the gradient \\(m = 3\\) and point \\(A(2, 4)\\), find the equation of the line \\(AB\\).",
+    "title": "Using the gradient m = 3 and point A(2, ...",
+    "type": "multiple_choice",
+    "topicId": "y9-11f",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The equation of a line using the gradient and a point: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "A(2, 4), quad B(5, 13)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(y = 3x - 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: y = 3x - 2. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(y = 3x - 2\\)",
+        "graphData": null
+      }
+    ],
+    "answer": "1",
+    "solution": "Substituting \\(m = 3\\) and \\((2, 4)\\) into Point-Slope form:\n\\(y - 4 = 3(x - 2) \\implies y - 4 = 3x - 6 \\implies y = 3x - 2\\).",
+    "chapterId": "y9-11",
+    "hint": "Use coordinates to compute the gradient, then apply the point-gradient formula using either point.",
+    "options": [
+      {
+        "text": "\\(\\dfrac{13}{6}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = 3x - 2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = 3x - 2 + 1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = 3x - 3\\)",
+        "imageUrl": ""
+      }
+    ],
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "updatedAt": {
+      "_seconds": 1784364625,
+      "_nanoseconds": 396000000
+    },
+    "isNew": false
+  },
+  "y9-11f-q3c": {
+    "topicTitle": "The equation of a line using the gradient and a point",
+    "year": "Year 9",
+    "isManual": true,
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "requiresManualGrading": false,
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830226,
+      "_nanoseconds": 609000000
+    },
+    "origin": "seed",
+    "source": "",
+    "isActive": true,
+    "topicCode": "11F",
+    "question": "Using the gradient \\(m = 3\\) and point \\(B(5, 13)\\), find the equation of the line \\(AB\\).",
+    "title": "Using the gradient m = 3 and point B(5, ...",
+    "type": "multiple_choice",
+    "topicId": "y9-11f",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The equation of a line using the gradient and a point: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "A(2, 4), quad B(5, 13)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(y = 3x - 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: y = 3x - 2. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(y = 3x - 2\\)",
+        "graphData": null
+      }
+    ],
+    "answer": "1",
+    "solution": "Substituting \\(m = 3\\) and \\((5, 13)\\) into Point-Slope form:\n\\(y - 13 = 3(x - 5) \\implies y - 13 = 3x - 15 \\implies y = 3x - 2\\).",
+    "chapterId": "y9-11",
+    "hint": "Use coordinates to compute the gradient, then apply the point-gradient formula using either point.",
+    "options": [
+      {
+        "text": "\\(\\dfrac{13}{6}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = 3x - 2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = 3x - 2 + 1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = 3x - 3\\)",
+        "imageUrl": ""
+      }
+    ],
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "updatedAt": {
+      "_seconds": 1784364625,
+      "_nanoseconds": 396000000
+    },
+    "isNew": false
+  }
+}

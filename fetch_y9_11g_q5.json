@@ -1,0 +1,76 @@
+{
+  "y9-11g-q5": {
+    "chapterId": "y9-11",
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "topicId": "y9-11g",
+    "topicCode": "11G",
+    "topicTitle": "Parallel and perpendicular straight lines",
+    "year": "Year 9",
+    "isManual": true,
+    "question": "If \\(y = (2a + 3)x - 2\\) is parallel to \\(y = ax - 5\\), find the value of \\(a\\).",
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "requiresManualGrading": false,
+    "hint": "Set the coefficient of \\(x\\) of both equations equal to each other.",
+    "solution": "Gradients of parallel lines are equal:\n\\(2a + 3 = a \\implies a = -3\\).",
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830227,
+      "_nanoseconds": 114000000
+    },
+    "answer": "1",
+    "origin": "seed",
+    "options": [
+      {
+        "text": "\\(-2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3\\)",
+        "imageUrl": ""
+      }
+    ],
+    "isActive": true,
+    "title": "If y = (2a + 3)x - 2 is parallel to y = ...",
+    "type": "multiple_choice",
+    "updatedAt": {
+      "_seconds": 1784364626,
+      "_nanoseconds": 910000000
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Parallel and perpendicular straight lines: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(a = -3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(-3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: -3. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(-3\\)",
+        "graphData": null
+      }
+    ],
+    "isNew": false
+  }
+}

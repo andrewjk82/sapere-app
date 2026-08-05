@@ -2169,7 +2169,7 @@ export const Y8_CH8D_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "Check if the square of the longest side equals the sum of squares of the other two sides.",
-    "solution": "Longest side is \\(AB=9\\). Check if \\(9^2 = 6^2 + 8^2\\). \\(81 \\neq 36 + 64 = 100\\). It is not a right-angled triangle.",
+    "solution": "Longest side is \\(AB=9\\). Check if \\(9^2 = 6^2 + 8^2\\). \\(81 \neq 36 + 64 = 100\\). It is not a right-angled triangle.",
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of Pythagoras' theorem: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
@@ -2183,7 +2183,7 @@ export const Y8_CH8D_QUESTIONS = [
       },
       {
         "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(81 \\neq 100, text{ so not right-angled}\\)",
+        "workingOut": "\\(81 \neq 100, text{ so not right-angled}\\)",
         "graphData": null
       },
       {
@@ -2259,7 +2259,7 @@ export const Y8_CH8D_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "Check if the square of the longest side equals the sum of squares of the other two sides.",
-    "solution": "Longest side is \\(BC=20\\). Check if \\(20^2 = 15^2 + 10^2\\). \\(400 \\neq 225 + 100 = 325\\). It is not a right-angled triangle.",
+    "solution": "Longest side is \\(BC=20\\). Check if \\(20^2 = 15^2 + 10^2\\). \\(400 \neq 225 + 100 = 325\\). It is not a right-angled triangle.",
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of Pythagoras' theorem: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
@@ -2273,7 +2273,7 @@ export const Y8_CH8D_QUESTIONS = [
       },
       {
         "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(400 \\neq 325, text{ so not right-angled}\\)",
+        "workingOut": "\\(400 \neq 325, text{ so not right-angled}\\)",
         "graphData": null
       },
       {

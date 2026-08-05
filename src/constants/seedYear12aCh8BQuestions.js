@@ -26,7 +26,7 @@ export const Y12A_CH8B_QUESTIONS = [
       },
       {
         "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(\\text{For } n = 5, \\; 32 \\ngtr 40. \\quad \\text{For } n = 6, \\; 64 > 40. \\implies n = 6\\)",
+        "workingOut": "\\(\\text{For } n = 5, \\; 32 \ngtr 40. \\quad \\text{For } n = 6, \\; 64 > 40. \\implies n = 6\\)",
         "graphData": null
       },
       {
@@ -71,7 +71,7 @@ export const Y12A_CH8B_QUESTIONS = [
       },
       {
         "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(\\text{For } n = 14, \\; 16\\,384 \\ngtr 25\\,000. \\quad \\text{For } n = 15, \\; 32\\,768 > 25\\,000. \\implies n = 15\\)",
+        "workingOut": "\\(\\text{For } n = 14, \\; 16\\,384 \ngtr 25\\,000. \\quad \\text{For } n = 15, \\; 32\\,768 > 25\\,000. \\implies n = 15\\)",
         "graphData": null
       },
       {
@@ -116,7 +116,7 @@ export const Y12A_CH8B_QUESTIONS = [
       },
       {
         "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(\\text{For } n = 22, \\; 4\\,194\\,304 \\ngtr 5\\,000\\,000. \\quad \\text{For } n = 23, \\; 8\\,388\\,608 > 5\\,000\\,000. \\implies n = 23\\)",
+        "workingOut": "\\(\\text{For } n = 22, \\; 4\\,194\\,304 \ngtr 5\\,000\\,000. \\quad \\text{For } n = 23, \\; 8\\,388\\,608 > 5\\,000\\,000. \\implies n = 23\\)",
         "graphData": null
       },
       {
@@ -154,7 +154,7 @@ export const Y12A_CH8B_QUESTIONS = [
       },
       {
         "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(\\text{For } n = 2, \\; 9 \\ngtr 20. \\quad \\text{For } n = 3, \\; 27 > 20. \\implies n = 3\\)",
+        "workingOut": "\\(\\text{For } n = 2, \\; 9 \ngtr 20. \\quad \\text{For } n = 3, \\; 27 > 20. \\implies n = 3\\)",
         "graphData": null
       },
       {
@@ -199,7 +199,7 @@ export const Y12A_CH8B_QUESTIONS = [
       },
       {
         "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(\\text{For } n = 9, \\; 19\\,683 \\ngtr 25\\,000. \\quad \\text{For } n = 10, \\; 59\\,049 > 25\\,000. \\implies n = 10\\)",
+        "workingOut": "\\(\\text{For } n = 9, \\; 19\\,683 \ngtr 25\\,000. \\quad \\text{For } n = 10, \\; 59\\,049 > 25\\,000. \\implies n = 10\\)",
         "graphData": null
       },
       {
@@ -244,7 +244,7 @@ export const Y12A_CH8B_QUESTIONS = [
       },
       {
         "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(\\text{For } n = 14, \\; 4\\,782\\,969 \\ngtr 8\\,000\\,000. \\quad \\text{For } n = 15, \\; 14\\,348\\,907 > 8\\,000\\,000. \\implies n = 15\\)",
+        "workingOut": "\\(\\text{For } n = 14, \\; 4\\,782\\,969 \ngtr 8\\,000\\,000. \\quad \\text{For } n = 15, \\; 14\\,348\\,907 > 8\\,000\\,000. \\implies n = 15\\)",
         "graphData": null
       },
       {
@@ -289,7 +289,7 @@ export const Y12A_CH8B_QUESTIONS = [
       },
       {
         "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(\\text{For } n = 4, \\; 0.0625 \\nless 0.05. \\quad \\text{For } n = 5, \\; 0.03125 < 0.05. \\implies n = 5\\)",
+        "workingOut": "\\(\\text{For } n = 4, \\; 0.0625 \nless 0.05. \\quad \\text{For } n = 5, \\; 0.03125 < 0.05. \\implies n = 5\\)",
         "graphData": null
       },
       {
@@ -334,7 +334,7 @@ export const Y12A_CH8B_QUESTIONS = [
       },
       {
         "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(\\text{For } n = 8, \\; 0.00390625 \\nless 0.002. \\quad \\text{For } n = 9, \\; 0.001953125 < 0.002. \\implies n = 9\\)",
+        "workingOut": "\\(\\text{For } n = 8, \\; 0.00390625 \nless 0.002. \\quad \\text{For } n = 9, \\; 0.001953125 < 0.002. \\implies n = 9\\)",
         "graphData": null
       },
       {
@@ -379,7 +379,7 @@ export const Y12A_CH8B_QUESTIONS = [
       },
       {
         "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(\\text{For } n = 14, \\; 0.000061 \\nless 0.00005. \\quad \\text{For } n = 15, \\; 0.000031 < 0.00005. \\implies n = 15\\)",
+        "workingOut": "\\(\\text{For } n = 14, \\; 0.000061 \nless 0.00005. \\quad \\text{For } n = 15, \\; 0.000031 < 0.00005. \\implies n = 15\\)",
         "graphData": null
       },
       {
@@ -417,7 +417,7 @@ export const Y12A_CH8B_QUESTIONS = [
       },
       {
         "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(\\text{For } n = 2, \\; 0.111 \\nless 0.1. \\quad \\text{For } n = 3, \\; 0.037 < 0.1. \\implies n = 3\\)",
+        "workingOut": "\\(\\text{For } n = 2, \\; 0.111 \nless 0.1. \\quad \\text{For } n = 3, \\; 0.037 < 0.1. \\implies n = 3\\)",
         "graphData": null
       },
       {
@@ -462,7 +462,7 @@ export const Y12A_CH8B_QUESTIONS = [
       },
       {
         "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(\\text{For } n = 4, \\; 0.0123 \\nless 0.005. \\quad \\text{For } n = 5, \\; 0.0041 < 0.005. \\implies n = 5\\)",
+        "workingOut": "\\(\\text{For } n = 4, \\; 0.0123 \nless 0.005. \\quad \\text{For } n = 5, \\; 0.0041 < 0.005. \\implies n = 5\\)",
         "graphData": null
       },
       {
@@ -507,7 +507,7 @@ export const Y12A_CH8B_QUESTIONS = [
       },
       {
         "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(\\text{For } n = 9, \\; 0.000051 \\nless 0.00002. \\quad \\text{For } n = 10, \\; 0.000017 < 0.00002. \\implies n = 10\\)",
+        "workingOut": "\\(\\text{For } n = 9, \\; 0.000051 \nless 0.00002. \\quad \\text{For } n = 10, \\; 0.000017 < 0.00002. \\implies n = 10\\)",
         "graphData": null
       },
       {

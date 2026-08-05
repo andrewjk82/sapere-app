@@ -1,0 +1,377 @@
+{
+  "y9-11d-q1a": {
+    "topicTitle": "The equation of a straight line",
+    "year": "Year 9",
+    "isManual": true,
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "requiresManualGrading": false,
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830225,
+      "_nanoseconds": 399000000
+    },
+    "origin": "seed",
+    "source": "",
+    "isActive": true,
+    "topicCode": "11D",
+    "question": "Write down the equation of the line that has gradient \\(3\\) and \\(y\\)-intercept \\(5\\).",
+    "title": "Write down the equation of the line that...",
+    "type": "multiple_choice",
+    "topicId": "y9-11d",
+    "answer": "2",
+    "solution": "Using the gradient-intercept form of a straight line:\n\\(y = mx + c\\)\nwhere \\(m\\) is the gradient and \\(c\\) is the \\(y\\)-intercept.\n\nSubstituting \\(m = 3\\) and \\(c = 5\\):\n\\(y = 3x + 5\\).",
+    "chapterId": "y9-11",
+    "hint": "Substitute the gradient for \\(m\\) and the \\(y\\)-intercept for \\(c\\) in \\(y = mx + c\\).",
+    "options": [
+      {
+        "text": "\\(\\dfrac{12}{5}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\dfrac{13}{6}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = 3x + 5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = 3x + 5 + 1\\)",
+        "imageUrl": ""
+      }
+    ],
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "updatedAt": {
+      "_seconds": 1784364622,
+      "_nanoseconds": 926000000
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The equation of a straight line: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(m = 3, quad c = 5 \\implies y = 3x + 5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(y = 3x + 5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: y = 3x + 5. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(y = 3x + 5\\)",
+        "graphData": null
+      }
+    ],
+    "isNew": false
+  },
+  "y9-11d-q1b": {
+    "topicTitle": "The equation of a straight line",
+    "year": "Year 9",
+    "isManual": true,
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "requiresManualGrading": false,
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830225,
+      "_nanoseconds": 399000000
+    },
+    "origin": "seed",
+    "source": "",
+    "isActive": true,
+    "topicCode": "11D",
+    "question": "Write down the equation of the line that has gradient \\(4\\) and \\(y\\)-intercept \\(6\\).",
+    "title": "Write down the equation of the line that...",
+    "type": "multiple_choice",
+    "topicId": "y9-11d",
+    "answer": "2",
+    "solution": "Using the gradient-intercept form of a straight line:\n\\(y = mx + c\\)\nwhere \\(m\\) is the gradient and \\(c\\) is the \\(y\\)-intercept.\n\nSubstituting \\(m = 4\\) and \\(c = 6\\):\n\\(y = 4x + 6\\).",
+    "chapterId": "y9-11",
+    "hint": "Substitute the gradient for \\(m\\) and the \\(y\\)-intercept for \\(c\\) in \\(y = mx + c\\).",
+    "options": [
+      {
+        "text": "\\(\\dfrac{12}{5}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\dfrac{13}{6}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = 4x + 6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = 4x + 6 + 1\\)",
+        "imageUrl": ""
+      }
+    ],
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "updatedAt": {
+      "_seconds": 1784364622,
+      "_nanoseconds": 926000000
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The equation of a straight line: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(m = 4, quad c = 6 \\implies y = 4x + 6\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(y = 4x + 6\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: y = 4x + 6. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(y = 4x + 6\\)",
+        "graphData": null
+      }
+    ],
+    "isNew": false
+  },
+  "y9-11d-q1c": {
+    "topicTitle": "The equation of a straight line",
+    "year": "Year 9",
+    "isManual": true,
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "requiresManualGrading": false,
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830225,
+      "_nanoseconds": 399000000
+    },
+    "origin": "seed",
+    "source": "",
+    "isActive": true,
+    "topicCode": "11D",
+    "question": "Write down the equation of the line that has gradient \\(-3\\) and \\(y\\)-intercept \\(2\\).",
+    "title": "Write down the equation of the line that...",
+    "type": "multiple_choice",
+    "topicId": "y9-11d",
+    "answer": "1",
+    "solution": "Using the gradient-intercept form of a straight line:\n\\(y = mx + c\\)\nwhere \\(m\\) is the gradient and \\(c\\) is the \\(y\\)-intercept.\n\nSubstituting \\(m = -3\\) and \\(c = 2\\):\n\\(y = -3x + 2\\).",
+    "chapterId": "y9-11",
+    "hint": "Substitute the gradient for \\(m\\) and the \\(y\\)-intercept for \\(c\\) in \\(y = mx + c\\).",
+    "options": [
+      {
+        "text": "\\(\\dfrac{13}{6}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = -3x + 2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = -3x + 2 + 1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = -3x + 3\\)",
+        "imageUrl": ""
+      }
+    ],
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "updatedAt": {
+      "_seconds": 1784364622,
+      "_nanoseconds": 926000000
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The equation of a straight line: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(m = -3, quad c = 2 \\implies y = -3x + 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(y = -3x + 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: y = -3x + 2. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(y = -3x + 2\\)",
+        "graphData": null
+      }
+    ],
+    "isNew": false
+  },
+  "y9-11d-q1d": {
+    "topicTitle": "The equation of a straight line",
+    "year": "Year 9",
+    "isManual": true,
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "requiresManualGrading": false,
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830225,
+      "_nanoseconds": 399000000
+    },
+    "origin": "seed",
+    "source": "",
+    "isActive": true,
+    "topicCode": "11D",
+    "question": "Write down the equation of the line that has gradient \\(-1\\) and \\(y\\)-intercept \\(4\\).",
+    "title": "Write down the equation of the line that...",
+    "type": "multiple_choice",
+    "topicId": "y9-11d",
+    "answer": "2",
+    "solution": "Using the gradient-intercept form of a straight line:\n\\(y = mx + c\\)\nwhere \\(m\\) is the gradient and \\(c\\) is the \\(y\\)-intercept.\n\nSubstituting \\(m = -1\\) and \\(c = 4\\):\n\\(y = -x + 4\\).",
+    "chapterId": "y9-11",
+    "hint": "Substitute the gradient for \\(m\\) and the \\(y\\)-intercept for \\(c\\) in \\(y = mx + c\\).",
+    "options": [
+      {
+        "text": "\\(\\dfrac{12}{5}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\dfrac{13}{6}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = -x + 4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = -x + 4 + 1\\)",
+        "imageUrl": ""
+      }
+    ],
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "updatedAt": {
+      "_seconds": 1784364622,
+      "_nanoseconds": 926000000
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The equation of a straight line: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(m = -1, quad c = 4 \\implies y = -x + 4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(y = -x + 4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: y = -x + 4. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(y = -x + 4\\)",
+        "graphData": null
+      }
+    ],
+    "isNew": false
+  },
+  "y9-11d-q1e": {
+    "topicTitle": "The equation of a straight line",
+    "year": "Year 9",
+    "isManual": true,
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "requiresManualGrading": false,
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830225,
+      "_nanoseconds": 399000000
+    },
+    "origin": "seed",
+    "source": "",
+    "isActive": true,
+    "topicCode": "11D",
+    "question": "Write down the equation of the line that has gradient \\(\\frac{3}{4}\\) and \\(y\\)-intercept \\(2\\).",
+    "title": "Write down the equation of the line that...",
+    "type": "multiple_choice",
+    "topicId": "y9-11d",
+    "answer": "1",
+    "solution": "Using the gradient-intercept form of a straight line:\n\\(y = mx + c\\)\nwhere \\(m\\) is the gradient and \\(c\\) is the \\(y\\)-intercept.\n\nSubstituting \\(m = \\frac{3}{4}\\) and \\(c = 2\\):\n\\(y = 3/4x + 2\\).",
+    "chapterId": "y9-11",
+    "hint": "Substitute the gradient for \\(m\\) and the \\(y\\)-intercept for \\(c\\) in \\(y = mx + c\\).",
+    "options": [
+      {
+        "text": "\\(\\dfrac{13}{6}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = 3/4x + 2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = 3/4x + 2 + 1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = 3/4x + 3\\)",
+        "imageUrl": ""
+      }
+    ],
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "updatedAt": {
+      "_seconds": 1784364622,
+      "_nanoseconds": 926000000
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The equation of a straight line: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(m = \\frac{3}{4}, quad c = 2 \\implies y = 3/4x + 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(y = 3/4x + 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: y = 3/4x + 2. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(y = 3/4x + 2\\)",
+        "graphData": null
+      }
+    ],
+    "isNew": false
+  }
+}

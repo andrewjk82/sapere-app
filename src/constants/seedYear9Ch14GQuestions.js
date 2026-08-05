@@ -2090,11 +2090,11 @@ export const Y9_CH14G_QUESTIONS = [
     "a": 2,
     "answer": "2",
     "hint": "The lines will intersect if they are not parallel, which means their gradients must be different.",
-    "solution": "The lines will intersect at exactly one point if they are not parallel (different gradients).\nFrom the slope-intercept form, the gradients are \\( 2 \\) and \\( \\frac{m}{2} \\).\nThey will intersect when their gradients are different:\n\\( \\frac{m}{2} \\neq 2 \\implies m \\neq 4 \\).",
+    "solution": "The lines will intersect at exactly one point if they are not parallel (different gradients).\nFrom the slope-intercept form, the gradients are \\( 2 \\) and \\( \\frac{m}{2} \\).\nThey will intersect when their gradients are different:\n\\( \\frac{m}{2} \neq 2 \\implies m \neq 4 \\).",
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Revision: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(\\frac{m}{2} \\neq 2\\)",
+        "workingOut": "\\(\\frac{m}{2} \neq 2\\)",
         "graphData": {
           "jsxGraph": {
             "width": 360,
@@ -2111,7 +2111,7 @@ export const Y9_CH14G_QUESTIONS = [
       },
       {
         "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(m \\neq 4\\)",
+        "workingOut": "\\(m \neq 4\\)",
         "graphData": null
       },
       {
@@ -2315,7 +2315,7 @@ export const Y9_CH14G_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Revision: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(m \\neq \\frac{2}{5} \\implies \\text{One intersection point at } (0, 2)\\)",
+        "workingOut": "\\(m \neq \\frac{2}{5} \\implies \\text{One intersection point at } (0, 2)\\)",
         "graphData": null
       },
       {

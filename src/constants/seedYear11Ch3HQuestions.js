@@ -58,7 +58,7 @@ export const Y11_CH3H_QUESTIONS = [
         "workingOut": ""
       },
       {
-        "explanation": "Since the function is undefined only at \\( x=0 \\) and can yield any value except \\( y=0 \\), the domain is \\( x \\neq 0 \\) and range is \\( y \\neq 0 \\).",
+        "explanation": "Since the function is undefined only at \\( x=0 \\) and can yield any value except \\( y=0 \\), the domain is \\( x \neq 0 \\) and range is \\( y \neq 0 \\).",
         "workingOut": ""
       }
     ],

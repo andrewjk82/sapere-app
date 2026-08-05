@@ -1021,7 +1021,7 @@ export const Y11_CH3F_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "The quadratic formulae and the graph",
-    "question": "Let \\( f(x) = ax^2 + bx + c \\), where \\( a \\neq 0 \\).",
+    "question": "Let \\( f(x) = ax^2 + bx + c \\), where \\( a \neq 0 \\).",
     "subQuestions": [
       {
         "id": "y11a-3f-q14a",

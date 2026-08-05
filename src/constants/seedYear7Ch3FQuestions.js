@@ -4,7 +4,7 @@ export const Y7_CH3F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify:\\n\\n\\\\(4 \\times 5m\\\\)",
+    "question": "Simplify:\n\n\\\\(4 \\times 5m\\\\)",
     "t": "Multiplying algebraic terms",
     "hint": "Multiply the numbers together and keep the variable.",
     "solutionSteps": [
@@ -48,7 +48,7 @@ export const Y7_CH3F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify:\\n\\n\\\\(3 \\times 7y\\\\)",
+    "question": "Simplify:\n\n\\\\(3 \\times 7y\\\\)",
     "t": "Multiplying algebraic terms",
     "hint": "Multiply the numbers together and keep the variable.",
     "solutionSteps": [
@@ -92,7 +92,7 @@ export const Y7_CH3F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify:\\n\\n\\\\(6 \\times 2n\\\\)",
+    "question": "Simplify:\n\n\\\\(6 \\times 2n\\\\)",
     "t": "Multiplying algebraic terms",
     "hint": "Multiply the numbers together and keep the variable.",
     "solutionSteps": [
@@ -136,7 +136,7 @@ export const Y7_CH3F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify:\\n\\n\\\\(5y \\times 3y\\\\)",
+    "question": "Simplify:\n\n\\\\(5y \\times 3y\\\\)",
     "t": "Multiplying algebraic terms",
     "hint": "Multiply the numbers, then multiply the variables using index laws.",
     "solutionSteps": [
@@ -180,7 +180,7 @@ export const Y7_CH3F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify:\\n\\n\\\\(4p \\times 6p\\\\)",
+    "question": "Simplify:\n\n\\\\(4p \\times 6p\\\\)",
     "t": "Multiplying algebraic terms",
     "hint": "Multiply the numbers, then multiply the variables.",
     "solutionSteps": [
@@ -224,7 +224,7 @@ export const Y7_CH3F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify:\\n\\n\\\\(5a \\times 4b\\\\)",
+    "question": "Simplify:\n\n\\\\(5a \\times 4b\\\\)",
     "t": "Multiplying algebraic terms",
     "hint": "Multiply the numbers, then write the variables together in alphabetical order.",
     "solutionSteps": [
@@ -268,7 +268,7 @@ export const Y7_CH3F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify:\\n\\n\\\\(4mn \\times 5m\\\\)",
+    "question": "Simplify:\n\n\\\\(4mn \\times 5m\\\\)",
     "t": "Multiplying algebraic terms",
     "hint": "Multiply the numbers, then multiply like variables by adding their indices.",
     "solutionSteps": [
@@ -312,7 +312,7 @@ export const Y7_CH3F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify:\\n\\n\\\\(3pq \\times 6pq\\\\)",
+    "question": "Simplify:\n\n\\\\(3pq \\times 6pq\\\\)",
     "t": "Multiplying algebraic terms",
     "hint": "Multiply the numbers, then multiply like variables.",
     "solutionSteps": [
@@ -356,7 +356,7 @@ export const Y7_CH3F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Rewrite the expression without brackets.\\n\\n\\\\((4m)^2\\\\)",
+    "question": "Rewrite the expression without brackets.\n\n\\\\((4m)^2\\\\)",
     "t": "Multiplying algebraic terms",
     "hint": "Square both the number and the variable inside the brackets.",
     "solutionSteps": [
@@ -400,7 +400,7 @@ export const Y7_CH3F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Rewrite the expression without brackets.\\n\\n\\\\((6y)^2\\\\)",
+    "question": "Rewrite the expression without brackets.\n\n\\\\((6y)^2\\\\)",
     "t": "Multiplying algebraic terms",
     "hint": "Square both the number and the variable inside the brackets.",
     "solutionSteps": [
@@ -444,7 +444,7 @@ export const Y7_CH3F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Rewrite the expression without brackets.\\n\\n\\\\((12x)^2\\\\)",
+    "question": "Rewrite the expression without brackets.\n\n\\\\((12x)^2\\\\)",
     "t": "Multiplying algebraic terms",
     "hint": "Square both the number and the variable inside the brackets.",
     "solutionSteps": [
@@ -488,7 +488,7 @@ export const Y7_CH3F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Rewrite the expression without brackets.\\n\\n\\\\((15a)^2\\\\)",
+    "question": "Rewrite the expression without brackets.\n\n\\\\((15a)^2\\\\)",
     "t": "Multiplying algebraic terms",
     "hint": "Square both the number and the variable inside the brackets.",
     "solutionSteps": [
@@ -532,7 +532,7 @@ export const Y7_CH3F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Find the product in simplified form.\\n\\n\\\\(3m\\\\) and \\\\(7n\\\\)",
+    "question": "Find the product in simplified form.\n\n\\\\(3m\\\\) and \\\\(7n\\\\)",
     "t": "Multiplying algebraic terms",
     "hint": "Product means to multiply.",
     "solutionSteps": [
@@ -588,7 +588,7 @@ export const Y7_CH3F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Find the product in simplified form.\\n\\n\\\\(5y\\\\) and \\\\(6y\\\\)",
+    "question": "Find the product in simplified form.\n\n\\\\(5y\\\\) and \\\\(6y\\\\)",
     "t": "Multiplying algebraic terms",
     "hint": "Multiply the numbers, then multiply the variables using index laws.",
     "solutionSteps": [
@@ -644,7 +644,7 @@ export const Y7_CH3F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Find the product in simplified form.\\n\\n\\\\(8xy\\\\) and \\\\(9\\\\)",
+    "question": "Find the product in simplified form.\n\n\\\\(8xy\\\\) and \\\\(9\\\\)",
     "t": "Multiplying algebraic terms",
     "hint": "Multiply the numbers together.",
     "solutionSteps": [
@@ -700,7 +700,7 @@ export const Y7_CH3F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Find the product in simplified form.\\n\\n\\\\(4d\\\\) and \\\\(12d\\\\)",
+    "question": "Find the product in simplified form.\n\n\\\\(4d\\\\) and \\\\(12d\\\\)",
     "t": "Multiplying algebraic terms",
     "hint": "Multiply the numbers, then multiply the variables using index laws.",
     "solutionSteps": [
@@ -756,7 +756,7 @@ export const Y7_CH3F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Find the product in simplified form.\\n\\n\\\\(5p\\\\) and \\\\(8q\\\\)",
+    "question": "Find the product in simplified form.\n\n\\\\(5p\\\\) and \\\\(8q\\\\)",
     "t": "Multiplying algebraic terms",
     "hint": "Multiply the numbers, then multiply the variables.",
     "solutionSteps": [
@@ -812,7 +812,7 @@ export const Y7_CH3F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Find the product in simplified form.\\n\\n\\\\(6xy\\\\) and \\\\(9xy\\\\)",
+    "question": "Find the product in simplified form.\n\n\\\\(6xy\\\\) and \\\\(9xy\\\\)",
     "t": "Multiplying algebraic terms",
     "hint": "Multiply the numbers, then multiply the variables by adding indices.",
     "solutionSteps": [
@@ -868,7 +868,7 @@ export const Y7_CH3F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Find the product in simplified form.\\n\\n\\\\(5m^2\\\\) and \\\\(7\\\\)",
+    "question": "Find the product in simplified form.\n\n\\\\(5m^2\\\\) and \\\\(7\\\\)",
     "t": "Multiplying algebraic terms",
     "hint": "Multiply the numbers together.",
     "solutionSteps": [
@@ -924,7 +924,7 @@ export const Y7_CH3F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Find the product in simplified form.\\n\\n\\\\(8p^2\\\\) and \\\\(4p\\\\)",
+    "question": "Find the product in simplified form.\n\n\\\\(8p^2\\\\) and \\\\(4p\\\\)",
     "t": "Multiplying algebraic terms",
     "hint": "Multiply the numbers, then multiply like variables by adding their indices.",
     "solutionSteps": [
@@ -980,7 +980,7 @@ export const Y7_CH3F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Simplify:\\n\\n\\\\((3y)^2 \\times y^4\\\\)",
+    "question": "Simplify:\n\n\\\\((3y)^2 \\times y^4\\\\)",
     "t": "Multiplying algebraic terms",
     "hint": "Expand the bracket first.",
     "solutionSteps": [
@@ -1024,7 +1024,7 @@ export const Y7_CH3F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Simplify:\\n\\n\\\\(2m \\times (5m)^2\\\\)",
+    "question": "Simplify:\n\n\\\\(2m \\times (5m)^2\\\\)",
     "t": "Multiplying algebraic terms",
     "hint": "Expand the bracket first.",
     "solutionSteps": [
@@ -1068,7 +1068,7 @@ export const Y7_CH3F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Simplify:\\n\\n\\\\(7p^2 \\times 4p\\\\)",
+    "question": "Simplify:\n\n\\\\(7p^2 \\times 4p\\\\)",
     "t": "Multiplying algebraic terms",
     "hint": "Multiply the numbers, then use index laws for the variables.",
     "solutionSteps": [
@@ -1112,7 +1112,7 @@ export const Y7_CH3F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Simplify:\\n\\n\\\\(5ab \\times 4ab\\\\)",
+    "question": "Simplify:\n\n\\\\(5ab \\times 4ab\\\\)",
     "t": "Multiplying algebraic terms",
     "hint": "Multiply the numbers, then multiply like variables.",
     "solutionSteps": [
@@ -1156,7 +1156,7 @@ export const Y7_CH3F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Simplify:\\n\\n\\\\((3m)^2 \\times 4mn\\\\)",
+    "question": "Simplify:\n\n\\\\((3m)^2 \\times 4mn\\\\)",
     "t": "Multiplying algebraic terms",
     "hint": "Expand the bracket first.",
     "solutionSteps": [
@@ -1200,7 +1200,7 @@ export const Y7_CH3F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Simplify:\\n\\n\\\\(4x^2y \\times 5xy\\\\)",
+    "question": "Simplify:\n\n\\\\(4x^2y \\times 5xy\\\\)",
     "t": "Multiplying algebraic terms",
     "hint": "Multiply the numbers, then multiply like variables by adding their indices.",
     "solutionSteps": [
@@ -1244,7 +1244,7 @@ export const Y7_CH3F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Simplify:\\n\\n\\\\((4y)^2 \\times 3y \\times y\\\\)",
+    "question": "Simplify:\n\n\\\\((4y)^2 \\times 3y \\times y\\\\)",
     "t": "Multiplying algebraic terms",
     "hint": "Expand the bracket first, then multiply from left to right.",
     "solutionSteps": [
@@ -1288,7 +1288,7 @@ export const Y7_CH3F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Simplify:\\n\\n\\\\(3ab \\times b \\times a\\\\)",
+    "question": "Simplify:\n\n\\\\(3ab \\times b \\times a\\\\)",
     "t": "Multiplying algebraic terms",
     "hint": "Multiply like variables by adding their indices.",
     "solutionSteps": [
@@ -1332,7 +1332,7 @@ export const Y7_CH3F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Simplify:\\n\\n\\\\((3m)^2 \\times (4m)^2\\\\)",
+    "question": "Simplify:\n\n\\\\((3m)^2 \\times (4m)^2\\\\)",
     "t": "Multiplying algebraic terms",
     "hint": "Expand the brackets first.",
     "solutionSteps": [
@@ -1376,7 +1376,7 @@ export const Y7_CH3F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Simplify:\\n\\n\\\\(3mn^2 \\times (6m)^2\\\\)",
+    "question": "Simplify:\n\n\\\\(3mn^2 \\times (6m)^2\\\\)",
     "t": "Multiplying algebraic terms",
     "hint": "Expand the bracket first.",
     "solutionSteps": [
@@ -1420,7 +1420,7 @@ export const Y7_CH3F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Simplify:\\n\\n\\\\(4p^2 \\times 5q \\times 3p\\\\)",
+    "question": "Simplify:\n\n\\\\(4p^2 \\times 5q \\times 3p\\\\)",
     "t": "Multiplying algebraic terms",
     "hint": "Multiply the numbers, then multiply like variables.",
     "solutionSteps": [
@@ -1464,7 +1464,7 @@ export const Y7_CH3F_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Simplify:\\n\\n\\\\(6k^2 \\times (3k)^2 \\times k\\\\)",
+    "question": "Simplify:\n\n\\\\(6k^2 \\times (3k)^2 \\times k\\\\)",
     "t": "Multiplying algebraic terms",
     "hint": "Expand the bracket first.",
     "solutionSteps": [

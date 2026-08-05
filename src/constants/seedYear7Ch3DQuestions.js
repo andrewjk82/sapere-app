@@ -4,7 +4,7 @@ export const Y7_CH3D_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "State whether the following pair contains like or unlike terms.\\n\\n\\\\(4m, 9m\\\\)",
+    "question": "State whether the following pair contains like or unlike terms.\n\n\\\\(4m, 9m\\\\)",
     "hint": "Like terms have the exact same variables and indices.",
     "solutionSteps": [
       {
@@ -49,7 +49,7 @@ export const Y7_CH3D_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "State whether the following pair contains like or unlike terms.\\n\\n\\\\(7p, 8p\\\\)",
+    "question": "State whether the following pair contains like or unlike terms.\n\n\\\\(7p, 8p\\\\)",
     "hint": "Like terms have the exact same variables and indices.",
     "solutionSteps": [
       {
@@ -94,7 +94,7 @@ export const Y7_CH3D_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "State whether the following pair contains like or unlike terms.\\n\\n\\\\(14ab, 15ba\\\\)",
+    "question": "State whether the following pair contains like or unlike terms.\n\n\\\\(14ab, 15ba\\\\)",
     "hint": "The order of variables in a term does not matter.",
     "solutionSteps": [
       {
@@ -139,7 +139,7 @@ export const Y7_CH3D_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "State whether the following pair contains like or unlike terms.\\n\\n\\\\(4m, 9n\\\\)",
+    "question": "State whether the following pair contains like or unlike terms.\n\n\\\\(4m, 9n\\\\)",
     "hint": "Check if the variable parts are exactly the same.",
     "solutionSteps": [
       {
@@ -184,7 +184,7 @@ export const Y7_CH3D_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "State whether the following pair contains like or unlike terms.\\n\\n\\\\(5qp, 12qp\\\\)",
+    "question": "State whether the following pair contains like or unlike terms.\n\n\\\\(5qp, 12qp\\\\)",
     "hint": "Check if the variable parts are exactly the same.",
     "solutionSteps": [
       {
@@ -229,7 +229,7 @@ export const Y7_CH3D_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "State whether the following pair contains like or unlike terms.\\n\\n\\\\(4n^2, 4n\\\\)",
+    "question": "State whether the following pair contains like or unlike terms.\n\n\\\\(4n^2, 4n\\\\)",
     "hint": "Like terms must have the same variables with the same indices.",
     "solutionSteps": [
       {
@@ -274,7 +274,7 @@ export const Y7_CH3D_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "State whether the following pair contains like or unlike terms.\\n\\n\\\\(5x, 9x^2\\\\)",
+    "question": "State whether the following pair contains like or unlike terms.\n\n\\\\(5x, 9x^2\\\\)",
     "hint": "Like terms must have the same variables with the same indices.",
     "solutionSteps": [
       {
@@ -319,7 +319,7 @@ export const Y7_CH3D_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "State whether the following pair contains like or unlike terms.\\n\\n\\\\(7xy, 12yx\\\\)",
+    "question": "State whether the following pair contains like or unlike terms.\n\n\\\\(7xy, 12yx\\\\)",
     "hint": "The order of variables in a term does not matter.",
     "solutionSteps": [
       {
@@ -364,7 +364,7 @@ export const Y7_CH3D_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the expression by adding or subtracting like terms.\\n\\n\\\\(3y + 5y\\\\)",
+    "question": "Simplify the expression by adding or subtracting like terms.\n\n\\\\(3y + 5y\\\\)",
     "t": "Adding and subtracting like terms",
     "hint": "Add the coefficients of the like terms.",
     "solutionSteps": [
@@ -415,7 +415,7 @@ export const Y7_CH3D_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the expression by adding or subtracting like terms.\\n\\n\\\\(14m - 3m\\\\)",
+    "question": "Simplify the expression by adding or subtracting like terms.\n\n\\\\(14m - 3m\\\\)",
     "t": "Adding and subtracting like terms",
     "hint": "Subtract the coefficients of the like terms.",
     "solutionSteps": [
@@ -466,7 +466,7 @@ export const Y7_CH3D_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the expression by adding or subtracting like terms.\\n\\n\\\\(4n + 6n + 2n\\\\)",
+    "question": "Simplify the expression by adding or subtracting like terms.\n\n\\\\(4n + 6n + 2n\\\\)",
     "t": "Adding and subtracting like terms",
     "hint": "Add all the coefficients.",
     "solutionSteps": [
@@ -517,7 +517,7 @@ export const Y7_CH3D_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the expression by adding or subtracting like terms.\\n\\n\\\\(8k + 5k - 3k\\\\)",
+    "question": "Simplify the expression by adding or subtracting like terms.\n\n\\\\(8k + 5k - 3k\\\\)",
     "t": "Adding and subtracting like terms",
     "hint": "Add and subtract the coefficients from left to right.",
     "solutionSteps": [
@@ -568,7 +568,7 @@ export const Y7_CH3D_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the expression by adding or subtracting like terms.\\n\\n\\\\(4a + 5a + 6b + 2b\\\\)",
+    "question": "Simplify the expression by adding or subtracting like terms.\n\n\\\\(4a + 5a + 6b + 2b\\\\)",
     "t": "Adding and subtracting like terms",
     "hint": "Group the $a$ terms together and the $b$ terms together.",
     "solutionSteps": [
@@ -624,7 +624,7 @@ export const Y7_CH3D_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the expression by adding or subtracting like terms.\\n\\n\\\\(7p - 3p + 5q - q\\\\)",
+    "question": "Simplify the expression by adding or subtracting like terms.\n\n\\\\(7p - 3p + 5q - q\\\\)",
     "t": "Adding and subtracting like terms",
     "hint": "Group the $p$ terms together and the $q$ terms together.",
     "solutionSteps": [
@@ -680,7 +680,7 @@ export const Y7_CH3D_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the expression by adding or subtracting like terms.\\n\\n\\\\(4m + n + 6m + 2n\\\\)",
+    "question": "Simplify the expression by adding or subtracting like terms.\n\n\\\\(4m + n + 6m + 2n\\\\)",
     "t": "Adding and subtracting like terms",
     "hint": "Rearrange to group the like terms, then combine.",
     "solutionSteps": [
@@ -736,7 +736,7 @@ export const Y7_CH3D_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the expression by adding or subtracting like terms.\\n\\n\\\\(8x + 5y + 3x - 2y\\\\)",
+    "question": "Simplify the expression by adding or subtracting like terms.\n\n\\\\(8x + 5y + 3x - 2y\\\\)",
     "t": "Adding and subtracting like terms",
     "hint": "Rearrange to group the like terms, then combine.",
     "solutionSteps": [
@@ -792,7 +792,7 @@ export const Y7_CH3D_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the expression by adding or subtracting like terms.\\n\\n\\\\(6b + 7a - 3b - 4a\\\\)",
+    "question": "Simplify the expression by adding or subtracting like terms.\n\n\\\\(6b + 7a - 3b - 4a\\\\)",
     "t": "Adding and subtracting like terms",
     "hint": "Rearrange to group the like terms, then combine.",
     "solutionSteps": [
@@ -848,7 +848,7 @@ export const Y7_CH3D_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write down the sum of the terms and simplify by collecting like terms.\\n\\n\\\\(4y\\\\) and \\\\(7y\\\\)",
+    "question": "Write down the sum of the terms and simplify by collecting like terms.\n\n\\\\(4y\\\\) and \\\\(7y\\\\)",
     "t": "Adding and subtracting like terms",
     "hint": "Sum means to add them together.",
     "solutionSteps": [
@@ -904,7 +904,7 @@ export const Y7_CH3D_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write down the sum of the terms and simplify by collecting like terms.\\n\\n\\\\(5m\\\\) and \\\\(8m\\\\)",
+    "question": "Write down the sum of the terms and simplify by collecting like terms.\n\n\\\\(5m\\\\) and \\\\(8m\\\\)",
     "t": "Adding and subtracting like terms",
     "hint": "Sum means to add them together.",
     "solutionSteps": [
@@ -960,7 +960,7 @@ export const Y7_CH3D_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write down the sum of the terms and simplify by collecting like terms.\\n\\n\\\\(7xy\\\\) and \\\\(5xy\\\\)",
+    "question": "Write down the sum of the terms and simplify by collecting like terms.\n\n\\\\(7xy\\\\) and \\\\(5xy\\\\)",
     "t": "Adding and subtracting like terms",
     "hint": "Sum means to add them together.",
     "solutionSteps": [
@@ -1016,7 +1016,7 @@ export const Y7_CH3D_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write down the sum of the terms and simplify by collecting like terms.\\n\\n\\\\(13pq\\\\) and \\\\(14pq\\\\)",
+    "question": "Write down the sum of the terms and simplify by collecting like terms.\n\n\\\\(13pq\\\\) and \\\\(14pq\\\\)",
     "t": "Adding and subtracting like terms",
     "hint": "Sum means to add them together.",
     "solutionSteps": [
@@ -1072,7 +1072,7 @@ export const Y7_CH3D_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write down the sum of the terms and simplify by collecting like terms.\\n\\n\\\\(4ab\\\\) and \\\\(6ac\\\\)",
+    "question": "Write down the sum of the terms and simplify by collecting like terms.\n\n\\\\(4ab\\\\) and \\\\(6ac\\\\)",
     "t": "Adding and subtracting like terms",
     "hint": "If they are unlike terms, they cannot be combined into a single term.",
     "solutionSteps": [
@@ -1128,7 +1128,7 @@ export const Y7_CH3D_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write down the sum of the terms and simplify by collecting like terms.\\n\\n\\\\(2xyz\\\\) and \\\\(7xyz\\\\)",
+    "question": "Write down the sum of the terms and simplify by collecting like terms.\n\n\\\\(2xyz\\\\) and \\\\(7xyz\\\\)",
     "t": "Adding and subtracting like terms",
     "hint": "Sum means to add them together.",
     "solutionSteps": [
@@ -1184,7 +1184,7 @@ export const Y7_CH3D_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write down the sum of the terms and simplify by collecting like terms.\\n\\n\\\\(6m^2\\\\) and \\\\(3m^2\\\\)",
+    "question": "Write down the sum of the terms and simplify by collecting like terms.\n\n\\\\(6m^2\\\\) and \\\\(3m^2\\\\)",
     "t": "Adding and subtracting like terms",
     "hint": "Sum means to add them together.",
     "solutionSteps": [
@@ -1240,7 +1240,7 @@ export const Y7_CH3D_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write down the sum of the terms and simplify by collecting like terms.\\n\\n\\\\(8a^2\\\\) and \\\\(3b^2\\\\)",
+    "question": "Write down the sum of the terms and simplify by collecting like terms.\n\n\\\\(8a^2\\\\) and \\\\(3b^2\\\\)",
     "t": "Adding and subtracting like terms",
     "hint": "If they are unlike terms, they cannot be combined into a single term.",
     "solutionSteps": [
@@ -1296,7 +1296,7 @@ export const Y7_CH3D_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the expression by adding or subtracting like terms.\\n\\n\\\\(3y + 6y - 3y\\\\)",
+    "question": "Simplify the expression by adding or subtracting like terms.\n\n\\\\(3y + 6y - 3y\\\\)",
     "t": "Adding and subtracting like terms",
     "hint": "Work from left to right.",
     "solutionSteps": [
@@ -1347,7 +1347,7 @@ export const Y7_CH3D_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the expression by adding or subtracting like terms.\\n\\n\\\\(3ab - ab + 5ab\\\\)",
+    "question": "Simplify the expression by adding or subtracting like terms.\n\n\\\\(3ab - ab + 5ab\\\\)",
     "t": "Adding and subtracting like terms",
     "hint": "Work from left to right. Remember $ab$ means $1ab$.",
     "solutionSteps": [
@@ -1403,7 +1403,7 @@ export const Y7_CH3D_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the expression by adding or subtracting like terms.\\n\\n\\\\(4mn + 3mn - mn\\\\)",
+    "question": "Simplify the expression by adding or subtracting like terms.\n\n\\\\(4mn + 3mn - mn\\\\)",
     "t": "Adding and subtracting like terms",
     "hint": "Work from left to right.",
     "solutionSteps": [
@@ -1459,7 +1459,7 @@ export const Y7_CH3D_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the expression by adding or subtracting like terms.\\n\\n\\\\(5x + 4x - x\\\\)",
+    "question": "Simplify the expression by adding or subtracting like terms.\n\n\\\\(5x + 4x - x\\\\)",
     "t": "Adding and subtracting like terms",
     "hint": "Work from left to right.",
     "solutionSteps": [
@@ -1515,7 +1515,7 @@ export const Y7_CH3D_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the expression by adding or subtracting like terms.\\n\\n\\\\(4a + 2a + 7b + 3b\\\\)",
+    "question": "Simplify the expression by adding or subtracting like terms.\n\n\\\\(4a + 2a + 7b + 3b\\\\)",
     "t": "Adding and subtracting like terms",
     "hint": "Combine the $a$ terms together and the $b$ terms together.",
     "solutionSteps": [
@@ -1571,7 +1571,7 @@ export const Y7_CH3D_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the expression by adding or subtracting like terms.\\n\\n\\\\(2m + 6n + 5m + 3n\\\\)",
+    "question": "Simplify the expression by adding or subtracting like terms.\n\n\\\\(2m + 6n + 5m + 3n\\\\)",
     "t": "Adding and subtracting like terms",
     "hint": "Rearrange to group the like terms.",
     "solutionSteps": [
@@ -1627,7 +1627,7 @@ export const Y7_CH3D_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the expression by adding or subtracting like terms.\\n\\n\\\\(3ab + 4ab + 2ab + 6ab\\\\)",
+    "question": "Simplify the expression by adding or subtracting like terms.\n\n\\\\(3ab + 4ab + 2ab + 6ab\\\\)",
     "t": "Adding and subtracting like terms",
     "hint": "All terms are like terms. Add all the coefficients.",
     "solutionSteps": [
@@ -1683,7 +1683,7 @@ export const Y7_CH3D_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the expression by adding or subtracting like terms.\\n\\n\\\\(6y^2 + 4y^2\\\\)",
+    "question": "Simplify the expression by adding or subtracting like terms.\n\n\\\\(6y^2 + 4y^2\\\\)",
     "t": "Adding and subtracting like terms",
     "hint": "These are like terms. Add their coefficients.",
     "solutionSteps": [
@@ -1739,7 +1739,7 @@ export const Y7_CH3D_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the expression by adding or subtracting like terms.\\n\\n\\\\(4m^2 + 2m^2 + 5m + 6m\\\\)",
+    "question": "Simplify the expression by adding or subtracting like terms.\n\n\\\\(4m^2 + 2m^2 + 5m + 6m\\\\)",
     "t": "Adding and subtracting like terms",
     "hint": "Remember that $m^2$ and $m$ are NOT like terms. Group them separately.",
     "solutionSteps": [
@@ -1795,7 +1795,7 @@ export const Y7_CH3D_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the expression by adding or subtracting like terms.\\n\\n\\\\(8y^2 + 12y - 5y^2 - 6y\\\\)",
+    "question": "Simplify the expression by adding or subtracting like terms.\n\n\\\\(8y^2 + 12y - 5y^2 - 6y\\\\)",
     "t": "Adding and subtracting like terms",
     "hint": "Group the $y^2$ terms and the $y$ terms separately.",
     "solutionSteps": [
@@ -1851,7 +1851,7 @@ export const Y7_CH3D_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write down the sum of the terms and simplify by collecting like terms.\\n\\n\\\\(4x\\\\) and \\\\(8x\\\\)",
+    "question": "Write down the sum of the terms and simplify by collecting like terms.\n\n\\\\(4x\\\\) and \\\\(8x\\\\)",
     "t": "Adding and subtracting like terms",
     "hint": "Sum means add.",
     "solutionSteps": [
@@ -1907,7 +1907,7 @@ export const Y7_CH3D_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write down the sum of the terms and simplify by collecting like terms.\\n\\n\\\\(5ab\\\\) and \\\\(9ab\\\\)",
+    "question": "Write down the sum of the terms and simplify by collecting like terms.\n\n\\\\(5ab\\\\) and \\\\(9ab\\\\)",
     "t": "Adding and subtracting like terms",
     "hint": "Sum means add.",
     "solutionSteps": [
@@ -1963,7 +1963,7 @@ export const Y7_CH3D_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write down the sum of the terms and simplify by collecting like terms.\\n\\n\\\\(6pr\\\\) and \\\\(10pq\\\\)",
+    "question": "Write down the sum of the terms and simplify by collecting like terms.\n\n\\\\(6pr\\\\) and \\\\(10pq\\\\)",
     "t": "Adding and subtracting like terms",
     "hint": "Check if they are like terms before adding.",
     "solutionSteps": [
@@ -2019,7 +2019,7 @@ export const Y7_CH3D_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write down the sum of the terms and simplify by collecting like terms.\\n\\n\\\\(4ba\\\\) and \\\\(7ab\\\\)",
+    "question": "Write down the sum of the terms and simplify by collecting like terms.\n\n\\\\(4ba\\\\) and \\\\(7ab\\\\)",
     "t": "Adding and subtracting like terms",
     "hint": "The order of letters in a term does not change its value ($ba = ab$).",
     "solutionSteps": [
@@ -2075,7 +2075,7 @@ export const Y7_CH3D_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write down the sum of the terms and simplify by collecting like terms.\\n\\n\\\\(8mn\\\\) and \\\\(21mn\\\\)",
+    "question": "Write down the sum of the terms and simplify by collecting like terms.\n\n\\\\(8mn\\\\) and \\\\(21mn\\\\)",
     "t": "Adding and subtracting like terms",
     "hint": "Sum means add.",
     "solutionSteps": [
@@ -2131,7 +2131,7 @@ export const Y7_CH3D_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write down the sum of the terms and simplify by collecting like terms.\\n\\n\\\\(5xy\\\\) and \\\\(12yx\\\\)",
+    "question": "Write down the sum of the terms and simplify by collecting like terms.\n\n\\\\(5xy\\\\) and \\\\(12yx\\\\)",
     "t": "Adding and subtracting like terms",
     "hint": "The order of letters in a term does not change its value.",
     "solutionSteps": [
@@ -2187,7 +2187,7 @@ export const Y7_CH3D_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the expression by adding or subtracting like terms.\\n\\n\\\\(3a + 4a + 6b + 7b\\\\)",
+    "question": "Simplify the expression by adding or subtracting like terms.\n\n\\\\(3a + 4a + 6b + 7b\\\\)",
     "t": "Adding and subtracting like terms",
     "hint": "Group the $a$ terms and $b$ terms.",
     "solutionSteps": [
@@ -2243,7 +2243,7 @@ export const Y7_CH3D_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the expression by adding or subtracting like terms.\\n\\n\\\\(6m - 3m + 5n + 4n\\\\)",
+    "question": "Simplify the expression by adding or subtracting like terms.\n\n\\\\(6m - 3m + 5n + 4n\\\\)",
     "t": "Adding and subtracting like terms",
     "hint": "Group the $m$ terms and $n$ terms.",
     "solutionSteps": [
@@ -2299,7 +2299,7 @@ export const Y7_CH3D_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the expression by adding or subtracting like terms.\\n\\n\\\\(15p - 12p + 9q + 3q\\\\)",
+    "question": "Simplify the expression by adding or subtracting like terms.\n\n\\\\(15p - 12p + 9q + 3q\\\\)",
     "t": "Adding and subtracting like terms",
     "hint": "Group the $p$ terms and $q$ terms.",
     "solutionSteps": [
@@ -2355,7 +2355,7 @@ export const Y7_CH3D_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the expression by adding or subtracting like terms.\\n\\n\\\\(50a + 10b + 20a + 4a\\\\)",
+    "question": "Simplify the expression by adding or subtracting like terms.\n\n\\\\(50a + 10b + 20a + 4a\\\\)",
     "t": "Adding and subtracting like terms",
     "hint": "Group all the $a$ terms together.",
     "solutionSteps": [
@@ -2411,7 +2411,7 @@ export const Y7_CH3D_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the expression by adding or subtracting like terms.\\n\\n\\\\(30x + 15y + 25x + 12y\\\\)",
+    "question": "Simplify the expression by adding or subtracting like terms.\n\n\\\\(30x + 15y + 25x + 12y\\\\)",
     "t": "Adding and subtracting like terms",
     "hint": "Group the $x$ terms and $y$ terms.",
     "solutionSteps": [
@@ -2467,7 +2467,7 @@ export const Y7_CH3D_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the expression by adding or subtracting like terms.\\n\\n\\\\(90k - 70k + 50k\\\\)",
+    "question": "Simplify the expression by adding or subtracting like terms.\n\n\\\\(90k - 70k + 50k\\\\)",
     "t": "Adding and subtracting like terms",
     "hint": "Work from left to right.",
     "solutionSteps": [
@@ -2518,7 +2518,7 @@ export const Y7_CH3D_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the expression by adding or subtracting like terms.\\n\\n\\\\(4xy + 5yx - xy\\\\)",
+    "question": "Simplify the expression by adding or subtracting like terms.\n\n\\\\(4xy + 5yx - xy\\\\)",
     "t": "Adding and subtracting like terms",
     "hint": "Remember $yx$ is the same as $xy$, and $xy$ means $1xy$.",
     "solutionSteps": [
@@ -2574,7 +2574,7 @@ export const Y7_CH3D_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify the expression by adding or subtracting like terms.\\n\\n\\\\(7ab - 3ab - ba\\\\)",
+    "question": "Simplify the expression by adding or subtracting like terms.\n\n\\\\(7ab - 3ab - ba\\\\)",
     "t": "Adding and subtracting like terms",
     "hint": "Remember $ba$ is the same as $ab$, and $ba$ means $1ab$.",
     "solutionSteps": [
@@ -2631,7 +2631,7 @@ export const Y7_CH3D_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 30,
     "question": "Show that the sum of three consecutive whole numbers is always a multiple of 3.",
-    "a": "Let the numbers be n, n+1, n+2.\\nSum is 3n + 3 = 3(n + 1), which is a multiple of 3.",
+    "a": "Let the numbers be n, n+1, n+2.\nSum is 3n + 3 = 3(n + 1), which is a multiple of 3.",
     "t": "Adding and subtracting like terms",
     "hint": "Represent the three consecutive numbers algebraically, e.g., $n$, $n+1$, and $n+2$.",
     "solutionSteps": [

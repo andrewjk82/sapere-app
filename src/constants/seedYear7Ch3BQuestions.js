@@ -4,7 +4,7 @@ export const Y7_CH3B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the expression without multiplication signs.\\n\\n\\\\( 4 \\times m \\\\)",
+    "question": "Write the expression without multiplication signs.\n\n\\\\( 4 \\times m \\\\)",
     "opts": [
       "\\\\( 4+m \\\\)",
       "\\\\( 4/m \\\\)",
@@ -22,7 +22,7 @@ export const Y7_CH3B_QUESTIONS = [
     "solution": null,
     "solutionSteps": [
       {
-        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Write the expression without multiplication signs.\\n\\n\\\\( 4 \\times m \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
+        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Write the expression without multiplication signs.\n\n\\\\( 4 \\times m \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
         "workingOut": "\\\\( \\text{Given: } \\\\( 4 \\times m \\\\) \\\\)"
       },
       {
@@ -43,7 +43,7 @@ export const Y7_CH3B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the expression without multiplication signs.\\n\\n\\\\( 7 \\times y \\\\)",
+    "question": "Write the expression without multiplication signs.\n\n\\\\( 7 \\times y \\\\)",
     "opts": [
       "\\\\( 7+y \\\\)",
       "\\\\( 7/y \\\\)",
@@ -61,7 +61,7 @@ export const Y7_CH3B_QUESTIONS = [
     "solution": null,
     "solutionSteps": [
       {
-        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Write the expression without multiplication signs.\\n\\n\\\\( 7 \\times y \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
+        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Write the expression without multiplication signs.\n\n\\\\( 7 \\times y \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
         "workingOut": "\\\\( \\text{Given: } \\\\( 7 \\times y \\\\) \\\\)"
       },
       {
@@ -82,7 +82,7 @@ export const Y7_CH3B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the expression without multiplication signs.\\n\\n\\\\( p \\times q \\\\)",
+    "question": "Write the expression without multiplication signs.\n\n\\\\( p \\times q \\\\)",
     "opts": [
       "\\\\( pq \\\\)",
       "\\\\( p+q \\\\)",
@@ -100,7 +100,7 @@ export const Y7_CH3B_QUESTIONS = [
     "solution": null,
     "solutionSteps": [
       {
-        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Write the expression without multiplication signs.\\n\\n\\\\( p \\times q \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
+        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Write the expression without multiplication signs.\n\n\\\\( p \\times q \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
         "workingOut": "\\\\( \\text{Given: } \\\\( p \\times q \\\\) \\\\)"
       },
       {
@@ -121,7 +121,7 @@ export const Y7_CH3B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the expression without multiplication signs.\\n\\n\\\\( 3 \\times a \\times b \\\\)",
+    "question": "Write the expression without multiplication signs.\n\n\\\\( 3 \\times a \\times b \\\\)",
     "opts": [
       "\\\\( 3+a+b \\\\)",
       "\\\\( 3ab \\\\)",
@@ -139,7 +139,7 @@ export const Y7_CH3B_QUESTIONS = [
     "solution": null,
     "solutionSteps": [
       {
-        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Write the expression without multiplication signs.\\n\\n\\\\( 3 \\times a \\times b \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
+        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Write the expression without multiplication signs.\n\n\\\\( 3 \\times a \\times b \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
         "workingOut": "\\\\( \\text{Given: } \\\\( 3 \\times a \\times b \\\\) \\\\)"
       },
       {
@@ -160,7 +160,7 @@ export const Y7_CH3B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the expression without multiplication signs.\\n\\n\\\\( 5 \\times y \\times y \\\\)",
+    "question": "Write the expression without multiplication signs.\n\n\\\\( 5 \\times y \\times y \\\\)",
     "opts": [
       "\\\\( 25y^2 \\\\)",
       "\\\\( 5y^2+1 \\\\)",
@@ -178,7 +178,7 @@ export const Y7_CH3B_QUESTIONS = [
     "solution": null,
     "solutionSteps": [
       {
-        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Write the expression without multiplication signs.\\n\\n\\\\( 5 \\times y \\times y \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
+        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Write the expression without multiplication signs.\n\n\\\\( 5 \\times y \\times y \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
         "workingOut": "\\\\( \\text{Given: } \\\\( 5 \\times y \\times y \\\\) \\\\)"
       },
       {
@@ -199,7 +199,7 @@ export const Y7_CH3B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the expression without multiplication signs.\\n\\n\\\\( 6 \\times 4 \\times m \\\\)",
+    "question": "Write the expression without multiplication signs.\n\n\\\\( 6 \\times 4 \\times m \\\\)",
     "opts": [
       "\\\\( 224m \\\\)",
       "\\\\( 24m+1 \\\\)",
@@ -217,7 +217,7 @@ export const Y7_CH3B_QUESTIONS = [
     "solution": null,
     "solutionSteps": [
       {
-        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Write the expression without multiplication signs.\\n\\n\\\\( 6 \\times 4 \\times m \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
+        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Write the expression without multiplication signs.\n\n\\\\( 6 \\times 4 \\times m \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
         "workingOut": "\\\\( \\text{Given: } \\\\( 6 \\times 4 \\times m \\\\) \\\\)"
       },
       {
@@ -238,7 +238,7 @@ export const Y7_CH3B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the expression without multiplication signs.\\n\\n\\\\( 4 \\times x \\times 5 \\times y \\\\)",
+    "question": "Write the expression without multiplication signs.\n\n\\\\( 4 \\times x \\times 5 \\times y \\\\)",
     "opts": [
       "\\\\( 20xy \\\\)",
       "\\\\( 20xy+1 \\\\)",
@@ -256,7 +256,7 @@ export const Y7_CH3B_QUESTIONS = [
     "solution": null,
     "solutionSteps": [
       {
-        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Write the expression without multiplication signs.\\n\\n\\\\( 4 \\times x \\times 5 \\times y \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
+        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Write the expression without multiplication signs.\n\n\\\\( 4 \\times x \\times 5 \\times y \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
         "workingOut": "\\\\( \\text{Given: } \\\\( 4 \\times x \\times 5 \\times y \\\\) \\\\)"
       },
       {
@@ -277,7 +277,7 @@ export const Y7_CH3B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the expression without multiplication signs.\\n\\n\\\\( 8 \\times m \\times m \\times n \\times n \\\\)",
+    "question": "Write the expression without multiplication signs.\n\n\\\\( 8 \\times m \\times m \\times n \\times n \\\\)",
     "opts": [
       "\\\\( 28m^2n^2 \\\\)",
       "\\\\( 8m^2n^2 \\\\)",
@@ -295,7 +295,7 @@ export const Y7_CH3B_QUESTIONS = [
     "solution": null,
     "solutionSteps": [
       {
-        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Write the expression without multiplication signs.\\n\\n\\\\( 8 \\times m \\times m \\times n \\times n \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
+        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Write the expression without multiplication signs.\n\n\\\\( 8 \\times m \\times m \\times n \\times n \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
         "workingOut": "\\\\( \\text{Given: } \\\\( 8 \\times m \\times m \\times n \\times n \\\\) \\\\)"
       },
       {
@@ -316,7 +316,7 @@ export const Y7_CH3B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the expression without multiplication signs.\\n\\n\\\\( 4 \\times y \\times 2 \\times 5 \\\\)",
+    "question": "Write the expression without multiplication signs.\n\n\\\\( 4 \\times y \\times 2 \\times 5 \\\\)",
     "opts": [
       "\\\\( 240y \\\\)",
       "\\\\( 40y+1 \\\\)",
@@ -334,7 +334,7 @@ export const Y7_CH3B_QUESTIONS = [
     "solution": null,
     "solutionSteps": [
       {
-        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Write the expression without multiplication signs.\\n\\n\\\\( 4 \\times y \\times 2 \\times 5 \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
+        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Write the expression without multiplication signs.\n\n\\\\( 4 \\times y \\times 2 \\times 5 \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
         "workingOut": "\\\\( \\text{Given: } \\\\( 4 \\times y \\times 2 \\times 5 \\\\) \\\\)"
       },
       {
@@ -355,7 +355,7 @@ export const Y7_CH3B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the expression without multiplication signs.\\n\\n\\\\( 6 \\times p \\times 4 \\times p \\\\)",
+    "question": "Write the expression without multiplication signs.\n\n\\\\( 6 \\times p \\times 4 \\times p \\\\)",
     "opts": [
       "\\\\( 224p^2 \\\\)",
       "\\\\( 24p^2+1 \\\\)",
@@ -373,7 +373,7 @@ export const Y7_CH3B_QUESTIONS = [
     "solution": null,
     "solutionSteps": [
       {
-        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Write the expression without multiplication signs.\\n\\n\\\\( 6 \\times p \\times 4 \\times p \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
+        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Write the expression without multiplication signs.\n\n\\\\( 6 \\times p \\times 4 \\times p \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
         "workingOut": "\\\\( \\text{Given: } \\\\( 6 \\times p \\times 4 \\times p \\\\) \\\\)"
       },
       {
@@ -394,7 +394,7 @@ export const Y7_CH3B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the expression without multiplication signs.\\n\\n\\\\( 3 \\times a \\times a \\times b \\times b \\times b \\\\)",
+    "question": "Write the expression without multiplication signs.\n\n\\\\( 3 \\times a \\times a \\times b \\times b \\times b \\\\)",
     "opts": [
       "\\\\( 3a^2b^3 \\\\)",
       "\\\\( 23a^2b^3 \\\\)",
@@ -412,7 +412,7 @@ export const Y7_CH3B_QUESTIONS = [
     "solution": null,
     "solutionSteps": [
       {
-        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Write the expression without multiplication signs.\\n\\n\\\\( 3 \\times a \\times a \\times b \\times b \\times b \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
+        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Write the expression without multiplication signs.\n\n\\\\( 3 \\times a \\times a \\times b \\times b \\times b \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
         "workingOut": "\\\\( \\text{Given: } \\\\( 3 \\times a \\times a \\times b \\times b \\times b \\\\) \\\\)"
       },
       {
@@ -433,7 +433,7 @@ export const Y7_CH3B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the expression without multiplication signs.\\n\\n\\\\( 5 \\times m + 7 \\times n \\\\)",
+    "question": "Write the expression without multiplication signs.\n\n\\\\( 5 \\times m + 7 \\times n \\\\)",
     "opts": [
       "\\\\( 25m + 7n \\\\)",
       "\\\\( 5m + 7n \\\\)",
@@ -451,7 +451,7 @@ export const Y7_CH3B_QUESTIONS = [
     "solution": null,
     "solutionSteps": [
       {
-        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Write the expression without multiplication signs.\\n\\n\\\\( 5 \\times m + 7 \\times n \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
+        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Write the expression without multiplication signs.\n\n\\\\( 5 \\times m + 7 \\times n \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
         "workingOut": "\\\\( \\text{Given: } \\\\( 5 \\times m + 7 \\times n \\\\) \\\\)"
       },
       {
@@ -472,7 +472,7 @@ export const Y7_CH3B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the expression in simplest form.\\n\\n\\\\( a \\times b \\\\)",
+    "question": "Write the expression in simplest form.\n\n\\\\( a \\times b \\\\)",
     "opts": [
       "\\\\( a+b \\\\)",
       "\\\\( a/b \\\\)",
@@ -490,7 +490,7 @@ export const Y7_CH3B_QUESTIONS = [
     "solution": null,
     "solutionSteps": [
       {
-        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Write the expression in simplest form.\\n\\n\\\\( a \\times b \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
+        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Write the expression in simplest form.\n\n\\\\( a \\times b \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
         "workingOut": "\\\\( \\text{Given: } \\\\( a \\times b \\\\) \\\\)"
       },
       {
@@ -511,7 +511,7 @@ export const Y7_CH3B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the expression in simplest form.\\n\\n\\\\( m \\times n \\\\)",
+    "question": "Write the expression in simplest form.\n\n\\\\( m \\times n \\\\)",
     "opts": [
       "\\\\( mn \\\\)",
       "\\\\( 2mn \\\\)",
@@ -529,7 +529,7 @@ export const Y7_CH3B_QUESTIONS = [
     "solution": null,
     "solutionSteps": [
       {
-        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Write the expression in simplest form.\\n\\n\\\\( m \\times n \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
+        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Write the expression in simplest form.\n\n\\\\( m \\times n \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
         "workingOut": "\\\\( \\text{Given: } \\\\( m \\times n \\\\) \\\\)"
       },
       {
@@ -550,7 +550,7 @@ export const Y7_CH3B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the expression in simplest form.\\n\\n\\\\( 4 \\times x \\times x \\\\)",
+    "question": "Write the expression in simplest form.\n\n\\\\( 4 \\times x \\times x \\\\)",
     "opts": [
       "\\\\( 24x^2 \\\\)",
       "\\\\( 4x^2 \\\\)",
@@ -568,7 +568,7 @@ export const Y7_CH3B_QUESTIONS = [
     "solution": null,
     "solutionSteps": [
       {
-        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Write the expression in simplest form.\\n\\n\\\\( 4 \\times x \\times x \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
+        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Write the expression in simplest form.\n\n\\\\( 4 \\times x \\times x \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
         "workingOut": "\\\\( \\text{Given: } \\\\( 4 \\times x \\times x \\\\) \\\\)"
       },
       {
@@ -589,7 +589,7 @@ export const Y7_CH3B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the expression in simplest form.\\n\\n\\\\( 5 \\times 6 \\times y \\\\)",
+    "question": "Write the expression in simplest form.\n\n\\\\( 5 \\times 6 \\times y \\\\)",
     "opts": [
       "\\\\( 230y \\\\)",
       "\\\\( 30y+1 \\\\)",
@@ -607,7 +607,7 @@ export const Y7_CH3B_QUESTIONS = [
     "solution": null,
     "solutionSteps": [
       {
-        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Write the expression in simplest form.\\n\\n\\\\( 5 \\times 6 \\times y \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
+        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Write the expression in simplest form.\n\n\\\\( 5 \\times 6 \\times y \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
         "workingOut": "\\\\( \\text{Given: } \\\\( 5 \\times 6 \\times y \\\\) \\\\)"
       },
       {
@@ -628,7 +628,7 @@ export const Y7_CH3B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the expression in simplest form.\\n\\n\\\\( 7 \\times m \\times 2 \\\\)",
+    "question": "Write the expression in simplest form.\n\n\\\\( 7 \\times m \\times 2 \\\\)",
     "opts": [
       "\\\\( 14m+1 \\\\)",
       "\\\\( 14m-1 \\\\)",
@@ -646,7 +646,7 @@ export const Y7_CH3B_QUESTIONS = [
     "solution": null,
     "solutionSteps": [
       {
-        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Write the expression in simplest form.\\n\\n\\\\( 7 \\times m \\times 2 \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
+        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Write the expression in simplest form.\n\n\\\\( 7 \\times m \\times 2 \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
         "workingOut": "\\\\( \\text{Given: } \\\\( 7 \\times m \\times 2 \\\\) \\\\)"
       },
       {
@@ -667,7 +667,7 @@ export const Y7_CH3B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the expression in simplest form.\\n\\n\\\\( 8 \\times a \\times a \\times b \\times b \\\\)",
+    "question": "Write the expression in simplest form.\n\n\\\\( 8 \\times a \\times a \\times b \\times b \\\\)",
     "opts": [
       "\\\\( 8a^2b^2 \\\\)",
       "\\\\( 28a^2b^2 \\\\)",
@@ -685,7 +685,7 @@ export const Y7_CH3B_QUESTIONS = [
     "solution": null,
     "solutionSteps": [
       {
-        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Write the expression in simplest form.\\n\\n\\\\( 8 \\times a \\times a \\times b \\times b \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
+        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Write the expression in simplest form.\n\n\\\\( 8 \\times a \\times a \\times b \\times b \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
         "workingOut": "\\\\( \\text{Given: } \\\\( 8 \\times a \\times a \\times b \\times b \\\\) \\\\)"
       },
       {
@@ -706,7 +706,7 @@ export const Y7_CH3B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Rewrite the expression using the algebraic way of representing division.\\n\\n\\\\( y \\div 5 \\\\)",
+    "question": "Rewrite the expression using the algebraic way of representing division.\n\n\\\\( y \\div 5 \\\\)",
     "opts": [
       "\\\\( \\frac{y}{5} \\\\)",
       "\\\\( 2\\frac{y}{5} \\\\)",
@@ -724,7 +724,7 @@ export const Y7_CH3B_QUESTIONS = [
     "solution": null,
     "solutionSteps": [
       {
-        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Rewrite the expression using the algebraic way of representing division.\\n\\n\\\\( y \\div 5 \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
+        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Rewrite the expression using the algebraic way of representing division.\n\n\\\\( y \\div 5 \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
         "workingOut": "\\\\( \\text{Given: } \\\\( y \\div 5 \\\\) \\\\)"
       },
       {
@@ -745,7 +745,7 @@ export const Y7_CH3B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Rewrite the expression using the algebraic way of representing division.\\n\\n\\\\( m \\div 8 \\\\)",
+    "question": "Rewrite the expression using the algebraic way of representing division.\n\n\\\\( m \\div 8 \\\\)",
     "opts": [
       "\\\\( 2\\frac{m}{8} \\\\)",
       "\\\\( \\frac{m}{8} \\\\)",
@@ -763,7 +763,7 @@ export const Y7_CH3B_QUESTIONS = [
     "solution": null,
     "solutionSteps": [
       {
-        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Rewrite the expression using the algebraic way of representing division.\\n\\n\\\\( m \\div 8 \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
+        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Rewrite the expression using the algebraic way of representing division.\n\n\\\\( m \\div 8 \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
         "workingOut": "\\\\( \\text{Given: } \\\\( m \\div 8 \\\\) \\\\)"
       },
       {
@@ -784,7 +784,7 @@ export const Y7_CH3B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Rewrite the expression using the algebraic way of representing division.\\n\\n\\\\( p \\div 3 \\\\)",
+    "question": "Rewrite the expression using the algebraic way of representing division.\n\n\\\\( p \\div 3 \\\\)",
     "opts": [
       "\\\\( 2\\frac{p}{3} \\\\)",
       "\\\\( \\frac{p}{3}+1 \\\\)",
@@ -802,7 +802,7 @@ export const Y7_CH3B_QUESTIONS = [
     "solution": null,
     "solutionSteps": [
       {
-        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Rewrite the expression using the algebraic way of representing division.\\n\\n\\\\( p \\div 3 \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
+        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Rewrite the expression using the algebraic way of representing division.\n\n\\\\( p \\div 3 \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
         "workingOut": "\\\\( \\text{Given: } \\\\( p \\div 3 \\\\) \\\\)"
       },
       {
@@ -823,7 +823,7 @@ export const Y7_CH3B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Rewrite the expression using the algebraic way of representing division.\\n\\n\\\\( k \\div 6 \\\\)",
+    "question": "Rewrite the expression using the algebraic way of representing division.\n\n\\\\( k \\div 6 \\\\)",
     "opts": [
       "\\\\( 2\\frac{k}{6} \\\\)",
       "\\\\( \\frac{k}{6}+1 \\\\)",
@@ -841,7 +841,7 @@ export const Y7_CH3B_QUESTIONS = [
     "solution": null,
     "solutionSteps": [
       {
-        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Rewrite the expression using the algebraic way of representing division.\\n\\n\\\\( k \\div 6 \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
+        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Rewrite the expression using the algebraic way of representing division.\n\n\\\\( k \\div 6 \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
         "workingOut": "\\\\( \\text{Given: } \\\\( k \\div 6 \\\\) \\\\)"
       },
       {
@@ -862,7 +862,7 @@ export const Y7_CH3B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Rewrite the expression using the algebraic way of representing division.\\n\\n\\\\( a \\div b \\\\)",
+    "question": "Rewrite the expression using the algebraic way of representing division.\n\n\\\\( a \\div b \\\\)",
     "opts": [
       "\\\\( \\frac{a}{b} \\\\)",
       "\\\\( 2\\frac{a}{b} \\\\)",
@@ -880,7 +880,7 @@ export const Y7_CH3B_QUESTIONS = [
     "solution": null,
     "solutionSteps": [
       {
-        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Rewrite the expression using the algebraic way of representing division.\\n\\n\\\\( a \\div b \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
+        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Rewrite the expression using the algebraic way of representing division.\n\n\\\\( a \\div b \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
         "workingOut": "\\\\( \\text{Given: } \\\\( a \\div b \\\\) \\\\)"
       },
       {
@@ -901,7 +901,7 @@ export const Y7_CH3B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Rewrite the expression using the algebraic way of representing division.\\n\\n\\\\( x \\div y \\\\)",
+    "question": "Rewrite the expression using the algebraic way of representing division.\n\n\\\\( x \\div y \\\\)",
     "opts": [
       "\\\\( 2\\frac{x}{y} \\\\)",
       "\\\\( \\frac{x}{y} \\\\)",
@@ -919,7 +919,7 @@ export const Y7_CH3B_QUESTIONS = [
     "solution": null,
     "solutionSteps": [
       {
-        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Rewrite the expression using the algebraic way of representing division.\\n\\n\\\\( x \\div y \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
+        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Rewrite the expression using the algebraic way of representing division.\n\n\\\\( x \\div y \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
         "workingOut": "\\\\( \\text{Given: } \\\\( x \\div y \\\\) \\\\)"
       },
       {
@@ -940,7 +940,7 @@ export const Y7_CH3B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Rewrite the expression using the algebraic way of representing division.\\n\\n\\\\( m \\div n \\\\)",
+    "question": "Rewrite the expression using the algebraic way of representing division.\n\n\\\\( m \\div n \\\\)",
     "opts": [
       "\\\\( 2\\frac{m}{n} \\\\)",
       "\\\\( \\frac{m}{n}+1 \\\\)",
@@ -958,7 +958,7 @@ export const Y7_CH3B_QUESTIONS = [
     "solution": null,
     "solutionSteps": [
       {
-        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Rewrite the expression using the algebraic way of representing division.\\n\\n\\\\( m \\div n \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
+        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Rewrite the expression using the algebraic way of representing division.\n\n\\\\( m \\div n \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
         "workingOut": "\\\\( \\text{Given: } \\\\( m \\div n \\\\) \\\\)"
       },
       {
@@ -979,7 +979,7 @@ export const Y7_CH3B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Rewrite the expression using the algebraic way of representing division.\\n\\n\\\\( c \\div d \\\\)",
+    "question": "Rewrite the expression using the algebraic way of representing division.\n\n\\\\( c \\div d \\\\)",
     "opts": [
       "\\\\( 2\\frac{c}{d} \\\\)",
       "\\\\( \\frac{c}{d}+1 \\\\)",
@@ -997,7 +997,7 @@ export const Y7_CH3B_QUESTIONS = [
     "solution": null,
     "solutionSteps": [
       {
-        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Rewrite the expression using the algebraic way of representing division.\\n\\n\\\\( c \\div d \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
+        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Rewrite the expression using the algebraic way of representing division.\n\n\\\\( c \\div d \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
         "workingOut": "\\\\( \\text{Given: } \\\\( c \\div d \\\\) \\\\)"
       },
       {
@@ -1018,7 +1018,7 @@ export const Y7_CH3B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Rewrite the expression using the multiplication sign, \\\\( \\times \\\\).\\n\\n\\\\( 4m \\\\)",
+    "question": "Rewrite the expression using the multiplication sign, \\\\( \\times \\\\).\n\n\\\\( 4m \\\\)",
     "opts": [
       "\\\\( 24 \\times m \\\\)",
       "\\\\( 4 \\times m \\\\)",
@@ -1036,7 +1036,7 @@ export const Y7_CH3B_QUESTIONS = [
     "solution": null,
     "solutionSteps": [
       {
-        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Rewrite the expression using the multiplication sign, \\\\( \\times \\\\).\\n\\n\\\\( 4m \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
+        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Rewrite the expression using the multiplication sign, \\\\( \\times \\\\).\n\n\\\\( 4m \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
         "workingOut": "\\\\( \\text{Given: } \\\\( \\times \\\\) \\\\)"
       },
       {
@@ -1057,7 +1057,7 @@ export const Y7_CH3B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Rewrite the expression using the multiplication sign, \\\\( \\times \\\\).\\n\\n\\\\( y^2 \\\\)",
+    "question": "Rewrite the expression using the multiplication sign, \\\\( \\times \\\\).\n\n\\\\( y^2 \\\\)",
     "opts": [
       "\\\\( 2y \\times y \\\\)",
       "\\\\( y \\times y+1 \\\\)",
@@ -1075,7 +1075,7 @@ export const Y7_CH3B_QUESTIONS = [
     "solution": null,
     "solutionSteps": [
       {
-        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Rewrite the expression using the multiplication sign, \\\\( \\times \\\\).\\n\\n\\\\( y^2 \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
+        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Rewrite the expression using the multiplication sign, \\\\( \\times \\\\).\n\n\\\\( y^2 \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
         "workingOut": "\\\\( \\text{Given: } \\\\( \\times \\\\) \\\\)"
       },
       {
@@ -1096,7 +1096,7 @@ export const Y7_CH3B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Rewrite the expression using the multiplication sign, \\\\( \\times \\\\).\\n\\n\\\\( pqr \\\\)",
+    "question": "Rewrite the expression using the multiplication sign, \\\\( \\times \\\\).\n\n\\\\( pqr \\\\)",
     "opts": [
       "\\\\( 2p \\times q \\times r \\\\)",
       "\\\\( p \\times q \\times r+1 \\\\)",
@@ -1114,7 +1114,7 @@ export const Y7_CH3B_QUESTIONS = [
     "solution": null,
     "solutionSteps": [
       {
-        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Rewrite the expression using the multiplication sign, \\\\( \\times \\\\).\\n\\n\\\\( pqr \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
+        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Rewrite the expression using the multiplication sign, \\\\( \\times \\\\).\n\n\\\\( pqr \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
         "workingOut": "\\\\( \\text{Given: } \\\\( \\times \\\\) \\\\)"
       },
       {
@@ -1135,7 +1135,7 @@ export const Y7_CH3B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Rewrite the expression using the multiplication sign, \\\\( \\times \\\\).\\n\\n\\\\( 5x^2 \\\\)",
+    "question": "Rewrite the expression using the multiplication sign, \\\\( \\times \\\\).\n\n\\\\( 5x^2 \\\\)",
     "opts": [
       "\\\\( 5 \\times x \\times x \\\\)",
       "\\\\( 25 \\times x \\times x \\\\)",
@@ -1153,7 +1153,7 @@ export const Y7_CH3B_QUESTIONS = [
     "solution": null,
     "solutionSteps": [
       {
-        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Rewrite the expression using the multiplication sign, \\\\( \\times \\\\).\\n\\n\\\\( 5x^2 \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
+        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Rewrite the expression using the multiplication sign, \\\\( \\times \\\\).\n\n\\\\( 5x^2 \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
         "workingOut": "\\\\( \\text{Given: } \\\\( \\times \\\\) \\\\)"
       },
       {
@@ -1174,7 +1174,7 @@ export const Y7_CH3B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Rewrite the expression using the multiplication sign, \\\\( \\times \\\\).\\n\\n\\\\( 6a^2b \\\\)",
+    "question": "Rewrite the expression using the multiplication sign, \\\\( \\times \\\\).\n\n\\\\( 6a^2b \\\\)",
     "opts": [
       "\\\\( 26 \\times a \\times a \\times b \\\\)",
       "\\\\( 6 \\times a \\times a \\times b \\\\)",
@@ -1192,7 +1192,7 @@ export const Y7_CH3B_QUESTIONS = [
     "solution": null,
     "solutionSteps": [
       {
-        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Rewrite the expression using the multiplication sign, \\\\( \\times \\\\).\\n\\n\\\\( 6a^2b \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
+        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Rewrite the expression using the multiplication sign, \\\\( \\times \\\\).\n\n\\\\( 6a^2b \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
         "workingOut": "\\\\( \\text{Given: } \\\\( \\times \\\\) \\\\)"
       },
       {
@@ -1213,7 +1213,7 @@ export const Y7_CH3B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Rewrite the expression using the division sign, \\\\( \\div \\\\).\\n\\n\\\\( \\frac{y}{4} \\\\)",
+    "question": "Rewrite the expression using the division sign, \\\\( \\div \\\\).\n\n\\\\( \\frac{y}{4} \\\\)",
     "opts": [
       "\\\\( 2y \\div 4 \\\\)",
       "\\\\( y \\div 4+1 \\\\)",
@@ -1231,7 +1231,7 @@ export const Y7_CH3B_QUESTIONS = [
     "solution": null,
     "solutionSteps": [
       {
-        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Rewrite the expression using the division sign, \\\\( \\div \\\\).\\n\\n\\\\( \\frac{y}{4} \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
+        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Rewrite the expression using the division sign, \\\\( \\div \\\\).\n\n\\\\( \\frac{y}{4} \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
         "workingOut": "\\\\( \\text{Given: } \\\\( \\div \\\\) \\\\)"
       },
       {
@@ -1252,7 +1252,7 @@ export const Y7_CH3B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Rewrite the expression using the division sign, \\\\( \\div \\\\).\\n\\n\\\\( \\frac{k}{5} \\\\)",
+    "question": "Rewrite the expression using the division sign, \\\\( \\div \\\\).\n\n\\\\( \\frac{k}{5} \\\\)",
     "opts": [
       "\\\\( 2k \\div 5 \\\\)",
       "\\\\( k \\div 5+1 \\\\)",
@@ -1270,7 +1270,7 @@ export const Y7_CH3B_QUESTIONS = [
     "solution": null,
     "solutionSteps": [
       {
-        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Rewrite the expression using the division sign, \\\\( \\div \\\\).\\n\\n\\\\( \\frac{k}{5} \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
+        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Rewrite the expression using the division sign, \\\\( \\div \\\\).\n\n\\\\( \\frac{k}{5} \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
         "workingOut": "\\\\( \\text{Given: } \\\\( \\div \\\\) \\\\)"
       },
       {
@@ -1291,7 +1291,7 @@ export const Y7_CH3B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Rewrite the expression using the division sign, \\\\( \\div \\\\).\\n\\n\\\\( \\frac{a}{b} \\\\)",
+    "question": "Rewrite the expression using the division sign, \\\\( \\div \\\\).\n\n\\\\( \\frac{a}{b} \\\\)",
     "opts": [
       "\\\\( a \\div b \\\\)",
       "\\\\( 2a \\div b \\\\)",
@@ -1309,7 +1309,7 @@ export const Y7_CH3B_QUESTIONS = [
     "solution": null,
     "solutionSteps": [
       {
-        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Rewrite the expression using the division sign, \\\\( \\div \\\\).\\n\\n\\\\( \\frac{a}{b} \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
+        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Rewrite the expression using the division sign, \\\\( \\div \\\\).\n\n\\\\( \\frac{a}{b} \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
         "workingOut": "\\\\( \\text{Given: } \\\\( \\div \\\\) \\\\)"
       },
       {
@@ -1330,7 +1330,7 @@ export const Y7_CH3B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Rewrite the expression using the division sign, \\\\( \\div \\\\).\\n\\n\\\\( \\frac{xy}{z} \\\\)",
+    "question": "Rewrite the expression using the division sign, \\\\( \\div \\\\).\n\n\\\\( \\frac{xy}{z} \\\\)",
     "opts": [
       "\\\\( 2xy \\div z \\\\)",
       "\\\\( xy \\div z \\\\)",
@@ -1348,7 +1348,7 @@ export const Y7_CH3B_QUESTIONS = [
     "solution": null,
     "solutionSteps": [
       {
-        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Rewrite the expression using the division sign, \\\\( \\div \\\\).\\n\\n\\\\( \\frac{xy}{z} \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
+        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Rewrite the expression using the division sign, \\\\( \\div \\\\).\n\n\\\\( \\frac{xy}{z} \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
         "workingOut": "\\\\( \\text{Given: } \\\\( \\div \\\\) \\\\)"
       },
       {
@@ -1369,7 +1369,7 @@ export const Y7_CH3B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Write an algebraic expression for the following.\\n\\nThe product of \\\\( 5 \\\\) and \\\\( y \\\\)",
+    "question": "Write an algebraic expression for the following.\n\nThe product of \\\\( 5 \\\\) and \\\\( y \\\\)",
     "opts": [
       "\\\\( 25y \\\\)",
       "\\\\( 5y+1 \\\\)",
@@ -1387,7 +1387,7 @@ export const Y7_CH3B_QUESTIONS = [
     "solution": null,
     "solutionSteps": [
       {
-        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Write an algebraic expression for the following.\\n\\nThe product of \\\\( 5 \\\\) and \\\\( y \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
+        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Write an algebraic expression for the following.\n\nThe product of \\\\( 5 \\\\) and \\\\( y \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
         "workingOut": "\\\\( \\text{Given: } \\\\( 5 \\\\) \\\\)"
       },
       {
@@ -1408,7 +1408,7 @@ export const Y7_CH3B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Write an algebraic expression for the following.\\n\\nThe product of \\\\( m \\\\) with itself",
+    "question": "Write an algebraic expression for the following.\n\nThe product of \\\\( m \\\\) with itself",
     "opts": [
       "\\\\( m^2 \\\\)",
       "\\\\( 2m^2 \\\\)",
@@ -1426,7 +1426,7 @@ export const Y7_CH3B_QUESTIONS = [
     "solution": null,
     "solutionSteps": [
       {
-        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Write an algebraic expression for the following.\\n\\nThe product of \\\\( m \\\\) with itself in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
+        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Write an algebraic expression for the following.\n\nThe product of \\\\( m \\\\) with itself in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
         "workingOut": "\\\\( \\text{Given: } \\\\( m \\\\) \\\\)"
       },
       {
@@ -1447,7 +1447,7 @@ export const Y7_CH3B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Write an algebraic expression for the following.\\n\\nThe product of \\\\( 4x \\\\) and \\\\( y \\\\)",
+    "question": "Write an algebraic expression for the following.\n\nThe product of \\\\( 4x \\\\) and \\\\( y \\\\)",
     "opts": [
       "\\\\( 24xy \\\\)",
       "\\\\( 4xy \\\\)",
@@ -1465,7 +1465,7 @@ export const Y7_CH3B_QUESTIONS = [
     "solution": null,
     "solutionSteps": [
       {
-        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Write an algebraic expression for the following.\\n\\nThe product of \\\\( 4x \\\\) and \\\\( y \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
+        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Write an algebraic expression for the following.\n\nThe product of \\\\( 4x \\\\) and \\\\( y \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
         "workingOut": "\\\\( \\text{Given: } \\\\( 4x \\\\) \\\\)"
       },
       {
@@ -1486,7 +1486,7 @@ export const Y7_CH3B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Write an algebraic expression for the following.\\n\\nThe product of \\\\( 5m \\\\) and \\\\( 2m \\\\)",
+    "question": "Write an algebraic expression for the following.\n\nThe product of \\\\( 5m \\\\) and \\\\( 2m \\\\)",
     "opts": [
       "\\\\( 10m^2+1 \\\\)",
       "\\\\( 10m^2-1 \\\\)",
@@ -1504,7 +1504,7 @@ export const Y7_CH3B_QUESTIONS = [
     "solution": null,
     "solutionSteps": [
       {
-        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Write an algebraic expression for the following.\\n\\nThe product of \\\\( 5m \\\\) and \\\\( 2m \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
+        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Write an algebraic expression for the following.\n\nThe product of \\\\( 5m \\\\) and \\\\( 2m \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
         "workingOut": "\\\\( \\text{Given: } \\\\( 5m \\\\) \\\\)"
       },
       {
@@ -1525,7 +1525,7 @@ export const Y7_CH3B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Write an algebraic expression for the following.\\n\\nThe quotient of \\\\( y \\\\) divided by \\\\( 4 \\\\)",
+    "question": "Write an algebraic expression for the following.\n\nThe quotient of \\\\( y \\\\) divided by \\\\( 4 \\\\)",
     "opts": [
       "\\\\( 2\\frac{y}{4} \\\\)",
       "\\\\( \\frac{y}{4}+1 \\\\)",
@@ -1543,7 +1543,7 @@ export const Y7_CH3B_QUESTIONS = [
     "solution": null,
     "solutionSteps": [
       {
-        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Write an algebraic expression for the following.\\n\\nThe quotient of \\\\( y \\\\) divided by \\\\( 4 \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
+        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Write an algebraic expression for the following.\n\nThe quotient of \\\\( y \\\\) divided by \\\\( 4 \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
         "workingOut": "\\\\( \\text{Given: } \\\\( y \\\\) \\\\)"
       },
       {
@@ -1564,7 +1564,7 @@ export const Y7_CH3B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Write an algebraic expression for the following.\\n\\nThe quotient of \\\\( m \\\\) divided by \\\\( n \\\\)",
+    "question": "Write an algebraic expression for the following.\n\nThe quotient of \\\\( m \\\\) divided by \\\\( n \\\\)",
     "opts": [
       "\\\\( \\frac{m}{n} \\\\)",
       "\\\\( 2\\frac{m}{n} \\\\)",
@@ -1582,7 +1582,7 @@ export const Y7_CH3B_QUESTIONS = [
     "solution": null,
     "solutionSteps": [
       {
-        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Write an algebraic expression for the following.\\n\\nThe quotient of \\\\( m \\\\) divided by \\\\( n \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
+        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Write an algebraic expression for the following.\n\nThe quotient of \\\\( m \\\\) divided by \\\\( n \\\\) in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
         "workingOut": "\\\\( \\text{Given: } \\\\( m \\\\) \\\\)"
       },
       {
@@ -1603,7 +1603,7 @@ export const Y7_CH3B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Write an algebraic expression for the following.\\n\\n\\\\( y \\\\) is multiplied by \\\\( 4 \\\\), and \\\\( 3 \\\\) is added to the result",
+    "question": "Write an algebraic expression for the following.\n\n\\\\( y \\\\) is multiplied by \\\\( 4 \\\\), and \\\\( 3 \\\\) is added to the result",
     "opts": [
       "\\\\( 24y + 3 \\\\)",
       "\\\\( 4y + 3 \\\\)",
@@ -1621,7 +1621,7 @@ export const Y7_CH3B_QUESTIONS = [
     "solution": null,
     "solutionSteps": [
       {
-        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Write an algebraic expression for the following.\\n\\n\\\\( y \\\\) is multiplied by \\\\( 4 \\\\), and \\\\( 3 \\\\) is added to the result in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
+        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Write an algebraic expression for the following.\n\n\\\\( y \\\\) is multiplied by \\\\( 4 \\\\), and \\\\( 3 \\\\) is added to the result in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
         "workingOut": "\\\\( \\text{Given: } \\\\( y \\\\) \\\\)"
       },
       {
@@ -1642,7 +1642,7 @@ export const Y7_CH3B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Write an algebraic expression for the following.\\n\\n\\\\( k \\\\) is multiplied by \\\\( 5 \\\\), and \\\\( 4 \\\\) is subtracted from the result",
+    "question": "Write an algebraic expression for the following.\n\n\\\\( k \\\\) is multiplied by \\\\( 5 \\\\), and \\\\( 4 \\\\) is subtracted from the result",
     "opts": [
       "\\\\( 5(k - 4) \\\\)",
       "\\\\( 5k + 4 \\\\)",
@@ -1660,7 +1660,7 @@ export const Y7_CH3B_QUESTIONS = [
     "solution": null,
     "solutionSteps": [
       {
-        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Write an algebraic expression for the following.\\n\\n\\\\( k \\\\) is multiplied by \\\\( 5 \\\\), and \\\\( 4 \\\\) is subtracted from the result in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
+        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Write an algebraic expression for the following.\n\n\\\\( k \\\\) is multiplied by \\\\( 5 \\\\), and \\\\( 4 \\\\) is subtracted from the result in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
         "workingOut": "\\\\( \\text{Given: } \\\\( k \\\\) \\\\)"
       },
       {
@@ -1837,7 +1837,7 @@ export const Y7_CH3B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Write the statement in algebraic notation.\\n\\nThe number \\\\( y \\\\) is multiplied by itself.",
+    "question": "Write the statement in algebraic notation.\n\nThe number \\\\( y \\\\) is multiplied by itself.",
     "opts": [
       "\\\\( 2y \\\\)",
       "\\\\( y+y \\\\)",
@@ -1855,7 +1855,7 @@ export const Y7_CH3B_QUESTIONS = [
     "solution": null,
     "solutionSteps": [
       {
-        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Write the statement in algebraic notation.\\n\\nThe number \\\\( y \\\\) is multiplied by itself. in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
+        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Write the statement in algebraic notation.\n\nThe number \\\\( y \\\\) is multiplied by itself. in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
         "workingOut": "\\\\( \\text{Given: } \\\\( y \\\\) \\\\)"
       },
       {
@@ -1876,7 +1876,7 @@ export const Y7_CH3B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Write the statement in algebraic notation.\\n\\nThe number \\\\( m \\\\) is multiplied by itself, and \\\\( 5 \\\\) is added to the result.",
+    "question": "Write the statement in algebraic notation.\n\nThe number \\\\( m \\\\) is multiplied by itself, and \\\\( 5 \\\\) is added to the result.",
     "opts": [
       "\\\\( m^2 + 5 \\\\)",
       "\\\\( 2m + 5 \\\\)",
@@ -1894,7 +1894,7 @@ export const Y7_CH3B_QUESTIONS = [
     "solution": null,
     "solutionSteps": [
       {
-        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Write the statement in algebraic notation.\\n\\nThe number \\\\( m \\\\) is multiplied by itself, and \\\\( 5 \\\\) is added to the result. in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
+        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Write the statement in algebraic notation.\n\nThe number \\\\( m \\\\) is multiplied by itself, and \\\\( 5 \\\\) is added to the result. in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
         "workingOut": "\\\\( \\text{Given: } \\\\( m \\\\) \\\\)"
       },
       {
@@ -1915,7 +1915,7 @@ export const Y7_CH3B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Write the statement in algebraic notation.\\n\\nThe cube of \\\\( k \\\\) is taken.",
+    "question": "Write the statement in algebraic notation.\n\nThe cube of \\\\( k \\\\) is taken.",
     "opts": [
       "\\\\( 3k \\\\)",
       "\\\\( k^3 \\\\)",
@@ -1933,7 +1933,7 @@ export const Y7_CH3B_QUESTIONS = [
     "solution": null,
     "solutionSteps": [
       {
-        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Write the statement in algebraic notation.\\n\\nThe cube of \\\\( k \\\\) is taken. in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
+        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Write the statement in algebraic notation.\n\nThe cube of \\\\( k \\\\) is taken. in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
         "workingOut": "\\\\( \\text{Given: } \\\\( k \\\\) \\\\)"
       },
       {
@@ -1954,7 +1954,7 @@ export const Y7_CH3B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Write the statement in algebraic notation.\\n\\nThe cube of \\\\( p \\\\) is taken and added to \\\\( 7 \\\\).",
+    "question": "Write the statement in algebraic notation.\n\nThe cube of \\\\( p \\\\) is taken and added to \\\\( 7 \\\\).",
     "opts": [
       "\\\\( 3p + 7 \\\\)",
       "\\\\( p + 343 \\\\)",
@@ -1972,7 +1972,7 @@ export const Y7_CH3B_QUESTIONS = [
     "solution": null,
     "solutionSteps": [
       {
-        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Write the statement in algebraic notation.\\n\\nThe cube of \\\\( p \\\\) is taken and added to \\\\( 7 \\\\). in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
+        "explanation": "We begin by identifying the given algebraic description in the question, which asks us to simplify or represent Write the statement in algebraic notation.\n\nThe cube of \\\\( p \\\\) is taken and added to \\\\( 7 \\\\). in standard mathematical form. In algebraic notation, we follow strict conventions such as writing coefficients before variables and omitting multiplication symbols. This step establishes our strategy to eliminate redundancy.",
         "workingOut": "\\\\( \\text{Given: } \\\\( p \\\\) \\\\)"
       },
       {

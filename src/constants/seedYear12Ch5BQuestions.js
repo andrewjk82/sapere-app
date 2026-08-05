@@ -1213,8 +1213,7 @@ export const Y12A_CH5B_QUESTIONS = [
       "All successive derivatives are positive.",
       "All successive derivatives are negative.",
       "Each derivative doubles the previous coefficient."
-    ]
-  ,
+    ],
     "isNew": true
   },
   {
@@ -1307,8 +1306,7 @@ export const Y12A_CH5B_QUESTIONS = [
       "\\(f^{(n)}(x)=n^{3}e^{3x}\\)",
       "\\(f^{(n)}(x)=3^{n}e^{3x}\\)",
       "\\(f^{(n)}(x)=3^{n-1}e^{3x}\\)"
-    ]
-  ,
+    ],
     "isNew": true
   },
   {
@@ -3360,7 +3358,7 @@ export const Y12A_CH5B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Substitute \\(x=0\\). Note that \\(e^{3(0)+1}=e^{1}=e\\):\\n\\(f'(0)=3e\\),\\n\\(f''(0)=9e\\).",
+        "explanation": "Substitute \\(x=0\\). Note that \\(e^{3(0)+1}=e^{1}=e\\):\n\\(f'(0)=3e\\),\n\\(f''(0)=9e\\).",
         "workingOut": "\\(f'(0)=3e,\\quad f''(0)=9e\\)",
         "graphData": null
       },
@@ -3404,7 +3402,7 @@ export const Y12A_CH5B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Substitute \\(x=1\\):\\n\\(f'(1)=-2e^{-2}\\),\\n\\(f''(1)=4e^{-2}\\).",
+        "explanation": "Substitute \\(x=1\\):\n\\(f'(1)=-2e^{-2}\\),\n\\(f''(1)=4e^{-2}\\).",
         "workingOut": "\\(f'(1)=-2e^{-2},\\quad f''(1)=4e^{-2}\\)",
         "graphData": null
       },
@@ -3443,7 +3441,7 @@ export const Y12A_CH5B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "\\(u'=1\\) and \\(v'=-2e^{-2x}\\). So\\n\\(f'(x)=1\\cdot e^{-2x}+x(-2e^{-2x})=e^{-2x}-2x e^{-2x}=e^{-2x}(1-2x)\\).",
+        "explanation": "\\(u'=1\\) and \\(v'=-2e^{-2x}\\). So\n\\(f'(x)=1\\cdot e^{-2x}+x(-2e^{-2x})=e^{-2x}-2x e^{-2x}=e^{-2x}(1-2x)\\).",
         "workingOut": "\\(f'(x)=e^{-2x}(1-2x)\\)",
         "graphData": null
       },
@@ -3453,7 +3451,7 @@ export const Y12A_CH5B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Differentiate again with the product rule on \\(e^{-2x}(1-2x)\\):\\n\\(f''(x)=(-2e^{-2x})(1-2x)+e^{-2x}(-2)=e^{-2x}\\bigl[-2(1-2x)-2\\bigr]=e^{-2x}(4x-4)\\).\\nAt \\(x=1\\): \\(f''(1)=e^{-2}(4-4)=0\\).",
+        "explanation": "Differentiate again with the product rule on \\(e^{-2x}(1-2x)\\):\n\\(f''(x)=(-2e^{-2x})(1-2x)+e^{-2x}(-2)=e^{-2x}\\bigl[-2(1-2x)-2\\bigr]=e^{-2x}(4x-4)\\).\nAt \\(x=1\\): \\(f''(1)=e^{-2}(4-4)=0\\).",
         "workingOut": "\\(f''(1)=0\\)",
         "graphData": null
       },
@@ -3497,7 +3495,7 @@ export const Y12A_CH5B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Second derivative: apply the product rule to \\(-6x\\cdot e^{-3x^{2}}\\).\\n\\(f''(x)=-6\\bigl[e^{-3x^{2}}+x\\cdot(-6x)e^{-3x^{2}}\\bigr]=-6e^{-3x^{2}}(1-6x^{2})\\).",
+        "explanation": "Second derivative: apply the product rule to \\(-6x\\cdot e^{-3x^{2}}\\).\n\\(f''(x)=-6\\bigl[e^{-3x^{2}}+x\\cdot(-6x)e^{-3x^{2}}\\bigr]=-6e^{-3x^{2}}(1-6x^{2})\\).",
         "workingOut": "\\(f''(x)=-6e^{-3x^{2}}(1-6x^{2})\\)",
         "graphData": null
       },
@@ -3790,7 +3788,7 @@ export const Y12A_CH5B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Differentiate term by term using the chain rule.\\n\\(\\dfrac{d}{dx}\\left(\\dfrac{1}{2}e^{kx}\\right)=\\dfrac{1}{2}\\cdot k e^{kx}=\\dfrac{k}{2}e^{kx}\\),\\n\\(\\dfrac{d}{dx}\\left(\\dfrac{1}{2}e^{-kx}\\right)=\\dfrac{1}{2}\\cdot(-k)e^{-kx}=-\\dfrac{k}{2}e^{-kx}\\).",
+        "explanation": "Differentiate term by term using the chain rule.\n\\(\\dfrac{d}{dx}\\left(\\dfrac{1}{2}e^{kx}\\right)=\\dfrac{1}{2}\\cdot k e^{kx}=\\dfrac{k}{2}e^{kx}\\),\n\\(\\dfrac{d}{dx}\\left(\\dfrac{1}{2}e^{-kx}\\right)=\\dfrac{1}{2}\\cdot(-k)e^{-kx}=-\\dfrac{k}{2}e^{-kx}\\).",
         "workingOut": "\\(y'=\\dfrac{k}{2}e^{kx}-\\dfrac{k}{2}e^{-kx}\\)",
         "graphData": null
       },
@@ -5157,7 +5155,7 @@ export const Y12A_CH5B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Since \\(e^{\\lambda x}\\neq 0\\) for all real \\(x\\), the characteristic equation is \\(\\lambda^{2}+2\\lambda-8=0\\).",
+        "explanation": "Since \\(e^{\\lambda x}\neq 0\\) for all real \\(x\\), the characteristic equation is \\(\\lambda^{2}+2\\lambda-8=0\\).",
         "workingOut": "\\(\\lambda^{2}+2\\lambda-8=0\\)",
         "graphData": null
       },

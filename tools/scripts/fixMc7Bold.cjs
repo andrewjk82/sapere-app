@@ -1,0 +1,42 @@
+const fs = require('fs');
+const { initializeApp, cert } = require('firebase-admin/app');
+const { getFirestore, FieldValue } = require('firebase-admin/firestore');
+
+const path = './src/constants/seedCherrybrookTech2020Questions.js';
+let content = fs.readFileSync(path, 'utf8');
+
+const arrayMatch = content.match(/export const CTHS_2020_QUESTIONS = (\[[\s\S]*?\]);\n/);
+if (!arrayMatch) throw new Error("No array found");
+
+let questions = eval(arrayMatch[1]);
+const qIndex = questions.findIndex(x => x.id === 'cths2020-mc7');
+if (qIndex === -1) throw new Error("Question not found");
+
+questions[qIndex].solutionSteps[0].explanation = 
+  "In the standard trigonometric function \\(g(x) = a\\cos(bx + c)\\):\n- \\(\\textbf{Amplitude}\\) is given by \\(|a|\\). It represents the maximum vertical stretch from the center axis.\n- \\(\\textbf{Period}\\) is calculated using \\(\\frac{2\\pi}{|b|}\\). It represents the length of one complete wave cycle.\n- \\(\\textbf{Phase shift}\\) (horizontal shift) is calculated using \\(-\\frac{c}{b}\\).\n\nBy comparing our given function \\(g(x) = 2\\cos\\left(\\frac{x}{2} + \\frac{\\pi}{3}\\right)\\) with the standard form, we can extract \\(a\\), \\(b\\), and \\(c\\). Note that \\(\\frac{x}{2}\\) is exactly the same as \\(\\frac{1}{2}x\\).";
+
+questions[qIndex].solutionSteps[1].explanation = 
+  "Now, substitute the extracted values of \\(a\\), \\(b\\), and \\(c\\) into our formulas to find the specific properties of this graph:\n- \\(\\textbf{Amplitude:}\\) \\(|2| = 2\\)\n- \\(\\textbf{Period:}\\) \\(\\frac{2\\pi}{1/2} = 4\\pi\\)\n- \\(\\textbf{Phase shift:}\\) \\(-\\frac{\\pi/3}{1/2} = -\\frac{2\\pi}{3}\\) (Since it is negative, the graph is shifted to the left by \\(\\frac{2\\pi}{3}\\)).";
+
+const newContent = `export const CTHS_2020_QUESTIONS = ${JSON.stringify(questions, null, 2)};\n`;
+fs.writeFileSync(path, newContent, 'utf8');
+
+async function run() {
+  const serviceAccount = JSON.parse(fs.readFileSync('/Users/andrewkim/Downloads/sapere-fe23e-firebase-adminsdk-fbsvc-d9dd93623b.json', 'utf8'));
+  initializeApp({ credential: cert(serviceAccount) });
+  const db = getFirestore();
+  
+  await db.collection('questions').doc('cths2020-mc7').update({
+    solutionSteps: questions[qIndex].solutionSteps,
+    updatedAt: FieldValue.serverTimestamp()
+  });
+
+  await db.doc('sync_meta/questions').update({
+    version: Date.now(),
+    updatedAt: FieldValue.serverTimestamp()
+  });
+
+  console.log('Successfully updated bold text for cths2020-mc7!');
+  process.exit(0);
+}
+run();

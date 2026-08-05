@@ -567,10 +567,10 @@ export const Y11_CH9A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "**Step 1:** Use the swapped exponential \\(f(x) = 3^{x}\\). Recall the standard derivative rule for a constant base \\(a > 0\\), \\(a \\neq 1\\).\n\\(\\dfrac{d}{dx}\\bigl(a^{x}\\bigr) = a^{x}\\ln a\\)\n\n**Step 2:** Here the base is \\(a = 3\\). Substitute into the rule to obtain the derived function. The natural logarithm of the base appears as a constant factor.\n\\(f'(x) = 3^{x}\\ln 3\\)\n\n**Step 3:** The tangent gradient at a point is the derivative evaluated there. Substitute \\(x = 1\\).\n\\(f'(1) = 3^{1}\\ln 3 = 3\\ln 3\\)\n\n**Step 4:** Leave the answer exact: do not replace \\(\\ln 3\\) by a decimal approximation unless asked. Note that the gradient is not simply 3 (that would omit the log factor).\n\\(f'(1) = 3\\ln 3\\)\n\n**Step 5:** State the derived function and the exact tangent gradient at \\(x = 1\\).\n\\(f'(x) = 3^{x}\\ln 3\\text{ and gradient at }x=1\\text{ is }3\\ln 3\\)",
+    "solution": "**Step 1:** Use the swapped exponential \\(f(x) = 3^{x}\\). Recall the standard derivative rule for a constant base \\(a > 0\\), \\(a \neq 1\\).\n\\(\\dfrac{d}{dx}\\bigl(a^{x}\\bigr) = a^{x}\\ln a\\)\n\n**Step 2:** Here the base is \\(a = 3\\). Substitute into the rule to obtain the derived function. The natural logarithm of the base appears as a constant factor.\n\\(f'(x) = 3^{x}\\ln 3\\)\n\n**Step 3:** The tangent gradient at a point is the derivative evaluated there. Substitute \\(x = 1\\).\n\\(f'(1) = 3^{1}\\ln 3 = 3\\ln 3\\)\n\n**Step 4:** Leave the answer exact: do not replace \\(\\ln 3\\) by a decimal approximation unless asked. Note that the gradient is not simply 3 (that would omit the log factor).\n\\(f'(1) = 3\\ln 3\\)\n\n**Step 5:** State the derived function and the exact tangent gradient at \\(x = 1\\).\n\\(f'(x) = 3^{x}\\ln 3\\text{ and gradient at }x=1\\text{ is }3\\ln 3\\)",
     "solutionSteps": [
       {
-        "explanation": "Use the swapped exponential \\(f(x) = 3^{x}\\). Recall the standard derivative rule for a constant base \\(a > 0\\), \\(a \\neq 1\\).",
+        "explanation": "Use the swapped exponential \\(f(x) = 3^{x}\\). Recall the standard derivative rule for a constant base \\(a > 0\\), \\(a \neq 1\\).",
         "workingOut": "\\(\\dfrac{d}{dx}\\bigl(a^{x}\\bigr) = a^{x}\\ln a\\)",
         "graphData": null
       },

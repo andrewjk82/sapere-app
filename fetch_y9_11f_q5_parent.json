@@ -1,0 +1,121 @@
+{
+  "chapterId": "y9-11",
+  "chapterTitle": "Chapter 11: Coordinate geometry",
+  "topicId": "y9-11f",
+  "topicCode": "11F",
+  "topicTitle": "The equation of a line using the gradient and a point",
+  "year": "Year 9",
+  "isManual": true,
+  "title": "Consider the interval \\(AB\\) w...",
+  "question": "Consider the interval \\(AB\\) with endpoints \\(A(-2, -5)\\) and \\(B(4, 7)\\). Answer the following sub-questions.",
+  "difficulty": "medium",
+  "timeLimit": 90,
+  "type": "teacher_review",
+  "requiresManualGrading": false,
+  "options": [],
+  "answer": "a) m = 2, b) C(1, 1), c) y = -1/2x + 3/2, d) D(0, 1.5), e) CD = \\sqrt{1.25} = \\frac{\\sqrt{5}}{2}",
+  "hint": "Use gradient, midpoint, point-slope, y-intercept, and distance formulas step by step.",
+  "solution": "a) Gradient: \\(m = \\frac{7 - (-5)}{4 - (-2)} = \\frac{12}{6} = 2\\).\n\nb) Midpoint \\(C\\): \\(\\left(\\frac{-2+4}{2}, \\frac{-5+7}{2}\\right) = (1, 1)\\).\n\nc) Equation of line through \\(C(1, 1)\\) with gradient \\(-\\frac{1}{2}\\):\n   \\(y - 1 = -\\frac{1}{2}(x - 1) \\implies y = -\\frac{1}{2}x + \\frac{3}{2}\\).\n\nd) Y-intercept \\(D\\) of this line (set \\(x = 0\\)): \\(y = \\frac{3}{2} = 1.5 \\implies D(0, 1.5)\\).\n\ne) Distance \\(CD\\): \\(\\sqrt{(0 - 1)^2 + (1.5 - 1)^2} = \\sqrt{1 + 0.25} = \\sqrt{1.25} = \\frac{\\sqrt{5}}{2}\\).",
+  "solutionSteps": [],
+  "questionImage": "",
+  "subQuestions": [
+    {
+      "id": "y9-11f-q5a",
+      "type": "short_answer",
+      "question": "a) Find the gradient of \\(AB\\).",
+      "options": [],
+      "answer": "2",
+      "solutionSteps": [
+        {
+          "explanation": "Apply endpoints to the gradient formula.",
+          "workingOut": "m = \\frac{7 - (-5)}{4 - (-2)} = 2"
+        }
+      ],
+      "graphData": null
+    },
+    {
+      "id": "y9-11f-q5b",
+      "type": "short_answer",
+      "question": "b) Find the coordinates of \\(C\\), the midpoint of interval \\(AB\\).",
+      "options": [],
+      "answer": "(1, 1)",
+      "solutionSteps": [
+        {
+          "explanation": "Calculate average of coordinates.",
+          "workingOut": "C = \\left(\\frac{-2+4}{2}, \\frac{-5+7}{2}\\right) = (1, 1)"
+        }
+      ],
+      "graphData": null
+    },
+    {
+      "id": "y9-11f-q5c",
+      "type": "short_answer",
+      "question": "c) Find the equation of the line that passes through \\(C\\) with gradient \\(-\\frac{1}{2}\\).",
+      "options": [],
+      "answer": "y = -1/2x + 3/2",
+      "solutionSteps": [
+        {
+          "explanation": "Use point-slope form with midpoint C(1, 1).",
+          "workingOut": "y - 1 = -\\frac{1}{2}(x - 1) \\implies y = -\\frac{1}{2}x + \\frac{3}{2}"
+        }
+      ],
+      "graphData": null
+    },
+    {
+      "id": "y9-11f-q5d",
+      "type": "short_answer",
+      "question": "d) What are the coordinates of the point \\(D\\), where the line intersects the \\(y\\)-axis?",
+      "options": [],
+      "answer": "(0, 1.5)",
+      "solutionSteps": [
+        {
+          "explanation": "Substitute x = 0 into the equation.",
+          "workingOut": "x = 0 \\implies y = 1.5 \\implies D(0, 1.5)"
+        }
+      ],
+      "graphData": null
+    },
+    {
+      "id": "y9-11f-q5e",
+      "type": "short_answer",
+      "question": "e) How far is the point \\(C\\) from the point \\(D\\)?",
+      "options": [],
+      "answer": "\\sqrt{1.25}",
+      "solutionSteps": [
+        {
+          "explanation": "Apply the distance formula between C(1, 1) and D(0, 1.5).",
+          "workingOut": "CD = \\sqrt{(0-1)^2 + (1.5-1)^2} = \\sqrt{1 + 0.25} = \\sqrt{1.25}"
+        }
+      ],
+      "graphData": null
+    }
+  ],
+  "blanks": [],
+  "graphData": {
+    "jsxGraph": {
+      "width": 350,
+      "height": 350,
+      "boundingbox": [
+        -4,
+        9,
+        6,
+        -7
+      ],
+      "showConstructionPoints": true,
+      "boardOptions": {
+        "axis": true,
+        "grid": true
+      },
+      "script": "board.suspendUpdate();\nvar pA = board.create('point', [-2, -5], {size: 3, color: 'black', name: 'A(-2, -5)', withLabel: true, label: {autoPosition: false, offset: [-20, -10]}});\nvar pB = board.create('point', [4, 7], {size: 3, color: 'black', name: 'B(4, 7)', withLabel: true, label: {autoPosition: false, offset: [10, 10]}});\nboard.create('segment', [pA, pB], {strokeColor: 'black', strokeWidth: 1.5});\nvar pC = board.create('point', [1, 1], {size: 3, color: 'blue', name: 'C(1, 1)', withLabel: true, label: {autoPosition: false, offset: [10, 10]}});\nboard.create('line', [[1, 1], [0, 1.5]], {strokeColor: 'red', strokeWidth: 1.5, strokeDasharray: '6 4'});\nvar pD = board.create('point', [0, 1.5], {size: 3, color: 'red', name: 'D(0, 1.5)', withLabel: true, label: {autoPosition: false, offset: [-35, 10]}});\nboard.unsuspendUpdate();"
+    }
+  },
+  "examPaper": "",
+  "createdAt": {
+    "_seconds": 1782830226,
+    "_nanoseconds": 609000000
+  },
+  "updatedAt": {
+    "_seconds": 1782830226,
+    "_nanoseconds": 609000000
+  }
+}

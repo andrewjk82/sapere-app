@@ -1282,7 +1282,7 @@ export const Y11_CH4B_QUESTIONS = [
           },
           {
             "explanation": "The inequality requires it to be strictly greater than zero, which excludes only the value where the square is zero.",
-            "workingOut": "x \\neq 0",
+            "workingOut": "x \neq 0",
             "graphData": null
           }
         ]

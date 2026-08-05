@@ -4,7 +4,7 @@ export const Y7_CH3E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the statement using brackets and algebra:\\n\\n\\\\(4\\\\) is added to \\\\(m\\\\) and the result is multiplied by \\\\(5\\\\).",
+    "question": "Write the statement using brackets and algebra:\n\n\\\\(4\\\\) is added to \\\\(m\\\\) and the result is multiplied by \\\\(5\\\\).",
     "t": "Algebra with brackets",
     "hint": "Use brackets to show that the addition happens before the multiplication.",
     "solutionSteps": [
@@ -55,7 +55,7 @@ export const Y7_CH3E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the statement using brackets and algebra:\\n\\n\\\\(2\\\\) is subtracted from \\\\(p\\\\) and the result is multiplied by \\\\(8\\\\).",
+    "question": "Write the statement using brackets and algebra:\n\n\\\\(2\\\\) is subtracted from \\\\(p\\\\) and the result is multiplied by \\\\(8\\\\).",
     "t": "Algebra with brackets",
     "hint": "Use brackets to show that the subtraction happens before the multiplication.",
     "solutionSteps": [
@@ -106,7 +106,7 @@ export const Y7_CH3E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the statement using brackets and algebra:\\n\\n\\\\(9\\\\) is added to \\\\(y\\\\) and the result is multiplied by \\\\(6\\\\).",
+    "question": "Write the statement using brackets and algebra:\n\n\\\\(9\\\\) is added to \\\\(y\\\\) and the result is multiplied by \\\\(6\\\\).",
     "t": "Algebra with brackets",
     "hint": "Use brackets to show that the addition happens before the multiplication.",
     "solutionSteps": [
@@ -157,7 +157,7 @@ export const Y7_CH3E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the statement using brackets and algebra:\\n\\n\\\\(5\\\\) is subtracted from \\\\(k\\\\) and the result is multiplied by \\\\(2\\\\).",
+    "question": "Write the statement using brackets and algebra:\n\n\\\\(5\\\\) is subtracted from \\\\(k\\\\) and the result is multiplied by \\\\(2\\\\).",
     "t": "Algebra with brackets",
     "hint": "Use brackets to show that the subtraction happens before the multiplication.",
     "solutionSteps": [
@@ -208,7 +208,7 @@ export const Y7_CH3E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the statement using algebra, including brackets where appropriate:\\n\\nA number, \\\\(y\\\\), is multiplied by \\\\(4\\\\) and \\\\(5\\\\) is added to the result.",
+    "question": "Write the statement using algebra, including brackets where appropriate:\n\nA number, \\\\(y\\\\), is multiplied by \\\\(4\\\\) and \\\\(5\\\\) is added to the result.",
     "t": "Algebra with brackets",
     "hint": "Multiplication naturally happens before addition, so brackets might not be needed.",
     "solutionSteps": [
@@ -264,7 +264,7 @@ export const Y7_CH3E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the statement using algebra, including brackets where appropriate:\\n\\n\\\\(5\\\\) is added to \\\\(y\\\\) and the result is multiplied by \\\\(4\\\\).",
+    "question": "Write the statement using algebra, including brackets where appropriate:\n\n\\\\(5\\\\) is added to \\\\(y\\\\) and the result is multiplied by \\\\(4\\\\).",
     "t": "Algebra with brackets",
     "hint": "You need brackets so that the addition happens first.",
     "solutionSteps": [
@@ -315,7 +315,7 @@ export const Y7_CH3E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the statement using algebra, including brackets where appropriate:\\n\\nA number, \\\\(m\\\\), is multiplied by \\\\(6\\\\) and \\\\(2\\\\) is subtracted from the result.",
+    "question": "Write the statement using algebra, including brackets where appropriate:\n\nA number, \\\\(m\\\\), is multiplied by \\\\(6\\\\) and \\\\(2\\\\) is subtracted from the result.",
     "t": "Algebra with brackets",
     "hint": "Multiplication happens before subtraction, so brackets are not needed.",
     "solutionSteps": [
@@ -371,7 +371,7 @@ export const Y7_CH3E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the statement using algebra, including brackets where appropriate:\\n\\n\\\\(2\\\\) is subtracted from a number, \\\\(m\\\\), and the result is multiplied by \\\\(6\\\\).",
+    "question": "Write the statement using algebra, including brackets where appropriate:\n\n\\\\(2\\\\) is subtracted from a number, \\\\(m\\\\), and the result is multiplied by \\\\(6\\\\).",
     "t": "Algebra with brackets",
     "hint": "You need brackets so that the subtraction happens first.",
     "solutionSteps": [
@@ -422,7 +422,7 @@ export const Y7_CH3E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Evaluate the expression by substituting \\\\(x = 4\\\\).\\n\\n\\\\(3(x + 2)\\\\)",
+    "question": "Evaluate the expression by substituting \\\\(x = 4\\\\).\n\n\\\\(3(x + 2)\\\\)",
     "t": "Algebra with brackets",
     "hint": "Substitute $x = 4$ and evaluate inside the brackets first.",
     "solutionSteps": [
@@ -466,7 +466,7 @@ export const Y7_CH3E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Evaluate the expression by substituting \\\\(x = 4\\\\).\\n\\n\\\\(3x + 2\\\\)",
+    "question": "Evaluate the expression by substituting \\\\(x = 4\\\\).\n\n\\\\(3x + 2\\\\)",
     "t": "Algebra with brackets",
     "hint": "Substitute $x = 4$, multiply first, then add.",
     "solutionSteps": [
@@ -510,7 +510,7 @@ export const Y7_CH3E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Evaluate the expression by substituting \\\\(x = 4\\\\).\\n\\n\\\\(4(x - 1)\\\\)",
+    "question": "Evaluate the expression by substituting \\\\(x = 4\\\\).\n\n\\\\(4(x - 1)\\\\)",
     "t": "Algebra with brackets",
     "hint": "Substitute $x = 4$ and evaluate inside the brackets first.",
     "solutionSteps": [
@@ -554,7 +554,7 @@ export const Y7_CH3E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Evaluate the expression by substituting \\\\(x = 4\\\\).\\n\\n\\\\(5 + 3(x - 1)\\\\)",
+    "question": "Evaluate the expression by substituting \\\\(x = 4\\\\).\n\n\\\\(5 + 3(x - 1)\\\\)",
     "t": "Algebra with brackets",
     "hint": "Evaluate brackets, multiply, then add.",
     "solutionSteps": [
@@ -598,7 +598,7 @@ export const Y7_CH3E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Evaluate the expression by substituting \\\\(x = 4\\\\).\\n\\n\\\\(5 + 3(x + 1)\\\\)",
+    "question": "Evaluate the expression by substituting \\\\(x = 4\\\\).\n\n\\\\(5 + 3(x + 1)\\\\)",
     "t": "Algebra with brackets",
     "hint": "Evaluate brackets, multiply, then add.",
     "solutionSteps": [
@@ -642,7 +642,7 @@ export const Y7_CH3E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Evaluate the expression by substituting \\\\(x = 4\\\\).\\n\\n\\\\((2 + 4x) - 3\\\\)",
+    "question": "Evaluate the expression by substituting \\\\(x = 4\\\\).\n\n\\\\((2 + 4x) - 3\\\\)",
     "t": "Algebra with brackets",
     "hint": "Evaluate inside the brackets first.",
     "solutionSteps": [
@@ -686,7 +686,7 @@ export const Y7_CH3E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Evaluate the expression by substituting \\\\(y = 5\\\\).\\n\\n\\\\(3(y + 2)\\\\)",
+    "question": "Evaluate the expression by substituting \\\\(y = 5\\\\).\n\n\\\\(3(y + 2)\\\\)",
     "t": "Algebra with brackets",
     "hint": "Substitute $y = 5$ and evaluate inside the brackets first.",
     "solutionSteps": [
@@ -730,7 +730,7 @@ export const Y7_CH3E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Evaluate the expression by substituting \\\\(y = 5\\\\).\\n\\n\\\\(4(3y + 2)\\\\)",
+    "question": "Evaluate the expression by substituting \\\\(y = 5\\\\).\n\n\\\\(4(3y + 2)\\\\)",
     "t": "Algebra with brackets",
     "hint": "Evaluate inside the brackets first.",
     "solutionSteps": [
@@ -774,7 +774,7 @@ export const Y7_CH3E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Evaluate the expression by substituting \\\\(y = 5\\\\).\\n\\n\\\\(5 + 3(y + 4)\\\\)",
+    "question": "Evaluate the expression by substituting \\\\(y = 5\\\\).\n\n\\\\(5 + 3(y + 4)\\\\)",
     "t": "Algebra with brackets",
     "hint": "Evaluate brackets, multiply, then add.",
     "solutionSteps": [
@@ -818,7 +818,7 @@ export const Y7_CH3E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Evaluate the expression by substituting \\\\(y = 5\\\\).\\n\\n\\\\(7 + 4(y - 2)\\\\)",
+    "question": "Evaluate the expression by substituting \\\\(y = 5\\\\).\n\n\\\\(7 + 4(y - 2)\\\\)",
     "t": "Algebra with brackets",
     "hint": "Evaluate brackets, multiply, then add.",
     "solutionSteps": [
@@ -862,7 +862,7 @@ export const Y7_CH3E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Evaluate the expression by substituting \\\\(y = 5\\\\).\\n\\n\\\\(8 + 3(y - 3)\\\\)",
+    "question": "Evaluate the expression by substituting \\\\(y = 5\\\\).\n\n\\\\(8 + 3(y - 3)\\\\)",
     "t": "Algebra with brackets",
     "hint": "Evaluate brackets, multiply, then add.",
     "solutionSteps": [
@@ -906,7 +906,7 @@ export const Y7_CH3E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Evaluate the expression by substituting \\\\(y = 5\\\\).\\n\\n\\\\(9 + 2(y - 1)\\\\)",
+    "question": "Evaluate the expression by substituting \\\\(y = 5\\\\).\n\n\\\\(9 + 2(y - 1)\\\\)",
     "t": "Algebra with brackets",
     "hint": "Evaluate brackets, multiply, then add.",
     "solutionSteps": [
@@ -950,7 +950,7 @@ export const Y7_CH3E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Evaluate the expression for \\\\(p = 8\\\\) and \\\\(q = 2\\\\).\\n\\n\\\\(p(4 + 1)\\\\)",
+    "question": "Evaluate the expression for \\\\(p = 8\\\\) and \\\\(q = 2\\\\).\n\n\\\\(p(4 + 1)\\\\)",
     "t": "Algebra with brackets",
     "hint": "Substitute the value of $p$ and evaluate.",
     "solutionSteps": [
@@ -994,7 +994,7 @@ export const Y7_CH3E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Evaluate the expression for \\\\(p = 8\\\\) and \\\\(q = 2\\\\).\\n\\n\\\\(5(p - q)\\\\)",
+    "question": "Evaluate the expression for \\\\(p = 8\\\\) and \\\\(q = 2\\\\).\n\n\\\\(5(p - q)\\\\)",
     "t": "Algebra with brackets",
     "hint": "Substitute both values and evaluate.",
     "solutionSteps": [
@@ -1038,7 +1038,7 @@ export const Y7_CH3E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Evaluate the expression for \\\\(p = 8\\\\) and \\\\(q = 2\\\\).\\n\\n\\\\(4 + 3(p - q)\\\\)",
+    "question": "Evaluate the expression for \\\\(p = 8\\\\) and \\\\(q = 2\\\\).\n\n\\\\(4 + 3(p - q)\\\\)",
     "t": "Algebra with brackets",
     "hint": "Evaluate brackets, multiply, then add.",
     "solutionSteps": [
@@ -1082,7 +1082,7 @@ export const Y7_CH3E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Evaluate the expression for \\\\(p = 8\\\\) and \\\\(q = 2\\\\).\\n\\n\\\\(4(p - q) + 5\\\\)",
+    "question": "Evaluate the expression for \\\\(p = 8\\\\) and \\\\(q = 2\\\\).\n\n\\\\(4(p - q) + 5\\\\)",
     "t": "Algebra with brackets",
     "hint": "Evaluate brackets, multiply, then add.",
     "solutionSteps": [
@@ -1126,7 +1126,7 @@ export const Y7_CH3E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Evaluate the expression for \\\\(p = 8\\\\) and \\\\(q = 2\\\\).\\n\\n\\\\(q(p - 4) + 2\\\\)",
+    "question": "Evaluate the expression for \\\\(p = 8\\\\) and \\\\(q = 2\\\\).\n\n\\\\(q(p - 4) + 2\\\\)",
     "t": "Algebra with brackets",
     "hint": "Evaluate brackets, multiply, then add.",
     "solutionSteps": [
@@ -1170,7 +1170,7 @@ export const Y7_CH3E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Evaluate the expression for \\\\(p = 8\\\\) and \\\\(q = 2\\\\).\\n\\n\\\\(3(2p - 5q) + 4q\\\\)",
+    "question": "Evaluate the expression for \\\\(p = 8\\\\) and \\\\(q = 2\\\\).\n\n\\\\(3(2p - 5q) + 4q\\\\)",
     "t": "Algebra with brackets",
     "hint": "Evaluate brackets, multiply, then add.",
     "solutionSteps": [
@@ -1214,7 +1214,7 @@ export const Y7_CH3E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the statement using algebra:\\n\\nA number, \\\\(n\\\\), is squared and the result is multiplied by \\\\(7\\\\).",
+    "question": "Write the statement using algebra:\n\nA number, \\\\(n\\\\), is squared and the result is multiplied by \\\\(7\\\\).",
     "t": "Algebra with brackets",
     "hint": "Indices are calculated before multiplication.",
     "solutionSteps": [
@@ -1265,7 +1265,7 @@ export const Y7_CH3E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the statement using algebra:\\n\\nA number, \\\\(y\\\\), is multiplied by \\\\(3\\\\) and the result is squared.",
+    "question": "Write the statement using algebra:\n\nA number, \\\\(y\\\\), is multiplied by \\\\(3\\\\) and the result is squared.",
     "t": "Algebra with brackets",
     "hint": "Use brackets to show that the multiplication happens before squaring.",
     "solutionSteps": [
@@ -1321,7 +1321,7 @@ export const Y7_CH3E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the statement using algebra:\\n\\nA number, \\\\(a\\\\), is multiplied by \\\\(4\\\\) and the result is cubed.",
+    "question": "Write the statement using algebra:\n\nA number, \\\\(a\\\\), is multiplied by \\\\(4\\\\) and the result is cubed.",
     "t": "Algebra with brackets",
     "hint": "Use brackets to show that the multiplication happens before cubing.",
     "solutionSteps": [
@@ -1377,7 +1377,7 @@ export const Y7_CH3E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write the statement using algebra:\\n\\nA number, \\\\(b\\\\), is cubed and then multiplied by \\\\(6\\\\).",
+    "question": "Write the statement using algebra:\n\nA number, \\\\(b\\\\), is cubed and then multiplied by \\\\(6\\\\).",
     "t": "Algebra with brackets",
     "hint": "Indices are calculated before multiplication.",
     "solutionSteps": [
@@ -1433,7 +1433,7 @@ export const Y7_CH3E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Evaluate the expression for \\\\(m = 5\\\\).\\n\\n\\\\(4m^2\\\\)",
+    "question": "Evaluate the expression for \\\\(m = 5\\\\).\n\n\\\\(4m^2\\\\)",
     "t": "Algebra with brackets",
     "hint": "Square the value of $m$ first, then multiply.",
     "solutionSteps": [
@@ -1477,7 +1477,7 @@ export const Y7_CH3E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Evaluate the expression for \\\\(m = 5\\\\).\\n\\n\\\\((4m)^2\\\\)",
+    "question": "Evaluate the expression for \\\\(m = 5\\\\).\n\n\\\\((4m)^2\\\\)",
     "t": "Algebra with brackets",
     "hint": "Multiply first inside the brackets, then square the result.",
     "solutionSteps": [
@@ -1521,7 +1521,7 @@ export const Y7_CH3E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Evaluate the expression for \\\\(k = 3\\\\).\\n\\n\\\\(2k^3\\\\)",
+    "question": "Evaluate the expression for \\\\(k = 3\\\\).\n\n\\\\(2k^3\\\\)",
     "t": "Algebra with brackets",
     "hint": "Cube the value of $k$ first, then multiply.",
     "solutionSteps": [
@@ -1565,7 +1565,7 @@ export const Y7_CH3E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Evaluate the expression for \\\\(k = 3\\\\).\\n\\n\\\\((2k)^3\\\\)",
+    "question": "Evaluate the expression for \\\\(k = 3\\\\).\n\n\\\\((2k)^3\\\\)",
     "t": "Algebra with brackets",
     "hint": "Multiply first inside the brackets, then cube the result.",
     "solutionSteps": [
@@ -1609,7 +1609,7 @@ export const Y7_CH3E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Evaluate the expression for \\\\(p = 2\\\\).\\n\\n\\\\((4p)^2\\\\)",
+    "question": "Evaluate the expression for \\\\(p = 2\\\\).\n\n\\\\((4p)^2\\\\)",
     "t": "Algebra with brackets",
     "hint": "Multiply first inside the brackets, then square the result.",
     "solutionSteps": [
@@ -1653,7 +1653,7 @@ export const Y7_CH3E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Evaluate the expression for \\\\(p = 2\\\\).\\n\\n\\\\((5p)^2 + 3\\\\)",
+    "question": "Evaluate the expression for \\\\(p = 2\\\\).\n\n\\\\((5p)^2 + 3\\\\)",
     "t": "Algebra with brackets",
     "hint": "Evaluate brackets, square, then add.",
     "solutionSteps": [
@@ -1697,7 +1697,7 @@ export const Y7_CH3E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Evaluate the expression for \\\\(p = 2\\\\).\\n\\n\\\\(3p^2 + 5\\\\)",
+    "question": "Evaluate the expression for \\\\(p = 2\\\\).\n\n\\\\(3p^2 + 5\\\\)",
     "t": "Algebra with brackets",
     "hint": "Square the value of $p$ first, multiply, then add.",
     "solutionSteps": [
@@ -1741,7 +1741,7 @@ export const Y7_CH3E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Each box of apples contains \\\\(m\\\\) apples. Three extra apples are placed in each box.\\n\\nHow many apples are now in each box?",
+    "question": "Each box of apples contains \\\\(m\\\\) apples. Three extra apples are placed in each box.\n\nHow many apples are now in each box?",
     "t": "Algebra with brackets",
     "hint": "Add the extra apples to the original amount in each box.",
     "solutionSteps": [
@@ -1797,7 +1797,7 @@ export const Y7_CH3E_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Each box of apples contains \\\\(m\\\\) apples. Three extra apples are placed in each box.\\n\\nIf there are \\\\(4\\\\) boxes, how many apples are there in total?",
+    "question": "Each box of apples contains \\\\(m\\\\) apples. Three extra apples are placed in each box.\n\nIf there are \\\\(4\\\\) boxes, how many apples are there in total?",
     "t": "Algebra with brackets",
     "hint": "Multiply the number of boxes by the new amount of apples in each box.",
     "solutionSteps": [

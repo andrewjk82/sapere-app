@@ -2772,11 +2772,11 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1:** Any non-zero number raised to the power 0 equals 1.\n\\(a^0 = 1\\ (a \\neq 0)\\)\n\n**Step 2:** Here the base is 8, which is non-zero.\n\\(8^0 = 1\\)\n\n**Step 3:** No further calculation needed.\n\\(1\\)\n\n**Step 4:** Final value.\n\\(1\\)",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Any non-zero number raised to the power 0 equals 1.\n\\(a^0 = 1\\ (a \neq 0)\\)\n\n**Step 2:** Here the base is 8, which is non-zero.\n\\(8^0 = 1\\)\n\n**Step 3:** No further calculation needed.\n\\(1\\)\n\n**Step 4:** Final value.\n\\(1\\)",
     "solutionSteps": [
       {
         "explanation": "Any non-zero number raised to the power 0 equals 1.",
-        "workingOut": "\\(a^0 = 1\\ (a \\neq 0)\\)",
+        "workingOut": "\\(a^0 = 1\\ (a \neq 0)\\)",
         "graphData": null
       },
       {
@@ -4617,11 +4617,11 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1:** Any non-zero number to the power 0 equals 1.\n\\(a^0 = 1\\ (a \\neq 0)\\)\n\n**Step 2:** The base \\(\\frac{4}{9}\\) is non-zero.\n\\(\\left(\\frac{4}{9}\\right)^0 = 1\\)\n\n**Step 3:** No further calculation.\n\\(1\\)\n\n**Step 4:** Final value.\n\\(1\\)",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Any non-zero number to the power 0 equals 1.\n\\(a^0 = 1\\ (a \neq 0)\\)\n\n**Step 2:** The base \\(\\frac{4}{9}\\) is non-zero.\n\\(\\left(\\frac{4}{9}\\right)^0 = 1\\)\n\n**Step 3:** No further calculation.\n\\(1\\)\n\n**Step 4:** Final value.\n\\(1\\)",
     "solutionSteps": [
       {
         "explanation": "Any non-zero number to the power 0 equals 1.",
-        "workingOut": "\\(a^0 = 1\\ (a \\neq 0)\\)",
+        "workingOut": "\\(a^0 = 1\\ (a \neq 0)\\)",
         "graphData": null
       },
       {

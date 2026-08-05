@@ -817,7 +817,7 @@ export const Y10_CH14B_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Simplify the expression (where \\(a, b > 0\\) and \\(a, b \\neq 1\\)):<br><br>\\((\\log_{x} y)(\\log_{y} x)\\)",
+    "question": "Simplify the expression (where \\(a, b > 0\\) and \\(a, b \neq 1\\)):<br><br>\\((\\log_{x} y)(\\log_{y} x)\\)",
     "answer": "1",
     "hint": "Use the change of base formula to express the second logarithm in base \\(x\\).",
     "solution": "1",

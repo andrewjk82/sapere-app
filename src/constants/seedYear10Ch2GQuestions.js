@@ -28,7 +28,7 @@ export const Y10_CH2G_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "medium",
       "timeLimit": 90,
-      "question": "Use the result of the previous question to find the exact value of \\(\\sqrt{14 + 2\\sqrt{33}}\\).",
+      "question": "Given the identity \\((\\sqrt{a} + \\sqrt{b})^2 = a + b + 2\\sqrt{ab}\\), find the exact value of \\(\\sqrt{14 + 2\\sqrt{33}}\\).",
       "a": 1,
       "opts": [
           "\\(\\sqrt{11} +\\sqrt{5}\\)",
@@ -67,7 +67,7 @@ export const Y10_CH2G_QUESTIONS = [
       "type": "multiple_choice",
       "difficulty": "medium",
       "timeLimit": 90,
-      "question": "Use the result of the previous question to find the exact value of \\(\\sqrt{14 - 2\\sqrt{33}}\\).",
+      "question": "Given the identity \\((\\sqrt{a} - \\sqrt{b})^2 = a + b - 2\\sqrt{ab}\\), find the exact value of \\(\\sqrt{14 - 2\\sqrt{33}}\\).",
       "a": 1,
       "opts": [
           "\\(\\sqrt{11} -\\sqrt{5}\\)",
@@ -1173,12 +1173,14 @@ export const Y10_CH2G_QUESTIONS = [
   },
   {
       "id": "y10-2g-q14b",
-      "type": "teacher_review",
+      "type": "multiple_choice",
       "difficulty": "hard",
       "timeLimit": 120,
-      "question": "Refer to the same diagram. Show that \\(EG^2 + 3EG = 9\\). Provide all algebraic proof steps.",
-      "a": "Proof: Substitute \\(EG = \\frac{3(\\sqrt{5}-1)}{2}\\). Then \\(EG^2 + 3EG = \\frac{27-9\\sqrt{5}}{2} + \\frac{9\\sqrt{5}-9}{2} = 9\\).",
-      "solution": "Substitute \\(EG = \\frac{3(\\sqrt{5}-1)}{2}\\) into \\(EG^2 + 3EG\\):\n\\(EG^2 = \\frac{9(6 - 2\\sqrt{5})}{4} = \\frac{9(3 - \\sqrt{5})}{2} = \\frac{27 - 9\\sqrt{5}}{2}\\).\n\\(3EG = 3 \\times \\frac{3\\sqrt{5}-3}{2} = \\frac{9\\sqrt{5}-9}{2}\\).\nNow add them together:\n\\(EG^2 + 3EG = \\frac{27 - 9\\sqrt{5}}{2} + \\frac{9\\sqrt{5}-9}{2} = \\frac{18}{2} = 9\\).\nThus, LHS = RHS, completing the proof.",
+      "question": "Refer to the same diagram. Find the value of \\(EG^2 + 3EG\\).",
+      "a": 2,
+      "opts": ["3", "6", "9", "12"],
+      "hint": "",
+      "solution": "Substitute \\(EG = \\frac{3(\\sqrt{5}-1)}{2}\\) into \\(EG^2 + 3EG\\):\n\\(EG^2 = \\frac{9(6 - 2\\sqrt{5})}{4} = \\frac{9(3 - \\sqrt{5})}{2} = \\frac{27 - 9\\sqrt{5}}{2}\\).\n\\(3EG = 3 \\times \\frac{3\\sqrt{5}-3}{2} = \\frac{9\\sqrt{5}-9}{2}\\).\nNow add them together:\n\\(EG^2 + 3EG = \\frac{27 - 9\\sqrt{5}}{2} + \\frac{9\\sqrt{5}-9}{2} = \\frac{18}{2} = 9\\).",
       "solutionSteps": [
           {
               "explanation": "Use the exact value \\(EG = \\frac{3\\sqrt{5}-3}{2}\\) and square it.",

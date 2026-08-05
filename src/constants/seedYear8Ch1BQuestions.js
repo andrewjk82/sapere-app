@@ -2976,7 +2976,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A hangar stores specialized high-pressure hydraulic fluid bottles for commercial airliners.\\nThere are \\(14\\) storage cabinets, each containing \\(236\\) bottles. If each bottle holds exactly \\(45\\) litres of fluid, how many total litres are stored in the hangar?",
+    "question": "A hangar stores specialized high-pressure hydraulic fluid bottles for commercial airliners.\nThere are \\(14\\) storage cabinets, each containing \\(236\\) bottles. If each bottle holds exactly \\(45\\) litres of fluid, how many total litres are stored in the hangar?",
     "answer": "0",
     "options": [
       {
@@ -3021,7 +3021,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A planetary exploration mission loads power packs onto \\(24\\) robotic space rovers.\\nEach space rover is fitted with \\(185\\) power packs. If each power pack requires \\(32\\) lithium-ion cell units, calculate the total number of cell units deployed.",
+    "question": "A planetary exploration mission loads power packs onto \\(24\\) robotic space rovers.\nEach space rover is fitted with \\(185\\) power packs. If each power pack requires \\(32\\) lithium-ion cell units, calculate the total number of cell units deployed.",
     "answer": "0",
     "options": [
       {
@@ -3066,7 +3066,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A pharmaceutical vaccine depository operates \\(15\\) cryogenic refrigeration chambers.\\nEach chamber houses \\(48\\) cooling trays. If each tray contains \\(75\\) specialized sample vials, what is the total capacity of vials stored in the facility?",
+    "question": "A pharmaceutical vaccine depository operates \\(15\\) cryogenic refrigeration chambers.\nEach chamber houses \\(48\\) cooling trays. If each tray contains \\(75\\) specialized sample vials, what is the total capacity of vials stored in the facility?",
     "answer": "0",
     "options": [
       {
@@ -3111,7 +3111,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A regional solar generation facility consists of \\(16\\) tracking sub-arrays.\\nEach sub-array contains \\(120\\) photovoltaic nodes. If each node requires \\(18\\) micro-inverters, calculate the total number of micro-inverters configured.",
+    "question": "A regional solar generation facility consists of \\(16\\) tracking sub-arrays.\nEach sub-array contains \\(120\\) photovoltaic nodes. If each node requires \\(18\\) micro-inverters, calculate the total number of micro-inverters configured.",
     "answer": "0",
     "options": [
       {
@@ -3156,7 +3156,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A subsea fiber-optic network spans across \\(12\\) oceanic sectors.\\nEach sector has \\(950\\) signal repeaters. If each repeater utilizes \\(8\\) transponders, how many total transponders are active across the entire network?",
+    "question": "A subsea fiber-optic network spans across \\(12\\) oceanic sectors.\nEach sector has \\(950\\) signal repeaters. If each repeater utilizes \\(8\\) transponders, how many total transponders are active across the entire network?",
     "answer": "0",
     "options": [
       {
@@ -3201,7 +3201,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A high-speed shipping depot operates \\(18\\) sorting conveyor lines.\\nEach line transports \\(320\\) cargo pallets. If each pallet holds \\(14\\) heavy packing crates, find the total number of crates processed during a full load cycle.",
+    "question": "A high-speed shipping depot operates \\(18\\) sorting conveyor lines.\nEach line transports \\(320\\) cargo pallets. If each pallet holds \\(14\\) heavy packing crates, find the total number of crates processed during a full load cycle.",
     "answer": "0",
     "options": [
       {
@@ -3246,7 +3246,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An automated smart farm coordinates irrigation across \\(25\\) cultivation zones.\\nEach zone is monitored by \\(175\\) moisture sensors. If each sensor controls \\(20\\) valve actuators, find the total number of valve actuators managed.",
+    "question": "An automated smart farm coordinates irrigation across \\(25\\) cultivation zones.\nEach zone is monitored by \\(175\\) moisture sensors. If each sensor controls \\(20\\) valve actuators, find the total number of valve actuators managed.",
     "answer": "0",
     "options": [
       {
@@ -3291,7 +3291,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An industrial robotics plant manufactures robotic joints for automated lines.\\nThey assemble \\(32\\) heavy-duty robot arms. Each arm has \\(135\\) joints. If each joint uses \\(15\\) precision gears, calculate the total number of gears required.",
+    "question": "An industrial robotics plant manufactures robotic joints for automated lines.\nThey assemble \\(32\\) heavy-duty robot arms. Each arm has \\(135\\) joints. If each joint uses \\(15\\) precision gears, calculate the total number of gears required.",
     "answer": "0",
     "options": [
       {
@@ -3336,7 +3336,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A geological research program coordinates \\(15\\) seismic listening stations.\\nEach station has \\(520\\) recording points. If each point logs data on \\(12\\) channels simultaneously, calculate the total number of active channels.",
+    "question": "A geological research program coordinates \\(15\\) seismic listening stations.\nEach station has \\(520\\) recording points. If each point logs data on \\(12\\) channels simultaneously, calculate the total number of active channels.",
     "answer": "0",
     "options": [
       {
@@ -3381,7 +3381,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A meteorological institute operates \\(22\\) deep-ocean weather buoys.\\nEach buoy contains \\(245\\) telemetry modules. If each module is powered by \\(16\\) lithium battery nodes, calculate the total battery node count.",
+    "question": "A meteorological institute operates \\(22\\) deep-ocean weather buoys.\nEach buoy contains \\(245\\) telemetry modules. If each module is powered by \\(16\\) lithium battery nodes, calculate the total battery node count.",
     "answer": "0",
     "options": [
       {
@@ -3426,7 +3426,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A nuclear power facility loads fuel rods into \\(28\\) reactor assemblies.\\nEach assembly has \\(85\\) fuel rods. If each rod contains \\(180\\) uranium oxide pellets, find the total number of fuel pellets loaded.",
+    "question": "A nuclear power facility loads fuel rods into \\(28\\) reactor assemblies.\nEach assembly has \\(85\\) fuel rods. If each rod contains \\(180\\) uranium oxide pellets, find the total number of fuel pellets loaded.",
     "answer": "0",
     "options": [
       {
@@ -3471,7 +3471,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A quantum research cluster operates \\(14\\) helium-cooled dilution refrigerators.\\nEach refrigerator hosts \\(350\\) quantum processor units. If each unit utilizes \\(64\\) cryo-gates, calculate the total number of cryo-gates configured.",
+    "question": "A quantum research cluster operates \\(14\\) helium-cooled dilution refrigerators.\nEach refrigerator hosts \\(350\\) quantum processor units. If each unit utilizes \\(64\\) cryo-gates, calculate the total number of cryo-gates configured.",
     "answer": "0",
     "options": [
       {
@@ -3516,7 +3516,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An online retailer operates \\(36\\) distribution warehouse aisles.\\nEach aisle is equipped with \\(84\\) storage racks. If each rack holds \\(125\\) plastic bins, what is the total number of storage bins in the warehouse?",
+    "question": "An online retailer operates \\(36\\) distribution warehouse aisles.\nEach aisle is equipped with \\(84\\) storage racks. If each rack holds \\(125\\) plastic bins, what is the total number of storage bins in the warehouse?",
     "answer": "0",
     "options": [
       {
@@ -3561,7 +3561,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A car manufacturing facility produces battery packs for \\(25\\) high-performance electric vehicles.\\nEach vehicle requires \\(144\\) battery modules. If each module contains \\(96\\) battery cells, calculate the total number of battery cells used.",
+    "question": "A car manufacturing facility produces battery packs for \\(25\\) high-performance electric vehicles.\nEach vehicle requires \\(144\\) battery modules. If each module contains \\(96\\) battery cells, calculate the total number of battery cells used.",
     "answer": "0",
     "options": [
       {
@@ -3606,7 +3606,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A aerospace firm manufactures communications satellites. They assemble a constellation of \\(15\\) satellites.\\nEach satellite carries \\(180\\) payload transceivers. If each transceiver links to \\(24\\) antenna elements, calculate the total number of elements in the constellation.",
+    "question": "A aerospace firm manufactures communications satellites. They assemble a constellation of \\(15\\) satellites.\nEach satellite carries \\(180\\) payload transceivers. If each transceiver links to \\(24\\) antenna elements, calculate the total number of elements in the constellation.",
     "answer": "0",
     "options": [
       {
@@ -3651,7 +3651,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A shipbuilding dock installs steel plating on \\(20\\) naval defense vessels.\\nEach vessel requires \\(950\\) steel plates. If each plate is secured using \\(18\\) high-tensile bolts, calculate the total number of bolts required.",
+    "question": "A shipbuilding dock installs steel plating on \\(20\\) naval defense vessels.\nEach vessel requires \\(950\\) steel plates. If each plate is secured using \\(18\\) high-tensile bolts, calculate the total number of bolts required.",
     "answer": "0",
     "options": [
       {
@@ -3696,7 +3696,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A utility company commissions \\(35\\) offshore wind turbines.\\nEach wind turbine contains \\(240\\) mechanical gears. If each gear assembly requires \\(12\\) heavy-duty bearings, calculate the total number of bearings deployed.",
+    "question": "A utility company commissions \\(35\\) offshore wind turbines.\nEach wind turbine contains \\(240\\) mechanical gears. If each gear assembly requires \\(12\\) heavy-duty bearings, calculate the total number of bearings deployed.",
     "answer": "0",
     "options": [
       {
@@ -3741,7 +3741,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A transit authority installs overhead lines along \\(14\\) sectors of high-speed rail.\\nEach sector contains \\(640\\) support masts. If each mast requires \\(16\\) ceramic insulators, calculate the total number of insulators installed.",
+    "question": "A transit authority installs overhead lines along \\(14\\) sectors of high-speed rail.\nEach sector contains \\(640\\) support masts. If each mast requires \\(16\\) ceramic insulators, calculate the total number of insulators installed.",
     "answer": "0",
     "options": [
       {
@@ -3786,7 +3786,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An astronomical observatory configures \\(18\\) primary telescope mirror segments.\\nEach segment is positioned by \\(128\\) sub-actuators. If each sub-actuator has \\(48\\) sensors, how many total sensors are active?",
+    "question": "An astronomical observatory configures \\(18\\) primary telescope mirror segments.\nEach segment is positioned by \\(128\\) sub-actuators. If each sub-actuator has \\(48\\) sensors, how many total sensors are active?",
     "answer": "0",
     "options": [
       {
@@ -3831,7 +3831,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A tech company builds a supercomputer array spanning \\(24\\) compute cabinets.\\nEach cabinet contains \\(512\\) processing nodes. If each node requires \\(32\\) fiber optic cables, calculate the total length of optical cable units.",
+    "question": "A tech company builds a supercomputer array spanning \\(24\\) compute cabinets.\nEach cabinet contains \\(512\\) processing nodes. If each node requires \\(32\\) fiber optic cables, calculate the total length of optical cable units.",
     "answer": "0",
     "options": [
       {
@@ -3876,7 +3876,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An orbital space station integrates solar arrays on \\(12\\) wing trusses.\\nEach truss contains \\(160\\) photovoltaic frames. If each frame holds \\(120\\) silicon solar cells, find the total number of cells generating power.",
+    "question": "An orbital space station integrates solar arrays on \\(12\\) wing trusses.\nEach truss contains \\(160\\) photovoltaic frames. If each frame holds \\(120\\) silicon solar cells, find the total number of cells generating power.",
     "answer": "0",
     "options": [
       {
@@ -3921,7 +3921,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A commercial logistics company configures \\(20\\) automated delivery drones.\\nEach drone is equipped with \\(325\\) battery bays. If each bay contains \\(14\\) copper terminal pins, calculate the total number of terminal pins.",
+    "question": "A commercial logistics company configures \\(20\\) automated delivery drones.\nEach drone is equipped with \\(325\\) battery bays. If each bay contains \\(14\\) copper terminal pins, calculate the total number of terminal pins.",
     "answer": "0",
     "options": [
       {
@@ -3966,7 +3966,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An environmental non-profit deploys \\(15\\) marine cleanup barriers.\\nEach barrier consists of \\(480\\) segments. If each segment is supported by \\(25\\) heavy-duty buoys, calculate the total number of buoys deployed.",
+    "question": "An environmental non-profit deploys \\(15\\) marine cleanup barriers.\nEach barrier consists of \\(480\\) segments. If each segment is supported by \\(25\\) heavy-duty buoys, calculate the total number of buoys deployed.",
     "answer": "0",
     "options": [
       {
@@ -4011,7 +4011,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A power grid operator installs substation gear across \\(42\\) local municipalities.\\nEach municipality operates \\(125\\) distribution nodes. If each node requires \\(8\\) circuit breaker relays, calculate the total relays deployed.",
+    "question": "A power grid operator installs substation gear across \\(42\\) local municipalities.\nEach municipality operates \\(125\\) distribution nodes. If each node requires \\(8\\) circuit breaker relays, calculate the total relays deployed.",
     "answer": "0",
     "options": [
       {
@@ -4056,7 +4056,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A cloud security provider operates \\(16\\) backup server clusters.\\nEach cluster houses \\(850\\) storage arrays. If each array contains \\(16\\) solid-state drives, calculate the total number of drives online.",
+    "question": "A cloud security provider operates \\(16\\) backup server clusters.\nEach cluster houses \\(850\\) storage arrays. If each array contains \\(16\\) solid-state drives, calculate the total number of drives online.",
     "answer": "0",
     "options": [
       {
@@ -4101,7 +4101,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A coastal desalination plant runs \\(22\\) high-pressure intake pumps.\\nEach pump utilizes \\(360\\) water flow valves. If each valve is fitted with \\(12\\) safety gaskets, calculate the total number of gaskets required.",
+    "question": "A coastal desalination plant runs \\(22\\) high-pressure intake pumps.\nEach pump utilizes \\(360\\) water flow valves. If each valve is fitted with \\(12\\) safety gaskets, calculate the total number of gaskets required.",
     "answer": "0",
     "options": [
       {
@@ -4146,7 +4146,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A container shipping line loads cargo onto \\(15\\) global freighter vessels.\\nEach freighter has \\(450\\) container bay slots. If each container slot uses \\(24\\) lock brackets, calculate the total number of lock brackets required.",
+    "question": "A container shipping line loads cargo onto \\(15\\) global freighter vessels.\nEach freighter has \\(450\\) container bay slots. If each container slot uses \\(24\\) lock brackets, calculate the total number of lock brackets required.",
     "answer": "0",
     "options": [
       {
@@ -4191,7 +4191,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A commercial construction firm installs hydronic heating across \\(12\\) apartment floors.\\nEach floor requires \\(144\\) radiator pipelines. If each pipeline is secured with \\(36\\) metal clamps, find the total number of clamps used.",
+    "question": "A commercial construction firm installs hydronic heating across \\(12\\) apartment floors.\nEach floor requires \\(144\\) radiator pipelines. If each pipeline is secured with \\(36\\) metal clamps, find the total number of clamps used.",
     "answer": "0",
     "options": [
       {
@@ -4236,7 +4236,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An enterprise server room contains \\(25\\) industrial mainframe racks.\\nEach rack houses \\(230\\) cooling fans. If each fan assembly is secured with \\(48\\) mounting screws, find the total number of screws required.",
+    "question": "An enterprise server room contains \\(25\\) industrial mainframe racks.\nEach rack houses \\(230\\) cooling fans. If each fan assembly is secured with \\(48\\) mounting screws, find the total number of screws required.",
     "answer": "0",
     "options": [
       {
@@ -4281,7 +4281,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A food processing plant operates \\(18\\) optical grain sorting machines.\\nEach machine contains \\(680\\) sensor channels. If each sensor channel utilizes \\(15\\) laser diodes, calculate the total number of diodes.",
+    "question": "A food processing plant operates \\(18\\) optical grain sorting machines.\nEach machine contains \\(680\\) sensor channels. If each sensor channel utilizes \\(15\\) laser diodes, calculate the total number of diodes.",
     "answer": "0",
     "options": [
       {
@@ -4326,7 +4326,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A driverless taxi operator manufactures a fleet of \\(50\\) autonomous passenger cars.\\nEach car is fitted with \\(85\\) optical sensor modules. If each module contains \\(14\\) specialized lenses, calculate the total lens count.",
+    "question": "A driverless taxi operator manufactures a fleet of \\(50\\) autonomous passenger cars.\nEach car is fitted with \\(85\\) optical sensor modules. If each module contains \\(14\\) specialized lenses, calculate the total lens count.",
     "answer": "0",
     "options": [
       {
@@ -4371,7 +4371,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An electronics factory manufactures printed circuit boards in \\(14\\) assembly batches.\\nEach batch yields \\(240\\) circuit boards. If each circuit board requires \\(125\\) solder joints, calculate the total number of solder joints.",
+    "question": "An electronics factory manufactures printed circuit boards in \\(14\\) assembly batches.\nEach batch yields \\(240\\) circuit boards. If each circuit board requires \\(125\\) solder joints, calculate the total number of solder joints.",
     "answer": "0",
     "options": [
       {
@@ -4416,7 +4416,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A defense facility installs biometric verification gates at \\(16\\) secure complexes.\\nEach complex has \\(375\\) access doors. If each access door requires \\(8\\) card scanners, calculate the total number of scanners.",
+    "question": "A defense facility installs biometric verification gates at \\(16\\) secure complexes.\nEach complex has \\(375\\) access doors. If each access door requires \\(8\\) card scanners, calculate the total number of scanners.",
     "answer": "0",
     "options": [
       {
@@ -4461,7 +4461,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A municipal utility installs smart energy meters across \\(20\\) neighborhood districts.\\nEach district contains \\(640\\) households. If each household meter reports on \\(24\\) variables, find the total data variables tracked.",
+    "question": "A municipal utility installs smart energy meters across \\(20\\) neighborhood districts.\nEach district contains \\(640\\) households. If each household meter reports on \\(24\\) variables, find the total data variables tracked.",
     "answer": "0",
     "options": [
       {
@@ -4506,7 +4506,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A chemical company sets up laboratories in \\(35\\) regional locations.\\nEach lab runs \\(120\\) high-speed centrifuges. If each centrifuge requires \\(16\\) silicone seals, calculate the total number of seals ordered.",
+    "question": "A chemical company sets up laboratories in \\(35\\) regional locations.\nEach lab runs \\(120\\) high-speed centrifuges. If each centrifuge requires \\(16\\) silicone seals, calculate the total number of seals ordered.",
     "answer": "0",
     "options": [
       {
@@ -4551,7 +4551,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A semiconductor fabrication plant maintains air purity across \\(15\\) cleanroom bays.\\nEach cleanroom bay houses \\(560\\) ventilation units. If each ventilation unit contains \\(12\\) HEPA filters, calculate the total filter count.",
+    "question": "A semiconductor fabrication plant maintains air purity across \\(15\\) cleanroom bays.\nEach cleanroom bay houses \\(560\\) ventilation units. If each ventilation unit contains \\(12\\) HEPA filters, calculate the total filter count.",
     "answer": "0",
     "options": [
       {
@@ -4596,7 +4596,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A mobile network operator constructs \\(14\\) communication transmission towers.\\nEach tower connects \\(150\\) fiber patch panels. If each patch panel features \\(48\\) ports, calculate the total number of ports.",
+    "question": "A mobile network operator constructs \\(14\\) communication transmission towers.\nEach tower connects \\(150\\) fiber patch panels. If each patch panel features \\(48\\) ports, calculate the total number of ports.",
     "answer": "0",
     "options": [
       {
@@ -4641,7 +4641,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A commercial port operator commissions \\(12\\) giant cargo container cranes.\\nEach crane structure contains \\(280\\) steel joints. If each joint is fastened with \\(32\\) industrial rivets, find the total number of rivets.",
+    "question": "A commercial port operator commissions \\(12\\) giant cargo container cranes.\nEach crane structure contains \\(280\\) steel joints. If each joint is fastened with \\(32\\) industrial rivets, find the total number of rivets.",
     "answer": "0",
     "options": [
       {
@@ -4686,7 +4686,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A smart city initiative deploys streetlights across \\(18\\) municipal roads.\\nEach road features \\(350\\) lampposts. If each lamppost is fitted with \\(64\\) high-intensity LED diodes, calculate the total number of LEDs.",
+    "question": "A smart city initiative deploys streetlights across \\(18\\) municipal roads.\nEach road features \\(350\\) lampposts. If each lamppost is fitted with \\(64\\) high-intensity LED diodes, calculate the total number of LEDs.",
     "answer": "0",
     "options": [
       {
@@ -4731,7 +4731,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A search engine company upgrades RAM in \\(25\\) supercomputing mainframe cabinets.\\nEach cabinet contains \\(96\\) server blades. If each server blade requires \\(240\\) memory pin connectors, calculate the total number of pin connectors.",
+    "question": "A search engine company upgrades RAM in \\(25\\) supercomputing mainframe cabinets.\nEach cabinet contains \\(96\\) server blades. If each server blade requires \\(240\\) memory pin connectors, calculate the total number of pin connectors.",
     "answer": "0",
     "options": [
       {
@@ -4776,7 +4776,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A calibration laboratory tests \\(2465\\) sensory data entries.\\nThe processor packages the entries into test blocks of \\(17\\) entries each.\\nHow many full blocks are created, and how many leftover entries remain?",
+    "question": "A calibration laboratory tests \\(2465\\) sensory data entries.\nThe processor packages the entries into test blocks of \\(17\\) entries each.\nHow many full blocks are created, and how many leftover entries remain?",
     "answer": "0",
     "options": [
       {
@@ -4821,7 +4821,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A secure cryptographic server processes \\(4187\\) data blocks.\\nThe blocks are partitioned into secure batches of \\(23\\) blocks each.\\nHow many full batches are created, and how many leftover blocks remain?",
+    "question": "A secure cryptographic server processes \\(4187\\) data blocks.\nThe blocks are partitioned into secure batches of \\(23\\) blocks each.\nHow many full batches are created, and how many leftover blocks remain?",
     "answer": "0",
     "options": [
       {
@@ -4866,7 +4866,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A community solar microgrid distributes electrical power to \\(3057\\) homes.\\nThe homes are connected in local grids of \\(13\\) homes each.\\nHow many full local grids can be formed, and how many leftover homes remain?",
+    "question": "A community solar microgrid distributes electrical power to \\(3057\\) homes.\nThe homes are connected in local grids of \\(13\\) homes each.\nHow many full local grids can be formed, and how many leftover homes remain?",
     "answer": "0",
     "options": [
       {
@@ -4911,7 +4911,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A gas pipeline inspection robot checks \\(3251\\) pressure valves.\\nThe valves are grouped into segments of \\(29\\) valves each.\\nHow many full segments are inspected, and how many leftover valves remain?",
+    "question": "A gas pipeline inspection robot checks \\(3251\\) pressure valves.\nThe valves are grouped into segments of \\(29\\) valves each.\nHow many full segments are inspected, and how many leftover valves remain?",
     "answer": "0",
     "options": [
       {
@@ -4956,7 +4956,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A shipping warehouse prepares \\(5119\\) parcel boxes for dispatch.\\nThe parcel boxes are loaded onto pallets of \\(31\\) boxes each.\\nHow many full pallets are loaded, and how many leftover boxes remain?",
+    "question": "A shipping warehouse prepares \\(5119\\) parcel boxes for dispatch.\nThe parcel boxes are loaded onto pallets of \\(31\\) boxes each.\nHow many full pallets are loaded, and how many leftover boxes remain?",
     "answer": "0",
     "options": [
       {
@@ -5001,7 +5001,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An ornithology sanctuary monitors \\(2437\\) migratory birds.\\nThe birds are banded in group flocks of \\(19\\) birds each for tracking.\\nHow many full flocks are formed, and how many leftover birds remain?",
+    "question": "An ornithology sanctuary monitors \\(2437\\) migratory birds.\nThe birds are banded in group flocks of \\(19\\) birds each for tracking.\nHow many full flocks are formed, and how many leftover birds remain?",
     "answer": "0",
     "options": [
       {
@@ -5046,7 +5046,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A mechanical factory packages \\(3854\\) precision gears.\\nThe gears are stored in cases of \\(37\\) gears each.\\nHow many full cases are packed, and how many leftover gears remain?",
+    "question": "A mechanical factory packages \\(3854\\) precision gears.\nThe gears are stored in cases of \\(37\\) gears each.\nHow many full cases are packed, and how many leftover gears remain?",
     "answer": "0",
     "options": [
       {
@@ -5091,7 +5091,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A seismology laboratory logs \\(6403\\) tremor signals.\\nThe signals are archived in data blocks of \\(41\\) signals each.\\nHow many full data blocks are saved, and how many leftover signals remain?",
+    "question": "A seismology laboratory logs \\(6403\\) tremor signals.\nThe signals are archived in data blocks of \\(41\\) signals each.\nHow many full data blocks are saved, and how many leftover signals remain?",
     "answer": "0",
     "options": [
       {
@@ -5136,7 +5136,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A marine weather network operates \\(3448\\) transmitters.\\nThe transmitters are installed in local clusters of \\(16\\) transmitters each.\\nHow many full clusters are active, and how many leftover transmitters remain?",
+    "question": "A marine weather network operates \\(3448\\) transmitters.\nThe transmitters are installed in local clusters of \\(16\\) transmitters each.\nHow many full clusters are active, and how many leftover transmitters remain?",
     "answer": "0",
     "options": [
       {
@@ -5181,7 +5181,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A biomedical facility packages \\(4617\\) vaccine vials.\\nThe vials are loaded into shipping trays of \\(24\\) vials each.\\nHow many full shipping trays are completed, and how many leftover vials remain?",
+    "question": "A biomedical facility packages \\(4617\\) vaccine vials.\nThe vials are loaded into shipping trays of \\(24\\) vials each.\nHow many full shipping trays are completed, and how many leftover vials remain?",
     "answer": "0",
     "options": [
       {
@@ -5226,7 +5226,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An aerospace quality controller inspects \\(5500\\) fuselage rivets.\\nThe rivets are categorized in test lines of \\(18\\) rivets each.\\nHow many full lines are inspected, and how many leftover rivets remain?",
+    "question": "An aerospace quality controller inspects \\(5500\\) fuselage rivets.\nThe rivets are categorized in test lines of \\(18\\) rivets each.\nHow many full lines are inspected, and how many leftover rivets remain?",
     "answer": "0",
     "options": [
       {
@@ -5271,7 +5271,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A quantum compiler maps \\(3787\\) computational nodes.\\nThe nodes are grouped into execution units of \\(32\\) nodes each.\\nHow many full execution units are mapped, and how many leftover nodes remain?",
+    "question": "A quantum compiler maps \\(3787\\) computational nodes.\nThe nodes are grouped into execution units of \\(32\\) nodes each.\nHow many full execution units are mapped, and how many leftover nodes remain?",
     "answer": "0",
     "options": [
       {
@@ -5316,7 +5316,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A department store arranges \\(3912\\) inventory crates.\\nThe crates are stacked on metal shelves of \\(15\\) crates each.\\nHow many full shelves are loaded, and how many leftover crates remain?",
+    "question": "A department store arranges \\(3912\\) inventory crates.\nThe crates are stacked on metal shelves of \\(15\\) crates each.\nHow many full shelves are loaded, and how many leftover crates remain?",
     "answer": "0",
     "options": [
       {
@@ -5361,7 +5361,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A vehicle plant processes \\(8113\\) lithium battery cells.\\nThe cells are compiled into standard packs of \\(45\\) cells each.\\nHow many full battery packs can be built, and how many leftover cells remain?",
+    "question": "A vehicle plant processes \\(8113\\) lithium battery cells.\nThe cells are compiled into standard packs of \\(45\\) cells each.\nHow many full battery packs can be built, and how many leftover cells remain?",
     "answer": "0",
     "options": [
       {
@@ -5406,7 +5406,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A telecom satellite array registers \\(5404\\) antenna elements.\\nThe elements are wired in transceiver channels of \\(22\\) elements each.\\nHow many full channels are connected, and how many leftover elements remain?",
+    "question": "A telecom satellite array registers \\(5404\\) antenna elements.\nThe elements are wired in transceiver channels of \\(22\\) elements each.\nHow many full channels are connected, and how many leftover elements remain?",
     "answer": "0",
     "options": [
       {
@@ -5451,7 +5451,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A naval shipyard aligns \\(5769\\) heavy steel plates.\\nThe plates are welded in structural panels of \\(14\\) plates each.\\nHow many full panels are constructed, and how many leftover plates remain?",
+    "question": "A naval shipyard aligns \\(5769\\) heavy steel plates.\nThe plates are welded in structural panels of \\(14\\) plates each.\nHow many full panels are constructed, and how many leftover plates remain?",
     "answer": "0",
     "options": [
       {
@@ -5496,7 +5496,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An engineer inspects \\(3516\\) drive cogs on offshore turbines.\\nThe cogs are grouped into maintenance batches of \\(28\\) cogs each.\\nHow many full batches are inspected, and how many leftover cogs remain?",
+    "question": "An engineer inspects \\(3516\\) drive cogs on offshore turbines.\nThe cogs are grouped into maintenance batches of \\(28\\) cogs each.\nHow many full batches are inspected, and how many leftover cogs remain?",
     "answer": "0",
     "options": [
       {
@@ -5541,7 +5541,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A railway operator audits \\(5087\\) overhead line masts.\\nThe masts are divided into track sectors of \\(26\\) masts each.\\nHow many full sectors are audited, and how many leftover masts remain?",
+    "question": "A railway operator audits \\(5087\\) overhead line masts.\nThe masts are divided into track sectors of \\(26\\) masts each.\nHow many full sectors are audited, and how many leftover masts remain?",
     "answer": "0",
     "options": [
       {
@@ -5586,7 +5586,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An astronomical facility configures \\(6786\\) mirror actuators.\\nThe actuators are grouped in network loops of \\(12\\) actuators each.\\nHow many full network loops are configured, and how many leftover actuators remain?",
+    "question": "An astronomical facility configures \\(6786\\) mirror actuators.\nThe actuators are grouped in network loops of \\(12\\) actuators each.\nHow many full network loops are configured, and how many leftover actuators remain?",
     "answer": "0",
     "options": [
       {
@@ -5631,7 +5631,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A datacenter technician routes \\(5059\\) power cables.\\nThe cables are bundled in server trunk links of \\(35\\) cables each.\\nHow many full trunk links are routed, and how many leftover cables remain?",
+    "question": "A datacenter technician routes \\(5059\\) power cables.\nThe cables are bundled in server trunk links of \\(35\\) cables each.\nHow many full trunk links are routed, and how many leftover cables remain?",
     "answer": "0",
     "options": [
       {
@@ -5676,7 +5676,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An orbital station inventory audit checks \\(3300\\) oxygen canisters.\\nThe canisters are stored in modular racks of \\(20\\) canisters each.\\nHow many full modular racks are loaded, and how many leftover canisters remain?",
+    "question": "An orbital station inventory audit checks \\(3300\\) oxygen canisters.\nThe canisters are stored in modular racks of \\(20\\) canisters each.\nHow many full modular racks are loaded, and how many leftover canisters remain?",
     "answer": "0",
     "options": [
       {
@@ -5721,7 +5721,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A drone production line tests \\(5013\\) battery terminal pins.\\nThe pins are packaged in shipping boxes of \\(48\\) pins each.\\nHow many full boxes are filled, and how many leftover pins remain?",
+    "question": "A drone production line tests \\(5013\\) battery terminal pins.\nThe pins are packaged in shipping boxes of \\(48\\) pins each.\nHow many full boxes are filled, and how many leftover pins remain?",
     "answer": "0",
     "options": [
       {
@@ -5766,7 +5766,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A marine conservation taskforce prepares \\(12047\\) barrier floats.\\nThe floats are linked in assembly chains of \\(25\\) floats each.\\nHow many full chains can be constructed, and how many leftover floats remain?",
+    "question": "A marine conservation taskforce prepares \\(12047\\) barrier floats.\nThe floats are linked in assembly chains of \\(25\\) floats each.\nHow many full chains can be constructed, and how many leftover floats remain?",
     "answer": "0",
     "options": [
       {
@@ -5811,7 +5811,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A grid engineering crew tests \\(10007\\) electrical relays.\\nThe relays are grouped in circuit panels of \\(16\\) relays each.\\nHow many full panels are completed, and how many leftover relays remain?",
+    "question": "A grid engineering crew tests \\(10007\\) electrical relays.\nThe relays are grouped in circuit panels of \\(16\\) relays each.\nHow many full panels are completed, and how many leftover relays remain?",
     "answer": "0",
     "options": [
       {
@@ -5856,7 +5856,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A cybersecurity server logs \\(20448\\) drive modules.\\nThe modules are partitioned into backup groups of \\(24\\) modules each.\\nHow many full backup groups are created, and how many leftover modules remain?",
+    "question": "A cybersecurity server logs \\(20448\\) drive modules.\nThe modules are partitioned into backup groups of \\(24\\) modules each.\nHow many full backup groups are created, and how many leftover modules remain?",
     "answer": "0",
     "options": [
       {
@@ -5901,7 +5901,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A water maintenance project audits \\(10855\\) safety gaskets.\\nThe gaskets are packaged in toolbags of \\(30\\) gaskets each.\\nHow many full toolbags are prepared, and how many leftover gaskets remain?",
+    "question": "A water maintenance project audits \\(10855\\) safety gaskets.\nThe gaskets are packaged in toolbags of \\(30\\) gaskets each.\nHow many full toolbags are prepared, and how many leftover gaskets remain?",
     "answer": "0",
     "options": [
       {
@@ -5946,7 +5946,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A container port checks \\(8108\\) freighter lock brackets.\\nThe brackets are boxed in supply containers of \\(18\\) brackets each.\\nHow many full supply containers are checked, and how many leftover brackets remain?",
+    "question": "A container port checks \\(8108\\) freighter lock brackets.\nThe brackets are boxed in supply containers of \\(18\\) brackets each.\nHow many full supply containers are checked, and how many leftover brackets remain?",
     "answer": "0",
     "options": [
       {
@@ -5991,7 +5991,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A mechanical contractor installs \\(17343\\) structural pipe clamps.\\nThe clamps are partitioned in installation bins of \\(12\\) clamps each.\\nHow many full bins are consumed, and how many leftover clamps remain?",
+    "question": "A mechanical contractor installs \\(17343\\) structural pipe clamps.\nThe clamps are partitioned in installation bins of \\(12\\) clamps each.\nHow many full bins are consumed, and how many leftover clamps remain?",
     "answer": "0",
     "options": [
       {
@@ -6036,7 +6036,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A hardware engineer audits \\(5088\\) mainframe mounting screws.\\The screws are stored in workshop drawers of \\(22\\) screws each.\\nHow many full drawers can be filled, and how many leftover screws remain?",
+    "question": "A hardware engineer audits \\(5088\\) mainframe mounting screws.\\The screws are stored in workshop drawers of \\(22\\) screws each.\nHow many full drawers can be filled, and how many leftover screws remain?",
     "answer": "0",
     "options": [
       {
@@ -6081,7 +6081,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A sorting machine factory calibrates \\(10229\\) laser diodes.\\The diodes are mapped into sensor lines of \\(15\\) diodes each.\\nHow many full sensor lines are mapped, and how many leftover diodes remain?",
+    "question": "A sorting machine factory calibrates \\(10229\\) laser diodes.\\The diodes are mapped into sensor lines of \\(15\\) diodes each.\nHow many full sensor lines are mapped, and how many leftover diodes remain?",
     "answer": "0",
     "options": [
       {
@@ -6126,7 +6126,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A municipal road network installs \\(3526\\) camera nodes.\\nThe nodes are connected to local switches in groups of \\(19\\) nodes.\\nHow many full switches are loaded, and how many leftover nodes remain?",
+    "question": "A municipal road network installs \\(3526\\) camera nodes.\nThe nodes are connected to local switches in groups of \\(19\\) nodes.\nHow many full switches are loaded, and how many leftover nodes remain?",
     "answer": "0",
     "options": [
       {
@@ -6171,7 +6171,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A commercial shrimp farm places \\(1683\\) water aerator units.\\nThe units are powered by regional control boxes handling \\(14\\) aerators each.\\nHow many control boxes operate at full capacity, and how many leftover aerators remain?",
+    "question": "A commercial shrimp farm places \\(1683\\) water aerator units.\nThe units are powered by regional control boxes handling \\(14\\) aerators each.\nHow many control boxes operate at full capacity, and how many leftover aerators remain?",
     "answer": "0",
     "options": [
       {
@@ -6216,7 +6216,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A beverage factory coordinates \\(5168\\) packaging lines.\\nThe lines are organized in control groups of \\(24\\) lines each.\\nHow many full control groups are managed, and how many leftover lines remain?",
+    "question": "A beverage factory coordinates \\(5168\\) packaging lines.\nThe lines are organized in control groups of \\(24\\) lines each.\nHow many full control groups are managed, and how many leftover lines remain?",
     "answer": "0",
     "options": [
       {
@@ -6261,7 +6261,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A timber processing yard audits \\(3993\\) sorting cranes.\\nThe cranes are distributed across timber bays containing \\(36\\) cranes each.\\nHow many full timber bays are operational, and how many leftover cranes remain?",
+    "question": "A timber processing yard audits \\(3993\\) sorting cranes.\nThe cranes are distributed across timber bays containing \\(36\\) cranes each.\nHow many full timber bays are operational, and how many leftover cranes remain?",
     "answer": "0",
     "options": [
       {
@@ -6306,7 +6306,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A metallurgical plant installs \\(5440\\) heat sensors.\\nThe sensors are linked to control rooms in groups of \\(17\\) sensors each.\\nHow many control rooms are fully utilized, and how many leftover sensors remain?",
+    "question": "A metallurgical plant installs \\(5440\\) heat sensors.\nThe sensors are linked to control rooms in groups of \\(17\\) sensors each.\nHow many control rooms are fully utilized, and how many leftover sensors remain?",
     "answer": "0",
     "options": [
       {
@@ -6351,7 +6351,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A medical center installs \\(3983\\) emergency call buttons.\\nThe buttons are wired to master consoles handling \\(28\\) buttons each.\\nHow many consoles are fully populated, and how many leftover buttons remain?",
+    "question": "A medical center installs \\(3983\\) emergency call buttons.\nThe buttons are wired to master consoles handling \\(28\\) buttons each.\nHow many consoles are fully populated, and how many leftover buttons remain?",
     "answer": "0",
     "options": [
       {
@@ -6396,7 +6396,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A subway system deploys \\(3650\\) smart card vending machines.\\nThe machines are serviced in regional route sectors of \\(13\\) machines each.\\nHow many full sectors are serviced, and how many leftover machines remain?",
+    "question": "A subway system deploys \\(3650\\) smart card vending machines.\nThe machines are serviced in regional route sectors of \\(13\\) machines each.\nHow many full sectors are serviced, and how many leftover machines remain?",
     "answer": "0",
     "options": [
       {
@@ -6441,7 +6441,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A greenhouse collective sets up \\(5896\\) soil telemetry probes.\\nThe probes are mapped to wireless hubs managing \\(31\\) probes each.\\nHow many hubs run at maximum capacity, and how many leftover probes remain?",
+    "question": "A greenhouse collective sets up \\(5896\\) soil telemetry probes.\nThe probes are mapped to wireless hubs managing \\(31\\) probes each.\nHow many hubs run at maximum capacity, and how many leftover probes remain?",
     "answer": "0",
     "options": [
       {
@@ -6486,7 +6486,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A refining plant inspects \\(3404\\) pressure relief valves.\\nThe valves are divided into inspection sectors of \\(22\\) valves each.\\nHow many full sectors are inspected, and how many leftover valves remain?",
+    "question": "A refining plant inspects \\(3404\\) pressure relief valves.\nThe valves are divided into inspection sectors of \\(22\\) valves each.\nHow many full sectors are inspected, and how many leftover valves remain?",
     "answer": "0",
     "options": [
       {
@@ -6531,7 +6531,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A county library system installs \\(6887\\) database search terminals.\\nThe terminals are linked in network hubs of \\(16\\) terminals each.\\nHow many full network hubs are occupied, and how many leftover terminals remain?",
+    "question": "A county library system installs \\(6887\\) database search terminals.\nThe terminals are linked in network hubs of \\(16\\) terminals each.\nHow many full network hubs are occupied, and how many leftover terminals remain?",
     "answer": "0",
     "options": [
       {
@@ -6576,7 +6576,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A composite materials plant manufactures \\(7115\\) fiberglass rolls.\\nThe rolls are stored on logistics racks of \\(25\\) rolls each.\\nHow many full racks are loaded, and how many leftover rolls remain?",
+    "question": "A composite materials plant manufactures \\(7115\\) fiberglass rolls.\nThe rolls are stored on logistics racks of \\(25\\) rolls each.\nHow many full racks are loaded, and how many leftover rolls remain?",
     "answer": "0",
     "options": [
       {
@@ -6621,7 +6621,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A smart city parking garage operates \\(4631\\) floor presence sensors.\\nThe sensors are wired to regional controllers handling \\(45\\) sensors each.\\nHow many fully loaded controllers are online, and how many leftover sensors remain?",
+    "question": "A smart city parking garage operates \\(4631\\) floor presence sensors.\nThe sensors are wired to regional controllers handling \\(45\\) sensors each.\nHow many fully loaded controllers are online, and how many leftover sensors remain?",
     "answer": "0",
     "options": [
       {
@@ -6666,7 +6666,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A rural electricity board operates \\(7710\\) water-flow meters.\\nThe meters are monitored in district sectors of \\(12\\) meters each.\\nHow many full sectors are monitored, and how many leftover meters remain?",
+    "question": "A rural electricity board operates \\(7710\\) water-flow meters.\nThe meters are monitored in district sectors of \\(12\\) meters each.\nHow many full sectors are monitored, and how many leftover meters remain?",
     "answer": "0",
     "options": [
       {
@@ -6711,7 +6711,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An environmental utility deploys \\(5803\\) heavy-duty sludge pumps.\\nThe pumps are serviced in facility blocks of \\(18\\) pumps each.\\nHow many full blocks are operational, and how many leftover pumps remain?",
+    "question": "An environmental utility deploys \\(5803\\) heavy-duty sludge pumps.\nThe pumps are serviced in facility blocks of \\(18\\) pumps each.\nHow many full blocks are operational, and how many leftover pumps remain?",
     "answer": "0",
     "options": [
       {
@@ -6756,7 +6756,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A farm collective monitors \\(7244\\) organic digestion vessels.\\nThe vessels are controlled in clusters of \\(15\\) vessels each.\\nHow many full clusters are managed, and how many leftover vessels remain?",
+    "question": "A farm collective monitors \\(7244\\) organic digestion vessels.\nThe vessels are controlled in clusters of \\(15\\) vessels each.\nHow many full clusters are managed, and how many leftover vessels remain?",
     "answer": "0",
     "options": [
       {
@@ -6801,7 +6801,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A broadband network installs \\(4833\\) transmission repeaters.\\nThe repeaters are clustered in distribution nodes of \\(42\\) repeaters each.\\nHow many full nodes are active, and how many leftover repeaters remain?",
+    "question": "A broadband network installs \\(4833\\) transmission repeaters.\nThe repeaters are clustered in distribution nodes of \\(42\\) repeaters each.\nHow many full nodes are active, and how many leftover repeaters remain?",
     "answer": "0",
     "options": [
       {
@@ -6846,7 +6846,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A city cooling system monitors \\(3932\\) water valve actuators.\\nThe actuators are grouped in loop rings of \\(29\\) actuators each.\\nHow many full loop rings are monitored, and how many leftover actuators remain?",
+    "question": "A city cooling system monitors \\(3932\\) water valve actuators.\nThe actuators are grouped in loop rings of \\(29\\) actuators each.\nHow many full loop rings are monitored, and how many leftover actuators remain?",
     "answer": "0",
     "options": [
       {
@@ -6891,7 +6891,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A safety board audits \\(3710\\) level crossing signal lights.\\nThe lights are grouped in highway corridors of \\(33\\) lights each.\\nHow many full corridors are audited, and how many leftover lights remain?",
+    "question": "A safety board audits \\(3710\\) level crossing signal lights.\nThe lights are grouped in highway corridors of \\(33\\) lights each.\nHow many full corridors are audited, and how many leftover lights remain?",
     "answer": "0",
     "options": [
       {
@@ -6936,7 +6936,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A shipping firm builds \\(9926\\) package landing markers.\\nThe markers are routed in delivery networks of \\(11\\) markers each.\\nHow many full networks are active, and how many leftover markers remain?",
+    "question": "A shipping firm builds \\(9926\\) package landing markers.\nThe markers are routed in delivery networks of \\(11\\) markers each.\nHow many full networks are active, and how many leftover markers remain?",
     "answer": "0",
     "options": [
       {
@@ -6981,7 +6981,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A recycling plant operates \\(3338\\) pneumatic waste ejectors.\\nThe ejectors are grouped in sensor lanes of \\(23\\) ejectors each.\\nHow many full sensor lanes are configured, and how many leftover ejectors remain?",
+    "question": "A recycling plant operates \\(3338\\) pneumatic waste ejectors.\nThe ejectors are grouped in sensor lanes of \\(23\\) ejectors each.\nHow many full sensor lanes are configured, and how many leftover ejectors remain?",
     "answer": "0",
     "options": [
       {
@@ -7026,7 +7026,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A cloud platform installs \\(2689\\) power grid modules.\\nThe modules are distributed in transformer units of \\(13\\) modules each.\\nHow many full transformer units are loaded, and how many leftover modules remain?",
+    "question": "A cloud platform installs \\(2689\\) power grid modules.\nThe modules are distributed in transformer units of \\(13\\) modules each.\nHow many full transformer units are loaded, and how many leftover modules remain?",
     "answer": "0",
     "options": [
       {
@@ -7071,7 +7071,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An airport luggage transit terminal audits \\(3471\\) sorting carts.\\The carts are stored in holding lanes of \\(19\\) carts each.\\nHow many full holding lanes are occupied, and how many leftover carts remain?",
+    "question": "An airport luggage transit terminal audits \\(3471\\) sorting carts.\\The carts are stored in holding lanes of \\(19\\) carts each.\nHow many full holding lanes are occupied, and how many leftover carts remain?",
     "answer": "0",
     "options": [
       {
@@ -7116,7 +7116,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A hydraulic protection board monitors \\(4192\\) level probes.\\The probes are connected in regional trunks of \\(23\\) probes each.\\nHow many full trunks are active, and how many leftover probes remain?",
+    "question": "A hydraulic protection board monitors \\(4192\\) level probes.\\The probes are connected in regional trunks of \\(23\\) probes each.\nHow many full trunks are active, and how many leftover probes remain?",
     "answer": "0",
     "options": [
       {
@@ -7161,7 +7161,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An engineering check audits \\(3272\\) vacuum pipelines.\\nThe pipelines are mapped to branch valves managing \\(29\\) outlets each.\\nHow many full branch valves are checked, and how many leftover outlets remain?",
+    "question": "An engineering check audits \\(3272\\) vacuum pipelines.\nThe pipelines are mapped to branch valves managing \\(29\\) outlets each.\nHow many full branch valves are checked, and how many leftover outlets remain?",
     "answer": "0",
     "options": [
       {
@@ -7206,7 +7206,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A shipping fleet operator audits \\(5138\\) steel lock pins.\\nThe pins are organized in cargo crates of \\(31\\) pins each.\\nHow many full crates are packed, and how many leftover pins remain?",
+    "question": "A shipping fleet operator audits \\(5138\\) steel lock pins.\nThe pins are organized in cargo crates of \\(31\\) pins each.\nHow many full crates are packed, and how many leftover pins remain?",
     "answer": "0",
     "options": [
       {
@@ -7251,7 +7251,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A drone logistics warehouse audits \\(2449\\) tracking chips.\\nThe chips are packed in storage drawers of \\(19\\) chips each.\\nHow many full drawers are filled, and how many leftover chips remain?",
+    "question": "A drone logistics warehouse audits \\(2449\\) tracking chips.\nThe chips are packed in storage drawers of \\(19\\) chips each.\nHow many full drawers are filled, and how many leftover chips remain?",
     "answer": "0",
     "options": [
       {
@@ -7296,7 +7296,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A mechanical maintenance project checks \\(3867\\) filtration membranes.\\nThe membranes are bundled in supply cases of \\(37\\) membranes each.\\nHow many full cases are packed, and how many leftover membranes remain?",
+    "question": "A mechanical maintenance project checks \\(3867\\) filtration membranes.\nThe membranes are bundled in supply cases of \\(37\\) membranes each.\nHow many full cases are packed, and how many leftover membranes remain?",
     "answer": "0",
     "options": [
       {
@@ -7341,7 +7341,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A hydronic project installs \\(6412\\) pressure gauges.\\nThe gauges are organized in inspection boxes of \\(41\\) gauges each.\\nHow many full boxes are used, and how many leftover gauges remain?",
+    "question": "A hydronic project installs \\(6412\\) pressure gauges.\nThe gauges are organized in inspection boxes of \\(41\\) gauges each.\nHow many full boxes are used, and how many leftover gauges remain?",
     "answer": "0",
     "options": [
       {
@@ -7386,7 +7386,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "An enterprise server room logs \\(3450\\) chassis lock studs.\\The studs are stored in compartment bins of \\(16\\) studs each.\\nHow many full bins are loaded, and how many leftover studs remain?",
+    "question": "An enterprise server room logs \\(3450\\) chassis lock studs.\\The studs are stored in compartment bins of \\(16\\) studs each.\nHow many full bins are loaded, and how many leftover studs remain?",
     "answer": "0",
     "options": [
       {
@@ -7431,7 +7431,7 @@ export const Y8_CH1B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "A sorting machine plant maps \\(4619\\) air valve ejectors.\\nThe ejectors are mapped to control boards of \\(24\\) ejectors each.\\nHow many full control boards are mapped, and how many leftover ejectors remain?",
+    "question": "A sorting machine plant maps \\(4619\\) air valve ejectors.\nThe ejectors are mapped to control boards of \\(24\\) ejectors each.\nHow many full control boards are mapped, and how many leftover ejectors remain?",
     "answer": "0",
     "options": [
       {

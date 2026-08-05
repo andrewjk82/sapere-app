@@ -1,11 +1,13 @@
 export const Y7_CH23A_QUESTIONS = [
   {
     "id": "y7-23a-q1a",
+    "topicId": "y7-23a",
+    "c": "23A",
     "t": "Algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write an expression for the following.\\n\\nThe sum of \\(4x\\) and \\(5y\\)",
+    "question": "Write an expression for the following.<br /><br />The sum of \\(4x\\) and \\(5y\\)",
     "a": 1,
     "answer": "1",
     "opts": [
@@ -38,18 +40,20 @@ export const Y7_CH23A_QUESTIONS = [
   },
   {
     "id": "y7-23a-q1b",
+    "topicId": "y7-23a",
+    "c": "23A",
     "t": "Algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write an expression for the following.\\n\\n\\(7\\) less than \\(3m\\)",
+    "question": "Write an expression for the following.<br /><br />\\(7\\) less than \\(3m\\)",
     "a": 2,
     "answer": "2",
     "opts": [
       "\\(-3m - 7\\)",
       "\\(4m - 7\\)",
       "\\(3m - 7\\)",
-      "\\(opt2\\)"
+      "\\(5m - 7\\)"
     ],
     "hint": "Less than means subtraction. Be careful with the order.",
     "solution": "",
@@ -75,25 +79,27 @@ export const Y7_CH23A_QUESTIONS = [
   },
   {
     "id": "y7-23a-q1c",
+    "topicId": "y7-23a",
+    "c": "23A",
     "t": "Algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write an expression for the following.\\n\\nThe double of \\(4k\\)",
-    "a": 3,
-    "answer": "3",
+    "question": "Write an expression for the following.<br /><br />The double of \\(4k\\)",
+    "a": 2,
+    "answer": "2",
     "opts": [
-      "\\(-8k\\)",
       "\\(9k\\)",
-      "\\(opt2\\)",
-      "\\(8k\\)"
+      "\\(10k\\)",
+      "\\(8k\\)",
+      "\\(11k\\)"
     ],
     "hint": "Double means to multiply by \\(2\\).",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Multiply the term \\(4k\\) by \\(2\\).",
-        "workingOut": "\\(2 \\times 4k = 8k\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -112,18 +118,20 @@ export const Y7_CH23A_QUESTIONS = [
   },
   {
     "id": "y7-23a-q1d",
+    "topicId": "y7-23a",
+    "c": "23A",
     "t": "Algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write an expression for the following.\\n\\nThe difference between \\(p\\) and \\(q\\)",
+    "question": "Write an expression for the following.<br /><br />The difference between \\(p\\) and \\(q\\)",
     "a": 0,
     "answer": "0",
     "opts": [
       "\\(p - q\\)",
       "\\(-p - q\\)",
-      "\\(opt1\\)",
-      "\\(opt2\\)"
+      "\\(2p - q\\)",
+      "\\(3p - q\\)"
     ],
     "hint": "Difference means subtraction.",
     "solution": "",
@@ -149,25 +157,27 @@ export const Y7_CH23A_QUESTIONS = [
   },
   {
     "id": "y7-23a-q1e",
+    "topicId": "y7-23a",
+    "c": "23A",
     "t": "Algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write an expression for the following.\\n\\nThree quarters of \\(w\\)",
+    "question": "Write an expression for the following.<br /><br />Three quarters of \\(w\\)",
     "a": 1,
     "answer": "1",
     "opts": [
-      "\\(-\\frac{3w}{4}\\)",
-      "\\(\\frac{3w}{4}\\)",
       "\\(\\frac{4w}{4}\\)",
-      "\\(opt2\\)"
+      "\\(\\frac{3w}{4}\\)",
+      "\\(\\frac{5w}{4}\\)",
+      "\\(\\frac{6w}{4}\\)"
     ],
     "hint": "Multiply \\(w\\) by the fraction \\(\\frac{3}{4}\\).",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Multiply the variable by the fraction.",
-        "workingOut": "\\(\\frac{3}{4} \\times w = \\frac{3w}{4}\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -186,18 +196,20 @@ export const Y7_CH23A_QUESTIONS = [
   },
   {
     "id": "y7-23a-q2a",
+    "topicId": "y7-23a",
+    "c": "23A",
     "t": "Algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write an algebraic expression for the following.\\n\\nEight times the number \\(k\\) minus \\(5\\)",
+    "question": "Write an algebraic expression for the following.<br /><br />Eight times the number \\(k\\) minus \\(5\\)",
     "a": 0,
     "answer": "0",
     "opts": [
       "\\(8k - 5\\)",
       "\\(-8k - 5\\)",
       "\\(9k - 5\\)",
-      "\\(opt2\\)"
+      "\\(10k - 5\\)"
     ],
     "hint": "Multiply \\(k\\) by \\(8\\), then subtract \\(5\\).",
     "solution": "",
@@ -223,11 +235,13 @@ export const Y7_CH23A_QUESTIONS = [
   },
   {
     "id": "y7-23a-q2b",
+    "topicId": "y7-23a",
+    "c": "23A",
     "t": "Algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write an algebraic expression for the following.\\n\\nThe sum of \\(7y\\) and \\(42\\)",
+    "question": "Write an algebraic expression for the following.<br /><br />The sum of \\(7y\\) and \\(42\\)",
     "a": 1,
     "answer": "1",
     "opts": [
@@ -260,11 +274,13 @@ export const Y7_CH23A_QUESTIONS = [
   },
   {
     "id": "y7-23a-q2c",
+    "topicId": "y7-23a",
+    "c": "23A",
     "t": "Algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write an algebraic expression for the following.\\n\\nThe sum of \\(4a\\), \\(6b\\) and \\(2c\\)",
+    "question": "Write an algebraic expression for the following.<br /><br />The sum of \\(4a\\), \\(6b\\) and \\(2c\\)",
     "a": 2,
     "answer": "2",
     "opts": [
@@ -297,35 +313,37 @@ export const Y7_CH23A_QUESTIONS = [
   },
   {
     "id": "y7-23a-q2d",
+    "topicId": "y7-23a",
+    "c": "23A",
     "t": "Algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write an algebraic expression for the following.\\n\\nThe product of \\(5p\\) and \\(4q\\)",
+    "question": "Write an algebraic expression for the following.<br /><br />The product of \\(5p\\) and \\(4q\\)",
     "a": 3,
     "answer": "3",
     "opts": [
-      "\\(-20pq\\)",
       "\\(21pq\\)",
-      "\\(opt2\\)",
+      "\\(9pq\\)",
+      "\\(22pq\\)",
       "\\(20pq\\)"
     ],
     "hint": "Product means multiplication.",
     "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Multiply the coefficients and the variables.",
-        "workingOut": "\\(5p \\times 4q = 20pq\\)",
+        "explanation": "The word \"product\" means to multiply the terms together.",
+        "workingOut": "\\( 5p \\times 4q \\)",
         "graphData": null
       },
       {
-        "explanation": "Confirm the final answer.",
-        "workingOut": "\\(20pq\\)",
+        "explanation": "Multiply the coefficients (numbers) together and write the variables next to each other.",
+        "workingOut": "\\( (5 \\times 4) \\times (p \\times q) \\)",
         "graphData": null
       },
       {
-        "explanation": "Confirm the final answer.",
-        "workingOut": "\\(20pq\\)",
+        "explanation": "Simplify to get the final algebraic expression.",
+        "workingOut": "\\( 20pq \\)",
         "graphData": null
       }
     ],
@@ -334,25 +352,27 @@ export const Y7_CH23A_QUESTIONS = [
   },
   {
     "id": "y7-23a-q2e",
+    "topicId": "y7-23a",
+    "c": "23A",
     "t": "Algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write an algebraic expression for the following.\\n\\nThe average of \\(6m\\) and \\(10m\\)",
+    "question": "Write an algebraic expression for the following.<br /><br />The average of \\(6m\\) and \\(10m\\)",
     "a": 0,
     "answer": "0",
     "opts": [
       "\\(8m\\)",
-      "\\(-8m\\)",
       "\\(9m\\)",
-      "\\(opt2\\)"
+      "\\(10m\\)",
+      "\\(11m\\)"
     ],
     "hint": "Add them and divide by \\(2\\).",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Find the sum of the two terms.",
-        "workingOut": "\\(6m + 10m = 16m\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -371,11 +391,13 @@ export const Y7_CH23A_QUESTIONS = [
   },
   {
     "id": "y7-23a-q3a",
+    "topicId": "y7-23a",
+    "c": "23A",
     "t": "Algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "If \\(y\\) represents any number, write an algebraic expression for the following.\\n\\nSeven times the number plus \\(8\\)",
+    "question": "If \\(y\\) represents any number, write an algebraic expression for the following.<br /><br />Seven times the number plus \\(8\\)",
     "a": 3,
     "answer": "3",
     "opts": [
@@ -408,25 +430,27 @@ export const Y7_CH23A_QUESTIONS = [
   },
   {
     "id": "y7-23a-q3b",
+    "topicId": "y7-23a",
+    "c": "23A",
     "t": "Algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "If \\(y\\) represents any number, write an algebraic expression for the following.\\n\\nOne quarter of the number minus three",
+    "question": "If \\(y\\) represents any number, write an algebraic expression for the following.<br /><br />One quarter of the number minus three",
     "a": 0,
     "answer": "0",
     "opts": [
       "\\(\\frac{y}{4} - 3\\)",
       "\\(-\\frac{y}{4} - 3\\)",
       "\\(\\frac{y}{5} - 3\\)",
-      "\\(opt2\\)"
+      "\\(\\frac{y}{6} - 3\\)"
     ],
     "hint": "Divide \\(y\\) by \\(4\\), then subtract \\(3\\).",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Find one quarter of the number \\(y\\).",
-        "workingOut": "\\(\\frac{y}{4}\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -445,11 +469,13 @@ export const Y7_CH23A_QUESTIONS = [
   },
   {
     "id": "y7-23a-q3c",
+    "topicId": "y7-23a",
+    "c": "23A",
     "t": "Algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "If \\(y\\) represents any number, write an algebraic expression for the following.\\n\\nThe sum of the number and \\(20\\)",
+    "question": "If \\(y\\) represents any number, write an algebraic expression for the following.<br /><br />The sum of the number and \\(20\\)",
     "a": 1,
     "answer": "1",
     "opts": [
@@ -482,18 +508,20 @@ export const Y7_CH23A_QUESTIONS = [
   },
   {
     "id": "y7-23a-q3d",
+    "topicId": "y7-23a",
+    "c": "23A",
     "t": "Algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "If \\(y\\) represents any number, write an algebraic expression for the following.\\n\\nThe difference between the number and \\(12\\)",
+    "question": "If \\(y\\) represents any number, write an algebraic expression for the following.<br /><br />The difference between the number and \\(12\\)",
     "a": 2,
     "answer": "2",
     "opts": [
       "\\(-y - 12\\)",
       "\\(y - 13\\)",
       "\\(y - 12\\)",
-      "\\(opt2\\)"
+      "\\(y - 14\\)"
     ],
     "hint": "Difference implies subtraction.",
     "solution": "",
@@ -519,11 +547,13 @@ export const Y7_CH23A_QUESTIONS = [
   },
   {
     "id": "y7-23a-q3e",
+    "topicId": "y7-23a",
+    "c": "23A",
     "t": "Algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "If \\(y\\) represents any number, write an algebraic expression for the following.\\n\\nSix more than the number",
+    "question": "If \\(y\\) represents any number, write an algebraic expression for the following.<br /><br />Six more than the number",
     "a": 3,
     "answer": "3",
     "opts": [
@@ -556,11 +586,13 @@ export const Y7_CH23A_QUESTIONS = [
   },
   {
     "id": "y7-23a-q4a",
+    "topicId": "y7-23a",
+    "c": "23A",
     "t": "Algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Show the sum of each of the following.\\n\\n\\(24\\) and \\(m\\)",
+    "question": "Show the sum of each of the following.<br /><br />\\(24\\) and \\(m\\)",
     "a": 2,
     "answer": "2",
     "opts": [
@@ -593,11 +625,13 @@ export const Y7_CH23A_QUESTIONS = [
   },
   {
     "id": "y7-23a-q4b",
+    "topicId": "y7-23a",
+    "c": "23A",
     "t": "Algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Show the sum of each of the following.\\n\\n\\(7p\\) and \\(4q\\)",
+    "question": "Show the sum of each of the following.<br /><br />\\(7p\\) and \\(4q\\)",
     "a": 3,
     "answer": "3",
     "opts": [
@@ -630,11 +664,13 @@ export const Y7_CH23A_QUESTIONS = [
   },
   {
     "id": "y7-23a-q4c",
+    "topicId": "y7-23a",
+    "c": "23A",
     "t": "Algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Show the sum of each of the following.\\n\\n\\(4a\\), \\(2b\\) and \\(6c\\)",
+    "question": "Show the sum of each of the following.<br /><br />\\(4a\\), \\(2b\\) and \\(6c\\)",
     "a": 0,
     "answer": "0",
     "opts": [
@@ -667,11 +703,13 @@ export const Y7_CH23A_QUESTIONS = [
   },
   {
     "id": "y7-23a-q4d",
+    "topicId": "y7-23a",
+    "c": "23A",
     "t": "Algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Show the sum of each of the following.\\n\\n\\(9x\\), \\(3y\\) and \\(8z\\)",
+    "question": "Show the sum of each of the following.<br /><br />\\(9x\\), \\(3y\\) and \\(8z\\)",
     "a": 1,
     "answer": "1",
     "opts": [
@@ -704,11 +742,13 @@ export const Y7_CH23A_QUESTIONS = [
   },
   {
     "id": "y7-23a-q4e",
+    "topicId": "y7-23a",
+    "c": "23A",
     "t": "Algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Show the sum of each of the following.\\n\\n\\(10p\\), \\(14q\\) and \\(5r\\)",
+    "question": "Show the sum of each of the following.<br /><br />\\(10p\\), \\(14q\\) and \\(5r\\)",
     "a": 2,
     "answer": "2",
     "opts": [
@@ -741,11 +781,13 @@ export const Y7_CH23A_QUESTIONS = [
   },
   {
     "id": "y7-23a-q5a",
+    "topicId": "y7-23a",
+    "c": "23A",
     "t": "Algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write algebraic expressions for the following.\\n\\nTo the sum of \\(6a\\) and \\(4b\\), add \\(7c\\)",
+    "question": "Write algebraic expressions for the following.<br /><br />To the sum of \\(6a\\) and \\(4b\\), add \\(7c\\)",
     "a": 1,
     "answer": "1",
     "opts": [
@@ -778,25 +820,27 @@ export const Y7_CH23A_QUESTIONS = [
   },
   {
     "id": "y7-23a-q5b",
+    "topicId": "y7-23a",
+    "c": "23A",
     "t": "Algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write algebraic expressions for the following.\\n\\nFrom the product of \\(4x\\) and \\(5y\\), take away \\(8\\)",
+    "question": "Write algebraic expressions for the following.<br /><br />From the product of \\(4x\\) and \\(5y\\), take away \\(8\\)",
     "a": 2,
     "answer": "2",
     "opts": [
       "\\(-20xy - 8\\)",
       "\\(21xy - 8\\)",
       "\\(20xy - 8\\)",
-      "\\(opt2\\)"
+      "\\(22xy - 8\\)"
     ],
     "hint": "Find the product first, then subtract.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Multiply the two terms to find the product.",
-        "workingOut": "\\(4x \\times 5y = 20xy\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -815,25 +859,27 @@ export const Y7_CH23A_QUESTIONS = [
   },
   {
     "id": "y7-23a-q5c",
+    "topicId": "y7-23a",
+    "c": "23A",
     "t": "Algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write algebraic expressions for the following.\\n\\nDivide \\(5p\\) by \\(2q\\) and then take away \\(12\\)",
-    "a": 3,
-    "answer": "3",
+    "question": "Write algebraic expressions for the following.<br /><br />Divide \\(5p\\) by \\(2q\\) and then take away \\(12\\)",
+    "a": 2,
+    "answer": "2",
     "opts": [
       "\\(-\\frac{5p}{2q} - 12\\)",
       "\\(\\frac{6p}{2q} - 12\\)",
-      "\\(opt2\\)",
-      "\\(\\frac{5p}{2q} - 12\\)"
+      "\\(\\frac{5p}{2q} - 12\\)",
+      "\\(\\frac{7p}{2q} - 12\\)"
     ],
     "hint": "Write the division as a fraction, then subtract.",
     "solution": "",
     "solutionSteps": [
       {
         "explanation": "Write the division of \\(5p\\) by \\(2q\\) as a fraction.",
-        "workingOut": "\\(\\frac{5p}{2q}\\)",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
         "graphData": null
       },
       {
@@ -852,11 +898,13 @@ export const Y7_CH23A_QUESTIONS = [
   },
   {
     "id": "y7-23a-q5d",
+    "topicId": "y7-23a",
+    "c": "23A",
     "t": "Algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write algebraic expressions for the following.\\n\\nDivide the sum of \\(a\\) and \\(b\\) by \\(15\\)",
+    "question": "Write algebraic expressions for the following.<br /><br />Divide the sum of \\(a\\) and \\(b\\) by \\(15\\)",
     "a": 0,
     "answer": "0",
     "opts": [
@@ -889,11 +937,13 @@ export const Y7_CH23A_QUESTIONS = [
   },
   {
     "id": "y7-23a-q5e",
+    "topicId": "y7-23a",
+    "c": "23A",
     "t": "Algebraic expressions",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Write algebraic expressions for the following.\\n\\n\\(25\\) plus \\(m\\), all divided by \\(8\\)",
+    "question": "Write algebraic expressions for the following.<br /><br />\\(25\\) plus \\(m\\), all divided by \\(8\\)",
     "a": 1,
     "answer": "1",
     "opts": [

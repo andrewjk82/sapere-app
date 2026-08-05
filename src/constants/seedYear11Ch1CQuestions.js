@@ -191,7 +191,7 @@ export const Y11_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Simplify: \\( \\frac{m}{m^2} \\) (where \\( m \\neq 0 \\))",
+    "question": "Simplify: \\( \\frac{m}{m^2} \\) (where \\( m \neq 0 \\))",
     "options": [
       {
         "text": "\\(\\frac{1}{m}\\)",
@@ -1733,7 +1733,7 @@ export const Y11_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Simplify the algebraic fraction: \\( \\frac{y}{y} \\) (where \\( y \\neq 0 \\))",
+    "question": "Simplify the algebraic fraction: \\( \\frac{y}{y} \\) (where \\( y \neq 0 \\))",
     "options": [
       {
         "text": "\\(1\\)",
@@ -1771,7 +1771,7 @@ export const Y11_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Simplify: \\( \\frac{p}{4p} \\) (where \\( p \\neq 0 \\))",
+    "question": "Simplify: \\( \\frac{p}{4p} \\) (where \\( p \neq 0 \\))",
     "options": [
       {
         "text": "\\(\\frac{1}{4}\\)",
@@ -3065,7 +3065,7 @@ export const Y11_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Simplify: \\( \\frac{y-x}{x-y} \\) (where \\( x \\neq y \\))",
+    "question": "Simplify: \\( \\frac{y-x}{x-y} \\) (where \\( x \neq y \\))",
     "options": [
       {
         "text": "\\(-1\\)",
@@ -3270,7 +3270,7 @@ export const Y11_CH1C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Simplify: \\( \\frac{4a}{a} \\) (where \\( a \\neq 0 \\))",
+    "question": "Simplify: \\( \\frac{4a}{a} \\) (where \\( a \neq 0 \\))",
     "options": [
       {
         "text": "\\(7\\)",

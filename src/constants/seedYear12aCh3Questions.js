@@ -609,7 +609,7 @@ export const Y12A_CH3_QUESTIONS = [
     "id": "y12a-3a-q6c",
     "type": "teacher_review",
     "question": "Explain why \\( f(x) = x^3 + 1 \\) is increasing for all values of \\( x \\), apart from \\( x = 0 \\) where it is stationary.",
-    "a": "The derivative is \\( f'(x) = 3x^2 \\). For all \\( x \\neq 0 \\), \\( 3x^2 > 0 \\), which means the function is increasing. At \\( x = 0 \\), \\( f'(0) = 3(0)^2 = 0 \\), which means the function has a horizontal tangent and is stationary.",
+    "a": "The derivative is \\( f'(x) = 3x^2 \\). For all \\( x \neq 0 \\), \\( 3x^2 > 0 \\), which means the function is increasing. At \\( x = 0 \\), \\( f'(0) = 3(0)^2 = 0 \\), which means the function has a horizontal tangent and is stationary.",
     "difficulty": "easy",
     "timeLimit": 90,
     "t": "Increasing, decreasing and stationary at a point",
@@ -619,8 +619,8 @@ export const Y12A_CH3_QUESTIONS = [
         "workingOut": "f'(x) = 3x^2"
       },
       {
-        "explanation": "Analyse the derivative for \\( x \\neq 0 \\).",
-        "workingOut": "x \\neq 0 \\implies x^2 > 0 \\implies f'(x) > 0 \\quad (\\text{increasing})"
+        "explanation": "Analyse the derivative for \\( x \neq 0 \\).",
+        "workingOut": "x \neq 0 \\implies x^2 > 0 \\implies f'(x) > 0 \\quad (\\text{increasing})"
       },
       {
         "explanation": "Analyse the derivative at \\( x = 0 \\).",
@@ -1450,15 +1450,15 @@ export const Y12A_CH3_QUESTIONS = [
         "id": "y12a-3a-q17a",
         "type": "teacher_review",
         "question": "a) Find \\( f'(x) \\), and hence prove that \\( f(x) \\) increases for all \\( x \\) in its domain.",
-        "a": "\\( f(x) = -2x^{-1} \\implies f'(x) = 2x^{-2} = \\frac{2}{x^2} \\). Since \\( x^2 > 0 \\) for all \\( x \\neq 0 \\) (which is the domain of the function), we have \\( f'(x) = \\frac{2}{x^2} > 0 \\) for all \\( x \\) in the domain. Since the derivative is strictly positive, \\( f(x) \\) is increasing for all \\( x \\) in its domain.",
+        "a": "\\( f(x) = -2x^{-1} \\implies f'(x) = 2x^{-2} = \\frac{2}{x^2} \\). Since \\( x^2 > 0 \\) for all \\( x \neq 0 \\) (which is the domain of the function), we have \\( f'(x) = \\frac{2}{x^2} > 0 \\) for all \\( x \\) in the domain. Since the derivative is strictly positive, \\( f(x) \\) is increasing for all \\( x \\) in its domain.",
         "solutionSteps": [
           {
             "explanation": "Differentiate using index rules.",
             "workingOut": "f'(x) = 2x^{-2} = \\frac{2}{x^2}"
           },
           {
-            "explanation": "Analyse sign of \\( f'(x) \\) over domain \\( x \\neq 0 \\).",
-            "workingOut": "x \\neq 0 \\implies x^2 > 0 \\implies \\frac{2}{x^2} > 0 \\implies f'(x) > 0"
+            "explanation": "Analyse sign of \\( f'(x) \\) over domain \\( x \neq 0 \\).",
+            "workingOut": "x \neq 0 \\implies x^2 > 0 \\implies \\frac{2}{x^2} > 0 \\implies f'(x) > 0"
           }
         ]
       },
@@ -1507,16 +1507,16 @@ export const Y12A_CH3_QUESTIONS = [
       {
         "id": "y12a-3a-q18b",
         "type": "teacher_review",
-        "question": "b) Explain why \\( f(x) \\) is decreasing for all \\( x \\neq 4 \\).",
-        "a": "The derivative is \\( f'(x) = \\frac{-12}{(x-4)^2} \\). For all \\( x \\neq 4 \\), the denominator \\( (x-4)^2 \\) is strictly positive. Since the numerator is negative (\\( -12 \\)), the quotient \\( f'(x) < 0 \\) for all \\( x \\neq 4 \\). Since \\( f'(x) \\) is negative, \\( f(x) \\) is strictly decreasing for all \\( x \\neq 4 \\).",
+        "question": "b) Explain why \\( f(x) \\) is decreasing for all \\( x \neq 4 \\).",
+        "a": "The derivative is \\( f'(x) = \\frac{-12}{(x-4)^2} \\). For all \\( x \neq 4 \\), the denominator \\( (x-4)^2 \\) is strictly positive. Since the numerator is negative (\\( -12 \\)), the quotient \\( f'(x) < 0 \\) for all \\( x \neq 4 \\). Since \\( f'(x) \\) is negative, \\( f(x) \\) is strictly decreasing for all \\( x \neq 4 \\).",
         "solutionSteps": [
           {
             "explanation": "Evaluate the sign of the denominator.",
-            "workingOut": "(x-4)^2 > 0 \\quad \\text{for } x \\neq 4"
+            "workingOut": "(x-4)^2 > 0 \\quad \\text{for } x \neq 4"
           },
           {
             "explanation": "Determine the overall sign of the derivative.",
-            "workingOut": "f'(x) = \\frac{-12}{(x-4)^2} < 0 \\quad \\text{for } x \\neq 4"
+            "workingOut": "f'(x) = \\frac{-12}{(x-4)^2} < 0 \\quad \\text{for } x \neq 4"
           }
         ]
       }
@@ -1550,7 +1550,7 @@ export const Y12A_CH3_QUESTIONS = [
         "id": "y12a-3a-q19b",
         "type": "teacher_review",
         "question": "b) Explain why \\( f(x) \\) is increasing for all \\( x \\), apart from \\( x = 0 \\) where it is stationary.",
-        "a": "The derivative is \\( f'(x) = \\frac{x^2(x^2+9)}{(x^2+3)^2} \\). The factor \\( x^2+9 \\) and the denominator \\( (x^2+3)^2 \\) are strictly positive for all real \\( x \\). The factor \\( x^2 \\) is strictly positive for all \\( x \\neq 0 \\), and equal to 0 at \\( x = 0 \\). Thus, \\( f'(x) > 0 \\) for all \\( x \\neq 0 \\) (increasing), and \\( f'(0) = 0 \\) (stationary).",
+        "a": "The derivative is \\( f'(x) = \\frac{x^2(x^2+9)}{(x^2+3)^2} \\). The factor \\( x^2+9 \\) and the denominator \\( (x^2+3)^2 \\) are strictly positive for all real \\( x \\). The factor \\( x^2 \\) is strictly positive for all \\( x \neq 0 \\), and equal to 0 at \\( x = 0 \\). Thus, \\( f'(x) > 0 \\) for all \\( x \neq 0 \\) (increasing), and \\( f'(0) = 0 \\) (stationary).",
         "solutionSteps": [
           {
             "explanation": "Factor the numerator of the derivative.",
@@ -1562,7 +1562,7 @@ export const Y12A_CH3_QUESTIONS = [
           },
           {
             "explanation": "Conclude behavior from signs.",
-            "workingOut": "f'(x) > 0 \\text{ for } x \\neq 0 \\; (\\text{increasing}), \\quad f'(0) = 0 \\; (\\text{stationary})"
+            "workingOut": "f'(x) > 0 \\text{ for } x \neq 0 \\; (\\text{increasing}), \\quad f'(0) = 0 \\; (\\text{stationary})"
           }
         ]
       }
@@ -1738,7 +1738,7 @@ export const Y12A_CH3_QUESTIONS = [
     "id": "y12a-3a-q21e",
     "type": "teacher_review",
     "question": "Look carefully at the function graphed below. Establish where it is increasing, decreasing and stationary, and hence sketch the graph of its derivative.",
-    "a": "The function is cubic: it increases for all \\( x \\neq 0 \\), and has a horizontal point of inflection (stationary point) at \\( x = 0 \\). The derivative graph is a parabola opening upwards with its vertex tangent to the x-axis at the origin (always positive except zero at \\( x = 0 \\)).",
+    "a": "The function is cubic: it increases for all \\( x \neq 0 \\), and has a horizontal point of inflection (stationary point) at \\( x = 0 \\). The derivative graph is a parabola opening upwards with its vertex tangent to the x-axis at the origin (always positive except zero at \\( x = 0 \\)).",
     "difficulty": "hard",
     "timeLimit": 240,
     "t": "Increasing, decreasing and stationary at a point",
@@ -1829,7 +1829,7 @@ export const Y12A_CH3_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Analyze the derivative of a standard hyperbola branch \\( f(x) = 1/x \\).",
-        "workingOut": "f'(x) = -\\frac{1}{x^2} < 0 \\quad \\text{for all } x \\neq 0"
+        "workingOut": "f'(x) = -\\frac{1}{x^2} < 0 \\quad \\text{for all } x \neq 0"
       }
     ],
     "graphData": {
@@ -1930,7 +1930,7 @@ export const Y12A_CH3_QUESTIONS = [
   {
     "id": "y12a-3a-q23b",
     "type": "teacher_review",
-    "question": "Sketch a possible graph of a continuous curve \\( y = f(x) \\) that has the following properties:\n- \\( f(2) = f'(2) = 0 \\)\n- \\( f'(x) > 0 \\) for all \\( x \\neq 2 \\)",
+    "question": "Sketch a possible graph of a continuous curve \\( y = f(x) \\) that has the following properties:\n- \\( f(2) = f'(2) = 0 \\)\n- \\( f'(x) > 0 \\) for all \\( x \neq 2 \\)",
     "a": "The graph passes through \\( (2,0) \\) where it has a horizontal point of inflection (since the curve is stationary at \\( x = 2 \\) but increases everywhere else). The curve rises continually from left to right, flattening momentarily at \\( (2, 0) \\).",
     "difficulty": "hard",
     "timeLimit": 240,
@@ -1942,7 +1942,7 @@ export const Y12A_CH3_QUESTIONS = [
       },
       {
         "explanation": "Analyze behavior elsewhere.",
-        "workingOut": "f'(x) > 0 \\text{ for all } x \\neq 2 \\implies \\text{strictly increasing except momentary flat at } x=2"
+        "workingOut": "f'(x) > 0 \\text{ for all } x \neq 2 \\implies \\text{strictly increasing except momentary flat at } x=2"
       }
     ]
   },

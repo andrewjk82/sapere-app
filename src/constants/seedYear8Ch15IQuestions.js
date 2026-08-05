@@ -14,7 +14,7 @@ export const Y8_CH15I_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "Identify given data",
+        "workingOut": "\\(Identify given data\\)",
         "graphData": {
           "geometry": {
             "width": 250,
@@ -111,17 +111,17 @@ export const Y8_CH15I_QUESTIONS = [
         }
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
+        "workingOut": "\\(State the rule\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Final answer: . Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "",
         "graphData": null
       }
@@ -238,7 +238,7 @@ export const Y8_CH15I_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "Identify given data",
+        "workingOut": "\\(Identify given data\\)",
         "graphData": {
           "geometry": {
             "width": 250,
@@ -349,17 +349,17 @@ export const Y8_CH15I_QUESTIONS = [
         }
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
+        "workingOut": "\\(State the rule\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Final answer: . Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "",
         "graphData": null
       }
@@ -490,7 +490,7 @@ export const Y8_CH15I_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "Identify given data",
+        "workingOut": "\\(Identify given data\\)",
         "graphData": {
           "geometry": {
             "width": 250,
@@ -576,17 +576,17 @@ export const Y8_CH15I_QUESTIONS = [
         }
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
+        "workingOut": "\\(State the rule\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Final answer: . Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "",
         "graphData": null
       }
@@ -692,7 +692,7 @@ export const Y8_CH15I_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "Identify given data",
+        "workingOut": "\\(Identify given data\\)",
         "graphData": {
           "jsxGraph": {
             "width": 250,
@@ -708,17 +708,17 @@ export const Y8_CH15I_QUESTIONS = [
         }
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
+        "workingOut": "\\(State the rule\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Final answer: . Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "",
         "graphData": null
       }
@@ -754,7 +754,7 @@ export const Y8_CH15I_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "Identify given data",
+        "workingOut": "\\(Identify given data\\)",
         "graphData": {
           "jsxGraph": {
             "width": 250,
@@ -770,17 +770,17 @@ export const Y8_CH15I_QUESTIONS = [
         }
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
+        "workingOut": "\\(State the rule\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Final answer: . Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "",
         "graphData": null
       }
@@ -816,7 +816,7 @@ export const Y8_CH15I_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "Identify given data",
+        "workingOut": "\\(Identify given data\\)",
         "graphData": {
           "jsxGraph": {
             "width": 250,
@@ -832,17 +832,17 @@ export const Y8_CH15I_QUESTIONS = [
         }
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
+        "workingOut": "\\(State the rule\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Final answer: . Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "",
         "graphData": null
       }
@@ -878,7 +878,7 @@ export const Y8_CH15I_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "Identify given data",
+        "workingOut": "\\(Identify given data\\)",
         "graphData": {
           "geometry": {
             "width": 250,
@@ -1000,17 +1000,17 @@ export const Y8_CH15I_QUESTIONS = [
         }
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
+        "workingOut": "\\(State the rule\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Final answer: . Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "",
         "graphData": null
       }
@@ -1152,7 +1152,7 @@ export const Y8_CH15I_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "Identify given data",
+        "workingOut": "\\(Identify given data\\)",
         "graphData": {
           "geometry": {
             "width": 250,
@@ -1246,17 +1246,17 @@ export const Y8_CH15I_QUESTIONS = [
         }
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
+        "workingOut": "\\(State the rule\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Final answer: . Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "",
         "graphData": null
       }
@@ -1370,7 +1370,7 @@ export const Y8_CH15I_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "Identify given data",
+        "workingOut": "\\(Identify given data\\)",
         "graphData": {
           "jsxGraph": {
             "width": 150,
@@ -1386,17 +1386,17 @@ export const Y8_CH15I_QUESTIONS = [
         }
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
+        "workingOut": "\\(State the rule\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Final answer: . Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "",
         "graphData": null
       }
@@ -1432,7 +1432,7 @@ export const Y8_CH15I_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "Identify given data",
+        "workingOut": "\\(Identify given data\\)",
         "graphData": {
           "geometry": {
             "width": 250,
@@ -1554,17 +1554,17 @@ export const Y8_CH15I_QUESTIONS = [
         }
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
+        "workingOut": "\\(State the rule\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Final answer: . Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "",
         "graphData": null
       }
@@ -1706,7 +1706,7 @@ export const Y8_CH15I_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "Identify given data",
+        "workingOut": "\\(Identify given data\\)",
         "graphData": {
           "geometry": {
             "width": 250,
@@ -1814,17 +1814,17 @@ export const Y8_CH15I_QUESTIONS = [
         }
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
+        "workingOut": "\\(State the rule\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Final answer: . Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "",
         "graphData": null
       }
@@ -1946,12 +1946,6 @@ export const Y8_CH15I_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "Write the measurement in the unit given:\n\\(5 \\text{ cm}^2 = \\_\\_\\_ \\text{ mm}^2\\)\n(Enter only the number)",
-    "opts": [
-      "\\(-500\\)",
-      "\\(499\\)",
-      "\\(500\\)",
-      "\\(501\\)"
-    ],
     "a": 2,
     "answer": "2",
     "hint": "When converting from \\(\\text{cm}^2\\) to \\(\\text{mm}^2\\), multiply by \\(10^2 = 100\\).",
@@ -1959,21 +1953,21 @@ export const Y8_CH15I_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "Identify given data",
+        "workingOut": "\\(Identify given data\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
+        "workingOut": "\\(State the rule\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(500\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 500. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(500\\)",
         "graphData": null
       }
@@ -1991,12 +1985,6 @@ export const Y8_CH15I_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "Write the measurement in the unit given:\n\\(12 \\text{ m}^2 = \\_\\_\\_ \\text{ cm}^2\\)\n(Enter only the number)",
-    "opts": [
-      "\\(-120000\\)",
-      "\\(119999\\)",
-      "\\(120000\\)",
-      "\\(120001\\)"
-    ],
     "a": 2,
     "answer": "2",
     "hint": "When converting from \\(\\text{m}^2\\) to \\(\\text{cm}^2\\), multiply by \\(100^2 = 10000\\).",
@@ -2004,21 +1992,21 @@ export const Y8_CH15I_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "Identify given data",
+        "workingOut": "\\(Identify given data\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
+        "workingOut": "\\(State the rule\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(120000\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 120000. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(120000\\)",
         "graphData": null
       }
@@ -2036,12 +2024,6 @@ export const Y8_CH15I_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "Write the measurement in the unit given:\n\\(4000 \\text{ mm}^2 = \\_\\_\\_ \\text{ cm}^2\\)\n(Enter only the number)",
-    "opts": [
-      "\\(-40\\)",
-      "\\(39\\)",
-      "\\(40\\)",
-      "\\(41\\)"
-    ],
     "a": 2,
     "answer": "2",
     "hint": "When converting from \\(\\text{mm}^2\\) to \\(\\text{cm}^2\\), divide by \\(10^2 = 100\\).",
@@ -2049,21 +2031,21 @@ export const Y8_CH15I_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "Identify given data",
+        "workingOut": "\\(Identify given data\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
+        "workingOut": "\\(State the rule\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(40\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 40. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(40\\)",
         "graphData": null
       }
@@ -2081,12 +2063,6 @@ export const Y8_CH15I_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "Write the measurement in the unit given:\n\\(7.2 \\text{ ha} = \\_\\_\\_ \\text{ m}^2\\)\n(Enter only the number)",
-    "opts": [
-      "\\(-72000\\)",
-      "\\(71999\\)",
-      "\\(72000\\)",
-      "\\(72001\\)"
-    ],
     "a": 2,
     "answer": "2",
     "hint": "There are \\(10000 \\text{ m}^2\\) in one hectare.",
@@ -2094,21 +2070,21 @@ export const Y8_CH15I_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "Identify given data",
+        "workingOut": "\\(Identify given data\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
+        "workingOut": "\\(State the rule\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(72000\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 72000. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(72000\\)",
         "graphData": null
       }
@@ -2126,12 +2102,6 @@ export const Y8_CH15I_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "Write the measurement in the unit given:\n\\(500 \\text{ mm}^3 = \\_\\_\\_ \\text{ cm}^3\\)\n(Enter only the number)",
-    "opts": [
-      "\\(-0.5\\)",
-      "\\(0.5\\)",
-      "\\(1\\)",
-      "\\(1.5\\)"
-    ],
     "a": 1,
     "answer": "1",
     "hint": "When converting from \\(\\text{mm}^3\\) to \\(\\text{cm}^3\\), divide by \\(10^3 = 1000\\).",
@@ -2139,21 +2109,21 @@ export const Y8_CH15I_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "Identify given data",
+        "workingOut": "\\(Identify given data\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
+        "workingOut": "\\(State the rule\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(0.5\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 0.5. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(0.5\\)",
         "graphData": null
       }
@@ -2171,12 +2141,6 @@ export const Y8_CH15I_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "Write the measurement in the unit given:\n\\(3 \\text{ m}^3 = \\_\\_\\_ \\text{ cm}^3\\)\n(Enter only the number)",
-    "opts": [
-      "\\(-3000000\\)",
-      "\\(2999999\\)",
-      "\\(3000000\\)",
-      "\\(3000001\\)"
-    ],
     "a": 2,
     "answer": "2",
     "hint": "When converting from \\(\\text{m}^3\\) to \\(\\text{cm}^3\\), multiply by \\(100^3 = 1000000\\).",
@@ -2184,21 +2148,21 @@ export const Y8_CH15I_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "Identify given data",
+        "workingOut": "\\(Identify given data\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
+        "workingOut": "\\(State the rule\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(3000000\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 3000000. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(3000000\\)",
         "graphData": null
       }
@@ -2216,12 +2180,6 @@ export const Y8_CH15I_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "Write the measurement in the unit given:\n\\(2500 \\text{ L} = \\_\\_\\_ \\text{ kL}\\)\n(Enter only the number)",
-    "opts": [
-      "\\(-2.5\\)",
-      "\\(1.5\\)",
-      "\\(2.5\\)",
-      "\\(3.5\\)"
-    ],
     "a": 2,
     "answer": "2",
     "hint": "To convert from Litres to kilolitres, divide by \\(1000\\).",
@@ -2229,21 +2187,21 @@ export const Y8_CH15I_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "Identify given data",
+        "workingOut": "\\(Identify given data\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
+        "workingOut": "\\(State the rule\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(2.5\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 2.5. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(2.5\\)",
         "graphData": null
       }
@@ -2261,12 +2219,6 @@ export const Y8_CH15I_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "Write the measurement in the unit given:\n\\(0.4 \\text{ ML} = \\_\\_\\_ \\text{ L}\\)\n(Enter only the number)",
-    "opts": [
-      "\\(-400000\\)",
-      "\\(399999\\)",
-      "\\(400000\\)",
-      "\\(400001\\)"
-    ],
     "a": 2,
     "answer": "2",
     "hint": "To convert from Megalitres to Litres, multiply by \\(1000000\\).",
@@ -2274,21 +2226,21 @@ export const Y8_CH15I_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "Identify given data",
+        "workingOut": "\\(Identify given data\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
+        "workingOut": "\\(State the rule\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(400000\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 400000. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(400000\\)",
         "graphData": null
       }
@@ -2306,12 +2258,6 @@ export const Y8_CH15I_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 120,
     "question": "Complete the following time conversion:\n\\(5 \\text{ weeks} = \\_\\_\\_ \\text{ days}\\)\n(Enter only the number)",
-    "opts": [
-      "\\(-35\\)",
-      "\\(34\\)",
-      "\\(35\\)",
-      "\\(36\\)"
-    ],
     "a": 2,
     "answer": "2",
     "hint": "There are 7 days in a week.",
@@ -2319,21 +2265,21 @@ export const Y8_CH15I_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "Identify given data",
+        "workingOut": "\\(Identify given data\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
+        "workingOut": "\\(State the rule\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(35\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 35. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(35\\)",
         "graphData": null
       }
@@ -2347,38 +2293,58 @@ export const Y8_CH15I_QUESTIONS = [
     "topicId": "y8-15i",
     "c": "15I",
     "t": "Review",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
     "question": "Complete the following time conversion:\n\\(180 \\text{ min} = \\_\\_\\_ \\text{ h}\\)\n(Enter only the number)",
-    "answer": "3",
+    "answer": "0",
     "hint": "There are 60 minutes in an hour.",
     "solution": "3",
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "Identify given data",
+        "workingOut": "\\(Identify given data\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
+        "workingOut": "\\(State the rule\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(3\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 3. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(3\\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": true
+    "requiresManualGrading": false,
+    "isManual": false,
+    "options": [
+      {
+        "text": "\\(3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(30\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(0.3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6\\)",
+        "imageUrl": ""
+      }
+    ],
+    "a": 0
   },
   {
     "id": "y8-15i-q5c",
@@ -2389,12 +2355,6 @@ export const Y8_CH15I_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 120,
     "question": "Complete the following time conversion:\n\\(2\\frac{1}{2} \\text{ days} = \\_\\_\\_ \\text{ hours}\\)\n(Enter only the number)",
-    "opts": [
-      "\\(-60\\)",
-      "\\(59\\)",
-      "\\(60\\)",
-      "\\(61\\)"
-    ],
     "a": 2,
     "answer": "2",
     "hint": "There are 24 hours in a day.",
@@ -2402,21 +2362,21 @@ export const Y8_CH15I_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "Identify given data",
+        "workingOut": "\\(Identify given data\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
+        "workingOut": "\\(State the rule\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(60\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 60. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(60\\)",
         "graphData": null
       }
@@ -2434,12 +2394,6 @@ export const Y8_CH15I_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 120,
     "question": "Complete the following time conversion:\n\\(1 \\text{ year} = \\_\\_\\_ \\text{ weeks}\\)\n(Enter only the number of full weeks)",
-    "opts": [
-      "\\(-52\\)",
-      "\\(51\\)",
-      "\\(52\\)",
-      "\\(53\\)"
-    ],
     "a": 2,
     "answer": "2",
     "hint": "Think about how many weeks are conventionally in a year.",
@@ -2447,21 +2401,21 @@ export const Y8_CH15I_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "Identify given data",
+        "workingOut": "\\(Identify given data\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
+        "workingOut": "\\(State the rule\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(52\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 52. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "\\(52\\)",
         "graphData": null
       }
@@ -2485,7 +2439,7 @@ export const Y8_CH15I_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "Identify given data",
+        "workingOut": "\\(Identify given data\\)",
         "graphData": {
           "geometry": {
             "width": 250,
@@ -2607,17 +2561,17 @@ export const Y8_CH15I_QUESTIONS = [
         }
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
+        "workingOut": "\\(State the rule\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Final answer: . Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "",
         "graphData": null
       }
@@ -2759,7 +2713,7 @@ export const Y8_CH15I_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "Identify given data",
+        "workingOut": "\\(Identify given data\\)",
         "graphData": {
           "jsxGraph": {
             "width": 150,
@@ -2775,17 +2729,17 @@ export const Y8_CH15I_QUESTIONS = [
         }
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
+        "workingOut": "\\(State the rule\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Final answer: . Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "",
         "graphData": null
       }
@@ -2821,21 +2775,21 @@ export const Y8_CH15I_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "Identify given data",
+        "workingOut": "\\(Identify given data\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
+        "workingOut": "\\(State the rule\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Final answer: . Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "",
         "graphData": null
       }
@@ -2859,21 +2813,21 @@ export const Y8_CH15I_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "Identify given data",
+        "workingOut": "\\(Identify given data\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
+        "workingOut": "\\(State the rule\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "",
         "graphData": null
       },
       {
-        "explanation": "Final answer: . Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "explanation": "Evaluate the mathematical expression and calculate the result.",
         "workingOut": "",
         "graphData": null
       }

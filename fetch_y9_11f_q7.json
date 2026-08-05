@@ -1,0 +1,378 @@
+{
+  "y9-11f-q7": {
+    "chapterId": "y9-11",
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "topicId": "y9-11f",
+    "topicCode": "11F",
+    "topicTitle": "The equation of a line using the gradient and a point",
+    "year": "Year 9",
+    "isManual": true,
+    "title": "A hiker wishes to hike from hi...",
+    "question": "A hiker wishes to hike from his base camp \\(B\\) to a water supply located at point \\(W\\). Relative to a fixed origin, the coordinates of \\(B\\) and \\(W\\) are \\((3, 6)\\) and \\((9, 18)\\) respectively. Distances are measured in kilometres.",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "type": "teacher_review",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "a) 6\\sqrt{5} km, b) 2, c) y = 2x, d) (6, 12)",
+    "hint": "Use distance formula, gradient formula, point-gradient formula, and midpoint formula.",
+    "solution": "a) Distance: \\(\\sqrt{(9-3)^2 + (18-6)^2} = \\sqrt{6^2 + 12^2} = \\sqrt{36 + 144} = \\sqrt{180} = 6\\sqrt{5} \\approx 13.42\\text{ km}\\).\n\nb) Gradient of \\(BW\\): \\(m = \\frac{18 - 6}{9 - 3} = \\frac{12}{6} = 2\\).\n\nc) Line equation through \\(B(3, 6)\\) with gradient \\(2\\):\n   \\(y - 6 = 2(x - 3) \\implies y - 6 = 2x - 6 \\implies y = 2x\\).\n\nd) Midpoint: \\(\\left(\\frac{3+9}{2}, \\frac{6+18}{2}\\right) = (6, 12)\\).",
+    "solutionSteps": [],
+    "questionImage": "",
+    "subQuestions": [
+      {
+        "id": "y9-11f-q7a",
+        "type": "short_answer",
+        "question": "a) How far is \\(W\\) from \\(B\\)? Give answer in simplified surd form.",
+        "options": [],
+        "answer": "6\\sqrt{5}",
+        "solutionSteps": [
+          {
+            "explanation": "Use distance formula.",
+            "workingOut": "d = \\sqrt{(9-3)^2 + (18-6)^2} = \\sqrt{180} = 6\\sqrt{5}"
+          }
+        ],
+        "graphData": null
+      },
+      {
+        "id": "y9-11f-q7b",
+        "type": "short_answer",
+        "question": "b) What is the gradient of the interval \\(BW\\)?",
+        "options": [],
+        "answer": "2",
+        "solutionSteps": [
+          {
+            "explanation": "Compute rise over run.",
+            "workingOut": "m = \\frac{18 - 6}{9 - 3} = 2"
+          }
+        ],
+        "graphData": null
+      },
+      {
+        "id": "y9-11f-q7c",
+        "type": "short_answer",
+        "question": "c) The hiker walks in a straight line from \\(B\\) to \\(W\\). Find the equation of this line.",
+        "options": [],
+        "answer": "y = 2x",
+        "solutionSteps": [
+          {
+            "explanation": "Use point-gradient form.",
+            "workingOut": "y - 6 = 2(x - 3) \\implies y = 2x"
+          }
+        ],
+        "graphData": null
+      },
+      {
+        "id": "y9-11f-q7d",
+        "type": "short_answer",
+        "question": "d) What are the coordinates of the point halfway between \\(B\\) and \\(W\\)?",
+        "options": [],
+        "answer": "(6, 12)",
+        "solutionSteps": [
+          {
+            "explanation": "Find midpoint coordinates.",
+            "workingOut": "M = \\left(\\frac{3+9}{2}, \\frac{6+18}{2}\\right) = (6, 12)"
+          }
+        ],
+        "graphData": null
+      }
+    ],
+    "blanks": [],
+    "graphData": {
+      "jsxGraph": {
+        "width": 350,
+        "height": 350,
+        "boundingbox": [
+          -2,
+          21,
+          11,
+          -2
+        ],
+        "showConstructionPoints": true,
+        "boardOptions": {
+          "axis": true,
+          "grid": true
+        },
+        "script": "board.suspendUpdate();\nvar pB = board.create('point', [3, 6], {size: 3, color: 'black', name: 'B(3, 6)', withLabel: true, label: {autoPosition: false, offset: [-15, -15]}});\nvar pW = board.create('point', [9, 18], {size: 3, color: 'black', name: 'W(9, 18)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.create('segment', [pB, pW], {strokeColor: 'blue', strokeWidth: 2});\nvar pM = board.create('point', [6, 12], {size: 3, color: 'red', name: 'M(6, 12)', withLabel: true, label: {autoPosition: false, offset: [-20, 10]}});\nboard.unsuspendUpdate();"
+      }
+    },
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830226,
+      "_nanoseconds": 609000000
+    },
+    "updatedAt": {
+      "_seconds": 1782830226,
+      "_nanoseconds": 609000000
+    }
+  },
+  "y9-11f-q7a": {
+    "year": "Year 9",
+    "subQuestions": [],
+    "isActive": true,
+    "title": "A hiker wishes to hike from his base cam...",
+    "type": "multiple_choice",
+    "topicTitle": "The equation of a line using the gradient and a point",
+    "createdAt": {
+      "_seconds": 1784364625,
+      "_nanoseconds": 396000000
+    },
+    "solution": "The correct answer is \\(6\\sqrt{5}\\).",
+    "chapterId": "y9-11",
+    "graphData": null,
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "topicCode": "11F",
+    "isManual": true,
+    "requiresManualGrading": false,
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "topicId": "y9-11f",
+    "answer": "1",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The equation of a line using the gradient and a point: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(6\\sqrt{5}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 6\\sqrt{5}. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(6\\sqrt{5}\\)",
+        "graphData": null
+      }
+    ],
+    "isNew": false,
+    "options": [
+      {
+        "text": "\\(8\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6\\sqrt{5}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-8\\)",
+        "imageUrl": ""
+      }
+    ],
+    "question": "A hiker wishes to hike from his base camp \\(B\\) to a water supply located at point \\(W\\). Relative to a fixed origin, the coordinates of \\(B\\) and \\(W\\) are \\((3, 6)\\) and \\((9, 18)\\) respectively. Distances are measured in kilometres.\nHow far is \\(W\\) from \\(B\\)? Give answer in simplified surd form.",
+    "acceptedAnswers": [],
+    "blanks": [],
+    "origin": "teacher",
+    "questionImage": "",
+    "updatedAt": {
+      "_methodName": "serverTimestamp"
+    }
+  },
+  "y9-11f-q7b": {
+    "year": "Year 9",
+    "origin": "seed",
+    "subQuestions": [],
+    "isActive": true,
+    "title": "A hiker wishes to hike from his base cam...",
+    "type": "teacher_review",
+    "topicTitle": "The equation of a line using the gradient and a point",
+    "createdAt": {
+      "_seconds": 1784364625,
+      "_nanoseconds": 396000000
+    },
+    "solution": "2",
+    "chapterId": "y9-11",
+    "options": [],
+    "graphData": null,
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "updatedAt": {
+      "_seconds": 1784364625,
+      "_nanoseconds": 396000000
+    },
+    "topicCode": "11F",
+    "question": "A hiker wishes to hike from his base camp \\(B\\) to a water supply located at point \\(W\\). Relative to a fixed origin, the coordinates of \\(B\\) and \\(W\\) are \\((3, 6)\\) and \\((9, 18)\\) respectively. Distances are measured in kilometres.\nb) What is the gradient of the interval \\(BW\\)?",
+    "isManual": true,
+    "requiresManualGrading": true,
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "topicId": "y9-11f",
+    "answer": "2",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The equation of a line using the gradient and a point: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 2. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(2\\)",
+        "graphData": null
+      }
+    ],
+    "isNew": false
+  },
+  "y9-11f-q7c": {
+    "year": "Year 9",
+    "origin": "seed",
+    "subQuestions": [],
+    "isActive": true,
+    "title": "A hiker wishes to hike from his base cam...",
+    "type": "multiple_choice",
+    "topicTitle": "The equation of a line using the gradient and a point",
+    "createdAt": {
+      "_seconds": 1784364625,
+      "_nanoseconds": 396000000
+    },
+    "solution": "The correct answer is \\(y = 2x\\).",
+    "chapterId": "y9-11",
+    "graphData": null,
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "topicCode": "11F",
+    "question": "A hiker wishes to hike from his base camp \\(B\\) to a water supply located at point \\(W\\). Relative to a fixed origin, the coordinates of \\(B\\) and \\(W\\) are \\((3, 6)\\) and \\((9, 18)\\) respectively. Distances are measured in kilometres.\nc) The hiker walks in a straight line from \\(B\\) to \\(W\\). Find the equation of this line.",
+    "isManual": true,
+    "requiresManualGrading": false,
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "topicId": "y9-11f",
+    "answer": "1",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The equation of a line using the gradient and a point: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(y = 2x\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: y = 2x. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(y = 2x\\)",
+        "graphData": null
+      }
+    ],
+    "isNew": false,
+    "options": [
+      {
+        "text": "\\(y = 2x - 3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = 2x\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = -4x + 4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = 3x - 5\\)",
+        "imageUrl": ""
+      }
+    ],
+    "updatedAt": {
+      "_seconds": 1784982176,
+      "_nanoseconds": 826000000
+    }
+  },
+  "y9-11f-q7d": {
+    "year": "Year 9",
+    "origin": "seed",
+    "subQuestions": [],
+    "isActive": true,
+    "title": "A hiker wishes to hike from his base cam...",
+    "type": "multiple_choice",
+    "topicTitle": "The equation of a line using the gradient and a point",
+    "createdAt": {
+      "_seconds": 1784364625,
+      "_nanoseconds": 396000000
+    },
+    "solution": "The correct answer is \\((6, 12)\\).",
+    "chapterId": "y9-11",
+    "graphData": null,
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "topicCode": "11F",
+    "question": "A hiker wishes to hike from his base camp \\(B\\) to a water supply located at point \\(W\\). Relative to a fixed origin, the coordinates of \\(B\\) and \\(W\\) are \\((3, 6)\\) and \\((9, 18)\\) respectively. Distances are measured in kilometres.\nd) What are the coordinates of the point halfway between \\(B\\) and \\(W\\)?",
+    "isManual": true,
+    "requiresManualGrading": false,
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "topicId": "y9-11f",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The equation of a line using the gradient and a point: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\((6, 12)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: (6, 12). Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\((6, 12)\\)",
+        "graphData": null
+      }
+    ],
+    "isNew": false,
+    "answer": "1",
+    "options": [
+      {
+        "text": "\\(1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((6, 12)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-2\\)",
+        "imageUrl": ""
+      }
+    ],
+    "updatedAt": {
+      "_seconds": 1784982176,
+      "_nanoseconds": 826000000
+    }
+  }
+}

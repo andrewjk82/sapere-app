@@ -1751,7 +1751,7 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode }) => {
                               {String.fromCharCode(65 + i)}
                             </div>
                             {img && <img src={img} alt="" style={{ width: '40px', height: '40px', objectFit: 'contain', borderRadius: '8px' }} />}
-                            <MathView content={text || ''} style={{ fontWeight: 700, color: '#1e1b4b', flex: 1 }} />
+                            <MathView content={text || ''} graphData={opt && typeof opt === 'object' ? opt.graphData : null} style={{ fontWeight: 700, color: '#1e1b4b', flex: 1 }} />
                             {isCorrect && <CheckCircle size={20} style={{ color: '#10b981', flexShrink: 0 }} />}
                             {isWrong && <X size={20} style={{ color: '#ef4444', flexShrink: 0 }} />}
                           </div>

@@ -2006,7 +2006,7 @@ export const FORT_STREET_2020_QUESTIONS = [
       },
       {
         "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(e^x = 4 \\quad (e^x \\neq -1)\\)",
+        "workingOut": "\\(e^x = 4 \\quad (e^x \neq -1)\\)",
         "graphData": null
       },
       {
@@ -2805,7 +2805,7 @@ export const FORT_STREET_2020_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Set \\(\\frac{dT}{d\\theta} = 0\\); since \\(\\frac{1}{\\cos^2\\theta} \\neq 0\\), the bracket must be zero. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or swapping upper and lower limits, so re-check those before continuing.",
+        "explanation": "Set \\(\\frac{dT}{d\\theta} = 0\\); since \\(\\frac{1}{\\cos^2\\theta} \neq 0\\), the bracket must be zero. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or swapping upper and lower limits, so re-check those before continuing.",
         "workingOut": "\\(\\frac{\\sin\\theta}{2} - \\frac{1}{6} = 0 \\Rightarrow \\sin\\theta = \\frac{1}{3}\\)",
         "graphData": null
       },

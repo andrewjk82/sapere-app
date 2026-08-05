@@ -1,0 +1,2372 @@
+{
+  "y9-11g-q1": {
+    "chapterId": "y9-11",
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "topicId": "y9-11g",
+    "topicCode": "11G",
+    "topicTitle": "Parallel and perpendicular straight lines",
+    "year": "Year 9",
+    "isManual": true,
+    "question": "The equations of eight lines are given below:\n**a** \\(y = 3x - 5\\)\n**b** \\(2x + y = 6\\)\n**c** \\(y = 5 - 2x\\)\n**d** \\(x = \\frac{1}{3}y + 2\\)\n**e** \\(y = \\frac{1}{2}x - 4\\)\n**f** \\(2y - x = 8\\)\n**g** \\(3y + x = 9\\)\n**h** \\(y = -2x + 7\\)\n\nState which groups of lines are parallel (have the same gradient). Format parallel groups separated by semicolons (e.g. a and d; b, c and h; e and f).",
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "requiresManualGrading": false,
+    "hint": "Find the gradient of each line by rearranging into the form \\(y = mx + c\\). Lines with equal gradients are parallel.",
+    "solution": "Let's find the gradient \\(m\\) of each line:\n- **a**: \\(y = 3x - 5 \\implies m = 3\\)\n- **b**: \\(y = -2x + 6 \\implies m = -2\\)\n- **c**: \\(y = -2x + 5 \\implies m = -2\\)\n- **d**: \\(y = 3x - 6 \\implies m = 3\\)\n- **e**: \\(y = \\frac{1}{2}x - 4 \\implies m = \\frac{1}{2}\\)\n- **f**: \\(y = \\frac{1}{2}x + 4 \\implies m = \\frac{1}{2}\\)\n- **g**: \\(y = -\\frac{1}{3}x + 3 \\implies m = -\\frac{1}{3}\\)\n- **h**: \\(y = -2x + 7 \\implies m = -2\\)\n\nParallel groups:\n- Gradient \\(3\\): **a and d**\n- Gradient \\(-2\\): **b, c and h**\n- Gradient \\(0.5\\): **e and f**",
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830227,
+      "_nanoseconds": 114000000
+    },
+    "answer": "0",
+    "origin": "seed",
+    "options": [
+      {
+        "text": "a and d; b, c and h; e and f",
+        "imageUrl": ""
+      },
+      {
+        "text": "The opposite statement is true.",
+        "imageUrl": ""
+      },
+      {
+        "text": "This is only true for acute angles.",
+        "imageUrl": ""
+      },
+      {
+        "text": "This only holds when the triangle is isosceles.",
+        "imageUrl": ""
+      }
+    ],
+    "graphData": {
+      "jsxGraph": {
+        "boundingbox": [
+          -6,
+          6,
+          6,
+          -6
+        ],
+        "width": 360,
+        "script": "board.suspendUpdate(); board.create('arrow', [[-6,0],[6,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-6],[0,6]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [5.28, -2.0999999999999996, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 5.4, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return (3)*x + (-5); }, -5.5, 5.5], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [2.2, 3.5, 'y = 3x-5'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();",
+        "height": 280
+      }
+    },
+    "isActive": true,
+    "title": "The equations of eight lines are given b...",
+    "type": "multiple_choice",
+    "updatedAt": {
+      "_seconds": 1784364626,
+      "_nanoseconds": 910000000
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Parallel and perpendicular straight lines: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": {
+          "jsxGraph": {
+            "width": 360,
+            "height": 280,
+            "boundingbox": [
+              -6,
+              6,
+              6,
+              -6
+            ],
+            "script": "board.suspendUpdate(); board.create('arrow', [[-6,0],[6,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-6],[0,6]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [5.28, -2.0999999999999996, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 5.4, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return (3)*x + (-5); }, -5.5, 5.5], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [2.2, 3.5, 'y = 3x-5'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+          }
+        }
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "a and d; b, c and h; e and f",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: a and d; b, c and h; e and f. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "a and d; b, c and h; e and f",
+        "graphData": null
+      }
+    ],
+    "isNew": false
+  },
+  "y9-11g-q10": {
+    "chapterId": "y9-11",
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "topicId": "y9-11g",
+    "topicCode": "11G",
+    "topicTitle": "Parallel and perpendicular straight lines",
+    "year": "Year 9",
+    "isManual": true,
+    "question": "If the line \\(y = (a + 2)x + 3\\) is perpendicular to \\(y = 3x - 1\\), find the value of \\(a\\).",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "requiresManualGrading": false,
+    "hint": "Perpendicular lines satisfy \\(m_1 \\times m_2 = -1\\). Set up the equation and solve for \\(a\\).",
+    "solution": "Since the lines are perpendicular, the product of their gradients is \\(-1\\):\n\\((a + 2) \\times 3 = -1\\)\n\\(a + 2 = -\\frac{1}{3}\\)\n\\(a = -2 - \\frac{1}{3} = -\\frac{7}{3}\\).",
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830227,
+      "_nanoseconds": 114000000
+    },
+    "answer": "1",
+    "origin": "seed",
+    "options": [
+      {
+        "text": "\\(-1.3333333333333335\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-7/3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-3.3333333333333335\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2.3333333333333335\\)",
+        "imageUrl": ""
+      }
+    ],
+    "isNew": true,
+    "graphData": {
+      "jsxGraph": {
+        "boundingbox": [
+          -6,
+          6,
+          6,
+          -6
+        ],
+        "width": 360,
+        "script": "board.suspendUpdate(); board.create('arrow', [[-6,0],[6,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-6],[0,6]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [5.28, -2.0999999999999996, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 5.4, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return (3)*x + (-1); }, -5.5, 5.5], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [2.2, 3.5, 'y = 3x-1'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();",
+        "height": 280
+      }
+    },
+    "isActive": true,
+    "title": "If the line y = (a + 2)x + 3 is perpendi...",
+    "type": "multiple_choice",
+    "updatedAt": {
+      "_seconds": 1784364626,
+      "_nanoseconds": 910000000
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Parallel and perpendicular straight lines: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": {
+          "jsxGraph": {
+            "width": 360,
+            "height": 280,
+            "boundingbox": [
+              -6,
+              6,
+              6,
+              -6
+            ],
+            "script": "board.suspendUpdate(); board.create('arrow', [[-6,0],[6,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-6],[0,6]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [5.28, -2.0999999999999996, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 5.4, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return (3)*x + (-1); }, -5.5, 5.5], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [2.2, 3.5, 'y = 3x-1'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+          }
+        }
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(a + 2 = -\\frac{1}{3} \\implies a = -\\frac{7}{3}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(-7/3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: -7/3. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(-7/3\\)",
+        "graphData": null
+      }
+    ]
+  },
+  "y9-11g-q11": {
+    "chapterId": "y9-11",
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "topicId": "y9-11g",
+    "topicCode": "11G",
+    "topicTitle": "Parallel and perpendicular straight lines",
+    "year": "Year 9",
+    "isManual": true,
+    "question": "If the line \\(y = (3a + 1)x + 2\\) is perpendicular to \\(y = 2x - 5\\), find the value of \\(a\\).",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "requiresManualGrading": false,
+    "hint": "Verify gradients product rule \\(m_1 \\times m_2 = -1\\).",
+    "solution": "Since the lines are perpendicular:\n\\((3a + 1) \\times 2 = -1\\)\n\\(3a + 1 = -\\frac{1}{2}\\)\n\\(3a = -\\frac{3}{2} \\implies a = -\\frac{1}{2}\\).",
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830227,
+      "_nanoseconds": 114000000
+    },
+    "answer": "0",
+    "origin": "seed",
+    "options": [
+      {
+        "text": "\\(-1/2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-1.5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(0.5\\)",
+        "imageUrl": ""
+      }
+    ],
+    "isNew": true,
+    "graphData": {
+      "jsxGraph": {
+        "boundingbox": [
+          -6,
+          6,
+          6,
+          -6
+        ],
+        "width": 360,
+        "script": "board.suspendUpdate(); board.create('arrow', [[-6,0],[6,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-6],[0,6]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [5.28, -2.0999999999999996, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 5.4, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return (2)*x + (-5); }, -5.5, 5.5], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [2.2, 3.5, 'y = 2x-5'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();",
+        "height": 280
+      }
+    },
+    "isActive": true,
+    "title": "If the line y = (3a + 1)x + 2 is perpend...",
+    "type": "multiple_choice",
+    "updatedAt": {
+      "_seconds": 1784364626,
+      "_nanoseconds": 910000000
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Parallel and perpendicular straight lines: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": {
+          "jsxGraph": {
+            "width": 360,
+            "height": 280,
+            "boundingbox": [
+              -6,
+              6,
+              6,
+              -6
+            ],
+            "script": "board.suspendUpdate(); board.create('arrow', [[-6,0],[6,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-6],[0,6]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [5.28, -2.0999999999999996, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 5.4, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return (2)*x + (-5); }, -5.5, 5.5], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [2.2, 3.5, 'y = 2x-5'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+          }
+        }
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(3a + 1 = -\\frac{1}{2} \\implies 3a = -\\frac{3}{2} \\implies a = -\\frac{1}{2}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(-1/2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: -1/2. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(-1/2\\)",
+        "graphData": null
+      }
+    ]
+  },
+  "y9-11g-q12": {
+    "chapterId": "y9-11",
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "topicId": "y9-11g",
+    "topicCode": "11G",
+    "topicTitle": "Parallel and perpendicular straight lines",
+    "year": "Year 9",
+    "isManual": true,
+    "title": "Let \\(AB\\) be the interval wit...",
+    "question": "Let \\(AB\\) be the interval with endpoints \\(A(3, 4)\\) and \\(B(7, 12)\\). Answer the following sub-questions.",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "type": "teacher_review",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "a) m = 2, b) C(5, 8), c) y = -1/2x + 21/2, d) 10.5",
+    "hint": "Find the gradient and midpoint of AB first, then determine the perpendicular gradient and point-slope equation.",
+    "solution": "a) Gradient: \\(m = \\frac{12 - 4}{7 - 3} = \\frac{8}{4} = 2\\).\n\nb) Midpoint \\(C\\): \\(\\left(\\frac{3+7}{2}, \\frac{4+12}{2}\\right) = (5, 8)\\).\n\nc) Perpendicular bisector has gradient \\(-\\frac{1}{2}\\) and passes through \\(C(5, 8)\\):\n   \\(y - 8 = -\\frac{1}{2}(x - 5) \\implies y - 8 = -\\frac{1}{2}x + \\frac{5}{2} \\implies y = -\\frac{1}{2}x + \\frac{21}{2}\\).\n\nd) Y-intercept is when \\(x = 0 \\implies y = \\frac{21}{2} = 10.5\\).",
+    "solutionSteps": [],
+    "questionImage": "",
+    "subQuestions": [
+      {
+        "id": "y9-11g-q12a",
+        "type": "short_answer",
+        "question": "a) Find the gradient of \\(AB\\).",
+        "options": [],
+        "answer": "2",
+        "solutionSteps": [
+          {
+            "explanation": "Compute gradient.",
+            "workingOut": "m = \\frac{12 - 4}{7 - 3} = 2"
+          }
+        ],
+        "graphData": null
+      },
+      {
+        "id": "y9-11g-q12b",
+        "type": "short_answer",
+        "question": "b) Find the coordinates of \\(C\\), the midpoint of \\(AB\\).",
+        "options": [],
+        "answer": "(5, 8)",
+        "solutionSteps": [
+          {
+            "explanation": "Find midpoint coordinates.",
+            "workingOut": "C = \\left(\\frac{3+7}{2}, \\frac{4+12}{2}\\right) = (5, 8)"
+          }
+        ],
+        "graphData": null
+      },
+      {
+        "id": "y9-11g-q12c",
+        "type": "short_answer",
+        "question": "c) Find the equation of the line that is perpendicular to \\(AB\\) and passes through \\(C\\). This line is the perpendicular bisector of \\(AB\\).",
+        "options": [],
+        "answer": "y = -1/2x + 21/2",
+        "solutionSteps": [
+          {
+            "explanation": "Apply point-slope form with perpendicular gradient.",
+            "workingOut": "y - 8 = -\\frac{1}{2}(x - 5) \\implies y = -\\frac{1}{2}x + \\frac{21}{2}"
+          }
+        ],
+        "graphData": null
+      },
+      {
+        "id": "y9-11g-q12d",
+        "type": "short_answer",
+        "question": "d) What is the \\(y\\)-intercept of this perpendicular bisector?",
+        "options": [],
+        "answer": "10.5",
+        "solutionSteps": [
+          {
+            "explanation": "Set x = 0.",
+            "workingOut": "y = \\frac{21}{2} = 10.5"
+          }
+        ],
+        "graphData": null
+      }
+    ],
+    "blanks": [],
+    "graphData": {
+      "jsxGraph": {
+        "width": 350,
+        "height": 350,
+        "boundingbox": [
+          -1,
+          14,
+          9,
+          -2
+        ],
+        "showConstructionPoints": true,
+        "boardOptions": {
+          "axis": true,
+          "grid": true
+        },
+        "script": "board.suspendUpdate();\nvar pA = board.create('point', [3, 4], {size: 3, color: 'black', name: 'A(3, 4)', withLabel: true, label: {autoPosition: false, offset: [-15, -15]}});\nvar pB = board.create('point', [7, 12], {size: 3, color: 'black', name: 'B(7, 12)', withLabel: true, label: {autoPosition: false, offset: [10, 10]}});\nboard.create('segment', [pA, pB], {strokeColor: 'black', strokeWidth: 1.5});\nvar pC = board.create('point', [5, 8], {size: 3, color: 'blue', name: 'C(5, 8)', withLabel: true, label: {autoPosition: false, offset: [10, 10]}});\nboard.create('line', [[5, 8], [0, 10.5]], {strokeColor: 'red', strokeWidth: 1.5});\nboard.unsuspendUpdate();"
+      }
+    },
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830227,
+      "_nanoseconds": 114000000
+    },
+    "updatedAt": {
+      "_seconds": 1782830227,
+      "_nanoseconds": 114000000
+    }
+  },
+  "y9-11g-q12a": {
+    "year": "Year 9",
+    "origin": "seed",
+    "subQuestions": [],
+    "isActive": true,
+    "title": "Let AB be the interval with endpoints A(...",
+    "type": "teacher_review",
+    "topicTitle": "Parallel and perpendicular straight lines",
+    "createdAt": {
+      "_seconds": 1784364626,
+      "_nanoseconds": 910000000
+    },
+    "solution": "2",
+    "chapterId": "y9-11",
+    "options": [],
+    "graphData": null,
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "updatedAt": {
+      "_seconds": 1784364626,
+      "_nanoseconds": 910000000
+    },
+    "topicCode": "11G",
+    "question": "Let \\(AB\\) be the interval with endpoints \\(A(3, 4)\\) and \\(B(7, 12)\\). Answer the following sub-questions.\na) Find the gradient of \\(AB\\).",
+    "isManual": true,
+    "isNew": true,
+    "requiresManualGrading": true,
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "topicId": "y9-11g",
+    "answer": "2",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Parallel and perpendicular straight lines: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 2. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(2\\)",
+        "graphData": null
+      }
+    ]
+  },
+  "y9-11g-q12b": {
+    "year": "Year 9",
+    "origin": "seed",
+    "subQuestions": [],
+    "isActive": true,
+    "title": "Let AB be the interval with endpoints A(...",
+    "type": "multiple_choice",
+    "topicTitle": "Parallel and perpendicular straight lines",
+    "createdAt": {
+      "_seconds": 1784364626,
+      "_nanoseconds": 910000000
+    },
+    "solution": "The correct answer is \\((5, 8)\\).",
+    "chapterId": "y9-11",
+    "graphData": null,
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "topicCode": "11G",
+    "question": "Let \\(AB\\) be the interval with endpoints \\(A(3, 4)\\) and \\(B(7, 12)\\). Answer the following sub-questions.\nb) Find the coordinates of \\(C\\), the midpoint of \\(AB\\).",
+    "isManual": true,
+    "isNew": true,
+    "requiresManualGrading": false,
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "topicId": "y9-11g",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Parallel and perpendicular straight lines: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\((5, 8)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: (5, 8). Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\((5, 8)\\)",
+        "graphData": null
+      }
+    ],
+    "answer": "1",
+    "options": [
+      {
+        "text": "\\(4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((5, 8)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-3\\)",
+        "imageUrl": ""
+      }
+    ],
+    "updatedAt": {
+      "_seconds": 1784982176,
+      "_nanoseconds": 826000000
+    }
+  },
+  "y9-11g-q12c": {
+    "year": "Year 9",
+    "origin": "seed",
+    "subQuestions": [],
+    "isActive": true,
+    "title": "Let AB be the interval with endpoints A(...",
+    "type": "multiple_choice",
+    "topicTitle": "Parallel and perpendicular straight lines",
+    "createdAt": {
+      "_seconds": 1784364626,
+      "_nanoseconds": 910000000
+    },
+    "solution": "The correct answer is \\(y = -1/2x + 21/2\\).",
+    "chapterId": "y9-11",
+    "graphData": null,
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "topicCode": "11G",
+    "question": "Let \\(AB\\) be the interval with endpoints \\(A(3, 4)\\) and \\(B(7, 12)\\). Answer the following sub-questions.\nc) Find the equation of the line that is perpendicular to \\(AB\\) and passes through \\(C\\). This line is the perpendicular bisector of \\(AB\\).",
+    "isManual": true,
+    "isNew": true,
+    "requiresManualGrading": false,
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "topicId": "y9-11g",
+    "answer": "1",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Parallel and perpendicular straight lines: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(y = -1/2x + 21/2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: y = -1/2x + 21/2. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(y = -1/2x + 21/2\\)",
+        "graphData": null
+      }
+    ],
+    "options": [
+      {
+        "text": "\\(y = 2x\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = -1/2x + 21/2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = -x + 4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = 3x - 2\\)",
+        "imageUrl": ""
+      }
+    ],
+    "updatedAt": {
+      "_seconds": 1784982176,
+      "_nanoseconds": 826000000
+    }
+  },
+  "y9-11g-q12d": {
+    "year": "Year 9",
+    "origin": "seed",
+    "subQuestions": [],
+    "isActive": true,
+    "title": "Let AB be the interval with endpoints A(...",
+    "type": "multiple_choice",
+    "topicTitle": "Parallel and perpendicular straight lines",
+    "createdAt": {
+      "_seconds": 1784364626,
+      "_nanoseconds": 910000000
+    },
+    "solution": "The correct answer is \\(10.5\\).",
+    "chapterId": "y9-11",
+    "options": [
+      {
+        "text": "\\(-10.5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(10.5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(11.5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(9.5\\)",
+        "imageUrl": ""
+      }
+    ],
+    "graphData": null,
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "updatedAt": {
+      "_seconds": 1784364626,
+      "_nanoseconds": 910000000
+    },
+    "topicCode": "11G",
+    "question": "Let \\(AB\\) be the interval with endpoints \\(A(3, 4)\\) and \\(B(7, 12)\\). Answer the following sub-questions.\nd) What is the \\(y\\)-intercept of this perpendicular bisector?",
+    "isManual": true,
+    "isNew": true,
+    "requiresManualGrading": false,
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "topicId": "y9-11g",
+    "answer": "1",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Parallel and perpendicular straight lines: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(10.5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 10.5. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(10.5\\)",
+        "graphData": null
+      }
+    ]
+  },
+  "y9-11g-q13": {
+    "chapterId": "y9-11",
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "topicId": "y9-11g",
+    "topicCode": "11G",
+    "topicTitle": "Parallel and perpendicular straight lines",
+    "year": "Year 9",
+    "isManual": true,
+    "question": "Triangle \\(ABC\\) has vertices \\(A(2, 1)\\), \\(B(5, 5)\\) and \\(C(9, 2)\\). By calculating gradients, show that \\(\\Delta ABC\\) is right-angled.",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "type": "teacher_review",
+    "requiresManualGrading": true,
+    "options": [],
+    "hint": "Compute the gradients of the three sides. Look for two sides whose gradients multiply to give \\(-1\\).",
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": {
+      "jsxGraph": {
+        "width": 350,
+        "height": 350,
+        "boundingbox": [
+          0,
+          7,
+          11,
+          0
+        ],
+        "showConstructionPoints": true,
+        "boardOptions": {
+          "axis": true,
+          "grid": true
+        },
+        "script": "board.suspendUpdate();\nvar pA = board.create('point', [2, 1], {size: 3, color: 'black', name: 'A(2, 1)', withLabel: true, label: {autoPosition: false, offset: [-15, -15]}});\nvar pB = board.create('point', [5, 5], {size: 3, color: 'black', name: 'B(5, 5)', withLabel: true, label: {autoPosition: false, offset: [-10, 15]}});\nvar pC = board.create('point', [9, 2], {size: 3, color: 'black', name: 'C(9, 2)', withLabel: true, label: {autoPosition: false, offset: [15, 10]}});\nboard.create('polygon', [pA, pB, pC], {fillColor: 'none', borders: {strokeColor: 'black', strokeWidth: 1.5}});\nboard.unsuspendUpdate();"
+      }
+    },
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830227,
+      "_nanoseconds": 114000000
+    },
+    "answer": "Proof: Gradient m_AB = 4/3, m_BC = -3/4.\nSince m_AB * m_BC = -1, AB is perpendicular to BC, so angle B is 90 degrees.",
+    "solution": "Proof: Gradient m_AB = 4/3, m_BC = -3/4.\nSince m_AB * m_BC = -1, AB is perpendicular to BC, so angle B is 90 degrees.",
+    "origin": "seed",
+    "isNew": true,
+    "isActive": true,
+    "title": "Triangle ABC has vertices A(2, 1), B(5, ...",
+    "updatedAt": {
+      "_seconds": 1784364626,
+      "_nanoseconds": 910000000
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Parallel and perpendicular straight lines: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": {
+          "jsxGraph": {
+            "width": 350,
+            "height": 350,
+            "boundingbox": [
+              0,
+              7,
+              11,
+              0
+            ],
+            "showConstructionPoints": true,
+            "boardOptions": {
+              "axis": true,
+              "grid": true
+            },
+            "script": "board.suspendUpdate();\nvar pA = board.create('point', [2, 1], {size: 3, color: 'black', name: 'A(2, 1)', withLabel: true, label: {autoPosition: false, offset: [-15, -15]}});\nvar pB = board.create('point', [5, 5], {size: 3, color: 'black', name: 'B(5, 5)', withLabel: true, label: {autoPosition: false, offset: [-10, 15]}});\nvar pC = board.create('point', [9, 2], {size: 3, color: 'black', name: 'C(9, 2)', withLabel: true, label: {autoPosition: false, offset: [15, 10]}});\nboard.create('polygon', [pA, pB, pC], {fillColor: 'none', borders: {strokeColor: 'black', strokeWidth: 1.5}});\nboard.unsuspendUpdate();"
+          }
+        }
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(m_{BC} = \\frac{2 - 5}{9 - 5} = -\\frac{3}{4}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(m_{AB} \\times m_{BC} = \\frac{4}{3} \\times -\\frac{3}{4} = -1 \\implies AB \\perp BC\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Proof: Gradient m_AB = 4/3, m_BC = -3/4.\nSince m_AB * m_BC = -1, AB is perpendicular to BC, so angle B is 90 degrees.. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "Proof: Gradient m_AB = 4/3, m_BC = -3/4.\nSince m_AB * m_BC = -1, AB is perpendicular to BC, so angle B is 90 degrees.",
+        "graphData": null
+      }
+    ]
+  },
+  "y9-11g-q14": {
+    "chapterId": "y9-11",
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "topicId": "y9-11g",
+    "topicCode": "11G",
+    "topicTitle": "Parallel and perpendicular straight lines",
+    "year": "Year 9",
+    "isManual": true,
+    "question": "Quadrilateral \\(ABCD\\) has vertices \\(A(1, -3)\\), \\(B(4, 1)\\), \\(C(8, -2)\\) and \\(D(5, -6)\\). Show that the diagonals \\(AC\\) and \\(BD\\) are perpendicular.",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "type": "teacher_review",
+    "requiresManualGrading": true,
+    "options": [],
+    "hint": "Compute the gradients of diagonals AC and BD, then verify if their product is \\(-1\\).",
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": {
+      "jsxGraph": {
+        "width": 350,
+        "height": 350,
+        "boundingbox": [
+          -1,
+          3,
+          10,
+          -8
+        ],
+        "showConstructionPoints": true,
+        "boardOptions": {
+          "axis": true,
+          "grid": true
+        },
+        "script": "board.suspendUpdate();\nvar pA = board.create('point', [1, -3], {size: 3, color: 'black', name: 'A(1, -3)', withLabel: true, label: {autoPosition: false, offset: [-15, -15]}});\nvar pB = board.create('point', [4, 1], {size: 3, color: 'black', name: 'B(4, 1)', withLabel: true, label: {autoPosition: false, offset: [-10, 15]}});\nvar pC = board.create('point', [8, -2], {size: 3, color: 'black', name: 'C(8, -2)', withLabel: true, label: {autoPosition: false, offset: [15, 10]}});\nvar pD = board.create('point', [5, -6], {size: 3, color: 'black', name: 'D(5, -6)', withLabel: true, label: {autoPosition: false, offset: [15, -15]}});\nboard.create('polygon', [pA, pB, pC, pD], {fillColor: 'none', borders: {strokeColor: 'black', strokeWidth: 1}});\nboard.create('segment', [pA, pC], {strokeColor: 'blue', strokeWidth: 1.5, strokeDasharray: '4 4'});\nboard.create('segment', [pB, pD], {strokeColor: 'blue', strokeWidth: 1.5, strokeDasharray: '4 4'});\nboard.unsuspendUpdate();"
+      }
+    },
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830227,
+      "_nanoseconds": 114000000
+    },
+    "answer": "Proof: Gradient m_AC = 1/7, m_BD = -7.\nSince m_AC * m_BD = -1, the diagonals AC and BD are perpendicular.",
+    "solution": "Proof: Gradient m_AC = 1/7, m_BD = -7.\nSince m_AC * m_BD = -1, the diagonals AC and BD are perpendicular.",
+    "origin": "seed",
+    "isNew": true,
+    "isActive": true,
+    "title": "Quadrilateral ABCD has vertices A(1, -3)...",
+    "updatedAt": {
+      "_seconds": 1784364626,
+      "_nanoseconds": 910000000
+    },
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Parallel and perpendicular straight lines: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": {
+          "jsxGraph": {
+            "width": 350,
+            "height": 350,
+            "boundingbox": [
+              -1,
+              3,
+              10,
+              -8
+            ],
+            "showConstructionPoints": true,
+            "boardOptions": {
+              "axis": true,
+              "grid": true
+            },
+            "script": "board.suspendUpdate();\nvar pA = board.create('point', [1, -3], {size: 3, color: 'black', name: 'A(1, -3)', withLabel: true, label: {autoPosition: false, offset: [-15, -15]}});\nvar pB = board.create('point', [4, 1], {size: 3, color: 'black', name: 'B(4, 1)', withLabel: true, label: {autoPosition: false, offset: [-10, 15]}});\nvar pC = board.create('point', [8, -2], {size: 3, color: 'black', name: 'C(8, -2)', withLabel: true, label: {autoPosition: false, offset: [15, 10]}});\nvar pD = board.create('point', [5, -6], {size: 3, color: 'black', name: 'D(5, -6)', withLabel: true, label: {autoPosition: false, offset: [15, -15]}});\nboard.create('polygon', [pA, pB, pC, pD], {fillColor: 'none', borders: {strokeColor: 'black', strokeWidth: 1}});\nboard.create('segment', [pA, pC], {strokeColor: 'blue', strokeWidth: 1.5, strokeDasharray: '4 4'});\nboard.create('segment', [pB, pD], {strokeColor: 'blue', strokeWidth: 1.5, strokeDasharray: '4 4'});\nboard.unsuspendUpdate();"
+          }
+        }
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(m_{BD} = \\frac{-6 - 1}{5 - 4} = -7\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(m_{AC} \\times m_{BD} = \\frac{1}{7} \\times (-7) = -1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Proof: Gradient m_AC = 1/7, m_BD = -7.\nSince m_AC * m_BD = -1, the diagonals AC and BD are perpendicular.. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "Proof: Gradient m_AC = 1/7, m_BD = -7.\nSince m_AC * m_BD = -1, the diagonals AC and BD are perpendicular.",
+        "graphData": null
+      }
+    ]
+  },
+  "y9-11g-q15": {
+    "chapterId": "y9-11",
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "topicId": "y9-11g",
+    "topicCode": "11G",
+    "topicTitle": "Parallel and perpendicular straight lines",
+    "year": "Year 9",
+    "isManual": true,
+    "title": "The coordinates of the vertice...",
+    "question": "The coordinates of the vertices of \\(\\Delta PQR\\) are \\(P(2, -3)\\), \\(Q(4, 5)\\), and \\(R(8, -1)\\). Answer the following sub-questions.",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "type": "teacher_review",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "a) S(3, 1), b) m_SR = -0.4, c) y = -2/5x + 11/5, d) y = 5/4x - 11/2; y = -7x + 33, e) m_PQ = 4, f) y = -1/4x + 7/4, g) y = 2/3x - 2, h) y = -3x + 13",
+    "hint": "Midpoint coordinates, gradients (and their negative reciprocals for perpendicular bisectors), and point-slope equations are required.",
+    "solution": "a) Midpoint \\(S\\) of \\(PQ\\): \\(\\left(\\frac{2+4}{2}, \\frac{-3+5}{2}\right) = (3, 1)\\).\n\nb) Gradient of \\(SR\\) where \\(S(3, 1)\\), \\(R(8, -1)\\):\n   \\(m = \\frac{-1 - 1}{8 - 3} = -\\frac{2}{5} = -0.4\\).\n\nc) Equation of line \\(SR\\):\n   \\(y - 1 = -\\frac{2}{5}(x - 3) \\implies y = -\\frac{2}{5}x + \\frac{11}{5}\\).\n\nd) Equations of the other two medians:\n   - Midpoint of \\(QR\\): \\(T(6, 2)\\). Median through \\(P\\) is \\(y = \\frac{5}{4}x - \\frac{11}{2}\\).\n   - Midpoint of \\(PR\\): \\(U(5, -2)\\). Median through \\(Q\\) is \\(y = -7x + 33\\).\n\ne) Gradient of \\(PQ\\): \\(m_{PQ} = \\frac{5 - (-3)}{4 - 2} = 4\\).\n\nf) Equation of perpendicular bisector of \\(PQ\\) (passes through \\(S(3, 1)\\) with gradient \\(-\\frac{1}{4}\\)):\n   \\(y - 1 = -\\frac{1}{4}(x - 3) \\implies y = -\\frac{1}{4}x + \\frac{7}{4}\\).\n\ng) Perpendicular bisector of \\(QR\\) (passes through \\(T(6, 2)\\) with gradient \\(\\frac{2}{3}\\)):\n   \\(y - 2 = \\frac{2}{3}(x - 6) \\implies y = \\frac{2}{3}x - 2\\).\n\nh) Perpendicular bisector of \\(PR\\) (passes through \\(U(5, -2)\\) with gradient \\(-3\\)):\n   \\(y - (-2) = -3(x - 5) \\implies y = -3x + 13\\).",
+    "solutionSteps": [],
+    "questionImage": "",
+    "subQuestions": [
+      {
+        "id": "y9-11g-q15a",
+        "type": "short_answer",
+        "question": "a) Find the coordinates of \\(S\\), the midpoint of \\(PQ\\).",
+        "options": [],
+        "answer": "(3, 1)",
+        "solutionSteps": [
+          {
+            "explanation": "Average coordinates.",
+            "workingOut": "S = \\left(\\frac{2+4}{2}, \\frac{-3+5}{2}\\right) = (3, 1)"
+          }
+        ],
+        "graphData": null
+      },
+      {
+        "id": "y9-11g-q15b",
+        "type": "short_answer",
+        "question": "b) Find the gradient of \\(SR\\).",
+        "options": [],
+        "answer": "-0.4",
+        "solutionSteps": [
+          {
+            "explanation": "Find gradient of segment SR.",
+            "workingOut": "m = \\frac{-1 - 1}{8 - 3} = -0.4"
+          }
+        ],
+        "graphData": null
+      },
+      {
+        "id": "y9-11g-q15c",
+        "type": "short_answer",
+        "question": "c) Find the equation of the line \\(SR\\).",
+        "options": [],
+        "answer": "y = -2/5x + 11/5",
+        "solutionSteps": [
+          {
+            "explanation": "Use point-gradient form.",
+            "workingOut": "y - 1 = -\\frac{2}{5}(x - 3) \\implies y = -\\frac{2}{5}x + \\frac{11}{5}"
+          }
+        ],
+        "graphData": null
+      },
+      {
+        "id": "y9-11g-q15d",
+        "type": "short_answer",
+        "question": "d) Find the equations of the other two medians of the triangle. (Format: y = 5/4x - 11/2; y = -7x + 33)",
+        "options": [],
+        "answer": "y = 5/4x - 11/2; y = -7x + 33",
+        "solutionSteps": [
+          {
+            "explanation": "Find midpoints T(6, 2) and U(5, -2), then find equations of PT and QU.",
+            "workingOut": "y - 2 = \\frac{5}{4}(x - 6) \\implies y = \\frac{5}{4}x - \\frac{11}{2}; \\quad y - 5 = -7(x - 4) \\implies y = -7x + 33"
+          }
+        ],
+        "graphData": null
+      },
+      {
+        "id": "y9-11g-q15e",
+        "type": "short_answer",
+        "question": "e) Find the gradient of \\(PQ\\).",
+        "options": [],
+        "answer": "4",
+        "solutionSteps": [
+          {
+            "explanation": "Find gradient of PQ.",
+            "workingOut": "m = \\frac{5 - (-3)}{4 - 2} = 4"
+          }
+        ],
+        "graphData": null
+      },
+      {
+        "id": "y9-11g-q15f",
+        "type": "short_answer",
+        "question": "f) Find the equation of the perpendicular bisector of \\(PQ\\).",
+        "options": [],
+        "answer": "y = -1/4x + 7/4",
+        "solutionSteps": [
+          {
+            "explanation": "Use midpoint S(3, 1) and perpendicular gradient -1/4.",
+            "workingOut": "y - 1 = -\\frac{1}{4}(x - 3) \\implies y = -\\frac{1}{4}x + \\frac{7}{4}"
+          }
+        ],
+        "graphData": null
+      },
+      {
+        "id": "y9-11g-q15g",
+        "type": "short_answer",
+        "question": "g) Find the equation of the perpendicular bisector of the side \\(QR\\).",
+        "options": [],
+        "answer": "y = 2/3x - 2",
+        "solutionSteps": [
+          {
+            "explanation": "Midpoint of QR is T(6, 2). Gradient of QR is -3/2. Perpendicular gradient is 2/3.",
+            "workingOut": "y - 2 = \\frac{2}{3}(x - 6) \\implies y = \\frac{2}{3}x - 2"
+          }
+        ],
+        "graphData": null
+      },
+      {
+        "id": "y9-11g-q15h",
+        "type": "short_answer",
+        "question": "h) Find the equation of the perpendicular bisector of the side \\(PR\\).",
+        "options": [],
+        "answer": "y = -3x + 13",
+        "solutionSteps": [
+          {
+            "explanation": "Midpoint of PR is U(5, -2). Gradient of PR is 1/3. Perpendicular gradient is -3.",
+            "workingOut": "y - (-2) = -3(x - 5) \\implies y = -3x + 13"
+          }
+        ],
+        "graphData": null
+      }
+    ],
+    "blanks": [],
+    "graphData": {
+      "jsxGraph": {
+        "width": 350,
+        "height": 350,
+        "boundingbox": [
+          -1,
+          7,
+          10,
+          -5
+        ],
+        "showConstructionPoints": true,
+        "boardOptions": {
+          "axis": true,
+          "grid": true
+        },
+        "script": "board.suspendUpdate();\nvar pP = board.create('point', [2, -3], {size: 3, color: 'black', name: 'P(2, -3)', withLabel: true, label: {autoPosition: false, offset: [-15, -15]}});\nvar pQ = board.create('point', [4, 5], {size: 3, color: 'black', name: 'Q(4, 5)', withLabel: true, label: {autoPosition: false, offset: [-10, 15]}});\nvar pR = board.create('point', [8, -1], {size: 3, color: 'black', name: 'R(8, -1)', withLabel: true, label: {autoPosition: false, offset: [15, 10]}});\nboard.create('polygon', [pP, pQ, pR], {fillColor: 'none', borders: {strokeColor: 'black', strokeWidth: 1.5}});\nvar pS = board.create('point', [3, 1], {size: 3, color: 'blue', name: 'S(3, 1)', withLabel: true, label: {autoPosition: false, offset: [-15, 10]}});\nboard.create('segment', [pS, pR], {strokeColor: 'blue', strokeWidth: 1});\nboard.unsuspendUpdate();"
+      }
+    },
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830227,
+      "_nanoseconds": 114000000
+    },
+    "updatedAt": {
+      "_seconds": 1782830227,
+      "_nanoseconds": 114000000
+    }
+  },
+  "y9-11g-q15a": {
+    "year": "Year 9",
+    "origin": "seed",
+    "subQuestions": [],
+    "isActive": true,
+    "title": "The coordinates of the vertices of \\Delt...",
+    "type": "multiple_choice",
+    "topicTitle": "Parallel and perpendicular straight lines",
+    "createdAt": {
+      "_seconds": 1784364626,
+      "_nanoseconds": 910000000
+    },
+    "solution": "The correct answer is \\((3, 1)\\).",
+    "chapterId": "y9-11",
+    "graphData": null,
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "topicCode": "11G",
+    "question": "The coordinates of the vertices of \\(\\Delta PQR\\) are \\(P(2, -3)\\), \\(Q(4, 5)\\), and \\(R(8, -1)\\). Answer the following sub-questions.\na) Find the coordinates of \\(S\\), the midpoint of \\(PQ\\).",
+    "isManual": true,
+    "isNew": true,
+    "requiresManualGrading": false,
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "topicId": "y9-11g",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Parallel and perpendicular straight lines: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\((3, 1)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: (3, 1). Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\((3, 1)\\)",
+        "graphData": null
+      }
+    ],
+    "answer": "1",
+    "options": [
+      {
+        "text": "\\(2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3, 1)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-2\\)",
+        "imageUrl": ""
+      }
+    ],
+    "updatedAt": {
+      "_seconds": 1784982176,
+      "_nanoseconds": 826000000
+    }
+  },
+  "y9-11g-q15b": {
+    "year": "Year 9",
+    "origin": "seed",
+    "subQuestions": [],
+    "isActive": true,
+    "title": "The coordinates of the vertices of \\Delt...",
+    "type": "multiple_choice",
+    "topicTitle": "Parallel and perpendicular straight lines",
+    "createdAt": {
+      "_seconds": 1784364626,
+      "_nanoseconds": 910000000
+    },
+    "solution": "The correct answer is \\(-0.4\\).",
+    "chapterId": "y9-11",
+    "options": [
+      {
+        "text": "\\(-0.4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-1.4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(0.4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(0.6\\)",
+        "imageUrl": ""
+      }
+    ],
+    "graphData": null,
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "updatedAt": {
+      "_seconds": 1784364626,
+      "_nanoseconds": 910000000
+    },
+    "topicCode": "11G",
+    "question": "The coordinates of the vertices of \\(\\Delta PQR\\) are \\(P(2, -3)\\), \\(Q(4, 5)\\), and \\(R(8, -1)\\). Answer the following sub-questions.\nb) Find the gradient of \\(SR\\).",
+    "isManual": true,
+    "isNew": true,
+    "requiresManualGrading": false,
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "topicId": "y9-11g",
+    "answer": "0",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Parallel and perpendicular straight lines: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(-0.4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: -0.4. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(-0.4\\)",
+        "graphData": null
+      }
+    ]
+  },
+  "y9-11g-q15c": {
+    "year": "Year 9",
+    "origin": "seed",
+    "subQuestions": [],
+    "isActive": true,
+    "title": "The coordinates of the vertices of \\Delt...",
+    "type": "multiple_choice",
+    "topicTitle": "Parallel and perpendicular straight lines",
+    "createdAt": {
+      "_seconds": 1784364626,
+      "_nanoseconds": 910000000
+    },
+    "solution": "The correct answer is \\(y = -2/5x + 11/5\\).",
+    "chapterId": "y9-11",
+    "graphData": null,
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "topicCode": "11G",
+    "question": "The coordinates of the vertices of \\(\\Delta PQR\\) are \\(P(2, -3)\\), \\(Q(4, 5)\\), and \\(R(8, -1)\\). Answer the following sub-questions.\nc) Find the equation of the line \\(SR\\).",
+    "isManual": true,
+    "isNew": true,
+    "requiresManualGrading": false,
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "topicId": "y9-11g",
+    "answer": "1",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Parallel and perpendicular straight lines: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(y = -2/5x + 11/5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: y = -2/5x + 11/5. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(y = -2/5x + 11/5\\)",
+        "graphData": null
+      }
+    ],
+    "options": [
+      {
+        "text": "\\(y = 5x + 3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = -2/5x + 11/5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = -4x + 7\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = 3x - 5\\)",
+        "imageUrl": ""
+      }
+    ],
+    "updatedAt": {
+      "_seconds": 1784982176,
+      "_nanoseconds": 826000000
+    }
+  },
+  "y9-11g-q15d": {
+    "year": "Year 9",
+    "origin": "seed",
+    "subQuestions": [],
+    "isActive": true,
+    "title": "The coordinates of the vertices of \\Delt...",
+    "type": "multiple_choice",
+    "topicTitle": "Parallel and perpendicular straight lines",
+    "createdAt": {
+      "_seconds": 1784364626,
+      "_nanoseconds": 910000000
+    },
+    "solution": "The correct answer is \\(y = 5/4x - 11/2; y = -7x + 33\\).",
+    "chapterId": "y9-11",
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "topicCode": "11G",
+    "question": "The coordinates of the vertices of \\(\\Delta PQR\\) are \\(P(2, -3)\\), \\(Q(4, 5)\\), and \\(R(8, -1)\\). Answer the following sub-questions.\nd) Find the equations of the other two medians of the triangle. (Format: y = 5/4x - 11/2; y = -7x + 33)",
+    "isManual": true,
+    "isNew": true,
+    "requiresManualGrading": false,
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "topicId": "y9-11g",
+    "answer": "1",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Parallel and perpendicular straight lines: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": {
+          "jsxGraph": {
+            "width": 360,
+            "height": 280,
+            "boundingbox": [
+              -6,
+              6,
+              6,
+              -6
+            ],
+            "script": "board.suspendUpdate(); board.create('arrow', [[-6,0],[6,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-6],[0,6]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [5.28, -2.0999999999999996, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 5.4, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return (-7)*x + (+33); }, -5.5, 5.5], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [2.2, 3.5, 'y = -7x+33'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+          }
+        }
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(y = 5/4x - 11/2; y = -7x + 33\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: y = 5/4x - 11/2; y = -7x + 33. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(y = 5/4x - 11/2; y = -7x + 33\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": {
+      "jsxGraph": {
+        "boundingbox": [
+          -6,
+          6,
+          6,
+          -6
+        ],
+        "width": 360,
+        "script": "board.suspendUpdate(); board.create('arrow', [[-6,0],[6,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-6],[0,6]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [5.28, -2.0999999999999996, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 5.4, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return (-7)*x + (+33); }, -5.5, 5.5], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [2.2, 3.5, 'y = -7x+33'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();",
+        "height": 280
+      }
+    },
+    "options": [
+      {
+        "text": "\\(y = 6x - 3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = 5/4x - 11/2; y = -7x + 33\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = -x + 8\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = 4x - 6\\)",
+        "imageUrl": ""
+      }
+    ],
+    "updatedAt": {
+      "_seconds": 1784982176,
+      "_nanoseconds": 826000000
+    }
+  },
+  "y9-11g-q15e": {
+    "year": "Year 9",
+    "origin": "seed",
+    "subQuestions": [],
+    "isActive": true,
+    "title": "The coordinates of the vertices of \\Delt...",
+    "type": "multiple_choice",
+    "topicTitle": "Parallel and perpendicular straight lines",
+    "createdAt": {
+      "_seconds": 1784364626,
+      "_nanoseconds": 910000000
+    },
+    "solution": "The correct answer is \\(4\\).",
+    "chapterId": "y9-11",
+    "options": [
+      {
+        "text": "\\(-4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5\\)",
+        "imageUrl": ""
+      }
+    ],
+    "graphData": null,
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "updatedAt": {
+      "_seconds": 1784364626,
+      "_nanoseconds": 910000000
+    },
+    "topicCode": "11G",
+    "question": "The coordinates of the vertices of \\(\\Delta PQR\\) are \\(P(2, -3)\\), \\(Q(4, 5)\\), and \\(R(8, -1)\\). Answer the following sub-questions.\ne) Find the gradient of \\(PQ\\).",
+    "isManual": true,
+    "isNew": true,
+    "requiresManualGrading": false,
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "topicId": "y9-11g",
+    "answer": "2",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Parallel and perpendicular straight lines: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 4. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(4\\)",
+        "graphData": null
+      }
+    ]
+  },
+  "y9-11g-q15f": {
+    "year": "Year 9",
+    "origin": "seed",
+    "subQuestions": [],
+    "isActive": true,
+    "title": "The coordinates of the vertices of \\Delt...",
+    "type": "multiple_choice",
+    "topicTitle": "Parallel and perpendicular straight lines",
+    "createdAt": {
+      "_seconds": 1784364626,
+      "_nanoseconds": 910000000
+    },
+    "solution": "The correct answer is \\(y = -1/4x + 7/4\\).",
+    "chapterId": "y9-11",
+    "graphData": null,
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "topicCode": "11G",
+    "question": "The coordinates of the vertices of \\(\\Delta PQR\\) are \\(P(2, -3)\\), \\(Q(4, 5)\\), and \\(R(8, -1)\\). Answer the following sub-questions.\nf) Find the equation of the perpendicular bisector of \\(PQ\\).",
+    "isManual": true,
+    "isNew": true,
+    "requiresManualGrading": false,
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "topicId": "y9-11g",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Parallel and perpendicular straight lines: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(y = -1/4x + 7/4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: y = -1/4x + 7/4. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(y = -1/4x + 7/4\\)",
+        "graphData": null
+      }
+    ],
+    "answer": "1",
+    "options": [
+      {
+        "text": "\\(y = 3x - 1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = -1/4x + 7/4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = -3x + 5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = 3x - 2\\)",
+        "imageUrl": ""
+      }
+    ],
+    "updatedAt": {
+      "_seconds": 1784982176,
+      "_nanoseconds": 826000000
+    }
+  },
+  "y9-11g-q15g": {
+    "year": "Year 9",
+    "origin": "seed",
+    "subQuestions": [],
+    "isActive": true,
+    "title": "The coordinates of the vertices of \\Delt...",
+    "type": "multiple_choice",
+    "topicTitle": "Parallel and perpendicular straight lines",
+    "createdAt": {
+      "_seconds": 1784364626,
+      "_nanoseconds": 910000000
+    },
+    "solution": "The correct answer is \\(y = 2/3x - 2\\).",
+    "chapterId": "y9-11",
+    "graphData": null,
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "topicCode": "11G",
+    "question": "The coordinates of the vertices of \\(\\Delta PQR\\) are \\(P(2, -3)\\), \\(Q(4, 5)\\), and \\(R(8, -1)\\). Answer the following sub-questions.\ng) Find the equation of the perpendicular bisector of the side \\(QR\\).",
+    "isManual": true,
+    "isNew": true,
+    "requiresManualGrading": false,
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "topicId": "y9-11g",
+    "answer": "1",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Parallel and perpendicular straight lines: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(y = 2/3x - 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: y = 2/3x - 2. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(y = 2/3x - 2\\)",
+        "graphData": null
+      }
+    ],
+    "options": [
+      {
+        "text": "\\(y = 4x\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = 2/3x - 2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = -4x + 6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = 4x - 3\\)",
+        "imageUrl": ""
+      }
+    ],
+    "updatedAt": {
+      "_seconds": 1784982176,
+      "_nanoseconds": 826000000
+    }
+  },
+  "y9-11g-q15h": {
+    "year": "Year 9",
+    "origin": "seed",
+    "subQuestions": [],
+    "isActive": true,
+    "title": "The coordinates of the vertices of \\Delt...",
+    "type": "multiple_choice",
+    "topicTitle": "Parallel and perpendicular straight lines",
+    "createdAt": {
+      "_seconds": 1784364626,
+      "_nanoseconds": 910000000
+    },
+    "solution": "The correct answer is \\(y = -3x + 13\\).",
+    "chapterId": "y9-11",
+    "graphData": null,
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "topicCode": "11G",
+    "question": "The coordinates of the vertices of \\(\\Delta PQR\\) are \\(P(2, -3)\\), \\(Q(4, 5)\\), and \\(R(8, -1)\\). Answer the following sub-questions.\nh) Find the equation of the perpendicular bisector of the side \\(PR\\).",
+    "isManual": true,
+    "isNew": true,
+    "requiresManualGrading": false,
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "topicId": "y9-11g",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Parallel and perpendicular straight lines: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(y = -3x + 13\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: y = -3x + 13. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(y = -3x + 13\\)",
+        "graphData": null
+      }
+    ],
+    "answer": "1",
+    "options": [
+      {
+        "text": "\\(y = 5x + 1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = -3x + 13\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = -x + 7\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = 5x - 4\\)",
+        "imageUrl": ""
+      }
+    ],
+    "updatedAt": {
+      "_seconds": 1784982176,
+      "_nanoseconds": 826000000
+    }
+  },
+  "y9-11g-q16": {
+    "chapterId": "y9-11",
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "topicId": "y9-11g",
+    "topicCode": "11G",
+    "topicTitle": "Parallel and perpendicular straight lines",
+    "year": "Year 9",
+    "isManual": true,
+    "title": "In triangle \\(ABC\\), the altit...",
+    "question": "In triangle \\(ABC\\), the altitude through \\(A\\) is the line through \\(A\\) perpendicular to \\(BC\\). The coordinates of the vertices of the triangle are \\(A(1, 2)\\), \\(B(5, 8)\\), and \\(C(7, 0)\\). Answer the following sub-questions.",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "type": "teacher_review",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "a) y = -2/3x + 14/3, b) y = 3x - 7, c) y = 1/4x + 7/4",
+    "hint": "An altitude is a line through a vertex perpendicular to the opposite side. Find the gradient of the opposite side, take its negative reciprocal, and use point-gradient form.",
+    "solution": "a) Altitude through \\(C\\) is perpendicular to \\(AB\\):\n   - Gradient \\(AB\\): \\(m_{AB} = \\frac{8 - 2}{5 - 1} = \\frac{3}{2}\\).\n   - Perpendicular gradient: \\(-\\frac{2}{3}\\).\n   - Equation: \\(y - 0 = -\\frac{2}{3}(x - 7) \\implies y = -\\frac{2}{3}x + \\frac{14}{3}\\).\n\nb) Altitude through \\(B\\) is perpendicular to \\(AC\\):\n   - Gradient \\(AC\\): \\(m_{AC} = \\frac{0 - 2}{7 - 1} = -\\frac{1}{3}\\).\n   - Perpendicular gradient: \\(3\\).\n   - Equation: \\(y - 8 = 3(x - 5) \\implies y = 3x - 7\\).\n\nc) Altitude through \\(A\\) is perpendicular to \\(BC\\):\n   - Gradient \\(BC\\): \\(m_{BC} = \\frac{0 - 8}{7 - 5} = -4\\).\n   - Perpendicular gradient: \\(\\frac{1}{4}\\).\n   - Equation: \\(y - 2 = \\frac{1}{4}(x - 1) \\implies y = \\frac{1}{4}x + \\frac{7}{4}\\).",
+    "solutionSteps": [],
+    "questionImage": "",
+    "subQuestions": [
+      {
+        "id": "y9-11g-q16a",
+        "type": "short_answer",
+        "question": "a) Find the equation of the altitude through \\(C\\).",
+        "options": [],
+        "answer": "y = -2/3x + 14/3",
+        "solutionSteps": [
+          {
+            "explanation": "Gradient of AB is 3/2, so the altitude gradient is -2/3.",
+            "workingOut": "y - 0 = -\\frac{2}{3}(x - 7) \\implies y = -\\frac{2}{3}x + \\frac{14}{3}"
+          }
+        ],
+        "graphData": null
+      },
+      {
+        "id": "y9-11g-q16b",
+        "type": "short_answer",
+        "question": "b) Find the equation of the altitude through \\(B\\).",
+        "options": [],
+        "answer": "y = 3x - 7",
+        "solutionSteps": [
+          {
+            "explanation": "Gradient of AC is -1/3, so the altitude gradient is 3.",
+            "workingOut": "y - 8 = 3(x - 5) \\implies y = 3x - 7"
+          }
+        ],
+        "graphData": null
+      },
+      {
+        "id": "y9-11g-q16c",
+        "type": "short_answer",
+        "question": "c) Find the equation of the altitude through \\(A\\).",
+        "options": [],
+        "answer": "y = 1/4x + 7/4",
+        "solutionSteps": [
+          {
+            "explanation": "Gradient of BC is -4, so the altitude gradient is 1/4.",
+            "workingOut": "y - 2 = \\frac{1}{4}(x - 1) \\implies y = \\frac{1}{4}x + \\frac{7}{4}"
+          }
+        ],
+        "graphData": null
+      }
+    ],
+    "blanks": [],
+    "graphData": {
+      "jsxGraph": {
+        "width": 350,
+        "height": 350,
+        "boundingbox": [
+          -1,
+          10,
+          9,
+          -2
+        ],
+        "showConstructionPoints": true,
+        "boardOptions": {
+          "axis": true,
+          "grid": true
+        },
+        "script": "board.suspendUpdate();\nvar pA = board.create('point', [1, 2], {size: 3, color: 'black', name: 'A(1, 2)', withLabel: true, label: {autoPosition: false, offset: [-15, 10]}});\nvar pB = board.create('point', [5, 8], {size: 3, color: 'black', name: 'B(5, 8)', withLabel: true, label: {autoPosition: false, offset: [10, 10]}});\nvar pC = board.create('point', [7, 0], {size: 3, color: 'black', name: 'C(7, 0)', withLabel: true, label: {autoPosition: false, offset: [10, -10]}});\nboard.create('polygon', [pA, pB, pC], {fillColor: 'none', borders: {strokeColor: 'black', strokeWidth: 1.5}});\nboard.unsuspendUpdate();"
+      }
+    },
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830227,
+      "_nanoseconds": 114000000
+    },
+    "updatedAt": {
+      "_seconds": 1782830227,
+      "_nanoseconds": 114000000
+    }
+  },
+  "y9-11g-q16a": {
+    "year": "Year 9",
+    "origin": "seed",
+    "subQuestions": [],
+    "isActive": true,
+    "title": "In triangle ABC, the altitude through A ...",
+    "type": "multiple_choice",
+    "topicTitle": "Parallel and perpendicular straight lines",
+    "createdAt": {
+      "_seconds": 1784364626,
+      "_nanoseconds": 910000000
+    },
+    "solution": "The correct answer is \\(y = -2/3x + 14/3\\).",
+    "chapterId": "y9-11",
+    "graphData": null,
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "topicCode": "11G",
+    "question": "In triangle \\(ABC\\), the altitude through \\(A\\) is the line through \\(A\\) perpendicular to \\(BC\\). The coordinates of the vertices of the triangle are \\(A(1, 2)\\), \\(B(5, 8)\\), and \\(C(7, 0)\\). Answer the following sub-questions.\na) Find the equation of the altitude through \\(C\\).",
+    "isManual": true,
+    "isNew": true,
+    "requiresManualGrading": false,
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "topicId": "y9-11g",
+    "answer": "1",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Parallel and perpendicular straight lines: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(y = -2/3x + 14/3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: y = -2/3x + 14/3. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(y = -2/3x + 14/3\\)",
+        "graphData": null
+      }
+    ],
+    "options": [
+      {
+        "text": "\\(y = 4x + 2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = -2/3x + 14/3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = -3x + 6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = 5x - 4\\)",
+        "imageUrl": ""
+      }
+    ],
+    "updatedAt": {
+      "_seconds": 1784982176,
+      "_nanoseconds": 826000000
+    }
+  },
+  "y9-11g-q16b": {
+    "year": "Year 9",
+    "origin": "seed",
+    "subQuestions": [],
+    "isActive": true,
+    "title": "In triangle ABC, the altitude through A ...",
+    "type": "multiple_choice",
+    "topicTitle": "Parallel and perpendicular straight lines",
+    "createdAt": {
+      "_seconds": 1784364626,
+      "_nanoseconds": 910000000
+    },
+    "solution": "The correct answer is \\(y = 3x - 7\\).",
+    "chapterId": "y9-11",
+    "graphData": null,
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "topicCode": "11G",
+    "question": "In triangle \\(ABC\\), the altitude through \\(A\\) is the line through \\(A\\) perpendicular to \\(BC\\). The coordinates of the vertices of the triangle are \\(A(1, 2)\\), \\(B(5, 8)\\), and \\(C(7, 0)\\). Answer the following sub-questions.\nb) Find the equation of the altitude through \\(B\\).",
+    "isManual": true,
+    "isNew": true,
+    "requiresManualGrading": false,
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "topicId": "y9-11g",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Parallel and perpendicular straight lines: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(y = 3x - 7\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: y = 3x - 7. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(y = 3x - 7\\)",
+        "graphData": null
+      }
+    ],
+    "answer": "1",
+    "options": [
+      {
+        "text": "\\(y = 5x + 3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = 3x - 7\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = -4x + 7\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = 3x - 5\\)",
+        "imageUrl": ""
+      }
+    ],
+    "updatedAt": {
+      "_seconds": 1784982176,
+      "_nanoseconds": 826000000
+    }
+  },
+  "y9-11g-q16c": {
+    "year": "Year 9",
+    "origin": "seed",
+    "subQuestions": [],
+    "isActive": true,
+    "title": "In triangle ABC, the altitude through A ...",
+    "type": "multiple_choice",
+    "topicTitle": "Parallel and perpendicular straight lines",
+    "createdAt": {
+      "_seconds": 1784364626,
+      "_nanoseconds": 910000000
+    },
+    "solution": "The correct answer is \\(y = 1/4x + 7/4\\).",
+    "chapterId": "y9-11",
+    "graphData": null,
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "topicCode": "11G",
+    "question": "In triangle \\(ABC\\), the altitude through \\(A\\) is the line through \\(A\\) perpendicular to \\(BC\\). The coordinates of the vertices of the triangle are \\(A(1, 2)\\), \\(B(5, 8)\\), and \\(C(7, 0)\\). Answer the following sub-questions.\nc) Find the equation of the altitude through \\(A\\).",
+    "isManual": true,
+    "isNew": true,
+    "requiresManualGrading": false,
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "topicId": "y9-11g",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Parallel and perpendicular straight lines: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(y = 1/4x + 7/4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: y = 1/4x + 7/4. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(y = 1/4x + 7/4\\)",
+        "graphData": null
+      }
+    ],
+    "answer": "1",
+    "options": [
+      {
+        "text": "\\(y = 6x - 3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = 1/4x + 7/4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = -x + 8\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(y = 4x - 6\\)",
+        "imageUrl": ""
+      }
+    ],
+    "updatedAt": {
+      "_seconds": 1784982176,
+      "_nanoseconds": 826000000
+    }
+  },
+  "y9-11g-q17": {
+    "chapterId": "y9-11",
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "topicId": "y9-11g",
+    "topicCode": "11G",
+    "topicTitle": "Parallel and perpendicular straight lines",
+    "year": "Year 9",
+    "isManual": true,
+    "title": "Adjacent vertices of a square ...",
+    "question": "Adjacent vertices of a square \\(ABCD\\) are \\(A(4, 5)\\) and \\(B(5, 7)\\). Answer the following sub-questions.",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "type": "teacher_review",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "a) \\sqrt{5}, b) 2, c) -1/2, d) 6, e) (6, 4)",
+    "hint": "Use the distance formula for side length, perpendicular slope condition for gradients, and translation vectors to find coordinate points.",
+    "solution": "a) Side length \\(AB\\): \\(d = \\sqrt{(5-4)^2 + (7-5)^2} = \\sqrt{1 + 4} = \\sqrt{5}\\).\n\nb) Gradient of \\(AB\\): \\(m = \\frac{7 - 5}{5 - 4} = 2\\).\n\nc) Since opposite/adjacent sides of a square are perpendicular, \\(BC \\perp AB\\), so the gradient of \\(BC\\) is \\(-\\frac{1}{2}\\).\n\nd) Given \\(C(7, c)\\), the gradient of \\(BC\\) is \\(\\frac{c - 7}{7 - 5} = \\frac{c - 7}{2}\\).\n   Set \\(\\frac{c - 7}{2} = -\\frac{1}{2} \\implies c - 7 = -1 \\implies c = 6\\).\n\ne) Vector \\(\\vec{AD} = \\vec{BC} = C - B = (7 - 5, 6 - 7) = (2, -1)\\).\n   Therefore, \\(D = A + (2, -1) = (4 + 2, 5 - 1) = (6, 4)\\).",
+    "solutionSteps": [],
+    "questionImage": "",
+    "subQuestions": [
+      {
+        "id": "y9-11g-q17a",
+        "type": "short_answer",
+        "question": "a) Find the length of each side of the square.",
+        "options": [],
+        "answer": "\\sqrt{5}",
+        "solutionSteps": [
+          {
+            "explanation": "Use distance formula.",
+            "workingOut": "AB = \\sqrt{(5-4)^2 + (7-5)^2} = \\sqrt{5}"
+          }
+        ],
+        "graphData": null
+      },
+      {
+        "id": "y9-11g-q17b",
+        "type": "short_answer",
+        "question": "b) Find the gradient of \\(AB\\).",
+        "options": [],
+        "answer": "2",
+        "solutionSteps": [
+          {
+            "explanation": "Use gradient formula.",
+            "workingOut": "m = \\frac{7 - 5}{5 - 4} = 2"
+          }
+        ],
+        "graphData": null
+      },
+      {
+        "id": "y9-11g-q17c",
+        "type": "short_answer",
+        "question": "c) Find the gradient of \\(BC\\).",
+        "options": [],
+        "answer": "-1/2",
+        "solutionSteps": [
+          {
+            "explanation": "BC is perpendicular to AB.",
+            "workingOut": "m = -\\frac{1}{2}"
+          }
+        ],
+        "graphData": null
+      },
+      {
+        "id": "y9-11g-q17d",
+        "type": "short_answer",
+        "question": "d) The coordinates of \\(C\\) are \\((7, c)\\). Find the value of \\(c\\).",
+        "options": [],
+        "answer": "6",
+        "solutionSteps": [
+          {
+            "explanation": "Set gradient of BC to -1/2.",
+            "workingOut": "\\frac{c - 7}{7 - 5} = -\\frac{1}{2} \\implies c - 7 = -1 \\implies c = 6"
+          }
+        ],
+        "graphData": null
+      },
+      {
+        "id": "y9-11g-q17e",
+        "type": "short_answer",
+        "question": "e) Find the coordinates of \\(D\\).",
+        "options": [],
+        "answer": "(6, 4)",
+        "solutionSteps": [
+          {
+            "explanation": "Translate A by the vector BC = (2, -1).",
+            "workingOut": "D = (4 + 2, 5 - 1) = (6, 4)"
+          }
+        ],
+        "graphData": null
+      }
+    ],
+    "blanks": [],
+    "graphData": {
+      "jsxGraph": {
+        "width": 350,
+        "height": 350,
+        "boundingbox": [
+          2,
+          9,
+          9,
+          2
+        ],
+        "showConstructionPoints": true,
+        "boardOptions": {
+          "axis": true,
+          "grid": true
+        },
+        "script": "board.suspendUpdate();\nvar pA = board.create('point', [4, 5], {size: 3, color: 'black', name: 'A(4, 5)', withLabel: true, label: {autoPosition: false, offset: [-15, -15]}});\nvar pB = board.create('point', [5, 7], {size: 3, color: 'black', name: 'B(5, 7)', withLabel: true, label: {autoPosition: false, offset: [-10, 15]}});\nvar pC = board.create('point', [7, 6], {size: 3, color: 'black', name: 'C(7, 6)', withLabel: true, label: {autoPosition: false, offset: [15, 10]}});\nvar pD = board.create('point', [6, 4], {size: 3, color: 'black', name: 'D(6, 4)', withLabel: true, label: {autoPosition: false, offset: [15, -15]}});\nboard.create('polygon', [pA, pB, pC, pD], {fillColor: 'none', borders: {strokeColor: 'black', strokeWidth: 1.5}});\nboard.unsuspendUpdate();"
+      }
+    },
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830227,
+      "_nanoseconds": 114000000
+    },
+    "updatedAt": {
+      "_seconds": 1782830227,
+      "_nanoseconds": 114000000
+    }
+  },
+  "y9-11g-q17a": {
+    "year": "Year 9",
+    "origin": "seed",
+    "subQuestions": [],
+    "isActive": true,
+    "title": "Adjacent vertices of a square ABCD are A...",
+    "type": "multiple_choice",
+    "topicTitle": "Parallel and perpendicular straight lines",
+    "createdAt": {
+      "_seconds": 1784364626,
+      "_nanoseconds": 910000000
+    },
+    "solution": "The correct answer is \\(\\sqrt{5}\\).",
+    "chapterId": "y9-11",
+    "graphData": null,
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "topicCode": "11G",
+    "question": "Adjacent vertices of a square \\(ABCD\\) are \\(A(4, 5)\\) and \\(B(5, 7)\\). Answer the following sub-questions.\na) Find the length of each side of the square.",
+    "isManual": true,
+    "isNew": true,
+    "requiresManualGrading": false,
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "topicId": "y9-11g",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Parallel and perpendicular straight lines: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(\\sqrt{5}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\sqrt{5}. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(\\sqrt{5}\\)",
+        "graphData": null
+      }
+    ],
+    "answer": "1",
+    "options": [
+      {
+        "text": "\\(4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\sqrt{5}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-1\\)",
+        "imageUrl": ""
+      }
+    ],
+    "updatedAt": {
+      "_seconds": 1784982176,
+      "_nanoseconds": 826000000
+    }
+  },
+  "y9-11g-q17b": {
+    "year": "Year 9",
+    "origin": "seed",
+    "subQuestions": [],
+    "isActive": true,
+    "title": "Adjacent vertices of a square ABCD are A...",
+    "type": "teacher_review",
+    "topicTitle": "Parallel and perpendicular straight lines",
+    "createdAt": {
+      "_seconds": 1784364626,
+      "_nanoseconds": 910000000
+    },
+    "solution": "2",
+    "chapterId": "y9-11",
+    "options": [],
+    "graphData": null,
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "updatedAt": {
+      "_seconds": 1784364626,
+      "_nanoseconds": 910000000
+    },
+    "topicCode": "11G",
+    "question": "Adjacent vertices of a square \\(ABCD\\) are \\(A(4, 5)\\) and \\(B(5, 7)\\). Answer the following sub-questions.\nb) Find the gradient of \\(AB\\).",
+    "isManual": true,
+    "isNew": true,
+    "requiresManualGrading": true,
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "topicId": "y9-11g",
+    "answer": "2",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Parallel and perpendicular straight lines: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 2. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(2\\)",
+        "graphData": null
+      }
+    ]
+  },
+  "y9-11g-q17c": {
+    "year": "Year 9",
+    "origin": "seed",
+    "subQuestions": [],
+    "isActive": true,
+    "title": "Adjacent vertices of a square ABCD are A...",
+    "type": "multiple_choice",
+    "topicTitle": "Parallel and perpendicular straight lines",
+    "createdAt": {
+      "_seconds": 1784364626,
+      "_nanoseconds": 910000000
+    },
+    "solution": "The correct answer is \\(-1/2\\).",
+    "chapterId": "y9-11",
+    "options": [
+      {
+        "text": "\\(-1/2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-1.5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(0.5\\)",
+        "imageUrl": ""
+      }
+    ],
+    "graphData": null,
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "updatedAt": {
+      "_seconds": 1784364626,
+      "_nanoseconds": 910000000
+    },
+    "topicCode": "11G",
+    "question": "Adjacent vertices of a square \\(ABCD\\) are \\(A(4, 5)\\) and \\(B(5, 7)\\). Answer the following sub-questions.\nc) Find the gradient of \\(BC\\).",
+    "isManual": true,
+    "isNew": true,
+    "requiresManualGrading": false,
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "topicId": "y9-11g",
+    "answer": "0",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Parallel and perpendicular straight lines: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(-1/2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: -1/2. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(-1/2\\)",
+        "graphData": null
+      }
+    ]
+  },
+  "y9-11g-q17d": {
+    "year": "Year 9",
+    "origin": "seed",
+    "subQuestions": [],
+    "isActive": true,
+    "title": "Adjacent vertices of a square ABCD are A...",
+    "type": "multiple_choice",
+    "topicTitle": "Parallel and perpendicular straight lines",
+    "createdAt": {
+      "_seconds": 1784364626,
+      "_nanoseconds": 910000000
+    },
+    "solution": "The correct answer is \\(6\\).",
+    "chapterId": "y9-11",
+    "options": [
+      {
+        "text": "\\(-6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7\\)",
+        "imageUrl": ""
+      }
+    ],
+    "graphData": null,
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "updatedAt": {
+      "_seconds": 1784364626,
+      "_nanoseconds": 910000000
+    },
+    "topicCode": "11G",
+    "question": "Adjacent vertices of a square \\(ABCD\\) are \\(A(4, 5)\\) and \\(B(5, 7)\\). Answer the following sub-questions.\nd) The coordinates of \\(C\\) are \\((7, c)\\). Find the value of \\(c\\).",
+    "isManual": true,
+    "isNew": true,
+    "requiresManualGrading": false,
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "topicId": "y9-11g",
+    "answer": "2",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Parallel and perpendicular straight lines: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(6\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 6. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(6\\)",
+        "graphData": null
+      }
+    ]
+  },
+  "y9-11g-q17e": {
+    "year": "Year 9",
+    "origin": "seed",
+    "subQuestions": [],
+    "isActive": true,
+    "title": "Adjacent vertices of a square ABCD are A...",
+    "type": "multiple_choice",
+    "topicTitle": "Parallel and perpendicular straight lines",
+    "createdAt": {
+      "_seconds": 1784364626,
+      "_nanoseconds": 910000000
+    },
+    "solution": "The correct answer is \\((6, 4)\\).",
+    "chapterId": "y9-11",
+    "graphData": null,
+    "chapterTitle": "Chapter 11: Coordinate geometry",
+    "topicCode": "11G",
+    "question": "Adjacent vertices of a square \\(ABCD\\) are \\(A(4, 5)\\) and \\(B(5, 7)\\). Answer the following sub-questions.\ne) Find the coordinates of \\(D\\).",
+    "isManual": true,
+    "isNew": true,
+    "requiresManualGrading": false,
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "topicId": "y9-11g",
+    "hint": "",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Parallel and perpendicular straight lines: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\((6, 4)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: (6, 4). Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\((6, 4)\\)",
+        "graphData": null
+      }
+    ],
+    "answer": "1",
+    "options": [
+      {
+        "text": "\\(4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((6, 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-2\\)",
+        "imageUrl": ""
+      }
+    ],
+    "updatedAt": {
+      "_seconds": 1784982176,
+      "_nanoseconds": 826000000
+    }
+  }
+}

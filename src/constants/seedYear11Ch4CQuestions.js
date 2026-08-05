@@ -1,11 +1,16 @@
-export const Y11_CH4C_QUESTIONS = [
-  {
+export const Y11_CH4C_QUESTIONS = [{
     "id": "y11e1-4c-q1a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "The discriminant of a quadratic function with rational coefficients is given as \\(\\Delta = 5\\). State whether there are any zeroes. If there are zeroes, state whether they are rational or irrational, and whether they are equal or distinct.",
     "a": "distinct irrational zeroes",
+    "options": [
+      "distinct irrational zeroes",
+      "no real zeroes",
+      "equal irrational zeroes",
+      "distinct irirrational zeroes"
+    ],
     "solution": "Since \\(\\Delta = 5 > 0\\) and 5 is not a perfect square, the quadratic function has two distinct irrational zeroes.",
     "t": "The discriminant",
     "hint": "Examine the sign of the discriminant and whether it is a perfect square.",
@@ -17,7 +22,7 @@ export const Y11_CH4C_QUESTIONS = [
       },
       {
         "explanation": "Since the discriminant is strictly positive, there are two distinct real zeroes. Next, determine if they are rational or irrational by checking if 5 is a perfect square.",
-        "workingOut": "\\sqrt{5} \\notin \\mathbb{Q}",
+        "workingOut": "\\sqrt{5} \notin \\mathbb{Q}",
         "graphData": null
       },
       {
@@ -26,14 +31,19 @@ export const Y11_CH4C_QUESTIONS = [
         "graphData": null
       }
     ]
-  },
-  {
+  },{
     "id": "y11e1-4c-q1b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "The discriminant of a quadratic function with rational coefficients is given as \\(\\Delta = -4\\). State whether there are any zeroes. If there are zeroes, state whether they are rational or irrational, and whether they are equal or distinct.",
     "a": "no zeroes",
+    "options": [
+      "None of the above",
+      "Not enough data",
+      "no zeroes",
+      "Cannot be determined"
+    ],
     "solution": "Since \\(\\Delta = -4 < 0\\), the quadratic function has no real zeroes.",
     "t": "The discriminant",
     "hint": "Recall what a negative discriminant implies about the existence of real roots.",
@@ -54,14 +64,19 @@ export const Y11_CH4C_QUESTIONS = [
         "graphData": null
       }
     ]
-  },
-  {
+  },{
     "id": "y11e1-4c-q1c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "The discriminant of a quadratic function with rational coefficients is given as \\(\\Delta = 0\\). State whether there are any zeroes. If there are zeroes, state whether they are rational or irrational, and whether they are equal or distinct.",
     "a": "equal rational zeroes",
+    "options": [
+      "no real zeroes",
+      "distinct rational zeroes",
+      "equal irrational zeroes",
+      "equal rational zeroes"
+    ],
     "solution": "Since \\(\\Delta = 0\\), the quadratic function has two equal rational zeroes (a double root).",
     "t": "The discriminant",
     "hint": "Consider the case where the term under the square root in the quadratic formula is zero.",
@@ -82,14 +97,19 @@ export const Y11_CH4C_QUESTIONS = [
         "graphData": null
       }
     ]
-  },
-  {
+  },{
     "id": "y11e1-4c-q1d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "The discriminant of a quadratic function with rational coefficients is given as \\(\\Delta = 9\\). State whether there are any zeroes. If there are zeroes, state whether they are rational or irrational, and whether they are equal or distinct.",
     "a": "distinct rational zeroes",
+    "options": [
+      "distinct rational zeroes",
+      "equal rational zeroes",
+      "distinct irrational zeroes",
+      "no real zeroes"
+    ],
     "solution": "Since \\(\\Delta = 9 > 0\\) and 9 is a perfect square, the quadratic function has two distinct rational zeroes.",
     "t": "The discriminant",
     "hint": "Determine if the discriminant is positive and check if it is a perfect square.",
@@ -110,14 +130,19 @@ export const Y11_CH4C_QUESTIONS = [
         "graphData": null
       }
     ]
-  },
-  {
+  },{
     "id": "y11e1-4c-q1e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "The discriminant of a quadratic function with rational coefficients is given as \\(\\Delta = -5\\). State whether there are any zeroes. If there are zeroes, state whether they are rational or irrational, and whether they are equal or distinct.",
     "a": "no zeroes",
+    "options": [
+      "no zeroes",
+      "Cannot be determined",
+      "Cannot evaluate",
+      "None of the above"
+    ],
     "solution": "Since \\(\\Delta = -5 < 0\\), the quadratic function has no real zeroes.",
     "t": "The discriminant",
     "hint": "Recall the condition for a quadratic equation to have no real solutions.",
@@ -138,14 +163,19 @@ export const Y11_CH4C_QUESTIONS = [
         "graphData": null
       }
     ]
-  },
-  {
+  },{
     "id": "y11e1-4c-q1f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "The discriminant of a quadratic function with rational coefficients is given as \\(\\Delta = 16\\). State whether there are any zeroes. If there are zeroes, state whether they are rational or irrational, and whether they are equal or distinct.",
     "a": "distinct rational zeroes",
+    "options": [
+      "equal rational zeroes",
+      "distinct rational zeroes",
+      "no real zeroes",
+      "distinct irrational zeroes"
+    ],
     "solution": "Since \\(\\Delta = 16 > 0\\) and 16 is a perfect square, the quadratic function has two distinct rational zeroes.",
     "t": "The discriminant",
     "hint": "Determine if 16 is a perfect square and whether it is positive.",
@@ -166,14 +196,19 @@ export const Y11_CH4C_QUESTIONS = [
         "graphData": null
       }
     ]
-  },
-  {
+  },{
     "id": "y11e1-4c-q2a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Find the discriminant \\(\\Delta\\) for the equation \\(x^2 - 6x + 8 = 0\\). Hence state how many roots there are, and whether or not they are rational.",
     "a": "4, two rational roots",
+    "options": [
+      "None of the above",
+      "no real zeroes",
+      "4, two irrational roots",
+      "4, two rational roots"
+    ],
     "solution": "The discriminant is \\(\\Delta = 4\\). Since \\(\\Delta > 0\\) and is a perfect square, there are two rational roots.",
     "t": "The discriminant",
     "hint": "Use the formula \\(\\Delta = b^2 - 4ac\\) and evaluate.",
@@ -194,14 +229,19 @@ export const Y11_CH4C_QUESTIONS = [
         "graphData": null
       }
     ]
-  },
-  {
+  },{
     "id": "y11e1-4c-q2b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Find the discriminant \\(\\Delta\\) for the equation \\(x^2 + 4x - 6 = 0\\). Hence state how many roots there are, and whether or not they are rational.",
     "a": "40, two irrational roots",
+    "options": [
+      "no real zeroes",
+      "40, two irirrational roots",
+      "40, two irrational roots",
+      "Not enough information"
+    ],
     "solution": "The discriminant is \\(\\Delta = 40\\). Since \\(\\Delta > 0\\) and is not a perfect square, there are two irrational roots.",
     "t": "The discriminant",
     "hint": "Identify the coefficients and calculate \\(\\Delta = b^2 - 4ac\\).",
@@ -222,14 +262,19 @@ export const Y11_CH4C_QUESTIONS = [
         "graphData": null
       }
     ]
-  },
-  {
+  },{
     "id": "y11e1-4c-q2c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Find the discriminant \\(\\Delta\\) for the equation \\(x^2 + 2x + 5 = 0\\). Hence state how many roots there are, and whether or not they are rational.",
     "a": "-16, no real roots",
+    "options": [
+      "16, no real roots",
+      "-16, no real roots",
+      "-17, no real roots",
+      "-15, no real roots"
+    ],
     "solution": "The discriminant is \\(\\Delta = -16\\). Since \\(\\Delta < 0\\), there are no real roots.",
     "t": "The discriminant",
     "hint": "Calculate the value of \\(b^2 - 4ac\\).",
@@ -250,14 +295,19 @@ export const Y11_CH4C_QUESTIONS = [
         "graphData": null
       }
     ]
-  },
-  {
+  },{
     "id": "y11e1-4c-q2d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Find the discriminant \\(\\Delta\\) for the equation \\(9x^2 + 6x + 1 = 0\\). Hence state how many roots there are, and whether or not they are rational.",
     "a": "0, one double rational root",
+    "options": [
+      "0, one double irrational root",
+      "0, one double rational root",
+      "no real zeroes",
+      "Cannot be determined"
+    ],
     "solution": "The discriminant is \\(\\Delta = 0\\). Since \\(\\Delta = 0\\), there is exactly one double rational root.",
     "t": "The discriminant",
     "hint": "Calculate \\(\\Delta = b^2 - 4ac\\) and evaluate the nature of the roots.",
@@ -278,14 +328,19 @@ export const Y11_CH4C_QUESTIONS = [
         "graphData": null
       }
     ]
-  },
-  {
+  },{
     "id": "y11e1-4c-q2e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Find the discriminant \\(\\Delta\\) for the equation \\(x^2 - 5x + 7 = 0\\). Hence state how many roots there are, and whether or not they are rational.",
     "a": "-3, no real roots",
+    "options": [
+      "3, no real roots",
+      "-3, no real roots",
+      "-4, no real roots",
+      "-2, no real roots"
+    ],
     "solution": "The discriminant is \\(\\Delta = -3\\). Since \\(\\Delta < 0\\), there are no real roots.",
     "t": "The discriminant",
     "hint": "Evaluate \\(b^2 - 4ac\\) for the coefficients \\(a=1\\), \\(b=-5\\), and \\(c=7\\).",
@@ -306,14 +361,19 @@ export const Y11_CH4C_QUESTIONS = [
         "graphData": null
       }
     ]
-  },
-  {
+  },{
     "id": "y11e1-4c-q2f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Find the discriminant \\(\\Delta\\) for the equation \\(4x^2 + 13x - 12 = 0\\). Hence state how many roots there are, and whether or not they are rational.",
     "a": "361, two rational roots",
+    "options": [
+      "361, two rational roots",
+      "361, two irrational roots",
+      "None of the above",
+      "no real zeroes"
+    ],
     "solution": "The discriminant is \\(\\Delta = 361\\). Since \\(\\Delta = 19^2 > 0\\) and is a perfect square, there are two distinct rational roots.",
     "t": "The discriminant",
     "hint": "Identify the coefficients and calculate \\(\\Delta\\). Check if it is a perfect square.",
@@ -334,14 +394,19 @@ export const Y11_CH4C_QUESTIONS = [
         "graphData": null
       }
     ]
-  },
-  {
+  },{
     "id": "y11e1-4c-q3a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Find the value of \\(k\\) for which the quadratic function \\(y = x^2 + 12x + k\\) has exactly one zero.",
     "a": "36",
+    "options": [
+      "35",
+      "36",
+      "37",
+      "-36"
+    ],
     "solution": "The quadratic has exactly one zero when \\(\\Delta = 0\\). Thus, \\(12^2 - 4(1)(k) = 0 \\implies 144 = 4k \\implies k = 36\\).",
     "t": "The discriminant",
     "hint": "Set the discriminant \\(\\Delta = b^2 - 4ac\\) to zero and solve for k.",
@@ -362,14 +427,19 @@ export const Y11_CH4C_QUESTIONS = [
         "graphData": null
       }
     ]
-  },
-  {
+  },{
     "id": "y11e1-4c-q3b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Find the value of \\(k\\) for which the quadratic function \\(y = kx^2 - 6x + 3\\) has exactly one zero.",
     "a": "3",
+    "options": [
+      "4",
+      "2",
+      "3",
+      "-3"
+    ],
     "solution": "Set \\(\\Delta = 0\\: \\((-6)^2 - 4(k)(3) = 0 \\implies 36 - 12k = 0 \\implies k = 3\\).",
     "t": "The discriminant",
     "hint": "For exactly one zero, set the discriminant equal to zero.",
@@ -390,14 +460,19 @@ export const Y11_CH4C_QUESTIONS = [
         "graphData": null
       }
     ]
-  },
-  {
+  },{
     "id": "y11e1-4c-q3c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Find the value of \\(k\\) for which the quadratic function \\(y = 3x^2 - 4x + (k + 2)\\) has exactly one zero.",
     "a": "-2/3",
+    "options": [
+      "2/3",
+      "-3/3",
+      "-2/3",
+      "-1/3"
+    ],
     "solution": "Set \\(\\Delta = 0\\: \\((-4)^2 - 4(3)(k+2) = 0 \\implies 16 - 12(k+2) = 0 \\implies 16 - 12k - 24 = 0 \\implies -12k = 8 \\implies k = -2/3\\).",
     "t": "The discriminant",
     "hint": "Use the discriminant formula with \\(c = k + 2\\) and set it to zero.",
@@ -418,14 +493,19 @@ export const Y11_CH4C_QUESTIONS = [
         "graphData": null
       }
     ]
-  },
-  {
+  },{
     "id": "y11e1-4c-q3d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Find the value of \\(k\\) for which the quadratic function \\(y = (k - 3)x^2 + 8x + 2\\) has exactly one zero.",
     "a": "11",
+    "options": [
+      "-11",
+      "11",
+      "10",
+      "12"
+    ],
     "solution": "Set \\(\\Delta = 0\\: \\(8^2 - 4(k-3)(2) = 0 \\implies 64 - 8(k-3) = 0 \\implies 8(k-3) = 64 \\implies k-3 = 8 \\implies k = 11\\).",
     "t": "The discriminant",
     "hint": "Use \\(a = k - 3\\) in the discriminant formula and equate to zero.",
@@ -446,14 +526,19 @@ export const Y11_CH4C_QUESTIONS = [
         "graphData": null
       }
     ]
-  },
-  {
+  },{
     "id": "y11e1-4c-q4a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Solve \\(\\Delta \\ge 0\\) to find the values of \\(p\\) for which the roots of \\(x^2 + 4x + p = 0\\) are real numbers.",
-    "a": "p <= 4",
+    "a": "\\( p \\le 4 \\)",
+    "options": [
+      "\\( p \\le -4 \\)",
+      "\\( p \\le 4 \\)",
+      "\\( p \\le 3 \\)",
+      "\\( p \\le 5 \\)"
+    ],
     "solution": "For real roots, \\(\\Delta \\ge 0 \\implies 4^2 - 4(1)(p) \\ge 0 \\implies 16 - 4p \\ge 0 \\implies p \\le 4\\).",
     "t": "The discriminant",
     "hint": "Set the discriminant greater than or equal to zero to ensure real roots.",
@@ -474,15 +559,20 @@ export const Y11_CH4C_QUESTIONS = [
         "graphData": null
       }
     ]
-  },
-  {
+  },{
     "id": "y11e1-4c-q4b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Solve \\(\\Delta \\ge 0\\) to find the values of \\(p\\) for which the roots of the quadratic equation \\(px^2 - 6x + 3 = 0\\) are real numbers.",
-    "a": "p <= 3 and p != 0",
-    "solution": "For real roots, \\(\\Delta \\ge 0 \\implies (-6)^2 - 4(p)(3) \\ge 0 \\implies 36 - 12p \\ge 0 \\implies p \\le 3\\). Since it is a quadratic equation, \\(p \\ne 0\\).",
+    "a": "\\( p \\le 3 \\text{ and } p \\neq 0 \\)",
+    "options": [
+      "\\( p \\le 3 \\text{ and } p \\neq 0 \\)",
+      "\\( p \\le 2 \\text{ and } p \\neq 0 \\)",
+      "\\( p \\le -3 \\text{ and } p \\neq 0 \\)",
+      "\\( p \\le 4 \\text{ and } p \\neq 0 \\)"
+    ],
+    "solution": "For real roots, \\(\\Delta \\ge 0 \\implies (-6)^2 - 4(p)(3) \\ge 0 \\implies 36 - 12p \\ge 0 \\implies p \\le 3\\). Since it is a quadratic equation, \\(p \ne 0\\).",
     "t": "The discriminant",
     "hint": "Set the discriminant to be non-negative and remember that the lead coefficient of a quadratic equation cannot be zero.",
     "solutionSteps": [
@@ -498,18 +588,23 @@ export const Y11_CH4C_QUESTIONS = [
       },
       {
         "explanation": "Since the equation must be quadratic, the coefficient of \\(x^2\\) cannot be zero.",
-        "workingOut": "p \\ne 0",
+        "workingOut": "p \ne 0",
         "graphData": null
       }
     ]
-  },
-  {
+  },{
     "id": "y11e1-4c-q4c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Solve \\(\\Delta \\ge 0\\) to find the values of \\(p\\) for which the roots of \\(2x^2 - 6x + (p + 2) = 0\\) are real numbers.",
-    "a": "p <= 5/2",
+    "a": "\\( p \\le 5/2 \\)",
+    "options": [
+      "\\( p \\le 5/2 \\)",
+      "\\( p \\le -5/2 \\)",
+      "\\( p \\le 4/2 \\)",
+      "\\( p \\le 6/2 \\)"
+    ],
     "solution": "For real roots, \\(\\Delta \\ge 0 \\implies (-6)^2 - 4(2)(p+2) \\ge 0 \\implies 36 - 8(p+2) \\ge 0 \\implies 36 - 8p - 16 \\ge 0 \\implies 20 \\ge 8p \\implies p \\le 5/2\\).",
     "t": "The discriminant",
     "hint": "Set \\(\\Delta = b^2 - 4ac \\ge 0\\) and solve for p.",
@@ -530,15 +625,20 @@ export const Y11_CH4C_QUESTIONS = [
         "graphData": null
       }
     ]
-  },
-  {
+  },{
     "id": "y11e1-4c-q4d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Solve \\(\\Delta \\ge 0\\) to find the values of \\(p\\) for which the roots of the quadratic equation \\((3p - 1)x^2 - 4x + 2 = 0\\) are real numbers.",
-    "a": "p <= 1",
-    "solution": "For real roots, \\(\\Delta \\ge 0 \\implies (-4)^2 - 4(3p-1)(2) \\ge 0 \\implies 16 - 8(3p-1) \\ge 0 \\implies 16 - 24p + 8 \\ge 0 \\implies 24 \\ge 24p \\implies p \\le 1\\). Note that for a quadratic equation, \\(p \\ne 1/3\\).",
+    "a": "\\( p \\le 1 \\)",
+    "options": [
+      "\\( p \\le 0 \\)",
+      "\\( p \\le 2 \\)",
+      "\\( p \\le 1 \\)",
+      "\\( p \\le -1 \\)"
+    ],
+    "solution": "For real roots, \\(\\Delta \\ge 0 \\implies (-4)^2 - 4(3p-1)(2) \\ge 0 \\implies 16 - 8(3p-1) \\ge 0 \\implies 16 - 24p + 8 \\ge 0 \\implies 24 \\ge 24p \\implies p \\le 1\\). Note that for a quadratic equation, \\(p \ne 1/3\\).",
     "t": "The discriminant",
     "hint": "Formulate the inequality \\(\\Delta \\ge 0\\) using \\(a = 3p - 1\\).",
     "solutionSteps": [
@@ -558,14 +658,19 @@ export const Y11_CH4C_QUESTIONS = [
         "graphData": null
       }
     ]
-  },
-  {
+  },{
     "id": "y11e1-4c-q5a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Solve \\(\\Delta < 0\\) to find the values of \\(\\lambda\\) for which the quadratic equation \\(x^2 + 8x + \\lambda = 0\\) has no zeroes.",
-    "a": "lambda > 16",
+    "a": "\\( \\lambda > 16 \\)",
+    "options": [
+      "\\( \\lambda > 15 \\)",
+      "\\( \\lambda > 16 \\)",
+      "\\( \\lambda > 17 \\)",
+      "\\( \\lambda > -16 \\)"
+    ],
     "solution": "For no zeroes, \\(\\Delta < 0 \\implies 8^2 - 4(1)(\\lambda) < 0 \\implies 64 - 4\\lambda < 0 \\implies 64 < 4\\lambda \\implies \\lambda > 16\\).",
     "t": "The discriminant",
     "hint": "No zeroes means the discriminant is negative.",
@@ -586,14 +691,19 @@ export const Y11_CH4C_QUESTIONS = [
         "graphData": null
       }
     ]
-  },
-  {
+  },{
     "id": "y11e1-4c-q5b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Solve \\(\\Delta < 0\\) to find the values of \\(\\lambda\\) for which the quadratic equation \\(\\lambda x^2 - 12x + 2 = 0\\) has no zeroes.",
-    "a": "lambda > 18",
+    "a": "\\( \\lambda > 18 \\)",
+    "options": [
+      "\\( \\lambda > 19 \\)",
+      "\\( \\lambda > 18 \\)",
+      "\\( \\lambda > -18 \\)",
+      "\\( \\lambda > 17 \\)"
+    ],
     "solution": "For no zeroes, \\(\\Delta < 0 \\implies (-12)^2 - 4(\\lambda)(2) < 0 \\implies 144 - 8\\lambda < 0 \\implies 144 < 8\\lambda \\implies \\lambda > 18\\).",
     "t": "The discriminant",
     "hint": "Set \\(b^2 - 4ac < 0\\) and solve.",
@@ -614,14 +724,19 @@ export const Y11_CH4C_QUESTIONS = [
         "graphData": null
       }
     ]
-  },
-  {
+  },{
     "id": "y11e1-4c-q5c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Solve \\(\\Delta < 0\\) to find the values of \\(\\lambda\\) for which the quadratic equation \\(3x^2 - 7x + (\\lambda + 1) = 0\\) has no zeroes.",
-    "a": "lambda > 37/12",
+    "a": "\\( \\lambda > 37/12 \\)",
+    "options": [
+      "\\( \\lambda > 37/12 \\)",
+      "\\( \\lambda > 38/12 \\)",
+      "\\( \\lambda > -37/12 \\)",
+      "\\( \\lambda > 36/12 \\)"
+    ],
     "solution": "For no zeroes, \\(\\Delta < 0 \\implies (-7)^2 - 4(3)(\\lambda+1) < 0 \\implies 49 - 12\\lambda - 12 < 0 \\implies 37 - 12\\lambda < 0 \\implies \\lambda > 37/12\\).",
     "t": "The discriminant",
     "hint": "Formulate the inequality \\(\\Delta < 0\\) with \\(c = \\lambda + 1\\).",
@@ -642,14 +757,19 @@ export const Y11_CH4C_QUESTIONS = [
         "graphData": null
       }
     ]
-  },
-  {
+  },{
     "id": "y11e1-4c-q5d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Solve \\(\\Delta < 0\\) to find the values of \\(\\lambda\\) for which the quadratic equation \\((\\lambda - 2)x^2 + 8x + 4 = 0\\) has no zeroes.",
-    "a": "lambda > 6",
+    "a": "\\( \\lambda > 6 \\)",
+    "options": [
+      "\\( \\lambda > 6 \\)",
+      "\\( \\lambda > 7 \\)",
+      "\\( \\lambda > -6 \\)",
+      "\\( \\lambda > 5 \\)"
+    ],
     "solution": "For no zeroes, \\(\\Delta < 0 \\implies 8^2 - 4(\\lambda-2)(4) < 0 \\implies 64 - 16(\\lambda-2) < 0 \\implies 64 - 16\\lambda + 32 < 0 \\implies 96 - 16\\lambda < 0 \\implies \\lambda > 6\\).",
     "t": "The discriminant",
     "hint": "Set \\(\\Delta = b^2 - 4ac < 0\\) with \\(a = \\lambda - 2\\).",
@@ -670,14 +790,19 @@ export const Y11_CH4C_QUESTIONS = [
         "graphData": null
       }
     ]
-  },
-  {
+  },{
     "id": "y11e1-4c-q6a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Determine the discriminant \\(\\Delta\\), then solve \\(\\Delta = 0\\) to find the values of \\(g\\) for which the quadratic function \\(y = gx^2 - 10x + g\\) has exactly one zero.",
-    "a": "g = 5 or g = -5",
+    "a": "\\( g = 5 \\text{ or } g = -5 \\)",
+    "options": [
+      "\\( g = 5 \\text{ or } g = -5 \\)",
+      "\\( g = 6 \\text{ or } g = -5 \\)",
+      "\\( g = -5 \\text{ or } g = -5 \\)",
+      "\\( g = 4 \\text{ or } g = -5 \\)"
+    ],
     "solution": "The discriminant is \\(\\Delta = (-10)^2 - 4(g)(g) = 100 - 4g^2\\). Set \\(\\Delta = 0 \\implies 100 - 4g^2 = 0 \\implies g^2 = 25 \\implies g = \\pm 5\\).",
     "t": "The discriminant",
     "hint": "Set the discriminant to zero to find the values of g.",
@@ -698,14 +823,19 @@ export const Y11_CH4C_QUESTIONS = [
         "graphData": null
       }
     ]
-  },
-  {
+  },{
     "id": "y11e1-4c-q6b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Determine the discriminant \\(\\Delta\\), then solve \\(\\Delta = 0\\) to find the values of \\(g\\) for which the quadratic function \\(y = 4x^2 + 2gx + (2g - 3)\\) has exactly one zero.",
-    "a": "g = 2 or g = 6",
+    "a": "\\( g = 2 \\text{ or } g = 6 \\)",
+    "options": [
+      "\\( g = 1 \\text{ or } g = 6 \\)",
+      "\\( g = 2 \\text{ or } g = 6 \\)",
+      "\\( g = 3 \\text{ or } g = 6 \\)",
+      "\\( g = -2 \\text{ or } g = 6 \\)"
+    ],
     "solution": "The discriminant is \\(\\Delta = (2g)^2 - 4(4)(2g-3) = 4g^2 - 16(2g-3) = 4(g^2 - 8g + 12)\\). Set \\(\\Delta = 0 \\implies g^2 - 8g + 12 = 0 \\implies (g-2)(g-6) = 0 \\implies g = 2 \\text{ or } g = 6\\).",
     "t": "The discriminant",
     "hint": "Equate the discriminant expression to zero and factorise the quadratic equation in g.",
@@ -726,14 +856,19 @@ export const Y11_CH4C_QUESTIONS = [
         "graphData": null
       }
     ]
-  },
-  {
+  },{
     "id": "y11e1-4c-q6c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Determine the discriminant \\(\\Delta\\), then solve \\(\\Delta = 0\\) to find the values of \\(g\\) for which the quadratic function \\(y = 4x^2 - 2(g + 2)x + 9\\) has exactly one zero.",
-    "a": "g = 4 or g = -8",
+    "a": "\\( g = 4 \\text{ or } g = -8 \\)",
+    "options": [
+      "\\( g = 4 \\text{ or } g = -8 \\)",
+      "\\( g = 5 \\text{ or } g = -8 \\)",
+      "\\( g = 3 \\text{ or } g = -8 \\)",
+      "\\( g = -4 \\text{ or } g = -8 \\)"
+    ],
     "solution": "The discriminant is \\(\\Delta = [-2(g+2)]^2 - 4(4)(9) = 4(g+2)^2 - 144\\). Set \\(\\Delta = 0 \\implies 4(g+2)^2 = 144 \\implies (g+2)^2 = 36 \\implies g+2 = \\pm 6 \\implies g = 4 \\text{ or } g = -8\\).",
     "t": "The discriminant",
     "hint": "Set the discriminant expression equal to zero and solve for g.",
@@ -754,15 +889,20 @@ export const Y11_CH4C_QUESTIONS = [
         "graphData": null
       }
     ]
-  },
-  {
+  },{
     "id": "y11e1-4c-q6d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Determine the discriminant \\(\\Delta\\), then solve \\(\\Delta = 0\\) to find the values of \\(g\\) for which the quadratic function \\(y = (2g - 1)x^2 + (4g - 1)x + (2g + 1)\\) has exactly one zero.",
     "a": "5/8",
-    "solution": "The discriminant is \\(\\Delta = (4g-1)^2 - 4(2g-1)(2g+1) = 16g^2 - 8g + 1 - 4(4g^2 - 1) = -8g + 5\\). Set \\(\\Delta = 0 \\implies -8g + 5 = 0 \\implies g = 5/8\\). Note that \\(2g-1 \\ne 0 \\implies g \\ne 1/2\\).",
+    "options": [
+      "6/8",
+      "-5/8",
+      "4/8",
+      "5/8"
+    ],
+    "solution": "The discriminant is \\(\\Delta = (4g-1)^2 - 4(2g-1)(2g+1) = 16g^2 - 8g + 1 - 4(4g^2 - 1) = -8g + 5\\). Set \\(\\Delta = 0 \\implies -8g + 5 = 0 \\implies g = 5/8\\). Note that \\(2g-1 \ne 0 \\implies g \ne 1/2\\).",
     "t": "The discriminant",
     "hint": "Calculate the discriminant and simplify carefully, paying attention to difference of two squares.",
     "solutionSteps": [
@@ -782,24 +922,34 @@ export const Y11_CH4C_QUESTIONS = [
         "graphData": null
       }
     ]
-  },
-  {
+  },{
     "id": "y11e1-4c-q7",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "A parabola has the equation \\(y = gx^2 - 2gx + 3\\). Complete the sub-questions.",
     "a": "Refer to solution steps for parts a, b, c, and d.",
+    "options": [
+      "Information insufficient",
+      "Refer to solution steps for parts a, b, c, and d.",
+      "None of the above",
+      "Cannot be determined"
+    ],
     "solution": "See detailed steps below.",
     "t": "The discriminant",
-    "subQuestions": [
-      {
-        "id": "y11e1-4c-q7a",
-        "type": "short_answer",
+    "subQuestions": [{
+    "id": "y11e1-4c-q7a",
+        "type": "multiple_choice",
         "difficulty": "easy",
         "timeLimit": 60,
         "question": "Determine the discriminant.",
-        "a": "4g^2-12g",
+        "a": "\(4g^2-12g\)",
+    "options": [
+      "\(3g^2-12g\)",
+      "\(5g^2-12g\)",
+      "\(-4g^2-12g\)",
+      "\(4g^2-12g\)"
+    ],
         "solutionSteps": [
           {
             "explanation": "Identify the coefficients of the quadratic equation.",
@@ -817,14 +967,19 @@ export const Y11_CH4C_QUESTIONS = [
             "graphData": null
           }
         ]
-      },
-      {
-        "id": "y11e1-4c-q7b",
-        "type": "short_answer",
+      },{
+    "id": "y11e1-4c-q7b",
+        "type": "multiple_choice",
         "difficulty": "easy",
         "timeLimit": 60,
         "question": "Find the values of \\(g\\) which make \\(\\Delta = 0\\).",
         "a": "0 or 3",
+    "options": [
+      "0 or 3",
+      "Not enough information",
+      "-1 or 3",
+      "1 or 3"
+    ],
         "solutionSteps": [
           {
             "explanation": "Set the discriminant expression equal to zero.",
@@ -842,14 +997,19 @@ export const Y11_CH4C_QUESTIONS = [
             "graphData": null
           }
         ]
-      },
-      {
-        "id": "y11e1-4c-q7c",
-        "type": "teacher_review",
+      },{
+    "id": "y11e1-4c-q7c",
+        "type": "multiple_choice",
         "difficulty": "medium",
         "timeLimit": 90,
         "question": "Explain why the lesser value of \\(g\\) is not valid in this case.",
         "a": "If g = 0, the equation ceases to be quadratic (it becomes a line).",
+    "options": [
+      "Cannot be determined",
+      "If g = 1, the equation ceases to be quadratic (it becomes a line).",
+      "If g = 0, the equation ceases to be quadratic (it becomes a line).",
+      "If g = -1, the equation ceases to be quadratic (it becomes a line)."
+    ],
         "solutionSteps": [
           {
             "explanation": "Identify the lesser value of \\(g\\) obtained.",
@@ -867,14 +1027,19 @@ export const Y11_CH4C_QUESTIONS = [
             "graphData": null
           }
         ]
-      },
-      {
-        "id": "y11e1-4c-q7d",
-        "type": "short_answer",
+      },{
+    "id": "y11e1-4c-q7d",
+        "type": "multiple_choice",
         "difficulty": "easy",
         "timeLimit": 60,
         "question": "Write down the equation of the parabola that has a double zero.",
-        "a": "y = 3x^2-6x+3",
+        "a": "\(y = 3x^2-6x+3\)",
+    "options": [
+      "\(y = 3x^2-6x+3\)",
+      "\(y = 4x^2-6x+3\)",
+      "\(y = -3x^2-6x+3\)",
+      "\(y = 2x^2-6x+3\)"
+    ],
         "solutionSteps": [
           {
             "explanation": "Identify the valid non-zero value of \\(g\\) that makes \\(\\Delta = 0\\).",
@@ -894,14 +1059,19 @@ export const Y11_CH4C_QUESTIONS = [
         ]
       }
     ]
-  },
-  {
+  },{
     "id": "y11e1-4c-q8a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "For the quadratic equation \\(x^2 + kx + 9 = 0\\), find the discriminant \\(\\Delta\\) as a function of \\(k\\). Then solve \\(\\Delta \\ge 0\\) to determine the values of \\(k\\) that result in real roots for \\(x\\).",
-    "a": "k <= -6 or k >= 6",
+    "a": "\\( k \\le -6 \\text{ or } k \\ge 6 \\)",
+    "options": [
+      "\\( k \\le -5 \\text{ or } k \\ge 6 \\)",
+      "\\( k \\le 6 \\text{ or } k \\ge 6 \\)",
+      "\\( k \\le -6 \\text{ or } k \\ge 6 \\)",
+      "\\( k \\le -7 \\text{ or } k \\ge 6 \\)"
+    ],
     "solution": "The discriminant is \\(\\Delta = k^2 - 36\\). For real roots, \\(k^2 - 36 \\ge 0 \\implies k \\le -6 \\text{ or } k \\ge 6\\).",
     "t": "The discriminant",
     "hint": "For real roots, the discriminant must be non-negative.",
@@ -922,14 +1092,19 @@ export const Y11_CH4C_QUESTIONS = [
         "graphData": null
       }
     ]
-  },
-  {
+  },{
     "id": "y11e1-4c-q8b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "For the quadratic equation \\(x^2 - 2kx + 16 = 0\\), find the discriminant \\(\\Delta\\) as a function of \\(k\\). Then solve \\(\\Delta \\ge 0\\) to determine the values of \\(k\\) that result in real roots for \\(x\\).",
-    "a": "k <= -4 or k >= 4",
+    "a": "\\( k \\le -4 \\text{ or } k \\ge 4 \\)",
+    "options": [
+      "\\( k \\le -3 \\text{ or } k \\ge 4 \\)",
+      "\\( k \\le 4 \\text{ or } k \\ge 4 \\)",
+      "\\( k \\le -5 \\text{ or } k \\ge 4 \\)",
+      "\\( k \\le -4 \\text{ or } k \\ge 4 \\)"
+    ],
     "solution": "The discriminant is \\(\\Delta = (-2k)^2 - 4(1)(16) = 4k^2 - 64 = 4(k^2 - 16)\\). For real roots, \\(k^2 - 16 \\ge 0 \\implies k \\le -4 \\text{ or } k \\ge 4\\).",
     "t": "The discriminant",
     "hint": "Evaluate \\(b^2 - 4ac\\) and solve \\(\\Delta \\ge 0\\).",
@@ -950,14 +1125,19 @@ export const Y11_CH4C_QUESTIONS = [
         "graphData": null
       }
     ]
-  },
-  {
+  },{
     "id": "y11e1-4c-q8c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "For the quadratic equation \\(x^2 - (2 + k)x + 4 = 0\\), find the discriminant \\(\\Delta\\) as a function of \\(k\\). Then solve \\(\\Delta \\ge 0\\) to determine the values of \\(k\\) that result in real roots for \\(x\\).",
-    "a": "k <= -6 or k >= 2",
+    "a": "\\( k \\le -6 \\text{ or } k \\ge 2 \\)",
+    "options": [
+      "\\( k \\le 6 \\text{ or } k \\ge 2 \\)",
+      "\\( k \\le -6 \\text{ or } k \\ge 2 \\)",
+      "\\( k \\le -7 \\text{ or } k \\ge 2 \\)",
+      "\\( k \\le -5 \\text{ or } k \\ge 2 \\)"
+    ],
     "solution": "The discriminant is \\(\\Delta = [-(2+k)]^2 - 4(1)(4) = (2+k)^2 - 16\\). For real roots, \\((2+k)^2 - 16 \\ge 0 \\implies (2+k)^2 \\ge 16 \\implies 2+k \\le -4 \\text{ or } 2+k \\ge 4 \\implies k \\le -6 \\text{ or } k \\ge 2\\).",
     "t": "The discriminant",
     "hint": "Use difference of two squares or expand \\((2+k)^2 - 16 \\ge 0\\).",
@@ -978,14 +1158,19 @@ export const Y11_CH4C_QUESTIONS = [
         "graphData": null
       }
     ]
-  },
-  {
+  },{
     "id": "y11e1-4c-q8d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "For the quadratic equation \\(x^2 + (k - 3)x + 4 = 0\\), find the discriminant \\(\\Delta\\) as a function of \\(k\\). Then solve \\(\\Delta \\ge 0\\) to determine the values of \\(k\\) that result in real roots for \\(x\\).",
-    "a": "k <= -1 or k >= 7",
+    "a": "\\( k \\le -1 \\text{ or } k \\ge 7 \\)",
+    "options": [
+      "\\( k \\le 1 \\text{ or } k \\ge 7 \\)",
+      "\\( k \\le -2 \\text{ or } k \\ge 7 \\)",
+      "\\( k \\le -1 \\text{ or } k \\ge 7 \\)",
+      "\\( k \\le 0 \\text{ or } k \\ge 7 \\)"
+    ],
     "solution": "The discriminant is \\(\\Delta = (k-3)^2 - 16\\). For real roots, \\((k-3)^2 - 16 \\ge 0 \\implies (k-3 - 4)(k-3 + 4) \\ge 0 \\implies (k-7)(k+1) \\ge 0 \\implies k \\le -1 \\text{ or } k \\ge 7\\).",
     "t": "The discriminant",
     "hint": "Write the inequality in factorised form.",
@@ -1006,14 +1191,19 @@ export const Y11_CH4C_QUESTIONS = [
         "graphData": null
       }
     ]
-  },
-  {
+  },{
     "id": "y11e1-4c-q9a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Find the discriminant \\(\\Delta\\) and solve \\(\\Delta < 0\\) to find any values of \\(\\lambda\\) for which the parabola \\(y = x^2 + \\lambda x + 4\\) has no \\(x\\)-intercepts.",
-    "a": "-4 < lambda < 4",
+    "a": "\\( -4 < \\lambda < 4 \\)",
+    "options": [
+      "\\( -5 < \\lambda < 4 \\)",
+      "\\( -3 < \\lambda < 4 \\)",
+      "\\( -4 < \\lambda < 4 \\)",
+      "\\( 4 < \\lambda < 4 \\)"
+    ],
     "solution": "The discriminant is \\(\\Delta = \\lambda^2 - 16\\). For no \\(x\\)-intercepts, \\(\\Delta < 0 \\implies \\lambda^2 - 16 < 0 \\implies -4 < \\lambda < 4\\).",
     "t": "The discriminant",
     "hint": "Parabola has no intercepts when the corresponding quadratic equation has no real roots.",
@@ -1034,14 +1224,19 @@ export const Y11_CH4C_QUESTIONS = [
         "graphData": null
       }
     ]
-  },
-  {
+  },{
     "id": "y11e1-4c-q9b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Find the discriminant \\(\\Delta\\) and solve \\(\\Delta < 0\\) to find any values of \\(\\lambda\\) for which the parabola \\(y = \\lambda x^2 + 8x + \\lambda\\) has no \\(x\\)-intercepts.",
-    "a": "lambda < -4 or lambda > 4",
+    "a": "\\( \\lambda < -4 \\text{ or } \\lambda > 4 \\)",
+    "options": [
+      "\\( \\lambda < 4 \\text{ or } \\lambda > 4 \\)",
+      "\\( \\lambda < -4 \\text{ or } \\lambda > 4 \\)",
+      "\\( \\lambda < -3 \\text{ or } \\lambda > 4 \\)",
+      "\\( \\lambda < -5 \\text{ or } \\lambda > 4 \\)"
+    ],
     "solution": "The discriminant is \\(\\Delta = 64 - 4\\lambda^2\\). For no \\(x\\)-intercepts, \\(64 - 4\\lambda^2 < 0 \\implies 16 - \\lambda^2 < 0 \\implies \\lambda^2 > 16 \\implies \\lambda < -4 \\text{ or } \\lambda > 4\\).",
     "t": "The discriminant",
     "hint": "Set the discriminant to be negative and solve the quadratic inequality.",
@@ -1062,14 +1257,19 @@ export const Y11_CH4C_QUESTIONS = [
         "graphData": null
       }
     ]
-  },
-  {
+  },{
     "id": "y11e1-4c-q9c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Find the discriminant \\(\\Delta\\) and solve \\(\\Delta < 0\\) to find any values of \\(\\lambda\\) for which the parabola \\(y = x^2 + (2 - \\lambda)x - \\lambda\\) has no \\(x\\)-intercepts.",
     "a": "no real values",
+    "options": [
+      "Not enough data",
+      "Cannot be determined",
+      "None of the above",
+      "no real values"
+    ],
     "solution": "The discriminant is \\(\\Delta = (2-\\lambda)^2 - 4(1)(-\\lambda) = \\lambda^2 - 4\\lambda + 4 + 4\\lambda = \\lambda^2 + 4\\). Since \\(\\lambda^2 + 4 \\ge 4 > 0\\) for all real \\(\\lambda\\), there are no real values of \\(\\lambda\\) that satisfy \\(\\Delta < 0\\).",
     "t": "The discriminant",
     "hint": "Expand the discriminant expression fully and look at the resulting polynomial.",
@@ -1090,14 +1290,19 @@ export const Y11_CH4C_QUESTIONS = [
         "graphData": null
       }
     ]
-  },
-  {
+  },{
     "id": "y11e1-4c-q9d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Find the discriminant \\(\\Delta\\) and solve \\(\\Delta < 0\\) to find any values of \\(\\lambda\\) for which the parabola \\(y = \\lambda x^2 - 4\\lambda x - (\\lambda - 3)\\) has no \\(x\\)-intercepts.",
-    "a": "0 < lambda < 3/5",
+    "a": "\\( 0 < \\lambda < 3/5 \\)",
+    "options": [
+      "\\( -1 < \\lambda < 3/5 \\)",
+      "\\( 1 < \\lambda < 3/5 \\)",
+      "None of the above",
+      "\\( 0 < \\lambda < 3/5 \\)"
+    ],
     "solution": "The discriminant is \\(\\Delta = (-4\\lambda)^2 - 4(\\lambda)(-(\\lambda-3)) = 16\\lambda^2 + 4\\lambda(\\lambda-3) = 20\\lambda^2 - 12\\lambda = 4\\lambda(5\\lambda-3)\\). Set \\(\\Delta < 0 \\implies 4\\lambda(5\\lambda-3) < 0 \\implies 0 < \\lambda < 3/5\\).",
     "t": "The discriminant",
     "hint": "Expand the discriminant term and solve the factored quadratic inequality.",
@@ -1118,24 +1323,34 @@ export const Y11_CH4C_QUESTIONS = [
         "graphData": null
       }
     ]
-  },
-  {
+  },{
     "id": "y11e1-4c-q10",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Prove the relationships between the discriminant and the zeroes of the general quadratic parabola \\(y = ax^2 + bx + c\\).",
     "a": "Complete the proofs for parts a, b, c, and d.",
+    "options": [
+      "Complete the proofs for parts a, b, c, and d.",
+      "Cannot evaluate",
+      "Cannot be determined",
+      "None of the above"
+    ],
     "solution": "See detailed steps below.",
     "t": "The discriminant",
-    "subQuestions": [
-      {
-        "id": "y11e1-4c-q10a",
-        "type": "teacher_review",
+    "subQuestions": [{
+    "id": "y11e1-4c-q10a",
+        "type": "multiple_choice",
         "difficulty": "hard",
         "timeLimit": 120,
         "question": "Rearrange the equation of the parabola to show that \\(x^2 + \\frac{b}{a}x = \\frac{y-c}{a}\\), then add an appropriate quantity to both sides in order to complete the square on the left hand side.",
-        "a": "Add (b/(2a))^2 to both sides.",
+        "a": "Add \\\\(\\\\left(\\\\frac{b}{2a}\\\\right)^2\\\\) to both sides.",
+    "options": [
+      "Add \\\\(\\\\left(\\\\frac{b}{2a}\\\\right)^2\\\\) to both sides.",
+      "Add \\\\(\\\\left(\\\\frac{b}{3a}\\\\right)^2\\\\) to both sides.",
+      "Add \\\\(\\\\left(\\\\frac{b}{a}\\\\right)^2\\\\) to both sides.",
+      "Add \\\\(\\\\left(\\\\frac{b}{-2a}\\\\right)^2\\\\) to both sides."
+    ],
         "solutionSteps": [
           {
             "explanation": "Divide the entire equation by \\(a\\) to isolate the quadratic terms.",
@@ -1153,14 +1368,19 @@ export const Y11_CH4C_QUESTIONS = [
             "graphData": null
           }
         ]
-      },
-      {
-        "id": "y11e1-4c-q10b",
-        "type": "teacher_review",
+      },{
+    "id": "y11e1-4c-q10b",
+        "type": "multiple_choice",
         "difficulty": "hard",
         "timeLimit": 120,
         "question": "Explain why there are no zeroes when \\(\\Delta < 0\\). That is, explain why there is no solution if \\(y = 0\\) and \\(b^2 - 4ac < 0\\).",
         "a": "A negative value cannot equal a perfect square.",
+    "options": [
+      "A negative value cannot equal a perfect square.",
+      "None of the above",
+      "Information insufficient",
+      "Cannot be determined"
+    ],
         "solutionSteps": [
           {
             "explanation": "Substitute \\(y = 0\\) into the completed square equation and find a common denominator.",
@@ -1178,14 +1398,19 @@ export const Y11_CH4C_QUESTIONS = [
             "graphData": null
           }
         ]
-      },
-      {
-        "id": "y11e1-4c-q10c",
-        "type": "teacher_review",
+      },{
+    "id": "y11e1-4c-q10c",
+        "type": "multiple_choice",
         "difficulty": "hard",
         "timeLimit": 120,
         "question": "Explain why there is a double zero when \\(\\Delta = 0\\). That is, explain why there is one solution if \\(y = 0\\) and \\(b^2 - 4ac = 0\\).",
         "a": "The square term equals zero, yielding a single root.",
+    "options": [
+      "Not enough data",
+      "The square term equals zero, yielding a single root.",
+      "None of the above",
+      "Cannot be determined"
+    ],
         "solutionSteps": [
           {
             "explanation": "Set the discriminant to zero in the formula.",
@@ -1203,14 +1428,19 @@ export const Y11_CH4C_QUESTIONS = [
             "graphData": null
           }
         ]
-      },
-      {
-        "id": "y11e1-4c-q10d",
-        "type": "teacher_review",
+      },{
+    "id": "y11e1-4c-q10d",
+        "type": "multiple_choice",
         "difficulty": "hard",
         "timeLimit": 120,
         "question": "Explain why there are two zeroes when \\(\\Delta > 0\\) and determine the formula for the zeroes in this case.",
         "a": "Taking square root of positive number yields two roots.",
+    "options": [
+      "Cannot evaluate",
+      "None of the above",
+      "Taking square root of positive number yields two roots.",
+      "Cannot be determined"
+    ],
         "solutionSteps": [
           {
             "explanation": "Since \\(\\Delta > 0\\), we can take the square root on both sides, yielding two distinct branches.",
@@ -1230,14 +1460,19 @@ export const Y11_CH4C_QUESTIONS = [
         ]
       }
     ]
-  },
-  {
+  },{
     "id": "y11e1-4c-q11a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Use the discriminant of a suitable quadratic equation to determine whether or not the parabola \\(y = x^2 + 2x + 2\\) intersects the line \\(y = 8x - 7\\). If they do intersect, state how many points of intersection there are and find the \\(x\\)-coordinates.",
     "a": "1 intersection at x = 3",
+    "options": [
+      "1 intersection at x = 3",
+      "0 intersections",
+      "Cannot be determined",
+      "2 intersections"
+    ],
     "solution": "Equate the equations: \\(x^2 + 2x + 2 = 8x - 7 \\implies x^2 - 6x + 9 = 0\\). The discriminant is \\(\\Delta = (-6)^2 - 4(1)(9) = 0\\), meaning they intersect at exactly 1 point. Solving \\((x-3)^2 = 0\\) gives \\(x = 3\\).",
     "t": "The discriminant",
     "hint": "Equate the two expressions and calculate the discriminant of the resulting quadratic equation.",
@@ -1258,14 +1493,19 @@ export const Y11_CH4C_QUESTIONS = [
         "graphData": null
       }
     ]
-  },
-  {
+  },{
     "id": "y11e1-4c-q11bi",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Use the discriminant of a suitable quadratic equation to determine whether or not the parabola \\(y = x^2 - 3x + 8\\) intersects the line \\(y = 5x - 8\\). If they do intersect, state how many points of intersection there are and find the \\(x\\)-coordinates.",
     "a": "1 intersection at x = 4",
+    "options": [
+      "1 intersection at x = 4",
+      "0 intersections",
+      "Cannot be determined",
+      "2 intersections"
+    ],
     "solution": "Equate the equations: \\(x^2 - 3x + 8 = 5x - 8 \\implies x^2 - 8x + 16 = 0\\). The discriminant is \\(\\Delta = (-8)^2 - 4(1)(16) = 0\\). Solve \\((x-4)^2 = 0 \\implies x = 4\\).",
     "t": "The discriminant",
     "hint": "Solve \\(x^2 - 3x + 8 = 5x - 8\\) and find its discriminant.",
@@ -1286,14 +1526,19 @@ export const Y11_CH4C_QUESTIONS = [
         "graphData": null
       }
     ]
-  },
-  {
+  },{
     "id": "y11e1-4c-q11bii",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Use the discriminant of a suitable quadratic equation to determine whether or not the parabola \\(y = x^2 + 4x + 7\\) intersects the line \\(y = -2x - 3\\). If they do intersect, state how many points of intersection there are and find the \\(x\\)-coordinates.",
     "a": "no intersections",
+    "options": [
+      "None of the above",
+      "Information insufficient",
+      "Cannot be determined",
+      "no intersections"
+    ],
     "solution": "Equate the equations: \\(x^2 + 4x + 7 = -2x - 3 \\implies x^2 + 6x + 10 = 0\\). The discriminant is \\(\\Delta = 6^2 - 4(1)(10) = -4 < 0\\), so there are no intersections.",
     "t": "The discriminant",
     "hint": "Equate the equations and find if \\(\\Delta < 0\\).",
@@ -1314,14 +1559,19 @@ export const Y11_CH4C_QUESTIONS = [
         "graphData": null
       }
     ]
-  },
-  {
+  },{
     "id": "y11e1-4c-q12a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Use the discriminant of a suitable quadratic equation to determine whether or not the parabola \\(y = x^2 + 4x + 2\\) intersects the parabola \\(y = -x^2 + 2x - 3\\). If they do intersect, how many points are there and what are the \\(x\\)-coordinates?",
     "a": "no intersections",
+    "options": [
+      "Not enough data",
+      "no intersections",
+      "Cannot be determined",
+      "None of the above"
+    ],
     "solution": "Equate equations: \\(x^2 + 4x + 2 = -x^2 + 2x - 3 \\implies 2x^2 + 2x + 5 = 0\\). The discriminant is \\(\\Delta = 2^2 - 4(2)(5) = -36 < 0\\). Hence, they do not intersect.",
     "t": "The discriminant",
     "hint": "Equate the two parabolas to form a single quadratic equation.",
@@ -1342,14 +1592,19 @@ export const Y11_CH4C_QUESTIONS = [
         "graphData": null
       }
     ]
-  },
-  {
+  },{
     "id": "y11e1-4c-q12bi",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Use the discriminant of a suitable quadratic equation to determine whether or not the parabola \\(y = x^2 + 2x + 3\\) intersects the parabola \\(y = -x^2 - 6x - 5\\). If they do intersect, how many points are there and what are the \\(x\\)-coordinates?",
     "a": "1 intersection at x = -2",
+    "options": [
+      "1 intersection at x = -2",
+      "0 intersections",
+      "Cannot be determined",
+      "2 intersections"
+    ],
     "solution": "Equate equations: \\(x^2 + 2x + 3 = -x^2 - 6x - 5 \\implies 2x^2 + 8x + 8 = 0 \\implies x^2 + 4x + 4 = 0\\). The discriminant is \\(\\Delta = 16 - 16 = 0\\). Solve \\((x+2)^2 = 0 \\implies x = -2\\).",
     "t": "The discriminant",
     "hint": "Equate the functions and solve for the roots.",
@@ -1370,14 +1625,19 @@ export const Y11_CH4C_QUESTIONS = [
         "graphData": null
       }
     ]
-  },
-  {
+  },{
     "id": "y11e1-4c-q12bii",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Use the discriminant of a suitable quadratic equation to determine whether or not the parabola \\(y = \\frac{1}{2}x^2 - 2x + 3\\) intersects the parabola \\(y = -\\frac{1}{2}x^2 - 4x + 2\\). If they do intersect, how many points are there and what are the \\(x\\)-coordinates?",
     "a": "1 intersection at x = -1",
+    "options": [
+      "0 intersections",
+      "2 intersections",
+      "1 intersection at x = -1",
+      "Cannot be determined"
+    ],
     "solution": "Equate equations: \\(\\frac{1}{2}x^2 - 2x + 3 = -\\frac{1}{2}x^2 - 4x + 2 \\implies x^2 + 2x + 1 = 0\\). The discriminant is \\(\\Delta = 4 - 4 = 0\\). Solve \\((x+1)^2 = 0 \\implies x = -1\\).",
     "t": "The discriminant",
     "hint": "Equate the equations and add the x^2 terms together.",
@@ -1398,14 +1658,19 @@ export const Y11_CH4C_QUESTIONS = [
         "graphData": null
       }
     ]
-  },
-  {
+  },{
     "id": "y11e1-4c-q13ai",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Consider the circle \\(x^2 + y^2 = 9\\) and the line \\(y = x + 2\\). Use substitution to obtain a quadratic equation in \\(x\\).",
-    "a": "2x^2+4x-5=0",
+    "a": "\(2x^2+4x-5=0\)",
+    "options": [
+      "\(1x^2+4x-5=0\)",
+      "\(-2x^2+4x-5=0\)",
+      "\(2x^2+4x-5=0\)",
+      "\(3x^2+4x-5=0\)"
+    ],
     "solution": "Substitute \\(y = x + 2\\) into the circle equation: \\(x^2 + (x+2)^2 = 9 \\implies x^2 + x^2 + 4x + 4 = 9 \\implies 2x^2 + 4x - 5 = 0\\).",
     "t": "The discriminant",
     "hint": "Substitute the expression for y from the line equation into the circle equation and expand.",
@@ -1426,14 +1691,19 @@ export const Y11_CH4C_QUESTIONS = [
         "graphData": null
       }
     ]
-  },
-  {
+  },{
     "id": "y11e1-4c-q13aii",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Consider the circle \\(x^2 + y^2 = 9\\) and the line \\(y = x + 2\\). Find the discriminant for the associated quadratic equation and hence state how many times the line intersects the circle.",
     "a": "56, intersects twice",
+    "options": [
+      "56, intersects zero times",
+      "56, intersects once",
+      "does not intersect",
+      "56, intersects twice"
+    ],
     "solution": "From part ai, the quadratic equation is \\(2x^2 + 4x - 5 = 0\\). The discriminant is \\(\\Delta = 4^2 - 4(2)(-5) = 16 + 40 = 56 > 0\\). Since \\(\\Delta > 0\\), the line intersects the circle twice.",
     "t": "The discriminant",
     "hint": "Calculate the discriminant \\(b^2 - 4ac\\) of the equation from part ai.",
@@ -1454,14 +1724,19 @@ export const Y11_CH4C_QUESTIONS = [
         "graphData": null
       }
     ]
-  },
-  {
+  },{
     "id": "y11e1-4c-q13bi",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Determine how many times the line \\(y = x + 3\\) intersects the circle \\(x^2 + y^2 = 2\\).",
     "a": "0 times",
+    "options": [
+      "Not enough information",
+      "0 times",
+      "1 time",
+      "0 times"
+    ],
     "solution": "Substitute \\(y = x + 3\\) into the circle equation: \\(x^2 + (x+3)^2 = 2 \\implies 2x^2 + 6x + 9 = 2 \\implies 2x^2 + 6x + 7 = 0\\). The discriminant is \\(\\Delta = 6^2 - 4(2)(7) = 36 - 56 = -20 < 0\\). Thus, they intersect 0 times.",
     "t": "The discriminant",
     "hint": "Substitute the line equation into the circle equation and check the sign of the discriminant.",
@@ -1482,14 +1757,19 @@ export const Y11_CH4C_QUESTIONS = [
         "graphData": null
       }
     ]
-  },
-  {
+  },{
     "id": "y11e1-4c-q13bii",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Determine how many times the line \\(y = -3x + 10\\) intersects the circle \\(x^2 + y^2 = 10\\).",
     "a": "1 time",
+    "options": [
+      "1 time",
+      "2 times",
+      "Cannot be determined",
+      "0 times"
+    ],
     "solution": "Substitute \\(y = -3x + 10\\) into the circle equation: \\(x^2 + (-3x+10)^2 = 10 \\implies 10x^2 - 60x + 100 = 10 \\implies 10x^2 - 60x + 90 = 0 \\implies x^2 - 6x + 9 = 0\\). The discriminant is \\(\\Delta = 36 - 36 = 0\\). Hence, they intersect 1 time (the line is tangent).",
     "t": "The discriminant",
     "hint": "Substitute, simplify, and evaluate the discriminant.",
@@ -1510,24 +1790,34 @@ export const Y11_CH4C_QUESTIONS = [
         "graphData": null
       }
     ]
-  },
-  {
+  },{
     "id": "y11e1-4c-q14",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Use algebraic analysis to study the intersection of the line \\(y = x + b\\) and the parabola \\(y = 3x^2 - 5x + 2\\).",
     "a": "Refer to parts a and b for verification.",
+    "options": [
+      "Cannot be determined",
+      "None of the above",
+      "Refer to parts a and b for verification.",
+      "Cannot evaluate"
+    ],
     "solution": "See detailed steps below.",
     "t": "The discriminant",
-    "subQuestions": [
-      {
-        "id": "y11e1-4c-q14a",
-        "type": "teacher_review",
+    "subQuestions": [{
+    "id": "y11e1-4c-q14a",
+        "type": "multiple_choice",
         "difficulty": "easy",
         "timeLimit": 60,
         "question": "Use substitution to show that \\(y = x + b\\) and \\(y = 3x^2 - 5x + 2\\) intersect when \\(3x^2 - 6x + (2 - b) = 0\\).",
         "a": "Set equations equal and group terms.",
+    "options": [
+      "Information insufficient",
+      "Set equations equal and group terms.",
+      "Cannot be determined",
+      "None of the above"
+    ],
         "solutionSteps": [
           {
             "explanation": "Set the line equation equal to the parabola equation.",
@@ -1545,14 +1835,19 @@ export const Y11_CH4C_QUESTIONS = [
             "graphData": null
           }
         ]
-      },
-      {
-        "id": "y11e1-4c-q14b",
-        "type": "short_answer",
+      },{
+    "id": "y11e1-4c-q14b",
+        "type": "multiple_choice",
         "difficulty": "medium",
         "timeLimit": 90,
         "question": "Solve \\(\\Delta = 0\\) to find the value of \\(b\\) for which the line is tangent to the curve.",
         "a": "-1",
+    "options": [
+      "0",
+      "1",
+      "-1",
+      "-2"
+    ],
         "solutionSteps": [
           {
             "explanation": "Identify the coefficients from the quadratic equation in part a.",
@@ -1572,24 +1867,34 @@ export const Y11_CH4C_QUESTIONS = [
         ]
       }
     ]
-  },
-  {
+  },{
     "id": "y11e1-4c-q15",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "The straight line function \\(y = mx\\) passes through the origin and is a secant of the circle \\(x^2 + (y-3)^2 = 4\\), intersecting it twice. Complete the sub-questions.",
     "a": "Refer to parts a and b for the final answers.",
+    "options": [
+      "Refer to parts a and b for the final answers.",
+      "None of the above",
+      "Cannot be determined",
+      "Not enough data"
+    ],
     "solution": "See detailed steps below.",
     "t": "The discriminant",
-    "subQuestions": [
-      {
-        "id": "y11e1-4c-q15a",
-        "type": "short_answer",
+    "subQuestions": [{
+    "id": "y11e1-4c-q15a",
+        "type": "multiple_choice",
         "difficulty": "hard",
         "timeLimit": 120,
         "question": "What values may \\(m\\) take?",
-        "a": "m < -sqrt(5)/2 or m > sqrt(5)/2",
+        "a": "\\\\( m < -\\\\frac{\\\\sqrt{5}}{2} \\\\text{ or } m > \\\\frac{\\\\sqrt{5}}{2} \\\\)",
+    "options": [
+      "\\\\( m < -\\\\frac{\\\\sqrt{6}}{2} \\\\text{ or } m > \\\\frac{\\\\sqrt{5}}{2} \\\\)",
+      "\\\\( m < -\\\\frac{\\\\sqrt{4}}{2} \\\\text{ or } m > \\\\frac{\\\\sqrt{5}}{2} \\\\)",
+      "\\\\( m < -\\\\frac{\\\\sqrt{5}}{2} \\\\text{ or } m > \\\\frac{\\\\sqrt{5}}{2} \\\\)",
+      "\\\\( m < -\\\\frac{\\\\sqrt{7}}{2} \\\\text{ or } m > \\\\frac{\\\\sqrt{5}}{2} \\\\)"
+    ],
         "solutionSteps": [
           {
             "explanation": "Substitute \\(y = mx\\) into the circle equation.",
@@ -1612,14 +1917,19 @@ export const Y11_CH4C_QUESTIONS = [
             "graphData": null
           }
         ]
-      },
-      {
-        "id": "y11e1-4c-q15b",
-        "type": "short_answer",
+      },{
+    "id": "y11e1-4c-q15b",
+        "type": "multiple_choice",
         "difficulty": "medium",
         "timeLimit": 90,
         "question": "There is one secant of the circle which passes through the origin but is not a function. Write down its equation.",
         "a": "x = 0",
+    "options": [
+      "x = 1",
+      "Cannot be determined",
+      "x = -1",
+      "x = 0"
+    ],
         "solutionSteps": [
           {
             "explanation": "A straight line passing through the origin that is not a function must be a vertical line.",
@@ -1639,20 +1949,24 @@ export const Y11_CH4C_QUESTIONS = [
         ]
       }
     ]
-  },
-  {
+  },{
     "id": "y11e1-4c-q16",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "The line \\(y = mx + b\\) is tangent to the parabola \\(y = 2x^2\\). Complete the sub-questions.",
     "a": "Refer to parts a and b for the final expressions.",
+    "options": [
+      "None of the above",
+      "Cannot be determined",
+      "Refer to parts a and b for the final expressions.",
+      "Cannot evaluate"
+    ],
     "solution": "See detailed steps below.",
     "t": "The discriminant",
-    "subQuestions": [
-      {
-        "id": "y11e1-4c-q16a",
-        "type": "teacher_review",
+    "subQuestions": [{
+    "id": "y11e1-4c-q16a",
+        "type": "multiple_choice",
         "difficulty": "medium",
         "timeLimit": 90,
         "question": "Show that \\(b = -\\frac{1}{8}m^2\\).",
@@ -1673,14 +1987,19 @@ export const Y11_CH4C_QUESTIONS = [
             "graphData": null
           }
         ]
-      },
-      {
-        "id": "y11e1-4c-q16b",
-        "type": "short_answer",
+      },{
+    "id": "y11e1-4c-q16b",
+        "type": "multiple_choice",
         "difficulty": "hard",
         "timeLimit": 120,
         "question": "Hence find the coordinates of the point of contact in terms of \\(m\\).",
-        "a": "(m/4, m^2/8)",
+        "a": "\\\\( \\\\left( \\\\frac{m}{4}, \\\\frac{m^2}{8} \\\\right) \\\\)",
+    "options": [
+      "\\\\( \\\\left( -\\\\frac{m}{4}, \\\\frac{m^2}{8} \\\\right) \\\\)",
+      "\\\\( \\\\left( \\\\frac{m}{3}, \\\\frac{m^2}{8} \\\\right) \\\\)",
+      "\\\\( \\\\left( \\\\frac{m}{4}, \\\\frac{m^2}{8} \\\\right) \\\\)",
+      "\\\\( \\\\left( \\\\frac{m}{5}, \\\\frac{m^2}{8} \\\\right) \\\\)"
+    ],
         "solutionSteps": [
           {
             "explanation": "Use the quadratic formula root location for a double root \\(\\Delta = 0\\).",
@@ -1700,14 +2019,19 @@ export const Y11_CH4C_QUESTIONS = [
         ]
       }
     ]
-  },
-  {
+  },{
     "id": "y11e1-4c-q17",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "There are two lines \\(y = mx + b\\) that pass through the point \\((2, 3)\\) and are tangent to the parabola \\(y = x^2\\). Find the equations of these two lines.",
-    "a": "y = 2x - 1 or y = 6x - 9",
+    "a": "\\\\( y = 2x - 1 \\\\text{ or } y = 6x - 9 \\\\)",
+    "options": [
+      "\\\\( y = -2x - 1 \\\\text{ or } y = 6x - 9 \\\\)",
+      "\\\\( y = 3x - 1 \\\\text{ or } y = 6x - 9 \\\\)",
+      "\\\\( y = 2x - 1 \\\\text{ or } y = 6x - 9 \\\\)",
+      "\\\\( y = x - 1 \\\\text{ or } y = 6x - 9 \\\\)"
+    ],
     "solution": "Since the lines pass through \\((2, 3)\\), substitute to get \\(3 = 2m + b \\implies b = 3 - 2m\\). Equating the line and parabola gives \\(x^2 - mx - b = 0\\). For tangency, \\(\\Delta = m^2 + 4b = 0 \\implies m^2 + 4(3 - 2m) = 0 \\implies m^2 - 8m + 12 = 0 \\implies (m-2)(m-6) = 0 \\implies m = 2 \\text{ or } m = 6\\). Thus the lines are \\(y = 2x - 1\\) and \\(y = 6x - 9\\).",
     "t": "The discriminant",
     "hint": "Use the point to express b in terms of m, then set the discriminant of the intersection equation to zero.",
@@ -1738,14 +2062,19 @@ export const Y11_CH4C_QUESTIONS = [
         "graphData": null
       }
     ]
-  },
-  {
+  },{
     "id": "y11e1-4c-q18",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "The line \\(y = mx + b\\) passes through the point \\((-3, -3)\\). What values may \\(m\\) take if this line does not intersect the hyperbola \\(y = -\\frac{16}{x}\\)?",
     "a": "1/9 < m < 9",
+    "options": [
+      "-1/9 < m < 9",
+      "0/9 < m < 9",
+      "1/9 < m < 9",
+      "2/9 < m < 9"
+    ],
     "solution": "Since the line passes through \\((-3, -3)\\), \\(-3 = -3m + b \\implies b = 3m - 3\\). Equating the equations gives \\(mx + 3m - 3 = -16/x \\implies mx^2 + (3m-3)x + 16 = 0\\). For no intersection, \\(\\Delta < 0 \\implies (3m-3)^2 - 64m < 0 \\implies 9m^2 - 18m + 9 - 64m < 0 \\implies 9m^2 - 82m + 9 < 0 \\implies (9m-1)(m-9) < 0 \\implies 1/9 < m < 9\\).",
     "t": "The discriminant",
     "hint": "Set up the quadratic equation for intersection, calculate the discriminant, and solve the inequality \\(\\Delta < 0\\).",
@@ -1771,24 +2100,34 @@ export const Y11_CH4C_QUESTIONS = [
         "graphData": null
       }
     ]
-  },
-  {
+  },{
     "id": "y11e1-4c-q19",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "Prove the roots properties for the given quadratic equations. Complete the sub-questions.",
     "a": "Refer to proof steps for parts a and b.",
+    "options": [
+      "Information insufficient",
+      "Refer to proof steps for parts a and b.",
+      "Cannot be determined",
+      "None of the above"
+    ],
     "solution": "See detailed steps below.",
     "t": "The discriminant",
-    "subQuestions": [
-      {
-        "id": "y11e1-4c-q19a",
-        "type": "teacher_review",
+    "subQuestions": [{
+    "id": "y11e1-4c-q19a",
+        "type": "multiple_choice",
         "difficulty": "hard",
         "timeLimit": 120,
         "question": "Prove that the roots of each equation are real and distinct for all real values of \\(\\lambda\\).",
         "a": "Find the discriminant and show that it is positive.",
+    "options": [
+      "Not enough data",
+      "Cannot be determined",
+      "None of the above",
+      "Find the discriminant and show that it is positive."
+    ],
         "solutionSteps": [
           {
             "explanation": "For the first equation \\(x^2 + \\lambda x - 2 = 0\\), compute the discriminant.",
@@ -1816,14 +2155,19 @@ export const Y11_CH4C_QUESTIONS = [
             "graphData": null
           }
         ]
-      },
-      {
-        "id": "y11e1-4c-q19b",
-        "type": "teacher_review",
+      },{
+    "id": "y11e1-4c-q19b",
+        "type": "multiple_choice",
         "difficulty": "hard",
         "timeLimit": 120,
         "question": "In the case of equation (i) \\(x^2 + \\lambda x - 2 = 0\\), use the concavity and y-intercept of the associated parabola to give an alternative explanation for why the roots are real and distinct.",
         "a": "Parabola opens upwards and has a negative y-intercept, so it must cross the x-axis twice.",
+    "options": [
+      "Parabola opens upwards and has a negative y-intercept, so it must cross the x-axis zero times.",
+      "does not intersect",
+      "Parabola opens upwards and has a negative y-intercept, so it must cross the x-axis once.",
+      "Parabola opens upwards and has a negative y-intercept, so it must cross the x-axis twice."
+    ],
         "solutionSteps": [
           {
             "explanation": "Identify the concavity of the associated parabola \\(y = x^2 + \\lambda x - 2\\). Since the coefficient of \\(x^2\\) is 1 (positive), the parabola is concave upwards.",
@@ -1843,14 +2187,19 @@ export const Y11_CH4C_QUESTIONS = [
         ]
       }
     ]
-  },
-  {
+  },{
     "id": "y11e1-4c-q20",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Each problem in Question 13 could be easily solved by graphing the line and circle. How could part a and part b i be solved using geometry? (Hint: Consider the perpendicular distance from the center of the circle to the line and compare it with the radius.)",
+    "question": "Consider the problem of finding the number of intersections between a line (e.g., \\\\(x - y + 2 = 0\\\\)) and a circle centered at the origin (e.g., \\\\(x^2 + y^2 = 9\\\\)). Instead of substituting the line equation into the circle equation and using the discriminant, how could this be solved using geometry? (Hint: Consider the perpendicular distance from the center of the circle to the line.)",
     "a": "Calculate the perpendicular distance from the center of the circle (0,0) to the line and compare it to the radius.",
+    "options": [
+      "Calculate the perpendicular distance from the center of the circle (1,0) to the line and compare it to the radius.",
+      "Calculate the perpendicular distance from the center of the circle (0,0) to the line and compare it to the radius.",
+      "None of the above",
+      "Calculate the perpendicular distance from the center of the circle (-1,0) to the line and compare it to the radius."
+    ],
     "solution": "The perpendicular distance \\(d\\) from the origin \\((0,0)\\) to the line \\(Ax + By + C = 0\\) is \\(d = \\frac{|C|}{\\sqrt{A^2 + B^2}}\\). If \\(d < r\\), it intersects twice. If \\(d = r\\), it is tangent. If \\(d > r\\), it does not intersect.",
     "t": "The discriminant",
     "hint": "Use the perpendicular distance formula from a point to a line to compare the distance with the circle's radius.",
