@@ -10,9 +10,9 @@ export const Y11_CH12A_QUESTIONS = [
     "question": "If \\(A = \\{2, 3, 5, 8\\}\\) and \\(B = \\{2, 3, 4, 5, 7\\}\\), determine whether each of the following statements is True or False.",
     "opts": [
       "I: False, II: True, III: False, IV: False, V: True, VI: True",
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x."
+      "I: True, II: True, III: False, IV: False, V: False, VI: True",
+      "I: False, II: False, III: True, IV: True, V: False, VI: False",
+      "I: True, II: False, III: True, IV: False, V: True, VI: False"
     ],
     "a": 0,
     "answer": "0",
@@ -20,22 +20,22 @@ export const Y11_CH12A_QUESTIONS = [
     "solution": "I: False, II: True, III: False, IV: False, V: True, VI: True",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Sets and Venn diagrams: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "explanation": "Identify the given sets and their elements or conditions from the problem statement.",
         "workingOut": "\\(A = \\{2, 3, 5, 8\\},\\quad B = \\{2, 3, 4, 5, 7\\} \\\\ |A| = 4,\\quad |B| = 5\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "explanation": "Apply the definitions of set operations (union, intersection, subset, etc.) to determine the correct relationship or elements.",
         "workingOut": "\\(\\text{I. } A = B? \\quad 8 \\in A \\text{ but } 8 \notin B \\Rightarrow \\textbf{False} \\\\ \\text{II. } |A|=4? \\quad A \\text{ has } 4 \\text{ elements} \\Rightarrow \\textbf{True} \\\\ \\text{III. } |B|=6? \\quad B \\text{ has } 5 \\text{ elements} \\Rightarrow \\textbf{False} \\\\ \\text{IV. } A \\subset B? \\quad 8 \\in A \\text{ but } 8 \notin B \\Rightarrow \\textbf{False}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Carefully calculate or combine the elements, ensuring there are no duplicates and all conditions are met.",
         "workingOut": "\\(\\text{V. } A \\cup B = \\{2,3,4,5,7,8\\}? \\\\ A \\cup B = \\{2,3,4,5,7,8\\} \\Rightarrow \\textbf{True} \\\\ \\text{VI. } A \\cap B = \\{2,3,5\\}? \\\\ \\text{Common elements: } 2, 3, 5 \\Rightarrow \\textbf{True}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: I: False, II: True, III: False, IV: False, V: True, VI: True. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Review the final set or logical statement to confirm it exactly matches the requested format.",
         "workingOut": "I: False, II: True, III: False, IV: False, V: True, VI: True",
         "graphData": null
       }
@@ -58,22 +58,22 @@ export const Y11_CH12A_QUESTIONS = [
     "solution": "0",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Sets and Venn diagrams: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "explanation": "Identify the given sets and their elements or conditions from the problem statement.",
         "workingOut": "\\(A = \\{\\text{g, r, a, c, e}\\},\\quad B = \\{\\text{c, a, t, e, g, o, r, y}\\} \\\\ \\text{g} \\in B?\\text{ Yes}\\checkmark \\\\ \\text{r} \\in B?\\text{ Yes}\\checkmark \\\\ \\text{a} \\in B?\\text{ Yes}\\checkmark \\\\ \\text{c} \\in B?\\text{ Yes}\\checkmark \\\\ \\text{e} \\in B?\\text{ Yes}\\checkmark\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "explanation": "Apply the definitions of set operations (union, intersection, subset, etc.) to determine the correct relationship or elements.",
         "workingOut": "\\(A \\subset B \\quad (\\textbf{True})\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Carefully calculate or combine the elements, ensuring there are no duplicates and all conditions are met.",
         "workingOut": "\\(0\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 0. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Review the final set or logical statement to confirm it exactly matches the requested format.",
         "workingOut": "\\(0\\)",
         "graphData": null
       }
@@ -103,22 +103,22 @@ export const Y11_CH12A_QUESTIONS = [
     "solution": "The set is \\(\\{8, 16, 24, 32, 40\\}\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Sets and Venn diagrams: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "explanation": "Identify the given sets and their elements or conditions from the problem statement.",
         "workingOut": "\\(8 \\times 1 = 8 \\\\ 8 \\times 2 = 16 \\\\ 8 \\times 3 = 24 \\\\ 8 \\times 4 = 32 \\\\ 8 \\times 5 = 40\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "explanation": "Apply the definitions of set operations (union, intersection, subset, etc.) to determine the correct relationship or elements.",
         "workingOut": "\\(\\{8,\\ 16,\\ 24,\\ 32,\\ 40\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Carefully calculate or combine the elements, ensuring there are no duplicates and all conditions are met.",
         "workingOut": "\\(\\{8, 16, 24, 32, 40\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: \\{8, 16, 24, 32, 40\\}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Review the final set or logical statement to confirm it exactly matches the requested format.",
         "workingOut": "\\(\\{8, 16, 24, 32, 40\\}\\)",
         "graphData": null
       }
@@ -148,22 +148,22 @@ export const Y11_CH12A_QUESTIONS = [
     "solution": "The set is \\(\\{1, 2, 3, 4, 5, 6, 7, 8\\}\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Sets and Venn diagrams: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "explanation": "Identify the given sets and their elements or conditions from the problem statement.",
         "workingOut": "\\(\\text{Faces: } 1,\\ 2,\\ 3,\\ 4,\\ 5,\\ 6,\\ 7,\\ 8\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "explanation": "Apply the definitions of set operations (union, intersection, subset, etc.) to determine the correct relationship or elements.",
         "workingOut": "\\(\\{1,\\ 2,\\ 3,\\ 4,\\ 5,\\ 6,\\ 7,\\ 8\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Carefully calculate or combine the elements, ensuring there are no duplicates and all conditions are met.",
         "workingOut": "\\(\\{1, 2, 3, 4, 5, 6, 7, 8\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: \\{1, 2, 3, 4, 5, 6, 7, 8\\}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Review the final set or logical statement to confirm it exactly matches the requested format.",
         "workingOut": "\\(\\{1, 2, 3, 4, 5, 6, 7, 8\\}\\)",
         "graphData": null
       }
@@ -186,22 +186,22 @@ export const Y11_CH12A_QUESTIONS = [
     "solution": "0",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Sets and Venn diagrams: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "explanation": "Identify the given sets and their elements or conditions from the problem statement.",
         "workingOut": "\\(A = \\{\\text{t, o, n, y}\\},\\quad B = \\{\\text{s, t, o, n, e}\\} \\\\ \\text{t} \\in B?\\text{ Yes}\\checkmark \\\\ \\text{o} \\in B?\\text{ Yes}\\checkmark \\\\ \\text{n} \\in B?\\text{ Yes}\\checkmark \\\\ \\text{y} \\in B?\\text{ No}\\times\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "explanation": "Apply the definitions of set operations (union, intersection, subset, etc.) to determine the correct relationship or elements.",
         "workingOut": "\\(A \not\\subset B \\quad (\\textbf{True})\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Carefully calculate or combine the elements, ensuring there are no duplicates and all conditions are met.",
         "workingOut": "\\(0\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 0. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Review the final set or logical statement to confirm it exactly matches the requested format.",
         "workingOut": "\\(0\\)",
         "graphData": null
       }
@@ -231,22 +231,22 @@ export const Y11_CH12A_QUESTIONS = [
     "solution": "\\(A \\cup B = \\{2,4,6,8\\}\\) and \\(A \\cap B = \\{4,6\\}\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Sets and Venn diagrams: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "explanation": "Identify the given sets and their elements or conditions from the problem statement.",
         "workingOut": "\\(A = \\{2, 4, 6\\},\\quad B = \\{4, 6, 8\\} \\\\ A \\cup B = \\{2,\\ 4,\\ 6,\\ 8\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "explanation": "Apply the definitions of set operations (union, intersection, subset, etc.) to determine the correct relationship or elements.",
         "workingOut": "\\(4 \\in A \\text{ and } 4 \\in B \\checkmark \\\\ 6 \\in A \\text{ and } 6 \\in B \\checkmark \\\\ A \\cap B = \\{4,\\ 6\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Carefully calculate or combine the elements, ensuring there are no duplicates and all conditions are met.",
         "workingOut": "\\(A \\cup B = \\{2, 4, 6, 8\\}\\) and \\(A \\cap B = \\{4, 6\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: A \\cup B = \\{2, 4, 6, 8\\}\\) and \\(A \\cap B = \\{4, 6\\}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Review the final set or logical statement to confirm it exactly matches the requested format.",
         "workingOut": "\\(A \\cup B = \\{2, 4, 6, 8\\}\\) and \\(A \\cap B = \\{4, 6\\}\\)",
         "graphData": null
       }
@@ -269,22 +269,22 @@ export const Y11_CH12A_QUESTIONS = [
     "solution": "0",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Sets and Venn diagrams: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "explanation": "Identify the given sets and their elements or conditions from the problem statement.",
         "workingOut": "\\(A = \\{2, 4, 6, 8\\},\\quad B = \\{2, 3, 6, 7, 9\\} \\\\ 2 \\in B?\\text{ Yes}\\checkmark \\\\ 4 \\in B?\\text{ No}\\times \\\\ 6 \\in B?\\text{ Yes}\\checkmark \\\\ 8 \\in B?\\text{ No}\\times\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "explanation": "Apply the definitions of set operations (union, intersection, subset, etc.) to determine the correct relationship or elements.",
         "workingOut": "\\(A\not\\subset B \\quad (\\textbf{False})\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Carefully calculate or combine the elements, ensuring there are no duplicates and all conditions are met.",
         "workingOut": "\\(0\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 0. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Review the final set or logical statement to confirm it exactly matches the requested format.",
         "workingOut": "\\(0\\)",
         "graphData": null
       }
@@ -307,22 +307,22 @@ export const Y11_CH12A_QUESTIONS = [
     "solution": "0",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Sets and Venn diagrams: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "explanation": "Identify the given sets and their elements or conditions from the problem statement.",
         "workingOut": "\\(\\emptyset \\text{ has no elements} \\\\ \\Rightarrow \\text{no element of } \\emptyset \\text{ is outside } B \\\\ \\Rightarrow \\emptyset \\subset B \\text{ for any set } B\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "explanation": "Apply the definitions of set operations (union, intersection, subset, etc.) to determine the correct relationship or elements.",
         "workingOut": "\\(\\emptyset \\subset S \\quad \\text{for any set } S\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Carefully calculate or combine the elements, ensuring there are no duplicates and all conditions are met.",
         "workingOut": "\\(0\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 0. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Review the final set or logical statement to confirm it exactly matches the requested format.",
         "workingOut": "\\(0\\)",
         "graphData": null
       }
@@ -341,10 +341,10 @@ export const Y11_CH12A_QUESTIONS = [
     "timeLimit": 120,
     "question": "If \\(A = \\{1, 2, 4\\}\\), \\(B = \\{2, 5\\}\\) and the universal set is \\(E = \\{1, 2, 3, 4, 5, 6\\}\\), find the values of each part.",
     "opts": [
-      "\\(\\dfrac{13}{x + 3}\\)",
-      "\\(|A|=3, |B|=2, A∪B={1,2,4,5}, |A∪B|=4, A∩B={2}, |A∩B|=1, Ā={3,5,6}, B̄={1,3,4,6}\\)",
-      "\\(|A|=3, |B|=2, A∪B={1,2,4,5}, |A∪B|=4, A∩B={2}, |A∩B|=1, Ā={3,5,6}, B̄={1,3,4,6} + 1\\)",
-      "\\(|A|=4, |B|=4, A∪B={1,4,4,5}, |A∪B|=4, A∩B={4}, |A∩B|=1, Ā={4,5,6}, B̄={1,4,4,6}\\)"
+      "\\(|A|=3, |B|=2, A\\cup B=\\{1,2,4,5\\}, |A\\cup B|=4, A\\cap B=\\{2\\}, |A\\cap B|=1, \\overline{A}=\\{3,5,6\\}, \\overline{B}=\\{1,3,4,6\\}\\)",
+      "\\(|A|=3, |B|=2, A\\cup B=\\{1,2,4,5\\}, |A\\cup B|=4, A\\cap B=\\{2\\}, |A\\cap B|=2, \\overline{A}=\\{3,5,6\\}, \\overline{B}=\\{1,3,4,6\\}\\)",
+      "\\(|A|=3, |B|=2, A\\cup B=\\{1,2,4,5\\}, |A\\cup B|=4, A\\cap B=\\{2\\}, |A\\cap B|=1, \\overline{A}=\\{1,2,4\\}, \\overline{B}=\\{2,5\\}\\)",
+      "\\(|A|=2, |B|=3, A\\cup B=\\{1,2,4,5\\}, |A\\cup B|=4, A\\cap B=\\{2\\}, |A\\cap B|=1, \\overline{A}=\\{3,5,6\\}, \\overline{B}=\\{1,3,4,6\\}\\)"
     ],
     "a": 1,
     "answer": "1",
@@ -352,22 +352,22 @@ export const Y11_CH12A_QUESTIONS = [
     "solution": "|A|=3, |B|=2, A∪B={1,2,4,5}, |A∪B|=4, A∩B={2}, |A∩B|=1, Ā={3,5,6}, B̄={1,3,4,6}",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Sets and Venn diagrams: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "explanation": "Identify the given sets and their elements or conditions from the problem statement.",
         "workingOut": "\\(A = \\{1, 2, 4\\} \\\\ B = \\{2, 5\\} \\\\ E = \\{1, 2, 3, 4, 5, 6\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "explanation": "Apply the definitions of set operations (union, intersection, subset, etc.) to determine the correct relationship or elements.",
         "workingOut": "\\(|A| = 3,\\quad |B| = 2 \\\\ A \\cup B = \\{1, 2, 4, 5\\},\\quad |A \\cup B| = 4 \\\\ A \\cap B = \\{2\\},\\quad |A \\cap B| = 1\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Carefully calculate or combine the elements, ensuring there are no duplicates and all conditions are met.",
         "workingOut": "\\(\\overline{A} = E \\setminus A = \\{1,2,3,4,5,6\\} \\setminus \\{1,2,4\\} = \\{3, 5, 6\\} \\\\ \\overline{B} = E \\setminus B = \\{1,2,3,4,5,6\\} \\setminus \\{2,5\\} = \\{1, 3, 4, 6\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: |A|=3, |B|=2, A∪B={1,2,4,5}, |A∪B|=4, A∩B={2}, |A∩B|=1, Ā={3,5,6}, B̄={1,3,4,6}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Review the final set or logical statement to confirm it exactly matches the requested format.",
         "workingOut": "\\(|A|=3, |B|=2, A∪B={1,2,4,5}, |A∪B|=4, A∩B={2}, |A∩B|=1, Ā={3,5,6}, B̄={1,3,4,6}\\)",
         "graphData": null
       }
@@ -397,22 +397,22 @@ export const Y11_CH12A_QUESTIONS = [
     "solution": "A set with \\(n\\) elements has \\(2^n\\) subsets, always including \\(\\emptyset\\) and itself.",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Sets and Venn diagrams: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "explanation": "Identify the given sets and their elements or conditions from the problem statement.",
         "workingOut": "\\(n=1 \\Rightarrow 2^1=2 \\text{ subsets} \\\\ n=2 \\Rightarrow 2^2=4 \\text{ subsets} \\\\ n=3 \\Rightarrow 2^3=8 \\text{ subsets} \\\\ n=0 \\Rightarrow 2^0=1 \\text{ subset}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "explanation": "Apply the definitions of set operations (union, intersection, subset, etc.) to determine the correct relationship or elements.",
         "workingOut": "\\(\\text{(a) }\\{x\\}: \\quad \\emptyset,\\ \\{x\\} \\\\ \\text{(b) }\\{x,y\\}: \\quad \\emptyset,\\ \\{x\\},\\ \\{y\\},\\ \\{x,y\\} \\\\ \\text{(c) }\\{x,y,z\\}: \\quad \\emptyset,\\ \\{x\\},\\ \\{y\\},\\ \\{z\\},\\ \\{x,y\\},\\ \\{x,z\\},\\ \\{y,z\\},\\ \\{x,y,z\\} \\\\ \\text{(d) }\\emptyset: \\quad \\emptyset\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Carefully calculate or combine the elements, ensuring there are no duplicates and all conditions are met.",
         "workingOut": "\\((a) \\(\\emptyset, \\{x\\}\\); (b) \\(\\emptyset, \\{x\\}, \\{y\\}, \\{x, y\\}\\); (c) \\(\\emptyset, \\{x\\}, \\{y\\}, \\{z\\}, \\{x, y\\}, \\{x, z\\}, \\{y, z\\}, \\{x, y, z\\}\\); (d) \\(\\emptyset\\)\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: (a) \\(\\emptyset, \\{x\\}\\); (b) \\(\\emptyset, \\{x\\}, \\{y\\}, \\{x, y\\}\\); (c) \\(\\emptyset, \\{x\\}, \\{y\\}, \\{z\\}, \\{x, y\\}, \\{x, z\\}, \\{y, z\\}, \\{x, y, z\\}\\); (d) \\(\\emptyset\\). Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Review the final set or logical statement to confirm it exactly matches the requested format.",
         "workingOut": "\\((a) \\(\\emptyset, \\{x\\}\\); (b) \\(\\emptyset, \\{x\\}, \\{y\\}, \\{x, y\\}\\); (c) \\(\\emptyset, \\{x\\}, \\{y\\}, \\{z\\}, \\{x, y\\}, \\{x, z\\}, \\{y, z\\}, \\{x, y, z\\}\\); (d) \\(\\emptyset\\)\\)",
         "graphData": null
       }
@@ -435,22 +435,22 @@ export const Y11_CH12A_QUESTIONS = [
     "solution": "0",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Sets and Venn diagrams: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "explanation": "Identify the given sets and their elements or conditions from the problem statement.",
         "workingOut": "\\(A = \\{3, 5, 7\\},\\quad B = \\{1, 2, 3, 4, 5, 6, 7, 8, 10\\} \\\\ 3 \\in B?\\text{ Yes}\\checkmark \\\\ 5 \\in B?\\text{ Yes}\\checkmark \\\\ 7 \\in B?\\text{ Yes}\\checkmark\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "explanation": "Apply the definitions of set operations (union, intersection, subset, etc.) to determine the correct relationship or elements.",
         "workingOut": "\\(A \\subset B \\quad (\\textbf{True})\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Carefully calculate or combine the elements, ensuring there are no duplicates and all conditions are met.",
         "workingOut": "\\(0\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 0. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Review the final set or logical statement to confirm it exactly matches the requested format.",
         "workingOut": "\\(0\\)",
         "graphData": null
       }
@@ -480,22 +480,22 @@ export const Y11_CH12A_QUESTIONS = [
     "solution": "\\(A \\cap B\\) = both sports (AND); \\(A \\cup B\\) = at least one sport (OR).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Sets and Venn diagrams: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "explanation": "Identify the given sets and their elements or conditions from the problem statement.",
         "workingOut": "\\(A \\cap B = \\text{students who play tennis } \\textbf{AND} \\text{ basketball}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "explanation": "Apply the definitions of set operations (union, intersection, subset, etc.) to determine the correct relationship or elements.",
         "workingOut": "\\(A \\cup B = \\text{students who play tennis } \\textbf{OR} \\text{ basketball (or both)}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Carefully calculate or combine the elements, ensuring there are no duplicates and all conditions are met.",
         "workingOut": "\\(\\(A \\cap B\\): students who play both tennis and basketball; \\(A \\cup B\\): students who play tennis or basketball (or both)\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: \\(A \\cap B\\): students who play both tennis and basketball; \\(A \\cup B\\): students who play tennis or basketball (or both). Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Review the final set or logical statement to confirm it exactly matches the requested format.",
         "workingOut": "\\(\\(A \\cap B\\): students who play both tennis and basketball; \\(A \\cup B\\): students who play tennis or basketball (or both)\\)",
         "graphData": null
       }
@@ -525,22 +525,22 @@ export const Y11_CH12A_QUESTIONS = [
     "solution": "\\(A \\cup B = \\{\\text{a,c,l,n,r,u,y}\\}\\) and \\(A \\cap B = \\{\\text{y}\\}\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Sets and Venn diagrams: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "explanation": "Identify the given sets and their elements or conditions from the problem statement.",
         "workingOut": "\\(A = \\{\\text{r, y, a, n}\\},\\quad B = \\{\\text{l, u, c, y}\\} \\\\ \\text{Only } \\text{y} \\text{ is in both sets.} \\\\ A \\cap B = \\{\\text{y}\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "explanation": "Apply the definitions of set operations (union, intersection, subset, etc.) to determine the correct relationship or elements.",
         "workingOut": "\\(A \\cup B = \\{\\text{a, c, l, n, r, u, y}\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Carefully calculate or combine the elements, ensuring there are no duplicates and all conditions are met.",
         "workingOut": "\\(A \\cup B = \\{\\text{a, c, l, n, r, u, y}\\}\\) and \\(A \\cap B = \\{\\text{y}\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: A \\cup B = \\{\\text{a, c, l, n, r, u, y}\\}\\) and \\(A \\cap B = \\{\\text{y}\\}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Review the final set or logical statement to confirm it exactly matches the requested format.",
         "workingOut": "\\(A \\cup B = \\{\\text{a, c, l, n, r, u, y}\\}\\) and \\(A \\cap B = \\{\\text{y}\\}\\)",
         "graphData": null
       }
@@ -570,22 +570,22 @@ export const Y11_CH12A_QUESTIONS = [
     "solution": "The set is \\(\\{1, 2, 3, 6, 9, 18\\}\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Sets and Venn diagrams: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "explanation": "Identify the given sets and their elements or conditions from the problem statement.",
         "workingOut": "\\(1 \\times 18 = 18 \\Rightarrow 1,\\ 18 \\\\ 2 \\times 9 = 18 \\Rightarrow 2,\\ 9 \\\\ 3 \\times 6 = 18 \\Rightarrow 3,\\ 6 \\\\ 4 \nmid 18,\\ 5 \nmid 18\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "explanation": "Apply the definitions of set operations (union, intersection, subset, etc.) to determine the correct relationship or elements.",
         "workingOut": "\\(\\{1,\\ 2,\\ 3,\\ 6,\\ 9,\\ 18\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Carefully calculate or combine the elements, ensuring there are no duplicates and all conditions are met.",
         "workingOut": "\\(\\{1, 2, 3, 6, 9, 18\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: \\{1, 2, 3, 6, 9, 18\\}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Review the final set or logical statement to confirm it exactly matches the requested format.",
         "workingOut": "\\(\\{1, 2, 3, 6, 9, 18\\}\\)",
         "graphData": null
       }
@@ -615,22 +615,22 @@ export const Y11_CH12A_QUESTIONS = [
     "solution": "\\(A \\cup B = \\{2,3,4,5,6,7,8,10,11\\}\\) and \\(A \\cap B = \\{2\\}\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Sets and Venn diagrams: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "explanation": "Identify the given sets and their elements or conditions from the problem statement.",
         "workingOut": "\\(A = \\{2,\\ 3,\\ 5,\\ 7,\\ 11\\} \\quad (\\text{primes} < 12) \\\\ B = \\{2,\\ 4,\\ 6,\\ 8,\\ 10\\} \\quad (\\text{positive evens} < 12)\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "explanation": "Apply the definitions of set operations (union, intersection, subset, etc.) to determine the correct relationship or elements.",
         "workingOut": "\\(A \\cup B = \\{2,\\ 3,\\ 4,\\ 5,\\ 6,\\ 7,\\ 8,\\ 10,\\ 11\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Carefully calculate or combine the elements, ensuring there are no duplicates and all conditions are met.",
         "workingOut": "\\(A \\cap B = \\{2\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: A \\cup B = \\{2, 3, 4, 5, 6, 7, 8, 10, 11\\}\\) and \\(A \\cap B = \\{2\\}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Review the final set or logical statement to confirm it exactly matches the requested format.",
         "workingOut": "\\(A \\cup B = \\{2, 3, 4, 5, 6, 7, 8, 10, 11\\}\\) and \\(A \\cap B = \\{2\\}\\)",
         "graphData": null
       }
@@ -660,22 +660,22 @@ export const Y11_CH12A_QUESTIONS = [
     "solution": "The set is \\(\\{2, 4, 6, 8, 10\\}\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Sets and Venn diagrams: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "explanation": "Identify the given sets and their elements or conditions from the problem statement.",
         "workingOut": "\\(\\text{(i) Even: divisible by } 2 \\\\ \\text{(ii) Positive: } > 0 \\text{ (exclude } 0\\text{)} \\\\ \\text{(iii) Less than } 12 \\text{ (exclude } 12\\text{)}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "explanation": "Apply the definitions of set operations (union, intersection, subset, etc.) to determine the correct relationship or elements.",
         "workingOut": "\\(2,\\ 4,\\ 6,\\ 8,\\ 10 \\quad \\text{(next would be } 12 \\text{, excluded)}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Carefully calculate or combine the elements, ensuring there are no duplicates and all conditions are met.",
         "workingOut": "\\(\\{2,\\ 4,\\ 6,\\ 8,\\ 10\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: \\{2, 4, 6, 8, 10\\}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Review the final set or logical statement to confirm it exactly matches the requested format.",
         "workingOut": "\\(\\{2, 4, 6, 8, 10\\}\\)",
         "graphData": null
       }
@@ -705,22 +705,22 @@ export const Y11_CH12A_QUESTIONS = [
     "solution": "Option 1 correctly describes all four set operations.",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Sets and Venn diagrams: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "explanation": "Identify the given sets and their elements or conditions from the problem statement.",
         "workingOut": "\\(\\overline{A} = \\text{Oakridge students who do } \\textbf{not} \\text{ play violin} \\\\ \\overline{B} = \\text{Oakridge students who do } \\textbf{not} \\text{ sing in the choir}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "explanation": "Apply the definitions of set operations (union, intersection, subset, etc.) to determine the correct relationship or elements.",
         "workingOut": "\\(A \\cup B = \\text{play violin } \\textbf{OR} \\text{ sing in choir (or both)} \\\\ A \\cap B = \\text{play violin } \\textbf{AND} \\text{ sing in choir}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Carefully calculate or combine the elements, ensuring there are no duplicates and all conditions are met.",
         "workingOut": "\\(\\(\\overline{A}\\): students who do not play violin; \\(\\overline{B}\\): students who do not sing in the choir; \\(A \\cup B\\): students who play violin or sing in the choir (or both); \\(A \\cap B\\): students who play violin and sing in the choir\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: \\(\\overline{A}\\): students who do not play violin; \\(\\overline{B}\\): students who do not sing in the choir; \\(A \\cup B\\): students who play violin or sing in the choir (or both); \\(A \\cap B\\): students who play violin and sing in the choir. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Review the final set or logical statement to confirm it exactly matches the requested format.",
         "workingOut": "\\(\\(\\overline{A}\\): students who do not play violin; \\(\\overline{B}\\): students who do not sing in the choir; \\(A \\cup B\\): students who play violin or sing in the choir (or both); \\(A \\cap B\\): students who play violin and sing in the choir\\)",
         "graphData": null
       }
@@ -750,22 +750,22 @@ export const Y11_CH12A_QUESTIONS = [
     "solution": "\\(A \\cup B = \\{\\text{b,d,e,l,m,n,o,r,s,u,y}\\}\\) and \\(A \\cap B = \\{\\text{e,n}\\}\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Sets and Venn diagrams: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "explanation": "Identify the given sets and their elements or conditions from the problem statement.",
         "workingOut": "\\(A = \\{\\text{s, y, d, n, e}\\},\\quad B = \\{\\text{m, e, l, b, o, u, r, n}\\} \\\\ \\text{e} \\in A \\text{ and } B,\\quad \\text{n} \\in A \\text{ and } B \\\\ A \\cap B = \\{\\text{e, n}\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "explanation": "Apply the definitions of set operations (union, intersection, subset, etc.) to determine the correct relationship or elements.",
         "workingOut": "\\(A \\cup B = \\{\\text{b, d, e, l, m, n, o, r, s, u, y}\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Carefully calculate or combine the elements, ensuring there are no duplicates and all conditions are met.",
         "workingOut": "\\(A \\cup B = \\{\\text{b, d, e, l, m, n, o, r, s, u, y}\\}\\) and \\(A \\cap B = \\{\\text{e, n}\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: A \\cup B = \\{\\text{b, d, e, l, m, n, o, r, s, u, y}\\}\\) and \\(A \\cap B = \\{\\text{e, n}\\}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Review the final set or logical statement to confirm it exactly matches the requested format.",
         "workingOut": "\\(A \\cup B = \\{\\text{b, d, e, l, m, n, o, r, s, u, y}\\}\\) and \\(A \\cap B = \\{\\text{e, n}\\}\\)",
         "graphData": null
       }
@@ -795,22 +795,22 @@ export const Y11_CH12A_QUESTIONS = [
     "solution": "\\(A \\cup B = \\{1,2,3,5,6,7,8,9\\}\\) and \\(A \\cap B = \\{5,7,8\\}\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Sets and Venn diagrams: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "explanation": "Identify the given sets and their elements or conditions from the problem statement.",
         "workingOut": "\\(A = \\{1, 2, 5, 7, 8\\},\\quad B = \\{3, 5, 6, 7, 8, 9\\} \\\\ A \\cup B = \\{1,\\ 2,\\ 3,\\ 5,\\ 6,\\ 7,\\ 8,\\ 9\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "explanation": "Apply the definitions of set operations (union, intersection, subset, etc.) to determine the correct relationship or elements.",
         "workingOut": "\\(5 \\in A \\text{ and } B,\\ 7 \\in A \\text{ and } B,\\ 8 \\in A \\text{ and } B \\\\ A \\cap B = \\{5,\\ 7,\\ 8\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Carefully calculate or combine the elements, ensuring there are no duplicates and all conditions are met.",
         "workingOut": "\\(A \\cup B = \\{1, 2, 3, 5, 6, 7, 8, 9\\}\\) and \\(A \\cap B = \\{5, 7, 8\\}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: A \\cup B = \\{1, 2, 3, 5, 6, 7, 8, 9\\}\\) and \\(A \\cap B = \\{5, 7, 8\\}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Review the final set or logical statement to confirm it exactly matches the requested format.",
         "workingOut": "\\(A \\cup B = \\{1, 2, 3, 5, 6, 7, 8, 9\\}\\) and \\(A \\cap B = \\{5, 7, 8\\}\\)",
         "graphData": null
       }
