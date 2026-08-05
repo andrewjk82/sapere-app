@@ -1,0 +1,3126 @@
+[
+  {
+    "id": "y10-6k-q10",
+    "chapterId": "y10-6",
+    "chapterTitle": "Chapter 6: Surface area and volume",
+    "topicId": "y10-6k",
+    "topicCode": "6K",
+    "topicTitle": "Revision",
+    "year": "Year 10",
+    "isManual": true,
+    "title": "Fill in the missing entries fo...",
+    "question": "Fill in the missing entries for the scale factors.",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "",
+    "hint": "",
+    "solution": "",
+    "solutionSteps": [],
+    "questionImage": "",
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782855896,
+      "_nanoseconds": 456000000
+    },
+    "updatedAt": {
+      "_seconds": 1782855896,
+      "_nanoseconds": 456000000
+    },
+    "subQuestions": [
+      {
+        "id": "y10-6k-q10a",
+        "type": "multiple_choice",
+        "question": "a) If Length scale factor is \\( 4 \\), find the Area and Volume scale factors.",
+        "options": [
+          {
+            "text": "\\(8, 12\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(16, 64\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(16, 32\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(8, 64\\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "16, 64",
+        "solutionSteps": [
+          {
+            "explanation": "We are given a length scale factor of 4. We need to find the corresponding Area and Volume scale factors.",
+            "workingOut": "Length SF = 4.",
+            "graphData": null
+          },
+          {
+            "explanation": "The rule that applies is: Area scale factor is the square of the length scale factor ($k^2$), and Volume scale factor is the cube ($k^3$).",
+            "workingOut": "Area SF = (Length SF)$^2$, Vol SF = (Length SF)$^3$",
+            "graphData": null
+          },
+          {
+            "explanation": "Substitute our length scale factor $k = 4$ into these relationships.",
+            "workingOut": "Area SF = $4^2 = 16$, Vol SF = $4^3 = 64$",
+            "graphData": null
+          },
+          {
+            "explanation": "Our final answers are 16 for Area SF and 64 for Volume SF.",
+            "workingOut": "Area SF: $16$, Vol SF: $64$",
+            "graphData": null
+          }
+        ],
+        "graphData": null
+      },
+      {
+        "id": "y10-6k-q10b",
+        "type": "multiple_choice",
+        "question": "b) If Length scale factor is \\( 2.5 \\), find the Area and Volume scale factors.",
+        "options": [
+          {
+            "text": "\\(5, 7.5\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(6.25, 12.5\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(6.25, 15.625\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(12.5, 31.25\\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "6.25, 15.625",
+        "solutionSteps": [
+          {
+            "explanation": "We are given a length scale factor of 2.5. We need to find the corresponding Area and Volume scale factors.",
+            "workingOut": "Length SF = 2.5.",
+            "graphData": null
+          },
+          {
+            "explanation": "We use the relationships that Area SF = $k^2$ and Volume SF = $k^3$, where $k$ is the length scale factor.",
+            "workingOut": "Area SF = (Length SF)$^2$, Vol SF = (Length SF)$^3$",
+            "graphData": null
+          },
+          {
+            "explanation": "Calculate $2.5^2$ for the Area SF and $2.5^3$ for the Volume SF.",
+            "workingOut": "Area SF = $2.5^2 = 6.25$, Vol SF = $2.5^3 = 15.625$",
+            "graphData": null
+          },
+          {
+            "explanation": "The resulting Area SF is 6.25 and Volume SF is 15.625.",
+            "workingOut": "Area SF: $6.25$, Vol SF: $15.625$",
+            "graphData": null
+          }
+        ],
+        "graphData": null
+      },
+      {
+        "id": "y10-6k-q10c",
+        "type": "multiple_choice",
+        "question": "c) If Area scale factor is \\( 9 \\), find the Length and Volume scale factors.",
+        "options": [
+          {
+            "text": "\\(4.5, 13.5\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(3, 27\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(3, 9\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(4.5, 27\\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "3, 27",
+        "solutionSteps": [
+          {
+            "explanation": "We are given an Area scale factor of 9. We need to find the Length and Volume scale factors.",
+            "workingOut": "Area SF = 9.",
+            "graphData": null
+          },
+          {
+            "explanation": "The Length SF is the square root of the Area SF. Once we have the Length SF, we cube it to find the Volume SF.",
+            "workingOut": "Length SF = $\\sqrt{\\text{Area SF}}$, Vol SF = (Length SF)$^3$",
+            "graphData": null
+          },
+          {
+            "explanation": "Take the square root of 9 to get the Length SF, then cube that result.",
+            "workingOut": "Length SF = $\\sqrt{9} = 3$, Vol SF = $3^3 = 27$",
+            "graphData": null
+          },
+          {
+            "explanation": "The Length SF is 3 and the Volume SF is 27.",
+            "workingOut": "Length SF: $3$, Vol SF: $27$",
+            "graphData": null
+          }
+        ],
+        "graphData": null
+      },
+      {
+        "id": "y10-6k-q10d",
+        "type": "multiple_choice",
+        "question": "d) If Area scale factor is \\( 49 \\), find the Length and Volume scale factors.",
+        "options": [
+          {
+            "text": "\\(24.5, 73.5\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(7, 343\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(7, 49\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(24.5, 343\\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "7, 343",
+        "solutionSteps": [
+          {
+            "explanation": "We are given an Area scale factor of 49. We need to find the Length and Volume scale factors.",
+            "workingOut": "Area SF = 49.",
+            "graphData": null
+          },
+          {
+            "explanation": "Since Area SF = $k^2$, the Length SF ($k$) is its square root. The Volume SF will then be $k^3$.",
+            "workingOut": "Length SF = $\\sqrt{\\text{Area SF}}$, Vol SF = (Length SF)$^3$",
+            "graphData": null
+          },
+          {
+            "explanation": "Evaluate the square root of 49, and raise the result to the power of 3.",
+            "workingOut": "Length SF = $\\sqrt{49} = 7$, Vol SF = $7^3 = 343$",
+            "graphData": null
+          },
+          {
+            "explanation": "The Length SF is 7 and the Volume SF is 343.",
+            "workingOut": "Length SF: $7$, Vol SF: $343$",
+            "graphData": null
+          }
+        ],
+        "graphData": null
+      },
+      {
+        "id": "y10-6k-q10e",
+        "type": "multiple_choice",
+        "question": "e) If Volume scale factor is \\( 216 \\), find the Length and Area scale factors.",
+        "options": [
+          {
+            "text": "\\(72, 144\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(6, 36\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(6, 216\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(36, 6\\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "6, 36",
+        "solutionSteps": [
+          {
+            "explanation": "We are given a Volume scale factor of 216. We need to find the Length and Area scale factors.",
+            "workingOut": "Vol SF = 216.",
+            "graphData": null
+          },
+          {
+            "explanation": "The Length SF is the cube root of the Volume SF. We then square the Length SF to get the Area SF.",
+            "workingOut": "Length SF = $\\sqrt[3]{\\text{Vol SF}}$, Area SF = (Length SF)$^2$",
+            "graphData": null
+          },
+          {
+            "explanation": "Find the cube root of 216 to obtain the Length SF, and square that value for the Area SF.",
+            "workingOut": "Length SF = $\\sqrt[3]{216} = 6$, Area SF = $6^2 = 36$",
+            "graphData": null
+          },
+          {
+            "explanation": "The Length SF is 6 and the Area SF is 36.",
+            "workingOut": "Length SF: $6$, Area SF: $36$",
+            "graphData": null
+          }
+        ],
+        "graphData": null
+      },
+      {
+        "id": "y10-6k-q10f",
+        "type": "multiple_choice",
+        "question": "f) If Volume scale factor is \\( 1000 \\), find the Length and Area scale factors.",
+        "options": [
+          {
+            "text": "\\(333, 666\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(10, 100\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(10, 1000\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(100, 10\\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "10, 100",
+        "solutionSteps": [
+          {
+            "explanation": "We are given a Volume scale factor of 1000. We need to find the Length and Area scale factors.",
+            "workingOut": "Vol SF = 1000.",
+            "graphData": null
+          },
+          {
+            "explanation": "Since Volume SF is $k^3$, the Length SF ($k$) is its cube root. The Area SF is $k^2$.",
+            "workingOut": "Length SF = $\\sqrt[3]{\\text{Vol SF}}$, Area SF = (Length SF)$^2$",
+            "graphData": null
+          },
+          {
+            "explanation": "Evaluate the cube root of 1000, and then square the result.",
+            "workingOut": "Length SF = $\\sqrt[3]{1000} = 10$, Area SF = $10^2 = 100$",
+            "graphData": null
+          },
+          {
+            "explanation": "The Length SF is 10 and the Area SF is 100.",
+            "workingOut": "Length SF: $10$, Area SF: $100$",
+            "graphData": null
+          }
+        ],
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-6k-q10a",
+    "topicId": "y10-6k",
+    "c": "6K",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Fill in the missing entries for the scale factors.\na) If Length scale factor is \\( 4 \\), find the Area and Volume scale factors.",
+    "a": 2,
+    "answer": "2",
+    "hint": "",
+    "solution": "The correct answer is \\(16, 64\\).",
+    "solutionSteps": [
+      {
+        "explanation": "We are given a length scale factor of 4. We need to find the corresponding Area and Volume scale factors.",
+        "workingOut": "Length SF = 4.",
+        "graphData": null
+      },
+      {
+        "explanation": "The rule that applies is: Area scale factor is the square of the length scale factor ($k^2$), and Volume scale factor is the cube ($k^3$).",
+        "workingOut": "Area SF = (Length SF)$^2$, Vol SF = (Length SF)$^3$",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute our length scale factor $k = 4$ into these relationships.",
+        "workingOut": "Area SF = $4^2 = 16$, Vol SF = $4^3 = 64$",
+        "graphData": null
+      },
+      {
+        "explanation": "Our final answers are 16 for Area SF and 64 for Volume SF.",
+        "workingOut": "Area SF: $16$, Vol SF: $64$",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\(-1664\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1663\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(16, 64\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1665\\)",
+        "imageUrl": ""
+      }
+    ],
+    "chapterId": "y10-6",
+    "chapterTitle": "Chapter 6: Measurement",
+    "year": "Year 10",
+    "isActive": true,
+    "createdAt": {
+      "_seconds": 1785933541,
+      "_nanoseconds": 708000000
+    },
+    "updatedAt": {
+      "_seconds": 1785933541,
+      "_nanoseconds": 708000000
+    },
+    "isNew": false
+  },
+  {
+    "id": "y10-6k-q10b",
+    "topicId": "y10-6k",
+    "c": "6K",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Fill in the missing entries for the scale factors.\nb) If Length scale factor is \\( 2.5 \\), find the Area and Volume scale factors.",
+    "a": 1,
+    "answer": "1",
+    "hint": "",
+    "solution": "The correct answer is \\(6.25, 15.625\\).",
+    "solutionSteps": [
+      {
+        "explanation": "We are given a length scale factor of 2.5. We need to find the corresponding Area and Volume scale factors.",
+        "workingOut": "Length SF = 2.5.",
+        "graphData": null
+      },
+      {
+        "explanation": "We use the relationships that Area SF = $k^2$ and Volume SF = $k^3$, where $k$ is the length scale factor.",
+        "workingOut": "Area SF = (Length SF)$^2$, Vol SF = (Length SF)$^3$",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate $2.5^2$ for the Area SF and $2.5^3$ for the Volume SF.",
+        "workingOut": "Area SF = $2.5^2 = 6.25$, Vol SF = $2.5^3 = 15.625$",
+        "graphData": null
+      },
+      {
+        "explanation": "The resulting Area SF is 6.25 and Volume SF is 15.625.",
+        "workingOut": "Area SF: $6.25$, Vol SF: $15.625$",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\(-6.25, 15.625\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6.25, 15.625\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6.25, 15.625 + 1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6.35, 15.635\\)",
+        "imageUrl": ""
+      }
+    ],
+    "chapterId": "y10-6",
+    "chapterTitle": "Chapter 6: Measurement",
+    "year": "Year 10",
+    "isActive": true,
+    "createdAt": {
+      "_seconds": 1785933541,
+      "_nanoseconds": 708000000
+    },
+    "updatedAt": {
+      "_seconds": 1785933541,
+      "_nanoseconds": 708000000
+    },
+    "isNew": false
+  },
+  {
+    "id": "y10-6k-q10c",
+    "topicId": "y10-6k",
+    "c": "6K",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Fill in the missing entries for the scale factors.\nc) If Area scale factor is \\( 9 \\), find the Length and Volume scale factors.",
+    "a": 2,
+    "answer": "2",
+    "hint": "",
+    "solution": "The correct answer is \\(3, 27\\).",
+    "solutionSteps": [
+      {
+        "explanation": "We are given an Area scale factor of 9. We need to find the Length and Volume scale factors.",
+        "workingOut": "Area SF = 9.",
+        "graphData": null
+      },
+      {
+        "explanation": "The Length SF is the square root of the Area SF. Once we have the Length SF, we cube it to find the Volume SF.",
+        "workingOut": "Length SF = $\\sqrt{\\text{Area SF}}$, Vol SF = (Length SF)$^3$",
+        "graphData": null
+      },
+      {
+        "explanation": "Take the square root of 9 to get the Length SF, then cube that result.",
+        "workingOut": "Length SF = $\\sqrt{9} = 3$, Vol SF = $3^3 = 27$",
+        "graphData": null
+      },
+      {
+        "explanation": "The Length SF is 3 and the Volume SF is 27.",
+        "workingOut": "Length SF: $3$, Vol SF: $27$",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\(-327\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(326\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3, 27\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(328\\)",
+        "imageUrl": ""
+      }
+    ],
+    "chapterId": "y10-6",
+    "chapterTitle": "Chapter 6: Measurement",
+    "year": "Year 10",
+    "isActive": true,
+    "createdAt": {
+      "_seconds": 1785933541,
+      "_nanoseconds": 708000000
+    },
+    "updatedAt": {
+      "_seconds": 1785933541,
+      "_nanoseconds": 708000000
+    },
+    "isNew": false
+  },
+  {
+    "id": "y10-6k-q10d",
+    "topicId": "y10-6k",
+    "c": "6K",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Fill in the missing entries for the scale factors.\nd) If Area scale factor is \\( 49 \\), find the Length and Volume scale factors.",
+    "a": 2,
+    "answer": "2",
+    "hint": "",
+    "solution": "The correct answer is \\(7, 343\\).",
+    "solutionSteps": [
+      {
+        "explanation": "We are given an Area scale factor of 49. We need to find the Length and Volume scale factors.",
+        "workingOut": "Area SF = 49.",
+        "graphData": null
+      },
+      {
+        "explanation": "Since Area SF = $k^2$, the Length SF ($k$) is its square root. The Volume SF will then be $k^3$.",
+        "workingOut": "Length SF = $\\sqrt{\\text{Area SF}}$, Vol SF = (Length SF)$^3$",
+        "graphData": null
+      },
+      {
+        "explanation": "Evaluate the square root of 49, and raise the result to the power of 3.",
+        "workingOut": "Length SF = $\\sqrt{49} = 7$, Vol SF = $7^3 = 343$",
+        "graphData": null
+      },
+      {
+        "explanation": "The Length SF is 7 and the Volume SF is 343.",
+        "workingOut": "Length SF: $7$, Vol SF: $343$",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\(-7343\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7342\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7, 343\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7344\\)",
+        "imageUrl": ""
+      }
+    ],
+    "chapterId": "y10-6",
+    "chapterTitle": "Chapter 6: Measurement",
+    "year": "Year 10",
+    "isActive": true,
+    "createdAt": {
+      "_seconds": 1785933541,
+      "_nanoseconds": 708000000
+    },
+    "updatedAt": {
+      "_seconds": 1785933541,
+      "_nanoseconds": 708000000
+    }
+  },
+  {
+    "id": "y10-6k-q10e",
+    "topicId": "y10-6k",
+    "c": "6K",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Fill in the missing entries for the scale factors.\ne) If Volume scale factor is \\( 216 \\), find the Length and Area scale factors.",
+    "a": 2,
+    "answer": "2",
+    "hint": "",
+    "solution": "The correct answer is \\(6, 36\\).",
+    "solutionSteps": [
+      {
+        "explanation": "We are given a Volume scale factor of 216. We need to find the Length and Area scale factors.",
+        "workingOut": "Vol SF = 216.",
+        "graphData": null
+      },
+      {
+        "explanation": "The Length SF is the cube root of the Volume SF. We then square the Length SF to get the Area SF.",
+        "workingOut": "Length SF = $\\sqrt[3]{\\text{Vol SF}}$, Area SF = (Length SF)$^2$",
+        "graphData": null
+      },
+      {
+        "explanation": "Find the cube root of 216 to obtain the Length SF, and square that value for the Area SF.",
+        "workingOut": "Length SF = $\\sqrt[3]{216} = 6$, Area SF = $6^2 = 36$",
+        "graphData": null
+      },
+      {
+        "explanation": "The Length SF is 6 and the Area SF is 36.",
+        "workingOut": "Length SF: $6$, Area SF: $36$",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\(-636\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(635\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6, 36\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(637\\)",
+        "imageUrl": ""
+      }
+    ],
+    "chapterId": "y10-6",
+    "chapterTitle": "Chapter 6: Measurement",
+    "year": "Year 10",
+    "isActive": true,
+    "createdAt": {
+      "_seconds": 1785933541,
+      "_nanoseconds": 708000000
+    },
+    "updatedAt": {
+      "_seconds": 1785933541,
+      "_nanoseconds": 708000000
+    }
+  },
+  {
+    "id": "y10-6k-q10f",
+    "topicId": "y10-6k",
+    "c": "6K",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Fill in the missing entries for the scale factors.\nf) If Volume scale factor is \\( 1000 \\), find the Length and Area scale factors.",
+    "a": 2,
+    "answer": "2",
+    "hint": "",
+    "solution": "The correct answer is \\(10, 100\\).",
+    "solutionSteps": [
+      {
+        "explanation": "We are given a Volume scale factor of 1000. We need to find the Length and Area scale factors.",
+        "workingOut": "Vol SF = 1000.",
+        "graphData": null
+      },
+      {
+        "explanation": "Since Volume SF is $k^3$, the Length SF ($k$) is its cube root. The Area SF is $k^2$.",
+        "workingOut": "Length SF = $\\sqrt[3]{\\text{Vol SF}}$, Area SF = (Length SF)$^2$",
+        "graphData": null
+      },
+      {
+        "explanation": "Evaluate the cube root of 1000, and then square the result.",
+        "workingOut": "Length SF = $\\sqrt[3]{1000} = 10$, Area SF = $10^2 = 100$",
+        "graphData": null
+      },
+      {
+        "explanation": "The Length SF is 10 and the Area SF is 100.",
+        "workingOut": "Length SF: $10$, Area SF: $100$",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\(-10100\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(10099\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(10, 100\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(10101\\)",
+        "imageUrl": ""
+      }
+    ],
+    "chapterId": "y10-6",
+    "chapterTitle": "Chapter 6: Measurement",
+    "year": "Year 10",
+    "isActive": true,
+    "createdAt": {
+      "_seconds": 1785933541,
+      "_nanoseconds": 708000000
+    },
+    "updatedAt": {
+      "_seconds": 1785933541,
+      "_nanoseconds": 708000000
+    }
+  },
+  {
+    "id": "y10-6k-q1a",
+    "topicId": "y10-6k",
+    "c": "6K",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "question": "For a rectangular prism measuring \\( 40 \\) cm \\( \\times \\) \\( 25 \\) cm \\( \\times \\) \\( 15 \\) cm, calculate:\na) the surface area",
+    "a": 2,
+    "answer": "2",
+    "hint": "",
+    "solution": "The correct answer is \\(3950\\).",
+    "solutionSteps": [
+      {
+        "explanation": "We are given a rectangular prism with dimensions 40 cm, 25 cm, and 15 cm. We need to calculate its surface area. Our strategy is to list these knowns and choose the appropriate formula.",
+        "workingOut": "Prism dimensions: length $l = 40$, width $w = 25$, height $h = 15$. We need Surface Area.",
+        "graphData": null
+      },
+      {
+        "explanation": "The correct formula for the surface area of a rectangular prism is $SA = 2(lw + lh + wh)$. This turns our worded problem into an equation we can solve.",
+        "workingOut": "$SA = 2(lw + lh + wh)$",
+        "graphData": null
+      },
+      {
+        "explanation": "We now substitute $l=40$, $w=25$, and $h=15$ into our formula and carefully simplify the expression to find the intermediate result.",
+        "workingOut": "SA = $2(40 \\times 25 + 40 \\times 15 + 25 \\times 15) = 2(1000 + 600 + 375) = 2(1975) = 3950$",
+        "graphData": null
+      },
+      {
+        "explanation": "Our final calculated value is 3950. In the context of surface area, this means $3950$ cm$^2$, which matches our target option.",
+        "workingOut": "The surface area is $3950$ cm$^2$.",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\(-3950\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3949\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3950\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3951\\)",
+        "imageUrl": ""
+      }
+    ],
+    "chapterId": "y10-6",
+    "chapterTitle": "Chapter 6: Measurement",
+    "year": "Year 10",
+    "isActive": true,
+    "createdAt": {
+      "_seconds": 1785933541,
+      "_nanoseconds": 708000000
+    },
+    "updatedAt": {
+      "_seconds": 1785933541,
+      "_nanoseconds": 708000000
+    }
+  },
+  {
+    "id": "y10-6k-q1b",
+    "topicId": "y10-6k",
+    "c": "6K",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "question": "For a rectangular prism measuring \\( 40 \\) cm \\( \\times \\) \\( 25 \\) cm \\( \\times \\) \\( 15 \\) cm, calculate:\nb) the volume",
+    "a": 2,
+    "answer": "2",
+    "hint": "",
+    "solution": "The correct answer is \\(15000\\).",
+    "solutionSteps": [
+      {
+        "explanation": "We are given a rectangular prism with dimensions 40 cm, 25 cm, and 15 cm. We need to calculate its volume. We list these knowns to prepare for calculation.",
+        "workingOut": "Prism dimensions: length $l = 40$, width $w = 25$, height $h = 15$. We need Volume.",
+        "graphData": null
+      },
+      {
+        "explanation": "The rule that applies is the volume formula for a rectangular prism: $V = l \\times w \\times h$.",
+        "workingOut": "$V = l \\times w \\times h$",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute the length, width, and height into the formula and multiply them together.",
+        "workingOut": "V = $40 \\times 25 \\times 15 = 15000$",
+        "graphData": null
+      },
+      {
+        "explanation": "The final value is 15000. In the context of volume, the units are cubic centimeters (cm$^3$).",
+        "workingOut": "The volume is $15000$ cm$^3$.",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\(-15000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(14999\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(15000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(15001\\)",
+        "imageUrl": ""
+      }
+    ],
+    "chapterId": "y10-6",
+    "chapterTitle": "Chapter 6: Measurement",
+    "year": "Year 10",
+    "isActive": true,
+    "createdAt": {
+      "_seconds": 1785933541,
+      "_nanoseconds": 708000000
+    },
+    "updatedAt": {
+      "_seconds": 1785933541,
+      "_nanoseconds": 708000000
+    }
+  },
+  {
+    "id": "y10-6k-q2",
+    "chapterId": "y10-6",
+    "chapterTitle": "Chapter 6: Surface area and volume",
+    "topicId": "y10-6k",
+    "topicCode": "6K",
+    "topicTitle": "Revision",
+    "year": "Year 10",
+    "isManual": true,
+    "title": "A rectangular prism has a surf...",
+    "question": "A rectangular prism has a surface area of \\( 600 \\) cm\\(^2\\). If its length is \\( 20 \\) cm and its width is \\( 5 \\) cm, calculate the height of the rectangular prism.",
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "",
+    "hint": "",
+    "solution": "",
+    "solutionSteps": [],
+    "questionImage": "",
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782855896,
+      "_nanoseconds": 456000000
+    },
+    "updatedAt": {
+      "_seconds": 1785194938,
+      "_nanoseconds": 330000000
+    },
+    "subQuestions": [
+      {
+        "id": "y10-6k-q2a",
+        "type": "multiple_choice",
+        "question": "Calculate the height.",
+        "options": [
+          {
+            "text": "\\(6\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(8\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(10\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(12\\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "8",
+        "solutionSteps": [
+          {
+            "explanation": "We are given a rectangular prism with a known surface area of 600 cm$^2$, a length of 20 cm, and a width of 5 cm. We need to find the unknown height.",
+            "workingOut": "Surface Area $SA = 600$, length $l = 20$, width $w = 5$. We need height $h$.",
+            "graphData": null
+          },
+          {
+            "explanation": "We use the surface area formula $SA = 2(lw + lh + wh)$ and prepare to solve backwards for the height.",
+            "workingOut": "$SA = 2(lw + lh + wh)$",
+            "graphData": null
+          },
+          {
+            "explanation": "Substitute the known values into the equation, expand the brackets, and rearrange to solve for $h$.",
+            "workingOut": "$600 = 2(20 \\times 5 + 20h + 5h) \\Rightarrow 300 = 100 + 25h \\Rightarrow 25h = 200 \\Rightarrow h = 8$",
+            "graphData": null
+          },
+          {
+            "explanation": "The calculated height is 8. Since it is a 1D length measurement, the units are cm.",
+            "workingOut": "The height is $8$ cm.",
+            "graphData": null
+          }
+        ],
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-6k-q2a",
+    "topicId": "y10-6k",
+    "c": "6K",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "question": "A rectangular prism has a surface area of \\( 600 \\) cm\\(^2\\). If its length is \\( 20 \\) cm and its width is \\( 5 \\) cm, calculate the height of the rectangular prism.\nCalculate the height.",
+    "a": 2,
+    "answer": "2",
+    "hint": "",
+    "solution": "The correct answer is \\(8\\).",
+    "solutionSteps": [
+      {
+        "explanation": "We are given a rectangular prism with a known surface area of 600 cm$^2$, a length of 20 cm, and a width of 5 cm. We need to find the unknown height.",
+        "workingOut": "Surface Area $SA = 600$, length $l = 20$, width $w = 5$. We need height $h$.",
+        "graphData": null
+      },
+      {
+        "explanation": "We use the surface area formula $SA = 2(lw + lh + wh)$ and prepare to solve backwards for the height.",
+        "workingOut": "$SA = 2(lw + lh + wh)$",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute the known values into the equation, expand the brackets, and rearrange to solve for $h$.",
+        "workingOut": "$600 = 2(20 \\times 5 + 20h + 5h) \\Rightarrow 300 = 100 + 25h \\Rightarrow 25h = 200 \\Rightarrow h = 8$",
+        "graphData": null
+      },
+      {
+        "explanation": "The calculated height is 8. Since it is a 1D length measurement, the units are cm.",
+        "workingOut": "The height is $8$ cm.",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\(-8\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(9\\)",
+        "imageUrl": ""
+      }
+    ],
+    "chapterId": "y10-6",
+    "chapterTitle": "Chapter 6: Measurement",
+    "year": "Year 10",
+    "isActive": true,
+    "createdAt": {
+      "_seconds": 1785933541,
+      "_nanoseconds": 708000000
+    },
+    "updatedAt": {
+      "_seconds": 1785933541,
+      "_nanoseconds": 708000000
+    }
+  },
+  {
+    "id": "y10-6k-q3",
+    "chapterId": "y10-6",
+    "chapterTitle": "Chapter 6: Surface area and volume",
+    "topicId": "y10-6k",
+    "topicCode": "6K",
+    "topicTitle": "Revision",
+    "year": "Year 10",
+    "isManual": true,
+    "title": "A rectangular prism has a volu...",
+    "question": "A rectangular prism has a volume of \\( 840 \\) cm\\(^3\\). If its length is \\( 14 \\) cm and its width is \\( 10 \\) cm, calculate the height of the rectangular prism.",
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "",
+    "hint": "",
+    "solution": "",
+    "solutionSteps": [],
+    "questionImage": "",
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782855896,
+      "_nanoseconds": 456000000
+    },
+    "updatedAt": {
+      "_seconds": 1785194938,
+      "_nanoseconds": 388000000
+    },
+    "subQuestions": [
+      {
+        "id": "y10-6k-q3a",
+        "type": "multiple_choice",
+        "question": "Calculate the height.",
+        "options": [
+          {
+            "text": "\\(6\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(8\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(10\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(14\\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "6",
+        "solutionSteps": [
+          {
+            "explanation": "We are given a rectangular prism with a volume of 840 cm$^3$, length 14 cm, and width 10 cm. Our goal is to calculate the missing height.",
+            "workingOut": "Volume $V = 840$, length $l = 14$, width $w = 10$. We need height $h$.",
+            "graphData": null
+          },
+          {
+            "explanation": "The applicable rule is the volume formula $V = l \\times w \\times h$. We will use this to set up an equation.",
+            "workingOut": "$V = l \\times w \\times h$",
+            "graphData": null
+          },
+          {
+            "explanation": "Substitute the given volume, length, and width into the equation and solve for the unknown $h$.",
+            "workingOut": "$840 = 14 \\times 10 \\times h \\Rightarrow 840 = 140h \\Rightarrow h = 6$",
+            "graphData": null
+          },
+          {
+            "explanation": "The final height is 6. This is a linear measurement, so it is in cm.",
+            "workingOut": "The height is $6$ cm.",
+            "graphData": null
+          }
+        ],
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-6k-q3a",
+    "topicId": "y10-6k",
+    "c": "6K",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "question": "A rectangular prism has a volume of \\( 840 \\) cm\\(^3\\). If its length is \\( 14 \\) cm and its width is \\( 10 \\) cm, calculate the height of the rectangular prism.\nCalculate the height.",
+    "a": 2,
+    "answer": "2",
+    "hint": "",
+    "solution": "The correct answer is \\(6\\).",
+    "solutionSteps": [
+      {
+        "explanation": "We are given a rectangular prism with a volume of 840 cm$^3$, length 14 cm, and width 10 cm. Our goal is to calculate the missing height.",
+        "workingOut": "Volume $V = 840$, length $l = 14$, width $w = 10$. We need height $h$.",
+        "graphData": null
+      },
+      {
+        "explanation": "The applicable rule is the volume formula $V = l \\times w \\times h$. We will use this to set up an equation.",
+        "workingOut": "$V = l \\times w \\times h$",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute the given volume, length, and width into the equation and solve for the unknown $h$.",
+        "workingOut": "$840 = 14 \\times 10 \\times h \\Rightarrow 840 = 140h \\Rightarrow h = 6$",
+        "graphData": null
+      },
+      {
+        "explanation": "The final height is 6. This is a linear measurement, so it is in cm.",
+        "workingOut": "The height is $6$ cm.",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\(-6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7\\)",
+        "imageUrl": ""
+      }
+    ],
+    "chapterId": "y10-6",
+    "chapterTitle": "Chapter 6: Measurement",
+    "year": "Year 10",
+    "isActive": true,
+    "createdAt": {
+      "_seconds": 1785933541,
+      "_nanoseconds": 708000000
+    },
+    "updatedAt": {
+      "_seconds": 1785933541,
+      "_nanoseconds": 708000000
+    }
+  },
+  {
+    "id": "y10-6k-q4a",
+    "topicId": "y10-6k",
+    "c": "6K",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "question": "The cross-section \\( ABCD \\) of the prism shown is an isosceles trapezium with \\( AB = 10 \\) cm, \\( DC = 22 \\) cm, \\( AD = BC = 10 \\) cm and \\( AE = 25 \\) cm.\n\nCalculate:\na) the area of \\( ABCD \\)",
+    "a": 2,
+    "answer": "2",
+    "hint": "",
+    "solution": "The correct answer is \\(128\\).",
+    "solutionSteps": [
+      {
+        "explanation": "We have an isosceles trapezium with parallel sides 10 cm and 22 cm, and slanted sides 10 cm. We need its area.",
+        "workingOut": "Isosceles trapezium $ABCD$: $a = 10$, $b = 22$, slanted sides $= 10$.",
+        "graphData": null
+      },
+      {
+        "explanation": "To find the area using $\\frac{1}{2}(a+b)h$, we first need the perpendicular height $h$, which we can find using Pythagoras' theorem on the side triangles.",
+        "workingOut": "Height $h$: base difference $= (22 - 10) / 2 = 6$. $h = \\sqrt{10^2 - 6^2} = 8$. Area = $\\frac{1}{2}(a+b)h$",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute the parallel sides and the calculated height into the trapezium area formula.",
+        "workingOut": "Area = $\\frac{1}{2}(10 + 22) \\times 8 = 16 \\times 8 = 128$",
+        "graphData": null
+      },
+      {
+        "explanation": "The final calculated area is 128 cm$^2$, matching our target option.",
+        "workingOut": "The area is $128$ cm$^2$.",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\(-128\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(127\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(128\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(129\\)",
+        "imageUrl": ""
+      }
+    ],
+    "chapterId": "y10-6",
+    "chapterTitle": "Chapter 6: Measurement",
+    "year": "Year 10",
+    "isActive": true,
+    "createdAt": {
+      "_seconds": 1785933541,
+      "_nanoseconds": 708000000
+    },
+    "updatedAt": {
+      "_seconds": 1785933541,
+      "_nanoseconds": 708000000
+    }
+  },
+  {
+    "id": "y10-6k-q4b",
+    "topicId": "y10-6k",
+    "c": "6K",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "question": "The cross-section \\( ABCD \\) of the prism shown is an isosceles trapezium with \\( AB = 10 \\) cm, \\( DC = 22 \\) cm, \\( AD = BC = 10 \\) cm and \\( AE = 25 \\) cm.\n\nCalculate:\nb) the surface area of the prism",
+    "a": 2,
+    "answer": "2",
+    "hint": "",
+    "solution": "The correct answer is \\(1556\\).",
+    "solutionSteps": [
+      {
+        "explanation": "We are finding the surface area of a prism with an isosceles trapezium base. We know the base area is 128 cm$^2$ and depth is 25 cm.",
+        "workingOut": "Prism with trapezium base. Base Area $= 128$, depth $= 25$. Perimeter $= 10+10+22+10=52$.",
+        "graphData": null
+      },
+      {
+        "explanation": "The surface area of a general prism is $2 \\times \\text{Base Area} + \\text{Perimeter} \\times \\text{depth}$.",
+        "workingOut": "$SA = 2 \\times \\text{Base Area} + \\text{Perimeter} \\times \\text{depth}$",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute the base area (128) and perimeter (52) into the formula along with the depth.",
+        "workingOut": "SA = $2(128) + 52 \\times 25 = 256 + 1300 = 1556$",
+        "graphData": null
+      },
+      {
+        "explanation": "Our final surface area is 1556 cm$^2$.",
+        "workingOut": "The surface area is $1556$ cm$^2$.",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\(-1556\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1555\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1556\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1557\\)",
+        "imageUrl": ""
+      }
+    ],
+    "chapterId": "y10-6",
+    "chapterTitle": "Chapter 6: Measurement",
+    "year": "Year 10",
+    "isActive": true,
+    "createdAt": {
+      "_seconds": 1785933541,
+      "_nanoseconds": 708000000
+    },
+    "updatedAt": {
+      "_seconds": 1785933541,
+      "_nanoseconds": 708000000
+    }
+  },
+  {
+    "id": "y10-6k-q4c",
+    "topicId": "y10-6k",
+    "c": "6K",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "question": "The cross-section \\( ABCD \\) of the prism shown is an isosceles trapezium with \\( AB = 10 \\) cm, \\( DC = 22 \\) cm, \\( AD = BC = 10 \\) cm and \\( AE = 25 \\) cm.\n\nCalculate:\nc) the volume of the prism",
+    "a": 2,
+    "answer": "2",
+    "hint": "",
+    "solution": "The correct answer is \\(3200\\).",
+    "solutionSteps": [
+      {
+        "explanation": "We are finding the volume of a prism with an isosceles trapezium base. We previously found the base area is 128 cm$^2$ and depth is 25 cm.",
+        "workingOut": "Prism with trapezium base. Base Area $= 128$, depth $= 25$.",
+        "graphData": null
+      },
+      {
+        "explanation": "The volume formula for any uniform prism is $V = \\text{Base Area} \\times \\text{depth}$.",
+        "workingOut": "$V = \\text{Base Area} \\times \\text{depth}$",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute the calculated base area and the given depth into the formula.",
+        "workingOut": "V = $128 \\times 25 = 3200$",
+        "graphData": null
+      },
+      {
+        "explanation": "The volume of the prism is 3200 cm$^3$.",
+        "workingOut": "The volume is $3200$ cm$^3$.",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\(-3200\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3199\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3200\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3201\\)",
+        "imageUrl": ""
+      }
+    ],
+    "chapterId": "y10-6",
+    "chapterTitle": "Chapter 6: Measurement",
+    "year": "Year 10",
+    "isActive": true,
+    "createdAt": {
+      "_seconds": 1785933541,
+      "_nanoseconds": 708000000
+    },
+    "updatedAt": {
+      "_seconds": 1785933541,
+      "_nanoseconds": 708000000
+    }
+  },
+  {
+    "id": "y10-6k-q5",
+    "chapterId": "y10-6",
+    "chapterTitle": "Chapter 6: Surface area and volume",
+    "topicId": "y10-6k",
+    "topicCode": "6K",
+    "topicTitle": "Revision",
+    "year": "Year 10",
+    "isManual": true,
+    "title": "A cylindrical water tank stand...",
+    "question": "A cylindrical water tank stands on its circular base. It has a diameter of \\( 4 \\) m and a height of \\( 2.5 \\) m.",
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "",
+    "hint": "",
+    "solution": "",
+    "solutionSteps": [],
+    "questionImage": "",
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782855896,
+      "_nanoseconds": 456000000
+    },
+    "updatedAt": {
+      "_seconds": 1785194938,
+      "_nanoseconds": 509000000
+    },
+    "subQuestions": [
+      {
+        "id": "y10-6k-q5a",
+        "type": "multiple_choice",
+        "question": "a) Calculate the volume of the tank, to the nearest litre.",
+        "options": [
+          {
+            "text": "\\(15708\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(31416\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(125664\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(62832\\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "31416",
+        "solutionSteps": [
+          {
+            "explanation": "We have a cylindrical tank with diameter 4 m (so radius is 2 m) and height 2.5 m. We need the volume in litres.",
+            "workingOut": "Cylinder: diameter $= 4$m (radius $r = 2$m), height $h = 2.5$m. Need volume in litres.",
+            "graphData": null
+          },
+          {
+            "explanation": "We use the cylinder volume formula $V = \\pi r^2 h$. Note that $1$ m$^3$ equals $1000$ litres.",
+            "workingOut": "$V = \\pi r^2 h$. $1$ m$^3 = 1000$ litres.",
+            "graphData": null
+          },
+          {
+            "explanation": "Substitute $r=2$ and $h=2.5$ into the formula, calculate the volume in m$^3$, and multiply by 1000.",
+            "workingOut": "V = $\\pi \\times 2^2 \\times 2.5 = 10\\pi$ m$^3 \\approx 31.4159$ m$^3 = 31416$ litres.",
+            "graphData": null
+          },
+          {
+            "explanation": "Rounding to the nearest litre, we get 31416 litres.",
+            "workingOut": "The volume is $31416$ litres.",
+            "graphData": null
+          }
+        ],
+        "graphData": null
+      },
+      {
+        "id": "y10-6k-q5b",
+        "type": "multiple_choice",
+        "question": "b) Calculate the depth of water in the tank, to the nearest centimetre, when it contains \\( 5000 \\) litres of water.",
+        "options": [
+          {
+            "text": "\\(10\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(20\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(40\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(80\\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "40",
+        "solutionSteps": [
+          {
+            "explanation": "The cylindrical tank has a radius of 2 m and currently holds 5000 litres of water. We need to find the depth of the water in cm.",
+            "workingOut": "Cylinder radius $r = 2$m. Volume $= 5000$ litres $= 5$ m$^3$. Need depth $h$ in cm.",
+            "graphData": null
+          },
+          {
+            "explanation": "Convert litres to cubic meters, then use $V = \\pi r^2 h$ to solve backwards for the depth $h$.",
+            "workingOut": "$V = \\pi r^2 h$",
+            "graphData": null
+          },
+          {
+            "explanation": "Substitute $V=5$ and $r=2$ into the equation and rearrange to find $h$ in meters, then convert to cm.",
+            "workingOut": "$5 = \\pi \\times 2^2 \\times h \\Rightarrow 5 = 4\\pi h \\Rightarrow h = \\frac{5}{4\\pi} \\approx 0.3979$ m $= 40$ cm.",
+            "graphData": null
+          },
+          {
+            "explanation": "The depth of the water to the nearest centimeter is 40 cm.",
+            "workingOut": "The depth is $40$ cm.",
+            "graphData": null
+          }
+        ],
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-6k-q5a",
+    "topicId": "y10-6k",
+    "c": "6K",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "question": "A cylindrical water tank stands on its circular base. It has a diameter of \\( 4 \\) m and a height of \\( 2.5 \\) m.\na) Calculate the volume of the tank, to the nearest litre.",
+    "a": 2,
+    "answer": "2",
+    "hint": "",
+    "solution": "The correct answer is \\(31416\\).",
+    "solutionSteps": [
+      {
+        "explanation": "We have a cylindrical tank with diameter 4 m (so radius is 2 m) and height 2.5 m. We need the volume in litres.",
+        "workingOut": "Cylinder: diameter $= 4$m (radius $r = 2$m), height $h = 2.5$m. Need volume in litres.",
+        "graphData": null
+      },
+      {
+        "explanation": "We use the cylinder volume formula $V = \\pi r^2 h$. Note that $1$ m$^3$ equals $1000$ litres.",
+        "workingOut": "$V = \\pi r^2 h$. $1$ m$^3 = 1000$ litres.",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute $r=2$ and $h=2.5$ into the formula, calculate the volume in m$^3$, and multiply by 1000.",
+        "workingOut": "V = $\\pi \\times 2^2 \\times 2.5 = 10\\pi$ m$^3 \\approx 31.4159$ m$^3 = 31416$ litres.",
+        "graphData": null
+      },
+      {
+        "explanation": "Rounding to the nearest litre, we get 31416 litres.",
+        "workingOut": "The volume is $31416$ litres.",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\(-31416\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(31415\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(31416\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(31417\\)",
+        "imageUrl": ""
+      }
+    ],
+    "chapterId": "y10-6",
+    "chapterTitle": "Chapter 6: Measurement",
+    "year": "Year 10",
+    "isActive": true,
+    "createdAt": {
+      "_seconds": 1785933541,
+      "_nanoseconds": 708000000
+    },
+    "updatedAt": {
+      "_seconds": 1785933541,
+      "_nanoseconds": 708000000
+    }
+  },
+  {
+    "id": "y10-6k-q5b",
+    "topicId": "y10-6k",
+    "c": "6K",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "question": "A cylindrical water tank stands on its circular base. It has a diameter of \\( 4 \\) m and a height of \\( 2.5 \\) m.\nb) Calculate the depth of water in the tank, to the nearest centimetre, when it contains \\( 5000 \\) litres of water.",
+    "a": 2,
+    "answer": "2",
+    "hint": "",
+    "solution": "The correct answer is \\(40\\).",
+    "solutionSteps": [
+      {
+        "explanation": "The cylindrical tank has a radius of 2 m and currently holds 5000 litres of water. We need to find the depth of the water in cm.",
+        "workingOut": "Cylinder radius $r = 2$m. Volume $= 5000$ litres $= 5$ m$^3$. Need depth $h$ in cm.",
+        "graphData": null
+      },
+      {
+        "explanation": "Convert litres to cubic meters, then use $V = \\pi r^2 h$ to solve backwards for the depth $h$.",
+        "workingOut": "$V = \\pi r^2 h$",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute $V=5$ and $r=2$ into the equation and rearrange to find $h$ in meters, then convert to cm.",
+        "workingOut": "$5 = \\pi \\times 2^2 \\times h \\Rightarrow 5 = 4\\pi h \\Rightarrow h = \\frac{5}{4\\pi} \\approx 0.3979$ m $= 40$ cm.",
+        "graphData": null
+      },
+      {
+        "explanation": "The depth of the water to the nearest centimeter is 40 cm.",
+        "workingOut": "The depth is $40$ cm.",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\(-40\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(39\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(40\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(41\\)",
+        "imageUrl": ""
+      }
+    ],
+    "chapterId": "y10-6",
+    "chapterTitle": "Chapter 6: Measurement",
+    "year": "Year 10",
+    "isActive": true,
+    "createdAt": {
+      "_seconds": 1785933541,
+      "_nanoseconds": 708000000
+    },
+    "updatedAt": {
+      "_seconds": 1785933541,
+      "_nanoseconds": 708000000
+    }
+  },
+  {
+    "id": "y10-6k-q6",
+    "chapterId": "y10-6",
+    "chapterTitle": "Chapter 6: Surface area and volume",
+    "topicId": "y10-6k",
+    "topicCode": "6K",
+    "topicTitle": "Revision",
+    "year": "Year 10",
+    "isManual": true,
+    "title": "Find exact answers to these qu...",
+    "question": "Find exact answers to these questions (leaving \\( \\pi \\) in your answer if necessary).",
+    "difficulty": "easy",
+    "timeLimit": 30,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "",
+    "hint": "",
+    "solution": "",
+    "solutionSteps": [],
+    "questionImage": "",
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782855896,
+      "_nanoseconds": 456000000
+    },
+    "updatedAt": {
+      "_seconds": 1785197072,
+      "_nanoseconds": 208000000
+    },
+    "subQuestions": [
+      {
+        "id": "y10-6k-q6a",
+        "type": "multiple_choice",
+        "question": "a) A square-based pyramid has base side length \\( 14 \\) cm and perpendicular height \\( 24 \\) cm.\ni) Calculate the surface area",
+        "options": [
+          {
+            "text": "\\(700\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(896\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(1092\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(1960\\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "2",
+        "solutionSteps": [
+          {
+            "explanation": "We are given a square-based pyramid with base side length 14 cm and a perpendicular height of 24 cm. We need the exact surface area.",
+            "workingOut": "Square-based pyramid: base side $= 14$, perpendicular height $= 24$.",
+            "graphData": null
+          },
+          {
+            "explanation": "To find the surface area ($SA = \\text{base} + 4 \\times \\text{triangle}$), we first need to calculate the slant height $l$ using Pythagoras.",
+            "workingOut": "Slant height $l = \\sqrt{24^2 + 7^2} = \\sqrt{576 + 49} = \\sqrt{625} = 25$. $SA = \\text{base} + 4 \\times \\text{triangle}$",
+            "graphData": null
+          },
+          {
+            "explanation": "Calculate the area of the square base and the 4 identical triangular faces using the slant height.",
+            "workingOut": "Base $= 14 \\times 14 = 196$. Triangles $= 4 \\times (\\frac{1}{2} \\times 14 \\times 25) = 700$. SA $= 196 + 700 = 896$.",
+            "graphData": null
+          },
+          {
+            "explanation": "The final exact surface area is 896 cm$^2$.",
+            "workingOut": "The exact surface area is $896$ cm$^2$.",
+            "graphData": null
+          }
+        ],
+        "graphData": null
+      },
+      {
+        "id": "y10-6k-q6b",
+        "type": "multiple_choice",
+        "question": "ii) Calculate the volume",
+        "options": [
+          {
+            "text": "\\(4704\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(1568\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(2352\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(3136\\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "2",
+        "solutionSteps": [
+          {
+            "explanation": "We have a square-based pyramid with base side length 14 cm (base area 196 cm$^2$) and a perpendicular height of 24 cm. We need the exact volume.",
+            "workingOut": "Square-based pyramid: base area $= 196$, perpendicular height $h = 24$.",
+            "graphData": null
+          },
+          {
+            "explanation": "The volume formula for any pyramid is $V = \\frac{1}{3} \\times \\text{base area} \\times h$.",
+            "workingOut": "$V = \\frac{1}{3} \\times \\text{base area} \\times h$",
+            "graphData": null
+          },
+          {
+            "explanation": "Substitute the base area and perpendicular height into the formula and calculate.",
+            "workingOut": "V = $\\frac{1}{3} \\times 196 \\times 24 = 196 \\times 8 = 1568$",
+            "graphData": null
+          },
+          {
+            "explanation": "The exact calculated volume is 1568 cm$^3$.",
+            "workingOut": "The exact volume is $1568$ cm$^3$.",
+            "graphData": null
+          }
+        ],
+        "graphData": null
+      },
+      {
+        "id": "y10-6k-q6c",
+        "type": "multiple_choice",
+        "question": "b) A cone has a radius of \\( 5 \\) cm and a slant height of \\( 13 \\) cm.\ni) Calculate the exact surface area",
+        "options": [
+          {
+            "text": "\\(65\\pi\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(90\\pi\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(115\\pi\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(150\\pi\\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "1",
+        "solutionSteps": [
+          {
+            "explanation": "We are given a cone with radius 5 cm and slant height 13 cm. We need the exact surface area.",
+            "workingOut": "Cone: radius $r = 5$, slant height $l = 13$.",
+            "graphData": null
+          },
+          {
+            "explanation": "The formula for the total surface area of a cone is $SA = \\pi r^2 + \\pi r l$.",
+            "workingOut": "$SA = \\pi r^2 + \\pi r l$",
+            "graphData": null
+          },
+          {
+            "explanation": "Substitute $r=5$ and $l=13$ into the equation and leave the answer in terms of $\\pi$ for an exact value.",
+            "workingOut": "SA = $\\pi(5^2) + \\pi(5)(13) = 25\\pi + 65\\pi = 90\\pi$",
+            "graphData": null
+          },
+          {
+            "explanation": "The exact surface area is $90\\pi$ cm$^2$.",
+            "workingOut": "The exact surface area is $90\\pi$ cm$^2$.",
+            "graphData": null
+          }
+        ],
+        "graphData": null
+      },
+      {
+        "id": "y10-6k-q6d",
+        "type": "multiple_choice",
+        "question": "ii) Calculate the exact volume",
+        "options": [
+          {
+            "text": "\\(100\\pi\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(300\\pi\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(325\\pi\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(130\\pi\\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "1",
+        "solutionSteps": [
+          {
+            "explanation": "We are given a cone with radius 5 cm and slant height 13 cm. We need the exact volume.",
+            "workingOut": "Cone: radius $r = 5$, slant height $l = 13$. Need height $h$.",
+            "graphData": null
+          },
+          {
+            "explanation": "To use the volume formula $V = \\frac{1}{3}\\pi r^2 h$, we first must find the perpendicular height $h$ using Pythagoras ($h = \\sqrt{l^2 - r^2}$).",
+            "workingOut": "$h = \\sqrt{l^2 - r^2}$, $V = \\frac{1}{3}\\pi r^2 h$",
+            "graphData": null
+          },
+          {
+            "explanation": "Calculate $h$, then substitute $r$ and $h$ into the volume formula.",
+            "workingOut": "$h = \\sqrt{13^2 - 5^2} = 12$. V = $\\frac{1}{3}\\pi(5^2)(12) = 100\\pi$",
+            "graphData": null
+          },
+          {
+            "explanation": "The final exact volume in terms of $\\pi$ is $100\\pi$ cm$^3$.",
+            "workingOut": "The exact volume is $100\\pi$ cm$^3$.",
+            "graphData": null
+          }
+        ],
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-6k-q6a",
+    "topicId": "y10-6k",
+    "c": "6K",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "question": "Find exact answers to these questions (leaving \\( \\pi \\) in your answer if necessary).\na) A square-based pyramid has base side length \\( 14 \\) cm and perpendicular height \\( 24 \\) cm.\ni) Calculate the surface area",
+    "a": 2,
+    "answer": "2",
+    "hint": "",
+    "solution": "The correct answer is \\(896\\).",
+    "solutionSteps": [
+      {
+        "explanation": "We are given a square-based pyramid with base side length 14 cm and a perpendicular height of 24 cm. We need the exact surface area.",
+        "workingOut": "Square-based pyramid: base side $= 14$, perpendicular height $= 24$.",
+        "graphData": null
+      },
+      {
+        "explanation": "To find the surface area ($SA = \\text{base} + 4 \\times \\text{triangle}$), we first need to calculate the slant height $l$ using Pythagoras.",
+        "workingOut": "Slant height $l = \\sqrt{24^2 + 7^2} = \\sqrt{576 + 49} = \\sqrt{625} = 25$. $SA = \\text{base} + 4 \\times \\text{triangle}$",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the area of the square base and the 4 identical triangular faces using the slant height.",
+        "workingOut": "Base $= 14 \\times 14 = 196$. Triangles $= 4 \\times (\\frac{1}{2} \\times 14 \\times 25) = 700$. SA $= 196 + 700 = 896$.",
+        "graphData": null
+      },
+      {
+        "explanation": "The final exact surface area is 896 cm$^2$.",
+        "workingOut": "The exact surface area is $896$ cm$^2$.",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\(-896\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(895\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(896\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(897\\)",
+        "imageUrl": ""
+      }
+    ],
+    "chapterId": "y10-6",
+    "chapterTitle": "Chapter 6: Measurement",
+    "year": "Year 10",
+    "isActive": true,
+    "createdAt": {
+      "_seconds": 1785933541,
+      "_nanoseconds": 708000000
+    },
+    "updatedAt": {
+      "_seconds": 1785933541,
+      "_nanoseconds": 708000000
+    }
+  },
+  {
+    "id": "y10-6k-q6b",
+    "topicId": "y10-6k",
+    "c": "6K",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "question": "Find exact answers to these questions (leaving \\( \\pi \\) in your answer if necessary).\nii) Calculate the volume",
+    "a": 2,
+    "answer": "2",
+    "hint": "",
+    "solution": "The correct answer is \\(1568\\).",
+    "solutionSteps": [
+      {
+        "explanation": "We have a square-based pyramid with base side length 14 cm (base area 196 cm$^2$) and a perpendicular height of 24 cm. We need the exact volume.",
+        "workingOut": "Square-based pyramid: base area $= 196$, perpendicular height $h = 24$.",
+        "graphData": null
+      },
+      {
+        "explanation": "The volume formula for any pyramid is $V = \\frac{1}{3} \\times \\text{base area} \\times h$.",
+        "workingOut": "$V = \\frac{1}{3} \\times \\text{base area} \\times h$",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute the base area and perpendicular height into the formula and calculate.",
+        "workingOut": "V = $\\frac{1}{3} \\times 196 \\times 24 = 196 \\times 8 = 1568$",
+        "graphData": null
+      },
+      {
+        "explanation": "The exact calculated volume is 1568 cm$^3$.",
+        "workingOut": "The exact volume is $1568$ cm$^3$.",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\(-1568\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1567\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1568\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1569\\)",
+        "imageUrl": ""
+      }
+    ],
+    "chapterId": "y10-6",
+    "chapterTitle": "Chapter 6: Measurement",
+    "year": "Year 10",
+    "isActive": true,
+    "createdAt": {
+      "_seconds": 1785933541,
+      "_nanoseconds": 708000000
+    },
+    "updatedAt": {
+      "_seconds": 1785933541,
+      "_nanoseconds": 708000000
+    }
+  },
+  {
+    "id": "y10-6k-q6c",
+    "topicId": "y10-6k",
+    "c": "6K",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "question": "Find exact answers to these questions (leaving \\( \\pi \\) in your answer if necessary).\nb) A cone has a radius of \\( 5 \\) cm and a slant height of \\( 13 \\) cm.\ni) Calculate the exact surface area",
+    "a": 1,
+    "answer": "1",
+    "hint": "",
+    "solution": "The correct answer is \\(90\\pi\\).",
+    "solutionSteps": [
+      {
+        "explanation": "We are given a cone with radius 5 cm and slant height 13 cm. We need the exact surface area.",
+        "workingOut": "Cone: radius $r = 5$, slant height $l = 13$.",
+        "graphData": null
+      },
+      {
+        "explanation": "The formula for the total surface area of a cone is $SA = \\pi r^2 + \\pi r l$.",
+        "workingOut": "$SA = \\pi r^2 + \\pi r l$",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute $r=5$ and $l=13$ into the equation and leave the answer in terms of $\\pi$ for an exact value.",
+        "workingOut": "SA = $\\pi(5^2) + \\pi(5)(13) = 25\\pi + 65\\pi = 90\\pi$",
+        "graphData": null
+      },
+      {
+        "explanation": "The exact surface area is $90\\pi$ cm$^2$.",
+        "workingOut": "The exact surface area is $90\\pi$ cm$^2$.",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\(-90\\pi\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(90\\pi\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(90\\pi + 1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\dfrac{13}{6}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "chapterId": "y10-6",
+    "chapterTitle": "Chapter 6: Measurement",
+    "year": "Year 10",
+    "isActive": true,
+    "createdAt": {
+      "_seconds": 1785933541,
+      "_nanoseconds": 708000000
+    },
+    "updatedAt": {
+      "_seconds": 1785933541,
+      "_nanoseconds": 708000000
+    }
+  },
+  {
+    "id": "y10-6k-q6d",
+    "topicId": "y10-6k",
+    "c": "6K",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "question": "Find exact answers to these questions (leaving \\( \\pi \\) in your answer if necessary).\nii) Calculate the exact volume",
+    "a": 1,
+    "answer": "1",
+    "hint": "",
+    "solution": "The correct answer is \\(100\\pi\\).",
+    "solutionSteps": [
+      {
+        "explanation": "We are given a cone with radius 5 cm and slant height 13 cm. We need the exact volume.",
+        "workingOut": "Cone: radius $r = 5$, slant height $l = 13$. Need height $h$.",
+        "graphData": null
+      },
+      {
+        "explanation": "To use the volume formula $V = \\frac{1}{3}\\pi r^2 h$, we first must find the perpendicular height $h$ using Pythagoras ($h = \\sqrt{l^2 - r^2}$).",
+        "workingOut": "$h = \\sqrt{l^2 - r^2}$, $V = \\frac{1}{3}\\pi r^2 h$",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate $h$, then substitute $r$ and $h$ into the volume formula.",
+        "workingOut": "$h = \\sqrt{13^2 - 5^2} = 12$. V = $\\frac{1}{3}\\pi(5^2)(12) = 100\\pi$",
+        "graphData": null
+      },
+      {
+        "explanation": "The final exact volume in terms of $\\pi$ is $100\\pi$ cm$^3$.",
+        "workingOut": "The exact volume is $100\\pi$ cm$^3$.",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\(-100\\pi\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(100\\pi\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(100\\pi + 1\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\dfrac{13}{6}\\)",
+        "imageUrl": ""
+      }
+    ],
+    "chapterId": "y10-6",
+    "chapterTitle": "Chapter 6: Measurement",
+    "year": "Year 10",
+    "isActive": true,
+    "createdAt": {
+      "_seconds": 1785933541,
+      "_nanoseconds": 708000000
+    },
+    "updatedAt": {
+      "_seconds": 1785933541,
+      "_nanoseconds": 708000000
+    }
+  },
+  {
+    "id": "y10-6k-q7",
+    "chapterId": "y10-6",
+    "chapterTitle": "Chapter 6: Surface area and volume",
+    "topicId": "y10-6k",
+    "topicCode": "6K",
+    "topicTitle": "Revision",
+    "year": "Year 10",
+    "isManual": true,
+    "title": "In the pyramid \\( VABCD \\) sho...",
+    "question": "In the pyramid \\( VABCD \\) shown, \\( VB \\) is perpendicular to rectangle \\( ABCD \\), \\( AB = 15 \\) m, \\( BC = 8 \\) m and \\( VB = 6 \\) m.",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "",
+    "hint": "",
+    "solution": "",
+    "solutionSteps": [],
+    "questionImage": "",
+    "blanks": [],
+    "graphData": {
+      "geometry": {
+        "width": 250,
+        "points": {
+          "D": [
+            0,
+            0
+          ],
+          "C": [
+            15,
+            0
+          ],
+          "A": [
+            6,
+            5
+          ],
+          "B": [
+            21,
+            5
+          ],
+          "V": [
+            21,
+            15
+          ]
+        },
+        "segments": [
+          {
+            "from": "D",
+            "to": "C"
+          },
+          {
+            "from": "C",
+            "to": "B"
+          },
+          {
+            "from": "B",
+            "to": "A",
+            "dashed": true
+          },
+          {
+            "from": "A",
+            "to": "D",
+            "dashed": true
+          },
+          {
+            "from": "V",
+            "to": "A",
+            "dashed": true
+          },
+          {
+            "from": "V",
+            "to": "B"
+          },
+          {
+            "from": "V",
+            "to": "C"
+          },
+          {
+            "from": "V",
+            "to": "D"
+          }
+        ]
+      }
+    },
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782855896,
+      "_nanoseconds": 456000000
+    },
+    "updatedAt": {
+      "_seconds": 1785194938,
+      "_nanoseconds": 818000000
+    },
+    "subQuestions": [
+      {
+        "id": "y10-6k-q7a",
+        "type": "multiple_choice",
+        "question": "a) Calculate the surface area of the pyramid in m\\(^2\\), correct to one decimal place.",
+        "options": [
+          {
+            "text": "\\(208.6\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(264.0\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(328.6\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(448.6\\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "328.6",
+        "solutionSteps": [
+          {
+            "explanation": "We have an asymmetrical pyramid VABCD with a rectangular base of 15m by 8m. The height VB is 6m and is perpendicular to the base. We need the surface area.",
+            "workingOut": "Pyramid VABCD. Base $15 \\times 8$. $VB = 6$ is perpendicular to ABCD.",
+            "graphData": null
+          },
+          {
+            "explanation": "The surface area is the sum of the rectangular base and four different triangular faces.",
+            "workingOut": "Sum the areas of the base and four triangular faces.",
+            "graphData": null
+          },
+          {
+            "explanation": "Calculate the area of each face using Pythagoras for the slant heights VA and VC where necessary.",
+            "workingOut": "Base $= 120$. $\\Delta VAB = 0.5 \\times 15 \\times 6 = 45$. $\\Delta VBC = 0.5 \\times 8 \\times 6 = 24$. $VA = \\sqrt{6^2 + 15^2} = \\sqrt{261}$, $\\Delta VAD = 0.5 \\times 8 \\times \\sqrt{261} \\approx 64.6$. $VC = \\sqrt{6^2 + 8^2} = 10$, $\\Delta VDC = 0.5 \\times 15 \\times 10 = 75$. SA $= 120 + 45 + 24 + 64.6 + 75 = 328.6$",
+            "graphData": null
+          },
+          {
+            "explanation": "Adding all the face areas together gives 328.6 m$^2$ to one decimal place.",
+            "workingOut": "The surface area is $328.6$ m$^2$.",
+            "graphData": null
+          }
+        ],
+        "graphData": null
+      },
+      {
+        "id": "y10-6k-q7b",
+        "type": "multiple_choice",
+        "question": "b) Calculate the volume of the pyramid.",
+        "options": [
+          {
+            "text": "\\(120\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(240\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(720\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(480\\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "240",
+        "solutionSteps": [
+          {
+            "explanation": "We have the same pyramid VABCD with base 15m by 8m, and perpendicular height VB = 6m. We need its volume.",
+            "workingOut": "Pyramid VABCD. Base $15 \\times 8$, height $VB = 6$.",
+            "graphData": null
+          },
+          {
+            "explanation": "The volume formula for any pyramid is $V = \\frac{1}{3} \\times \\text{base area} \\times h$.",
+            "workingOut": "$V = \\frac{1}{3} \\times \\text{base area} \\times h$",
+            "graphData": null
+          },
+          {
+            "explanation": "Calculate the base area (15 * 8 = 120) and substitute it along with the height into the formula.",
+            "workingOut": "Base Area $= 15 \\times 8 = 120$. V = $\\frac{1}{3} \\times 120 \\times 6 = 240$",
+            "graphData": null
+          },
+          {
+            "explanation": "The calculated volume is exactly 240 m$^3$.",
+            "workingOut": "The volume is $240$ m$^3$.",
+            "graphData": null
+          }
+        ],
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-6k-q7a",
+    "topicId": "y10-6k",
+    "c": "6K",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "In the pyramid \\( VABCD \\) shown, \\( VB \\) is perpendicular to rectangle \\( ABCD \\), \\( AB = 15 \\) m, \\( BC = 8 \\) m and \\( VB = 6 \\) m.\na) Calculate the surface area of the pyramid in m\\(^2\\), correct to one decimal place.",
+    "a": 2,
+    "answer": "2",
+    "hint": "",
+    "solution": "The correct answer is \\(328.6\\).",
+    "solutionSteps": [
+      {
+        "explanation": "We have an asymmetrical pyramid VABCD with a rectangular base of 15m by 8m. The height VB is 6m and is perpendicular to the base. We need the surface area.",
+        "workingOut": "Pyramid VABCD. Base $15 \\times 8$. $VB = 6$ is perpendicular to ABCD.",
+        "graphData": null
+      },
+      {
+        "explanation": "The surface area is the sum of the rectangular base and four different triangular faces.",
+        "workingOut": "Sum the areas of the base and four triangular faces.",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the area of each face using Pythagoras for the slant heights VA and VC where necessary.",
+        "workingOut": "Base $= 120$. $\\Delta VAB = 0.5 \\times 15 \\times 6 = 45$. $\\Delta VBC = 0.5 \\times 8 \\times 6 = 24$. $VA = \\sqrt{6^2 + 15^2} = \\sqrt{261}$, $\\Delta VAD = 0.5 \\times 8 \\times \\sqrt{261} \\approx 64.6$. $VC = \\sqrt{6^2 + 8^2} = 10$, $\\Delta VDC = 0.5 \\times 15 \\times 10 = 75$. SA $= 120 + 45 + 24 + 64.6 + 75 = 328.6$",
+        "graphData": null
+      },
+      {
+        "explanation": "Adding all the face areas together gives 328.6 m$^2$ to one decimal place.",
+        "workingOut": "The surface area is $328.6$ m$^2$.",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\(-328.6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(327.6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(328.6\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(329.6\\)",
+        "imageUrl": ""
+      }
+    ],
+    "chapterId": "y10-6",
+    "chapterTitle": "Chapter 6: Measurement",
+    "year": "Year 10",
+    "isActive": true,
+    "createdAt": {
+      "_seconds": 1785933541,
+      "_nanoseconds": 708000000
+    },
+    "updatedAt": {
+      "_seconds": 1785933541,
+      "_nanoseconds": 708000000
+    }
+  },
+  {
+    "id": "y10-6k-q7b",
+    "topicId": "y10-6k",
+    "c": "6K",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "In the pyramid \\( VABCD \\) shown, \\( VB \\) is perpendicular to rectangle \\( ABCD \\), \\( AB = 15 \\) m, \\( BC = 8 \\) m and \\( VB = 6 \\) m.\nb) Calculate the volume of the pyramid.",
+    "a": 2,
+    "answer": "2",
+    "hint": "",
+    "solution": "The correct answer is \\(240\\).",
+    "solutionSteps": [
+      {
+        "explanation": "We have the same pyramid VABCD with base 15m by 8m, and perpendicular height VB = 6m. We need its volume.",
+        "workingOut": "Pyramid VABCD. Base $15 \\times 8$, height $VB = 6$.",
+        "graphData": null
+      },
+      {
+        "explanation": "The volume formula for any pyramid is $V = \\frac{1}{3} \\times \\text{base area} \\times h$.",
+        "workingOut": "$V = \\frac{1}{3} \\times \\text{base area} \\times h$",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the base area (15 * 8 = 120) and substitute it along with the height into the formula.",
+        "workingOut": "Base Area $= 15 \\times 8 = 120$. V = $\\frac{1}{3} \\times 120 \\times 6 = 240$",
+        "graphData": null
+      },
+      {
+        "explanation": "The calculated volume is exactly 240 m$^3$.",
+        "workingOut": "The volume is $240$ m$^3$.",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\(-240\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(239\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(240\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(241\\)",
+        "imageUrl": ""
+      }
+    ],
+    "chapterId": "y10-6",
+    "chapterTitle": "Chapter 6: Measurement",
+    "year": "Year 10",
+    "isActive": true,
+    "createdAt": {
+      "_seconds": 1785933541,
+      "_nanoseconds": 708000000
+    },
+    "updatedAt": {
+      "_seconds": 1785933541,
+      "_nanoseconds": 708000000
+    }
+  },
+  {
+    "id": "y10-6k-q8",
+    "chapterId": "y10-6",
+    "chapterTitle": "Chapter 6: Surface area and volume",
+    "topicId": "y10-6k",
+    "topicCode": "6K",
+    "topicTitle": "Revision",
+    "year": "Year 10",
+    "isManual": true,
+    "title": "The curved surface area of a c...",
+    "question": "The curved surface area of a cone is \\( 65\\pi \\) cm\\(^2\\) and the area of the circular base is \\( 25\\pi \\) cm\\(^2\\).",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "",
+    "hint": "",
+    "solution": "",
+    "solutionSteps": [],
+    "questionImage": "",
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782855896,
+      "_nanoseconds": 456000000
+    },
+    "updatedAt": {
+      "_seconds": 1785194938,
+      "_nanoseconds": 950000000
+    },
+    "subQuestions": [
+      {
+        "id": "y10-6k-q8a",
+        "type": "multiple_choice",
+        "question": "a) Calculate the radius of the cone.",
+        "options": [
+          {
+            "text": "\\(5\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(10\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(13\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(25\\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "5",
+        "solutionSteps": [
+          {
+            "explanation": "We are given a cone with a curved surface area of $65\\pi$ and a base area of $25\\pi$. We need to find the radius.",
+            "workingOut": "Cone: Base Area $= 25\\pi$. Curved SA $= 65\\pi$.",
+            "graphData": null
+          },
+          {
+            "explanation": "Since the circular base area is given by $\\pi r^2$, we can equate this to $25\\pi$ and solve for $r$.",
+            "workingOut": "Base Area $= \\pi r^2$",
+            "graphData": null
+          },
+          {
+            "explanation": "Set up the equation and solve for the radius.",
+            "workingOut": "$\\pi r^2 = 25\\pi \\Rightarrow r^2 = 25 \\Rightarrow r = 5$",
+            "graphData": null
+          },
+          {
+            "explanation": "The calculated radius is 5 cm.",
+            "workingOut": "The radius is $5$ cm.",
+            "graphData": null
+          }
+        ],
+        "graphData": null
+      },
+      {
+        "id": "y10-6k-q8b",
+        "type": "multiple_choice",
+        "question": "b) Calculate the exact perpendicular height of the cone.",
+        "options": [
+          {
+            "text": "\\(12\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(13\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(144\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(169\\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "12",
+        "solutionSteps": [
+          {
+            "explanation": "We know the cone's radius is 5 cm and its curved surface area is $65\\pi$. We need the exact perpendicular height.",
+            "workingOut": "Cone: $r = 5$. Curved SA $= 65\\pi$.",
+            "graphData": null
+          },
+          {
+            "explanation": "First, use the curved SA formula ($\\pi r l$) to find the slant height $l$. Then use Pythagoras ($h = \\sqrt{l^2 - r^2}$) to find the height.",
+            "workingOut": "Curved SA $= \\pi r l$. Then $h = \\sqrt{l^2 - r^2}$",
+            "graphData": null
+          },
+          {
+            "explanation": "Solve for $l$, then substitute $l$ and $r$ to find $h$.",
+            "workingOut": "$\\pi(5)l = 65\\pi \\Rightarrow l = 13$. $h = \\sqrt{13^2 - 5^2} = \\sqrt{144} = 12$",
+            "graphData": null
+          },
+          {
+            "explanation": "The perpendicular height evaluates to exactly 12 cm.",
+            "workingOut": "The exact perpendicular height is $12$ cm.",
+            "graphData": null
+          }
+        ],
+        "graphData": null
+      },
+      {
+        "id": "y10-6k-q8c",
+        "type": "multiple_choice",
+        "question": "c) Calculate the volume of the cone, correct to the nearest cm\\(^3\\).",
+        "options": [
+          {
+            "text": "\\(314\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(942\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(1024\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(157\\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "314",
+        "solutionSteps": [
+          {
+            "explanation": "With the cone's radius as 5 cm and perpendicular height as 12 cm, we need to calculate the volume to the nearest cm$^3$.",
+            "workingOut": "Cone: $r = 5$, height $h = 12$.",
+            "graphData": null
+          },
+          {
+            "explanation": "The volume formula for a cone is $V = \\frac{1}{3}\\pi r^2 h$.",
+            "workingOut": "$V = \\frac{1}{3}\\pi r^2 h$",
+            "graphData": null
+          },
+          {
+            "explanation": "Substitute $r=5$ and $h=12$ into the formula and evaluate the decimal value.",
+            "workingOut": "V = $\\frac{1}{3}\\pi(5^2)(12) = 100\\pi \\approx 314.159$",
+            "graphData": null
+          },
+          {
+            "explanation": "Rounding $100\\pi$ to the nearest whole number gives 314 cm$^3$.",
+            "workingOut": "The volume is $314$ cm$^3$.",
+            "graphData": null
+          }
+        ],
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-6k-q8a",
+    "topicId": "y10-6k",
+    "c": "6K",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "The curved surface area of a cone is \\( 65\\pi \\) cm\\(^2\\) and the area of the circular base is \\( 25\\pi \\) cm\\(^2\\).\na) Calculate the radius of the cone.",
+    "a": 2,
+    "answer": "2",
+    "hint": "",
+    "solution": "The correct answer is \\(5\\).",
+    "solutionSteps": [
+      {
+        "explanation": "We are given a cone with a curved surface area of $65\\pi$ and a base area of $25\\pi$. We need to find the radius.",
+        "workingOut": "Cone: Base Area $= 25\\pi$. Curved SA $= 65\\pi$.",
+        "graphData": null
+      },
+      {
+        "explanation": "Since the circular base area is given by $\\pi r^2$, we can equate this to $25\\pi$ and solve for $r$.",
+        "workingOut": "Base Area $= \\pi r^2$",
+        "graphData": null
+      },
+      {
+        "explanation": "Set up the equation and solve for the radius.",
+        "workingOut": "$\\pi r^2 = 25\\pi \\Rightarrow r^2 = 25 \\Rightarrow r = 5$",
+        "graphData": null
+      },
+      {
+        "explanation": "The calculated radius is 5 cm.",
+        "workingOut": "The radius is $5$ cm.",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\(-5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6\\)",
+        "imageUrl": ""
+      }
+    ],
+    "chapterId": "y10-6",
+    "chapterTitle": "Chapter 6: Measurement",
+    "year": "Year 10",
+    "isActive": true,
+    "createdAt": {
+      "_seconds": 1785933541,
+      "_nanoseconds": 708000000
+    },
+    "updatedAt": {
+      "_seconds": 1785933541,
+      "_nanoseconds": 708000000
+    }
+  },
+  {
+    "id": "y10-6k-q8b",
+    "topicId": "y10-6k",
+    "c": "6K",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "The curved surface area of a cone is \\( 65\\pi \\) cm\\(^2\\) and the area of the circular base is \\( 25\\pi \\) cm\\(^2\\).\nb) Calculate the exact perpendicular height of the cone.",
+    "a": 2,
+    "answer": "2",
+    "hint": "",
+    "solution": "The correct answer is \\(12\\).",
+    "solutionSteps": [
+      {
+        "explanation": "We know the cone's radius is 5 cm and its curved surface area is $65\\pi$. We need the exact perpendicular height.",
+        "workingOut": "Cone: $r = 5$. Curved SA $= 65\\pi$.",
+        "graphData": null
+      },
+      {
+        "explanation": "First, use the curved SA formula ($\\pi r l$) to find the slant height $l$. Then use Pythagoras ($h = \\sqrt{l^2 - r^2}$) to find the height.",
+        "workingOut": "Curved SA $= \\pi r l$. Then $h = \\sqrt{l^2 - r^2}$",
+        "graphData": null
+      },
+      {
+        "explanation": "Solve for $l$, then substitute $l$ and $r$ to find $h$.",
+        "workingOut": "$\\pi(5)l = 65\\pi \\Rightarrow l = 13$. $h = \\sqrt{13^2 - 5^2} = \\sqrt{144} = 12$",
+        "graphData": null
+      },
+      {
+        "explanation": "The perpendicular height evaluates to exactly 12 cm.",
+        "workingOut": "The exact perpendicular height is $12$ cm.",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\(-12\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(11\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(12\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(13\\)",
+        "imageUrl": ""
+      }
+    ],
+    "chapterId": "y10-6",
+    "chapterTitle": "Chapter 6: Measurement",
+    "year": "Year 10",
+    "isActive": true,
+    "createdAt": {
+      "_seconds": 1785933541,
+      "_nanoseconds": 708000000
+    },
+    "updatedAt": {
+      "_seconds": 1785933541,
+      "_nanoseconds": 708000000
+    }
+  },
+  {
+    "id": "y10-6k-q8c",
+    "topicId": "y10-6k",
+    "c": "6K",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "The curved surface area of a cone is \\( 65\\pi \\) cm\\(^2\\) and the area of the circular base is \\( 25\\pi \\) cm\\(^2\\).\nc) Calculate the volume of the cone, correct to the nearest cm\\(^3\\).",
+    "a": 2,
+    "answer": "2",
+    "hint": "",
+    "solution": "The correct answer is \\(314\\).",
+    "solutionSteps": [
+      {
+        "explanation": "With the cone's radius as 5 cm and perpendicular height as 12 cm, we need to calculate the volume to the nearest cm$^3$.",
+        "workingOut": "Cone: $r = 5$, height $h = 12$.",
+        "graphData": null
+      },
+      {
+        "explanation": "The volume formula for a cone is $V = \\frac{1}{3}\\pi r^2 h$.",
+        "workingOut": "$V = \\frac{1}{3}\\pi r^2 h$",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute $r=5$ and $h=12$ into the formula and evaluate the decimal value.",
+        "workingOut": "V = $\\frac{1}{3}\\pi(5^2)(12) = 100\\pi \\approx 314.159$",
+        "graphData": null
+      },
+      {
+        "explanation": "Rounding $100\\pi$ to the nearest whole number gives 314 cm$^3$.",
+        "workingOut": "The volume is $314$ cm$^3$.",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\(-314\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(313\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(314\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(315\\)",
+        "imageUrl": ""
+      }
+    ],
+    "chapterId": "y10-6",
+    "chapterTitle": "Chapter 6: Measurement",
+    "year": "Year 10",
+    "isActive": true,
+    "createdAt": {
+      "_seconds": 1785933541,
+      "_nanoseconds": 708000000
+    },
+    "updatedAt": {
+      "_seconds": 1785933541,
+      "_nanoseconds": 708000000
+    }
+  },
+  {
+    "id": "y10-6k-q9",
+    "chapterId": "y10-6",
+    "chapterTitle": "Chapter 6: Surface area and volume",
+    "topicId": "y10-6k",
+    "topicCode": "6K",
+    "topicTitle": "Revision",
+    "year": "Year 10",
+    "isManual": true,
+    "title": "A storage tank is constructed ...",
+    "question": "A storage tank is constructed as a cylinder with a hemisphere at each end of the cylinder. The radius of the cylinder is \\( 2 \\) m and the overall length of the tank is \\( 10 \\) m.\n\nCalculate (correct to 1 decimal place):",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "",
+    "hint": "",
+    "solution": "",
+    "solutionSteps": [],
+    "questionImage": "",
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782855896,
+      "_nanoseconds": 456000000
+    },
+    "updatedAt": {
+      "_seconds": 1782855896,
+      "_nanoseconds": 456000000
+    },
+    "subQuestions": [
+      {
+        "id": "y10-6k-q9a",
+        "type": "multiple_choice",
+        "question": "a) the surface area of the tank in m\\(^2\\)",
+        "options": [
+          {
+            "text": "\\(100.5\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(125.7\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(150.8\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(175.9\\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "125.7",
+        "solutionSteps": [
+          {
+            "explanation": "We are given a storage tank made of a cylinder with two hemispheres at the ends. The radius is 2m and overall length is 10m. We need the surface area.",
+            "workingOut": "Tank: Cylinder with two hemispheres. Total length $= 10$, radius $r = 2$.",
+            "graphData": null
+          },
+          {
+            "explanation": "The total surface area is the sum of the curved area of the cylinder and the surface area of the two hemispheres (which equals one full sphere).",
+            "workingOut": "Cylinder length $= 10 - 2 - 2 = 6$. Total SA = Sphere SA + Cylinder Curved SA.",
+            "graphData": null
+          },
+          {
+            "explanation": "Substitute the radius and cylinder length into the formulas $4\\pi r^2$ and $2\\pi rh$.",
+            "workingOut": "$SA = 4\\pi(2^2) + 2\\pi(2)(6) = 16\\pi + 24\\pi = 40\\pi \\approx 125.66$",
+            "graphData": null
+          },
+          {
+            "explanation": "Rounding to one decimal place gives a surface area of 125.7 m$^2$.",
+            "workingOut": "The surface area is $125.7$ m$^2$.",
+            "graphData": null
+          }
+        ],
+        "graphData": null
+      },
+      {
+        "id": "y10-6k-q9b",
+        "type": "multiple_choice",
+        "question": "b) the volume of the tank",
+        "options": [
+          {
+            "text": "\\(75.4\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(108.9\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(142.4\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(326.7\\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "108.9",
+        "solutionSteps": [
+          {
+            "explanation": "Using the same tank (radius 2m, cylinder length 6m), we need to calculate its volume.",
+            "workingOut": "Tank: Sphere ($r=2$) + Cylinder ($r=2, h=6$).",
+            "graphData": null
+          },
+          {
+            "explanation": "The total volume is the volume of the full sphere plus the volume of the central cylinder.",
+            "workingOut": "$V = \\frac{4}{3}\\pi r^3 + \\pi r^2 h$",
+            "graphData": null
+          },
+          {
+            "explanation": "Substitute the dimensions into the formulas and calculate the total volume.",
+            "workingOut": "V = $\\frac{4}{3}\\pi(2^3) + \\pi(2^2)(6) = \\frac{32}{3}\\pi + 24\\pi = \\frac{104}{3}\\pi \\approx 108.9$",
+            "graphData": null
+          },
+          {
+            "explanation": "Rounding to one decimal place gives 108.9 m$^3$.",
+            "workingOut": "The volume is $108.9$ m$^3$.",
+            "graphData": null
+          }
+        ],
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y10-6k-q9a",
+    "topicId": "y10-6k",
+    "c": "6K",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "A storage tank is constructed as a cylinder with a hemisphere at each end of the cylinder. The radius of the cylinder is \\( 2 \\) m and the overall length of the tank is \\( 10 \\) m.\n\nCalculate (correct to 1 decimal place):\na) the surface area of the tank in m\\(^2\\)",
+    "a": 2,
+    "answer": "2",
+    "hint": "",
+    "solution": "The correct answer is \\(125.7\\).",
+    "solutionSteps": [
+      {
+        "explanation": "We are given a storage tank made of a cylinder with two hemispheres at the ends. The radius is 2m and overall length is 10m. We need the surface area.",
+        "workingOut": "Tank: Cylinder with two hemispheres. Total length $= 10$, radius $r = 2$.",
+        "graphData": null
+      },
+      {
+        "explanation": "The total surface area is the sum of the curved area of the cylinder and the surface area of the two hemispheres (which equals one full sphere).",
+        "workingOut": "Cylinder length $= 10 - 2 - 2 = 6$. Total SA = Sphere SA + Cylinder Curved SA.",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute the radius and cylinder length into the formulas $4\\pi r^2$ and $2\\pi rh$.",
+        "workingOut": "$SA = 4\\pi(2^2) + 2\\pi(2)(6) = 16\\pi + 24\\pi = 40\\pi \\approx 125.66$",
+        "graphData": null
+      },
+      {
+        "explanation": "Rounding to one decimal place gives a surface area of 125.7 m$^2$.",
+        "workingOut": "The surface area is $125.7$ m$^2$.",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\(-125.7\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(124.7\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(125.7\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(126.7\\)",
+        "imageUrl": ""
+      }
+    ],
+    "chapterId": "y10-6",
+    "chapterTitle": "Chapter 6: Measurement",
+    "year": "Year 10",
+    "isActive": true,
+    "createdAt": {
+      "_seconds": 1785933541,
+      "_nanoseconds": 708000000
+    },
+    "updatedAt": {
+      "_seconds": 1785933541,
+      "_nanoseconds": 708000000
+    }
+  },
+  {
+    "id": "y10-6k-q9b",
+    "topicId": "y10-6k",
+    "c": "6K",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "A storage tank is constructed as a cylinder with a hemisphere at each end of the cylinder. The radius of the cylinder is \\( 2 \\) m and the overall length of the tank is \\( 10 \\) m.\n\nCalculate (correct to 1 decimal place):\nb) the volume of the tank",
+    "a": 2,
+    "answer": "2",
+    "hint": "",
+    "solution": "The correct answer is \\(108.9\\).",
+    "solutionSteps": [
+      {
+        "explanation": "Using the same tank (radius 2m, cylinder length 6m), we need to calculate its volume.",
+        "workingOut": "Tank: Sphere ($r=2$) + Cylinder ($r=2, h=6$).",
+        "graphData": null
+      },
+      {
+        "explanation": "The total volume is the volume of the full sphere plus the volume of the central cylinder.",
+        "workingOut": "$V = \\frac{4}{3}\\pi r^3 + \\pi r^2 h$",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute the dimensions into the formulas and calculate the total volume.",
+        "workingOut": "V = $\\frac{4}{3}\\pi(2^3) + \\pi(2^2)(6) = \\frac{32}{3}\\pi + 24\\pi = \\frac{104}{3}\\pi \\approx 108.9$",
+        "graphData": null
+      },
+      {
+        "explanation": "Rounding to one decimal place gives 108.9 m$^3$.",
+        "workingOut": "The volume is $108.9$ m$^3$.",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\(-108.9\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(107.9\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(108.9\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(109.9\\)",
+        "imageUrl": ""
+      }
+    ],
+    "chapterId": "y10-6",
+    "chapterTitle": "Chapter 6: Measurement",
+    "year": "Year 10",
+    "isActive": true,
+    "createdAt": {
+      "_seconds": 1785933541,
+      "_nanoseconds": 708000000
+    },
+    "updatedAt": {
+      "_seconds": 1785933541,
+      "_nanoseconds": 708000000
+    }
+  }
+]

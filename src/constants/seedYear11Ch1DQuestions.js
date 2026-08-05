@@ -4554,7 +4554,7 @@ export const Y11_CH1D_QUESTIONS = [
     "question": "Solve by factoring: \\( 9x^2 + 4x = 0 \\)",
     "options": [
       {
-        "text": "\\(x = 0, -\\frac{3}{9}\\)",
+        "text": "\\(x = 0, \\frac{4}{9}\\)",
         "imageUrl": ""
       },
       {
@@ -4562,19 +4562,11 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(x = 0, -\\frac{-5}{9}\\)",
+        "text": "\\(x = 0, \\frac{9}{4}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(x = 0, -\\frac{5}{9}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(x = 0, +\\frac{4}{9}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(x = 0, -\\frac{-4}{9}\\)",
+        "text": "\\(x = 0, -\\frac{9}{4}\\)",
         "imageUrl": ""
       }
     ],
@@ -4585,12 +4577,12 @@ export const Y11_CH1D_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Factor out \\( x \\).",
-        "workingOut": "\\(x(9x + 4) = 0\\)",
+        "workingOut": "\\( x(9x + 4) = 0 \\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the linear equations.",
-        "workingOut": "\\(x = 0, -\\frac{4}{9}\\)",
+        "explanation": "Solve the resulting linear equations.",
+        "workingOut": "\\( x = 0 \\) or \\( 9x + 4 = 0 \\Rightarrow x = -\\frac{4}{9} \\)",
         "graphData": null
       }
     ],
