@@ -997,12 +997,12 @@ export const Y9_CH14C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Solve the simultaneous equations using the elimination method:\n\\( 2x - y = -5 \\)\n\\( 4x + 3y = -5 \\)\nFormat: x=_, y=_",
+    "question": "Solve the simultaneous equations using the elimination method:\n\\( 2x - y = -5 \\)\n\\( 4x + 3y = -5 \\)",
     "opts": [
-      "\\(-x=-2, y=1\\)",
-      "\\(x=-2, y=1\\)",
-      "\\(x=-2, y=1 + 1\\)",
-      "\\(x=-3, y=1\\)"
+      "\\(x = 2, y = 1\\)",
+      "\\(x = -2, y = 1\\)",
+      "\\(x = -2, y = -1\\)",
+      "\\(x = 2, y = -1\\)"
     ],
     "a": 1,
     "answer": "1",
@@ -1010,23 +1010,18 @@ export const Y9_CH14C_QUESTIONS = [
     "solution": "Multiply the first equation by 2 to align coefficients of \\( x \\):\n\\( 2(2x - y) = 2(-5) \\implies 4x - 2y = -10 \\).\nSubtract this from the second equation:\n\\( (4x + 3y) - (4x - 2y) = -5 - (-10) \\implies 5y = 5 \\implies y = 1 \\).\nSubstitute \\( y = 1 \\) into the first equation:\n\\( 2x - 1 = -5 \\implies 2x = -4 \\implies x = -2 \\).\nThus, \\( x = -2, \\; y = 1 \\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Elimination: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(4x - 2y = -10\\)",
+        "explanation": "Multiply the first equation by 2 to match the coefficients of x.",
+        "workingOut": "\\( 2(2x - y) = 2(-5) \\implies 4x - 2y = -10 \\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\((4x + 3y) - (4x - 2y) = -5 - (-10)\\)",
+        "explanation": "Subtract this new equation from the second equation to eliminate x.",
+        "workingOut": "\\( (4x + 3y) - (4x - 2y) = -5 - (-10) \\implies 5y = 5 \\implies y = 1 \\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(5y = 5 \\implies y = 1\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: x=-2, y=1. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\(x=-2, y=1\\)",
+        "explanation": "Substitute the value of y back into the first equation to find x.",
+        "workingOut": "\\( 2x - 1 = -5 \\implies 2x = -4 \\implies x = -2 \\)",
         "graphData": null
       }
     ],
