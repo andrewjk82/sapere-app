@@ -62,7 +62,22 @@ const lazyWithReload = (importer) => {
           // serve a stale index.html from their local cache on reload.
           const sep = window.location.search ? '&' : '?';
           window.location.replace(window.location.href + sep + `_cb=${Date.now()}`);
-          return new Promise(() => {}); // never resolves — the page is navigating
+          // Normally location.replace() unloads this page almost immediately,
+          // so this promise's fate stops mattering. But on some mobile
+          // browsers (observed on iPad Safari) the navigation can stall or
+          // get silently dropped — e.g. a carrier/proxy cache, a PWA
+          // service-worker re-serving the same stale shell, or replace()
+          // simply not firing. If we return a promise that never resolves
+          // here (the old behavior), React Suspense is left showing its
+          // loading fallback forever with no recovery path, which is
+          // exactly the "Challenge/SecretNote just spin forever" report.
+          // Give the navigation a window to actually happen; if it hasn't
+          // by then, reject with the original error so Suspense/ErrorBoundary
+          // can show its real chunk-load recovery screen (which offers a
+          // manual Reload button) instead of an infinite spinner.
+          return new Promise((_resolve, reject) => {
+            setTimeout(() => reject(err), 5000);
+          });
         }
         throw err;
       })
