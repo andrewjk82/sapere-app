@@ -18,22 +18,17 @@ export const Y9_CH14_QUESTIONS = [
     "solution": "Substituting \\( x = 2 \\) and \\( y = 3 \\) into both equations: \n\\( 2 + 3 = 5 \\) (True)\n\\( 3 = 2 + 1 \\) (True).\nSince both are true, the point is a solution.",
     "solutionSteps": [
       {
-        "explanation": "Determine the equations to solve.",
-        "workingOut": "\\(2 + 3 = 5 \\quad \\text{(True)}\\)",
+        "explanation": "Substitute \\( x = 2 \\) and \\( y = 3 \\) into the first equation.",
+        "workingOut": "\\( 2 + 3 = 5 \\) (True)",
         "graphData": null
       },
       {
-        "explanation": "Set up the equations.",
-        "workingOut": "\\(3 = 2 + 1 \\quad \\text{(True)}\\)",
+        "explanation": "Substitute \\( x = 2 \\) and \\( y = 3 \\) into the second equation.",
+        "workingOut": "\\( 3 = 2 + 1 \\) (True)",
         "graphData": null
       },
       {
-        "explanation": "Solve the equations simultaneously.",
-        "workingOut": "\\(\\text{Yes}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "State the final answer.",
+        "explanation": "Since both equations are satisfied, the point is a valid solution.",
         "workingOut": "\\(Yes\\)",
         "graphData": null
       }
@@ -61,22 +56,12 @@ export const Y9_CH14_QUESTIONS = [
     "solution": "Substituting \\( x = -2 \\) and \\( y = 5 \\) into the equations: \n\\( -2 + 5 = 3 \neq 4 \\) (False).\nSince the first equation is not satisfied, the point is not a solution.",
     "solutionSteps": [
       {
-        "explanation": "Determine the equations to solve.",
-        "workingOut": "\\(-2 + 5 = 3 \neq 4 \\quad \\text{(False)}\\)",
+        "explanation": "Substitute \\( x = -2 \\) and \\( y = 5 \\) into the first equation.",
+        "workingOut": "\\( -2 + 5 = 3 \\neq 4 \\) (False)",
         "graphData": null
       },
       {
-        "explanation": "Set up the equations.",
-        "workingOut": "\\(\\text{No}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Solve the equations simultaneously.",
-        "workingOut": "\\(No\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "State the final answer.",
+        "explanation": "Since the first equation is not satisfied, there is no need to check the second. The point is not a solution.",
         "workingOut": "\\(No\\)",
         "graphData": null
       }

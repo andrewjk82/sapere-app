@@ -46,3 +46,8 @@
   ```bash
   node tools/scripts/rebuildQuestionIndexes.js y7-6 y7-7 y7-8
   ```
+
+## [규칙 I] 데이터베이스 전체 스캔(Full Scan) 절대 금지 (Never Full Scan DB)
+* **내용**: Firestore 데이터베이스에 쿼리할 때는 `where`, `limit`, `startAt` 등의 인덱싱된 필터를 반드시 사용하여 조회 범위를 최소화해야 합니다.
+* **조치 방법**: `.get()` 메서드를 컬렉션 전체(예: `db.collection('questions').get()`)에 호출하는 무지성 스캔은 절대 작성하거나 실행하지 마십시오. 스크립트 작성 시 반드시 필터(예: `where('chapterId', '==', ...)` 또는 특정 `topicId`)를 추가하여 프로덕션 DB 부하 및 막대한 과금(Read Operations)을 방지하십시오.
+* **주의 사항**: 필요한 경우 개별 문서를 직접 조회(`doc(id).get()`)하거나, 철저하게 제한된 조건 안에서만 쿼리를 실행하십시오.
