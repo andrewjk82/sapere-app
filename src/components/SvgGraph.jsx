@@ -396,8 +396,16 @@ const SvgGraph = ({ data }) => {
     if (it.src === 'elements') { if (it.type === 'point') ePoints.push(it); return; }
     switch (it.type) {
       case 'functiongraph': case 'curve': curves.push(it); break;
-      case 'arrow': case 'axis':         arrows.push(it); break;
-      case 'line': case 'segment':       lines.push(it);  break;
+      case 'arrow': 
+        arrows.push(it);
+        lines.push(it);
+        break;
+      case 'axis':
+        arrows.push(it);
+        break;
+      case 'line': case 'segment':
+        lines.push(it);
+        break;
       case 'point':                      sPoints.push(it); break;
       case 'text':                       sTexts.push(it);  break;
       case 'circle':                     sCircles.push(it); break;
@@ -426,20 +434,23 @@ const SvgGraph = ({ data }) => {
 
   /* ── Curve paths ── */
   const curvePaths = curves.map((c, idx) => {
-    if (c.type === 'functiongraph' && typeof c.parents[0] === 'function') {
-      const fn    = c.parents[0];
-      const dMin  = c.parents[1] ?? xMin;
-      const dMax  = c.parents[2] ?? xMax;
+    if ((c.type === 'functiongraph' || c.type === 'curve') && typeof c.parents[0] === 'function') {
+      const isParametric = typeof c.parents[1] === 'function';
+      const fnX   = isParametric ? c.parents[0] : (x => x);
+      const fnY   = isParametric ? c.parents[1] : c.parents[0];
+      const dMin  = isParametric ? (c.parents[2] ?? 0) : (c.parents[1] ?? xMin);
+      const dMax  = isParametric ? (c.parents[3] ?? 2 * Math.PI) : (c.parents[2] ?? xMax);
       const N     = 400;
       const step  = (dMax - dMin) / N;
       let d = '', prev = false;
 
       for (let i = 0; i <= N; i++) {
-        const x  = dMin + i * step;
-        const y  = fn(x);
+        const t  = dMin + i * step;
+        const x  = fnX(t);
+        const y  = fnY(t);
         const sx = toX(x);
         const sy = toY(y);
-        const ok = sy >= -30 && sy <= H + 30;
+        const ok = sy >= -30 && sy <= H + 30 && sx >= -30 && sx <= W + 30;
         if (ok) {
           d += prev
             ? ` L${sx.toFixed(1)},${sy.toFixed(1)}`
@@ -527,6 +538,10 @@ const SvgGraph = ({ data }) => {
               <stop offset="100%" stopColor={cp.grad[2]} />
             </linearGradient>
           ))}
+          <marker id={`blueArrow${uid}`} markerWidth="10" markerHeight="8"
+            refX="9" refY="4" orient="auto">
+            <polygon points="0 0,10 4,0 8" fill={C.blue} />
+          </marker>
           <marker id={`ae${uid}`} markerWidth="8" markerHeight="6"
             refX="7" refY="3" orient="auto">
             <polygon points="0 0,8 3,0 6" fill={C.axis} />
@@ -551,7 +566,8 @@ const SvgGraph = ({ data }) => {
         {hasX && (
           <line x1={pad - 2} y1={toY(0)} x2={W - pad + 4} y2={toY(0)}
             stroke={C.axis} strokeWidth={1.4}
-            markerStart={`url(#as${uid})`} markerEnd={`url(#ae${uid})`} />
+            markerStart={dy >= 3 ? `url(#as${uid})` : undefined} 
+            markerEnd={dy >= 3 ? `url(#ae${uid})` : undefined} />
         )}
         {hasY && (
           <line x1={toX(0)} y1={H - pad + 2} x2={toX(0)} y2={pad - 4}
@@ -561,12 +577,22 @@ const SvgGraph = ({ data }) => {
 
         {/* ── Tick marks ── */}
         {hasX && range(Math.ceil(xMin), Math.floor(xMax)).filter(x => x !== 0).map(x => (
-          <line key={`tx${x}`} x1={toX(x)} y1={toY(0) - 3} x2={toX(x)} y2={toY(0) + 3}
-            stroke={C.axis} strokeWidth={0.8} />
+          <g key={`tx${x}`}>
+            <line x1={toX(x)} y1={toY(0) - 3} x2={toX(x)} y2={toY(0) + 3}
+              stroke={C.axis} strokeWidth={0.8} />
+            <text x={toX(x)} y={toY(0) + 18} fill={C.axisLabel}
+              fontSize={11} fontWeight={500} fontFamily={FONT} textAnchor="middle">{x}</text>
+          </g>
         ))}
         {hasY && range(Math.ceil(yMin), Math.floor(yMax)).filter(y => y !== 0).map(y => (
-          <line key={`ty${y}`} x1={toX(0) - 3} y1={toY(y)} x2={toX(0) + 3} y2={toY(y)}
-            stroke={C.axis} strokeWidth={0.8} />
+          <g key={`ty${y}`}>
+            <line x1={toX(0) - 3} y1={toY(y)} x2={toX(0) + 3} y2={toY(y)}
+              stroke={C.axis} strokeWidth={0.8} />
+            {showLabels && (
+              <text x={toX(0) - 10} y={toY(y) + 4} fill={C.axisLabel}
+                fontSize={11} fontWeight={500} fontFamily={FONT} textAnchor="end">{y}</text>
+            )}
+          </g>
         ))}
 
         {/* ── Axis labels ── */}
@@ -587,13 +613,16 @@ const SvgGraph = ({ data }) => {
         {lines.map((ln, i) => {
           const p = ln.parents;
           if (!p[0] || !p[1]) return null;
+          const isArrow = ln.type === 'arrow';
+          const color = mapColor(ln.attrs.strokeColor);
           return (
             <line key={`ln${i}`}
               x1={toX(p[0][0])} y1={toY(p[0][1])}
               x2={toX(p[1][0])} y2={toY(p[1][1])}
-              stroke={mapColor(ln.attrs.strokeColor)}
-              strokeWidth={ln.attrs.strokeWidth || 1.5}
-              strokeDasharray={ln.attrs.dash ? '6 3' : undefined} />
+              stroke={color}
+              strokeWidth={isArrow ? Math.max(ln.attrs.strokeWidth || 1.5, 2.5) : (ln.attrs.strokeWidth || 1.5)}
+              strokeDasharray={ln.attrs.dash ? '6 3' : undefined}
+              markerEnd={isArrow ? `url(#blueArrow${uid})` : undefined} />
           );
         })}
 
@@ -706,11 +735,16 @@ const SvgGraph = ({ data }) => {
           const p = pt.parents;
           if (!p || p.length < 2) return null;
           const sx = toX(p[0]), sy = toY(p[1]);
-          const color = mapColor(pt.attrs.strokeColor || pt.attrs.color || pt.attrs.fillColor);
+          const fillColor = pt.attrs.fillColor || pt.attrs.color || pt.attrs.strokeColor || 'blue';
+          const strokeColor = pt.attrs.strokeColor || pt.attrs.color || 'blue';
+          const isHollow = fillColor === 'white' || fillColor === '#fff' || fillColor === '#ffffff';
+          const actualFill = mapColor(fillColor);
+          const actualStroke = isHollow ? mapColor(strokeColor) : '#fff';
+          const baseColor = mapColor(strokeColor);
           return (
             <g key={`sp${i}`}>
-              <circle cx={sx} cy={sy} r={8} fill={color} fillOpacity={0.12} />
-              <circle cx={sx} cy={sy} r={4} fill={color} stroke="#fff" strokeWidth={2} />
+              <circle cx={sx} cy={sy} r={8} fill={baseColor} fillOpacity={0.12} />
+              <circle cx={sx} cy={sy} r={4.5} fill={actualFill} stroke={actualStroke} strokeWidth={isHollow ? 2.5 : 1.5} />
               {pt.attrs.name && (
                 <text x={sx + 10} y={sy - 8} fill={C.label}
                   fontSize={12} fontWeight={600} fontFamily={FONT}>

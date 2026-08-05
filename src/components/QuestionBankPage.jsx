@@ -362,7 +362,7 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
       setCurrentIdx((prev) => (prev >= ids.length ? Math.max(0, ids.length - 1) : prev));
     } catch (e) {
       console.error('Question bank load failed:', e);
-      showToast('Failed to load questions', 'error');
+      showToast('Failed to load questions: ' + e.message, 'error');
     } finally {
       setLoading(false);
     }
@@ -987,22 +987,24 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
                   <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '12px' }}>
                     {(q.options || []).map((opt, i) => {
                       const optText = typeof opt === 'string' ? opt : opt.text;
+                      const optGraphData = typeof opt === 'object' ? opt.graphData : null;
+                      const hasGraph = !!(optGraphData?.jsxGraph || optGraphData?.numberLine || optGraphData?.diagram || optGraphData?.geometry);
                       // Shared resolver — Number(q.answer) treated value answers
                       // ("3" meaning three) as positions, marking the wrong
                       // option Correct in the bank preview.
                       const isCorrect = i === resolveCorrectOptionIndex(q, q.options || []);
                       return (
-                        <div key={i} style={{ padding: '16px 28px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '16px', border: `2px solid ${isCorrect ? '#10b981' : 'transparent'}`, borderRadius: '100px', background: isCorrect ? '#f0fdf4' : '#fff', boxShadow: '0 4px 12px rgba(0,0,0,0.03)' }}>
+                        <div key={i} style={{ padding: hasGraph ? '16px' : '16px 28px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '16px', border: `2px solid ${isCorrect ? '#10b981' : 'transparent'}`, borderRadius: hasGraph ? '24px' : '100px', background: isCorrect ? '#f0fdf4' : '#fff', boxShadow: '0 4px 12px rgba(0,0,0,0.03)', overflow: 'visible' }}>
                            <div style={{ display: 'flex', alignItems: 'center', gap: '16px', width: '100%' }}>
                             <div style={{ width: '34px', height: '34px', borderRadius: '50%', background: isCorrect ? '#10b981' : '#f1f5f9', color: isCorrect ? '#fff' : '#64748b', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: '"Inter", sans-serif', fontWeight: 700, fontSize: '0.85rem', flexShrink: 0 }}>
                               {String.fromCharCode(65 + i)}
                             </div>
-                            <div style={{ flex: 1 }}>
-                              <MathView content={optText} graphData={typeof opt === 'object' ? opt.graphData : null} style={{ fontWeight: 500, fontSize: '1.05rem', color: '#1e1b4b' }} />
+                            <div style={{ flex: 1, minWidth: 0 }}>
+                              <MathView content={optText} graphData={optGraphData} style={{ fontWeight: 500, fontSize: '1.05rem', color: '#1e1b4b' }} />
                               {typeof opt === 'object' && opt.imageUrl && <img src={opt.imageUrl} alt="" style={{ maxHeight: '60px', marginTop: '8px', display: 'block', borderRadius: '8px' }} />}
                             </div>
                           </div>
-                          {isCorrect && <span style={{ fontSize: '0.7rem', fontWeight: 800, color: '#10b981', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Correct</span>}
+                          {isCorrect && <span style={{ fontSize: '0.7rem', fontWeight: 800, color: '#10b981', textTransform: 'uppercase', letterSpacing: '0.08em', flexShrink: 0 }}>Correct</span>}
                         </div>
                       );
                     })}

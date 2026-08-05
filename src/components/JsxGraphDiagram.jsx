@@ -193,8 +193,13 @@ const JsxGraphDiagram = ({ data, style }) => {
              }
 
              if (isXAxis) {
-               attributes.firstArrow = true;
-               attributes.lastArrow = true;
+               if (dy >= 3) {
+                 attributes.firstArrow = true;
+                 attributes.lastArrow = true;
+               } else {
+                 attributes.firstArrow = false;
+                 attributes.lastArrow = false;
+               }
 
                if (showAxisLabels) {
                  // Automatically label x-axis near the positive end, just below
@@ -246,6 +251,14 @@ const JsxGraphDiagram = ({ data, style }) => {
                 fontWeight: 'bold',
               });
             }
+          } else if (type === 'arrow' && originalColor === 'blue') {
+            // Style inequality arrows (which use blue) prominently for 1D number lines
+            attributes = {
+              ...attributes,
+              strokeColor: '#6366f1',
+              strokeWidth: Math.max(attributes.strokeWidth || 3, 3),
+              lastArrow: { type: 1, size: 8 }
+            };
           }
         }
 
@@ -269,7 +282,7 @@ const JsxGraphDiagram = ({ data, style }) => {
             ...attributes,
             color: mappedColor,
             strokeColor: mappedColor,
-            fillColor: mappedColor,
+            fillColor: attributes.fillColor === 'blue' ? '#3b82f6' : (attributes.fillColor !== undefined ? attributes.fillColor : mappedColor),
             size: attributes.size !== undefined ? attributes.size : 3.5, // slightly larger for visibility
             visible: attributes.visible !== false,
             withLabel: hasLatex ? false : (attributes.withLabel !== undefined ? attributes.withLabel : (attributes.name ? true : false)),
