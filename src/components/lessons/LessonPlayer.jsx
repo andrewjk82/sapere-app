@@ -46,7 +46,7 @@ const fmt = (n) => n.toLocaleString('en-US').replace(/,/g, ' ');
 
 // Steps that need the student to tap/answer something before moving on —
 // auto-play must PAUSE here rather than racing past on its usual timer.
-const INTERACTIVE_BOARD_TYPES = ['checkpoint', 'compassBearing', 'elevationDepression', 'angleCircle', 'similarTriangles', 'reciprocalRatio', 'exactValuesExplorer'];
+const INTERACTIVE_BOARD_TYPES = ['checkpoint', 'compassBearing', 'elevationDepression', 'angleCircle', 'similarTriangles', 'reciprocalRatio', 'exactValuesExplorer', 'unknownSideSolver'];
 const isInteractiveStep = (step) => (step?.board || []).some(
   (b) => INTERACTIVE_BOARD_TYPES.includes(b.type) || (b.type === 'triangle' && b.quiz),
 );
@@ -2457,6 +2457,151 @@ const ExactValuesExplorer = () => {
   );
 };
 
+// ── Unknown-side solver — animated walkthrough ──────────────────────────────
+// Steps through the "known + unknown → ratio → solve" method on one concrete
+// triangle (hyp 5, θ = 60°, opposite side x — the same numbers as the worked
+// Example that follows this step), so the general method is seen animated
+// before it's seen written out. Known parts of the triangle light up green,
+// the unknown side lights up orange, and the matching entry in the sin/cos/tan
+// finder lights up purple as the method picks it.
+const UNKNOWN_SIDE_STEPS = [
+  {
+    tag: 'Look at the triangle', known: false, unknown: false, mnem: null,
+    formula: '\\sin\\theta = \\dfrac{\\text{opp}}{\\text{hyp}}', oppLabel: 'x',
+    text: 'This triangle has one known angle, one known side, and one side we don’t know yet — that’s x.',
+  },
+  {
+    tag: 'Mark what’s known', known: true, unknown: false, mnem: null,
+    formula: '\\sin\\theta = \\dfrac{\\text{opp}}{\\text{hyp}}', oppLabel: 'x',
+    text: 'The angle 60° and the hypotenuse 5 are given — those are known.',
+  },
+  {
+    tag: 'Mark what’s missing', known: true, unknown: true, mnem: null,
+    formula: '\\sin\\theta = \\dfrac{\\text{opp}}{\\text{hyp}}', oppLabel: 'x',
+    text: 'x is the side opposite the 60° angle — that’s the one we’re solving for.',
+  },
+  {
+    tag: 'Choose the ratio', known: true, unknown: true, mnem: 'sin',
+    formula: '\\sin\\theta = \\dfrac{\\text{opp}}{\\text{hyp}}', oppLabel: 'x',
+    text: 'Known side = hypotenuse, unknown side = opposite — the ratio that uses both is sine.',
+  },
+  {
+    tag: 'Substitute', known: true, unknown: true, mnem: 'sin',
+    formula: '\\sin 60° = \\dfrac{x}{5}', oppLabel: 'x',
+    text: 'Put θ = 60° and hyp = 5 into the ratio, in place of θ and hyp.',
+  },
+  {
+    tag: 'Rearrange', known: true, unknown: true, mnem: 'sin',
+    formula: 'x = 5\\sin 60°', oppLabel: 'x',
+    text: 'x is divided by 5, so multiply both sides by 5 to get x on its own.',
+  },
+  {
+    tag: 'Solve', known: true, unknown: true, mnem: 'sin', answer: true,
+    formula: 'x \\approx 4.33', oppLabel: '4.33',
+    text: 'Evaluate on a calculator: x = 5 sin 60° ≈ 4.33.',
+  },
+];
+const MNEM_RATIOS = [
+  { key: 'sin', label: '\\sin\\theta', parts: 'opp / hyp' },
+  { key: 'cos', label: '\\cos\\theta', parts: 'adj / hyp' },
+  { key: 'tan', label: '\\tan\\theta', parts: 'opp / adj' },
+];
+
+const UnknownSideSolver = ({ width = 320, height = 260 }) => {
+  const [step, setStep] = useState(0);
+  const [playing, setPlaying] = useState(false);
+  const total = UNKNOWN_SIDE_STEPS.length;
+  const s = UNKNOWN_SIDE_STEPS[step];
+
+  useEffect(() => {
+    if (!playing) return undefined;
+    if (step >= total - 1) { setPlaying(false); return undefined; }
+    const t = setTimeout(() => setStep((v) => v + 1), 2200);
+    return () => clearTimeout(t);
+  }, [playing, step, total]);
+
+  const pad = 46;
+  const A = [pad, height - pad]; // θ vertex, bottom-left
+  const B = [width - pad, height - pad]; // right-angle vertex, bottom-right
+  const C = [width - pad, pad]; // top vertex, above B
+  const known = '#0f9d68';
+  const unknown = '#ea580c';
+  const neutral = '#94a3b8';
+  const trans = { transition: 'stroke 0.4s ease, fill 0.4s ease' };
+
+  const goTo = (n) => { setPlaying(false); setStep(Math.max(0, Math.min(total - 1, n))); };
+  const togglePlay = () => { if (!playing && step === total - 1) setStep(0); setPlaying((p) => !p); };
+
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12, fontFamily: FONT }}>
+      <svg width={width} height={height} style={{ display: 'block' }}>
+        <polygon points={`${A[0]},${A[1]} ${B[0]},${B[1]} ${C[0]},${C[1]}`} fill="rgba(124,58,237,0.05)" />
+        <line x1={A[0]} y1={A[1]} x2={B[0]} y2={B[1]} stroke={neutral} strokeWidth="2.2" style={trans} />
+        <line x1={A[0]} y1={A[1]} x2={C[0]} y2={C[1]} stroke={s.known ? known : neutral} strokeWidth={s.known ? 4 : 2.2} style={trans} />
+        <motion.line x1={B[0]} y1={B[1]} x2={C[0]} y2={C[1]} stroke={s.unknown ? unknown : neutral} strokeWidth={s.unknown ? 4 : 2.2} style={trans}
+          animate={s.answer ? { strokeWidth: [4, 5.5, 4] } : {}} transition={{ duration: 1, repeat: s.answer ? Infinity : 0 }} />
+        <polyline points={`${B[0] - 10},${B[1]} ${B[0] - 10},${B[1] - 10} ${B[0]},${B[1] - 10}`} fill="none" stroke={neutral} strokeWidth="1.6" />
+        <path d={`M ${A[0] + 30} ${A[1]} A 30 30 0 0 0 ${A[0] + 15} ${A[1] - 26}`} fill="none" stroke={s.known ? known : neutral} strokeWidth="1.8" style={trans} />
+        <text x={A[0] + 18} y={A[1] - 12} fontSize="13" fontWeight="800" fill={s.known ? known : '#475569'} style={trans}>60°</text>
+        <text x={(A[0] + B[0]) / 2} y={B[1] + 20} fontSize="12.5" fontWeight="700" fill={neutral} textAnchor="middle">adj</text>
+        <text x={(A[0] + C[0]) / 2 - 16} y={(A[1] + C[1]) / 2 - 6} fontSize="14" fontWeight="800" fill={s.known ? known : '#94a3b8'} textAnchor="end" style={{ ...trans, paintOrder: 'stroke', stroke: '#fff', strokeWidth: 4 }}>5</text>
+        <AnimatePresence mode="wait">
+          <motion.text key={s.oppLabel} x={B[0] + 14} y={(B[1] + C[1]) / 2} fontSize="15" fontWeight="800" fill={s.unknown ? unknown : '#94a3b8'} textAnchor="start"
+            initial={{ opacity: 0, y: (B[1] + C[1]) / 2 + 6 }} animate={{ opacity: 1, y: (B[1] + C[1]) / 2 }} transition={{ duration: 0.3 }}
+            style={{ paintOrder: 'stroke', stroke: '#fff', strokeWidth: 4 }}>{s.oppLabel}</motion.text>
+        </AnimatePresence>
+      </svg>
+
+      <div style={{ background: '#f8f7ff', border: '1px solid #ece9fb', borderRadius: 12, padding: '8px 18px', minWidth: 180, textAlign: 'center' }}>
+        <AnimatePresence mode="wait">
+          <motion.div key={s.formula} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.2 }}>
+            <MathView content={`$$${s.formula}$$`} style={{ fontSize: '1.08rem', fontWeight: 700, color: '#5b4b9c' }} />
+          </motion.div>
+        </AnimatePresence>
+      </div>
+
+      <div style={{ display: 'flex', gap: 8 }}>
+        {MNEM_RATIOS.map((r) => (
+          <div key={r.key} style={{
+            padding: '5px 10px', borderRadius: 10, textAlign: 'center', minWidth: 58,
+            border: `1.5px solid ${s.mnem === r.key ? '#7c3aed' : '#e2e8f0'}`,
+            background: s.mnem === r.key ? '#f5f3ff' : '#fff', transition: 'border-color 0.4s ease, background 0.4s ease',
+          }}>
+            <MathView content={`$${r.label}$`} style={{ fontSize: '0.8rem', fontWeight: 800, color: s.mnem === r.key ? '#7c3aed' : '#64748b' }} />
+            <div style={{ fontSize: '0.62rem', fontWeight: 600, color: '#94a3b8', marginTop: 2 }}>{r.parts}</div>
+          </div>
+        ))}
+      </div>
+
+      <div style={{ fontSize: '0.82rem', fontWeight: 600, color: '#475569', textAlign: 'center', maxWidth: 300, minHeight: '2.4em' }}>
+        <span style={{ fontWeight: 800, color: '#7c3aed' }}>{s.tag}. </span>{s.text}
+      </div>
+
+      <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+        <button onClick={() => goTo(step - 1)} disabled={step === 0} aria-label="Previous step"
+          style={{ border: '1.5px solid #e2e8f0', background: '#fff', borderRadius: 8, padding: '5px 9px', cursor: step === 0 ? 'default' : 'pointer', opacity: step === 0 ? 0.4 : 1 }}>
+          <ArrowLeft size={14} color="#475569" />
+        </button>
+        <div style={{ display: 'flex', gap: 4 }}>
+          {UNKNOWN_SIDE_STEPS.map((_, i) => (
+            <div key={i} onClick={() => goTo(i)} style={{
+              width: 6, height: 6, borderRadius: '50%', cursor: 'pointer',
+              background: i === step ? '#7c3aed' : '#e2e8f0', transition: 'background 0.2s ease',
+            }} />
+          ))}
+        </div>
+        <button onClick={togglePlay} style={{ border: 'none', background: '#7c3aed', color: '#fff', borderRadius: 999, padding: '6px 14px', fontWeight: 700, fontSize: '0.78rem', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 5, fontFamily: FONT }}>
+          {playing ? <Pause size={13} /> : <Play size={13} />}{playing ? 'Pause' : (step === total - 1 ? 'Replay' : 'Play')}
+        </button>
+        <button onClick={() => goTo(step + 1)} disabled={step === total - 1} aria-label="Next step"
+          style={{ border: '1.5px solid #e2e8f0', background: '#fff', borderRadius: 8, padding: '5px 9px', cursor: step === total - 1 ? 'default' : 'pointer', opacity: step === total - 1 ? 0.4 : 1 }}>
+          <ArrowRight size={14} color="#475569" />
+        </button>
+      </div>
+    </div>
+  );
+};
+
 // Each board item animates in, with a stagger handled by the parent.
 const itemVariants = {
   hidden: { opacity: 0, y: 16 },
@@ -2541,6 +2686,7 @@ const BoardItem = ({ item }) => {
   else if (item.type === 'similarTriangles') inner = <SimilarTrianglesDemo {...item} />;
   else if (item.type === 'reciprocalRatio') inner = <ReciprocalRatioDemo {...item} />;
   else if (item.type === 'exactValuesExplorer') inner = <ExactValuesExplorer {...item} />;
+  else if (item.type === 'unknownSideSolver') inner = <UnknownSideSolver {...item} />;
   else return null;
   return <motion.div variants={itemVariants}>{inner}</motion.div>;
 };

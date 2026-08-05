@@ -1061,9 +1061,12 @@ export const buildRightTriangleTrigLesson = ({ audioBase = null } = {}) => {
       board: [{ type: 'math', content: `$$\\sin 53°47' \\approx 0.8068 \\qquad \\sin\\theta = \\tfrac{5}{8} \\Rightarrow \\theta \\approx 38°41'$$`, emphasis: true }],
     },
     {
-      narration: `<b>To find an unknown side:</b> figure out which of sin θ, cos θ or tan θ (or a reciprocal) uses <b>those two</b> sides — the one you know and the one you're looking for. Write the ratio with both sides, then solve for the unknown.`,
-      speech: `To find an unknown side, figure out which of sine theta, cosine theta or tangent theta, or a reciprocal, uses those two sides. The one you know, and the one you're looking for. Write the ratio with both sides, then solve for the unknown.`,
-      board: [{ type: 'math', content: `$$\\text{known and unknown sides} \\;\\longrightarrow\\; \\sin\\theta,\\ \\cos\\theta,\\ \\tan\\theta,\\ \\text{or reciprocal} \\;\\longrightarrow\\; \\text{unknown side}$$` }],
+      narration: `<b>To find an unknown side:</b> figure out which of sin θ, cos θ or tan θ (or a reciprocal) uses <b>those two</b> sides — the one you know and the one you're looking for. Write the ratio with both sides, then solve for the unknown. <b>Press play</b> to watch the method run on a triangle, step by step.`,
+      speech: `To find an unknown side, figure out which of sine theta, cosine theta or tangent theta, or a reciprocal, uses those two sides. The one you know, and the one you're looking for. Write the ratio with both sides, then solve for the unknown. Press play to watch the method run on a triangle, step by step.`,
+      board: [
+        { type: 'math', content: `$$\\text{known and unknown sides} \\;\\longrightarrow\\; \\sin\\theta,\\ \\cos\\theta,\\ \\tan\\theta,\\ \\text{or reciprocal} \\;\\longrightarrow\\; \\text{unknown side}$$` },
+        { type: 'unknownSideSolver' },
+      ],
     },
     {
       narration: `<b>Example.</b> Find x, given the hypotenuse 5 and angle 60°. Since x is <b>opposite</b> 60° and 5 is the <b>hypotenuse</b>: $\\dfrac{x}{5} = \\sin 60°$, so $x = 5\\sin 60° = \\dfrac{5\\sqrt3}{2}$.`,
