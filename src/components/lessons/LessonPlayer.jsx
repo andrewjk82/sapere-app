@@ -46,7 +46,7 @@ const fmt = (n) => n.toLocaleString('en-US').replace(/,/g, ' ');
 
 // Steps that need the student to tap/answer something before moving on —
 // auto-play must PAUSE here rather than racing past on its usual timer.
-const INTERACTIVE_BOARD_TYPES = ['checkpoint', 'compassBearing', 'elevationDepression', 'angleCircle', 'similarTriangles', 'reciprocalRatio', 'exactValuesExplorer', 'unknownSideSolver', 'unknownAngleSolver', 'primaryRatioRecap', 'workedTriangleSolver', 'walkerCliffSolver'];
+const INTERACTIVE_BOARD_TYPES = ['checkpoint', 'compassBearing', 'elevationDepression', 'angleCircle', 'similarTriangles', 'reciprocalRatio', 'exactValuesExplorer', 'unknownSideSolver', 'unknownAngleSolver', 'primaryRatioRecap', 'workedTriangleSolver', 'walkerCliffSolver', 'bearingFlightSolver'];
 const isInteractiveStep = (step) => (step?.board || []).some(
   (b) => INTERACTIVE_BOARD_TYPES.includes(b.type) || (b.type === 'triangle' && b.quiz),
 );
@@ -3540,6 +3540,240 @@ const WalkerCliffSolver = ({ width = 640, height = 230, oppVal = 300, adjVal = 1
   );
 };
 
+// ── Worked example — a bearings flight, two nested triangles, one persistent
+// scene ───────────────────────────────────────────────────────────────────
+// The third worked example had the same split as the previous two — a static
+// diagram, then two picture-less algebra steps — PLUS its own bug: the "30°"
+// and "100 km" labels sat 5px apart and visibly overlapped. It's also a
+// genuinely two-STAGE problem (not one triangle with two questions): leg 1
+// (A→B, bearing S30°E, 100 km) forms right triangle P-A-B; leg 2 (B→C, due
+// east, 200 km) extends the baseline so P-A-C is a second, bigger right
+// triangle sharing the same P and A. Part (a) solves triangle PAB for both
+// legs (PB via sin, AP via cos); part (b) uses AP (carried over from a) and
+// PC = PB + BC to find the bearing of C via tan. Every length and angle is
+// computed from the three real givens (AB, the 30° bearing, BC) — nothing
+// is picked independently and re-labelled, which is what caused the label
+// mismatches fixed earlier in this file.
+const BearingFlightSolver = ({ width = 560, height = 240, ab = 100, bearingDeg1 = 30, bc = 200 }) => {
+  const [part, setPart] = useState('a');
+  const [step, setStep] = useState(0);
+  const [playing, setPlaying] = useState(false);
+  const toRad = (d) => (d * Math.PI) / 180;
+
+  // The three givens; everything else (PB, AP, PC, the angle at A in
+  // triangle PAC, and the resulting bearing) is derived from them.
+  const pb = ab * Math.sin(toRad(bearingDeg1));
+  const ap = ab * Math.cos(toRad(bearingDeg1));
+  const pc = pb + bc;
+  const angle2Deg = (Math.atan2(pc, ap) * 180) / Math.PI;
+  const bearing2Deg = 180 - angle2Deg;
+
+  const STEPS_A = [
+    { tag: 'Look at the triangle', known: false,
+      formula: `AB = ${fmt(ab)}\\text{ km},\\ \\angle A = ${bearingDeg1}°`,
+      text: `The plane flies A→B on a bearing of S${bearingDeg1}°E for ${fmt(ab)} km. Drop a perpendicular from A to the baseline — that point is P — and you get a right triangle.` },
+    { tag: 'Mark what’s known', known: true,
+      formula: `AB = ${fmt(ab)}\\text{ km},\\ \\angle A = ${bearingDeg1}°`,
+      text: `The angle ${bearingDeg1}° and the hypotenuse AB = ${fmt(ab)} km are given — those are known.` },
+    { tag: 'Find PB — choose the ratio', known: true, focus: 'pb',
+      formula: `\\sin ${bearingDeg1}° = \\dfrac{PB}{AB}`,
+      text: `PB is opposite the ${bearingDeg1}° angle, AB is the hypotenuse — the ratio that uses both is sine.` },
+    { tag: 'Find PB — solve', known: true, focus: 'pb', answer: 'pb',
+      formula: `PB = ${fmt(ab)}\\sin ${bearingDeg1}° = ${fmt(pb)}\\text{ km (east)}`,
+      text: `Evaluate: PB = ${fmt(ab)} sin ${bearingDeg1}° = ${fmt(pb)} km — that's how far east of A the point B is.` },
+    { tag: 'Find AP — choose the ratio', known: true, focus: 'ap',
+      formula: `\\cos ${bearingDeg1}° = \\dfrac{AP}{AB}`,
+      text: `AP is adjacent to the ${bearingDeg1}° angle, AB is the hypotenuse — the ratio that uses both is cosine.` },
+    { tag: 'Find AP — solve', known: true, focus: 'ap', answer: 'ap',
+      formula: `AP = ${fmt(ab)}\\cos ${bearingDeg1}° = 50\\sqrt3\\text{ km (south)}`,
+      text: `Evaluate: AP = ${fmt(ab)} cos ${bearingDeg1}° = 50√3 ≈ ${ap.toFixed(1)} km — that's how far south of A the point B is.` },
+  ];
+  const STEPS_B = [
+    { tag: 'Look at the triangle', known: false,
+      formula: '\\angle PAC = \\;?',
+      text: 'C is further along the same baseline — PC = PB + BC. Triangle PAC has both legs known now; the bearing of C from A is what’s missing.' },
+    { tag: 'Mark what’s known', known: true,
+      formula: `PC = ${fmt(pb)} + ${fmt(bc)} = ${fmt(pc)}\\text{ km}`,
+      text: `AP = 50√3 km (from part a) and PC = PB + BC = ${fmt(pb)} + ${fmt(bc)} = ${fmt(pc)} km — both legs of triangle PAC are now known.` },
+    { tag: 'Choose the ratio', known: true,
+      formula: '\\tan\\angle PAC = \\dfrac{PC}{AP}',
+      text: 'PC is opposite ∠PAC, AP is adjacent to it — the ratio that uses both is tangent.' },
+    { tag: 'Substitute', known: true,
+      formula: `\\tan\\angle PAC = \\dfrac{${fmt(pc)}}{50\\sqrt3} = \\dfrac{5}{\\sqrt3}`,
+      text: 'Put PC and AP into the ratio — it simplifies to 5 over root 3.' },
+    { tag: 'Undo the tangent', known: true,
+      formula: '\\angle PAC = \\tan^{-1}\\!\\left(\\dfrac{5}{\\sqrt3}\\right)',
+      text: 'tan⁻¹ turns that ratio back into the angle.' },
+    { tag: 'Solve, then convert to a bearing', known: true, answer: 'angle',
+      formula: `\\angle PAC \\approx ${Math.round(angle2Deg)}° \\;\\Rightarrow\\; \\text{bearing} \\approx ${Math.round(bearing2Deg)}°\\text{T}`,
+      text: `∠PAC ≈ ${Math.round(angle2Deg)}°. AP points due south from A, so the true bearing of C is measured back toward north: 180° − ${Math.round(angle2Deg)}° ≈ ${Math.round(bearing2Deg)}°T.` },
+  ];
+  const steps = part === 'a' ? STEPS_A : STEPS_B;
+  const total = steps.length;
+  const s = steps[step];
+
+  useEffect(() => {
+    if (!playing) return undefined;
+    if (step >= total - 1) { setPlaying(false); return undefined; }
+    const t = setTimeout(() => setStep((n) => n + 1), 2400);
+    return () => clearTimeout(t);
+  }, [playing, step, total]);
+
+  // Geometry, scaled from the real km values (never the reverse) — the whole
+  // scene auto-fits width x height the same way SpecialTriangle does.
+  const pad = 50;
+  const scale = Math.min((width - 2 * pad) / pc, (height - 2 * pad) / ap);
+  const P = [pad, height - pad];
+  const A = [pad, height - pad - ap * scale];
+  const B = [pad + pb * scale, height - pad];
+  const C = [pad + pc * scale, height - pad];
+  const known = '#0f9d68', unknown = '#ea580c', neutral = '#94a3b8';
+  const trans = { transition: 'stroke 0.4s ease, fill 0.4s ease, opacity 0.4s ease' };
+
+  // Two concentric angle arcs at A: the small "given" 30° (always shown) and
+  // the larger ∠PAC (shown only while solving part b) — both swept from the
+  // SAME "straight down toward P" reference direction, so they visibly nest.
+  const arcPts = (r, toDeg, n = 16) => Array.from({ length: n + 1 }, (_, i) => {
+    const t = toRad((toDeg * i) / n);
+    return [A[0] + r * Math.sin(t), A[1] + r * Math.cos(t)];
+  });
+  const arcPath = (pts) => pts.map((p, i) => `${i === 0 ? 'M' : 'L'}${p[0].toFixed(1)} ${p[1].toFixed(1)}`).join(' ');
+  const smallArc = arcPath(arcPts(26, bearingDeg1));
+  const bigArc = arcPath(arcPts(46, angle2Deg));
+  const smallLabelT = toRad(bearingDeg1 / 2);
+  const smallLabelPos = [A[0] + 40 * Math.sin(smallLabelT), A[1] + 40 * Math.cos(smallLabelT)];
+  const bigLabelT = toRad(angle2Deg / 2);
+  const bigLabelPos = [A[0] + 62 * Math.sin(bigLabelT), A[1] + 62 * Math.cos(bigLabelT)];
+
+  const inPartB = part === 'b';
+  // Step indices within STEPS_A: 0 Look, 1 Mark known, 2/3 find PB (choose
+  // ratio / solve), 4/5 find AP (choose ratio / solve). Each side turns
+  // orange — the "this is what we're solving for" colour used everywhere
+  // else in this file — as soon as its own find begins, and STAYS that way
+  // for the rest of part a instead of fading back to neutral once attention
+  // moves to the other side (the bug this replaced: PB went grey again the
+  // moment AP's turn started). In part b both are simply "known" (green),
+  // since by then they're established facts feeding the new unknown angle.
+  const pbFocused = part === 'a' && step >= 2;
+  const pbSolved = inPartB || step >= 3;
+  const apFocused = part === 'a' && step >= 4;
+  const apSolved = inPartB || step >= 5;
+  const pbColor = inPartB ? known : (pbFocused ? unknown : neutral);
+  const apColor = inPartB ? known : (apFocused ? unknown : neutral);
+  const abColor = known; // given from the very first step, never in question
+  const angleColor = s.answer === 'angle' ? known : unknown;
+
+  return (
+    <div style={{
+      display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'center', gap: 24,
+      fontFamily: FONT, background: '#fbfaff', border: '1px solid #ece9fb', borderRadius: 18, padding: '20px 24px',
+    }}>
+      <svg width={width} height={height} style={{ display: 'block', flex: 'none', overflow: 'visible' }}>
+        {/* Baseline: P->B->C, always drawn; colour reflects what's known */}
+        <motion.line x1={P[0]} y1={P[1]} x2={B[0]} y2={B[1]} stroke={pbColor} strokeWidth={pbColor === neutral ? 2 : 3.2} style={trans}
+          animate={s.answer === 'pb' ? { strokeWidth: [3.2, 4.6, 3.2] } : {}} transition={{ duration: 1, repeat: s.answer === 'pb' ? Infinity : 0 }} />
+        <motion.line x1={B[0]} y1={B[1]} x2={C[0]} y2={C[1]} stroke={inPartB ? known : neutral} strokeWidth={inPartB ? 3.2 : 2} style={trans} />
+        {/* AP: the south leg */}
+        <motion.line x1={P[0]} y1={P[1]} x2={A[0]} y2={A[1]} stroke={apColor} strokeWidth={apColor === neutral ? 2 : 3.2} style={trans}
+          animate={s.answer === 'ap' ? { strokeWidth: [3.2, 4.6, 3.2] } : {}} transition={{ duration: 1, repeat: s.answer === 'ap' ? Infinity : 0 }} />
+        {/* AB: the first flight leg (given, always known) */}
+        <line x1={A[0]} y1={A[1]} x2={B[0]} y2={B[1]} stroke={abColor} strokeWidth="3.2" style={trans} />
+        {/* AC: the straight-line path — a light reference only */}
+        <line x1={A[0]} y1={A[1]} x2={C[0]} y2={C[1]} stroke={neutral} strokeWidth="1.4" strokeDasharray="5 4" />
+
+        <circle cx={A[0]} cy={A[1]} r="4" fill="#1e1b4b" /><text x={A[0] - 10} y={A[1] - 6} fontSize="13" fontWeight="800" fill="#1e1b4b" textAnchor="end">A</text>
+        <circle cx={P[0]} cy={P[1]} r="4" fill="#1e1b4b" /><text x={P[0] - 10} y={P[1] + 4} fontSize="12.5" fontWeight="700" fill={neutral} textAnchor="end">P</text>
+        <circle cx={B[0]} cy={B[1]} r="4" fill="#1e1b4b" /><text x={B[0]} y={B[1] + 34} fontSize="12.5" fontWeight="700" fill="#1e1b4b" textAnchor="middle">B</text>
+        <circle cx={C[0]} cy={C[1]} r="4" fill="#1e1b4b" /><text x={C[0]} y={C[1] + 34} fontSize="12.5" fontWeight="700" fill="#1e1b4b" textAnchor="middle">C</text>
+
+        <path d={smallArc} fill="none" stroke={known} strokeWidth="1.8" />
+        <text x={smallLabelPos[0]} y={smallLabelPos[1]} fontSize="12" fontWeight="800" fill={known} textAnchor="middle" dominantBaseline="middle"
+          style={{ paintOrder: 'stroke', stroke: '#fbfaff', strokeWidth: 3.5 }}>{bearingDeg1}°</text>
+        {inPartB && (
+          <>
+            <path d={bigArc} fill="none" stroke={angleColor} strokeWidth="1.8" style={trans} />
+            <motion.text x={bigLabelPos[0]} y={bigLabelPos[1]} fontSize="12.5" fontWeight="800" fill={angleColor} textAnchor="middle" dominantBaseline="middle"
+              style={{ ...trans, paintOrder: 'stroke', stroke: '#fbfaff', strokeWidth: 3.5 }}
+              animate={s.answer === 'angle' ? { scale: [1, 1.15, 1] } : {}} transition={{ duration: 1, repeat: s.answer === 'angle' ? Infinity : 0 }}>
+              {s.answer === 'angle' ? `${Math.round(angle2Deg)}°` : '∠PAC'}
+            </motion.text>
+          </>
+        )}
+
+        <AnimatePresence mode="wait">
+          <motion.text key={`ab-${part}-${step}`} x={(A[0] + B[0]) / 2 + 10} y={(A[1] + B[1]) / 2 - 4} fontSize="12" fontWeight="700" fill={abColor}
+            textAnchor="start" initial={{ opacity: 0.7 }} animate={{ opacity: 1 }}
+            style={{ paintOrder: 'stroke', stroke: '#fbfaff', strokeWidth: 4 }}>{fmt(ab)} km</motion.text>
+        </AnimatePresence>
+        <text x={(P[0] + A[0]) / 2 - 10} y={(P[1] + A[1]) / 2} fontSize="12" fontWeight="700" fill={apColor} textAnchor="end" dominantBaseline="middle"
+          style={{ ...trans, paintOrder: 'stroke', stroke: '#fbfaff', strokeWidth: 4 }}>{apSolved ? '50√3 km' : 'AP'}</text>
+        <AnimatePresence mode="wait">
+          <motion.text key={`pb-${part}-${pbSolved}`} x={(P[0] + B[0]) / 2} y={P[1] + 20} fontSize="12" fontWeight="700" fill={pbColor} textAnchor="middle"
+            initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.3 }}
+            style={{ paintOrder: 'stroke', stroke: '#fbfaff', strokeWidth: 4 }}>{pbSolved ? `${fmt(pb)} km` : 'PB'}</motion.text>
+        </AnimatePresence>
+        {inPartB && (
+          <text x={(B[0] + C[0]) / 2} y={P[1] + 20} fontSize="12" fontWeight="700" fill={known} textAnchor="middle"
+            style={{ paintOrder: 'stroke', stroke: '#fbfaff', strokeWidth: 4 }}>{fmt(bc)} km</text>
+        )}
+        {inPartB && (
+          <text x={(P[0] + C[0]) / 2} y={P[1] + 42} fontSize="12.5" fontWeight="800" fill={known} textAnchor="middle"
+            style={{ paintOrder: 'stroke', stroke: '#fbfaff', strokeWidth: 4 }}>PC = {fmt(pc)} km</text>
+        )}
+      </svg>
+
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12, width: 300, flex: 'none' }}>
+        <div style={{ background: '#f2effc', border: '1px solid #ece9fb', borderRadius: 12, padding: '8px 18px', width: '100%', textAlign: 'center', boxSizing: 'border-box' }}>
+          <AnimatePresence mode="wait">
+            <motion.div key={s.formula} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.2 }}>
+              <MathView content={`$$${s.formula}$$`} style={{ fontSize: '1.0rem', fontWeight: 700, color: '#5b4b9c' }} />
+            </motion.div>
+          </AnimatePresence>
+        </div>
+
+        <div style={{ display: 'flex', gap: 8 }}>
+          {[['a', 'a  Find PB, AP'], ['b', 'b  Find the bearing']].map(([key, label]) => (
+            <button key={key} type="button" onClick={() => { setPlaying(false); setStep(0); setPart(key); }} aria-pressed={part === key}
+              style={{
+                padding: '6px 12px', borderRadius: 10, fontWeight: 800, fontSize: '0.76rem', cursor: 'pointer', fontFamily: FONT,
+                border: `1.5px solid ${part === key ? '#7c3aed' : '#e2e8f0'}`,
+                background: part === key ? '#f5f3ff' : '#fff', color: part === key ? '#7c3aed' : '#64748b',
+                transition: 'border-color 0.3s ease, background 0.4s ease',
+              }}>{label}</button>
+          ))}
+        </div>
+
+        <div style={{ fontSize: '0.82rem', fontWeight: 600, color: '#475569', textAlign: 'center', minHeight: '2.6em' }}>
+          <span style={{ fontWeight: 800, color: '#7c3aed' }}>{s.tag}. </span>{s.text}
+        </div>
+
+        <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+          <button onClick={() => { setPlaying(false); setStep(Math.max(0, step - 1)); }} disabled={step === 0} aria-label="Previous step"
+            style={{ border: '1.5px solid #e2e8f0', background: '#fff', borderRadius: 8, padding: '5px 9px', cursor: step === 0 ? 'default' : 'pointer', opacity: step === 0 ? 0.4 : 1 }}>
+            <ArrowLeft size={14} color="#475569" />
+          </button>
+          <div style={{ display: 'flex', gap: 4 }}>
+            {steps.map((_, i) => (
+              <div key={i} onClick={() => { setPlaying(false); setStep(i); }} style={{
+                width: 6, height: 6, borderRadius: '50%', cursor: 'pointer',
+                background: i === step ? '#7c3aed' : '#e2e8f0', transition: 'background 0.2s ease',
+              }} />
+            ))}
+          </div>
+          <button onClick={() => { if (!playing && step === total - 1) setStep(0); setPlaying((p) => !p); }}
+            style={{ border: 'none', background: '#7c3aed', color: '#fff', borderRadius: 999, padding: '6px 14px', fontWeight: 700, fontSize: '0.78rem', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 5, fontFamily: FONT }}>
+            {playing ? <Pause size={13} /> : <Play size={13} />}{playing ? 'Pause' : (step === total - 1 ? 'Replay' : 'Play')}
+          </button>
+          <button onClick={() => { setPlaying(false); setStep(Math.min(total - 1, step + 1)); }} disabled={step === total - 1} aria-label="Next step"
+            style={{ border: '1.5px solid #e2e8f0', background: '#fff', borderRadius: 8, padding: '5px 9px', cursor: step === total - 1 ? 'default' : 'pointer', opacity: step === total - 1 ? 0.4 : 1 }}>
+            <ArrowRight size={14} color="#475569" />
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 // Each board item animates in, with a stagger handled by the parent.
 const itemVariants = {
   hidden: { opacity: 0, y: 16 },
@@ -3628,6 +3862,7 @@ const BoardItem = ({ item }) => {
   else if (item.type === 'unknownAngleSolver') inner = <UnknownAngleSolver {...item} />;
   else if (item.type === 'workedTriangleSolver') inner = <WorkedTriangleSolver {...item} />;
   else if (item.type === 'walkerCliffSolver') inner = <WalkerCliffSolver {...item} />;
+  else if (item.type === 'bearingFlightSolver') inner = <BearingFlightSolver {...item} />;
   else if (item.type === 'primaryRatioRecap') inner = <PrimaryRatioRecap {...item} />;
   else if (item.type === 'introTrigScene') inner = <IntroTrigScene {...item} />;
   else return null;

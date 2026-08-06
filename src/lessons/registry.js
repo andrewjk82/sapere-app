@@ -1138,30 +1138,6 @@ export const buildRightTriangleTrigLesson = ({ audioBase = null } = {}) => {
 
 // ── Lesson: Year 11 Advanced · 6B · Problems involving right-angled triangles
 export const buildRightTriangleProblemsLesson = ({ audioBase = null } = {}) => {
-  // Plain path diagram (no axes) for the compass-bearing example — reuses the
-  // generic graph primitive's lines/points/texts, same trick as the radian
-  // lesson's angle diagrams.
-  const bearingPathDiagram = () => ({
-    type: 'graph', showAxes: false, width: 360, height: 300,
-    xMin: -40, xMax: 300, yMin: -30, yMax: 130,
-    lines: [
-      { from: [0, 0], to: [0, 86.6], color: '#94a3b8', dashed: true },
-      { from: [0, 86.6], to: [50, 0], color: '#7c3aed', delay: 0.3 },
-      { from: [50, 0], to: [250, 0], color: '#10b981', delay: 0.6 },
-      { from: [0, 86.6], to: [250, 0], color: '#f59e0b', dashed: true, delay: 0.9 },
-    ],
-    points: [{ x: 0, y: 86.6 }, { x: 0, y: 0 }, { x: 50, y: 0 }, { x: 250, y: 0 }],
-    texts: [
-      { x: 0, y: 100, text: 'A', color: '#1e1b4b', size: 13 },
-      { x: -14, y: -6, text: 'P', color: '#1e1b4b', size: 13 },
-      { x: 50, y: -12, text: 'B', color: '#1e1b4b', size: 13 },
-      { x: 250, y: -12, text: 'C', color: '#1e1b4b', size: 13 },
-      { x: 25, y: 50, text: '30°', color: '#7c3aed', size: 12 },
-      { x: 25, y: 55, text: '100 km', color: '#7c3aed', size: 11 },
-      { x: 145, y: -12, text: '200 km', color: '#10b981', size: 11 },
-    ],
-  });
-
   const steps = [
     {
       narration: `Trigonometry developed in the ancient world to solve <b>practical</b> problems with right-angled triangles — typically involving <b>compass bearings</b> and <b>angles of elevation or depression</b>. From one lookout, a plane above is sighted at its angle of <b>elevation</b>, a boat below at its angle of <b>depression</b> — and a bearing describes a direction two ways at once.`,
@@ -1242,19 +1218,9 @@ export const buildRightTriangleProblemsLesson = ({ audioBase = null } = {}) => {
       }],
     },
     {
-      narration: `<b>Example.</b> A plane flies at 400 km/h from A to B in the direction S30°E for 15 minutes, then turns to fly due east for 30 minutes to C. <b>a</b> Find how far south and east of A the point B is. <b>b</b> Find the true bearing of C from A.`,
-      speech: `Example. A plane flies at 400 kilometres per hour, from A to B in the direction south 30 east, for 15 minutes. It then turns sharply to fly due east for 30 minutes, to C. Part a, find how far south and east of A the point B is. Part b, find the true bearing of C from A, correct to the nearest degree.`,
-      board: [bearingPathDiagram()],
-    },
-    {
-      narration: `<b>a</b> In 15 minutes (¼ hour) at 400 km/h, AB = 100 km; in 30 minutes, BC = 200 km. In △PAB: $\\dfrac{PB}{100} = \\sin 30°$, so $PB = 50$ km (east); and $AP = 100\\cos 30° = 50\\sqrt3$ km (south).`,
-      speech: `Part a. In 15 minutes, one quarter of an hour, at 400 kilometres per hour, A B is 100 kilometres. In 30 minutes, B C is 200 kilometres. In triangle P A B, P B over 100 equals sine 30 degrees, so P B equals 50 kilometres, which is how far east. And A P equals 100 cosine 30 degrees, equals 50 root 3 kilometres, which is how far south.`,
-      board: [{ type: 'math', content: `$$PB = 100\\sin 30° = 50\\text{ km} \\qquad AP = 100\\cos 30° = 50\\sqrt3\\text{ km}$$`, emphasis: true }],
-    },
-    {
-      narration: `<b>b</b> Using opposite over adjacent in △PAC: $\\tan\\angle PAC = \\dfrac{PC}{AP} = \\dfrac{50+200}{50\\sqrt3} = \\dfrac{5}{\\sqrt3}$, so $\\angle PAC \\approx 71°$. Since AP points due south from A, the true bearing of C from A is about $180° - 71° = 109°$T.`,
-      speech: `Part b. Using opposite over adjacent in triangle P A C, tan of angle P A C equals P C over A P, equals, 50 plus 200, over 50 root 3, equals 5 over root 3. So angle P A C is about 71 degrees. Since A P points due south from A, the true bearing of C from A is about 180 degrees minus 71 degrees, which is 109 degrees T.`,
-      board: [{ type: 'math', content: `$$\\tan\\angle PAC = \\dfrac{250}{50\\sqrt3} = \\dfrac{5}{\\sqrt3} \\Rightarrow \\angle PAC \\approx 71° \\;\\Rightarrow\\; \\text{bearing} \\approx 109°\\text{T}$$`, emphasis: true }],
+      narration: `<b>Example.</b> A plane flies at 400 km/h from A to B in the direction S30°E for 15 minutes (AB = 100 km), then turns to fly due east for 30 minutes to C (BC = 200 km). <b>a</b> Find how far south and east of A the point B is. <b>b</b> Find the true bearing of C from A. <b>Press play</b> to watch both, step by step, on the same flight path.`,
+      speech: `Example. A plane flies at 400 kilometres per hour, from A to B in the direction south 30 east, for 15 minutes — that's 100 kilometres. It then turns to fly due east for 30 minutes to C — that's 200 kilometres. Part a, find how far south and east of A the point B is. Part b, find the true bearing of C from A. Press play to watch both, step by step, on the same flight path.`,
+      board: [{ type: 'bearingFlightSolver' }],
     },
     {
       narration: `<b>Recap:</b> elevation and depression angles are always from the <b>horizontal</b>, and equal each other by alternate angles; compass bearings (N/S then E/W) and true bearings (clockwise from north, 3 digits) describe the <b>same</b> direction two ways; and every problem still reduces to a right-angled triangle solved with sin, cos or tan.`,
