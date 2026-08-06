@@ -2521,13 +2521,29 @@ const UnknownSideSolver = ({ width = 320, height = 260 }) => {
   }, [playing, step, total]);
 
   const pad = 46;
-  const A = [pad, height - pad]; // θ vertex, bottom-left
-  const B = [width - pad, height - pad]; // right-angle vertex, bottom-right
-  const C = [width - pad, pad]; // top vertex, above B
+  // The triangle is BUILT from the labelled angle, so the drawing can never
+  // disagree with the "60°" on it (it used to be drawn at ~36° while claiming
+  // 60°, which is what pushed the angle arc off the hypotenuse).
+  const ANGLE_DEG = 60;
+  const theta = (ANGLE_DEG * Math.PI) / 180;
+  const oppLen = height - 2 * pad;
+  const adjLen = oppLen / Math.tan(theta);
+  const baseX = Math.round((width - adjLen) / 2);
+  const A = [baseX, height - pad]; // θ vertex, bottom-left
+  const B = [Math.round(baseX + adjLen), height - pad]; // right-angle vertex, bottom-right
+  const C = [Math.round(baseX + adjLen), pad]; // top vertex, above B
   const known = '#0f9d68';
   const unknown = '#ea580c';
   const neutral = '#94a3b8';
   const trans = { transition: 'stroke 0.4s ease, fill 0.4s ease' };
+
+  // Angle mark, derived from the same θ — arc lands exactly on the hypotenuse,
+  // label sits on the bisector so it never touches either arm.
+  const arcR = 30;
+  const arcFrom = [A[0] + arcR, A[1]];
+  const arcTo = [A[0] + arcR * Math.cos(theta), A[1] - arcR * Math.sin(theta)];
+  const labelR = arcR + 20;
+  const angLabel = [A[0] + labelR * Math.cos(theta / 2), A[1] - labelR * Math.sin(theta / 2)];
 
   const goTo = (n) => { setPlaying(false); setStep(Math.max(0, Math.min(total - 1, n))); };
   const togglePlay = () => { if (!playing && step === total - 1) setStep(0); setPlaying((p) => !p); };
@@ -2544,13 +2560,16 @@ const UnknownSideSolver = ({ width = 320, height = 260 }) => {
         <motion.line x1={B[0]} y1={B[1]} x2={C[0]} y2={C[1]} stroke={s.unknown ? unknown : neutral} strokeWidth={s.unknown ? 4 : 2.2} style={trans}
           animate={s.answer ? { strokeWidth: [4, 5.5, 4] } : {}} transition={{ duration: 1, repeat: s.answer ? Infinity : 0 }} />
         <polyline points={`${B[0] - 10},${B[1]} ${B[0] - 10},${B[1] - 10} ${B[0]},${B[1] - 10}`} fill="none" stroke={neutral} strokeWidth="1.6" />
-        <path d={`M ${A[0] + 30} ${A[1]} A 30 30 0 0 0 ${A[0] + 15} ${A[1] - 26}`} fill="none" stroke={s.known ? known : neutral} strokeWidth="1.8" style={trans} />
-        <text x={A[0] + 18} y={A[1] - 12} fontSize="13" fontWeight="800" fill={s.known ? known : '#475569'} style={trans}>60°</text>
+        <path d={`M ${arcFrom[0]} ${arcFrom[1]} A ${arcR} ${arcR} 0 0 0 ${arcTo[0]} ${arcTo[1]}`} fill="none" stroke={s.known ? known : neutral} strokeWidth="1.8" style={trans} />
+        <text x={angLabel[0]} y={angLabel[1]} fontSize="13" fontWeight="800" fill={s.known ? known : '#475569'} textAnchor="middle" dominantBaseline="middle"
+          style={{ ...trans, paintOrder: 'stroke', stroke: '#fbfaff', strokeWidth: 3.5 }}>60°</text>
         <text x={(A[0] + B[0]) / 2} y={B[1] + 20} fontSize="12.5" fontWeight="700" fill={neutral} textAnchor="middle">adj</text>
         <text x={(A[0] + C[0]) / 2 - 16} y={(A[1] + C[1]) / 2 - 6} fontSize="14" fontWeight="800" fill={s.known ? known : '#94a3b8'} textAnchor="end" style={{ ...trans, paintOrder: 'stroke', stroke: '#fff', strokeWidth: 4 }}>5</text>
         <AnimatePresence mode="wait">
-          <motion.text key={s.oppLabel} x={B[0] + 14} y={(B[1] + C[1]) / 2} fontSize="15" fontWeight="800" fill={s.unknown ? unknown : '#94a3b8'} textAnchor="start"
-            initial={{ opacity: 0, y: (B[1] + C[1]) / 2 + 6 }} animate={{ opacity: 1, y: (B[1] + C[1]) / 2 }} transition={{ duration: 0.3 }}
+          {/* framer-motion `y` is a transform, NOT the SVG y attribute — passing the
+              absolute mid-height here translated the label a whole triangle down. */}
+          <motion.text key={s.oppLabel} x={B[0] + 14} y={(B[1] + C[1]) / 2} fontSize="15" fontWeight="800" fill={s.unknown ? unknown : '#94a3b8'} textAnchor="start" dominantBaseline="middle"
+            initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }}
             style={{ paintOrder: 'stroke', stroke: '#fff', strokeWidth: 4 }}>{s.oppLabel}</motion.text>
         </AnimatePresence>
       </svg>
