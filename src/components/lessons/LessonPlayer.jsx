@@ -46,7 +46,7 @@ const fmt = (n) => n.toLocaleString('en-US').replace(/,/g, ' ');
 
 // Steps that need the student to tap/answer something before moving on —
 // auto-play must PAUSE here rather than racing past on its usual timer.
-const INTERACTIVE_BOARD_TYPES = ['checkpoint', 'compassBearing', 'elevationDepression', 'angleCircle', 'similarTriangles', 'reciprocalRatio', 'exactValuesExplorer', 'unknownSideSolver', 'unknownAngleSolver', 'primaryRatioRecap'];
+const INTERACTIVE_BOARD_TYPES = ['checkpoint', 'compassBearing', 'elevationDepression', 'angleCircle', 'similarTriangles', 'reciprocalRatio', 'exactValuesExplorer', 'unknownSideSolver', 'unknownAngleSolver', 'primaryRatioRecap', 'workedTriangleSolver'];
 const isInteractiveStep = (step) => (step?.board || []).some(
   (b) => INTERACTIVE_BOARD_TYPES.includes(b.type) || (b.type === 'triangle' && b.quiz),
 );
@@ -3137,6 +3137,216 @@ const UnknownAngleSolver = ({
   );
 };
 
+// ── Worked example — a real problem, walked through on ONE persistent figure ─
+// A concrete word problem ("plane sights a church at 35° depression, find the
+// ground distance then the line-of-sight distance") used to be split across
+// three separate lesson steps: a static to-scale triangle with a tap-a-side
+// quiz, then two purely-algebra steps with NO picture at all — exactly where
+// the picture matters most, watching which side lights up as "known" and
+// which as "the one we're solving for". This puts both parts (a, then b) on
+// the SAME triangle, animated the same way as UnknownSideSolver, so the
+// figure never disappears mid-explanation. The angle (55°) is fixed; GC and
+// PC are the two things solved for in turn — one tab each, same pattern as
+// every other tabbed solver in this file.
+const WORKED_EXAMPLE_META = {
+  a: { unknownSide: 'opp', unknownName: 'GC', ratio: 'tan', label: 'a  Find GC' },
+  b: { unknownSide: 'hyp', unknownName: 'PC', ratio: 'cos', label: 'b  Find PC' },
+};
+const buildWorkedSteps = (part) => {
+  const m = WORKED_EXAMPLE_META[part];
+  const base = { known: true, unknown: true, mnem: m.ratio };
+  if (part === 'a') {
+    return [
+      { ...base, tag: 'Look at the triangle', known: false, unknown: false, mnem: null,
+        formula: '\\tan\\theta = \\dfrac{\\text{opp}}{\\text{adj}}',
+        text: 'One known angle (55°), one known side (9000 m) — GC, the ground distance, is what we find first.' },
+      { ...base, tag: 'Mark what’s known', unknown: false, mnem: null,
+        formula: '\\tan\\theta = \\dfrac{\\text{opp}}{\\text{adj}}',
+        text: 'The angle 55° and the adjacent side 9000 m are given — those are known.' },
+      { ...base, tag: 'Mark what’s missing', mnem: null,
+        formula: '\\tan\\theta = \\dfrac{\\text{opp}}{\\text{adj}}',
+        text: 'GC is opposite the 55° angle — that’s the side we’re solving for.' },
+      { ...base, tag: 'Choose the ratio',
+        formula: '\\tan\\theta = \\dfrac{\\text{opp}}{\\text{adj}}',
+        text: 'Known side = adjacent, unknown side = opposite — the ratio that uses both is tangent.' },
+      { ...base, tag: 'Substitute',
+        formula: '\\tan 55° = \\dfrac{GC}{9000}',
+        text: 'Put θ = 55° and adj = 9000 into the ratio, in place of θ and adj.' },
+      { ...base, tag: 'Rearrange',
+        formula: 'GC = 9000\\tan 55°',
+        text: 'GC is divided by 9000, so multiply both sides by 9000 to get GC on its own.' },
+      { ...base, tag: 'Solve', answer: true, unknownLabel: '12 900 m',
+        formula: 'GC \\approx 12\\,900\\text{ m}',
+        text: 'Evaluate on a calculator: GC = 9000 tan 55° ≈ 12 900 m.' },
+    ];
+  }
+  return [
+    { ...base, tag: 'Look at the triangle', known: false, unknown: false, mnem: null,
+      formula: '\\cos\\theta = \\dfrac{\\text{adj}}{\\text{hyp}}',
+      text: 'Now for PC, the line-of-sight distance — the hypotenuse of the same triangle.' },
+    { ...base, tag: 'Mark what’s known', unknown: false, mnem: null,
+      formula: '\\cos\\theta = \\dfrac{\\text{adj}}{\\text{hyp}}',
+      text: 'The angle 55° and the adjacent side 9000 m are given — those are known.' },
+    { ...base, tag: 'Mark what’s missing', mnem: null,
+      formula: '\\cos\\theta = \\dfrac{\\text{adj}}{\\text{hyp}}',
+      text: 'PC is the hypotenuse — the side we’re solving for this time.' },
+    { ...base, tag: 'Choose the ratio',
+      formula: '\\cos\\theta = \\dfrac{\\text{adj}}{\\text{hyp}}',
+      text: 'Known side = adjacent, unknown side = hypotenuse — the ratio that uses both is cosine.' },
+    { ...base, tag: 'Substitute',
+      formula: '\\cos 55° = \\dfrac{9000}{PC}',
+      text: 'Put θ = 55° and adj = 9000 in — this time PC is in the denominator, not the numerator.' },
+    { ...base, tag: 'Rearrange',
+      formula: 'PC = \\dfrac{9000}{\\cos 55°}',
+      text: 'Cross-multiply, then divide by cos 55°, to get PC on its own.' },
+    { ...base, tag: 'Solve', answer: true, unknownLabel: '15 700 m',
+      formula: 'PC \\approx 15\\,700\\text{ m}',
+      text: 'Evaluate on a calculator: PC = 9000 ÷ cos 55° ≈ 15 700 m.' },
+  ];
+};
+
+const WorkedTriangleSolver = ({ width = 340, height = 260, angleDeg = 55 }) => {
+  const [part, setPart] = useState('a');
+  const [step, setStep] = useState(0);
+  const [playing, setPlaying] = useState(false);
+  const steps = buildWorkedSteps(part);
+  const total = steps.length;
+  const s = steps[step];
+  const m = WORKED_EXAMPLE_META[part];
+
+  useEffect(() => {
+    if (!playing) return undefined;
+    if (step >= total - 1) { setPlaying(false); return undefined; }
+    const t = setTimeout(() => setStep((n) => n + 1), 2400);
+    return () => clearTimeout(t);
+  }, [playing, step, total]);
+
+  // Triangle built FROM the 55° angle (never picked independently and
+  // re-labelled) — the same construction as UnknownSideSolver/
+  // UnknownAngleSolver, which is what keeps the figure and the "55°" label
+  // from ever disagreeing.
+  const pad = 46;
+  const theta = (angleDeg * Math.PI) / 180;
+  const oppLen = height - 2 * pad;
+  const adjLen = oppLen / Math.tan(theta);
+  const baseX = Math.round((width - adjLen) / 2);
+  const A = [baseX, height - pad]; // 55° vertex
+  const B = [Math.round(baseX + adjLen), height - pad]; // right angle
+  const C = [Math.round(baseX + adjLen), pad]; // top (35°)
+  const known = '#0f9d68', unknown = '#ea580c', neutral = '#94a3b8';
+  const trans = { transition: 'stroke 0.4s ease, fill 0.4s ease' };
+
+  const arcR = 30;
+  const arcTo = [A[0] + arcR * Math.cos(theta), A[1] - arcR * Math.sin(theta)];
+  const labelR = arcR + 20;
+  const angLabel = [A[0] + labelR * Math.cos(theta / 2), A[1] - labelR * Math.sin(theta / 2)];
+
+  const SIDES = ['adj', 'opp', 'hyp'];
+  const SIDE_ENDS = { adj: [A, B], opp: [B, C], hyp: [A, C] };
+  const SIDE_LABEL = {
+    adj: { x: (A[0] + B[0]) / 2, y: B[1] + 20, anchor: 'middle', baseline: 'auto' },
+    opp: { x: B[0] + 14, y: (B[1] + C[1]) / 2, anchor: 'start', baseline: 'middle' },
+    hyp: { x: (A[0] + C[0]) / 2 - 16, y: (A[1] + C[1]) / 2 - 6, anchor: 'end', baseline: 'auto' },
+  };
+  const NAME = { adj: '9000', opp: 'GC', hyp: 'PC' };
+  const isLit = (side) => (side === 'adj' ? s.known : side === m.unknownSide ? s.unknown : false);
+  const colorOf = (side) => (isLit(side) ? (side === 'adj' ? known : unknown) : neutral);
+  const textOf = (side) => (side === 'adj' ? '9000' : side === m.unknownSide ? (s.unknownLabel || NAME[side]) : NAME[side]);
+
+  const goTo = (n) => { setPlaying(false); setStep(Math.max(0, Math.min(total - 1, n))); };
+  const togglePlay = () => { if (!playing && step === total - 1) setStep(0); setPlaying((p) => !p); };
+  const pickPart = (key) => { setPlaying(false); setStep(0); setPart(key); };
+
+  return (
+    <div style={{
+      display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'center', gap: 28,
+      fontFamily: FONT, background: '#fbfaff', border: '1px solid #ece9fb', borderRadius: 18, padding: '20px 26px',
+    }}>
+      <svg width={width} height={height} style={{ display: 'block', flex: 'none', overflow: 'visible' }}>
+        <polygon points={`${A[0]},${A[1]} ${B[0]},${B[1]} ${C[0]},${C[1]}`} fill="rgba(124,58,237,0.05)" />
+        {SIDES.map((side) => {
+          const [P, Q] = SIDE_ENDS[side];
+          const pulse = side === m.unknownSide && s.answer;
+          return (
+            <motion.line key={side} x1={P[0]} y1={P[1]} x2={Q[0]} y2={Q[1]} stroke={colorOf(side)} strokeWidth={isLit(side) ? 4 : 2.2} style={trans}
+              animate={pulse ? { strokeWidth: [4, 5.5, 4] } : {}} transition={{ duration: 1, repeat: pulse ? Infinity : 0 }} />
+          );
+        })}
+        <polyline points={`${B[0] - 10},${B[1]} ${B[0] - 10},${B[1] - 10} ${B[0]},${B[1] - 10}`} fill="none" stroke={neutral} strokeWidth="1.6" />
+        <path d={`M ${A[0] + arcR} ${A[1]} A ${arcR} ${arcR} 0 0 0 ${arcTo[0]} ${arcTo[1]}`} fill="none" stroke={s.known ? known : neutral} strokeWidth="1.8" style={trans} />
+        <text x={angLabel[0]} y={angLabel[1]} fontSize="13" fontWeight="800" fill={s.known ? known : '#475569'} textAnchor="middle" dominantBaseline="middle"
+          style={{ ...trans, paintOrder: 'stroke', stroke: '#fbfaff', strokeWidth: 3.5 }}>{angleDeg}°</text>
+        <text x={C[0] - 8} y={C[1] + 20} fontSize="11.5" fontWeight="700" fill={neutral} textAnchor="end">35°</text>
+        {SIDES.map((side) => {
+          const pos = SIDE_LABEL[side];
+          const lit = isLit(side);
+          const common = {
+            x: pos.x, y: pos.y, textAnchor: pos.anchor, dominantBaseline: pos.baseline,
+            fontSize: lit ? 14.5 : 12.5, fontWeight: lit ? 800 : 700, fill: colorOf(side),
+          };
+          const halo = { paintOrder: 'stroke', stroke: '#fbfaff', strokeWidth: 4 };
+          if (side !== m.unknownSide) return <text key={side} {...common} style={{ ...trans, ...halo }}>{textOf(side)}</text>;
+          return (
+            <AnimatePresence mode="wait" key={side}>
+              <motion.text key={`${part}-${s.unknownLabel || 'q'}`} {...common}
+                initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }}
+                style={{ ...trans, ...halo }}>{textOf(side)}</motion.text>
+            </AnimatePresence>
+          );
+        })}
+      </svg>
+
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12, width: 300, flex: 'none' }}>
+        <div style={{ background: '#f2effc', border: '1px solid #ece9fb', borderRadius: 12, padding: '8px 18px', width: '100%', textAlign: 'center', boxSizing: 'border-box' }}>
+          <AnimatePresence mode="wait">
+            <motion.div key={s.formula} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.2 }}>
+              <MathView content={`$$${s.formula}$$`} style={{ fontSize: '1.08rem', fontWeight: 700, color: '#5b4b9c' }} />
+            </motion.div>
+          </AnimatePresence>
+        </div>
+
+        <div style={{ display: 'flex', gap: 8 }}>
+          {['a', 'b'].map((key) => (
+            <button key={key} type="button" onClick={() => pickPart(key)} aria-pressed={part === key}
+              style={{
+                padding: '6px 14px', borderRadius: 10, fontWeight: 800, fontSize: '0.8rem', cursor: 'pointer', fontFamily: FONT,
+                border: `1.5px solid ${part === key ? '#7c3aed' : '#e2e8f0'}`,
+                background: part === key ? '#f5f3ff' : '#fff', color: part === key ? '#7c3aed' : '#64748b',
+                transition: 'border-color 0.3s ease, background 0.4s ease',
+              }}>{WORKED_EXAMPLE_META[key].label}</button>
+          ))}
+        </div>
+
+        <div style={{ fontSize: '0.82rem', fontWeight: 600, color: '#475569', textAlign: 'center', minHeight: '2.4em' }}>
+          <span style={{ fontWeight: 800, color: '#7c3aed' }}>{s.tag}. </span>{s.text}
+        </div>
+
+        <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+          <button onClick={() => goTo(step - 1)} disabled={step === 0} aria-label="Previous step"
+            style={{ border: '1.5px solid #e2e8f0', background: '#fff', borderRadius: 8, padding: '5px 9px', cursor: step === 0 ? 'default' : 'pointer', opacity: step === 0 ? 0.4 : 1 }}>
+            <ArrowLeft size={14} color="#475569" />
+          </button>
+          <div style={{ display: 'flex', gap: 4 }}>
+            {steps.map((_, i) => (
+              <div key={i} onClick={() => goTo(i)} style={{
+                width: 6, height: 6, borderRadius: '50%', cursor: 'pointer',
+                background: i === step ? '#7c3aed' : '#e2e8f0', transition: 'background 0.2s ease',
+              }} />
+            ))}
+          </div>
+          <button onClick={togglePlay} style={{ border: 'none', background: '#7c3aed', color: '#fff', borderRadius: 999, padding: '6px 14px', fontWeight: 700, fontSize: '0.78rem', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 5, fontFamily: FONT }}>
+            {playing ? <Pause size={13} /> : <Play size={13} />}{playing ? 'Pause' : (step === total - 1 ? 'Replay' : 'Play')}
+          </button>
+          <button onClick={() => goTo(step + 1)} disabled={step === total - 1} aria-label="Next step"
+            style={{ border: '1.5px solid #e2e8f0', background: '#fff', borderRadius: 8, padding: '5px 9px', cursor: step === total - 1 ? 'default' : 'pointer', opacity: step === total - 1 ? 0.4 : 1 }}>
+            <ArrowRight size={14} color="#475569" />
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 // Each board item animates in, with a stagger handled by the parent.
 const itemVariants = {
   hidden: { opacity: 0, y: 16 },
@@ -3223,6 +3433,7 @@ const BoardItem = ({ item }) => {
   else if (item.type === 'exactValuesExplorer') inner = <ExactValuesExplorer {...item} />;
   else if (item.type === 'unknownSideSolver') inner = <UnknownSideSolver {...item} />;
   else if (item.type === 'unknownAngleSolver') inner = <UnknownAngleSolver {...item} />;
+  else if (item.type === 'workedTriangleSolver') inner = <WorkedTriangleSolver {...item} />;
   else if (item.type === 'primaryRatioRecap') inner = <PrimaryRatioRecap {...item} />;
   else if (item.type === 'introTrigScene') inner = <IntroTrigScene {...item} />;
   else return null;

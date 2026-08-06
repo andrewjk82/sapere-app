@@ -1192,20 +1192,9 @@ export const buildRightTriangleProblemsLesson = ({ audioBase = null } = {}) => {
       }],
     },
     {
-      narration: `<b>Example.</b> From a plane flying at 9000 m, a church is seen at an angle of depression of 35°. <b>a</b> Find the distance along the ground. <b>b</b> Find the line-of-sight distance.`,
-      speech: `Example. From a plane flying at 9000 metres, a church is seen at an angle of depression of 35 degrees. Part a, find the distance along the ground. Part b, find the line of sight distance.`,
-      board: [triangle([[0, 0], [4.6, 0], [4.6, 3.2]], ['GC', '9000 m', 'PC'], ['35°', '90°', '55°'],
-        { prompt: 'Tap the side that is opposite the 55° angle.', correctIndex: 0, explanation: 'The side facing an angle (not touching it) is opposite it — here that\'s the ground distance GC, facing the 55° angle at the plane.' })],
-    },
-    {
-      narration: `<b>a</b> GC is <b>opposite</b> 55° and 9000 is <b>adjacent</b> to it: $\\dfrac{GC}{9000} = \\tan 55°$, so $GC = 9000\\tan 55° \\approx 12\\,900$ m.`,
-      speech: `Part a. GC is opposite 55 degrees, and 9000 is adjacent to it. GC over 9000 equals tan 55 degrees. So GC equals 9000 tan 55 degrees, which is about 12 thousand 900 metres.`,
-      board: [{ type: 'math', content: `$$\\dfrac{GC}{9000} = \\tan 55° \\;\\Rightarrow\\; GC = 9000\\tan 55° \\approx 12\\,900\\text{ m}$$`, emphasis: true }],
-    },
-    {
-      narration: `<b>b</b> PC is the <b>hypotenuse</b> and 9000 is adjacent to 55°: $\\dfrac{PC}{9000} = \\dfrac{1}{\\cos 55°}$, so $PC = \\dfrac{9000}{\\cos 55°} \\approx 15\\,700$ m.`,
-      speech: `Part b. PC is the hypotenuse, and 9000 is adjacent to 55 degrees. PC over 9000 equals 1 over cos 55 degrees. So PC equals 9000 over cos 55 degrees, which is about 15 thousand 700 metres.`,
-      board: [{ type: 'math', content: `$$\\dfrac{PC}{9000} = \\dfrac{1}{\\cos 55°} \\;\\Rightarrow\\; PC = \\dfrac{9000}{\\cos 55°} \\approx 15\\,700\\text{ m}$$`, emphasis: true }],
+      narration: `<b>Example.</b> From a plane flying at 9000 m, a church is seen at an <b>angle of depression</b> of 35° — by alternate angles, that's also the 55° angle shown at the church. <b>a</b> Find the distance along the ground, GC. <b>b</b> Find the line-of-sight distance, PC. <b>Press play</b> to watch both, step by step, on the same triangle.`,
+      speech: `Example. From a plane flying at 9000 metres, a church is seen at an angle of depression of 35 degrees — by alternate angles, that's also the 55 degree angle shown at the church. Part a, find the distance along the ground, G C. Part b, find the line of sight distance, P C. Press play to watch both, step by step, on the same triangle.`,
+      board: [{ type: 'workedTriangleSolver' }],
     },
     {
       narration: `<b>Example.</b> A walker on level ground is 1 km from the base of a 300 m vertical cliff. <b>a</b> Find the angle of elevation of the top, to the nearest minute. <b>b</b> Find the line-of-sight distance to the top, to the nearest metre.`,
