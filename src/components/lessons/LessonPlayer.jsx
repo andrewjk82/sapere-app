@@ -2189,6 +2189,17 @@ const IntroTrigScene = ({ width = 640, height = 280 }) => {
   const arcR = 30;
   const elevArcEnd = [obs[0] + arcR * Math.cos(toRad(elevDeg)), obs[1] - arcR * Math.sin(toRad(elevDeg))];
   const depArcEnd = [obs[0] + arcR * Math.cos(toRad(depDeg)), obs[1] + arcR * Math.sin(toRad(depDeg))];
+  // Degree labels sit on the arc's own bisector, just outside its radius —
+  // beside the arc, not floating off toward the sight line. The "angle of
+  // elevation/depression" captions sit further out along each sight line,
+  // offset clear of the stroke, so neither label ever collides with the
+  // Plane/Boat name at the line's end.
+  const labelR = arcR + 16;
+  const elevLabelPos = [obs[0] + labelR * Math.cos(toRad(elevDeg / 2)), obs[1] - labelR * Math.sin(toRad(elevDeg / 2))];
+  const depLabelPos = [obs[0] + labelR * Math.cos(toRad(depDeg / 2)), obs[1] + labelR * Math.sin(toRad(depDeg / 2))];
+  const capT = 0.42 * sightLen;
+  const elevCapPos = [obs[0] + capT * Math.cos(toRad(elevDeg)), obs[1] - capT * Math.sin(toRad(elevDeg)) - 12];
+  const depCapPos = [obs[0] + capT * Math.cos(toRad(depDeg)), obs[1] + capT * Math.sin(toRad(depDeg)) + 16];
 
   // Compass rose, right-hand third of the scene. Every label (N/S/E/W, plus
   // the bearing notation) is placed at a position that's within [0, width] x
@@ -2213,9 +2224,12 @@ const IntroTrigScene = ({ width = 640, height = 280 }) => {
           initial={{ pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ duration: 0.5, delay: 0.3 }} />
         <motion.path d={`M ${obs[0] + arcR} ${obs[1]} A ${arcR} ${arcR} 0 0 0 ${elevArcEnd[0]} ${elevArcEnd[1]}`} fill="none" stroke={amber} strokeWidth="2"
           initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.3, delay: 0.7 }} />
-        <motion.text x={obs[0] + arcR + 6} y={obs[1] - arcR + 2} fontSize="12.5" fontWeight="800" fill="#b45309"
+        <motion.text x={elevLabelPos[0]} y={elevLabelPos[1]} textAnchor="middle" dominantBaseline="middle" fontSize="12.5" fontWeight="800" fill="#b45309"
           style={{ paintOrder: 'stroke', stroke: '#fff', strokeWidth: 4 }}
           initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.3, delay: 0.85 }}>{elevDeg}°</motion.text>
+        <motion.text x={elevCapPos[0]} y={elevCapPos[1]} textAnchor="middle" fontSize="11" fontWeight="700" fill="#475569" fontStyle="italic"
+          style={{ paintOrder: 'stroke', stroke: '#fbfaff', strokeWidth: 4 }}
+          initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.3, delay: 1 }}>angle of elevation</motion.text>
         <motion.text x={plane[0]} y={plane[1] - 12} textAnchor="middle" fontSize="12" fontWeight="700" fill="#1e293b"
           initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.3, delay: 0.85 }}>Plane</motion.text>
 
@@ -2224,9 +2238,12 @@ const IntroTrigScene = ({ width = 640, height = 280 }) => {
           initial={{ pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ duration: 0.5, delay: 1.1 }} />
         <motion.path d={`M ${obs[0] + arcR} ${obs[1]} A ${arcR} ${arcR} 0 0 1 ${depArcEnd[0]} ${depArcEnd[1]}`} fill="none" stroke={amber} strokeWidth="2"
           initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.3, delay: 1.5 }} />
-        <motion.text x={obs[0] + arcR + 6} y={obs[1] + arcR - 2} fontSize="12.5" fontWeight="800" fill="#b45309"
+        <motion.text x={depLabelPos[0]} y={depLabelPos[1]} textAnchor="middle" dominantBaseline="middle" fontSize="12.5" fontWeight="800" fill="#b45309"
           style={{ paintOrder: 'stroke', stroke: '#fff', strokeWidth: 4 }}
           initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.3, delay: 1.65 }}>{depDeg}°</motion.text>
+        <motion.text x={depCapPos[0]} y={depCapPos[1]} textAnchor="middle" fontSize="11" fontWeight="700" fill="#475569" fontStyle="italic"
+          style={{ paintOrder: 'stroke', stroke: '#fbfaff', strokeWidth: 4 }}
+          initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.3, delay: 1.8 }}>angle of depression</motion.text>
         <motion.text x={boat[0]} y={boat[1] + 18} textAnchor="middle" fontSize="12" fontWeight="700" fill="#1e293b"
           initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.3, delay: 1.65 }}>Boat</motion.text>
 
