@@ -188,7 +188,7 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
             chunks.push(unloadedIds.slice(i, i + 30));
           }
           const snaps = await Promise.all(
-            chunks.map(chunk => getDocs(query(collection(db, 'questions'), where('__name__', 'in', chunk))))
+            chunks.map(chunk => getDocsFromServer(query(collection(db, 'questions'), where('__name__', 'in', chunk))))
           );
           const fetched = {};
           snaps.forEach(snap => {
@@ -426,8 +426,15 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
           chunks.push(idsToFetch.slice(i, i + 30));
         }
 
+        // getDocsFromServer (not getDocs) — the plain SDK call happily
+        // answers from Firestore's local IndexedDB cache when a document is
+        // already cached, so an admin re-editing a question's content (e.g.
+        // graphData) and reloading this page kept seeing the stale cached
+        // copy indefinitely, even across hard refreshes (persistence
+        // survives those). This is the Question Bank editor — it must
+        // always reflect the live doc.
         const snaps = await Promise.all(
-          chunks.map(chunk => getDocs(query(collection(db, 'questions'), where('__name__', 'in', chunk))))
+          chunks.map(chunk => getDocsFromServer(query(collection(db, 'questions'), where('__name__', 'in', chunk))))
         );
 
         const fetched = {};
