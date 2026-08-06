@@ -2308,7 +2308,10 @@ const AngleCircle = ({
   const transStyle = { transition: 'cx 0.35s ease, cy 0.35s ease, x2 0.35s ease, y2 0.35s ease' };
   return (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12, fontFamily: FONT }}>
-      <svg width={width} height={height} style={{ display: 'block' }}>
+      {/* overflow:visible — the P(x, y) label now prints live numeric values
+          (was a fixed 6-char "P(x, y)"), long enough in some quadrants to
+          cross the svg's own edge, which defaults to clipping it. */}
+      <svg width={width} height={height} style={{ display: 'block', overflow: 'visible' }}>
         <circle cx={cx} cy={cy} r={r} fill="none" stroke="#ddd6fe" strokeWidth="1.6" />
         <line x1={cx - r - 20} y1={cy} x2={cx + r + 20} y2={cy} stroke="#94a3b8" strokeWidth="1.4" />
         <line x1={cx} y1={cy - r - 20} x2={cx} y2={cy + r + 20} stroke="#94a3b8" strokeWidth="1.4" />
@@ -2321,8 +2324,15 @@ const AngleCircle = ({
         <circle cx={px} cy={py} r="6" fill="#7c3aed" stroke="#fff" strokeWidth="2" style={transStyle} />
         <circle cx={cx} cy={cy} r="3.5" fill="#1e1b4b" />
         <text x={cx - 14} y={cy + 16} fontSize="12" fontWeight="700" fill="#1e1b4b">O</text>
-        <text x={px + (x >= 0 ? 10 : -34)} y={py + (y >= 0 ? -8 : 20)} fontSize="12.5" fontWeight="800" fill="#7c3aed"
-          style={{ paintOrder: 'stroke', stroke: '#fff', strokeWidth: 4, ...transStyle }}>P(x, y)</text>
+        {/* The two dashed guide segments ARE x and y — label each with its
+            live value (not just the axis letter) so "x moves, y moves" is
+            something read off the picture as θ changes, not taken on faith. */}
+        <text x={(px + cx) / 2} y={py + (y >= 0 ? -8 : 18)} fontSize="11.5" fontWeight="700" fill="#64748b" textAnchor="middle"
+          style={{ paintOrder: 'stroke', stroke: '#fbfaff', strokeWidth: 4, ...transStyle }}>x = {x.toFixed(1)}</text>
+        <text x={px + (x >= 0 ? 8 : -8)} y={(py + cy) / 2} fontSize="11.5" fontWeight="700" fill="#64748b" textAnchor={x >= 0 ? 'start' : 'end'} dominantBaseline="middle"
+          style={{ paintOrder: 'stroke', stroke: '#fbfaff', strokeWidth: 4, ...transStyle }}>y = {y.toFixed(1)}</text>
+        <text x={px + (x >= 0 ? 10 : -74)} y={py + (y >= 0 ? -22 : 34)} fontSize="12.5" fontWeight="800" fill="#7c3aed"
+          style={{ paintOrder: 'stroke', stroke: '#fff', strokeWidth: 4, ...transStyle }}>P({x.toFixed(1)}, {y.toFixed(1)})</text>
       </svg>
       <div style={{ fontSize: '0.95rem', fontWeight: 800, color: '#7c3aed' }}>θ = {Math.round(deg)}°</div>
       <input type="range" min={sliderMin} max={sliderMax} step={1} value={deg} onChange={(e) => setDeg(Number(e.target.value))}
