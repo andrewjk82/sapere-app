@@ -2070,16 +2070,28 @@ const Checkpoint = ({ prompt, options = [], explanation = '' }) => {
 const ElevationDepressionDiagram = ({ width = 420, height = 260 }) => {
   const [mode, setMode] = useState('elevation');
   const isElev = mode === 'elevation';
-  // Elevation: observer bottom-left, horizontal line right, sight line up-right to object.
-  // Depression: observer top-left (on a height), horizontal line right, sight line down-right to object.
-  const obs = isElev ? [70, height - 50] : [70, 50];
-  const obj = isElev ? [width - 70, 60] : [width - 70, height - 60];
-  const horizEnd = [width - 40, obs[1]];
-  const arcR = 34;
   const angleDeg = isElev ? 38 : 32;
   const sign = isElev ? -1 : 1;
-  const arcEnd = [obs[0] + arcR * Math.cos((angleDeg * Math.PI) / 180), obs[1] + sign * arcR * Math.sin((angleDeg * Math.PI) / 180)];
+  const toRad = (d) => (d * Math.PI) / 180;
+  // Elevation: observer bottom-left, horizontal line right, sight line up-right to object.
+  // Depression: observer top-left (on a height), horizontal line right, sight line down-right to object.
+  const obs = isElev ? [70, height - 60] : [70, 60];
+  // The object sits at the END of a line drawn AT angleDeg — it used to be
+  // placed at independent fixed coordinates (width-70, 60/height-60), which
+  // actually drew a ~28° line while the arc and label still claimed 38°/32°.
+  // That mismatch is what put the arc off the real line and the label off
+  // the arc. Building the object's position from angleDeg makes that
+  // mismatch impossible.
+  const sightLen = 200;
+  const obj = [obs[0] + sightLen * Math.cos(toRad(angleDeg)), obs[1] + sign * sightLen * Math.sin(toRad(angleDeg))];
+  const horizEnd = [width - 40, obs[1]];
+  const arcR = 34;
+  const arcEnd = [obs[0] + arcR * Math.cos(toRad(angleDeg)), obs[1] + sign * arcR * Math.sin(toRad(angleDeg))];
   const largeArc = 0, sweep = isElev ? 0 : 1;
+  // Degree label sits on the arc's own bisector, just outside its radius —
+  // beside the arc, not off toward the sight line.
+  const labelR = arcR + 15;
+  const labelPos = [obs[0] + labelR * Math.cos(toRad(angleDeg / 2)), obs[1] + sign * labelR * Math.sin(toRad(angleDeg / 2))];
   return (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12, fontFamily: FONT }}>
       <div style={{ display: 'flex', gap: 8 }}>
@@ -2090,13 +2102,13 @@ const ElevationDepressionDiagram = ({ width = 420, height = 260 }) => {
           </button>
         ))}
       </div>
-      <svg width={width} height={height} style={{ display: 'block' }}>
+      <svg width={width} height={height} style={{ display: 'block', overflow: 'visible' }}>
         <motion.line x1={obs[0]} y1={obs[1]} x2={horizEnd[0]} y2={horizEnd[1]} stroke="#94a3b8" strokeWidth="1.6" strokeDasharray="5 4"
           initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.3 }} />
         <motion.line key={mode + '-sight'} x1={obs[0]} y1={obs[1]} x2={obj[0]} y2={obj[1]} stroke="#7c3aed" strokeWidth="2.4"
           initial={{ pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ duration: 0.5 }} />
         <path d={`M ${obs[0] + arcR} ${obs[1]} A ${arcR} ${arcR} 0 ${largeArc} ${sweep} ${arcEnd[0]} ${arcEnd[1]}`} fill="none" stroke="#f59e0b" strokeWidth="2" />
-        <text x={obs[0] + arcR + 8} y={obs[1] + sign * (arcR - 4)} fontSize="13" fontWeight="800" fill="#b45309" style={{ paintOrder: 'stroke', stroke: '#fff', strokeWidth: 4 }}>{angleDeg}°</text>
+        <text x={labelPos[0]} y={labelPos[1]} textAnchor="middle" dominantBaseline="middle" fontSize="13" fontWeight="800" fill="#b45309" style={{ paintOrder: 'stroke', stroke: '#fff', strokeWidth: 4 }}>{angleDeg}°</text>
         <circle cx={obs[0]} cy={obs[1]} r="5" fill="#1e1b4b" />
         <circle cx={obj[0]} cy={obj[1]} r="5" fill="#7c3aed" />
         <text x={obs[0]} y={obs[1] + (isElev ? 22 : -12)} textAnchor="middle" fontSize="12.5" fontWeight="700" fill="#1e293b">Observer</text>
