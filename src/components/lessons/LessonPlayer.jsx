@@ -2459,48 +2459,96 @@ const ExactValuesExplorer = () => {
 
 // ── Unknown-side solver — animated walkthrough ──────────────────────────────
 // Steps through the "known + unknown → ratio → solve" method on one concrete
-// triangle (hyp 5, θ = 60°, opposite side x — the same numbers as the worked
-// Example that follows this step), so the general method is seen animated
-// before it's seen written out. Known parts of the triangle light up green,
-// the unknown side lights up orange, and the matching entry in the sin/cos/tan
-// finder lights up purple as the method picks it.
-const UNKNOWN_SIDE_STEPS = [
-  {
-    tag: 'Look at the triangle', known: false, unknown: false, mnem: null,
-    formula: '\\sin\\theta = \\dfrac{\\text{opp}}{\\text{hyp}}', oppLabel: 'x',
-    text: 'This triangle has one known angle, one known side, and one side we don’t know yet — that’s x.',
+// triangle (θ = 60°, the same numbers as the worked Example that follows this
+// step), so the general method is seen animated before it's seen written out.
+// Known parts of the triangle light up green, the unknown side lights up
+// orange, and the matching entry in the sin/cos/tan finder lights up purple as
+// the method picks it.
+//
+// One walkthrough per ratio: the sin/cos/tan chips are tabs, so a student can
+// run the SAME method on the case where the missing side is the opposite
+// (sine), the adjacent (cosine), or where the hypotenuse isn't involved at all
+// (tangent) — which pair of sides you have is the whole decision being taught.
+const UNKNOWN_SIDE_VARIANTS = {
+  sin: {
+    knownSide: 'hyp', unknownSide: 'opp', knownLabel: '5',
+    steps: [
+      { tag: 'Look at the triangle', known: false, unknown: false, mnem: null, unknownLabel: 'x',
+        formula: '\\sin\\theta = \\dfrac{\\text{opp}}{\\text{hyp}}',
+        text: 'This triangle has one known angle, one known side, and one side we don’t know yet — that’s x.' },
+      { tag: 'Mark what’s known', known: true, unknown: false, mnem: null, unknownLabel: 'x',
+        formula: '\\sin\\theta = \\dfrac{\\text{opp}}{\\text{hyp}}',
+        text: 'The angle 60° and the hypotenuse 5 are given — those are known.' },
+      { tag: 'Mark what’s missing', known: true, unknown: true, mnem: null, unknownLabel: 'x',
+        formula: '\\sin\\theta = \\dfrac{\\text{opp}}{\\text{hyp}}',
+        text: 'x is the side opposite the 60° angle — that’s the one we’re solving for.' },
+      { tag: 'Choose the ratio', known: true, unknown: true, mnem: 'sin', unknownLabel: 'x',
+        formula: '\\sin\\theta = \\dfrac{\\text{opp}}{\\text{hyp}}',
+        text: 'Known side = hypotenuse, unknown side = opposite — the ratio that uses both is sine.' },
+      { tag: 'Substitute', known: true, unknown: true, mnem: 'sin', unknownLabel: 'x',
+        formula: '\\sin 60° = \\dfrac{x}{5}',
+        text: 'Put θ = 60° and hyp = 5 into the ratio, in place of θ and hyp.' },
+      { tag: 'Rearrange', known: true, unknown: true, mnem: 'sin', unknownLabel: 'x',
+        formula: 'x = 5\\sin 60°',
+        text: 'x is divided by 5, so multiply both sides by 5 to get x on its own.' },
+      { tag: 'Solve', known: true, unknown: true, mnem: 'sin', answer: true, unknownLabel: '4.33',
+        formula: 'x \\approx 4.33',
+        text: 'Evaluate on a calculator: x = 5 sin 60° ≈ 4.33.' },
+    ],
   },
-  {
-    tag: 'Mark what’s known', known: true, unknown: false, mnem: null,
-    formula: '\\sin\\theta = \\dfrac{\\text{opp}}{\\text{hyp}}', oppLabel: 'x',
-    text: 'The angle 60° and the hypotenuse 5 are given — those are known.',
+  cos: {
+    knownSide: 'hyp', unknownSide: 'adj', knownLabel: '5',
+    steps: [
+      { tag: 'Look at the triangle', known: false, unknown: false, mnem: null, unknownLabel: 'x',
+        formula: '\\cos\\theta = \\dfrac{\\text{adj}}{\\text{hyp}}',
+        text: 'Same triangle, different missing side — this time x is the side along the bottom.' },
+      { tag: 'Mark what’s known', known: true, unknown: false, mnem: null, unknownLabel: 'x',
+        formula: '\\cos\\theta = \\dfrac{\\text{adj}}{\\text{hyp}}',
+        text: 'The angle 60° and the hypotenuse 5 are given — those are known.' },
+      { tag: 'Mark what’s missing', known: true, unknown: true, mnem: null, unknownLabel: 'x',
+        formula: '\\cos\\theta = \\dfrac{\\text{adj}}{\\text{hyp}}',
+        text: 'x is the side next to the 60° angle that isn’t the hypotenuse — the adjacent side.' },
+      { tag: 'Choose the ratio', known: true, unknown: true, mnem: 'cos', unknownLabel: 'x',
+        formula: '\\cos\\theta = \\dfrac{\\text{adj}}{\\text{hyp}}',
+        text: 'Known side = hypotenuse, unknown side = adjacent — the ratio that uses both is cosine.' },
+      { tag: 'Substitute', known: true, unknown: true, mnem: 'cos', unknownLabel: 'x',
+        formula: '\\cos 60° = \\dfrac{x}{5}',
+        text: 'Put θ = 60° and hyp = 5 into the ratio, in place of θ and hyp.' },
+      { tag: 'Rearrange', known: true, unknown: true, mnem: 'cos', unknownLabel: 'x',
+        formula: 'x = 5\\cos 60°',
+        text: 'x is divided by 5, so multiply both sides by 5 to get x on its own.' },
+      { tag: 'Solve', known: true, unknown: true, mnem: 'cos', answer: true, unknownLabel: '2.5',
+        formula: 'x = 2.5',
+        text: 'Evaluate on a calculator: x = 5 cos 60° = 2.5.' },
+    ],
   },
-  {
-    tag: 'Mark what’s missing', known: true, unknown: true, mnem: null,
-    formula: '\\sin\\theta = \\dfrac{\\text{opp}}{\\text{hyp}}', oppLabel: 'x',
-    text: 'x is the side opposite the 60° angle — that’s the one we’re solving for.',
+  tan: {
+    knownSide: 'adj', unknownSide: 'opp', knownLabel: '4',
+    steps: [
+      { tag: 'Look at the triangle', known: false, unknown: false, mnem: null, unknownLabel: 'x',
+        formula: '\\tan\\theta = \\dfrac{\\text{opp}}{\\text{adj}}',
+        text: 'Here the hypotenuse isn’t given at all — the known side is the one along the bottom.' },
+      { tag: 'Mark what’s known', known: true, unknown: false, mnem: null, unknownLabel: 'x',
+        formula: '\\tan\\theta = \\dfrac{\\text{opp}}{\\text{adj}}',
+        text: 'The angle 60° and the adjacent side 4 are given — those are known.' },
+      { tag: 'Mark what’s missing', known: true, unknown: true, mnem: null, unknownLabel: 'x',
+        formula: '\\tan\\theta = \\dfrac{\\text{opp}}{\\text{adj}}',
+        text: 'x is the side opposite the 60° angle — that’s the one we’re solving for.' },
+      { tag: 'Choose the ratio', known: true, unknown: true, mnem: 'tan', unknownLabel: 'x',
+        formula: '\\tan\\theta = \\dfrac{\\text{opp}}{\\text{adj}}',
+        text: 'No hypotenuse in sight: opposite and adjacent are the two sides — that ratio is tangent.' },
+      { tag: 'Substitute', known: true, unknown: true, mnem: 'tan', unknownLabel: 'x',
+        formula: '\\tan 60° = \\dfrac{x}{4}',
+        text: 'Put θ = 60° and adj = 4 into the ratio, in place of θ and adj.' },
+      { tag: 'Rearrange', known: true, unknown: true, mnem: 'tan', unknownLabel: 'x',
+        formula: 'x = 4\\tan 60°',
+        text: 'x is divided by 4, so multiply both sides by 4 to get x on its own.' },
+      { tag: 'Solve', known: true, unknown: true, mnem: 'tan', answer: true, unknownLabel: '6.93',
+        formula: 'x \\approx 6.93',
+        text: 'Evaluate on a calculator: x = 4 tan 60° ≈ 6.93.' },
+    ],
   },
-  {
-    tag: 'Choose the ratio', known: true, unknown: true, mnem: 'sin',
-    formula: '\\sin\\theta = \\dfrac{\\text{opp}}{\\text{hyp}}', oppLabel: 'x',
-    text: 'Known side = hypotenuse, unknown side = opposite — the ratio that uses both is sine.',
-  },
-  {
-    tag: 'Substitute', known: true, unknown: true, mnem: 'sin',
-    formula: '\\sin 60° = \\dfrac{x}{5}', oppLabel: 'x',
-    text: 'Put θ = 60° and hyp = 5 into the ratio, in place of θ and hyp.',
-  },
-  {
-    tag: 'Rearrange', known: true, unknown: true, mnem: 'sin',
-    formula: 'x = 5\\sin 60°', oppLabel: 'x',
-    text: 'x is divided by 5, so multiply both sides by 5 to get x on its own.',
-  },
-  {
-    tag: 'Solve', known: true, unknown: true, mnem: 'sin', answer: true,
-    formula: 'x \\approx 4.33', oppLabel: '4.33',
-    text: 'Evaluate on a calculator: x = 5 sin 60° ≈ 4.33.',
-  },
-];
+};
 const MNEM_RATIOS = [
   { key: 'sin', label: '\\sin\\theta', parts: 'opp / hyp' },
   { key: 'cos', label: '\\cos\\theta', parts: 'adj / hyp' },
@@ -2508,10 +2556,12 @@ const MNEM_RATIOS = [
 ];
 
 const UnknownSideSolver = ({ width = 320, height = 260 }) => {
+  const [ratio, setRatio] = useState('sin');
   const [step, setStep] = useState(0);
   const [playing, setPlaying] = useState(false);
-  const total = UNKNOWN_SIDE_STEPS.length;
-  const s = UNKNOWN_SIDE_STEPS[step];
+  const v = UNKNOWN_SIDE_VARIANTS[ratio];
+  const total = v.steps.length;
+  const s = v.steps[step];
 
   useEffect(() => {
     if (!playing) return undefined;
@@ -2545,8 +2595,23 @@ const UnknownSideSolver = ({ width = 320, height = 260 }) => {
   const labelR = arcR + 20;
   const angLabel = [A[0] + labelR * Math.cos(theta / 2), A[1] - labelR * Math.sin(theta / 2)];
 
+  // Which side is given and which is missing depends on the ratio being walked
+  // through, so both the strokes and the side labels are driven by the variant
+  // rather than pinned to one side each.
+  const SIDES = ['adj', 'opp', 'hyp'];
+  const SIDE_ENDS = { adj: [A, B], opp: [B, C], hyp: [A, C] };
+  const SIDE_LABEL = {
+    adj: { x: (A[0] + B[0]) / 2, y: B[1] + 20, anchor: 'middle', baseline: 'auto' },
+    opp: { x: B[0] + 14, y: (B[1] + C[1]) / 2, anchor: 'start', baseline: 'middle' },
+    hyp: { x: (A[0] + C[0]) / 2 - 16, y: (A[1] + C[1]) / 2 - 6, anchor: 'end', baseline: 'auto' },
+  };
+  const isLit = (side) => (side === v.knownSide ? s.known : side === v.unknownSide ? s.unknown : false);
+  const colorOf = (side) => (side === v.knownSide && s.known ? known : side === v.unknownSide && s.unknown ? unknown : neutral);
+  const textOf = (side) => (side === v.knownSide ? v.knownLabel : side === v.unknownSide ? s.unknownLabel : side);
+
   const goTo = (n) => { setPlaying(false); setStep(Math.max(0, Math.min(total - 1, n))); };
   const togglePlay = () => { if (!playing && step === total - 1) setStep(0); setPlaying((p) => !p); };
+  const pickRatio = (key) => { setPlaying(false); setStep(0); setRatio(key); };
 
   return (
     <div style={{
@@ -2555,23 +2620,40 @@ const UnknownSideSolver = ({ width = 320, height = 260 }) => {
     }}>
       <svg width={width} height={height} style={{ display: 'block', flex: 'none' }}>
         <polygon points={`${A[0]},${A[1]} ${B[0]},${B[1]} ${C[0]},${C[1]}`} fill="rgba(124,58,237,0.05)" />
-        <line x1={A[0]} y1={A[1]} x2={B[0]} y2={B[1]} stroke={neutral} strokeWidth="2.2" style={trans} />
-        <line x1={A[0]} y1={A[1]} x2={C[0]} y2={C[1]} stroke={s.known ? known : neutral} strokeWidth={s.known ? 4 : 2.2} style={trans} />
-        <motion.line x1={B[0]} y1={B[1]} x2={C[0]} y2={C[1]} stroke={s.unknown ? unknown : neutral} strokeWidth={s.unknown ? 4 : 2.2} style={trans}
-          animate={s.answer ? { strokeWidth: [4, 5.5, 4] } : {}} transition={{ duration: 1, repeat: s.answer ? Infinity : 0 }} />
+        {SIDES.map((side) => {
+          const [P, Q] = SIDE_ENDS[side];
+          const pulse = side === v.unknownSide && s.answer;
+          return (
+            <motion.line key={side} x1={P[0]} y1={P[1]} x2={Q[0]} y2={Q[1]} stroke={colorOf(side)} strokeWidth={isLit(side) ? 4 : 2.2} style={trans}
+              animate={pulse ? { strokeWidth: [4, 5.5, 4] } : {}} transition={{ duration: 1, repeat: pulse ? Infinity : 0 }} />
+          );
+        })}
         <polyline points={`${B[0] - 10},${B[1]} ${B[0] - 10},${B[1] - 10} ${B[0]},${B[1] - 10}`} fill="none" stroke={neutral} strokeWidth="1.6" />
         <path d={`M ${arcFrom[0]} ${arcFrom[1]} A ${arcR} ${arcR} 0 0 0 ${arcTo[0]} ${arcTo[1]}`} fill="none" stroke={s.known ? known : neutral} strokeWidth="1.8" style={trans} />
         <text x={angLabel[0]} y={angLabel[1]} fontSize="13" fontWeight="800" fill={s.known ? known : '#475569'} textAnchor="middle" dominantBaseline="middle"
           style={{ ...trans, paintOrder: 'stroke', stroke: '#fbfaff', strokeWidth: 3.5 }}>60°</text>
-        <text x={(A[0] + B[0]) / 2} y={B[1] + 20} fontSize="12.5" fontWeight="700" fill={neutral} textAnchor="middle">adj</text>
-        <text x={(A[0] + C[0]) / 2 - 16} y={(A[1] + C[1]) / 2 - 6} fontSize="14" fontWeight="800" fill={s.known ? known : '#94a3b8'} textAnchor="end" style={{ ...trans, paintOrder: 'stroke', stroke: '#fff', strokeWidth: 4 }}>5</text>
-        <AnimatePresence mode="wait">
-          {/* framer-motion `y` is a transform, NOT the SVG y attribute — passing the
-              absolute mid-height here translated the label a whole triangle down. */}
-          <motion.text key={s.oppLabel} x={B[0] + 14} y={(B[1] + C[1]) / 2} fontSize="15" fontWeight="800" fill={s.unknown ? unknown : '#94a3b8'} textAnchor="start" dominantBaseline="middle"
-            initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }}
-            style={{ paintOrder: 'stroke', stroke: '#fff', strokeWidth: 4 }}>{s.oppLabel}</motion.text>
-        </AnimatePresence>
+        {SIDES.map((side) => {
+          const pos = SIDE_LABEL[side];
+          const lit = isLit(side);
+          const common = {
+            x: pos.x, y: pos.y, textAnchor: pos.anchor, dominantBaseline: pos.baseline,
+            fontSize: lit ? 14.5 : 12.5, fontWeight: lit ? 800 : 700, fill: colorOf(side),
+          };
+          const halo = { paintOrder: 'stroke', stroke: '#fbfaff', strokeWidth: 4 };
+          // Only the unknown side's label changes mid-walkthrough (x → the answer),
+          // so it's the only one that needs the swap animation. framer-motion `y`
+          // is a transform, not the SVG y attribute — keep the offset relative.
+          if (side !== v.unknownSide) {
+            return <text key={side} {...common} style={{ ...trans, ...halo }}>{textOf(side)}</text>;
+          }
+          return (
+            <AnimatePresence mode="wait" key={side}>
+              <motion.text key={`${ratio}-${s.unknownLabel}`} {...common}
+                initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }}
+                style={{ ...trans, ...halo }}>{textOf(side)}</motion.text>
+            </AnimatePresence>
+          );
+        })}
       </svg>
 
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12, width: 300, flex: 'none' }}>
@@ -2583,18 +2665,30 @@ const UnknownSideSolver = ({ width = 320, height = 260 }) => {
           </AnimatePresence>
         </div>
 
+        {/* Tabs: pick a ratio to run the same method on that case. The purple FILL
+            still only arrives at the "Choose the ratio" step (that reveal is the
+            point of the animation); the border marks which walkthrough you're in. */}
         <div style={{ display: 'flex', gap: 8 }}>
-          {MNEM_RATIOS.map((r) => (
-            <div key={r.key} style={{
-              padding: '5px 10px', borderRadius: 10, textAlign: 'center', minWidth: 58,
-              border: `1.5px solid ${s.mnem === r.key ? '#7c3aed' : '#e2e8f0'}`,
-              background: s.mnem === r.key ? '#f5f3ff' : '#fff', transition: 'border-color 0.4s ease, background 0.4s ease',
-            }}>
-              <MathView content={`$${r.label}$`} style={{ fontSize: '0.8rem', fontWeight: 800, color: s.mnem === r.key ? '#7c3aed' : '#64748b' }} />
-              <div style={{ fontSize: '0.62rem', fontWeight: 600, color: '#94a3b8', marginTop: 2 }}>{r.parts}</div>
-            </div>
-          ))}
+          {MNEM_RATIOS.map((r) => {
+            const picked = s.mnem === r.key;
+            const selected = ratio === r.key;
+            return (
+              <button key={r.key} type="button" onClick={() => pickRatio(r.key)}
+                aria-pressed={selected} title={`Walk through a ${r.key} example`}
+                style={{
+                  padding: '5px 10px', borderRadius: 10, textAlign: 'center', minWidth: 58, cursor: 'pointer', fontFamily: FONT,
+                  border: `1.5px solid ${selected ? '#7c3aed' : '#e2e8f0'}`,
+                  background: picked ? '#f5f3ff' : '#fff',
+                  boxShadow: picked ? '0 0 0 3px rgba(124,58,237,0.12)' : 'none',
+                  transition: 'border-color 0.3s ease, background 0.4s ease, box-shadow 0.4s ease',
+                }}>
+                <MathView content={`$${r.label}$`} style={{ fontSize: '0.8rem', fontWeight: 800, color: selected ? '#7c3aed' : '#64748b' }} />
+                <div style={{ fontSize: '0.62rem', fontWeight: 600, color: '#94a3b8', marginTop: 2 }}>{r.parts}</div>
+              </button>
+            );
+          })}
         </div>
+        <div style={{ fontSize: '0.68rem', fontWeight: 600, color: '#94a3b8', marginTop: -6 }}>Tap a ratio to try that case</div>
 
         <div style={{ fontSize: '0.82rem', fontWeight: 600, color: '#475569', textAlign: 'center', minHeight: '2.4em' }}>
           <span style={{ fontWeight: 800, color: '#7c3aed' }}>{s.tag}. </span>{s.text}
@@ -2606,7 +2700,7 @@ const UnknownSideSolver = ({ width = 320, height = 260 }) => {
             <ArrowLeft size={14} color="#475569" />
           </button>
           <div style={{ display: 'flex', gap: 4 }}>
-            {UNKNOWN_SIDE_STEPS.map((_, i) => (
+            {v.steps.map((_, i) => (
               <div key={i} onClick={() => goTo(i)} style={{
                 width: 6, height: 6, borderRadius: '50%', cursor: 'pointer',
                 background: i === step ? '#7c3aed' : '#e2e8f0', transition: 'background 0.2s ease',
