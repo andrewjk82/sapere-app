@@ -54,6 +54,7 @@ import {
   replaceNote,
 } from '../../utils/secretNote';
 import { syncSecretNoteBlocklist } from '../../utils/secretNoteBlocklist';
+import { parseHintSteps } from '../../utils/hintSteps';
 import { tryAwardSecretNoteClearBonus } from '../../services/secretNoteBonusService';
 import { pullRemoteNoteIfNewer, pushLocalNote } from '../../services/secretNoteSyncService';
 
@@ -117,26 +118,6 @@ const prepareQuestion = (q) => {
     return { hasSubs: false, mode: 'mc', options: shuffledOptions, correctText: q._shuffledAnswer ?? '' };
   }
   return { hasSubs: false, mode: 'text', options: [], correctText: String(rawKey ?? '') };
-};
-
-// ── Parse a hint string into ordered steps ────────────────────────────────
-// Splits on blank lines, numbered prefixes (1. / Step 1:), or bullet chars.
-const parseHintSteps = (hint) => {
-  if (!hint) return [];
-  // Try numbered steps first: "1. foo\n2. bar"
-  const numbered = hint.split(/\n(?=\d+[\.\)]\s)/);
-  if (numbered.length > 1) return numbered.map((s) => s.replace(/^\d+[\.\)]\s*/, '').trim()).filter(Boolean);
-  // Try "Step N:" prefix
-  const stepped = hint.split(/\n(?=Step\s+\d+\s*[:–-])/i);
-  if (stepped.length > 1) return stepped.map((s) => s.replace(/^Step\s+\d+\s*[:–-]\s*/i, '').trim()).filter(Boolean);
-  // Blank-line paragraphs
-  const paras = hint.split(/\n{2,}/);
-  if (paras.length > 1) return paras.map((s) => s.trim()).filter(Boolean);
-  // Single newlines
-  const lines = hint.split(/\n/).map((s) => s.trim()).filter(Boolean);
-  if (lines.length > 1) return lines;
-  // Single block
-  return [hint.trim()];
 };
 
 // ── Step-by-step hint panel ───────────────────────────────────────────────

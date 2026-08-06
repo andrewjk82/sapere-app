@@ -17,6 +17,7 @@ import {
 import InteractiveFractionGrid from './InteractiveFractionGrid';
 import { answersMatch } from '../../utils/answerMatching';
 import { isDisplayedOptionCorrect } from '../../utils/mcOptionShuffle';
+import { parseHintSteps } from '../../utils/hintSteps';
 
 // A sub-question the teacher must check by hand — no machine-checkable
 // answer exists, so there is nothing to type and nothing to auto-grade.
@@ -37,20 +38,6 @@ const CHALLENGE_QUICK_INSERTS = [
   { label: '\u2264', latex: '\\le', title: 'Less than or equal to' },
   { label: '\u2265', latex: '\\ge', title: 'Greater than or equal to' },
 ];
-
-// ── Hint parser (mirrors SecretNoteView) ──────────────────────────────────
-const parseHintSteps = (hint) => {
-  if (!hint) return [];
-  const numbered = hint.split(/\n(?=\d+[\.\)]\s)/);
-  if (numbered.length > 1) return numbered.map((s) => s.replace(/^\d+[\.\)]\s*/, '').trim()).filter(Boolean);
-  const stepped = hint.split(/\n(?=Step\s+\d+\s*[:–-])/i);
-  if (stepped.length > 1) return stepped.map((s) => s.replace(/^Step\s+\d+\s*[:–-]\s*/i, '').trim()).filter(Boolean);
-  const paras = hint.split(/\n{2,}/);
-  if (paras.length > 1) return paras.map((s) => s.trim()).filter(Boolean);
-  const lines = hint.split(/\n/).map((s) => s.trim()).filter(Boolean);
-  if (lines.length > 1) return lines;
-  return hint.trim() ? [hint.trim()] : [];
-};
 
 // ── StepwiseHint component ────────────────────────────────────────────────
 const StepwiseHint = ({ hint, questionKey }) => {

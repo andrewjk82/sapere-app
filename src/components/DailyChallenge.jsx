@@ -63,6 +63,13 @@ import {
   prepareShuffledMcOptions,
   gradeMcSelection,
 } from '../utils/mcOptionShuffle';
+import { parseHintSteps } from '../utils/hintSteps';
+
+// FlameBuddy's hint bubble wants one plain string. `hint` is not always a
+// string in the bank (some seeds store an array of step objects), and
+// String(array) rendered "[object Object],[object Object]" in the bubble —
+// go through the shared parser instead.
+const hintTextOf = (q) => parseHintSteps(q?.hint).join('\n').trim();
 
 // Utilities
 import {
@@ -798,8 +805,8 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
             phase: 'question',
             challengeType,
             questionIndex: idx,
-            hasHint: Boolean(String(q?.hint || '').trim()),
-            hintText: String(q?.hint || '').trim(),
+            hasHint: Boolean(hintTextOf(q)),
+            hintText: hintTextOf(q),
             timeLimit: Number(q?.timeLimit) || 30,
           },
         }));
@@ -843,7 +850,7 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
     const limit = Number(q.timeLimit) || 30;
     const half = Math.max(1, Math.ceil(limit / 2));
     if (!(timeLeft > 0 && timeLeft <= half)) return;
-    const hintText = String(q.hint || '').trim();
+    const hintText = hintTextOf(q);
     if (!hintText) return;
     const key = `${currentIdx}`;
     if (midtimeHintFiredRef.current.has(key)) return;
@@ -2369,8 +2376,8 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
                         phase: 'start',
                         challengeType: d.challengeType,
                         questionIndex: d.currentIdx,
-                        hasHint: Boolean(String(rq?.hint || '').trim()),
-                        hintText: String(rq?.hint || '').trim(),
+                        hasHint: Boolean(hintTextOf(rq)),
+                        hintText: hintTextOf(rq),
                         timeLimit: Number(rq?.timeLimit) || 30,
                       },
                     }));
