@@ -46,7 +46,7 @@ const fmt = (n) => n.toLocaleString('en-US').replace(/,/g, ' ');
 
 // Steps that need the student to tap/answer something before moving on —
 // auto-play must PAUSE here rather than racing past on its usual timer.
-const INTERACTIVE_BOARD_TYPES = ['checkpoint', 'compassBearing', 'elevationDepression', 'angleCircle', 'similarTriangles', 'reciprocalRatio', 'exactValuesExplorer', 'unknownSideSolver', 'unknownAngleSolver', 'primaryRatioRecap', 'workedTriangleSolver', 'walkerCliffSolver', 'bearingFlightSolver'];
+const INTERACTIVE_BOARD_TYPES = ['checkpoint', 'compassBearing', 'elevationDepression', 'angleCircle', 'similarTriangles', 'reciprocalRatio', 'exactValuesExplorer', 'unknownSideSolver', 'unknownAngleSolver', 'primaryRatioRecap', 'workedTriangleSolver', 'walkerCliffSolver', 'bearingFlightSolver', 'lessonRecapScene'];
 const isInteractiveStep = (step) => (step?.board || []).some(
   (b) => INTERACTIVE_BOARD_TYPES.includes(b.type) || (b.type === 'triangle' && b.quiz),
 );
@@ -3774,6 +3774,117 @@ const BearingFlightSolver = ({ width = 560, height = 240, ab = 100, bearingDeg1 
   );
 };
 
+// ── Lesson recap — the two "same fact, two viewpoints" ideas, live ─────────
+// The final recap was two formula lines with no picture: "elevation =
+// depression (alternate angles)" and "SθE = (180°−θ°)T". Both are the SAME
+// shape of fact — one physical thing, measured from two different reference
+// lines, related by a fixed rule — so this puts them on two small live
+// diagrams driven by ONE shared angle chip-picker: a Z-shaped alternate-
+// angles diagram (the sight line is the transversal between two parallel
+// horizontals) and a compass rose (one ray, read as a compass bearing from
+// south AND as a true bearing from north). Changing θ moves both at once,
+// so the "these always match, for any angle" claim is something a student
+// sees happen, not just a formula to accept. Positions transition via plain
+// CSS (like AngleCircle/SimilarTrianglesDemo), not framer-motion opacity —
+// the reliable choice for a value that changes many times, not just once.
+const RECAP_ANGLE_PRESETS = [30, 40, 55];
+const LessonRecapScene = () => {
+  const [deg, setDeg] = useState(40);
+  const rad = (deg * Math.PI) / 180;
+  const trans = { transition: 'cx 0.4s ease, cy 0.4s ease, x1 0.4s ease, y1 0.4s ease, x2 0.4s ease, y2 0.4s ease, d 0.4s ease' };
+  const purple = '#7c3aed', green = '#059669', neutral = '#94a3b8';
+
+  // Left: alternate-angles ("Z") diagram. Two parallel horizontals a fixed
+  // gap apart; the sight line is the transversal. The angle at the bottom
+  // (elevation) and the angle at the top (depression), marked on opposite
+  // sides of the transversal, are alternate angles — hence always equal.
+  const lw = 380, lh = 220, lpad = 40, gap = lh - 2 * lpad;
+  const obs = [50, lh - lpad];
+  const L = gap / Math.sin(rad);
+  const obj = [obs[0] + L * Math.cos(rad), lpad];
+  const arcR = 28;
+  const botArcTo = [obs[0] + arcR * Math.cos(rad), obs[1] - arcR * Math.sin(rad)];
+  const topArcTo = [obj[0] - arcR * Math.cos(rad), obj[1] + arcR * Math.sin(rad)];
+  const botLabel = [obs[0] + (arcR + 16) * Math.cos(rad / 2), obs[1] - (arcR + 16) * Math.sin(rad / 2)];
+  const topLabel = [obj[0] - (arcR + 16) * Math.cos(rad / 2), obj[1] + (arcR + 16) * Math.sin(rad / 2)];
+
+  // Right: compass rose, one ray at bearing SθE — read from the south (green
+  // arc, matches the "S…E" notation) and from the north (purple arc, the
+  // true-bearing convention, clockwise from north).
+  const cw = 250, ch = 250, cx = cw / 2, cy = ch / 2, R = 84;
+  const trueDeg = 180 - deg;
+  const toXY = (d) => { const r = (d * Math.PI) / 180; return [cx + R * Math.sin(r), cy - R * Math.cos(r)]; };
+  const [rx, ry] = toXY(trueDeg);
+  // Arc points at radius r (deliberately smaller than R, the ray's own
+  // radius) so the arc reads as an angle marker, not another spoke.
+  const compassArc = (fromD, toD, r) => {
+    const n = 20;
+    return Array.from({ length: n + 1 }, (_, i) => {
+      const d = fromD + ((toD - fromD) * i) / n;
+      const rr = (d * Math.PI) / 180;
+      return [cx + r * Math.sin(rr), cy - r * Math.cos(rr)];
+    });
+  };
+  const pathFrom = (pts) => pts.map((p, i) => `${i === 0 ? 'M' : 'L'}${p[0].toFixed(1)} ${p[1].toFixed(1)}`).join(' ');
+  const southArcPath = pathFrom(compassArc(180, trueDeg, 30));
+  const northArcPath = pathFrom(compassArc(0, trueDeg, 50));
+  const southLabelPos = toXY(180 - deg / 2).map((v, k) => (k === 0 ? cx + (v - cx) * (44 / R) : cy + (v - cy) * (44 / R)));
+  const northLabelPos = toXY(trueDeg / 2).map((v, k) => (k === 0 ? cx + (v - cx) * (64 / R) : cy + (v - cy) * (64 / R)));
+
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 14, fontFamily: FONT }}>
+      <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'flex-start', gap: 20 }}>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6 }}>
+          <svg width={lw} height={lh} style={{ display: 'block', overflow: 'visible' }}>
+            <line x1={obs[0] - 26} y1={obs[1]} x2={lw - 10} y2={obs[1]} stroke={neutral} strokeWidth="1.6" strokeDasharray="5 4" />
+            <line x1={10} y1={obj[1]} x2={obj[0] + 26} y2={obj[1]} stroke={neutral} strokeWidth="1.6" strokeDasharray="5 4" />
+            <line x1={obs[0]} y1={obs[1]} x2={obj[0]} y2={obj[1]} stroke={purple} strokeWidth="2.6" style={trans} />
+            <path d={`M ${obs[0] + arcR} ${obs[1]} A ${arcR} ${arcR} 0 0 0 ${botArcTo[0]} ${botArcTo[1]}`} fill="none" stroke={green} strokeWidth="2" style={trans} />
+            <path d={`M ${obj[0] - arcR} ${obj[1]} A ${arcR} ${arcR} 0 0 0 ${topArcTo[0]} ${topArcTo[1]}`} fill="none" stroke={green} strokeWidth="2" style={trans} />
+            <text x={botLabel[0]} y={botLabel[1]} fontSize="13" fontWeight="800" fill={green} textAnchor="middle" dominantBaseline="middle" style={{ ...trans, paintOrder: 'stroke', stroke: '#fff', strokeWidth: 4 }}>{deg}°</text>
+            <text x={topLabel[0]} y={topLabel[1]} fontSize="13" fontWeight="800" fill={green} textAnchor="middle" dominantBaseline="middle" style={{ ...trans, paintOrder: 'stroke', stroke: '#fff', strokeWidth: 4 }}>{deg}°</text>
+            <circle cx={obs[0]} cy={obs[1]} r="4" fill="#1e1b4b" style={trans} /><text x={obs[0]} y={obs[1] + 18} fontSize="12" fontWeight="700" fill="#1e293b" textAnchor="middle">You</text>
+            <circle cx={obj[0]} cy={obj[1]} r="4" fill="#1e1b4b" style={trans} /><text x={obj[0]} y={obj[1] - 10} fontSize="12" fontWeight="700" fill="#1e293b" textAnchor="middle" style={trans}>Plane</text>
+          </svg>
+          <div style={{ fontSize: '0.78rem', fontWeight: 700, color: green, textAlign: 'center' }}>elevation = depression (alternate angles)</div>
+        </div>
+
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6 }}>
+          <svg width={cw} height={ch} style={{ display: 'block', overflow: 'visible' }}>
+            <line x1={cx} y1={cy - R - 14} x2={cx} y2={cy + R + 14} stroke="#cbd5e1" strokeWidth="1.4" strokeDasharray="4 4" />
+            <line x1={cx - R - 14} y1={cy} x2={cx + R + 14} y2={cy} stroke="#cbd5e1" strokeWidth="1.4" strokeDasharray="4 4" />
+            <text x={cx} y={cy - R - 18} textAnchor="middle" fontSize="12" fontWeight="800" fill="#475569">N</text>
+            <text x={cx} y={cy + R + 26} textAnchor="middle" fontSize="12" fontWeight="800" fill="#475569">S</text>
+            <text x={cx + R + 20} y={cy + 4} textAnchor="middle" fontSize="12" fontWeight="800" fill="#475569">E</text>
+            <text x={cx - R - 20} y={cy + 4} textAnchor="middle" fontSize="12" fontWeight="800" fill="#475569">W</text>
+            <path d={northArcPath} fill="none" stroke={purple} strokeWidth="2" />
+            <path d={southArcPath} fill="none" stroke={green} strokeWidth="2" />
+            <line x1={cx} y1={cy} x2={rx} y2={ry} stroke="#1e1b4b" strokeWidth="2.6" style={trans} />
+            <circle cx={cx} cy={cy} r="4" fill="#1e1b4b" />
+            <text x={northLabelPos[0]} y={northLabelPos[1]} fontSize="12" fontWeight="800" fill={purple} textAnchor="middle" dominantBaseline="middle" style={{ ...trans, paintOrder: 'stroke', stroke: '#fff', strokeWidth: 4 }}>{trueDeg}°</text>
+            <text x={southLabelPos[0]} y={southLabelPos[1]} fontSize="12" fontWeight="800" fill={green} textAnchor="middle" dominantBaseline="middle" style={{ ...trans, paintOrder: 'stroke', stroke: '#fff', strokeWidth: 4 }}>{deg}°</text>
+          </svg>
+          <div style={{ fontSize: '0.78rem', fontWeight: 700, textAlign: 'center' }}>
+            <span style={{ color: green }}>S{deg}°E</span> <span style={{ color: '#475569' }}>=</span> <span style={{ color: purple }}>{trueDeg}°T</span>
+          </div>
+        </div>
+      </div>
+
+      <div style={{ display: 'flex', gap: 8 }}>
+        {RECAP_ANGLE_PRESETS.map((a) => (
+          <button key={a} type="button" onClick={() => setDeg(a)} aria-pressed={deg === a}
+            style={{
+              padding: '6px 16px', borderRadius: 999, fontWeight: 800, fontSize: '0.82rem', cursor: 'pointer', fontFamily: FONT,
+              border: `2px solid ${deg === a ? '#7c3aed' : '#e2e8f0'}`,
+              background: deg === a ? '#7c3aed' : '#fff', color: deg === a ? '#fff' : '#64748b',
+              transition: 'background 0.3s ease, color 0.3s ease, border-color 0.3s ease',
+            }}>θ = {a}°</button>
+        ))}
+      </div>
+    </div>
+  );
+};
+
 // Each board item animates in, with a stagger handled by the parent.
 const itemVariants = {
   hidden: { opacity: 0, y: 16 },
@@ -3863,6 +3974,7 @@ const BoardItem = ({ item }) => {
   else if (item.type === 'workedTriangleSolver') inner = <WorkedTriangleSolver {...item} />;
   else if (item.type === 'walkerCliffSolver') inner = <WalkerCliffSolver {...item} />;
   else if (item.type === 'bearingFlightSolver') inner = <BearingFlightSolver {...item} />;
+  else if (item.type === 'lessonRecapScene') inner = <LessonRecapScene {...item} />;
   else if (item.type === 'primaryRatioRecap') inner = <PrimaryRatioRecap {...item} />;
   else if (item.type === 'introTrigScene') inner = <IntroTrigScene {...item} />;
   else return null;

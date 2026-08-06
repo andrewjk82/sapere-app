@@ -1223,9 +1223,9 @@ export const buildRightTriangleProblemsLesson = ({ audioBase = null } = {}) => {
       board: [{ type: 'bearingFlightSolver' }],
     },
     {
-      narration: `<b>Recap:</b> elevation and depression angles are always from the <b>horizontal</b>, and equal each other by alternate angles; compass bearings (N/S then E/W) and true bearings (clockwise from north, 3 digits) describe the <b>same</b> direction two ways; and every problem still reduces to a right-angled triangle solved with sin, cos or tan.`,
-      speech: `Recap. Angles of elevation and depression are always measured from the horizontal, and are equal to each other by alternate angles. Compass bearings, north or south then east or west, and true bearings, clockwise from north with three digits, describe the same direction in two different ways. And every one of these problems still reduces to a right angled triangle, solved with sine, cosine or tangent.`,
-      board: [{ type: 'math', content: `$$\\text{elevation} = \\text{depression (alternate angles)} \\qquad \\text{S}\\theta°\\text{E} \\;=\\; (180°-\\theta°)\\text{T}$$` }],
+      narration: `<b>Recap:</b> elevation and depression angles are always from the <b>horizontal</b>, and equal each other by alternate angles; compass bearings (N/S then E/W) and true bearings (clockwise from north, 3 digits) describe the <b>same</b> direction two ways; and every problem still reduces to a right-angled triangle solved with sin, cos or tan. <b>Tap a θ</b> to see both live.`,
+      speech: `Recap. Angles of elevation and depression are always measured from the horizontal, and are equal to each other by alternate angles. Compass bearings, north or south then east or west, and true bearings, clockwise from north with three digits, describe the same direction in two different ways. And every one of these problems still reduces to a right angled triangle, solved with sine, cosine or tangent. Tap a theta to see both live.`,
+      board: [{ type: 'lessonRecapScene' }],
     },
   ];
 
