@@ -17,6 +17,7 @@ const AFFECTED_IDS = [
   'y10-6a-q1a',
   'y10-6a-q1b',
   'y10-6a-q1d',
+  'y10-6a-q1e',
   'y10-6a-q3',
   'y10-6a-q6a',
   'y10-6a-q9a',
