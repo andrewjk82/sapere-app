@@ -1167,9 +1167,9 @@ export const buildRightTriangleProblemsLesson = ({ audioBase = null } = {}) => {
 
   const steps = [
     {
-      narration: `Trigonometry developed in the ancient world to solve <b>practical</b> problems with right-angled triangles — typically involving <b>compass bearings</b> and <b>angles of elevation or depression</b>.`,
-      speech: `Trigonometry developed in the ancient world to solve practical problems with right angled triangles, typically involving compass bearings and angles of elevation or depression.`,
-      board: [{ type: 'math', content: `$$\\text{elevation / depression} \\qquad \\text{compass \\& true bearings}$$` }],
+      narration: `Trigonometry developed in the ancient world to solve <b>practical</b> problems with right-angled triangles — typically involving <b>compass bearings</b> and <b>angles of elevation or depression</b>. From one lookout, a plane above is sighted at its angle of <b>elevation</b>, a boat below at its angle of <b>depression</b> — and a bearing describes a direction two ways at once.`,
+      speech: `Trigonometry developed in the ancient world to solve practical problems with right angled triangles, typically involving compass bearings and angles of elevation or depression. From one lookout, a plane above is sighted at its angle of elevation, a boat below at its angle of depression, and a bearing describes a direction two ways at once.`,
+      board: [{ type: 'introTrigScene' }],
     },
     {
       narration: `<b>Angles of elevation and depression</b> are always measured from the <b>horizontal</b>, and are always <b>acute</b> angles. Tap the buttons to switch between the two.`,

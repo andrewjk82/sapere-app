@@ -2160,6 +2160,99 @@ const CompassBearingDiagram = ({ rays = [], width = 300, height = 300 }) => {
   );
 };
 
+// ── Lesson-opener scene: elevation/depression + a bearing, drawn not stated ──
+// The opening step of the bearings/elevation lesson used to be two floating
+// phrases with no picture at all — "elevation / depression" and "compass &
+// true bearings" as pure text. This draws both ideas as one small animated
+// scene instead: a cliff-top observer sighting a plane (elevation) and a boat
+// (depression) from the SAME point — so the "measured from the horizontal"
+// idea is visible on one shared horizon rather than two separate claims —
+// plus a compass rose with one ray labelled both ways (N60°E = 060°T), tying
+// the two notations together before the lesson explains either in detail.
+// Elevation and depression are picked as explicit angles and the sight lines
+// are BUILT from them (point = observer + length·(cos,sin)) — the reverse of
+// deriving an angle from arbitrary coordinates, which once produced a real
+// bug here: two placeholder points happened to be only 15° apart, so the
+// angle arcs rendered as near-invisible slivers. Building forward from the
+// angle guarantees a legible arc by construction.
+const IntroTrigScene = ({ width = 640, height = 280 }) => {
+  const obs = [90, height / 2];
+  const amber = '#f59e0b';
+  const purple = '#7c3aed';
+  const sightLen = 210;
+  const elevDeg = 30, depDeg = 24;
+  const toRad = (d) => (d * Math.PI) / 180;
+  const plane = [obs[0] + sightLen * Math.cos(toRad(elevDeg)), obs[1] - sightLen * Math.sin(toRad(elevDeg))];
+  const boat = [obs[0] + sightLen * Math.cos(toRad(depDeg)), obs[1] + sightLen * Math.sin(toRad(depDeg))];
+  const horizEndL = [obs[0] - 30, obs[1]];
+  const horizEndR = [Math.max(plane[0], boat[0]) + 50, obs[1]];
+  const arcR = 30;
+  const elevArcEnd = [obs[0] + arcR * Math.cos(toRad(elevDeg)), obs[1] - arcR * Math.sin(toRad(elevDeg))];
+  const depArcEnd = [obs[0] + arcR * Math.cos(toRad(depDeg)), obs[1] + arcR * Math.sin(toRad(depDeg))];
+
+  // Compass rose, right-hand third of the scene. Every label (N/S/E/W, plus
+  // the bearing notation) is placed at a position that's within [0, width] x
+  // [0, height] for ANY bearingDeg — the notation caption in particular sits
+  // at a FIXED spot below the rose rather than "near the ray tip", which is
+  // what let it drift off the right edge and get clipped by the svg's default
+  // overflow:hidden when the ray happened to point up-and-out.
+  const cx = width * 0.8, cy = height / 2, R = Math.min(width * 0.11, height / 2 - 50);
+  const bearingDeg = 60; // N60°E
+  const toXY = (deg) => { const r = toRad(deg); return [cx + R * Math.sin(r), cy - R * Math.cos(r)]; };
+  const [rx, ry] = toXY(bearingDeg);
+
+  return (
+    <div style={{ display: 'flex', justifyContent: 'center', fontFamily: FONT }}>
+      <svg width={width} height={height} style={{ display: 'block', maxWidth: '100%', height: 'auto', overflow: 'visible' }} viewBox={`0 0 ${width} ${height}`}>
+        {/* Horizon through the observer */}
+        <motion.line x1={horizEndL[0]} y1={horizEndL[1]} x2={horizEndR[0]} y2={horizEndR[1]} stroke="#94a3b8" strokeWidth="1.6" strokeDasharray="5 4"
+          initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.3 }} />
+
+        {/* Sight line up to the plane (elevation) */}
+        <motion.line x1={obs[0]} y1={obs[1]} x2={plane[0]} y2={plane[1]} stroke={purple} strokeWidth="2.4"
+          initial={{ pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ duration: 0.5, delay: 0.3 }} />
+        <motion.path d={`M ${obs[0] + arcR} ${obs[1]} A ${arcR} ${arcR} 0 0 0 ${elevArcEnd[0]} ${elevArcEnd[1]}`} fill="none" stroke={amber} strokeWidth="2"
+          initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.3, delay: 0.7 }} />
+        <motion.text x={obs[0] + arcR + 6} y={obs[1] - arcR + 2} fontSize="12.5" fontWeight="800" fill="#b45309"
+          style={{ paintOrder: 'stroke', stroke: '#fff', strokeWidth: 4 }}
+          initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.3, delay: 0.85 }}>{elevDeg}°</motion.text>
+        <motion.text x={plane[0]} y={plane[1] - 12} textAnchor="middle" fontSize="12" fontWeight="700" fill="#1e293b"
+          initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.3, delay: 0.85 }}>Plane</motion.text>
+
+        {/* Sight line down to the boat (depression) */}
+        <motion.line x1={obs[0]} y1={obs[1]} x2={boat[0]} y2={boat[1]} stroke={purple} strokeWidth="2.4"
+          initial={{ pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ duration: 0.5, delay: 1.1 }} />
+        <motion.path d={`M ${obs[0] + arcR} ${obs[1]} A ${arcR} ${arcR} 0 0 1 ${depArcEnd[0]} ${depArcEnd[1]}`} fill="none" stroke={amber} strokeWidth="2"
+          initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.3, delay: 1.5 }} />
+        <motion.text x={obs[0] + arcR + 6} y={obs[1] + arcR - 2} fontSize="12.5" fontWeight="800" fill="#b45309"
+          style={{ paintOrder: 'stroke', stroke: '#fff', strokeWidth: 4 }}
+          initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.3, delay: 1.65 }}>{depDeg}°</motion.text>
+        <motion.text x={boat[0]} y={boat[1] + 18} textAnchor="middle" fontSize="12" fontWeight="700" fill="#1e293b"
+          initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.3, delay: 1.65 }}>Boat</motion.text>
+
+        <circle cx={obs[0]} cy={obs[1]} r="5" fill="#1e1b4b" />
+        <text x={obs[0]} y={obs[1] + 4} textAnchor="end" dx={-10} fontSize="12" fontWeight="700" fill="#1e293b">You</text>
+
+        {/* Compass rose + one bearing, both notations at once */}
+        <motion.g initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.3, delay: 1.9 }}>
+          <line x1={cx} y1={cy - R - 14} x2={cx} y2={cy + R + 14} stroke="#cbd5e1" strokeWidth="1.4" strokeDasharray="4 4" />
+          <line x1={cx - R - 14} y1={cy} x2={cx + R + 14} y2={cy} stroke="#cbd5e1" strokeWidth="1.4" strokeDasharray="4 4" />
+          <text x={cx} y={cy - R - 18} textAnchor="middle" fontSize="12" fontWeight="800" fill="#475569">N</text>
+          <text x={cx} y={cy + R + 26} textAnchor="middle" fontSize="12" fontWeight="800" fill="#475569">S</text>
+          <text x={cx + R + 20} y={cy + 4} textAnchor="middle" fontSize="12" fontWeight="800" fill="#475569">E</text>
+          <text x={cx - R - 20} y={cy + 4} textAnchor="middle" fontSize="12" fontWeight="800" fill="#475569">W</text>
+          <circle cx={cx} cy={cy} r="4" fill="#1e1b4b" />
+        </motion.g>
+        <motion.line x1={cx} y1={cy} x2={rx} y2={ry} stroke="#059669" strokeWidth="2.4"
+          initial={{ pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ duration: 0.45, delay: 2.1 }} />
+        <motion.text x={cx} y={cy + R + 46} textAnchor="middle" fontSize="12" fontWeight="800" fill="#059669"
+          style={{ paintOrder: 'stroke', stroke: '#fff', strokeWidth: 4 }}
+          initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.3, delay: 2.4 }}>N{bearingDeg}°E = 0{bearingDeg}°T</motion.text>
+      </svg>
+    </div>
+  );
+};
+
 // ── Angle circle — the general-angle definition, live and draggable ────────
 // A circle of radius r with a ray to P(x, y); students drag the slider (or tap
 // a quick-angle chip) to sweep θ through any value, positive or negative, past
@@ -3102,6 +3195,7 @@ const BoardItem = ({ item }) => {
   else if (item.type === 'unknownSideSolver') inner = <UnknownSideSolver {...item} />;
   else if (item.type === 'unknownAngleSolver') inner = <UnknownAngleSolver {...item} />;
   else if (item.type === 'primaryRatioRecap') inner = <PrimaryRatioRecap {...item} />;
+  else if (item.type === 'introTrigScene') inner = <IntroTrigScene {...item} />;
   else return null;
   return <motion.div variants={itemVariants}>{inner}</motion.div>;
 };
