@@ -1138,9 +1138,6 @@ export const buildRightTriangleTrigLesson = ({ audioBase = null } = {}) => {
 
 // ── Lesson: Year 11 Advanced · 6B · Problems involving right-angled triangles
 export const buildRightTriangleProblemsLesson = ({ audioBase = null } = {}) => {
-  const triangle = (verts, sideLabels, angleLabels, quiz) => ({
-    type: 'triangle', verts, sideLabels, angleLabels, width: 300, height: 260, ...(quiz ? { quiz } : {}),
-  });
   // Plain path diagram (no axes) for the compass-bearing example — reuses the
   // generic graph primitive's lines/points/texts, same trick as the radian
   // lesson's angle diagrams.
@@ -1197,13 +1194,8 @@ export const buildRightTriangleProblemsLesson = ({ audioBase = null } = {}) => {
       board: [{ type: 'workedTriangleSolver' }],
     },
     {
-      narration: `<b>Example.</b> A walker on level ground is 1 km from the base of a 300 m vertical cliff. <b>a</b> Find the angle of elevation of the top, to the nearest minute. <b>b</b> Find the line-of-sight distance to the top, to the nearest metre.`,
-      speech: `Example. A walker on level ground is 1 kilometre from the base of a 300 metre vertical cliff. Part a, find the angle of elevation of the top, to the nearest minute. Part b, find the line of sight distance to the top, to the nearest metre.`,
-      board: [triangle([[0, 0], [3.3, 0], [3.3, 1], ], ['1000 m', '300 m', 'CW'], ['θ', '90°', ''])],
-    },
-    {
-      narration: `You know the <b>opposite</b> (300) and <b>adjacent</b> (1000) sides only — which ratio finds θ directly, without needing Pythagoras first?`,
-      speech: `You know the opposite, 300, and adjacent, 1000, sides only. Which ratio finds theta directly, without needing Pythagoras first?`,
+      narration: `<b>Example.</b> A walker on level ground is 1 km from the base of a 300 m vertical cliff. You know the <b>opposite</b> (300) and <b>adjacent</b> (1000) sides only — which ratio finds the angle of elevation θ directly, without needing Pythagoras first?`,
+      speech: `Example. A walker on level ground is 1 kilometre from the base of a 300 metre vertical cliff. You know the opposite, 300, and adjacent, 1000, sides only. Which ratio finds the angle of elevation theta directly, without needing Pythagoras first?`,
       board: [{
         type: 'checkpoint',
         prompt: `$$\\text{opposite}=300,\\ \\text{adjacent}=1000.\\ \\text{Find } \\theta \\text{ directly.}$$`,
@@ -1217,9 +1209,9 @@ export const buildRightTriangleProblemsLesson = ({ audioBase = null } = {}) => {
       }],
     },
     {
-      narration: `<b>a</b> $\\tan\\theta = \\dfrac{300}{1000} = \\dfrac{3}{10}$, so $\\theta \\approx 16°42'$. <b>b</b> By Pythagoras, $CW^{2} = 1000^{2} + 300^{2} = 1\\,090\\,000$, so $CW \\approx 1044$ m.`,
-      speech: `Part a. Tan theta equals 300 over 1000, which is 3 over 10. So theta is about 16 degrees 42 minutes. Part b. By Pythagoras' theorem, C W squared equals 1000 squared plus 300 squared, equals 1 million 90 thousand. So C W is about 1044 metres.`,
-      board: [{ type: 'math', content: `$$\\tan\\theta = \\dfrac{3}{10} \\Rightarrow \\theta \\approx 16°42' \\qquad CW^{2} = 1000^{2}+300^{2} \\Rightarrow CW \\approx 1044\\text{ m}$$`, emphasis: true }],
+      narration: `<b>a</b> Find θ, the angle of elevation of the top, to the nearest minute. <b>b</b> Find CW, the line-of-sight distance to the top, to the nearest metre — this time using Pythagoras, since both legs are already known. <b>Press play</b> to watch both, step by step, on the same triangle.`,
+      speech: `Part a. Find theta, the angle of elevation of the top, to the nearest minute. Part b. Find C W, the line of sight distance to the top, to the nearest metre — this time using Pythagoras, since both legs are already known. Press play to watch both, step by step, on the same triangle.`,
+      board: [{ type: 'walkerCliffSolver' }],
     },
     {
       narration: `<b>Compass bearings</b> are based on north, south, east and west — any other direction is the deviation from north or south, towards east or west. <b>True bearings</b> are measured <b>clockwise from north</b>, always written with <b>three digits</b>. Tap to switch between the two for the same four directions.`,

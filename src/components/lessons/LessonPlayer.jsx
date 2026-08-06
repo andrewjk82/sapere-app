@@ -46,7 +46,7 @@ const fmt = (n) => n.toLocaleString('en-US').replace(/,/g, ' ');
 
 // Steps that need the student to tap/answer something before moving on —
 // auto-play must PAUSE here rather than racing past on its usual timer.
-const INTERACTIVE_BOARD_TYPES = ['checkpoint', 'compassBearing', 'elevationDepression', 'angleCircle', 'similarTriangles', 'reciprocalRatio', 'exactValuesExplorer', 'unknownSideSolver', 'unknownAngleSolver', 'primaryRatioRecap', 'workedTriangleSolver'];
+const INTERACTIVE_BOARD_TYPES = ['checkpoint', 'compassBearing', 'elevationDepression', 'angleCircle', 'similarTriangles', 'reciprocalRatio', 'exactValuesExplorer', 'unknownSideSolver', 'unknownAngleSolver', 'primaryRatioRecap', 'workedTriangleSolver', 'walkerCliffSolver'];
 const isInteractiveStep = (step) => (step?.board || []).some(
   (b) => INTERACTIVE_BOARD_TYPES.includes(b.type) || (b.type === 'triangle' && b.quiz),
 );
@@ -3347,6 +3347,199 @@ const WorkedTriangleSolver = ({ width = 340, height = 260, angleDeg = 55 }) => {
   );
 };
 
+// ── Worked example — walker + cliff, angle THEN Pythagoras on one triangle ──
+// A second worked example with the same "picture disappears exactly when the
+// algebra starts" problem: a static to-scale triangle, then a text-only step
+// with both answers and no picture. This merges them the same way as
+// WorkedTriangleSolver, but part (b) here is genuinely different — CW is
+// found by PYTHAGORAS, not a trig ratio, since both legs are already known.
+// Part (a) reuses buildAngleSteps (the exact machinery UnknownAngleSolver
+// runs on) rather than duplicating it — same angle-finding method, real
+// numbers (opp 300, adj 1000) instead of the teaching triangle's 3-4-5.
+const buildPythagorasSteps = (oppVal, adjVal, hypName) => {
+  const oppSq = oppVal * oppVal, adjSq = adjVal * adjVal, sumSq = oppSq + adjSq;
+  const hypVal = Math.sqrt(sumSq);
+  const hypRounded = Math.round(hypVal);
+  // Plain (space-separated) for the SVG diagram label / narration text; a
+  // thin-space (\,) form for the KaTeX panel — reusing the wrong one for the
+  // wrong target is exactly the bug fixed in WorkedTriangleSolver.
+  const texNum = (n) => Math.round(n).toLocaleString('en-US').replace(/,/g, '\\,');
+  const base = { known: true, unknown: true };
+  return [
+    { ...base, tag: 'Look at the triangle', known: false, unknown: false,
+      formula: `${hypName}^2 = \\text{opp}^2 + \\text{adj}^2`,
+      text: `This time both legs are known — ${fmt(adjVal)} m and ${fmt(oppVal)} m — so Pythagoras' theorem finds ${hypName} directly, no ratio needed.` },
+    { ...base, tag: 'Mark what’s known', unknown: false,
+      formula: `${hypName}^2 = \\text{opp}^2 + \\text{adj}^2`,
+      text: `The adjacent side ${fmt(adjVal)} m and the opposite side ${fmt(oppVal)} m are both given — those are known.` },
+    { ...base, tag: 'Mark what’s missing',
+      formula: `${hypName}^2 = \\text{opp}^2 + \\text{adj}^2`,
+      text: `${hypName} is the hypotenuse — the side we’re solving for.` },
+    { ...base, tag: 'Apply Pythagoras',
+      formula: `${hypName}^2 = ${texNum(adjVal)}^2 + ${texNum(oppVal)}^2`,
+      text: 'Square both legs and add them — the hypotenuse squared equals the sum of the other two squares.' },
+    { ...base, tag: 'Add the squares',
+      formula: `${hypName}^2 = ${texNum(adjSq)} + ${texNum(oppSq)} = ${texNum(sumSq)}`,
+      text: `${fmt(adjVal)}² = ${fmt(adjSq)} and ${fmt(oppVal)}² = ${fmt(oppSq)} — add them together.` },
+    { ...base, tag: 'Square root',
+      formula: `${hypName} = \\sqrt{${texNum(sumSq)}}`,
+      text: `${hypName}² is now a single number — take the square root to undo the square.` },
+    { ...base, tag: 'Solve', answer: true, unknownLabel: `${fmt(hypRounded)} m`,
+      formula: `${hypName} \\approx ${texNum(hypRounded)}\\text{ m}`,
+      text: `Evaluate on a calculator: ${hypName} = √${fmt(sumSq)} ≈ ${fmt(hypRounded)} m.` },
+  ];
+};
+
+const WalkerCliffSolver = ({ width = 640, height = 230, oppVal = 300, adjVal = 1000 }) => {
+  const [part, setPart] = useState('a');
+  const [step, setStep] = useState(0);
+  const [playing, setPlaying] = useState(false);
+  const degrees = (Math.atan2(oppVal, adjVal) * 180) / Math.PI;
+  const steps = part === 'a'
+    ? buildAngleSteps('tan', { opp: fmt(oppVal), adj: fmt(adjVal), hyp: 'CW' }, degrees)
+    : buildPythagorasSteps(oppVal, adjVal, 'CW');
+  const total = steps.length;
+  const s = steps[step];
+
+  useEffect(() => {
+    if (!playing) return undefined;
+    if (step >= total - 1) { setPlaying(false); return undefined; }
+    const t = setTimeout(() => setStep((n) => n + 1), 2400);
+    return () => clearTimeout(t);
+  }, [playing, step, total]);
+
+  // Built from the REAL opp:adj ratio (300:1000), same "angle first, then
+  // coordinates" principle as every other solver here — a shallow, wide
+  // triangle is the correct shape for this problem, not a cosmetic choice.
+  const pad = 46;
+  const oppLen = height - 2 * pad;
+  const adjLen = (oppLen * adjVal) / oppVal;
+  const A = [pad, height - pad]; // θ vertex, bottom-left
+  const B = [Math.round(pad + adjLen), height - pad]; // right angle
+  const C = [Math.round(pad + adjLen), pad]; // top
+  const known = '#0f9d68', unknown = '#ea580c', neutral = '#94a3b8';
+  const trans = { transition: 'stroke 0.4s ease, fill 0.4s ease' };
+  const theta = (degrees * Math.PI) / 180;
+
+  const arcR = 30;
+  const arcTo = [A[0] + arcR * Math.cos(theta), A[1] - arcR * Math.sin(theta)];
+  const labelR = arcR + 20;
+  const angLabel = [A[0] + labelR * Math.cos(theta / 2), A[1] - labelR * Math.sin(theta / 2)];
+  const angleIsFocus = part === 'a';
+
+  const SIDES = ['adj', 'opp', 'hyp'];
+  const SIDE_ENDS = { adj: [A, B], opp: [B, C], hyp: [A, C] };
+  const SIDE_LABEL = {
+    adj: { x: (A[0] + B[0]) / 2, y: B[1] + 20, anchor: 'middle', baseline: 'auto' },
+    opp: { x: B[0] + 14, y: (B[1] + C[1]) / 2, anchor: 'start', baseline: 'middle' },
+    hyp: { x: (A[0] + C[0]) / 2 - 16, y: (A[1] + C[1]) / 2 - 6, anchor: 'end', baseline: 'auto' },
+  };
+  const unknownSide = part === 'a' ? null : 'hyp'; // part a solves for θ, not a side
+  const isKnownSide = (side) => side === 'adj' || side === 'opp';
+  const isLit = (side) => (isKnownSide(side) ? s.known : side === unknownSide ? s.unknown : false);
+  const colorOf = (side) => (isLit(side) ? (isKnownSide(side) ? known : unknown) : neutral);
+  const textOf = (side) => {
+    if (side === 'adj') return fmt(adjVal);
+    if (side === 'opp') return fmt(oppVal);
+    return side === unknownSide ? (s.unknownLabel || 'CW') : 'CW';
+  };
+
+  const goTo = (n) => { setPlaying(false); setStep(Math.max(0, Math.min(total - 1, n))); };
+  const togglePlay = () => { if (!playing && step === total - 1) setStep(0); setPlaying((p) => !p); };
+  const pickPart = (key) => { setPlaying(false); setStep(0); setPart(key); };
+
+  return (
+    <div style={{
+      display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'center', gap: 28,
+      fontFamily: FONT, background: '#fbfaff', border: '1px solid #ece9fb', borderRadius: 18, padding: '20px 26px',
+    }}>
+      <svg width={width} height={height} style={{ display: 'block', flex: 'none', overflow: 'visible' }}>
+        <polygon points={`${A[0]},${A[1]} ${B[0]},${B[1]} ${C[0]},${C[1]}`} fill="rgba(124,58,237,0.05)" />
+        {SIDES.map((side) => {
+          const [P, Q] = SIDE_ENDS[side];
+          const pulse = side === unknownSide && s.answer;
+          return (
+            <motion.line key={side} x1={P[0]} y1={P[1]} x2={Q[0]} y2={Q[1]} stroke={colorOf(side)} strokeWidth={isLit(side) ? 4 : 2.2} style={trans}
+              animate={pulse ? { strokeWidth: [4, 5.5, 4] } : {}} transition={{ duration: 1, repeat: pulse ? Infinity : 0 }} />
+          );
+        })}
+        <polyline points={`${B[0] - 10},${B[1]} ${B[0] - 10},${B[1] - 10} ${B[0]},${B[1] - 10}`} fill="none" stroke={neutral} strokeWidth="1.6" />
+        <path d={`M ${A[0] + arcR} ${A[1]} A ${arcR} ${arcR} 0 0 0 ${arcTo[0]} ${arcTo[1]}`} fill="none" stroke={angleIsFocus && s.known ? known : neutral} strokeWidth="1.8" style={trans} />
+        <motion.text x={angLabel[0]} y={angLabel[1]} fontSize="13" fontWeight="800"
+          fill={angleIsFocus ? (s.unknown ? unknown : (s.known ? known : '#475569')) : '#475569'}
+          textAnchor="middle" dominantBaseline="middle" style={{ ...trans, paintOrder: 'stroke', stroke: '#fbfaff', strokeWidth: 3.5 }}>
+          {angleIsFocus ? (s.angleLabel || 'θ') : 'θ'}
+        </motion.text>
+        {SIDES.map((side) => {
+          const pos = SIDE_LABEL[side];
+          const lit = isLit(side);
+          const common = {
+            x: pos.x, y: pos.y, textAnchor: pos.anchor, dominantBaseline: pos.baseline,
+            fontSize: lit ? 14.5 : 12.5, fontWeight: lit ? 800 : 700, fill: colorOf(side),
+          };
+          const halo = { paintOrder: 'stroke', stroke: '#fbfaff', strokeWidth: 4 };
+          if (side !== unknownSide) return <text key={side} {...common} style={{ ...trans, ...halo }}>{textOf(side)}</text>;
+          return (
+            <AnimatePresence mode="wait" key={side}>
+              <motion.text key={`${part}-${s.unknownLabel || 'q'}`} {...common}
+                initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }}
+                style={{ ...trans, ...halo }}>{textOf(side)}</motion.text>
+            </AnimatePresence>
+          );
+        })}
+      </svg>
+
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12, width: 300, flex: 'none' }}>
+        <div style={{ background: '#f2effc', border: '1px solid #ece9fb', borderRadius: 12, padding: '8px 18px', width: '100%', textAlign: 'center', boxSizing: 'border-box' }}>
+          <AnimatePresence mode="wait">
+            <motion.div key={s.formula} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.2 }}>
+              <MathView content={`$$${s.formula}$$`} style={{ fontSize: '1.05rem', fontWeight: 700, color: '#5b4b9c' }} />
+            </motion.div>
+          </AnimatePresence>
+        </div>
+
+        <div style={{ display: 'flex', gap: 8 }}>
+          {[['a', 'a  Find θ'], ['b', 'b  Find CW']].map(([key, label]) => (
+            <button key={key} type="button" onClick={() => pickPart(key)} aria-pressed={part === key}
+              style={{
+                padding: '6px 14px', borderRadius: 10, fontWeight: 800, fontSize: '0.8rem', cursor: 'pointer', fontFamily: FONT,
+                border: `1.5px solid ${part === key ? '#7c3aed' : '#e2e8f0'}`,
+                background: part === key ? '#f5f3ff' : '#fff', color: part === key ? '#7c3aed' : '#64748b',
+                transition: 'border-color 0.3s ease, background 0.4s ease',
+              }}>{label}</button>
+          ))}
+        </div>
+
+        <div style={{ fontSize: '0.82rem', fontWeight: 600, color: '#475569', textAlign: 'center', minHeight: '2.4em' }}>
+          <span style={{ fontWeight: 800, color: '#7c3aed' }}>{s.tag}. </span>{s.text}
+        </div>
+
+        <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+          <button onClick={() => goTo(step - 1)} disabled={step === 0} aria-label="Previous step"
+            style={{ border: '1.5px solid #e2e8f0', background: '#fff', borderRadius: 8, padding: '5px 9px', cursor: step === 0 ? 'default' : 'pointer', opacity: step === 0 ? 0.4 : 1 }}>
+            <ArrowLeft size={14} color="#475569" />
+          </button>
+          <div style={{ display: 'flex', gap: 4 }}>
+            {steps.map((_, i) => (
+              <div key={i} onClick={() => goTo(i)} style={{
+                width: 6, height: 6, borderRadius: '50%', cursor: 'pointer',
+                background: i === step ? '#7c3aed' : '#e2e8f0', transition: 'background 0.2s ease',
+              }} />
+            ))}
+          </div>
+          <button onClick={togglePlay} style={{ border: 'none', background: '#7c3aed', color: '#fff', borderRadius: 999, padding: '6px 14px', fontWeight: 700, fontSize: '0.78rem', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 5, fontFamily: FONT }}>
+            {playing ? <Pause size={13} /> : <Play size={13} />}{playing ? 'Pause' : (step === total - 1 ? 'Replay' : 'Play')}
+          </button>
+          <button onClick={() => goTo(step + 1)} disabled={step === total - 1} aria-label="Next step"
+            style={{ border: '1.5px solid #e2e8f0', background: '#fff', borderRadius: 8, padding: '5px 9px', cursor: step === total - 1 ? 'default' : 'pointer', opacity: step === total - 1 ? 0.4 : 1 }}>
+            <ArrowRight size={14} color="#475569" />
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 // Each board item animates in, with a stagger handled by the parent.
 const itemVariants = {
   hidden: { opacity: 0, y: 16 },
@@ -3434,6 +3627,7 @@ const BoardItem = ({ item }) => {
   else if (item.type === 'unknownSideSolver') inner = <UnknownSideSolver {...item} />;
   else if (item.type === 'unknownAngleSolver') inner = <UnknownAngleSolver {...item} />;
   else if (item.type === 'workedTriangleSolver') inner = <WorkedTriangleSolver {...item} />;
+  else if (item.type === 'walkerCliffSolver') inner = <WalkerCliffSolver {...item} />;
   else if (item.type === 'primaryRatioRecap') inner = <PrimaryRatioRecap {...item} />;
   else if (item.type === 'introTrigScene') inner = <IntroTrigScene {...item} />;
   else return null;
