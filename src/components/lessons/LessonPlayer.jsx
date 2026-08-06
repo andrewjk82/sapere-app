@@ -46,7 +46,7 @@ const fmt = (n) => n.toLocaleString('en-US').replace(/,/g, ' ');
 
 // Steps that need the student to tap/answer something before moving on —
 // auto-play must PAUSE here rather than racing past on its usual timer.
-const INTERACTIVE_BOARD_TYPES = ['checkpoint', 'compassBearing', 'elevationDepression', 'angleCircle', 'similarTriangles', 'reciprocalRatio', 'exactValuesExplorer', 'unknownSideSolver', 'unknownAngleSolver'];
+const INTERACTIVE_BOARD_TYPES = ['checkpoint', 'compassBearing', 'elevationDepression', 'angleCircle', 'similarTriangles', 'reciprocalRatio', 'exactValuesExplorer', 'unknownSideSolver', 'unknownAngleSolver', 'primaryRatioRecap'];
 const isInteractiveStep = (step) => (step?.board || []).some(
   (b) => INTERACTIVE_BOARD_TYPES.includes(b.type) || (b.type === 'triangle' && b.quiz),
 );
@@ -2332,6 +2332,87 @@ const ReciprocalRatioDemo = ({ width = 340, height = 260 }) => {
   );
 };
 
+// ── Recap: sin/cos/tan, one triangle ────────────────────────────────────────
+// The final recap used to be one static line of three formulas — a student who
+// couldn't already tell opp/adj/hyp apart on a triangle from the word alone got
+// no help from it. This puts them back on a triangle: the SAME 3-4-5 triangle
+// used two steps earlier, so the ratio isn't just a formula, it's "4 over 5",
+// a real number computed on real sides they already met. It auto-cycles once
+// (sin -> cos -> tan) so the pattern is seen even by a student who never taps
+// anything, then stays wherever they leave it.
+const PrimaryRatioRecap = ({ width = 320, height = 240, opp = 4, adj = 3, hyp = 5 }) => {
+  const [fn, setFn] = useState('sin');
+  const [playing, setPlaying] = useState(true);
+  const ORDER = ['sin', 'cos', 'tan'];
+  const COLORS = { sin: '#2563eb', cos: '#7c3aed', tan: '#ea580c' };
+  const SIDES = { sin: ['opp', 'hyp'], cos: ['adj', 'hyp'], tan: ['opp', 'adj'] };
+  const VALUES = { opp, adj, hyp };
+  const FORMULA = {
+    sin: `\\sin\\theta = \\dfrac{\\text{opp}}{\\text{hyp}} = \\dfrac{${opp}}{${hyp}}`,
+    cos: `\\cos\\theta = \\dfrac{\\text{adj}}{\\text{hyp}} = \\dfrac{${adj}}{${hyp}}`,
+    tan: `\\tan\\theta = \\dfrac{\\text{opp}}{\\text{adj}} = \\dfrac{${opp}}{${adj}}`,
+  };
+
+  useEffect(() => {
+    if (!playing) return undefined;
+    const t = setTimeout(() => {
+      setFn((cur) => {
+        const next = ORDER[(ORDER.indexOf(cur) + 1) % ORDER.length];
+        if (next === 'sin') setPlaying(false); // one full lap, then hand control to the student
+        return next;
+      });
+    }, 2200);
+    return () => clearTimeout(t);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [playing, fn]);
+
+  const pad = 42;
+  const oppLen = height - 2 * pad;
+  const adjLen = (oppLen * adj) / opp;
+  const baseX = Math.round((width - adjLen) / 2);
+  const A = [baseX, height - pad];
+  const B = [Math.round(baseX + adjLen), height - pad];
+  const C = [Math.round(baseX + adjLen), pad];
+  const active = COLORS[fn];
+  const used = (side) => SIDES[fn].includes(side);
+  const trans = { transition: 'stroke 0.3s ease, stroke-width 0.3s ease, fill 0.3s ease' };
+  const sideStyle = (side) => ({ stroke: used(side) ? active : '#cbd5e1', strokeWidth: used(side) ? 4 : 2.4, ...trans });
+
+  const pick = (f) => { setPlaying(false); setFn(f); };
+
+  return (
+    <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'center', gap: 24, fontFamily: FONT }}>
+      <svg width={width} height={height} style={{ display: 'block', flex: 'none' }}>
+        <polygon points={`${A[0]},${A[1]} ${B[0]},${B[1]} ${C[0]},${C[1]}`} fill="rgba(124,58,237,0.05)" />
+        <line x1={A[0]} y1={A[1]} x2={B[0]} y2={B[1]} style={sideStyle('adj')} />
+        <line x1={B[0]} y1={B[1]} x2={C[0]} y2={C[1]} style={sideStyle('opp')} />
+        <line x1={C[0]} y1={C[1]} x2={A[0]} y2={A[1]} style={sideStyle('hyp')} />
+        <polyline points={`${B[0] - 9},${B[1]} ${B[0] - 9},${B[1] - 9} ${B[0]},${B[1] - 9}`} fill="none" stroke="#7c3aed" strokeWidth="1.6" />
+        <text x={A[0] - 6} y={A[1] + 6} fontSize="13" fontWeight="700" fill="#1e293b" textAnchor="end">θ</text>
+        <text x={(A[0] + B[0]) / 2} y={B[1] + 20} fontSize="13" fontWeight="800" textAnchor="middle" style={{ fill: used('adj') ? active : '#94a3b8', ...trans }}>{used('adj') ? adj : 'adj'}</text>
+        <text x={B[0] + 14} y={(B[1] + C[1]) / 2} fontSize="13" fontWeight="800" textAnchor="start" style={{ fill: used('opp') ? active : '#94a3b8', ...trans }}>{used('opp') ? opp : 'opp'}</text>
+        <text x={(A[0] + C[0]) / 2 - 14} y={(A[1] + C[1]) / 2 - 8} fontSize="13" fontWeight="800" textAnchor="end" style={{ fill: used('hyp') ? active : '#94a3b8', ...trans }}>{used('hyp') ? hyp : 'hyp'}</text>
+      </svg>
+
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 10 }}>
+        <div style={{ display: 'flex', gap: 8 }}>
+          {ORDER.map((f) => (
+            <button key={f} type="button" onClick={() => pick(f)} aria-pressed={fn === f}
+              style={{ padding: '7px 15px', borderRadius: 999, border: `2px solid ${COLORS[f]}`, background: fn === f ? COLORS[f] : '#fff', color: fn === f ? '#fff' : COLORS[f], fontWeight: 800, cursor: 'pointer', fontFamily: FONT, fontSize: '0.85rem', transition: 'background 0.3s ease, color 0.3s ease' }}>
+              {f} θ
+            </button>
+          ))}
+        </div>
+        <AnimatePresence mode="wait">
+          <motion.div key={fn} initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} transition={{ duration: 0.25 }}>
+            <MathView content={`$$${FORMULA[fn]} = ${(VALUES[SIDES[fn][0]] / VALUES[SIDES[fn][1]]).toFixed(2)}$$`} style={{ fontSize: '1.05rem', fontWeight: 800, color: active }} />
+          </motion.div>
+        </AnimatePresence>
+      </div>
+    </div>
+  );
+};
+
 // ── Exact-values explorer ────────────────────────────────────────────────────
 // The two special triangles, plus a table where every cell starts hidden — tap
 // one to test yourself (derive it from the triangles above) before checking.
@@ -3020,6 +3101,7 @@ const BoardItem = ({ item }) => {
   else if (item.type === 'exactValuesExplorer') inner = <ExactValuesExplorer {...item} />;
   else if (item.type === 'unknownSideSolver') inner = <UnknownSideSolver {...item} />;
   else if (item.type === 'unknownAngleSolver') inner = <UnknownAngleSolver {...item} />;
+  else if (item.type === 'primaryRatioRecap') inner = <PrimaryRatioRecap {...item} />;
   else return null;
   return <motion.div variants={itemVariants}>{inner}</motion.div>;
 };

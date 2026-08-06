@@ -1114,9 +1114,9 @@ export const buildRightTriangleTrigLesson = ({ audioBase = null } = {}) => {
       }],
     },
     {
-      narration: `<b>Recap:</b> $\\sin\\theta = \\tfrac{\\text{opp}}{\\text{hyp}}$, $\\cos\\theta = \\tfrac{\\text{adj}}{\\text{hyp}}$, $\\tan\\theta = \\tfrac{\\text{opp}}{\\text{adj}}$; the reciprocals cosec, sec, cot; the exact values at 30°, 45°, 60°; and use the unknown-over-known method for sides, or the inverse function for angles.`,
-      speech: `Recap. Sine theta equals opposite over hypotenuse. Cosine theta equals adjacent over hypotenuse. Tangent theta equals opposite over adjacent. Remember the reciprocals, cosecant, secant and cotangent. Remember the exact values at 30, 45 and 60 degrees. And use the unknown over known method to find a side, or the inverse function to find an angle.`,
-      board: [{ type: 'math', content: `$$\\sin\\theta=\\dfrac{\\text{opp}}{\\text{hyp}} \\quad \\cos\\theta=\\dfrac{\\text{adj}}{\\text{hyp}} \\quad \\tan\\theta=\\dfrac{\\text{opp}}{\\text{adj}}$$` }],
+      narration: `<b>Recap:</b> on the same 3-4-5 triangle, $\\sin\\theta = \\tfrac{\\text{opp}}{\\text{hyp}} = \\tfrac{4}{5}$, $\\cos\\theta = \\tfrac{\\text{adj}}{\\text{hyp}} = \\tfrac{3}{5}$, $\\tan\\theta = \\tfrac{\\text{opp}}{\\text{adj}} = \\tfrac{4}{3}$ — <b>tap each tab</b> to see which two sides it uses. Plus the reciprocals cosec, sec, cot; the exact values at 30°, 45°, 60°; and use the unknown-over-known method for sides, or the inverse function for angles.`,
+      speech: `Recap. On the same 3-4-5 triangle, sine theta equals opposite over hypotenuse, that's 4 over 5. Cosine theta equals adjacent over hypotenuse, that's 3 over 5. Tangent theta equals opposite over adjacent, that's 4 over 3. Tap each tab to see which two sides it uses. Remember the reciprocals, cosecant, secant and cotangent. Remember the exact values at 30, 45 and 60 degrees. And use the unknown over known method to find a side, or the inverse function to find an angle.`,
+      board: [{ type: 'primaryRatioRecap', opp: 4, adj: 3, hyp: 5 }],
     },
   ];
 
