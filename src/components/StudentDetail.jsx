@@ -1574,12 +1574,50 @@ const StudentDetail = ({ studentId, onBack }) => {
         }),
       }).catch((err) => console.warn("Challenge reset notification failed:", err));
 
-      // Rebuild XP from remaining season stats only (never re-add pre-cutoff history).
-      // Plain "current - attempt XP" fails when totalXP was already inflated to all-time sum.
-      const totals = await recalculateStudentTotals(activeStudentCollection, { allowDecrease: true });
-      const finalXP = totals.totalXP;
+      // Step 5: Deduct precisely what THIS attempt was worth — do NOT full-recalculate
+      // with allowDecrease:true. That path re-sums the student's entire season history
+      // and overwrites totalXP with no floor, so any XP source recalculateStudentTotals
+      // doesn't fully capture (Secret Note, Sprint, Exam Prep, manual adjustments —
+      // preserved only via an "unexplainedBonus" estimate) gets wiped on a SINGLE test
+      // reset instead of just that test's XP (2026-08-07 incident: one reset dragged
+      // totalXP down far past the reset attempt's own worth).
+      // Full season recalculation for pre-season-inflation cleanup stays available via
+      // the explicit "Recalculate XP" button (handleRecalculateXP), which still uses
+      // allowDecrease:true deliberately.
+      let finalXP;
+      if (statXpEarned > 0) {
+        const userDocRef = doc(db, activeStudentCollection, activeStudentId);
+        const userSnap = await getDoc(userDocRef);
+        const currentXP = Number(userSnap.data()?.totalXP) || 0;
+        const currentChallengesCompleted = Number(userSnap.data()?.challengesCompleted) || 0;
+        finalXP = Math.max(0, currentXP - statXpEarned);
+        await setDoc(
+          userDocRef,
+          {
+            totalXP: finalXP,
+            challengesCompleted: Math.max(0, currentChallengesCompleted - 1),
+            updatedAt: new Date().toISOString(),
+          },
+          { merge: true },
+        );
+        try {
+          const fullStudentData = { ...student, totalXP: finalXP };
+          if (student.source === "manual") {
+            await upsertManualStudentLeaderboard(activeStudentId, fullStudentData);
+          } else {
+            await upsertRegisteredUserLeaderboard(activeStudentId, fullStudentData);
+          }
+        } catch (lbErr) {
+          console.warn("Leaderboard sync failed after challenge reset:", lbErr);
+        }
+      } else {
+        // No XP recorded on this attempt (incomplete/abandoned) — nothing precise to
+        // deduct, so fall back to the season-aware recalculation with its safety floor.
+        const totals = await recalculateStudentTotals(activeStudentCollection, { allowDecrease: false });
+        finalXP = totals.totalXP;
+      }
       showToast(
-        `Challenge reset. XP set to ${finalXP} (season since ${totals.seasonStartDateKey || 'start'}${statXpEarned > 0 ? `, removed attempt worth ${statXpEarned}` : ''}). Removed ${deletedWorkingOutCount} working out item${deletedWorkingOutCount === 1 ? "" : "s"}.`,
+        `Challenge reset. XP adjusted to ${finalXP}${statXpEarned > 0 ? ` (−${statXpEarned} from this attempt)` : ''}. Removed ${deletedWorkingOutCount} working out item${deletedWorkingOutCount === 1 ? "" : "s"}.`,
         "success",
       );
     } catch (err) {
