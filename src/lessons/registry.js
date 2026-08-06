@@ -1089,9 +1089,9 @@ export const buildRightTriangleTrigLesson = ({ audioBase = null } = {}) => {
       }],
     },
     {
-      narration: `<b>Finding an unknown angle</b> works from the known sides: figure out which of cos θ, sin θ or tan θ uses <b>those two</b> sides, then take the inverse function.`,
-      speech: `Finding an unknown angle works from the two known sides. Work out which of cosine theta, sine theta or tangent theta uses those two sides, then take the inverse function.`,
-      board: [{ type: 'math', content: `$$\\text{known sides} \\;\\longrightarrow\\; \\cos\\theta,\\ \\sin\\theta,\\ \\text{or}\\ \\tan\\theta \\;\\longrightarrow\\; \\theta$$` }],
+      narration: `<b>Finding an unknown angle</b> runs the same method backwards. Two sides are given, so pick the ratio that uses <b>those two</b> sides — that gives you a number, not the angle. The <b>inverse</b> (sin⁻¹, cos⁻¹, tan⁻¹) turns that number back into the angle. <b>Press play</b> to watch it, step by step.`,
+      speech: `Finding an unknown angle runs the same method backwards. Two sides are given, so pick the ratio that uses those two sides. That gives you a number, not the angle. The inverse, sine to the minus one, cosine to the minus one, or tangent to the minus one, turns that number back into the angle. Press play to watch it, step by step.`,
+      board: [{ type: 'unknownAngleSolver' }],
     },
     {
       narration: `<b>Example.</b> Find θ, given the opposite side 12 and the adjacent side 7. Both given sides are opposite and adjacent, so use tan: $\\tan\\theta = \\dfrac{12}{7}$, giving $\\theta \\approx 59°45'$.`,

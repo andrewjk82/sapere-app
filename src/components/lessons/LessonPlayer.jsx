@@ -46,7 +46,7 @@ const fmt = (n) => n.toLocaleString('en-US').replace(/,/g, ' ');
 
 // Steps that need the student to tap/answer something before moving on —
 // auto-play must PAUSE here rather than racing past on its usual timer.
-const INTERACTIVE_BOARD_TYPES = ['checkpoint', 'compassBearing', 'elevationDepression', 'angleCircle', 'similarTriangles', 'reciprocalRatio', 'exactValuesExplorer', 'unknownSideSolver'];
+const INTERACTIVE_BOARD_TYPES = ['checkpoint', 'compassBearing', 'elevationDepression', 'angleCircle', 'similarTriangles', 'reciprocalRatio', 'exactValuesExplorer', 'unknownSideSolver', 'unknownAngleSolver'];
 const isInteractiveStep = (step) => (step?.board || []).some(
   (b) => INTERACTIVE_BOARD_TYPES.includes(b.type) || (b.type === 'triangle' && b.quiz),
 );
@@ -2720,6 +2720,241 @@ const UnknownSideSolver = ({ width = 320, height = 260 }) => {
   );
 };
 
+// ── Unknown-ANGLE solver — animated walkthrough ─────────────────────────────
+// The mirror image of UnknownSideSolver: there the angle was given and a side
+// was missing; here two sides are given and the ANGLE is missing, so the last
+// move is an inverse function. One 3-4-5 triangle serves all three cases, which
+// makes the point that whichever pair of sides you're handed, the angle you
+// arrive at is the same one — sin⁻¹(4/5) = cos⁻¹(3/5) = tan⁻¹(4/3) ≈ 53°8'.
+const UNKNOWN_ANGLE_ANSWER = '53°8′';
+const UNKNOWN_ANGLE_VARIANTS = {
+  sin: {
+    knownSides: ['opp', 'hyp'], values: { opp: '4', hyp: '5' },
+    steps: [
+      { tag: 'Look at the triangle', known: false, unknown: false, mnem: null, angleLabel: 'θ',
+        formula: '\\sin\\theta = \\dfrac{\\text{opp}}{\\text{hyp}}',
+        text: 'This time two sides are given and the angle is the thing we don’t know — that’s θ.' },
+      { tag: 'Mark what’s known', known: true, unknown: false, mnem: null, angleLabel: 'θ',
+        formula: '\\sin\\theta = \\dfrac{\\text{opp}}{\\text{hyp}}',
+        text: 'The opposite side 4 and the hypotenuse 5 are given — those are known.' },
+      { tag: 'Mark what’s missing', known: true, unknown: true, mnem: null, angleLabel: 'θ',
+        formula: '\\sin\\theta = \\dfrac{\\text{opp}}{\\text{hyp}}',
+        text: 'θ is the angle in the corner those two sides meet around — that’s what we’re solving for.' },
+      { tag: 'Choose the ratio', known: true, unknown: true, mnem: 'sin', angleLabel: 'θ',
+        formula: '\\sin\\theta = \\dfrac{\\text{opp}}{\\text{hyp}}',
+        text: 'Known sides = opposite and hypotenuse — the ratio that uses both is sine.' },
+      { tag: 'Substitute', known: true, unknown: true, mnem: 'sin', angleLabel: 'θ',
+        formula: '\\sin\\theta = \\dfrac{4}{5}',
+        text: 'Put the two side lengths in. Now θ is the angle whose sine is 0.8.' },
+      { tag: 'Undo the sine', known: true, unknown: true, mnem: 'sin', angleLabel: 'θ',
+        formula: '\\theta = \\sin^{-1}\\!\\left(\\dfrac{4}{5}\\right)',
+        text: 'sin⁻¹ is the inverse: sin turns an angle into a ratio, sin⁻¹ turns the ratio back into the angle.' },
+      { tag: 'Solve', known: true, unknown: true, mnem: 'sin', answer: true, angleLabel: UNKNOWN_ANGLE_ANSWER,
+        formula: `\\theta \\approx 53°8′`,
+        text: 'On a calculator (in degrees): sin⁻¹(0.8) ≈ 53.13° = 53°8′.' },
+    ],
+  },
+  cos: {
+    knownSides: ['adj', 'hyp'], values: { adj: '3', hyp: '5' },
+    steps: [
+      { tag: 'Look at the triangle', known: false, unknown: false, mnem: null, angleLabel: 'θ',
+        formula: '\\cos\\theta = \\dfrac{\\text{adj}}{\\text{hyp}}',
+        text: 'Same triangle, but this time the two given sides are the bottom one and the longest one.' },
+      { tag: 'Mark what’s known', known: true, unknown: false, mnem: null, angleLabel: 'θ',
+        formula: '\\cos\\theta = \\dfrac{\\text{adj}}{\\text{hyp}}',
+        text: 'The adjacent side 3 and the hypotenuse 5 are given — those are known.' },
+      { tag: 'Mark what’s missing', known: true, unknown: true, mnem: null, angleLabel: 'θ',
+        formula: '\\cos\\theta = \\dfrac{\\text{adj}}{\\text{hyp}}',
+        text: 'θ is still the angle we want — only the pair of sides we were handed has changed.' },
+      { tag: 'Choose the ratio', known: true, unknown: true, mnem: 'cos', angleLabel: 'θ',
+        formula: '\\cos\\theta = \\dfrac{\\text{adj}}{\\text{hyp}}',
+        text: 'Known sides = adjacent and hypotenuse — the ratio that uses both is cosine.' },
+      { tag: 'Substitute', known: true, unknown: true, mnem: 'cos', angleLabel: 'θ',
+        formula: '\\cos\\theta = \\dfrac{3}{5}',
+        text: 'Put the two side lengths in. Now θ is the angle whose cosine is 0.6.' },
+      { tag: 'Undo the cosine', known: true, unknown: true, mnem: 'cos', angleLabel: 'θ',
+        formula: '\\theta = \\cos^{-1}\\!\\left(\\dfrac{3}{5}\\right)',
+        text: 'cos⁻¹ is the inverse of cos — it turns the ratio back into the angle.' },
+      { tag: 'Solve', known: true, unknown: true, mnem: 'cos', answer: true, angleLabel: UNKNOWN_ANGLE_ANSWER,
+        formula: `\\theta \\approx 53°8′`,
+        text: 'cos⁻¹(0.6) ≈ 53.13° = 53°8′ — the same angle as before, because it’s the same triangle.' },
+    ],
+  },
+  tan: {
+    knownSides: ['opp', 'adj'], values: { opp: '4', adj: '3' },
+    steps: [
+      { tag: 'Look at the triangle', known: false, unknown: false, mnem: null, angleLabel: 'θ',
+        formula: '\\tan\\theta = \\dfrac{\\text{opp}}{\\text{adj}}',
+        text: 'Here the hypotenuse isn’t given — just the two shorter sides, and the angle θ.' },
+      { tag: 'Mark what’s known', known: true, unknown: false, mnem: null, angleLabel: 'θ',
+        formula: '\\tan\\theta = \\dfrac{\\text{opp}}{\\text{adj}}',
+        text: 'The opposite side 4 and the adjacent side 3 are given — those are known.' },
+      { tag: 'Mark what’s missing', known: true, unknown: true, mnem: null, angleLabel: 'θ',
+        formula: '\\tan\\theta = \\dfrac{\\text{opp}}{\\text{adj}}',
+        text: 'θ is the angle those two sides make at the bottom-left corner.' },
+      { tag: 'Choose the ratio', known: true, unknown: true, mnem: 'tan', angleLabel: 'θ',
+        formula: '\\tan\\theta = \\dfrac{\\text{opp}}{\\text{adj}}',
+        text: 'No hypotenuse in sight: opposite and adjacent are the pair — that ratio is tangent.' },
+      { tag: 'Substitute', known: true, unknown: true, mnem: 'tan', angleLabel: 'θ',
+        formula: '\\tan\\theta = \\dfrac{4}{3}',
+        text: 'Put the two side lengths in. Now θ is the angle whose tangent is 4/3.' },
+      { tag: 'Undo the tangent', known: true, unknown: true, mnem: 'tan', angleLabel: 'θ',
+        formula: '\\theta = \\tan^{-1}\\!\\left(\\dfrac{4}{3}\\right)',
+        text: 'tan⁻¹ is the inverse of tan — it turns the ratio back into the angle.' },
+      { tag: 'Solve', known: true, unknown: true, mnem: 'tan', answer: true, angleLabel: UNKNOWN_ANGLE_ANSWER,
+        formula: `\\theta \\approx 53°8′`,
+        text: 'tan⁻¹(4/3) ≈ 53.13° = 53°8′ — the same angle again, from a different pair of sides.' },
+    ],
+  },
+};
+
+const UnknownAngleSolver = ({ width = 320, height = 260 }) => {
+  const [ratio, setRatio] = useState('sin');
+  const [step, setStep] = useState(0);
+  const [playing, setPlaying] = useState(false);
+  const v = UNKNOWN_ANGLE_VARIANTS[ratio];
+  const total = v.steps.length;
+  const s = v.steps[step];
+
+  useEffect(() => {
+    if (!playing) return undefined;
+    if (step >= total - 1) { setPlaying(false); return undefined; }
+    const t = setTimeout(() => setStep((n) => n + 1), 2400);
+    return () => clearTimeout(t);
+  }, [playing, step, total]);
+
+  // A 3-4-5 triangle, drawn to scale — so the angle the student reads off the
+  // picture really is the 53°8′ the walkthrough ends on.
+  const pad = 46;
+  const oppLen = height - 2 * pad;
+  const adjLen = (oppLen * 3) / 4;
+  const theta = Math.atan2(oppLen, adjLen);
+  const baseX = Math.round((width - adjLen) / 2);
+  const A = [baseX, height - pad]; // θ vertex, bottom-left
+  const B = [Math.round(baseX + adjLen), height - pad]; // right angle
+  const C = [Math.round(baseX + adjLen), pad]; // top
+  const known = '#0f9d68';
+  const unknown = '#ea580c';
+  const neutral = '#94a3b8';
+  const trans = { transition: 'stroke 0.4s ease, fill 0.4s ease' };
+
+  const arcR = 32;
+  const arcFrom = [A[0] + arcR, A[1]];
+  const arcTo = [A[0] + arcR * Math.cos(theta), A[1] - arcR * Math.sin(theta)];
+  const labelR = arcR + 26;
+  const angLabel = [A[0] + labelR * Math.cos(theta / 2), A[1] - labelR * Math.sin(theta / 2)];
+
+  const SIDES = ['adj', 'opp', 'hyp'];
+  const SIDE_ENDS = { adj: [A, B], opp: [B, C], hyp: [A, C] };
+  const SIDE_LABEL = {
+    adj: { x: (A[0] + B[0]) / 2, y: B[1] + 20, anchor: 'middle', baseline: 'auto' },
+    opp: { x: B[0] + 14, y: (B[1] + C[1]) / 2, anchor: 'start', baseline: 'middle' },
+    hyp: { x: (A[0] + C[0]) / 2 - 16, y: (A[1] + C[1]) / 2 - 6, anchor: 'end', baseline: 'auto' },
+  };
+  const isKnownSide = (side) => v.knownSides.includes(side);
+  const isLit = (side) => isKnownSide(side) && s.known;
+  const colorOf = (side) => (isLit(side) ? known : neutral);
+  const textOf = (side) => (isKnownSide(side) ? v.values[side] : side);
+  const angleColor = s.unknown ? unknown : '#475569';
+
+  const goTo = (n) => { setPlaying(false); setStep(Math.max(0, Math.min(total - 1, n))); };
+  const togglePlay = () => { if (!playing && step === total - 1) setStep(0); setPlaying((p) => !p); };
+  const pickRatio = (key) => { setPlaying(false); setStep(0); setRatio(key); };
+
+  return (
+    <div style={{
+      display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'center', gap: 28,
+      fontFamily: FONT, background: '#fbfaff', border: '1px solid #ece9fb', borderRadius: 18, padding: '20px 26px',
+    }}>
+      <svg width={width} height={height} style={{ display: 'block', flex: 'none' }}>
+        <polygon points={`${A[0]},${A[1]} ${B[0]},${B[1]} ${C[0]},${C[1]}`} fill="rgba(124,58,237,0.05)" />
+        {SIDES.map((side) => {
+          const [P, Q] = SIDE_ENDS[side];
+          return <line key={side} x1={P[0]} y1={P[1]} x2={Q[0]} y2={Q[1]} stroke={colorOf(side)} strokeWidth={isLit(side) ? 4 : 2.2} style={trans} />;
+        })}
+        <polyline points={`${B[0] - 10},${B[1]} ${B[0] - 10},${B[1] - 10} ${B[0]},${B[1] - 10}`} fill="none" stroke={neutral} strokeWidth="1.6" />
+        {/* The angle is the unknown here, so the arc is what pulses on the answer. */}
+        <motion.path d={`M ${arcFrom[0]} ${arcFrom[1]} A ${arcR} ${arcR} 0 0 0 ${arcTo[0]} ${arcTo[1]}`} fill="none"
+          stroke={angleColor} strokeWidth={s.unknown ? 3 : 1.8} style={trans}
+          animate={s.answer ? { strokeWidth: [3, 4.5, 3] } : {}} transition={{ duration: 1, repeat: s.answer ? Infinity : 0 }} />
+        {SIDES.map((side) => {
+          const pos = SIDE_LABEL[side];
+          const lit = isLit(side);
+          return (
+            <text key={side} x={pos.x} y={pos.y} textAnchor={pos.anchor} dominantBaseline={pos.baseline}
+              fontSize={lit ? 14.5 : 12.5} fontWeight={lit ? 800 : 700} fill={colorOf(side)}
+              style={{ ...trans, paintOrder: 'stroke', stroke: '#fbfaff', strokeWidth: 4 }}>{textOf(side)}</text>
+          );
+        })}
+        <AnimatePresence mode="wait">
+          <motion.text key={`${ratio}-${s.angleLabel}`} x={angLabel[0]} y={angLabel[1]} textAnchor="middle" dominantBaseline="middle"
+            fontSize={s.answer ? 13.5 : 15} fontWeight="800" fill={angleColor}
+            initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }}
+            style={{ ...trans, paintOrder: 'stroke', stroke: '#fbfaff', strokeWidth: 4 }}>{s.angleLabel}</motion.text>
+        </AnimatePresence>
+      </svg>
+
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12, width: 300, flex: 'none' }}>
+        <div style={{ background: '#f2effc', border: '1px solid #ece9fb', borderRadius: 12, padding: '8px 18px', width: '100%', textAlign: 'center', boxSizing: 'border-box' }}>
+          <AnimatePresence mode="wait">
+            <motion.div key={s.formula} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.2 }}>
+              <MathView content={`$$${s.formula}$$`} style={{ fontSize: '1.08rem', fontWeight: 700, color: '#5b4b9c' }} />
+            </motion.div>
+          </AnimatePresence>
+        </div>
+
+        <div style={{ display: 'flex', gap: 8 }}>
+          {MNEM_RATIOS.map((r) => {
+            const picked = s.mnem === r.key;
+            const selected = ratio === r.key;
+            return (
+              <button key={r.key} type="button" onClick={() => pickRatio(r.key)}
+                aria-pressed={selected} title={`Find the angle from ${UNKNOWN_ANGLE_VARIANTS[r.key].knownSides.join(' + ')}`}
+                style={{
+                  padding: '5px 10px', borderRadius: 10, textAlign: 'center', minWidth: 58, cursor: 'pointer', fontFamily: FONT,
+                  border: `1.5px solid ${selected ? '#7c3aed' : '#e2e8f0'}`,
+                  background: picked ? '#f5f3ff' : '#fff',
+                  boxShadow: picked ? '0 0 0 3px rgba(124,58,237,0.12)' : 'none',
+                  transition: 'border-color 0.3s ease, background 0.4s ease, box-shadow 0.4s ease',
+                }}>
+                <MathView content={`$${r.label}$`} style={{ fontSize: '0.8rem', fontWeight: 800, color: selected ? '#7c3aed' : '#64748b' }} />
+                <div style={{ fontSize: '0.62rem', fontWeight: 600, color: '#94a3b8', marginTop: 2 }}>{r.parts}</div>
+              </button>
+            );
+          })}
+        </div>
+        <div style={{ fontSize: '0.68rem', fontWeight: 600, color: '#94a3b8', marginTop: -6 }}>Tap the pair of sides you’re given</div>
+
+        <div style={{ fontSize: '0.82rem', fontWeight: 600, color: '#475569', textAlign: 'center', minHeight: '2.4em' }}>
+          <span style={{ fontWeight: 800, color: '#7c3aed' }}>{s.tag}. </span>{s.text}
+        </div>
+
+        <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+          <button onClick={() => goTo(step - 1)} disabled={step === 0} aria-label="Previous step"
+            style={{ border: '1.5px solid #e2e8f0', background: '#fff', borderRadius: 8, padding: '5px 9px', cursor: step === 0 ? 'default' : 'pointer', opacity: step === 0 ? 0.4 : 1 }}>
+            <ArrowLeft size={14} color="#475569" />
+          </button>
+          <div style={{ display: 'flex', gap: 4 }}>
+            {v.steps.map((_, i) => (
+              <div key={i} onClick={() => goTo(i)} style={{
+                width: 6, height: 6, borderRadius: '50%', cursor: 'pointer',
+                background: i === step ? '#7c3aed' : '#e2e8f0', transition: 'background 0.2s ease',
+              }} />
+            ))}
+          </div>
+          <button onClick={togglePlay} style={{ border: 'none', background: '#7c3aed', color: '#fff', borderRadius: 999, padding: '6px 14px', fontWeight: 700, fontSize: '0.78rem', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 5, fontFamily: FONT }}>
+            {playing ? <Pause size={13} /> : <Play size={13} />}{playing ? 'Pause' : (step === total - 1 ? 'Replay' : 'Play')}
+          </button>
+          <button onClick={() => goTo(step + 1)} disabled={step === total - 1} aria-label="Next step"
+            style={{ border: '1.5px solid #e2e8f0', background: '#fff', borderRadius: 8, padding: '5px 9px', cursor: step === total - 1 ? 'default' : 'pointer', opacity: step === total - 1 ? 0.4 : 1 }}>
+            <ArrowRight size={14} color="#475569" />
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 // Each board item animates in, with a stagger handled by the parent.
 const itemVariants = {
   hidden: { opacity: 0, y: 16 },
@@ -2805,6 +3040,7 @@ const BoardItem = ({ item }) => {
   else if (item.type === 'reciprocalRatio') inner = <ReciprocalRatioDemo {...item} />;
   else if (item.type === 'exactValuesExplorer') inner = <ExactValuesExplorer {...item} />;
   else if (item.type === 'unknownSideSolver') inner = <UnknownSideSolver {...item} />;
+  else if (item.type === 'unknownAngleSolver') inner = <UnknownAngleSolver {...item} />;
   else return null;
   return <motion.div variants={itemVariants}>{inner}</motion.div>;
 };
