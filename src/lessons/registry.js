@@ -1261,9 +1261,9 @@ export const buildGeneralAngleTrigLesson = ({ audioBase = null } = {}) => {
       board: [{ type: 'angleCircle', initialDeg: 40, showRatios: false }],
     },
     {
-      narration: `Notice one ray corresponds to <b>infinitely many</b> angles, all differing by multiples of 360°: …, −320°, 40°, 400°, 760°, … all give the <b>same ray</b>. Try it — set the slider to 40°, then 400°.`,
-      speech: `Notice that one ray corresponds to infinitely many angles, all differing by multiples of 360 degrees. Negative 320 degrees, 40 degrees, 400 degrees, 760 degrees, all give the same ray. Try it. Set the slider to 40 degrees, then to 400 degrees.`,
-      board: [{ type: 'math', content: `$$\\ldots,\\ -320°,\\ 40°,\\ 400°,\\ 760°,\\ \\ldots \\;\\longrightarrow\\; \\text{the same ray}$$`, emphasis: true }],
+      narration: `Notice one ray corresponds to <b>infinitely many</b> angles, all differing by multiples of 360°: …, −320°, 40°, 400°, 760°, … all give the <b>same ray</b>. <b>Try it</b> — drag the slider (or tap a chip) and watch the ✓ badge switch on exactly at each one.`,
+      speech: `Notice that one ray corresponds to infinitely many angles, all differing by multiples of 360 degrees. Negative 320 degrees, 40 degrees, 400 degrees, 760 degrees, all give the same ray. Try it — drag the slider, or tap a chip, and watch the checkmark badge switch on exactly at each one.`,
+      board: [{ type: 'angleCircle', initialDeg: 40, showRatios: false, quickAngles: [-320, 40, 400, 760], sliderMin: -360, sliderMax: 800, coterminalWith: 40 }],
     },
     {
       narration: `Quick check — which of these angles shares the <b>same ray</b> as 50°?`,

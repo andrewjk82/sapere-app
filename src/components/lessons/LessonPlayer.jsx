@@ -2287,7 +2287,10 @@ const IntroTrigScene = ({ width = 640, height = 280 }) => {
 // a quick-angle chip) to sweep θ through any value, positive or negative, past
 // 360° — and watch sin θ = y/r, cos θ = x/r, tan θ = y/x update live. This is
 // the one diagram behind the whole "general angle" idea, made touchable.
-const AngleCircle = ({ width = 320, height = 320, r = 100, initialDeg = 40, quickAngles = [0, 30, 90, 180, 270, 360, -90], showRatios = true }) => {
+const AngleCircle = ({
+  width = 320, height = 320, r = 100, initialDeg = 40, quickAngles = [0, 30, 90, 180, 270, 360, -90], showRatios = true,
+  sliderMin = -360, sliderMax = 720, coterminalWith = null,
+}) => {
   const [deg, setDeg] = useState(initialDeg);
   const cx = width / 2, cy = height / 2;
   const rad = (deg * Math.PI) / 180;
@@ -2322,7 +2325,7 @@ const AngleCircle = ({ width = 320, height = 320, r = 100, initialDeg = 40, quic
           style={{ paintOrder: 'stroke', stroke: '#fff', strokeWidth: 4, ...transStyle }}>P(x, y)</text>
       </svg>
       <div style={{ fontSize: '0.95rem', fontWeight: 800, color: '#7c3aed' }}>θ = {Math.round(deg)}°</div>
-      <input type="range" min={-360} max={720} step={1} value={deg} onChange={(e) => setDeg(Number(e.target.value))}
+      <input type="range" min={sliderMin} max={sliderMax} step={1} value={deg} onChange={(e) => setDeg(Number(e.target.value))}
         style={{ width: Math.min(280, width - 20), accentColor: '#7c3aed' }} />
       <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', justifyContent: 'center', maxWidth: width }}>
         {quickAngles.map((a) => (
@@ -2332,6 +2335,27 @@ const AngleCircle = ({ width = 320, height = 320, r = 100, initialDeg = 40, quic
           </button>
         ))}
       </div>
+      {/* Co-terminal badge: same ray, different θ. Computed live from the
+          current slider value (not just at the quick-angle presets), so
+          dragging through it shows the ✓ turn on and off exactly at each
+          multiple of 360° away from the base — the "same ray" claim caught
+          in the act, not just demonstrated at three fixed stops. */}
+      {coterminalWith != null && (() => {
+        const turns = (deg - coterminalWith) / 360;
+        const isCoterminal = Math.abs(turns - Math.round(turns)) < 0.02;
+        const k = Math.round(turns);
+        return (
+          <div style={{
+            fontSize: '0.82rem', fontWeight: 800, borderRadius: 10, padding: '5px 12px',
+            color: isCoterminal ? '#15803d' : '#94a3b8', background: isCoterminal ? '#f0fdf4' : 'transparent',
+            border: `1.5px solid ${isCoterminal ? '#bbf7d0' : 'transparent'}`, transition: 'color 0.2s ease, background 0.2s ease, border-color 0.2s ease',
+          }}>
+            {isCoterminal
+              ? `✓ Same ray as ${coterminalWith}°  (${coterminalWith}° ${k >= 0 ? '+' : '−'} ${Math.abs(k)}×360°)`
+              : `not on the ${coterminalWith}° ray`}
+          </div>
+        );
+      })()}
       {showRatios && (
         <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap', justifyContent: 'center', fontSize: '0.86rem', fontWeight: 700, color: '#1e293b' }}>
           <span>sin θ = {sinT.toFixed(2)}</span>
