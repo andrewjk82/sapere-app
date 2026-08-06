@@ -2723,98 +2723,69 @@ const UnknownSideSolver = ({ width = 320, height = 260 }) => {
 // ── Unknown-ANGLE solver — animated walkthrough ─────────────────────────────
 // The mirror image of UnknownSideSolver: there the angle was given and a side
 // was missing; here two sides are given and the ANGLE is missing, so the last
-// move is an inverse function. One 3-4-5 triangle serves all three cases, which
-// makes the point that whichever pair of sides you're handed, the angle you
-// arrive at is the same one — sin⁻¹(4/5) = cos⁻¹(3/5) = tan⁻¹(4/3) ≈ 53°8'.
-const UNKNOWN_ANGLE_ANSWER = '53°8′';
-const UNKNOWN_ANGLE_VARIANTS = {
-  sin: {
-    knownSides: ['opp', 'hyp'], values: { opp: '4', hyp: '5' },
-    steps: [
-      { tag: 'Look at the triangle', known: false, unknown: false, mnem: null, angleLabel: 'θ',
-        formula: '\\sin\\theta = \\dfrac{\\text{opp}}{\\text{hyp}}',
-        text: 'This time two sides are given and the angle is the thing we don’t know — that’s θ.' },
-      { tag: 'Mark what’s known', known: true, unknown: false, mnem: null, angleLabel: 'θ',
-        formula: '\\sin\\theta = \\dfrac{\\text{opp}}{\\text{hyp}}',
-        text: 'The opposite side 4 and the hypotenuse 5 are given — those are known.' },
-      { tag: 'Mark what’s missing', known: true, unknown: true, mnem: null, angleLabel: 'θ',
-        formula: '\\sin\\theta = \\dfrac{\\text{opp}}{\\text{hyp}}',
-        text: 'θ is the angle in the corner those two sides meet around — that’s what we’re solving for.' },
-      { tag: 'Choose the ratio', known: true, unknown: true, mnem: 'sin', angleLabel: 'θ',
-        formula: '\\sin\\theta = \\dfrac{\\text{opp}}{\\text{hyp}}',
-        text: 'Known sides = opposite and hypotenuse — the ratio that uses both is sine.' },
-      { tag: 'Substitute', known: true, unknown: true, mnem: 'sin', angleLabel: 'θ',
-        formula: '\\sin\\theta = \\dfrac{4}{5}',
-        text: 'Put the two side lengths in. Now θ is the angle whose sine is 0.8.' },
-      { tag: 'Undo the sine', known: true, unknown: true, mnem: 'sin', angleLabel: 'θ',
-        formula: '\\theta = \\sin^{-1}\\!\\left(\\dfrac{4}{5}\\right)',
-        text: 'sin⁻¹ is the inverse: sin turns an angle into a ratio, sin⁻¹ turns the ratio back into the angle.' },
-      { tag: 'Solve', known: true, unknown: true, mnem: 'sin', answer: true, angleLabel: UNKNOWN_ANGLE_ANSWER,
-        formula: `\\theta \\approx 53°8′`,
-        text: 'On a calculator (in degrees): sin⁻¹(0.8) ≈ 53.13° = 53°8′.' },
-    ],
-  },
-  cos: {
-    knownSides: ['adj', 'hyp'], values: { adj: '3', hyp: '5' },
-    steps: [
-      { tag: 'Look at the triangle', known: false, unknown: false, mnem: null, angleLabel: 'θ',
-        formula: '\\cos\\theta = \\dfrac{\\text{adj}}{\\text{hyp}}',
-        text: 'Same triangle, but this time the two given sides are the bottom one and the longest one.' },
-      { tag: 'Mark what’s known', known: true, unknown: false, mnem: null, angleLabel: 'θ',
-        formula: '\\cos\\theta = \\dfrac{\\text{adj}}{\\text{hyp}}',
-        text: 'The adjacent side 3 and the hypotenuse 5 are given — those are known.' },
-      { tag: 'Mark what’s missing', known: true, unknown: true, mnem: null, angleLabel: 'θ',
-        formula: '\\cos\\theta = \\dfrac{\\text{adj}}{\\text{hyp}}',
-        text: 'θ is still the angle we want — only the pair of sides we were handed has changed.' },
-      { tag: 'Choose the ratio', known: true, unknown: true, mnem: 'cos', angleLabel: 'θ',
-        formula: '\\cos\\theta = \\dfrac{\\text{adj}}{\\text{hyp}}',
-        text: 'Known sides = adjacent and hypotenuse — the ratio that uses both is cosine.' },
-      { tag: 'Substitute', known: true, unknown: true, mnem: 'cos', angleLabel: 'θ',
-        formula: '\\cos\\theta = \\dfrac{3}{5}',
-        text: 'Put the two side lengths in. Now θ is the angle whose cosine is 0.6.' },
-      { tag: 'Undo the cosine', known: true, unknown: true, mnem: 'cos', angleLabel: 'θ',
-        formula: '\\theta = \\cos^{-1}\\!\\left(\\dfrac{3}{5}\\right)',
-        text: 'cos⁻¹ is the inverse of cos — it turns the ratio back into the angle.' },
-      { tag: 'Solve', known: true, unknown: true, mnem: 'cos', answer: true, angleLabel: UNKNOWN_ANGLE_ANSWER,
-        formula: `\\theta \\approx 53°8′`,
-        text: 'cos⁻¹(0.6) ≈ 53.13° = 53°8′ — the same angle as before, because it’s the same triangle.' },
-    ],
-  },
-  tan: {
-    knownSides: ['opp', 'adj'], values: { opp: '4', adj: '3' },
-    steps: [
-      { tag: 'Look at the triangle', known: false, unknown: false, mnem: null, angleLabel: 'θ',
-        formula: '\\tan\\theta = \\dfrac{\\text{opp}}{\\text{adj}}',
-        text: 'Here the hypotenuse isn’t given — just the two shorter sides, and the angle θ.' },
-      { tag: 'Mark what’s known', known: true, unknown: false, mnem: null, angleLabel: 'θ',
-        formula: '\\tan\\theta = \\dfrac{\\text{opp}}{\\text{adj}}',
-        text: 'The opposite side 4 and the adjacent side 3 are given — those are known.' },
-      { tag: 'Mark what’s missing', known: true, unknown: true, mnem: null, angleLabel: 'θ',
-        formula: '\\tan\\theta = \\dfrac{\\text{opp}}{\\text{adj}}',
-        text: 'θ is the angle those two sides make at the bottom-left corner.' },
-      { tag: 'Choose the ratio', known: true, unknown: true, mnem: 'tan', angleLabel: 'θ',
-        formula: '\\tan\\theta = \\dfrac{\\text{opp}}{\\text{adj}}',
-        text: 'No hypotenuse in sight: opposite and adjacent are the pair — that ratio is tangent.' },
-      { tag: 'Substitute', known: true, unknown: true, mnem: 'tan', angleLabel: 'θ',
-        formula: '\\tan\\theta = \\dfrac{4}{3}',
-        text: 'Put the two side lengths in. Now θ is the angle whose tangent is 4/3.' },
-      { tag: 'Undo the tangent', known: true, unknown: true, mnem: 'tan', angleLabel: 'θ',
-        formula: '\\theta = \\tan^{-1}\\!\\left(\\dfrac{4}{3}\\right)',
-        text: 'tan⁻¹ is the inverse of tan — it turns the ratio back into the angle.' },
-      { tag: 'Solve', known: true, unknown: true, mnem: 'tan', answer: true, angleLabel: UNKNOWN_ANGLE_ANSWER,
-        formula: `\\theta \\approx 53°8′`,
-        text: 'tan⁻¹(4/3) ≈ 53.13° = 53°8′ — the same angle again, from a different pair of sides.' },
-    ],
-  },
+// move is an inverse function.
+//
+// The steps are BUILT from the two side lengths (and so is the triangle), so one
+// component covers both uses in the lesson: the 3-4-5 explainer, where all three
+// ratios are offered and all three land on the same 53°8′, and the worked
+// example (opp 12, adj 7), where only tan applies. Nothing about the numbers is
+// written twice, so the figure, the working and the answer cannot disagree.
+const ANGLE_RATIO_META = {
+  sin: { sides: ['opp', 'hyp'], fn: '\\sin', inv: '\\sin^{-1}', name: 'sine', invName: 'sin⁻¹' },
+  cos: { sides: ['adj', 'hyp'], fn: '\\cos', inv: '\\cos^{-1}', name: 'cosine', invName: 'cos⁻¹' },
+  tan: { sides: ['opp', 'adj'], fn: '\\tan', inv: '\\tan^{-1}', name: 'tangent', invName: 'tan⁻¹' },
+};
+const SIDE_WORD = { opp: 'opposite side', adj: 'adjacent side', hyp: 'hypotenuse' };
+const toDms = (deg) => {
+  const d = Math.floor(deg);
+  const m = Math.round((deg - d) * 60);
+  return m === 60 ? `${d + 1}°0′` : `${d}°${m}′`;
+};
+const buildAngleSteps = (ratio, values, degrees, closing) => {
+  const m = ANGLE_RATIO_META[ratio];
+  const [num, den] = m.sides;
+  const ratioTex = `${m.fn}\\theta = \\dfrac{\\text{${num}}}{\\text{${den}}}`;
+  const frac = `\\dfrac{${values[num]}}{${values[den]}}`;
+  const plain = `${values[num]}/${values[den]}`;
+  const dms = toDms(degrees);
+  const base = { known: true, unknown: true, mnem: ratio, angleLabel: 'θ' };
+  return [
+    { ...base, tag: 'Look at the triangle', known: false, unknown: false, mnem: null, formula: ratioTex,
+      text: 'Two sides are given and the angle is the thing we don’t know — that’s θ.' },
+    { ...base, tag: 'Mark what’s known', unknown: false, mnem: null, formula: ratioTex,
+      text: `The ${SIDE_WORD[num]} ${values[num]} and the ${SIDE_WORD[den]} ${values[den]} are given — those are known.` },
+    { ...base, tag: 'Mark what’s missing', mnem: null, formula: ratioTex,
+      text: 'θ is the angle marked at the bottom-left corner — that’s what we’re solving for.' },
+    { ...base, tag: 'Choose the ratio', formula: ratioTex,
+      text: ratio === 'tan'
+        ? 'No hypotenuse in sight: opposite and adjacent are the pair — that ratio is tangent.'
+        : `Known sides = ${SIDE_WORD[num].replace(' side', '')} and ${SIDE_WORD[den].replace(' side', '')} — the ratio that uses both is ${m.name}.` },
+    { ...base, tag: 'Substitute', formula: `${m.fn}\\theta = ${frac}`,
+      text: `Put the two side lengths in. Now θ is the angle whose ${m.name} is ${plain}.` },
+    { ...base, tag: `Undo the ${m.name}`, formula: `\\theta = ${m.inv}\\!\\left(${frac}\\right)`,
+      text: `${m.name[0].toUpperCase()}${m.name.slice(1)} turns an angle into a ratio; ${m.invName} is its inverse — it turns the ratio back into the angle.` },
+    { ...base, tag: 'Solve', answer: true, angleLabel: dms, formula: `\\theta \\approx ${dms}`,
+      text: `On a calculator (in degrees): ${m.invName}(${plain}) ≈ ${degrees.toFixed(2)}° = ${dms}.${closing ? ` ${closing}` : ''}` },
+  ];
 };
 
-const UnknownAngleSolver = ({ width = 320, height = 260 }) => {
-  const [ratio, setRatio] = useState('sin');
+// `opp`/`adj` are the two short side lengths — they set the shape of the drawing
+// AND the numbers in the working. `hyp` is the third label: pass it when the
+// hypotenuse is a given length (3-4-5), leave it out when it isn't part of the
+// question. `ratios` is which cases the student may run.
+const UnknownAngleSolver = ({
+  width = 320, height = 260, opp = 4, adj = 3, hyp, ratios = ['sin', 'cos', 'tan'], closing,
+}) => {
+  const [ratio, setRatio] = useState(ratios[0]);
   const [step, setStep] = useState(0);
   const [playing, setPlaying] = useState(false);
-  const v = UNKNOWN_ANGLE_VARIANTS[ratio];
-  const total = v.steps.length;
-  const s = v.steps[step];
+
+  const degrees = (Math.atan2(opp, adj) * 180) / Math.PI;
+  const values = { opp: String(opp), adj: String(adj), hyp: hyp == null ? 'hyp' : String(hyp) };
+  const knownSides = ANGLE_RATIO_META[ratio].sides;
+  const steps = buildAngleSteps(ratio, values, degrees, closing);
+  const total = steps.length;
+  const s = steps[step];
 
   useEffect(() => {
     if (!playing) return undefined;
@@ -2823,11 +2794,11 @@ const UnknownAngleSolver = ({ width = 320, height = 260 }) => {
     return () => clearTimeout(t);
   }, [playing, step, total]);
 
-  // A 3-4-5 triangle, drawn to scale — so the angle the student reads off the
-  // picture really is the 53°8′ the walkthrough ends on.
+  // Drawn to scale from opp : adj, so the angle the student reads off the
+  // picture really is the one the walkthrough ends on.
   const pad = 46;
   const oppLen = height - 2 * pad;
-  const adjLen = (oppLen * 3) / 4;
+  const adjLen = (oppLen * adj) / opp;
   const theta = Math.atan2(oppLen, adjLen);
   const baseX = Math.round((width - adjLen) / 2);
   const A = [baseX, height - pad]; // θ vertex, bottom-left
@@ -2851,10 +2822,10 @@ const UnknownAngleSolver = ({ width = 320, height = 260 }) => {
     opp: { x: B[0] + 14, y: (B[1] + C[1]) / 2, anchor: 'start', baseline: 'middle' },
     hyp: { x: (A[0] + C[0]) / 2 - 16, y: (A[1] + C[1]) / 2 - 6, anchor: 'end', baseline: 'auto' },
   };
-  const isKnownSide = (side) => v.knownSides.includes(side);
+  const isKnownSide = (side) => knownSides.includes(side);
   const isLit = (side) => isKnownSide(side) && s.known;
   const colorOf = (side) => (isLit(side) ? known : neutral);
-  const textOf = (side) => (isKnownSide(side) ? v.values[side] : side);
+  const textOf = (side) => (isKnownSide(side) ? values[side] : values[side] || side);
   const angleColor = s.unknown ? unknown : '#475569';
 
   const goTo = (n) => { setPlaying(false); setStep(Math.max(0, Math.min(total - 1, n))); };
@@ -2903,15 +2874,21 @@ const UnknownAngleSolver = ({ width = 320, height = 260 }) => {
           </AnimatePresence>
         </div>
 
+        {/* All three ratios always show — watching the method reject two of them is
+            the lesson. They're only tappable when the step offers more than one
+            case (the worked example is about its own numbers, not a choice). */}
         <div style={{ display: 'flex', gap: 8 }}>
           {MNEM_RATIOS.map((r) => {
             const picked = s.mnem === r.key;
             const selected = ratio === r.key;
+            const tappable = ratios.length > 1 && ratios.includes(r.key);
             return (
-              <button key={r.key} type="button" onClick={() => pickRatio(r.key)}
-                aria-pressed={selected} title={`Find the angle from ${UNKNOWN_ANGLE_VARIANTS[r.key].knownSides.join(' + ')}`}
+              <button key={r.key} type="button" onClick={tappable ? () => pickRatio(r.key) : undefined}
+                disabled={!tappable} aria-pressed={selected}
+                title={tappable ? `Find the angle from ${ANGLE_RATIO_META[r.key].sides.join(' + ')}` : undefined}
                 style={{
-                  padding: '5px 10px', borderRadius: 10, textAlign: 'center', minWidth: 58, cursor: 'pointer', fontFamily: FONT,
+                  padding: '5px 10px', borderRadius: 10, textAlign: 'center', minWidth: 58, fontFamily: FONT,
+                  cursor: tappable ? 'pointer' : 'default',
                   border: `1.5px solid ${selected ? '#7c3aed' : '#e2e8f0'}`,
                   background: picked ? '#f5f3ff' : '#fff',
                   boxShadow: picked ? '0 0 0 3px rgba(124,58,237,0.12)' : 'none',
@@ -2923,7 +2900,9 @@ const UnknownAngleSolver = ({ width = 320, height = 260 }) => {
             );
           })}
         </div>
-        <div style={{ fontSize: '0.68rem', fontWeight: 600, color: '#94a3b8', marginTop: -6 }}>Tap the pair of sides you’re given</div>
+        {ratios.length > 1 && (
+          <div style={{ fontSize: '0.68rem', fontWeight: 600, color: '#94a3b8', marginTop: -6 }}>Tap the pair of sides you’re given</div>
+        )}
 
         <div style={{ fontSize: '0.82rem', fontWeight: 600, color: '#475569', textAlign: 'center', minHeight: '2.4em' }}>
           <span style={{ fontWeight: 800, color: '#7c3aed' }}>{s.tag}. </span>{s.text}
@@ -2935,7 +2914,7 @@ const UnknownAngleSolver = ({ width = 320, height = 260 }) => {
             <ArrowLeft size={14} color="#475569" />
           </button>
           <div style={{ display: 'flex', gap: 4 }}>
-            {v.steps.map((_, i) => (
+            {steps.map((_, i) => (
               <div key={i} onClick={() => goTo(i)} style={{
                 width: 6, height: 6, borderRadius: '50%', cursor: 'pointer',
                 background: i === step ? '#7c3aed' : '#e2e8f0', transition: 'background 0.2s ease',

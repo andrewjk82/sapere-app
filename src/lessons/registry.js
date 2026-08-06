@@ -1091,15 +1091,12 @@ export const buildRightTriangleTrigLesson = ({ audioBase = null } = {}) => {
     {
       narration: `<b>Finding an unknown angle</b> runs the same method backwards. Two sides are given, so pick the ratio that uses <b>those two</b> sides — that gives you a number, not the angle. The <b>inverse</b> (sin⁻¹, cos⁻¹, tan⁻¹) turns that number back into the angle. <b>Press play</b> to watch it, step by step.`,
       speech: `Finding an unknown angle runs the same method backwards. Two sides are given, so pick the ratio that uses those two sides. That gives you a number, not the angle. The inverse, sine to the minus one, cosine to the minus one, or tangent to the minus one, turns that number back into the angle. Press play to watch it, step by step.`,
-      board: [{ type: 'unknownAngleSolver' }],
+      board: [{ type: 'unknownAngleSolver', opp: 4, adj: 3, hyp: 5, closing: 'Same angle every time — it’s the same triangle.' }],
     },
     {
-      narration: `<b>Example.</b> Find θ, given the opposite side 12 and the adjacent side 7. Both given sides are opposite and adjacent, so use tan: $\\tan\\theta = \\dfrac{12}{7}$, giving $\\theta \\approx 59°45'$.`,
-      speech: `Example. Find theta, given the opposite side 12 and the adjacent side 7. Both given sides are opposite and adjacent, so use tangent. Tan theta equals 12 over 7, giving theta is about 59 degrees 45 minutes.`,
-      board: [
-        triangle([[0, 0], [3.5, 0], [3.5, 6]], ['12', '7', ''], ['', '90°', 'θ']),
-        { type: 'math', content: `$$\\tan\\theta = \\dfrac{12}{7} \\;\\Rightarrow\\; \\theta \\approx 59°45'$$`, emphasis: true },
-      ],
+      narration: `<b>Example.</b> Find θ, given the <b>opposite</b> side 12 and the <b>adjacent</b> side 7. No hypotenuse, so it's tan — and θ comes from $\\tan^{-1}$. <b>Press play</b> to work through it.`,
+      speech: `Example. Find theta, given the opposite side 12 and the adjacent side 7. There is no hypotenuse, so it is tangent, and theta comes from tan to the minus one. Press play to work through it.`,
+      board: [{ type: 'unknownAngleSolver', opp: 12, adj: 7, ratios: ['tan'] }],
     },
     {
       narration: `<b>Your turn.</b> A right-angled triangle has opposite side 8 and adjacent side 6 — which ratio finds θ?`,
