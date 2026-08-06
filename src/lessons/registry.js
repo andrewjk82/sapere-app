@@ -1253,7 +1253,7 @@ export const buildGeneralAngleTrigLesson = ({ audioBase = null } = {}) => {
     {
       narration: `The definitions in Section <b>6A</b> only work for <b>acute</b> angles. This section extends them to <b>any</b> angle — negative, obtuse, reflex, or bigger than 360° — using a <b>circle</b> in the coordinate plane.`,
       speech: `The definitions in section 6A only work for acute angles. This section extends them to any angle, negative, obtuse, reflex, or bigger than 360 degrees, using a circle in the coordinate plane.`,
-      board: [{ type: 'math', content: `$$\\text{acute angles only} \\;\\longrightarrow\\; \\text{ANY angle}$$` }],
+      board: [{ type: 'generalAngleIntroScene' }],
     },
     {
       narration: `Every angle θ is associated with a <b>ray</b> from the origin. The positive x-axis is the ray for 0°. For other angles, <b>rotate anticlockwise</b> through θ — or, if θ is negative, rotate <b>clockwise</b>. <b>Drag the slider</b> (or tap a quick angle) to build the ray for any θ yourself.`,

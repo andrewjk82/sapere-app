@@ -3885,6 +3885,93 @@ const LessonRecapScene = () => {
   );
 };
 
+// ── Lesson opener: acute-only triangle → any-angle circle, animated ────────
+// The general-angle lesson used to open on a bare "acute angles only -> ANY
+// angle" arrow — no picture of either side of that claim. This shows both:
+// a small fixed acute-angle triangle (what 6A could do) beside a circle
+// whose ray auto-cycles through one example in each quadrant — 40° (acute),
+// 130° (obtuse), 220° (reflex), 320° (equivalent to a negative angle) — so
+// "any angle" is something seen sweeping all the way round, not just read.
+// It's deliberately NOT the draggable version (that's the very next step);
+// this is the trailer, not the tool.
+const GENERAL_ANGLE_PREVIEWS = [
+  { deg: 40, quadrant: 'I — acute' },
+  { deg: 130, quadrant: 'II — obtuse' },
+  { deg: 220, quadrant: 'III — reflex' },
+  { deg: 320, quadrant: 'IV (= −40°)' },
+];
+const GeneralAngleIntroScene = () => {
+  const [i, setI] = useState(0);
+  useEffect(() => {
+    const t = setInterval(() => setI((n) => (n + 1) % GENERAL_ANGLE_PREVIEWS.length), 2000);
+    return () => clearInterval(t);
+  }, []);
+  const { deg, quadrant } = GENERAL_ANGLE_PREVIEWS[i];
+  const rad = (deg * Math.PI) / 180;
+
+  // Left: the fixed acute triangle 6A could handle — built from a chosen
+  // 35° so the arc/label can never disagree with the drawn shape, same
+  // "angle first, coordinates second" rule used throughout this file.
+  const tw = 150, th = 150, tpad = 30;
+  const tA = [tpad, th - tpad];
+  const tArcR = 22;
+  const acuteDeg = 35;
+  const acuteRad = (acuteDeg * Math.PI) / 180;
+  const tAdj = th - 2 * tpad;
+  const tOpp = tAdj * Math.tan(acuteRad);
+  const tB2 = [tpad + tAdj, th - tpad];
+  const tC2 = [tpad + tAdj, th - tpad - tOpp];
+  const tArcTo = [tA[0] + tArcR * Math.cos(acuteRad), tA[1] - tArcR * Math.sin(acuteRad)];
+
+  // Right: circle with a ray that eases (via CSS transition, not a one-shot
+  // fade) from one preview angle to the next — reliable for a value that
+  // changes repeatedly, the same reasoning as AngleCircle.
+  const cw = 220, ch = 220, cx = cw / 2, cy = ch / 2, R = 78;
+  const px = cx + R * Math.cos(rad), py = cy - R * Math.sin(rad);
+  const transStyle = { transition: 'cx 0.6s ease, cy 0.6s ease, x2 0.6s ease, y2 0.6s ease, d 0.6s ease' };
+  const arcN = 24;
+  const arcSweep = deg >= 0 ? deg : deg + 360;
+  const arcPts = Array.from({ length: arcN + 1 }, (_, k) => {
+    const t = (arcSweep * k) / arcN;
+    const tr = (t * Math.PI) / 180;
+    return [cx + 26 * Math.cos(tr), cy - 26 * Math.sin(tr)];
+  });
+  const arcPath = arcPts.map((p, k) => `${k === 0 ? 'M' : 'L'}${p[0].toFixed(1)} ${p[1].toFixed(1)}`).join(' ');
+
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 10, fontFamily: FONT }}>
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 18, flexWrap: 'wrap' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6 }}>
+          <svg width={tw} height={th} style={{ display: 'block' }}>
+            <polygon points={`${tA[0]},${tA[1]} ${tB2[0]},${tB2[1]} ${tC2[0]},${tC2[1]}`} fill="rgba(148,163,184,0.12)" stroke="#94a3b8" strokeWidth="2" />
+            <polyline points={`${tB2[0] - 9},${tB2[1]} ${tB2[0] - 9},${tB2[1] - 9} ${tB2[0]},${tB2[1] - 9}`} fill="none" stroke="#94a3b8" strokeWidth="1.4" />
+            <path d={`M ${tA[0] + tArcR} ${tA[1]} A ${tArcR} ${tArcR} 0 0 0 ${tArcTo[0]} ${tArcTo[1]}`} fill="none" stroke="#64748b" strokeWidth="1.8" />
+            <text x={tA[0] + 30} y={tA[1] - 8} fontSize="12" fontWeight="800" fill="#475569">{acuteDeg}°</text>
+          </svg>
+          <div style={{ fontSize: '0.74rem', fontWeight: 700, color: '#64748b' }}>6A: acute angles only</div>
+        </div>
+
+        <div style={{ fontSize: '1.6rem', color: '#c4b5fd', fontWeight: 300 }}>→</div>
+
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6 }}>
+          <svg width={cw} height={ch} style={{ display: 'block' }}>
+            <circle cx={cx} cy={cy} r={R} fill="none" stroke="#ddd6fe" strokeWidth="1.6" />
+            <line x1={cx - R - 14} y1={cy} x2={cx + R + 14} y2={cy} stroke="#94a3b8" strokeWidth="1.2" />
+            <line x1={cx} y1={cy - R - 14} x2={cx} y2={cy + R + 14} stroke="#94a3b8" strokeWidth="1.2" />
+            <path d={arcPath} fill="none" stroke="#f59e0b" strokeWidth="2" />
+            <line x1={cx} y1={cy} x2={px} y2={py} stroke="#7c3aed" strokeWidth="2.6" style={transStyle} />
+            <circle cx={px} cy={py} r="5" fill="#7c3aed" style={transStyle} />
+            <circle cx={cx} cy={cy} r="3.5" fill="#1e1b4b" />
+          </svg>
+          <div style={{ fontSize: '0.86rem', fontWeight: 800, color: '#7c3aed' }}>θ = {deg}°</div>
+          <div style={{ fontSize: '0.72rem', fontWeight: 700, color: '#94a3b8' }}>Quadrant {quadrant}</div>
+        </div>
+      </div>
+      <div style={{ fontSize: '0.78rem', fontWeight: 700, color: '#7c3aed' }}>6C: ANY angle, any direction</div>
+    </div>
+  );
+};
+
 // Each board item animates in, with a stagger handled by the parent.
 const itemVariants = {
   hidden: { opacity: 0, y: 16 },
@@ -3975,6 +4062,7 @@ const BoardItem = ({ item }) => {
   else if (item.type === 'walkerCliffSolver') inner = <WalkerCliffSolver {...item} />;
   else if (item.type === 'bearingFlightSolver') inner = <BearingFlightSolver {...item} />;
   else if (item.type === 'lessonRecapScene') inner = <LessonRecapScene {...item} />;
+  else if (item.type === 'generalAngleIntroScene') inner = <GeneralAngleIntroScene {...item} />;
   else if (item.type === 'primaryRatioRecap') inner = <PrimaryRatioRecap {...item} />;
   else if (item.type === 'introTrigScene') inner = <IntroTrigScene {...item} />;
   else return null;
