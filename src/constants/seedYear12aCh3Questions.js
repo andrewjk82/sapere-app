@@ -1352,7 +1352,26 @@ export const Y12A_CH3_QUESTIONS = [
           "-12, decreasing",
           "12, increasing"
         ],
-        "answerStr": "3"
+        "answerStr": "3",
+        "options": [
+          {
+            "text": "8, increasing",
+            "imageUrl": ""
+          },
+          {
+            "text": "0, stationary",
+            "imageUrl": ""
+          },
+          {
+            "text": "-12, decreasing",
+            "imageUrl": ""
+          },
+          {
+            "text": "12, increasing",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "3"
       },
       {
         "id": "y12a-3a-q7b",
@@ -1382,7 +1401,26 @@ export const Y12A_CH3_QUESTIONS = [
           "0, stationary",
           "-12, decreasing"
         ],
-        "answerStr": "3"
+        "answerStr": "3",
+        "options": [
+          {
+            "text": "12, increasing",
+            "imageUrl": ""
+          },
+          {
+            "text": "-4, decreasing",
+            "imageUrl": ""
+          },
+          {
+            "text": "0, stationary",
+            "imageUrl": ""
+          },
+          {
+            "text": "-12, decreasing",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "3"
       },
       {
         "id": "y12a-3a-q7c",
@@ -1412,7 +1450,26 @@ export const Y12A_CH3_QUESTIONS = [
           "2, increasing",
           "0, stationary"
         ],
-        "answerStr": "3"
+        "answerStr": "3",
+        "options": [
+          {
+            "text": "-4, decreasing",
+            "imageUrl": ""
+          },
+          {
+            "text": "4, increasing",
+            "imageUrl": ""
+          },
+          {
+            "text": "2, increasing",
+            "imageUrl": ""
+          },
+          {
+            "text": "0, stationary",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "3"
       }
     ]
   },
@@ -1452,7 +1509,26 @@ export const Y12A_CH3_QUESTIONS = [
           "-2, decreasing",
           "0, stationary"
         ],
-        "answerStr": "3"
+        "answerStr": "3",
+        "options": [
+          {
+            "text": "4, increasing",
+            "imageUrl": ""
+          },
+          {
+            "text": "2, increasing",
+            "imageUrl": ""
+          },
+          {
+            "text": "-2, decreasing",
+            "imageUrl": ""
+          },
+          {
+            "text": "0, stationary",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "3"
       },
       {
         "id": "y12a-3a-q8b",
@@ -1482,7 +1558,26 @@ export const Y12A_CH3_QUESTIONS = [
           "-1, decreasing",
           "1, increasing"
         ],
-        "answerStr": "3"
+        "answerStr": "3",
+        "options": [
+          {
+            "text": "5, increasing",
+            "imageUrl": ""
+          },
+          {
+            "text": "0, stationary",
+            "imageUrl": ""
+          },
+          {
+            "text": "-1, decreasing",
+            "imageUrl": ""
+          },
+          {
+            "text": "1, increasing",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "3"
       },
       {
         "id": "y12a-3a-q8c",
@@ -1512,7 +1607,26 @@ export const Y12A_CH3_QUESTIONS = [
           "5, increasing",
           "-1, decreasing"
         ],
-        "answerStr": "1"
+        "answerStr": "1",
+        "options": [
+          {
+            "text": "1, increasing",
+            "imageUrl": ""
+          },
+          {
+            "text": "-5, decreasing",
+            "imageUrl": ""
+          },
+          {
+            "text": "5, increasing",
+            "imageUrl": ""
+          },
+          {
+            "text": "-1, decreasing",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "1"
       }
     ]
   },
@@ -1552,7 +1666,26 @@ export const Y12A_CH3_QUESTIONS = [
           "\\frac{1}{8}, increasing",
           "-\\frac{1}{8}, decreasing"
         ],
-        "answerStr": "2"
+        "answerStr": "2",
+        "options": [
+          {
+            "text": "\\frac{1}{4}, increasing",
+            "imageUrl": ""
+          },
+          {
+            "text": "-\\frac{1}{4}, decreasing",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\frac{1}{8}, increasing",
+            "imageUrl": ""
+          },
+          {
+            "text": "-\\frac{1}{8}, decreasing",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "2"
       },
       {
         "id": "y12a-3a-q9b",
@@ -1582,7 +1715,26 @@ export const Y12A_CH3_QUESTIONS = [
           "4, increasing",
           "-1, decreasing"
         ],
-        "answerStr": "0"
+        "answerStr": "0",
+        "options": [
+          {
+            "text": "-4, decreasing",
+            "imageUrl": ""
+          },
+          {
+            "text": "1, increasing",
+            "imageUrl": ""
+          },
+          {
+            "text": "4, increasing",
+            "imageUrl": ""
+          },
+          {
+            "text": "-1, decreasing",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "0"
       },
       {
         "id": "y12a-3a-q9c",
@@ -1612,7 +1764,26 @@ export const Y12A_CH3_QUESTIONS = [
           "-\\frac{8}{9}, decreasing",
           "\\frac{4}{9}, increasing"
         ],
-        "answerStr": "1"
+        "answerStr": "1",
+        "options": [
+          {
+            "text": "-\\frac{4}{9}, decreasing",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\frac{8}{9}, increasing",
+            "imageUrl": ""
+          },
+          {
+            "text": "-\\frac{8}{9}, decreasing",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\frac{4}{9}, increasing",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "1"
       }
     ]
   },
@@ -2868,7 +3039,26 @@ export const Y12A_CH3_QUESTIONS = [
           "\\( f'(x) = -\\frac{2}{x^2} < 0 \\) for all \\( x \\neq 0 \\).",
           "\\( f'(x) = \\frac{2}{x} > 0 \\) for all \\( x \\neq 0 \\)."
         ],
-        "answerStr": "1"
+        "answerStr": "1",
+        "options": [
+          {
+            "text": "\\( f'(x) = -\\frac{2}{x} < 0 \\) for all \\( x \\neq 0 \\).",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( f'(x) = \\frac{2}{x^2} > 0 \\) for all \\( x \\neq 0 \\).",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( f'(x) = -\\frac{2}{x^2} < 0 \\) for all \\( x \\neq 0 \\).",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( f'(x) = \\frac{2}{x} > 0 \\) for all \\( x \\neq 0 \\).",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "1"
       },
       {
         "id": "y12a-3a-q17b",
@@ -2891,7 +3081,26 @@ export const Y12A_CH3_QUESTIONS = [
           "Because there is a vertical asymptote at \\( x = 0 \\) separating the two branches.",
           "Because the function is only increasing for \\( x > 0 \\)."
         ],
-        "answerStr": "2"
+        "answerStr": "2",
+        "options": [
+          {
+            "text": "Because \\( f(-1) \\) is positive and \\( f(2) \\) is negative.",
+            "imageUrl": ""
+          },
+          {
+            "text": "Because the function is actually decreasing overall.",
+            "imageUrl": ""
+          },
+          {
+            "text": "Because there is a vertical asymptote at \\( x = 0 \\) separating the two branches.",
+            "imageUrl": ""
+          },
+          {
+            "text": "Because the function is only increasing for \\( x > 0 \\).",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "2"
       }
     ]
   },
