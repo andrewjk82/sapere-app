@@ -1,7 +1,7 @@
 export const Y12A_CH3_QUESTIONS = [
   {
     "id": "y12a-3a-q1a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
     "question": "In the diagram, name the points where \\( f'(x) > 0 \\). (List the letters in alphabetical order, separated by a comma and space, e.g. 'A, B')",
@@ -29,11 +29,36 @@ export const Y12A_CH3_QUESTIONS = [
         ],
         "script": "board.suspendUpdate();\nvar f = function(x) { return x*(x-3)*(x-6)/8 + 3; };\nboard.create('functiongraph', [f, -0.5, 7.5], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, f(0)], {name: 'A', size: 3, color: 'red', label: {autoPosition: false, offset: [-5, 10]}});\nboard.create('point', [1.27, f(1.27)], {name: 'B', size: 3, color: 'red', label: {autoPosition: false, offset: [-5, 10]}});\nboard.create('point', [2.5, f(2.5)], {name: 'C', size: 3, color: 'red', label: {autoPosition: false, offset: [-5, -10]}});\nboard.create('point', [3.5, f(3.5)], {name: 'D', size: 3, color: 'red', label: {autoPosition: false, offset: [-5, -10]}});\nboard.create('point', [4.73, f(4.73)], {name: 'E', size: 3, color: 'red', label: {autoPosition: false, offset: [-5, -10]}});\nboard.create('point', [5.8, f(5.8)], {name: 'F', size: 3, color: 'red', label: {autoPosition: false, offset: [-5, 10]}});\nboard.create('point', [6.8, f(6.8)], {name: 'G', size: 3, color: 'red', label: {autoPosition: false, offset: [-5, 10]}});\nboard.unsuspendUpdate();"
       }
-    }
+    },
+    "opts": [
+      "A, C, E",
+      "C, D",
+      "B, E",
+      "A, F, G"
+    ],
+    "options": [
+      {
+        "text": "A, C, E",
+        "imageUrl": ""
+      },
+      {
+        "text": "C, D",
+        "imageUrl": ""
+      },
+      {
+        "text": "B, E",
+        "imageUrl": ""
+      },
+      {
+        "text": "A, F, G",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y12a-3a-q1b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
     "question": "In the diagram, name the points where \\( f'(x) < 0 \\). (List the letters in alphabetical order, separated by a comma and space, e.g. 'A, B')",
@@ -61,11 +86,36 @@ export const Y12A_CH3_QUESTIONS = [
         ],
         "script": "board.suspendUpdate();\nvar f = function(x) { return x*(x-3)*(x-6)/8 + 3; };\nboard.create('functiongraph', [f, -0.5, 7.5], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, f(0)], {name: 'A', size: 3, color: 'red', label: {autoPosition: false, offset: [-5, 10]}});\nboard.create('point', [1.27, f(1.27)], {name: 'B', size: 3, color: 'red', label: {autoPosition: false, offset: [-5, 10]}});\nboard.create('point', [2.5, f(2.5)], {name: 'C', size: 3, color: 'red', label: {autoPosition: false, offset: [-5, -10]}});\nboard.create('point', [3.5, f(3.5)], {name: 'D', size: 3, color: 'red', label: {autoPosition: false, offset: [-5, -10]}});\nboard.create('point', [4.73, f(4.73)], {name: 'E', size: 3, color: 'red', label: {autoPosition: false, offset: [-5, -10]}});\nboard.create('point', [5.8, f(5.8)], {name: 'F', size: 3, color: 'red', label: {autoPosition: false, offset: [-5, 10]}});\nboard.create('point', [6.8, f(6.8)], {name: 'G', size: 3, color: 'red', label: {autoPosition: false, offset: [-5, 10]}});\nboard.unsuspendUpdate();"
       }
-    }
+    },
+    "opts": [
+      "B, E",
+      "A, F, G",
+      "B, C, D",
+      "C, D"
+    ],
+    "options": [
+      {
+        "text": "B, E",
+        "imageUrl": ""
+      },
+      {
+        "text": "A, F, G",
+        "imageUrl": ""
+      },
+      {
+        "text": "B, C, D",
+        "imageUrl": ""
+      },
+      {
+        "text": "C, D",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y12a-3a-q1c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
     "question": "In the diagram, name the points where \\( f'(x) = 0 \\). (List the letters in alphabetical order, separated by a comma and space, e.g. 'A, B')",
@@ -93,11 +143,36 @@ export const Y12A_CH3_QUESTIONS = [
         ],
         "script": "board.suspendUpdate();\nvar f = function(x) { return x*(x-3)*(x-6)/8 + 3; };\nboard.create('functiongraph', [f, -0.5, 7.5], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, f(0)], {name: 'A', size: 3, color: 'red', label: {autoPosition: false, offset: [-5, 10]}});\nboard.create('point', [1.27, f(1.27)], {name: 'B', size: 3, color: 'red', label: {autoPosition: false, offset: [-5, 10]}});\nboard.create('point', [2.5, f(2.5)], {name: 'C', size: 3, color: 'red', label: {autoPosition: false, offset: [-5, -10]}});\nboard.create('point', [3.5, f(3.5)], {name: 'D', size: 3, color: 'red', label: {autoPosition: false, offset: [-5, -10]}});\nboard.create('point', [4.73, f(4.73)], {name: 'E', size: 3, color: 'red', label: {autoPosition: false, offset: [-5, -10]}});\nboard.create('point', [5.8, f(5.8)], {name: 'F', size: 3, color: 'red', label: {autoPosition: false, offset: [-5, 10]}});\nboard.create('point', [6.8, f(6.8)], {name: 'G', size: 3, color: 'red', label: {autoPosition: false, offset: [-5, 10]}});\nboard.unsuspendUpdate();"
       }
-    }
+    },
+    "opts": [
+      "B, E",
+      "C, D",
+      "A, F, G",
+      "C, E"
+    ],
+    "options": [
+      {
+        "text": "B, E",
+        "imageUrl": ""
+      },
+      {
+        "text": "C, D",
+        "imageUrl": ""
+      },
+      {
+        "text": "A, F, G",
+        "imageUrl": ""
+      },
+      {
+        "text": "C, E",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y12a-3a-q2a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "question": "Find the derivative of \\( y = 2x^2 \\). By substituting \\( x = 2 \\) into the derivative, determine whether the function is increasing, decreasing or stationary at \\( x = 2 \\). (Answer 'increasing', 'decreasing', or 'stationary')",
     "a": "increasing",
     "difficulty": "easy",
@@ -105,22 +180,45 @@ export const Y12A_CH3_QUESTIONS = [
     "t": "Increasing, decreasing and stationary at a point",
     "solutionSteps": [
       {
-        "explanation": "Differentiate \\( y = 2x^2 \\).",
-        "workingOut": "y' = 4x"
+        "explanation": "Find the derivative.",
+        "workingOut": "Apply the power rule to \\( y = 2x^2 \\):\n\\[ y' = 4x \\]",
+        "graphData": null
       },
       {
-        "explanation": "Substitute \\( x = 2 \\) into the derivative.",
-        "workingOut": "y'(2) = 4(2) = 8"
+        "explanation": "Evaluate the derivative at the given point.",
+        "workingOut": "Substitute \\( x = 2 \\) into the derivative:\n\\[ y'(2) = 4(2) \\]\n\\[ y'(2) = 8 \\]",
+        "graphData": null
       },
       {
-        "explanation": "Since \\( y'(2) > 0 \\), the function is increasing.",
-        "workingOut": "8 > 0 \\implies \\text{increasing}"
+        "explanation": "State the conclusion.",
+        "workingOut": "Since \\( 8 > 0 \\), the gradient is positive, meaning the function is increasing at \\( x = 2 \\).",
+        "graphData": null
       }
-    ]
+    ],
+    "opts": [
+      "increasing",
+      "decreasing",
+      "stationary"
+    ],
+    "options": [
+      {
+        "text": "increasing",
+        "imageUrl": ""
+      },
+      {
+        "text": "decreasing",
+        "imageUrl": ""
+      },
+      {
+        "text": "stationary",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y12a-3a-q2b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "question": "Find the derivative of \\( y = x^2 - 3x \\). By substituting \\( x = 2 \\) into the derivative, determine whether the function is increasing, decreasing or stationary at \\( x = 2 \\). (Answer 'increasing', 'decreasing', or 'stationary')",
     "a": "increasing",
     "difficulty": "easy",
@@ -128,22 +226,45 @@ export const Y12A_CH3_QUESTIONS = [
     "t": "Increasing, decreasing and stationary at a point",
     "solutionSteps": [
       {
-        "explanation": "Differentiate \\( y = x^2 - 3x \\).",
-        "workingOut": "y' = 2x - 3"
+        "explanation": "Find the derivative.",
+        "workingOut": "Apply the power rule to \\( y = x^2 - 3x \\):\n\\[ y' = 2x - 3 \\]",
+        "graphData": null
       },
       {
-        "explanation": "Substitute \\( x = 2 \\) into the derivative.",
-        "workingOut": "y'(2) = 2(2) - 3 = 1"
+        "explanation": "Evaluate the derivative at the given point.",
+        "workingOut": "Substitute \\( x = 2 \\) into the derivative:\n\\[ y'(2) = 2(2) - 3 \\]\n\\[ y'(2) = 4 - 3 \\]\n\\[ y'(2) = 1 \\]",
+        "graphData": null
       },
       {
-        "explanation": "Since \\( y'(2) > 0 \\), the function is increasing.",
-        "workingOut": "1 > 0 \\implies \\text{increasing}"
+        "explanation": "State the conclusion.",
+        "workingOut": "Since \\( 1 > 0 \\), the gradient is positive, meaning the function is increasing at \\( x = 2 \\).",
+        "graphData": null
       }
-    ]
+    ],
+    "opts": [
+      "increasing",
+      "decreasing",
+      "stationary"
+    ],
+    "options": [
+      {
+        "text": "increasing",
+        "imageUrl": ""
+      },
+      {
+        "text": "decreasing",
+        "imageUrl": ""
+      },
+      {
+        "text": "stationary",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y12a-3a-q2c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "question": "Find the derivative of \\( y = 2x^2 - 6x \\). By substituting \\( x = 2 \\) into the derivative, determine whether the function is increasing, decreasing or stationary at \\( x = 2 \\). (Answer 'increasing', 'decreasing', or 'stationary')",
     "a": "increasing",
     "difficulty": "easy",
@@ -151,22 +272,45 @@ export const Y12A_CH3_QUESTIONS = [
     "t": "Increasing, decreasing and stationary at a point",
     "solutionSteps": [
       {
-        "explanation": "Differentiate \\( y = 2x^2 - 6x \\).",
-        "workingOut": "y' = 4x - 6"
+        "explanation": "Find the derivative.",
+        "workingOut": "Apply the power rule to \\( y = 5x - x^2 \\):\n\\[ y' = 5 - 2x \\]",
+        "graphData": null
       },
       {
-        "explanation": "Substitute \\( x = 2 \\) into the derivative.",
-        "workingOut": "y'(2) = 4(2) - 6 = 2"
+        "explanation": "Evaluate the derivative at the given point.",
+        "workingOut": "Substitute \\( x = 3 \\) into the derivative:\n\\[ y'(3) = 5 - 2(3) \\]\n\\[ y'(3) = 5 - 6 \\]\n\\[ y'(3) = -1 \\]",
+        "graphData": null
       },
       {
-        "explanation": "Since \\( y'(2) > 0 \\), the function is increasing.",
-        "workingOut": "2 > 0 \\implies \\text{increasing}"
+        "explanation": "State the conclusion.",
+        "workingOut": "Since \\( -1 < 0 \\), the gradient is negative, meaning the function is decreasing at \\( x = 3 \\).",
+        "graphData": null
       }
-    ]
+    ],
+    "opts": [
+      "increasing",
+      "decreasing",
+      "stationary"
+    ],
+    "options": [
+      {
+        "text": "increasing",
+        "imageUrl": ""
+      },
+      {
+        "text": "decreasing",
+        "imageUrl": ""
+      },
+      {
+        "text": "stationary",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y12a-3a-q2d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "question": "Find the derivative of \\( y = x^2 - 4x + 9 \\). By substituting \\( x = 2 \\) into the derivative, determine whether the function is increasing, decreasing or stationary at \\( x = 2 \\). (Answer 'increasing', 'decreasing', or 'stationary')",
     "a": "stationary",
     "difficulty": "easy",
@@ -174,22 +318,45 @@ export const Y12A_CH3_QUESTIONS = [
     "t": "Increasing, decreasing and stationary at a point",
     "solutionSteps": [
       {
-        "explanation": "Differentiate \\( y = x^2 - 4x + 9 \\).",
-        "workingOut": "y' = 2x - 4"
+        "explanation": "Find the derivative.",
+        "workingOut": "Apply the power rule to \\( y = x^2 - 4x + 7 \\):\n\\[ y' = 2x - 4 \\]",
+        "graphData": null
       },
       {
-        "explanation": "Substitute \\( x = 2 \\) into the derivative.",
-        "workingOut": "y'(2) = 2(2) - 4 = 0"
+        "explanation": "Evaluate the derivative at the given point.",
+        "workingOut": "Substitute \\( x = 2 \\) into the derivative:\n\\[ y'(2) = 2(2) - 4 \\]\n\\[ y'(2) = 4 - 4 \\]\n\\[ y'(2) = 0 \\]",
+        "graphData": null
       },
       {
-        "explanation": "Since \\( y'(2) = 0 \\), the function is stationary.",
-        "workingOut": "y'(2) = 0 \\implies \\text{stationary}"
+        "explanation": "State the conclusion.",
+        "workingOut": "Since \\( y'(2) = 0 \\), the gradient is zero, meaning the function is stationary at \\( x = 2 \\).",
+        "graphData": null
       }
-    ]
+    ],
+    "opts": [
+      "increasing",
+      "decreasing",
+      "stationary"
+    ],
+    "options": [
+      {
+        "text": "increasing",
+        "imageUrl": ""
+      },
+      {
+        "text": "decreasing",
+        "imageUrl": ""
+      },
+      {
+        "text": "stationary",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y12a-3a-q2e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "question": "Find the derivative of \\( y = x^3 + 3x \\). By substituting \\( x = 2 \\) into the derivative, determine whether the function is increasing, decreasing or stationary at \\( x = 2 \\). (Answer 'increasing', 'decreasing', or 'stationary')",
     "a": "increasing",
     "difficulty": "easy",
@@ -197,22 +364,45 @@ export const Y12A_CH3_QUESTIONS = [
     "t": "Increasing, decreasing and stationary at a point",
     "solutionSteps": [
       {
-        "explanation": "Differentiate \\( y = x^3 + 3x \\).",
-        "workingOut": "y' = 3x^2 + 3"
+        "explanation": "Find the derivative.",
+        "workingOut": "Apply the power rule to \\( y = x^3 - 3x^2 + 5x \\):\n\\[ y' = 3x^2 - 6x + 5 \\]",
+        "graphData": null
       },
       {
-        "explanation": "Substitute \\( x = 2 \\) into the derivative.",
-        "workingOut": "y'(2) = 3(2^2) + 3 = 15"
+        "explanation": "Evaluate the derivative at the given point.",
+        "workingOut": "Substitute \\( x = -1 \\) into the derivative:\n\\[ y'(-1) = 3(-1)^2 - 6(-1) + 5 \\]\n\\[ y'(-1) = 3(1) + 6 + 5 \\]\n\\[ y'(-1) = 14 \\]",
+        "graphData": null
       },
       {
-        "explanation": "Since \\( y'(2) > 0 \\), the function is increasing.",
-        "workingOut": "15 > 0 \\implies \\text{increasing}"
+        "explanation": "State the conclusion.",
+        "workingOut": "Since \\( 14 > 0 \\), the function is increasing at \\( x = -1 \\).",
+        "graphData": null
       }
-    ]
+    ],
+    "opts": [
+      "increasing",
+      "decreasing",
+      "stationary"
+    ],
+    "options": [
+      {
+        "text": "increasing",
+        "imageUrl": ""
+      },
+      {
+        "text": "decreasing",
+        "imageUrl": ""
+      },
+      {
+        "text": "stationary",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y12a-3a-q2f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "question": "Find the derivative of \\( y = 2x^3 - x^4 \\). By substituting \\( x = 2 \\) into the derivative, determine whether the function is increasing, decreasing or stationary at \\( x = 2 \\). (Answer 'increasing', 'decreasing', or 'stationary')",
     "a": "decreasing",
     "difficulty": "easy",
@@ -220,22 +410,45 @@ export const Y12A_CH3_QUESTIONS = [
     "t": "Increasing, decreasing and stationary at a point",
     "solutionSteps": [
       {
-        "explanation": "Differentiate \\( y = 2x^3 - x^4 \\).",
-        "workingOut": "y' = 6x^2 - 4x^3"
+        "explanation": "Find the derivative.",
+        "workingOut": "Apply the power rule to \\( y = x^3 - 3x \\):\n\\[ y' = 3x^2 - 3 \\]",
+        "graphData": null
       },
       {
-        "explanation": "Substitute \\( x = 2 \\) into the derivative.",
-        "workingOut": "y'(2) = 6(2^2) - 4(2^3) = 24 - 32 = -8"
+        "explanation": "Evaluate the derivative at the given point.",
+        "workingOut": "Substitute \\( x = 1 \\) into the derivative:\n\\[ y'(1) = 3(1)^2 - 3 \\]\n\\[ y'(1) = 3 - 3 \\]\n\\[ y'(1) = 0 \\]",
+        "graphData": null
       },
       {
-        "explanation": "Since \\( y'(2) < 0 \\), the function is decreasing.",
-        "workingOut": "-8 < 0 \\implies \\text{decreasing}"
+        "explanation": "State the conclusion.",
+        "workingOut": "Since \\( y'(1) = 0 \\), the function is stationary at \\( x = 1 \\).",
+        "graphData": null
       }
-    ]
+    ],
+    "opts": [
+      "increasing",
+      "decreasing",
+      "stationary"
+    ],
+    "options": [
+      {
+        "text": "increasing",
+        "imageUrl": ""
+      },
+      {
+        "text": "decreasing",
+        "imageUrl": ""
+      },
+      {
+        "text": "stationary",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y12a-3a-q3a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "question": "Find the derivative \\( f'(x) \\) of \\( f(x) = x^2 - 4x + 9 \\).",
     "a": "2x-4",
     "difficulty": "easy",
@@ -246,11 +459,36 @@ export const Y12A_CH3_QUESTIONS = [
         "explanation": "Differentiate the quadratic terms of \\( f(x) = x^2 - 4x + 9 \\).",
         "workingOut": "f'(x) = 2x - 4"
       }
-    ]
+    ],
+    "opts": [
+      "\\(2x-9\\)",
+      "\\(x-4\\)",
+      "\\(2x+4\\)",
+      "\\(2x-4\\)"
+    ],
+    "options": [
+      {
+        "text": "\\(2x-9\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x-4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2x+4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2x-4\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y12a-3a-q3bi",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "question": "Determine whether \\( f(x) = x^2 - 4x + 9 \\) is increasing, decreasing or stationary at \\( x = 0 \\).",
     "a": "decreasing",
     "difficulty": "easy",
@@ -258,18 +496,40 @@ export const Y12A_CH3_QUESTIONS = [
     "t": "Increasing, decreasing and stationary at a point",
     "solutionSteps": [
       {
-        "explanation": "Evaluate the derivative \\( f'(x) = 2x - 4 \\) at \\( x = 0 \\).",
-        "workingOut": "f'(0) = 2(0) - 4 = -4"
+        "explanation": "Evaluate the derivative at the given point.",
+        "workingOut": "From the previous part, \\( f'(x) = 2x - 4 \\). Substitute \\( x = 0 \\):\n\\[ f'(0) = 2(0) - 4 \\]\n\\[ f'(0) = -4 \\]",
+        "graphData": null
       },
       {
-        "explanation": "Since \\( f'(0) < 0 \\), the function is decreasing.",
-        "workingOut": "-4 < 0 \\implies \\text{decreasing}"
+        "explanation": "State the conclusion.",
+        "workingOut": "Since \\( -4 < 0 \\), the function is decreasing.",
+        "graphData": null
       }
-    ]
+    ],
+    "opts": [
+      "increasing",
+      "decreasing",
+      "stationary"
+    ],
+    "options": [
+      {
+        "text": "increasing",
+        "imageUrl": ""
+      },
+      {
+        "text": "decreasing",
+        "imageUrl": ""
+      },
+      {
+        "text": "stationary",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y12a-3a-q3bii",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "question": "Determine whether \\( f(x) = x^2 - 4x + 9 \\) is increasing, decreasing or stationary at \\( x = 1 \\).",
     "a": "decreasing",
     "difficulty": "easy",
@@ -277,18 +537,40 @@ export const Y12A_CH3_QUESTIONS = [
     "t": "Increasing, decreasing and stationary at a point",
     "solutionSteps": [
       {
-        "explanation": "Evaluate the derivative \\( f'(x) = 2x - 4 \\) at \\( x = 1 \\).",
-        "workingOut": "f'(1) = 2(1) - 4 = -2"
+        "explanation": "Evaluate the derivative at the given point.",
+        "workingOut": "Substitute \\( x = 1 \\) into \\( f'(x) = 2x - 4 \\):\n\\[ f'(1) = 2(1) - 4 \\]\n\\[ f'(1) = -2 \\]",
+        "graphData": null
       },
       {
-        "explanation": "Since \\( f'(1) < 0 \\), the function is decreasing.",
-        "workingOut": "-2 < 0 \\implies \\text{decreasing}"
+        "explanation": "State the conclusion.",
+        "workingOut": "Since \\( -2 < 0 \\), the function is decreasing.",
+        "graphData": null
       }
-    ]
+    ],
+    "opts": [
+      "increasing",
+      "decreasing",
+      "stationary"
+    ],
+    "options": [
+      {
+        "text": "increasing",
+        "imageUrl": ""
+      },
+      {
+        "text": "decreasing",
+        "imageUrl": ""
+      },
+      {
+        "text": "stationary",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y12a-3a-q3biii",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "question": "Determine whether \\( f(x) = x^2 - 4x + 9 \\) is increasing, decreasing or stationary at \\( x = 2 \\).",
     "a": "stationary",
     "difficulty": "easy",
@@ -296,18 +578,40 @@ export const Y12A_CH3_QUESTIONS = [
     "t": "Increasing, decreasing and stationary at a point",
     "solutionSteps": [
       {
-        "explanation": "Evaluate the derivative \\( f'(x) = 2x - 4 \\) at \\( x = 2 \\).",
-        "workingOut": "f'(2) = 2(2) - 4 = 0"
+        "explanation": "Evaluate the derivative at the given point.",
+        "workingOut": "Substitute \\( x = 2 \\) into \\( f'(x) = 2x - 4 \\):\n\\[ f'(2) = 2(2) - 4 \\]\n\\[ f'(2) = 0 \\]",
+        "graphData": null
       },
       {
-        "explanation": "Since \\( f'(2) = 0 \\), the function is stationary.",
-        "workingOut": "f'(2) = 0 \\implies \\text{stationary}"
+        "explanation": "State the conclusion.",
+        "workingOut": "Since \\( f'(2) = 0 \\), the function is stationary.",
+        "graphData": null
       }
-    ]
+    ],
+    "opts": [
+      "increasing",
+      "decreasing",
+      "stationary"
+    ],
+    "options": [
+      {
+        "text": "increasing",
+        "imageUrl": ""
+      },
+      {
+        "text": "decreasing",
+        "imageUrl": ""
+      },
+      {
+        "text": "stationary",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y12a-3a-q3biv",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "question": "Determine whether \\( f(x) = x^2 - 4x + 9 \\) is increasing, decreasing or stationary at \\( x = 3 \\).",
     "a": "increasing",
     "difficulty": "easy",
@@ -315,18 +619,40 @@ export const Y12A_CH3_QUESTIONS = [
     "t": "Increasing, decreasing and stationary at a point",
     "solutionSteps": [
       {
-        "explanation": "Evaluate the derivative \\( f'(x) = 2x - 4 \\) at \\( x = 3 \\).",
-        "workingOut": "f'(3) = 2(3) - 4 = 2"
+        "explanation": "Evaluate the derivative at the given point.",
+        "workingOut": "Substitute \\( x = 3 \\) into \\( f'(x) = 2x - 4 \\):\n\\[ f'(3) = 2(3) - 4 \\]\n\\[ f'(3) = 2 \\]",
+        "graphData": null
       },
       {
-        "explanation": "Since \\( f'(3) > 0 \\), the function is increasing.",
-        "workingOut": "2 > 0 \\implies \\text{increasing}"
+        "explanation": "State the conclusion.",
+        "workingOut": "Since \\( 2 > 0 \\), the function is increasing.",
+        "graphData": null
       }
-    ]
+    ],
+    "opts": [
+      "increasing",
+      "decreasing",
+      "stationary"
+    ],
+    "options": [
+      {
+        "text": "increasing",
+        "imageUrl": ""
+      },
+      {
+        "text": "decreasing",
+        "imageUrl": ""
+      },
+      {
+        "text": "stationary",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y12a-3a-q3bv",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "question": "Determine whether \\( f(x) = x^2 - 4x + 9 \\) is increasing, decreasing or stationary at \\( x = -1 \\).",
     "a": "decreasing",
     "difficulty": "easy",
@@ -334,18 +660,40 @@ export const Y12A_CH3_QUESTIONS = [
     "t": "Increasing, decreasing and stationary at a point",
     "solutionSteps": [
       {
-        "explanation": "Evaluate the derivative \\( f'(x) = 2x - 4 \\) at \\( x = -1 \\).",
-        "workingOut": "f'(-1) = 2(-1) - 4 = -6"
+        "explanation": "Evaluate the derivative at the given point.",
+        "workingOut": "Substitute \\( x = 4 \\) into \\( f'(x) = 2x - 4 \\):\n\\[ f'(4) = 2(4) - 4 \\]\n\\[ f'(4) = 4 \\]",
+        "graphData": null
       },
       {
-        "explanation": "Since \\( f'(-1) < 0 \\), the function is decreasing.",
-        "workingOut": "-6 < 0 \\implies \\text{decreasing}"
+        "explanation": "State the conclusion.",
+        "workingOut": "Since \\( 4 > 0 \\), the function is increasing.",
+        "graphData": null
       }
-    ]
+    ],
+    "opts": [
+      "increasing",
+      "decreasing",
+      "stationary"
+    ],
+    "options": [
+      {
+        "text": "increasing",
+        "imageUrl": ""
+      },
+      {
+        "text": "decreasing",
+        "imageUrl": ""
+      },
+      {
+        "text": "stationary",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y12a-3a-q4a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "question": "Find the derivative \\( f'(x) \\) of \\( f(x) = x^3 - 3x^2 - 9x \\).",
     "a": "3x^2-6x-9",
     "difficulty": "easy",
@@ -356,11 +704,36 @@ export const Y12A_CH3_QUESTIONS = [
         "explanation": "Apply the power rule to each term.",
         "workingOut": "f'(x) = 3x^2 - 6x - 9"
       }
-    ]
+    ],
+    "opts": [
+      "\\(3x^2+6x-9\\)",
+      "\\(3x^2-6x+9\\)",
+      "\\(3x^2-3x-9\\)",
+      "\\(3x^2-6x-9\\)"
+    ],
+    "options": [
+      {
+        "text": "\\(3x^2+6x-9\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3x^2-6x+9\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3x^2-3x-9\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3x^2-6x-9\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y12a-3a-q4bi",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "question": "Determine whether \\( f(x) = x^3 - 3x^2 - 9x \\) is increasing, decreasing or stationary at \\( x = -2 \\).",
     "a": "increasing",
     "difficulty": "easy",
@@ -368,18 +741,40 @@ export const Y12A_CH3_QUESTIONS = [
     "t": "Increasing, decreasing and stationary at a point",
     "solutionSteps": [
       {
-        "explanation": "Evaluate \\( f'(x) = 3x^2 - 6x - 9 \\) at \\( x = -2 \\).",
-        "workingOut": "f'(-2) = 3(-2)^2 - 6(-2) - 9 = 12 + 12 - 9 = 15"
+        "explanation": "Evaluate the derivative at the given point.",
+        "workingOut": "Substitute \\( x = -2 \\) into \\( f'(x) = 3x^2 - 6x - 9 \\):\n\\[ f'(-2) = 3(-2)^2 - 6(-2) - 9 \\]\n\\[ f'(-2) = 3(4) + 12 - 9 \\]\n\\[ f'(-2) = 12 + 12 - 9 = 15 \\]",
+        "graphData": null
       },
       {
-        "explanation": "Since \\( f'(-2) > 0 \\), the function is increasing.",
-        "workingOut": "15 > 0 \\implies \\text{increasing}"
+        "explanation": "State the conclusion.",
+        "workingOut": "Since \\( 15 > 0 \\), the function is increasing.",
+        "graphData": null
       }
-    ]
+    ],
+    "opts": [
+      "increasing",
+      "decreasing",
+      "stationary"
+    ],
+    "options": [
+      {
+        "text": "increasing",
+        "imageUrl": ""
+      },
+      {
+        "text": "decreasing",
+        "imageUrl": ""
+      },
+      {
+        "text": "stationary",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y12a-3a-q4bii",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "question": "Determine whether \\( f(x) = x^3 - 3x^2 - 9x \\) is increasing, decreasing or stationary at \\( x = -1 \\).",
     "a": "stationary",
     "difficulty": "easy",
@@ -387,18 +782,40 @@ export const Y12A_CH3_QUESTIONS = [
     "t": "Increasing, decreasing and stationary at a point",
     "solutionSteps": [
       {
-        "explanation": "Evaluate \\( f'(x) = 3x^2 - 6x - 9 \\) at \\( x = -1 \\).",
-        "workingOut": "f'(-1) = 3(-1)^2 - 6(-1) - 9 = 3 + 6 - 9 = 0"
+        "explanation": "Evaluate the derivative at the given point.",
+        "workingOut": "Substitute \\( x = -1 \\) into \\( f'(x) = 3x^2 - 6x - 9 \\):\n\\[ f'(-1) = 3(-1)^2 - 6(-1) - 9 \\]\n\\[ f'(-1) = 3(1) + 6 - 9 \\]\n\\[ f'(-1) = 9 - 9 = 0 \\]",
+        "graphData": null
       },
       {
-        "explanation": "Since \\( f'(-1) = 0 \\), the function is stationary.",
-        "workingOut": "f'(-1) = 0 \\implies \\text{stationary}"
+        "explanation": "State the conclusion.",
+        "workingOut": "Since \\( f'(-1) = 0 \\), the function is stationary.",
+        "graphData": null
       }
-    ]
+    ],
+    "opts": [
+      "increasing",
+      "decreasing",
+      "stationary"
+    ],
+    "options": [
+      {
+        "text": "increasing",
+        "imageUrl": ""
+      },
+      {
+        "text": "decreasing",
+        "imageUrl": ""
+      },
+      {
+        "text": "stationary",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y12a-3a-q4biii",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "question": "Determine whether \\( f(x) = x^3 - 3x^2 - 9x \\) is increasing, decreasing or stationary at \\( x = 0 \\).",
     "a": "decreasing",
     "difficulty": "easy",
@@ -406,18 +823,40 @@ export const Y12A_CH3_QUESTIONS = [
     "t": "Increasing, decreasing and stationary at a point",
     "solutionSteps": [
       {
-        "explanation": "Evaluate \\( f'(x) = 3x^2 - 6x - 9 \\) at \\( x = 0 \\).",
-        "workingOut": "f'(0) = 3(0)^2 - 6(0) - 9 = -9"
+        "explanation": "Evaluate the derivative at the given point.",
+        "workingOut": "Substitute \\( x = 0 \\) into \\( f'(x) = 3x^2 - 6x - 9 \\):\n\\[ f'(0) = 3(0)^2 - 6(0) - 9 \\]\n\\[ f'(0) = -9 \\]",
+        "graphData": null
       },
       {
-        "explanation": "Since \\( f'(0) < 0 \\), the function is decreasing.",
-        "workingOut": "-9 < 0 \\implies \\text{decreasing}"
+        "explanation": "State the conclusion.",
+        "workingOut": "Since \\( -9 < 0 \\), the function is decreasing.",
+        "graphData": null
       }
-    ]
+    ],
+    "opts": [
+      "increasing",
+      "decreasing",
+      "stationary"
+    ],
+    "options": [
+      {
+        "text": "increasing",
+        "imageUrl": ""
+      },
+      {
+        "text": "decreasing",
+        "imageUrl": ""
+      },
+      {
+        "text": "stationary",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1"
   },
   {
     "id": "y12a-3a-q4biv",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "question": "Determine whether \\( f(x) = x^3 - 3x^2 - 9x \\) is increasing, decreasing or stationary at \\( x = 3 \\).",
     "a": "stationary",
     "difficulty": "easy",
@@ -425,18 +864,40 @@ export const Y12A_CH3_QUESTIONS = [
     "t": "Increasing, decreasing and stationary at a point",
     "solutionSteps": [
       {
-        "explanation": "Evaluate \\( f'(x) = 3x^2 - 6x - 9 \\) at \\( x = 3 \\).",
-        "workingOut": "f'(3) = 3(3)^2 - 6(3) - 9 = 27 - 18 - 9 = 0"
+        "explanation": "Evaluate the derivative at the given point.",
+        "workingOut": "Substitute \\( x = 3 \\) into \\( f'(x) = 3x^2 - 6x - 9 \\):\n\\[ f'(3) = 3(3)^2 - 6(3) - 9 \\]\n\\[ f'(3) = 3(9) - 18 - 9 \\]\n\\[ f'(3) = 27 - 27 = 0 \\]",
+        "graphData": null
       },
       {
-        "explanation": "Since \\( f'(3) = 0 \\), the function is stationary.",
-        "workingOut": "f'(3) = 0 \\implies \\text{stationary}"
+        "explanation": "State the conclusion.",
+        "workingOut": "Since \\( f'(3) = 0 \\), the function is stationary.",
+        "graphData": null
       }
-    ]
+    ],
+    "opts": [
+      "increasing",
+      "decreasing",
+      "stationary"
+    ],
+    "options": [
+      {
+        "text": "increasing",
+        "imageUrl": ""
+      },
+      {
+        "text": "decreasing",
+        "imageUrl": ""
+      },
+      {
+        "text": "stationary",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y12a-3a-q4bv",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "question": "Determine whether \\( f(x) = x^3 - 3x^2 - 9x \\) is increasing, decreasing or stationary at \\( x = 4 \\).",
     "a": "increasing",
     "difficulty": "easy",
@@ -444,18 +905,40 @@ export const Y12A_CH3_QUESTIONS = [
     "t": "Increasing, decreasing and stationary at a point",
     "solutionSteps": [
       {
-        "explanation": "Evaluate \\( f'(x) = 3x^2 - 6x - 9 \\) at \\( x = 4 \\).",
-        "workingOut": "f'(4) = 3(4)^2 - 6(4) - 9 = 48 - 24 - 9 = 15"
+        "explanation": "Evaluate the derivative at the given point.",
+        "workingOut": "Substitute \\( x = 4 \\) into \\( f'(x) = 3x^2 - 6x - 9 \\):\n\\[ f'(4) = 3(4)^2 - 6(4) - 9 \\]\n\\[ f'(4) = 3(16) - 24 - 9 \\]\n\\[ f'(4) = 48 - 33 = 15 \\]",
+        "graphData": null
       },
       {
-        "explanation": "Since \\( f'(4) > 0 \\), the function is increasing.",
-        "workingOut": "15 > 0 \\implies \\text{increasing}"
+        "explanation": "State the conclusion.",
+        "workingOut": "Since \\( 15 > 0 \\), the function is increasing.",
+        "graphData": null
       }
-    ]
+    ],
+    "opts": [
+      "increasing",
+      "decreasing",
+      "stationary"
+    ],
+    "options": [
+      {
+        "text": "increasing",
+        "imageUrl": ""
+      },
+      {
+        "text": "decreasing",
+        "imageUrl": ""
+      },
+      {
+        "text": "stationary",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y12a-3a-q5a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "question": "By finding where the derivative is zero, find the \\( x \\)-coordinate of the stationary point of \\( y = x^2 - 6x \\).",
     "a": "3",
     "difficulty": "easy",
@@ -463,18 +946,45 @@ export const Y12A_CH3_QUESTIONS = [
     "t": "Increasing, decreasing and stationary at a point",
     "solutionSteps": [
       {
-        "explanation": "Find the derivative \\( y' \\).",
-        "workingOut": "y' = 2x - 6"
+        "explanation": "Find the derivative.",
+        "workingOut": "For \\( y = x^2 - 6x \\), the derivative is:\n\\[ y' = 2x - 6 \\]",
+        "graphData": null
       },
       {
-        "explanation": "Set the derivative to zero and solve for \\( x \\).",
-        "workingOut": "2x - 6 = 0 \\implies x = 3"
+        "explanation": "Set the derivative to zero and solve.",
+        "workingOut": "A stationary point occurs when \\( y' = 0 \\):\n\\[ 2x - 6 = 0 \\]\n\\[ 2x = 6 \\]\n\\[ x = 3 \\]",
+        "graphData": null
       }
-    ]
+    ],
+    "opts": [
+      "-3",
+      "6",
+      "-6",
+      "3"
+    ],
+    "options": [
+      {
+        "text": "-3",
+        "imageUrl": ""
+      },
+      {
+        "text": "6",
+        "imageUrl": ""
+      },
+      {
+        "text": "-6",
+        "imageUrl": ""
+      },
+      {
+        "text": "3",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3"
   },
   {
     "id": "y12a-3a-q5b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "question": "By finding where the derivative is zero, find the \\( x \\)-coordinate of the stationary point of \\( y = x^2 - 8x + 12 \\).",
     "a": "4",
     "difficulty": "easy",
@@ -482,18 +992,45 @@ export const Y12A_CH3_QUESTIONS = [
     "t": "Increasing, decreasing and stationary at a point",
     "solutionSteps": [
       {
-        "explanation": "Find the derivative \\( y' \\).",
-        "workingOut": "y' = 2x - 8"
+        "explanation": "Find the derivative.",
+        "workingOut": "For \\( y = x^2 - 8x + 12 \\), the derivative is:\n\\[ y' = 2x - 8 \\]",
+        "graphData": null
       },
       {
-        "explanation": "Set the derivative to zero and solve for \\( x \\).",
-        "workingOut": "2x - 8 = 0 \\implies x = 4"
+        "explanation": "Set the derivative to zero and solve.",
+        "workingOut": "A stationary point occurs when \\( y' = 0 \\):\n\\[ 2x - 8 = 0 \\]\n\\[ 2x = 8 \\]\n\\[ x = 4 \\]",
+        "graphData": null
       }
-    ]
+    ],
+    "opts": [
+      "4",
+      "2",
+      "8",
+      "-4"
+    ],
+    "options": [
+      {
+        "text": "4",
+        "imageUrl": ""
+      },
+      {
+        "text": "2",
+        "imageUrl": ""
+      },
+      {
+        "text": "8",
+        "imageUrl": ""
+      },
+      {
+        "text": "-4",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y12a-3a-q5c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "question": "By finding where the derivative is zero, find the \\( x \\)-coordinate of the stationary point of \\( y = x^2 + 4x + 4 \\).",
     "a": "-2",
     "difficulty": "easy",
@@ -501,18 +1038,45 @@ export const Y12A_CH3_QUESTIONS = [
     "t": "Increasing, decreasing and stationary at a point",
     "solutionSteps": [
       {
-        "explanation": "Find the derivative \\( y' \\).",
-        "workingOut": "y' = 2x + 4"
+        "explanation": "Find the derivative.",
+        "workingOut": "For \\( y = x^2 + 4x + 4 \\), the derivative is:\n\\[ y' = 2x + 4 \\]",
+        "graphData": null
       },
       {
-        "explanation": "Set the derivative to zero and solve for \\( x \\).",
-        "workingOut": "2x + 4 = 0 \\implies x = -2"
+        "explanation": "Set the derivative to zero and solve.",
+        "workingOut": "A stationary point occurs when \\( y' = 0 \\):\n\\[ 2x + 4 = 0 \\]\n\\[ 2x = -4 \\]\n\\[ x = -2 \\]",
+        "graphData": null
       }
-    ]
+    ],
+    "opts": [
+      "-4",
+      "4",
+      "-2",
+      "2"
+    ],
+    "options": [
+      {
+        "text": "-4",
+        "imageUrl": ""
+      },
+      {
+        "text": "4",
+        "imageUrl": ""
+      },
+      {
+        "text": "-2",
+        "imageUrl": ""
+      },
+      {
+        "text": "2",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y12a-3a-q5d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "question": "By finding where the derivative is zero, find the \\( x \\)-coordinate of the stationary point of \\( y = 3x^2 - 12x \\).",
     "a": "2",
     "difficulty": "easy",
@@ -520,18 +1084,45 @@ export const Y12A_CH3_QUESTIONS = [
     "t": "Increasing, decreasing and stationary at a point",
     "solutionSteps": [
       {
-        "explanation": "Find the derivative \\( y' \\).",
-        "workingOut": "y' = 6x - 12"
+        "explanation": "Find the derivative.",
+        "workingOut": "For \\( y = 3x^2 - 12x \\), the derivative is:\n\\[ y' = 6x - 12 \\]",
+        "graphData": null
       },
       {
-        "explanation": "Set the derivative to zero and solve for \\( x \\).",
-        "workingOut": "6x - 12 = 0 \\implies x = 2"
+        "explanation": "Set the derivative to zero and solve.",
+        "workingOut": "A stationary point occurs when \\( y' = 0 \\):\n\\[ 6x - 12 = 0 \\]\n\\[ 6x = 12 \\]\n\\[ x = 2 \\]",
+        "graphData": null
       }
-    ]
+    ],
+    "opts": [
+      "2",
+      "-4",
+      "4",
+      "-2"
+    ],
+    "options": [
+      {
+        "text": "2",
+        "imageUrl": ""
+      },
+      {
+        "text": "-4",
+        "imageUrl": ""
+      },
+      {
+        "text": "4",
+        "imageUrl": ""
+      },
+      {
+        "text": "-2",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y12a-3a-q5e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "question": "By finding where the derivative is zero, find the \\( x \\)-coordinates of the stationary points of \\( y = x^3 - 6x^2 \\). If there are multiple values, list them in ascending order, separated by a comma (e.g. '0,4').",
     "a": "0,4",
     "difficulty": "easy",
@@ -539,18 +1130,45 @@ export const Y12A_CH3_QUESTIONS = [
     "t": "Increasing, decreasing and stationary at a point",
     "solutionSteps": [
       {
-        "explanation": "Find the derivative \\( y' \\).",
-        "workingOut": "y' = 3x^2 - 12x"
+        "explanation": "Find the derivative.",
+        "workingOut": "For \\( y = x^3 - 6x^2 \\), the derivative is:\n\\[ y' = 3x^2 - 12x \\]",
+        "graphData": null
       },
       {
-        "explanation": "Set the derivative to zero and factor to solve.",
-        "workingOut": "3x(x - 4) = 0 \\implies x = 0 \\text{ or } x = 4"
+        "explanation": "Set the derivative to zero and solve.",
+        "workingOut": "A stationary point occurs when \\( y' = 0 \\):\n\\[ 3x^2 - 12x = 0 \\]\nFactor out the common term \\( 3x \\):\n\\[ 3x(x - 4) = 0 \\]\nSo, \\( x = 0 \\) or \\( x = 4 \\).",
+        "graphData": null
       }
-    ]
+    ],
+    "opts": [
+      "0, -4",
+      "-2, 4",
+      "0, 4",
+      "2, 4"
+    ],
+    "options": [
+      {
+        "text": "0, -4",
+        "imageUrl": ""
+      },
+      {
+        "text": "-2, 4",
+        "imageUrl": ""
+      },
+      {
+        "text": "0, 4",
+        "imageUrl": ""
+      },
+      {
+        "text": "2, 4",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y12a-3a-q5f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "question": "By finding where the derivative is zero, find the \\( x \\)-coordinates of the stationary points of \\( y = x^3 - 27x \\). If there are multiple values, list them in ascending order, separated by a comma (e.g. '-3,3').",
     "a": "-3,3",
     "difficulty": "easy",
@@ -558,14 +1176,41 @@ export const Y12A_CH3_QUESTIONS = [
     "t": "Increasing, decreasing and stationary at a point",
     "solutionSteps": [
       {
-        "explanation": "Find the derivative \\( y' \\).",
-        "workingOut": "y' = 3x^2 - 27"
+        "explanation": "Find the derivative.",
+        "workingOut": "For \\( y = x^3 - 27x \\), the derivative is:\n\\[ y' = 3x^2 - 27 \\]",
+        "graphData": null
       },
       {
-        "explanation": "Set the derivative to zero and factor.",
-        "workingOut": "3(x - 3)(x + 3) = 0 \\implies x = -3 \\text{ or } x = 3"
+        "explanation": "Set the derivative to zero and solve.",
+        "workingOut": "A stationary point occurs when \\( y' = 0 \\):\n\\[ 3x^2 - 27 = 0 \\]\n\\[ 3x^2 = 27 \\]\n\\[ x^2 = 9 \\]\nSo, \\( x = -3 \\) or \\( x = 3 \\).",
+        "graphData": null
       }
-    ]
+    ],
+    "opts": [
+      "0, 3",
+      "-9, 9",
+      "-3, 3",
+      "0, 9"
+    ],
+    "options": [
+      {
+        "text": "0, 3",
+        "imageUrl": ""
+      },
+      {
+        "text": "-9, 9",
+        "imageUrl": ""
+      },
+      {
+        "text": "-3, 3",
+        "imageUrl": ""
+      },
+      {
+        "text": "0, 9",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y12a-3a-q6a",
@@ -657,63 +1302,93 @@ export const Y12A_CH3_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y12a-3a-q7a",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "a) \\( f(x) = (x-2)^3 \\). Find \\( f'(0) \\) and state whether the curve is increasing, decreasing, or stationary at \\( x = 0 \\). (Format: 'value, status' e.g. '12, increasing')",
         "a": "12, increasing",
         "solutionSteps": [
           {
-            "explanation": "Differentiate \\( f(x) = (x-2)^3 \\) using the chain rule.",
-            "workingOut": "f'(x) = 3(x-2)^2 \\times 1 = 3(x-2)^2"
+            "explanation": "Differentiate the function.",
+            "workingOut": "Find the derivative using the appropriate rules:\n\\[ f'(x) = 3(x-2)^2 \\]",
+            "graphData": null
           },
           {
             "explanation": "Evaluate the derivative at \\( x = 0 \\).",
-            "workingOut": "f'(0) = 3(0-2)^2 = 3(4) = 12"
+            "workingOut": "Substitute \\( x = 0 \\) into the derivative:\n\\[ f'(0) = 12 \\]",
+            "graphData": null
           },
           {
-            "explanation": "Since \\( f'(0) > 0 \\), the curve is increasing.",
-            "workingOut": "12 > 0 \\implies \\text{increasing}"
+            "explanation": "Determine status from the sign of the derivative.",
+            "workingOut": "Since \\( f'(0) > 0 \\), the curve is increasing.",
+            "graphData": null
           }
-        ]
+        ],
+        "opts": [
+          "8, increasing",
+          "0, stationary",
+          "-12, decreasing",
+          "12, increasing"
+        ],
+        "answerStr": "3"
       },
       {
         "id": "y12a-3a-q7b",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "b) \\( f(x) = (3x-1)^4 \\). Find \\( f'(0) \\) and state whether the curve is increasing, decreasing, or stationary at \\( x = 0 \\). (Format: 'value, status' e.g. '-12, decreasing')",
         "a": "-12, decreasing",
         "solutionSteps": [
           {
-            "explanation": "Differentiate \\( f(x) = (3x-1)^4 \\) using the chain rule.",
-            "workingOut": "f'(x) = 4(3x-1)^3 \\times 3 = 12(3x-1)^3"
+            "explanation": "Differentiate the function.",
+            "workingOut": "Find the derivative using the appropriate rules:\n\\[ f'(x) = 4(3x-1)^3 \\cdot 3 \\]",
+            "graphData": null
           },
           {
             "explanation": "Evaluate the derivative at \\( x = 0 \\).",
-            "workingOut": "f'(0) = 12(3(0)-1)^3 = 12(-1)^3 = -12"
+            "workingOut": "Substitute \\( x = 0 \\) into the derivative:\n\\[ f'(0) = -12 \\]",
+            "graphData": null
           },
           {
-            "explanation": "Since \\( f'(0) < 0 \\), the curve is decreasing.",
-            "workingOut": "-12 < 0 \\implies \\text{decreasing}"
+            "explanation": "Determine status from the sign of the derivative.",
+            "workingOut": "Since \\( f'(0) < 0 \\), the curve is decreasing.",
+            "graphData": null
           }
-        ]
+        ],
+        "opts": [
+          "12, increasing",
+          "-4, decreasing",
+          "0, stationary",
+          "-12, decreasing"
+        ],
+        "answerStr": "3"
       },
       {
         "id": "y12a-3a-q7c",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "c) \\( f(x) = (x^2+2)^2 \\). Find \\( f'(0) \\) and state whether the curve is increasing, decreasing, or stationary at \\( x = 0 \\). (Format: 'value, status' e.g. '0, stationary')",
         "a": "0, stationary",
         "solutionSteps": [
           {
-            "explanation": "Differentiate \\( f(x) = (x^2+2)^2 \\) using the chain rule.",
-            "workingOut": "f'(x) = 2(x^2+2) \\times 2x = 4x(x^2+2)"
+            "explanation": "Differentiate the function.",
+            "workingOut": "Find the derivative using the appropriate rules:\n\\[ f'(x) = 2(x^2+2) \\cdot 2x \\]",
+            "graphData": null
           },
           {
             "explanation": "Evaluate the derivative at \\( x = 0 \\).",
-            "workingOut": "f'(0) = 4(0)(0^2+2) = 0"
+            "workingOut": "Substitute \\( x = 0 \\) into the derivative:\n\\[ f'(0) = 0 \\]",
+            "graphData": null
           },
           {
-            "explanation": "Since \\( f'(0) = 0 \\), the curve is stationary.",
-            "workingOut": "0 \\implies \\text{stationary}"
+            "explanation": "Determine status from the sign of the derivative.",
+            "workingOut": "Since \\( f'(0) = 0 \\), the curve is stationary.",
+            "graphData": null
           }
-        ]
+        ],
+        "opts": [
+          "-4, decreasing",
+          "4, increasing",
+          "2, increasing",
+          "0, stationary"
+        ],
+        "answerStr": "3"
       }
     ]
   },
@@ -727,63 +1402,93 @@ export const Y12A_CH3_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y12a-3a-q8a",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "a) \\( f(x) = (x-4)(x+2) \\). Find \\( f'(1) \\) and state whether the curve is increasing, decreasing, or stationary at \\( x = 1 \\). (Format: 'value, status')",
         "a": "0, stationary",
         "solutionSteps": [
           {
-            "explanation": "Differentiate \\( f(x) = (x-4)(x+2) \\) using the product rule.",
-            "workingOut": "f'(x) = 1(x+2) + (x-4)1 = 2x - 2"
+            "explanation": "Expand the function and differentiate.",
+            "workingOut": "First expand the brackets to avoid product rule:\n\\[ f(x) = x^2 - 2x - 8 \\]\nDifferentiate each term:\n\\[ f'(x) = 2x - 2 \\]",
+            "graphData": null
           },
           {
-            "explanation": "Evaluate \\( f'(1) \\).",
-            "workingOut": "f'(1) = 2(1) - 2 = 0"
+            "explanation": "Evaluate the derivative at \\( x = 1 \\).",
+            "workingOut": "Substitute \\( x = 1 \\) into the derivative:\n\\[ f'(1) = 0 \\]",
+            "graphData": null
           },
           {
-            "explanation": "Since \\( f'(1) = 0 \\), the curve is stationary.",
-            "workingOut": "0 \\implies \\text{stationary}"
+            "explanation": "Determine status from the sign of the derivative.",
+            "workingOut": "Since \\( f'(1) = 0 \\), the curve is stationary.",
+            "graphData": null
           }
-        ]
+        ],
+        "opts": [
+          "4, increasing",
+          "2, increasing",
+          "-2, decreasing",
+          "0, stationary"
+        ],
+        "answerStr": "3"
       },
       {
         "id": "y12a-3a-q8b",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "b) \\( f(x) = (x-3)(x^2+4) \\). Find \\( f'(1) \\) and state whether the curve is increasing, decreasing, or stationary at \\( x = 1 \\). (Format: 'value, status')",
         "a": "1, increasing",
         "solutionSteps": [
           {
-            "explanation": "Differentiate using the product rule.",
-            "workingOut": "f'(x) = 1(x^2+4) + (x-3)(2x) = x^2+4 + 2x^2 - 6x = 3x^2 - 6x + 4"
+            "explanation": "Expand the function and differentiate.",
+            "workingOut": "First expand the brackets to avoid product rule:\n\\[ f(x) = x^3 - 3x^2 + 4x - 12 \\]\nDifferentiate each term:\n\\[ f'(x) = 3x^2 - 6x + 4 \\]",
+            "graphData": null
           },
           {
-            "explanation": "Evaluate at \\( x = 1 \\).",
-            "workingOut": "f'(1) = 3(1)^2 - 6(1) + 4 = 1"
+            "explanation": "Evaluate the derivative at \\( x = 1 \\).",
+            "workingOut": "Substitute \\( x = 1 \\) into the derivative:\n\\[ f'(1) = 1 \\]",
+            "graphData": null
           },
           {
-            "explanation": "Since \\( f'(1) > 0 \\), the curve is increasing.",
-            "workingOut": "1 > 0 \\implies \\text{increasing}"
+            "explanation": "Determine status from the sign of the derivative.",
+            "workingOut": "Since \\( f'(1) > 0 \\), the curve is increasing.",
+            "graphData": null
           }
-        ]
+        ],
+        "opts": [
+          "5, increasing",
+          "0, stationary",
+          "-1, decreasing",
+          "1, increasing"
+        ],
+        "answerStr": "3"
       },
       {
         "id": "y12a-3a-q8c",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "c) \\( f(x) = (x^3+3)(2-x^2) \\). Find \\( f'(1) \\) and state whether the curve is increasing, decreasing, or stationary at \\( x = 1 \\). (Format: 'value, status')",
         "a": "-5, decreasing",
         "solutionSteps": [
           {
-            "explanation": "Differentiate using the product rule.",
-            "workingOut": "f'(x) = (3x^2)(2-x^2) + (x^3+3)(-2x) = 6x^2 - 3x^4 - 2x^4 - 6x = -5x^4 + 6x^2 - 6x"
+            "explanation": "Expand the function and differentiate.",
+            "workingOut": "First expand the brackets to avoid product rule:\n\\[ f(x) = -x^5 + 2x^3 - 3x^2 + 6 \\]\nDifferentiate each term:\n\\[ f'(x) = -5x^4 + 6x^2 - 6x \\]",
+            "graphData": null
           },
           {
-            "explanation": "Evaluate at \\( x = 1 \\).",
-            "workingOut": "f'(1) = -5(1)^4 + 6(1)^2 - 6(1) = -5"
+            "explanation": "Evaluate the derivative at \\( x = 1 \\).",
+            "workingOut": "Substitute \\( x = 1 \\) into the derivative:\n\\[ f'(1) = -5 \\]",
+            "graphData": null
           },
           {
-            "explanation": "Since \\( f'(1) < 0 \\), the curve is decreasing.",
-            "workingOut": "-5 < 0 \\implies \\text{decreasing}"
+            "explanation": "Determine status from the sign of the derivative.",
+            "workingOut": "Since \\( f'(1) < 0 \\), the curve is decreasing.",
+            "graphData": null
           }
-        ]
+        ],
+        "opts": [
+          "1, increasing",
+          "-5, decreasing",
+          "5, increasing",
+          "-1, decreasing"
+        ],
+        "answerStr": "1"
       }
     ]
   },
@@ -797,70 +1502,100 @@ export const Y12A_CH3_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y12a-3a-q9a",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "a) \\( f(x) = \\frac{x}{x+2} \\). Find \\( f'(2) \\) and state whether the curve is increasing, decreasing, or stationary at \\( x = 2 \\). (Format fraction/status, e.g. '1/8, increasing')",
         "a": "1/8, increasing",
         "solutionSteps": [
           {
-            "explanation": "Apply the quotient rule: \\( \\frac{u'v - uv'}{v^2} \\).",
-            "workingOut": "f'(x) = \\frac{1(x+2) - x(1)}{(x+2)^2} = \\frac{2}{(x+2)^2}"
+            "explanation": "Differentiate the function.",
+            "workingOut": "Find the derivative using the appropriate rules:\n\\[ f'(x) = \\frac{(1)(x+2) - (x)(1)}{(x+2)^2} = \\frac{2}{(x+2)^2} \\]",
+            "graphData": null
           },
           {
-            "explanation": "Evaluate at \\( x = 2 \\).",
-            "workingOut": "f'(2) = \\frac{2}{(2+2)^2} = \\frac{2}{16} = \\frac{1}{8}"
+            "explanation": "Evaluate the derivative at \\( x = 2 \\).",
+            "workingOut": "Substitute \\( x = 2 \\) into the derivative:\n\\[ f'(2) = \\frac{1}{8} \\]",
+            "graphData": null
           },
           {
-            "explanation": "Since \\( f'(2) = 1/8 > 0 \\), it is increasing.",
-            "workingOut": "1/8 > 0 \\implies \\text{increasing}"
+            "explanation": "Determine status from the sign of the derivative.",
+            "workingOut": "Since \\( f'(2) > 0 \\), the curve is increasing.",
+            "graphData": null
           }
-        ]
+        ],
+        "opts": [
+          "\\frac{1}{4}, increasing",
+          "-\\frac{1}{4}, decreasing",
+          "\\frac{1}{8}, increasing",
+          "-\\frac{1}{8}, decreasing"
+        ],
+        "answerStr": "2"
       },
       {
         "id": "y12a-3a-q9b",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "b) \\( f(x) = \\frac{x+3}{x-1} \\). Find \\( f'(2) \\) and state whether the curve is increasing, decreasing, or stationary at \\( x = 2 \\). (Format: 'value, status')",
         "a": "-4, decreasing",
         "solutionSteps": [
           {
-            "explanation": "Apply the quotient rule.",
-            "workingOut": "f'(x) = \\frac{1(x-1) - (x+3)1}{(x-1)^2} = \\frac{-4}{(x-1)^2}"
+            "explanation": "Differentiate the function.",
+            "workingOut": "Find the derivative using the appropriate rules:\n\\[ f'(x) = \\frac{(1)(x-1) - (x+3)(1)}{(x-1)^2} = \\frac{-4}{(x-1)^2} \\]",
+            "graphData": null
           },
           {
-            "explanation": "Evaluate at \\( x = 2 \\).",
-            "workingOut": "f'(2) = \\frac{-4}{(2-1)^2} = -4"
+            "explanation": "Evaluate the derivative at \\( x = 2 \\).",
+            "workingOut": "Substitute \\( x = 2 \\) into the derivative:\n\\[ f'(2) = -4 \\]",
+            "graphData": null
           },
           {
-            "explanation": "Since \\( f'(2) < 0 \\), it is decreasing.",
-            "workingOut": "-4 < 0 \\implies \\text{decreasing}"
+            "explanation": "Determine status from the sign of the derivative.",
+            "workingOut": "Since \\( f'(2) < 0 \\), the curve is decreasing.",
+            "graphData": null
           }
-        ]
+        ],
+        "opts": [
+          "-4, decreasing",
+          "1, increasing",
+          "4, increasing",
+          "-1, decreasing"
+        ],
+        "answerStr": "0"
       },
       {
         "id": "y12a-3a-q9c",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "c) \\( f(x) = \\frac{x^2}{x+1} \\). Find \\( f'(2) \\) and state whether the curve is increasing, decreasing, or stationary at \\( x = 2 \\). (Format: 'fraction, status' e.g. '8/9, increasing')",
         "a": "8/9, increasing",
         "solutionSteps": [
           {
-            "explanation": "Apply the quotient rule.",
-            "workingOut": "f'(x) = \\frac{2x(x+1) - x^2(1)}{(x+1)^2} = \\frac{x^2+2x}{(x+1)^2}"
+            "explanation": "Differentiate the function.",
+            "workingOut": "Find the derivative using the appropriate rules:\n\\[ f'(x) = \\frac{(2x)(x+1) - (x^2)(1)}{(x+1)^2} = \\frac{x^2+2x}{(x+1)^2} \\]",
+            "graphData": null
           },
           {
-            "explanation": "Evaluate at \\( x = 2 \\).",
-            "workingOut": "f'(2) = \\frac{2^2 + 2(2)}{(2+1)^2} = \\frac{8}{9}"
+            "explanation": "Evaluate the derivative at \\( x = 2 \\).",
+            "workingOut": "Substitute \\( x = 2 \\) into the derivative:\n\\[ f'(2) = \\frac{8}{9} \\]",
+            "graphData": null
           },
           {
-            "explanation": "Since \\( f'(2) = 8/9 > 0 \\), it is increasing.",
-            "workingOut": "8/9 > 0 \\implies \\text{increasing}"
+            "explanation": "Determine status from the sign of the derivative.",
+            "workingOut": "Since \\( f'(2) > 0 \\), the curve is increasing.",
+            "graphData": null
           }
-        ]
+        ],
+        "opts": [
+          "-\\frac{4}{9}, decreasing",
+          "\\frac{8}{9}, increasing",
+          "-\\frac{8}{9}, decreasing",
+          "\\frac{4}{9}, increasing"
+        ],
+        "answerStr": "1"
       }
     ]
   },
   {
     "id": "y12a-3a-q10a",
-    "type": "short_answer",
-    "question": "Differentiate \\( f(x) = 2\\sqrt{x} \\) by writing it in index form. Then evaluate \\( f'(1) \\) to determine whether the curve is increasing, decreasing or stationary at \\( x = 1 \\). (Format: 'value, status')",
+    "type": "multiple_choice",
+    "question": "Differentiate \\( f(x) = 2\\sqrt{x} \\) by writing it in index form. Then evaluate \\( f'(1) \\) to determine whether the curve is increasing, decreasing or stationary at \\( x = 1 \\).",
     "a": "1, increasing",
     "difficulty": "medium",
     "timeLimit": 120,
@@ -868,63 +1603,150 @@ export const Y12A_CH3_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Rewrite function in index form and differentiate.",
-        "workingOut": "f(x) = 2x^{1/2} \\implies f'(x) = 2 \\times \\frac{1}{2}x^{-1/2} = x^{-1/2} = \\frac{1}{\\sqrt{x}}"
+        "workingOut": "Rewrite the function as a fractional or negative index:\n\\[ f(x) = 2x^{\\frac{1}{2}} \\]\nApply the power rule to differentiate:\n\\[ f'(x) = x^{-\\frac{1}{2}} = \\frac{1}{\\sqrt{x}} \\]",
+        "graphData": null
       },
       {
-        "explanation": "Evaluate at \\( x = 1 \\).",
-        "workingOut": "f'(1) = \\frac{1}{\\sqrt{1}} = 1"
+        "explanation": "Evaluate the derivative at \\( x = 1 \\).",
+        "workingOut": "Substitute \\( x = 1 \\) into the derivative:\n\\[ f'(1) = 1 \\]",
+        "graphData": null
       },
       {
         "explanation": "Determine status from the sign of the derivative.",
-        "workingOut": "1 > 0 \\implies \\text{increasing}"
+        "workingOut": "Since \\( f'(1) > 0 \\), the curve is increasing.",
+        "graphData": null
       }
-    ]
+    ],
+    "opts": [
+      "-1, decreasing",
+      "2, increasing",
+      "1, increasing",
+      "0, stationary"
+    ],
+    "options": [
+      {
+        "text": "1, increasing",
+        "imageUrl": ""
+      },
+      {
+        "text": "-1, decreasing",
+        "imageUrl": ""
+      },
+      {
+        "text": "1, stationary",
+        "imageUrl": ""
+      },
+      {
+        "text": "2, increasing",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "answerStr": "2"
   },
   {
     "id": "y12a-3a-q10b",
-    "type": "short_answer",
-    "question": "Differentiate \\( f(x) = \\frac{2}{x} \\) by writing it in index form. Then evaluate \\( f'(1) \\) to determine whether the curve is increasing, decreasing or stationary at \\( x = 1 \\). (Format: 'value, status')",
+    "type": "multiple_choice",
+    "question": "Differentiate \\( f(x) = \\frac{2}{x} \\) by writing it in index form. Then evaluate \\( f'(1) \\) to determine whether the curve is increasing, decreasing or stationary at \\( x = 1 \\).",
     "a": "-2, decreasing",
     "difficulty": "medium",
     "timeLimit": 120,
     "t": "Increasing, decreasing and stationary at a point",
     "solutionSteps": [
       {
-        "explanation": "Rewrite in index form and differentiate.",
-        "workingOut": "f(x) = 2x^{-1} \\implies f'(x) = -2x^{-2} = -\\frac{2}{x^2}"
+        "explanation": "Rewrite function in index form and differentiate.",
+        "workingOut": "Rewrite the function as a fractional or negative index:\n\\[ f(x) = 2x^{-1} \\]\nApply the power rule to differentiate:\n\\[ f'(x) = -2x^{-2} = -\\frac{2}{x^2} \\]",
+        "graphData": null
       },
       {
-        "explanation": "Evaluate at \\( x = 1 \\).",
-        "workingOut": "f'(1) = -\\frac{2}{1^2} = -2"
+        "explanation": "Evaluate the derivative at \\( x = 1 \\).",
+        "workingOut": "Substitute \\( x = 1 \\) into the derivative:\n\\[ f'(1) = -2 \\]",
+        "graphData": null
       },
       {
         "explanation": "Determine status from the sign of the derivative.",
-        "workingOut": "-2 < 0 \\implies \\text{decreasing}"
+        "workingOut": "Since \\( f'(1) < 0 \\), the curve is decreasing.",
+        "graphData": null
       }
-    ]
+    ],
+    "opts": [
+      "1, increasing",
+      "2, increasing",
+      "-1, decreasing",
+      "-2, decreasing"
+    ],
+    "options": [
+      {
+        "text": "-2, decreasing",
+        "imageUrl": ""
+      },
+      {
+        "text": "-1, decreasing",
+        "imageUrl": ""
+      },
+      {
+        "text": "-2, stationary",
+        "imageUrl": ""
+      },
+      {
+        "text": "2, increasing",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "answerStr": "3"
   },
   {
     "id": "y12a-3a-q10c",
-    "type": "short_answer",
-    "question": "Differentiate \\( f(x) = -\\frac{2}{x^2} \\) by writing it in index form. Then evaluate \\( f'(1) \\) to determine whether the curve is increasing, decreasing or stationary at \\( x = 1 \\). (Format: 'value, status')",
+    "type": "multiple_choice",
+    "question": "Differentiate \\( f(x) = -\\frac{2}{x^2} \\) by writing it in index form. Then evaluate \\( f'(1) \\) to determine whether the curve is increasing, decreasing or stationary at \\( x = 1 \\).",
     "a": "4, increasing",
     "difficulty": "medium",
     "timeLimit": 120,
     "t": "Increasing, decreasing and stationary at a point",
     "solutionSteps": [
       {
-        "explanation": "Rewrite in index form and differentiate.",
-        "workingOut": "f(x) = -2x^{-2} \\implies f'(x) = 4x^{-3} = \\frac{4}{x^3}"
+        "explanation": "Rewrite function in index form and differentiate.",
+        "workingOut": "Rewrite the function as a fractional or negative index:\n\\[ f(x) = -2x^{-2} \\]\nApply the power rule to differentiate:\n\\[ f'(x) = 4x^{-3} = \\frac{4}{x^3} \\]",
+        "graphData": null
       },
       {
-        "explanation": "Evaluate at \\( x = 1 \\).",
-        "workingOut": "f'(1) = \\frac{4}{1^3} = 4"
+        "explanation": "Evaluate the derivative at \\( x = 1 \\).",
+        "workingOut": "Substitute \\( x = 1 \\) into the derivative:\n\\[ f'(1) = 4 \\]",
+        "graphData": null
       },
       {
         "explanation": "Determine status from the sign of the derivative.",
-        "workingOut": "4 > 0 \\implies \\text{increasing}"
+        "workingOut": "Since \\( f'(1) > 0 \\), the curve is increasing.",
+        "graphData": null
       }
-    ]
+    ],
+    "opts": [
+      "2, increasing",
+      "-2, decreasing",
+      "4, increasing",
+      "-4, decreasing"
+    ],
+    "options": [
+      {
+        "text": "4, stationary",
+        "imageUrl": ""
+      },
+      {
+        "text": "-4, decreasing",
+        "imageUrl": ""
+      },
+      {
+        "text": "2, increasing",
+        "imageUrl": ""
+      },
+      {
+        "text": "4, increasing",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
+    "answerStr": "2"
   },
   {
     "id": "y12a-3a-q11",
@@ -936,67 +1758,213 @@ export const Y12A_CH3_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y12a-3a-q11a",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "a) Find the derivative \\( f'(x) \\).",
         "a": "6-2x",
         "solutionSteps": [
           {
             "explanation": "Differentiate the terms.",
-            "workingOut": "f'(x) = 6 - 2x"
+            "workingOut": "Apply the power rule to \\( f(x) = 6x - x^2 \\):\n\\[ f'(x) = 6 - 2x \\]",
+            "graphData": null
           }
-        ]
+        ],
+        "opts": [
+          "\\(6-2x\\)",
+          "\\(6x-2\\)",
+          "\\(-2x\\)",
+          "\\(6+2x\\)"
+        ],
+        "options": [
+          {
+            "text": "\\(6-2x\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(6x-2\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(-2x\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(6+2x\\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "0"
       },
       {
         "id": "y12a-3a-q11bi",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "b) i) For what values of \\( x \\) is \\( f'(x) > 0 \\)?",
         "a": "x<3",
         "solutionSteps": [
           {
-            "explanation": "Solve the inequality \\( f'(x) > 0 \\).",
-            "workingOut": "6 - 2x > 0 \\implies 2x < 6 \\implies x < 3"
+            "explanation": "Set up the inequality.",
+            "workingOut": "We need to find where \\( f'(x) > 0 \\):\n\\[ 6 - 2x > 0 \\]",
+            "graphData": null
+          },
+          {
+            "explanation": "Solve the inequality algebraically.",
+            "workingOut": "Move \\( 2x \\) to the other side to keep the variable positive:\n\\[ 6 > 2x \\]\nDivide both sides by 2:\n\\[ 3 > x \\]\nWhich is the same as:\n\\[ x < 3 \\]",
+            "graphData": null
           }
-        ]
+        ],
+        "opts": [
+          "\\(x < 6\\)",
+          "\\(x < 3\\)",
+          "\\(x > 3\\)",
+          "\\(x > -3\\)"
+        ],
+        "options": [
+          {
+            "text": "\\(x < 6\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(x < 3\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(x > 3\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(x > -3\\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "1"
       },
       {
         "id": "y12a-3a-q11bii",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "b) ii) For what values of \\( x \\) is \\( f'(x) < 0 \\)?",
         "a": "x>3",
         "solutionSteps": [
           {
-            "explanation": "Solve the inequality \\( f'(x) < 0 \\).",
-            "workingOut": "6 - 2x < 0 \\implies 2x > 6 \\implies x > 3"
+            "explanation": "Set up the inequality.",
+            "workingOut": "We need to find where \\( f'(x) < 0 \\):\n\\[ 6 - 2x < 0 \\]",
+            "graphData": null
+          },
+          {
+            "explanation": "Solve the inequality algebraically.",
+            "workingOut": "Move \\( 2x \\) to the other side:\n\\[ 6 < 2x \\]\nDivide both sides by 2:\n\\[ 3 < x \\]\nWhich is the same as:\n\\[ x > 3 \\]",
+            "graphData": null
           }
-        ]
+        ],
+        "opts": [
+          "\\(x < -3\\)",
+          "\\(x > 6\\)",
+          "\\(x > 3\\)",
+          "\\(x < 3\\)"
+        ],
+        "options": [
+          {
+            "text": "\\(x < -3\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(x > 6\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(x > 3\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(x < 3\\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "2"
       },
       {
         "id": "y12a-3a-q11biii",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "b) iii) For what values of \\( x \\) is \\( f'(x) = 0 \\)?",
         "a": "x=3",
         "solutionSteps": [
           {
-            "explanation": "Solve \\( f'(x) = 0 \\).",
-            "workingOut": "6 - 2x = 0 \\implies x = 3"
+            "explanation": "Set up the equation.",
+            "workingOut": "We need to find where \\( f'(x) = 0 \\):\n\\[ 6 - 2x = 0 \\]",
+            "graphData": null
+          },
+          {
+            "explanation": "Solve the equation.",
+            "workingOut": "Move \\( 2x \\) to the other side:\n\\[ 6 = 2x \\]\nDivide by 2:\n\\[ x = 3 \\]",
+            "graphData": null
           }
-        ]
+        ],
+        "opts": [
+          "\\(x = -6\\)",
+          "\\(x = 6\\)",
+          "\\(x = -3\\)",
+          "\\(x = 3\\)"
+        ],
+        "options": [
+          {
+            "text": "\\(x = -6\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(x = 6\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(x = -3\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(x = 3\\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "3"
       },
       {
         "id": "y12a-3a-q11c",
-        "type": "teacher_review",
+        "type": "multiple_choice",
         "question": "c) Find \\( f(3) \\). Then, by interpreting the results from part b geometrically, explain the shape of the graph \\( y = f(x) \\).",
         "a": "\\( f(3) = 6(3) - 3^2 = 18 - 9 = 9 \\). Geometrically, \\( (3, 9) \\) is the vertex of the concave-down parabola \\( y = 6x - x^2 \\). At \\( x = 3 \\), \\( f'(3) = 0 \\), giving a horizontal tangent. For \\( x < 3 \\), \\( f'(x) > 0 \\), meaning the curve is rising (increasing). For \\( x > 3 \\), \\( f'(x) < 0 \\), meaning the curve is falling (decreasing).",
         "solutionSteps": [
           {
-            "explanation": "Substitute \\( x = 3 \\) into the original function.",
-            "workingOut": "f(3) = 6(3) - (3)^2 = 9"
+            "explanation": "Evaluate \\( f(3) \\).",
+            "workingOut": "Substitute \\( x = 3 \\) into the original function \\( f(x) = 6x - x^2 \\):\n\\[ f(3) = 6(3) - (3)^2 \\]\n\\[ f(3) = 18 - 9 \\]\n\\[ f(3) = 9 \\]\nSo the point is \\( (3, 9) \\).",
+            "graphData": null
           },
           {
-            "explanation": "Combine the intervals of increase, decrease and the stationary point to describe the geometry.",
-            "workingOut": "\\text{Vertex at } (3,9), \\text{ rising for } x < 3, \\text{ stationary at } x=3, \\text{ falling for } x > 3."
+            "explanation": "Interpret the geometric shape.",
+            "workingOut": "From the previous parts, we know:\n- \\( f'(3) = 0 \\) (stationary point)\n- \\( f'(x) > 0 \\) for \\( x < 3 \\) (increasing before the point)\n- \\( f'(x) < 0 \\) for \\( x > 3 \\) (decreasing after the point)\nSince the curve goes up, peaks at \\( (3,9) \\), and then goes down, this point is a local maximum, and the shape is a concave-down parabola.",
+            "graphData": null
           }
-        ]
+        ],
+        "opts": [
+          "\\(f(3)=-9\\), point of inflection.",
+          "\\(f(3)=9\\), vertex of a concave-down parabola (maximum).",
+          "\\(f(3)=18\\), vertex of a concave-down parabola (maximum).",
+          "\\(f(3)=9\\), vertex of a concave-up parabola (minimum)."
+        ],
+        "options": [
+          {
+            "text": "\\(f(3)=-9\\), point of inflection.",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(f(3)=9\\), vertex of a concave-down parabola (maximum).",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(f(3)=18\\), vertex of a concave-down parabola (maximum).",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(f(3)=9\\), vertex of a concave-up parabola (minimum).",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "1"
       }
     ]
   },
@@ -1010,67 +1978,213 @@ export const Y12A_CH3_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y12a-3a-q12a",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "a) Find the derivative \\( f'(x) \\).",
         "a": "2x-6",
         "solutionSteps": [
           {
             "explanation": "Differentiate using power rule.",
-            "workingOut": "f'(x) = 2x - 6"
+            "workingOut": "Apply the power rule to \\( f(x) = x^2 - 6x + 8 \\):\n\\[ f'(x) = 2x - 6 \\]",
+            "graphData": null
           }
-        ]
+        ],
+        "opts": [
+          "\\(2x+6\\)",
+          "\\(x^2-6\\)",
+          "\\(x-6\\)",
+          "\\(2x-6\\)"
+        ],
+        "options": [
+          {
+            "text": "\\(2x+6\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(x^2-6\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(x-6\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(2x-6\\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "3"
       },
       {
         "id": "y12a-3a-q12bi",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "b) i) For what values of \\( x \\) is \\( f'(x) > 0 \\)?",
         "a": "x>3",
         "solutionSteps": [
           {
-            "explanation": "Solve inequality \\( f'(x) > 0 \\).",
-            "workingOut": "2x - 6 > 0 \\implies 2x > 6 \\implies x > 3"
+            "explanation": "Set up the inequality.",
+            "workingOut": "We need to find where \\( f'(x) > 0 \\):\n\\[ 2x - 6 > 0 \\]",
+            "graphData": null
+          },
+          {
+            "explanation": "Solve the inequality algebraically.",
+            "workingOut": "Move \\( 6 \\) to the other side:\n\\[ 2x > 6 \\]\nDivide both sides by 2:\n\\[ x > 3 \\]",
+            "graphData": null
           }
-        ]
+        ],
+        "opts": [
+          "\\(x > -3\\)",
+          "\\(x < 3\\)",
+          "\\(x < -3\\)",
+          "\\(x > 3\\)"
+        ],
+        "options": [
+          {
+            "text": "\\(x > -3\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(x < 3\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(x < -3\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(x > 3\\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "3"
       },
       {
         "id": "y12a-3a-q12bii",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "b) ii) For what values of \\( x \\) is \\( f'(x) < 0 \\)?",
         "a": "x<3",
         "solutionSteps": [
           {
-            "explanation": "Solve inequality \\( f'(x) < 0 \\).",
-            "workingOut": "2x - 6 < 0 \\implies 2x < 6 \\implies x < 3"
+            "explanation": "Set up the inequality.",
+            "workingOut": "We need to find where \\( f'(x) < 0 \\):\n\\[ 2x - 6 < 0 \\]",
+            "graphData": null
+          },
+          {
+            "explanation": "Solve the inequality algebraically.",
+            "workingOut": "Move \\( 6 \\) to the other side:\n\\[ 2x < 6 \\]\nDivide both sides by 2:\n\\[ x < 3 \\]",
+            "graphData": null
           }
-        ]
+        ],
+        "opts": [
+          "\\(x > 3\\)",
+          "\\(x < 3\\)",
+          "\\(x > -3\\)",
+          "\\(x < -3\\)"
+        ],
+        "options": [
+          {
+            "text": "\\(x > 3\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(x < 3\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(x > -3\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(x < -3\\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "1"
       },
       {
         "id": "y12a-3a-q12biii",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "b) iii) For what values of \\( x \\) is \\( f'(x) = 0 \\)?",
         "a": "x=3",
         "solutionSteps": [
           {
-            "explanation": "Solve equation \\( f'(x) = 0 \\).",
-            "workingOut": "2x - 6 = 0 \\implies x = 3"
+            "explanation": "Set up the equation.",
+            "workingOut": "We need to find where \\( f'(x) = 0 \\):\n\\[ 2x - 6 = 0 \\]",
+            "graphData": null
+          },
+          {
+            "explanation": "Solve the equation.",
+            "workingOut": "Move \\( 6 \\) to the other side:\n\\[ 2x = 6 \\]\nDivide by 2:\n\\[ x = 3 \\]",
+            "graphData": null
           }
-        ]
+        ],
+        "opts": [
+          "\\(x = -3\\)",
+          "\\(x = 6\\)",
+          "\\(x = 3\\)",
+          "\\(x = -6\\)"
+        ],
+        "options": [
+          {
+            "text": "\\(x = -3\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(x = 6\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(x = 3\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(x = -6\\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "2"
       },
       {
         "id": "y12a-3a-q12c",
-        "type": "teacher_review",
+        "type": "multiple_choice",
         "question": "c) Find \\( f(3) \\). Then, by interpreting the results from part b geometrically, explain the shape of the graph \\( y = f(x) \\).",
         "a": "\\( f(3) = 3^2 - 6(3) + 8 = 9 - 18 + 8 = -1 \\). Geometrically, \\( (3, -1) \\) is the minimum vertex of the concave-up parabola \\( y = x^2 - 6x + 8 \\). The tangent line at the vertex is horizontal since \\( f'(3) = 0 \\). For \\( x < 3 \\), \\( f'(x) < 0 \\) which means the curve is decreasing. For \\( x > 3 \\), \\( f'(x) > 0 \\) which means the curve is increasing.",
         "solutionSteps": [
           {
-            "explanation": "Substitute \\( x = 3 \\) into the original function.",
-            "workingOut": "f(3) = 3^2 - 6(3) + 8 = -1"
+            "explanation": "Evaluate \\( f(3) \\).",
+            "workingOut": "Substitute \\( x = 3 \\) into the original function \\( f(x) = x^2 - 6x + 8 \\):\n\\[ f(3) = (3)^2 - 6(3) + 8 \\]\n\\[ f(3) = 9 - 18 + 8 \\]\n\\[ f(3) = -1 \\]\nSo the point is \\( (3, -1) \\).",
+            "graphData": null
           },
           {
-            "explanation": "Describe the geometry using the derivative properties.",
-            "workingOut": "\\text{Vertex at } (3,-1), \\text{ decreasing for } x < 3, \\text{ increasing for } x > 3."
+            "explanation": "Interpret the geometric shape.",
+            "workingOut": "From the previous parts, we know:\n- \\( f'(3) = 0 \\) (stationary point)\n- \\( f'(x) < 0 \\) for \\( x < 3 \\) (decreasing before the point)\n- \\( f'(x) > 0 \\) for \\( x > 3 \\) (increasing after the point)\nSince the curve goes down, hits bottom at \\( (3,-1) \\), and then goes up, this point is a local minimum, and the shape is a concave-up parabola.",
+            "graphData": null
           }
-        ]
+        ],
+        "opts": [
+          "\\(f(3)=-1\\), point of inflection.",
+          "\\(f(3)=-1\\), vertex of a concave-down parabola (maximum).",
+          "\\(f(3)=1\\), vertex of a concave-up parabola (minimum).",
+          "\\(f(3)=-1\\), vertex of a concave-up parabola (minimum)."
+        ],
+        "options": [
+          {
+            "text": "\\(f(3)=-1\\), point of inflection.",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(f(3)=-1\\), vertex of a concave-down parabola (maximum).",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(f(3)=1\\), vertex of a concave-up parabola (minimum).",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(f(3)=-1\\), vertex of a concave-up parabola (minimum).",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "3"
       }
     ]
   },
@@ -1084,43 +2198,94 @@ export const Y12A_CH3_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y12a-3a-q13a",
-        "type": "teacher_review",
-        "question": "a) Show that the derivative is given by \\( f'(x) = 3(x-5)(x+1) \\).",
+        "type": "multiple_choice",
+        "question": "a) Find the fully factorised derivative of \\( f(x) \\).",
         "a": "Differentiating \\( f(x) \\) gives \\( f'(x) = 3x^2 - 12x - 15 \\). Factoring out the common factor 3: \\( f'(x) = 3(x^2 - 4x - 5) \\). Factoring the quadratic inside the parentheses: \\( f'(x) = 3(x-5)(x+1) \\).",
         "solutionSteps": [
           {
             "explanation": "Find the derivative of the polynomial terms.",
-            "workingOut": "f'(x) = 3x^2 - 12x - 15"
+            "workingOut": "Apply the power rule to \\( f(x) = x^3 - 6x^2 - 15x - 4 \\):\n\\[ f'(x) = 3x^2 - 12x - 15 \\]",
+            "graphData": null
           },
           {
-            "explanation": "Factor out 3.",
-            "workingOut": "f'(x) = 3(x^2 - 4x - 5)"
+            "explanation": "Factor out the common factor.",
+            "workingOut": "Pull out the common factor of 3:\n\\[ f'(x) = 3(x^2 - 4x - 5) \\]",
+            "graphData": null
           },
           {
             "explanation": "Factor the quadratic trinomial.",
-            "workingOut": "f'(x) = 3(x-5)(x+1)"
+            "workingOut": "Find two numbers that multiply to -5 and add to -4 (which are -5 and +1):\n\\[ f'(x) = 3(x-5)(x+1) \\]",
+            "graphData": null
           }
-        ]
+        ],
+        "opts": [
+          "\\(3(x-5)(x-1)\\)",
+          "\\(3(x+5)(x-1)\\)",
+          "\\(3(x-5)(x+1)\\)",
+          "\\(3(x+5)(x+1)\\)"
+        ],
+        "options": [
+          {
+            "text": "\\(3(x-5)(x-1)\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(3(x+5)(x-1)\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(3(x-5)(x+1)\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(3(x+5)(x+1)\\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "2"
       },
       {
         "id": "y12a-3a-q13b",
-        "type": "teacher_review",
-        "question": "b) By sketching the graph of \\( y = f'(x) \\), show that \\( f(x) \\) is increasing when \\( x > 5 \\) or \\( x < -1 \\).",
+        "type": "multiple_choice",
+        "question": "b) For what values of \\( x \\) is \\( f(x) \\) increasing?",
         "a": "The graph of the derivative \\( y = f'(x) = 3(x-5)(x+1) \\) is a parabola opening upwards with x-intercepts at \\( x = -1 \\) and \\( x = 5 \\). The curve lies above the x-axis (meaning \\( f'(x) > 0 \\)) for \\( x < -1 \\) and \\( x > 5 \\). Since \\( f'(x) > 0 \\) in these regions, \\( f(x) \\) is increasing when \\( x > 5 \\) or \\( x < -1 \\).",
         "solutionSteps": [
           {
-            "explanation": "Identify the key features of the derivative function \\( y = 3(x-5)(x+1) \\).",
-            "workingOut": "\\text{Parabola opening upwards, intercepts at } x = -1, 5"
+            "explanation": "Identify the key features of the derivative function.",
+            "workingOut": "The derivative is \\( f'(x) = 3(x-5)(x+1) \\).\nThis is a parabola opening upwards with x-intercepts at \\( x = -1 \\) and \\( x = 5 \\).",
+            "graphData": null
           },
           {
             "explanation": "Determine where the derivative is positive.",
-            "workingOut": "f'(x) > 0 \\implies x < -1 \\text{ or } x > 5"
+            "workingOut": "A function is increasing where \\( f'(x) > 0 \\).\nSince it is a concave-up parabola, it lies above the x-axis on the outer regions:\n\\[ x < -1 \\quad \\text{or} \\quad x > 5 \\]",
+            "graphData": null
+          }
+        ],
+        "opts": [
+          "\\(-5 < x < 1\\)",
+          "\\(x < -5 \\text{ or } x > 1\\)",
+          "\\(x < -1 \\text{ or } x > 5\\)",
+          "\\(-1 < x < 5\\)"
+        ],
+        "options": [
+          {
+            "text": "\\(-5 < x < 1\\)",
+            "imageUrl": ""
           },
           {
-            "explanation": "Connect positive derivative to the increasing behavior of the function.",
-            "workingOut": "\\text{Since } f'(x) > 0, \\, f(x) \\text{ is increasing for } x < -1 \\text{ or } x > 5"
+            "text": "\\(x < -5 \\text{ or } x > 1\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(x < -1 \\text{ or } x > 5\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(-1 < x < 5\\)",
+            "imageUrl": ""
           }
-        ]
+        ],
+        "answer": "2"
       }
     ]
   },
@@ -1134,70 +2299,182 @@ export const Y12A_CH3_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y12a-3a-q14a",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "a) Find the derivative \\( f'(x) \\).",
         "a": "3x^2+2x-5",
         "solutionSteps": [
           {
             "explanation": "Differentiate terms using power rule.",
-            "workingOut": "f'(x) = 3x^2 + 2x - 5"
+            "workingOut": "Apply the power rule to \\( f(x) = x^3 + x^2 - 5x + 3 \\):\n\\[ f'(x) = 3x^2 + 2x - 5 \\]",
+            "graphData": null
           }
-        ]
+        ],
+        "opts": [
+          "\\(3x^2+2x-5\\)",
+          "\\(3x^2+2x+5\\)",
+          "\\(x^2+2x-5\\)",
+          "\\(3x^2-2x-5\\)"
+        ],
+        "options": [
+          {
+            "text": "\\(3x^2+2x-5\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(3x^2+2x+5\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(x^2+2x-5\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(3x^2-2x-5\\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "0"
       },
       {
         "id": "y12a-3a-q14b",
-        "type": "short_answer",
-        "question": "b) Use factoring to find the zeroes of \\( f'(x) \\). (Format: ascending order separated by comma, e.g. '-5/3,1')",
+        "type": "multiple_choice",
+        "question": "b) Use factoring to find the zeroes of \\( f'(x) \\).",
         "a": "-5/3,1",
         "solutionSteps": [
           {
             "explanation": "Set the derivative to zero.",
-            "workingOut": "3x^2 + 2x - 5 = 0"
+            "workingOut": "To find the zeroes, set \\( f'(x) = 0 \\):\n\\[ 3x^2 + 2x - 5 = 0 \\]",
+            "graphData": null
           },
           {
-            "explanation": "Factor the quadratic by splitting the middle term: \\( 3x^2 + 5x - 3x - 5 = 0 \\).",
-            "workingOut": "x(3x + 5) - 1(3x + 5) = 0 \\implies (3x+5)(x-1) = 0"
+            "explanation": "Factor the quadratic.",
+            "workingOut": "Split the middle term (or use cross-multiplication):\n\\[ 3x^2 + 5x - 3x - 5 = 0 \\]\n\\[ x(3x + 5) - 1(3x + 5) = 0 \\]\n\\[ (3x+5)(x-1) = 0 \\]",
+            "graphData": null
           },
           {
             "explanation": "Solve for the roots.",
-            "workingOut": "x = -\\frac{5}{3} \\quad \\text{and} \\quad x = 1"
+            "workingOut": "Set each bracket to zero:\n\\[ 3x+5 = 0 \\implies x = -\\frac{5}{3} \\]\n\\[ x-1 = 0 \\implies x = 1 \\]",
+            "graphData": null
           }
-        ]
+        ],
+        "opts": [
+          "\\(5, \\, -3\\)",
+          "\\(5/3, \\, -1\\)",
+          "\\(-5, \\, 3\\)",
+          "\\(-5/3, \\, 1\\)"
+        ],
+        "options": [
+          {
+            "text": "\\(5, \\, -3\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(5/3, \\, -1\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(-5, \\, 3\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(-5/3, \\, 1\\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "3"
       },
       {
         "id": "y12a-3a-q14c",
-        "type": "teacher_review",
-        "question": "c) Sketch the graph of \\( y = f'(x) \\).",
+        "type": "multiple_choice",
+        "question": "c) Which statement best describes the graph of \\( y = f'(x) \\)?",
         "a": "The graph is a parabola opening upwards with x-intercepts at \\( x = -5/3 \\) and \\( x = 1 \\), and y-intercept at \\( y = -5 \\). The vertex lies at \\( x = -1/3 \\).",
         "solutionSteps": [
           {
-            "explanation": "Plot key coordinates: intercepts at \\( (-5/3, 0) \\), \\( (1, 0) \\), and \\( (0, -5) \\).",
-            "workingOut": "\\text{Intercepts: } (-1.67, 0), \\, (1, 0), \\, (0, -5)"
+            "explanation": "Analyze the derivative equation.",
+            "workingOut": "The derivative is \\( f'(x) = 3x^2 + 2x - 5 \\).\nSince the highest power is 2, it is a parabola. Since the leading coefficient (3) is positive, it opens upwards (concave-up).",
+            "graphData": null
+          },
+          {
+            "explanation": "Identify the x-intercepts.",
+            "workingOut": "From the previous part, the zeroes of \\( f'(x) \\) are \\( -5/3 \\) and \\( 1 \\). Therefore, the graph crosses the x-axis at these points.",
+            "graphData": null
           }
-        ]
+        ],
+        "opts": [
+          "A concave-up parabola with x-intercepts at -5/3 and 1",
+          "A cubic curve with roots at -5/3 and 1",
+          "A concave-up parabola with x-intercepts at 5/3 and -1",
+          "A concave-down parabola with x-intercepts at -5/3 and 1"
+        ],
+        "options": [
+          {
+            "text": "A concave-up parabola with x-intercepts at -5/3 and 1",
+            "imageUrl": ""
+          },
+          {
+            "text": "A cubic curve with roots at -5/3 and 1",
+            "imageUrl": ""
+          },
+          {
+            "text": "A concave-up parabola with x-intercepts at 5/3 and -1",
+            "imageUrl": ""
+          },
+          {
+            "text": "A concave-down parabola with x-intercepts at -5/3 and 1",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "0"
       },
       {
         "id": "y12a-3a-q14d",
-        "type": "short_answer",
-        "question": "d) Hence find the values of \\( x \\) for which \\( f(x) \\) is decreasing. (Format inequality, e.g. '-5/3<x<1')",
+        "type": "multiple_choice",
+        "question": "d) Hence find the values of \\( x \\) for which \\( f(x) \\) is decreasing.",
         "a": "-5/3<x<1",
         "solutionSteps": [
           {
-            "explanation": "The function decreases where the derivative is negative (\\( f'(x) < 0 \\)).",
-            "workingOut": "3x^2 + 2x - 5 < 0"
+            "explanation": "Relate decreasing behavior to the derivative.",
+            "workingOut": "The function decreases where the derivative is negative:\n\\[ f'(x) < 0 \\]",
+            "graphData": null
           },
           {
-            "explanation": "From the parabola graph, the derivative is negative between the two roots.",
-            "workingOut": "-\\frac{5}{3} < x < 1"
+            "explanation": "Solve the inequality using the graph.",
+            "workingOut": "We know \\( y = f'(x) \\) is a concave-up parabola with x-intercepts at \\( -5/3 \\) and \\( 1 \\).\nThe parabola lies below the x-axis (is negative) *between* the two roots:\n\\[ -\\frac{5}{3} < x < 1 \\]",
+            "graphData": null
           }
-        ]
+        ],
+        "opts": [
+          "\\(-5/3 < x < 1\\)",
+          "\\(x < -1 \\text{ or } x > 5/3\\)",
+          "\\(x < -5/3 \\text{ or } x > 1\\)",
+          "\\(-1 < x < 5/3\\)"
+        ],
+        "options": [
+          {
+            "text": "\\(-5/3 < x < 1\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(x < -1 \\text{ or } x > 5/3\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(x < -5/3 \\text{ or } x > 1\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\(-1 < x < 5/3\\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "0"
       }
     ]
   },
   {
     "id": "y12a-3a-q15a",
-    "type": "short_answer",
-    "question": "Find the derivative of \\( y = x^2 - 6x + 5 \\). By solving the inequality \\( y' > 0 \\), find the values of \\( x \\) for which the function is increasing. (Format: 'x>3')",
+    "type": "multiple_choice",
+    "question": "Find the derivative of \\( y = x^2 - 6x + 5 \\). By solving the inequality \\( y' > 0 \\), find the values of \\( x \\) for which the function is increasing.",
     "a": "x>3",
     "difficulty": "medium",
     "timeLimit": 120,
@@ -1205,18 +2482,45 @@ export const Y12A_CH3_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find the derivative \\( y' \\).",
-        "workingOut": "y' = 2x - 6"
+        "workingOut": "Apply the power rule to \\( y = x^2 - 6x + 5 \\):\n\\[ y' = 2x - 6 \\]",
+        "graphData": null
       },
       {
         "explanation": "Solve the inequality \\( y' > 0 \\).",
-        "workingOut": "2x - 6 > 0 \\implies 2x > 6 \\implies x > 3"
+        "workingOut": "Set the derivative greater than zero to find where the function is increasing:\n\\[ 2x - 6 > 0 \\]\nMove 6 to the other side:\n\\[ 2x > 6 \\]\nDivide by 2:\n\\[ x > 3 \\]",
+        "graphData": null
       }
-    ]
+    ],
+    "opts": [
+      "\\(x > 3\\)",
+      "\\(x < 3\\)",
+      "\\(x < -3\\)",
+      "\\(x > -3\\)"
+    ],
+    "options": [
+      {
+        "text": "\\(x > 3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x < 3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x < -3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x > -3\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y12a-3a-q15b",
-    "type": "short_answer",
-    "question": "Find the derivative of \\( y = 9 - 8x - x^2 \\). By solving the inequality \\( y' > 0 \\), find the values of \\( x \\) for which the function is increasing. (Format: 'x<-4')",
+    "type": "multiple_choice",
+    "question": "Find the derivative of \\( y = 9 - 8x - x^2 \\). By solving the inequality \\( y' > 0 \\), find the values of \\( x \\) for which the function is increasing.",
     "a": "x<-4",
     "difficulty": "medium",
     "timeLimit": 120,
@@ -1224,18 +2528,45 @@ export const Y12A_CH3_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find the derivative \\( y' \\).",
-        "workingOut": "y' = -8 - 2x"
+        "workingOut": "Apply the power rule to \\( y = 9 - 8x - x^2 \\):\n\\[ y' = -8 - 2x \\]",
+        "graphData": null
       },
       {
         "explanation": "Solve the inequality \\( y' > 0 \\).",
-        "workingOut": "-8 - 2x > 0 \\implies 2x < -8 \\implies x < -4"
+        "workingOut": "Set the derivative greater than zero:\n\\[ -8 - 2x > 0 \\]\nMove \\( 2x \\) to the other side to keep the coefficient positive:\n\\[ -8 > 2x \\]\nDivide by 2:\n\\[ -4 > x \\]\nWhich is the same as:\n\\[ x < -4 \\]",
+        "graphData": null
       }
-    ]
+    ],
+    "opts": [
+      "\\(x > -4\\)",
+      "\\(x < 4\\)",
+      "\\(x < -4\\)",
+      "\\(x > 4\\)"
+    ],
+    "options": [
+      {
+        "text": "\\(x > -4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x < 4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x < -4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x > 4\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2"
   },
   {
     "id": "y12a-3a-q15c",
-    "type": "short_answer",
-    "question": "Find the derivative of \\( y = x^3 - 12x \\). By solving the inequality \\( y' > 0 \\), find the values of \\( x \\) for which the function is increasing. (Format: 'x<-2,x>2')",
+    "type": "multiple_choice",
+    "question": "Find the derivative of \\( y = x^3 - 12x \\). By solving the inequality \\( y' > 0 \\), find the values of \\( x \\) for which the function is increasing.",
     "a": "x<-2,x>2",
     "difficulty": "medium",
     "timeLimit": 120,
@@ -1243,18 +2574,45 @@ export const Y12A_CH3_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find the derivative \\( y' \\).",
-        "workingOut": "y' = 3x^2 - 12"
+        "workingOut": "Apply the power rule to \\( y = x^3 - 12x \\):\n\\[ y' = 3x^2 - 12 \\]",
+        "graphData": null
       },
       {
-        "explanation": "Solve the inequality \\( y' > 0 \\).",
-        "workingOut": "3x^2 - 12 > 0 \\implies x^2 > 4 \\implies x < -2 \\text{ or } x > 2"
+        "explanation": "Solve the quadratic inequality \\( y' > 0 \\).",
+        "workingOut": "Set the derivative greater than zero:\n\\[ 3x^2 - 12 > 0 \\]\nDivide by 3:\n\\[ x^2 - 4 > 0 \\]\nFactor as a difference of two squares:\n\\[ (x - 2)(x + 2) > 0 \\]\nThis is a concave-up parabola with roots at \\( x = 2 \\) and \\( x = -2 \\). It is positive on the outside of the roots:\n\\[ x < -2 \\quad \\text{or} \\quad x > 2 \\]",
+        "graphData": null
       }
-    ]
+    ],
+    "opts": [
+      "\\(x < -2 \\text{ or } x > 2\\)",
+      "\\(-2 < x < 2\\)",
+      "\\(-12 < x < 12\\)",
+      "\\(x < -12 \\text{ or } x > 12\\)"
+    ],
+    "options": [
+      {
+        "text": "\\(x < -2 \\text{ or } x > 2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-2 < x < 2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-12 < x < 12\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x < -12 \\text{ or } x > 12\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y12a-3a-q15d",
-    "type": "short_answer",
-    "question": "Find the derivative of \\( y = x^3 - 6x^2 + 10 \\). By solving the inequality \\( y' > 0 \\), find the values of \\( x \\) for which the function is increasing. (Format: 'x<0,x>4')",
+    "type": "multiple_choice",
+    "question": "Find the derivative of \\( y = x^3 - 6x^2 + 10 \\). By solving the inequality \\( y' > 0 \\), find the values of \\( x \\) for which the function is increasing.",
     "a": "x<0,x>4",
     "difficulty": "medium",
     "timeLimit": 120,
@@ -1262,13 +2620,40 @@ export const Y12A_CH3_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find the derivative \\( y' \\).",
-        "workingOut": "y' = 3x^2 - 12x"
+        "workingOut": "Apply the power rule to \\( y = x^3 - 6x^2 + 10 \\):\n\\[ y' = 3x^2 - 12x \\]",
+        "graphData": null
       },
       {
-        "explanation": "Solve the inequality \\( y' > 0 \\).",
-        "workingOut": "3x(x - 4) > 0 \\implies x < 0 \\text{ or } x > 4"
+        "explanation": "Solve the quadratic inequality \\( y' > 0 \\).",
+        "workingOut": "Set the derivative greater than zero:\n\\[ 3x^2 - 12x > 0 \\]\nFactor out \\( 3x \\):\n\\[ 3x(x - 4) > 0 \\]\nThis is a concave-up parabola with roots at \\( x = 0 \\) and \\( x = 4 \\). It is positive on the outside of the roots:\n\\[ x < 0 \\quad \\text{or} \\quad x > 4 \\]",
+        "graphData": null
       }
-    ]
+    ],
+    "opts": [
+      "\\(x < 0 \\text{ or } x > 4\\)",
+      "\\(0 < x < 4\\)",
+      "\\(x < -4 \\text{ or } x > 0\\)",
+      "\\(-4 < x < 0\\)"
+    ],
+    "options": [
+      {
+        "text": "\\(x < 0 \\text{ or } x > 4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(0 < x < 4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(x < -4 \\text{ or } x > 0\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(-4 < x < 0\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0"
   },
   {
     "id": "y12a-3a-q16a",
@@ -1308,7 +2693,7 @@ export const Y12A_CH3_QUESTIONS = [
           4,
           -4
         ],
-        "script": "board.suspendUpdate();\nboard.create('functiongraph', [function(x){return x*x - 2;}, -3.5, 3.5], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('arrow', [[-3.5,0], [3.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3.5], [0,5.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('functiongraph', [function(x){return x*x - 2;}, -3.5, 3.5], {strokeColor: 'blue', strokeWidth: 2});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -1350,7 +2735,7 @@ export const Y12A_CH3_QUESTIONS = [
           4,
           -6
         ],
-        "script": "board.suspendUpdate();\nboard.create('functiongraph', [function(x){return x*x*x - 3*x;}, -3.5, 3.5], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('arrow', [[-3.5,0], [3.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-5.5], [0,5.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('functiongraph', [function(x){return x*x*x - 3*x;}, -3.5, 3.5], {strokeColor: 'blue', strokeWidth: 2});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -1392,7 +2777,7 @@ export const Y12A_CH3_QUESTIONS = [
           4,
           -4
         ],
-        "script": "board.suspendUpdate();\nboard.create('functiongraph', [function(x){return -x*x + 4;}, -3.5, 3.5], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('arrow', [[-3.5,0], [3.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3.5], [0,5.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('functiongraph', [function(x){return -x*x + 4;}, -3.5, 3.5], {strokeColor: 'blue', strokeWidth: 2});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -1434,7 +2819,7 @@ export const Y12A_CH3_QUESTIONS = [
           4,
           -6
         ],
-        "script": "board.suspendUpdate();\nboard.create('functiongraph', [function(x){return -x*x*x + 3*x;}, -3.5, 3.5], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('arrow', [[-3.5,0], [3.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-5.5], [0,5.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('functiongraph', [function(x){return -x*x*x + 3*x;}, -3.5, 3.5], {strokeColor: 'blue', strokeWidth: 2});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -1646,7 +3031,7 @@ export const Y12A_CH3_QUESTIONS = [
           4,
           -4
         ],
-        "script": "board.suspendUpdate();\nboard.create('line', [[-3.5, 2], [3.5, 2]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('arrow', [[-3.5,0], [3.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3.5], [0,3.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('line', [[-3.5, 2], [3.5, 2]], {strokeColor: 'blue', strokeWidth: 2});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -1674,7 +3059,7 @@ export const Y12A_CH3_QUESTIONS = [
           4,
           -4
         ],
-        "script": "board.suspendUpdate();\nboard.create('line', [[-3, -3], [3, 3]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('arrow', [[-3.5,0], [3.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3.5], [0,3.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('line', [[-3, -3], [3, 3]], {strokeColor: 'blue', strokeWidth: 2});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -1702,7 +3087,7 @@ export const Y12A_CH3_QUESTIONS = [
           4,
           -4
         ],
-        "script": "board.suspendUpdate();\nboard.create('line', [[-3, 3], [3, -3]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('arrow', [[-3.5,0], [3.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3.5], [0,3.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('line', [[-3, 3], [3, -3]], {strokeColor: 'blue', strokeWidth: 2});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -1730,7 +3115,7 @@ export const Y12A_CH3_QUESTIONS = [
           4,
           -2
         ],
-        "script": "board.suspendUpdate();\nboard.create('functiongraph', [function(x){return 0.5*x*x - 1;}, -3.5, 3.5], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('arrow', [[-3.5,0], [3.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-1.5], [0,3.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('functiongraph', [function(x){return 0.5*x*x - 1;}, -3.5, 3.5], {strokeColor: 'blue', strokeWidth: 2});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -1758,7 +3143,7 @@ export const Y12A_CH3_QUESTIONS = [
           4,
           -4
         ],
-        "script": "board.suspendUpdate();\nboard.create('functiongraph', [function(x){return 0.15*x*x*x;}, -3.5, 3.5], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('arrow', [[-3.5,0], [3.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3.5], [0,3.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('functiongraph', [function(x){return 0.15*x*x*x;}, -3.5, 3.5], {strokeColor: 'blue', strokeWidth: 2});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -1786,7 +3171,7 @@ export const Y12A_CH3_QUESTIONS = [
           4,
           -4
         ],
-        "script": "board.suspendUpdate();\nboard.create('functiongraph', [function(x){return (x+2.2)*(x)*(x-2.2)/6;}, -3.5, 3.5], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('arrow', [[-3.5,0], [3.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3.5], [0,3.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('point', [-1.27, 0], {name: 'a', size: 1, color: 'black', label: {autoPosition: false, offset: [0, -15]}});\nboard.create('point', [1.27, 0], {name: 'b', size: 1, color: 'black', label: {autoPosition: false, offset: [0, 15]}});\nboard.create('segment', [[-1.27, 0], [-1.27, 0.68]], {dash: 2, strokeColor: 'gray'});\nboard.create('segment', [[1.27, 0], [1.27, -0.68]], {dash: 2, strokeColor: 'gray'});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('functiongraph', [function(x){return (x+2.2)*(x)*(x-2.2)/6;}, -3.5, 3.5], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [-1.27, 0], {name: 'a', size: 1, color: 'black', label: {autoPosition: false, offset: [0, -15]}});\nboard.create('point', [1.27, 0], {name: 'b', size: 1, color: 'black', label: {autoPosition: false, offset: [0, 15]}});\nboard.create('segment', [[-1.27, 0], [-1.27, 0.68]], {dash: 2, strokeColor: 'gray'});\nboard.create('segment', [[1.27, 0], [1.27, -0.68]], {dash: 2, strokeColor: 'gray'});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -1814,7 +3199,7 @@ export const Y12A_CH3_QUESTIONS = [
           4,
           -2
         ],
-        "script": "board.suspendUpdate();\nboard.create('functiongraph', [function(x){return 0.15*(x+2)*(x+2)*(x-2)*(x-2) - 1;}, -3.5, 3.5], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('arrow', [[-3.5,0], [3.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-1.5], [0,5.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('point', [-2, 0], {name: 'a', size: 1, color: 'black', label: {autoPosition: false, offset: [0, 15]}});\nboard.create('point', [0, 0], {name: 'b', size: 1, color: 'black', label: {autoPosition: false, offset: [10, 15]}});\nboard.create('point', [2, 0], {name: 'c', size: 1, color: 'black', label: {autoPosition: false, offset: [0, 15]}});\nboard.create('segment', [[-2, 0], [-2, -1]], {dash: 2, strokeColor: 'gray'});\nboard.create('segment', [[2, 0], [2, -1]], {dash: 2, strokeColor: 'gray'});\nboard.create('segment', [[0, 0], [0, 1.4]], {dash: 2, strokeColor: 'gray'});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('functiongraph', [function(x){return 0.15*(x+2)*(x+2)*(x-2)*(x-2) - 1;}, -3.5, 3.5], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [-2, 0], {name: 'a', size: 1, color: 'black', label: {autoPosition: false, offset: [0, 15]}});\nboard.create('point', [0, 0], {name: 'b', size: 1, color: 'black', label: {autoPosition: false, offset: [10, 15]}});\nboard.create('point', [2, 0], {name: 'c', size: 1, color: 'black', label: {autoPosition: false, offset: [0, 15]}});\nboard.create('segment', [[-2, 0], [-2, -1]], {dash: 2, strokeColor: 'gray'});\nboard.create('segment', [[2, 0], [2, -1]], {dash: 2, strokeColor: 'gray'});\nboard.create('segment', [[0, 0], [0, 1.4]], {dash: 2, strokeColor: 'gray'});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -1842,7 +3227,7 @@ export const Y12A_CH3_QUESTIONS = [
           4,
           -4
         ],
-        "script": "board.suspendUpdate();\nboard.create('functiongraph', [function(x){return 1/x;}, -3.5, -0.15], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('functiongraph', [function(x){return 1/x;}, 0.15, 3.5], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('arrow', [[-3.5,0], [3.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3.5], [0,3.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('functiongraph', [function(x){return 1/x;}, -3.5, -0.15], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('functiongraph', [function(x){return 1/x;}, 0.15, 3.5], {strokeColor: 'blue', strokeWidth: 2});\nboard.unsuspendUpdate();"
       }
     }
   },

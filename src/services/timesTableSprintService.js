@@ -21,7 +21,7 @@
 
 import {
   collection, doc, getDoc, getDocs, onSnapshot, query, where, orderBy, limit,
-  runTransaction, serverTimestamp, getCountFromServer, addDoc,
+  runTransaction, serverTimestamp, getCountFromServer, addDoc, updateDoc,
 } from 'firebase/firestore';
 import { db } from '../firebase/config';
 import { localCache } from './localCacheService';
@@ -276,6 +276,15 @@ export const fetchMySprintResult = async (weekId, userId) => {
 // XP itself is minted by api/_lib/timesTableSprintSettlement.js — this only
 // detects "was I just settled, and have I not seen the modal for that week
 // yet" so the dashboard can congratulate the student once per settlement.
+//
+// The "seen" flag is stored on the result doc itself (`payoutSeen: true`),
+// not just in localStorage. A localStorage-only flag is device-scoped: it
+// resets on a different device, a cleared cache, Safari ITP storage eviction,
+// or the quota-exceeded eviction in localCacheService.js dropping this exact
+// key — any of which made the modal reappear "every time the app opens"
+// (2026-08 report) even though it had already been dismissed. localStorage
+// is still checked first as a zero-read fast path; Firestore is the source
+// of truth that survives all of the above.
 const payoutSeenKeyFor = (userId) => `ttsprint:payoutSeen:${userId}`;
 
 /**
@@ -290,6 +299,12 @@ export const checkPendingSprintPayout = async (userId) => {
 
   const result = await fetchMySprintResult(weekId, userId);
   if (!result || !Number.isFinite(Number(result.settledXp))) return null;
+  if (result.payoutSeen) {
+    // Already acknowledged (possibly from another device) — sync the local
+    // fast-path cache so this device stops re-fetching too.
+    localCache.set(payoutSeenKeyFor(userId), weekId);
+    return null;
+  }
 
   return {
     weekId,
@@ -302,6 +317,11 @@ export const checkPendingSprintPayout = async (userId) => {
 export const markSprintPayoutSeen = (userId, weekId) => {
   if (!userId || !weekId) return;
   localCache.set(payoutSeenKeyFor(userId), weekId);
+  // Best-effort — server-side flag is what makes this stick across devices/
+  // storage resets. Rules allow a student to update their own result row.
+  updateDoc(doc(db, RESULTS_COLLECTION, `${weekId}_${userId}`), { payoutSeen: true }).catch((err) => {
+    console.warn('[ttsprint] payoutSeen sync failed:', err?.code || err);
+  });
 };
 
 /** Teacher/admin design QA — open the payout celebration without a real settlement. */

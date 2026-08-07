@@ -392,13 +392,25 @@ const SvgGraph = ({ data }) => {
   // Resolve mock refs created in script (functiongraph returns mock object)
   const mockCurves = [];
 
+  /* ── Axis detection ── */
+  const isXAxis = (a) => {
+    const p = a.parents;
+    return p[0] && p[1] && Math.abs(p[0][1]) < 0.01 && Math.abs(p[1][1]) < 0.01;
+  };
+  const isYAxis = (a) => {
+    const p = a.parents;
+    return p[0] && p[1] && Math.abs(p[0][0]) < 0.01 && Math.abs(p[1][0]) < 0.01;
+  };
+
   items.forEach(it => {
     if (it.src === 'elements') { if (it.type === 'point') ePoints.push(it); return; }
     switch (it.type) {
       case 'functiongraph': case 'curve': curves.push(it); break;
       case 'arrow': 
         arrows.push(it);
-        lines.push(it);
+        if (!isXAxis(it) && !isYAxis(it)) {
+          lines.push(it);
+        }
         break;
       case 'axis':
         arrows.push(it);
@@ -415,17 +427,9 @@ const SvgGraph = ({ data }) => {
     }
   });
 
-  /* ── Axis detection ── */
-  const isXAxis = (a) => {
-    const p = a.parents;
-    return p[0] && p[1] && Math.abs(p[0][1]) < 0.01 && Math.abs(p[1][1]) < 0.01;
-  };
-  const isYAxis = (a) => {
-    const p = a.parents;
-    return p[0] && p[1] && Math.abs(p[0][0]) < 0.01 && Math.abs(p[1][0]) < 0.01;
-  };
-  const hasX = arrows.some(isXAxis);
-  const hasY = arrows.some(isYAxis);
+  const hasCurves = curves.length > 0;
+  const hasX = arrows.some(isXAxis) || hasCurves;
+  const hasY = arrows.some(isYAxis) || hasCurves;
   const dy = yMax - yMin;
   const showLabels = data.showAxisLabels !== false && dy >= 3;
   // Explicit showGrid wins; otherwise only draw grid when axes are present
@@ -540,7 +544,7 @@ const SvgGraph = ({ data }) => {
           ))}
           <marker id={`blueArrow${uid}`} markerWidth="10" markerHeight="8"
             refX="9" refY="4" orient="auto">
-            <polygon points="0 0,10 4,0 8" fill={C.blue} />
+            <polygon points="0 0,10 4,0 8" fill="context-stroke" />
           </marker>
           <marker id={`ae${uid}`} markerWidth="8" markerHeight="6"
             refX="7" refY="3" orient="auto">

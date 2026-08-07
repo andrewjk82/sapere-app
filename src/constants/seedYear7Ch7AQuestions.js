@@ -2261,24 +2261,24 @@ export const Y7_CH7A_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Complete the statement: \\(8\\) tenths = ____ thousandths.",
-    "a": 3,
-    "answer": "3",
+    "a": 2,
+    "answer": "2",
     "hint": "",
-    "solution": "",
+    "solution": "The correct answer is \\(800\\).",
     "solutionSteps": [
       {
-        "explanation": "Remember: The decimal point separates units from tenths. Compare decimals from the highest place value column downwards.",
-        "workingOut": "",
+        "explanation": "Write the starting value as a decimal.",
+        "workingOut": "\\(8\\) tenths = \\(8 \\times 0.1 = 0.8\\)",
         "graphData": null
       },
       {
-        "explanation": "Pedagogical Note:",
-        "workingOut": "",
+        "explanation": "Identify the decimal value of the target place.",
+        "workingOut": "1 thousandth = \\(0.001\\)",
         "graphData": null
       },
       {
-        "explanation": "Perform the next calculation step carefully.",
-        "workingOut": "8 tenths = 800 thousandths. (multiply by 100)",
+        "explanation": "Divide the starting value by the target place value to find the missing number.",
+        "workingOut": "\\(0.8 \\div 0.001 = 800\\)",
         "graphData": null
       }
     ],
@@ -2290,15 +2290,15 @@ export const Y7_CH7A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(8000\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(80000\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(800\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8000\\)",
         "imageUrl": ""
       }
     ]
@@ -2310,24 +2310,24 @@ export const Y7_CH7A_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Complete the statement: \\(8\\) tenths = ____ hundredths.",
-    "a": 2,
-    "answer": "2",
+    "a": 1,
+    "answer": "1",
     "hint": "",
-    "solution": "",
+    "solution": "The correct answer is \\(80\\).",
     "solutionSteps": [
       {
-        "explanation": "Remember: The decimal point separates units from tenths. Compare decimals from the highest place value column downwards.",
-        "workingOut": "",
+        "explanation": "Write the starting value as a decimal.",
+        "workingOut": "\\(8\\) tenths = \\(8 \\times 0.1 = 0.8\\)",
         "graphData": null
       },
       {
-        "explanation": "Pedagogical Note:",
-        "workingOut": "",
+        "explanation": "Identify the decimal value of the target place.",
+        "workingOut": "1 hundredth = \\(0.01\\)",
         "graphData": null
       },
       {
-        "explanation": "Perform the next calculation step carefully.",
-        "workingOut": "8 tenths = 80 hundredths. (multiply by 10)",
+        "explanation": "Divide the starting value by the target place value to find the missing number.",
+        "workingOut": "\\(0.8 \\div 0.01 = 80\\)",
         "graphData": null
       }
     ],
@@ -2339,15 +2339,15 @@ export const Y7_CH7A_QUESTIONS = [
         "imageUrl": ""
       },
       {
+        "text": "\\(80\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(800\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(8\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(80\\)",
         "imageUrl": ""
       }
     ]
@@ -2359,24 +2359,24 @@ export const Y7_CH7A_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Complete the statement: \\(8\\) tenths = ____ units.",
-    "a": 3,
-    "answer": "3",
+    "a": 0,
+    "answer": "0",
     "hint": "",
-    "solution": "",
+    "solution": "The correct answer is \\(0.8\\).",
     "solutionSteps": [
       {
-        "explanation": "Remember: The decimal point separates units from tenths. Compare decimals from the highest place value column downwards.",
-        "workingOut": "",
+        "explanation": "Write the starting value as a decimal.",
+        "workingOut": "\\(8\\) tenths = \\(8 \\times 0.1 = 0.8\\)",
         "graphData": null
       },
       {
-        "explanation": "Pedagogical Note:",
-        "workingOut": "",
+        "explanation": "Identify the decimal value of the target place.",
+        "workingOut": "1 unit = \\(1\\)",
         "graphData": null
       },
       {
-        "explanation": "Perform the next calculation step carefully.",
-        "workingOut": "8 tenths = 0.8 units. (divide by 10)",
+        "explanation": "Divide the starting value by the target place value to find the missing number.",
+        "workingOut": "\\(0.8 \\div 1 = 0.8\\)",
         "graphData": null
       }
     ],
@@ -2392,11 +2392,11 @@ export const Y7_CH7A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(80\\)",
+        "text": "\\(0.08\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(0.08\\)",
+        "text": "\\(80\\)",
         "imageUrl": ""
       }
     ]
@@ -2408,24 +2408,24 @@ export const Y7_CH7A_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 60,
     "question": "Complete the statement: \\(8\\) tenths = ____ tens.",
-    "a": 2,
-    "answer": "2",
+    "a": 3,
+    "answer": "3",
     "hint": "",
-    "solution": "",
+    "solution": "The correct answer is \\(0.08\\).",
     "solutionSteps": [
       {
-        "explanation": "Remember: The decimal point separates units from tenths. Compare decimals from the highest place value column downwards.",
-        "workingOut": "",
+        "explanation": "Write the starting value as a decimal.",
+        "workingOut": "\\(8\\) tenths = \\(8 \\times 0.1 = 0.8\\)",
         "graphData": null
       },
       {
-        "explanation": "Pedagogical Note:",
-        "workingOut": "",
+        "explanation": "Identify the decimal value of the target place.",
+        "workingOut": "1 ten = \\(10\\)",
         "graphData": null
       },
       {
-        "explanation": "Perform the next calculation step carefully.",
-        "workingOut": "8 tenths = 0.08 tens. (divide by 100)",
+        "explanation": "Divide the starting value by the target place value to find the missing number.",
+        "workingOut": "\\(0.8 \\div 10 = 0.08\\)",
         "graphData": null
       }
     ],
@@ -2433,11 +2433,7 @@ export const Y7_CH7A_QUESTIONS = [
     "isNew": true,
     "options": [
       {
-        "text": "\\(0.08\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(8\\)",
+        "text": "\\(0.8\\)",
         "imageUrl": ""
       },
       {
@@ -2445,7 +2441,11 @@ export const Y7_CH7A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(0.8\\)",
+        "text": "\\(8\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(0.08\\)",
         "imageUrl": ""
       }
     ]
@@ -2460,21 +2460,21 @@ export const Y7_CH7A_QUESTIONS = [
     "a": 2,
     "answer": "2",
     "hint": "",
-    "solution": "",
+    "solution": "The correct answer is \\(0.008\\).",
     "solutionSteps": [
       {
-        "explanation": "Remember: The decimal point separates units from tenths. Compare decimals from the highest place value column downwards.",
-        "workingOut": "",
+        "explanation": "Write the starting value as a decimal.",
+        "workingOut": "\\(8\\) tenths = \\(8 \\times 0.1 = 0.8\\)",
         "graphData": null
       },
       {
-        "explanation": "Pedagogical Note:",
-        "workingOut": "",
+        "explanation": "Identify the decimal value of the target place.",
+        "workingOut": "1 hundred = \\(100\\)",
         "graphData": null
       },
       {
-        "explanation": "Perform the next calculation step carefully.",
-        "workingOut": "8 tenths = 0.008 hundreds. (divide by 1000)",
+        "explanation": "Divide the starting value by the target place value to find the missing number.",
+        "workingOut": "\\(0.8 \\div 100 = 0.008\\)",
         "graphData": null
       }
     ],
@@ -2482,7 +2482,11 @@ export const Y7_CH7A_QUESTIONS = [
     "isNew": true,
     "options": [
       {
-        "text": "\\(0.08\\)",
+        "text": "\\(0.0008\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(0.8\\)",
         "imageUrl": ""
       },
       {
@@ -2490,11 +2494,7 @@ export const Y7_CH7A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(0.0008\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(0.8\\)",
+        "text": "\\(0.08\\)",
         "imageUrl": ""
       }
     ]
@@ -2509,21 +2509,21 @@ export const Y7_CH7A_QUESTIONS = [
     "a": 1,
     "answer": "1",
     "hint": "",
-    "solution": "",
+    "solution": "The correct answer is \\(0.0008\\).",
     "solutionSteps": [
       {
-        "explanation": "Remember: The decimal point separates units from tenths. Compare decimals from the highest place value column downwards.",
-        "workingOut": "",
+        "explanation": "Write the starting value as a decimal.",
+        "workingOut": "\\(8\\) tenths = \\(8 \\times 0.1 = 0.8\\)",
         "graphData": null
       },
       {
-        "explanation": "Pedagogical Note:",
-        "workingOut": "",
+        "explanation": "Identify the decimal value of the target place.",
+        "workingOut": "1 thousand = \\(1000\\)",
         "graphData": null
       },
       {
-        "explanation": "Perform the next calculation step carefully.",
-        "workingOut": "8 tenths = 0.0008 thousands. (divide by 10000)",
+        "explanation": "Divide the starting value by the target place value to find the missing number.",
+        "workingOut": "\\(0.8 \\div 1000 = 0.0008\\)",
         "graphData": null
       }
     ],
@@ -2555,24 +2555,24 @@ export const Y7_CH7A_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Complete the statement: \\(45\\) hundredths = ____ thousandths.",
-    "a": 1,
-    "answer": "1",
+    "a": 0,
+    "answer": "0",
     "hint": "",
-    "solution": "",
+    "solution": "The correct answer is \\(450\\).",
     "solutionSteps": [
       {
-        "explanation": "Remember: The decimal point separates units from tenths. Compare decimals from the highest place value column downwards.",
-        "workingOut": "",
+        "explanation": "Write the starting value as a decimal.",
+        "workingOut": "\\(45\\) hundredths = \\(45 \\times 0.01 = 0.45\\)",
         "graphData": null
       },
       {
-        "explanation": "Pedagogical Note:",
-        "workingOut": "",
+        "explanation": "Identify the decimal value of the target place.",
+        "workingOut": "1 thousandth = \\(0.001\\)",
         "graphData": null
       },
       {
-        "explanation": "Perform the next calculation step carefully.",
-        "workingOut": "45 hundredths = 450 thousandths. (multiply by 10)",
+        "explanation": "Divide the starting value by the target place value to find the missing number.",
+        "workingOut": "\\(0.45 \\div 0.001 = 450\\)",
         "graphData": null
       }
     ],
@@ -2584,7 +2584,7 @@ export const Y7_CH7A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(45000\\)",
+        "text": "\\(4500\\)",
         "imageUrl": ""
       },
       {
@@ -2592,7 +2592,7 @@ export const Y7_CH7A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(4500\\)",
+        "text": "\\(45000\\)",
         "imageUrl": ""
       }
     ]
@@ -2604,24 +2604,24 @@ export const Y7_CH7A_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Complete the statement: \\(45\\) hundredths = ____ tenths.",
-    "a": 0,
-    "answer": "0",
+    "a": 3,
+    "answer": "3",
     "hint": "",
-    "solution": "",
+    "solution": "The correct answer is \\(4.5\\).",
     "solutionSteps": [
       {
-        "explanation": "Remember: The decimal point separates units from tenths. Compare decimals from the highest place value column downwards.",
-        "workingOut": "",
+        "explanation": "Write the starting value as a decimal.",
+        "workingOut": "\\(45\\) hundredths = \\(45 \\times 0.01 = 0.45\\)",
         "graphData": null
       },
       {
-        "explanation": "Pedagogical Note:",
-        "workingOut": "",
+        "explanation": "Identify the decimal value of the target place.",
+        "workingOut": "1 tenth = \\(0.1\\)",
         "graphData": null
       },
       {
-        "explanation": "Perform the next calculation step carefully.",
-        "workingOut": "45 hundredths = 4.5 tenths. (divide by 10)",
+        "explanation": "Divide the starting value by the target place value to find the missing number.",
+        "workingOut": "\\(0.45 \\div 0.1 = 4.5\\)",
         "graphData": null
       }
     ],
@@ -2633,7 +2633,7 @@ export const Y7_CH7A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(4.5\\)",
+        "text": "\\(0.45\\)",
         "imageUrl": ""
       },
       {
@@ -2641,7 +2641,7 @@ export const Y7_CH7A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(0.45\\)",
+        "text": "\\(4.5\\)",
         "imageUrl": ""
       }
     ]
@@ -2653,24 +2653,24 @@ export const Y7_CH7A_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Complete the statement: \\(45\\) hundredths = ____ units.",
-    "a": 1,
-    "answer": "1",
+    "a": 2,
+    "answer": "2",
     "hint": "",
-    "solution": "",
+    "solution": "The correct answer is \\(0.45\\).",
     "solutionSteps": [
       {
-        "explanation": "Remember: The decimal point separates units from tenths. Compare decimals from the highest place value column downwards.",
-        "workingOut": "",
+        "explanation": "Write the starting value as a decimal.",
+        "workingOut": "\\(45\\) hundredths = \\(45 \\times 0.01 = 0.45\\)",
         "graphData": null
       },
       {
-        "explanation": "Pedagogical Note:",
-        "workingOut": "",
+        "explanation": "Identify the decimal value of the target place.",
+        "workingOut": "1 unit = \\(1\\)",
         "graphData": null
       },
       {
-        "explanation": "Perform the next calculation step carefully.",
-        "workingOut": "45 hundredths = 0.45 units. (divide by 100)",
+        "explanation": "Divide the starting value by the target place value to find the missing number.",
+        "workingOut": "\\(0.45 \\div 1 = 0.45\\)",
         "graphData": null
       }
     ],
@@ -2682,7 +2682,7 @@ export const Y7_CH7A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(4.5\\)",
+        "text": "\\(45\\)",
         "imageUrl": ""
       },
       {
@@ -2690,7 +2690,7 @@ export const Y7_CH7A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(45\\)",
+        "text": "\\(4.5\\)",
         "imageUrl": ""
       }
     ]
@@ -2705,21 +2705,21 @@ export const Y7_CH7A_QUESTIONS = [
     "a": 1,
     "answer": "1",
     "hint": "",
-    "solution": "",
+    "solution": "The correct answer is \\(0.045\\).",
     "solutionSteps": [
       {
-        "explanation": "Remember: The decimal point separates units from tenths. Compare decimals from the highest place value column downwards.",
-        "workingOut": "",
+        "explanation": "Write the starting value as a decimal.",
+        "workingOut": "\\(45\\) hundredths = \\(45 \\times 0.01 = 0.45\\)",
         "graphData": null
       },
       {
-        "explanation": "Pedagogical Note:",
-        "workingOut": "",
+        "explanation": "Identify the decimal value of the target place.",
+        "workingOut": "1 ten = \\(10\\)",
         "graphData": null
       },
       {
-        "explanation": "Perform the next calculation step carefully.",
-        "workingOut": "45 hundredths = 0.045 tens. (divide by 1000)",
+        "explanation": "Divide the starting value by the target place value to find the missing number.",
+        "workingOut": "\\(0.45 \\div 10 = 0.045\\)",
         "graphData": null
       }
     ],
@@ -2727,19 +2727,19 @@ export const Y7_CH7A_QUESTIONS = [
     "isNew": true,
     "options": [
       {
-        "text": "\\(0.44999999999999996\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(0.0045\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(4.5\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(0.045\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(0.45\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(0.0045\\)",
         "imageUrl": ""
       }
     ]
@@ -2751,24 +2751,24 @@ export const Y7_CH7A_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 60,
     "question": "Complete the statement: \\(45\\) hundredths = ____ hundreds.",
-    "a": 3,
-    "answer": "3",
+    "a": 0,
+    "answer": "0",
     "hint": "",
-    "solution": "",
+    "solution": "The correct answer is \\(0.0045\\).",
     "solutionSteps": [
       {
-        "explanation": "Remember: The decimal point separates units from tenths. Compare decimals from the highest place value column downwards.",
-        "workingOut": "",
+        "explanation": "Write the starting value as a decimal.",
+        "workingOut": "\\(45\\) hundredths = \\(45 \\times 0.01 = 0.45\\)",
         "graphData": null
       },
       {
-        "explanation": "Pedagogical Note:",
-        "workingOut": "",
+        "explanation": "Identify the decimal value of the target place.",
+        "workingOut": "1 hundred = \\(100\\)",
         "graphData": null
       },
       {
-        "explanation": "Perform the next calculation step carefully.",
-        "workingOut": "45 hundredths = 0.0045 hundreds. (divide by 10000)",
+        "explanation": "Divide the starting value by the target place value to find the missing number.",
+        "workingOut": "\\(0.45 \\div 100 = 0.0045\\)",
         "graphData": null
       }
     ],
@@ -2776,19 +2776,19 @@ export const Y7_CH7A_QUESTIONS = [
     "isNew": true,
     "options": [
       {
-        "text": "\\(0.00045\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(0.44999999999999996\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(0.0045\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(0.045\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(0.00045\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(0.45\\)",
         "imageUrl": ""
       }
     ]
@@ -2803,21 +2803,21 @@ export const Y7_CH7A_QUESTIONS = [
     "a": 3,
     "answer": "3",
     "hint": "",
-    "solution": "",
+    "solution": "The correct answer is \\(0.00045\\).",
     "solutionSteps": [
       {
-        "explanation": "Remember: The decimal point separates units from tenths. Compare decimals from the highest place value column downwards.",
-        "workingOut": "",
+        "explanation": "Write the starting value as a decimal.",
+        "workingOut": "\\(45\\) hundredths = \\(45 \\times 0.01 = 0.45\\)",
         "graphData": null
       },
       {
-        "explanation": "Pedagogical Note:",
-        "workingOut": "",
+        "explanation": "Identify the decimal value of the target place.",
+        "workingOut": "1 thousand = \\(1000\\)",
         "graphData": null
       },
       {
-        "explanation": "Perform the next calculation step carefully.",
-        "workingOut": "45 hundredths = 0.00045 thousands. (divide by 100000)",
+        "explanation": "Divide the starting value by the target place value to find the missing number.",
+        "workingOut": "\\(0.45 \\div 1000 = 0.00045\\)",
         "graphData": null
       }
     ],
@@ -2825,7 +2825,11 @@ export const Y7_CH7A_QUESTIONS = [
     "isNew": true,
     "options": [
       {
-        "text": "\\(0.00045\\)",
+        "text": "\\(0.0045\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(0.000045\\)",
         "imageUrl": ""
       },
       {
@@ -2833,11 +2837,7 @@ export const Y7_CH7A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(0.000044999999999999996\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(0.0045\\)",
+        "text": "\\(0.00045\\)",
         "imageUrl": ""
       }
     ]
@@ -2849,24 +2849,24 @@ export const Y7_CH7A_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Complete the statement: \\(618\\) thousandths = ____ hundredths.",
-    "a": 3,
-    "answer": "3",
+    "a": 2,
+    "answer": "2",
     "hint": "",
-    "solution": "",
+    "solution": "The correct answer is \\(61.8\\).",
     "solutionSteps": [
       {
-        "explanation": "Remember: The decimal point separates units from tenths. Compare decimals from the highest place value column downwards.",
-        "workingOut": "",
+        "explanation": "Write the starting value as a decimal.",
+        "workingOut": "\\(618\\) thousandths = \\(618 \\times 0.001 = 0.618\\)",
         "graphData": null
       },
       {
-        "explanation": "Pedagogical Note:",
-        "workingOut": "",
+        "explanation": "Identify the decimal value of the target place.",
+        "workingOut": "1 hundredth = \\(0.01\\)",
         "graphData": null
       },
       {
-        "explanation": "Perform the next calculation step carefully.",
-        "workingOut": "618 thousandths = 61.8 hundredths. (divide by 10)",
+        "explanation": "Divide the starting value by the target place value to find the missing number.",
+        "workingOut": "\\(0.618 \\div 0.01 = 61.8\\)",
         "graphData": null
       }
     ],
@@ -2874,11 +2874,11 @@ export const Y7_CH7A_QUESTIONS = [
     "isNew": true,
     "options": [
       {
-        "text": "\\(6180\\)",
+        "text": "\\(6.18\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(6.18\\)",
+        "text": "\\(6180\\)",
         "imageUrl": ""
       },
       {
@@ -2898,24 +2898,24 @@ export const Y7_CH7A_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Complete the statement: \\(618\\) thousandths = ____ tenths.",
-    "a": 3,
-    "answer": "3",
+    "a": 1,
+    "answer": "1",
     "hint": "",
-    "solution": "",
+    "solution": "The correct answer is \\(6.18\\).",
     "solutionSteps": [
       {
-        "explanation": "Remember: The decimal point separates units from tenths. Compare decimals from the highest place value column downwards.",
-        "workingOut": "",
+        "explanation": "Write the starting value as a decimal.",
+        "workingOut": "\\(618\\) thousandths = \\(618 \\times 0.001 = 0.618\\)",
         "graphData": null
       },
       {
-        "explanation": "Pedagogical Note:",
-        "workingOut": "",
+        "explanation": "Identify the decimal value of the target place.",
+        "workingOut": "1 tenth = \\(0.1\\)",
         "graphData": null
       },
       {
-        "explanation": "Perform the next calculation step carefully.",
-        "workingOut": "618 thousandths = 6.18 tenths. (divide by 100)",
+        "explanation": "Divide the starting value by the target place value to find the missing number.",
+        "workingOut": "\\(0.618 \\div 0.1 = 6.18\\)",
         "graphData": null
       }
     ],
@@ -2923,11 +2923,7 @@ export const Y7_CH7A_QUESTIONS = [
     "isNew": true,
     "options": [
       {
-        "text": "\\(0.618\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(61.8\\)",
+        "text": "\\(618\\)",
         "imageUrl": ""
       },
       {
@@ -2935,7 +2931,11 @@ export const Y7_CH7A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(618\\)",
+        "text": "\\(61.8\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(0.618\\)",
         "imageUrl": ""
       }
     ]
@@ -2950,21 +2950,21 @@ export const Y7_CH7A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "",
+    "solution": "The correct answer is \\(0.618\\).",
     "solutionSteps": [
       {
-        "explanation": "Remember: The decimal point separates units from tenths. Compare decimals from the highest place value column downwards.",
-        "workingOut": "",
+        "explanation": "Write the starting value as a decimal.",
+        "workingOut": "\\(618\\) thousandths = \\(618 \\times 0.001 = 0.618\\)",
         "graphData": null
       },
       {
-        "explanation": "Pedagogical Note:",
-        "workingOut": "",
+        "explanation": "Identify the decimal value of the target place.",
+        "workingOut": "1 unit = \\(1\\)",
         "graphData": null
       },
       {
-        "explanation": "Perform the next calculation step carefully.",
-        "workingOut": "618 thousandths = 0.618 units. (divide by 1000)",
+        "explanation": "Divide the starting value by the target place value to find the missing number.",
+        "workingOut": "\\(0.618 \\div 1 = 0.618\\)",
         "graphData": null
       }
     ],
@@ -2972,7 +2972,7 @@ export const Y7_CH7A_QUESTIONS = [
     "isNew": true,
     "options": [
       {
-        "text": "\\(0.0618\\)",
+        "text": "\\(0.618\\)",
         "imageUrl": ""
       },
       {
@@ -2980,7 +2980,7 @@ export const Y7_CH7A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(0.618\\)",
+        "text": "\\(0.0618\\)",
         "imageUrl": ""
       },
       {
@@ -2996,24 +2996,24 @@ export const Y7_CH7A_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 60,
     "question": "Complete the statement: \\(618\\) thousandths = ____ tens.",
-    "a": 0,
-    "answer": "0",
+    "a": 3,
+    "answer": "3",
     "hint": "",
-    "solution": "",
+    "solution": "The correct answer is \\(0.0618\\).",
     "solutionSteps": [
       {
-        "explanation": "Remember: The decimal point separates units from tenths. Compare decimals from the highest place value column downwards.",
-        "workingOut": "",
+        "explanation": "Write the starting value as a decimal.",
+        "workingOut": "\\(618\\) thousandths = \\(618 \\times 0.001 = 0.618\\)",
         "graphData": null
       },
       {
-        "explanation": "Pedagogical Note:",
-        "workingOut": "",
+        "explanation": "Identify the decimal value of the target place.",
+        "workingOut": "1 ten = \\(10\\)",
         "graphData": null
       },
       {
-        "explanation": "Perform the next calculation step carefully.",
-        "workingOut": "618 thousandths = 0.0618 tens. (divide by 10000)",
+        "explanation": "Divide the starting value by the target place value to find the missing number.",
+        "workingOut": "\\(0.618 \\div 10 = 0.0618\\)",
         "graphData": null
       }
     ],
@@ -3021,7 +3021,11 @@ export const Y7_CH7A_QUESTIONS = [
     "isNew": true,
     "options": [
       {
-        "text": "\\(0.0618\\)",
+        "text": "\\(0.618\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(0.00618\\)",
         "imageUrl": ""
       },
       {
@@ -3029,11 +3033,7 @@ export const Y7_CH7A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(0.618\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(0.00618\\)",
+        "text": "\\(0.0618\\)",
         "imageUrl": ""
       }
     ]
@@ -3045,24 +3045,24 @@ export const Y7_CH7A_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 60,
     "question": "Complete the statement: \\(618\\) thousandths = ____ hundreds.",
-    "a": 0,
-    "answer": "0",
+    "a": 2,
+    "answer": "2",
     "hint": "",
-    "solution": "",
+    "solution": "The correct answer is \\(0.00618\\).",
     "solutionSteps": [
       {
-        "explanation": "Remember: The decimal point separates units from tenths. Compare decimals from the highest place value column downwards.",
-        "workingOut": "",
+        "explanation": "Write the starting value as a decimal.",
+        "workingOut": "\\(618\\) thousandths = \\(618 \\times 0.001 = 0.618\\)",
         "graphData": null
       },
       {
-        "explanation": "Pedagogical Note:",
-        "workingOut": "",
+        "explanation": "Identify the decimal value of the target place.",
+        "workingOut": "1 hundred = \\(100\\)",
         "graphData": null
       },
       {
-        "explanation": "Perform the next calculation step carefully.",
-        "workingOut": "618 thousandths = 0.00618 hundreds. (divide by 100000)",
+        "explanation": "Divide the starting value by the target place value to find the missing number.",
+        "workingOut": "\\(0.618 \\div 100 = 0.00618\\)",
         "graphData": null
       }
     ],
@@ -3074,7 +3074,7 @@ export const Y7_CH7A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(0.061799999999999994\\)",
+        "text": "\\(0.618\\)",
         "imageUrl": ""
       },
       {
@@ -3082,7 +3082,7 @@ export const Y7_CH7A_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(0.618\\)",
+        "text": "\\(0.0618\\)",
         "imageUrl": ""
       }
     ]
@@ -3097,21 +3097,21 @@ export const Y7_CH7A_QUESTIONS = [
     "a": 1,
     "answer": "1",
     "hint": "",
-    "solution": "",
+    "solution": "The correct answer is \\(0.000618\\).",
     "solutionSteps": [
       {
-        "explanation": "Remember: The decimal point separates units from tenths. Compare decimals from the highest place value column downwards.",
-        "workingOut": "",
+        "explanation": "Write the starting value as a decimal.",
+        "workingOut": "\\(618\\) thousandths = \\(618 \\times 0.001 = 0.618\\)",
         "graphData": null
       },
       {
-        "explanation": "Pedagogical Note:",
-        "workingOut": "",
+        "explanation": "Identify the decimal value of the target place.",
+        "workingOut": "1 thousand = \\(1000\\)",
         "graphData": null
       },
       {
-        "explanation": "Perform the next calculation step carefully.",
-        "workingOut": "618 thousandths = 0.000618 thousands. (divide by 1000000)",
+        "explanation": "Divide the starting value by the target place value to find the missing number.",
+        "workingOut": "\\(0.618 \\div 1000 = 0.000618\\)",
         "graphData": null
       }
     ],
@@ -3119,19 +3119,19 @@ export const Y7_CH7A_QUESTIONS = [
     "isNew": true,
     "options": [
       {
+        "text": "\\(0.0618\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(0.000618\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(0.0000618\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(0.061799999999999994\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(0.00618\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(0.0000618\\)",
         "imageUrl": ""
       }
     ]
