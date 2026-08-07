@@ -3094,45 +3094,34 @@ export const Y12A_CH3_QUESTIONS = [
       },
       {
         "id": "y12a-3a-q17c",
-        "type": "multiple_choice",
+        "type": "teacher_review",
         "question": "c) Sketch a graph of \\( f(x) = -\\frac{2}{x} \\), and explain why \\( f(-1) > f(2) \\) despite this fact.",
         "a": "Evaluate function values: \\( f(-1) = 2 \\) and \\( f(2) = -1 \\). Even though the function is increasing on each branch \\( x < 0 \\) and \\( x > 0 \\) individually, the function is discontinuous at \\( x = 0 \\). Therefore, the 'increasing' property cannot be applied across the vertical asymptote to compare \\( f(-1) \\) and \\( f(2) \\).",
         "solutionSteps": [
           {
             "explanation": "Calculate the function values.",
-            "workingOut": "\\[ f(-1) = -\\frac{2}{-1} = 2 \\]\n\\[ f(2) = -\\frac{2}{2} = -1 \\]"
+            "workingOut": "\\[ f(-1) = -\\frac{2}{-1} = 2 \\]\n\\[ f(2) = -\\frac{2}{2} = -1 \\]",
+            "graphData": {
+              "jsxGraph": {
+                "width": 300,
+                "height": 300,
+                "boundingbox": [
+                  -4,
+                  6,
+                  4,
+                  -6
+                ],
+                "showGrid": true,
+                "showAxisLabels": true,
+                "script": "board.suspendUpdate();\nboard.create('functiongraph', [function(x){ return -2/x; }], {strokeColor: 'blue', strokeWidth: 2});\nboard.unsuspendUpdate();"
+              }
+            }
           },
           {
             "explanation": "Explain the apparent contradiction.",
             "workingOut": "Although \\( f(-1) > f(2) \\), this does not contradict the fact that the function is strictly increasing.\nThe function has a vertical asymptote at \\( x = 0 \\), which breaks the domain into two separate branches.\nThe property of being 'increasing' applies within each continuous interval (branch), not across the asymptote."
           }
-        ],
-        "opts": [
-          "Because \\( f(-1) \\) is positive and \\( f(2) \\) is negative.",
-          "Because the function is actually decreasing overall.",
-          "Because there is a vertical asymptote at \\( x = 0 \\) separating the two branches.",
-          "Because the function is only increasing for \\( x > 0 \\)."
-        ],
-        "answerStr": "2",
-        "options": [
-          {
-            "text": "Because \\( f(-1) \\) is positive and \\( f(2) \\) is negative.",
-            "imageUrl": ""
-          },
-          {
-            "text": "Because the function is actually decreasing overall.",
-            "imageUrl": ""
-          },
-          {
-            "text": "Because there is a vertical asymptote at \\( x = 0 \\) separating the two branches.",
-            "imageUrl": ""
-          },
-          {
-            "text": "Because the function is only increasing for \\( x > 0 \\).",
-            "imageUrl": ""
-          }
-        ],
-        "answer": "2"
+        ]
       }
     ]
   },
