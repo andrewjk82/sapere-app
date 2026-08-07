@@ -3136,32 +3136,32 @@ export const Y12A_CH3_QUESTIONS = [
       {
         "id": "y12a-3a-q18a",
         "type": "short_answer",
-        "question": "a) Use the quotient rule to find the derivative \\( f'(x) \\).",
+        "question": "a) Find the derivative \\( f'(x) \\).",
         "a": "-12/(x-4)^2",
         "solutionSteps": [
           {
             "explanation": "Identify components for the quotient rule.",
-            "workingOut": "\\[ f(x) = \\frac{3}{x-4} \\]\nLet \\( u = 3 \\) and \\( v = x - 4 \\).\nThen \\( u' = 0 \\) and \\( v' = 1 \\)."
+            "workingOut": "\\[ f(x) = \\frac{3x}{x-4} \\]\nLet \\( u = 3x \\) and \\( v = x - 4 \\).\nThen \\( u' = 3 \\) and \\( v' = 1 \\)."
           },
           {
             "explanation": "Apply the quotient rule.",
-            "workingOut": "\\[ f'(x) = \\frac{u'v - uv'}{v^2} \\]\n\\[ f'(x) = \\frac{(0)(x-4) - (3)(1)}{(x-4)^2} \\]\n\\[ f'(x) = -\\frac{3}{(x-4)^2} \\]"
+            "workingOut": "\\[ f'(x) = \\frac{u'v - uv'}{v^2} \\]\n\\[ f'(x) = \\frac{3(x-4) - (3x)(1)}{(x-4)^2} \\]\n\\[ f'(x) = \\frac{3x - 12 - 3x}{(x-4)^2} \\]\n\\[ f'(x) = -\\frac{12}{(x-4)^2} \\]"
           }
         ]
       },
       {
         "id": "y12a-3a-q18b",
         "type": "teacher_review",
-        "question": "b) Explain why \\( f(x) \\) is decreasing for all \\( x \neq 4 \\).",
+        "question": "b) Explain why \\( f(x) \\) is decreasing for all \\( x \\neq 4 \\).",
         "a": "The derivative is \\( f'(x) = \\frac{-12}{(x-4)^2} \\). For all \\( x \neq 4 \\), the denominator \\( (x-4)^2 \\) is strictly positive. Since the numerator is negative (\\( -12 \\)), the quotient \\( f'(x) < 0 \\) for all \\( x \neq 4 \\). Since \\( f'(x) \\) is negative, \\( f(x) \\) is strictly decreasing for all \\( x \neq 4 \\).",
         "solutionSteps": [
           {
             "explanation": "Analyze the sign of the derivative.",
-            "workingOut": "From the previous part, we found:\n\\[ f'(x) = -\\frac{3}{(x-4)^2} \\]"
+            "workingOut": "From the previous part, we found:\n\\[ f'(x) = -\\frac{12}{(x-4)^2} \\]"
           },
           {
             "explanation": "Evaluate the denominator and overall sign.",
-            "workingOut": "For any \\( x \\neq 4 \\), the square \\( (x-4)^2 \\) is strictly positive.\nTherefore, a negative numerator (-3) divided by a positive denominator is strictly negative.\nSince \\( f'(x) < 0 \\) for all \\( x \\neq 4 \\), the function is always decreasing."
+            "workingOut": "For any \\( x \\neq 4 \\), the square \\( (x-4)^2 \\) is strictly positive.\nTherefore, a negative numerator (-12) divided by a positive denominator is strictly negative.\nSince \\( f'(x) < 0 \\) for all \\( x \\neq 4 \\), the function is always decreasing."
           }
         ]
       }
