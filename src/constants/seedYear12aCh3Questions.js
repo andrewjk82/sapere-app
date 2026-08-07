@@ -3299,7 +3299,7 @@ export const Y12A_CH3_QUESTIONS = [
           4,
           -4
         ],
-        "script": "board.suspendUpdate();\nboard.create('line', [[-3.5, 2], [3.5, 2]], {strokeColor: 'blue', strokeWidth: 2});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('functiongraph', [function(x){ return 2; }], {strokeColor: 'blue', strokeWidth: 2});\nboard.unsuspendUpdate();"
       }
     }
   },
