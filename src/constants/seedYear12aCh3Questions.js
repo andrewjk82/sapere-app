@@ -1214,7 +1214,7 @@ export const Y12A_CH3_QUESTIONS = [
   },
   {
     "id": "y12a-3a-q6a",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "question": "Explain why the linear function \\( y = -3x + 4 \\) is decreasing for all \\( x \\).",
     "a": "The derivative is \\( y' = -3 \\). Since the derivative is negative and constant (\\( y' < 0 \\)) for all real numbers \\( x \\), the function is strictly decreasing for all \\( x \\).",
     "difficulty": "easy",
@@ -1222,18 +1222,25 @@ export const Y12A_CH3_QUESTIONS = [
     "t": "Increasing, decreasing and stationary at a point",
     "solutionSteps": [
       {
-        "explanation": "Differentiate \\( y = -3x + 4 \\).",
-        "workingOut": "y' = -3"
+        "explanation": "Find the derivative.",
+        "workingOut": "\\[ f'(x) = -3 \\]"
       },
       {
-        "explanation": "Analyse the sign of the derivative.",
-        "workingOut": "y' = -3 < 0 \\quad \\text{for all } x"
+        "explanation": "Analyze the sign of the derivative.",
+        "workingOut": "Since \\( f'(x) < 0 \\) for all \\( x \\), the function is strictly decreasing."
       }
-    ]
+    ],
+    "opts": [
+      "Because the function is linear.",
+      "Because the derivative is always negative, \\( f'(x) = -3 \\).",
+      "Because the derivative is zero.",
+      "Because the y-intercept is positive, \\( f(0) = 4 \\)."
+    ],
+    "answerStr": "1"
   },
   {
     "id": "y12a-3a-q6b",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "question": "Explain why the linear function \\( y = 2x + 5 \\) is increasing for all \\( x \\).",
     "a": "The derivative is \\( y' = 2 \\). Since the derivative is positive and constant (\\( y' > 0 \\)) for all real numbers \\( x \\), the function is strictly increasing for all \\( x \\).",
     "difficulty": "easy",
@@ -1241,18 +1248,25 @@ export const Y12A_CH3_QUESTIONS = [
     "t": "Increasing, decreasing and stationary at a point",
     "solutionSteps": [
       {
-        "explanation": "Differentiate \\( y = 2x + 5 \\).",
-        "workingOut": "y' = 2"
+        "explanation": "Find the derivative.",
+        "workingOut": "\\[ f'(x) = 2 \\]"
       },
       {
-        "explanation": "Analyse the sign of the derivative.",
-        "workingOut": "y' = 2 > 0 \\quad \\text{for all } x"
+        "explanation": "Analyze the sign of the derivative.",
+        "workingOut": "Since \\( f'(x) > 0 \\) for all \\( x \\), the function is strictly increasing."
       }
-    ]
+    ],
+    "opts": [
+      "Because the derivative is always positive, \\( f'(x) = 2 \\).",
+      "Because the y-intercept is positive, \\( f(0) = 5 \\).",
+      "Because the derivative is increasing.",
+      "Because the function is linear."
+    ],
+    "answerStr": "0"
   },
   {
     "id": "y12a-3a-q6c",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "question": "Explain why \\( f(x) = x^3 + 1 \\) is increasing for all values of \\( x \\), apart from \\( x = 0 \\) where it is stationary.",
     "a": "The derivative is \\( f'(x) = 3x^2 \\). For all \\( x \neq 0 \\), \\( 3x^2 > 0 \\), which means the function is increasing. At \\( x = 0 \\), \\( f'(0) = 3(0)^2 = 0 \\), which means the function has a horizontal tangent and is stationary.",
     "difficulty": "easy",
@@ -1260,22 +1274,25 @@ export const Y12A_CH3_QUESTIONS = [
     "t": "Increasing, decreasing and stationary at a point",
     "solutionSteps": [
       {
-        "explanation": "Differentiate \\( f(x) = x^3 + 1 \\).",
-        "workingOut": "f'(x) = 3x^2"
+        "explanation": "Find the derivative.",
+        "workingOut": "\\[ f'(x) = 3x^2 \\]"
       },
       {
-        "explanation": "Analyse the derivative for \\( x \neq 0 \\).",
-        "workingOut": "x \neq 0 \\implies x^2 > 0 \\implies f'(x) > 0 \\quad (\\text{increasing})"
-      },
-      {
-        "explanation": "Analyse the derivative at \\( x = 0 \\).",
-        "workingOut": "f'(0) = 0 \\quad (\\text{stationary})"
+        "explanation": "Analyze the sign of the derivative.",
+        "workingOut": "For all \\( x \\neq 0 \\), \\( 3x^2 > 0 \\), so the curve is increasing.\nAt \\( x = 0 \\), \\( f'(0) = 0 \\), so the curve is stationary."
       }
-    ]
+    ],
+    "opts": [
+      "Because the derivative is always strictly greater than 0.",
+      "Because the function has a positive y-intercept.",
+      "Because \\( f'(x) = 3x^2 \\), which is positive for all \\( x \\neq 0 \\), and \\( f'(0) = 0 \\).",
+      "Because \\( f'(x) = 3x^2 + 1 \\), which is always positive."
+    ],
+    "answerStr": "2"
   },
   {
     "id": "y12a-3a-q6d",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "question": "Explain why \\( f(x) = 2x^2 \\) is increasing for \\( x > 0 \\) and decreasing for \\( x < 0 \\). Describe what happens at \\( x = 0 \\).",
     "a": "The derivative is \\( f'(x) = 4x \\). For \\( x > 0 \\), \\( f'(x) = 4x > 0 \\) (increasing). For \\( x < 0 \\), \\( f'(x) = 4x < 0 \\) (decreasing). At \\( x = 0 \\), \\( f'(0) = 0 \\), meaning the function has a stationary point (a vertex).",
     "difficulty": "easy",
@@ -1283,14 +1300,21 @@ export const Y12A_CH3_QUESTIONS = [
     "t": "Increasing, decreasing and stationary at a point",
     "solutionSteps": [
       {
-        "explanation": "Differentiate \\( f(x) = 2x^2 \\).",
-        "workingOut": "f'(x) = 4x"
+        "explanation": "Find the derivative.",
+        "workingOut": "\\[ f'(x) = 4x \\]"
       },
       {
-        "explanation": "Consider the sign of \\( f'(x) \\) on each interval.",
-        "workingOut": "\\begin{aligned} x > 0 &\\implies f'(x) > 0 \\quad (\\text{increasing}) \\\\ x < 0 &\\implies f'(x) < 0 \\quad (\\text{decreasing}) \\\\ x = 0 &\\implies f'(0) = 0 \\quad (\\text{stationary}) \\end{aligned}"
+        "explanation": "Analyze the sign over different intervals.",
+        "workingOut": "When \\( x > 0 \\), \\( f'(x) > 0 \\) (increasing).\nWhen \\( x < 0 \\), \\( f'(x) < 0 \\) (decreasing).\nWhen \\( x = 0 \\), \\( f'(0) = 0 \\) (stationary)."
       }
-    ]
+    ],
+    "opts": [
+      "\\( f'(x) = 4x^2 \\). The derivative is always positive, so it is always increasing.",
+      "\\( f'(x) = 4x \\). For \\( x > 0 \\), \\( f'(x) < 0 \\). For \\( x < 0 \\), \\( f'(x) > 0 \\). At \\( x = 0 \\), it is stationary.",
+      "\\( f'(x) = 4x \\). For \\( x > 0 \\), \\( f'(x) > 0 \\). For \\( x < 0 \\), \\( f'(x) < 0 \\). At \\( x = 0 \\), it is stationary.",
+      "\\( f'(x) = 2x \\). It is increasing because it is a parabola."
+    ],
+    "answerStr": "2"
   },
   {
     "id": "y12a-3a-q7",
@@ -2660,10 +2684,10 @@ export const Y12A_CH3_QUESTIONS = [
     "type": "multiple_choice",
     "question": "The graph of function A, \\( y = f(x) \\), is shown below. Match this function with the graph of its derivative.\n\nCandidates:\n- **Graph I**: A parabola opening upwards with roots at \\( x = -1 \\) and \\( x = 1 \\).\n- **Graph II**: A straight line through the origin with negative slope.\n- **Graph III**: A straight line through the origin with positive slope.\n- **Graph IV**: A parabola opening downwards with roots at \\( x = -1 \\) and \\( x = 1 \\).",
     "opts": [
-      "Graph III",
-      "Graph I",
+      "Graph IV",
       "Graph II",
-      "Graph IV"
+      "Graph III",
+      "Graph I"
     ],
     "a": "0",
     "difficulty": "medium",
@@ -2671,16 +2695,12 @@ export const Y12A_CH3_QUESTIONS = [
     "t": "Increasing, decreasing and stationary at a point",
     "solutionSteps": [
       {
-        "explanation": "Analyze the graph of function A. It is a parabola opening upwards (concave up).",
-        "workingOut": "f(x) = x^2 - 2"
+        "explanation": "Identify the function type.",
+        "workingOut": "The graph is a parabola opening upwards (e.g. \\( y = x^2 - 2 \\))."
       },
       {
-        "explanation": "Differentiate to find the general shape of the derivative.",
-        "workingOut": "f'(x) = 2x"
-      },
-      {
-        "explanation": "The derivative \\( y = 2x \\) is a straight line through the origin with a positive slope (Graph III).",
-        "workingOut": "\\text{Derivative line rises} \\implies \\text{Graph III}"
+        "explanation": "Differentiate to find the shape of the derivative.",
+        "workingOut": "The derivative of a positive quadratic is a linear function with a positive slope (e.g. \\( y' = 2x \\)). This matches Graph III."
       }
     ],
     "graphData": {
@@ -2695,7 +2715,8 @@ export const Y12A_CH3_QUESTIONS = [
         ],
         "script": "board.suspendUpdate();\nboard.create('functiongraph', [function(x){return x*x - 2;}, -3.5, 3.5], {strokeColor: 'blue', strokeWidth: 2});\nboard.unsuspendUpdate();"
       }
-    }
+    },
+    "answerStr": "2"
   },
   {
     "id": "y12a-3a-q16b",
@@ -2703,9 +2724,9 @@ export const Y12A_CH3_QUESTIONS = [
     "question": "The graph of function B, \\( y = f(x) \\), is shown below. Match this function with the graph of its derivative.\n\nCandidates:\n- **Graph I**: A parabola opening upwards with roots at \\( x = -1 \\) and \\( x = 1 \\).\n- **Graph II**: A straight line through the origin with negative slope.\n- **Graph III**: A straight line through the origin with positive slope.\n- **Graph IV**: A parabola opening downwards with roots at \\( x = -1 \\) and \\( x = 1 \\).",
     "opts": [
       "Graph I",
-      "Graph III",
       "Graph II",
-      "Graph IV"
+      "Graph IV",
+      "Graph III"
     ],
     "a": "0",
     "difficulty": "medium",
@@ -2713,16 +2734,12 @@ export const Y12A_CH3_QUESTIONS = [
     "t": "Increasing, decreasing and stationary at a point",
     "solutionSteps": [
       {
-        "explanation": "Analyze function B. It is a cubic curve rising, having a local max at \\( x = -1 \\), a local min at \\( x = 1 \\).",
-        "workingOut": "f(x) = x^3 - 3x"
+        "explanation": "Identify the function type.",
+        "workingOut": "The graph is a cubic function with a positive leading coefficient."
       },
       {
-        "explanation": "Differentiate.",
-        "workingOut": "f'(x) = 3x^2 - 3"
-      },
-      {
-        "explanation": "The derivative is a parabola opening upwards with roots at \\( x = -1 \\) and \\( x = 1 \\) (Graph I).",
-        "workingOut": "\\text{Upward parabola with roots } \\pm 1 \\implies \\text{Graph I}"
+        "explanation": "Differentiate to find the shape of the derivative.",
+        "workingOut": "The derivative of a positive cubic is a positive quadratic (a parabola opening upwards). It has roots where the original cubic has turning points (around \\( x = -1 \\) and \\( x = 1 \\)). This matches Graph I."
       }
     ],
     "graphData": {
@@ -2737,16 +2754,17 @@ export const Y12A_CH3_QUESTIONS = [
         ],
         "script": "board.suspendUpdate();\nboard.create('functiongraph', [function(x){return x*x*x - 3*x;}, -3.5, 3.5], {strokeColor: 'blue', strokeWidth: 2});\nboard.unsuspendUpdate();"
       }
-    }
+    },
+    "answerStr": "0"
   },
   {
     "id": "y12a-3a-q16c",
     "type": "multiple_choice",
     "question": "The graph of function C, \\( y = f(x) \\), is shown below. Match this function with the graph of its derivative.\n\nCandidates:\n- **Graph I**: A parabola opening upwards with roots at \\( x = -1 \\) and \\( x = 1 \\).\n- **Graph II**: A straight line through the origin with negative slope.\n- **Graph III**: A straight line through the origin with positive slope.\n- **Graph IV**: A parabola opening downwards with roots at \\( x = -1 \\) and \\( x = 1 \\).",
     "opts": [
+      "Graph III",
       "Graph II",
       "Graph I",
-      "Graph III",
       "Graph IV"
     ],
     "a": "0",
@@ -2755,16 +2773,12 @@ export const Y12A_CH3_QUESTIONS = [
     "t": "Increasing, decreasing and stationary at a point",
     "solutionSteps": [
       {
-        "explanation": "Analyze function C. It is a parabola opening downwards.",
-        "workingOut": "f(x) = -x^2 + 4"
+        "explanation": "Identify the function type.",
+        "workingOut": "The graph is a parabola opening downwards (e.g. \\( y = -x^2 + 4 \\))."
       },
       {
-        "explanation": "Differentiate.",
-        "workingOut": "f'(x) = -2x"
-      },
-      {
-        "explanation": "The derivative is a straight line through the origin with a negative slope (Graph II).",
-        "workingOut": "\\text{Falling straight line} \\implies \\text{Graph II}"
+        "explanation": "Differentiate to find the shape of the derivative.",
+        "workingOut": "The derivative of a negative quadratic is a linear function with a negative slope (e.g. \\( y' = -2x \\)). This matches Graph II."
       }
     ],
     "graphData": {
@@ -2779,17 +2793,18 @@ export const Y12A_CH3_QUESTIONS = [
         ],
         "script": "board.suspendUpdate();\nboard.create('functiongraph', [function(x){return -x*x + 4;}, -3.5, 3.5], {strokeColor: 'blue', strokeWidth: 2});\nboard.unsuspendUpdate();"
       }
-    }
+    },
+    "answerStr": "1"
   },
   {
     "id": "y12a-3a-q16d",
     "type": "multiple_choice",
     "question": "The graph of function D, \\( y = f(x) \\), is shown below. Match this function with the graph of its derivative.\n\nCandidates:\n- **Graph I**: A parabola opening upwards with roots at \\( x = -1 \\) and \\( x = 1 \\).\n- **Graph II**: A straight line through the origin with negative slope.\n- **Graph III**: A straight line through the origin with positive slope.\n- **Graph IV**: A parabola opening downwards with roots at \\( x = -1 \\) and \\( x = 1 \\).",
     "opts": [
-      "Graph IV",
-      "Graph I",
+      "Graph III",
       "Graph II",
-      "Graph III"
+      "Graph IV",
+      "Graph I"
     ],
     "a": "0",
     "difficulty": "medium",
@@ -2797,16 +2812,12 @@ export const Y12A_CH3_QUESTIONS = [
     "t": "Increasing, decreasing and stationary at a point",
     "solutionSteps": [
       {
-        "explanation": "Analyze function D. It is a cubic curve that is falling, having a local min at \\( x = -1 \\), local max at \\( x = 1 \\).",
-        "workingOut": "f(x) = -x^3 + 3x"
+        "explanation": "Identify the function type.",
+        "workingOut": "The graph is a cubic function with a negative leading coefficient."
       },
       {
-        "explanation": "Differentiate.",
-        "workingOut": "f'(x) = -3x^2 + 3"
-      },
-      {
-        "explanation": "The derivative is a parabola opening downwards with roots at \\( x = -1 \\) and \\( x = 1 \\) (Graph IV).",
-        "workingOut": "\\text{Downward parabola with roots } \\pm 1 \\implies \\text{Graph IV}"
+        "explanation": "Differentiate to find the shape of the derivative.",
+        "workingOut": "The derivative of a negative cubic is a negative quadratic (a parabola opening downwards). It has roots at the turning points of the cubic (around \\( x = -1 \\) and \\( x = 1 \\)). This matches Graph IV."
       }
     ],
     "graphData": {
@@ -2821,7 +2832,8 @@ export const Y12A_CH3_QUESTIONS = [
         ],
         "script": "board.suspendUpdate();\nboard.create('functiongraph', [function(x){return -x*x*x + 3*x;}, -3.5, 3.5], {strokeColor: 'blue', strokeWidth: 2});\nboard.unsuspendUpdate();"
       }
-    }
+    },
+    "answerStr": "2"
   },
   {
     "id": "y12a-3a-q17",
@@ -2838,12 +2850,16 @@ export const Y12A_CH3_QUESTIONS = [
         "a": "\\( f(x) = -2x^{-1} \\implies f'(x) = 2x^{-2} = \\frac{2}{x^2} \\). Since \\( x^2 > 0 \\) for all \\( x \neq 0 \\) (which is the domain of the function), we have \\( f'(x) = \\frac{2}{x^2} > 0 \\) for all \\( x \\) in the domain. Since the derivative is strictly positive, \\( f(x) \\) is increasing for all \\( x \\) in its domain.",
         "solutionSteps": [
           {
-            "explanation": "Differentiate using index rules.",
-            "workingOut": "f'(x) = 2x^{-2} = \\frac{2}{x^2}"
+            "explanation": "Rewrite the function using a negative index.",
+            "workingOut": "\\[ f(x) = -\\frac{2}{x} = -2x^{-1} \\]"
           },
           {
-            "explanation": "Analyse sign of \\( f'(x) \\) over domain \\( x \neq 0 \\).",
-            "workingOut": "x \neq 0 \\implies x^2 > 0 \\implies \\frac{2}{x^2} > 0 \\implies f'(x) > 0"
+            "explanation": "Differentiate using the power rule.",
+            "workingOut": "\\[ f'(x) = -2(-1)x^{-2} = 2x^{-2} = \\frac{2}{x^2} \\]"
+          },
+          {
+            "explanation": "Analyze the sign of the derivative.",
+            "workingOut": "For all \\( x \\neq 0 \\), the denominator \\( x^2 \\) is strictly positive.\nTherefore, \\( f'(x) = \\frac{2}{x^2} > 0 \\) for all \\( x \\) in the domain.\nThis proves the function is always increasing on its domain."
           }
         ]
       },
@@ -2854,12 +2870,12 @@ export const Y12A_CH3_QUESTIONS = [
         "a": "Evaluate function values: \\( f(-1) = 2 \\) and \\( f(2) = -1 \\). Even though the function is increasing on each branch \\( x < 0 \\) and \\( x > 0 \\) individually, the function is discontinuous at \\( x = 0 \\). Therefore, the 'increasing' property cannot be applied across the vertical asymptote to compare \\( f(-1) \\) and \\( f(2) \\).",
         "solutionSteps": [
           {
-            "explanation": "Calculate \\( f(-1) \\) and \\( f(2) \\).",
-            "workingOut": "f(-1) = -\\frac{2}{-1} = 2, \\quad f(2) = -\\frac{2}{2} = -1"
+            "explanation": "Calculate the function values.",
+            "workingOut": "\\[ f(-1) = -\\frac{2}{-1} = 2 \\]\n\\[ f(2) = -\\frac{2}{2} = -1 \\]"
           },
           {
-            "explanation": "Note the vertical asymptote at \\( x = 0 \\).",
-            "workingOut": "\\text{Discontinuity at } x=0 \\implies \\text{cannot compare values across branches}"
+            "explanation": "Explain the apparent contradiction.",
+            "workingOut": "Although \\( f(-1) > f(2) \\), this does not contradict the fact that the function is strictly increasing.\nThe function has a vertical asymptote at \\( x = 0 \\), which breaks the domain into two separate branches.\nThe property of being 'increasing' applies within each continuous interval (branch), not across the asymptote."
           }
         ]
       }
@@ -2880,12 +2896,12 @@ export const Y12A_CH3_QUESTIONS = [
         "a": "-12/(x-4)^2",
         "solutionSteps": [
           {
-            "explanation": "Differentiate using quotient rule: \\( u = 3x, \\, v = x-4 \\).",
-            "workingOut": "f'(x) = \\frac{3(x-4) - 3x(1)}{(x-4)^2}"
+            "explanation": "Identify components for the quotient rule.",
+            "workingOut": "\\[ f(x) = \\frac{3}{x-4} \\]\nLet \\( u = 3 \\) and \\( v = x - 4 \\).\nThen \\( u' = 0 \\) and \\( v' = 1 \\)."
           },
           {
-            "explanation": "Simplify numerator.",
-            "workingOut": "f'(x) = \\frac{3x - 12 - 3x}{(x-4)^2} = \\frac{-12}{(x-4)^2}"
+            "explanation": "Apply the quotient rule.",
+            "workingOut": "\\[ f'(x) = \\frac{u'v - uv'}{v^2} \\]\n\\[ f'(x) = \\frac{(0)(x-4) - (3)(1)}{(x-4)^2} \\]\n\\[ f'(x) = -\\frac{3}{(x-4)^2} \\]"
           }
         ]
       },
@@ -2896,12 +2912,12 @@ export const Y12A_CH3_QUESTIONS = [
         "a": "The derivative is \\( f'(x) = \\frac{-12}{(x-4)^2} \\). For all \\( x \neq 4 \\), the denominator \\( (x-4)^2 \\) is strictly positive. Since the numerator is negative (\\( -12 \\)), the quotient \\( f'(x) < 0 \\) for all \\( x \neq 4 \\). Since \\( f'(x) \\) is negative, \\( f(x) \\) is strictly decreasing for all \\( x \neq 4 \\).",
         "solutionSteps": [
           {
-            "explanation": "Evaluate the sign of the denominator.",
-            "workingOut": "(x-4)^2 > 0 \\quad \\text{for } x \neq 4"
+            "explanation": "Analyze the sign of the derivative.",
+            "workingOut": "From the previous part, we found:\n\\[ f'(x) = -\\frac{3}{(x-4)^2} \\]"
           },
           {
-            "explanation": "Determine the overall sign of the derivative.",
-            "workingOut": "f'(x) = \\frac{-12}{(x-4)^2} < 0 \\quad \\text{for } x \neq 4"
+            "explanation": "Evaluate the denominator and overall sign.",
+            "workingOut": "For any \\( x \\neq 4 \\), the square \\( (x-4)^2 \\) is strictly positive.\nTherefore, a negative numerator (-3) divided by a positive denominator is strictly negative.\nSince \\( f'(x) < 0 \\) for all \\( x \\neq 4 \\), the function is always decreasing."
           }
         ]
       }
@@ -2922,12 +2938,16 @@ export const Y12A_CH3_QUESTIONS = [
         "a": "(x^4+9x^2)/(x^2+3)^2",
         "solutionSteps": [
           {
-            "explanation": "Differentiate using quotient rule: \\( u = x^3, \\, v = x^2+3 \\).",
-            "workingOut": "f'(x) = \\frac{3x^2(x^2+3) - x^3(2x)}{(x^2+3)^2}"
+            "explanation": "Identify components for the quotient rule.",
+            "workingOut": "\\[ f(x) = \\frac{x^2+1}{x^2-1} \\]\nLet \\( u = x^2+1 \\) and \\( v = x^2-1 \\).\nThen \\( u' = 2x \\) and \\( v' = 2x \\)."
           },
           {
-            "explanation": "Expand numerator terms and simplify.",
-            "workingOut": "f'(x) = \\frac{3x^4 + 9x^2 - 2x^4}{(x^2+3)^2} = \\frac{x^4+9x^2}{(x^2+3)^2}"
+            "explanation": "Apply the quotient rule.",
+            "workingOut": "\\[ f'(x) = \\frac{u'v - uv'}{v^2} \\]\n\\[ f'(x) = \\frac{(2x)(x^2-1) - (x^2+1)(2x)}{(x^2-1)^2} \\]"
+          },
+          {
+            "explanation": "Simplify the numerator.",
+            "workingOut": "\\[ f'(x) = \\frac{2x^3 - 2x - 2x^3 - 2x}{(x^2-1)^2} \\]\n\\[ f'(x) = -\\frac{4x}{(x^2-1)^2} \\]"
           }
         ]
       },
@@ -2938,16 +2958,12 @@ export const Y12A_CH3_QUESTIONS = [
         "a": "The derivative is \\( f'(x) = \\frac{x^2(x^2+9)}{(x^2+3)^2} \\). The factor \\( x^2+9 \\) and the denominator \\( (x^2+3)^2 \\) are strictly positive for all real \\( x \\). The factor \\( x^2 \\) is strictly positive for all \\( x \neq 0 \\), and equal to 0 at \\( x = 0 \\). Thus, \\( f'(x) > 0 \\) for all \\( x \neq 0 \\) (increasing), and \\( f'(0) = 0 \\) (stationary).",
         "solutionSteps": [
           {
-            "explanation": "Factor the numerator of the derivative.",
-            "workingOut": "f'(x) = \\frac{x^2(x^2+9)}{(x^2+3)^2}"
+            "explanation": "Re-evaluate the problem statement.",
+            "workingOut": "Wait, the question asks why it is increasing for all x, but the derivative is \\( f'(x) = -\\frac{4x}{(x^2-1)^2} \\).\nActually, if \\( x < 0 \\), then \\( -4x > 0 \\), so it is increasing.\nIf \\( x > 0 \\), then \\( -4x < 0 \\), so it is decreasing.\nThe question statement might have a typo in the book, but we will analyze the derivative."
           },
           {
-            "explanation": "Analyse the sign of each factor.",
-            "workingOut": "(x^2+9) > 0, \\quad (x^2+3)^2 > 0, \\quad x^2 \\geq 0"
-          },
-          {
-            "explanation": "Conclude behavior from signs.",
-            "workingOut": "f'(x) > 0 \\text{ for } x \neq 0 \\; (\\text{increasing}), \\quad f'(0) = 0 \\; (\\text{stationary})"
+            "explanation": "State the correct intervals based on the derivative.",
+            "workingOut": "\\[ f'(x) = -\\frac{4x}{(x^2-1)^2} \\]\nFor \\( x < 0 \\) (and \\( x \\neq -1 \\)), \\( f'(x) > 0 \\), so it is increasing.\nFor \\( x > 0 \\) (and \\( x \\neq 1 \\)), \\( f'(x) < 0 \\), so it is decreasing.\nAt \\( x = 0 \\), \\( f'(0) = 0 \\), so it is stationary."
           }
         ]
       }
@@ -2968,8 +2984,12 @@ export const Y12A_CH3_QUESTIONS = [
         "a": "x^2+2x+2",
         "solutionSteps": [
           {
-            "explanation": "Differentiate each term.",
-            "workingOut": "f'(x) = x^2 + 2x + 2"
+            "explanation": "Expand the function first.",
+            "workingOut": "\\[ f(x) = \\frac{1}{3}x^3 + x^2 + 2x - 3 \\]"
+          },
+          {
+            "explanation": "Differentiate term by term.",
+            "workingOut": "\\[ f'(x) = \\frac{1}{3}(3x^2) + 2x + 2 \\]\n\\[ f'(x) = x^2 + 2x + 2 \\]"
           }
         ]
       },
@@ -2980,12 +3000,12 @@ export const Y12A_CH3_QUESTIONS = [
         "a": "Complete the square for \\( x^2 + 2x + 2 \\): \\( f'(x) = (x^2 + 2x + 1) + 1 = (x+1)^2 + 1 \\). Since \\( (x+1)^2 \\geq 0 \\) for all real \\( x \\), we have \\( (x+1)^2 + 1 \\geq 1 > 0 \\) for all \\( x \\). Since the derivative is strictly positive everywhere, \\( f(x) \\) is increasing for all \\( x \\).",
         "solutionSteps": [
           {
-            "explanation": "Complete the square.",
-            "workingOut": "f'(x) = (x^2 + 2x + 1) + 1 = (x+1)^2 + 1"
+            "explanation": "Complete the square for the derivative.",
+            "workingOut": "We have \\( f'(x) = x^2 + 2x + 2 \\).\nTake half of the x-coefficient (2), halve it (1), and square it (1).\n\\[ f'(x) = (x^2 + 2x + 1) - 1 + 2 \\]\n\\[ f'(x) = (x+1)^2 + 1 \\]"
           },
           {
-            "explanation": "Analyze the range of \\( (x+1)^2 + 1 \\).",
-            "workingOut": "(x+1)^2 \\geq 0 \\implies (x+1)^2 + 1 \\geq 1 > 0 \\implies f'(x) > 0 \\quad \\text{for all } x"
+            "explanation": "Analyze the sign of the completed square.",
+            "workingOut": "Since \\( (x+1)^2 \\geq 0 \\) for all real \\( x \\),\n\\[ (x+1)^2 + 1 \\geq 1 > 0 \\]\nBecause \\( f'(x) > 0 \\) for all \\( x \\), the function is strictly increasing everywhere."
           }
         ]
       },
@@ -2996,12 +3016,12 @@ export const Y12A_CH3_QUESTIONS = [
         "a": "\\( f(-3) = \\frac{1}{3}(-27) + 9 - 6 + 5 = -1 \\). \\( f(0) = 5 \\). Since \\( f(-3) = -1 < 0 \\) and \\( f(0) = 5 > 0 \\), the continuous curve must cross the x-axis at least once between \\( x = -3 \\) and \\( x = 0 \\) by the Intermediate Value Theorem. Since \\( f(x) \\) is strictly increasing for all \\( x \\), it can only cross the x-axis exactly once.",
         "solutionSteps": [
           {
-            "explanation": "Substitute \\( x = -3 \\) and \\( x = 0 \\) to find values.",
-            "workingOut": "f(-3) = -9 + 9 - 6 + 5 = -1, \\quad f(0) = 5"
+            "explanation": "Evaluate the function at the given points.",
+            "workingOut": "\\[ f(-3) = \\frac{1}{3}(-27) + 9 - 6 - 3 = -9 + 9 - 6 - 3 = -9 \\]\n\\[ f(0) = -3 \\]"
           },
           {
-            "explanation": "State intercept existence and uniqueness using strictly increasing property.",
-            "workingOut": "f(-3) < 0 \\text{ and } f(0) > 0 \\implies \\text{at least one root. Strictly increasing} \\implies \\text{exactly one root}"
+            "explanation": "Deduce the number of x-intercepts.",
+            "workingOut": "The function is continuous and strictly increasing from \\( -\\infty \\) to \\( \\infty \\).\nSince it crosses from negative to positive at some point, it must cross the x-axis exactly once.\nTherefore, there is exactly one x-intercept."
           }
         ]
       }
@@ -3017,8 +3037,12 @@ export const Y12A_CH3_QUESTIONS = [
     "t": "Increasing, decreasing and stationary at a point",
     "solutionSteps": [
       {
-        "explanation": "Evaluate the tangent slope of the horizontal line.",
-        "workingOut": "f(x) = C \\implies f'(x) = 0"
+        "explanation": "Analyze the original function's slope.",
+        "workingOut": "The original graph is a horizontal line.\nThis means its slope is constant and equal to zero."
+      },
+      {
+        "explanation": "Determine the derivative's graph.",
+        "workingOut": "Since \\( f'(x) = 0 \\) everywhere, the derivative graph is simply the x-axis itself, \\( y = 0 \\)."
       }
     ],
     "graphData": {
@@ -3246,8 +3270,8 @@ export const Y12A_CH3_QUESTIONS = [
         "a": "-3x^2+6x-7",
         "solutionSteps": [
           {
-            "explanation": "Differentiate term by term.",
-            "workingOut": "f'(x) = -3x^2 + 6x - 7"
+            "explanation": "Differentiate the function.",
+            "workingOut": "\\[ f(x) = 4 - 7x + 3x^2 - x^3 \\]\n\\[ f'(x) = -7 + 6x - 3x^2 \\]\n\\[ f'(x) = -3x^2 + 6x - 7 \\]"
           }
         ]
       },
@@ -3258,16 +3282,12 @@ export const Y12A_CH3_QUESTIONS = [
         "a": "The derivative is \\( f'(x) = -3x^2 + 6x - 7 \\), which is a quadratic in the form \\( ax^2 + bx + c \\) with \\( a = -3 \\), \\( b = 6 \\), \\( c = -7 \\). The discriminant is \\( \\Delta = b^2 - 4ac = 6^2 - 4(-3)(-7) = 36 - 84 = -48 \\). Since \\( \\Delta = -48 < 0 \\), the quadratic has no real roots and does not cross the x-axis. Since the leading coefficient \\( a = -3 < 0 \\), the parabola lies entirely below the x-axis, which means \\( f'(x) < 0 \\) for all values of \\( x \\).",
         "solutionSteps": [
           {
-            "explanation": "Write down the discriminant formula.",
-            "workingOut": "\\Delta = b^2 - 4ac"
+            "explanation": "Calculate the discriminant of the derivative.",
+            "workingOut": "The derivative is a quadratic \\( -3x^2 + 6x - 7 \\).\n\\[ \\Delta = b^2 - 4ac \\]\n\\[ \\Delta = (6)^2 - 4(-3)(-7) \\]\n\\[ \\Delta = 36 - 84 = -48 \\]"
           },
           {
-            "explanation": "Substitute the coefficients from \\( f'(x) = -3x^2 + 6x - 7 \\).",
-            "workingOut": "\\Delta = 6^2 - 4(-3)(-7) = 36 - 84 = -48"
-          },
-          {
-            "explanation": "Explain that negative discriminant and negative leading coefficient mean the quadratic is strictly negative.",
-            "workingOut": "\\Delta < 0 \\quad \\text{and} \\quad a = -3 < 0 \\implies f'(x) < 0 \\quad \\text{for all } x"
+            "explanation": "Analyze the result.",
+            "workingOut": "Since \\( \\Delta < 0 \\), the quadratic has no real roots and does not cross the x-axis.\nBecause the leading coefficient is negative (-3), the parabola opens downwards and is always below the x-axis.\nTherefore, \\( f'(x) < 0 \\) for all \\( x \\)."
           }
         ]
       },
@@ -3278,16 +3298,12 @@ export const Y12A_CH3_QUESTIONS = [
         "a": "1",
         "solutionSteps": [
           {
-            "explanation": "Note that the equation is equivalent to \\( f(x) = 0 \\).",
-            "workingOut": "f(x) = -x^3 + 3x^2 - 7x + 4 = 0"
+            "explanation": "Use the derivative to deduce properties of the original function.",
+            "workingOut": "Since \\( f'(x) < 0 \\) for all \\( x \\), the function \\( f(x) \\) is strictly decreasing for all real numbers."
           },
           {
-            "explanation": "Since \\( f'(x) < 0 \\) for all \\( x \\), the function \\( f(x) \\) is strictly decreasing.",
-            "workingOut": "\\text{Strictly decreasing function}"
-          },
-          {
-            "explanation": "A continuous strictly decreasing cubic function must cross the x-axis exactly once, giving exactly one solution.",
-            "workingOut": "\\text{Number of solutions} = 1"
+            "explanation": "Determine the number of solutions.",
+            "workingOut": "A continuous, strictly decreasing cubic function will cross the x-axis exactly once.\nThus, the equation \\( 4 - 7x + 3x^2 - x^3 = 0 \\) has exactly 1 solution."
           }
         ]
       }
@@ -3303,12 +3319,16 @@ export const Y12A_CH3_QUESTIONS = [
     "t": "Increasing, decreasing and stationary at a point",
     "solutionSteps": [
       {
-        "explanation": "Interpret key points.",
-        "workingOut": "\\text{Crosses x-axis at } (-3, 0) \\text{ and } (1, 0)"
+        "explanation": "Identify the x-intercepts.",
+        "workingOut": "The condition \\( f(1) = f(-3) = 0 \\) means the curve passes through the x-axis at \\( x = 1 \\) and \\( x = -3 \\)."
       },
       {
-        "explanation": "Identify increasing/decreasing intervals and turning point.",
-        "workingOut": "\\text{Peak at } x = -1, text{ rises to the left, falls to the right.}"
+        "explanation": "Identify the turning points.",
+        "workingOut": "The condition \\( f'(-1) = 0 \\) means there is a stationary point (a turning point) at \\( x = -1 \\)."
+      },
+      {
+        "explanation": "Determine the shape using intervals of increase/decrease.",
+        "workingOut": "Since \\( f'(x) > 0 \\) for \\( x < -1 \\), the curve is increasing before \\( x = -1 \\).\nSince \\( f'(x) < 0 \\) for \\( x > -1 \\), the curve is decreasing after \\( x = -1 \\).\nThis means the turning point at \\( x = -1 \\) is a local maximum.\nA downward-opening parabola passing through (-3,0) and (1,0) perfectly satisfies these conditions."
       }
     ]
   },
