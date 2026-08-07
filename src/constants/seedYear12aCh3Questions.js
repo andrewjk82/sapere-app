@@ -3017,8 +3017,7 @@ export const Y12A_CH3_QUESTIONS = [
       {
         "id": "y12a-3a-q17a",
         "type": "multiple_choice",
-        "question": "a) Find \\( f'(x) \\), and hence prove that \\( f(x) \\) increases for all \\( x \\) in its domain.",
-        "a": "\\( f(x) = -2x^{-1} \\implies f'(x) = 2x^{-2} = \\frac{2}{x^2} \\). Since \\( x^2 > 0 \\) for all \\( x \neq 0 \\) (which is the domain of the function), we have \\( f'(x) = \\frac{2}{x^2} > 0 \\) for all \\( x \\) in the domain. Since the derivative is strictly positive, \\( f(x) \\) is increasing for all \\( x \\) in its domain.",
+        "question": "a) Find the derivative \\( f'(x) \\).",
         "solutionSteps": [
           {
             "explanation": "Rewrite the function using a negative index.",
@@ -3027,43 +3026,76 @@ export const Y12A_CH3_QUESTIONS = [
           {
             "explanation": "Differentiate using the power rule.",
             "workingOut": "\\[ f'(x) = -2(-1)x^{-2} = 2x^{-2} = \\frac{2}{x^2} \\]"
+          }
+        ],
+        "opts": [
+          "\\( -\\frac{2}{x^2} \\)",
+          "\\( \\frac{2}{x^2} \\)",
+          "\\( \\frac{2}{x} \\)",
+          "\\( -\\frac{2}{x} \\)"
+        ],
+        "options": [
+          {
+            "text": "\\( -\\frac{2}{x^2} \\)",
+            "imageUrl": ""
           },
+          {
+            "text": "\\( \\frac{2}{x^2} \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( \\frac{2}{x} \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( -\\frac{2}{x} \\)",
+            "imageUrl": ""
+          }
+        ],
+        "answerStr": "1",
+        "answer": "1"
+      },
+      {
+        "id": "y12a-3a-q17b",
+        "type": "multiple_choice",
+        "question": "b) Hence, prove that \\( f(x) \\) increases for all \\( x \\) in its domain.",
+        "solutionSteps": [
           {
             "explanation": "Analyze the sign of the derivative.",
             "workingOut": "For all \\( x \\neq 0 \\), the denominator \\( x^2 \\) is strictly positive.\nTherefore, \\( f'(x) = \\frac{2}{x^2} > 0 \\) for all \\( x \\) in the domain.\nSince the derivative is always positive, the function is always increasing on its domain."
           }
         ],
         "opts": [
-          "\\( f'(x) = -\\frac{2}{x} < 0 \\) for all \\( x \\neq 0 \\).",
-          "\\( f'(x) = \\frac{2}{x^2} > 0 \\) for all \\( x \\neq 0 \\).",
-          "\\( f'(x) = -\\frac{2}{x^2} < 0 \\) for all \\( x \\neq 0 \\).",
-          "\\( f'(x) = \\frac{2}{x} > 0 \\) for all \\( x \\neq 0 \\)."
+          "Because \\( f'(x) = -\\frac{2}{x} < 0 \\) for all \\( x \\neq 0 \\).",
+          "Because \\( f'(x) = \\frac{2}{x} > 0 \\) for all \\( x \\neq 0 \\).",
+          "Because \\( f'(x) = \\frac{2}{x^2} > 0 \\) for all \\( x \\neq 0 \\).",
+          "Because \\( f'(x) = -\\frac{2}{x^2} < 0 \\) for all \\( x \\neq 0 \\)."
         ],
-        "answerStr": "1",
         "options": [
           {
-            "text": "\\( f'(x) = -\\frac{2}{x} < 0 \\) for all \\( x \\neq 0 \\).",
+            "text": "Because \\( f'(x) = -\\frac{2}{x} < 0 \\) for all \\( x \\neq 0 \\).",
             "imageUrl": ""
           },
           {
-            "text": "\\( f'(x) = \\frac{2}{x^2} > 0 \\) for all \\( x \\neq 0 \\).",
+            "text": "Because \\( f'(x) = \\frac{2}{x} > 0 \\) for all \\( x \\neq 0 \\).",
             "imageUrl": ""
           },
           {
-            "text": "\\( f'(x) = -\\frac{2}{x^2} < 0 \\) for all \\( x \\neq 0 \\).",
+            "text": "Because \\( f'(x) = \\frac{2}{x^2} > 0 \\) for all \\( x \\neq 0 \\).",
             "imageUrl": ""
           },
           {
-            "text": "\\( f'(x) = \\frac{2}{x} > 0 \\) for all \\( x \\neq 0 \\).",
+            "text": "Because \\( f'(x) = -\\frac{2}{x^2} < 0 \\) for all \\( x \\neq 0 \\).",
             "imageUrl": ""
           }
         ],
-        "answer": "1"
+        "answerStr": "2",
+        "answer": "2"
       },
       {
-        "id": "y12a-3a-q17b",
+        "id": "y12a-3a-q17c",
         "type": "multiple_choice",
-        "question": "b) Sketch a graph of \\( f(x) = -\\frac{2}{x} \\), and explain why \\( f(-1) > f(2) \\) despite this fact.",
+        "question": "c) Sketch a graph of \\( f(x) = -\\frac{2}{x} \\), and explain why \\( f(-1) > f(2) \\) despite this fact.",
         "a": "Evaluate function values: \\( f(-1) = 2 \\) and \\( f(2) = -1 \\). Even though the function is increasing on each branch \\( x < 0 \\) and \\( x > 0 \\) individually, the function is discontinuous at \\( x = 0 \\). Therefore, the 'increasing' property cannot be applied across the vertical asymptote to compare \\( f(-1) \\) and \\( f(2) \\).",
         "solutionSteps": [
           {
