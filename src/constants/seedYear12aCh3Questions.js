@@ -2845,7 +2845,7 @@ export const Y12A_CH3_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y12a-3a-q17a",
-        "type": "teacher_review",
+        "type": "multiple_choice",
         "question": "a) Find \\( f'(x) \\), and hence prove that \\( f(x) \\) increases for all \\( x \\) in its domain.",
         "a": "\\( f(x) = -2x^{-1} \\implies f'(x) = 2x^{-2} = \\frac{2}{x^2} \\). Since \\( x^2 > 0 \\) for all \\( x \neq 0 \\) (which is the domain of the function), we have \\( f'(x) = \\frac{2}{x^2} > 0 \\) for all \\( x \\) in the domain. Since the derivative is strictly positive, \\( f(x) \\) is increasing for all \\( x \\) in its domain.",
         "solutionSteps": [
@@ -2859,13 +2859,20 @@ export const Y12A_CH3_QUESTIONS = [
           },
           {
             "explanation": "Analyze the sign of the derivative.",
-            "workingOut": "For all \\( x \\neq 0 \\), the denominator \\( x^2 \\) is strictly positive.\nTherefore, \\( f'(x) = \\frac{2}{x^2} > 0 \\) for all \\( x \\) in the domain.\nThis proves the function is always increasing on its domain."
+            "workingOut": "For all \\( x \\neq 0 \\), the denominator \\( x^2 \\) is strictly positive.\nTherefore, \\( f'(x) = \\frac{2}{x^2} > 0 \\) for all \\( x \\) in the domain.\nSince the derivative is always positive, the function is always increasing on its domain."
           }
-        ]
+        ],
+        "opts": [
+          "\\( f'(x) = -\\frac{2}{x} < 0 \\) for all \\( x \\neq 0 \\).",
+          "\\( f'(x) = \\frac{2}{x^2} > 0 \\) for all \\( x \\neq 0 \\).",
+          "\\( f'(x) = -\\frac{2}{x^2} < 0 \\) for all \\( x \\neq 0 \\).",
+          "\\( f'(x) = \\frac{2}{x} > 0 \\) for all \\( x \\neq 0 \\)."
+        ],
+        "answerStr": "1"
       },
       {
         "id": "y12a-3a-q17b",
-        "type": "teacher_review",
+        "type": "multiple_choice",
         "question": "b) Sketch a graph of \\( f(x) = -\\frac{2}{x} \\), and explain why \\( f(-1) > f(2) \\) despite this fact.",
         "a": "Evaluate function values: \\( f(-1) = 2 \\) and \\( f(2) = -1 \\). Even though the function is increasing on each branch \\( x < 0 \\) and \\( x > 0 \\) individually, the function is discontinuous at \\( x = 0 \\). Therefore, the 'increasing' property cannot be applied across the vertical asymptote to compare \\( f(-1) \\) and \\( f(2) \\).",
         "solutionSteps": [
@@ -2877,7 +2884,14 @@ export const Y12A_CH3_QUESTIONS = [
             "explanation": "Explain the apparent contradiction.",
             "workingOut": "Although \\( f(-1) > f(2) \\), this does not contradict the fact that the function is strictly increasing.\nThe function has a vertical asymptote at \\( x = 0 \\), which breaks the domain into two separate branches.\nThe property of being 'increasing' applies within each continuous interval (branch), not across the asymptote."
           }
-        ]
+        ],
+        "opts": [
+          "Because \\( f(-1) \\) is positive and \\( f(2) \\) is negative.",
+          "Because the function is actually decreasing overall.",
+          "Because there is a vertical asymptote at \\( x = 0 \\) separating the two branches.",
+          "Because the function is only increasing for \\( x > 0 \\)."
+        ],
+        "answerStr": "2"
       }
     ]
   },
