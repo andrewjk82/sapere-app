@@ -2682,7 +2682,7 @@ export const Y12A_CH3_QUESTIONS = [
   {
     "id": "y12a-3a-q16a",
     "type": "multiple_choice",
-    "question": "The graph of function A, \\( y = f(x) \\), is shown below. Match this function with the graph of its derivative.\n\nCandidates:\n- **Graph I**: A parabola opening upwards with roots at \\( x = -1 \\) and \\( x = 1 \\).\n- **Graph II**: A straight line through the origin with negative slope.\n- **Graph III**: A straight line through the origin with positive slope.\n- **Graph IV**: A parabola opening downwards with roots at \\( x = -1 \\) and \\( x = 1 \\).",
+    "question": "The graph of function A, \\( y = f(x) \\), is shown below. Match this function with the graph of its derivative.\n\nCandidates:\nGraph I: A parabola opening upwards with roots at \\( x = -1 \\) and \\( x = 1 \\).\nGraph II: A straight line through the origin with negative slope.\nGraph III: A straight line through the origin with positive slope.\nGraph IV: A parabola opening downwards with roots at \\( x = -1 \\) and \\( x = 1 \\).",
     "opts": [
       "Graph IV",
       "Graph II",
@@ -2721,7 +2721,7 @@ export const Y12A_CH3_QUESTIONS = [
   {
     "id": "y12a-3a-q16b",
     "type": "multiple_choice",
-    "question": "The graph of function B, \\( y = f(x) \\), is shown below. Match this function with the graph of its derivative.\n\nCandidates:\n- **Graph I**: A parabola opening upwards with roots at \\( x = -1 \\) and \\( x = 1 \\).\n- **Graph II**: A straight line through the origin with negative slope.\n- **Graph III**: A straight line through the origin with positive slope.\n- **Graph IV**: A parabola opening downwards with roots at \\( x = -1 \\) and \\( x = 1 \\).",
+    "question": "The graph of function B, \\( y = f(x) \\), is shown below. Match this function with the graph of its derivative.\n\nCandidates:\nGraph I: A parabola opening upwards with roots at \\( x = -1 \\) and \\( x = 1 \\).\nGraph II: A straight line through the origin with negative slope.\nGraph III: A straight line through the origin with positive slope.\nGraph IV: A parabola opening downwards with roots at \\( x = -1 \\) and \\( x = 1 \\).",
     "opts": [
       "Graph I",
       "Graph II",
@@ -2760,7 +2760,7 @@ export const Y12A_CH3_QUESTIONS = [
   {
     "id": "y12a-3a-q16c",
     "type": "multiple_choice",
-    "question": "The graph of function C, \\( y = f(x) \\), is shown below. Match this function with the graph of its derivative.\n\nCandidates:\n- **Graph I**: A parabola opening upwards with roots at \\( x = -1 \\) and \\( x = 1 \\).\n- **Graph II**: A straight line through the origin with negative slope.\n- **Graph III**: A straight line through the origin with positive slope.\n- **Graph IV**: A parabola opening downwards with roots at \\( x = -1 \\) and \\( x = 1 \\).",
+    "question": "The graph of function C, \\( y = f(x) \\), is shown below. Match this function with the graph of its derivative.\n\nCandidates:\nGraph I: A parabola opening upwards with roots at \\( x = -1 \\) and \\( x = 1 \\).\nGraph II: A straight line through the origin with negative slope.\nGraph III: A straight line through the origin with positive slope.\nGraph IV: A parabola opening downwards with roots at \\( x = -1 \\) and \\( x = 1 \\).",
     "opts": [
       "Graph III",
       "Graph II",
@@ -2799,7 +2799,7 @@ export const Y12A_CH3_QUESTIONS = [
   {
     "id": "y12a-3a-q16d",
     "type": "multiple_choice",
-    "question": "The graph of function D, \\( y = f(x) \\), is shown below. Match this function with the graph of its derivative.\n\nCandidates:\n- **Graph I**: A parabola opening upwards with roots at \\( x = -1 \\) and \\( x = 1 \\).\n- **Graph II**: A straight line through the origin with negative slope.\n- **Graph III**: A straight line through the origin with positive slope.\n- **Graph IV**: A parabola opening downwards with roots at \\( x = -1 \\) and \\( x = 1 \\).",
+    "question": "The graph of function D, \\( y = f(x) \\), is shown below. Match this function with the graph of its derivative.\n\nCandidates:\nGraph I: A parabola opening upwards with roots at \\( x = -1 \\) and \\( x = 1 \\).\nGraph II: A straight line through the origin with negative slope.\nGraph III: A straight line through the origin with positive slope.\nGraph IV: A parabola opening downwards with roots at \\( x = -1 \\) and \\( x = 1 \\).",
     "opts": [
       "Graph III",
       "Graph II",
