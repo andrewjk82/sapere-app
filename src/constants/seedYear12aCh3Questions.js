@@ -3744,21 +3744,45 @@ export const Y12A_CH3_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y12a-3a-q22a",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "a) Find the derivative \\( f'(x) \\).",
-        "a": "-3x^2+6x-7",
         "solutionSteps": [
           {
             "explanation": "Differentiate the function.",
             "workingOut": "\\[ f(x) = 4 - 7x + 3x^2 - x^3 \\]\n\\[ f'(x) = -7 + 6x - 3x^2 \\]\n\\[ f'(x) = -3x^2 + 6x - 7 \\]"
           }
-        ]
+        ],
+        "opts": [
+          "\\( 3x^2+6x+7 \\)",
+          "\\( -3x^2+6x-7 \\)",
+          "\\( -3x^2+6x+7 \\)",
+          "\\( -3x^2-6x-7 \\)"
+        ],
+        "options": [
+          {
+            "text": "\\( 3x^2+6x+7 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( -3x^2+6x-7 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( -3x^2+6x+7 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( -3x^2-6x-7 \\)",
+            "imageUrl": ""
+          }
+        ],
+        "answerStr": "1",
+        "answer": "1"
       },
       {
         "id": "y12a-3a-q22b",
-        "type": "teacher_review",
-        "question": "b) By evaluating the discriminant \\( \\Delta \\), show that \\( f'(x) < 0 \\) for all values of \\( x \\).",
-        "a": "The derivative is \\( f'(x) = -3x^2 + 6x - 7 \\), which is a quadratic in the form \\( ax^2 + bx + c \\) with \\( a = -3 \\), \\( b = 6 \\), \\( c = -7 \\). The discriminant is \\( \\Delta = b^2 - 4ac = 6^2 - 4(-3)(-7) = 36 - 84 = -48 \\). Since \\( \\Delta = -48 < 0 \\), the quadratic has no real roots and does not cross the x-axis. Since the leading coefficient \\( a = -3 < 0 \\), the parabola lies entirely below the x-axis, which means \\( f'(x) < 0 \\) for all values of \\( x \\).",
+        "type": "multiple_choice",
+        "question": "b) By evaluating the discriminant \\( \\Delta \\), explain why \\( f'(x) < 0 \\) for all values of \\( x \\).",
         "solutionSteps": [
           {
             "explanation": "Calculate the discriminant of the derivative.",
@@ -3768,13 +3792,38 @@ export const Y12A_CH3_QUESTIONS = [
             "explanation": "Analyze the result.",
             "workingOut": "Since \\( \\Delta < 0 \\), the quadratic has no real roots and does not cross the x-axis.\nBecause the leading coefficient is negative (-3), the parabola opens downwards and is always below the x-axis.\nTherefore, \\( f'(x) < 0 \\) for all \\( x \\)."
           }
-        ]
+        ],
+        "opts": [
+          "Because \\( \\Delta = -48 < 0 \\), the parabola \\( f'(x) \\) has no real roots. Since \\( a = -3 < 0 \\), it is entirely below the x-axis.",
+          "Because \\( \\Delta = 48 > 0 \\), the parabola \\( f'(x) \\) has two roots, but both are negative.",
+          "Because \\( \\Delta = -48 < 0 \\), the parabola \\( f'(x) \\) has no real roots. Since \\( a = -3 < 0 \\), it is entirely above the x-axis.",
+          "Because \\( \\Delta = -48 < 0 \\), the parabola \\( f'(x) \\) has no real roots. Since it is a cubic, it must be negative."
+        ],
+        "options": [
+          {
+            "text": "Because \\( \\Delta = -48 < 0 \\), the parabola \\( f'(x) \\) has no real roots. Since \\( a = -3 < 0 \\), it is entirely below the x-axis.",
+            "imageUrl": ""
+          },
+          {
+            "text": "Because \\( \\Delta = 48 > 0 \\), the parabola \\( f'(x) \\) has two roots, but both are negative.",
+            "imageUrl": ""
+          },
+          {
+            "text": "Because \\( \\Delta = -48 < 0 \\), the parabola \\( f'(x) \\) has no real roots. Since \\( a = -3 < 0 \\), it is entirely above the x-axis.",
+            "imageUrl": ""
+          },
+          {
+            "text": "Because \\( \\Delta = -48 < 0 \\), the parabola \\( f'(x) \\) has no real roots. Since it is a cubic, it must be negative.",
+            "imageUrl": ""
+          }
+        ],
+        "answerStr": "0",
+        "answer": "0"
       },
       {
         "id": "y12a-3a-q22c",
-        "type": "short_answer",
-        "question": "c) Hence deduce the number of solutions of the equation \\( 4 - 7x + 3x^2 - x^3 = 0 \\).",
-        "a": "1",
+        "type": "multiple_choice",
+        "question": "c) Hence deduce the number of solutions to the equation \\( -x^3 + 3x^2 - 7x + 4 = 0 \\).",
         "solutionSteps": [
           {
             "explanation": "Use the derivative to deduce properties of the original function.",
@@ -3784,7 +3833,33 @@ export const Y12A_CH3_QUESTIONS = [
             "explanation": "Determine the number of solutions.",
             "workingOut": "A continuous, strictly decreasing cubic function will cross the x-axis exactly once.\nThus, the equation \\( 4 - 7x + 3x^2 - x^3 = 0 \\) has exactly 1 solution."
           }
-        ]
+        ],
+        "opts": [
+          "Exactly 1, because the function is strictly decreasing for all real numbers.",
+          "0, because the discriminant of the derivative is negative.",
+          "Exactly 2, because the derivative is a quadratic equation.",
+          "Exactly 3, because the equation is a cubic equation."
+        ],
+        "options": [
+          {
+            "text": "Exactly 1, because the function is strictly decreasing for all real numbers.",
+            "imageUrl": ""
+          },
+          {
+            "text": "0, because the discriminant of the derivative is negative.",
+            "imageUrl": ""
+          },
+          {
+            "text": "Exactly 2, because the derivative is a quadratic equation.",
+            "imageUrl": ""
+          },
+          {
+            "text": "Exactly 3, because the equation is a cubic equation.",
+            "imageUrl": ""
+          }
+        ],
+        "answerStr": "0",
+        "answer": "0"
       }
     ]
   },
