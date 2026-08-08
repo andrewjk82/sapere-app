@@ -2879,7 +2879,7 @@ export const Y12A_CH3D_QUESTIONS = [
             "workingOut": "\\text{Since } y' > 0 \\text{ everywhere, the function is strictly increasing.}"
           },
           {
-            "explanation": "Combine this with the fact that cubic functions are continuous and have range } (-\\infty, \\infty) \\text{.",
+            "explanation": "Combine this with the fact that cubic functions are continuous and have a range of \\( (-\\infty, \\infty) \\).",
             "workingOut": "\\text{A continuous, strictly increasing curve that goes from } -\\infty \\text{ to } \\infty \\text{ must cross the x-axis exactly once.}"
           }
         ],
