@@ -1038,16 +1038,16 @@ export const Y12A_CH3C_QUESTIONS = [
     "t": "Second and higher derivatives",
     "solutionSteps": [
       {
-        "explanation": "Write the function using a negative index.",
+        "explanation": "Rewrite the function using a negative index to apply the power rule.",
         "workingOut": "f(x) = x^{-4}"
       },
       {
-        "explanation": "Find the first derivative.",
-        "workingOut": "f'(x) = -4x^{-5} = -\\frac{4}{x^5}"
+        "explanation": "Apply the power rule to find the first derivative.",
+        "workingOut": "\\begin{aligned} f'(x) &= -4x^{-4-1} \\\\ &= -4x^{-5} \\\\ &= -\\frac{4}{x^5} \\end{aligned}"
       },
       {
-        "explanation": "Find the second derivative.",
-        "workingOut": "f''(x) = 20x^{-6} = \\frac{20}{x^6}"
+        "explanation": "Apply the power rule to the first derivative to find the second derivative.",
+        "workingOut": "\\begin{aligned} f''(x) &= -4 \\times (-5)x^{-5-1} \\\\ &= 20x^{-6} \\\\ &= \\frac{20}{x^6} \\end{aligned}"
       }
     ],
     "opts": [
@@ -1087,16 +1087,16 @@ export const Y12A_CH3C_QUESTIONS = [
     "t": "Second and higher derivatives",
     "solutionSteps": [
       {
-        "explanation": "Rewrite function.",
+        "explanation": "Rewrite the function using a negative index.",
         "workingOut": "f(x) = x^{-5}"
       },
       {
-        "explanation": "Find first derivative.",
-        "workingOut": "f'(x) = -5x^{-6} = -\\frac{5}{x^6}"
+        "explanation": "Apply the power rule to find the first derivative.",
+        "workingOut": "\\begin{aligned} f'(x) &= -5x^{-5-1} \\\\ &= -5x^{-6} \\\\ &= -\\frac{5}{x^6} \\end{aligned}"
       },
       {
-        "explanation": "Find second derivative.",
-        "workingOut": "f''(x) = 30x^{-7} = \\frac{30}{x^7}"
+        "explanation": "Apply the power rule again for the second derivative.",
+        "workingOut": "\\begin{aligned} f''(x) &= -5 \\times (-6)x^{-6-1} \\\\ &= 30x^{-7} \\\\ &= \\frac{30}{x^7} \\end{aligned}"
       }
     ],
     "opts": [
@@ -1136,16 +1136,16 @@ export const Y12A_CH3C_QUESTIONS = [
     "t": "Second and higher derivatives",
     "solutionSteps": [
       {
-        "explanation": "Rewrite function.",
+        "explanation": "Rewrite the function using a negative index.",
         "workingOut": "f(x) = 4x^{-3}"
       },
       {
-        "explanation": "Find first derivative.",
-        "workingOut": "f'(x) = -12x^{-4} = -\\frac{12}{x^4}"
+        "explanation": "Apply the power rule to find the first derivative.",
+        "workingOut": "\\begin{aligned} f'(x) &= 4 \\times (-3)x^{-3-1} \\\\ &= -12x^{-4} \\\\ &= -\\frac{12}{x^4} \\end{aligned}"
       },
       {
-        "explanation": "Find second derivative.",
-        "workingOut": "f''(x) = 48x^{-5} = \\frac{48}{x^5}"
+        "explanation": "Apply the power rule again for the second derivative.",
+        "workingOut": "\\begin{aligned} f''(x) &= -12 \\times (-4)x^{-4-1} \\\\ &= 48x^{-5} \\\\ &= \\frac{48}{x^5} \\end{aligned}"
       }
     ],
     "opts": [
@@ -1185,16 +1185,16 @@ export const Y12A_CH3C_QUESTIONS = [
     "t": "Second and higher derivatives",
     "solutionSteps": [
       {
-        "explanation": "Rewrite function.",
+        "explanation": "Rewrite the function using a negative index.",
         "workingOut": "f(x) = 5x^{-2}"
       },
       {
-        "explanation": "Find first derivative.",
-        "workingOut": "f'(x) = -10x^{-3} = -\\frac{10}{x^3}"
+        "explanation": "Apply the power rule to find the first derivative.",
+        "workingOut": "\\begin{aligned} f'(x) &= 5 \\times (-2)x^{-2-1} \\\\ &= -10x^{-3} \\\\ &= -\\frac{10}{x^3} \\end{aligned}"
       },
       {
-        "explanation": "Find second derivative.",
-        "workingOut": "f''(x) = 30x^{-4} = \\frac{30}{x^4}"
+        "explanation": "Apply the power rule again for the second derivative.",
+        "workingOut": "\\begin{aligned} f''(x) &= -10 \\times (-3)x^{-3-1} \\\\ &= 30x^{-4} \\\\ &= \\frac{30}{x^4} \\end{aligned}"
       }
     ],
     "opts": [
@@ -1234,12 +1234,12 @@ export const Y12A_CH3C_QUESTIONS = [
     "t": "Second and higher derivatives",
     "solutionSteps": [
       {
-        "explanation": "Apply the chain rule to find the first derivative.",
-        "workingOut": "y' = 3(x+2)^2 \\times \\frac{d}{dx}[x+2] = 3(x+2)^2"
+        "explanation": "Apply the chain rule to find the first derivative. Multiply by the derivative of the inner function.",
+        "workingOut": "\\begin{aligned} y' &= 3(x+2)^{3-1} \\times \\frac{d}{dx}[x+2] \\\\ &= 3(x+2)^2 \\times 1 \\\\ &= 3(x+2)^2 \\end{aligned}"
       },
       {
-        "explanation": "Differentiate again to find the second derivative.",
-        "workingOut": "y'' = 6(x+2)"
+        "explanation": "Apply the chain rule again to find the second derivative.",
+        "workingOut": "\\begin{aligned} y'' &= 3 \\times 2(x+2)^{2-1} \\times \\frac{d}{dx}[x+2] \\\\ &= 6(x+2)^1 \\times 1 \\\\ &= 6(x+2) \\end{aligned}"
       }
     ],
     "opts": [
@@ -1280,11 +1280,11 @@ export const Y12A_CH3C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Apply the chain rule to find the first derivative.",
-        "workingOut": "y' = 4(2x-3)^3 \\times 2 = 8(2x-3)^3"
+        "workingOut": "\\begin{aligned} y' &= 4(2x-3)^{4-1} \\times \\frac{d}{dx}[2x-3] \\\\ &= 4(2x-3)^3 \\times 2 \\\\ &= 8(2x-3)^3 \\end{aligned}"
       },
       {
         "explanation": "Apply the chain rule again to find the second derivative.",
-        "workingOut": "y'' = 8 \\times 3(2x-3)^2 \\times 2 = 48(2x-3)^2"
+        "workingOut": "\\begin{aligned} y'' &= 8 \\times 3(2x-3)^{3-1} \\times \\frac{d}{dx}[2x-3] \\\\ &= 24(2x-3)^2 \\times 2 \\\\ &= 48(2x-3)^2 \\end{aligned}"
       }
     ],
     "opts": [
@@ -1324,12 +1324,12 @@ export const Y12A_CH3C_QUESTIONS = [
     "t": "Second and higher derivatives",
     "solutionSteps": [
       {
-        "explanation": "Find first derivative using the chain rule.",
-        "workingOut": "y' = 3(1-3x)^2 \\times (-3) = -9(1-3x)^2"
+        "explanation": "Apply the chain rule to find the first derivative. Pay attention to the negative sign in the inner derivative.",
+        "workingOut": "\\begin{aligned} y' &= 3(1-3x)^{3-1} \\times \\frac{d}{dx}[1-3x] \\\\ &= 3(1-3x)^2 \\times (-3) \\\\ &= -9(1-3x)^2 \\end{aligned}"
       },
       {
-        "explanation": "Find second derivative.",
-        "workingOut": "y'' = -9 \\times 2(1-3x) \\times (-3) = 54(1-3x)"
+        "explanation": "Apply the chain rule again to find the second derivative.",
+        "workingOut": "\\begin{aligned} y'' &= -9 \\times 2(1-3x)^{2-1} \\times \\frac{d}{dx}[1-3x] \\\\ &= -18(1-3x)^1 \\times (-3) \\\\ &= 54(1-3x) \\end{aligned}"
       }
     ],
     "opts": [
@@ -1369,12 +1369,12 @@ export const Y12A_CH3C_QUESTIONS = [
     "t": "Second and higher derivatives",
     "solutionSteps": [
       {
-        "explanation": "Find the first derivative.",
-        "workingOut": "y' = 8(5-x)^7 \\times (-1) = -8(5-x)^7"
+        "explanation": "Apply the chain rule to find the first derivative.",
+        "workingOut": "\\begin{aligned} y' &= 8(5-x)^{8-1} \\times \\frac{d}{dx}[5-x] \\\\ &= 8(5-x)^7 \\times (-1) \\\\ &= -8(5-x)^7 \\end{aligned}"
       },
       {
-        "explanation": "Find the second derivative.",
-        "workingOut": "y'' = -8 \\times 7(5-x)^6 \\times (-1) = 56(5-x)^6"
+        "explanation": "Apply the chain rule again to find the second derivative.",
+        "workingOut": "\\begin{aligned} y'' &= -8 \\times 7(5-x)^{7-1} \\times \\frac{d}{dx}[5-x] \\\\ &= -56(5-x)^6 \\times (-1) \\\\ &= 56(5-x)^6 \\end{aligned}"
       }
     ],
     "opts": [
@@ -1414,16 +1414,16 @@ export const Y12A_CH3C_QUESTIONS = [
     "t": "Second and higher derivatives",
     "solutionSteps": [
       {
-        "explanation": "Rewrite the function.",
+        "explanation": "Rewrite the function using a negative index so that we can use the chain rule.",
         "workingOut": "y = (x + 3)^{-1}"
       },
       {
-        "explanation": "Find the first derivative.",
-        "workingOut": "y' = -(x + 3)^{-2} = -\\frac{1}{(x + 3)^2}"
+        "explanation": "Apply the chain rule to find the first derivative.",
+        "workingOut": "\\begin{aligned} y' &= -1(x+3)^{-1-1} \\times \\frac{d}{dx}[x+3] \\\\ &= -1(x+3)^{-2} \\times 1 \\\\ &= -(x+3)^{-2} \\\\ &= -\\frac{1}{(x+3)^2} \\end{aligned}"
       },
       {
-        "explanation": "Find the second derivative.",
-        "workingOut": "y'' = 2(x + 3)^{-3} = \\frac{2}{(x + 3)^3}"
+        "explanation": "Apply the chain rule again to find the second derivative.",
+        "workingOut": "\\begin{aligned} y'' &= -1 \\times (-2)(x+3)^{-2-1} \\times \\frac{d}{dx}[x+3] \\\\ &= 2(x+3)^{-3} \\times 1 \\\\ &= 2(x+3)^{-3} \\\\ &= \\frac{2}{(x+3)^3} \\end{aligned}"
       }
     ],
     "opts": [
@@ -1463,16 +1463,16 @@ export const Y12A_CH3C_QUESTIONS = [
     "t": "Second and higher derivatives",
     "solutionSteps": [
       {
-        "explanation": "Rewrite the function.",
+        "explanation": "Rewrite the function using a negative index.",
         "workingOut": "y = (2 - x)^{-3}"
       },
       {
-        "explanation": "Find the first derivative using the chain rule.",
-        "workingOut": "y' = -3(2-x)^{-4} \\times (-1) = 3(2-x)^{-4} = \\frac{3}{(2-x)^4}"
+        "explanation": "Apply the chain rule to find the first derivative.",
+        "workingOut": "\\begin{aligned} y' &= -3(2-x)^{-3-1} \\times \\frac{d}{dx}[2-x] \\\\ &= -3(2-x)^{-4} \\times (-1) \\\\ &= 3(2-x)^{-4} \\\\ &= \\frac{3}{(2-x)^4} \\end{aligned}"
       },
       {
-        "explanation": "Find the second derivative.",
-        "workingOut": "y'' = 3 \\times (-4)(2-x)^{-5} \\times (-1) = 12(2-x)^{-5} = \\frac{12}{(2-x)^5}"
+        "explanation": "Apply the chain rule again to find the second derivative.",
+        "workingOut": "\\begin{aligned} y'' &= 3 \\times (-4)(2-x)^{-4-1} \\times \\frac{d}{dx}[2-x] \\\\ &= -12(2-x)^{-5} \\times (-1) \\\\ &= 12(2-x)^{-5} \\\\ &= \\frac{12}{(2-x)^5} \\end{aligned}"
       }
     ],
     "opts": [
