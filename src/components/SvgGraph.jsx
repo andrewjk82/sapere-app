@@ -431,6 +431,19 @@ const SvgGraph = ({ data }) => {
   const hasX = arrows.some(isXAxis) || hasCurves;
   const hasY = arrows.some(isYAxis) || hasCurves;
   const dy = yMax - yMin;
+  const dx = xMax - xMin;
+  
+  const getStep = (range) => {
+    if (range <= 12) return 1;
+    if (range <= 30) return 2;
+    if (range <= 60) return 5;
+    if (range <= 120) return 10;
+    if (range <= 300) return 20;
+    return 50;
+  };
+  const stepX = getStep(dx);
+  const stepY = getStep(dy);
+
   const showLabels = data.showAxisLabels !== false && dy >= 3;
   // Explicit showGrid wins; otherwise only draw grid when axes are present
   // (function plots). Geometry-only diagrams (segments, no arrows) stay clean.
@@ -557,11 +570,11 @@ const SvgGraph = ({ data }) => {
         </defs>
 
         {/* ── Grid ── */}
-        {showGrid && range(Math.ceil(xMin), Math.floor(xMax)).map(x => (
+        {showGrid && range(xMin, xMax, stepX).map(x => (
           <line key={`gx${x}`} x1={toX(x)} y1={pad} x2={toX(x)} y2={H - pad}
             stroke={x === 0 ? C.gridMajor : C.grid} strokeWidth={0.8} />
         ))}
-        {showGrid && range(Math.ceil(yMin), Math.floor(yMax)).map(y => (
+        {showGrid && range(yMin, yMax, stepY).map(y => (
           <line key={`gy${y}`} x1={pad} y1={toY(y)} x2={W - pad} y2={toY(y)}
             stroke={y === 0 ? C.gridMajor : C.grid} strokeWidth={0.8} />
         ))}
@@ -580,7 +593,7 @@ const SvgGraph = ({ data }) => {
         )}
 
         {/* ── Tick marks ── */}
-        {hasX && range(Math.ceil(xMin), Math.floor(xMax)).filter(x => x !== 0).map(x => (
+        {hasX && range(xMin, xMax, stepX).filter(x => x !== 0).map(x => (
           <g key={`tx${x}`}>
             <line x1={toX(x)} y1={toY(0) - 3} x2={toX(x)} y2={toY(0) + 3}
               stroke={C.axis} strokeWidth={0.8} />
@@ -588,7 +601,7 @@ const SvgGraph = ({ data }) => {
               fontSize={11} fontWeight={500} fontFamily={FONT} textAnchor="middle">{x}</text>
           </g>
         ))}
-        {hasY && range(Math.ceil(yMin), Math.floor(yMax)).filter(y => y !== 0).map(y => (
+        {hasY && range(yMin, yMax, stepY).filter(y => y !== 0).map(y => (
           <g key={`ty${y}`}>
             <line x1={toX(0) - 3} y1={toY(y)} x2={toX(0) + 3} y2={toY(y)}
               stroke={C.axis} strokeWidth={0.8} />
@@ -765,9 +778,10 @@ const SvgGraph = ({ data }) => {
 
 /* ── Helpers ── */
 const FONT = '"Outfit","Inter",sans-serif';
-const range = (from, to) => {
+const range = (from, to, step = 1) => {
   const arr = [];
-  for (let i = from; i <= to; i++) arr.push(i);
+  const start = Math.ceil(from / step) * step;
+  for (let i = start; i <= to; i += step) arr.push(i);
   return arr;
 };
 
