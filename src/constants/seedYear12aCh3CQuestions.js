@@ -2489,16 +2489,16 @@ export const Y12A_CH3C_QUESTIONS = [
     "t": "Second and higher derivatives",
     "solutionSteps": [
       {
-        "explanation": "Find the first derivative.",
-        "workingOut": "y' = \\frac{1(x+2) - x(1)}{(x+2)^2} = \\frac{2}{(x+2)^2}"
+        "explanation": "Apply the quotient rule to find the first derivative. Let \\( u = x \\) and \\( v = x + 2 \\).",
+        "workingOut": "\\begin{aligned} u' &= 1, \\quad v' = 1 \\\\ y' &= \\frac{u'v - uv'}{v^2} \\\\ &= \\frac{1(x+2) - x(1)}{(x+2)^2} \\\\ &= \\frac{x + 2 - x}{(x+2)^2} \\\\ &= \\frac{2}{(x+2)^2} \\end{aligned}"
       },
       {
-        "explanation": "Find the first derivative.",
+        "explanation": "Rewrite the first derivative with a negative index to prepare for the second derivative.",
         "workingOut": "y' = 2(x + 2)^{-2}"
       },
       {
-        "explanation": "Differentiate the first derivative to find the second derivative.",
-        "workingOut": "y'' = -4(x+2)^{-3} = -\\frac{4}{(x+2)^3}"
+        "explanation": "Apply the chain rule to find the second derivative.",
+        "workingOut": "\\begin{aligned} y'' &= 2 \\times (-2)(x + 2)^{-3} \\times \\frac{d}{dx}[x + 2] \\\\ &= -4(x + 2)^{-3} \\times 1 \\\\ &= -\\frac{4}{(x+2)^3} \\end{aligned}"
       }
     ],
     "opts": [
@@ -2538,16 +2538,16 @@ export const Y12A_CH3C_QUESTIONS = [
     "t": "Second and higher derivatives",
     "solutionSteps": [
       {
-        "explanation": "Find the first derivative.",
-        "workingOut": "y' = \\frac{1(3x+4) - (x-2)(3)}{(3x+4)^2} = \\frac{3x+4 - 3x+6}{(3x+4)^2} = \\frac{10}{(3x+4)^2}"
+        "explanation": "Apply the quotient rule to find the first derivative. Let \\( u = x - 2 \\) and \\( v = 3x + 4 \\).",
+        "workingOut": "\\begin{aligned} u' &= 1, \\quad v' = 3 \\\\ y' &= \\frac{u'v - uv'}{v^2} \\\\ &= \\frac{1(3x+4) - (x-2)(3)}{(3x+4)^2} \\\\ &= \\frac{3x + 4 - 3x + 6}{(3x+4)^2} \\\\ &= \\frac{10}{(3x+4)^2} \\end{aligned}"
       },
       {
-        "explanation": "Find the first derivative.",
+        "explanation": "Rewrite the first derivative with a negative index.",
         "workingOut": "y' = 10(3x + 4)^{-2}"
       },
       {
-        "explanation": "Differentiate the first derivative to find the second derivative.",
-        "workingOut": "y'' = 10 \\times (-2)(3x+4)^{-3} \\times 3 = -60(3x+4)^{-3} = -\\frac{60}{(3x+4)^3}"
+        "explanation": "Apply the chain rule to find the second derivative.",
+        "workingOut": "\\begin{aligned} y'' &= 10 \\times (-2)(3x + 4)^{-3} \\times \\frac{d}{dx}[3x + 4] \\\\ &= -20(3x + 4)^{-3} \\times 3 \\\\ &= -60(3x + 4)^{-3} \\\\ &= -\\frac{60}{(3x+4)^3} \\end{aligned}"
       }
     ],
     "opts": [
@@ -2587,12 +2587,12 @@ export const Y12A_CH3C_QUESTIONS = [
     "t": "Second and higher derivatives",
     "solutionSteps": [
       {
-        "explanation": "Differentiate \\( f(x) = x(x - 2)^4 \\) using the product rule: \\( u = x, v = (x-2)^4 \\).",
-        "workingOut": "f'(x) = 1(x-2)^4 + x \\cdot 4(x-2)^3 = (x-2)^3 [ (x-2) + 4x ] = (5x - 2)(x-2)^3"
+        "explanation": "Apply the product rule to find \\( f'(x) \\). Let \\( u = x \\) and \\( v = (x - 2)^4 \\).",
+        "workingOut": "\\begin{aligned} u' &= 1, \\quad v' = 4(x - 2)^3 \\times 1 = 4(x - 2)^3 \\\\ f'(x) &= u'v + uv' \\\\ &= 1(x - 2)^4 + x \\cdot 4(x - 2)^3 \\\\ &= (x - 2)^3 [ (x - 2) + 4x ] \\\\ &= (x - 2)^3 (5x - 2) \\end{aligned}"
       },
       {
-        "explanation": "Differentiate \\( f'(x) \\) using the product rule: \\( u = 5x-2, v = (x-2)^3 \\).",
-        "workingOut": "\\begin{aligned} f''(x) &= 5(x-2)^3 + (5x-2) \\cdot 3(x-2)^2 \\\\ &= (x-2)^2 [ 5(x-2) + 3(5x-2) ] \\\\ &= (x-2)^2 [ 5x - 10 + 15x - 6 ] \\\\ &= (20x - 16)(x-2)^2 = 4(5x - 4)(x-2)^2 \\end{aligned}"
+        "explanation": "Apply the product rule again to find \\( f''(x) \\). Let \\( u = 5x - 2 \\) and \\( v = (x - 2)^3 \\).",
+        "workingOut": "\\begin{aligned} u' &= 5, \\quad v' = 3(x - 2)^2 \\times 1 = 3(x - 2)^2 \\\\ f''(x) &= u'v + uv' \\\\ &= 5(x - 2)^3 + (5x - 2) \\cdot 3(x - 2)^2 \\\\ &= (x - 2)^2 [ 5(x - 2) + 3(5x - 2) ] \\\\ &= (x - 2)^2 [ 5x - 10 + 15x - 6 ] \\\\ &= (x - 2)^2 (20x - 16) \\\\ &= 4(5x - 4)(x - 2)^2 \\end{aligned}"
       }
     ],
     "opts": [
