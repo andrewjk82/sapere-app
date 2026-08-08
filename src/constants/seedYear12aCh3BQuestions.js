@@ -750,10 +750,10 @@ export const Y12A_CH3B_QUESTIONS = [
   },
   {
     "id": "y12a-3b-q4a",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Differentiate \\( f(x) = x^2 - 2x - 8 \\) and show that there is a stationary point at \\( x = 1 \\). Then use a table of test values of \\( f'(x) \\) to determine the nature of the stationary point at \\( x = 1 \\).",
+    "question": "Differentiate \\( f(x) = x^3 - 3x^2 + 4 \\) and show that there is a stationary point at \\( x = 0 \\). Then use a table of test values of \\( f'(x) \\) to determine the nature of the stationary point at \\( x = 0 \\).",
     "a": "Minimum turning point at x = 1.",
     "t": "Stationary points and turning points",
     "solutionSteps": [
@@ -773,14 +773,35 @@ export const Y12A_CH3B_QUESTIONS = [
         "explanation": "Conclude the nature based on signs.",
         "workingOut": "\\text{Slope changes } - \\rightarrow 0 \\rightarrow + \\implies \\text{Minimum}"
       }
-    ]
+    ],
+    "opts": [
+      "Horizontal point of inflection",
+      "Maximum turning point",
+      "Minimum turning point"
+    ],
+    "options": [
+      {
+        "text": "Horizontal point of inflection",
+        "imageUrl": ""
+      },
+      {
+        "text": "Maximum turning point",
+        "imageUrl": ""
+      },
+      {
+        "text": "Minimum turning point",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
+    "answerStr": "1"
   },
   {
     "id": "y12a-3b-q4b",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Differentiate \\( f(x) = 8 + 2x - x^2 \\) and show that there is a stationary point at \\( x = 1 \\). Then use a table of test values of \\( f'(x) \\) to determine the nature of the stationary point at \\( x = 1 \\).",
+    "question": "Differentiate \\( f(x) = 2x - x^2 \\) and show that there is a stationary point at \\( x = 1 \\). Then use a table of test values of \\( f'(x) \\) to determine the nature of the stationary point at \\( x = 1 \\).",
     "a": "Maximum turning point at x = 1.",
     "t": "Stationary points and turning points",
     "solutionSteps": [
@@ -800,11 +821,32 @@ export const Y12A_CH3B_QUESTIONS = [
         "explanation": "Determine the nature.",
         "workingOut": "\\text{Slope changes } + \\rightarrow 0 \\rightarrow - \\implies \\text{Maximum}"
       }
-    ]
+    ],
+    "opts": [
+      "Maximum turning point",
+      "Horizontal point of inflection",
+      "Minimum turning point"
+    ],
+    "options": [
+      {
+        "text": "Maximum turning point",
+        "imageUrl": ""
+      },
+      {
+        "text": "Horizontal point of inflection",
+        "imageUrl": ""
+      },
+      {
+        "text": "Minimum turning point",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "answerStr": "0"
   },
   {
     "id": "y12a-3b-q4c",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
     "question": "Differentiate \\( f(x) = 2x^3 + 3x^2 - 12x + 5 \\) and show that there is a stationary point at \\( x = 1 \\). Then use a table of test values of \\( f'(x) \\) to determine the nature of the stationary point at \\( x = 1 \\).",
@@ -827,11 +869,32 @@ export const Y12A_CH3B_QUESTIONS = [
         "explanation": "Determine the nature of the stationary point.",
         "workingOut": "\\text{Slope changes from negative to zero to positive } \\implies \\text{Minimum}"
       }
-    ]
+    ],
+    "opts": [
+      "Horizontal point of inflection",
+      "Minimum turning point",
+      "Maximum turning point"
+    ],
+    "options": [
+      {
+        "text": "Horizontal point of inflection",
+        "imageUrl": ""
+      },
+      {
+        "text": "Minimum turning point",
+        "imageUrl": ""
+      },
+      {
+        "text": "Maximum turning point",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
+    "answerStr": "1"
   },
   {
     "id": "y12a-3b-q4d",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
     "question": "Differentiate \\( f(x) = x^3 - 3x^2 + 3x + 5 \\) and show that there is a stationary point at \\( x = 1 \\). Then use a table of test values of \\( f'(x) \\) to determine the nature of the stationary point at \\( x = 1 \\).",
@@ -854,14 +917,35 @@ export const Y12A_CH3B_QUESTIONS = [
         "explanation": "Deduce nature: slope remains positive on both sides of the zero tangent.",
         "workingOut": "\\text{Slope changes } + \\rightarrow 0 \\rightarrow + \\implies \\text{Stationary point of inflection}"
       }
-    ]
+    ],
+    "opts": [
+      "Minimum turning point",
+      "Horizontal point of inflection",
+      "Maximum turning point"
+    ],
+    "options": [
+      {
+        "text": "Minimum turning point",
+        "imageUrl": ""
+      },
+      {
+        "text": "Horizontal point of inflection",
+        "imageUrl": ""
+      },
+      {
+        "text": "Maximum turning point",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
+    "answerStr": "1"
   },
   {
     "id": "y12a-3b-q5a",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Find the stationary point of \\( y = x^2 + 6x - 7 \\) and use a table of test values of \\( \\frac{dy}{dx} \\) to determine its nature. Sketch the graph, showing all intercepts with the coordinate axes.",
+    "question": "Find the stationary point of \\( y = x^2 + 6x - 7 \\) and determine its nature. Also, identify the \\( x \\) and \\( y \\)-intercepts.",
     "a": "Minimum turning point at (-3, -16). Intercepts: (1, 0), (-7, 0), and (0, -7).",
     "t": "Stationary points and turning points",
     "solutionSteps": [
@@ -879,29 +963,55 @@ export const Y12A_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Find axes intercepts.",
-        "workingOut": "\\begin{aligned} x\\text{-intercepts: } &x^2 + 6x - 7 = 0 \\implies (x-1)(x+7) = 0 \\implies x = 1, -7 \\\\ y\\text{-intercept: } &y(0) = -7 \\end{aligned}"
+        "workingOut": "\\begin{aligned} x\\text{-intercepts: } &x^2 + 6x - 7 = 0 \\implies (x-1)(x+7) = 0 \\implies x = 1, -7 \\\\ y\\text{-intercept: } &y(0) = -7 \\end{aligned}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 350,
+            "height": 250,
+            "boundingbox": [
+              -9,
+              10,
+              3,
+              -18
+            ],
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-8.5,0], [2.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-17.5], [0,9.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [2.3, -0.5, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 9.2, 'y'], {fontSize: 14});\nvar f = function(x) { return x*x + 6*x - 7; };\nboard.create('functiongraph', [f, -8.2, 2.2], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [-3, -16], {name: 'V(-3,-16)', size: 3, color: 'red', label: {autoPosition: false, offset: [-15, -15]}});\nboard.create('point', [1, 0], {name: '1', size: 2, color: 'black', label: {autoPosition: false, offset: [-5, 10]}});\nboard.create('point', [-7, 0], {name: '-7', size: 2, color: 'black', label: {autoPosition: false, offset: [-5, 10]}});\nboard.create('point', [0, -7], {name: '-7', size: 2, color: 'black', label: {autoPosition: false, offset: [-15, 0]}});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 350,
-        "height": 250,
-        "boundingbox": [
-          -9,
-          10,
-          3,
-          -18
-        ],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-8.5,0], [2.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-17.5], [0,9.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [2.3, -0.5, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 9.2, 'y'], {fontSize: 14});\nvar f = function(x) { return x*x + 6*x - 7; };\nboard.create('functiongraph', [f, -8.2, 2.2], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [-3, -16], {name: 'V(-3,-16)', size: 3, color: 'red', label: {autoPosition: false, offset: [-15, -15]}});\nboard.create('point', [1, 0], {name: '1', size: 2, color: 'black', label: {autoPosition: false, offset: [-5, 10]}});\nboard.create('point', [-7, 0], {name: '-7', size: 2, color: 'black', label: {autoPosition: false, offset: [-5, 10]}});\nboard.create('point', [0, -7], {name: '-7', size: 2, color: 'black', label: {autoPosition: false, offset: [-15, 0]}});\nboard.unsuspendUpdate();"
+    "opts": [
+      "Minimum at \\( (3, 20) \\). Intercepts: \\( (1, 0) \\), \\( (-7, 0) \\), \\( (0, 7) \\)",
+      "Maximum at \\( (-3, -16) \\). Intercepts: \\( (1, 0) \\), \\( (-7, 0) \\), \\( (0, -7) \\)",
+      "Maximum at \\( (3, 20) \\). Intercepts: \\( (1, 0) \\), \\( (-7, 0) \\), \\( (0, 7) \\)",
+      "Minimum at \\( (-3, -16) \\). Intercepts: \\( (1, 0) \\), \\( (-7, 0) \\), \\( (0, -7) \\)"
+    ],
+    "options": [
+      {
+        "text": "Minimum at \\( (3, 20) \\). Intercepts: \\( (1, 0) \\), \\( (-7, 0) \\), \\( (0, 7) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Maximum at \\( (-3, -16) \\). Intercepts: \\( (1, 0) \\), \\( (-7, 0) \\), \\( (0, -7) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Maximum at \\( (3, 20) \\). Intercepts: \\( (1, 0) \\), \\( (-7, 0) \\), \\( (0, 7) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Minimum at \\( (-3, -16) \\). Intercepts: \\( (1, 0) \\), \\( (-7, 0) \\), \\( (0, -7) \\)",
+        "imageUrl": ""
       }
-    }
+    ],
+    "answer": "3",
+    "answerStr": "3"
   },
   {
     "id": "y12a-3b-q5b",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Find the stationary point of \\( y = 7 - 6x - x^2 \\) and use a table of test values of \\( \\frac{dy}{dx} \\) to determine its nature. Sketch the graph, showing all intercepts with the coordinate axes.",
+    "question": "Find the stationary point of \\( y = 7 - 6x - x^2 \\) and determine its nature. Also, identify the \\( x \\) and \\( y \\)-intercepts.",
     "a": "Maximum turning point at (-3, 16). Intercepts: (1, 0), (-7, 0), and (0, 7).",
     "t": "Stationary points and turning points",
     "solutionSteps": [
@@ -919,22 +1029,48 @@ export const Y12A_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Find axes intercepts.",
-        "workingOut": "\\begin{aligned} x\\text{-intercepts: } &7 - 6x - x^2 = 0 \\implies (1-x)(7+x) = 0 \\implies x = 1, -7 \\\\ y\\text{-intercept: } &y(0) = 7 \\end{aligned}"
+        "workingOut": "\\begin{aligned} x\\text{-intercepts: } &7 - 6x - x^2 = 0 \\implies (1-x)(7+x) = 0 \\implies x = 1, -7 \\\\ y\\text{-intercept: } &y(0) = 7 \\end{aligned}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 350,
+            "height": 250,
+            "boundingbox": [
+              -9,
+              20,
+              3,
+              -8
+            ],
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-8.5,0], [2.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-7.5], [0,19.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [2.3, -0.5, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 19.2, 'y'], {fontSize: 14});\nvar f = function(x) { return 7 - 6*x - x*x; };\nboard.create('functiongraph', [f, -8.2, 2.2], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [-3, 16], {name: 'V(-3,16)', size: 3, color: 'red', label: {autoPosition: false, offset: [-15, 15]}});\nboard.create('point', [1, 0], {name: '1', size: 2, color: 'black', label: {autoPosition: false, offset: [-5, -10]}});\nboard.create('point', [-7, 0], {name: '-7', size: 2, color: 'black', label: {autoPosition: false, offset: [-5, -10]}});\nboard.create('point', [0, 7], {name: '7', size: 2, color: 'black', label: {autoPosition: false, offset: [-15, 0]}});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 350,
-        "height": 250,
-        "boundingbox": [
-          -9,
-          20,
-          3,
-          -8
-        ],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-8.5,0], [2.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-7.5], [0,19.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [2.3, -0.5, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 19.2, 'y'], {fontSize: 14});\nvar f = function(x) { return 7 - 6*x - x*x; };\nboard.create('functiongraph', [f, -8.2, 2.2], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [-3, 16], {name: 'V(-3,16)', size: 3, color: 'red', label: {autoPosition: false, offset: [-15, 15]}});\nboard.create('point', [1, 0], {name: '1', size: 2, color: 'black', label: {autoPosition: false, offset: [-5, -10]}});\nboard.create('point', [-7, 0], {name: '-7', size: 2, color: 'black', label: {autoPosition: false, offset: [-5, -10]}});\nboard.create('point', [0, 7], {name: '7', size: 2, color: 'black', label: {autoPosition: false, offset: [-15, 0]}});\nboard.unsuspendUpdate();"
+    "opts": [
+      "Maximum at \\( (3, -20) \\). Intercepts: \\( (-1, 0) \\), \\( (7, 0) \\), \\( (0, 7) \\)",
+      "Minimum at \\( (3, -20) \\). Intercepts: \\( (-1, 0) \\), \\( (7, 0) \\), \\( (0, 7) \\)",
+      "Minimum at \\( (-3, 16) \\). Intercepts: \\( (1, 0) \\), \\( (-7, 0) \\), \\( (0, 7) \\)",
+      "Maximum at \\( (-3, 16) \\). Intercepts: \\( (1, 0) \\), \\( (-7, 0) \\), \\( (0, 7) \\)"
+    ],
+    "options": [
+      {
+        "text": "Maximum at \\( (3, -20) \\). Intercepts: \\( (-1, 0) \\), \\( (7, 0) \\), \\( (0, 7) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Minimum at \\( (3, -20) \\). Intercepts: \\( (-1, 0) \\), \\( (7, 0) \\), \\( (0, 7) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Minimum at \\( (-3, 16) \\). Intercepts: \\( (1, 0) \\), \\( (-7, 0) \\), \\( (0, 7) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Maximum at \\( (-3, 16) \\). Intercepts: \\( (1, 0) \\), \\( (-7, 0) \\), \\( (0, 7) \\)",
+        "imageUrl": ""
       }
-    }
+    ],
+    "answer": "3",
+    "answerStr": "3"
   },
   {
     "id": "y12a-3b-q6",
