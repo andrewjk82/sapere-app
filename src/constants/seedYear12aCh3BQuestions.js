@@ -967,14 +967,14 @@ export const Y12A_CH3B_QUESTIONS = [
         "type": "multiple_choice",
         "question": "a) What is the derivative \\( \\frac{dy}{dx} \\) of \\( y = x^2(x - 6)^2 \\) using the product rule?",
         "opts": [
-          "\\( 4x(x - 6)(x - 3) \\)",
-          "\\( 2x(x - 6)^2 \\)",
           "\\( 4x(x - 6) \\)",
+          "\\( 2x(x - 6)^2 \\)",
+          "\\( 4x(x - 6)(x - 3) \\)",
           "\\( 2x(x - 6)(2x - 3) \\)"
         ],
         "options": [
           {
-            "text": "\\( 4x(x - 6)(x - 3) \\)",
+            "text": "\\( 4x(x - 6) \\)",
             "imageUrl": ""
           },
           {
@@ -982,7 +982,7 @@ export const Y12A_CH3B_QUESTIONS = [
             "imageUrl": ""
           },
           {
-            "text": "\\( 4x(x - 6) \\)",
+            "text": "\\( 4x(x - 6)(x - 3) \\)",
             "imageUrl": ""
           },
           {
@@ -990,8 +990,8 @@ export const Y12A_CH3B_QUESTIONS = [
             "imageUrl": ""
           }
         ],
-        "answerStr": "0",
-        "answer": "0",
+        "answerStr": "2",
+        "answer": "2",
         "solutionSteps": [
           {
             "explanation": "Let \\( y = uv \\) where \\( u = x^2 \\) and \\( v = (x-6)^2 \\).",
@@ -1008,31 +1008,31 @@ export const Y12A_CH3B_QUESTIONS = [
         "type": "multiple_choice",
         "question": "b) Which of the following correctly classifies the stationary points of the function?",
         "opts": [
-          "Local minima at \\((0, 0)\\) and \\((6, 0)\\), local maximum at \\((3, 81)\\)",
-          "Local maxima at \\((0, 0)\\) and \\((6, 0)\\), local minimum at \\((3, -81)\\)",
           "Local minimum at \\((0, 0)\\), local maximum at \\((6, 0)\\)",
-          "Local minimum at \\((3, 81)\\) only"
+          "Local minima at \\((0, 0)\\) and \\((6, 0)\\), local maximum at \\((3, 81)\\)",
+          "Local minimum at \\((3, 81)\\) only",
+          "Local maxima at \\((0, 0)\\) and \\((6, 0)\\), local minimum at \\((3, -81)\\)"
         ],
         "options": [
-          {
-            "text": "Local minima at \\((0, 0)\\) and \\((6, 0)\\), local maximum at \\((3, 81)\\)",
-            "imageUrl": ""
-          },
-          {
-            "text": "Local maxima at \\((0, 0)\\) and \\((6, 0)\\), local minimum at \\((3, -81)\\)",
-            "imageUrl": ""
-          },
           {
             "text": "Local minimum at \\((0, 0)\\), local maximum at \\((6, 0)\\)",
             "imageUrl": ""
           },
           {
+            "text": "Local minima at \\((0, 0)\\) and \\((6, 0)\\), local maximum at \\((3, 81)\\)",
+            "imageUrl": ""
+          },
+          {
             "text": "Local minimum at \\((3, 81)\\) only",
+            "imageUrl": ""
+          },
+          {
+            "text": "Local maxima at \\((0, 0)\\) and \\((6, 0)\\), local minimum at \\((3, -81)\\)",
             "imageUrl": ""
           }
         ],
-        "answerStr": "0",
-        "answer": "0",
+        "answerStr": "1",
+        "answer": "1",
         "solutionSteps": [
           {
             "explanation": "Set the first derivative to zero to find the \\(x\\)-coordinates of the stationary points.",
@@ -1144,14 +1144,14 @@ export const Y12A_CH3B_QUESTIONS = [
         "type": "multiple_choice",
         "question": "a) What is the derivative \\( y' \\) of \\( y = (x - 3)^2(2x + 3) \\) using the product rule?",
         "opts": [
-          "\\( 6x(x - 3) \\)",
+          "\\( 6(x - 3)^2 \\)",
           "\\( 2x(x - 3)(2x + 3) \\)",
           "\\( 4x(x - 3) \\)",
-          "\\( 6(x - 3)^2 \\)"
+          "\\( 6x(x - 3) \\)"
         ],
         "options": [
           {
-            "text": "\\( 6x(x - 3) \\)",
+            "text": "\\( 6(x - 3)^2 \\)",
             "imageUrl": ""
           },
           {
@@ -1163,12 +1163,12 @@ export const Y12A_CH3B_QUESTIONS = [
             "imageUrl": ""
           },
           {
-            "text": "\\( 6(x - 3)^2 \\)",
+            "text": "\\( 6x(x - 3) \\)",
             "imageUrl": ""
           }
         ],
-        "answerStr": "0",
-        "answer": "0",
+        "answerStr": "3",
+        "answer": "3",
         "solutionSteps": [
           {
             "explanation": "Let \\( y = uv \\) where \\( u = (x-3)^2 \\) and \\( v = (2x+3) \\).",
@@ -1185,16 +1185,12 @@ export const Y12A_CH3B_QUESTIONS = [
         "type": "multiple_choice",
         "question": "b) Which of the following correctly classifies the stationary points of the function?",
         "opts": [
-          "Local maximum at \\((0, 27)\\), local minimum at \\((3, 0)\\)",
           "Local minimum at \\((0, 27)\\), local maximum at \\((3, 0)\\)",
           "Local maxima at \\((0, 27)\\) and \\((3, 0)\\)",
+          "Local maximum at \\((0, 27)\\), local minimum at \\((3, 0)\\)",
           "Local minima at \\((0, 27)\\) and \\((3, 0)\\)"
         ],
         "options": [
-          {
-            "text": "Local maximum at \\((0, 27)\\), local minimum at \\((3, 0)\\)",
-            "imageUrl": ""
-          },
           {
             "text": "Local minimum at \\((0, 27)\\), local maximum at \\((3, 0)\\)",
             "imageUrl": ""
@@ -1204,12 +1200,16 @@ export const Y12A_CH3B_QUESTIONS = [
             "imageUrl": ""
           },
           {
+            "text": "Local maximum at \\((0, 27)\\), local minimum at \\((3, 0)\\)",
+            "imageUrl": ""
+          },
+          {
             "text": "Local minima at \\((0, 27)\\) and \\((3, 0)\\)",
             "imageUrl": ""
           }
         ],
-        "answerStr": "0",
-        "answer": "0",
+        "answerStr": "2",
+        "answer": "2",
         "solutionSteps": [
           {
             "explanation": "Set the first derivative to zero to find the \\(x\\)-coordinates of the stationary points.",
