@@ -2113,7 +2113,10 @@ export const Y12A_CH3B_QUESTIONS = [
       }
     ],
     "answer": "2",
-    "answerStr": "2"
+    "answerStr": "2",
+    "difficulty": "hard",
+    "timeLimit": 240,
+    "t": "Stationary points and turning points"
   },
   {
     "id": "y12a-3b-q17b",
@@ -2162,7 +2165,10 @@ export const Y12A_CH3B_QUESTIONS = [
       }
     ],
     "answer": "2",
-    "answerStr": "2"
+    "answerStr": "2",
+    "difficulty": "hard",
+    "timeLimit": 240,
+    "t": "Stationary points and turning points"
   },
   {
     "id": "y12a-3b-q17c",
@@ -2219,7 +2225,10 @@ export const Y12A_CH3B_QUESTIONS = [
       }
     ],
     "answer": "0",
-    "answerStr": "0"
+    "answerStr": "0",
+    "difficulty": "hard",
+    "timeLimit": 240,
+    "t": "Stationary points and turning points"
   },
   {
     "id": "y12a-3b-q17d",
@@ -2264,52 +2273,169 @@ export const Y12A_CH3B_QUESTIONS = [
       }
     ],
     "answer": "2",
-    "answerStr": "2"
-  },
-  {
-    "id": "y12a-3b-q18",
-    "type": "teacher_review",
+    "answerStr": "2",
     "difficulty": "hard",
     "timeLimit": 240,
-    "question": "Investigate the algebraic and graphical relationships between even and odd functions and their derivatives.",
+    "t": "Stationary points and turning points"
+  },
+  {
+    "id": "y12a-3b-q18a",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 240,
     "t": "Stationary points and turning points",
-    "subQuestions": [
-      {
-        "id": "y12a-3b-q18a",
-        "type": "teacher_review",
-        "question": "a) Show that the derivative of an even function is odd using the chain rule on \\( f(-x) = f(x) \\). Explain how this can be seen visually using graph slopes.",
-        "a": "Differentiate both sides of f(-x) = f(x): -f'(-x) = f'(x) -> f'(-x) = -f'(x) (odd). Visually, symmetric points have equal and opposite slopes."
-      },
-      {
-        "id": "y12a-3b-q18b",
-        "type": "teacher_review",
-        "question": "b) Similarly, show that the derivative of an odd function is even using the chain rule on \\( f(-x) = -f(x) \\). Explain how this can be seen visually using graph slopes.",
-        "a": "Differentiate both sides of f(-x) = -f(x): -f'(-x) = -f'(x) -> f'(-x) = f'(x) (even). Visually, points reflected through origin have identical slopes."
-      },
-      {
-        "id": "y12a-3b-q18c",
-        "type": "teacher_review",
-        "question": "c) Differentiate \\( f(x) = x^n \\) for an even integer \\( n \\) and an odd integer \\( n \\) to demonstrate this algebraic property.",
-        "a": "For even n, f'(x) = n x^(n-1) where n-1 is odd (odd function). For odd n, f'(x) = n x^(n-1) where n-1 is even (even function)."
-      }
+    "question": "Investigate the algebraic and graphical relationships between even and odd functions and their derivatives. a) If \\( f(x) \\) is an even function, which of the following correctly shows that its derivative is an odd function, and correctly describes the visual relationship of their slopes?",
+    "opts": [
+      "Differentiate \\( f(-x) = -f(x) \\) to get \\( f'(-x) = -f'(x) \\). Visually, symmetric points have equal and opposite slopes.",
+      "Differentiate \\( f(-x) = f(x) \\) using the chain rule to get \\( -f'(-x) = f'(x) \\implies f'(-x) = -f'(x) \\). Visually, symmetric points have equal and opposite slopes.",
+      "Differentiate \\( f(-x) = -f(x) \\) to get \\( -f'(-x) = -f'(x) \\implies f'(-x) = f'(x) \\). Visually, symmetric points have identical slopes.",
+      "Differentiate \\( f(-x) = f(x) \\) to get \\( f'(-x) = f'(x) \\). Visually, symmetric points have identical slopes."
     ],
     "solutionSteps": [
       {
-        "explanation": "Apply the chain rule to differentiate \\( f(-x) \\) with respect to \\( x \\).",
-        "workingOut": "\\frac{d}{dx}[f(-x)] = -f'(-x)"
+        "explanation": "Start with the algebraic definition of an even function.",
+        "workingOut": "f(-x) = f(x) \\quad \\text{for all } x"
       },
       {
-        "explanation": "If \\( f(x) \\) is even, \\( f(-x) = f(x) \\). Differentiate both sides.",
-        "workingOut": "-f'(-x) = f'(x) \\implies f'(-x) = -f'(x) \\quad (\\text{odd})"
+        "explanation": "Differentiate both sides of the equation with respect to \\( x \\). Remember to use the chain rule for the left side.",
+        "workingOut": "\\begin{aligned} \\frac{d}{dx}[f(-x)] &= \\frac{d}{dx}[f(x)] \\\\ f'(-x) \\cdot \\frac{d}{dx}(-x) &= f'(x) \\\\ f'(-x) \\cdot (-1) &= f'(x) \\\\ -f'(-x) &= f'(x) \\end{aligned}"
       },
       {
-        "explanation": "If \\( f(x) \\) is odd, \\( f(-x) = -f(x) \\). Differentiate both sides.",
-        "workingOut": "-f'(-x) = -f'(x) \\implies f'(-x) = f'(x) \\quad (\\text{even})"
+        "explanation": "Rearrange the equation to isolate \\( f'(-x) \\).",
+        "workingOut": "f'(-x) = -f'(x)"
       },
       {
-        "explanation": "Verify for power functions \\( f(x) = x^n \\).",
-        "workingOut": "\\text{If } n \\text{ is even, } f'(x) = n x^{n-1} \\text{ (odd power } \\implies \\text{odd function}). \\quad \\text{If } n \\text{ is odd, } f'(x) = n x^{n-1} \\text{ (even power } \\implies \\text{even function})."
+        "explanation": "Interpret the result. The equation \\( f'(-x) = -f'(x) \\) is the exact definition of an odd function.",
+        "workingOut": "\\text{Therefore, if } f(x) \\text{ is even, its derivative } f'(x) \\text{ is odd.}"
+      },
+      {
+        "explanation": "Consider the visual representation. An even function is symmetric about the \\(y\\)-axis.",
+        "workingOut": "\\text{At points } (x, y) \\text{ and } (-x, y)\\text{, the tangents are mirror images, meaning their slopes are equal but opposite in sign.}"
       }
-    ]
+    ],
+    "options": [
+      {
+        "text": "Differentiate \\( f(-x) = -f(x) \\) to get \\( f'(-x) = -f'(x) \\). Visually, symmetric points have equal and opposite slopes.",
+        "imageUrl": ""
+      },
+      {
+        "text": "Differentiate \\( f(-x) = f(x) \\) using the chain rule to get \\( -f'(-x) = f'(x) \\implies f'(-x) = -f'(x) \\). Visually, symmetric points have equal and opposite slopes.",
+        "imageUrl": ""
+      },
+      {
+        "text": "Differentiate \\( f(-x) = -f(x) \\) to get \\( -f'(-x) = -f'(x) \\implies f'(-x) = f'(x) \\). Visually, symmetric points have identical slopes.",
+        "imageUrl": ""
+      },
+      {
+        "text": "Differentiate \\( f(-x) = f(x) \\) to get \\( f'(-x) = f'(x) \\). Visually, symmetric points have identical slopes.",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
+    "answerStr": "1"
+  },
+  {
+    "id": "y12a-3b-q18b",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 240,
+    "t": "Stationary points and turning points",
+    "question": "Investigate the algebraic and graphical relationships between even and odd functions and their derivatives. b) Similarly, if \\( f(x) \\) is an odd function, which of the following correctly shows that its derivative is an even function, and correctly describes the visual relationship of their slopes?",
+    "opts": [
+      "Differentiate \\( f(-x) = -f(x) \\) using the chain rule to get \\( -f'(-x) = -f'(x) \\implies f'(-x) = f'(x) \\). Visually, points reflected through the origin have identical slopes.",
+      "Differentiate \\( f(-x) = f(x) \\) to get \\( f'(-x) = f'(x) \\). Visually, points reflected through the origin have equal and opposite slopes.",
+      "Differentiate \\( f(-x) = -f(x) \\) to get \\( f'(-x) = -f'(x) \\). Visually, points reflected through the origin have equal and opposite slopes.",
+      "Differentiate \\( f(-x) = f(x) \\) to get \\( -f'(-x) = f'(x) \\implies f'(-x) = -f'(x) \\). Visually, points reflected through the origin have identical slopes."
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Start with the algebraic definition of an odd function.",
+        "workingOut": "f(-x) = -f(x) \\quad \\text{for all } x"
+      },
+      {
+        "explanation": "Differentiate both sides of the equation with respect to \\( x \\). Apply the chain rule to the left side.",
+        "workingOut": "\\begin{aligned} \\frac{d}{dx}[f(-x)] &= \\frac{d}{dx}[-f(x)] \\\\ f'(-x) \\cdot (-1) &= -f'(x) \\\\ -f'(-x) &= -f'(x) \\end{aligned}"
+      },
+      {
+        "explanation": "Simplify the equation by dividing both sides by \\( -1 \\).",
+        "workingOut": "f'(-x) = f'(x)"
+      },
+      {
+        "explanation": "Interpret the result. The equation \\( f'(-x) = f'(x) \\) is the exact definition of an even function.",
+        "workingOut": "\\text{Therefore, if } f(x) \\text{ is odd, its derivative } f'(x) \\text{ is even.}"
+      },
+      {
+        "explanation": "Consider the visual representation. An odd function has rotational symmetry about the origin (180 degrees).",
+        "workingOut": "\\text{At points } (x, y) \\text{ and } (-x, -y)\\text{, the tangent lines are parallel, meaning their slopes are identical.}"
+      }
+    ],
+    "options": [
+      {
+        "text": "Differentiate \\( f(-x) = -f(x) \\) using the chain rule to get \\( -f'(-x) = -f'(x) \\implies f'(-x) = f'(x) \\). Visually, points reflected through the origin have identical slopes.",
+        "imageUrl": ""
+      },
+      {
+        "text": "Differentiate \\( f(-x) = f(x) \\) to get \\( f'(-x) = f'(x) \\). Visually, points reflected through the origin have equal and opposite slopes.",
+        "imageUrl": ""
+      },
+      {
+        "text": "Differentiate \\( f(-x) = -f(x) \\) to get \\( f'(-x) = -f'(x) \\). Visually, points reflected through the origin have equal and opposite slopes.",
+        "imageUrl": ""
+      },
+      {
+        "text": "Differentiate \\( f(-x) = f(x) \\) to get \\( -f'(-x) = f'(x) \\implies f'(-x) = -f'(x) \\). Visually, points reflected through the origin have identical slopes.",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "answerStr": "0"
+  },
+  {
+    "id": "y12a-3b-q18c",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 240,
+    "t": "Stationary points and turning points",
+    "question": "Investigate the algebraic and graphical relationships between even and odd functions and their derivatives. c) Differentiate \\( f(x) = x^n \\) to demonstrate the algebraic property of derivatives of odd/even functions. Which of the following is correct?",
+    "opts": [
+      "For even \\( n \\), \\( f'(x) = n x^{n-1} \\) where \\( n-1 \\) is even (thus an even function). For odd \\( n \\), \\( f'(x) = n x^{n-1} \\) where \\( n-1 \\) is odd (thus an odd function).",
+      "For even \\( n \\), \\( f'(x) = n x^{n-1} \\) where \\( n-1 \\) is odd (thus an odd function). For odd \\( n \\), \\( f'(x) = n x^{n-1} \\) where \\( n-1 \\) is even (thus an even function).",
+      "For even \\( n \\), \\( f'(x) = n x^n \\) which is an even function.",
+      "For even \\( n \\), \\( f'(x) = (n-1) x^n \\) which is an odd function."
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Let \\( f(x) = x^n \\). Find its derivative.",
+        "workingOut": "f'(x) = n x^{n-1}"
+      },
+      {
+        "explanation": "Analyze the case where \\( n \\) is an even integer.",
+        "workingOut": "\\begin{aligned} \\text{If } n \\text{ is even (e.g., } n=2, 4, 6 \\dots) \\text{, then } f(x) = x^n \\text{ is an even function.} \\\\ \\text{Its derivative is } f'(x) = n x^{n-1}\\text{.} \\\\ \\text{Since } n \\text{ is even, } n-1 \\text{ must be an odd integer.} \\\\ \\text{Thus, } f'(x) \\text{ is an odd function.} \\end{aligned}"
+      },
+      {
+        "explanation": "Analyze the case where \\( n \\) is an odd integer.",
+        "workingOut": "\\begin{aligned} \\text{If } n \\text{ is odd (e.g., } n=3, 5, 7 \\dots) \\text{, then } f(x) = x^n \\text{ is an odd function.} \\\\ \\text{Its derivative is } f'(x) = n x^{n-1}\\text{.} \\\\ \\text{Since } n \\text{ is odd, } n-1 \\text{ must be an even integer.} \\\\ \\text{Thus, } f'(x) \\text{ is an even function.} \\end{aligned}"
+      }
+    ],
+    "options": [
+      {
+        "text": "For even \\( n \\), \\( f'(x) = n x^{n-1} \\) where \\( n-1 \\) is even (thus an even function). For odd \\( n \\), \\( f'(x) = n x^{n-1} \\) where \\( n-1 \\) is odd (thus an odd function).",
+        "imageUrl": ""
+      },
+      {
+        "text": "For even \\( n \\), \\( f'(x) = n x^{n-1} \\) where \\( n-1 \\) is odd (thus an odd function). For odd \\( n \\), \\( f'(x) = n x^{n-1} \\) where \\( n-1 \\) is even (thus an even function).",
+        "imageUrl": ""
+      },
+      {
+        "text": "For even \\( n \\), \\( f'(x) = n x^n \\) which is an even function.",
+        "imageUrl": ""
+      },
+      {
+        "text": "For even \\( n \\), \\( f'(x) = (n-1) x^n \\) which is an odd function.",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
+    "answerStr": "1"
   }
 ];
