@@ -1002,7 +1002,7 @@ export const Y12A_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Use the second derivative (or a gradient table) to classify the nature of each stationary point.",
-        "workingOut": "\\text{We can observe the sign of } \\frac{dy}{dx} = 4x(x-6)(x-3):\n\n\\begin{array}{c|c|c|c|c|c|c|c}\nx & -1 & 0 & 1 & 3 & 4 & 6 & 7 \\\\ \\hline\n\\frac{dy}{dx} & -112 & 0 & 40 & 0 & -32 & 0 & 112 \\\\\n\\text{Slope} & \\backslash & - & / & - & \\backslash & - & /\n\\end{array}\n\n\\text{From the table, we see:}\n\\text{At } x=0: \\text{ Slope changes from negative to positive } \\rightarrow \\text{Local minimum at } (0,0)\n\\text{At } x=3: \\text{ Slope changes from positive to negative } \\rightarrow \\text{Local maximum at } (3,81)\n\\text{At } x=6: \\text{ Slope changes from negative to positive } \\rightarrow \\text{Local minimum at } (6,0)"
+        "workingOut": "We can observe the sign of \\( \\frac{dy}{dx} = 4x(x-6)(x-3) \\):\n\n\\[\n\\begin{array}{c|c|c|c|c|c|c|c}\nx & -1 & 0 & 1 & 3 & 4 & 6 & 7 \\\\ \\hline\n\\frac{dy}{dx} & -112 & 0 & 40 & 0 & -32 & 0 & 112 \\\\\n\\text{Slope} & \\backslash & - & / & - & \\backslash & - & /\n\\end{array}\n\\]\n\nFrom the table, we see:\n- At \\( x=0 \\): Slope changes from negative to positive \\(\\rightarrow\\) Local minimum at \\( (0,0) \\)\n- At \\( x=3 \\): Slope changes from positive to negative \\(\\rightarrow\\) Local maximum at \\( (3,81) \\)\n- At \\( x=6 \\): Slope changes from negative to positive \\(\\rightarrow\\) Local minimum at \\( (6,0) \\)"
       },
       {
         "explanation": "Here is the sketch of the function indicating the stationary points.",
