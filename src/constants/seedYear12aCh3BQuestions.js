@@ -957,118 +957,195 @@ export const Y12A_CH3B_QUESTIONS = [
     "origin": "seed",
     "source": "Year 12a Chapter 3B Q10",
     "isActive": true,
-    "type": "multiple_choice",
+    "type": "subquestions",
     "difficulty": "medium",
-    "timeLimit": 180,
-    "question": "For the function \\( y = x^2(x - 6)^2 \\), which of the following correctly describes its stationary points?",
-    "opts": [
-      "Local minima at \\((0, 0)\\) and \\((6, 0)\\), local maximum at \\((3, 81)\\)",
-      "Local maxima at \\((0, 0)\\) and \\((6, 0)\\), local minimum at \\((3, -81)\\)",
-      "Local minimum at \\((0, 0)\\), local maximum at \\((6, 0)\\)",
-      "Local minimum at \\((3, 81)\\) only"
-    ],
-    "options": [
+    "timeLimit": 120,
+    "question": "For the function \\( y = x^2(x - 6)^2 \\), complete the following steps.",
+    "subQuestions": [
       {
-        "text": "Local minima at \\((0, 0)\\) and \\((6, 0)\\), local maximum at \\((3, 81)\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "Local maxima at \\((0, 0)\\) and \\((6, 0)\\), local minimum at \\((3, -81)\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "Local minimum at \\((0, 0)\\), local maximum at \\((6, 0)\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "Local minimum at \\((3, 81)\\) only",
-        "imageUrl": ""
-      }
-    ],
-    "answerStr": "0",
-    "answer": "0",
-    "solutionSteps": [
-      {
-        "explanation": "First, differentiate \\( y = x^2(x - 6)^2 \\) using the product rule to find \\( \\frac{dy}{dx} \\).",
-        "workingOut": "\\begin{aligned} \\text{Let } u &= x^2, \\quad v = (x-6)^2 \\\\ \\frac{du}{dx} &= 2x, \\quad \\frac{dv}{dx} = 2(x-6) \\\\ \\frac{dy}{dx} &= u \\frac{dv}{dx} + v \\frac{du}{dx} \\\\ &= x^2 \\cdot 2(x-6) + (x-6)^2 \\cdot 2x \\\\ &= 2x(x-6)[x + (x-6)] \\\\ &= 2x(x-6)(2x-6) \\\\ &= 4x(x-6)(x-3) \\end{aligned}"
-      },
-      {
-        "explanation": "Set the first derivative to zero to find the \\(x\\)-coordinates of the stationary points.",
-        "workingOut": "4x(x-6)(x-3) = 0 \\implies x = 0,\\ x = 3,\\ \\text{or } x = 6"
-      },
-      {
-        "explanation": "Substitute these \\(x\\)-values back into the original function to find the corresponding \\(y\\)-coordinates.",
-        "workingOut": "\\begin{aligned} y(0) &= 0^2(0-6)^2 = 0 \\implies (0, 0) \\\\ y(3) &= 3^2(3-6)^2 = 9(-3)^2 = 81 \\implies (3, 81) \\\\ y(6) &= 6^2(6-6)^2 = 0 \\implies (6, 0) \\end{aligned}"
-      },
-      {
-        "explanation": "Use the second derivative (or a gradient table) to classify the nature of each stationary point.",
-        "workingOut": "We can observe the sign of \\( \\frac{dy}{dx} = 4x(x-6)(x-3) \\):\n\n\\[\n\\begin{array}{c|c|c|c|c|c|c|c}\nx & -1 & 0 & 1 & 3 & 4 & 6 & 7 \\\\ \\hline\n\\frac{dy}{dx} & -112 & 0 & 40 & 0 & -32 & 0 & 112 \\\\\n\\text{Slope} & \\backslash & - & / & - & \\backslash & - & /\n\\end{array}\n\\]\n\nFrom the table, we see:\n- At \\( x=0 \\): Slope changes from negative to positive \\(\\rightarrow\\) Local minimum at \\( (0,0) \\)\n- At \\( x=3 \\): Slope changes from positive to negative \\(\\rightarrow\\) Local maximum at \\( (3,81) \\)\n- At \\( x=6 \\): Slope changes from negative to positive \\(\\rightarrow\\) Local minimum at \\( (6,0) \\)"
-      },
-      {
-        "explanation": "Here is the sketch of the function indicating the stationary points.",
-        "workingOut": "Plot the local minima at \\((0,0)\\) and \\((6,0)\\), and the local maximum at \\((3,81)\\).",
-        "graphData": {
-          "jsxGraph": {
-            "width": 350,
-            "height": 350,
-            "boundingbox": [
-              -2,
-              100,
-              8,
-              -20
-            ],
-            "showGrid": true,
-            "showAxisLabels": true,
-            "script": "board.suspendUpdate();\nboard.create('functiongraph', [function(x){ return Math.pow(x,2)*Math.pow(x-6,2); }], {strokeColor: 'blue', strokeWidth: 2});\nboard.unsuspendUpdate();",
-            "elements": [
-              {
-                "type": "point",
-                "coords": [
-                  0,
-                  0
-                ],
-                "name": "(0, 0)",
-                "color": "blue",
-                "label": {
-                  "offset": [
-                    -15,
-                    -15
-                  ]
-                }
-              },
-              {
-                "type": "point",
-                "coords": [
-                  3,
-                  81
-                ],
-                "name": "(3, 81)",
-                "color": "blue",
-                "label": {
-                  "offset": [
-                    -20,
-                    15
-                  ]
-                }
-              },
-              {
-                "type": "point",
-                "coords": [
-                  6,
-                  0
-                ],
-                "name": "(6, 0)",
-                "color": "blue",
-                "label": {
-                  "offset": [
-                    10,
-                    -15
-                  ]
-                }
-              }
-            ]
+        "id": "y12a-3b-q10a",
+        "type": "multiple_choice",
+        "question": "a) What is the derivative \\( \\frac{dy}{dx} \\) of \\( y = x^2(x - 6)^2 \\) using the product rule?",
+        "opts": [
+          "\\( 4x(x - 6)(x - 3) \\)",
+          "\\( 2x(x - 6)^2 \\)",
+          "\\( 4x(x - 6) \\)",
+          "\\( 2x(x - 6)(2x - 3) \\)"
+        ],
+        "options": [
+          {
+            "text": "\\( 4x(x - 6)(x - 3) \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( 2x(x - 6)^2 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( 4x(x - 6) \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( 2x(x - 6)(2x - 3) \\)",
+            "imageUrl": ""
           }
-        }
+        ],
+        "answerStr": "0",
+        "answer": "0",
+        "solutionSteps": [
+          {
+            "explanation": "Let \\( y = uv \\) where \\( u = x^2 \\) and \\( v = (x-6)^2 \\).",
+            "workingOut": "\\begin{aligned} \\frac{du}{dx} &= 2x \\\\ \\frac{dv}{dx} &= 2(x-6) \\end{aligned}"
+          },
+          {
+            "explanation": "Apply the product rule: \\( \\frac{dy}{dx} = u \\frac{dv}{dx} + v \\frac{du}{dx} \\).",
+            "workingOut": "\\begin{aligned} \\frac{dy}{dx} &= x^2 \\cdot 2(x-6) + (x-6)^2 \\cdot 2x \\\\ &= 2x(x-6) [x + (x-6)] \\\\ &= 2x(x-6)(2x-6) \\\\ &= 4x(x-6)(x-3) \\end{aligned}"
+          }
+        ]
+      },
+      {
+        "id": "y12a-3b-q10b",
+        "type": "multiple_choice",
+        "question": "b) Which of the following correctly classifies the stationary points of the function?",
+        "opts": [
+          "Local minima at \\((0, 0)\\) and \\((6, 0)\\), local maximum at \\((3, 81)\\)",
+          "Local maxima at \\((0, 0)\\) and \\((6, 0)\\), local minimum at \\((3, -81)\\)",
+          "Local minimum at \\((0, 0)\\), local maximum at \\((6, 0)\\)",
+          "Local minimum at \\((3, 81)\\) only"
+        ],
+        "options": [
+          {
+            "text": "Local minima at \\((0, 0)\\) and \\((6, 0)\\), local maximum at \\((3, 81)\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "Local maxima at \\((0, 0)\\) and \\((6, 0)\\), local minimum at \\((3, -81)\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "Local minimum at \\((0, 0)\\), local maximum at \\((6, 0)\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "Local minimum at \\((3, 81)\\) only",
+            "imageUrl": ""
+          }
+        ],
+        "answerStr": "0",
+        "answer": "0",
+        "solutionSteps": [
+          {
+            "explanation": "Set the first derivative to zero to find the \\(x\\)-coordinates of the stationary points.",
+            "workingOut": "4x(x-6)(x-3) = 0 \\implies x = 0,\\ x = 3,\\ \\text{or } x = 6"
+          },
+          {
+            "explanation": "Substitute these \\(x\\)-values back into the original function to find the corresponding \\(y\\)-coordinates.",
+            "workingOut": "\\begin{aligned} y(0) &= 0^2(0-6)^2 = 0 \\implies (0, 0) \\\\ y(3) &= 3^2(3-6)^2 = 9(-3)^2 = 81 \\implies (3, 81) \\\\ y(6) &= 6^2(6-6)^2 = 0 \\implies (6, 0) \\end{aligned}"
+          },
+          {
+            "explanation": "Use a table of gradients to classify the nature of each stationary point.",
+            "workingOut": "We observe the sign of \\( \\frac{dy}{dx} \\):\n\n\\[\n\\begin{array}{c|c|c|c|c|c|c|c}\nx & -1 & 0 & 1 & 3 & 4 & 6 & 7 \\\\ \\hline\n\\frac{dy}{dx} & -112 & 0 & 40 & 0 & -32 & 0 & 112 \\\\\n\\text{Slope} & \\backslash & - & / & - & \\backslash & - & /\n\\end{array}\n\\]\n\nFrom the table, we see:\n- At \\( x=0 \\): Slope changes from negative to positive \\(\\rightarrow\\) Local minimum at \\( (0,0) \\)\n- At \\( x=3 \\): Slope changes from positive to negative \\(\\rightarrow\\) Local maximum at \\( (3,81) \\)\n- At \\( x=6 \\): Slope changes from negative to positive \\(\\rightarrow\\) Local minimum at \\( (6,0) \\)"
+          }
+        ]
+      },
+      {
+        "id": "y12a-3b-q10c",
+        "type": "multiple_choice",
+        "question": "c) Which of the following best describes the sketch of the graph of the function?",
+        "opts": [
+          "A W-shaped curve with minima at \\((0,0)\\) and \\((6,0)\\), and a maximum at \\((3,81)\\)",
+          "An M-shaped curve with maxima at \\((0,0)\\) and \\((6,0)\\), and a minimum at \\((3,81)\\)",
+          "A U-shaped curve with a minimum at \\((3,81)\\)",
+          "A curve with a point of inflection at \\((3,81)\\)"
+        ],
+        "options": [
+          {
+            "text": "A W-shaped curve with minima at \\((0,0)\\) and \\((6,0)\\), and a maximum at \\((3,81)\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "An M-shaped curve with maxima at \\((0,0)\\) and \\((6,0)\\), and a minimum at \\((3,81)\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "A U-shaped curve with a minimum at \\((3,81)\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "A curve with a point of inflection at \\((3,81)\\)",
+            "imageUrl": ""
+          }
+        ],
+        "answerStr": "0",
+        "answer": "0",
+        "solutionSteps": [
+          {
+            "explanation": "Combine the findings from parts (a) and (b) to sketch the graph.",
+            "workingOut": "The function is a positive quartic, which typically has a 'W' shape. Plot the local minima at \\((0,0)\\) and \\((6,0)\\), and the local maximum at \\((3,81)\\).",
+            "graphData": {
+              "jsxGraph": {
+                "width": 350,
+                "height": 350,
+                "boundingbox": [
+                  -2,
+                  100,
+                  8,
+                  -20
+                ],
+                "showGrid": true,
+                "showAxisLabels": true,
+                "script": "board.suspendUpdate();\nboard.create('functiongraph', [function(x){ return Math.pow(x,2)*Math.pow(x-6,2); }], {strokeColor: 'blue', strokeWidth: 2});\nboard.unsuspendUpdate();",
+                "elements": [
+                  {
+                    "type": "point",
+                    "coords": [
+                      0,
+                      0
+                    ],
+                    "name": "(0, 0)",
+                    "color": "blue",
+                    "label": {
+                      "offset": [
+                        -15,
+                        -15
+                      ]
+                    }
+                  },
+                  {
+                    "type": "point",
+                    "coords": [
+                      3,
+                      81
+                    ],
+                    "name": "(3, 81)",
+                    "color": "blue",
+                    "label": {
+                      "offset": [
+                        -20,
+                        15
+                      ]
+                    }
+                  },
+                  {
+                    "type": "point",
+                    "coords": [
+                      6,
+                      0
+                    ],
+                    "name": "(6, 0)",
+                    "color": "blue",
+                    "label": {
+                      "offset": [
+                        10,
+                        -15
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
       }
     ]
   },
