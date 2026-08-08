@@ -1307,145 +1307,271 @@ export const Y12A_CH3B_QUESTIONS = [
   },
   {
     "id": "y12a-3b-q12a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "The tangent to the curve \\( y = x^2 + ax - 12 \\) is horizontal at the point where \\( x = 3 \\). Find the value of \\( a \\).",
-    "a": "-6",
     "t": "Stationary points and turning points",
     "solutionSteps": [
       {
-        "explanation": "Differentiate \\( y = x^2 + ax - 12 \\) with respect to \\( x \\).",
-        "workingOut": "y' = 2x + a"
+        "explanation": "Differentiate the function \\( y = x^2 + ax - 12 \\).",
+        "workingOut": "\\( \\frac{dy}{dx} = 2x + a \\)"
       },
       {
-        "explanation": "Since the tangent is horizontal at \\( x = 3 \\), the derivative at this point must be zero.",
-        "workingOut": "y'(3) = 2(3) + a = 0"
-      },
-      {
-        "explanation": "Solve the equation for \\( a \\).",
-        "workingOut": "6 + a = 0 \\implies a = -6"
+        "explanation": "A horizontal tangent means the derivative is zero at that point. Set \\( \\frac{dy}{dx} = 0 \\) when \\( x = 3 \\).",
+        "workingOut": "\\begin{aligned} 2(3) + a &= 0 \\\\ 6 + a &= 0 \\\\ a &= -6 \\end{aligned}"
       }
-    ]
+    ],
+    "opts": [
+      "\\( 6 \\)",
+      "\\( -12 \\)",
+      "\\( -6 \\)",
+      "\\( 0 \\)"
+    ],
+    "options": [
+      {
+        "text": "\\( 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -12 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 0 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
+    "answerStr": "2"
   },
   {
     "id": "y12a-3b-q12b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "The curve \\( y = x^2 + ax + 9 \\) has a turning point at \\( x = -2 \\). Find the value of \\( a \\).",
-    "a": "4",
     "t": "Stationary points and turning points",
     "solutionSteps": [
       {
-        "explanation": "Differentiate \\( y = x^2 + ax + 9 \\).",
-        "workingOut": "y' = 2x + a"
+        "explanation": "Differentiate the function \\( y = x^2 + ax + 9 \\).",
+        "workingOut": "\\( y' = 2x + a \\)"
       },
       {
-        "explanation": "Since a turning point occurs at \\( x = -2 \\), the derivative at this point is zero.",
-        "workingOut": "y'(-2) = 2(-2) + a = 0"
-      },
-      {
-        "explanation": "Solve the linear equation to find the parameter \\( a \\).",
-        "workingOut": "-4 + a = 0 \\implies a = 4"
+        "explanation": "A turning point means the derivative is zero at that point. Set \\( y' = 0 \\) when \\( x = -2 \\).",
+        "workingOut": "\\begin{aligned} 2(-2) + a &= 0 \\\\ -4 + a &= 0 \\\\ a &= 4 \\end{aligned}"
       }
-    ]
+    ],
+    "opts": [
+      "\\( 4 \\)",
+      "\\( -2 \\)",
+      "\\( -4 \\)",
+      "\\( 2 \\)"
+    ],
+    "options": [
+      {
+        "text": "\\( 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 2 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "answerStr": "0"
   },
   {
     "id": "y12a-3b-q13aa",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "The curve \\( f(x) = ax^2 + 6x + c \\) has a turning point at \\( (-1, 2) \\). Find the value of \\( a \\).",
-    "a": "3",
     "t": "Stationary points and turning points",
     "solutionSteps": [
       {
-        "explanation": "Differentiate \\( f(x) = ax^2 + 6x + c \\).",
-        "workingOut": "f'(x) = 2ax + 6"
+        "explanation": "Differentiate the function \\( f(x) = ax^2 + 6x + c \\).",
+        "workingOut": "\\( f'(x) = 2ax + 6 \\)"
       },
       {
-        "explanation": "Since there is a turning point at \\( x = -1 \\), set the derivative at \\( x = -1 \\) to zero.",
-        "workingOut": "f'(-1) = 2a(-1) + 6 = 0"
-      },
-      {
-        "explanation": "Solve the equation to find the value of \\( a \\).",
-        "workingOut": "-2a + 6 = 0 \\implies 2a = 6 \\implies a = 3"
+        "explanation": "A turning point at \\( (-1, 2) \\) means \\( f'(-1) = 0 \\).",
+        "workingOut": "\\begin{aligned} 2a(-1) + 6 &= 0 \\\\ -2a + 6 &= 0 \\\\ 2a &= 6 \\\\ a &= 3 \\end{aligned}"
       }
-    ]
+    ],
+    "opts": [
+      "\\( -3 \\)",
+      "\\( -6 \\)",
+      "\\( 6 \\)",
+      "\\( 3 \\)"
+    ],
+    "options": [
+      {
+        "text": "\\( -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 3 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
+    "answerStr": "3"
   },
   {
     "id": "y12a-3b-q13ac",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "The curve \\( f(x) = ax^2 + 6x + c \\) has a turning point at \\( (-1, 2) \\). Using the value of \\( a = 3 \\) determined from part a, find the value of \\( c \\).",
-    "a": "5",
     "t": "Stationary points and turning points",
     "solutionSteps": [
       {
-        "explanation": "Write down the equation of the curve using \\( a = 3 \\).",
-        "workingOut": "f(x) = 3x^2 + 6x + c"
+        "explanation": "Substitute \\( a = 3 \\) into the function equation.",
+        "workingOut": "\\( f(x) = 3x^2 + 6x + c \\)"
       },
       {
-        "explanation": "Substitute the coordinates of the turning point \\( (-1, 2) \\) into the equation.",
-        "workingOut": "f(-1) = 3(-1)^2 + 6(-1) + c = 2"
-      },
-      {
-        "explanation": "Solve the equation for \\( c \\).",
-        "workingOut": "3 - 6 + c = 2 \\implies -3 + c = 2 \\implies c = 5"
+        "explanation": "Use the coordinates of the turning point \\( (-1, 2) \\) to find \\( c \\).",
+        "workingOut": "\\begin{aligned} f(-1) &= 2 \\\\ 3(-1)^2 + 6(-1) + c &= 2 \\\\ 3 - 6 + c &= 2 \\\\ -3 + c &= 2 \\\\ c &= 5 \\end{aligned}"
       }
-    ]
+    ],
+    "opts": [
+      "\\( -5 \\)",
+      "\\( 5 \\)",
+      "\\( -3 \\)",
+      "\\( 3 \\)"
+    ],
+    "options": [
+      {
+        "text": "\\( -5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 3 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
+    "answerStr": "1"
   },
   {
     "id": "y12a-3b-q13bb",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "The curve \\( y = x^3 + bx^2 + cx + 8 \\) has stationary points at \\( x = -1 \\) and \\( x = 3 \\). Find the value of \\( b \\).",
-    "a": "-3",
     "t": "Stationary points and turning points",
     "solutionSteps": [
       {
-        "explanation": "Find the derivative of the curve.",
-        "workingOut": "y' = 3x^2 + 2bx + c"
+        "explanation": "Differentiate the function \\( y = x^3 + bx^2 + cx + 8 \\).",
+        "workingOut": "\\( y' = 3x^2 + 2bx + c \\)"
       },
       {
-        "explanation": "Since \\( x = -1 \\) and \\( x = 3 \\) are stationary points, they are the roots of \\( y' = 0 \\). Write the factored form of this quadratic derivative.",
-        "workingOut": "y' = 3(x+1)(x-3)"
+        "explanation": "Stationary points occur when \\( y' = 0 \\). Set up a system of equations using \\( x = -1 \\) and \\( x = 3 \\).",
+        "workingOut": "\\begin{aligned} \\text{At } x = -1: \\quad 3(-1)^2 + 2b(-1) + c &= 0 \\\\ 3 - 2b + c &= 0 \\quad \\text{--- (1)} \\\\ \\text{At } x = 3: \\quad 3(3)^2 + 2b(3) + c &= 0 \\\\ 27 + 6b + c &= 0 \\quad \\text{--- (2)} \\end{aligned}"
       },
       {
-        "explanation": "Expand the factored derivative to compare coefficients.",
-        "workingOut": "3(x^2 - 2x - 3) = 3x^2 - 6x - 9"
-      },
-      {
-        "explanation": "Compare the coefficient of \\( x \\) to find \\( b \\).",
-        "workingOut": "2b = -6 \\implies b = -3"
+        "explanation": "Solve the simultaneous equations for \\( b \\).",
+        "workingOut": "\\begin{aligned} \\text{Subtract (1) from (2):} \\\\ (27 + 6b + c) - (3 - 2b + c) &= 0 - 0 \\\\ 24 + 8b &= 0 \\\\ 8b &= -24 \\\\ b &= -3 \\end{aligned}"
       }
-    ]
+    ],
+    "opts": [
+      "\\( 9 \\)",
+      "\\( -9 \\)",
+      "\\( 3 \\)",
+      "\\( -3 \\)"
+    ],
+    "options": [
+      {
+        "text": "\\( 9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -3 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
+    "answerStr": "3"
   },
   {
     "id": "y12a-3b-q13bc",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "The curve \\( y = x^3 + bx^2 + cx + 8 \\) has stationary points at \\( x = -1 \\) and \\( x = 3 \\). Find the value of \\( c \\).",
-    "a": "-9",
     "t": "Stationary points and turning points",
     "solutionSteps": [
       {
-        "explanation": "Write the derivative of the curve.",
-        "workingOut": "y' = 3x^2 + 2bx + c"
+        "explanation": "Use the value of \\( b = -3 \\) and substitute it into one of the derivative equations from the previous part.",
+        "workingOut": "\\begin{aligned} \\text{From } x = -1: \\quad 3 - 2b + c &= 0 \\end{aligned}"
       },
       {
-        "explanation": "Since the stationary points are at \\( x = -1 \\) and \\( x = 3 \\), expand the factored derivative equation.",
-        "workingOut": "y' = 3(x+1)(x-3) = 3x^2 - 6x - 9"
-      },
-      {
-        "explanation": "Compare the constant term to find \\( c \\).",
-        "workingOut": "c = -9"
+        "explanation": "Solve for \\( c \\).",
+        "workingOut": "\\begin{aligned} 3 - 2(-3) + c &= 0 \\\\ 3 + 6 + c &= 0 \\\\ 9 + c &= 0 \\\\ c &= -9 \\end{aligned}"
       }
-    ]
+    ],
+    "opts": [
+      "\\( 3 \\)",
+      "\\( 9 \\)",
+      "\\( -9 \\)",
+      "\\( -3 \\)"
+    ],
+    "options": [
+      {
+        "text": "\\( 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -3 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
+    "answerStr": "2"
   },
   {
     "id": "y12a-3b-q14a",
