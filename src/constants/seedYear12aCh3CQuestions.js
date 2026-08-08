@@ -2391,7 +2391,7 @@ export const Y12A_CH3C_QUESTIONS = [
   },
   {
     "id": "y12a-3c-q9biii",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "If \\( f(x) = (3x - 2)^4 \\), evaluate \\( f'''(1) \\).",
@@ -2406,11 +2406,37 @@ export const Y12A_CH3C_QUESTIONS = [
         "explanation": "Substitute \\( x = 1 \\) into \\( f'''(x) \\).",
         "workingOut": "f'''(1) = 648(3(1) - 2) = 648(1) = 648"
       }
-    ]
+    ],
+    "opts": [
+      "1944",
+      "216",
+      "648",
+      "72"
+    ],
+    "options": [
+      {
+        "text": "1944",
+        "imageUrl": ""
+      },
+      {
+        "text": "216",
+        "imageUrl": ""
+      },
+      {
+        "text": "648",
+        "imageUrl": ""
+      },
+      {
+        "text": "72",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
+    "answerStr": "2"
   },
   {
     "id": "y12a-3c-q9biv",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "If \\( f(x) = (3x - 2)^4 \\), evaluate \\( f''''(1) \\).",
@@ -2425,11 +2451,37 @@ export const Y12A_CH3C_QUESTIONS = [
         "explanation": "Evaluate the fourth derivative (which is a constant).",
         "workingOut": "f''''(1) = 1944"
       }
-    ]
+    ],
+    "opts": [
+      "648",
+      "1944",
+      "1458",
+      "0"
+    ],
+    "options": [
+      {
+        "text": "648",
+        "imageUrl": ""
+      },
+      {
+        "text": "1944",
+        "imageUrl": ""
+      },
+      {
+        "text": "1458",
+        "imageUrl": ""
+      },
+      {
+        "text": "0",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
+    "answerStr": "1"
   },
   {
     "id": "y12a-3c-q10a",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "Use the quotient rule to find the first derivative of the function \\( y = \\frac{x}{x + 2} \\). Then use the chain rule to find the second derivative.",
@@ -2437,22 +2489,48 @@ export const Y12A_CH3C_QUESTIONS = [
     "t": "Second and higher derivatives",
     "solutionSteps": [
       {
-        "explanation": "Apply the quotient rule: \\( u = x, v = x+2 \\).",
+        "explanation": "Find the first derivative.",
         "workingOut": "y' = \\frac{1(x+2) - x(1)}{(x+2)^2} = \\frac{2}{(x+2)^2}"
       },
       {
-        "explanation": "Rewrite \\( y' \\) with a negative index to differentiate using the chain rule.",
+        "explanation": "Find the first derivative.",
         "workingOut": "y' = 2(x + 2)^{-2}"
       },
       {
-        "explanation": "Find \\( y'' \\).",
+        "explanation": "Differentiate the first derivative to find the second derivative.",
         "workingOut": "y'' = -4(x+2)^{-3} = -\\frac{4}{(x+2)^3}"
       }
-    ]
+    ],
+    "opts": [
+      "\\( y' = \\frac{2}{(x+2)^2}, \\; y'' = \\frac{4}{(x+2)^3} \\)",
+      "\\( y' = \\frac{2x}{(x+2)^2}, \\; y'' = \\frac{4}{(x+2)^3} \\)",
+      "\\( y' = \\frac{2}{(x+2)^2}, \\; y'' = -\\frac{4}{(x+2)^3} \\)",
+      "\\( y' = -\\frac{2}{(x+2)^2}, \\; y'' = \\frac{4}{(x+2)^3} \\)"
+    ],
+    "options": [
+      {
+        "text": "\\( y' = \\frac{2}{(x+2)^2}, \\; y'' = \\frac{4}{(x+2)^3} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = \\frac{2x}{(x+2)^2}, \\; y'' = \\frac{4}{(x+2)^3} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = \\frac{2}{(x+2)^2}, \\; y'' = -\\frac{4}{(x+2)^3} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = -\\frac{2}{(x+2)^2}, \\; y'' = \\frac{4}{(x+2)^3} \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
+    "answerStr": "2"
   },
   {
     "id": "y12a-3c-q10b",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "Use the quotient rule to find the first derivative of the function \\( y = \\frac{x - 2}{3x + 4} \\). Then use the chain rule to find the second derivative.",
@@ -2460,22 +2538,48 @@ export const Y12A_CH3C_QUESTIONS = [
     "t": "Second and higher derivatives",
     "solutionSteps": [
       {
-        "explanation": "Apply the quotient rule.",
+        "explanation": "Find the first derivative.",
         "workingOut": "y' = \\frac{1(3x+4) - (x-2)(3)}{(3x+4)^2} = \\frac{3x+4 - 3x+6}{(3x+4)^2} = \\frac{10}{(3x+4)^2}"
       },
       {
-        "explanation": "Write with a negative index.",
+        "explanation": "Find the first derivative.",
         "workingOut": "y' = 10(3x + 4)^{-2}"
       },
       {
-        "explanation": "Differentiate using the chain rule.",
+        "explanation": "Differentiate the first derivative to find the second derivative.",
         "workingOut": "y'' = 10 \\times (-2)(3x+4)^{-3} \\times 3 = -60(3x+4)^{-3} = -\\frac{60}{(3x+4)^3}"
       }
-    ]
+    ],
+    "opts": [
+      "\\( y' = -\\frac{10}{(3x+4)^2}, \\; y'' = \\frac{60}{(3x+4)^3} \\)",
+      "\\( y' = \\frac{10}{(3x+4)^2}, \\; y'' = \\frac{60}{(3x+4)^3} \\)",
+      "\\( y' = \\frac{10}{(3x+4)^2}, \\; y'' = -\\frac{60}{(3x+4)^3} \\)",
+      "\\( y' = \\frac{10}{(3x+4)^2}, \\; y'' = -\\frac{20}{(3x+4)^3} \\)"
+    ],
+    "options": [
+      {
+        "text": "\\( y' = -\\frac{10}{(3x+4)^2}, \\; y'' = \\frac{60}{(3x+4)^3} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = \\frac{10}{(3x+4)^2}, \\; y'' = \\frac{60}{(3x+4)^3} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = \\frac{10}{(3x+4)^2}, \\; y'' = -\\frac{60}{(3x+4)^3} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = \\frac{10}{(3x+4)^2}, \\; y'' = -\\frac{20}{(3x+4)^3} \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
+    "answerStr": "2"
   },
   {
     "id": "y12a-3c-q11",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "If \\( f(x) = x(x - 2)^4 \\), use the product rule to find \\( f'(x) \\) and \\( f''(x) \\).",
@@ -2490,11 +2594,37 @@ export const Y12A_CH3C_QUESTIONS = [
         "explanation": "Differentiate \\( f'(x) \\) using the product rule: \\( u = 5x-2, v = (x-2)^3 \\).",
         "workingOut": "\\begin{aligned} f''(x) &= 5(x-2)^3 + (5x-2) \\cdot 3(x-2)^2 \\\\ &= (x-2)^2 [ 5(x-2) + 3(5x-2) ] \\\\ &= (x-2)^2 [ 5x - 10 + 15x - 6 ] \\\\ &= (20x - 16)(x-2)^2 = 4(5x - 4)(x-2)^2 \\end{aligned}"
       }
-    ]
+    ],
+    "opts": [
+      "\\( f'(x) = (5x-2)(x-2)^3, \\; f''(x) = (20x-16)(x-2)^3 \\)",
+      "\\( f'(x) = (4x-2)(x-2)^3, \\; f''(x) = 4(5x-4)(x-2)^2 \\)",
+      "\\( f'(x) = (5x-2)(x-2)^3, \\; f''(x) = 20(x-2)^2 \\)",
+      "\\( f'(x) = (5x-2)(x-2)^3, \\; f''(x) = 4(5x-4)(x-2)^2 \\)"
+    ],
+    "options": [
+      {
+        "text": "\\( f'(x) = (5x-2)(x-2)^3, \\; f''(x) = (20x-16)(x-2)^3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f'(x) = (4x-2)(x-2)^3, \\; f''(x) = 4(5x-4)(x-2)^2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f'(x) = (5x-2)(x-2)^3, \\; f''(x) = 20(x-2)^2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f'(x) = (5x-2)(x-2)^3, \\; f''(x) = 4(5x-4)(x-2)^2 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
+    "answerStr": "3"
   },
   {
     "id": "y12a-3c-q12a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "Find the values of \\( x \\) for which \\( y'' = 0 \\) if \\( y = x^4 - 18x^2 + 15 \\). If there are multiple values, list them in ascending order, separated by a comma (e.g. '-\\sqrt{3},\\sqrt{3}').",
@@ -2513,11 +2643,37 @@ export const Y12A_CH3C_QUESTIONS = [
         "explanation": "Set the second derivative to zero and solve for \\( x \\).",
         "workingOut": "12x^2 - 36 = 0 \\implies 12x^2 = 36 \\implies x^2 = 3 \\implies x = \\pm\\sqrt{3}"
       }
-    ]
+    ],
+    "opts": [
+      "\\( -\\sqrt{6}, \\sqrt{6} \\)",
+      "\\( 0, \\sqrt{3} \\)",
+      "\\( -3, 3 \\)",
+      "\\( -\\sqrt{3}, \\sqrt{3} \\)"
+    ],
+    "options": [
+      {
+        "text": "\\( -\\sqrt{6}, \\sqrt{6} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 0, \\sqrt{3} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -3, 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -\\sqrt{3}, \\sqrt{3} \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
+    "answerStr": "3"
   },
   {
     "id": "y12a-3c-q12b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "Find the value of \\( x \\) for which \\( y'' = 0 \\) if \\( y = x^3 + 3x^2 - 9x + 8 \\).",
@@ -2536,11 +2692,37 @@ export const Y12A_CH3C_QUESTIONS = [
         "explanation": "Set the second derivative to zero and solve for \\( x \\).",
         "workingOut": "6x + 6 = 0 \\implies 6x = -6 \\implies x = -1"
       }
-    ]
+    ],
+    "opts": [
+      "1",
+      "3",
+      "-3",
+      "-1"
+    ],
+    "options": [
+      {
+        "text": "1",
+        "imageUrl": ""
+      },
+      {
+        "text": "3",
+        "imageUrl": ""
+      },
+      {
+        "text": "-3",
+        "imageUrl": ""
+      },
+      {
+        "text": "-1",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
+    "answerStr": "3"
   },
   {
     "id": "y12a-3c-q13a",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 240,
     "question": "Let \\( m \\) be a positive integer. Find the first, second and third derivatives of \\( x^m \\).",
@@ -2559,11 +2741,37 @@ export const Y12A_CH3C_QUESTIONS = [
         "explanation": "Apply the power rule for the third derivative.",
         "workingOut": "\\frac{d^3}{dx^3}[x^m] = m(m-1)(m-2)x^{m-3}"
       }
-    ]
+    ],
+    "opts": [
+      "\\( mx^{m-1}, \\; m^2x^{m-2}, \\; m^3x^{m-3} \\)",
+      "\\( mx^{m-1}, \\; m(m-1)x^{m-2}, \\; m(m-1)(m-2)x^{m-3} \\)",
+      "\\( mx^m, \\; m(m-1)x^m, \\; m(m-1)(m-2)x^m \\)",
+      "\\( mx^{m-1}, \\; (m-1)x^{m-2}, \\; (m-2)x^{m-3} \\)"
+    ],
+    "options": [
+      {
+        "text": "\\( mx^{m-1}, \\; m^2x^{m-2}, \\; m^3x^{m-3} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( mx^{m-1}, \\; m(m-1)x^{m-2}, \\; m(m-1)(m-2)x^{m-3} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( mx^m, \\; m(m-1)x^m, \\; m(m-1)(m-2)x^m \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( mx^{m-1}, \\; (m-1)x^{m-2}, \\; (m-2)x^{m-3} \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
+    "answerStr": "1"
   },
   {
     "id": "y12a-3c-q13b",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 240,
     "question": "Let \\( m \\) be a positive integer. Find the \\( m \\)-th and \\( (m + 1) \\)-th derivatives of \\( x^m \\).",
@@ -2578,6 +2786,32 @@ export const Y12A_CH3C_QUESTIONS = [
         "explanation": "Differentiate the constant \\( m! \\) to find the \\( (m + 1) \\)-th derivative.",
         "workingOut": "\\frac{d^{m+1}}{dx^{m+1}}[x^m] = \\frac{d}{dx}[m!] = 0"
       }
-    ]
+    ],
+    "opts": [
+      "\\( m!x \\) and \\( m! \\)",
+      "\\( m! \\) and \\( 0 \\)",
+      "\\( m!x \\) and \\( 0 \\)",
+      "\\( m \\) and \\( 0 \\)"
+    ],
+    "options": [
+      {
+        "text": "\\( m!x \\) and \\( m! \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( m! \\) and \\( 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( m!x \\) and \\( 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( m \\) and \\( 0 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
+    "answerStr": "1"
   }
 ];
