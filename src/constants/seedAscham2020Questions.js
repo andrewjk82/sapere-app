@@ -2248,9 +2248,9 @@ export const ASCHAM_2020_QUESTIONS = [
     "question": "Consider the function \\( y = 3 + 2x^2 - x^4 \\).\n(a) Find the stationary points and determine their nature.",
     "opts": [
       "Local minimum at \\((0, 3)\\); local maxima at \\((1, 4)\\) and \\((-1, 4)\\)",
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x."
+      "Local minimum at \\((0, 3)\\); local maxima at \\((\\sqrt{2}, 3)\\) and \\((-\\sqrt{2}, 3)\\)",
+      "Local maximum at \\((0, 3)\\); local minima at \\((\\sqrt{2}, -1)\\) and \\((-\\sqrt{2}, -1)\\)",
+      "Local maximum at \\((0, 3)\\); local minima at \\((1, 4)\\) and \\((-1, 4)\\)"
     ],
     "a": 0,
     "answer": "0",
@@ -2280,7 +2280,26 @@ export const ASCHAM_2020_QUESTIONS = [
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "Local minimum at \\((0, 3)\\); local maxima at \\((1, 4)\\) and \\((-1, 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Local minimum at \\((0, 3)\\); local maxima at \\((\\sqrt{2}, 3)\\) and \\((-\\sqrt{2}, 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Local maximum at \\((0, 3)\\); local minima at \\((\\sqrt{2}, -1)\\) and \\((-\\sqrt{2}, -1)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Local maximum at \\((0, 3)\\); local minima at \\((1, 4)\\) and \\((-1, 4)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answerStr": "0"
   },
   {
     "id": "asc2020-q24-b",
@@ -2292,10 +2311,10 @@ export const ASCHAM_2020_QUESTIONS = [
     "timeLimit": 120,
     "question": "Consider the function \\( y = 3 + 2x^2 - x^4 \\).\n(b) Find the coordinates of any points of inflection.",
     "opts": [
-      "\\(-\\left(\\pm\\dfrac{1}{\\sqrt{3}},\\; \\dfrac{32}{9}\\right)\\)",
-      "\\(\\left(\\pm\\dfrac{1}{\\sqrt{3}},\\; \\dfrac{32}{9}\\right)\\)",
-      "\\(\\left(\\pm\\frac{1}{\\sqrt{3}},\\; \\dfrac{32}{9}\\right)\\)",
-      "\\(\\left(\\pm\\frac{\\sqrt{3}{1}},\\; \\dfrac{32}{9}\\right)\\)"
+      "\\(\\left(\\pm\\frac{1}{\\sqrt{2}}, \\frac{15}{4}\\right)\\)",
+      "\\(\\left(\\pm\\frac{1}{\\sqrt{3}}, \\frac{32}{9}\\right)\\)",
+      "\\(\\left(\\pm\\sqrt{3}, 0\\right)\\)",
+      "\\(\\left(\\pm\\frac{1}{3}, \\frac{260}{81}\\right)\\)"
     ],
     "a": 1,
     "answer": "1",
@@ -2325,7 +2344,26 @@ export const ASCHAM_2020_QUESTIONS = [
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\(\\left(\\pm\\frac{1}{\\sqrt{2}}, \\frac{15}{4}\\right)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\left(\\pm\\frac{1}{\\sqrt{3}}, \\frac{32}{9}\\right)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\left(\\pm\\sqrt{3}, 0\\right)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\left(\\pm\\frac{1}{3}, \\frac{260}{81}\\right)\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answerStr": "1"
   },
   {
     "id": "asc2020-q24-c",
