@@ -1967,8 +1967,8 @@ export const Y12A_CH3B_QUESTIONS = [
             "workingOut": "\\text{We can observe the intersections for different heights } c."
           },
           {
-            "explanation": "\\textbf{i)} For \\( c > 2 \\)",
-            "workingOut": "\\text{The line (e.g. } y=3 \\text{) is above the maximum turning point } (1, 2)\\text{. It does not intersect the curve at all. \\textbf{(0 roots)}}",
+            "explanation": "**i)** For \\( c > 2 \\)",
+            "workingOut": "\\text{The line (e.g. } y=3 \\text{) is above the maximum turning point } (1, 2)\\text{. It does not intersect the curve at all. \\text{ (0 roots)}}",
             "graphData": {
               "jsxGraph": {
                 "width": 350,
@@ -1986,8 +1986,8 @@ export const Y12A_CH3B_QUESTIONS = [
             }
           },
           {
-            "explanation": "\\textbf{ii)} For \\( c = 2 \\)",
-            "workingOut": "\\text{The line is exactly tangent to the curve at the maximum turning point } (1, 2)\\text{. It intersects the curve exactly once. \\textbf{(1 root)}}",
+            "explanation": "**ii)** For \\( c = 2 \\)",
+            "workingOut": "\\text{The line is exactly tangent to the curve at the maximum turning point } (1, 2)\\text{. It intersects the curve exactly once. \\text{ (1 root)}}",
             "graphData": {
               "jsxGraph": {
                 "width": 350,
@@ -2005,8 +2005,8 @@ export const Y12A_CH3B_QUESTIONS = [
             }
           },
           {
-            "explanation": "\\textbf{iii)} For \\( 0 < c < 2 \\)",
-            "workingOut": "\\text{The line (e.g. } y=1 \\text{) cuts through the curve twice: once before the maximum, and once after. \\textbf{(2 roots)}}",
+            "explanation": "**iii)** For \\( 0 < c < 2 \\)",
+            "workingOut": "\\text{The line (e.g. } y=1 \\text{) cuts through the curve twice: once before the maximum, and once after. \\text{ (2 roots)}}",
             "graphData": {
               "jsxGraph": {
                 "width": 350,
@@ -2024,8 +2024,8 @@ export const Y12A_CH3B_QUESTIONS = [
             }
           },
           {
-            "explanation": "\\textbf{iv)} For \\( c = 0 \\)",
-            "workingOut": "\\text{The line is the } x\\text{-axis itself. It only intersects the curve at the origin } (0,0)\\text{. \\textbf{(1 root)}}",
+            "explanation": "**iv)** For \\( c = 0 \\)",
+            "workingOut": "\\text{The line is the } x\\text{-axis itself. It only intersects the curve at the origin } (0,0)\\text{. \\text{ (1 root)}}",
             "graphData": {
               "jsxGraph": {
                 "width": 350,
