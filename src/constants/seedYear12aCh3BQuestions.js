@@ -1050,34 +1050,8 @@ export const Y12A_CH3B_QUESTIONS = [
       },
       {
         "id": "y12a-3b-q10c",
-        "type": "multiple_choice",
-        "question": "c) Which of the following best describes the sketch of the graph of the function?",
-        "opts": [
-          "A W-shaped curve with minima at \\((0,0)\\) and \\((6,0)\\), and a maximum at \\((3,81)\\)",
-          "An M-shaped curve with maxima at \\((0,0)\\) and \\((6,0)\\), and a minimum at \\((3,81)\\)",
-          "A U-shaped curve with a minimum at \\((3,81)\\)",
-          "A curve with a point of inflection at \\((3,81)\\)"
-        ],
-        "options": [
-          {
-            "text": "A W-shaped curve with minima at \\((0,0)\\) and \\((6,0)\\), and a maximum at \\((3,81)\\)",
-            "imageUrl": ""
-          },
-          {
-            "text": "An M-shaped curve with maxima at \\((0,0)\\) and \\((6,0)\\), and a minimum at \\((3,81)\\)",
-            "imageUrl": ""
-          },
-          {
-            "text": "A U-shaped curve with a minimum at \\((3,81)\\)",
-            "imageUrl": ""
-          },
-          {
-            "text": "A curve with a point of inflection at \\((3,81)\\)",
-            "imageUrl": ""
-          }
-        ],
-        "answerStr": "0",
-        "answer": "0",
+        "type": "teacher_review",
+        "question": "c) Sketch the graph of the function, showing all key features.",
         "solutionSteps": [
           {
             "explanation": "Combine the findings from parts (a) and (b) to sketch the graph.",
@@ -1145,7 +1119,8 @@ export const Y12A_CH3B_QUESTIONS = [
               }
             }
           }
-        ]
+        ],
+        "requiresManualGrading": true
       }
     ]
   },
