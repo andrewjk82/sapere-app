@@ -1126,62 +1126,184 @@ export const Y12A_CH3B_QUESTIONS = [
   },
   {
     "id": "y12a-3b-q11",
-    "type": "teacher_review",
+    "topicId": "y12a-3B",
+    "topicCode": "3B",
+    "topicTitle": "Stationary points and turning points",
+    "chapterId": "exam:y12ach3b",
+    "chapterTitle": "Chapter 3B",
+    "origin": "seed",
+    "source": "Year 12a Chapter 3B Q11",
+    "isActive": true,
+    "type": "subquestions",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "For the function \\( y = (x - 3)^2(2x + 3) \\), complete the following steps.",
-    "t": "Stationary points and turning points",
     "subQuestions": [
       {
         "id": "y12a-3b-q11a",
-        "type": "teacher_review",
-        "question": "a) Use the product rule to show that if \\( y = (x - 3)^2(2x + 3) \\), then \\( y' = 6x(x - 3) \\).",
-        "a": "Differentiate: \\( y' = 2(x-3)(2x+3) + (x-3)^2(2) = 2(x-3)(2x+3 + x-3) = 6x(x-3) \\)."
+        "type": "multiple_choice",
+        "question": "a) What is the derivative \\( y' \\) of \\( y = (x - 3)^2(2x + 3) \\) using the product rule?",
+        "opts": [
+          "\\( 6x(x - 3) \\)",
+          "\\( 2x(x - 3)(2x + 3) \\)",
+          "\\( 4x(x - 3) \\)",
+          "\\( 6(x - 3)^2 \\)"
+        ],
+        "options": [
+          {
+            "text": "\\( 6x(x - 3) \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( 2x(x - 3)(2x + 3) \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( 4x(x - 3) \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( 6(x - 3)^2 \\)",
+            "imageUrl": ""
+          }
+        ],
+        "answerStr": "0",
+        "answer": "0",
+        "solutionSteps": [
+          {
+            "explanation": "Let \\( y = uv \\) where \\( u = (x-3)^2 \\) and \\( v = (2x+3) \\).",
+            "workingOut": "\\begin{aligned} u' &= 2(x-3) \\\\ v' &= 2 \\end{aligned}"
+          },
+          {
+            "explanation": "Apply the product rule: \\( y' = u v' + v u' \\).",
+            "workingOut": "\\begin{aligned} y' &= (x-3)^2 \\cdot 2 + (2x+3) \\cdot 2(x-3) \\\\ &= 2(x-3) [ (x-3) + (2x+3) ] \\\\ &= 2(x-3)(3x) \\\\ &= 6x(x-3) \\end{aligned}"
+          }
+        ]
       },
       {
         "id": "y12a-3b-q11b",
-        "type": "teacher_review",
-        "question": "b) Find any stationary points and use a table of slopes to classify them.",
-        "a": "Stationary points at \\( (0, 27) \\) (maximum) and \\( (3, 0) \\) (minimum)."
+        "type": "multiple_choice",
+        "question": "b) Which of the following correctly classifies the stationary points of the function?",
+        "opts": [
+          "Local maximum at \\((0, 27)\\), local minimum at \\((3, 0)\\)",
+          "Local minimum at \\((0, 27)\\), local maximum at \\((3, 0)\\)",
+          "Local maxima at \\((0, 27)\\) and \\((3, 0)\\)",
+          "Local minima at \\((0, 27)\\) and \\((3, 0)\\)"
+        ],
+        "options": [
+          {
+            "text": "Local maximum at \\((0, 27)\\), local minimum at \\((3, 0)\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "Local minimum at \\((0, 27)\\), local maximum at \\((3, 0)\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "Local maxima at \\((0, 27)\\) and \\((3, 0)\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "Local minima at \\((0, 27)\\) and \\((3, 0)\\)",
+            "imageUrl": ""
+          }
+        ],
+        "answerStr": "0",
+        "answer": "0",
+        "solutionSteps": [
+          {
+            "explanation": "Set the first derivative to zero to find the \\(x\\)-coordinates of the stationary points.",
+            "workingOut": "6x(x-3) = 0 \\implies x = 0 \\text{ or } x = 3"
+          },
+          {
+            "explanation": "Substitute these \\(x\\)-values back into the original function to find the corresponding \\(y\\)-coordinates.",
+            "workingOut": "\\begin{aligned} y(0) &= (0-3)^2(0+3) = 9(3) = 27 \\implies (0, 27) \\\\ y(3) &= (3-3)^2(6+3) = 0(9) = 0 \\implies (3, 0) \\end{aligned}"
+          },
+          {
+            "explanation": "Use a table of gradients to classify the nature of each stationary point.",
+            "workingOut": "We observe the sign of \\( y' = 6x(x-3) \\):\n\n\\[\n\\begin{array}{c|c|c|c|c|c}\nx & -1 & 0 & 1 & 3 & 4 \\\\ \\hline\ny' & 24 & 0 & -12 & 0 & 24 \\\\\n\\text{Slope} & / & - & \\backslash & - & /\n\\end{array}\n\\]\n\nFrom the table, we see:\n- At \\( x=0 \\): Slope changes from positive to negative \\(\\rightarrow\\) Local maximum at \\( (0,27) \\)\n- At \\( x=3 \\): Slope changes from negative to positive \\(\\rightarrow\\) Local minimum at \\( (3,0) \\)"
+          }
+        ]
       },
       {
         "id": "y12a-3b-q11c",
         "type": "teacher_review",
-        "question": "c) Sketch the graph of the function, indicating all important features.",
-        "a": "Sketch cubic showing relative maximum at (0,27) and minimum at (3,0), with x-intercepts at -1.5 and 3."
+        "question": "c) Sketch the graph of the function, showing all key features.",
+        "requiresManualGrading": true,
+        "solutionSteps": [
+          {
+            "explanation": "Identify the \\(x\\)-intercepts by setting \\( y = 0 \\).",
+            "workingOut": "(x-3)^2(2x+3) = 0 \\implies x = 3 \\text{ or } x = -\\frac{3}{2}"
+          },
+          {
+            "explanation": "Combine all findings to sketch the graph.",
+            "workingOut": "Plot the local maximum at \\((0,27)\\), the local minimum at \\((3,0)\\), and the \\(x\\)-intercepts at \\((-1.5, 0)\\) and \\((3, 0)\\).",
+            "graphData": {
+              "jsxGraph": {
+                "width": 350,
+                "height": 350,
+                "boundingbox": [
+                  -3,
+                  35,
+                  5,
+                  -10
+                ],
+                "showGrid": true,
+                "showAxisLabels": true,
+                "script": "board.suspendUpdate();\nboard.create('functiongraph', [function(x){ return Math.pow(x-3, 2)*(2*x+3); }], {strokeColor: 'blue', strokeWidth: 2});\nboard.unsuspendUpdate();",
+                "elements": [
+                  {
+                    "type": "point",
+                    "coords": [
+                      0,
+                      27
+                    ],
+                    "name": "(0, 27)",
+                    "color": "blue",
+                    "label": {
+                      "offset": [
+                        15,
+                        15
+                      ]
+                    }
+                  },
+                  {
+                    "type": "point",
+                    "coords": [
+                      3,
+                      0
+                    ],
+                    "name": "(3, 0)",
+                    "color": "blue",
+                    "label": {
+                      "offset": [
+                        15,
+                        -15
+                      ]
+                    }
+                  },
+                  {
+                    "type": "point",
+                    "coords": [
+                      -1.5,
+                      0
+                    ],
+                    "name": "(-1.5, 0)",
+                    "color": "slate",
+                    "label": {
+                      "offset": [
+                        -25,
+                        15
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
       }
-    ],
-    "solutionSteps": [
-      {
-        "explanation": "Differentiate \\( y = (x - 3)^2(2x + 3) \\) using the product rule.",
-        "workingOut": "\\begin{aligned} y' &= 2(x-3)(2x+3) + (x-3)^2(2) \\\\ &= 2(x-3) [ (2x+3) + (x-3) ] \\\\ &= 2(x-3)(3x) = 6x(x - 3) \\end{aligned}"
-      },
-      {
-        "explanation": "Locate critical values by solving \\( y' = 0 \\).",
-        "workingOut": "6x(x-3) = 0 \\implies x = 0 \\text{ or } x = 3"
-      },
-      {
-        "explanation": "Obtain turning point coordinates.",
-        "workingOut": "\\begin{aligned} y(0) &= (-3)^2(3) = 27 \\implies (0,27) \\\\ y(3) &= (0)^2(9) = 0 \\implies (3,0) \\end{aligned}"
-      },
-      {
-        "explanation": "Set up a table of slopes.",
-        "workingOut": "\\(\\begin{array}{c|ccccc} x & -1 & 0 & 1 & 3 & 4 \\\\ \\hline y' & 24 & 0 & -12 & 0 & 24 \\\\ \\text{Slope} & / & - & \\backslash & - & / \\end{array}\\)"
-      }
-    ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 350,
-        "height": 250,
-        "boundingbox": [
-          -3,
-          35,
-          5,
-          -15
-        ],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-2.5,0], [4.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-12], [0,32]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.3, -2, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 30, 'y'], {fontSize: 14});\nvar f = function(x) { return (x-3)*(x-3)*(2*x+3); };\nboard.create('functiongraph', [f, -2.1, 3.8], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 27], {name: 'Max(0,27)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, 5]}});\nboard.create('point', [3, 0], {name: 'Min(3,0)', size: 3, color: 'red', label: {autoPosition: false, offset: [-15, -15]}});\nboard.create('point', [-1.5, 0], {name: '-1.5', size: 2, color: 'black', label: {autoPosition: false, offset: [-10, 10]}});\nboard.unsuspendUpdate();"
-      }
-    }
+    ]
   },
   {
     "id": "y12a-3b-q12a",
