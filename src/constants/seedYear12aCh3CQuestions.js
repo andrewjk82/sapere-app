@@ -1,7 +1,7 @@
 export const Y12A_CH3C_QUESTIONS = [
   {
     "id": "y12a-3c-q1a",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
     "question": "Find the first, second and third derivatives of the function \\( y = x^4 \\).",
@@ -20,11 +20,37 @@ export const Y12A_CH3C_QUESTIONS = [
         "explanation": "Differentiate \\( y'' = 12x^2 \\) to find the third derivative.",
         "workingOut": "y''' = 24x"
       }
-    ]
+    ],
+    "opts": [
+      "\\( y' = 4x^3, \\; y'' = 12x^2, \\; y''' = 24 \\)",
+      "\\( y' = 3x^3, \\; y'' = 6x^2, \\; y''' = 12x \\)",
+      "\\( y' = 4x^4, \\; y'' = 12x^3, \\; y''' = 24x^2 \\)",
+      "\\( y' = 4x^3, \\; y'' = 12x^2, \\; y''' = 24x \\)"
+    ],
+    "options": [
+      {
+        "text": "\\( y' = 4x^3, \\; y'' = 12x^2, \\; y''' = 24 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = 3x^3, \\; y'' = 6x^2, \\; y''' = 12x \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = 4x^4, \\; y'' = 12x^3, \\; y''' = 24x^2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = 4x^3, \\; y'' = 12x^2, \\; y''' = 24x \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
+    "answerStr": "3"
   },
   {
     "id": "y12a-3c-q1b",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
     "question": "Find the first, second and third derivatives of the function \\( y = x^8 \\).",
@@ -43,11 +69,37 @@ export const Y12A_CH3C_QUESTIONS = [
         "explanation": "Find the third derivative.",
         "workingOut": "y''' = 56 \\times 6x^5 = 336x^5"
       }
-    ]
+    ],
+    "opts": [
+      "\\( y' = 8x^7, \\; y'' = 56x^6, \\; y''' = 336x^5 \\)",
+      "\\( y' = 8x^7, \\; y'' = 42x^6, \\; y''' = 210x^5 \\)",
+      "\\( y' = 8x^7, \\; y'' = 56x^6, \\; y''' = 336x^4 \\)",
+      "\\( y' = 7x^8, \\; y'' = 56x^7, \\; y''' = 336x^6 \\)"
+    ],
+    "options": [
+      {
+        "text": "\\( y' = 8x^7, \\; y'' = 56x^6, \\; y''' = 336x^5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = 8x^7, \\; y'' = 42x^6, \\; y''' = 210x^5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = 8x^7, \\; y'' = 56x^6, \\; y''' = 336x^4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = 7x^8, \\; y'' = 56x^7, \\; y''' = 336x^6 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "answerStr": "0"
   },
   {
     "id": "y12a-3c-q1c",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
     "question": "Find the first, second and third derivatives of the function \\( y = x^6 \\).",
@@ -66,11 +118,37 @@ export const Y12A_CH3C_QUESTIONS = [
         "explanation": "Find the third derivative.",
         "workingOut": "y''' = 120x^3"
       }
-    ]
+    ],
+    "opts": [
+      "\\( y' = 6x^5, \\; y'' = 30x^4, \\; y''' = 120x^2 \\)",
+      "\\( y' = 6x^5, \\; y'' = 20x^4, \\; y''' = 60x^3 \\)",
+      "\\( y' = 5x^6, \\; y'' = 30x^5, \\; y''' = 120x^4 \\)",
+      "\\( y' = 6x^5, \\; y'' = 30x^4, \\; y''' = 120x^3 \\)"
+    ],
+    "options": [
+      {
+        "text": "\\( y' = 6x^5, \\; y'' = 30x^4, \\; y''' = 120x^2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = 6x^5, \\; y'' = 20x^4, \\; y''' = 60x^3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = 5x^6, \\; y'' = 30x^5, \\; y''' = 120x^4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = 6x^5, \\; y'' = 30x^4, \\; y''' = 120x^3 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
+    "answerStr": "3"
   },
   {
     "id": "y12a-3c-q1d",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
     "question": "Find the first, second and third derivatives of the function \\( y = x^5 \\).",
@@ -89,11 +167,37 @@ export const Y12A_CH3C_QUESTIONS = [
         "explanation": "Find the third derivative.",
         "workingOut": "y''' = 60x^2"
       }
-    ]
+    ],
+    "opts": [
+      "\\( y' = 5x^4, \\; y'' = 20x^3, \\; y''' = 60x \\)",
+      "\\( y' = 4x^5, \\; y'' = 20x^4, \\; y''' = 60x^3 \\)",
+      "\\( y' = 5x^4, \\; y'' = 20x^3, \\; y''' = 60x^2 \\)",
+      "\\( y' = 5x^4, \\; y'' = 15x^3, \\; y''' = 30x^2 \\)"
+    ],
+    "options": [
+      {
+        "text": "\\( y' = 5x^4, \\; y'' = 20x^3, \\; y''' = 60x \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = 4x^5, \\; y'' = 20x^4, \\; y''' = 60x^3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = 5x^4, \\; y'' = 20x^3, \\; y''' = 60x^2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = 5x^4, \\; y'' = 15x^3, \\; y''' = 30x^2 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
+    "answerStr": "2"
   },
   {
     "id": "y12a-3c-q1e",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
     "question": "Find the first, second and third derivatives of the function \\( y = 3x^4 \\).",
@@ -112,11 +216,37 @@ export const Y12A_CH3C_QUESTIONS = [
         "explanation": "Find the third derivative.",
         "workingOut": "y''' = 72x"
       }
-    ]
+    ],
+    "opts": [
+      "\\( y' = 12x^4, \\; y'' = 36x^3, \\; y''' = 72x^2 \\)",
+      "\\( y' = 12x^3, \\; y'' = 24x^2, \\; y''' = 24x \\)",
+      "\\( y' = 12x^3, \\; y'' = 36x^2, \\; y''' = 72 \\)",
+      "\\( y' = 12x^3, \\; y'' = 36x^2, \\; y''' = 72x \\)"
+    ],
+    "options": [
+      {
+        "text": "\\( y' = 12x^4, \\; y'' = 36x^3, \\; y''' = 72x^2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = 12x^3, \\; y'' = 24x^2, \\; y''' = 24x \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = 12x^3, \\; y'' = 36x^2, \\; y''' = 72 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = 12x^3, \\; y'' = 36x^2, \\; y''' = 72x \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
+    "answerStr": "3"
   },
   {
     "id": "y12a-3c-q1f",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
     "question": "Find the first, second and third derivatives of the function \\( y = 2x^5 \\).",
@@ -135,11 +265,37 @@ export const Y12A_CH3C_QUESTIONS = [
         "explanation": "Find the third derivative.",
         "workingOut": "y''' = 120x^2"
       }
-    ]
+    ],
+    "opts": [
+      "\\( y' = 10x^4, \\; y'' = 40x^3, \\; y''' = 120x \\)",
+      "\\( y' = 10x^5, \\; y'' = 40x^4, \\; y''' = 120x^3 \\)",
+      "\\( y' = 10x^4, \\; y'' = 30x^3, \\; y''' = 60x^2 \\)",
+      "\\( y' = 10x^4, \\; y'' = 40x^3, \\; y''' = 120x^2 \\)"
+    ],
+    "options": [
+      {
+        "text": "\\( y' = 10x^4, \\; y'' = 40x^3, \\; y''' = 120x \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = 10x^5, \\; y'' = 40x^4, \\; y''' = 120x^3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = 10x^4, \\; y'' = 30x^3, \\; y''' = 60x^2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = 10x^4, \\; y'' = 40x^3, \\; y''' = 120x^2 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
+    "answerStr": "3"
   },
   {
     "id": "y12a-3c-q1g",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
     "question": "Find the first, second and third derivatives of the function \\( y = 5 - 4x \\).",
@@ -158,11 +314,37 @@ export const Y12A_CH3C_QUESTIONS = [
         "explanation": "Find the third derivative.",
         "workingOut": "y''' = 0"
       }
-    ]
+    ],
+    "opts": [
+      "\\( y' = -4, \\; y'' = 0, \\; y''' = 0 \\)",
+      "\\( y' = -4, \\; y'' = -4, \\; y''' = -4 \\)",
+      "\\( y' = -4x, \\; y'' = -4, \\; y''' = 0 \\)",
+      "\\( y' = 4, \\; y'' = 0, \\; y''' = 0 \\)"
+    ],
+    "options": [
+      {
+        "text": "\\( y' = -4, \\; y'' = 0, \\; y''' = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = -4, \\; y'' = -4, \\; y''' = -4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = -4x, \\; y'' = -4, \\; y''' = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = 4, \\; y'' = 0, \\; y''' = 0 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "answerStr": "0"
   },
   {
     "id": "y12a-3c-q1h",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
     "question": "Find the first, second and third derivatives of the function \\( y = x^2 - 5x \\).",
@@ -181,11 +363,37 @@ export const Y12A_CH3C_QUESTIONS = [
         "explanation": "Find the third derivative.",
         "workingOut": "y''' = 0"
       }
-    ]
+    ],
+    "opts": [
+      "\\( y' = 2x - 5, \\; y'' = 2, \\; y''' = 0 \\)",
+      "\\( y' = 2x - 5, \\; y'' = -5, \\; y''' = 0 \\)",
+      "\\( y' = 2x - 5, \\; y'' = 2x, \\; y''' = 2 \\)",
+      "\\( y' = 2x, \\; y'' = 2, \\; y''' = 0 \\)"
+    ],
+    "options": [
+      {
+        "text": "\\( y' = 2x - 5, \\; y'' = 2, \\; y''' = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = 2x - 5, \\; y'' = -5, \\; y''' = 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = 2x - 5, \\; y'' = 2x, \\; y''' = 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = 2x, \\; y'' = 2, \\; y''' = 0 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "answerStr": "0"
   },
   {
     "id": "y12a-3c-q1i",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
     "question": "Find the first, second and third derivatives of the function \\( y = 3x^3 - 2x^2 \\).",
@@ -204,11 +412,37 @@ export const Y12A_CH3C_QUESTIONS = [
         "explanation": "Find the third derivative.",
         "workingOut": "y''' = 18"
       }
-    ]
+    ],
+    "opts": [
+      "\\( y' = 9x^2 - 4x, \\; y'' = 18x, \\; y''' = 18 \\)",
+      "\\( y' = 6x^2 - 4x, \\; y'' = 12x - 4, \\; y''' = 12 \\)",
+      "\\( y' = 9x^2 - 4x, \\; y'' = 18x - 4, \\; y''' = 18 \\)",
+      "\\( y' = 9x^2 - 2x, \\; y'' = 18x - 2, \\; y''' = 18 \\)"
+    ],
+    "options": [
+      {
+        "text": "\\( y' = 9x^2 - 4x, \\; y'' = 18x, \\; y''' = 18 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = 6x^2 - 4x, \\; y'' = 12x - 4, \\; y''' = 12 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = 9x^2 - 4x, \\; y'' = 18x - 4, \\; y''' = 18 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = 9x^2 - 2x, \\; y'' = 18x - 2, \\; y''' = 18 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
+    "answerStr": "2"
   },
   {
     "id": "y12a-3c-q1j",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
     "question": "Find the first, second and third derivatives of the function \\( y = 2x^5 + 4x^3 \\).",
@@ -227,7 +461,33 @@ export const Y12A_CH3C_QUESTIONS = [
         "explanation": "Find the third derivative.",
         "workingOut": "y''' = 120x^2 + 24"
       }
-    ]
+    ],
+    "opts": [
+      "\\( y' = 10x^5 + 12x^3, \\; y'' = 50x^4 + 36x^2, \\; y''' = 200x^3 + 72x \\)",
+      "\\( y' = 10x^4 + 12x^3, \\; y'' = 40x^3 + 36x^2, \\; y''' = 120x^2 + 72x \\)",
+      "\\( y' = 10x^4 + 12x^2, \\; y'' = 40x^3 + 24x, \\; y''' = 120x^2 \\)",
+      "\\( y' = 10x^4 + 12x^2, \\; y'' = 40x^3 + 24x, \\; y''' = 120x^2 + 24 \\)"
+    ],
+    "options": [
+      {
+        "text": "\\( y' = 10x^5 + 12x^3, \\; y'' = 50x^4 + 36x^2, \\; y''' = 200x^3 + 72x \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = 10x^4 + 12x^3, \\; y'' = 40x^3 + 36x^2, \\; y''' = 120x^2 + 72x \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = 10x^4 + 12x^2, \\; y'' = 40x^3 + 24x, \\; y''' = 120x^2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = 10x^4 + 12x^2, \\; y'' = 40x^3 + 24x, \\; y''' = 120x^2 + 24 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
+    "answerStr": "3"
   },
   {
     "id": "y12a-3c-q2a",
