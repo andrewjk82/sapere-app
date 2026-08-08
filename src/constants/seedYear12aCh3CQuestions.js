@@ -990,15 +990,15 @@ export const Y12A_CH3C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find the first derivative.",
-        "workingOut": "y' = 3x^2 - 2x^{-3}"
+        "workingOut": "\\begin{aligned} y' &= -2 \\times (-4)x^{-4-1} \\\\ &= 8x^{-5} \\end{aligned}"
       },
       {
         "explanation": "Find the second derivative.",
-        "workingOut": "y'' = 6x + 6x^{-4}"
+        "workingOut": "\\begin{aligned} y'' &= 8 \\times (-5)x^{-5-1} \\\\ &= -40x^{-6} \\end{aligned}"
       },
       {
         "explanation": "Find the third derivative.",
-        "workingOut": "y''' = 6 - 24x^{-5}"
+        "workingOut": "\\begin{aligned} y''' &= -40 \\times (-6)x^{-6-1} \\\\ &= 240x^{-7} \\end{aligned}"
       }
     ],
     "opts": [
@@ -1512,16 +1512,16 @@ export const Y12A_CH3C_QUESTIONS = [
     "t": "Second and higher derivatives",
     "solutionSteps": [
       {
-        "explanation": "Rewrite the function.",
+        "explanation": "Rewrite the function using a negative index.",
         "workingOut": "y = (4x + 3)^{-2}"
       },
       {
-        "explanation": "Find the first derivative using the chain rule.",
-        "workingOut": "y' = -2(4x+3)^{-3} \\times 4 = -8(4x+3)^{-3} = -\\frac{8}{(4x+3)^3}"
+        "explanation": "Apply the chain rule to find the first derivative.",
+        "workingOut": "\\begin{aligned} y' &= -2(4x+3)^{-2-1} \\times \\frac{d}{dx}[4x+3] \\\\ &= -2(4x+3)^{-3} \\times 4 \\\\ &= -8(4x+3)^{-3} \\\\ &= -\\frac{8}{(4x+3)^3} \\end{aligned}"
       },
       {
-        "explanation": "Find the second derivative.",
-        "workingOut": "y'' = -8 \\times (-3)(4x+3)^{-4} \\times 4 = 96(4x+3)^{-4} = \\frac{96}{(4x+3)^4}"
+        "explanation": "Apply the chain rule again to find the second derivative.",
+        "workingOut": "\\begin{aligned} y'' &= -8 \\times (-3)(4x+3)^{-3-1} \\times \\frac{d}{dx}[4x+3] \\\\ &= 24(4x+3)^{-4} \\times 4 \\\\ &= 96(4x+3)^{-4} \\\\ &= \\frac{96}{(4x+3)^4} \\end{aligned}"
       }
     ],
     "opts": [
@@ -1561,16 +1561,16 @@ export const Y12A_CH3C_QUESTIONS = [
     "t": "Second and higher derivatives",
     "solutionSteps": [
       {
-        "explanation": "Rewrite the function.",
+        "explanation": "Rewrite the function using a negative index.",
         "workingOut": "y = 3(5 - 2x)^{-3}"
       },
       {
-        "explanation": "Find the first derivative.",
-        "workingOut": "y' = 3 \\times (-3)(5-2x)^{-4} \\times (-2) = 18(5-2x)^{-4} = \\frac{18}{(5-2x)^4}"
+        "explanation": "Apply the chain rule to find the first derivative.",
+        "workingOut": "\\begin{aligned} y' &= 3 \\times (-3)(5-2x)^{-3-1} \\times \\frac{d}{dx}[5-2x] \\\\ &= -9(5-2x)^{-4} \\times (-2) \\\\ &= 18(5-2x)^{-4} \\\\ &= \\frac{18}{(5-2x)^4} \\end{aligned}"
       },
       {
-        "explanation": "Find the second derivative.",
-        "workingOut": "y'' = 18 \\times (-4)(5-2x)^{-5} \\times (-2) = 144(5-2x)^{-5} = \\frac{144}{(5-2x)^5}"
+        "explanation": "Apply the chain rule again to find the second derivative.",
+        "workingOut": "\\begin{aligned} y'' &= 18 \\times (-4)(5-2x)^{-4-1} \\times \\frac{d}{dx}[5-2x] \\\\ &= -72(5-2x)^{-5} \\times (-2) \\\\ &= 144(5-2x)^{-5} \\\\ &= \\frac{144}{(5-2x)^5} \\end{aligned}"
       }
     ],
     "opts": [
@@ -1904,12 +1904,12 @@ export const Y12A_CH3C_QUESTIONS = [
     "t": "Second and higher derivatives",
     "solutionSteps": [
       {
-        "explanation": "Find the first derivative.",
-        "workingOut": "f'(x) = 3x^2 + 8x + 6"
+        "explanation": "Find the first derivative using the chain rule.",
+        "workingOut": "\\begin{aligned} f'(x) &= 4(2x - 3)^{4-1} \\times \\frac{d}{dx}[2x - 3] \\\\ &= 4(2x - 3)^3 \\times 2 \\\\ &= 8(2x - 3)^3 \\end{aligned}"
       },
       {
-        "explanation": "Find the first derivative.",
-        "workingOut": "f''(x) = 6x + 8"
+        "explanation": "Substitute \\( x = 1 \\) into the derivative.",
+        "workingOut": "\\begin{aligned} f'(1) &= 8(2(1) - 3)^3 \\\\ &= 8(2 - 3)^3 \\\\ &= 8(-1)^3 \\\\ &= -8 \\end{aligned}"
       }
     ],
     "opts": [
@@ -2129,12 +2129,12 @@ export const Y12A_CH3C_QUESTIONS = [
     "t": "Second and higher derivatives",
     "solutionSteps": [
       {
-        "explanation": "Find the derivative \\( f'(x) \\).",
-        "workingOut": "f'(x) = 4 + 3x^2"
+        "explanation": "Find the first derivative.",
+        "workingOut": "\\begin{aligned} f'(x) &= 4(1)x^{1-1} + 3x^{3-1} \\\\ &= 4 + 3x^2 \\end{aligned}"
       },
       {
-        "explanation": "Substitute \\( x = 2 \\) into the derivative.",
-        "workingOut": "f'(2) = 4 + 3(2^2) = 4 + 12 = 16"
+        "explanation": "Substitute \\( x = 2 \\) into the first derivative.",
+        "workingOut": "\\begin{aligned} f'(2) &= 4 + 3(2)^2 \\\\ &= 4 + 3(4) \\\\ &= 16 \\end{aligned}"
       }
     ],
     "opts": [
@@ -2174,12 +2174,12 @@ export const Y12A_CH3C_QUESTIONS = [
     "t": "Second and higher derivatives",
     "solutionSteps": [
       {
-        "explanation": "Find the second derivative \\( f''(x) \\) by differentiating \\( f'(x) = 4 + 3x^2 \\).",
-        "workingOut": "f''(x) = 6x"
+        "explanation": "Find the second derivative by differentiating the first derivative.",
+        "workingOut": "\\begin{aligned} f''(x) &= \\frac{d}{dx}[4 + 3x^2] \\\\ &= 0 + 3 \\times 2x^{2-1} \\\\ &= 6x \\end{aligned}"
       },
       {
         "explanation": "Substitute \\( x = 2 \\) into the second derivative.",
-        "workingOut": "f''(2) = 6(2) = 12"
+        "workingOut": "\\begin{aligned} f''(2) &= 6(2) \\\\ &= 12 \\end{aligned}"
       }
     ],
     "opts": [
@@ -2219,12 +2219,12 @@ export const Y12A_CH3C_QUESTIONS = [
     "t": "Second and higher derivatives",
     "solutionSteps": [
       {
-        "explanation": "Find the third derivative \\( f'''(x) \\) by differentiating \\( f''(x) = 6x \\).",
-        "workingOut": "f'''(x) = 6"
+        "explanation": "Find the third derivative by differentiating the second derivative.",
+        "workingOut": "\\begin{aligned} f'''(x) &= \\frac{d}{dx}[6x] \\\\ &= 6 \\end{aligned}"
       },
       {
-        "explanation": "Substitute \\( x = 2 \\) into the third derivative.",
-        "workingOut": "f'''(2) = 6"
+        "explanation": "Evaluate the third derivative at \\( x = 2 \\).",
+        "workingOut": "\\begin{aligned} f'''(2) &= 6 \\quad (\\text{since } f'''(x) \\text{ is constant}) \\end{aligned}"
       }
     ],
     "opts": [
@@ -2264,12 +2264,12 @@ export const Y12A_CH3C_QUESTIONS = [
     "t": "Second and higher derivatives",
     "solutionSteps": [
       {
-        "explanation": "Find the fourth derivative \\( f''''(x) \\) by differentiating the constant third derivative.",
-        "workingOut": "f''''(x) = 0"
+        "explanation": "Find the fourth derivative by differentiating the constant third derivative.",
+        "workingOut": "\\begin{aligned} f''''(x) &= \\frac{d}{dx}[6] \\\\ &= 0 \\end{aligned}"
       },
       {
-        "explanation": "Substitute \\( x = 2 \\) into the fourth derivative.",
-        "workingOut": "f''''(2) = 0"
+        "explanation": "Evaluate the fourth derivative at \\( x = 2 \\).",
+        "workingOut": "\\begin{aligned} f''''(2) &= 0 \\end{aligned}"
       }
     ],
     "opts": [
@@ -2310,11 +2310,11 @@ export const Y12A_CH3C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find the first derivative using the chain rule.",
-        "workingOut": "f'(x) = 4(3x - 2)^3 \\times 3 = 12(3x - 2)^3"
+        "workingOut": "\\begin{aligned} f'(x) &= 4(3x - 2)^{4-1} \\times \\frac{d}{dx}[3x - 2] \\\\ &= 4(3x - 2)^3 \\times 3 \\\\ &= 12(3x - 2)^3 \\end{aligned}"
       },
       {
-        "explanation": "Substitute \\( x = 1 \\) into \\( f'(x) \\).",
-        "workingOut": "f'(1) = 12(3(1) - 2)^3 = 12(1)^3 = 12"
+        "explanation": "Substitute \\( x = 1 \\) into the first derivative.",
+        "workingOut": "\\begin{aligned} f'(1) &= 12(3(1) - 2)^3 \\\\ &= 12(1)^3 \\\\ &= 12 \\end{aligned}"
       }
     ],
     "opts": [
@@ -2354,12 +2354,12 @@ export const Y12A_CH3C_QUESTIONS = [
     "t": "Second and higher derivatives",
     "solutionSteps": [
       {
-        "explanation": "Differentiate \\( f'(x) = 12(3x - 2)^3 \\) using the chain rule.",
-        "workingOut": "f''(x) = 12 \\times 3(3x - 2)^2 \\times 3 = 108(3x - 2)^2"
+        "explanation": "Differentiate the first derivative using the chain rule.",
+        "workingOut": "\\begin{aligned} f''(x) &= 12 \\times 3(3x - 2)^{3-1} \\times \\frac{d}{dx}[3x - 2] \\\\ &= 36(3x - 2)^2 \\times 3 \\\\ &= 108(3x - 2)^2 \\end{aligned}"
       },
       {
-        "explanation": "Substitute \\( x = 1 \\) into \\( f''(x) \\).",
-        "workingOut": "f''(1) = 108(3(1) - 2)^2 = 108(1)^2 = 108"
+        "explanation": "Substitute \\( x = 1 \\) into the second derivative.",
+        "workingOut": "\\begin{aligned} f''(1) &= 108(3(1) - 2)^2 \\\\ &= 108(1)^2 \\\\ &= 108 \\end{aligned}"
       }
     ],
     "opts": [
@@ -2399,12 +2399,12 @@ export const Y12A_CH3C_QUESTIONS = [
     "t": "Second and higher derivatives",
     "solutionSteps": [
       {
-        "explanation": "Differentiate \\( f''(x) = 108(3x - 2)^2 \\) using the chain rule.",
-        "workingOut": "f'''(x) = 108 \\times 2(3x - 2) \\times 3 = 648(3x - 2)"
+        "explanation": "Differentiate the second derivative using the chain rule.",
+        "workingOut": "\\begin{aligned} f'''(x) &= 108 \\times 2(3x - 2)^{2-1} \\times \\frac{d}{dx}[3x - 2] \\\\ &= 216(3x - 2)^1 \\times 3 \\\\ &= 648(3x - 2) \\end{aligned}"
       },
       {
-        "explanation": "Substitute \\( x = 1 \\) into \\( f'''(x) \\).",
-        "workingOut": "f'''(1) = 648(3(1) - 2) = 648(1) = 648"
+        "explanation": "Substitute \\( x = 1 \\) into the third derivative.",
+        "workingOut": "\\begin{aligned} f'''(1) &= 648(3(1) - 2) \\\\ &= 648(1) \\\\ &= 648 \\end{aligned}"
       }
     ],
     "opts": [
@@ -2444,12 +2444,12 @@ export const Y12A_CH3C_QUESTIONS = [
     "t": "Second and higher derivatives",
     "solutionSteps": [
       {
-        "explanation": "Differentiate \\( f'''(x) = 648(3x - 2) \\) to find the fourth derivative.",
-        "workingOut": "f''''(x) = 648 \\times 3 = 1944"
+        "explanation": "Differentiate the third derivative.",
+        "workingOut": "\\begin{aligned} f''''(x) &= \\frac{d}{dx}[648(3x - 2)] \\\\ &= 648 \\times 3 \\\\ &= 1944 \\end{aligned}"
       },
       {
         "explanation": "Evaluate the fourth derivative (which is a constant).",
-        "workingOut": "f''''(1) = 1944"
+        "workingOut": "\\begin{aligned} f''''(1) &= 1944 \\end{aligned}"
       }
     ],
     "opts": [
@@ -2731,15 +2731,15 @@ export const Y12A_CH3C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Apply the power rule for the first derivative.",
-        "workingOut": "\\frac{d}{dx}[x^m] = mx^{m-1}"
+        "workingOut": "\\begin{aligned} \\frac{d}{dx}[x^m] &= mx^{m-1} \\end{aligned}"
       },
       {
         "explanation": "Apply the power rule for the second derivative.",
-        "workingOut": "\\frac{d^2}{dx^2}[x^m] = m(m-1)x^{m-2}"
+        "workingOut": "\\begin{aligned} \\frac{d^2}{dx^2}[x^m] &= \\frac{d}{dx}[mx^{m-1}] \\\\ &= m(m-1)x^{m-1-1} \\\\ &= m(m-1)x^{m-2} \\end{aligned}"
       },
       {
         "explanation": "Apply the power rule for the third derivative.",
-        "workingOut": "\\frac{d^3}{dx^3}[x^m] = m(m-1)(m-2)x^{m-3}"
+        "workingOut": "\\begin{aligned} \\frac{d^3}{dx^3}[x^m] &= \\frac{d}{dx}[m(m-1)x^{m-2}] \\\\ &= m(m-1)(m-2)x^{m-2-1} \\\\ &= m(m-1)(m-2)x^{m-3} \\end{aligned}"
       }
     ],
     "opts": [
@@ -2779,12 +2779,12 @@ export const Y12A_CH3C_QUESTIONS = [
     "t": "Second and higher derivatives",
     "solutionSteps": [
       {
-        "explanation": "Find the \\( m \\)-th derivative by continuing the pattern of successive differentiation. Notice that the power of \\( x \\) decreases to 0 (since \\( x^{m-m} = x^0 = 1 \\)) and the coefficient becomes the product of all integers from \\( m \\) down to 1.",
-        "workingOut": "\\frac{d^m}{dx^m}[x^m] = m(m-1)(m-2)\\cdots(2)(1) = m!"
+        "explanation": "Find the \\( m \\)-th derivative by continuing the pattern of successive differentiation.",
+        "workingOut": "\\begin{aligned} \\frac{d^m}{dx^m}[x^m] &= m(m-1)(m-2) \\cdots (2)(1)x^{m-m} \\\\ &= m!x^0 \\\\ &= m! \\end{aligned}"
       },
       {
         "explanation": "Differentiate the constant \\( m! \\) to find the \\( (m + 1) \\)-th derivative.",
-        "workingOut": "\\frac{d^{m+1}}{dx^{m+1}}[x^m] = \\frac{d}{dx}[m!] = 0"
+        "workingOut": "\\begin{aligned} \\frac{d^{m+1}}{dx^{m+1}}[x^m] &= \\frac{d}{dx}[m!] \\\\ &= 0 \\quad (\\text{since } m! \\text{ is a constant}) \\end{aligned}"
       }
     ],
     "opts": [
