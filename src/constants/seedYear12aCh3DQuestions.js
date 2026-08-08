@@ -1840,27 +1840,179 @@ export const Y12A_CH3D_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y12a-3d-q12a",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "a) increasing, that is \\( y' > 0 \\)",
-        "a": "x<-1 or x>4"
+        "a": "x<-1 or x>4",
+        "opts": [
+          "\\( -1 < x < 4 \\)",
+          "\\( x < -1 \\) or \\( x > 4 \\)",
+          "\\( x > 1.5 \\)",
+          "\\( x < 1.5 \\)"
+        ],
+        "solutionSteps": [
+          {
+            "explanation": "Find the first derivative.",
+            "workingOut": "\\begin{aligned} y' &= 3 \\times 2x^2 - 2 \\times 9x - 24 \\\\ &= 6x^2 - 18x - 24 \\end{aligned}"
+          },
+          {
+            "explanation": "For the curve to be increasing, the first derivative must be positive.",
+            "workingOut": "\\begin{aligned} y' &> 0 \\\\ 6x^2 - 18x - 24 &> 0 \\\\ 6(x^2 - 3x - 4) &> 0 \\\\ 6(x - 4)(x + 1) &> 0 \\end{aligned}"
+          },
+          {
+            "explanation": "Solve the quadratic inequality.",
+            "workingOut": "\\text{The roots are } x = 4 \\text{ and } x = -1. \\text{ This is an upward-opening parabola, so it is positive outside the roots: } \\\\ x < -1 \\text{ or } x > 4"
+          }
+        ],
+        "options": [
+          {
+            "text": "\\( -1 < x < 4 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( x < -1 \\) or \\( x > 4 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( x > 1.5 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( x < 1.5 \\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "1",
+        "answerStr": "1"
       },
       {
         "id": "y12a-3d-q12b",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "b) decreasing, that is \\( y' < 0 \\)",
-        "a": "-1<x<4"
+        "a": "-1<x<4",
+        "opts": [
+          "\\( -1 < x < 4 \\)",
+          "\\( x > 1.5 \\)",
+          "\\( x < -1 \\) or \\( x > 4 \\)",
+          "\\( x < 1.5 \\)"
+        ],
+        "solutionSteps": [
+          {
+            "explanation": "Use the first derivative factored form.",
+            "workingOut": "y' = 6(x - 4)(x + 1)"
+          },
+          {
+            "explanation": "For the curve to be decreasing, the first derivative must be negative.",
+            "workingOut": "\\begin{aligned} 6(x - 4)(x + 1) &< 0 \\end{aligned}"
+          },
+          {
+            "explanation": "Solve the quadratic inequality.",
+            "workingOut": "\\text{The parabola is below the x-axis between the roots: } \\\\ -1 < x < 4"
+          }
+        ],
+        "options": [
+          {
+            "text": "\\( -1 < x < 4 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( x > 1.5 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( x < -1 \\) or \\( x > 4 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( x < 1.5 \\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "0",
+        "answerStr": "0"
       },
       {
         "id": "y12a-3d-q12c",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "c) concave up, that is \\( y'' > 0 \\)",
-        "a": "x>1.5"
+        "a": "x>1.5",
+        "opts": [
+          "\\( -1 < x < 4 \\)",
+          "\\( x > 4 \\)",
+          "\\( x > 1.5 \\)",
+          "\\( x < 1.5 \\)"
+        ],
+        "solutionSteps": [
+          {
+            "explanation": "Find the second derivative by differentiating \\( y' = 6x^2 - 18x - 24 \\).",
+            "workingOut": "\\begin{aligned} y'' &= 2 \\times 6x - 18 \\\\ &= 12x - 18 \\end{aligned}"
+          },
+          {
+            "explanation": "For the curve to be concave up, the second derivative must be positive.",
+            "workingOut": "\\begin{aligned} y'' &> 0 \\\\ 12x - 18 &> 0 \\\\ 12x &> 18 \\\\ x &> \\frac{18}{12} \\\\ x &> 1.5 \\end{aligned}"
+          }
+        ],
+        "options": [
+          {
+            "text": "\\( -1 < x < 4 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( x > 4 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( x > 1.5 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( x < 1.5 \\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "2",
+        "answerStr": "2"
       },
       {
         "id": "y12a-3d-q12d",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "d) concave down, that is \\( y'' < 0 \\)",
-        "a": "x<1.5"
+        "a": "x<1.5",
+        "opts": [
+          "\\( x > 1.5 \\)",
+          "\\( x < -1 \\)",
+          "\\( -1 < x < 4 \\)",
+          "\\( x < 1.5 \\)"
+        ],
+        "solutionSteps": [
+          {
+            "explanation": "Use the second derivative.",
+            "workingOut": "\\begin{aligned} y'' &= 12x - 18 \\end{aligned}"
+          },
+          {
+            "explanation": "For the curve to be concave down, the second derivative must be negative.",
+            "workingOut": "\\begin{aligned} 12x - 18 &< 0 \\\\ 12x &< 18 \\\\ x &< 1.5 \\end{aligned}"
+          }
+        ],
+        "options": [
+          {
+            "text": "\\( x > 1.5 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( x < -1 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( -1 < x < 4 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( x < 1.5 \\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "3",
+        "answerStr": "3"
       }
     ],
     "solutionSteps": [
@@ -1900,27 +2052,171 @@ export const Y12A_CH3D_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y12a-3d-q13a",
-        "type": "teacher_review",
-        "question": "a) Find \\( y' \\) and \\( y'' \\).",
-        "a": "y' = 3x^2 + 12x - 15, and y'' = 6x + 12."
+        "type": "multiple_choice",
+        "question": "Find \\( y' \\) and \\( y'' \\) for \\( y = x^3 + 6x^2 - 15x + 12 \\).",
+        "a": "y' = 3x^2 + 12x - 15, and y'' = 6x + 12.",
+        "opts": [
+          "\\( y' = 3x^2 + 12x \\), \\( y'' = 6x + 12 \\)",
+          "\\( y' = 3x^2 + 12x - 15 \\), \\( y'' = 6x + 12 \\)",
+          "\\( y' = 3x^2 + 12x - 15 \\), \\( y'' = 6x \\)",
+          "\\( y' = 3x^2 + 6x - 15 \\), \\( y'' = 6x + 6 \\)"
+        ],
+        "solutionSteps": [
+          {
+            "explanation": "Apply the power rule to find the first derivative.",
+            "workingOut": "\\begin{aligned} y' &= 3x^2 + 2 \\times 6x - 15 \\\\ &= 3x^2 + 12x - 15 \\end{aligned}"
+          },
+          {
+            "explanation": "Apply the power rule again to find the second derivative.",
+            "workingOut": "\\begin{aligned} y'' &= 2 \\times 3x + 12 \\\\ &= 6x + 12 \\end{aligned}"
+          }
+        ],
+        "options": [
+          {
+            "text": "\\( y' = 3x^2 + 12x \\), \\( y'' = 6x + 12 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( y' = 3x^2 + 12x - 15 \\), \\( y'' = 6x + 12 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( y' = 3x^2 + 12x - 15 \\), \\( y'' = 6x \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( y' = 3x^2 + 6x - 15 \\), \\( y'' = 6x + 6 \\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "1",
+        "answerStr": "1"
       },
       {
         "id": "y12a-3d-q13b",
-        "type": "teacher_review",
-        "question": "b) Show that the curve has a point of inflection at \\( (-2, 58) \\).",
-        "a": "y'' = 0 at x = -2; y(-2) = 58. Since y'' changes sign from negative (for x < -2) to positive (for x > -2), (-2, 58) is a point of inflection."
+        "type": "multiple_choice",
+        "question": "Find the coordinates of the point of inflection.",
+        "a": "y'' = 0 at x = -2; y(-2) = 58. Since y'' changes sign from negative (for x < -2) to positive (for x > -2), (-2, 58) is a point of inflection.",
+        "opts": [
+          "\\( (-2, 58) \\)",
+          "\\( (2, 58) \\)",
+          "\\( (1, 4) \\)",
+          "\\( (-2, -18) \\)"
+        ],
+        "solutionSteps": [
+          {
+            "explanation": "Set the second derivative to zero.",
+            "workingOut": "\\begin{aligned} y'' &= 6x + 12 = 0 \\\\ 6x &= -12 \\\\ x &= -2 \\end{aligned}"
+          },
+          {
+            "explanation": "Substitute \\( x = -2 \\) into the original equation to find the y-coordinate.",
+            "workingOut": "\\begin{aligned} y(-2) &= (-2)^3 + 6(-2)^2 - 15(-2) + 12 \\\\ &= -8 + 6(4) + 30 + 12 \\\\ &= -8 + 24 + 30 + 12 \\\\ &= 58 \\end{aligned}"
+          },
+          {
+            "explanation": "Verify concavity changes across \\( x = -2 \\).",
+            "workingOut": "\\text{For } x < -2, y'' < 0. \\text{ For } x > -2, y'' > 0. \\text{ Therefore, } (-2, 58) \\text{ is a point of inflection.}"
+          }
+        ],
+        "options": [
+          {
+            "text": "\\( (-2, 58) \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( (2, 58) \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( (1, 4) \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( (-2, -18) \\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "0",
+        "answerStr": "0"
       },
       {
         "id": "y12a-3d-q13c",
-        "type": "teacher_review",
-        "question": "c) Show that the gradient of the tangent at the point of inflection is \\( -27 \\).",
-        "a": "Evaluate y' at x = -2: y'(-2) = 3(-2)^2 + 12(-2) - 15 = 12 - 24 - 15 = -27."
+        "type": "multiple_choice",
+        "question": "Find the gradient of the tangent at the point of inflection.",
+        "a": "Evaluate y' at x = -2: y'(-2) = 3(-2)^2 + 12(-2) - 15 = 12 - 24 - 15 = -27.",
+        "opts": [
+          "\\( 27 \\)",
+          "\\( 15 \\)",
+          "\\( -27 \\)",
+          "\\( -15 \\)"
+        ],
+        "solutionSteps": [
+          {
+            "explanation": "The point of inflection occurs at \\( x = -2 \\). Evaluate \\( y'(-2) \\) to find the gradient.",
+            "workingOut": "\\begin{aligned} y'(-2) &= 3(-2)^2 + 12(-2) - 15 \\\\ &= 3(4) - 24 - 15 \\\\ &= 12 - 24 - 15 \\\\ &= -27 \\end{aligned}"
+          }
+        ],
+        "options": [
+          {
+            "text": "\\( 27 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( 15 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( -27 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( -15 \\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "2",
+        "answerStr": "2"
       },
       {
         "id": "y12a-3d-q13d",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "d) Hence find the equation of the tangent at the point of inflection. (Format: 'y = mx + c')",
-        "a": "y = -27x + 4"
+        "a": "y = -27x + 4",
+        "opts": [
+          "\\( y = 27x + 112 \\)",
+          "\\( y = -27x + 4 \\)",
+          "\\( y = -27x - 4 \\)",
+          "\\( y = -27x + 58 \\)"
+        ],
+        "solutionSteps": [
+          {
+            "explanation": "Use the point-slope formula \\( y - y_1 = m(x - x_1) \\) with point \\( (-2, 58) \\) and gradient \\( m = -27 \\).",
+            "workingOut": "\\begin{aligned} y - 58 &= -27(x - (-2)) \\\\ y - 58 &= -27(x + 2) \\end{aligned}"
+          },
+          {
+            "explanation": "Expand and simplify into \\( y = mx + c \\) form.",
+            "workingOut": "\\begin{aligned} y - 58 &= -27x - 54 \\\\ y &= -27x - 54 + 58 \\\\ y &= -27x + 4 \\end{aligned}"
+          }
+        ],
+        "options": [
+          {
+            "text": "\\( y = 27x + 112 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( y = -27x + 4 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( y = -27x - 4 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( y = -27x + 58 \\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "1",
+        "answerStr": "1"
       }
     ],
     "solutionSteps": [
@@ -1952,21 +2248,129 @@ export const Y12A_CH3D_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y12a-3d-q14a",
-        "type": "teacher_review",
-        "question": "a) Find \\( f'(x) \\), \\( f''(x) \\), \\( g'(x) \\) and \\( g''(x) \\).",
-        "a": "f'(x) = 6x^2, f''(x) = 12x, g'(x) = 12x^3, and g''(x) = 36x^2."
+        "type": "multiple_choice",
+        "question": "Find \\( f'(x) \\), \\( f''(x) \\), \\( g'(x) \\) and \\( g''(x) \\) for \\( f(x) = 2x^3 \\) and \\( g(x) = 3x^4 \\).",
+        "a": "f'(x) = 6x^2, f''(x) = 12x, g'(x) = 12x^3, and g''(x) = 36x^2.",
+        "opts": [
+          "\\( f'(x) = 6x^2, f''(x) = 12x, g'(x) = 12x^3, g''(x) = 36x^2 \\)",
+          "\\( f'(x) = 3x^2, f''(x) = 6x, g'(x) = 4x^3, g''(x) = 12x^2 \\)",
+          "\\( f'(x) = 6x^2, f''(x) = 6x, g'(x) = 12x^3, g''(x) = 24x^2 \\)",
+          "\\( f'(x) = 6x^3, f''(x) = 12x^2, g'(x) = 12x^4, g''(x) = 36x^3 \\)"
+        ],
+        "solutionSteps": [
+          {
+            "explanation": "Differentiate \\( f(x) = 2x^3 \\) twice.",
+            "workingOut": "\\begin{aligned} f'(x) &= 3 \\times 2x^2 = 6x^2 \\\\ f''(x) &= 2 \\times 6x = 12x \\end{aligned}"
+          },
+          {
+            "explanation": "Differentiate \\( g(x) = 3x^4 \\) twice.",
+            "workingOut": "\\begin{aligned} g'(x) &= 4 \\times 3x^3 = 12x^3 \\\\ g''(x) &= 3 \\times 12x^2 = 36x^2 \\end{aligned}"
+          }
+        ],
+        "options": [
+          {
+            "text": "\\( f'(x) = 6x^2, f''(x) = 12x, g'(x) = 12x^3, g''(x) = 36x^2 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( f'(x) = 3x^2, f''(x) = 6x, g'(x) = 4x^3, g''(x) = 12x^2 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( f'(x) = 6x^2, f''(x) = 6x, g'(x) = 12x^3, g''(x) = 24x^2 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( f'(x) = 6x^3, f''(x) = 12x^2, g'(x) = 12x^4, g''(x) = 36x^3 \\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "0",
+        "answerStr": "0"
       },
       {
         "id": "y12a-3d-q14b",
-        "type": "teacher_review",
-        "question": "b) Both functions have a stationary point at \\( (0, 0) \\). Evaluate \\( f''(0) \\) and \\( g''(0) \\). Can you determine the nature of the stationary points from this calculation?",
-        "a": "f''(0) = 0 and g''(0) = 0. No, when the second derivative is zero, the second derivative test is inconclusive."
+        "type": "multiple_choice",
+        "question": "Evaluate \\( f''(0) \\) and \\( g''(0) \\). Can you determine the nature of the stationary points at \\( x=0 \\) from this calculation?",
+        "a": "f''(0) = 0 and g''(0) = 0. No, when the second derivative is zero, the second derivative test is inconclusive.",
+        "opts": [
+          "\\( f''(0) = 0 \\) and \\( g''(0) = 1 \\). No, the test is inconclusive.",
+          "\\( f''(0) = 0 \\) and \\( g''(0) = 0 \\). Yes, this means both are inflection points.",
+          "\\( f''(0) = 0 \\) and \\( g''(0) = 0 \\). Yes, this means both are minimum points.",
+          "\\( f''(0) = 0 \\) and \\( g''(0) = 0 \\). No, the second derivative test is inconclusive."
+        ],
+        "solutionSteps": [
+          {
+            "explanation": "Substitute \\( x = 0 \\) into \\( f''(x) \\) and \\( g''(x) \\).",
+            "workingOut": "\\begin{aligned} f''(0) &= 12(0) = 0 \\\\ g''(0) &= 36(0)^2 = 0 \\end{aligned}"
+          },
+          {
+            "explanation": "Interpret the result.",
+            "workingOut": "\\text{When the second derivative is exactly 0 at a stationary point, the test fails to classify it. We must use the first derivative test (slope table).}"
+          }
+        ],
+        "options": [
+          {
+            "text": "\\( f''(0) = 0 \\) and \\( g''(0) = 1 \\). No, the test is inconclusive.",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( f''(0) = 0 \\) and \\( g''(0) = 0 \\). Yes, this means both are inflection points.",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( f''(0) = 0 \\) and \\( g''(0) = 0 \\). Yes, this means both are minimum points.",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( f''(0) = 0 \\) and \\( g''(0) = 0 \\). No, the second derivative test is inconclusive.",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "3",
+        "answerStr": "3"
       },
       {
         "id": "y12a-3d-q14c",
-        "type": "teacher_review",
-        "question": "c) Use tables of values of \\( f'(x) \\) and \\( g'(x) \\) to determine the nature of the stationary points.",
-        "a": "For f(x), f'(x) = 6x^2 is always non-negative, so (0,0) is a horizontal point of inflection. For g(x), g'(x) changes sign from negative (for x < 0) to positive (for x > 0), so (0,0) is a minimum."
+        "type": "multiple_choice",
+        "question": "Use the first derivative test to determine the nature of the stationary points at \\( x=0 \\) for \\( f(x) \\) and \\( g(x) \\).",
+        "a": "For f(x), f'(x) = 6x^2 is always non-negative, so (0,0) is a horizontal point of inflection. For g(x), g'(x) changes sign from negative (for x < 0) to positive (for x > 0), so (0,0) is a minimum.",
+        "opts": [
+          "\\( f(x) \\) has a horizontal point of inflection, \\( g(x) \\) has a maximum.",
+          "\\( f(x) \\) has a horizontal point of inflection, \\( g(x) \\) has a minimum.",
+          "\\( f(x) \\) has a minimum, \\( g(x) \\) has a minimum.",
+          "\\( f(x) \\) has a minimum, \\( g(x) \\) has a horizontal point of inflection."
+        ],
+        "solutionSteps": [
+          {
+            "explanation": "Test the slope of \\( f(x) \\) on either side of \\( x=0 \\).",
+            "workingOut": "\\begin{aligned} f'(-1) &= 6(-1)^2 = 6 > 0 \\, (\\text{increasing}) \\\\ f'(1) &= 6(1)^2 = 6 > 0 \\, (\\text{increasing}) \\end{aligned} \\\\ \\text{Since the slope does not change sign, } f(x) \\text{ has a horizontal point of inflection.}"
+          },
+          {
+            "explanation": "Test the slope of \\( g(x) \\) on either side of \\( x=0 \\).",
+            "workingOut": "\\begin{aligned} g'(-1) &= 12(-1)^3 = -12 < 0 \\, (\\text{decreasing}) \\\\ g'(1) &= 12(1)^3 = 12 > 0 \\, (\\text{increasing}) \\end{aligned} \\\\ \\text{Since the slope changes from negative to positive, } g(x) \\text{ has a minimum.}"
+          }
+        ],
+        "options": [
+          {
+            "text": "\\( f(x) \\) has a horizontal point of inflection, \\( g(x) \\) has a maximum.",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( f(x) \\) has a horizontal point of inflection, \\( g(x) \\) has a minimum.",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( f(x) \\) has a minimum, \\( g(x) \\) has a minimum.",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( f(x) \\) has a minimum, \\( g(x) \\) has a horizontal point of inflection.",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "1",
+        "answerStr": "1"
       }
     ],
     "solutionSteps": [
@@ -1994,27 +2398,191 @@ export const Y12A_CH3D_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y12a-3d-q15a",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "a) Find \\( a \\) if the curve \\( y = x^3 - ax^2 + 4x - 5 \\) has an inflection at the point where \\( x = 3 \\).",
-        "a": "9"
+        "a": "9",
+        "opts": [
+          "\\( 3 \\)",
+          "\\( 4 \\)",
+          "\\( 9 \\)",
+          "\\( -9 \\)"
+        ],
+        "solutionSteps": [
+          {
+            "explanation": "Find the first and second derivatives.",
+            "workingOut": "\\begin{aligned} y' &= 3x^2 - 2ax + 4 \\\\ y'' &= 6x - 2a \\end{aligned}"
+          },
+          {
+            "explanation": "An inflection point at \\( x = 3 \\) means \\( y''(3) = 0 \\).",
+            "workingOut": "\\begin{aligned} 6(3) - 2a &= 0 \\\\ 18 - 2a &= 0 \\\\ 2a &= 18 \\\\ a &= 9 \\end{aligned}"
+          }
+        ],
+        "options": [
+          {
+            "text": "\\( 3 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( 4 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( 9 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( -9 \\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "2",
+        "answerStr": "2"
       },
       {
         "id": "y12a-3d-q15b",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "b) For what values of \\( a \\) is \\( y = x^3 + 3ax^2 + 5x - 7 \\) concave up at the point where \\( x = -1 \\)? (Format: 'a>N')",
-        "a": "a>1"
+        "a": "a>1",
+        "opts": [
+          "\\( a > 1 \\)",
+          "\\( a < 1 \\)",
+          "\\( a < -1 \\)",
+          "\\( a > -1 \\)"
+        ],
+        "solutionSteps": [
+          {
+            "explanation": "Find the first and second derivatives.",
+            "workingOut": "\\begin{aligned} y' &= 3x^2 + 6ax + 5 \\\\ y'' &= 6x + 6a \\end{aligned}"
+          },
+          {
+            "explanation": "The curve is concave up at \\( x = -1 \\) if \\( y''(-1) > 0 \\).",
+            "workingOut": "\\begin{aligned} 6(-1) + 6a &> 0 \\\\ -6 + 6a &> 0 \\\\ 6a &> 6 \\\\ a &> 1 \\end{aligned}"
+          }
+        ],
+        "options": [
+          {
+            "text": "\\( a > 1 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( a < 1 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( a < -1 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( a > -1 \\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "0",
+        "answerStr": "0"
       },
       {
         "id": "y12a-3d-q15c",
-        "type": "teacher_review",
+        "type": "multiple_choice",
         "question": "c) Find \\( a \\) and \\( b \\) if the curve \\( y = x^4 + ax^3 + bx^2 \\) has an inflection at \\( (1, 0) \\).",
-        "a": "a = -2.5, b = 1.5"
+        "a": "a = -2.5, b = 1.5",
+        "opts": [
+          "\\( a = -1.5, \\, b = 2.5 \\)",
+          "\\( a = -3, \\, b = 2 \\)",
+          "\\( a = 2.5, \\, b = -1.5 \\)",
+          "\\( a = -2.5, \\, b = 1.5 \\)"
+        ],
+        "solutionSteps": [
+          {
+            "explanation": "The curve passes through \\( (1, 0) \\), so \\( y(1) = 0 \\).",
+            "workingOut": "\\begin{aligned} 1^4 + a(1)^3 + b(1)^2 &= 0 \\\\ 1 + a + b &= 0 \\\\ a + b &= -1 \\quad \\text{--- (Eq 1)} \\end{aligned}"
+          },
+          {
+            "explanation": "Find the second derivative.",
+            "workingOut": "\\begin{aligned} y' &= 4x^3 + 3ax^2 + 2bx \\\\ y'' &= 12x^2 + 6ax + 2b \\end{aligned}"
+          },
+          {
+            "explanation": "An inflection at \\( x = 1 \\) means \\( y''(1) = 0 \\).",
+            "workingOut": "\\begin{aligned} 12(1)^2 + 6a(1) + 2b &= 0 \\\\ 12 + 6a + 2b &= 0 \\\\ 6a + 2b &= -12 \\\\ 3a + b &= -6 \\quad \\text{--- (Eq 2)} \\end{aligned}"
+          },
+          {
+            "explanation": "Solve the simultaneous equations.",
+            "workingOut": "\\text{From (Eq 1), } b = -1 - a \\\\ \\begin{aligned} \\text{Substitute into (Eq 2):} \\quad 3a + (-1 - a) &= -6 \\\\ 2a - 1 &= -6 \\\\ 2a &= -5 \\\\ a &= -2.5 \\end{aligned}"
+          },
+          {
+            "explanation": "Find \\( b \\).",
+            "workingOut": "\\begin{aligned} b &= -1 - (-2.5) \\\\ b &= -1 + 2.5 \\\\ b &= 1.5 \\end{aligned}"
+          }
+        ],
+        "options": [
+          {
+            "text": "\\( a = -1.5, \\, b = 2.5 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( a = -3, \\, b = 2 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( a = 2.5, \\, b = -1.5 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( a = -2.5, \\, b = 1.5 \\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "3",
+        "answerStr": "3"
       },
       {
         "id": "y12a-3d-q15d",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "d) For what values of \\( a \\) is \\( y = x^4 + ax^3 - 3x^2 \\) concave up and increasing when \\( x = 1 \\)? (Format: 'a>N/M' e.g. 'a>2/3')",
-        "a": "a>2/3"
+        "a": "a>2/3",
+        "opts": [
+          "\\( a < \\frac{2}{3} \\)",
+          "\\( a > -1 \\)",
+          "\\( a > \\frac{3}{2} \\)",
+          "\\( a > \\frac{2}{3} \\)"
+        ],
+        "solutionSteps": [
+          {
+            "explanation": "Find the first and second derivatives.",
+            "workingOut": "\\begin{aligned} y' &= 4x^3 + 3ax^2 - 6x \\\\ y'' &= 12x^2 + 6ax - 6 \\end{aligned}"
+          },
+          {
+            "explanation": "The curve is increasing at \\( x = 1 \\), so \\( y'(1) > 0 \\).",
+            "workingOut": "\\begin{aligned} 4(1)^3 + 3a(1)^2 - 6(1) &> 0 \\\\ 4 + 3a - 6 &> 0 \\\\ 3a - 2 &> 0 \\\\ 3a &> 2 \\\\ a &> \\frac{2}{3} \\end{aligned}"
+          },
+          {
+            "explanation": "The curve is concave up at \\( x = 1 \\), so \\( y''(1) > 0 \\).",
+            "workingOut": "\\begin{aligned} 12(1)^2 + 6a(1) - 6 &> 0 \\\\ 12 + 6a - 6 &> 0 \\\\ 6a + 6 &> 0 \\\\ 6a &> -6 \\\\ a &> -1 \\end{aligned}"
+          },
+          {
+            "explanation": "Combine the conditions. For both to be true, \\( a \\) must be greater than the larger value.",
+            "workingOut": "\\text{Since } a > \\frac{2}{3} \\text{ is a stricter condition than } a > -1 \\text{, the final answer is: } \\\\ a > \\frac{2}{3}"
+          }
+        ],
+        "options": [
+          {
+            "text": "\\( a < \\frac{2}{3} \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( a > -1 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( a > \\frac{3}{2} \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( a > \\frac{2}{3} \\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "3",
+        "answerStr": "3"
       }
     ],
     "solutionSteps": [
@@ -2091,27 +2659,171 @@ export const Y12A_CH3D_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y12a-3d-q17a",
-        "type": "teacher_review",
+        "type": "multiple_choice",
         "question": "a) \\( f'(a) > 0 \\) and \\( f''(a) > 0 \\)",
-        "a": "The curve is increasing and concave up (slanted upwards, bending upwards)."
+        "a": "The curve is increasing and concave up (slanted upwards, bending upwards).",
+        "opts": [
+          "increasing and concave up",
+          "decreasing and concave down",
+          "increasing and concave down",
+          "decreasing and concave up"
+        ],
+        "solutionSteps": [
+          {
+            "explanation": "Determine whether the function is increasing or decreasing using the first derivative.",
+            "workingOut": "\\text{Since } f'(a) > 0 \\text{, the function is increasing (rising) at } x = a."
+          },
+          {
+            "explanation": "Determine concavity using the second derivative.",
+            "workingOut": "\\text{Since } f''(a) > 0 \\text{, the function is concave up (bending upwards) at } x = a."
+          }
+        ],
+        "options": [
+          {
+            "text": "increasing and concave up",
+            "imageUrl": ""
+          },
+          {
+            "text": "decreasing and concave down",
+            "imageUrl": ""
+          },
+          {
+            "text": "increasing and concave down",
+            "imageUrl": ""
+          },
+          {
+            "text": "decreasing and concave up",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "0",
+        "answerStr": "0"
       },
       {
         "id": "y12a-3d-q17b",
-        "type": "teacher_review",
+        "type": "multiple_choice",
         "question": "b) \\( f'(a) > 0 \\) and \\( f''(a) < 0 \\)",
-        "a": "The curve is increasing and concave down (slanted upwards, bending downwards)."
+        "a": "The curve is increasing and concave down (slanted upwards, bending downwards).",
+        "opts": [
+          "increasing and concave up",
+          "increasing and concave down",
+          "decreasing and concave up",
+          "decreasing and concave down"
+        ],
+        "solutionSteps": [
+          {
+            "explanation": "Determine whether the function is increasing or decreasing using the first derivative.",
+            "workingOut": "\\text{Since } f'(a) > 0 \\text{, the function is increasing (rising) at } x = a."
+          },
+          {
+            "explanation": "Determine concavity using the second derivative.",
+            "workingOut": "\\text{Since } f''(a) < 0 \\text{, the function is concave down (bending downwards) at } x = a."
+          }
+        ],
+        "options": [
+          {
+            "text": "increasing and concave up",
+            "imageUrl": ""
+          },
+          {
+            "text": "increasing and concave down",
+            "imageUrl": ""
+          },
+          {
+            "text": "decreasing and concave up",
+            "imageUrl": ""
+          },
+          {
+            "text": "decreasing and concave down",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "1",
+        "answerStr": "1"
       },
       {
         "id": "y12a-3d-q17c",
-        "type": "teacher_review",
+        "type": "multiple_choice",
         "question": "c) \\( f'(a) < 0 \\) and \\( f''(a) > 0 \\)",
-        "a": "The curve is decreasing and concave up (slanted downwards, bending upwards)."
+        "a": "The curve is decreasing and concave up (slanted downwards, bending upwards).",
+        "opts": [
+          "increasing and concave up",
+          "decreasing and concave up",
+          "decreasing and concave down",
+          "increasing and concave down"
+        ],
+        "solutionSteps": [
+          {
+            "explanation": "Determine whether the function is increasing or decreasing using the first derivative.",
+            "workingOut": "\\text{Since } f'(a) < 0 \\text{, the function is decreasing (falling) at } x = a."
+          },
+          {
+            "explanation": "Determine concavity using the second derivative.",
+            "workingOut": "\\text{Since } f''(a) > 0 \\text{, the function is concave up (bending upwards) at } x = a."
+          }
+        ],
+        "options": [
+          {
+            "text": "increasing and concave up",
+            "imageUrl": ""
+          },
+          {
+            "text": "decreasing and concave up",
+            "imageUrl": ""
+          },
+          {
+            "text": "decreasing and concave down",
+            "imageUrl": ""
+          },
+          {
+            "text": "increasing and concave down",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "1",
+        "answerStr": "1"
       },
       {
         "id": "y12a-3d-q17d",
-        "type": "teacher_review",
+        "type": "multiple_choice",
         "question": "d) \\( f'(a) < 0 \\) and \\( f''(a) < 0 \\)",
-        "a": "The curve is decreasing and concave down (slanted downwards, bending downwards)."
+        "a": "The curve is decreasing and concave down (slanted downwards, bending downwards).",
+        "opts": [
+          "increasing and concave down",
+          "decreasing and concave down",
+          "increasing and concave up",
+          "decreasing and concave up"
+        ],
+        "solutionSteps": [
+          {
+            "explanation": "Determine whether the function is increasing or decreasing using the first derivative.",
+            "workingOut": "\\text{Since } f'(a) < 0 \\text{, the function is decreasing (falling) at } x = a."
+          },
+          {
+            "explanation": "Determine concavity using the second derivative.",
+            "workingOut": "\\text{Since } f''(a) < 0 \\text{, the function is concave down (bending downwards) at } x = a."
+          }
+        ],
+        "options": [
+          {
+            "text": "increasing and concave down",
+            "imageUrl": ""
+          },
+          {
+            "text": "decreasing and concave down",
+            "imageUrl": ""
+          },
+          {
+            "text": "increasing and concave up",
+            "imageUrl": ""
+          },
+          {
+            "text": "decreasing and concave up",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "1",
+        "answerStr": "1"
       }
     ],
     "solutionSteps": [
@@ -2143,21 +2855,145 @@ export const Y12A_CH3D_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y12a-3d-q18a",
-        "type": "teacher_review",
-        "question": "a) Show that the function has no stationary points.",
-        "a": "y' = x^2 - 4x + 7. The discriminant of y' = 0 is \\( \\Delta = (-4)^2 - 4(1)(7) = -12 < 0 \\). Since \\( y' > 0 \\) for all \\( x \\), there are no real roots and thus no stationary points."
+        "type": "multiple_choice",
+        "question": "Why does the function have no stationary points?",
+        "a": "y' = x^2 - 4x + 7. The discriminant of y' = 0 is \\( \\Delta = (-4)^2 - 4(1)(7) = -12 < 0 \\). Since \\( y' > 0 \\) for all \\( x \\), there are no real roots and thus no stationary points.",
+        "opts": [
+          "Because \\( y' = 0 \\) at \\( x = 2 \\) only",
+          "Because \\( y' = x^2 - 4x + 7 \\) has a positive discriminant (\\( \\Delta = 12 \\))",
+          "Because \\( y'' = 2x - 4 \\) does not equal 0",
+          "Because \\( y' = x^2 - 4x + 7 \\) has a negative discriminant (\\( \\Delta = -12 \\))"
+        ],
+        "solutionSteps": [
+          {
+            "explanation": "Find the first derivative.",
+            "workingOut": "\\begin{aligned} y' &= 3 \\times \\frac{1}{3}x^2 - 2 \\times 2x + 7 \\\\ &= x^2 - 4x + 7 \\end{aligned}"
+          },
+          {
+            "explanation": "Check for stationary points by setting \\( y' = 0 \\).",
+            "workingOut": "\\begin{aligned} x^2 - 4x + 7 &= 0 \\end{aligned}"
+          },
+          {
+            "explanation": "Calculate the discriminant to check for real roots.",
+            "workingOut": "\\begin{aligned} \\Delta &= b^2 - 4ac \\\\ &= (-4)^2 - 4(1)(7) \\\\ &= 16 - 28 \\\\ &= -12 \\end{aligned}"
+          },
+          {
+            "explanation": "Interpret the discriminant.",
+            "workingOut": "\\text{Since } \\Delta < 0 \\text{, the quadratic equation has no real roots. Therefore, the function has no stationary points.}"
+          }
+        ],
+        "options": [
+          {
+            "text": "Because \\( y' = 0 \\) at \\( x = 2 \\) only",
+            "imageUrl": ""
+          },
+          {
+            "text": "Because \\( y' = x^2 - 4x + 7 \\) has a positive discriminant (\\( \\Delta = 12 \\))",
+            "imageUrl": ""
+          },
+          {
+            "text": "Because \\( y'' = 2x - 4 \\) does not equal 0",
+            "imageUrl": ""
+          },
+          {
+            "text": "Because \\( y' = x^2 - 4x + 7 \\) has a negative discriminant (\\( \\Delta = -12 \\))",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "3",
+        "answerStr": "3"
       },
       {
         "id": "y12a-3d-q18b",
-        "type": "teacher_review",
-        "question": "b) Show that there is a point of inflection.",
-        "a": "y'' = 2x - 4 = 0 at x = 2; y(2) = 11/3. Since y'' changes sign from negative (for x < 2) to positive (for x > 2), (2, 11/3) is an inflection point."
+        "type": "multiple_choice",
+        "question": "Why does the function have a point of inflection?",
+        "a": "y'' = 2x - 4 = 0 at x = 2; y(2) = 11/3. Since y'' changes sign from negative (for x < 2) to positive (for x > 2), (2, 11/3) is an inflection point.",
+        "opts": [
+          "Because \\( y' = 0 \\) at \\( x = 2 \\) and changes sign across it",
+          "Because \\( y'' = 0 \\) at \\( x = 2 \\) and changes sign across it",
+          "Because \\( y'' = 0 \\) at \\( x = 2 \\) and remains positive on both sides",
+          "Because \\( y'' > 0 \\) for all \\( x \\)"
+        ],
+        "solutionSteps": [
+          {
+            "explanation": "Find the second derivative.",
+            "workingOut": "\\begin{aligned} y'' &= 2x - 4 \\end{aligned}"
+          },
+          {
+            "explanation": "Set the second derivative to zero to find potential points of inflection.",
+            "workingOut": "\\begin{aligned} 2x - 4 &= 0 \\\\ 2x &= 4 \\\\ x &= 2 \\end{aligned}"
+          },
+          {
+            "explanation": "Verify that the concavity changes across \\( x = 2 \\).",
+            "workingOut": "\\text{For } x < 2, \\, y'' < 0 \\, \\text{(concave down)}. \\\\ \\text{For } x > 2, \\, y'' > 0 \\, \\text{(concave up)}. \\\\ \\text{Since } y'' \\text{ changes sign, there is a point of inflection at } x = 2."
+          }
+        ],
+        "options": [
+          {
+            "text": "Because \\( y' = 0 \\) at \\( x = 2 \\) and changes sign across it",
+            "imageUrl": ""
+          },
+          {
+            "text": "Because \\( y'' = 0 \\) at \\( x = 2 \\) and changes sign across it",
+            "imageUrl": ""
+          },
+          {
+            "text": "Because \\( y'' = 0 \\) at \\( x = 2 \\) and remains positive on both sides",
+            "imageUrl": ""
+          },
+          {
+            "text": "Because \\( y'' > 0 \\) for all \\( x \\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "1",
+        "answerStr": "1"
       },
       {
         "id": "y12a-3d-q18c",
-        "type": "teacher_review",
-        "question": "c) How many \\( x \\)-intercepts does the graph of the function have? Justify your answer.",
-        "a": "Exactly 1 x-intercept. Since f(x) is continuous and strictly increasing (y' > 0 everywhere), it must cross the x-axis exactly once."
+        "type": "multiple_choice",
+        "question": "How many \\( x \\)-intercepts does the graph of the function have? Justify your answer.",
+        "a": "Exactly 1 x-intercept. Since f(x) is continuous and strictly increasing (y' > 0 everywhere), it must cross the x-axis exactly once.",
+        "opts": [
+          "Exactly 3, because it is a cubic curve.",
+          "Exactly 1, because the function is continuous and strictly increasing.",
+          "Exactly 2, because it is a cubic curve.",
+          "0, because it has no stationary points."
+        ],
+        "solutionSteps": [
+          {
+            "explanation": "Recall the behavior of the first derivative from part (a).",
+            "workingOut": "\\text{We found that } y' = x^2 - 4x + 7 \\text{ has no real roots and opens upwards, so } y' > 0 \\text{ for all } x."
+          },
+          {
+            "explanation": "Relate the first derivative to the behavior of the function.",
+            "workingOut": "\\text{Since } y' > 0 \\text{ everywhere, the function is strictly increasing.}"
+          },
+          {
+            "explanation": "Combine this with the fact that cubic functions are continuous and have range } (-\\infty, \\infty) \\text{.",
+            "workingOut": "\\text{A continuous, strictly increasing curve that goes from } -\\infty \\text{ to } \\infty \\text{ must cross the x-axis exactly once.}"
+          }
+        ],
+        "options": [
+          {
+            "text": "Exactly 3, because it is a cubic curve.",
+            "imageUrl": ""
+          },
+          {
+            "text": "Exactly 1, because the function is continuous and strictly increasing.",
+            "imageUrl": ""
+          },
+          {
+            "text": "Exactly 2, because it is a cubic curve.",
+            "imageUrl": ""
+          },
+          {
+            "text": "0, because it has no stationary points.",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "1",
+        "answerStr": "1"
       }
     ],
     "solutionSteps": [
@@ -2193,27 +3029,175 @@ export const Y12A_CH3D_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y12a-3d-q19a",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "a) Find the value of \\( a \\).",
-        "a": "2"
+        "a": "2",
+        "opts": [
+          "\\( 4 \\)",
+          "\\( -2 \\)",
+          "\\( 3 \\)",
+          "\\( 2 \\)"
+        ],
+        "solutionSteps": [
+          {
+            "explanation": "Use the coordinates of the turning point \\( (0, 8) \\) to find \\( d \\).",
+            "workingOut": "\\begin{aligned} y(0) &= a(0)^3 + b(0)^2 + c(0) + d = 8 \\\\ d &= 8 \\end{aligned}"
+          },
+          {
+            "explanation": "Use the fact that \\( (0, 8) \\) is a turning point to find \\( c \\).",
+            "workingOut": "\\begin{aligned} y' &= 3ax^2 + 2bx + c \\\\ y'(0) &= 3a(0)^2 + 2b(0) + c = 0 \\\\ c &= 0 \\end{aligned}"
+          },
+          {
+            "explanation": "Use the fact that there is an inflection point at \\( x = 1 \\).",
+            "workingOut": "\\begin{aligned} y'' &= 6ax + 2b \\\\ y''(1) &= 6a(1) + 2b = 0 \\\\ 2b &= -6a \\\\ b &= -3a \\end{aligned}"
+          },
+          {
+            "explanation": "Use the \\( x \\)-intercept at \\( x = -1 \\) to solve for \\( a \\). Substitute \\( b = -3a \\), \\( c = 0 \\), and \\( d = 8 \\).",
+            "workingOut": "\\begin{aligned} y(-1) &= a(-1)^3 + b(-1)^2 + 0(-1) + 8 = 0 \\\\ -a + b + 8 &= 0 \\\\ -a + (-3a) + 8 &= 0 \\\\ -4a &= -8 \\\\ a &= 2 \\end{aligned}"
+          }
+        ],
+        "options": [
+          {
+            "text": "\\( 4 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( -2 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( 3 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( 2 \\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "3",
+        "answerStr": "3"
       },
       {
         "id": "y12a-3d-q19b",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "b) Find the value of \\( b \\).",
-        "a": "-6"
+        "a": "-6",
+        "opts": [
+          "\\( 6 \\)",
+          "\\( -6 \\)",
+          "\\( 8 \\)",
+          "\\( -4 \\)"
+        ],
+        "solutionSteps": [
+          {
+            "explanation": "Use the relationship between \\( a \\) and \\( b \\) found in part (a).",
+            "workingOut": "\\begin{aligned} b &= -3a \\end{aligned}"
+          },
+          {
+            "explanation": "Substitute the value of \\( a = 2 \\).",
+            "workingOut": "\\begin{aligned} b &= -3(2) \\\\ b &= -6 \\end{aligned}"
+          }
+        ],
+        "options": [
+          {
+            "text": "\\( 6 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( -6 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( 8 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( -4 \\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "1",
+        "answerStr": "1"
       },
       {
         "id": "y12a-3d-q19c",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "c) Find the value of \\( c \\).",
-        "a": "0"
+        "a": "0",
+        "opts": [
+          "\\( 8 \\)",
+          "\\( 0 \\)",
+          "\\( 2 \\)",
+          "\\( 1 \\)"
+        ],
+        "solutionSteps": [
+          {
+            "explanation": "Find the first derivative.",
+            "workingOut": "\\begin{aligned} y' &= 3ax^2 + 2bx + c \\end{aligned}"
+          },
+          {
+            "explanation": "A turning point at \\( (0, 8) \\) means the derivative is zero at \\( x = 0 \\).",
+            "workingOut": "\\begin{aligned} y'(0) &= 3a(0)^2 + 2b(0) + c = 0 \\\\ c &= 0 \\end{aligned}"
+          }
+        ],
+        "options": [
+          {
+            "text": "\\( 8 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( 0 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( 2 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( 1 \\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "1",
+        "answerStr": "1"
       },
       {
         "id": "y12a-3d-q19d",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "d) Find the value of \\( d \\).",
-        "a": "8"
+        "a": "8",
+        "opts": [
+          "\\( 2 \\)",
+          "\\( 8 \\)",
+          "\\( 0 \\)",
+          "\\( -8 \\)"
+        ],
+        "solutionSteps": [
+          {
+            "explanation": "A turning point at \\( (0, 8) \\) means the curve passes through \\( (0, 8) \\). Substitute \\( x = 0 \\) into the original equation.",
+            "workingOut": "\\begin{aligned} y(0) &= a(0)^3 + b(0)^2 + c(0) + d \\\\ 8 &= 0 + 0 + 0 + d \\\\ d &= 8 \\end{aligned}"
+          }
+        ],
+        "options": [
+          {
+            "text": "\\( 2 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( 8 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( 0 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( -8 \\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "1",
+        "answerStr": "1"
       }
     ],
     "solutionSteps": [
