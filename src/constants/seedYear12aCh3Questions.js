@@ -3227,39 +3227,89 @@ export const Y12A_CH3_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y12a-3a-q19a",
-        "type": "short_answer",
-        "question": "a) Use the quotient rule to find the derivative \\( f'(x) \\).",
-        "a": "(x^4+9x^2)/(x^2+3)^2",
+        "type": "multiple_choice",
+        "question": "a) Find the derivative \\( f'(x) \\).",
         "solutionSteps": [
           {
             "explanation": "Identify components for the quotient rule.",
-            "workingOut": "\\[ f(x) = \\frac{x^2+1}{x^2-1} \\]\nLet \\( u = x^2+1 \\) and \\( v = x^2-1 \\).\nThen \\( u' = 2x \\) and \\( v' = 2x \\)."
+            "workingOut": "\\[ f(x) = \\frac{x^3}{x^2+3} \\]\nLet \\( u = x^3 \\) and \\( v = x^2+3 \\).\nThen \\( u' = 3x^2 \\) and \\( v' = 2x \\)."
           },
           {
             "explanation": "Apply the quotient rule.",
-            "workingOut": "\\[ f'(x) = \\frac{u'v - uv'}{v^2} \\]\n\\[ f'(x) = \\frac{(2x)(x^2-1) - (x^2+1)(2x)}{(x^2-1)^2} \\]"
+            "workingOut": "\\[ f'(x) = \\frac{u'v - uv'}{v^2} \\]\n\\[ f'(x) = \\frac{(3x^2)(x^2+3) - (x^3)(2x)}{(x^2+3)^2} \\]"
           },
           {
             "explanation": "Simplify the numerator.",
-            "workingOut": "\\[ f'(x) = \\frac{2x^3 - 2x - 2x^3 - 2x}{(x^2-1)^2} \\]\n\\[ f'(x) = -\\frac{4x}{(x^2-1)^2} \\]"
+            "workingOut": "\\[ f'(x) = \\frac{3x^4 + 9x^2 - 2x^4}{(x^2+3)^2} \\]\n\\[ f'(x) = \\frac{x^4 + 9x^2}{(x^2+3)^2} = \\frac{x^2(x^2+9)}{(x^2+3)^2} \\]"
           }
-        ]
+        ],
+        "opts": [
+          "\\( \\frac{x^2(x^2-9)}{(x^2+3)^2} \\)",
+          "\\( \\frac{5x^4+9x^2}{(x^2+3)^2} \\)",
+          "\\( \\frac{x^4-9x^2}{(x^2+3)^2} \\)",
+          "\\( \\frac{x^2(x^2+9)}{(x^2+3)^2} \\)"
+        ],
+        "options": [
+          {
+            "text": "\\( \\frac{x^2(x^2-9)}{(x^2+3)^2} \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( \\frac{5x^4+9x^2}{(x^2+3)^2} \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( \\frac{x^4-9x^2}{(x^2+3)^2} \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( \\frac{x^2(x^2+9)}{(x^2+3)^2} \\)",
+            "imageUrl": ""
+          }
+        ],
+        "answerStr": "3",
+        "answer": "3"
       },
       {
         "id": "y12a-3a-q19b",
-        "type": "teacher_review",
+        "type": "multiple_choice",
         "question": "b) Explain why \\( f(x) \\) is increasing for all \\( x \\), apart from \\( x = 0 \\) where it is stationary.",
-        "a": "The derivative is \\( f'(x) = \\frac{x^2(x^2+9)}{(x^2+3)^2} \\). The factor \\( x^2+9 \\) and the denominator \\( (x^2+3)^2 \\) are strictly positive for all real \\( x \\). The factor \\( x^2 \\) is strictly positive for all \\( x \neq 0 \\), and equal to 0 at \\( x = 0 \\). Thus, \\( f'(x) > 0 \\) for all \\( x \neq 0 \\) (increasing), and \\( f'(0) = 0 \\) (stationary).",
         "solutionSteps": [
           {
-            "explanation": "Re-evaluate the problem statement.",
-            "workingOut": "Wait, the question asks why it is increasing for all x, but the derivative is \\( f'(x) = -\\frac{4x}{(x^2-1)^2} \\).\nActually, if \\( x < 0 \\), then \\( -4x > 0 \\), so it is increasing.\nIf \\( x > 0 \\), then \\( -4x < 0 \\), so it is decreasing.\nThe question statement might have a typo in the book, but we will analyze the derivative."
+            "explanation": "Analyze the sign of the factored derivative.",
+            "workingOut": "We have \\( f'(x) = \\frac{x^2(x^2+9)}{(x^2+3)^2} \\).\nNotice that \\( x^2+9 > 0 \\) and \\( (x^2+3)^2 > 0 \\) for all real \\( x \\)."
           },
           {
-            "explanation": "State the correct intervals based on the derivative.",
-            "workingOut": "\\[ f'(x) = -\\frac{4x}{(x^2-1)^2} \\]\nFor \\( x < 0 \\) (and \\( x \\neq -1 \\)), \\( f'(x) > 0 \\), so it is increasing.\nFor \\( x > 0 \\) (and \\( x \\neq 1 \\)), \\( f'(x) < 0 \\), so it is decreasing.\nAt \\( x = 0 \\), \\( f'(0) = 0 \\), so it is stationary."
+            "explanation": "Examine the remaining term \\( x^2 \\).",
+            "workingOut": "The term \\( x^2 \\) is strictly positive for all \\( x \\neq 0 \\), and equals 0 at \\( x = 0 \\).\nThus, \\( f'(x) > 0 \\) (increasing) for all \\( x \\neq 0 \\).\nAt \\( x = 0 \\), \\( f'(0) = 0 \\) (stationary)."
           }
-        ]
+        ],
+        "opts": [
+          "Because the denominator \\( (x^2+3)^2 \\) is always positive, and the numerator can be negative.",
+          "Because \\( f'(x) = \\frac{x^2(x^2-9)}{(x^2+3)^2} \\), which is positive for all \\( x \\neq 0 \\).",
+          "Because \\( f'(x) \\) is a polynomial of degree 4, which always increases.",
+          "Because \\( f'(x) = \\frac{x^2(x^2+9)}{(x^2+3)^2} \\). Since \\( x^2 > 0 \\) for \\( x \\neq 0 \\), and the other factors are strictly positive, \\( f'(x) > 0 \\)."
+        ],
+        "options": [
+          {
+            "text": "Because the denominator \\( (x^2+3)^2 \\) is always positive, and the numerator can be negative.",
+            "imageUrl": ""
+          },
+          {
+            "text": "Because \\( f'(x) = \\frac{x^2(x^2-9)}{(x^2+3)^2} \\), which is positive for all \\( x \\neq 0 \\).",
+            "imageUrl": ""
+          },
+          {
+            "text": "Because \\( f'(x) \\) is a polynomial of degree 4, which always increases.",
+            "imageUrl": ""
+          },
+          {
+            "text": "Because \\( f'(x) = \\frac{x^2(x^2+9)}{(x^2+3)^2} \\). Since \\( x^2 > 0 \\) for \\( x \\neq 0 \\), and the other factors are strictly positive, \\( f'(x) > 0 \\).",
+            "imageUrl": ""
+          }
+        ],
+        "answerStr": "3",
+        "answer": "3"
       }
     ]
   },
