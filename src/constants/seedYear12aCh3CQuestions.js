@@ -491,7 +491,7 @@ export const Y12A_CH3C_QUESTIONS = [
   },
   {
     "id": "y12a-3c-q2a",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
     "question": "Expand the product, then find the first and second derivatives of the function \\( y = x(x + 5) \\).",
@@ -510,11 +510,37 @@ export const Y12A_CH3C_QUESTIONS = [
         "explanation": "Find the second derivative.",
         "workingOut": "y'' = 2"
       }
-    ]
+    ],
+    "opts": [
+      "\\( y' = 2x + 5, \\; y'' = 2x \\)",
+      "\\( y' = 2x, \\; y'' = 2 \\)",
+      "\\( y' = x + 5, \\; y'' = 1 \\)",
+      "\\( y' = 2x + 5, \\; y'' = 2 \\)"
+    ],
+    "options": [
+      {
+        "text": "\\( y' = 2x + 5, \\; y'' = 2x \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = 2x, \\; y'' = 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = x + 5, \\; y'' = 1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = 2x + 5, \\; y'' = 2 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
+    "answerStr": "3"
   },
   {
     "id": "y12a-3c-q2b",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
     "question": "Expand the product, then find the first and second derivatives of the function \\( y = x^2(x - 3) \\).",
@@ -533,11 +559,37 @@ export const Y12A_CH3C_QUESTIONS = [
         "explanation": "Find the second derivative.",
         "workingOut": "y'' = 6x - 6"
       }
-    ]
+    ],
+    "opts": [
+      "\\( y' = 3x^2 - 6x, \\; y'' = 6x - 6 \\)",
+      "\\( y' = 3x^2 - 6x, \\; y'' = 6x \\)",
+      "\\( y' = 3x^2 - 3x, \\; y'' = 6x - 3 \\)",
+      "\\( y' = 2x^2 - 6x, \\; y'' = 4x - 6 \\)"
+    ],
+    "options": [
+      {
+        "text": "\\( y' = 3x^2 - 6x, \\; y'' = 6x - 6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = 3x^2 - 6x, \\; y'' = 6x \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = 3x^2 - 3x, \\; y'' = 6x - 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = 2x^2 - 6x, \\; y'' = 4x - 6 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "answerStr": "0"
   },
   {
     "id": "y12a-3c-q2c",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
     "question": "Expand the product, then find the first and second derivatives of the function \\( y = (x - 3)(x + 2) \\).",
@@ -556,11 +608,37 @@ export const Y12A_CH3C_QUESTIONS = [
         "explanation": "Find the second derivative.",
         "workingOut": "y'' = 2"
       }
-    ]
+    ],
+    "opts": [
+      "\\( y' = x - 1, \\; y'' = 1 \\)",
+      "\\( y' = 2x - 6, \\; y'' = 2 \\)",
+      "\\( y' = 2x - 1, \\; y'' = 2 \\)",
+      "\\( y' = 2x + 1, \\; y'' = 2 \\)"
+    ],
+    "options": [
+      {
+        "text": "\\( y' = x - 1, \\; y'' = 1 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = 2x - 6, \\; y'' = 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = 2x - 1, \\; y'' = 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = 2x + 1, \\; y'' = 2 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
+    "answerStr": "2"
   },
   {
     "id": "y12a-3c-q2d",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
     "question": "Expand the product, then find the first and second derivatives of the function \\( y = (2x + 3)(x - 4) \\).",
@@ -579,11 +657,37 @@ export const Y12A_CH3C_QUESTIONS = [
         "explanation": "Find the second derivative.",
         "workingOut": "y'' = 4"
       }
-    ]
+    ],
+    "opts": [
+      "\\( y' = 4x - 5, \\; y'' = 4 \\)",
+      "\\( y' = 4x - 12, \\; y'' = 4 \\)",
+      "\\( y' = 2x - 5, \\; y'' = 2 \\)",
+      "\\( y' = 4x + 5, \\; y'' = 4 \\)"
+    ],
+    "options": [
+      {
+        "text": "\\( y' = 4x - 5, \\; y'' = 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = 4x - 12, \\; y'' = 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = 2x - 5, \\; y'' = 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = 4x + 5, \\; y'' = 4 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "answerStr": "0"
   },
   {
     "id": "y12a-3c-q2e",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
     "question": "Expand the product, then find the first and second derivatives of the function \\( y = 2x^2(3x^3 - 2x^2) \\).",
@@ -602,11 +706,37 @@ export const Y12A_CH3C_QUESTIONS = [
         "explanation": "Find the second derivative.",
         "workingOut": "y'' = 120x^3 - 48x^2"
       }
-    ]
+    ],
+    "opts": [
+      "\\( y' = 30x^4 - 16x^3, \\; y'' = 120x^3 - 48x^2 \\)",
+      "\\( y' = 15x^4 - 16x^3, \\; y'' = 60x^3 - 48x^2 \\)",
+      "\\( y' = 30x^4 - 8x^3, \\; y'' = 120x^3 - 24x^2 \\)",
+      "\\( y' = 30x^4 - 16x^3, \\; y'' = 120x^3 - 16x^2 \\)"
+    ],
+    "options": [
+      {
+        "text": "\\( y' = 30x^4 - 16x^3, \\; y'' = 120x^3 - 48x^2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = 15x^4 - 16x^3, \\; y'' = 60x^3 - 48x^2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = 30x^4 - 8x^3, \\; y'' = 120x^3 - 24x^2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = 30x^4 - 16x^3, \\; y'' = 120x^3 - 16x^2 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "answerStr": "0"
   },
   {
     "id": "y12a-3c-q2f",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
     "question": "Expand the product, then find the first and second derivatives of the function \\( y = 3x^3(x^4 + 3x^2) \\).",
@@ -625,11 +755,37 @@ export const Y12A_CH3C_QUESTIONS = [
         "explanation": "Find the second derivative.",
         "workingOut": "y'' = 126x^5 + 180x^3"
       }
-    ]
+    ],
+    "opts": [
+      "\\( y' = 21x^6 + 45x^4, \\; y'' = 126x^5 + 180x^3 \\)",
+      "\\( y' = 7x^6 + 45x^4, \\; y'' = 42x^5 + 180x^3 \\)",
+      "\\( y' = 21x^6 + 45x^4, \\; y'' = 126x^5 + 45x^3 \\)",
+      "\\( y' = 21x^6 + 15x^4, \\; y'' = 126x^5 + 60x^3 \\)"
+    ],
+    "options": [
+      {
+        "text": "\\( y' = 21x^6 + 45x^4, \\; y'' = 126x^5 + 180x^3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = 7x^6 + 45x^4, \\; y'' = 42x^5 + 180x^3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = 21x^6 + 45x^4, \\; y'' = 126x^5 + 45x^3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = 21x^6 + 15x^4, \\; y'' = 126x^5 + 60x^3 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "answerStr": "0"
   },
   {
     "id": "y12a-3c-q3a",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "Find the first, second and third derivatives of the function \\( y = x^{0.4} \\).",
@@ -637,7 +793,7 @@ export const Y12A_CH3C_QUESTIONS = [
     "t": "Second and higher derivatives",
     "solutionSteps": [
       {
-        "explanation": "Differentiate using power rule.",
+        "explanation": "Find the first derivative.",
         "workingOut": "y' = 0.4x^{-0.6}"
       },
       {
@@ -648,11 +804,37 @@ export const Y12A_CH3C_QUESTIONS = [
         "explanation": "Find the third derivative.",
         "workingOut": "y''' = -0.24 \\times (-1.6)x^{-2.6} = 0.384x^{-2.6}"
       }
-    ]
+    ],
+    "opts": [
+      "\\( y' = 0.4x^{0.6}, \\; y'' = 0.24x^{-0.4}, \\; y''' = -0.096x^{-1.4} \\)",
+      "\\( y' = 0.4x^{-0.6}, \\; y'' = 0.24x^{-1.6}, \\; y''' = 0.384x^{-2.6} \\)",
+      "\\( y' = 0.4x^{-0.6}, \\; y'' = -0.24x^{-1.6}, \\; y''' = 0.384x^{-2.6} \\)",
+      "\\( y' = 0.4x^{-0.6}, \\; y'' = -0.24x^{-1.6}, \\; y''' = -0.384x^{-2.6} \\)"
+    ],
+    "options": [
+      {
+        "text": "\\( y' = 0.4x^{0.6}, \\; y'' = 0.24x^{-0.4}, \\; y''' = -0.096x^{-1.4} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = 0.4x^{-0.6}, \\; y'' = 0.24x^{-1.6}, \\; y''' = 0.384x^{-2.6} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = 0.4x^{-0.6}, \\; y'' = -0.24x^{-1.6}, \\; y''' = 0.384x^{-2.6} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = 0.4x^{-0.6}, \\; y'' = -0.24x^{-1.6}, \\; y''' = -0.384x^{-2.6} \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
+    "answerStr": "2"
   },
   {
     "id": "y12a-3c-q3b",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "Find the first, second and third derivatives of the function \\( y = x^{-3} \\).",
@@ -671,11 +853,37 @@ export const Y12A_CH3C_QUESTIONS = [
         "explanation": "Find the third derivative.",
         "workingOut": "y''' = -60x^{-6}"
       }
-    ]
+    ],
+    "opts": [
+      "\\( y' = -3x^{-4}, \\; y'' = -12x^{-5}, \\; y''' = -60x^{-6} \\)",
+      "\\( y' = 3x^{-4}, \\; y'' = -12x^{-5}, \\; y''' = 60x^{-6} \\)",
+      "\\( y' = -3x^{-2}, \\; y'' = 6x^{-3}, \\; y''' = -18x^{-4} \\)",
+      "\\( y' = -3x^{-4}, \\; y'' = 12x^{-5}, \\; y''' = -60x^{-6} \\)"
+    ],
+    "options": [
+      {
+        "text": "\\( y' = -3x^{-4}, \\; y'' = -12x^{-5}, \\; y''' = -60x^{-6} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = 3x^{-4}, \\; y'' = -12x^{-5}, \\; y''' = 60x^{-6} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = -3x^{-2}, \\; y'' = 6x^{-3}, \\; y''' = -18x^{-4} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = -3x^{-4}, \\; y'' = 12x^{-5}, \\; y''' = -60x^{-6} \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
+    "answerStr": "3"
   },
   {
     "id": "y12a-3c-q3c",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "Find the first, second and third derivatives of the function \\( y = x^{-4} \\).",
@@ -694,11 +902,37 @@ export const Y12A_CH3C_QUESTIONS = [
         "explanation": "Find the third derivative.",
         "workingOut": "y''' = -120x^{-7}"
       }
-    ]
+    ],
+    "opts": [
+      "\\( y' = -4x^{-5}, \\; y'' = -20x^{-6}, \\; y''' = -120x^{-7} \\)",
+      "\\( y' = -4x^{-5}, \\; y'' = 20x^{-6}, \\; y''' = -120x^{-7} \\)",
+      "\\( y' = 4x^{-5}, \\; y'' = -20x^{-6}, \\; y''' = 120x^{-7} \\)",
+      "\\( y' = -4x^{-3}, \\; y'' = 12x^{-4}, \\; y''' = -48x^{-5} \\)"
+    ],
+    "options": [
+      {
+        "text": "\\( y' = -4x^{-5}, \\; y'' = -20x^{-6}, \\; y''' = -120x^{-7} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = -4x^{-5}, \\; y'' = 20x^{-6}, \\; y''' = -120x^{-7} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = 4x^{-5}, \\; y'' = -20x^{-6}, \\; y''' = 120x^{-7} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = -4x^{-3}, \\; y'' = 12x^{-4}, \\; y''' = -48x^{-5} \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
+    "answerStr": "1"
   },
   {
     "id": "y12a-3c-q3d",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "Find the first, second and third derivatives of the function \\( y = 4x^{-2} \\).",
@@ -717,7 +951,33 @@ export const Y12A_CH3C_QUESTIONS = [
         "explanation": "Find the third derivative.",
         "workingOut": "y''' = 24 \\times (-5)x^{-5} = -96x^{-5}"
       }
-    ]
+    ],
+    "opts": [
+      "\\( y' = 8x^{-3}, \\; y'' = -24x^{-4}, \\; y''' = 96x^{-5} \\)",
+      "\\( y' = -8x^{-1}, \\; y'' = 8x^{-2}, \\; y''' = -16x^{-3} \\)",
+      "\\( y' = -8x^{-3}, \\; y'' = -24x^{-4}, \\; y''' = -96x^{-5} \\)",
+      "\\( y' = -8x^{-3}, \\; y'' = 24x^{-4}, \\; y''' = -96x^{-5} \\)"
+    ],
+    "options": [
+      {
+        "text": "\\( y' = 8x^{-3}, \\; y'' = -24x^{-4}, \\; y''' = 96x^{-5} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = -8x^{-1}, \\; y'' = 8x^{-2}, \\; y''' = -16x^{-3} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = -8x^{-3}, \\; y'' = -24x^{-4}, \\; y''' = -96x^{-5} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = -8x^{-3}, \\; y'' = 24x^{-4}, \\; y''' = -96x^{-5} \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
+    "answerStr": "3"
   },
   {
     "id": "y12a-3c-q3e",
