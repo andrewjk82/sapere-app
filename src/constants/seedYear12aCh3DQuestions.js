@@ -2518,15 +2518,48 @@ export const Y12A_CH3D_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y12a-3d-q16a",
-        "type": "short_answer",
-        "question": "a) State whether the graph of \\( y = f(x) \\) is increasing or decreasing throughout its domain. (Answer 'increasing' or 'decreasing')",
-        "a": "increasing"
-      },
-      {
-        "id": "y12a-3d-q16b",
-        "type": "short_answer",
-        "question": "b) State whether the graph of \\( y = f(x) \\) is concave up or concave down throughout its domain. (Answer 'concave up' or 'concave down')",
-        "a": "concave down"
+        "type": "multiple_choice",
+        "question": "a) Based on the graph of \\( f'(x) \\), which of the following describes the shape of the original graph \\( y = f(x) \\) throughout its domain?",
+        "opts": [
+          "increasing and concave up",
+          "increasing and concave down",
+          "decreasing and concave up",
+          "decreasing and concave down"
+        ],
+        "options": [
+          {
+            "text": "increasing and concave up",
+            "imageUrl": ""
+          },
+          {
+            "text": "increasing and concave down",
+            "imageUrl": ""
+          },
+          {
+            "text": "decreasing and concave up",
+            "imageUrl": ""
+          },
+          {
+            "text": "decreasing and concave down",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "1",
+        "answerStr": "1",
+        "solutionSteps": [
+          {
+            "explanation": "Analyze the sign of the first derivative \\( f'(x) \\) from the graph.",
+            "workingOut": "\\text{The graph of } f'(x) \\text{ is above the x-axis (} f'(x) > 0 \\text{) for all } x > 0. \\\\ \\implies f(x) \\text{ is strictly increasing.}"
+          },
+          {
+            "explanation": "Analyze the slope of the first derivative graph to determine the sign of the second derivative \\( f''(x) \\).",
+            "workingOut": "\\text{The graph of } f'(x) \\text{ is falling, which means its slope is negative.} \\\\ \\text{Since } f''(x) = \\frac{d}{dx}[f'(x)] < 0 \\text{, } f(x) \\text{ is concave down.}"
+          },
+          {
+            "explanation": "Combine the results.",
+            "workingOut": "\\text{The original curve is increasing and concave down.}"
+          }
+        ]
       }
     ],
     "graphData": {
