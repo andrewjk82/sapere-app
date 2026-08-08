@@ -9,7 +9,6 @@ export const Y9_CH5I_QUESTIONS = [
     "solution": "Follow the sub-questions to find the average speed of each plane.",
     "t": "Revision",
     "hint": "Let the speed of the slower plane be v km/h. The distance traveled by both planes combined is 2400 km.",
-    "solutionSteps": [],
     "graphData": null,
     "subQuestions": [
       {
@@ -97,7 +96,6 @@ export const Y9_CH5I_QUESTIONS = [
     "solution": "Follow the sub-questions to find the share of A, B, and C.",
     "t": "Revision",
     "hint": "Let A's share be x. Write B's and C's shares in terms of x and sum them to 600.",
-    "solutionSteps": [],
     "graphData": null,
     "subQuestions": [
       {
@@ -165,7 +163,6 @@ export const Y9_CH5I_QUESTIONS = [
     "solution": "Follow the sub-questions to find the hourly leaflet production rate for each press.",
     "t": "Revision",
     "hint": "Let the rate of the slower press be r leaflets per hour. The combined rate is 2r + 150.",
-    "solutionSteps": [],
     "graphData": null,
     "subQuestions": [
       {
@@ -222,7 +219,6 @@ export const Y9_CH5I_QUESTIONS = [
     "solution": "Follow the sub-questions to find the weight of 1 cubic centimetre of each metal.",
     "t": "Revision",
     "hint": "Let the weight of 1 cm^3 of B be y. Then A is 1.5y.",
-    "solutionSteps": [],
     "graphData": null,
     "subQuestions": [
       {
@@ -329,7 +325,6 @@ export const Y9_CH5I_QUESTIONS = [
     "solution": "Follow the sub-questions to find the details of the machining.",
     "t": "Revision",
     "hint": "Let the original length be L. The length after the first machining is 0.9L.",
-    "solutionSteps": [],
     "graphData": null,
     "subQuestions": [
       {

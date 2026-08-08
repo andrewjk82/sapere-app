@@ -56,24 +56,6 @@ export const Y11_CH3E_QUESTIONS = [
         "a": "Parabola concave up with vertex (2, -16), y-intercept (0, -12), and x-intercepts (-2, 0) and (6, 0)."
       }
     ],
-    "solutionSteps": [
-      {
-        "explanation": "Identify the concavity by checking the sign of the leading coefficient.",
-        "workingOut": "y = 1(x - 3)^2 - 4 \\implies a = 1 > 0 \\implies \\text{concave up}"
-      },
-      {
-        "explanation": "Substitute \\( x = 0 \\) to find the y-intercept.",
-        "workingOut": "y = (0 - 3)^2 - 4 = 9 - 4 = 5 \\implies (0, 5)"
-      },
-      {
-        "explanation": "From the completed square form \\( y = a(x - h)^2 + k \\), the vertex is \\( (h, k) \\) and axis of symmetry is \\( x = h \\).",
-        "workingOut": "\\text{Vertex } V(3, -4), quad \\text{Axis of symmetry } x = 3"
-      },
-      {
-        "explanation": "Since the vertex is below the x-axis \\( (y = -4) \\) and the parabola is concave up, it must cross the x-axis. Find the intercepts by setting \\( y = 0 \\).",
-        "workingOut": "0 = (x - 3)^2 - 4 \\implies (x - 3)^2 = 4 \\implies x - 3 = \\pm 2 \\implies x = 1, 5"
-      }
-    ],
     "graphData": {
       "jsxGraph": {
         "width": 350,
@@ -143,24 +125,6 @@ export const Y11_CH3E_QUESTIONS = [
         "type": "teacher_review",
         "question": "b) (ii) Sketch the graph of \\( y = -(x - 3)^2 + 1 \\), showing all key features.",
         "a": "Parabola concave down with vertex at (3, 1), y-intercept at (0, -8), and x-intercepts at (2, 0) and (4, 0)."
-      }
-    ],
-    "solutionSteps": [
-      {
-        "explanation": "Look at the negative sign in front of the parenthetical squared term.",
-        "workingOut": "y = -1(x - 2)^2 + 4 \\implies a = -1 < 0 \\implies \\text{concave down}"
-      },
-      {
-        "explanation": "Substitute \\( x = 0 \\) to calculate the y-intercept.",
-        "workingOut": "y = -(0 - 2)^2 + 4 = -4 + 4 = 0 \\implies (0, 0)"
-      },
-      {
-        "explanation": "Read off the vertex \\( (h, k) \\) from the equation form \\( y = -(x - h)^2 + k \\).",
-        "workingOut": "\\text{Vertex } V(2, 4), quad \\text{Axis of symmetry } x = 2"
-      },
-      {
-        "explanation": "Since the vertex is above the x-axis \\( (y = 4) \\) and the parabola is concave down, it must cross the x-axis. Find the intercepts by setting \\( y = 0 \\).",
-        "workingOut": "0 = -(x - 2)^2 + 4 \\implies (x - 2)^2 = 4 \\implies x - 2 = pm 2 \\implies x = 0, 4"
       }
     ],
     "graphData": {
@@ -316,20 +280,6 @@ export const Y11_CH3E_QUESTIONS = [
         "type": "teacher_review",
         "question": "c) Sketch the graph of \\( y = (x - 2)^2 - 3 \\), showing its vertex, y-intercept, and exact x-intercepts.",
         "a": "Parabola concave up with vertex (2, -3), y-intercept (0, 1), and x-intercepts at 2 ± √3."
-      }
-    ],
-    "solutionSteps": [
-      {
-        "explanation": "For part a, identify the vertex: \\( V(-2, -5) \\). Calculate y-intercept: \\( y = (0+2)^2 - 5 = -1 \\). Find x-intercepts: \\( (x+2)^2 = 5 \\implies x = -2 \\pm \\sqrt{5} \\).",
-        "workingOut": ""
-      },
-      {
-        "explanation": "For part b, identify the vertex: \\( V(3, -6) \\). Calculate y-intercept: \\( y = (0-3)^2 - 6 = 3 \\). Find x-intercepts: \\( (x-3)^2 = 6 \\implies x = 3 \\pm \\sqrt{6} \\).",
-        "workingOut": ""
-      },
-      {
-        "explanation": "For part c, identify the vertex: \\( V(2, -3) \\). Calculate y-intercept: \\( y = (0-2)^2 - 3 = 1 \\). Find x-intercepts: \\( (x-2)^2 = 3 \\implies x = 2 \\pm \\sqrt{3} \\).",
-        "workingOut": ""
       }
     ]
   },
@@ -843,16 +793,6 @@ export const Y11_CH3E_QUESTIONS = [
         "a": "Geometrically, the shared vertex (2, -3) lies below the x-axis. If a > 0, the parabola opens upwards and must cross the x-axis. If a < 0, it opens downwards and moves away from the x-axis, having no intercepts."
       }
     ],
-    "solutionSteps": [
-      {
-        "explanation": "Regardless of \\( a \\), substituting \\( x = 2 \\) into \\( y = a(x - 2)^2 - 3 \\) results in \\( y = -3 \\). Thus, all curves share the vertex \\( (2, -3) \\).",
-        "workingOut": ""
-      },
-      {
-        "explanation": "Since the vertex is below the x-axis, a parabola opening upwards (\\( a > 0 \\)) must cross the x-axis to extend to infinity, creating two intercepts. A parabola opening downwards (\\( a < 0 \\)) will extend further down and never cross it.",
-        "workingOut": ""
-      }
-    ],
     "graphData": {
       "jsxGraph": {
         "width": 400,
@@ -893,20 +833,6 @@ export const Y11_CH3E_QUESTIONS = [
         "question": "c) Put \\( y = 0 \\) in order to find the \\( x \\)-intercepts.",
         "a": "0 = a(x + b/(2a))^2 - (b^2-4ac)/(4a) => (x + b/(2a))^2 = (b^2-4ac)/(4a^2) => x = (-b ± √(b^2-4ac)) / (2a)."
       }
-    ],
-    "solutionSteps": [
-      {
-        "explanation": "Divide by a: \\( \\frac{y}{a} = x^2 + \\frac{b}{a}x + \\frac{c}{a} \\).",
-        "workingOut": ""
-      },
-      {
-        "explanation": "Add and subtract \\( \\left(\\frac{b}{2a}\\right)^2 = \\frac{b^2}{4a^2} \\).",
-        "workingOut": "\\frac{y}{a} = \\left(x^2 + \\frac{b}{a}x + \\frac{b^2}{4a^2}\\right) + \\frac{c}{a} - \\frac{b^2}{4a^2} = \\left(x + \\frac{b}{2a}\\right)^2 - \\frac{b^2 - 4ac}{4a^2}"
-      },
-      {
-        "explanation": "Multiply by a to get \\( y = a\\left(x + \\frac{b}{2a}\\right)^2 - \\frac{b^2 - 4ac}{4a} \\). The vertex is at \\( x = -\\frac{b}{2a} \\).",
-        "workingOut": ""
-      }
     ]
   },
   {
@@ -934,20 +860,6 @@ export const Y11_CH3E_QUESTIONS = [
         "type": "short_answer",
         "question": "c) For \\( y = 5(x - 1)^2 \\), find vertex and number of x-intercepts.",
         "a": "V(1, 0), 1 intercept"
-      }
-    ],
-    "solutionSteps": [
-      {
-        "explanation": "For part a, \\( V(2, -6) \\) is below the x-axis, and since \\( a = 3 > 0 \\) it is concave up, meaning it crosses the x-axis twice.",
-        "workingOut": ""
-      },
-      {
-        "explanation": "For part b, \\( V(-3, -4) \\) is below the x-axis, and since \\( a = -2 < 0 \\) it is concave down, meaning it never reaches the x-axis.",
-        "workingOut": ""
-      },
-      {
-        "explanation": "For part c, \\( V(1, 0) \\) lies exactly on the x-axis, meaning the vertex is the single x-intercept.",
-        "workingOut": ""
       }
     ]
   },
@@ -977,20 +889,6 @@ export const Y11_CH3E_QUESTIONS = [
         "question": "c) Complete the square and sketch \\( y = 2x^2 + 4x - 2 \\).",
         "a": "y = 2(x + 1)^2 - 4; vertex is (-1, -4); x-intercepts at -1 ± √2; y-intercept is -2."
       }
-    ],
-    "solutionSteps": [
-      {
-        "explanation": "For part a: \\( y = -(x^2 - 6x + 9) - 4 + 9 = -(x - 3)^2 + 5 \\). Vertex is \\( (3, 5) \\).",
-        "workingOut": ""
-      },
-      {
-        "explanation": "For part b: \\( y = 2(x^2 - 4x + 4) + 10 - 8 = 2(x - 2)^2 + 2 \\). Vertex is \\( (2, 2) \\).",
-        "workingOut": ""
-      },
-      {
-        "explanation": "For part c: \\( y = 2(x^2 + 2x + 1) - 2 - 2 = 2(x + 1)^2 - 4 \\). Vertex is \\( (-1, -4) \\).",
-        "workingOut": ""
-      }
     ]
   },
   {
@@ -1018,20 +916,6 @@ export const Y11_CH3E_QUESTIONS = [
         "type": "short_answer",
         "question": "c) Write \\( f(x) = -x^2 - 4x + 3 \\) in factored form using surds. (Format: '(\\sqrt{a} - x - b)(\\sqrt{a} + x + b)')",
         "a": "(sqrt{7} - x - 2)(sqrt{7} + x + 2)"
-      }
-    ],
-    "solutionSteps": [
-      {
-        "explanation": "For part a, complete the square: \\( (x+2)^2 - 6 \\). Use difference of squares: \\( (x+2)^2 - (\\sqrt{6})^2 = (x + 2 - \\sqrt{6})(x + 2 + \\sqrt{6}) \\).",
-        "workingOut": ""
-      },
-      {
-        "explanation": "For part b, complete the square: \\( (x-3)^2 - 7 \\). Write in factored form: \\( (x - 3 - \\sqrt{7})(x - 3 + \\sqrt{7}) \\).",
-        "workingOut": ""
-      },
-      {
-        "explanation": "For part c, rewrite as \\( 7 - (x+2)^2 = (\\sqrt{7})^2 - (x+2)^2 \\). Factor using difference of squares: \\( (\\sqrt{7} - (x+2))(\\sqrt{7} + (x+2)) = (\\sqrt{7} - x - 2)(\\sqrt{7} + x + 2) \\).",
-        "workingOut": ""
       }
     ]
   },
@@ -1066,24 +950,6 @@ export const Y11_CH3E_QUESTIONS = [
         "type": "short_answer",
         "question": "d) Find the equation if the curve passes through the origin. (Format: 'y = a(x + h)^2 + k' where a is a fraction)",
         "a": "y = -4/9(x + 3)^2 + 4"
-      }
-    ],
-    "solutionSteps": [
-      {
-        "explanation": "For part a, monic means \\( a = 1 \\), so \\( y = (x+3)^2 + 4 \\).",
-        "workingOut": ""
-      },
-      {
-        "explanation": "For part b, coefficient of \\( x^2 \\) is \\( a = 2 \\), so \\( y = 2(x+3)^2 + 4 \\).",
-        "workingOut": ""
-      },
-      {
-        "explanation": "For part c, y-intercept is 22: \\( 22 = a(0+3)^2 + 4 \\implies 18 = 9a \\implies a = 2 \\), so \\( y = 2(x+3)^2 + 4 \\).",
-        "workingOut": ""
-      },
-      {
-        "explanation": "For part d, passes through origin \\( (0, 0) \\): \\( 0 = a(0+3)^2 + 4 \\implies 9a = -4 \\implies a = -\\frac{4}{9} \\), so \\( y = -\\frac{4}{9}(x+3)^2 + 4 \\).",
-        "workingOut": ""
       }
     ]
   }

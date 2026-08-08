@@ -1918,7 +1918,6 @@ export const Y12A_CH5L_QUESTIONS = [
     "answer": "",
     "hint": "Work through the parts in order.",
     "solution": "",
-    "solutionSteps": [],
     "subQuestions": [
       {
         "id": "y12a-5l-q25a",
@@ -2049,5 +2048,3 @@ export const Y12A_CH5L_QUESTIONS = [
     "requiresManualGrading": false
   }
 ];
-
-export default Y12A_CH5L_QUESTIONS;

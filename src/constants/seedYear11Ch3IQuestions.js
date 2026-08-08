@@ -31,16 +31,6 @@ export const Y11_CH3I_QUESTIONS = [
         "question": "d) Find the value of \\( k \\) if \\( y = 8 \\) when \\( x = 5 \\).",
         "a": "1.6"
       }
-    ],
-    "solutionSteps": [
-      {
-        "explanation": "If \\( y \\) varies directly with \\( x \\), the algebraic relationship is of the form \\( y = kx \\).",
-        "workingOut": "y = kx"
-      },
-      {
-        "explanation": "Substitute the given values to solve for \\( k \\).",
-        "workingOut": "12 = k \\cdot 3 \\implies k = 4\n-10 = k \\cdot 2 \\implies k = -5\n8 = k \\cdot 5 \\implies k = 1.6"
-      }
     ]
   },
   {
@@ -144,16 +134,6 @@ export const Y11_CH3I_QUESTIONS = [
         ],
         "a": "0"
       }
-    ],
-    "solutionSteps": [
-      {
-        "explanation": "For direct variation \\( y = kx \\), any scale factor applied to \\( x \\) is directly multiplied to \\( y \\).",
-        "workingOut": "y \\propto x \\implies \\text{tripling } x \\text{ triples } y"
-      },
-      {
-        "explanation": "For inverse variation \\( y = \\frac{k}{x} \\), any scale factor applied to \\( x \\) acts inversely on \\( y \\).",
-        "workingOut": "y \\propto \\frac{1}{x} \\implies \\text{tripling } x \\text{ divides } y \\text{ by } 3"
-      }
     ]
   },
   {
@@ -206,24 +186,6 @@ export const Y11_CH3I_QUESTIONS = [
         ],
         "a": "0"
       }
-    ],
-    "solutionSteps": [
-      {
-        "explanation": "The phrase 'varies inversely with the square of x' translates to \\( y = \\frac{k}{x^2} \\).",
-        "workingOut": "y = \\frac{k}{x^2}"
-      },
-      {
-        "explanation": "Substitute \\( y = 3 \\) and \\( x = 2 \\) to find \\( k \\).",
-        "workingOut": "3 = \\frac{k}{2^2} \\implies 3 = \\frac{k}{4} \\implies k = 12"
-      },
-      {
-        "explanation": "Substitute \\( k = 12 \\) and \\( x = 4 \\) to find \\( y \\).",
-        "workingOut": "y = \\frac{12}{4^2} = \\frac{12}{16} = 0.75"
-      },
-      {
-        "explanation": "Since \\( y \\propto \\frac{1}{x^2} \\), tripling \\( x \\) results in dividing \\( y \\) by \\( 3^2 = 9 \\). Dividing \\( x \\) by 4 results in multiplying \\( y \\) by \\( 4^2 = 16 \\).",
-        "workingOut": ""
-      }
     ]
   },
   {
@@ -257,20 +219,6 @@ export const Y11_CH3I_QUESTIONS = [
         "type": "teacher_review",
         "question": "d) Explain the units of \\( k \\) using the formula for the area of a triangle.",
         "a": "The formula for the area of a triangle is \\( A = \\frac{1}{2}bh \\). Comparing this to \\( A = kh \\) shows that \\( k = \\frac{1}{2}b \\), where \\( b \\) is the base of the triangle. Since \\( b \\) is a length measured in cm, the constant of proportionality \\( k \\) represents half the base length and must also have units of cm."
-      }
-    ],
-    "solutionSteps": [
-      {
-        "explanation": "Since area varies directly with height, the relationship is \\( A = kh \\).",
-        "workingOut": "A = kh"
-      },
-      {
-        "explanation": "Substitute \\( A = 15 \\) and \\( h = 5 \\) to find \\( k \\).",
-        "workingOut": "15 = k \\cdot 5 \\implies k = 3"
-      },
-      {
-        "explanation": "Rearrange to solve for the units of \\( k \\).",
-        "workingOut": "k = \\frac{A}{h} \\implies \\frac{\\text{cm}^2}{\\text{cm}} = \\text{cm}"
       }
     ]
   },
@@ -306,24 +254,6 @@ export const Y11_CH3I_QUESTIONS = [
         "question": "d) The wingspan of the model is \\( 285\\text{ mm} \\). What is the wingspan of the Mustang in metres?",
         "a": "11.4"
       }
-    ],
-    "solutionSteps": [
-      {
-        "explanation": "Write the direct variation relation.",
-        "workingOut": "m = ks"
-      },
-      {
-        "explanation": "Substitute \\( s = 10.0 \\) and \\( m = 0.25 \\) to find \\( k \\).",
-        "workingOut": "0.25 = k \\cdot 10.0 \\implies k = 0.025"
-      },
-      {
-        "explanation": "Find model height using \\( k = 0.025 \\) and \\( s = 3.6\\text{ m} \\).",
-        "workingOut": "m = 0.025 \\cdot 3.6 = 0.09\\text{ m} = 9\\text{ cm}"
-      },
-      {
-        "explanation": "Convert model wingspan to metres and find Mustang wingspan.",
-        "workingOut": "m = 0.285\\text{ m} \\implies 0.285 = 0.025 \\cdot s \\implies s = \\frac{0.285}{0.025} = 11.4\\text{ m}"
-      }
     ]
   },
   {
@@ -357,24 +287,6 @@ export const Y11_CH3I_QUESTIONS = [
         "type": "short_answer",
         "question": "d) A paint supplier sells \\( 20\text{ L}  \\) buckets and \\( 2\text{ L}  \\) tins of paint. What is the minimum number of buckets and tins that must be bought to cover the \\( 452\text{ m}^2  \\) area completely with zero or minimal leftover? (Format: 'X buckets and Y tins')",
         "a": "2 buckets and 3 tins"
-      }
-    ],
-    "solutionSteps": [
-      {
-        "explanation": "Since paint varies directly with area, \\( P = kA \\).",
-        "workingOut": "P = kA"
-      },
-      {
-        "explanation": "Find \\( k \\) by substituting \\( P = 36 \\) and \\( A = 360 \\).",
-        "workingOut": "36 = k \\cdot 360 \\implies k = 0.1"
-      },
-      {
-        "explanation": "Find paint required for \\( A = 452 \\).",
-        "workingOut": "P = 0.1 \\cdot 452 = 45.2\\text{ L}"
-      },
-      {
-        "explanation": "Determine the combination of 20 L buckets and 2 L tins that sums to exactly 45.2 L or slightly more.",
-        "workingOut": "2 \\text{ buckets} = 40\\text{ L}. \\text{ Remaining } 5.2\\text{ L} \\implies 3 \\text{ tins} = 6\\text{ L}. \\text{ Total } = 46\\text{ L}."
       }
     ],
     "graphData": {
@@ -430,20 +342,6 @@ export const Y11_CH3I_QUESTIONS = [
         "a": "A hyperbolic curve in the first quadrant passing through (600,000, $5) and (300,000, $10), asymptotic to both axes."
       }
     ],
-    "solutionSteps": [
-      {
-        "explanation": "Calculate the constant turnover \\( T \\).",
-        "workingOut": "T = pq = 5 \\cdot 600,000 = 3,000,000"
-      },
-      {
-        "explanation": "Solve for the quantity \\( q \\) given the new price \\( p = \\\\(10 \\).\\)",
-        "workingOut": "10q = 3,000,000 \\implies q = 300,000"
-      },
-      {
-        "explanation": "Since \\( q = \\frac{T}{p} \\), quantity is inversely proportional to price. Tripling the price divides the quantity by 3.",
-        "workingOut": "q \\propto \\frac{1}{p}"
-      }
-    ],
     "graphData": {
       "jsxGraph": {
         "width": 350,
@@ -489,24 +387,6 @@ export const Y11_CH3I_QUESTIONS = [
         "type": "short_answer",
         "question": "b) ii) A certain amount of gas is at \\( 3 \\) times atmospheric pressure when it occupies \\( 8\\text{ L} \\). What is the pressure when the volume is \\( 20\\text{ L} \\)? (Express as a multiple of atmospheric pressure)",
         "a": "1.2"
-      }
-    ],
-    "solutionSteps": [
-      {
-        "explanation": "Set up the direct variation relation for volume and temperature.",
-        "workingOut": "V = kT"
-      },
-      {
-        "explanation": "Find \\( k \\) and calculate volume at \\( T = 320\\text{ K} \\). Convert \\( \\text{m}^3 \\) to \\( \\text{cm}^3 \\).",
-        "workingOut": "1.5 = k(300) \\implies k = 0.005\nV = 0.005 \\cdot 320 = 1.6\\text{ m}^3 = 1,600,000\\text{ cm}^3"
-      },
-      {
-        "explanation": "Set up the inverse variation relation for pressure and volume.",
-        "workingOut": "P = \\frac{k}{V}"
-      },
-      {
-        "explanation": "Find \\( k \\) and calculate pressure at \\( V = 20\\text{ L} \\).",
-        "workingOut": "3 = \\frac{k}{8} \\implies k = 24\nP = \\frac{24}{20} = 1.2 \\text{ times atmospheric pressure}"
       }
     ]
   },
@@ -572,28 +452,6 @@ export const Y11_CH3I_QUESTIONS = [
         ],
         "a": "0"
       }
-    ],
-    "solutionSteps": [
-      {
-        "explanation": "Velocity varies directly with time: \\( v = kt \\). Use \\( v(3) = 6 \\) to find \\( k = 2 \\).",
-        "workingOut": "6 = 3k \\implies k = 2"
-      },
-      {
-        "explanation": "Find speed at \\( t = 10 \\) and time at \\( v = 15 \\).",
-        "workingOut": "v(10) = 2 \\cdot 10 = 20\\text{ m/s}\n15 = 2t \\implies t = 7.5\\text{ s}"
-      },
-      {
-        "explanation": "Distance is proportional to the square of time: \\( x = kt^2 \\). Use \\( x(3) = 9 \\) to find \\( k = 1 \\).",
-        "workingOut": "9 = k(3^2) \\implies 9 = 9k \\implies k = 1"
-      },
-      {
-        "explanation": "Find distance at \\( t = 10 \\) and time at \\( x = 144 \\).",
-        "workingOut": "x(10) = 1 \\cdot 10^2 = 100\\text{ m}\n144 = 1 \\cdot t^2 \\implies t = \\sqrt{144} = 12\\text{ s}"
-      },
-      {
-        "explanation": "Since \\( x \\propto t^2 \\), doubling \\( t  \\) results in multiplying \\( x \\) by \\( 2^2 = 4 \\).",
-        "workingOut": ""
-      }
     ]
   },
   {
@@ -646,24 +504,6 @@ export const Y11_CH3I_QUESTIONS = [
         ],
         "a": "0"
       }
-    ],
-    "solutionSteps": [
-      {
-        "explanation": "Mars gravity varies inversely with the square of the distance: \\( a = \\frac{k}{r^2} \\).",
-        "workingOut": "a = \\frac{k}{r^2}"
-      },
-      {
-        "explanation": "Solve for \\( k \\) using surface gravity and radius.",
-        "workingOut": "k = a r^2 = 3.71 \\cdot 3,389,500^2 \\approx 4.26 \\cdot 10^{13}"
-      },
-      {
-        "explanation": "Calculate gravity at altitude \\( 17,000\\text{ km} \\) (which is \\( 1.7 \\cdot 10^7\\text{ m} \\)).",
-        "workingOut": "r = 3,389,500 + 17,000,000 = 20,389,500\\text{ m}\na = \\frac{4.2623 \\cdot 10^{13}}{20,389,500^2} \\approx 0.10\\text{ m/s}^2"
-      },
-      {
-        "explanation": "By inverse square law, doubling distance divides gravity by \\( 2^2 = 4 \\).",
-        "workingOut": ""
-      }
     ]
   },
   {
@@ -710,20 +550,6 @@ export const Y11_CH3I_QUESTIONS = [
         ],
         "a": "0"
       }
-    ],
-    "solutionSteps": [
-      {
-        "explanation": "If \\( R \\) and \\( n \\) are constant, \\( I = c \\cdot P \\) where \\( c = nR \\). Thus \\( I \\propto P \\).",
-        "workingOut": ""
-      },
-      {
-        "explanation": "If \\( I \\) and \\( P \\) are constant, \\( nR = c \\implies n = \\frac{c}{R} \\). Thus \\( n \\propto \\frac{1}{R} \\).",
-        "workingOut": ""
-      },
-      {
-        "explanation": "Since \\( I = kn \\) where \\( I \\) is in dollars and \\( n \\) is in years, \\( k = \\frac{I}{n} \\) has units of dollars per year.",
-        "workingOut": ""
-      }
     ]
   },
   {
@@ -757,16 +583,6 @@ export const Y11_CH3I_QUESTIONS = [
         "type": "short_answer",
         "question": "b) ii) When the initial depth was \\( 3\\text{ m} \\) the time taken was \\( 486\\text{ s} \\). How long will it take to empty this tank if it is filled to a depth of \\( 5\\text{ m} \\)? (Round to the nearest second)",
         "a": "1743"
-      }
-    ],
-    "solutionSteps": [
-      {
-        "explanation": "Cylinder: \\( t = k\\sqrt{h} \\). Find \\( k \\) and solve for \\( h = 9 \\).",
-        "workingOut": "6000 = k\\sqrt{4} \\implies k = 3000\nt = 3000\\sqrt{9} = 9000\\text{ s}"
-      },
-      {
-        "explanation": "Cone: \\( t = k\\sqrt{h^5} \\). Find \\( k \\) and solve for \\( h = 5 \\).",
-        "workingOut": "486 = k\\sqrt{3^5} \\implies k \\approx 31.1769\nt = 31.1769 \\cdot \\sqrt{5^5} \\approx 1743\\text{ s}"
       }
     ]
   },
@@ -802,24 +618,6 @@ export const Y11_CH3I_QUESTIONS = [
         "question": "d) If the speed of the car is doubled, by what factor has the force increased?",
         "a": "4"
       }
-    ],
-    "solutionSteps": [
-      {
-        "explanation": "The relationship is \\( F = kV^2 \\).",
-        "workingOut": "F = kV^2"
-      },
-      {
-        "explanation": "Convert speed to \\( \\text{m/s} \\) and solve for \\( k \\).",
-        "workingOut": "V = 70\\text{ m/s} \\implies 9,800 = k \\cdot 70^2 \\implies k = 2"
-      },
-      {
-        "explanation": "Calculate force at new speed \\( 60\\text{ m/s} \\).",
-        "workingOut": "F = 2 \\cdot 60^2 = 7200\\text{ N}"
-      },
-      {
-        "explanation": "Since \\( F \\propto V^2 \\), doubling \\( V \\) multiplies \\( F \\) by \\( 2^2 = 4 \\).",
-        "workingOut": ""
-      }
     ]
   },
   {
@@ -841,16 +639,6 @@ export const Y11_CH3I_QUESTIONS = [
         "type": "short_answer",
         "question": "b) When the length of the pendulum is \\( L = 0.36\\text{ m} \\), the period is \\( P = 1.20\\text{ s} \\). What will be the period of a conical pendulum with length \\( L = 2.25\\text{ m} \\)? (in seconds)",
         "a": "3"
-      }
-    ],
-    "solutionSteps": [
-      {
-        "explanation": "Set up relationship: \\( P = k\\sqrt{L} \\). Find \\( k \\).",
-        "workingOut": "1.20 = k\\sqrt{0.36} \\implies 1.20 = 0.6k \\implies k = 2"
-      },
-      {
-        "explanation": "Calculate period for \\( L = 2.25\\text{ m} \\).",
-        "workingOut": "P = 2\\sqrt{2.25} = 2 \\cdot 1.5 = 3\\text{ s}"
       }
     ]
   },

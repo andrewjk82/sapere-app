@@ -3586,20 +3586,6 @@ export const Y10_CH3J_QUESTIONS = [
       "\\\\(\\\\)"
     ],
     "a": 1,
-    "solutionSteps": [
-      {
-        "explanation": "Read the question carefully and determine the appropriate mathematical rules to apply.",
-        "workingOut": "\\\\(\\\\)"
-      },
-      {
-        "explanation": "Perform the intermediate algebraic steps systematically.",
-        "workingOut": "\\\\(\\\\)"
-      },
-      {
-        "explanation": "Check your calculations and state the final result.",
-        "workingOut": "\\\\(\\\\)"
-      }
-    ],
     "graphData": null,
     "subQuestions": [
       {
@@ -3678,20 +3664,6 @@ export const Y10_CH3J_QUESTIONS = [
       "\\\\(\\\\)"
     ],
     "a": 0,
-    "solutionSteps": [
-      {
-        "explanation": "Read the question carefully and determine the appropriate mathematical rules to apply.",
-        "workingOut": "\\\\(\\\\)"
-      },
-      {
-        "explanation": "Perform the intermediate algebraic steps systematically.",
-        "workingOut": "\\\\(\\\\)"
-      },
-      {
-        "explanation": "Check your calculations and state the final result.",
-        "workingOut": "\\\\(\\\\)"
-      }
-    ],
     "graphData": null,
     "subQuestions": [
       {
@@ -3770,20 +3742,6 @@ export const Y10_CH3J_QUESTIONS = [
       "\\\\(\\\\)"
     ],
     "a": 1,
-    "solutionSteps": [
-      {
-        "explanation": "Read the question carefully and determine the appropriate mathematical rules to apply.",
-        "workingOut": "\\\\(\\\\)"
-      },
-      {
-        "explanation": "Perform the intermediate algebraic steps systematically.",
-        "workingOut": "\\\\(\\\\)"
-      },
-      {
-        "explanation": "Check your calculations and state the final result.",
-        "workingOut": "\\\\(\\\\)"
-      }
-    ],
     "graphData": null,
     "subQuestions": [
       {

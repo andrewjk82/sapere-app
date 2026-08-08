@@ -2683,28 +2683,6 @@ export const Y11_CH7B_QUESTIONS = [
     "hint": "Work through (a) intercepts, then (b) gradient, then (c) angle of inclination.",
     "answer": "A(-2, 0), B(0, 4); m = 2; α ≈ 63°",
     "solution": "### Step-by-Step Solution\n\n**Step 1:** Part (a): find intercepts of \\(y = 2x + 4\\).\n\\(A(-2, 0)\\) (x-intercept), \\(B(0, 4)\\) (y-intercept)\n\n**Step 2:** Part (b): gradient of \\(AB\\).\n\\(m = \\dfrac{4-0}{0-(-2)} = 2\\)\n\n**Step 3:** Part (c): angle of inclination from \\(\\tan \\alpha = m\\).\n\\(\\alpha = \\tan^{-1}(2)\\)\n\n**Step 4:** Round to the nearest degree.\n\\(\\alpha \\approx 63^{\\circ}\\)",
-    "solutionSteps": [
-      {
-        "explanation": "Part (a): find intercepts of \\(y = 2x + 4\\).",
-        "workingOut": "\\(A(-2, 0)\\) (x-intercept), \\(B(0, 4)\\) (y-intercept)",
-        "graphData": null
-      },
-      {
-        "explanation": "Part (b): gradient of \\(AB\\).",
-        "workingOut": "\\(m = \\dfrac{4-0}{0-(-2)} = 2\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Part (c): angle of inclination from \\(\\tan \\alpha = m\\).",
-        "workingOut": "\\(\\alpha = \\tan^{-1}(2)\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Round to the nearest degree.",
-        "workingOut": "\\(\\alpha \\approx 63^{\\circ}\\)",
-        "graphData": null
-      }
-    ],
     "subQuestions": [
       {
         "id": "y11a-7b-q17a-a",

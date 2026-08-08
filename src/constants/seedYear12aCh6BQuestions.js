@@ -1343,7 +1343,6 @@ export const Y12A_CH6B_QUESTIONS = [
     "answer": "",
     "hint": "Work through the parts in order. Keep a clear list of \\(y,\\ y',\\ y'',\\ y''',\\ y''''\\).",
     "solution": "",
-    "solutionSteps": [],
     "graphData": null,
     "subQuestions": [
       {
@@ -1891,7 +1890,6 @@ export const Y12A_CH6B_QUESTIONS = [
     "answer": "",
     "hint": "Use the product rule for \\(y'\\) and \\(y''\\), then substitute into the left-hand side of the differential equation.",
     "solution": "",
-    "solutionSteps": [],
     "graphData": null,
     "subQuestions": [
       {
@@ -2110,7 +2108,6 @@ export const Y12A_CH6B_QUESTIONS = [
     "answer": "",
     "hint": "Use the product rule for \\(y'\\) and \\(y''\\), then substitute into the left-hand side of the differential equation.",
     "solution": "",
-    "solutionSteps": [],
     "graphData": null,
     "subQuestions": [
       {
@@ -2329,7 +2326,6 @@ export const Y12A_CH6B_QUESTIONS = [
     "answer": "",
     "hint": "Differentiate term by term, then simplify using \\(\\sec^{2}x = 1 + \\tan^{2}x\\).",
     "solution": "",
-    "solutionSteps": [],
     "graphData": null,
     "subQuestions": [
       {
@@ -7386,5 +7382,3 @@ export const Y12A_CH6B_QUESTIONS = [
     ]
   }
 ];
-
-export default Y12A_CH6B_QUESTIONS;

@@ -163,7 +163,6 @@ export const Y12A_CH6_QUESTIONS = [
     "answer": "",
     "hint": "Work through the parts in order. Convert degrees to radians before using \\(\\sin x \\approx x\\).",
     "solution": "",
-    "solutionSteps": [],
     "graphData": {
       "jsxGraph": {
         "width": 340,
@@ -961,5 +960,3 @@ export const Y12A_CH6_QUESTIONS = [
     }
   }
 ];
-
-export default Y12A_CH6_QUESTIONS;

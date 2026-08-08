@@ -3536,7 +3536,6 @@ export const Y12A_CH3H_QUESTIONS = [
     "timeLimit": 240,
     "question": "A function \\( f(x) \\) has second derivative \\( f''(x) = 2x - 6 \\). Its graph passes through the point \\( (3, 20) \\), and at this point the tangent has a gradient of \\( 11 \\). Complete parts a), b), and c).",
     "t": "Primitive functions",
-    "solutionSteps": [],
     "subQuestions": [
       {
         "id": "y12a-3h-q16a",
@@ -3656,7 +3655,6 @@ export const Y12A_CH3H_QUESTIONS = [
     "timeLimit": 240,
     "question": "If \\( y'' = 12 - 6x \\), complete parts a) and b).",
     "t": "Primitive functions",
-    "solutionSteps": [],
     "subQuestions": [
       {
         "id": "y12a-3h-q17a",
@@ -3745,7 +3743,6 @@ export const Y12A_CH3H_QUESTIONS = [
     "timeLimit": 240,
     "question": "Consider the derivative \\( f'(x) = -\\frac{4}{x^2} \\). We know that a continuous curve passing through \\( A(2, 3) \\) has equation \\( y = \\frac{4}{x} + 1 \\). This is not strictly true, because the asymptote at \\( x = 0 \\) allows the two branches of the curve to move independently so that each branch has its own arbitrary constant. Complete parts a), b), and c).",
     "t": "Primitive functions",
-    "solutionSteps": [],
     "subQuestions": [
       {
         "id": "y12a-3h-q18a",

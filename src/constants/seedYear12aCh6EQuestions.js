@@ -2192,7 +2192,6 @@ export const Y12A_CH6E_QUESTIONS = [
     "answer": "",
     "hint": "First find the intercepts by solving \\(\\cos\\pi x = 0\\), then integrate between them for the area.",
     "solution": "",
-    "solutionSteps": [],
     "graphData": null,
     "subQuestions": [
       {
@@ -3916,5 +3915,3 @@ export const Y12A_CH6E_QUESTIONS = [
     "requiresManualGrading": true
   }
 ];
-
-export default Y12A_CH6E_QUESTIONS;
