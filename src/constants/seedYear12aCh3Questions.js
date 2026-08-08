@@ -3874,22 +3874,37 @@ export const Y12A_CH3_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Identify the x-intercepts.",
-        "workingOut": "The condition \\( f(1) = f(-3) = 0 \\) means the curve passes through the x-axis at \\( x = 1 \\) and \\( x = -3 \\)."
+        "workingOut": "The condition \\( f(1) = f(-3) = 0 \\) means the curve passes through the x-axis at \\( x = 1 \\) and \\( x = -3 \\).\nThese are our x-intercepts."
       },
       {
-        "explanation": "Identify the turning points.",
-        "workingOut": "The condition \\( f'(-1) = 0 \\) means there is a stationary point (a turning point) at \\( x = -1 \\)."
+        "explanation": "Identify the turning point and its nature.",
+        "workingOut": "The condition \\( f'(-1) = 0 \\) indicates a stationary point at \\( x = -1 \\).\nSince \\( f'(x) > 0 \\) for \\( x < -1 \\) (increasing) and \\( f'(x) < 0 \\) for \\( x > -1 \\) (decreasing), the point at \\( x = -1 \\) must be a local maximum."
       },
       {
-        "explanation": "Determine the shape using intervals of increase/decrease.",
-        "workingOut": "Since \\( f'(x) > 0 \\) for \\( x < -1 \\), the curve is increasing before \\( x = -1 \\).\nSince \\( f'(x) < 0 \\) for \\( x > -1 \\), the curve is decreasing after \\( x = -1 \\).\nThis means the turning point at \\( x = -1 \\) is a local maximum.\nA downward-opening parabola passing through (-3,0) and (1,0) perfectly satisfies these conditions."
+        "explanation": "Construct a possible mathematical model.",
+        "workingOut": "A downward-opening parabola with roots at 1 and -3 fits perfectly:\n\\[ f(x) = -(x-1)(x+3) = -x^2 - 2x + 3 \\]\nChecking the derivative: \\( f'(x) = -2x - 2 \\), which equals 0 at \\( x = -1 \\). This confirms our model.",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -5,
+              5,
+              5,
+              -5
+            ],
+            "showGrid": true,
+            "showAxisLabels": true,
+            "script": "board.suspendUpdate();\nboard.create('functiongraph', [function(x){ return -x*x - 2*x + 3; }], {strokeColor: 'blue', strokeWidth: 2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ]
   },
   {
     "id": "y12a-3a-q23b",
     "type": "teacher_review",
-    "question": "Sketch a possible graph of a continuous curve \\( y = f(x) \\) that has the following properties:\n- \\( f(2) = f'(2) = 0 \\)\n- \\( f'(x) > 0 \\) for all \\( x \neq 2 \\)",
+    "question": "Sketch a possible graph of a continuous curve \\( y = f(x) \\) that has the following properties:\n- \\( f(2) = f'(2) = 0 \\)\n- \\( f'(x) > 0 \\) for all \\( x \\neq 2 \\)",
     "a": "The graph passes through \\( (2,0) \\) where it has a horizontal point of inflection (since the curve is stationary at \\( x = 2 \\) but increases everywhere else). The curve rises continually from left to right, flattening momentarily at \\( (2, 0) \\).",
     "difficulty": "hard",
     "timeLimit": 240,
@@ -3897,11 +3912,30 @@ export const Y12A_CH3_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Evaluate the condition at \\( x = 2 \\).",
-        "workingOut": "\\text{Stationary point and x-intercept at } (2,0)"
+        "workingOut": "The condition \\( f(2) = 0 \\) means the curve passes through \\( (2,0) \\).\nThe condition \\( f'(2) = 0 \\) means the curve is stationary at this point."
       },
       {
-        "explanation": "Analyze behavior elsewhere.",
-        "workingOut": "f'(x) > 0 \\text{ for all } x \neq 2 \\implies \\text{strictly increasing except momentary flat at } x=2"
+        "explanation": "Analyze the increasing nature of the curve.",
+        "workingOut": "We are given \\( f'(x) > 0 \\) for all \\( x \\neq 2 \\).\nThis means the curve is strictly increasing everywhere except at \\( x = 2 \\), where it momentarily flattens out. This describes a horizontal point of inflection."
+      },
+      {
+        "explanation": "Construct a possible mathematical model.",
+        "workingOut": "A basic cubic curve shifted to the right fits this description:\n\\[ f(x) = (x-2)^3 \\]\nChecking the derivative: \\( f'(x) = 3(x-2)^2 \\), which is always positive except at \\( x=2 \\) where it is zero.",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -2,
+              5,
+              6,
+              -5
+            ],
+            "showGrid": true,
+            "showAxisLabels": true,
+            "script": "board.suspendUpdate();\nboard.create('functiongraph', [function(x){ return Math.pow(x-2, 3); }], {strokeColor: 'blue', strokeWidth: 2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ]
   },
@@ -3915,12 +3949,31 @@ export const Y12A_CH3_QUESTIONS = [
     "t": "Increasing, decreasing and stationary at a point",
     "solutionSteps": [
       {
-        "explanation": "Use symmetry to find matching features.",
-        "workingOut": "\\text{Odd function: passing through } (0,0), text{ x-intercepts at } \\pm 3, text{ stationary at } \\pm 1"
+        "explanation": "Use symmetry to map the given points.",
+        "workingOut": "Since \\( f(x) \\) is an odd function, it has rotational symmetry about the origin, meaning \\( f(x) = -f(-x) \\) and it passes through \\( (0,0) \\).\nGiven \\( f(3) = 0 \\), it must also pass through \\( (-3,0) \\).\nGiven \\( f'(1) = 0 \\), it must also have a stationary point at \\( x = -1 \\)."
       },
       {
-        "explanation": "Determine shape based on increasing/decreasing directions.",
-        "workingOut": "\\text{Local min at } (1, f(1)) \\implies \\text{Local max at } (-1, -f(1))"
+        "explanation": "Determine the shape using intervals of increase/decrease.",
+        "workingOut": "We are given \\( f'(x) < 0 \\) for \\( 0 \\leq x < 1 \\) (decreasing) and \\( f'(x) > 0 \\) for \\( x > 1 \\) (increasing).\nThis makes \\( x = 1 \\) a local minimum. By odd symmetry, \\( x = -1 \\) must be a local maximum."
+      },
+      {
+        "explanation": "Sketch the curve.",
+        "workingOut": "The curve starts low, rises to a peak at \\( x = -1 \\), passes through the origin \\( (0,0) \\), dips to a valley at \\( x = 1 \\), and then rises to cross the x-axis at \\( x = 3 \\).",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -4,
+              4,
+              4,
+              -4
+            ],
+            "showGrid": true,
+            "showAxisLabels": true,
+            "script": "board.suspendUpdate();\nboard.create('spline', [[-4, -3, -1, 0, 1, 3, 4], [-4, 0, 2, 0, -2, 0, 4]], {strokeColor: 'blue', strokeWidth: 2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ]
   },
@@ -3934,12 +3987,31 @@ export const Y12A_CH3_QUESTIONS = [
     "t": "Increasing, decreasing and stationary at a point",
     "solutionSteps": [
       {
-        "explanation": "Determine vertical position.",
-        "workingOut": "f(x) > 0 \\implies \\text{curve lies completely above the x-axis}"
+        "explanation": "Determine the vertical position of the curve.",
+        "workingOut": "The condition \\( f(x) > 0 \\) for all \\( x \\) means the entire curve must lie strictly above the x-axis. It never crosses or touches it."
       },
       {
-        "explanation": "Find turning point and shape.",
-        "workingOut": "\\text{Minimum vertex at } x = 0, text{ decreasing on the left, increasing on the right.}"
+        "explanation": "Find the turning point and general shape.",
+        "workingOut": "The condition \\( f'(0) = 0 \\) indicates a stationary point on the y-axis.\nSince \\( f'(x) < 0 \\) for \\( x < 0 \\) (decreasing) and \\( f'(x) > 0 \\) for \\( x > 0 \\) (increasing), this stationary point is a local minimum."
+      },
+      {
+        "explanation": "Construct a possible mathematical model.",
+        "workingOut": "An upward-opening parabola shifted vertically upwards satisfies all conditions perfectly:\n\\[ f(x) = x^2 + 1 \\]\nChecking the derivative: \\( f'(x) = 2x \\), which is negative for \\( x < 0 \\) and positive for \\( x > 0 \\).",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -4,
+              6,
+              4,
+              -2
+            ],
+            "showGrid": true,
+            "showAxisLabels": true,
+            "script": "board.suspendUpdate();\nboard.create('functiongraph', [function(x){ return x*x + 1; }], {strokeColor: 'blue', strokeWidth: 2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ]
   }
