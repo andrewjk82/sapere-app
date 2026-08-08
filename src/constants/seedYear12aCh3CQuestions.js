@@ -500,15 +500,15 @@ export const Y12A_CH3C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Expand the product expression.",
-        "workingOut": "y = x^2 + 5x"
+        "workingOut": "\\begin{aligned} y &= x(x + 5) \\\\ &= x^2 + 5x \\end{aligned}"
       },
       {
         "explanation": "Find the first derivative.",
-        "workingOut": "y' = 2x + 5"
+        "workingOut": "\\begin{aligned} y' &= 2x^{2-1} + 5(1)x^{1-1} \\\\ &= 2x + 5 \\end{aligned}"
       },
       {
         "explanation": "Find the second derivative.",
-        "workingOut": "y'' = 2"
+        "workingOut": "\\begin{aligned} y'' &= 2(1)x^{1-1} + 0 \\\\ &= 2 \\end{aligned}"
       }
     ],
     "opts": [
@@ -548,16 +548,16 @@ export const Y12A_CH3C_QUESTIONS = [
     "t": "Second and higher derivatives",
     "solutionSteps": [
       {
-        "explanation": "Expand the product.",
-        "workingOut": "y = x^3 - 3x^2"
+        "explanation": "Expand the product expression.",
+        "workingOut": "\\begin{aligned} y &= x^2(x - 3) \\\\ &= x^3 - 3x^2 \\end{aligned}"
       },
       {
         "explanation": "Find the first derivative.",
-        "workingOut": "y' = 3x^2 - 6x"
+        "workingOut": "\\begin{aligned} y' &= 3x^{3-1} - 3 \\times 2x^{2-1} \\\\ &= 3x^2 - 6x \\end{aligned}"
       },
       {
         "explanation": "Find the second derivative.",
-        "workingOut": "y'' = 6x - 6"
+        "workingOut": "\\begin{aligned} y'' &= 3 \\times 2x^{2-1} - 6(1)x^{1-1} \\\\ &= 6x - 6 \\end{aligned}"
       }
     ],
     "opts": [
@@ -597,16 +597,16 @@ export const Y12A_CH3C_QUESTIONS = [
     "t": "Second and higher derivatives",
     "solutionSteps": [
       {
-        "explanation": "Expand the product.",
-        "workingOut": "y = x^2 - x - 6"
+        "explanation": "Expand the product expression.",
+        "workingOut": "\\begin{aligned} y &= (x - 3)(x + 2) \\\\ &= x^2 + 2x - 3x - 6 \\\\ &= x^2 - x - 6 \\end{aligned}"
       },
       {
         "explanation": "Find the first derivative.",
-        "workingOut": "y' = 2x - 1"
+        "workingOut": "\\begin{aligned} y' &= 2x^{2-1} - 1x^{1-1} - 0 \\\\ &= 2x - 1 \\end{aligned}"
       },
       {
         "explanation": "Find the second derivative.",
-        "workingOut": "y'' = 2"
+        "workingOut": "\\begin{aligned} y'' &= 2(1)x^{1-1} - 0 \\\\ &= 2 \\end{aligned}"
       }
     ],
     "opts": [
@@ -646,16 +646,16 @@ export const Y12A_CH3C_QUESTIONS = [
     "t": "Second and higher derivatives",
     "solutionSteps": [
       {
-        "explanation": "Expand the expression.",
-        "workingOut": "y = 2x^2 - 5x - 12"
+        "explanation": "Expand the product expression.",
+        "workingOut": "\\begin{aligned} y &= (2x + 3)(x - 4) \\\\ &= 2x^2 - 8x + 3x - 12 \\\\ &= 2x^2 - 5x - 12 \\end{aligned}"
       },
       {
         "explanation": "Find the first derivative.",
-        "workingOut": "y' = 4x - 5"
+        "workingOut": "\\begin{aligned} y' &= 2 \\times 2x^{2-1} - 5(1)x^{1-1} - 0 \\\\ &= 4x - 5 \\end{aligned}"
       },
       {
         "explanation": "Find the second derivative.",
-        "workingOut": "y'' = 4"
+        "workingOut": "\\begin{aligned} y'' &= 4(1)x^{1-1} - 0 \\\\ &= 4 \\end{aligned}"
       }
     ],
     "opts": [
@@ -695,16 +695,16 @@ export const Y12A_CH3C_QUESTIONS = [
     "t": "Second and higher derivatives",
     "solutionSteps": [
       {
-        "explanation": "Expand the product.",
-        "workingOut": "y = 6x^5 - 4x^4"
+        "explanation": "Expand the product expression.",
+        "workingOut": "\\begin{aligned} y &= 2x^2(3x^3 - 2x^2) \\\\ &= 6x^5 - 4x^4 \\end{aligned}"
       },
       {
         "explanation": "Find the first derivative.",
-        "workingOut": "y' = 30x^4 - 16x^3"
+        "workingOut": "\\begin{aligned} y' &= 6 \\times 5x^{5-1} - 4 \\times 4x^{4-1} \\\\ &= 30x^4 - 16x^3 \\end{aligned}"
       },
       {
         "explanation": "Find the second derivative.",
-        "workingOut": "y'' = 120x^3 - 48x^2"
+        "workingOut": "\\begin{aligned} y'' &= 30 \\times 4x^{4-1} - 16 \\times 3x^{3-1} \\\\ &= 120x^3 - 48x^2 \\end{aligned}"
       }
     ],
     "opts": [
@@ -745,15 +745,15 @@ export const Y12A_CH3C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Expand the product expression.",
-        "workingOut": "y = 3x^7 + 9x^5"
+        "workingOut": "\\begin{aligned} y &= 3x^3(x^4 + 3x^2) \\\\ &= 3x^7 + 9x^5 \\end{aligned}"
       },
       {
         "explanation": "Find the first derivative.",
-        "workingOut": "y' = 21x^6 + 45x^4"
+        "workingOut": "\\begin{aligned} y' &= 3 \\times 7x^{7-1} + 9 \\times 5x^{5-1} \\\\ &= 21x^6 + 45x^4 \\end{aligned}"
       },
       {
         "explanation": "Find the second derivative.",
-        "workingOut": "y'' = 126x^5 + 180x^3"
+        "workingOut": "\\begin{aligned} y'' &= 21 \\times 6x^{6-1} + 45 \\times 4x^{4-1} \\\\ &= 126x^5 + 180x^3 \\end{aligned}"
       }
     ],
     "opts": [
@@ -794,15 +794,15 @@ export const Y12A_CH3C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find the first derivative.",
-        "workingOut": "y' = 0.4x^{-0.6}"
+        "workingOut": "\\begin{aligned} y' &= 0.4x^{0.4-1} \\\\ &= 0.4x^{-0.6} \\end{aligned}"
       },
       {
         "explanation": "Find the second derivative.",
-        "workingOut": "y'' = 0.4 \\times (-0.6)x^{-1.6} = -0.24x^{-1.6}"
+        "workingOut": "\\begin{aligned} y'' &= 0.4 \\times (-0.6)x^{-0.6-1} \\\\ &= -0.24x^{-1.6} \\end{aligned}"
       },
       {
         "explanation": "Find the third derivative.",
-        "workingOut": "y''' = -0.24 \\times (-1.6)x^{-2.6} = 0.384x^{-2.6}"
+        "workingOut": "\\begin{aligned} y''' &= -0.24 \\times (-1.6)x^{-1.6-1} \\\\ &= 0.384x^{-2.6} \\end{aligned}"
       }
     ],
     "opts": [
@@ -843,15 +843,15 @@ export const Y12A_CH3C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find the first derivative.",
-        "workingOut": "y' = -3x^{-4}"
+        "workingOut": "\\begin{aligned} y' &= -3x^{-3-1} \\\\ &= -3x^{-4} \\end{aligned}"
       },
       {
         "explanation": "Find the second derivative.",
-        "workingOut": "y'' = 12x^{-5}"
+        "workingOut": "\\begin{aligned} y'' &= -3 \\times (-4)x^{-4-1} \\\\ &= 12x^{-5} \\end{aligned}"
       },
       {
         "explanation": "Find the third derivative.",
-        "workingOut": "y''' = -60x^{-6}"
+        "workingOut": "\\begin{aligned} y''' &= 12 \\times (-5)x^{-5-1} \\\\ &= -60x^{-6} \\end{aligned}"
       }
     ],
     "opts": [
@@ -892,15 +892,15 @@ export const Y12A_CH3C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find the first derivative.",
-        "workingOut": "y' = -4x^{-5}"
+        "workingOut": "\\begin{aligned} y' &= -4x^{-4-1} \\\\ &= -4x^{-5} \\end{aligned}"
       },
       {
         "explanation": "Find the second derivative.",
-        "workingOut": "y'' = 20x^{-6}"
+        "workingOut": "\\begin{aligned} y'' &= -4 \\times (-5)x^{-5-1} \\\\ &= 20x^{-6} \\end{aligned}"
       },
       {
         "explanation": "Find the third derivative.",
-        "workingOut": "y''' = -120x^{-7}"
+        "workingOut": "\\begin{aligned} y''' &= 20 \\times (-6)x^{-6-1} \\\\ &= -120x^{-7} \\end{aligned}"
       }
     ],
     "opts": [
@@ -941,15 +941,15 @@ export const Y12A_CH3C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Find the first derivative.",
-        "workingOut": "y' = 4 \\times (-2)x^{-3} = -8x^{-3}"
+        "workingOut": "\\begin{aligned} y' &= 4 \\times (-2)x^{-2-1} \\\\ &= -8x^{-3} \\end{aligned}"
       },
       {
         "explanation": "Find the second derivative.",
-        "workingOut": "y'' = -8 \\times (-3)x^{-4} = 24x^{-4}"
+        "workingOut": "\\begin{aligned} y'' &= -8 \\times (-3)x^{-3-1} \\\\ &= 24x^{-4} \\end{aligned}"
       },
       {
         "explanation": "Find the third derivative.",
-        "workingOut": "y''' = 24 \\times (-5)x^{-5} = -96x^{-5}"
+        "workingOut": "\\begin{aligned} y''' &= 24 \\times (-4)x^{-4-1} \\\\ &= -96x^{-5} \\end{aligned}"
       }
     ],
     "opts": [
