@@ -1350,6 +1350,18 @@ export const Y12A_CH3D_QUESTIONS = [
         ],
         "answer": "1",
         "answerStr": "1"
+      },
+      {
+        "id": "y12a-3d-q9e",
+        "type": "teacher_review",
+        "question": "e) Sketch the graph of the function, indicating all important features.",
+        "a": "Sketch the curve showing the turning points, point(s) of inflection, and y-intercept.",
+        "solutionSteps": [
+          {
+            "explanation": "Verify your sketch against the graph shown.",
+            "workingOut": "\\text{Ensure the extrema, inflection points, and intercepts are correctly placed and the concavity matches.}"
+          }
+        ]
       }
     ],
     "solutionSteps": [
@@ -1575,6 +1587,18 @@ export const Y12A_CH3D_QUESTIONS = [
         ],
         "answer": "0",
         "answerStr": "0"
+      },
+      {
+        "id": "y12a-3d-q10e",
+        "type": "teacher_review",
+        "question": "e) Sketch the graph of the function, indicating all important features.",
+        "a": "Sketch the curve showing the turning points, point(s) of inflection, and y-intercept.",
+        "solutionSteps": [
+          {
+            "explanation": "Verify your sketch against the graph shown.",
+            "workingOut": "\\text{Ensure the extrema, inflection points, and intercepts are correctly placed and the concavity matches.}"
+          }
+        ]
       }
     ],
     "solutionSteps": [
@@ -1796,6 +1820,18 @@ export const Y12A_CH3D_QUESTIONS = [
         ],
         "answer": "3",
         "answerStr": "3"
+      },
+      {
+        "id": "y12a-3d-q11e",
+        "type": "teacher_review",
+        "question": "e) Sketch the graph of the function, indicating all important features.",
+        "a": "Sketch the curve showing the turning points, point(s) of inflection, and y-intercept.",
+        "solutionSteps": [
+          {
+            "explanation": "Verify your sketch against the graph shown.",
+            "workingOut": "\\text{Ensure the extrema, inflection points, and intercepts are correctly placed and the concavity matches.}"
+          }
+        ]
       }
     ],
     "solutionSteps": [
