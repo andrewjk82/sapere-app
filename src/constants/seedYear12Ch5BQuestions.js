@@ -4818,6 +4818,7 @@ export const Y12A_CH5B_QUESTIONS = [
     "a": "See parts (a)–(c).",
     "answer": "See parts (a)–(c).",
     "solution": "See sub-question solutions.",
+    "solutionSteps": [],
     "hint": "Start from the exponential definitions. Differentiate term by term, then expand products carefully for part (c).",
     "graphData": null,
     "isNew": true,

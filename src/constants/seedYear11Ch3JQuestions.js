@@ -47,6 +47,28 @@ export const Y11_CH3J_QUESTIONS = [
         ],
         "a": "0"
       }
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Apply the vertical line test to each graph. If any vertical line intersects the graph more than once, the relation is not a function.",
+        "workingOut": ""
+      },
+      {
+        "explanation": "a) A vertical line such as \\( x = 0 \\) intersects the circle at \\( y = 3 \\) and \\( y = -3 \\) (two points). Hence, it is not a function.",
+        "workingOut": "x^2 + y^2 = 9 \\implies y = \\pm \\sqrt{9 - x^2}"
+      },
+      {
+        "explanation": "b) Any vertical line intersects the cubic curve at exactly one point. Hence, it is a function.",
+        "workingOut": ""
+      },
+      {
+        "explanation": "c) A vertical line such as \\( x = 1 \\) intersects the sideways parabola at \\( y = 1 \\) and \\( y = -1 \\). Hence, it is not a function.",
+        "workingOut": "x = y^2 \\implies y = \\pm \\sqrt{x}"
+      },
+      {
+        "explanation": "d) Any vertical line intersects the horizontal line \\( y = 2 \\) at exactly one point. Hence, it is a function.",
+        "workingOut": ""
+      }
     ]
   },
   {
@@ -105,6 +127,28 @@ export const Y11_CH3J_QUESTIONS = [
         ],
         "a": "0"
       }
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Domain refers to all possible input values (x-values), and Range refers to all possible output values (y-values) for each relation.",
+        "workingOut": ""
+      },
+      {
+        "explanation": "a) For the circle centered at the origin with radius 3, both \\( x \\) and \\( y \\) values are bounded between \\( -3 \\) and \\( 3 \\).",
+        "workingOut": "-3 \\le x \\le 3, quad -3 \\le y \\le 3"
+      },
+      {
+        "explanation": "b) The cubic polynomial is defined for all real numbers, and its range extends from negative infinity to positive infinity.",
+        "workingOut": "\\text{Domain: all real } x, quad \\text{Range: all real } y"
+      },
+      {
+        "explanation": "c) Since \\( x = y^2 \\) and \\( y^2 \\ge 0 \\) for all real \\( y \\), the \\( x \\)-values must be non-negative. However, \\( y \\) can take any real value.",
+        "workingOut": "x \\ge 0"
+      },
+      {
+        "explanation": "d) The horizontal line \\( y = 2 \\) exists for all real \\( x \\), but the only output value is \\( y = 2 \\).",
+        "workingOut": "\\text{Domain: all real } x, quad \\text{Range: } y = 2"
+      }
     ]
   },
   {
@@ -126,6 +170,20 @@ export const Y11_CH3J_QUESTIONS = [
         "type": "short_answer",
         "question": "b) For the function \\( f(x) = x^3 - 2x^2 + 4 \\), find the values of \\( f(3) \\) and \\( f(-2) \\). (Format: 'f(3) = A, f(-2) = B')",
         "a": "f(3) = 13, f(-2) = -12"
+      }
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Substitute the given values into the function formulas.",
+        "workingOut": ""
+      },
+      {
+        "explanation": "a) For \\( f(x) = x^2 + 5x \\):",
+        "workingOut": "f(3) = 3^2 + 5(3) = 9 + 15 = 24\nf(-2) = (-2)^2 + 5(-2) = 4 - 10 = -6"
+      },
+      {
+        "explanation": "b) For \\( f(x) = x^3 - 2x^2 + 4 \\):",
+        "workingOut": "f(3) = 3^3 - 2(3^2) + 4 = 27 - 18 + 4 = 13\nf(-2) = (-2)^3 - 2(-2)^2 + 4 = -8 - 8 + 4 = -12"
       }
     ]
   },
@@ -185,6 +243,28 @@ export const Y11_CH3J_QUESTIONS = [
         ],
         "a": "0"
       }
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "To find the natural domain: denominators must not be zero, and expressions inside square roots must be non-negative.",
+        "workingOut": ""
+      },
+      {
+        "explanation": "a) The denominator cannot be zero: \\( x - 5 \neq 0 \\implies x \neq 5 \\).",
+        "workingOut": ""
+      },
+      {
+        "explanation": "b) The square root argument must be non-negative: \\( x - 3 \\ge 0 \\implies x \\ge 3 \\).",
+        "workingOut": ""
+      },
+      {
+        "explanation": "c) The square root argument must be non-negative: \\( 2x + 5 \\ge 0 \\implies 2x \\ge -5 \\implies x \\ge -2.5 \\).",
+        "workingOut": ""
+      },
+      {
+        "explanation": "d) The square root argument in the denominator must be strictly positive: \\( 4 - x > 0 \\implies x < 4 \\).",
+        "workingOut": ""
+      }
     ]
   },
   {
@@ -207,6 +287,20 @@ export const Y11_CH3J_QUESTIONS = [
         "question": "b) For \\( F(x) = x^2 - 4x - 5 \\), write down the expressions for \\( F(a) - 1 \\) and \\( F(a-1) \\). (Format: 'F(a)-1 = X, F(a-1) = Y')",
         "a": "F(a)-1 = a^2-4a-6, F(a-1) = a^2-6a"
       }
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Evaluate the expressions by substituting the input variables into the given formulas.",
+        "workingOut": ""
+      },
+      {
+        "explanation": "a) For \\( F(x) = 3x + 2 \\):",
+        "workingOut": "F(a) - 1 = (3a + 2) - 1 = 3a + 1\nF(a-1) = 3(a-1) + 2 = 3a - 3 + 2 = 3a - 1"
+      },
+      {
+        "explanation": "b) For \\( F(x) = x^2 - 4x - 5 \\):",
+        "workingOut": "F(a) - 1 = (a^2 - 4a - 5) - 1 = a^2 - 4a - 6\nF(a-1) = (a-1)^2 - 4(a-1) - 5 = a^2 - 2a + 1 - 4a + 4 - 5 = a^2 - 6a"
+      }
     ]
   },
   {
@@ -228,6 +322,20 @@ export const Y11_CH3J_QUESTIONS = [
         "type": "short_answer",
         "question": "b) For the line \\( x - 2y + 8 = 0 \\), find the intercepts. (Format: 'x-intercept: A, y-intercept: B')",
         "a": "x-intercept: -8, y-intercept: 4"
+      }
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "To find the \\( x \\)-intercept, set \\( y = 0 \\). To find the \\( y \\)-intercept, set \\( x = 0 \\).",
+        "workingOut": ""
+      },
+      {
+        "explanation": "a) For \\( y = 3x + 6 \\):",
+        "workingOut": "x\\text{-intercept: } 0 = 3x + 6 \\implies 3x = -6 \\implies x = -2\ny\\text{-intercept: } y = 3(0) + 6 \\implies y = 6"
+      },
+      {
+        "explanation": "b) For \\( x - 2y + 8 = 0 \\):",
+        "workingOut": "x\\text{-intercept: } x - 2(0) + 8 = 0 \\implies x = -8\ny\\text{-intercept: } 0 - 2y + 8 = 0 \\implies 2y = 8 \\implies y = 4"
       }
     ]
   },
@@ -263,6 +371,20 @@ export const Y11_CH3J_QUESTIONS = [
         ],
         "a": "0"
       }
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Lines of the form \\( y = mx \\) or \\( ax + by = 0 \\) pass through the origin \\( (0, 0) \\) and have slope \\( m = -\\frac{a}{b} \\).",
+        "workingOut": ""
+      },
+      {
+        "explanation": "a) The line \\( y = 4x \\) has slope 4. Substituting \\( x = 1 \\) yields \\( y = 4 \\), so it passes through \\( (1, 4) \\).",
+        "workingOut": ""
+      },
+      {
+        "explanation": "b) Rewrite \\( x + 3y = 0 \\) in slope-intercept form: \\( 3y = -x \\implies y = -\\frac{1}{3}x \\). The slope is \\( -\\frac{1}{3} \\) and substituting \\( x = 3 \\) yields \\( y = -1 \\).",
+        "workingOut": ""
+      }
     ]
   },
   {
@@ -296,6 +418,20 @@ export const Y11_CH3J_QUESTIONS = [
           "A line through the origin with slope 4"
         ],
         "a": "0"
+      }
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "An equation of the form \\( y = c \\) represents a horizontal line, while \\( x = c \\) represents a vertical line.",
+        "workingOut": ""
+      },
+      {
+        "explanation": "a) \\( y = -2 \\) is a horizontal line where every point has a \\( y \\)-coordinate of \\( -2 \\).",
+        "workingOut": ""
+      },
+      {
+        "explanation": "b) Rewrite \\( x - 4 = 0 \\) as \\( x = 4 \\). This is a vertical line where every point has an \\( x \\)-coordinate of \\( 4 \\).",
+        "workingOut": ""
       }
     ]
   },
@@ -343,6 +479,36 @@ export const Y11_CH3J_QUESTIONS = [
         "question": "f) For \\( f(x) = -x^2 + 4x + 5 \\), find the zeroes, vertex, and range. (Format: 'zeroes: A and B, vertex: (X, Y), range: y <= C')",
         "a": "zeroes: -1 and 5, vertex: (2, 9), range: y <= 9"
       }
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Zeroes are found by setting \\( f(x) = 0 \\). The vertex \\( x_v \\) lies midway between the zeroes. The vertex \\( y_v = f(x_v) \\) determines the range.",
+        "workingOut": ""
+      },
+      {
+        "explanation": "a) For \\( 9 - x^2 = (3-x)(3+x) = 0 \\), zeroes are \\( 3, -3 \\). The vertex is at \\( x = 0 \\), giving \\( y = 9 \\). Since the coefficient of \\( x^2 \\) is negative, it opens downwards.",
+        "workingOut": "vertex: (0, 9), quad \\text{range: } y \\le 9"
+      },
+      {
+        "explanation": "b) For \\( x(x-4) = 0 \\), zeroes are \\( 0, 4 \\). Midway point is \\( x = 2 \\), giving \\( y = 2(2-4) = -4 \\). It opens upwards.",
+        "workingOut": "vertex: (2, -4), quad \\text{range: } y \\ge -4"
+      },
+      {
+        "explanation": "c) For \\( (x-1)(x-5) = 0 \\), zeroes are \\( 1, 5 \\). Midway point is \\( x = 3 \\), giving \\( y = (3-1)(3-5) = -4 \\). It opens upwards.",
+        "workingOut": "vertex: (3, -4), quad \\text{range: } y \\ge -4"
+      },
+      {
+        "explanation": "d) For \\( -(x+4)(x-2) = 0 \\), zeroes are \\( -4, 2 \\). Midway point is \\( x = -1 \\), giving \\( y = -(-1+4)(-1-2) = 9 \\). It opens downwards.",
+        "workingOut": "vertex: (-1, 9), quad \\text{range: } y \\le 9"
+      },
+      {
+        "explanation": "e) Factor \\( x^2 + 2x - 8 = (x+4)(x-2) = 0 \\), giving zeroes \\( -4, 2 \\). Midway is \\( x = -1 \\), giving \\( y = (-1)^2 + 2(-1) - 8 = -9 \\). It opens upwards.",
+        "workingOut": "vertex: (-1, -9), quad \\text{range: } y \\ge -9"
+      },
+      {
+        "explanation": "f) Factor \\( -x^2 + 4x + 5 = -(x^2 - 4x - 5) = -(x-5)(x+1) = 0 \\), giving zeroes \\( 5, -1 \\). Midway is \\( x = 2 \\), giving \\( y = -(2)^2 + 4(2) + 5 = 9 \\). It opens downwards.",
+        "workingOut": "vertex: (2, 9), quad \\text{range: } y \\le 9"
+      }
     ]
   },
   {
@@ -376,6 +542,28 @@ export const Y11_CH3J_QUESTIONS = [
         "type": "short_answer",
         "question": "d) For \\( y = x^2 + 8x + 18 \\), express in vertex form and state the vertex. (Format: 'y = (x+A)^2 + B, vertex: (X, Y)')",
         "a": "y = (x+4)^2 + 2, vertex: (-4, 2)"
+      }
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Complete the square using the coefficient of \\( x \\). For \\( x^2 + bx \\), add and subtract \\( (b/2)^2 \\).",
+        "workingOut": ""
+      },
+      {
+        "explanation": "a) For \\( y = x^2 + 4x - 1 \\):",
+        "workingOut": "y = (x^2 + 4x + 4) - 4 - 1 = (x+2)^2 - 5 \\implies \\text{vertex: } (-2, -5)"
+      },
+      {
+        "explanation": "b) For \\( y = -x^2 + 4x - 2 = -(x^2 - 4x) - 2 \\):",
+        "workingOut": "y = -((x^2 - 4x + 4) - 4) - 2 = -(x-2)^2 + 4 - 2 = -(x-2)^2 + 2 \\implies \\text{vertex: } (2, 2)"
+      },
+      {
+        "explanation": "c) For \\( y = -x^2 + 2x - 4 = -(x^2 - 2x) - 4 \\):",
+        "workingOut": "y = -((x^2 - 2x + 1) - 1) - 4 = -(x-1)^2 + 1 - 4 = -(x-1)^2 - 3 \\implies \\text{vertex: } (1, -3)"
+      },
+      {
+        "explanation": "d) For \\( y = x^2 + 8x + 18 \\):",
+        "workingOut": "y = (x^2 + 8x + 16) - 16 + 18 = (x+4)^2 + 2 \\implies \\text{vertex: } (-4, 2)"
       }
     ]
   },
@@ -411,6 +599,28 @@ export const Y11_CH3J_QUESTIONS = [
         "question": "d) For \\( y = -x^2 + 8x - 20 \\), find the number of \\( x \\)-intercepts and the vertex. (Format: 'N intercepts, vertex: (X, Y)')",
         "a": "0 intercepts, vertex: (4, -4)"
       }
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Evaluate the discriminant \\( \\Delta = b^2 - 4ac \\). If \\( \\Delta > 0 \\), there are 2 intercepts. If \\( \\Delta = 0 \\), there is 1 intercept. If \\( \\Delta < 0 \\), there are no intercepts. The vertex coordinate is \\( x = -\\frac{b}{2a} \\).",
+        "workingOut": ""
+      },
+      {
+        "explanation": "a) For \\( y = -x^2 - 4x + 1 \\):",
+        "workingOut": "\\Delta = (-4)^2 - 4(-1)(1) = 16 + 4 = 20 > 0 \\implies 2\\text{ intercepts.}\nx = -\\frac{-4}{2(-1)} = -2 \\implies y = -(-2)^2 - 4(-2) + 1 = 5 \\implies \\text{vertex: } (-2, 5)"
+      },
+      {
+        "explanation": "b) For \\( y = x^2 - 6x + 4 \\):",
+        "workingOut": "\\Delta = (-6)^2 - 4(1)(4) = 36 - 16 = 20 > 0 \\implies 2\\text{ intercepts.}\nx = -\\frac{-6}{2(1)} = 3 \\implies y = 3^2 - 6(3) + 4 = -5 \\implies \\text{vertex: } (3, -5)"
+      },
+      {
+        "explanation": "c) For \\( y = x^2 - 6x + 12 \\):",
+        "workingOut": "\\Delta = (-6)^2 - 4(1)(12) = 36 - 48 = -12 < 0 \\implies 0\\text{ intercepts.}\nx = -\\frac{-6}{2(1)} = 3 \\implies y = 3^2 - 6(3) + 12 = 3 \\implies \\text{vertex: } (3, 3)"
+      },
+      {
+        "explanation": "d) For \\( y = -x^2 + 8x - 20 \\):",
+        "workingOut": "\\Delta = 8^2 - 4(-1)(-20) = 64 - 80 = -16 < 0 \\implies 0\\text{ intercepts.}\nx = -\\frac{8}{2(-1)} = 4 \\implies y = -(4)^2 + 8(4) - 20 = -4 \\implies \\text{vertex: } (4, -4)"
+      }
     ]
   },
   {
@@ -433,6 +643,20 @@ export const Y11_CH3J_QUESTIONS = [
         "question": "b) Find the \\( x \\)-intercepts of the cubic \\( y = x^2(x-4) \\) and identify which intercept is a tangent point. (Format: 'intercepts: A and B, tangent at x = C')",
         "a": "intercepts: 0 and 4, tangent at x = 0"
       }
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "The \\( x \\)-intercepts occur where \\( y = 0 \\). A factor squared, such as \\( x^2 \\), indicates that the graph is tangent to the \\( x \\)-axis at that root.",
+        "workingOut": ""
+      },
+      {
+        "explanation": "a) Setting \\( (x-2)(x-4)(x-7) = 0 \\) yields \\( x = 2, 4, 7 \\).",
+        "workingOut": ""
+      },
+      {
+        "explanation": "b) Setting \\( x^2(x-4) = 0 \\) yields roots at \\( x = 0 \\) and \\( x = 4 \\). Because \\( x = 0 \\) is a double root (multiplicity 2), the curve touches the \\( x \\)-axis tangentally at \\( x = 0 \\).",
+        "workingOut": ""
+      }
     ]
   },
   {
@@ -454,6 +678,20 @@ export const Y11_CH3J_QUESTIONS = [
         "type": "short_answer",
         "question": "b) Find the center and radius of the circle \\( x^2 + y^2 = 16 \\). (Format: 'center: (X, Y), radius: R')",
         "a": "center: (0, 0), radius: 4"
+      }
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "The equation \\( x^2 + y^2 = r^2 \\) represents a circle centered at the origin \\( (0, 0) \\) with radius \\( r = \\sqrt{r^2} \\).",
+        "workingOut": ""
+      },
+      {
+        "explanation": "a) For \\( x^2 + y^2 = 4 \\), the center is \\( (0, 0) \\) and the radius is \\( \\sqrt{4} = 2 \\).",
+        "workingOut": ""
+      },
+      {
+        "explanation": "b) For \\( x^2 + y^2 = 16 \\), the center is \\( (0, 0) \\) and the radius is \\( \\sqrt{16} = 4 \\).",
+        "workingOut": ""
       }
     ]
   },
@@ -513,6 +751,28 @@ export const Y11_CH3J_QUESTIONS = [
         ],
         "a": "0"
       }
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "A semicircle equation corresponds to half of a circle. The square root limits the range or domain to non-negative/non-positive values.",
+        "workingOut": ""
+      },
+      {
+        "explanation": "a) \\( y = \\sqrt{25 - x^2} \\) is the top half of the circle \\( x^2 + y^2 = 25 \\). The input \\( x \\) ranges from \\( -5 \\) to \\( 5 \\), and \\( y \\) must be non-negative, up to \\( 5 \\).",
+        "workingOut": ""
+      },
+      {
+        "explanation": "b) \\( x = \\sqrt{16 - y^2} \\) is the right half of the circle \\( x^2 + y^2 = 16 \\). Here, \\( x \\) must be non-negative (from 0 to 4), while \\( y \\) spans the full vertical range from \\( -4 \\) to \\( 4 \\).",
+        "workingOut": ""
+      },
+      {
+        "explanation": "c) \\( x = -\\sqrt{9 - y^2} \\) is the left half of the circle \\( x^2 + y^2 = 9 \\). Here, \\( x \\) is non-positive (from -3 to 0), and \\( y \\) spans from \\( -3 \\) to \\( 3 \\).",
+        "workingOut": ""
+      },
+      {
+        "explanation": "d) \\( y = -\\sqrt{4 - x^2} \\) is the bottom half of the circle \\( x^2 + y^2 = 4 \\). The input \\( x \\) ranges from \\( -2 \\) to \\( 2 \\), and \\( y \\) must be non-positive, down to \\( -2 \\).",
+        "workingOut": ""
+      }
     ]
   },
   {
@@ -547,6 +807,20 @@ export const Y11_CH3J_QUESTIONS = [
         ],
         "a": "0"
       }
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "A hyperbola of the form \\( y = \\frac{k}{x} \\) is undefined at \\( x = 0 \\) and cannot produce \\( y = 0 \\). Thus the axes are asymptotes.",
+        "workingOut": ""
+      },
+      {
+        "explanation": "a) For \\( y = \\frac{6}{x} \\), the asymptotes are \\( x = 0 \\) and \\( y = 0 \\). The domain is \\( x \neq 0 \\) and the range is \\( y \neq 0 \\).",
+        "workingOut": ""
+      },
+      {
+        "explanation": "b) Since \\( k = -6 < 0 \\), the branches of the hyperbola lie in quadrants 2 (upper left) and 4 (lower right).",
+        "workingOut": ""
+      }
     ]
   },
   {
@@ -580,6 +854,20 @@ export const Y11_CH3J_QUESTIONS = [
           "It is a vertical stretch of \\( y = 2^x \\)"
         ],
         "a": "0"
+      }
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Exponential functions \\( y = a^x \\) (with \\( a > 1 \\)) represent growth, while \\( y = a^{-x} \\) represent decay.",
+        "workingOut": ""
+      },
+      {
+        "explanation": "a) Setting \\( x = 0 \\) yields \\( y = 4^0 = 1 \\), so the y-intercept is \\( (0, 1) \\). The domain is all real numbers, and the function outputs are strictly positive.",
+        "workingOut": "y > 0"
+      },
+      {
+        "explanation": "b) Substituting \\( x \\) with \\( -x \\) reflects the graph horizontally across the vertical y-axis.",
+        "workingOut": ""
       }
     ]
   },
@@ -831,6 +1119,12 @@ export const Y11_CH3J_QUESTIONS = [
         ],
         "a": "0"
       }
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Review the individual graphing and algebraic transformations for each curve.",
+        "workingOut": ""
+      }
     ]
   },
   {
@@ -870,6 +1164,24 @@ export const Y11_CH3J_QUESTIONS = [
           "It remains unchanged"
         ],
         "a": "0"
+      }
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Since length varies directly with mass, \\( x = km \\).",
+        "workingOut": ""
+      },
+      {
+        "explanation": "b) Substitute \\( x = 3 \\) and \\( m = 4 \\) to find \\( k \\).",
+        "workingOut": "3 = k \\cdot 4 \\implies k = 0.75\\text{ cm/kg}"
+      },
+      {
+        "explanation": "c) Use the constant \\( k = 0.75 \\) to find the length for \\( m = 6 \\).",
+        "workingOut": "x = 0.75 \\cdot 6 = 4.5\\text{ cm}"
+      },
+      {
+        "explanation": "d) In a direct variation relationship, if the independent variable is doubled, the dependent variable is also doubled.",
+        "workingOut": ""
       }
     ]
   },
@@ -917,6 +1229,24 @@ export const Y11_CH3J_QUESTIONS = [
         ],
         "a": "0"
       }
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Analyze the formula \\( D = S \\cdot T \\) for different constant variables.",
+        "workingOut": ""
+      },
+      {
+        "explanation": "a) If \\( S \\) is constant, \\( D = c \\cdot T \\). This is a direct proportion, so distance varies directly with time.",
+        "workingOut": ""
+      },
+      {
+        "explanation": "b) i) Rearranging for speed yields \\( S = \\frac{D}{T} \\). If distance \\( D \\) is constant, then speed is inversely proportional to time.",
+        "workingOut": ""
+      },
+      {
+        "explanation": "b) ii) In an inverse relationship \\( S = \\frac{D}{T} \\), doubling \\( T \\) results in dividing \\( S \\) by 2.",
+        "workingOut": ""
+      }
     ]
   },
   {
@@ -944,6 +1274,20 @@ export const Y11_CH3J_QUESTIONS = [
         "type": "short_answer",
         "question": "c) What is \\( R \\) when \\( V = 12\\text{ m s}^{-1} \\)? Give your answer correct to 2 decimal places.",
         "a": "10.80"
+      }
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "The range varies directly with the square of speed: \\( R = k V^2 \\).",
+        "workingOut": ""
+      },
+      {
+        "explanation": "b) Substitute \\( R = 4.802 \\) and \\( V = 8 \\) to find \\( k \\).",
+        "workingOut": "4.802 = k \\cdot 8^2 \\implies 4.802 = 64k \\implies k = 0.07503125 \\approx 0.07503"
+      },
+      {
+        "explanation": "c) Use the constant \\( k = 0.07503125 \\) to find \\( R \\) at \\( V = 12 \\).",
+        "workingOut": "R = 0.07503125 \\cdot 12^2 = 0.07503125 \\cdot 144 = 10.8045\\text{ m} \\approx 10.80\\text{ m}"
       }
     ]
   }

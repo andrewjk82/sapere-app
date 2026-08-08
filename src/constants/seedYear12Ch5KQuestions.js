@@ -1506,6 +1506,33 @@ export const Y12A_CH5K_QUESTIONS = [
     "answer": "",
     "hint": "Work through the parts in order.",
     "solution": "See each part for a full worked solution.",
+    "solutionSteps": [
+      {
+        "explanation": "\\(\\log_2\\) of powers of 2: \\(\\log_2\\dfrac{1}{4}=-2\\), \\(\\log_2\\dfrac{1}{2}=-1\\), \\(\\log_2 1=0\\), \\(\\log_2 2=1\\), \\(\\log_2 4=2\\).",
+        "workingOut": "\\(-2,-1,0,1,2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final row: \\(-2,-1,0,1,2\\). Why this step? It isolates one rule or evaluation so the next algebra stays exact. A common slip is confusing \\(\\log_a\\) with \\(\\ln\\), or dropping the chain-rule factor.",
+        "workingOut": "\\(-2,-1,0,1,2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Every log base satisfies \\(\\log_a 1=0\\), so all curves pass through \\((1,0)\\).",
+        "workingOut": "\\((1,0)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Larger base makes the log grow more slowly for \\(x>1\\). So at \\(x=4\\): \\(\\log_2 4=2 > \\ln 4 \\approx 1.39 > \\log_4 4=1\\).",
+        "workingOut": "\\(steepness\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final description matches the correct option. Why this step? It isolates one rule or evaluation so the next algebra stays exact. A common slip is confusing \\(\\log_a\\) with \\(\\ln\\), or dropping the chain-rule factor.",
+        "workingOut": "\\(compare at x=4\\)",
+        "graphData": null
+      }
+    ],
     "subQuestions": [
       {
         "id": "y12a-5k-q8a",
@@ -1591,6 +1618,48 @@ export const Y12A_CH5K_QUESTIONS = [
     "answer": "",
     "hint": "Work through the parts in order.",
     "solution": "See each part for a full worked solution.",
+    "solutionSteps": [
+      {
+        "explanation": "\\(y'=\\dfrac{1}{x\\ln 3}\\). At \\(x=1\\): \\(m=\\dfrac{1}{\\ln 3}\\).",
+        "workingOut": "\\(m=\\dfrac{1}{\\ln 3}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final gradient: \\(\\dfrac{1}{\\ln 3}\\). Why this step? It isolates one rule or evaluation so the next algebra stays exact. A common slip is confusing \\(\\log_a\\) with \\(\\ln\\), or dropping the chain-rule factor.",
+        "workingOut": "\\(\\dfrac{1}{\\ln 3}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Point \\((1,0)\\), gradient \\(\\dfrac{1}{\\ln 3}\\): \\(y-0=\\dfrac{1}{\\ln 3}(x-1)\\).",
+        "workingOut": "\\(y=\\dfrac{x-1}{\\ln 3}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final equation: \\(y=\\dfrac{x-1}{\\ln 3}\\). Why this step? It isolates one rule or evaluation so the next algebra stays exact. A common slip is confusing \\(\\log_a\\) with \\(\\ln\\), or dropping the chain-rule factor.",
+        "workingOut": "\\(y=\\dfrac{x-1}{\\ln 3}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Gradient at 1 is \\(\\dfrac{1}{\\ln 4}\\); point \\((1,0)\\).",
+        "workingOut": "\\(y=\\dfrac{x-1}{\\ln 4}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final equation: \\(y=\\dfrac{x-1}{\\ln 4}\\). Why this step? It isolates one rule or evaluation so the next algebra stays exact. A common slip is confusing \\(\\log_a\\) with \\(\\ln\\), or dropping the chain-rule factor.",
+        "workingOut": "\\(y=\\dfrac{x-1}{\\ln 4}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Same method: gradient \\(\\dfrac{1}{\\ln 6}\\) at \\((1,0)\\).",
+        "workingOut": "\\(y=\\dfrac{x-1}{\\ln 6}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final equation: \\(y=\\dfrac{x-1}{\\ln 6}\\). Why this step? It isolates one rule or evaluation so the next algebra stays exact. A common slip is confusing \\(\\log_a\\) with \\(\\ln\\), or dropping the chain-rule factor.",
+        "workingOut": "\\(y=\\dfrac{x-1}{\\ln 6}\\)",
+        "graphData": null
+      }
+    ],
     "subQuestions": [
       {
         "id": "y12a-5k-q9a",
@@ -1733,6 +1802,38 @@ export const Y12A_CH5K_QUESTIONS = [
     "answer": "",
     "hint": "Work through the parts in order.",
     "solution": "See each part for a full worked solution.",
+    "solutionSteps": [
+      {
+        "explanation": "\\(y'=\\dfrac{1}{x\\ln 5}\\). At \\(x=5\\): \\(m=\\dfrac{1}{5\\ln 5}\\).",
+        "workingOut": "\\(m=\\dfrac{1}{5\\ln 5}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final gradient: \\(\\dfrac{1}{5\\ln 5}\\). Why this step? It isolates one rule or evaluation so the next algebra stays exact. A common slip is confusing \\(\\log_a\\) with \\(\\ln\\), or dropping the chain-rule factor.",
+        "workingOut": "\\(\\dfrac{1}{5\\ln 5}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Point–gradient with \\(m=\\dfrac{1}{5\\ln 5}\\) and point \\((5,1)\\).",
+        "workingOut": "\\(y-1=\\dfrac{1}{5\\ln 5}(x-5)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final equation: \\(y-1=\\dfrac{1}{5\\ln 5}(x-5)\\). Why this step? It isolates one rule or evaluation so the next algebra stays exact. A common slip is confusing \\(\\log_a\\) with \\(\\ln\\), or dropping the chain-rule factor.",
+        "workingOut": "\\(y-1=\\dfrac{1}{5\\ln 5}(x-5)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Set \\(\\dfrac{1}{x\\ln 5}=1\\Rightarrow x=\\dfrac{1}{\\ln 5}\\).",
+        "workingOut": "\\(x=\\dfrac{1}{\\ln 5}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\(x=\\dfrac{1}{\\ln 5}\\). Why this step? It isolates one rule or evaluation so the next algebra stays exact. A common slip is confusing \\(\\log_a\\) with \\(\\ln\\), or dropping the chain-rule factor.",
+        "workingOut": "\\(x=\\dfrac{1}{\\ln 5}\\)",
+        "graphData": null
+      }
+    ],
     "subQuestions": [
       {
         "id": "y12a-5k-q11a",
@@ -1844,6 +1945,28 @@ export const Y12A_CH5K_QUESTIONS = [
     "answer": "",
     "hint": "Work through the parts in order.",
     "solution": "See each part for a full worked solution.",
+    "solutionSteps": [
+      {
+        "explanation": "At \\(x=4\\): \\(y=\\log_2 4=2\\), \\(y'=\\dfrac{1}{4\\ln 2}\\).",
+        "workingOut": "\\(y-2=\\dfrac{x-4}{4\\ln 2}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final equation: \\(y-2=\\dfrac{x-4}{4\\ln 2}\\). Why this step? It isolates one rule or evaluation so the next algebra stays exact. A common slip is confusing \\(\\log_a\\) with \\(\\ln\\), or dropping the chain-rule factor.",
+        "workingOut": "\\(y-2=\\dfrac{x-4}{4\\ln 2}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Each tangent has form \\(y-y_0=\\dfrac{1}{4\\ln a}(x-4)\\) with \\(y_0=\\log_a 4=\\dfrac{\\ln 4}{\\ln a}\\). Setting \\(y=0\\) always yields \\(x=4-4\\ln 4\\).",
+        "workingOut": "\\(x=4-4\\ln 4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Common point on the \\(x\\)-axis: \\((4-4\\ln 4,\\ 0)\\). Why this step? It isolates one rule or evaluation so the next algebra stays exact. A common slip is confusing \\(\\log_a\\) with \\(\\ln\\), or dropping the chain-rule factor.",
+        "workingOut": "\\((4-4\\ln 4,\\ 0)\\)",
+        "graphData": null
+      }
+    ],
     "subQuestions": [
       {
         "id": "y12a-5k-q12a",
@@ -1924,6 +2047,28 @@ export const Y12A_CH5K_QUESTIONS = [
     "answer": "",
     "hint": "Work through the parts in order.",
     "solution": "See each part for a full worked solution.",
+    "solutionSteps": [
+      {
+        "explanation": "Substitute: \\(3^{0}=1\\) and \\(1+2\\cdot 0=1\\); \\(3^{1}=3\\) and \\(1+2\\cdot 1=3\\).",
+        "workingOut": "\\(A(0,1),\\ B(1,3)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Both points lie on both curves. Why this step? It isolates one rule or evaluation so the next algebra stays exact. A common slip is confusing \\(\\log_a\\) with \\(\\ln\\), or dropping the chain-rule factor.",
+        "workingOut": "\\(verified\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Line is above the exponential on \\([0,1]\\). Area=\\(\\displaystyle\\int_0^1\\big((1+2x)-3^{x}\\big)dx=\\left[x+x^{2}-\\dfrac{3^{x}}{\\ln 3}\\right]_0^1=2-\\dfrac{2}{\\ln 3}\\).",
+        "workingOut": "\\(2-\\dfrac{2}{\\ln 3}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\(2-\\dfrac{2}{\\ln 3}\\). Why this step? It isolates one rule or evaluation so the next algebra stays exact. A common slip is confusing \\(\\log_a\\) with \\(\\ln\\), or dropping the chain-rule factor.",
+        "workingOut": "\\(2-\\dfrac{2}{\\ln 3}\\)",
+        "graphData": null
+      }
+    ],
     "subQuestions": [
       {
         "id": "y12a-5k-q13a",
@@ -2004,6 +2149,28 @@ export const Y12A_CH5K_QUESTIONS = [
     "answer": "",
     "hint": "Work through the parts in order.",
     "solution": "See each part for a full worked solution.",
+    "solutionSteps": [
+      {
+        "explanation": "\\(y=0\\Rightarrow 3^{x}=9=3^{2}\\Rightarrow x=2\\). When \\(x=0\\): \\(y=9-1=8\\).",
+        "workingOut": "\\((2,0),\\ (0,8)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final intercepts: \\((2,0)\\) and \\((0,8)\\). Why this step? It isolates one rule or evaluation so the next algebra stays exact. A common slip is confusing \\(\\log_a\\) with \\(\\ln\\), or dropping the chain-rule factor.",
+        "workingOut": "\\(intercepts\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Area=\\(\\displaystyle\\int_0^2(9-3^{x})dx=\\left[9x-\\dfrac{3^{x}}{\\ln 3}\\right]_0^2=18-\\dfrac{8}{\\ln 3}\\).",
+        "workingOut": "\\(18-\\dfrac{8}{\\ln 3}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\(18-\\dfrac{8}{\\ln 3}\\). Why this step? It isolates one rule or evaluation so the next algebra stays exact. A common slip is confusing \\(\\log_a\\) with \\(\\ln\\), or dropping the chain-rule factor.",
+        "workingOut": "\\(18-\\dfrac{8}{\\ln 3}\\)",
+        "graphData": null
+      }
+    ],
     "subQuestions": [
       {
         "id": "y12a-5k-q14a",
@@ -2084,6 +2251,28 @@ export const Y12A_CH5K_QUESTIONS = [
     "answer": "",
     "hint": "Work through the parts in order.",
     "solution": "See each part for a full worked solution.",
+    "solutionSteps": [
+      {
+        "explanation": "\\(5-5^{x}=0\\Rightarrow x=1\\). At \\(x=0\\): \\(y=4\\). As \\(x\\to-\\infty\\), \\(5^{x}\\to 0\\) so \\(y\\to 5\\).",
+        "workingOut": "\\(features\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final description matches the correct option. Why this step? It isolates one rule or evaluation so the next algebra stays exact. A common slip is confusing \\(\\log_a\\) with \\(\\ln\\), or dropping the chain-rule factor.",
+        "workingOut": "\\(sketch features\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Area=\\(\\displaystyle\\int_0^1(5-5^{x})dx=\\left[5x-\\dfrac{5^{x}}{\\ln 5}\\right]_0^1=5-\\dfrac{4}{\\ln 5}\\).",
+        "workingOut": "\\(5-\\dfrac{4}{\\ln 5}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\(5-\\dfrac{4}{\\ln 5}\\). Why this step? It isolates one rule or evaluation so the next algebra stays exact. A common slip is confusing \\(\\log_a\\) with \\(\\ln\\), or dropping the chain-rule factor.",
+        "workingOut": "\\(5-\\dfrac{4}{\\ln 5}\\)",
+        "graphData": null
+      }
+    ],
     "subQuestions": [
       {
         "id": "y12a-5k-q15a",
@@ -2164,6 +2353,38 @@ export const Y12A_CH5K_QUESTIONS = [
     "answer": "",
     "hint": "Work through the parts in order.",
     "solution": "See each part for a full worked solution.",
+    "solutionSteps": [
+      {
+        "explanation": "\\(4^{0}=1=0+1\\). \\(4^{-1/2}=\\dfrac{1}{2}= -\\dfrac{1}{2}+1\\).",
+        "workingOut": "\\(verified\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Both intersection points are confirmed. Why this step? It isolates one rule or evaluation so the next algebra stays exact. A common slip is confusing \\(\\log_a\\) with \\(\\ln\\), or dropping the chain-rule factor.",
+        "workingOut": "\\(done\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "On \\([-\\frac12,0]\\) the line is above the exponential. Area is the integral of (line minus curve).",
+        "workingOut": "\\(integral form\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final integral: \\(\\displaystyle\\int_{-1/2}^{0}\\big((x+1)-4^{x}\\big)\\,dx\\).",
+        "workingOut": "\\(A=\\int...\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Antiderivative \\(\\dfrac{x^{2}}{2}+x-\\dfrac{4^{x}}{\\ln 4}\\). Evaluating from \\(-\\dfrac12\\) to 0 yields \\(\\dfrac{3}{8}-\\dfrac{1}{2\\ln 4}\\).",
+        "workingOut": "\\(\\dfrac{3}{8}-\\dfrac{1}{2\\ln 4}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\(\\dfrac{3}{8}-\\dfrac{1}{2\\ln 4}\\). Why this step? It isolates one rule or evaluation so the next algebra stays exact. A common slip is confusing \\(\\log_a\\) with \\(\\ln\\), or dropping the chain-rule factor.",
+        "workingOut": "\\(\\dfrac{3}{8}-\\dfrac{1}{2\\ln 4}\\)",
+        "graphData": null
+      }
+    ],
     "subQuestions": [
       {
         "id": "y12a-5k-q16a",
@@ -2275,6 +2496,33 @@ export const Y12A_CH5K_QUESTIONS = [
     "answer": "",
     "hint": "Work through the parts in order.",
     "solution": "See each part for a full worked solution.",
+    "solutionSteps": [
+      {
+        "explanation": "Product rule: \\(\\dfrac{d}{dx}(x\\ln x)=\\ln x+1\\), so \\(\\dfrac{d}{dx}(x\\ln x-x)=\\ln x\\).",
+        "workingOut": "\\(\\dfrac{d}{dx}(x\\ln x-x)=\\ln x\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Therefore \\(\\displaystyle\\int\\ln x\\,dx = x\\ln x - x + C\\).",
+        "workingOut": "\\(x\\ln x-x+C\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\(x\\ln x - x + C\\). Why this step? It isolates one rule or evaluation so the next algebra stays exact. A common slip is confusing \\(\\log_a\\) with \\(\\ln\\), or dropping the chain-rule factor.",
+        "workingOut": "\\(x\\ln x-x+C\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "\\(\\log_5 x=\\dfrac{\\ln x}{\\ln 5}\\), so the integral is \\(\\dfrac{1}{\\ln 5}[x\\ln x-x]_1^5=\\dfrac{1}{\\ln 5}\\big((5\\ln 5-5)-(0-1)\\big)=5-\\dfrac{4}{\\ln 5}\\).",
+        "workingOut": "\\(5-\\dfrac{4}{\\ln 5}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\(5-\\dfrac{4}{\\ln 5}\\). Why this step? It isolates one rule or evaluation so the next algebra stays exact. A common slip is confusing \\(\\log_a\\) with \\(\\ln\\), or dropping the chain-rule factor.",
+        "workingOut": "\\(5-\\dfrac{4}{\\ln 5}\\)",
+        "graphData": null
+      }
+    ],
     "subQuestions": [
       {
         "id": "y12a-5k-q18a",

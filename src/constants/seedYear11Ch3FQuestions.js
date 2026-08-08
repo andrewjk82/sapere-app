@@ -68,6 +68,32 @@ export const Y11_CH3F_QUESTIONS = [
         "a": "Parabola opening upwards with vertex at (2, -5), y-intercept at (0, -1), and x-intercepts at 2 ± √5."
       }
     ],
+    "solutionSteps": [
+      {
+        "explanation": "Compare the equation to the standard form \\( y = ax^2 + bx + c \\) to find \\( a = 1, b = -4, c = -1 \\). Since \\( a > 0 \\), the curve is concave up.",
+        "workingOut": ""
+      },
+      {
+        "explanation": "Substitute \\( x = 0 \\) to find the y-intercept: \\( y = 0^2 - 4(0) - 1 = -1 \\).",
+        "workingOut": ""
+      },
+      {
+        "explanation": "Find the axis of symmetry: \\( x = \\frac{-(-4)}{2(1)} = 2 \\).",
+        "workingOut": ""
+      },
+      {
+        "explanation": "Substitute \\( x = 2 \\) to get the vertex y-coordinate: \\( y = 2^2 - 4(2) - 1 = 4 - 8 - 1 = -5 \\). Vertex is \\( (2, -5) \\).",
+        "workingOut": ""
+      },
+      {
+        "explanation": "Calculate the discriminant: \\( \\Delta = b^2 - 4ac = (-4)^2 - 4(1)(-1) = 16 + 4 = 20 \\).",
+        "workingOut": ""
+      },
+      {
+        "explanation": "Solve \\( x^2 - 4x - 1 = 0 \\) using the quadratic formula: \\( x = \\frac{4 \\pm \\sqrt{20}}{2} = 2 \\pm \\sqrt{5} \\).",
+        "workingOut": ""
+      }
+    ],
     "graphData": {
       "jsxGraph": {
         "width": 350,
@@ -215,6 +241,36 @@ export const Y11_CH3F_QUESTIONS = [
         "type": "teacher_review",
         "question": "b) Sketch the parabola, showing the \\( y \\)-intercept and vertex. Use symmetry to locate another point on the parabola and add this to your sketch.",
         "a": "Parabola opening upwards with vertex at (-2, 2), y-intercept at (0, 6), and symmetrical point at (-4, 6)."
+      }
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Here \\( a = 1, b = 4, c = 6 \\). Concavity is up because \\( a > 0 \\).",
+        "workingOut": ""
+      },
+      {
+        "explanation": "Substitute \\( x = 0 \\) to get the y-intercept of 6.",
+        "workingOut": ""
+      },
+      {
+        "explanation": "Compute the axis of symmetry: \\( x = \\frac{-4}{2(1)} = -2 \\).",
+        "workingOut": ""
+      },
+      {
+        "explanation": "Substitute \\( x = -2 \\) to get the vertex y-coordinate: \\( y = (-2)^2 + 4(-2) + 6 = 2 \\). Vertex is \\( (-2, 2) \\).",
+        "workingOut": ""
+      },
+      {
+        "explanation": "Calculate the discriminant: \\( \\Delta = 4^2 - 4(1)(6) = 16 - 24 = -8 \\).",
+        "workingOut": ""
+      },
+      {
+        "explanation": "Since \\( \\Delta < 0 \\), there are no real roots, so there are no x-intercepts.",
+        "workingOut": ""
+      },
+      {
+        "explanation": "Use symmetry about \\( x = -2 \\). The y-intercept \\( (0, 6) \\) is 2 units to the right of the axis of symmetry. The reflection point 2 units to the left is \\( (-4, 6) \\).",
+        "workingOut": ""
       }
     ],
     "graphData": {
@@ -781,6 +837,24 @@ export const Y11_CH3F_QUESTIONS = [
         "a": "0"
       }
     ],
+    "solutionSteps": [
+      {
+        "explanation": "Set the parabola equation equal to each y-value.",
+        "workingOut": "\\text{For } y=3 \\implies -x^2 + 4x + 1 = 3 \\implies x^2 - 4x + 2 = 0 \\implies x = 2 \\pm \\sqrt{2}"
+      },
+      {
+        "explanation": "For \\( y=5 \\), set the equation equal to 5.",
+        "workingOut": "-x^2 + 4x + 1 = 5 \\implies x^2 - 4x + 4 = 0 \\implies (x - 2)^2 = 0 \\implies x = 2"
+      },
+      {
+        "explanation": "For \\( y=7 \\), set the equation equal to 7.",
+        "workingOut": "-x^2 + 4x + 1 = 7 \\implies x^2 - 4x + 6 = 0 \\implies \\Delta = 16 - 24 = -8 < 0 \\implies \\text{no solution}"
+      },
+      {
+        "explanation": "The maximum y-value of the parabola is at the vertex \\( (2, 5) \\). Any line \\( y = k \\) below the vertex height (\\( k < 5 \\)) will cross the parabola twice.",
+        "workingOut": ""
+      }
+    ],
     "graphData": {
       "jsxGraph": {
         "width": 350,
@@ -933,6 +1007,12 @@ export const Y11_CH3F_QUESTIONS = [
         "question": "b) Use this formula to check the coordinates of the vertices in Question 6a (\\( y = x^2 + 4x + 1 \\)).",
         "a": "For y = x^2 + 4x + 1: a=1, b=4, c=1. Δ = 12. x = -4/2 = -2. y = -12/4 = -3. Vertex is (-2, -3), which matches Question 6a."
       }
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Substitute \\( x = -\\frac{b}{2a} \\) into \\( y = ax^2 + bx + c \\).",
+        "workingOut": "y = a\\left(-\\frac{b}{2a}\\right)^2 + b\\left(-\\frac{b}{2a}\\right) + c = \\frac{ab^2}{4a^2} - \\frac{b^2}{2a} + c = \\frac{b^2}{4a} - \\frac{2b^2}{4a} + \\frac{4ac}{4a} = -\\frac{b^2 - 4ac}{4a} = -\\frac{\\Delta}{4a}"
+      }
     ]
   },
   {
@@ -954,6 +1034,16 @@ export const Y11_CH3F_QUESTIONS = [
         "type": "teacher_review",
         "question": "b) Explain this result in terms of the symmetry of the parabola.",
         "a": "The axis of symmetry is x = -b/(2a). The points x = 0 and x = -b/a are symmetric because their midpoint is (-b/a + 0)/2 = -b/(2a), and both points lie b/(2a) units away from the axis. Thus, they must have the same y-value, which is c."
+      }
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Evaluate the function at \\( x = -\\frac{b}{a} \\) and \\( x = 0 \\).",
+        "workingOut": "f\\left(-\\frac{b}{a}\\right) = a\\left(-\\frac{b}{a}\\right)^2 + b\\left(-\\frac{b}{a}\\right) + c = c = f(0)"
+      },
+      {
+        "explanation": "The midpoint of the interval \\( [0, -\\frac{b}{a}] \\) is \\( x = -\\frac{b}{2a} \\), which is the axis of symmetry. Symmetrical inputs always produce equal outputs.",
+        "workingOut": ""
       }
     ]
   }

@@ -2109,6 +2109,7 @@ export const Y12A_CH6D_QUESTIONS = [
     "answer": "",
     "hint": "Integrate the gradient, then substitute the given point to find \\(C\\).",
     "solution": "",
+    "solutionSteps": [],
     "subQuestions": [
       {
         "id": "y12a-6d-q3a_i",
@@ -5728,6 +5729,7 @@ export const Y12A_CH6D_QUESTIONS = [
     "answer": "",
     "hint": "Use the given antiderivative and evaluate at the limits.",
     "solution": "",
+    "solutionSteps": [],
     "graphData": null,
     "subQuestions": [
       {
@@ -6169,6 +6171,7 @@ export const Y12A_CH6D_QUESTIONS = [
     "answer": "",
     "hint": "Part (a) uses \\(1+\\tan^{2}x=\\sec^{2}x\\). Part (b) uses \\(1-\\sin^{2}x=\\cos^{2}x\\).",
     "solution": "",
+    "solutionSteps": [],
     "graphData": null,
     "subQuestions": [
       {
@@ -6337,6 +6340,7 @@ export const Y12A_CH6D_QUESTIONS = [
     "answer": "",
     "hint": "Identify \\(f\\) so that the numerator is \\(f'\\).",
     "solution": "",
+    "solutionSteps": [],
     "graphData": null,
     "subQuestions": [
       {
@@ -6505,6 +6509,7 @@ export const Y12A_CH6D_QUESTIONS = [
     "answer": "",
     "hint": "Use the substitutions \\(u=\\cos x\\) for tan and \\(u=\\sin x\\) for cot.",
     "solution": "",
+    "solutionSteps": [],
     "graphData": null,
     "subQuestions": [
       {
@@ -7083,3 +7088,5 @@ export const Y12A_CH6D_QUESTIONS = [
     "t": "Integrating the trigonometric functions"
   }
 ];
+
+export default Y12A_CH6D_QUESTIONS;

@@ -1306,6 +1306,33 @@ export const Y12A_CH5J_QUESTIONS = [
     "answer": "",
     "hint": "Work through the parts in order.",
     "solution": "See each part for a full worked solution.",
+    "solutionSteps": [
+      {
+        "explanation": "Antiderivative of \\(\\dfrac{1}{x}\\) is \\(\\ln|x|\\). On \\([1,e]\\), use \\(\\ln x\\).",
+        "workingOut": "\\(\\int\\dfrac{1}{x}\\,dx=\\ln x+C\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Evaluate: \\([\\ln x]_{1}^{e} = \\ln e - \\ln 1\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(\\ln e - \\ln 1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Since \\(\\ln e = 1\\) and \\(\\ln 1 = 0\\), the integral equals \\(1\\).",
+        "workingOut": "\\(1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "From part (a), the exact area under \\(y=\\dfrac{1}{x}\\) from 1 to \\(e\\) is 1. Counting unit area from \\(x=1\\) therefore ends near \\(x=e\\).",
+        "workingOut": "\\(Area=1 \\Rightarrow x\\approx e\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Numerically \\(e\\approx 2.718\\). Final estimate: \\(x\\approx e\\).",
+        "workingOut": "\\(x\\approx 2.718\\)",
+        "graphData": null
+      }
+    ],
     "subQuestions": [
       {
         "id": "y12a-5j-q1a",
@@ -1391,6 +1418,33 @@ export const Y12A_CH5J_QUESTIONS = [
     "answer": "",
     "hint": "Work through the parts in order.",
     "solution": "See each part for a full worked solution.",
+    "solutionSteps": [
+      {
+        "explanation": "Set \\(\\dfrac{6}{x}=1\\Rightarrow x=6\\). Intersection \\((6,1)\\).",
+        "workingOut": "\\((6,1)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Vertical line \\(x=9\\) cuts off the region between the hyperbola and the line \\(y=1\\) from \\(x=6\\) to \\(x=9\\).",
+        "workingOut": "\\(6\\le x\\le 9\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final description matches the option with intersection \\((6,1)\\) and interval \\([6,9]\\).",
+        "workingOut": "\\((6,1);\\ [6,9]\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Area = \\(\\displaystyle\\int_6^9\\left(1-\\dfrac{6}{x}\\right)dx=[x-6\\ln x]_6^9=(9-6\\ln 9)-(6-6\\ln 6)=3-6\\ln\\dfrac{3}{2}\\).",
+        "workingOut": "\\(3-6\\ln\\dfrac{3}{2}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\(3-6\\ln\\dfrac{3}{2}\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(3-6\\ln\\dfrac{3}{2}\\)",
+        "graphData": null
+      }
+    ],
     "subQuestions": [
       {
         "id": "y12a-5j-q8a",
@@ -1476,6 +1530,28 @@ export const Y12A_CH5J_QUESTIONS = [
     "answer": "",
     "hint": "Work through the parts in order.",
     "solution": "See each part for a full worked solution.",
+    "solutionSteps": [
+      {
+        "explanation": "Solve \\(\\dfrac{4}{x}=5-x\\Rightarrow x(5-x)=4\\Rightarrow x^{2}-5x+4=0\\Rightarrow (x-1)(x-4)=0\\).",
+        "workingOut": "\\(x=1\\text{ or }4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Points: \\((1,4)\\) and \\((4,1)\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\((1,4),\\ (4,1)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Integrate from 1 to 4: \\(\\displaystyle\\int_1^4\\left((5-x)-\\dfrac{4}{x}\\right)dx=[5x-\\dfrac{x^{2}}{2}-4\\ln x]_1^4=\\dfrac{9}{2}-4\\ln 4\\).",
+        "workingOut": "\\(\\dfrac{9}{2}-4\\ln 4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\(\\dfrac{9}{2}-4\\ln 4\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(\\dfrac{9}{2}-4\\ln 4\\)",
+        "graphData": null
+      }
+    ],
     "subQuestions": [
       {
         "id": "y12a-5j-q12a",
@@ -1556,6 +1632,33 @@ export const Y12A_CH5J_QUESTIONS = [
     "answer": "",
     "hint": "Work through the parts in order.",
     "solution": "See each part for a full worked solution.",
+    "solutionSteps": [
+      {
+        "explanation": "Power rule: \\(\\dfrac{d}{dx}(x^{2}+3)=2x\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(2x\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\(2x\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(2x\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Since numerator is half the derivative of the denominator: \\(\\displaystyle\\int\\dfrac{x}{x^{2}+3}\\,dx=\\dfrac{1}{2}\\ln|x^{2}+3|+C\\).",
+        "workingOut": "\\(\\dfrac{1}{2}\\ln|x^{2}+3|\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "\\(\\dfrac{1}{2}(\\ln 12-\\ln 3)=\\dfrac{1}{2}\\ln 4=\\ln 2\\).",
+        "workingOut": "\\(\\ln 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\(\\ln 2\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(\\ln 2\\)",
+        "graphData": null
+      }
+    ],
     "subQuestions": [
       {
         "id": "y12a-5j-q13a",
@@ -1641,6 +1744,33 @@ export const Y12A_CH5J_QUESTIONS = [
     "answer": "",
     "hint": "Work through the parts in order.",
     "solution": "See each part for a full worked solution.",
+    "solutionSteps": [
+      {
+        "explanation": "Differentiate: \\(2x+4\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(2x+4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\(2x+4\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(2x+4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Numerator is half of derivative of denominator. \\(\\displaystyle\\int=\\dfrac{1}{2}\\ln|x^{2}+4x+5|\\).",
+        "workingOut": "\\(\\dfrac{1}{2}\\ln|x^{2}+4x+5|\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "\\(\\dfrac{1}{2}(\\ln 17-\\ln 5)=\\dfrac{1}{2}\\ln\\dfrac{17}{5}\\).",
+        "workingOut": "\\(\\dfrac{1}{2}\\ln\\dfrac{17}{5}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\(\\dfrac{1}{2}\\ln\\dfrac{17}{5}\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(\\dfrac{1}{2}\\ln\\dfrac{17}{5}\\)",
+        "graphData": null
+      }
+    ],
     "subQuestions": [
       {
         "id": "y12a-5j-q14a",
@@ -1726,6 +1856,28 @@ export const Y12A_CH5J_QUESTIONS = [
     "answer": "",
     "hint": "Work through the parts in order.",
     "solution": "See each part for a full worked solution.",
+    "solutionSteps": [
+      {
+        "explanation": "Solve \\(x=\\dfrac{1}{x}\\Rightarrow x^{2}=1\\Rightarrow x=1\\) (first quadrant). Point \\((1,1)\\).",
+        "workingOut": "\\((1,1)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "From 0 to 1 the line is below the hyperbola near 0? Actually for 0<x<1, 1/x > x. Region to x=e uses both curves as boundaries with the x-axis.",
+        "workingOut": "\\(split at x=1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Area = \\(\\displaystyle\\int_0^1 x\\,dx+\\int_1^e\\dfrac{1}{x}\\,dx=\\dfrac{1}{2}+[\\ln x]_1^e=\\dfrac{1}{2}+1=\\dfrac{3}{2}\\).",
+        "workingOut": "\\(\\dfrac{3}{2}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\(\\dfrac{3}{2}\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(\\dfrac{3}{2}\\)",
+        "graphData": null
+      }
+    ],
     "subQuestions": [
       {
         "id": "y12a-5j-q15a",
@@ -1806,6 +1958,28 @@ export const Y12A_CH5J_QUESTIONS = [
     "answer": "",
     "hint": "Work through the parts in order.",
     "solution": "See each part for a full worked solution.",
+    "solutionSteps": [
+      {
+        "explanation": "\\([\\ln x]_1^2=\\ln 2\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(\\ln 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final exact value: \\(\\ln 2\\) (\\(\\approx 0.693\\) to 3 d.p.).",
+        "workingOut": "\\(\\ln 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "h=1/2. Trapezoidal: \\(\\dfrac{h}{2}(y_0+2y_1+y_2)=\\dfrac{1}{4}\\left(1+2\\cdot\\dfrac{2}{3}+\\dfrac{1}{2}\\right)=\\dfrac{1}{4}\\cdot\\dfrac{17}{6}=\\dfrac{17}{24}\\approx 0.708\\).",
+        "workingOut": "\\(\\dfrac{17}{24}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final approximation: about \\(0.708\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(0.708\\)",
+        "graphData": null
+      }
+    ],
     "subQuestions": [
       {
         "id": "y12a-5j-q16a",
@@ -1886,6 +2060,28 @@ export const Y12A_CH5J_QUESTIONS = [
     "answer": "",
     "hint": "Work through the parts in order.",
     "solution": "See each part for a full worked solution.",
+    "solutionSteps": [
+      {
+        "explanation": "\\([\\ln x]_1^3=\\ln 3\\approx 1.0986\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(\\ln 3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\(\\ln 3\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(\\ln 3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "h=1. \\(\\dfrac{1}{2}(1+2\\cdot\\dfrac{1}{2}+\\dfrac{1}{3})=\\dfrac{1}{2}\\cdot\\dfrac{7}{3}=\\dfrac{7}{6}\\approx 1.1667\\).",
+        "workingOut": "\\(\\dfrac{7}{6}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final estimate: \\(\\dfrac{7}{6}\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(\\dfrac{7}{6}\\)",
+        "graphData": null
+      }
+    ],
     "subQuestions": [
       {
         "id": "y12a-5j-q17a",
@@ -1966,6 +2162,38 @@ export const Y12A_CH5J_QUESTIONS = [
     "answer": "",
     "hint": "Work through the parts in order.",
     "solution": "See each part for a full worked solution.",
+    "solutionSteps": [
+      {
+        "explanation": "\\(\\ln 1=0\\), \\(\\ln e=1\\). As \\(x\\to 0^{+}\\), \\(y\\to-\\infty\\) (vertical asymptote).",
+        "workingOut": "\\((1,0),\\ (e,1)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final description matches the correct option. Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(VA x=0\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Using the inverse \\(x=e^{y}\\), area = \\(\\displaystyle\\int_0^1 e^{y}\\,dy = [e^{y}]_0^1 = e-1\\).",
+        "workingOut": "\\(e-1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\(e-1\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(e-1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "The area under \\(y=\\ln x\\) from 1 to \\(e\\) equals 1. By integration by parts, \\([x\\ln x - x]_{1}^{e} = 1\\).",
+        "workingOut": "\\(1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\(1\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(1\\)",
+        "graphData": null
+      }
+    ],
     "subQuestions": [
       {
         "id": "y12a-5j-q19a",
@@ -2077,6 +2305,48 @@ export const Y12A_CH5J_QUESTIONS = [
     "answer": "",
     "hint": "Work through the parts in order.",
     "solution": "See each part for a full worked solution.",
+    "solutionSteps": [
+      {
+        "explanation": "Set \\(8e^{-x}=e^{x}-2\\). Multiply by \\(e^{x}=u\\): \\(8=u^{2}-2u\\), so \\(u^{2}-2u-8=0\\).",
+        "workingOut": "\\(u^{2}-2u-8=0\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final equation: \\(u^{2}-2u-8=0\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(u^{2}-2u-8=0\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "\\((u-4)(u+2)=0\\Rightarrow u=4\\) (since \\(u=e^{x}>0\\)). So \\(x=\\ln 4\\). Then \\(y=4-2=2\\).",
+        "workingOut": "\\((\\ln 4,\\ 2)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final point: \\((\\ln 4,\\ 2)\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\((\\ln 4,\\ 2)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Check endpoints and intersection from previous parts. Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(meet at (\\ln 4,2)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Shaded finite region between the curves from the y-axis to the intersection.",
+        "workingOut": "\\(0\\le x\\le\\ln 4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "\\(\\displaystyle\\int_0^{\\ln 4}\\big(8e^{-x}-(e^{x}-2)\\big)dx=[-8e^{-x}-e^{x}+2x]_0^{\\ln 4}=3+4\\ln 2\\).",
+        "workingOut": "\\(3+4\\ln 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\(3+4\\ln 2\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(3+4\\ln 2\\)",
+        "graphData": null
+      }
+    ],
     "subQuestions": [
       {
         "id": "y12a-5j-q20a",

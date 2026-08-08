@@ -44,6 +44,24 @@ export const Y11_CH3H_QUESTIONS = [
         "a": "domain: x != 0, range: y != 0"
       }
     ],
+    "solutionSteps": [
+      {
+        "explanation": "Evaluate \\( y = \\frac{6}{x} \\) for each x-value. Notice that \\( x=0 \\) is undefined because division by zero is impossible.",
+        "workingOut": "y(-6) = 6/(-6) = -1\ny(-3) = 6/(-3) = -2\ny(-2) = 6/(-2) = -3\ny(-1) = 6/(-1) = -6\ny(-0.5) = 6/(-0.5) = -12\ny(0) = \\text{undefined}\ny(0.5) = 12\ny(1) = 6\ny(2) = 3\ny(3) = 2\ny(6) = 1"
+      },
+      {
+        "explanation": "The curve consists of two separate smooth branches lying in quadrants 1 and 3.",
+        "workingOut": ""
+      },
+      {
+        "explanation": "As \\( x \\to \\pm\\infty \\), \\( y \\to 0 \\), so \\( y=0 \\) is a horizontal asymptote. As \\( x \\to 0 \\), \\( y \\to \\pm\\infty \\), so \\( x=0 \\) is a vertical asymptote.",
+        "workingOut": ""
+      },
+      {
+        "explanation": "Since the function is undefined only at \\( x=0 \\) and can yield any value except \\( y=0 \\), the domain is \\( x \neq 0 \\) and range is \\( y \neq 0 \\).",
+        "workingOut": ""
+      }
+    ],
     "graphData": {
       "jsxGraph": {
         "width": 350,
@@ -153,6 +171,20 @@ export const Y11_CH3H_QUESTIONS = [
         "a": "0"
       }
     ],
+    "solutionSteps": [
+      {
+        "explanation": "Since all numerators are positive, the branches are in quadrants 1 and 3.",
+        "workingOut": ""
+      },
+      {
+        "explanation": "The point on \\( y = \\frac{k}{x} \\) closest to the origin lies on the line of symmetry \\( y = x \\). Substituting \\( y = x \\) gives \\( x^2 = k \\implies x = \\pm\\sqrt{k} \\).",
+        "workingOut": "k=2 \\implies x = \\pm\\sqrt{2} \\approx \\pm 1.41\nk=6 \\implies x = \\pm\\sqrt{6} \\approx \\pm 2.45\nk=12 \\implies x = \\pm\\sqrt{12} \\approx \\pm 3.46"
+      },
+      {
+        "explanation": "Hyperbolas of the form \\( y = \\frac{k}{x} \\) are symmetric in both lines of symmetry \\( y = x \\) (which crosses the branches) and \\( y = -x \\) (which separates the branches).",
+        "workingOut": ""
+      }
+    ],
     "graphData": {
       "jsxGraph": {
         "width": 350,
@@ -212,6 +244,12 @@ export const Y11_CH3H_QUESTIONS = [
         "a": "domain: all real x, range: y > 0"
       }
     ],
+    "solutionSteps": [
+      {
+        "explanation": "Evaluate the powers of 2 for each x-value.",
+        "workingOut": "y(-2) = 2^{-2} = 0.25\ny(-1.5) = 2^{-1.5} \\approx 0.35\ny(-1) = 2^{-1} = 0.5\ny(-0.5) = 2^{-0.5} \\approx 0.71\ny(0) = 2^0 = 1\ny(0.5) = 2^{0.5} \\approx 1.41\ny(1) = 2^1 = 2\ny(1.5) = 2^{1.5} \\approx 2.83\ny(2) = 2^2 = 4"
+      }
+    ],
     "graphData": {
       "jsxGraph": {
         "width": 350,
@@ -245,6 +283,12 @@ export const Y11_CH3H_QUESTIONS = [
         "type": "short_answer",
         "question": "b) Write down the \\( y \\)-intercept and the horizontal asymptote.",
         "a": "(0, 1), y = 0"
+      }
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Evaluate the exponential powers.",
+        "workingOut": "y(-2) = 3^{-2} = 1/9\ny(-1) = 3^{-1} = 1/3\ny(0) = 3^0 = 1\ny(1) = 3^1 = 3\ny(2) = 3^2 = 9"
       }
     ]
   },
@@ -365,6 +409,16 @@ export const Y11_CH3H_QUESTIONS = [
         "question": "c) Write down the domain and range of each function. (Format: 'domain: ..., range: ...')",
         "a": "domain: all real x, range: y > 0"
       }
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Since \\( a^{-x} = (a^{-1})^x = (\\frac{1}{a})^x \\), these represent exponential decay.",
+        "workingOut": ""
+      },
+      {
+        "explanation": "Replacing \\( x \\) with \\( -x \\) in any function \\( f(x) \\) reflects its graph horizontally across the y-axis.",
+        "workingOut": ""
+      }
     ]
   },
   {
@@ -449,6 +503,12 @@ export const Y11_CH3H_QUESTIONS = [
         "question": "c) For \\( y = \\frac{6}{x} \\), justify the vertical and horizontal asymptotes.",
         "a": "Proof: As x approaches +/- infinity, 6/x approaches 0, so y = 0 is a horizontal asymptote. As x approaches 0 from the positive side, 6/x -> infinity; from the negative side, 6/x -> -infinity, so x = 0 is a vertical asymptote."
       }
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Evaluate the limits as \\( x \\to \\pm\\infty \\) or \\( x \\to 0 \\).",
+        "workingOut": "\\lim_{x \\to -\\infty} 2^x = 0\n\\lim_{x \\to \\infty} 5^{-x} = 0\n\\lim_{x \\to \\pm\\infty} \\frac{6}{x} = 0, quad \\lim_{x \\to 0^\\pm} \\frac{6}{x} = \\pm\\infty"
+      }
     ]
   },
   {
@@ -496,6 +556,12 @@ export const Y11_CH3H_QUESTIONS = [
         "question": "b) Use the index laws to explain why \\( y = \\left(\\frac{1}{3}\\right)^x \\) has the exact same graph as \\( y = 3^{-x} \\).",
         "a": "Proof: By definition, 1/3 = 3^-1. Using the power of a power rule: (1/3)^x = (3^-1)^x = 3^(-1*x) = 3^-x. Thus the functions are identical."
       }
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Rewrite the fraction using a negative index.",
+        "workingOut": "\\left(\\frac{1}{3}\\right)^x = (3^{-1})^x = 3^{-x}"
+      }
     ]
   },
   {
@@ -517,6 +583,20 @@ export const Y11_CH3H_QUESTIONS = [
         "type": "short_answer",
         "question": "b) Find the exact intersection points when \\( c = 4 \\). (Format: '(-x, -y) and (x, y)')",
         "a": "(-2\\sqrt{2}, -4\\sqrt{2}) and (2\\sqrt{2}, 4\\sqrt{2})"
+      }
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Substitute \\( y = 2x \\) into \\( xy = c^2 \\).",
+        "workingOut": "x(2x) = c^2 \\implies 2x^2 = c^2 \\implies x^2 = \\frac{c^2}{2} \\implies x = \\pm \\frac{c}{\\sqrt{2}}"
+      },
+      {
+        "explanation": "Substitute \\( x \\) back to find \\( y \\).",
+        "workingOut": "y = 2x \\implies y = \\pm \\frac{2c}{\\sqrt{2}} = \\pm c\\sqrt{2}"
+      },
+      {
+        "explanation": "For \\( c = 4 \\), substitute \\( c = 4 \\) into the formulas.",
+        "workingOut": "x = \\pm \\frac{4}{\\sqrt{2}} = \\pm 2\\sqrt{2}\ny = \\pm 4\\sqrt{2}"
       }
     ]
   },
@@ -551,6 +631,20 @@ export const Y11_CH3H_QUESTIONS = [
         "type": "short_answer",
         "question": "d) Where does the curve cross its asymptote? (Format: '(x, y)')",
         "a": "(0, 0)"
+      }
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Evaluate \\( f(x) = \\frac{4x}{x^2+1} \\) for each x-value.",
+        "workingOut": "f(0) = 0\nf(1) = 4/2 = 2, quad f(-1) = -2\nf(3) = 12/10 = 1.2, quad f(-3) = -1.2\nf(0.5) = 2/1.25 = 1.6, quad f(-0.5) = -1.6\nf(6) = 24/37 \\approx 0.65, quad f(-6) \\approx -0.65"
+      },
+      {
+        "explanation": "As \\( x \\to \\pm\\infty \\), the denominator \\( x^2+1 \\) grows much faster than \\( 4x \\), so \\( y \\to 0 \\). Thus \\( y = 0 \\) (the x-axis) is the horizontal asymptote.",
+        "workingOut": ""
+      },
+      {
+        "explanation": "Find where \\( y = 0 \\) (crosses asymptote): \\( \\frac{4x}{x^2+1} = 0 \\implies 4x = 0 \\implies x = 0 \\). The crossing point is \\( (0, 0) \\).",
+        "workingOut": ""
       }
     ],
     "graphData": {

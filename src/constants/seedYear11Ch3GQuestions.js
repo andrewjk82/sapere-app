@@ -204,6 +204,12 @@ export const Y11_CH3G_QUESTIONS = [
         "a": "Cubic curve starting in quadrant 3 (increasing rapidly), passing through (-1.5, -6.75), (-1, -2), (-0.5, -0.25), inflection point at (0, 0), and then rising through (0.5, 0.25), (1, 2), (1.5, 6.75) into quadrant 1."
       }
     ],
+    "solutionSteps": [
+      {
+        "explanation": "Evaluate the function at each x-value.",
+        "workingOut": "f(-1.5) = 2(-1.5)^3 = 2(-3.375) = -6.75\nf(-1) = 2(-1)^3 = -2\nf(-0.5) = 2(-0.5)^3 = 2(-0.125) = -0.25\nf(0) = 0\nf(0.5) = 0.25\nf(1) = 2\nf(1.5) = 6.75"
+      }
+    ],
     "graphData": {
       "jsxGraph": {
         "width": 350,
@@ -237,6 +243,12 @@ export const Y11_CH3G_QUESTIONS = [
         "type": "teacher_review",
         "question": "b) Sketch the curve.",
         "a": "A symmetric, flat-bottomed U-shaped curve (quartics open upwards like a parabola but flatter near the origin) with vertex (0,0)."
+      }
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Evaluate the function and round to 2 decimal places.",
+        "workingOut": "f(\\pm 1.5) = 0.5(1.5)^4 = 0.5(5.0625) \\approx 2.53\nf(\\pm 1) = 0.5(1) = 0.5\nf(\\pm 0.5) = 0.5(0.0625) \\approx 0.03\nf(0) = 0"
       }
     ],
     "graphData": {
@@ -322,6 +334,16 @@ export const Y11_CH3G_QUESTIONS = [
         "a": "Each curve maps exactly onto itself under a 180-degree rotation. This occurs because the index (power of x) is odd, making these functions odd functions, symmetric about the origin: \\( f(-x) = -f(x) \\)."
       }
     ],
+    "solutionSteps": [
+      {
+        "explanation": "Common points: Since \\( 1^p = 1 \\), \\( (-1)^p = -1 \\) (for odd \\( p \\)), and \\( 0^p = 0 \\), all functions evaluate to \\( \\pm 0.5 \\) at \\( x = \\pm 1 \\) and \\( 0 \\) at \\( x=0 \\).",
+        "workingOut": ""
+      },
+      {
+        "explanation": "Power comparisons: For \\( 0 < x < 1 \\), increasing the power reduces the value (e.g. \\( x^5 < x^3 < x \\)), so \\( 0.5x^5 \\) is closest to \\( y=0 \\). For \\( x > 1 \\), higher powers are larger, so \\( 0.5x \\) is closest to the axis.",
+        "workingOut": ""
+      }
+    ],
     "graphData": {
       "jsxGraph": {
         "width": 350,
@@ -405,6 +427,12 @@ export const Y11_CH3G_QUESTIONS = [
         "a": "Each curve is symmetric in the y-axis, meaning it is unchanged by reflection. This is because the index is even, making these functions even functions: \\( f(-x) = f(x) \\)."
       }
     ],
+    "solutionSteps": [
+      {
+        "explanation": "Common points: Since \\( 1^p = 1 \\) and \\( (-1)^p = 1 \\) for even \\( p \\), and \\( 0^p = 0 \\), all curves evaluate to \\( 2 \\) at \\( x = \\pm 1 \\) and \\( 0 \\) at \\( x=0 \\).",
+        "workingOut": ""
+      }
+    ],
     "graphData": {
       "jsxGraph": {
         "width": 350,
@@ -438,6 +466,12 @@ export const Y11_CH3G_QUESTIONS = [
         "type": "teacher_review",
         "question": "b) Sketch the curve.",
         "a": "Curve starts at the origin (0,0) and rises to the right, passing through (0.25, 1), (1, 2), (2.25, 3), (4, 4), and (6.25, 5). The rate of increase decreases as x increases (concave down)."
+      }
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Find values of \\( 2\\sqrt{x} \\) for each x.",
+        "workingOut": "f(0) = 2(0) = 0\nf(0.25) = 2(0.5) = 1\nf(1) = 2(1) = 2\nf(2.25) = 2(1.5) = 3\nf(4) = 2(2) = 4\nf(6.25) = 2(2.5) = 5"
       }
     ],
     "graphData": {
@@ -629,6 +663,12 @@ export const Y11_CH3G_QUESTIONS = [
         "type": "teacher_review",
         "question": "b) Sketch the circle using your points.",
         "a": "Circle centered at the origin with radius 10, passing through (0,10), (6,8), (8,6), (10,0), and their reflected quadrants."
+      }
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "For each x, solve \\( y = \\pm \\sqrt{100 - x^2} \\).",
+        "workingOut": "x=0 \\implies y=\\pm 10\nx=2 \\implies y=\\pm \\sqrt{96} \\approx \\pm 9.8\nx=4 \\implies y=\\pm \\sqrt{84} \\approx \\pm 9.2\nx=6 \\implies y=\\pm 8\nx=8 \\implies y=\\pm 6\nx=10 \\implies y=0"
       }
     ],
     "graphData": {
@@ -990,6 +1030,12 @@ export const Y11_CH3G_QUESTIONS = [
         "type": "teacher_review",
         "question": "b) Sketch the curve.",
         "a": "Curve starts at the origin (0,0) and curves downwards into quadrant 4. Points: (0.25, -1.5), (1, -3), (2.25, -4.5), (4, -6), (6.25, -7.5)."
+      }
+    ],
+    "solutionSteps": [
+      {
+        "explanation": "Evaluate \\( -3\\sqrt{x} \\) at each x-value.",
+        "workingOut": "f(0) = -3(0) = 0\nf(0.25) = -3(0.5) = -1.5\nf(1) = -3(1) = -3\nf(2.25) = -3(1.5) = -4.5\nf(4) = -3(2) = -6\nf(6.25) = -3(2.5) = -7.5"
       }
     ],
     "graphData": {

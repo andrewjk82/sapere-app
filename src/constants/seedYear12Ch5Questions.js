@@ -697,6 +697,7 @@ export const Y12A_CH5A_QUESTIONS = [
     "answer": "See parts (a) and (b).",
     "hint": "The derivative of \\(e^{x}\\) is \\(e^{x}\\). Concavity comes from the sign of the second derivative.",
     "solution": "See sub-question solutions.",
+    "solutionSteps": [],
     "graphData": null,
     "isNew": true,
     "subQuestions": [
@@ -768,6 +769,7 @@ export const Y12A_CH5A_QUESTIONS = [
     "answer": "See parts (a)–(c).",
     "hint": "Gradient at \\(x_{0}\\) is \\(e^{x_{0}}\\). Use point–gradient form, then set \\(y=0\\) for the x-intercept.",
     "solution": "See sub-question solutions.",
+    "solutionSteps": [],
     "graphData": null,
     "isNew": true,
     "subQuestions": [
@@ -865,6 +867,7 @@ export const Y12A_CH5A_QUESTIONS = [
     "answer": "See parts (a)–(d).",
     "hint": "Substitute for the point, differentiate for the gradient, then use point–gradient form. Normal gradient is \\(-1/m\\).",
     "solution": "See sub-question solutions.",
+    "solutionSteps": [],
     "graphData": null,
     "isNew": true,
     "subQuestions": [
@@ -1435,6 +1438,7 @@ export const Y12A_CH5A_QUESTIONS = [
     "answer": "See parts (a) and (b).",
     "hint": "Compare with \\(y=e^{x}\\): the curve decays as \\(x\\) increases (reflection in the y-axis) and is steeper (horizontal compression). Check the equation with the point \\((-0.5,e)\\).",
     "solution": "See sub-question solutions.",
+    "solutionSteps": [],
     "isNew": true,
     "graphData": {
       "jsxGraph": {
@@ -1826,6 +1830,7 @@ export const Y12A_CH5A_QUESTIONS = [
     "answer": "See parts (a)–(d).",
     "hint": "Differentiate each curve, evaluate at the y-intercept \\(x=0\\), then compare the two gradients.",
     "solution": "See sub-question solutions.",
+    "solutionSteps": [],
     "graphData": null,
     "isNew": true,
     "subQuestions": [
@@ -1959,6 +1964,7 @@ export const Y12A_CH5A_QUESTIONS = [
     "answer": "See parts (a) and (b).",
     "hint": "Constants vanish on differentiation. Then compare \\(y'\\) with \\(y\\).",
     "solution": "See sub-questions.",
+    "solutionSteps": [],
     "graphData": null,
     "isNew": true,
     "subQuestions": [
@@ -2030,6 +2036,7 @@ export const Y12A_CH5A_QUESTIONS = [
     "answer": "See parts (a) and (b).",
     "hint": "For \\(y=ke^{x}\\), every derivative is again \\(ke^{x}\\).",
     "solution": "See sub-questions.",
+    "solutionSteps": [],
     "graphData": null,
     "isNew": true,
     "subQuestions": [
@@ -2101,6 +2108,7 @@ export const Y12A_CH5A_QUESTIONS = [
     "answer": "See parts (a) and (b).",
     "hint": "Differentiate the polynomial term with the power rule, then compare \\(y'\\) with \\(y\\).",
     "solution": "See sub-questions.",
+    "solutionSteps": [],
     "graphData": null,
     "isNew": true,
     "subQuestions": [
@@ -2172,6 +2180,7 @@ export const Y12A_CH5A_QUESTIONS = [
     "answer": "See parts (a) and (b).",
     "hint": "The constant \\(-1\\) disappears on the first differentiation.",
     "solution": "See sub-questions.",
+    "solutionSteps": [],
     "graphData": null,
     "isNew": true,
     "subQuestions": [
@@ -2395,6 +2404,7 @@ export const Y12A_CH5A_QUESTIONS = [
     "answer": "See parts (a)–(c).",
     "hint": "Find \\(P\\), differentiate to get the gradient at \\(x=1\\), then use point–gradient form.",
     "solution": "See sub-questions.",
+    "solutionSteps": [],
     "graphData": null,
     "isNew": true,
     "subQuestions": [
@@ -2761,6 +2771,7 @@ export const Y12A_CH5A_QUESTIONS = [
     "answer": "See parts (a) and (b).",
     "hint": "Think of \\(e^{x+3}\\) both as \\(e^{x}\\) shifted in \\(x\\), and as a constant times \\(e^{x}\\).",
     "solution": "See sub-questions.",
+    "solutionSteps": [],
     "graphData": null,
     "isNew": true,
     "subQuestions": [
@@ -2832,6 +2843,7 @@ export const Y12A_CH5A_QUESTIONS = [
     "answer": "See parts (a) and (b).",
     "hint": "As a dilation, look at the coefficient 3. As a translation, rewrite \\(3e^{x}=e^{x+\\ln 3}\\).",
     "solution": "See sub-questions.",
+    "solutionSteps": [],
     "graphData": null,
     "isNew": true,
     "subQuestions": [

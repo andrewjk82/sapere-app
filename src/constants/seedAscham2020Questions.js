@@ -3948,6 +3948,7 @@ export const ASCHAM_2020_QUESTIONS = [
     "answer": "",
     "hint": "Set flow rate to zero for (a); integrate with \\(V(0)=100\\) for (b); minimise cosine for (c).",
     "solution": "",
+    "solutionSteps": [],
     "graphData": null,
     "subQuestions": [
       {
