@@ -3456,16 +3456,16 @@ export const Y12A_CH3_QUESTIONS = [
     "t": "Increasing, decreasing and stationary at a point",
     "solutionSteps": [
       {
-        "explanation": "Analyze the original function.",
-        "workingOut": "The graph is a horizontal line, meaning the y-value is constant for all x.\n\\[ f(x) = c \\]"
+        "explanation": "Identify the mathematical function for the graph.",
+        "workingOut": "The graph represents a constant horizontal line at \\( y = 2 \\).\n\\[ f(x) = 2 \\]"
       },
       {
-        "explanation": "Determine the slope.",
-        "workingOut": "A horizontal line has a slope of zero everywhere. Therefore, the function is stationary for all x.\n\\[ f'(x) = 0 \\]"
+        "explanation": "Calculate the derivative.",
+        "workingOut": "Differentiating a constant yields zero.\n\\[ f'(x) = 0 \\]"
       },
       {
         "explanation": "Sketch the derivative.",
-        "workingOut": "The derivative graph is a horizontal line lying exactly on the x-axis (the line \\( y = 0 \\))."
+        "workingOut": "The derivative is \\( 0 \\) for all \\( x \\), which means the derivative graph is a horizontal line lying exactly on the x-axis."
       }
     ],
     "graphData": {
@@ -3492,16 +3492,16 @@ export const Y12A_CH3_QUESTIONS = [
     "t": "Increasing, decreasing and stationary at a point",
     "solutionSteps": [
       {
-        "explanation": "Analyze the original function.",
-        "workingOut": "The graph is a straight line sloping upwards from left to right.\n\\[ f(x) = mx + c \\quad (m > 0) \\]"
+        "explanation": "Identify the mathematical function for the graph.",
+        "workingOut": "The graph represents a straight line passing through the origin with a slope of 1.\n\\[ f(x) = x \\]"
       },
       {
-        "explanation": "Determine the slope.",
-        "workingOut": "A straight line has a constant slope. Since it is rising, the slope is positive. The function is strictly increasing everywhere.\n\\[ f'(x) = m > 0 \\]"
+        "explanation": "Calculate the derivative.",
+        "workingOut": "Differentiating \\( x \\) yields a constant positive value.\n\\[ f'(x) = 1 \\]"
       },
       {
         "explanation": "Sketch the derivative.",
-        "workingOut": "The derivative graph is a horizontal line located above the x-axis (the line \\( y = m \\))."
+        "workingOut": "The derivative is \\( 1 \\) for all \\( x \\). The derivative graph is a constant horizontal line at \\( y = 1 \\)."
       }
     ],
     "graphData": {
@@ -3528,16 +3528,16 @@ export const Y12A_CH3_QUESTIONS = [
     "t": "Increasing, decreasing and stationary at a point",
     "solutionSteps": [
       {
-        "explanation": "Analyze the original function.",
-        "workingOut": "The graph is a straight line sloping downwards from left to right.\n\\[ f(x) = mx + c \\quad (m < 0) \\]"
+        "explanation": "Identify the mathematical function for the graph.",
+        "workingOut": "The graph represents a straight line passing through the origin with a slope of -1.\n\\[ f(x) = -x \\]"
       },
       {
-        "explanation": "Determine the slope.",
-        "workingOut": "A straight line has a constant slope. Since it is falling, the slope is negative. The function is strictly decreasing everywhere.\n\\[ f'(x) = m < 0 \\]"
+        "explanation": "Calculate the derivative.",
+        "workingOut": "Differentiating \\( -x \\) yields a constant negative value.\n\\[ f'(x) = -1 \\]"
       },
       {
         "explanation": "Sketch the derivative.",
-        "workingOut": "The derivative graph is a horizontal line located below the x-axis (the line \\( y = m \\))."
+        "workingOut": "The derivative is \\( -1 \\) for all \\( x \\). The derivative graph is a constant horizontal line at \\( y = -1 \\)."
       }
     ],
     "graphData": {
@@ -3564,16 +3564,16 @@ export const Y12A_CH3_QUESTIONS = [
     "t": "Increasing, decreasing and stationary at a point",
     "solutionSteps": [
       {
-        "explanation": "Identify the turning point.",
-        "workingOut": "The graph has a minimum turning point (stationary point) at the y-axis.\n\\[ f'(0) = 0 \\]"
+        "explanation": "Identify the mathematical function for the graph.",
+        "workingOut": "The graph is a parabola opening upwards. For example, it can be modeled as:\n\\[ f(x) = \\frac{1}{2}x^2 - 1 \\]"
       },
       {
-        "explanation": "Analyze the intervals of increase and decrease.",
-        "workingOut": "Before the turning point (\\( x < 0 \\)), the curve is falling. After the turning point (\\( x > 0 \\)), the curve is rising.\n\\[ f'(x) < 0 \\text{ for } x < 0 \\]\n\\[ f'(x) > 0 \\text{ for } x > 0 \\]"
+        "explanation": "Calculate the derivative.",
+        "workingOut": "Apply the power rule to find the derivative.\n\\[ f'(x) = 2 \\cdot \\frac{1}{2}x = x \\]"
       },
       {
         "explanation": "Sketch the derivative.",
-        "workingOut": "The derivative graph must cross the x-axis at \\( x = 0 \\), going from negative y-values to positive y-values.\nThis corresponds to a straight line with a positive slope (e.g. \\( y = x \\))."
+        "workingOut": "The derivative \\( f'(x) = x \\) is a straight line passing through the origin with a positive slope. This matches the fact that the original parabola has a minimum at \\( x = 0 \\)."
       }
     ],
     "graphData": {
@@ -3600,16 +3600,16 @@ export const Y12A_CH3_QUESTIONS = [
     "t": "Increasing, decreasing and stationary at a point",
     "solutionSteps": [
       {
-        "explanation": "Identify the turning point.",
-        "workingOut": "The graph has a horizontal point of inflection at the origin.\n\\[ f'(0) = 0 \\]"
+        "explanation": "Identify the mathematical function for the graph.",
+        "workingOut": "The graph is a cubic curve with a horizontal point of inflection at the origin. It can be modeled as:\n\\[ f(x) = 0.15x^3 \\]"
       },
       {
-        "explanation": "Analyze the intervals of increase.",
-        "workingOut": "The curve is rising both before and after the origin.\n\\[ f'(x) > 0 \\text{ for } x < 0 \\]\n\\[ f'(x) > 0 \\text{ for } x > 0 \\]"
+        "explanation": "Calculate the derivative.",
+        "workingOut": "Apply the power rule to differentiate the cubic function.\n\\[ f'(x) = 3 \\cdot 0.15x^2 = 0.45x^2 \\]"
       },
       {
         "explanation": "Sketch the derivative.",
-        "workingOut": "The derivative graph must touch the x-axis at \\( x = 0 \\) and remain positive everywhere else.\nThis corresponds to a parabola opening upwards with its vertex at the origin."
+        "workingOut": "The derivative \\( f'(x) = 0.45x^2 \\) is a parabola opening upwards with its vertex at the origin.\nIt is always \\( \\geq 0 \\), which confirms the original function is always increasing or stationary."
       }
     ],
     "graphData": {
@@ -3636,16 +3636,16 @@ export const Y12A_CH3_QUESTIONS = [
     "t": "Increasing, decreasing and stationary at a point",
     "solutionSteps": [
       {
-        "explanation": "Identify the turning points.",
-        "workingOut": "The graph has a local maximum at \\( x = a \\) and a local minimum at \\( x = b \\).\n\\[ f'(a) = 0 \\quad \\text{and} \\quad f'(b) = 0 \\]"
+        "explanation": "Identify the mathematical function for the graph.",
+        "workingOut": "The graph is a cubic with two turning points and roots at \\( x = 0, \\pm 2.2 \\). It is modeled as:\n\\[ f(x) = \\frac{1}{6}x(x^2 - 4.84) = \\frac{1}{6}x^3 - 0.807x \\]"
       },
       {
-        "explanation": "Analyze the intervals of increase and decrease.",
-        "workingOut": "The curve rises until \\( a \\), falls between \\( a \\) and \\( b \\), and rises after \\( b \\).\n\\[ f'(x) > 0 \\text{ for } x < a \\text{ and } x > b \\]\n\\[ f'(x) < 0 \\text{ for } a < x < b \\]"
+        "explanation": "Calculate the derivative.",
+        "workingOut": "Apply the power rule to find the derivative.\n\\[ f'(x) = \\frac{1}{2}x^2 - 0.807 \\]"
       },
       {
         "explanation": "Sketch the derivative.",
-        "workingOut": "The derivative graph must cross the x-axis at \\( a \\) and \\( b \\), being positive outside this interval and negative inside.\nThis corresponds to a parabola opening upwards with roots at \\( a \\) and \\( b \\)."
+        "workingOut": "The derivative is an upward-opening parabola \\( f'(x) = \\frac{1}{2}x^2 - 0.807 \\).\nIts roots (where \\( f'(x) = 0 \\)) perfectly align with the local maximum and minimum of the original cubic curve."
       }
     ],
     "graphData": {
@@ -3672,16 +3672,16 @@ export const Y12A_CH3_QUESTIONS = [
     "t": "Increasing, decreasing and stationary at a point",
     "solutionSteps": [
       {
-        "explanation": "Identify the turning points.",
-        "workingOut": "The graph has local minima at \\( x = a \\) and \\( x = c \\), and a local maximum at \\( x = b \\).\n\\[ f'(a) = 0, \\quad f'(b) = 0, \\quad f'(c) = 0 \\]"
+        "explanation": "Identify the mathematical function for the graph.",
+        "workingOut": "The graph is a 'W' shaped quartic function with minima at \\( \\pm 2 \\) and a maximum at \\( 0 \\). It is modeled as:\n\\[ f(x) = 0.15(x^2 - 4)^2 - 1 \\]"
       },
       {
-        "explanation": "Analyze the intervals of increase and decrease.",
-        "workingOut": "The curve falls before \\( a \\), rises from \\( a \\) to \\( b \\), falls from \\( b \\) to \\( c \\), and rises after \\( c \\).\n\\[ f'(x) < 0 \\text{ for } x < a \\text{ and } b < x < c \\]\n\\[ f'(x) > 0 \\text{ for } a < x < b \\text{ and } x > c \\]"
+        "explanation": "Calculate the derivative.",
+        "workingOut": "Use the chain rule to differentiate the function.\n\\[ f'(x) = 2 \\cdot 0.15(x^2 - 4) \\cdot (2x) \\]\n\\[ f'(x) = 0.6x(x^2 - 4) = 0.6x(x-2)(x+2) \\]"
       },
       {
         "explanation": "Sketch the derivative.",
-        "workingOut": "The derivative graph must cross the x-axis at \\( a, b, c \\). It starts negative, becomes positive, goes negative again, and finishes positive.\nThis corresponds to a positive cubic curve."
+        "workingOut": "The derivative is a positive cubic \\( f'(x) = 0.6x(x-2)(x+2) \\).\nIt crosses the x-axis at \\( x = -2, 0, 2 \\), matching the three stationary points of the original quartic curve."
       }
     ],
     "graphData": {
@@ -3708,16 +3708,16 @@ export const Y12A_CH3_QUESTIONS = [
     "t": "Increasing, decreasing and stationary at a point",
     "solutionSteps": [
       {
-        "explanation": "Identify asymptotes and domain.",
-        "workingOut": "The graph has a vertical asymptote at \\( x = 0 \\) and is split into two branches.\n\\( f(x) \\) is undefined at \\( x = 0 \\)."
+        "explanation": "Identify the mathematical function for the graph.",
+        "workingOut": "The graph represents the two branches of a standard hyperbola:\n\\[ f(x) = \\frac{1}{x} = x^{-1} \\]"
       },
       {
-        "explanation": "Analyze the intervals of decrease.",
-        "workingOut": "On both the left branch (\\( x < 0 \\)) and the right branch (\\( x > 0 \\)), the curve is always falling.\n\\[ f'(x) < 0 \\text{ for all } x \\neq 0 \\]"
+        "explanation": "Calculate the derivative.",
+        "workingOut": "Apply the power rule for negative indices.\n\\[ f'(x) = -1 \\cdot x^{-2} = -\\frac{1}{x^2} \\]"
       },
       {
         "explanation": "Sketch the derivative.",
-        "workingOut": "Since there are no stationary points, the derivative never crosses the x-axis.\nBecause the function is always decreasing, the derivative is always negative.\nThis corresponds to a shape like \\( y = -1/x^2 \\), lying entirely below the x-axis."
+        "workingOut": "The derivative is \\( f'(x) = -\\frac{1}{x^2} \\).\nSince \\( x^2 > 0 \\) for all \\( x \\neq 0 \\), \\( f'(x) < 0 \\) everywhere. The derivative graph is always below the x-axis, mirroring the fact that the hyperbola is always decreasing."
       }
     ],
     "graphData": {
