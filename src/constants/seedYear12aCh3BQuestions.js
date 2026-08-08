@@ -2076,61 +2076,171 @@ export const Y12A_CH3B_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y12a-3b-q17a",
-        "type": "teacher_review",
-        "question": "a) Find \\( \\frac{dy}{dx} \\) and show that \\( 3a - 2b + c = 0 \\) and \\( 12a + 4b + c = 0 \\).",
-        "a": "Differentiate: \\( y' = 3ax^2 + 2bx + c \\). Set \\( y'(-1) = 3a - 2b + c = 0 \\) and \\( y'(2) = 12a + 4b + c = 0 \\)."
+        "type": "multiple_choice",
+        "question": "The cubic function \\( y = ax^3 + bx^2 + cx + d \\) has a relative maximum at \\( (-1, 17) \\) and a relative minimum at \\( (2, -10) \\). a) Find the two equations involving \\( a \\), \\( b \\), and \\( c \\) by evaluating the derivative \\( \\frac{dy}{dx} \\) at the turning points.",
+        "opts": [
+          "\\( 3a - 2b + c = 17 \\) and \\( 12a + 4b + c = -10 \\)",
+          "\\( -a + b - c = 0 \\) and \\( 8a + 4b + 2c = 0 \\)",
+          "\\( 3a - 2b + c = 0 \\) and \\( 12a + 4b + c = 0 \\)",
+          "\\( 3a + 2b + c = 0 \\) and \\( 12a - 4b + c = 0 \\)"
+        ],
+        "solutionSteps": [
+          {
+            "explanation": "Differentiate \\( y = ax^3 + bx^2 + cx + d \\).",
+            "workingOut": "\\frac{dy}{dx} = 3ax^2 + 2bx + c"
+          },
+          {
+            "explanation": "Use the stationary points at \\( x = -1 \\) and \\( x = 2 \\) where \\( \\frac{dy}{dx} = 0 \\).",
+            "workingOut": "\\begin{aligned} \\text{At } x = -1: \\quad 3a(-1)^2 + 2b(-1) + c = 0 &\\implies 3a - 2b + c = 0 \\\\ \\text{At } x = 2: \\quad 3a(2)^2 + 2b(2) + c = 0 &\\implies 12a + 4b + c = 0 \\end{aligned}"
+          }
+        ],
+        "options": [
+          {
+            "text": "\\( 3a - 2b + c = 17 \\) and \\( 12a + 4b + c = -10 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( -a + b - c = 0 \\) and \\( 8a + 4b + 2c = 0 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( 3a - 2b + c = 0 \\) and \\( 12a + 4b + c = 0 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( 3a + 2b + c = 0 \\) and \\( 12a - 4b + c = 0 \\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "2",
+        "answerStr": "2"
       },
       {
         "id": "y12a-3b-q17b",
-        "type": "teacher_review",
-        "question": "b) Using the fact that \\( (2, -10) \\) and \\( (-1, 17) \\) lie on the curve, show that \\( 8a + 4b + 2c + d = -10 \\) and \\( -a + b - c + d = 17 \\). By subtracting the second equation from the first, show how you eliminate \\( d \\) to get \\( 9a + 3b + 3c = -27 \\).",
-        "a": "Evaluate y(2) = -10 and y(-1) = 17. Subtracting them eliminates d to yield: \\( 9a + 3b + 3c = -27 \\)."
+        "type": "multiple_choice",
+        "question": "The cubic function \\( y = ax^3 + bx^2 + cx + d \\) has a relative maximum at \\( (-1, 17) \\) and a relative minimum at \\( (2, -10) \\). b) Substitute the coordinates of the turning points into the original function, and then eliminate \\( d \\) by subtracting the equations. Which equation is formed?",
+        "opts": [
+          "\\( 7a + 5b + c = -27 \\)",
+          "\\( 9a - 3b + 3c = 7 \\)",
+          "\\( 9a + 3b + 3c = -27 \\)",
+          "\\( 9a + 3b + 3c = 27 \\)"
+        ],
+        "solutionSteps": [
+          {
+            "explanation": "Substitute the coordinates \\( (-1, 17) \\) and \\( (2, -10) \\) into the cubic function.",
+            "workingOut": "\\begin{aligned} \\text{Substitute } (-1, 17): \\quad a(-1)^3 + b(-1)^2 + c(-1) + d = 17 &\\implies -a + b - c + d = 17 \\quad \\text{--- (1)} \\\\ \\text{Substitute } (2, -10): \\quad a(2)^3 + b(2)^2 + c(2) + d = -10 &\\implies 8a + 4b + 2c + d = -10 \\quad \\text{--- (2)} \\end{aligned}"
+          },
+          {
+            "explanation": "Subtract equation (1) from equation (2) to eliminate \\( d \\).",
+            "workingOut": "\\begin{aligned} (8a + 4b + 2c + d) - (-a + b - c + d) &= -10 - 17 \\\\ 9a + 3b + 3c &= -27 \\end{aligned}"
+          }
+        ],
+        "options": [
+          {
+            "text": "\\( 7a + 5b + c = -27 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( 9a - 3b + 3c = 7 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( 9a + 3b + 3c = -27 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( 9a + 3b + 3c = 27 \\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "2",
+        "answerStr": "2"
       },
       {
         "id": "y12a-3b-q17c",
-        "type": "teacher_review",
-        "question": "c) Solve the simultaneous equations \\( 3a - 2b + c = 0 \\), \\( 12a + 4b + c = 0 \\), and \\( 9a + 3b + 3c = -27 \\) to find the values of \\( a \\), \\( b \\), and \\( c \\).",
-        "a": "a = 2, b = -3, c = -12."
+        "type": "multiple_choice",
+        "question": "The cubic function \\( y = ax^3 + bx^2 + cx + d \\) has a relative maximum at \\( (-1, 17) \\) and a relative minimum at \\( (2, -10) \\). c) Solve the simultaneous equations \\( 3a - 2b + c = 0 \\), \\( 12a + 4b + c = 0 \\), and \\( 9a + 3b + 3c = -27 \\) to find the values of \\( a \\), \\( b \\), and \\( c \\).",
+        "opts": [
+          "\\( a = 2, b = -3, c = -12 \\)",
+          "\\( a = -2, b = 3, c = 12 \\)",
+          "\\( a = 2, b = 3, c = 12 \\)",
+          "\\( a = 1, b = -2, c = -9 \\)"
+        ],
+        "solutionSteps": [
+          {
+            "explanation": "Eliminate \\( c \\) from the two derivative equations. Subtract the first from the second.",
+            "workingOut": "\\begin{aligned} (12a + 4b + c) - (3a - 2b + c) &= 0 - 0 \\\\ 9a + 6b &= 0 \\\\ 6b &= -9a \\implies b = -1.5a \\end{aligned}"
+          },
+          {
+            "explanation": "Substitute \\( b = -1.5a \\) into \\( 3a - 2b + c = 0 \\) to express \\( c \\) in terms of \\( a \\).",
+            "workingOut": "\\begin{aligned} 3a - 2(-1.5a) + c &= 0 \\\\ 3a + 3a + c &= 0 \\\\ 6a + c &= 0 \\implies c = -6a \\end{aligned}"
+          },
+          {
+            "explanation": "Substitute expressions for \\( b \\) and \\( c \\) into the equation \\( 9a + 3b + 3c = -27 \\).",
+            "workingOut": "\\begin{aligned} 9a + 3(-1.5a) + 3(-6a) &= -27 \\\\ 9a - 4.5a - 18a &= -27 \\\\ -13.5a &= -27 \\\\ a &= 2 \\end{aligned}"
+          },
+          {
+            "explanation": "Solve for \\( b \\) and \\( c \\).",
+            "workingOut": "\\begin{aligned} b &= -1.5(2) = -3 \\\\ c &= -6(2) = -12 \\end{aligned}"
+          }
+        ],
+        "options": [
+          {
+            "text": "\\( a = 2, b = -3, c = -12 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( a = -2, b = 3, c = 12 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( a = 2, b = 3, c = 12 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( a = 1, b = -2, c = -9 \\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "0",
+        "answerStr": "0"
       },
       {
         "id": "y12a-3b-q17d",
-        "type": "teacher_review",
-        "question": "d) Find the value of \\( d \\).",
-        "a": "Substitute a, b, c into any coordinate equation to find d = 10."
-      }
-    ],
-    "solutionSteps": [
-      {
-        "explanation": "Differentiate \\( y = ax^3 + bx^2 + cx + d \\).",
-        "workingOut": "\\frac{dy}{dx} = 3ax^2 + 2bx + c"
-      },
-      {
-        "explanation": "Use stationary points at \\( x = -1 \\) and \\( x = 2 \\) where \\( \\frac{dy}{dx} = 0 \\).",
-        "workingOut": "\\begin{aligned} 3a(-1)^2 + 2b(-1) + c = 0 &\\implies 3a - 2b + c = 0 \\\\ 3a(2)^2 + 2b(2) + c = 0 &\\implies 12a + 4b + c = 0 \\end{aligned}"
-      },
-      {
-        "explanation": "Substitute coordinates \\( (-1, 17) \\) and \\( (2, -10) \\) into the cubic function.",
-        "workingOut": "\\begin{aligned} a(-1)^3 + b(-1)^2 + c(-1) + d = 17 &\\implies -a + b - c + d = 17 \\\\ a(2)^3 + b(2)^2 + c(2) + d = -10 &\\implies 8a + 4b + 2c + d = -10 \\end{aligned}"
-      },
-      {
-        "explanation": "Subtract the first coordinate equation from the second coordinate equation.",
-        "workingOut": "(8a + 4b + 2c + d) - (-a + b - c + d) = -10 - 17 \\implies 9a + 3b + 3c = -27"
-      },
-      {
-        "explanation": "Solve the system of equations. Subtracting the first derivative equation from the second gives: \\( 9a + 6b = 0 \\implies b = -1.5a \\). Substitute \\( b = -1.5a \\) into \\( 3a - 2b + c = 0 \\) to get \\( c = -6a \\).",
-        "workingOut": "3a - 2(-1.5a) + c = 0 \\implies 6a + c = 0 \\implies c = -6a"
-      },
-      {
-        "explanation": "Substitute expressions for \\( b \\) and \\( c \\) in terms of \\( a \\) into the subtracted equation \\( 9a + 3b + 3c = -27 \\).",
-        "workingOut": "9a + 3(-1.5a) + 3(-6a) = -27 \\implies 9a - 4.5a - 18a = -27 \\implies -13.5a = -27 \\implies a = 2"
-      },
-      {
-        "explanation": "Solve for \\( b \\) and \\( c \\).",
-        "workingOut": "b = -1.5(2) = -3, quad c = -6(2) = -12"
-      },
-      {
-        "explanation": "Solve for \\( d \\) using \\( -a + b - c + d = 17 \\).",
-        "workingOut": "-(2) + (-3) - (-12) + d = 17 \\implies 7 + d = 17 \\implies d = 10"
+        "type": "multiple_choice",
+        "question": "The cubic function \\( y = ax^3 + bx^2 + cx + d \\) has a relative maximum at \\( (-1, 17) \\) and a relative minimum at \\( (2, -10) \\). d) Find the value of \\( d \\).",
+        "opts": [
+          "\\( 7 \\)",
+          "\\( -10 \\)",
+          "\\( 10 \\)",
+          "\\( -17 \\)"
+        ],
+        "solutionSteps": [
+          {
+            "explanation": "Substitute the values of \\( a = 2 \\), \\( b = -3 \\), and \\( c = -12 \\) into one of the original coordinate equations, for example \\( -a + b - c + d = 17 \\).",
+            "workingOut": "\\begin{aligned} -(2) + (-3) - (-12) + d &= 17 \\\\ -2 - 3 + 12 + d &= 17 \\\\ 7 + d &= 17 \\\\ d &= 10 \\end{aligned}"
+          }
+        ],
+        "options": [
+          {
+            "text": "\\( 7 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( -10 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( 10 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( -17 \\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "2",
+        "answerStr": "2"
       }
     ]
   },
