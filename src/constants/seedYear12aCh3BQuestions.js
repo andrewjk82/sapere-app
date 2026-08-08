@@ -1199,54 +1199,116 @@ export const Y12A_CH3B_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y12a-3b-q7a",
-        "type": "teacher_review",
-        "question": "a) Show that the derivative of \\( y = 27x - x^3 \\) is \\( y' = 3(3 - x)(3 + x) \\).",
-        "a": "Differentiate and factor: \\( y' = 27 - 3x^2 = 3(9 - x^2) = 3(3-x)(3+x) \\)."
+        "type": "multiple_choice",
+        "question": "a) Find the derivative \\( \\frac{dy}{dx} \\) in factored form.",
+        "opts": [
+          "\\( 3(x - 3)(x + 3) \\)",
+          "\\( 9(3 - x)(3 + x) \\)",
+          "\\( 3(3 - x)(3 + x) \\)",
+          "\\( 3(9 - x)(9 + x) \\)"
+        ],
+        "solutionSteps": [
+          {
+            "explanation": "Differentiate the function using the power rule.",
+            "workingOut": "\\frac{dy}{dx} = 27 - 3x^2"
+          },
+          {
+            "explanation": "Factor out the common term \\( 3 \\).",
+            "workingOut": "\\frac{dy}{dx} = 3(9 - x^2)"
+          },
+          {
+            "explanation": "Factor the difference of two squares.",
+            "workingOut": "\\frac{dy}{dx} = 3(3 - x)(3 + x)"
+          }
+        ],
+        "options": [
+          {
+            "text": "\\( 3(x - 3)(x + 3) \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( 9(3 - x)(3 + x) \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( 3(3 - x)(3 + x) \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( 3(9 - x)(9 + x) \\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "2",
+        "answerStr": "2"
       },
       {
         "id": "y12a-3b-q7b",
-        "type": "teacher_review",
-        "question": "b) Use a table of test values of \\( y' \\) to show that there is a maximum turning point at \\( (3, 54) \\) and a minimum turning point at \\( (-3, -54) \\).",
-        "a": "At x=-3, slope changes from - to + (min). At x=3, slope changes from + to - (max)."
-      },
-      {
-        "id": "y12a-3b-q7c",
-        "type": "teacher_review",
-        "question": "c) Sketch the graph of the function, showing all important features.",
-        "a": "Sketch showing turning points (3,54) and (-3,-54), intercepts at (0,0), and roots at \\( \\pm 3\\sqrt{3} \\)."
-      }
-    ],
-    "solutionSteps": [
-      {
-        "explanation": "Differentiate \\( y = 27x - x^3 \\).",
-        "workingOut": "y' = 27 - 3x^2 = 3(9 - x^2) = 3(3 - x)(3 + x)"
-      },
-      {
-        "explanation": "Find stationary points by setting derivative to zero.",
-        "workingOut": "3(3-x)(3+x) = 0 \\implies x = 3, -3"
-      },
-      {
-        "explanation": "Calculate \\( y \\)-values.",
-        "workingOut": "\\begin{aligned} y(3) &= 27(3) - 3^3 = 54 \\implies (3, 54) \\\\ y(-3) &= 27(-3) - (-3)^3 = -54 \\implies (-3, -54) \\end{aligned}"
-      },
-      {
-        "explanation": "Perform the test of slopes.",
-        "workingOut": "\\(\\begin{array}{c|ccccc} x & -4 & -3 & 0 & 3 & 4 \\\\ \\hline y' & -21 & 0 & 27 & 0 & -21 \\\\ \\text{Slope} & \\backslash & - & / & - & \\backslash \\end{array}\\)"
-      }
-    ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 350,
-        "height": 250,
-        "boundingbox": [
-          -6,
-          75,
-          6,
-          -75
+        "type": "multiple_choice",
+        "question": "b) Determine the coordinates and nature of its stationary points.",
+        "opts": [
+          "Maximum at \\( (3, 54) \\) and Minimum at \\( (-3, -54) \\)",
+          "Minimum at \\( (3, 27) \\) and Maximum at \\( (-3, -54) \\)",
+          "Minimum at \\( (3, 54) \\) and Maximum at \\( (-3, -54) \\)",
+          "Maximum at \\( (3, 54) \\) and Minimum at \\( (-3, -27) \\)"
         ],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-5.5,0], [5.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-70], [0,70]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [5.3, -5, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 65, 'y'], {fontSize: 14});\nvar f = function(x) { return 27*x - x*x*x; };\nboard.create('functiongraph', [f, -5.2, 5.2], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [3, 54], {name: 'Max(3,54)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, 10]}});\nboard.create('point', [-3, -54], {name: 'Min(-3,-54)', size: 3, color: 'red', label: {autoPosition: false, offset: [-60, -10]}});\nboard.create('point', [0, 0], {name: '0', size: 2, color: 'black', label: {autoPosition: false, offset: [5, 5]}});\nboard.unsuspendUpdate();"
+        "solutionSteps": [
+          {
+            "explanation": "Find the derivative.",
+            "workingOut": "\\frac{dy}{dx} = 3(3 - x)(3 + x)"
+          },
+          {
+            "explanation": "Set the derivative to zero to find the \\( x \\)-coordinates of stationary points.",
+            "workingOut": "3(3 - x)(3 + x) = 0 \\implies x = 3, \\; -3"
+          },
+          {
+            "explanation": "Substitute these \\( x \\)-values into the original function.",
+            "workingOut": "\\begin{aligned} y(3) &= 27(3) - (3)^3 = 81 - 27 = 54 \\implies (3, 54) \\\\ y(-3) &= 27(-3) - (-3)^3 = -81 - (-27) = -54 \\implies (-3, -54) \\end{aligned}"
+          },
+          {
+            "explanation": "Create a sign table to test the slope around these points.",
+            "workingOut": "\\(\\begin{array}{c|ccccc} x & -4 & -3 & 0 & 3 & 4 \\\\ \\hline y' & -21 & 0 & 27 & 0 & -21 \\\\ \\text{Slope} & \\backslash & - & / & - & \\backslash \\end{array}\\)"
+          },
+          {
+            "explanation": "Conclude the nature of the turning points based on the change of slope.",
+            "workingOut": "\\text{Maximum at } (3, 54) \\text{ and Minimum at } (-3, -54)",
+            "graphData": {
+              "jsxGraph": {
+                "width": 350,
+                "height": 250,
+                "boundingbox": [
+                  -6,
+                  75,
+                  6,
+                  -75
+                ],
+                "script": "board.suspendUpdate();\nboard.create('arrow', [[-5.5,0], [5.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-70], [0,70]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [5.3, -5, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 65, 'y'], {fontSize: 14});\nvar f = function(x) { return 27*x - x*x*x; };\nboard.create('functiongraph', [f, -5.2, 5.2], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [3, 54], {name: 'Max(3,54)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, 10]}});\nboard.create('point', [-3, -54], {name: 'Min(-3,-54)', size: 3, color: 'red', label: {autoPosition: false, offset: [-60, -10]}});\nboard.create('point', [0, 0], {name: '0', size: 2, color: 'black', label: {autoPosition: false, offset: [5, 5]}});\nboard.unsuspendUpdate();"
+              }
+            }
+          }
+        ],
+        "options": [
+          {
+            "text": "Maximum at \\( (3, 54) \\) and Minimum at \\( (-3, -54) \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "Minimum at \\( (3, 27) \\) and Maximum at \\( (-3, -54) \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "Minimum at \\( (3, 54) \\) and Maximum at \\( (-3, -54) \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "Maximum at \\( (3, 54) \\) and Minimum at \\( (-3, -27) \\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "0",
+        "answerStr": "0"
       }
-    }
+    ]
   },
   {
     "id": "y12a-3b-q8a",
