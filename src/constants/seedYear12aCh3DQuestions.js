@@ -1087,16 +1087,20 @@ export const Y12A_CH3D_QUESTIONS = [
         ],
         "solutionSteps": [
           {
-            "explanation": "Identify turning points from previous steps.",
-            "workingOut": "\\text{Maximum at } (-1, 18), \\text{ Minimum at } (3, -14)"
+            "explanation": "Find the y-intercept by setting \\( x = 0 \\).",
+            "workingOut": "\\begin{aligned} y(0) &= 0^3 - 3(0)^2 - 9(0) + 13 = 13 \\\\ &\\implies \\text{y-intercept at } (0, 13) \\end{aligned}"
           },
           {
-            "explanation": "Identify the inflection point.",
-            "workingOut": "\\text{Point of inflection at } (1, 2)"
+            "explanation": "Find stationary points by setting \\( y' = 0 \\).",
+            "workingOut": "\\begin{aligned} y' &= 3x^2 - 6x - 9 = 0 \\\\ 3(x - 3)(x + 1) &= 0 \\implies x = 3, -1 \\\\ y(3) &= -14, \\; y(-1) = 18 \\\\ &\\implies \\text{Min at } (3, -14), \\text{ Max at } (-1, 18) \\end{aligned}"
           },
           {
-            "explanation": "Identify the y-intercept.",
-            "workingOut": "\\text{y-intercept is at } x = 0 \\implies y(0) = 13"
+            "explanation": "Find the point of inflection by setting \\( y'' = 0 \\).",
+            "workingOut": "\\begin{aligned} y'' &= 6x - 6 = 0 \\\\ 6x &= 6 \\implies x = 1 \\\\ y(1) &= 2 \\\\ &\\implies \\text{Inflection at } (1, 2) \\end{aligned}"
+          },
+          {
+            "explanation": "Combine all key features to identify the correct summary.",
+            "workingOut": "\\text{Max at } (-1, 18), \\text{ Min at } (3, -14), \\text{ Inflection at } (1, 2)"
           }
         ],
         "options": [
@@ -1324,16 +1328,20 @@ export const Y12A_CH3D_QUESTIONS = [
         ],
         "solutionSteps": [
           {
-            "explanation": "Identify turning points from previous steps.",
-            "workingOut": "\\text{Minimum at } (-1, 0), \\text{ Maximum at } (3, 32)"
+            "explanation": "Find the y-intercept by setting \\( x = 0 \\).",
+            "workingOut": "\\begin{aligned} y(0) &= 5 + 9(0) + 3(0)^2 - 0^3 = 5 \\\\ &\\implies \\text{y-intercept at } (0, 5) \\end{aligned}"
           },
           {
-            "explanation": "Identify the inflection point.",
-            "workingOut": "\\text{Point of inflection at } (1, 16)"
+            "explanation": "Find stationary points by setting \\( y' = 0 \\).",
+            "workingOut": "\\begin{aligned} y' &= 9 + 6x - 3x^2 = 0 \\\\ -3(x^2 - 2x - 3) &= 0 \\implies x = 3, -1 \\\\ y(3) &= 32, \\; y(-1) = 0 \\\\ &\\implies \\text{Max at } (3, 32), \\text{ Min at } (-1, 0) \\end{aligned}"
           },
           {
-            "explanation": "Identify the y-intercept.",
-            "workingOut": "\\text{y-intercept is at } x = 0 \\implies y(0) = 5"
+            "explanation": "Find the point of inflection by setting \\( y'' = 0 \\).",
+            "workingOut": "\\begin{aligned} y'' &= 6 - 6x = 0 \\\\ 6x &= 6 \\implies x = 1 \\\\ y(1) &= 16 \\\\ &\\implies \\text{Inflection at } (1, 16) \\end{aligned}"
+          },
+          {
+            "explanation": "Combine all key features to identify the correct summary.",
+            "workingOut": "\\text{Min at } (-1, 0), \\text{ Max at } (3, 32), \\text{ Inflection at } (1, 16)"
           }
         ],
         "options": [
@@ -1561,16 +1569,20 @@ export const Y12A_CH3D_QUESTIONS = [
         ],
         "solutionSteps": [
           {
-            "explanation": "Identify turning points from previous steps.",
-            "workingOut": "\\text{Maximum at } (-1, 28), \\text{ Minimum at } (5, -80)"
+            "explanation": "Find the y-intercept by setting \\( x = 0 \\).",
+            "workingOut": "\\begin{aligned} y(0) &= 0^3 - 6(0)^2 - 15(0) + 20 = 20 \\\\ &\\implies \\text{y-intercept at } (0, 20) \\end{aligned}"
           },
           {
-            "explanation": "Identify the inflection point.",
-            "workingOut": "\\text{Point of inflection at } (2, -26)"
+            "explanation": "Find stationary points by setting \\( y' = 0 \\).",
+            "workingOut": "\\begin{aligned} y' &= 3x^2 - 12x - 15 = 0 \\\\ 3(x^2 - 4x - 5) &= 0 \\implies x = 5, -1 \\\\ y(5) &= -80, \\; y(-1) = 28 \\\\ &\\implies \\text{Min at } (5, -80), \\text{ Max at } (-1, 28) \\end{aligned}"
           },
           {
-            "explanation": "Identify the y-intercept.",
-            "workingOut": "\\text{y-intercept is at } x = 0 \\implies y(0) = 20"
+            "explanation": "Find the point of inflection by setting \\( y'' = 0 \\).",
+            "workingOut": "\\begin{aligned} y'' &= 6x - 12 = 0 \\\\ 6x &= 12 \\implies x = 2 \\\\ y(2) &= -26 \\\\ &\\implies \\text{Inflection at } (2, -26) \\end{aligned}"
+          },
+          {
+            "explanation": "Combine all key features to identify the correct summary.",
+            "workingOut": "\\text{Max at } (-1, 28), \\text{ Min at } (5, -80), \\text{ Inflection at } (2, -26)"
           }
         ],
         "options": [
@@ -1794,16 +1806,20 @@ export const Y12A_CH3D_QUESTIONS = [
         ],
         "solutionSteps": [
           {
-            "explanation": "Identify turning points from previous steps.",
-            "workingOut": "\\text{Maximum at } (2, 32), \\text{ horizontal inflection at } (0, 16)"
+            "explanation": "Find the y-intercept by setting \\( x = 0 \\).",
+            "workingOut": "\\begin{aligned} y(0) &= 16 + 8(0)^3 - 3(0)^4 = 16 \\\\ &\\implies \\text{y-intercept at } (0, 16) \\end{aligned}"
           },
           {
-            "explanation": "Identify all inflection points.",
-            "workingOut": "\\text{Points of inflection at } (0, 16) \\text{ and } (4/3, 688/27 \\approx 25.48)"
+            "explanation": "Find stationary points by setting \\( y' = 0 \\).",
+            "workingOut": "\\begin{aligned} y' &= 24x^2 - 12x^3 = 0 \\\\ 12x^2(2 - x) &= 0 \\implies x = 0, 2 \\\\ y(0) &= 16, \\; y(2) = 32 \\\\ &\\implies \\text{Horizontal inflection at } (0, 16), \\text{ Max at } (2, 32) \\end{aligned}"
           },
           {
-            "explanation": "Identify the y-intercept.",
-            "workingOut": "\\text{y-intercept is at } x = 0 \\implies y(0) = 16"
+            "explanation": "Find the points of inflection by setting \\( y'' = 0 \\).",
+            "workingOut": "\\begin{aligned} y'' &= 48x - 36x^2 = 0 \\\\ 12x(4 - 3x) &= 0 \\implies x = 0, \\frac{4}{3} \\\\ y(0) &= 16, \\; y\\left(\\frac{4}{3}\\right) = \\frac{688}{27} \\approx 25.48 \\\\ &\\implies \\text{Inflections at } (0, 16) \\text{ and } \\left(\\frac{4}{3}, 25.48\\right) \\end{aligned}"
+          },
+          {
+            "explanation": "Combine all key features to identify the correct summary.",
+            "workingOut": "\\text{Max at } (2, 32), \\text{ Inflections at } (0, 16) \\text{ and } \\left(\\frac{4}{3}, 25.48\\right)"
           }
         ],
         "options": [
