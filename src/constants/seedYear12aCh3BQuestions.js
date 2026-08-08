@@ -2086,12 +2086,20 @@ export const Y12A_CH3B_QUESTIONS = [
         ],
         "solutionSteps": [
           {
-            "explanation": "Differentiate \\( y = ax^3 + bx^2 + cx + d \\).",
-            "workingOut": "\\frac{dy}{dx} = 3ax^2 + 2bx + c"
+            "explanation": "Recall the condition for a turning point (relative maximum or minimum): the derivative \\( \\frac{dy}{dx} \\) must equal \\( 0 \\) at the \\(x\\)-coordinates of these points.",
+            "workingOut": "\\text{At a turning point, } \\frac{dy}{dx} = 0."
           },
           {
-            "explanation": "Use the stationary points at \\( x = -1 \\) and \\( x = 2 \\) where \\( \\frac{dy}{dx} = 0 \\).",
-            "workingOut": "\\begin{aligned} \\text{At } x = -1: \\quad 3a(-1)^2 + 2b(-1) + c = 0 &\\implies 3a - 2b + c = 0 \\\\ \\text{At } x = 2: \\quad 3a(2)^2 + 2b(2) + c = 0 &\\implies 12a + 4b + c = 0 \\end{aligned}"
+            "explanation": "Differentiate the given cubic function \\( y = ax^3 + bx^2 + cx + d \\) with respect to \\( x \\).",
+            "workingOut": "\\frac{dy}{dx} = \\frac{d}{dx}(ax^3) + \\frac{d}{dx}(bx^2) + \\frac{d}{dx}(cx) + \\frac{d}{dx}(d) = 3ax^2 + 2bx + c"
+          },
+          {
+            "explanation": "Evaluate the derivative at the first turning point \\( x = -1 \\) and set it to \\( 0 \\).",
+            "workingOut": "\\frac{dy}{dx}(-1) = 3a(-1)^2 + 2b(-1) + c = 0 \\implies 3a - 2b + c = 0"
+          },
+          {
+            "explanation": "Evaluate the derivative at the second turning point \\( x = 2 \\) and set it to \\( 0 \\).",
+            "workingOut": "\\frac{dy}{dx}(2) = 3a(2)^2 + 2b(2) + c = 0 \\implies 12a + 4b + c = 0"
           }
         ],
         "options": [
@@ -2127,12 +2135,20 @@ export const Y12A_CH3B_QUESTIONS = [
         ],
         "solutionSteps": [
           {
-            "explanation": "Substitute the coordinates \\( (-1, 17) \\) and \\( (2, -10) \\) into the cubic function.",
-            "workingOut": "\\begin{aligned} \\text{Substitute } (-1, 17): \\quad a(-1)^3 + b(-1)^2 + c(-1) + d = 17 &\\implies -a + b - c + d = 17 \\quad \\text{--- (1)} \\\\ \\text{Substitute } (2, -10): \\quad a(2)^3 + b(2)^2 + c(2) + d = -10 &\\implies 8a + 4b + 2c + d = -10 \\quad \\text{--- (2)} \\end{aligned}"
+            "explanation": "Use the fact that the point \\( (-1, 17) \\) lies on the curve. Substitute \\( x = -1 \\) and \\( y = 17 \\) into the original function.",
+            "workingOut": "17 = a(-1)^3 + b(-1)^2 + c(-1) + d \\implies -a + b - c + d = 17 \\quad \\text{--- (1)}"
           },
           {
-            "explanation": "Subtract equation (1) from equation (2) to eliminate \\( d \\).",
-            "workingOut": "\\begin{aligned} (8a + 4b + 2c + d) - (-a + b - c + d) &= -10 - 17 \\\\ 9a + 3b + 3c &= -27 \\end{aligned}"
+            "explanation": "Use the fact that the point \\( (2, -10) \\) lies on the curve. Substitute \\( x = 2 \\) and \\( y = -10 \\) into the original function.",
+            "workingOut": "-10 = a(2)^3 + b(2)^2 + c(2) + d \\implies 8a + 4b + 2c + d = -10 \\quad \\text{--- (2)}"
+          },
+          {
+            "explanation": "Subtract equation (1) from equation (2) to eliminate the variable \\( d \\).",
+            "workingOut": "(8a + 4b + 2c + d) - (-a + b - c + d) = -10 - 17"
+          },
+          {
+            "explanation": "Simplify the resulting equation by combining like terms.",
+            "workingOut": "9a + 3b + 3c = -27"
           }
         ],
         "options": [
@@ -2168,20 +2184,28 @@ export const Y12A_CH3B_QUESTIONS = [
         ],
         "solutionSteps": [
           {
-            "explanation": "Eliminate \\( c \\) from the two derivative equations. Subtract the first from the second.",
-            "workingOut": "\\begin{aligned} (12a + 4b + c) - (3a - 2b + c) &= 0 - 0 \\\\ 9a + 6b &= 0 \\\\ 6b &= -9a \\implies b = -1.5a \\end{aligned}"
+            "explanation": "Start with the two equations from part (a): \\( 3a - 2b + c = 0 \\) (Eq A) and \\( 12a + 4b + c = 0 \\) (Eq B). Subtract Eq A from Eq B to eliminate \\( c \\).",
+            "workingOut": "(12a + 4b + c) - (3a - 2b + c) = 0 - 0 \\implies 9a + 6b = 0"
           },
           {
-            "explanation": "Substitute \\( b = -1.5a \\) into \\( 3a - 2b + c = 0 \\) to express \\( c \\) in terms of \\( a \\).",
-            "workingOut": "\\begin{aligned} 3a - 2(-1.5a) + c &= 0 \\\\ 3a + 3a + c &= 0 \\\\ 6a + c &= 0 \\implies c = -6a \\end{aligned}"
+            "explanation": "Express \\( b \\) in terms of \\( a \\).",
+            "workingOut": "6b = -9a \\implies b = -1.5a"
           },
           {
-            "explanation": "Substitute expressions for \\( b \\) and \\( c \\) into the equation \\( 9a + 3b + 3c = -27 \\).",
-            "workingOut": "\\begin{aligned} 9a + 3(-1.5a) + 3(-6a) &= -27 \\\\ 9a - 4.5a - 18a &= -27 \\\\ -13.5a &= -27 \\\\ a &= 2 \\end{aligned}"
+            "explanation": "Substitute \\( b = -1.5a \\) back into Eq A to express \\( c \\) in terms of \\( a \\).",
+            "workingOut": "3a - 2(-1.5a) + c = 0 \\implies 3a + 3a + c = 0 \\implies c = -6a"
           },
           {
-            "explanation": "Solve for \\( b \\) and \\( c \\).",
-            "workingOut": "\\begin{aligned} b &= -1.5(2) = -3 \\\\ c &= -6(2) = -12 \\end{aligned}"
+            "explanation": "Substitute the expressions for \\( b \\) and \\( c \\) into the equation from part (b): \\( 9a + 3b + 3c = -27 \\).",
+            "workingOut": "9a + 3(-1.5a) + 3(-6a) = -27 \\implies 9a - 4.5a - 18a = -27"
+          },
+          {
+            "explanation": "Solve this equation for \\( a \\).",
+            "workingOut": "-13.5a = -27 \\implies a = 2"
+          },
+          {
+            "explanation": "Finally, substitute \\( a = 2 \\) back into the expressions for \\( b \\) and \\( c \\).",
+            "workingOut": "b = -1.5(2) = -3 \\quad \\text{and} \\quad c = -6(2) = -12"
           }
         ],
         "options": [
@@ -2217,8 +2241,16 @@ export const Y12A_CH3B_QUESTIONS = [
         ],
         "solutionSteps": [
           {
-            "explanation": "Substitute the values of \\( a = 2 \\), \\( b = -3 \\), and \\( c = -12 \\) into one of the original coordinate equations, for example \\( -a + b - c + d = 17 \\).",
-            "workingOut": "\\begin{aligned} -(2) + (-3) - (-12) + d &= 17 \\\\ -2 - 3 + 12 + d &= 17 \\\\ 7 + d &= 17 \\\\ d &= 10 \\end{aligned}"
+            "explanation": "Choose one of the equations involving \\( d \\) from part (b), for example, \\( -a + b - c + d = 17 \\).",
+            "workingOut": "\\text{We will use } -a + b - c + d = 17."
+          },
+          {
+            "explanation": "Substitute the known values \\( a = 2 \\), \\( b = -3 \\), and \\( c = -12 \\) into the equation.",
+            "workingOut": "-(2) + (-3) - (-12) + d = 17"
+          },
+          {
+            "explanation": "Simplify and solve for \\( d \\).",
+            "workingOut": "-2 - 3 + 12 + d = 17 \\implies 7 + d = 17 \\implies d = 10"
           }
         ],
         "options": [
