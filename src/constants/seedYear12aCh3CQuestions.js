@@ -494,7 +494,7 @@ export const Y12A_CH3C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Expand the product, then find the first and second derivatives of the function \\( y = x(x + 5) \\).",
+    "question": "Find the first and second derivatives of the function \\( y = x(x + 5) \\).",
     "a": "y' = 2x + 5, y'' = 2",
     "t": "Second and higher derivatives",
     "solutionSteps": [
@@ -543,7 +543,7 @@ export const Y12A_CH3C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Expand the product, then find the first and second derivatives of the function \\( y = x^2(x - 3) \\).",
+    "question": "Find the first and second derivatives of the function \\( y = x^2(x - 3) \\).",
     "a": "y' = 3x^2 - 6x, y'' = 6x - 6",
     "t": "Second and higher derivatives",
     "solutionSteps": [
@@ -592,7 +592,7 @@ export const Y12A_CH3C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Expand the product, then find the first and second derivatives of the function \\( y = (x - 3)(x + 2) \\).",
+    "question": "Find the first and second derivatives of the function \\( y = (x - 3)(x + 2) \\).",
     "a": "y' = 2x - 1, y'' = 2",
     "t": "Second and higher derivatives",
     "solutionSteps": [
@@ -641,7 +641,7 @@ export const Y12A_CH3C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Expand the product, then find the first and second derivatives of the function \\( y = (2x + 3)(x - 4) \\).",
+    "question": "Find the first and second derivatives of the function \\( y = (2x + 3)(x - 4) \\).",
     "a": "y' = 4x - 5, y'' = 4",
     "t": "Second and higher derivatives",
     "solutionSteps": [
@@ -690,7 +690,7 @@ export const Y12A_CH3C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Expand the product, then find the first and second derivatives of the function \\( y = 2x^2(3x^3 - 2x^2) \\).",
+    "question": "Find the first and second derivatives of the function \\( y = 2x^2(3x^3 - 2x^2) \\).",
     "a": "y' = 30x^4 - 16x^3, y'' = 120x^3 - 48x^2",
     "t": "Second and higher derivatives",
     "solutionSteps": [
@@ -739,7 +739,7 @@ export const Y12A_CH3C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Expand the product, then find the first and second derivatives of the function \\( y = 3x^3(x^4 + 3x^2) \\).",
+    "question": "Find the first and second derivatives of the function \\( y = 3x^3(x^4 + 3x^2) \\).",
     "a": "y' = 21x^6 + 45x^4, y'' = 126x^5 + 180x^3",
     "t": "Second and higher derivatives",
     "solutionSteps": [
@@ -1033,7 +1033,7 @@ export const Y12A_CH3C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "By writing the function with a negative index, find the first and second derivatives of \\( f(x) = \\frac{1}{x^4} \\).",
+    "question": "Find the first and second derivatives of \\( f(x) = \\frac{1}{x^4} \\).",
     "a": "f'(x) = -4/x^5, f''(x) = 20/x^6",
     "t": "Second and higher derivatives",
     "solutionSteps": [
@@ -1082,7 +1082,7 @@ export const Y12A_CH3C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "By writing the function with a negative index, find the first and second derivatives of \\( f(x) = \\frac{1}{x^5} \\).",
+    "question": "Find the first and second derivatives of \\( f(x) = \\frac{1}{x^5} \\).",
     "a": "f'(x) = -5/x^6, f''(x) = 30/x^7",
     "t": "Second and higher derivatives",
     "solutionSteps": [
@@ -1131,7 +1131,7 @@ export const Y12A_CH3C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "By writing the function with a negative index, find the first and second derivatives of \\( f(x) = \\frac{4}{x^3} \\).",
+    "question": "Find the first and second derivatives of \\( f(x) = \\frac{4}{x^3} \\).",
     "a": "f'(x) = -12/x^4, f''(x) = 48/x^5",
     "t": "Second and higher derivatives",
     "solutionSteps": [
@@ -1180,7 +1180,7 @@ export const Y12A_CH3C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "By writing the function with a negative index, find the first and second derivatives of \\( f(x) = \\frac{5}{x^2} \\).",
+    "question": "Find the first and second derivatives of \\( f(x) = \\frac{5}{x^2} \\).",
     "a": "f'(x) = -10/x^3, f''(x) = 30/x^4",
     "t": "Second and higher derivatives",
     "solutionSteps": [
@@ -1229,7 +1229,7 @@ export const Y12A_CH3C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "Use the chain rule to find the first and second derivatives of the function \\( y = (x + 2)^3 \\).",
+    "question": "Find the first and second derivatives of the function \\( y = (x + 2)^3 \\).",
     "a": "y' = 3(x+2)^2, y'' = 6(x+2)",
     "t": "Second and higher derivatives",
     "solutionSteps": [
@@ -1274,7 +1274,7 @@ export const Y12A_CH3C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "Use the chain rule to find the first and second derivatives of the function \\( y = (2x - 3)^4 \\).",
+    "question": "Find the first and second derivatives of the function \\( y = (2x - 3)^4 \\).",
     "a": "y' = 8(2x-3)^3, y'' = 48(2x-3)^2",
     "t": "Second and higher derivatives",
     "solutionSteps": [
@@ -1319,7 +1319,7 @@ export const Y12A_CH3C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "Use the chain rule to find the first and second derivatives of the function \\( y = (1 - 3x)^3 \\).",
+    "question": "Find the first and second derivatives of the function \\( y = (1 - 3x)^3 \\).",
     "a": "y' = -9(1-3x)^2, y'' = 54(1-3x)",
     "t": "Second and higher derivatives",
     "solutionSteps": [
@@ -1364,7 +1364,7 @@ export const Y12A_CH3C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "Use the chain rule to find the first and second derivatives of the function \\( y = (5 - x)^8 \\).",
+    "question": "Find the first and second derivatives of the function \\( y = (5 - x)^8 \\).",
     "a": "y' = -8(5-x)^7, y'' = 56(5-x)^6",
     "t": "Second and higher derivatives",
     "solutionSteps": [
@@ -1409,7 +1409,7 @@ export const Y12A_CH3C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "By writing the function with a negative index, find the first and second derivatives of \\( y = \\frac{1}{x + 3} \\).",
+    "question": "Find the first and second derivatives of \\( y = \\frac{1}{x + 3} \\).",
     "a": "y' = -1/(x+3)^2, y'' = 2/(x+3)^3",
     "t": "Second and higher derivatives",
     "solutionSteps": [
@@ -1458,7 +1458,7 @@ export const Y12A_CH3C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "By writing the function with a negative index, find the first and second derivatives of \\( y = \\frac{1}{(2 - x)^3} \\).",
+    "question": "Find the first and second derivatives of \\( y = \\frac{1}{(2 - x)^3} \\).",
     "a": "y' = 3/(2-x)^4, y'' = 12/(2-x)^5",
     "t": "Second and higher derivatives",
     "solutionSteps": [
@@ -1507,7 +1507,7 @@ export const Y12A_CH3C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "By writing the function with a negative index, find the first and second derivatives of \\( y = \\frac{1}{(4x + 3)^2} \\).",
+    "question": "Find the first and second derivatives of \\( y = \\frac{1}{(4x + 3)^2} \\).",
     "a": "y' = -8/(4x+3)^3, y'' = 96/(4x+3)^4",
     "t": "Second and higher derivatives",
     "solutionSteps": [
@@ -1556,7 +1556,7 @@ export const Y12A_CH3C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "By writing the function with a negative index, find the first and second derivatives of \\( y = \\frac{3}{(5 - 2x)^3} \\).",
+    "question": "Find the first and second derivatives of \\( y = \\frac{3}{(5 - 2x)^3} \\).",
     "a": "y' = 18/(5-2x)^4, y'' = 144/(5-2x)^5",
     "t": "Second and higher derivatives",
     "solutionSteps": [
@@ -1605,7 +1605,7 @@ export const Y12A_CH3C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "By writing the function with a fractional index, find the first and second derivatives of \\( f(x) = 2\\sqrt{x} \\).",
+    "question": "Find the first and second derivatives of \\( f(x) = 2\\sqrt{x} \\).",
     "a": "f'(x) = 1/\\sqrt{x}, f''(x) = -1/(2x\\sqrt{x})",
     "t": "Second and higher derivatives",
     "solutionSteps": [
@@ -1654,7 +1654,7 @@ export const Y12A_CH3C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "By writing the function with a fractional index, find the first and second derivatives of \\( f(x) = \\sqrt[3]{x^2} \\).",
+    "question": "Find the first and second derivatives of \\( f(x) = \\sqrt[3]{x^2} \\).",
     "a": "f'(x) = 2/(3\\sqrt[3]{x}), f''(x) = -2/(9x\\sqrt[3]{x})",
     "t": "Second and higher derivatives",
     "solutionSteps": [
@@ -1703,7 +1703,7 @@ export const Y12A_CH3C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "By writing the function with a fractional index, find the first and second derivatives of \\( f(x) = x^2\\sqrt{x} \\).",
+    "question": "Find the first and second derivatives of \\( f(x) = x^2\\sqrt{x} \\).",
     "a": "f'(x) = 5/2 x\\sqrt{x}, f''(x) = 15\\sqrt{x}/4",
     "t": "Second and higher derivatives",
     "solutionSteps": [
@@ -1752,7 +1752,7 @@ export const Y12A_CH3C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "By writing the function with a fractional index, find the first and second derivatives of \\( f(x) = \\frac{2}{\\sqrt{x}} \\).",
+    "question": "Find the first and second derivatives of \\( f(x) = \\frac{2}{\\sqrt{x}} \\).",
     "a": "f'(x) = -1/(x\\sqrt{x}), f''(x) = 3/(2x^2\\sqrt{x})",
     "t": "Second and higher derivatives",
     "solutionSteps": [
@@ -1801,7 +1801,7 @@ export const Y12A_CH3C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "By writing the function with a fractional index, find the first and second derivatives of \\( f(x) = \\sqrt{x + 3} \\).",
+    "question": "Find the first and second derivatives of \\( f(x) = \\sqrt{x + 3} \\).",
     "a": "f'(x) = 1/(2\\sqrt{x+3}), f''(x) = -1/(4(x+3)\\sqrt{x+3})",
     "t": "Second and higher derivatives",
     "solutionSteps": [
@@ -1850,7 +1850,7 @@ export const Y12A_CH3C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "By writing the function with a fractional index, find the first and second derivatives of \\( f(x) = \\sqrt{1 - 3x} \\).",
+    "question": "Find the first and second derivatives of \\( f(x) = \\sqrt{1 - 3x} \\).",
     "a": "f'(x) = -3/(2\\sqrt{1-3x}), f''(x) = -9/(4(1-3x)\\sqrt{1-3x})",
     "t": "Second and higher derivatives",
     "solutionSteps": [
@@ -2484,7 +2484,7 @@ export const Y12A_CH3C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "Use the quotient rule to find the first derivative of the function \\( y = \\frac{x}{x + 2} \\). Then use the chain rule to find the second derivative.",
+    "question": "Find the first and second derivatives of the function \\( y = \\frac{x}{x + 2} \\).",
     "a": "y' = 2/(x+2)^2, y'' = -4/(x+2)^3",
     "t": "Second and higher derivatives",
     "solutionSteps": [
@@ -2533,7 +2533,7 @@ export const Y12A_CH3C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "Use the quotient rule to find the first derivative of the function \\( y = \\frac{x - 2}{3x + 4} \\). Then use the chain rule to find the second derivative.",
+    "question": "Find the first and second derivatives of the function \\( y = \\frac{x - 2}{3x + 4} \\).",
     "a": "y' = 10/(3x+4)^2, y'' = -60/(3x+4)^3",
     "t": "Second and higher derivatives",
     "solutionSteps": [
@@ -2582,7 +2582,7 @@ export const Y12A_CH3C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "If \\( f(x) = x(x - 2)^4 \\), use the product rule to find \\( f'(x) \\) and \\( f''(x) \\).",
+    "question": "If \\( f(x) = x(x - 2)^4 \\), find \\( f'(x) \\) and \\( f''(x) \\).",
     "a": "f'(x) = (5x-2)(x-2)^3, f''(x) = 4(5x-4)(x-2)^2",
     "t": "Second and higher derivatives",
     "solutionSteps": [
