@@ -1680,22 +1680,47 @@ export const Y12A_CH3B_QUESTIONS = [
   },
   {
     "id": "y12a-3b-q15a",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "The line \\( y = 3x \\) is the tangent to the curve \\( y = ax^2 + bx + c \\) at the origin, and there is a maximum turning point at \\( x = 2 \\). Explain why \\( c = 0 \\).",
-    "a": "The curve passes through the origin (0, 0), so substituting x = 0 gives y = c = 0.",
+    "question": "The line \\( y = 3x \\) is the tangent to the curve \\( y = ax^2 + bx + c \\) at the origin, and there is a maximum turning point at \\( x = 2 \\). Find the value of \\( c \\).",
     "t": "Stationary points and turning points",
     "solutionSteps": [
       {
-        "explanation": "Identify the origin coordinates.",
-        "workingOut": "(x, y) = (0, 0)"
+        "explanation": "The tangent line \\( y = 3x \\) touches the curve at the origin, meaning the curve passes through the origin.",
+        "workingOut": "\\text{The coordinates of the origin are } (0, 0)."
       },
       {
         "explanation": "Substitute \\( x = 0 \\) and \\( y = 0 \\) into the general quadratic equation \\( y = ax^2 + bx + c \\).",
-        "workingOut": "0 = a(0)^2 + b(0) + c \\implies c = 0"
+        "workingOut": "\\begin{aligned} 0 &= a(0)^2 + b(0) + c \\\\ 0 &= 0 + 0 + c \\\\ c &= 0 \\end{aligned}"
       }
-    ]
+    ],
+    "opts": [
+      "\\( -3 \\)",
+      "\\( 3 \\)",
+      "\\( 2 \\)",
+      "\\( 0 \\)"
+    ],
+    "options": [
+      {
+        "text": "\\( -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 0 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
+    "answerStr": "3"
   },
   {
     "id": "y12a-3b-q15b",
