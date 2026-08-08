@@ -1941,7 +1941,7 @@ export const Y12A_CH3C_QUESTIONS = [
   },
   {
     "id": "y12a-3c-q8bi",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "For the function \\( f(x) = x^3 + 4x^2 + 6x - 5 \\), evaluate \\( f'(0) \\).",
@@ -1956,11 +1956,37 @@ export const Y12A_CH3C_QUESTIONS = [
         "explanation": "Substitute \\( x = 0 \\) into \\( f'(x) \\).",
         "workingOut": "f'(0) = 3(0)^2 + 8(0) + 6 = 6"
       }
-    ]
+    ],
+    "opts": [
+      "-5",
+      "5",
+      "8",
+      "6"
+    ],
+    "options": [
+      {
+        "text": "-5",
+        "imageUrl": ""
+      },
+      {
+        "text": "5",
+        "imageUrl": ""
+      },
+      {
+        "text": "8",
+        "imageUrl": ""
+      },
+      {
+        "text": "6",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
+    "answerStr": "3"
   },
   {
     "id": "y12a-3c-q8bii",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "For the function \\( f(x) = x^3 + 4x^2 + 6x - 5 \\), evaluate \\( f'(1) \\).",
@@ -1975,11 +2001,37 @@ export const Y12A_CH3C_QUESTIONS = [
         "explanation": "Substitute \\( x = 1 \\) into \\( f'(x) \\).",
         "workingOut": "f'(1) = 3(1)^2 + 8(1) + 6 = 17"
       }
-    ]
+    ],
+    "opts": [
+      "15",
+      "16",
+      "17",
+      "14"
+    ],
+    "options": [
+      {
+        "text": "15",
+        "imageUrl": ""
+      },
+      {
+        "text": "16",
+        "imageUrl": ""
+      },
+      {
+        "text": "17",
+        "imageUrl": ""
+      },
+      {
+        "text": "14",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
+    "answerStr": "2"
   },
   {
     "id": "y12a-3c-q8biii",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "For the function \\( f(x) = x^3 + 4x^2 + 6x - 5 \\), evaluate \\( f''(0) \\).",
@@ -1994,11 +2046,37 @@ export const Y12A_CH3C_QUESTIONS = [
         "explanation": "Substitute \\( x = 0 \\) into \\( f''(x) \\).",
         "workingOut": "f''(0) = 6(0) + 8 = 8"
       }
-    ]
+    ],
+    "opts": [
+      "6",
+      "0",
+      "4",
+      "8"
+    ],
+    "options": [
+      {
+        "text": "6",
+        "imageUrl": ""
+      },
+      {
+        "text": "0",
+        "imageUrl": ""
+      },
+      {
+        "text": "4",
+        "imageUrl": ""
+      },
+      {
+        "text": "8",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
+    "answerStr": "3"
   },
   {
     "id": "y12a-3c-q8biv",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "For the function \\( f(x) = x^3 + 4x^2 + 6x - 5 \\), evaluate \\( f''(1) \\).",
@@ -2013,11 +2091,37 @@ export const Y12A_CH3C_QUESTIONS = [
         "explanation": "Substitute \\( x = 1 \\) into \\( f''(x) \\).",
         "workingOut": "f''(1) = 6(1) + 8 = 14"
       }
-    ]
+    ],
+    "opts": [
+      "8",
+      "14",
+      "12",
+      "16"
+    ],
+    "options": [
+      {
+        "text": "8",
+        "imageUrl": ""
+      },
+      {
+        "text": "14",
+        "imageUrl": ""
+      },
+      {
+        "text": "12",
+        "imageUrl": ""
+      },
+      {
+        "text": "16",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
+    "answerStr": "1"
   },
   {
     "id": "y12a-3c-q9ai",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "If \\( f(x) = 4x + x^3 \\), evaluate \\( f'(2) \\).",
@@ -2032,11 +2136,37 @@ export const Y12A_CH3C_QUESTIONS = [
         "explanation": "Substitute \\( x = 2 \\) into the derivative.",
         "workingOut": "f'(2) = 4 + 3(2^2) = 4 + 12 = 16"
       }
-    ]
+    ],
+    "opts": [
+      "16",
+      "18",
+      "14",
+      "12"
+    ],
+    "options": [
+      {
+        "text": "16",
+        "imageUrl": ""
+      },
+      {
+        "text": "18",
+        "imageUrl": ""
+      },
+      {
+        "text": "14",
+        "imageUrl": ""
+      },
+      {
+        "text": "12",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "answerStr": "0"
   },
   {
     "id": "y12a-3c-q9aii",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "If \\( f(x) = 4x + x^3 \\), evaluate \\( f''(2) \\).",
@@ -2051,11 +2181,37 @@ export const Y12A_CH3C_QUESTIONS = [
         "explanation": "Substitute \\( x = 2 \\) into the second derivative.",
         "workingOut": "f''(2) = 6(2) = 12"
       }
-    ]
+    ],
+    "opts": [
+      "12",
+      "16",
+      "6",
+      "24"
+    ],
+    "options": [
+      {
+        "text": "12",
+        "imageUrl": ""
+      },
+      {
+        "text": "16",
+        "imageUrl": ""
+      },
+      {
+        "text": "6",
+        "imageUrl": ""
+      },
+      {
+        "text": "24",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "answerStr": "0"
   },
   {
     "id": "y12a-3c-q9aiii",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "If \\( f(x) = 4x + x^3 \\), evaluate \\( f'''(2) \\).",
@@ -2070,11 +2226,37 @@ export const Y12A_CH3C_QUESTIONS = [
         "explanation": "Substitute \\( x = 2 \\) into the third derivative.",
         "workingOut": "f'''(2) = 6"
       }
-    ]
+    ],
+    "opts": [
+      "4",
+      "6",
+      "0",
+      "12"
+    ],
+    "options": [
+      {
+        "text": "4",
+        "imageUrl": ""
+      },
+      {
+        "text": "6",
+        "imageUrl": ""
+      },
+      {
+        "text": "0",
+        "imageUrl": ""
+      },
+      {
+        "text": "12",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
+    "answerStr": "1"
   },
   {
     "id": "y12a-3c-q9aiv",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "If \\( f(x) = 4x + x^3 \\), evaluate \\( f''''(2) \\).",
@@ -2089,11 +2271,37 @@ export const Y12A_CH3C_QUESTIONS = [
         "explanation": "Substitute \\( x = 2 \\) into the fourth derivative.",
         "workingOut": "f''''(2) = 0"
       }
-    ]
+    ],
+    "opts": [
+      "12",
+      "6",
+      "1",
+      "0"
+    ],
+    "options": [
+      {
+        "text": "12",
+        "imageUrl": ""
+      },
+      {
+        "text": "6",
+        "imageUrl": ""
+      },
+      {
+        "text": "1",
+        "imageUrl": ""
+      },
+      {
+        "text": "0",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
+    "answerStr": "3"
   },
   {
     "id": "y12a-3c-q9bi",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "If \\( f(x) = (3x - 2)^4 \\), evaluate \\( f'(1) \\).",
@@ -2108,11 +2316,37 @@ export const Y12A_CH3C_QUESTIONS = [
         "explanation": "Substitute \\( x = 1 \\) into \\( f'(x) \\).",
         "workingOut": "f'(1) = 12(3(1) - 2)^3 = 12(1)^3 = 12"
       }
-    ]
+    ],
+    "opts": [
+      "12",
+      "36",
+      "4",
+      "48"
+    ],
+    "options": [
+      {
+        "text": "12",
+        "imageUrl": ""
+      },
+      {
+        "text": "36",
+        "imageUrl": ""
+      },
+      {
+        "text": "4",
+        "imageUrl": ""
+      },
+      {
+        "text": "48",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "answerStr": "0"
   },
   {
     "id": "y12a-3c-q9bii",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "If \\( f(x) = (3x - 2)^4 \\), evaluate \\( f''(1) \\).",
@@ -2127,7 +2361,33 @@ export const Y12A_CH3C_QUESTIONS = [
         "explanation": "Substitute \\( x = 1 \\) into \\( f''(x) \\).",
         "workingOut": "f''(1) = 108(3(1) - 2)^2 = 108(1)^2 = 108"
       }
-    ]
+    ],
+    "opts": [
+      "144",
+      "36",
+      "108",
+      "48"
+    ],
+    "options": [
+      {
+        "text": "144",
+        "imageUrl": ""
+      },
+      {
+        "text": "36",
+        "imageUrl": ""
+      },
+      {
+        "text": "108",
+        "imageUrl": ""
+      },
+      {
+        "text": "48",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
+    "answerStr": "2"
   },
   {
     "id": "y12a-3c-q9biii",
