@@ -3323,25 +3323,49 @@ export const Y12A_CH3_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y12a-3a-q20a",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "a) Find the derivative \\( f'(x) \\).",
-        "a": "x^2+2x+2",
         "solutionSteps": [
           {
-            "explanation": "Expand the function first.",
-            "workingOut": "\\[ f(x) = \\frac{1}{3}x^3 + x^2 + 2x - 3 \\]"
+            "explanation": "Identify the function.",
+            "workingOut": "\\[ f(x) = \\frac{1}{3}x^3 + x^2 + 2x + 5 \\]"
           },
           {
             "explanation": "Differentiate term by term.",
             "workingOut": "\\[ f'(x) = \\frac{1}{3}(3x^2) + 2x + 2 \\]\n\\[ f'(x) = x^2 + 2x + 2 \\]"
           }
-        ]
+        ],
+        "opts": [
+          "\\( \\frac{1}{3}x^2+2x+2 \\)",
+          "\\( x^2+2x+5 \\)",
+          "\\( x^2+x+2 \\)",
+          "\\( x^2+2x+2 \\)"
+        ],
+        "options": [
+          {
+            "text": "\\( \\frac{1}{3}x^2+2x+2 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( x^2+2x+5 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( x^2+x+2 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( x^2+2x+2 \\)",
+            "imageUrl": ""
+          }
+        ],
+        "answerStr": "3",
+        "answer": "3"
       },
       {
         "id": "y12a-3a-q20b",
-        "type": "teacher_review",
-        "question": "b) By completing the square, show that \\( f'(x) = (x+1)^2 + 1 \\), and hence explain why \\( f(x) \\) is increasing for all \\( x \\).",
-        "a": "Complete the square for \\( x^2 + 2x + 2 \\): \\( f'(x) = (x^2 + 2x + 1) + 1 = (x+1)^2 + 1 \\). Since \\( (x+1)^2 \\geq 0 \\) for all real \\( x \\), we have \\( (x+1)^2 + 1 \\geq 1 > 0 \\) for all \\( x \\). Since the derivative is strictly positive everywhere, \\( f(x) \\) is increasing for all \\( x \\).",
+        "type": "multiple_choice",
+        "question": "b) Explain why \\( f(x) \\) is increasing for all \\( x \\).",
         "solutionSteps": [
           {
             "explanation": "Complete the square for the derivative.",
@@ -3351,23 +3375,74 @@ export const Y12A_CH3_QUESTIONS = [
             "explanation": "Analyze the sign of the completed square.",
             "workingOut": "Since \\( (x+1)^2 \\geq 0 \\) for all real \\( x \\),\n\\[ (x+1)^2 + 1 \\geq 1 > 0 \\]\nBecause \\( f'(x) > 0 \\) for all \\( x \\), the function is strictly increasing everywhere."
           }
-        ]
+        ],
+        "opts": [
+          "Because \\( f'(x) = (x+1)^2 + 1 \\), which can be negative for some values of \\( x \\).",
+          "Because \\( f'(x) = (x+1)^2 - 1 \\), which is always positive.",
+          "Because \\( f'(x) = (x+1)^2 + 1 \\), which is always strictly greater than 0.",
+          "Because the original function is a cubic, and all cubics are strictly increasing."
+        ],
+        "options": [
+          {
+            "text": "Because \\( f'(x) = (x+1)^2 + 1 \\), which can be negative for some values of \\( x \\).",
+            "imageUrl": ""
+          },
+          {
+            "text": "Because \\( f'(x) = (x+1)^2 - 1 \\), which is always positive.",
+            "imageUrl": ""
+          },
+          {
+            "text": "Because \\( f'(x) = (x+1)^2 + 1 \\), which is always strictly greater than 0.",
+            "imageUrl": ""
+          },
+          {
+            "text": "Because the original function is a cubic, and all cubics are strictly increasing.",
+            "imageUrl": ""
+          }
+        ],
+        "answerStr": "2",
+        "answer": "2"
       },
       {
         "id": "y12a-3a-q20c",
-        "type": "teacher_review",
-        "question": "c) Evaluate \\( f(-3) \\) and \\( f(0) \\), and hence explain why the curve \\( y = f(x) \\) has exactly one \\( x \\)-intercept.",
-        "a": "\\( f(-3) = \\frac{1}{3}(-27) + 9 - 6 + 5 = -1 \\). \\( f(0) = 5 \\). Since \\( f(-3) = -1 < 0 \\) and \\( f(0) = 5 > 0 \\), the continuous curve must cross the x-axis at least once between \\( x = -3 \\) and \\( x = 0 \\) by the Intermediate Value Theorem. Since \\( f(x) \\) is strictly increasing for all \\( x \\), it can only cross the x-axis exactly once.",
+        "type": "multiple_choice",
+        "question": "c) Evaluate \\( f(-3) \\) and \\( f(0) \\), and hence deduce the number of x-intercepts for the curve \\( y = f(x) \\).",
         "solutionSteps": [
           {
             "explanation": "Evaluate the function at the given points.",
-            "workingOut": "\\[ f(-3) = \\frac{1}{3}(-27) + 9 - 6 - 3 = -9 + 9 - 6 - 3 = -9 \\]\n\\[ f(0) = -3 \\]"
+            "workingOut": "\\[ f(-3) = \\frac{1}{3}(-27) + 9 - 6 + 5 = -9 + 9 - 6 + 5 = -1 \\]\n\\[ f(0) = 5 \\]"
           },
           {
             "explanation": "Deduce the number of x-intercepts.",
-            "workingOut": "The function is continuous and strictly increasing from \\( -\\infty \\) to \\( \\infty \\).\nSince it crosses from negative to positive at some point, it must cross the x-axis exactly once.\nTherefore, there is exactly one x-intercept."
+            "workingOut": "Since \\( f(-3) < 0 \\) and \\( f(0) > 0 \\), the curve crosses the x-axis at least once.\nFurthermore, because the function is strictly increasing from \\( -\\infty \\) to \\( \\infty \\), it cannot cross back down.\nTherefore, there is exactly one x-intercept."
           }
-        ]
+        ],
+        "opts": [
+          "\\( f(-3) = -1 \\) and \\( f(0) = 5 \\). Since it is a cubic, it must have exactly 3 x-intercepts.",
+          "\\( f(-3) = 1 \\) and \\( f(0) = 5 \\). Since both are positive, it has no x-intercepts.",
+          "\\( f(-3) = -1 \\) and \\( f(0) = 5 \\). Since it changes sign and is strictly increasing, it has exactly 1 x-intercept.",
+          "\\( f(-3) = -5 \\) and \\( f(0) = 1 \\). Since it changes sign, it has exactly 2 x-intercepts."
+        ],
+        "options": [
+          {
+            "text": "\\( f(-3) = -1 \\) and \\( f(0) = 5 \\). Since it is a cubic, it must have exactly 3 x-intercepts.",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( f(-3) = 1 \\) and \\( f(0) = 5 \\). Since both are positive, it has no x-intercepts.",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( f(-3) = -1 \\) and \\( f(0) = 5 \\). Since it changes sign and is strictly increasing, it has exactly 1 x-intercept.",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( f(-3) = -5 \\) and \\( f(0) = 1 \\). Since it changes sign, it has exactly 2 x-intercepts.",
+            "imageUrl": ""
+          }
+        ],
+        "answerStr": "2",
+        "answer": "2"
       }
     ]
   },
