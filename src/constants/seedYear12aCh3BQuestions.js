@@ -1073,117 +1073,121 @@ export const Y12A_CH3B_QUESTIONS = [
     "answerStr": "3"
   },
   {
-    "id": "y12a-3b-q6a",
-    "type": "multiple_choice",
+    "id": "y12a-3b-q6",
+    "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 120,
     "t": "Stationary points and turning points",
-    "question": "For the function \\( y = 2x^3 - 6x^2 \\), find the derivative \\( \\frac{dy}{dx} \\) in factored form.",
-    "opts": [
-      "\\( 3x(2x - 3) \\)",
-      "\\( 6x(x - 1) \\)",
-      "\\( 6x(x - 2) \\)",
-      "\\( 2x(3x - 2) \\)"
-    ],
-    "solutionSteps": [
+    "question": "For the function \\( y = 2x^3 - 6x^2 \\), complete the following steps to analyze and sketch the curve.",
+    "subQuestions": [
       {
-        "explanation": "Differentiate the function using the power rule.",
-        "workingOut": "\\frac{dy}{dx} = 6x^2 - 12x"
-      },
-      {
-        "explanation": "Factor out the greatest common term \\( 6x \\).",
-        "workingOut": "\\frac{dy}{dx} = 6x(x - 2)"
-      }
-    ],
-    "options": [
-      {
-        "text": "\\( 3x(2x - 3) \\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\( 6x(x - 1) \\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\( 6x(x - 2) \\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\( 2x(3x - 2) \\)",
-        "imageUrl": ""
-      }
-    ],
-    "answer": "2",
-    "answerStr": "2"
-  },
-  {
-    "id": "y12a-3b-q6b",
-    "type": "multiple_choice",
-    "difficulty": "medium",
-    "timeLimit": 180,
-    "t": "Stationary points and turning points",
-    "question": "For the function \\( y = 2x^3 - 6x^2 \\), determine the coordinates and nature of its stationary points.",
-    "opts": [
-      "Maximum at \\( (0, 0) \\) and Minimum at \\( (2, -4) \\)",
-      "Minimum at \\( (0, 0) \\) and Maximum at \\( (2, -4) \\)",
-      "Minimum at \\( (0, 0) \\) and Maximum at \\( (2, -8) \\)",
-      "Maximum at \\( (0, 0) \\) and Minimum at \\( (2, -8) \\)"
-    ],
-    "solutionSteps": [
-      {
-        "explanation": "Find the derivative.",
-        "workingOut": "\\frac{dy}{dx} = 6x(x-2)"
-      },
-      {
-        "explanation": "Set the derivative to zero to find the \\( x \\)-coordinates of stationary points.",
-        "workingOut": "6x(x-2) = 0 \\implies x = 0, \\; 2"
-      },
-      {
-        "explanation": "Substitute these \\( x \\)-values into the original function to find the \\( y \\)-coordinates.",
-        "workingOut": "\\begin{aligned} y(0) &= 2(0)^3 - 6(0)^2 = 0 \\implies (0, 0) \\\\ y(2) &= 2(2)^3 - 6(2)^2 = -8 \\implies (2, -8) \\end{aligned}"
-      },
-      {
-        "explanation": "Create a sign table to test the slope around these points.",
-        "workingOut": "\\(\\begin{array}{c|ccccc} x & -1 & 0 & 1 & 2 & 3 \\\\ \\hline y' & + & 0 & - & 0 & + \\\\ \\text{Slope} & / & - & \\backslash & - & / \\end{array}\\)"
-      },
-      {
-        "explanation": "Conclude the nature of the turning points based on the change of slope.",
-        "workingOut": "\\text{Maximum at } (0, 0) \\text{ and Minimum at } (2, -8)",
-        "graphData": {
-          "jsxGraph": {
-            "width": 350,
-            "height": 250,
-            "boundingbox": [
-              -2,
-              8,
-              4,
-              -12
-            ],
-            "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.5,0], [3.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-11.5], [0,7.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [3.3, -0.5, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 7.2, 'y'], {fontSize: 14});\nvar f = function(x) { return 2*x*x*x - 6*x*x; };\nboard.create('functiongraph', [f, -1.2, 3.2], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 0], {name: 'Max(0,0)', size: 3, color: 'red', label: {autoPosition: false, offset: [-15, 10]}});\nboard.create('point', [2, -8], {name: 'Min(2,-8)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, -10]}});\nboard.create('point', [3, 0], {name: '3', size: 2, color: 'black', label: {autoPosition: false, offset: [-5, 10]}});\nboard.unsuspendUpdate();"
+        "id": "y12a-3b-q6a",
+        "type": "multiple_choice",
+        "question": "a) Find the derivative \\( \\frac{dy}{dx} \\) in factored form.",
+        "opts": [
+          "\\( 3x(2x - 3) \\)",
+          "\\( 6x(x - 1) \\)",
+          "\\( 6x(x - 2) \\)",
+          "\\( 2x(3x - 2) \\)"
+        ],
+        "solutionSteps": [
+          {
+            "explanation": "Differentiate the function using the power rule.",
+            "workingOut": "\\frac{dy}{dx} = 6x^2 - 12x"
+          },
+          {
+            "explanation": "Factor out the greatest common term \\( 6x \\).",
+            "workingOut": "\\frac{dy}{dx} = 6x(x - 2)"
           }
-        }
+        ],
+        "options": [
+          {
+            "text": "\\( 3x(2x - 3) \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( 6x(x - 1) \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( 6x(x - 2) \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( 2x(3x - 2) \\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "2",
+        "answerStr": "2"
+      },
+      {
+        "id": "y12a-3b-q6b",
+        "type": "multiple_choice",
+        "question": "b) Determine the coordinates and nature of its stationary points.",
+        "opts": [
+          "Maximum at \\( (0, 0) \\) and Minimum at \\( (2, -4) \\)",
+          "Minimum at \\( (0, 0) \\) and Maximum at \\( (2, -4) \\)",
+          "Minimum at \\( (0, 0) \\) and Maximum at \\( (2, -8) \\)",
+          "Maximum at \\( (0, 0) \\) and Minimum at \\( (2, -8) \\)"
+        ],
+        "solutionSteps": [
+          {
+            "explanation": "Find the derivative.",
+            "workingOut": "\\frac{dy}{dx} = 6x(x-2)"
+          },
+          {
+            "explanation": "Set the derivative to zero to find the \\( x \\)-coordinates of stationary points.",
+            "workingOut": "6x(x-2) = 0 \\implies x = 0, \\; 2"
+          },
+          {
+            "explanation": "Substitute these \\( x \\)-values into the original function to find the \\( y \\)-coordinates.",
+            "workingOut": "\\begin{aligned} y(0) &= 2(0)^3 - 6(0)^2 = 0 \\implies (0, 0) \\\\ y(2) &= 2(2)^3 - 6(2)^2 = -8 \\implies (2, -8) \\end{aligned}"
+          },
+          {
+            "explanation": "Create a sign table to test the slope around these points.",
+            "workingOut": "\\(\\begin{array}{c|ccccc} x & -1 & 0 & 1 & 2 & 3 \\\\ \\hline y' & + & 0 & - & 0 & + \\\\ \\text{Slope} & / & - & \\backslash & - & / \\end{array}\\)"
+          },
+          {
+            "explanation": "Conclude the nature of the turning points based on the change of slope.",
+            "workingOut": "\\text{Maximum at } (0, 0) \\text{ and Minimum at } (2, -8)",
+            "graphData": {
+              "jsxGraph": {
+                "width": 350,
+                "height": 250,
+                "boundingbox": [
+                  -2,
+                  8,
+                  4,
+                  -12
+                ],
+                "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.5,0], [3.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-11.5], [0,7.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [3.3, -0.5, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 7.2, 'y'], {fontSize: 14});\nvar f = function(x) { return 2*x*x*x - 6*x*x; };\nboard.create('functiongraph', [f, -1.2, 3.2], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 0], {name: 'Max(0,0)', size: 3, color: 'red', label: {autoPosition: false, offset: [-15, 10]}});\nboard.create('point', [2, -8], {name: 'Min(2,-8)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, -10]}});\nboard.create('point', [3, 0], {name: '3', size: 2, color: 'black', label: {autoPosition: false, offset: [-5, 10]}});\nboard.unsuspendUpdate();"
+              }
+            }
+          }
+        ],
+        "options": [
+          {
+            "text": "Maximum at \\( (0, 0) \\) and Minimum at \\( (2, -4) \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "Minimum at \\( (0, 0) \\) and Maximum at \\( (2, -4) \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "Minimum at \\( (0, 0) \\) and Maximum at \\( (2, -8) \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "Maximum at \\( (0, 0) \\) and Minimum at \\( (2, -8) \\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "3",
+        "answerStr": "3"
       }
-    ],
-    "options": [
-      {
-        "text": "Maximum at \\( (0, 0) \\) and Minimum at \\( (2, -4) \\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "Minimum at \\( (0, 0) \\) and Maximum at \\( (2, -4) \\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "Minimum at \\( (0, 0) \\) and Maximum at \\( (2, -8) \\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "Maximum at \\( (0, 0) \\) and Minimum at \\( (2, -8) \\)",
-        "imageUrl": ""
-      }
-    ],
-    "answer": "3",
-    "answerStr": "3"
+    ]
   },
   {
     "id": "y12a-3b-q7",
