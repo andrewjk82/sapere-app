@@ -1131,8 +1131,20 @@ export const Y12A_CH3D_QUESTIONS = [
         "a": "Sketch cubic curve showing maximum at (-2,16), minimum at (2,-16), point of inflection at (0,0), and x-intercepts at \\( \\pm 2\\sqrt{3} \\).",
         "solutionSteps": [
           {
-            "explanation": "Verify your sketch against the graph shown.",
-            "workingOut": "\\text{Ensure the extrema, inflection points, and intercepts are correctly placed and the concavity matches.}",
+            "explanation": "Plot the y-intercept.",
+            "workingOut": "\\text{Mark the point } (0, 13) \\text{ on the y-axis.}"
+          },
+          {
+            "explanation": "Plot the turning points.",
+            "workingOut": "\\text{Mark the maximum at } (-1, 18) \\text{ and the minimum at } (3, -14)."
+          },
+          {
+            "explanation": "Plot the point of inflection.",
+            "workingOut": "\\text{Mark the inflection point at } (1, 2)."
+          },
+          {
+            "explanation": "Draw the curve.",
+            "workingOut": "\\text{Draw a smooth continuous curve passing through these points. Ensure the curve is concave down for } x < 1 \\text{ and concave up for } x > 1.",
             "graphData": {
               "jsxGraph": {
                 "width": 350,
@@ -1372,8 +1384,20 @@ export const Y12A_CH3D_QUESTIONS = [
         "a": "Sketch the curve showing the turning points, point(s) of inflection, and y-intercept.",
         "solutionSteps": [
           {
-            "explanation": "Verify your sketch against the graph shown.",
-            "workingOut": "\\text{Ensure the extrema, inflection points, and intercepts are correctly placed and the concavity matches.}",
+            "explanation": "Plot the y-intercept.",
+            "workingOut": "\\text{Mark the point } (0, 5) \\text{ on the y-axis.}"
+          },
+          {
+            "explanation": "Plot the turning points.",
+            "workingOut": "\\text{Mark the minimum at } (-1, 0) \\text{ and the maximum at } (3, 32)."
+          },
+          {
+            "explanation": "Plot the point of inflection.",
+            "workingOut": "\\text{Mark the inflection point at } (1, 16)."
+          },
+          {
+            "explanation": "Draw the curve.",
+            "workingOut": "\\text{Draw a smooth continuous curve passing through these points. Ensure the curve is concave up for } x < 1 \\text{ and concave down for } x > 1.",
             "graphData": {
               "jsxGraph": {
                 "width": 350,
@@ -1613,8 +1637,20 @@ export const Y12A_CH3D_QUESTIONS = [
         "a": "Sketch the curve showing the turning points, point(s) of inflection, and y-intercept.",
         "solutionSteps": [
           {
-            "explanation": "Verify your sketch against the graph shown.",
-            "workingOut": "\\text{Ensure the extrema, inflection points, and intercepts are correctly placed and the concavity matches.}",
+            "explanation": "Plot the y-intercept.",
+            "workingOut": "\\text{Mark the point } (0, 20) \\text{ on the y-axis.}"
+          },
+          {
+            "explanation": "Plot the turning points.",
+            "workingOut": "\\text{Mark the maximum at } (-1, 28) \\text{ and the minimum at } (5, -80)."
+          },
+          {
+            "explanation": "Plot the point of inflection.",
+            "workingOut": "\\text{Mark the inflection point at } (2, -26)."
+          },
+          {
+            "explanation": "Draw the curve.",
+            "workingOut": "\\text{Draw a smooth continuous curve passing through these points. Ensure the curve is concave down for } x < 2 \\text{ and concave up for } x > 2.",
             "graphData": {
               "jsxGraph": {
                 "width": 350,
@@ -1850,8 +1886,20 @@ export const Y12A_CH3D_QUESTIONS = [
         "a": "Sketch the curve showing the turning points, point(s) of inflection, and y-intercept.",
         "solutionSteps": [
           {
-            "explanation": "Verify your sketch against the graph shown.",
-            "workingOut": "\\text{Ensure the extrema, inflection points, and intercepts are correctly placed and the concavity matches.}",
+            "explanation": "Plot the y-intercept.",
+            "workingOut": "\\text{Mark the point } (0, 16) \\text{ on the y-axis.}"
+          },
+          {
+            "explanation": "Plot the turning points.",
+            "workingOut": "\\text{Mark the maximum at } (2, 32)."
+          },
+          {
+            "explanation": "Plot the points of inflection.",
+            "workingOut": "\\text{Mark the horizontal inflection at } (0, 16) \\text{ and the other inflection at } (\\frac{4}{3}, \\approx 25.48)."
+          },
+          {
+            "explanation": "Draw the curve.",
+            "workingOut": "\\text{Draw a smooth continuous curve. Start from } -\\infty \\text{, flatten out at } (0, 16) \\text{, rise to a peak at } (2, 32) \\text{, and then fall towards } -\\infty.",
             "graphData": {
               "jsxGraph": {
                 "width": 350,
