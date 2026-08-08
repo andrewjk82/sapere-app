@@ -53,203 +53,427 @@ export const Y12A_CH3D_QUESTIONS = [
   },
   {
     "id": "y12a-3d-q2a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Find \\( f''(x) \\) for \\( f(x) = 2x^3 - 6x^2 \\). By evaluating \\( f''(0) \\), state whether the curve is concave up or concave down at \\( x = 0 \\).",
+    "question": "Find \\( f''(x) \\) for \\( f(x) = 2x^3 - 6x^2 \\). Evaluate \\( f''(0) \\) to determine whether the curve is concave up or concave down at \\( x = 0 \\).",
     "a": "concave down",
     "t": "Concavity and points of inflection",
     "solutionSteps": [
       {
-        "explanation": "Differentiate once to find the first derivative.",
-        "workingOut": "f'(x) = 6x^2 - 12x"
+        "explanation": "Find the first derivative.",
+        "workingOut": "\\begin{aligned} f'(x) &= 2 \\times 3x^{3-1} - 6 \\times 2x^{2-1} \\\\ &= 6x^2 - 12x \\end{aligned}"
       },
       {
-        "explanation": "Differentiate again to find the second derivative.",
-        "workingOut": "f''(x) = 12x - 12"
+        "explanation": "Find the second derivative.",
+        "workingOut": "\\begin{aligned} f''(x) &= 6 \\times 2x^{2-1} - 12 \\\\ &= 12x - 12 \\end{aligned}"
       },
       {
-        "explanation": "Evaluate the second derivative at \\( x = 0 \\).",
-        "workingOut": "f''(0) = 12(0) - 12 = -12"
+        "explanation": "Evaluate \\( f''(x) \\) at \\( x = 0 \\).",
+        "workingOut": "\\begin{aligned} f''(0) &= 12(0) - 12 \\\\ &= -12 \\end{aligned}"
       },
       {
-        "explanation": "Since \\( f''(0) < 0 \\), the curve is concave down at \\( x = 0 \\).",
-        "workingOut": "-12 < 0 \\implies \\text{concave down}"
+        "explanation": "Determine concavity based on the sign of \\( f''(0) \\).",
+        "workingOut": "\\text{Since } f''(0) = -12 < 0 \\text{, the curve is concave down.}"
       }
-    ]
+    ],
+    "opts": [
+      "Concave up because \\( f''(0) = -12 < 0 \\)",
+      "Concave down because \\( f''(0) = 12 > 0 \\)",
+      "Concave up because \\( f''(0) = 12 > 0 \\)",
+      "Concave down because \\( f''(0) = -12 < 0 \\)"
+    ],
+    "options": [
+      {
+        "text": "Concave up because \\( f''(0) = -12 < 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Concave down because \\( f''(0) = 12 > 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Concave up because \\( f''(0) = 12 > 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Concave down because \\( f''(0) = -12 < 0 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
+    "answerStr": "3"
   },
   {
     "id": "y12a-3d-q2b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Find \\( f''(x) \\) for \\( f(x) = x^3 + 3x^2 - 4x + 9 \\). By evaluating \\( f''(0) \\), state whether the curve is concave up or concave down at \\( x = 0 \\).",
+    "question": "Find \\( f''(x) \\) for \\( f(x) = x^3 + 3x^2 - 4x + 9 \\). Evaluate \\( f''(0) \\) to determine whether the curve is concave up or concave down at \\( x = 0 \\).",
     "a": "concave up",
     "t": "Concavity and points of inflection",
     "solutionSteps": [
       {
         "explanation": "Find the first derivative.",
-        "workingOut": "f'(x) = 3x^2 + 6x - 4"
+        "workingOut": "\\begin{aligned} f'(x) &= 3x^2 + 3 \\times 2x - 4 \\\\ &= 3x^2 + 6x - 4 \\end{aligned}"
       },
       {
         "explanation": "Find the second derivative.",
-        "workingOut": "f''(x) = 6x + 6"
+        "workingOut": "\\begin{aligned} f''(x) &= 3 \\times 2x + 6 \\\\ &= 6x + 6 \\end{aligned}"
       },
       {
-        "explanation": "Evaluate at \\( x = 0 \\).",
-        "workingOut": "f''(0) = 6(0) + 6 = 6"
+        "explanation": "Evaluate \\( f''(x) \\) at \\( x = 0 \\).",
+        "workingOut": "\\begin{aligned} f''(0) &= 6(0) + 6 \\\\ &= 6 \\end{aligned}"
       },
       {
-        "explanation": "Since \\( f''(0) > 0 \\), the curve is concave up.",
-        "workingOut": "6 > 0 \\implies \\text{concave up}"
+        "explanation": "Determine concavity based on the sign of \\( f''(0) \\).",
+        "workingOut": "\\text{Since } f''(0) = 6 > 0 \\text{, the curve is concave up.}"
       }
-    ]
+    ],
+    "opts": [
+      "Concave up because \\( f''(0) = -6 < 0 \\)",
+      "Concave down because \\( f''(0) = -6 < 0 \\)",
+      "Concave up because \\( f''(0) = 6 > 0 \\)",
+      "Concave down because \\( f''(0) = 6 > 0 \\)"
+    ],
+    "options": [
+      {
+        "text": "Concave up because \\( f''(0) = -6 < 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Concave down because \\( f''(0) = -6 < 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Concave up because \\( f''(0) = 6 > 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Concave down because \\( f''(0) = 6 > 0 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
+    "answerStr": "2"
   },
   {
     "id": "y12a-3d-q2c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Find \\( f''(x) \\) for \\( f(x) = 2x^4 + 3x^2 - 5 \\). By evaluating \\( f''(0) \\), state whether the curve is concave up or concave down at \\( x = 0 \\).",
+    "question": "Find \\( f''(x) \\) for \\( f(x) = 2x^4 + 3x^2 - 5 \\). Evaluate \\( f''(0) \\) to determine whether the curve is concave up or concave down at \\( x = 0 \\).",
     "a": "concave up",
     "t": "Concavity and points of inflection",
     "solutionSteps": [
       {
         "explanation": "Find the first derivative.",
-        "workingOut": "f'(x) = 8x^3 + 6x"
+        "workingOut": "\\begin{aligned} f'(x) &= 2 \\times 4x^3 + 3 \\times 2x \\\\ &= 8x^3 + 6x \\end{aligned}"
       },
       {
         "explanation": "Find the second derivative.",
-        "workingOut": "f''(x) = 24x^2 + 6"
+        "workingOut": "\\begin{aligned} f''(x) &= 8 \\times 3x^2 + 6 \\\\ &= 24x^2 + 6 \\end{aligned}"
       },
       {
-        "explanation": "Evaluate at \\( x = 0 \\).",
-        "workingOut": "f''(0) = 24(0)^2 + 6 = 6"
+        "explanation": "Evaluate \\( f''(x) \\) at \\( x = 0 \\).",
+        "workingOut": "\\begin{aligned} f''(0) &= 24(0)^2 + 6 \\\\ &= 6 \\end{aligned}"
       },
       {
-        "explanation": "Since \\( f''(0) > 0 \\), the curve is concave up.",
-        "workingOut": "6 > 0 \\implies \\text{concave up}"
+        "explanation": "Determine concavity based on the sign of \\( f''(0) \\).",
+        "workingOut": "\\text{Since } f''(0) = 6 > 0 \\text{, the curve is concave up.}"
       }
-    ]
+    ],
+    "opts": [
+      "Concave up because \\( f''(0) = -5 < 0 \\)",
+      "Concave down because \\( f''(0) = -5 < 0 \\)",
+      "Concave up because \\( f''(0) = 6 > 0 \\)",
+      "Concave down because \\( f''(0) = 6 > 0 \\)"
+    ],
+    "options": [
+      {
+        "text": "Concave up because \\( f''(0) = -5 < 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Concave down because \\( f''(0) = -5 < 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Concave up because \\( f''(0) = 6 > 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Concave down because \\( f''(0) = 6 > 0 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
+    "answerStr": "2"
   },
   {
     "id": "y12a-3d-q2d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Find \\( f''(x) \\) for \\( f(x) = 8x - 5x^2 - 3x^4 \\). By evaluating \\( f''(0) \\), state whether the curve is concave up or concave down at \\( x = 0 \\).",
+    "question": "Find \\( f''(x) \\) for \\( f(x) = 8x - 5x^2 - 3x^4 \\). Evaluate \\( f''(0) \\) to determine whether the curve is concave up or concave down at \\( x = 0 \\).",
     "a": "concave down",
     "t": "Concavity and points of inflection",
     "solutionSteps": [
       {
         "explanation": "Find the first derivative.",
-        "workingOut": "f'(x) = 8 - 10x - 12x^3"
+        "workingOut": "\\begin{aligned} f'(x) &= 8 - 5 \\times 2x - 3 \\times 4x^3 \\\\ &= 8 - 10x - 12x^3 \\end{aligned}"
       },
       {
         "explanation": "Find the second derivative.",
-        "workingOut": "f''(x) = -10 - 36x^2"
+        "workingOut": "\\begin{aligned} f''(x) &= -10 - 12 \\times 3x^2 \\\\ &= -10 - 36x^2 \\end{aligned}"
       },
       {
-        "explanation": "Evaluate at \\( x = 0 \\).",
-        "workingOut": "f''(0) = -10 - 36(0)^2 = -10"
+        "explanation": "Evaluate \\( f''(x) \\) at \\( x = 0 \\).",
+        "workingOut": "\\begin{aligned} f''(0) &= -10 - 36(0)^2 \\\\ &= -10 \\end{aligned}"
       },
       {
-        "explanation": "Since \\( f''(0) < 0 \\), the curve is concave down.",
-        "workingOut": "-10 < 0 \\implies \\text{concave down}"
+        "explanation": "Determine concavity based on the sign of \\( f''(0) \\).",
+        "workingOut": "\\text{Since } f''(0) = -10 < 0 \\text{, the curve is concave down.}"
       }
-    ]
+    ],
+    "opts": [
+      "Concave down because \\( f''(0) = -10 < 0 \\)",
+      "Concave up because \\( f''(0) = 8 > 0 \\)",
+      "Concave down because \\( f''(0) = 8 > 0 \\)",
+      "Concave up because \\( f''(0) = -10 < 0 \\)"
+    ],
+    "options": [
+      {
+        "text": "Concave down because \\( f''(0) = -10 < 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Concave up because \\( f''(0) = 8 > 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Concave down because \\( f''(0) = 8 > 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Concave up because \\( f''(0) = -10 < 0 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "answerStr": "0"
   },
   {
     "id": "y12a-3d-q3a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "By showing that \\( f'(3) = 0 \\), prove that \\( f(x) = x^2 - 6x + 9 \\) has a stationary point at \\( x = 3 \\). Then evaluate \\( f''(3) \\) to determine whether this stationary point is a maximum, minimum, or a horizontal point of inflection.",
+    "question": "Given \\( f'(3) = 0 \\), note that \\( f(x) = x^2 - 6x + 9 \\) has a stationary point at \\( x = 3 \\). Then evaluate \\( f''(3) \\) to determine whether this stationary point is a maximum, minimum, or a horizontal point of inflection.",
     "a": "minimum",
     "t": "Concavity and points of inflection",
     "solutionSteps": [
       {
-        "explanation": "Find \\( f'(x) \\) and verify it equals zero at \\( x = 3 \\).",
-        "workingOut": "f'(x) = 2x - 6 \\implies f'(3) = 2(3) - 6 = 0"
+        "explanation": "Find the first derivative.",
+        "workingOut": "\\begin{aligned} f'(x) &= 2x - 6 \\end{aligned}"
       },
       {
-        "explanation": "Find \\( f''(x) \\) and evaluate it at \\( x = 3 \\).",
-        "workingOut": "f''(x) = 2 \\implies f''(3) = 2"
+        "explanation": "Verify the stationary point by evaluating \\( f'(3) \\).",
+        "workingOut": "\\begin{aligned} f'(3) &= 2(3) - 6 \\\\ &= 6 - 6 \\\\ &= 0 \\end{aligned}"
       },
       {
-        "explanation": "Since \\( f''(3) > 0 \\), the stationary point is a local minimum.",
-        "workingOut": "2 > 0 \\implies \\text{minimum}"
+        "explanation": "Find the second derivative.",
+        "workingOut": "\\begin{aligned} f''(x) &= 2 \\end{aligned}"
+      },
+      {
+        "explanation": "Determine the nature of the stationary point.",
+        "workingOut": "\\text{Since } f''(3) = 2 > 0 \\text{, the point at } x = 3 \\text{ is a local minimum.}"
       }
-    ]
+    ],
+    "opts": [
+      "Maximum because \\( f''(3) = 2 > 0 \\)",
+      "Minimum because \\( f''(3) = 2 > 0 \\)",
+      "Maximum because \\( f''(3) = -2 < 0 \\)",
+      "Minimum because \\( f''(3) = -2 < 0 \\)"
+    ],
+    "options": [
+      {
+        "text": "Maximum because \\( f''(3) = 2 > 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Minimum because \\( f''(3) = 2 > 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Maximum because \\( f''(3) = -2 < 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Minimum because \\( f''(3) = -2 < 0 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
+    "answerStr": "1"
   },
   {
     "id": "y12a-3d-q3b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "By showing that \\( f'(3) = 0 \\), prove that \\( f(x) = 12 + 6x - x^2 \\) has a stationary point at \\( x = 3 \\). Then evaluate \\( f''(3) \\) to determine whether this stationary point is a maximum, minimum, or a horizontal point of inflection.",
+    "question": "Given \\( f'(3) = 0 \\), note that \\( f(x) = 12 + 6x - x^2 \\) has a stationary point at \\( x = 3 \\). Then evaluate \\( f''(3) \\) to determine whether this stationary point is a maximum, minimum, or a horizontal point of inflection.",
     "a": "maximum",
     "t": "Concavity and points of inflection",
     "solutionSteps": [
       {
-        "explanation": "Find \\( f'(x) \\) and evaluate at \\( x = 3 \\).",
-        "workingOut": "f'(x) = 6 - 2x \\implies f'(3) = 6 - 2(3) = 0"
+        "explanation": "Find the first derivative.",
+        "workingOut": "\\begin{aligned} f'(x) &= 6 - 2x \\end{aligned}"
       },
       {
-        "explanation": "Find \\( f''(x) \\) and evaluate at \\( x = 3 \\).",
-        "workingOut": "f''(x) = -2 \\implies f''(3) = -2"
+        "explanation": "Verify the stationary point by evaluating \\( f'(3) \\).",
+        "workingOut": "\\begin{aligned} f'(3) &= 6 - 2(3) \\\\ &= 6 - 6 \\\\ &= 0 \\end{aligned}"
       },
       {
-        "explanation": "Since \\( f''(3) < 0 \\), the stationary point is a local maximum.",
-        "workingOut": "-2 < 0 \\implies \\text{maximum}"
+        "explanation": "Find the second derivative.",
+        "workingOut": "\\begin{aligned} f''(x) &= -2 \\end{aligned}"
+      },
+      {
+        "explanation": "Determine the nature of the stationary point.",
+        "workingOut": "\\text{Since } f''(3) = -2 < 0 \\text{, the point at } x = 3 \\text{ is a local maximum.}"
       }
-    ]
+    ],
+    "opts": [
+      "Maximum because \\( f''(3) = -2 < 0 \\)",
+      "Minimum because \\( f''(3) = 2 > 0 \\)",
+      "Maximum because \\( f''(3) = 2 > 0 \\)",
+      "Minimum because \\( f''(3) = -2 < 0 \\)"
+    ],
+    "options": [
+      {
+        "text": "Maximum because \\( f''(3) = -2 < 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Minimum because \\( f''(3) = 2 > 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Maximum because \\( f''(3) = 2 > 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Minimum because \\( f''(3) = -2 < 0 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "answerStr": "0"
   },
   {
     "id": "y12a-3d-q3c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "By showing that \\( f'(3) = 0 \\), prove that \\( f(x) = x^3 - 27x \\) has a stationary point at \\( x = 3 \\). Then evaluate \\( f''(3) \\) to determine whether this stationary point is a maximum, minimum, or a horizontal point of inflection.",
+    "question": "Given \\( f'(3) = 0 \\), note that \\( f(x) = x^3 - 27x \\) has a stationary point at \\( x = 3 \\). Then evaluate \\( f''(3) \\) to determine whether this stationary point is a maximum, minimum, or a horizontal point of inflection.",
     "a": "minimum",
     "t": "Concavity and points of inflection",
     "solutionSteps": [
       {
         "explanation": "Find the first derivative.",
-        "workingOut": "f'(x) = 3x^2 - 27 \\implies f'(3) = 3(9) - 27 = 0"
+        "workingOut": "\\begin{aligned} f'(x) &= 3x^2 - 27 \\end{aligned}"
+      },
+      {
+        "explanation": "Verify the stationary point by evaluating \\( f'(3) \\).",
+        "workingOut": "\\begin{aligned} f'(3) &= 3(3)^2 - 27 \\\\ &= 3(9) - 27 \\\\ &= 27 - 27 \\\\ &= 0 \\end{aligned}"
       },
       {
         "explanation": "Find the second derivative.",
-        "workingOut": "f''(x) = 6x \\implies f''(3) = 6(3) = 18"
+        "workingOut": "\\begin{aligned} f''(x) &= 6x \\end{aligned}"
       },
       {
-        "explanation": "Since \\( f''(3) > 0 \\), the stationary point is a minimum.",
-        "workingOut": "18 > 0 \\implies \\text{minimum}"
+        "explanation": "Determine the nature of the stationary point.",
+        "workingOut": "\\begin{aligned} f''(3) &= 6(3) = 18 > 0 \\end{aligned} \\\\ \\text{Since } f''(3) > 0 \\text{, the point at } x = 3 \\text{ is a local minimum.}"
       }
-    ]
+    ],
+    "opts": [
+      "Minimum because \\( f''(3) = -18 < 0 \\)",
+      "Minimum because \\( f''(3) = 18 > 0 \\)",
+      "Maximum because \\( f''(3) = -18 < 0 \\)",
+      "Maximum because \\( f''(3) = 18 > 0 \\)"
+    ],
+    "options": [
+      {
+        "text": "Minimum because \\( f''(3) = -18 < 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Minimum because \\( f''(3) = 18 > 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Maximum because \\( f''(3) = -18 < 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Maximum because \\( f''(3) = 18 > 0 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
+    "answerStr": "1"
   },
   {
     "id": "y12a-3d-q3d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "By showing that \\( f'(3) = 0 \\), prove that \\( f(x) = x^3 - 3x^2 - 9x + 5 \\) has a stationary point at \\( x = 3 \\). Then evaluate \\( f''(3) \\) to determine whether this stationary point is a maximum, minimum, or a horizontal point of inflection.",
+    "question": "Given \\( f'(3) = 0 \\), note that \\( f(x) = x^3 - 3x^2 - 9x + 5 \\) has a stationary point at \\( x = 3 \\). Then evaluate \\( f''(3) \\) to determine whether this stationary point is a maximum, minimum, or a horizontal point of inflection.",
     "a": "minimum",
     "t": "Concavity and points of inflection",
     "solutionSteps": [
       {
         "explanation": "Find the first derivative.",
-        "workingOut": "f'(x) = 3x^2 - 6x - 9 \\implies f'(3) = 3(9) - 6(3) - 9 = 0"
+        "workingOut": "\\begin{aligned} f'(x) &= 3x^2 - 6x - 9 \\end{aligned}"
+      },
+      {
+        "explanation": "Verify the stationary point by evaluating \\( f'(3) \\).",
+        "workingOut": "\\begin{aligned} f'(3) &= 3(3)^2 - 6(3) - 9 \\\\ &= 27 - 18 - 9 \\\\ &= 0 \\end{aligned}"
       },
       {
         "explanation": "Find the second derivative.",
-        "workingOut": "f''(x) = 6x - 6 \\implies f''(3) = 6(3) - 6 = 12"
+        "workingOut": "\\begin{aligned} f''(x) &= 6x - 6 \\end{aligned}"
       },
       {
-        "explanation": "Since \\( f''(3) > 0 \\), the stationary point is a minimum.",
-        "workingOut": "12 > 0 \\implies \\text{minimum}"
+        "explanation": "Determine the nature of the stationary point.",
+        "workingOut": "\\begin{aligned} f''(3) &= 6(3) - 6 = 18 - 6 = 12 > 0 \\end{aligned} \\\\ \\text{Since } f''(3) > 0 \\text{, the point at } x = 3 \\text{ is a local minimum.}"
       }
-    ]
+    ],
+    "opts": [
+      "Maximum because \\( f''(3) = -12 < 0 \\)",
+      "Minimum because \\( f''(3) = -12 < 0 \\)",
+      "Minimum because \\( f''(3) = 12 > 0 \\)",
+      "Maximum because \\( f''(3) = 12 > 0 \\)"
+    ],
+    "options": [
+      {
+        "text": "Maximum because \\( f''(3) = -12 < 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Minimum because \\( f''(3) = -12 < 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Minimum because \\( f''(3) = 12 > 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Maximum because \\( f''(3) = 12 > 0 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
+    "answerStr": "2"
   },
   {
     "id": "y12a-3d-q4",
@@ -261,15 +485,95 @@ export const Y12A_CH3D_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y12a-3d-q4a",
-        "type": "teacher_review",
+        "type": "multiple_choice",
         "question": "a) Explain why \\( y = x^2 - 5x + 9 \\) is concave up for all values of \\( x \\).",
-        "a": "The second derivative is \\( d^2y/dx^2 = 2 \\). Since this is positive and constant for all \\( x \\), the curve is concave up everywhere."
+        "a": "The second derivative is \\( d^2y/dx^2 = 2 \\). Since this is positive and constant for all \\( x \\), the curve is concave up everywhere.",
+        "opts": [
+          "\\( y'' = 2x - 5 \\), which is positive for \\( x > 2.5 \\)",
+          "\\( y'' = 2x \\), which is positive for \\( x > 0 \\)",
+          "\\( y'' = 2 \\), which is always positive",
+          "\\( y'' = -5 \\), which is always negative"
+        ],
+        "solutionSteps": [
+          {
+            "explanation": "Find the first derivative.",
+            "workingOut": "\\begin{aligned} y' &= 2x - 5 \\end{aligned}"
+          },
+          {
+            "explanation": "Find the second derivative.",
+            "workingOut": "\\begin{aligned} y'' &= 2 \\end{aligned}"
+          },
+          {
+            "explanation": "Determine concavity.",
+            "workingOut": "\\text{Since } y'' = 2 > 0 \\text{ for all } x \\text{, the curve is always concave up.}"
+          }
+        ],
+        "options": [
+          {
+            "text": "\\( y'' = 2x - 5 \\), which is positive for \\( x > 2.5 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( y'' = 2x \\), which is positive for \\( x > 0 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( y'' = 2 \\), which is always positive",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( y'' = -5 \\), which is always negative",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "2",
+        "answerStr": "2"
       },
       {
         "id": "y12a-3d-q4b",
-        "type": "teacher_review",
+        "type": "multiple_choice",
         "question": "b) Explain why \\( y = -4x^2 + 3x - 8 \\) is concave down for all values of \\( x \\).",
-        "a": "The second derivative is \\( d^2y/dx^2 = -8 \\). Since this is negative and constant for all \\( x \\), the curve is concave down everywhere."
+        "a": "The second derivative is \\( d^2y/dx^2 = -8 \\). Since this is negative and constant for all \\( x \\), the curve is concave down everywhere.",
+        "opts": [
+          "\\( y'' = -8x + 3 \\), which is negative for \\( x > \\frac{3}{8} \\)",
+          "\\( y'' = -8x \\), which is negative for \\( x > 0 \\)",
+          "\\( y'' = 3 \\), which is always positive",
+          "\\( y'' = -8 \\), which is always negative"
+        ],
+        "solutionSteps": [
+          {
+            "explanation": "Find the first derivative.",
+            "workingOut": "\\begin{aligned} y' &= -8x + 3 \\end{aligned}"
+          },
+          {
+            "explanation": "Find the second derivative.",
+            "workingOut": "\\begin{aligned} y'' &= -8 \\end{aligned}"
+          },
+          {
+            "explanation": "Determine concavity.",
+            "workingOut": "\\text{Since } y'' = -8 < 0 \\text{ for all } x \\text{, the curve is always concave down.}"
+          }
+        ],
+        "options": [
+          {
+            "text": "\\( y'' = -8x + 3 \\), which is negative for \\( x > \\frac{3}{8} \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( y'' = -8x \\), which is negative for \\( x > 0 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( y'' = 3 \\), which is always positive",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( y'' = -8 \\), which is always negative",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "3",
+        "answerStr": "3"
       }
     ],
     "solutionSteps": [
@@ -293,21 +597,121 @@ export const Y12A_CH3D_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y12a-3d-q5a",
-        "type": "teacher_review",
+        "type": "multiple_choice",
         "question": "a) Find the second derivative \\( \\frac{d^2y}{dx^2} \\) of \\( y = x^3 - 6x^2 - 9x + 4 \\).",
-        "a": "dy/dx = 3x^2 - 12x - 9, so d^2y/dx^2 = 6x - 12."
+        "a": "dy/dx = 3x^2 - 12x - 9, so d^2y/dx^2 = 6x - 12.",
+        "opts": [
+          "\\( 6x + 12 \\)",
+          "\\( 6x - 12 \\)",
+          "\\( 3x^2 - 12x - 9 \\)",
+          "\\( 6x - 9 \\)"
+        ],
+        "solutionSteps": [
+          {
+            "explanation": "Find the first derivative.",
+            "workingOut": "\\begin{aligned} \\frac{dy}{dx} &= 3x^2 - 12x - 9 \\end{aligned}"
+          },
+          {
+            "explanation": "Find the second derivative.",
+            "workingOut": "\\begin{aligned} \\frac{d^2y}{dx^2} &= 6x - 12 \\end{aligned}"
+          }
+        ],
+        "options": [
+          {
+            "text": "\\( 6x + 12 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( 6x - 12 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( 3x^2 - 12x - 9 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( 6x - 9 \\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "1",
+        "answerStr": "1"
       },
       {
         "id": "y12a-3d-q5bi",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "b) i) Find the values of \\( x \\) for which the curve is concave up.",
-        "a": "x>2"
+        "a": "x>2",
+        "opts": [
+          "\\( x < -2 \\)",
+          "\\( x < 2 \\)",
+          "\\( x > -2 \\)",
+          "\\( x > 2 \\)"
+        ],
+        "solutionSteps": [
+          {
+            "explanation": "The curve is concave up when the second derivative is positive.",
+            "workingOut": "\\begin{aligned} \\frac{d^2y}{dx^2} &> 0 \\\\ 6x - 12 &> 0 \\\\ 6x &> 12 \\\\ x &> 2 \\end{aligned}"
+          }
+        ],
+        "options": [
+          {
+            "text": "\\( x < -2 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( x < 2 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( x > -2 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( x > 2 \\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "3",
+        "answerStr": "3"
       },
       {
         "id": "y12a-3d-q5bii",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "b) ii) Find the values of \\( x \\) for which the curve is concave down.",
-        "a": "x<2"
+        "a": "x<2",
+        "opts": [
+          "\\( x < -2 \\)",
+          "\\( x < 2 \\)",
+          "\\( x > -2 \\)",
+          "\\( x > 2 \\)"
+        ],
+        "solutionSteps": [
+          {
+            "explanation": "The curve is concave down when the second derivative is negative.",
+            "workingOut": "\\begin{aligned} \\frac{d^2y}{dx^2} &< 0 \\\\ 6x - 12 &< 0 \\\\ 6x &< 12 \\\\ x &< 2 \\end{aligned}"
+          }
+        ],
+        "options": [
+          {
+            "text": "\\( x < -2 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( x < 2 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( x > -2 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( x > 2 \\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "1",
+        "answerStr": "1"
       }
     ],
     "solutionSteps": [
@@ -339,21 +743,121 @@ export const Y12A_CH3D_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y12a-3d-q6a",
-        "type": "teacher_review",
+        "type": "multiple_choice",
         "question": "a) Find the second derivative \\( \\frac{d^2y}{dx^2} \\) of \\( y = 2x^3 - 3x^2 - 12x + 7 \\).",
-        "a": "dy/dx = 6x^2 - 6x - 12, so d^2y/dx^2 = 12x - 6."
+        "a": "dy/dx = 6x^2 - 6x - 12, so d^2y/dx^2 = 12x - 6.",
+        "opts": [
+          "\\( 12x - 6 \\)",
+          "\\( 6x^2 - 6x - 12 \\)",
+          "\\( 12x - 12 \\)",
+          "\\( 12x + 6 \\)"
+        ],
+        "solutionSteps": [
+          {
+            "explanation": "Find the first derivative.",
+            "workingOut": "\\begin{aligned} \\frac{dy}{dx} &= 6x^2 - 6x - 12 \\end{aligned}"
+          },
+          {
+            "explanation": "Find the second derivative.",
+            "workingOut": "\\begin{aligned} \\frac{d^2y}{dx^2} &= 12x - 6 \\end{aligned}"
+          }
+        ],
+        "options": [
+          {
+            "text": "\\( 12x - 6 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( 6x^2 - 6x - 12 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( 12x - 12 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( 12x + 6 \\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "0",
+        "answerStr": "0"
       },
       {
         "id": "y12a-3d-q6bi",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "b) i) Find the values of \\( x \\) for which the curve is concave up.",
-        "a": "x>0.5"
+        "a": "x>0.5",
+        "opts": [
+          "\\( x > 2 \\)",
+          "\\( x < -0.5 \\)",
+          "\\( x < 0.5 \\)",
+          "\\( x > 0.5 \\)"
+        ],
+        "solutionSteps": [
+          {
+            "explanation": "The curve is concave up when the second derivative is positive.",
+            "workingOut": "\\begin{aligned} \\frac{d^2y}{dx^2} &> 0 \\\\ 12x - 6 &> 0 \\\\ 12x &> 6 \\\\ x &> 0.5 \\end{aligned}"
+          }
+        ],
+        "options": [
+          {
+            "text": "\\( x > 2 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( x < -0.5 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( x < 0.5 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( x > 0.5 \\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "3",
+        "answerStr": "3"
       },
       {
         "id": "y12a-3d-q6bii",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "question": "b) ii) Find the values of \\( x \\) for which the curve is concave down.",
-        "a": "x<0.5"
+        "a": "x<0.5",
+        "opts": [
+          "\\( x < 0.5 \\)",
+          "\\( x > 0.5 \\)",
+          "\\( x > -0.5 \\)",
+          "\\( x < 2 \\)"
+        ],
+        "solutionSteps": [
+          {
+            "explanation": "The curve is concave down when the second derivative is negative.",
+            "workingOut": "\\begin{aligned} \\frac{d^2y}{dx^2} &< 0 \\\\ 12x - 6 &< 0 \\\\ 12x &< 6 \\\\ x &< 0.5 \\end{aligned}"
+          }
+        ],
+        "options": [
+          {
+            "text": "\\( x < 0.5 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( x > 0.5 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( x > -0.5 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( x < 2 \\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "0",
+        "answerStr": "0"
       }
     ],
     "solutionSteps": [
@@ -377,7 +881,7 @@ export const Y12A_CH3D_QUESTIONS = [
   },
   {
     "id": "y12a-3d-q7",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "A function has second derivative \\( y'' = 5x^2(x - 4)^3(x + 1) \\). Determine the \\( x \\)-coordinates of the points of inflection on the graph of the function. If there are multiple values, list them in ascending order, separated by a comma (e.g. '-1,4').",
@@ -385,22 +889,48 @@ export const Y12A_CH3D_QUESTIONS = [
     "t": "Concavity and points of inflection",
     "solutionSteps": [
       {
-        "explanation": "Points of inflection require that \\( y'' = 0 \\) and that the sign of \\( y'' \\) changes across the point.",
-        "workingOut": "5x^2(x-4)^3(x+1) = 0 \\implies x = 0, 4, \\, -1"
+        "explanation": "Set the second derivative to zero to find potential inflection points.",
+        "workingOut": "\\begin{aligned} y'' &= 0 \\\\ 5x^2(x - 4)^3(x + 1) &= 0 \\\\ x &= 0, 4, -1 \\end{aligned}"
       },
       {
-        "explanation": "Analyze the sign change of \\( y'' \\) around each root. At \\( x = 0 \\), the factor \\( x^2 \\) has an even power, so \\( y'' \\) does not change sign.",
+        "explanation": "Analyze the sign change of \\( y'' \\) around each root. At \\( x = 0 \\), the factor \\( x^2 \\) has an even power.",
         "workingOut": "\\text{No sign change at } x = 0 \\implies \\text{not an inflection point}"
       },
       {
-        "explanation": "At \\( x = -1 \\) and \\( x = 4 \\), the corresponding factors \\( (x+1) \\) and \\( (x-4)^3 \\) have odd powers, meaning \\( y'' \\) changes sign across these values.",
+        "explanation": "At \\( x = -1 \\) and \\( x = 4 \\), the factors \\( (x+1) \\) and \\( (x-4)^3 \\) have odd powers.",
         "workingOut": "\\text{Sign changes at } x = -1 \\text{ and } x = 4"
       },
       {
         "explanation": "State the x-coordinates of the inflection points.",
         "workingOut": "x = -1, 4"
       }
-    ]
+    ],
+    "opts": [
+      "\\( 0, 4 \\)",
+      "\\( -1, 4 \\)",
+      "\\( -1, 0 \\)",
+      "\\( -1, 0, 4 \\)"
+    ],
+    "options": [
+      {
+        "text": "\\( 0, 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -1, 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -1, 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -1, 0, 4 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
+    "answerStr": "1"
   },
   {
     "id": "y12a-3d-q8",
