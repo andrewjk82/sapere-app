@@ -949,62 +949,128 @@ export const Y12A_CH3B_QUESTIONS = [
   },
   {
     "id": "y12a-3b-q10",
-    "type": "teacher_review",
+    "topicId": "y12a-3B",
+    "topicCode": "3B",
+    "topicTitle": "Stationary points and turning points",
+    "chapterId": "exam:y12ach3b",
+    "chapterTitle": "Chapter 3B",
+    "origin": "seed",
+    "source": "Year 12a Chapter 3B Q10",
+    "isActive": true,
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "timeLimit": 120,
-    "question": "For the function \\( y = x^2(x - 6)^2 \\), complete the following steps.",
-    "t": "Stationary points and turning points",
-    "subQuestions": [
+    "timeLimit": 180,
+    "question": "For the function \\( y = x^2(x - 6)^2 \\), which of the following correctly describes its stationary points?",
+    "opts": [
+      "Local minima at \\((0, 0)\\) and \\((6, 0)\\), local maximum at \\((3, 81)\\)",
+      "Local maxima at \\((0, 0)\\) and \\((6, 0)\\), local minimum at \\((3, -81)\\)",
+      "Local minimum at \\((0, 0)\\), local maximum at \\((6, 0)\\)",
+      "Local minimum at \\((3, 81)\\) only"
+    ],
+    "options": [
       {
-        "id": "y12a-3b-q10a",
-        "type": "teacher_review",
-        "question": "a) Use the product rule to show that if \\( y = x^2(x - 6)^2 \\), then \\( \\frac{dy}{dx} = 4x(x - 6)(x - 3) \\).",
-        "a": "Differentiate: \\( y' = 2x(x-6)^2 + x^2 \\cdot 2(x-6) = 2x(x-6)(x-6+x) = 4x(x-6)(x-3) \\)."
+        "text": "Local minima at \\((0, 0)\\) and \\((6, 0)\\), local maximum at \\((3, 81)\\)",
+        "imageUrl": ""
       },
       {
-        "id": "y12a-3b-q10b",
-        "type": "teacher_review",
-        "question": "b) Find any stationary points and use a table of gradients to classify them.",
-        "a": "Stationary points at \\( (0, 0) \\) (minimum), \\( (3, 81) \\) (maximum), and \\( (6, 0) \\) (minimum)."
+        "text": "Local maxima at \\((0, 0)\\) and \\((6, 0)\\), local minimum at \\((3, -81)\\)",
+        "imageUrl": ""
       },
       {
-        "id": "y12a-3b-q10c",
-        "type": "teacher_review",
-        "question": "c) Sketch the graph of the function, indicating all important features.",
-        "a": "Sketch W-shaped quartic showing minima at (0,0) and (6,0), and maximum at (3,81)."
+        "text": "Local minimum at \\((0, 0)\\), local maximum at \\((6, 0)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Local minimum at \\((3, 81)\\) only",
+        "imageUrl": ""
       }
     ],
+    "answerStr": "0",
+    "answer": "0",
     "solutionSteps": [
       {
-        "explanation": "Differentiate \\( y = x^2(x - 6)^2 \\) using product rule.",
-        "workingOut": "\\begin{aligned} \\frac{dy}{dx} &= 2x(x-6)^2 + x^2 \\cdot 2(x-6) \\\\ &= 2x(x-6) [ (x-6) + x ] \\\\ &= 4x(x-6)(x-3) \\end{aligned}"
+        "explanation": "First, differentiate \\( y = x^2(x - 6)^2 \\) using the product rule to find \\( \\frac{dy}{dx} \\).",
+        "workingOut": "\\begin{aligned} \\text{Let } u &= x^2, \\quad v = (x-6)^2 \\\\ \\frac{du}{dx} &= 2x, \\quad \\frac{dv}{dx} = 2(x-6) \\\\ \\frac{dy}{dx} &= u \\frac{dv}{dx} + v \\frac{du}{dx} \\\\ &= x^2 \\cdot 2(x-6) + (x-6)^2 \\cdot 2x \\\\ &= 2x(x-6)[x + (x-6)] \\\\ &= 2x(x-6)(2x-6) \\\\ &= 4x(x-6)(x-3) \\end{aligned}"
       },
       {
-        "explanation": "Set derivative to zero to identify critical values.",
-        "workingOut": "4x(x-6)(x-3) = 0 \\implies x = 0, 3, 6"
+        "explanation": "Set the first derivative to zero to find the \\(x\\)-coordinates of the stationary points.",
+        "workingOut": "4x(x-6)(x-3) = 0 \\implies x = 0,\\ x = 3,\\ \\text{or } x = 6"
       },
       {
-        "explanation": "Determine critical coordinates.",
-        "workingOut": "\\begin{aligned} y(0) &= 0^2(-6)^2 = 0 \\implies (0,0) \\\\ y(3) &= 3^2(-3)^2 = 81 \\implies (3,81) \\\\ y(6) &= 6^2(0)^2 = 0 \\implies (6,0) \\end{aligned}"
+        "explanation": "Substitute these \\(x\\)-values back into the original function to find the corresponding \\(y\\)-coordinates.",
+        "workingOut": "\\begin{aligned} y(0) &= 0^2(0-6)^2 = 0 \\implies (0, 0) \\\\ y(3) &= 3^2(3-6)^2 = 9(-3)^2 = 81 \\implies (3, 81) \\\\ y(6) &= 6^2(6-6)^2 = 0 \\implies (6, 0) \\end{aligned}"
       },
       {
-        "explanation": "Analyze signs of the gradient in adjacent intervals.",
-        "workingOut": "\\(\\begin{array}{c|ccccccc} x & -1 & 0 & 1 & 3 & 4 & 6 & 7 \\\\ \\hline dy/dx & -28 & 0 & 20 & 0 & -16 & 0 & 112 \\\\ \\text{Slope} & \\backslash & - & / & - & \\backslash & - & / \\end{array}\\)"
+        "explanation": "Use the second derivative (or a gradient table) to classify the nature of each stationary point.",
+        "workingOut": "\\text{We can observe the sign of } \\frac{dy}{dx} = 4x(x-6)(x-3):\n\n\\begin{array}{c|c|c|c|c|c|c|c}\nx & -1 & 0 & 1 & 3 & 4 & 6 & 7 \\\\ \\hline\n\\frac{dy}{dx} & -112 & 0 & 40 & 0 & -32 & 0 & 112 \\\\\n\\text{Slope} & \\backslash & - & / & - & \\backslash & - & /\n\\end{array}\n\n\\text{From the table, we see:}\n\\text{At } x=0: \\text{ Slope changes from negative to positive } \\rightarrow \\text{Local minimum at } (0,0)\n\\text{At } x=3: \\text{ Slope changes from positive to negative } \\rightarrow \\text{Local maximum at } (3,81)\n\\text{At } x=6: \\text{ Slope changes from negative to positive } \\rightarrow \\text{Local minimum at } (6,0)"
+      },
+      {
+        "explanation": "Here is the sketch of the function indicating the stationary points.",
+        "workingOut": "Plot the local minima at \\((0,0)\\) and \\((6,0)\\), and the local maximum at \\((3,81)\\).",
+        "graphData": {
+          "jsxGraph": {
+            "width": 350,
+            "height": 350,
+            "boundingbox": [
+              -2,
+              100,
+              8,
+              -20
+            ],
+            "showGrid": true,
+            "showAxisLabels": true,
+            "script": "board.suspendUpdate();\nboard.create('functiongraph', [function(x){ return Math.pow(x,2)*Math.pow(x-6,2); }], {strokeColor: 'blue', strokeWidth: 2});\nboard.unsuspendUpdate();",
+            "elements": [
+              {
+                "type": "point",
+                "coords": [
+                  0,
+                  0
+                ],
+                "name": "(0, 0)",
+                "color": "blue",
+                "label": {
+                  "offset": [
+                    -15,
+                    -15
+                  ]
+                }
+              },
+              {
+                "type": "point",
+                "coords": [
+                  3,
+                  81
+                ],
+                "name": "(3, 81)",
+                "color": "blue",
+                "label": {
+                  "offset": [
+                    -20,
+                    15
+                  ]
+                }
+              },
+              {
+                "type": "point",
+                "coords": [
+                  6,
+                  0
+                ],
+                "name": "(6, 0)",
+                "color": "blue",
+                "label": {
+                  "offset": [
+                    10,
+                    -15
+                  ]
+                }
+              }
+            ]
+          }
+        }
       }
-    ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 350,
-        "height": 250,
-        "boundingbox": [
-          -2,
-          105,
-          8,
-          -25
-        ],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.5,0], [7.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-20], [0,95]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [7.3, -5, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 90, 'y'], {fontSize: 14});\nvar f = function(x) { return x*x*(x-6)*(x-6); };\nboard.create('functiongraph', [f, -0.6, 6.6], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 0], {name: 'Min(0,0)', size: 3, color: 'red', label: {autoPosition: false, offset: [-15, -15]}});\nboard.create('point', [3, 81], {name: 'Max(3,81)', size: 3, color: 'red', label: {autoPosition: false, offset: [-20, 15]}});\nboard.create('point', [6, 0], {name: 'Min(6,0)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, -15]}});\nboard.unsuspendUpdate();"
-      }
-    }
+    ]
   },
   {
     "id": "y12a-3b-q11",
