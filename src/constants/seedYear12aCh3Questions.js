@@ -3502,7 +3502,7 @@ export const Y12A_CH3_QUESTIONS = [
           4,
           -4
         ],
-        "script": "board.suspendUpdate();\nboard.create('line', [[-3, -3], [3, 3]], {strokeColor: 'blue', strokeWidth: 2});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('functiongraph', [function(x){ return x; }], {strokeColor: 'blue', strokeWidth: 2});\nboard.unsuspendUpdate();"
       }
     }
   },
@@ -3530,7 +3530,7 @@ export const Y12A_CH3_QUESTIONS = [
           4,
           -4
         ],
-        "script": "board.suspendUpdate();\nboard.create('line', [[-3, 3], [3, -3]], {strokeColor: 'blue', strokeWidth: 2});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('functiongraph', [function(x){ return -x; }], {strokeColor: 'blue', strokeWidth: 2});\nboard.unsuspendUpdate();"
       }
     }
   },
