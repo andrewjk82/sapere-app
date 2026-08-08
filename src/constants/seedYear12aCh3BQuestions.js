@@ -470,10 +470,10 @@ export const Y12A_CH3B_QUESTIONS = [
   },
   {
     "id": "y12a-3b-q3a",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Find the derivative of \\( y = x^2 - 6x + 5 \\) and complete a table of slopes to determine the nature of the stationary point. Sketch the graph, indicating all important features.",
+    "question": "Find the derivative of \\( y = x^2 - 6x + 5 \\) and determine the coordinates and nature of the stationary point.",
     "a": "Minimum turning point at (3, -4).",
     "t": "Stationary points and turning points",
     "solutionSteps": [
@@ -510,14 +510,40 @@ export const Y12A_CH3B_QUESTIONS = [
         ],
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-2,0], [7.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-5.5], [0,9.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [7.3, -0.5, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 9.2, 'y'], {fontSize: 14});\nvar f = function(x) { return x*x - 6*x + 5; };\nboard.create('functiongraph', [f, -0.8, 6.8], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [3, -4], {name: 'V(3,-4)', size: 3, color: 'red', label: {autoPosition: false, offset: [-15, -15]}});\nboard.create('point', [1, 0], {name: '1', size: 2, color: 'black', label: {autoPosition: false, offset: [-5, 10]}});\nboard.create('point', [5, 0], {name: '5', size: 2, color: 'black', label: {autoPosition: false, offset: [-5, 10]}});\nboard.create('point', [0, 5], {name: '5', size: 2, color: 'black', label: {autoPosition: false, offset: [-15, 0]}});\nboard.create('line', [[3, -6], [3, 10]], {dash: 2, strokeColor: 'gray', strokeWidth: 1});\nboard.unsuspendUpdate();"
       }
-    }
+    },
+    "opts": [
+      "Maximum at \\( (-3, 32) \\)",
+      "Minimum at \\( (-3, 32) \\)",
+      "Maximum at \\( (3, -4) \\)",
+      "Minimum at \\( (3, -4) \\)"
+    ],
+    "options": [
+      {
+        "text": "Maximum at \\( (-3, 32) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Minimum at \\( (-3, 32) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Maximum at \\( (3, -4) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Minimum at \\( (3, -4) \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
+    "answerStr": "3"
   },
   {
     "id": "y12a-3b-q3b",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Find the derivative of \\( y = 8 + 2x - x^2 \\) and complete a table of slopes to determine the nature of the stationary point. Sketch the graph, indicating all important features.",
+    "question": "Find the derivative of \\( y = 8 + 2x - x^2 \\) and determine the coordinates and nature of the stationary point.",
     "a": "Maximum turning point at (1, 9).",
     "t": "Stationary points and turning points",
     "solutionSteps": [
@@ -554,14 +580,40 @@ export const Y12A_CH3B_QUESTIONS = [
         ],
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-3.5,0], [5.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3.5], [0,11.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [5.3, -0.5, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 11.2, 'y'], {fontSize: 14});\nvar f = function(x) { return 8 + 2*x - x*x; };\nboard.create('functiongraph', [f, -2.8, 4.8], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [1, 9], {name: 'V(1,9)', size: 3, color: 'red', label: {autoPosition: false, offset: [-15, 15]}});\nboard.create('point', [-2, 0], {name: '-2', size: 2, color: 'black', label: {autoPosition: false, offset: [-5, -10]}});\nboard.create('point', [4, 0], {name: '4', size: 2, color: 'black', label: {autoPosition: false, offset: [-5, -10]}});\nboard.create('point', [0, 8], {name: '8', size: 2, color: 'black', label: {autoPosition: false, offset: [-15, 0]}});\nboard.create('line', [[1, -4], [1, 12]], {dash: 2, strokeColor: 'gray', strokeWidth: 1});\nboard.unsuspendUpdate();"
       }
-    }
+    },
+    "opts": [
+      "Minimum at \\( (1, 9) \\)",
+      "Minimum at \\( (-1, 5) \\)",
+      "Maximum at \\( (-1, 5) \\)",
+      "Maximum at \\( (1, 9) \\)"
+    ],
+    "options": [
+      {
+        "text": "Minimum at \\( (1, 9) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Minimum at \\( (-1, 5) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Maximum at \\( (-1, 5) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Maximum at \\( (1, 9) \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
+    "answerStr": "3"
   },
   {
     "id": "y12a-3b-q3c",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Find the derivative of \\( y = x^2 + 8x + 12 \\) and complete a table of slopes to determine the nature of the stationary point. Sketch the graph, indicating all important features.",
+    "question": "Find the derivative of \\( y = x^2 + 8x + 12 \\) and determine the coordinates and nature of the stationary point.",
     "a": "Minimum turning point at (-4, -4).",
     "t": "Stationary points and turning points",
     "solutionSteps": [
@@ -598,14 +650,40 @@ export const Y12A_CH3B_QUESTIONS = [
         ],
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-7.5,0], [1.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-5.5], [0,14.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [1.3, -0.5, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 14.2, 'y'], {fontSize: 14});\nvar f = function(x) { return x*x + 8*x + 12; };\nboard.create('functiongraph', [f, -7.2, 0.5], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [-4, -4], {name: 'V(-4,-4)', size: 3, color: 'red', label: {autoPosition: false, offset: [-15, -15]}});\nboard.create('point', [-6, 0], {name: '-6', size: 2, color: 'black', label: {autoPosition: false, offset: [-5, 10]}});\nboard.create('point', [-2, 0], {name: '-2', size: 2, color: 'black', label: {autoPosition: false, offset: [-5, 10]}});\nboard.create('point', [0, 12], {name: '12', size: 2, color: 'black', label: {autoPosition: false, offset: [-20, 0]}});\nboard.create('line', [[-4, -6], [-4, 15]], {dash: 2, strokeColor: 'gray', strokeWidth: 1});\nboard.unsuspendUpdate();"
       }
-    }
+    },
+    "opts": [
+      "Minimum at \\( (-4, -4) \\)",
+      "Maximum at \\( (-4, -4) \\)",
+      "Minimum at \\( (4, 60) \\)",
+      "Maximum at \\( (4, 60) \\)"
+    ],
+    "options": [
+      {
+        "text": "Minimum at \\( (-4, -4) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Maximum at \\( (-4, -4) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Minimum at \\( (4, 60) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Maximum at \\( (4, 60) \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "answerStr": "0"
   },
   {
     "id": "y12a-3b-q3d",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Find the derivative of \\( y = 12 - 4x - x^2 \\) and complete a table of slopes to determine the nature of the stationary point. Sketch the graph, indicating all important features.",
+    "question": "Find the derivative of \\( y = 12 - 4x - x^2 \\) and determine the coordinates and nature of the stationary point.",
     "a": "Maximum turning point at (-2, 16).",
     "t": "Stationary points and turning points",
     "solutionSteps": [
@@ -642,7 +720,33 @@ export const Y12A_CH3B_QUESTIONS = [
         ],
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-7.5,0], [3.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-5.5], [0,19.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [3.3, -0.5, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 19.2, 'y'], {fontSize: 14});\nvar f = function(x) { return 12 - 4*x - x*x; };\nboard.create('functiongraph', [f, -6.8, 2.8], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [-2, 16], {name: 'V(-2,16)', size: 3, color: 'red', label: {autoPosition: false, offset: [-15, 15]}});\nboard.create('point', [-6, 0], {name: '-6', size: 2, color: 'black', label: {autoPosition: false, offset: [-5, -10]}});\nboard.create('point', [2, 0], {name: '2', size: 2, color: 'black', label: {autoPosition: false, offset: [-5, -10]}});\nboard.create('point', [0, 12], {name: '12', size: 2, color: 'black', label: {autoPosition: false, offset: [-20, 0]}});\nboard.create('line', [[-2, -6], [-2, 20]], {dash: 2, strokeColor: 'gray', strokeWidth: 1});\nboard.unsuspendUpdate();"
       }
-    }
+    },
+    "opts": [
+      "Minimum at \\( (2, 0) \\)",
+      "Minimum at \\( (-2, 16) \\)",
+      "Maximum at \\( (-2, 16) \\)",
+      "Maximum at \\( (2, 0) \\)"
+    ],
+    "options": [
+      {
+        "text": "Minimum at \\( (2, 0) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Minimum at \\( (-2, 16) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Maximum at \\( (-2, 16) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Maximum at \\( (2, 0) \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
+    "answerStr": "2"
   },
   {
     "id": "y12a-3b-q4a",
