@@ -1727,7 +1727,7 @@ export const Y12A_CH3B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "For the curve described in part a, find the value of \\( b \\).",
+    "question": "The line \\( y = 3x \\) is the tangent to the curve \\( y = ax^2 + bx + c \\) at the origin, and there is a maximum turning point at \\( x = 2 \\). Find the value of \\( b \\).",
     "t": "Stationary points and turning points",
     "solutionSteps": [
       {
@@ -1744,20 +1744,12 @@ export const Y12A_CH3B_QUESTIONS = [
       }
     ],
     "opts": [
-      "\\( -3 \\)",
-      "\\( 0 \\)",
       "\\( 3 \\)",
-      "\\( 2 \\)"
+      "\\( 2 \\)",
+      "\\( 0 \\)",
+      "\\( -3 \\)"
     ],
     "options": [
-      {
-        "text": "\\( -3 \\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\( 0 \\)",
-        "imageUrl": ""
-      },
       {
         "text": "\\( 3 \\)",
         "imageUrl": ""
@@ -1765,33 +1757,66 @@ export const Y12A_CH3B_QUESTIONS = [
       {
         "text": "\\( 2 \\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\( 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -3 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "answerStr": "0"
+  },
+  {
+    "id": "y12a-3b-q15c",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "The line \\( y = 3x \\) is the tangent to the curve \\( y = ax^2 + bx + c \\) at the origin, and there is a maximum turning point at \\( x = 2 \\). Find the value of \\( a \\).",
+    "t": "Stationary points and turning points",
+    "solutionSteps": [
+      {
+        "explanation": "Identify what happens at the maximum turning point \\( x = 2 \\).",
+        "workingOut": "\\text{At a turning point, } \\frac{dy}{dx} = 0."
+      },
+      {
+        "explanation": "Differentiate \\( y = ax^2 + bx + c \\) and substitute \\( x = 2 \\) and \\( b = 3 \\) (from previous findings).",
+        "workingOut": "\\begin{aligned} \\frac{dy}{dx} &= 2ax + b \\\\ \\frac{dy}{dx}(2) &= 2a(2) + 3 \\\\ 0 &= 4a + 3 \\end{aligned}"
+      },
+      {
+        "explanation": "Solve the equation for \\( a \\).",
+        "workingOut": "\\begin{aligned} 4a &= -3 \\\\ a &= -\\frac{3}{4} \\end{aligned}"
+      }
+    ],
+    "opts": [
+      "\\( \\frac{4}{3} \\)",
+      "\\( -\\frac{4}{3} \\)",
+      "\\( -\\frac{3}{4} \\)",
+      "\\( \\frac{3}{4} \\)"
+    ],
+    "options": [
+      {
+        "text": "\\( \\frac{4}{3} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -\\frac{4}{3} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -\\frac{3}{4} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( \\frac{3}{4} \\)",
+        "imageUrl": ""
       }
     ],
     "answer": "2",
     "answerStr": "2"
-  },
-  {
-    "id": "y12a-3b-q15c",
-    "type": "teacher_review",
-    "difficulty": "medium",
-    "timeLimit": 120,
-    "question": "For the curve described in part a, show that \\( 4a + b = 0 \\) and hence find the value of \\( a \\).",
-    "a": "Turning point is at x = 2, so dy/dx = 4a + b = 0. Substituting b = 3 yields a = -3/4.",
-    "t": "Stationary points and turning points",
-    "solutionSteps": [
-      {
-        "explanation": "Use the condition for the turning point at \\( x = 2 \\) where the derivative is zero.",
-        "workingOut": "\\frac{dy}{dx}(2) = 2a(2) + b = 4a + b = 0"
-      },
-      {
-        "explanation": "Substitute the value \\( b = 3 \\) from the previous parts into this equation.",
-        "workingOut": "4a + 3 = 0"
-      },
-      {
-        "explanation": "Solve the equation for \\( a \\).",
-        "workingOut": "4a = -3 \\implies a = -\\frac{3}{4}"
-      }
-    ]
   },
   {
     "id": "y12a-3b-q16",
