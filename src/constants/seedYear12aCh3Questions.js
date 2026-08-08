@@ -3456,12 +3456,16 @@ export const Y12A_CH3_QUESTIONS = [
     "t": "Increasing, decreasing and stationary at a point",
     "solutionSteps": [
       {
-        "explanation": "Analyze the original function's slope.",
-        "workingOut": "The original graph is a horizontal line.\nThis means its slope is constant and equal to zero."
+        "explanation": "Analyze the original function.",
+        "workingOut": "The graph is a horizontal line, meaning the y-value is constant for all x.\n\\[ f(x) = c \\]"
       },
       {
-        "explanation": "Determine the derivative's graph.",
-        "workingOut": "Since \\( f'(x) = 0 \\) everywhere, the derivative graph is simply the x-axis itself, \\( y = 0 \\)."
+        "explanation": "Determine the slope.",
+        "workingOut": "A horizontal line has a slope of zero everywhere. Therefore, the function is stationary for all x.\n\\[ f'(x) = 0 \\]"
+      },
+      {
+        "explanation": "Sketch the derivative.",
+        "workingOut": "The derivative graph is a horizontal line lying exactly on the x-axis (the line \\( y = 0 \\))."
       }
     ],
     "graphData": {
@@ -3488,8 +3492,16 @@ export const Y12A_CH3_QUESTIONS = [
     "t": "Increasing, decreasing and stationary at a point",
     "solutionSteps": [
       {
-        "explanation": "Since the line is straight and rises, the derivative is a positive constant.",
-        "workingOut": "f(x) = mx \\quad (m > 0) \\implies f'(x) = m"
+        "explanation": "Analyze the original function.",
+        "workingOut": "The graph is a straight line sloping upwards from left to right.\n\\[ f(x) = mx + c \\quad (m > 0) \\]"
+      },
+      {
+        "explanation": "Determine the slope.",
+        "workingOut": "A straight line has a constant slope. Since it is rising, the slope is positive. The function is strictly increasing everywhere.\n\\[ f'(x) = m > 0 \\]"
+      },
+      {
+        "explanation": "Sketch the derivative.",
+        "workingOut": "The derivative graph is a horizontal line located above the x-axis (the line \\( y = m \\))."
       }
     ],
     "graphData": {
@@ -3516,8 +3528,16 @@ export const Y12A_CH3_QUESTIONS = [
     "t": "Increasing, decreasing and stationary at a point",
     "solutionSteps": [
       {
-        "explanation": "Since the line is straight and falls, the derivative is a negative constant.",
-        "workingOut": "f(x) = mx \\quad (m < 0) \\implies f'(x) = m"
+        "explanation": "Analyze the original function.",
+        "workingOut": "The graph is a straight line sloping downwards from left to right.\n\\[ f(x) = mx + c \\quad (m < 0) \\]"
+      },
+      {
+        "explanation": "Determine the slope.",
+        "workingOut": "A straight line has a constant slope. Since it is falling, the slope is negative. The function is strictly decreasing everywhere.\n\\[ f'(x) = m < 0 \\]"
+      },
+      {
+        "explanation": "Sketch the derivative.",
+        "workingOut": "The derivative graph is a horizontal line located below the x-axis (the line \\( y = m \\))."
       }
     ],
     "graphData": {
@@ -3544,8 +3564,16 @@ export const Y12A_CH3_QUESTIONS = [
     "t": "Increasing, decreasing and stationary at a point",
     "solutionSteps": [
       {
-        "explanation": "Tangent slope goes from negative to zero to positive.",
-        "workingOut": "f'(x) < 0 \\text{ for } x < 0, quad f'(0) = 0, quad f'(x) > 0 \\text{ for } x > 0"
+        "explanation": "Identify the turning point.",
+        "workingOut": "The graph has a minimum turning point (stationary point) at the y-axis.\n\\[ f'(0) = 0 \\]"
+      },
+      {
+        "explanation": "Analyze the intervals of increase and decrease.",
+        "workingOut": "Before the turning point (\\( x < 0 \\)), the curve is falling. After the turning point (\\( x > 0 \\)), the curve is rising.\n\\[ f'(x) < 0 \\text{ for } x < 0 \\]\n\\[ f'(x) > 0 \\text{ for } x > 0 \\]"
+      },
+      {
+        "explanation": "Sketch the derivative.",
+        "workingOut": "The derivative graph must cross the x-axis at \\( x = 0 \\), going from negative y-values to positive y-values.\nThis corresponds to a straight line with a positive slope (e.g. \\( y = x \\))."
       }
     ],
     "graphData": {
@@ -3572,8 +3600,16 @@ export const Y12A_CH3_QUESTIONS = [
     "t": "Increasing, decreasing and stationary at a point",
     "solutionSteps": [
       {
-        "explanation": "Derivative is always positive except at the origin where it is zero.",
-        "workingOut": "f'(x) \\geq 0 \\quad \\text{and} \\quad f'(0) = 0"
+        "explanation": "Identify the turning point.",
+        "workingOut": "The graph has a horizontal point of inflection at the origin.\n\\[ f'(0) = 0 \\]"
+      },
+      {
+        "explanation": "Analyze the intervals of increase.",
+        "workingOut": "The curve is rising both before and after the origin.\n\\[ f'(x) > 0 \\text{ for } x < 0 \\]\n\\[ f'(x) > 0 \\text{ for } x > 0 \\]"
+      },
+      {
+        "explanation": "Sketch the derivative.",
+        "workingOut": "The derivative graph must touch the x-axis at \\( x = 0 \\) and remain positive everywhere else.\nThis corresponds to a parabola opening upwards with its vertex at the origin."
       }
     ],
     "graphData": {
@@ -3600,8 +3636,16 @@ export const Y12A_CH3_QUESTIONS = [
     "t": "Increasing, decreasing and stationary at a point",
     "solutionSteps": [
       {
-        "explanation": "Identify stationary points and signs.",
-        "workingOut": "f'(a) = 0, quad f'(b) = 0, quad f'(x) > 0 \\text{ for } x < a \\text{ or } x > b"
+        "explanation": "Identify the turning points.",
+        "workingOut": "The graph has a local maximum at \\( x = a \\) and a local minimum at \\( x = b \\).\n\\[ f'(a) = 0 \\quad \\text{and} \\quad f'(b) = 0 \\]"
+      },
+      {
+        "explanation": "Analyze the intervals of increase and decrease.",
+        "workingOut": "The curve rises until \\( a \\), falls between \\( a \\) and \\( b \\), and rises after \\( b \\).\n\\[ f'(x) > 0 \\text{ for } x < a \\text{ and } x > b \\]\n\\[ f'(x) < 0 \\text{ for } a < x < b \\]"
+      },
+      {
+        "explanation": "Sketch the derivative.",
+        "workingOut": "The derivative graph must cross the x-axis at \\( a \\) and \\( b \\), being positive outside this interval and negative inside.\nThis corresponds to a parabola opening upwards with roots at \\( a \\) and \\( b \\)."
       }
     ],
     "graphData": {
@@ -3628,8 +3672,16 @@ export const Y12A_CH3_QUESTIONS = [
     "t": "Increasing, decreasing and stationary at a point",
     "solutionSteps": [
       {
-        "explanation": "Identify three stationary points.",
-        "workingOut": "f'(a) = f'(b) = f'(c) = 0"
+        "explanation": "Identify the turning points.",
+        "workingOut": "The graph has local minima at \\( x = a \\) and \\( x = c \\), and a local maximum at \\( x = b \\).\n\\[ f'(a) = 0, \\quad f'(b) = 0, \\quad f'(c) = 0 \\]"
+      },
+      {
+        "explanation": "Analyze the intervals of increase and decrease.",
+        "workingOut": "The curve falls before \\( a \\), rises from \\( a \\) to \\( b \\), falls from \\( b \\) to \\( c \\), and rises after \\( c \\).\n\\[ f'(x) < 0 \\text{ for } x < a \\text{ and } b < x < c \\]\n\\[ f'(x) > 0 \\text{ for } a < x < b \\text{ and } x > c \\]"
+      },
+      {
+        "explanation": "Sketch the derivative.",
+        "workingOut": "The derivative graph must cross the x-axis at \\( a, b, c \\). It starts negative, becomes positive, goes negative again, and finishes positive.\nThis corresponds to a positive cubic curve."
       }
     ],
     "graphData": {
@@ -3656,8 +3708,16 @@ export const Y12A_CH3_QUESTIONS = [
     "t": "Increasing, decreasing and stationary at a point",
     "solutionSteps": [
       {
-        "explanation": "Analyze the derivative of a standard hyperbola branch \\( f(x) = 1/x \\).",
-        "workingOut": "f'(x) = -\\frac{1}{x^2} < 0 \\quad \\text{for all } x \neq 0"
+        "explanation": "Identify asymptotes and domain.",
+        "workingOut": "The graph has a vertical asymptote at \\( x = 0 \\) and is split into two branches.\n\\( f(x) \\) is undefined at \\( x = 0 \\)."
+      },
+      {
+        "explanation": "Analyze the intervals of decrease.",
+        "workingOut": "On both the left branch (\\( x < 0 \\)) and the right branch (\\( x > 0 \\)), the curve is always falling.\n\\[ f'(x) < 0 \\text{ for all } x \\neq 0 \\]"
+      },
+      {
+        "explanation": "Sketch the derivative.",
+        "workingOut": "Since there are no stationary points, the derivative never crosses the x-axis.\nBecause the function is always decreasing, the derivative is always negative.\nThis corresponds to a shape like \\( y = -1/x^2 \\), lying entirely below the x-axis."
       }
     ],
     "graphData": {
