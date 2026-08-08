@@ -456,8 +456,16 @@ export const Y12A_CH3_QUESTIONS = [
     "t": "Increasing, decreasing and stationary at a point",
     "solutionSteps": [
       {
-        "explanation": "Differentiate the quadratic terms of \\( f(x) = x^2 - 4x + 9 \\).",
-        "workingOut": "f'(x) = 2x - 4"
+        "explanation": "Recall the power rule for differentiation.",
+        "workingOut": "The power rule states that the derivative of \\( ax^n \\) is \\( nax^{n-1} \\).\nThe derivative of a constant is \\( 0 \\)."
+      },
+      {
+        "explanation": "Apply the power rule to each term of \\( f(x) = x^2 - 4x + 9 \\).",
+        "workingOut": "\\[ \\frac{d}{dx}(x^2) = 2x \\]\n\\[ \\frac{d}{dx}(-4x) = -4 \\]\n\\[ \\frac{d}{dx}(9) = 0 \\]"
+      },
+      {
+        "explanation": "Combine the differentiated terms to find \\( f'(x) \\).",
+        "workingOut": "\\[ f'(x) = 2x - 4 \\]"
       }
     ],
     "opts": [
@@ -701,8 +709,16 @@ export const Y12A_CH3_QUESTIONS = [
     "t": "Increasing, decreasing and stationary at a point",
     "solutionSteps": [
       {
-        "explanation": "Apply the power rule to each term.",
-        "workingOut": "f'(x) = 3x^2 - 6x - 9"
+        "explanation": "Recall the power rule for differentiation.",
+        "workingOut": "The power rule states that the derivative of \\( ax^n \\) is \\( nax^{n-1} \\).\nThe derivative of a constant is \\( 0 \\)."
+      },
+      {
+        "explanation": "Apply the power rule to each term of \\( f(x) = x^3 - 3x^2 - 9x \\).",
+        "workingOut": "\\[ \\frac{d}{dx}(x^3) = 3x^2 \\]\n\\[ \\frac{d}{dx}(-3x^2) = -6x \\]\n\\[ \\frac{d}{dx}(-9x) = -9 \\]"
+      },
+      {
+        "explanation": "Combine the differentiated terms to find \\( f'(x) \\).",
+        "workingOut": "\\[ f'(x) = 3x^2 - 6x - 9 \\]"
       }
     ],
     "opts": [
