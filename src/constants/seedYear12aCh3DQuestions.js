@@ -575,16 +575,6 @@ export const Y12A_CH3D_QUESTIONS = [
         "answer": "3",
         "answerStr": "3"
       }
-    ],
-    "solutionSteps": [
-      {
-        "explanation": "Find the second derivative of \\( y = x^2 - 5x + 9 \\).",
-        "workingOut": "y' = 2x - 5 \\implies y'' = 2 > 0 \\quad \\text{for all } x"
-      },
-      {
-        "explanation": "Find the second derivative of \\( y = -4x^2 + 3x - 8 \\).",
-        "workingOut": "y' = -8x + 3 \\implies y'' = -8 < 0 \\quad \\text{for all } x"
-      }
     ]
   },
   {
@@ -713,24 +703,6 @@ export const Y12A_CH3D_QUESTIONS = [
         "answer": "1",
         "answerStr": "1"
       }
-    ],
-    "solutionSteps": [
-      {
-        "explanation": "Differentiate once to find the first derivative.",
-        "workingOut": "\\frac{dy}{dx} = 3x^2 - 12x - 9"
-      },
-      {
-        "explanation": "Differentiate again to obtain the second derivative.",
-        "workingOut": "\\frac{d^2y}{dx^2} = 6x - 12"
-      },
-      {
-        "explanation": "Set the second derivative greater than zero to determine the concave up region.",
-        "workingOut": "6x - 12 > 0 \\implies 6x > 12 \\implies x > 2"
-      },
-      {
-        "explanation": "Set the second derivative less than zero to determine the concave down region.",
-        "workingOut": "6x - 12 < 0 \\implies 6x < 12 \\implies x < 2"
-      }
     ]
   },
   {
@@ -858,24 +830,6 @@ export const Y12A_CH3D_QUESTIONS = [
         ],
         "answer": "0",
         "answerStr": "0"
-      }
-    ],
-    "solutionSteps": [
-      {
-        "explanation": "Differentiate once to find the first derivative.",
-        "workingOut": "\\frac{dy}{dx} = 6x^2 - 6x - 12"
-      },
-      {
-        "explanation": "Differentiate again to find the second derivative.",
-        "workingOut": "\\frac{d^2y}{dx^2} = 12x - 6"
-      },
-      {
-        "explanation": "Set the second derivative greater than zero.",
-        "workingOut": "12x - 6 > 0 \\implies 12x > 6 \\implies x > 0.5"
-      },
-      {
-        "explanation": "Set the second derivative less than zero.",
-        "workingOut": "12x - 6 < 0 \\implies 12x < 6 \\implies x < 0.5"
       }
     ]
   },
@@ -1161,28 +1115,6 @@ export const Y12A_CH3D_QUESTIONS = [
           }
         ]
       }
-    ],
-    "solutionSteps": [
-      {
-        "explanation": "Differentiate \\( f(x) = x^3 - 12x \\).",
-        "workingOut": "f'(x) = 3x^2 - 12 = 3(x - 2)(x + 2)"
-      },
-      {
-        "explanation": "Differentiate again to find the second derivative.",
-        "workingOut": "f''(x) = 6x"
-      },
-      {
-        "explanation": "Locate stationary points where \\( f'(x) = 0 \\).",
-        "workingOut": "3(x-2)(x+2) = 0 \\implies x = 2 \\text{ or } x = -2 \\implies y(2) = -16, y(-2) = 16"
-      },
-      {
-        "explanation": "Test concavities at the stationary points.",
-        "workingOut": "f''(2) = 12 > 0 \\, (\\text{min}) \\quad \\text{and} \\quad f''(-2) = -12 < 0 \\, (\\text{max})"
-      },
-      {
-        "explanation": "Find inflection points where \\( f''(x) = 0 \\) and check for a sign change.",
-        "workingOut": "6x = 0 \\implies x = 0 \\implies y(0) = 0. \\text{ Sign changes from } - \\text{ to } + \\implies (0,0) \\text{ is inflection.}"
-      }
     ]
   },
   {
@@ -1413,28 +1345,6 @@ export const Y12A_CH3D_QUESTIONS = [
             }
           }
         ]
-      }
-    ],
-    "solutionSteps": [
-      {
-        "explanation": "Differentiate \\( f(x) = x^3 - 3x^2 - 24x + 10 \\).",
-        "workingOut": "f'(x) = 3x^2 - 6x - 24 = 3(x - 4)(x + 2)"
-      },
-      {
-        "explanation": "Differentiate again.",
-        "workingOut": "f''(x) = 6x - 6 = 6(x - 1)"
-      },
-      {
-        "explanation": "Solve \\( f'(x) = 0 \\) to find turning coordinates.",
-        "workingOut": "x = 4 \\implies y(4) = -70 \\quad \\text{and} \\quad x = -2 \\implies y(-2) = 38"
-      },
-      {
-        "explanation": "Evaluate second derivatives to find point types.",
-        "workingOut": "f''(4) = 18 > 0 \\, (\\text{min}) \\quad \\text{and} \\quad f''(-2) = -18 < 0 \\, (\\text{max})"
-      },
-      {
-        "explanation": "Locate points of inflection.",
-        "workingOut": "f''(x) = 0 \\implies x = 1 \\implies y(1) = -16. \\, text{Table around } x=1 \\text{ shows } y'' \\text{ sign change.}"
       }
     ]
   },
@@ -1667,24 +1577,6 @@ export const Y12A_CH3D_QUESTIONS = [
           }
         ]
       }
-    ],
-    "solutionSteps": [
-      {
-        "explanation": "Find first and second derivatives.",
-        "workingOut": "y' = 3x^2 - 12x - 15 = 3(x - 5)(x + 1) \\quad \\text{and} \\quad y'' = 6x - 12 = 6(x - 2)"
-      },
-      {
-        "explanation": "Set \\( y' = 0 \\) to find stationary points.",
-        "workingOut": "x = 5 \\implies y(5) = -80 \\quad \\text{and} \\quad x = -1 \\implies y(-1) = 28"
-      },
-      {
-        "explanation": "Classify stationary points using second derivative values.",
-        "workingOut": "y''(5) = 18 > 0 \\, (\\text{min}) \\quad \\text{and} \\quad y''(-1) = -18 < 0 \\, (\\text{max})"
-      },
-      {
-        "explanation": "Set \\( y'' = 0 \\) to find points of inflection.",
-        "workingOut": "6(x-2) = 0 \\implies x = 2 \\implies y(2) = -26. \\, y'' \\text{ changes sign across } x = 2 \\text{, so it is an inflection point.}"
-      }
     ]
   },
   {
@@ -1916,24 +1808,6 @@ export const Y12A_CH3D_QUESTIONS = [
           }
         ]
       }
-    ],
-    "solutionSteps": [
-      {
-        "explanation": "Differentiate to find \\( y' \\) and \\( y'' \\).",
-        "workingOut": "y' = 24x^2 - 12x^3 = 12x^2(2 - x) \\quad \\text{and} \\quad y'' = 48x - 36x^2 = 12x(4 - 3x)"
-      },
-      {
-        "explanation": "Solve \\( y' = 0 \\) to find critical points.",
-        "workingOut": "12x^2(2-x) = 0 \\implies x = 0 \\, (y=16) \\quad \\text{and} \\quad x = 2 \\, (y=32)"
-      },
-      {
-        "explanation": "Analyze signs of \\( y' \\) in a slope table.",
-        "workingOut": "\\(\\begin{array}{c|ccccc} x & -1 & 0 & 1 & 2 & 3 \\\\ \\hline y' & 36 & 0 & 12 & 0 & -108 \\\\ \\text{Slope} & / & - & / & - & \\backslash \\end{array}\\)"
-      },
-      {
-        "explanation": "Identify points of inflection where \\( y'' = 0 \\) and check for a concavity change.",
-        "workingOut": "12x(4-3x) = 0 \\implies x = 0 \\text{ or } x = \\frac{4}{3}. \\, text{Since } y'' \\text{ changes sign across both, both are inflection points: } (0, 16) \\text{ and } (\\frac{4}{3}, frac{688}{27})"
-      }
     ]
   },
   {
@@ -2120,32 +1994,6 @@ export const Y12A_CH3D_QUESTIONS = [
         "answer": "3",
         "answerStr": "3"
       }
-    ],
-    "solutionSteps": [
-      {
-        "explanation": "Differentiate once to find the first derivative.",
-        "workingOut": "y' = 6x^2 - 18x - 24 = 6(x^2 - 3x - 4) = 6(x - 4)(x + 1)"
-      },
-      {
-        "explanation": "Solve \\( y' > 0 \\) to find the increasing range.",
-        "workingOut": "6(x-4)(x+1) > 0 \\implies x < -1 \\text{ or } x > 4"
-      },
-      {
-        "explanation": "Solve \\( y' < 0 \\) to find the decreasing range.",
-        "workingOut": "6(x-4)(x+1) < 0 \\implies -1 < x < 4"
-      },
-      {
-        "explanation": "Differentiate again to obtain the second derivative.",
-        "workingOut": "y'' = 12x - 18 = 6(2x - 3)"
-      },
-      {
-        "explanation": "Solve \\( y'' > 0 \\) for concaving up.",
-        "workingOut": "6(2x - 3) > 0 \\implies 2x > 3 \\implies x > 1.5"
-      },
-      {
-        "explanation": "Solve \\( y'' < 0 \\) for concaving down.",
-        "workingOut": "6(2x - 3) < 0 \\implies 2x < 3 \\implies x < 1.5"
-      }
     ]
   },
   {
@@ -2324,24 +2172,6 @@ export const Y12A_CH3D_QUESTIONS = [
         "answer": "1",
         "answerStr": "1"
       }
-    ],
-    "solutionSteps": [
-      {
-        "explanation": "Differentiate once and twice.",
-        "workingOut": "y' = 3x^2 + 12x - 15 \\quad \\text{and} \\quad y'' = 6x + 12"
-      },
-      {
-        "explanation": "Locate the point where \\( y'' = 0 \\) and evaluate \\( y \\).",
-        "workingOut": "6x + 12 = 0 \\implies x = -2 \\implies y(-2) = (-2)^3 + 6(-2)^2 - 15(-2) + 12 = 58"
-      },
-      {
-        "explanation": "Find the tangent gradient at \\( x = -2 \\).",
-        "workingOut": "m = y'(-2) = 3(4) - 24 - 15 = -27"
-      },
-      {
-        "explanation": "Use the point-slope formula to construct the line equation.",
-        "workingOut": "y - 58 = -27(x + 2) \\implies y - 58 = -27x - 54 \\implies y = -27x + 4"
-      }
     ]
   },
   {
@@ -2477,20 +2307,6 @@ export const Y12A_CH3D_QUESTIONS = [
         ],
         "answer": "1",
         "answerStr": "1"
-      }
-    ],
-    "solutionSteps": [
-      {
-        "explanation": "Differentiate each function twice.",
-        "workingOut": "\\begin{aligned} f'(x) &= 6x^2, quad f''(x) = 12x \\\\ g'(x) &= 12x^3, quad g''(x) = 36x^2 \\end{aligned}"
-      },
-      {
-        "explanation": "Show second derivatives at the origin are zero.",
-        "workingOut": "f''(0) = 0 \\quad \\text{and} \\quad g''(0) = 0"
-      },
-      {
-        "explanation": "Analyze first derivatives around the origin to determine natures.",
-        "workingOut": "\\text{For } f(x): \\, f'(-1)=6 > 0, f'(1)=6 > 0 \\implies \\text{inflection. For } g(x): \\, g'(-1)=-12 < 0, g'(1)=12 > 0 \\implies \\text{minimum.}"
       }
     ]
   },
@@ -2690,24 +2506,6 @@ export const Y12A_CH3D_QUESTIONS = [
         "answer": "3",
         "answerStr": "3"
       }
-    ],
-    "solutionSteps": [
-      {
-        "explanation": "Part a: Find \\( y'' \\) and set \\( y''(3) = 0 \\).",
-        "workingOut": "y' = 3x^2 - 2ax + 4 \\implies y'' = 6x - 2a \\implies 6(3) - 2a = 0 \\implies a = 9"
-      },
-      {
-        "explanation": "Part b: Solve \\( y''(-1) > 0 \\).",
-        "workingOut": "y' = 3x^2 + 6ax + 5 \\implies y'' = 6x + 6a \\implies -6 + 6a > 0 \\implies a > 1"
-      },
-      {
-        "explanation": "Part c: Solve simultaneous equations \\( y(1) = 0 \\) and \\( y''(1) = 0 \\).",
-        "workingOut": "\\begin{aligned} 1 + a + b = 0 &\\implies a + b = -1 \\\\ y'' = 12x^2 + 6ax + 2b &\\implies 12 + 6a + 2b = 0 \\implies 3a + b = -6 \\\\ \\text{Subtracting: } 2a = -5 &\\implies a = -2.5 \\implies b = 1.5 \\end{aligned}"
-      },
-      {
-        "explanation": "Part d: Solve inequalities \\( y'(1) > 0 \\) and \\( y''(1) > 0 \\).",
-        "workingOut": "\\begin{aligned} y' = 4x^3 + 3ax^2 - 6x &\\implies 4 + 3a - 6 > 0 \\implies 3a > 2 \\implies a > 2/3 \\\\ y'' = 12x^2 + 6ax - 6 &\\implies 12 + 6a - 6 > 0 \\implies 6a > -6 \\implies a > -1 \\\\ \\text{Combined: } a > 2/3 & \\end{aligned}"
-      }
     ]
   },
   {
@@ -2729,16 +2527,6 @@ export const Y12A_CH3D_QUESTIONS = [
         "type": "short_answer",
         "question": "b) State whether the graph of \\( y = f(x) \\) is concave up or concave down throughout its domain. (Answer 'concave up' or 'concave down')",
         "a": "concave down"
-      }
-    ],
-    "solutionSteps": [
-      {
-        "explanation": "Analyze the sign of the first derivative \\( f'(x) \\). Since the graph of \\( y = f'(x) \\) lies completely above the x-axis, \\( f'(x) > 0 \\) for all \\( x > 0 \\).",
-        "workingOut": "f'(x) > 0 \\implies \\text{increasing}"
-      },
-      {
-        "explanation": "Analyze the slope of the first derivative graph to determine \\( f''(x) \\). Since \\( y = f'(x) \\) is a decreasing function, its derivative is negative.",
-        "workingOut": "f''(x) = \\frac{d}{dx}[f'(x)] < 0 \\implies \\text{concave down}"
       }
     ],
     "graphData": {
@@ -2931,24 +2719,6 @@ export const Y12A_CH3D_QUESTIONS = [
         "answer": "1",
         "answerStr": "1"
       }
-    ],
-    "solutionSteps": [
-      {
-        "explanation": "Part a: A positive first derivative means rising, and a positive second derivative means bending up.",
-        "workingOut": "f'(a) > 0 \\implies \\text{rising}, quad f''(a) > 0 \\implies \\text{concave up}"
-      },
-      {
-        "explanation": "Part b: A positive first derivative means rising, and a negative second derivative means bending down.",
-        "workingOut": "f'(a) > 0 \\implies \\text{rising}, quad f''(a) < 0 \\implies \\text{concave down}"
-      },
-      {
-        "explanation": "Part c: A negative first derivative means falling, and a positive second derivative means bending up.",
-        "workingOut": "f'(a) < 0 \\implies \\text{falling}, quad f''(a) > 0 \\implies \\text{concave up}"
-      },
-      {
-        "explanation": "Part d: A negative first derivative means falling, and a negative second derivative means bending down.",
-        "workingOut": "f'(a) < 0 \\implies \\text{falling}, quad f''(a) < 0 \\implies \\text{concave down}"
-      }
     ]
   },
   {
@@ -3100,28 +2870,6 @@ export const Y12A_CH3D_QUESTIONS = [
         ],
         "answer": "1",
         "answerStr": "1"
-      }
-    ],
-    "solutionSteps": [
-      {
-        "explanation": "Differentiate \\( y = \\frac{1}{3}x^3 - 2x^2 + 7x - 5 \\) to find \\( y' \\).",
-        "workingOut": "y' = x^2 - 4x + 7"
-      },
-      {
-        "explanation": "Calculate the discriminant of the quadratic derivative.",
-        "workingOut": "\\Delta = (-4)^2 - 4(1)(7) = 16 - 28 = -12 < 0"
-      },
-      {
-        "explanation": "Differentiate again to find \\( y'' \\).",
-        "workingOut": "y'' = 2x - 4"
-      },
-      {
-        "explanation": "Solve \\( y'' = 0 \\) and evaluate \\( y(2) \\). Verify sign changes.",
-        "workingOut": "2x - 4 = 0 \\implies x = 2 \\implies y(2) = 11/3. \\, y'' < 0 \\text{ for } x<2 \\text{, and } y''>0 \\text{ for } x>2."
-      },
-      {
-        "explanation": "Deduce number of intercepts.",
-        "workingOut": "y' > 0 \\implies \\text{strictly increasing} \\implies \\text{exactly 1 x-intercept}"
       }
     ]
   },
@@ -3304,28 +3052,6 @@ export const Y12A_CH3D_QUESTIONS = [
         ],
         "answer": "1",
         "answerStr": "1"
-      }
-    ],
-    "solutionSteps": [
-      {
-        "explanation": "Use the coordinates of the turning point \\( (0, 8) \\) to find \\( d \\).",
-        "workingOut": "y(0) = a(0)^3 + b(0)^2 + c(0) + d = 8 \\implies d = 8"
-      },
-      {
-        "explanation": "Find the derivative \\( y' \\). Since there is a turning point at \\( x = 0 \\), set \\( y'(0) = 0 \\) to find \\( c \\).",
-        "workingOut": "y' = 3ax^2 + 2bx + c \\implies y'(0) = c = 0"
-      },
-      {
-        "explanation": "Find \\( y'' \\). Since there is an inflection point at \\( x = 1 \\), set \\( y''(1) = 0 \\) to relate \\( a \\) and \\( b \\).",
-        "workingOut": "y'' = 6ax + 2b \\implies 6a(1) + 2b = 0 \\implies b = -3a"
-      },
-      {
-        "explanation": "Use the \\( x \\)-intercept at \\( x = -1 \\). Set \\( y(-1) = 0 \\) and substitute \\( b = -3a \\) and \\( d = 8 \\).",
-        "workingOut": "\\begin{aligned} y(-1) = a(-1)^3 + b(-1)^2 + 8 = 0 &\\implies -a + b + 8 = 0 \\\\ -a - 3a + 8 = 0 &\\implies -4a = -8 \\implies a = 2 \\end{aligned}"
-      },
-      {
-        "explanation": "Solve for \\( b \\).",
-        "workingOut": "b = -3a = -3(2) = -6"
       }
     ]
   }
