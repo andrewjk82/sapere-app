@@ -2632,16 +2632,16 @@ export const Y12A_CH3C_QUESTIONS = [
     "t": "Second and higher derivatives",
     "solutionSteps": [
       {
-        "explanation": "Find the first derivative.",
-        "workingOut": "y' = 4x^3 - 36x"
+        "explanation": "Find the first derivative using the power rule.",
+        "workingOut": "\\begin{aligned} y &= x^4 - 18x^2 + 15 \\\\ y' &= 4x^{4-1} - 18 \\times 2x^{2-1} + 0 \\\\ y' &= 4x^3 - 36x \\end{aligned}"
       },
       {
-        "explanation": "Differentiate again to find the second derivative.",
-        "workingOut": "y'' = 12x^2 - 36"
+        "explanation": "Differentiate the first derivative again to find the second derivative.",
+        "workingOut": "\\begin{aligned} y'' &= \\frac{d}{dx}[4x^3 - 36x] \\\\ y'' &= 4 \\times 3x^2 - 36 \\\\ y'' &= 12x^2 - 36 \\end{aligned}"
       },
       {
-        "explanation": "Set the second derivative to zero and solve for \\( x \\).",
-        "workingOut": "12x^2 - 36 = 0 \\implies 12x^2 = 36 \\implies x^2 = 3 \\implies x = \\pm\\sqrt{3}"
+        "explanation": "Set the second derivative to zero and solve the equation for \\( x \\).",
+        "workingOut": "\\begin{aligned} y'' &= 0 \\\\ 12x^2 - 36 &= 0 \\\\ 12x^2 &= 36 \\\\ x^2 &= \\frac{36}{12} \\\\ x^2 &= 3 \\\\ x &= \\pm\\sqrt{3} \\end{aligned}"
       }
     ],
     "opts": [
@@ -2681,16 +2681,16 @@ export const Y12A_CH3C_QUESTIONS = [
     "t": "Second and higher derivatives",
     "solutionSteps": [
       {
-        "explanation": "Find the first derivative.",
-        "workingOut": "y' = 3x^2 + 6x - 9"
+        "explanation": "Find the first derivative using the power rule.",
+        "workingOut": "\\begin{aligned} y &= x^3 + 3x^2 - 9x + 8 \\\\ y' &= 3x^{3-1} + 3 \\times 2x^{2-1} - 9 + 0 \\\\ y' &= 3x^2 + 6x - 9 \\end{aligned}"
       },
       {
-        "explanation": "Differentiate again to find the second derivative.",
-        "workingOut": "y'' = 6x + 6"
+        "explanation": "Differentiate the first derivative again to find the second derivative.",
+        "workingOut": "\\begin{aligned} y'' &= \\frac{d}{dx}[3x^2 + 6x - 9] \\\\ y'' &= 3 \\times 2x + 6 - 0 \\\\ y'' &= 6x + 6 \\end{aligned}"
       },
       {
-        "explanation": "Set the second derivative to zero and solve for \\( x \\).",
-        "workingOut": "6x + 6 = 0 \\implies 6x = -6 \\implies x = -1"
+        "explanation": "Set the second derivative to zero and solve the linear equation for \\( x \\).",
+        "workingOut": "\\begin{aligned} y'' &= 0 \\\\ 6x + 6 &= 0 \\\\ 6x &= -6 \\\\ x &= -1 \\end{aligned}"
       }
     ],
     "opts": [
