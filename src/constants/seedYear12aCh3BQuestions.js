@@ -1312,10 +1312,10 @@ export const Y12A_CH3B_QUESTIONS = [
   },
   {
     "id": "y12a-3b-q8a",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "Find the stationary points of the function \\( y = 2x^3 - 3x^2 - 12x + 10 \\), then determine their nature using a table of slopes. Sketch the graph of the function (you need not find the \\( x \\)-intercepts).",
+    "question": "Find the stationary points of the function \\( y = 2x^3 - 3x^2 - 12x + 10 \\) and determine their nature.",
     "a": "Local maximum at (-1, 17) and local minimum at (2, -10).",
     "t": "Stationary points and turning points",
     "solutionSteps": [
@@ -1337,29 +1337,55 @@ export const Y12A_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Determine the type of each point based on the slopes.",
-        "workingOut": "\\text{Maximum at } (-1, 17), quad \\text{Minimum at } (2, -10)"
+        "workingOut": "\\text{Maximum at } (-1, 17), quad \\text{Minimum at } (2, -10)",
+        "graphData": {
+          "jsxGraph": {
+            "width": 350,
+            "height": 250,
+            "boundingbox": [
+              -3,
+              25,
+              4,
+              -18
+            ],
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-2.5,0], [3.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-16], [0,22]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [3.3, -1.5, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 20, 'y'], {fontSize: 14});\nvar f = function(x) { return 2*x*x*x - 3*x*x - 12*x + 10; };\nboard.create('functiongraph', [f, -2.2, 3.2], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [-1, 17], {name: 'Max(-1,17)', size: 3, color: 'red', label: {autoPosition: false, offset: [-20, 15]}});\nboard.create('point', [2, -10], {name: 'Min(2,-10)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, -10]}});\nboard.create('point', [0, 10], {name: '10', size: 2, color: 'black', label: {autoPosition: false, offset: [-15, 0]}});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 350,
-        "height": 250,
-        "boundingbox": [
-          -3,
-          25,
-          4,
-          -18
-        ],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-2.5,0], [3.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-16], [0,22]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [3.3, -1.5, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 20, 'y'], {fontSize: 14});\nvar f = function(x) { return 2*x*x*x - 3*x*x - 12*x + 10; };\nboard.create('functiongraph', [f, -2.2, 3.2], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [-1, 17], {name: 'Max(-1,17)', size: 3, color: 'red', label: {autoPosition: false, offset: [-20, 15]}});\nboard.create('point', [2, -10], {name: 'Min(2,-10)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, -10]}});\nboard.create('point', [0, 10], {name: '10', size: 2, color: 'black', label: {autoPosition: false, offset: [-15, 0]}});\nboard.unsuspendUpdate();"
+    "opts": [
+      "Maximum at \\( (-1, 17) \\) and Minimum at \\( (2, 10) \\)",
+      "Minimum at \\( (-1, 17) \\) and Maximum at \\( (2, 10) \\)",
+      "Maximum at \\( (-1, 17) \\) and Minimum at \\( (2, -10) \\)",
+      "Minimum at \\( (-1, 17) \\) and Maximum at \\( (2, -10) \\)"
+    ],
+    "options": [
+      {
+        "text": "Maximum at \\( (-1, 17) \\) and Minimum at \\( (2, 10) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Minimum at \\( (-1, 17) \\) and Maximum at \\( (2, 10) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Maximum at \\( (-1, 17) \\) and Minimum at \\( (2, -10) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Minimum at \\( (-1, 17) \\) and Maximum at \\( (2, -10) \\)",
+        "imageUrl": ""
       }
-    }
+    ],
+    "answer": "2",
+    "answerStr": "2"
   },
   {
     "id": "y12a-3b-q8b",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "Find the stationary points of the function \\( y = x^3 + 6x^2 + 9x \\), then determine their nature using a table of slopes. Sketch the graph of the function.",
+    "question": "Find the stationary points of the function \\( y = x^3 + 6x^2 + 9x \\) and determine their nature.",
     "a": "Local maximum at (-3, 0) and local minimum at (-1, -4).",
     "t": "Stationary points and turning points",
     "solutionSteps": [
@@ -1381,29 +1407,55 @@ export const Y12A_CH3B_QUESTIONS = [
       },
       {
         "explanation": "State point types.",
-        "workingOut": "\\text{Maximum at } (-3, 0), quad \\text{Minimum at } (-1, -4)"
+        "workingOut": "\\text{Maximum at } (-3, 0), quad \\text{Minimum at } (-1, -4)",
+        "graphData": {
+          "jsxGraph": {
+            "width": 350,
+            "height": 250,
+            "boundingbox": [
+              -5,
+              6,
+              2,
+              -6
+            ],
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5,0], [1.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-5.5], [0,5.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [1.3, -0.5, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 5.2, 'y'], {fontSize: 14});\nvar f = function(x) { return x*x*x + 6*x*x + 9*x; };\nboard.create('functiongraph', [f, -4.2, 0.8], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [-3, 0], {name: 'Max(-3,0)', size: 3, color: 'red', label: {autoPosition: false, offset: [-15, 12]}});\nboard.create('point', [-1, -4], {name: 'Min(-1,-4)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, -10]}});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 350,
-        "height": 250,
-        "boundingbox": [
-          -5,
-          6,
-          2,
-          -6
-        ],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5,0], [1.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-5.5], [0,5.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [1.3, -0.5, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 5.2, 'y'], {fontSize: 14});\nvar f = function(x) { return x*x*x + 6*x*x + 9*x; };\nboard.create('functiongraph', [f, -4.2, 0.8], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [-3, 0], {name: 'Max(-3,0)', size: 3, color: 'red', label: {autoPosition: false, offset: [-15, 12]}});\nboard.create('point', [-1, -4], {name: 'Min(-1,-4)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, -10]}});\nboard.unsuspendUpdate();"
+    "opts": [
+      "Maximum at \\( (-3, 0) \\) and Minimum at \\( (1, 16) \\)",
+      "Minimum at \\( (-3, 0) \\) and Maximum at \\( (-1, -4) \\)",
+      "Maximum at \\( (-3, 0) \\) and Minimum at \\( (-1, -4) \\)",
+      "Minimum at \\( (-3, 0) \\) and Maximum at \\( (1, 16) \\)"
+    ],
+    "options": [
+      {
+        "text": "Maximum at \\( (-3, 0) \\) and Minimum at \\( (1, 16) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Minimum at \\( (-3, 0) \\) and Maximum at \\( (-1, -4) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Maximum at \\( (-3, 0) \\) and Minimum at \\( (-1, -4) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Minimum at \\( (-3, 0) \\) and Maximum at \\( (1, 16) \\)",
+        "imageUrl": ""
       }
-    }
+    ],
+    "answer": "2",
+    "answerStr": "2"
   },
   {
     "id": "y12a-3b-q8c",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "Find the stationary points of the function \\( y = 27 + 8x^3 - 2x^4 \\), then determine their nature using a table of slopes. Sketch the graph of the function.",
+    "question": "Find the stationary points of the function \\( y = 27 + 8x^3 - 2x^4 \\) and determine their nature.",
     "a": "Horizontal point of inflection at (0, 27) and local maximum at (3, 81).",
     "t": "Stationary points and turning points",
     "solutionSteps": [
@@ -1425,29 +1477,55 @@ export const Y12A_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Deduce natures: slope is rising on both sides of x=0; slope changes from rising to falling around x=3.",
-        "workingOut": "\\text{Horizontal inflection at } (0, 27), quad \\text{Maximum at } (3, 81)"
+        "workingOut": "\\text{Horizontal inflection at } (0, 27), quad \\text{Maximum at } (3, 81)",
+        "graphData": {
+          "jsxGraph": {
+            "width": 350,
+            "height": 250,
+            "boundingbox": [
+              -2,
+              110,
+              5,
+              -20
+            ],
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.5,0], [4.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-15], [0,105]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.3, -5, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 98, 'y'], {fontSize: 14});\nvar f = function(x) { return 27 + 8*x*x*x - 2*x*x*x*x; };\nboard.create('functiongraph', [f, -1.2, 3.8], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 27], {name: 'Inflection(0,27)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, -5]}});\nboard.create('point', [3, 81], {name: 'Max(3,81)', size: 3, color: 'red', label: {autoPosition: false, offset: [-30, 15]}});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 350,
-        "height": 250,
-        "boundingbox": [
-          -2,
-          110,
-          5,
-          -20
-        ],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.5,0], [4.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-15], [0,105]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.3, -5, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 98, 'y'], {fontSize: 14});\nvar f = function(x) { return 27 + 8*x*x*x - 2*x*x*x*x; };\nboard.create('functiongraph', [f, -1.2, 3.8], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 27], {name: 'Inflection(0,27)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, -5]}});\nboard.create('point', [3, 81], {name: 'Max(3,81)', size: 3, color: 'red', label: {autoPosition: false, offset: [-30, 15]}});\nboard.unsuspendUpdate();"
+    "opts": [
+      "Minimum at \\( (0, 27) \\) and Maximum at \\( (3, 81) \\)",
+      "Maximum at \\( (0, 27) \\) and Minimum at \\( (3, 81) \\)",
+      "Horizontal inflection at \\( (0, 27) \\) and Maximum at \\( (3, 81) \\)",
+      "Horizontal inflection at \\( (0, 27) \\) and Minimum at \\( (3, 81) \\)"
+    ],
+    "options": [
+      {
+        "text": "Minimum at \\( (0, 27) \\) and Maximum at \\( (3, 81) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Maximum at \\( (0, 27) \\) and Minimum at \\( (3, 81) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Horizontal inflection at \\( (0, 27) \\) and Maximum at \\( (3, 81) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Horizontal inflection at \\( (0, 27) \\) and Minimum at \\( (3, 81) \\)",
+        "imageUrl": ""
       }
-    }
+    ],
+    "answer": "2",
+    "answerStr": "2"
   },
   {
     "id": "y12a-3b-q8d",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "Find the stationary points of the function \\( y = 3x^4 - 8x^3 + 6x^2 + 5 \\), then determine their nature using a table of slopes. Sketch the graph of the function.",
+    "question": "Find the stationary points of the function \\( y = 3x^4 - 8x^3 + 6x^2 + 5 \\) and determine their nature.",
     "a": "Local minimum at (0, 5) and horizontal point of inflection at (1, 6).",
     "t": "Stationary points and turning points",
     "solutionSteps": [
@@ -1469,22 +1547,48 @@ export const Y12A_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Conclude nature based on the slope patterns.",
-        "workingOut": "\\text{Minimum at } (0, 5), quad \\text{Horizontal inflection at } (1, 6)"
+        "workingOut": "\\text{Minimum at } (0, 5), quad \\text{Horizontal inflection at } (1, 6)",
+        "graphData": {
+          "jsxGraph": {
+            "width": 350,
+            "height": 250,
+            "boundingbox": [
+              -1.5,
+              12,
+              3,
+              -2
+            ],
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.2,0], [2.8,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-1], [0,11]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [2.6, -0.5, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 10.5, 'y'], {fontSize: 14});\nvar f = function(x) { return 3*x*x*x*x - 8*x*x*x + 6*x*x + 5; };\nboard.create('functiongraph', [f, -0.8, 1.8], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 5], {name: 'Min(0,5)', size: 3, color: 'red', label: {autoPosition: false, offset: [-55, -5]}});\nboard.create('point', [1, 6], {name: 'Inflection(1,6)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, -5]}});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 350,
-        "height": 250,
-        "boundingbox": [
-          -1.5,
-          12,
-          3,
-          -2
-        ],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.2,0], [2.8,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-1], [0,11]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [2.6, -0.5, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 10.5, 'y'], {fontSize: 14});\nvar f = function(x) { return 3*x*x*x*x - 8*x*x*x + 6*x*x + 5; };\nboard.create('functiongraph', [f, -0.8, 1.8], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 5], {name: 'Min(0,5)', size: 3, color: 'red', label: {autoPosition: false, offset: [-55, -5]}});\nboard.create('point', [1, 6], {name: 'Inflection(1,6)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, -5]}});\nboard.unsuspendUpdate();"
+    "opts": [
+      "Maximum at \\( (0, 5) \\) and Horizontal inflection at \\( (1, 6) \\)",
+      "Minimum at \\( (0, 5) \\) and Horizontal inflection at \\( (1, 6) \\)",
+      "Minimum at \\( (0, 5) \\) and Maximum at \\( (1, 6) \\)",
+      "Maximum at \\( (0, 5) \\) and Minimum at \\( (1, 6) \\)"
+    ],
+    "options": [
+      {
+        "text": "Maximum at \\( (0, 5) \\) and Horizontal inflection at \\( (1, 6) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Minimum at \\( (0, 5) \\) and Horizontal inflection at \\( (1, 6) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Minimum at \\( (0, 5) \\) and Maximum at \\( (1, 6) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Maximum at \\( (0, 5) \\) and Minimum at \\( (1, 6) \\)",
+        "imageUrl": ""
       }
-    }
+    ],
+    "answer": "1",
+    "answerStr": "1"
   },
   {
     "id": "y12a-3b-q9",
@@ -1496,54 +1600,108 @@ export const Y12A_CH3B_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y12a-3b-q9a",
-        "type": "teacher_review",
-        "question": "a) Use the product rule to show that if \\( y = x(x-3)^3 \\), then \\( y' = (4x-3)(x-3)^2 \\).",
-        "a": "Differentiate: \\( y' = 1(x-3)^3 + x \\cdot 3(x-3)^2 = (x-3)^2(x-3 + 3x) = (4x-3)(x-3)^2 \\)."
+        "type": "multiple_choice",
+        "question": "a) Find the derivative \\( y' \\) in factored form.",
+        "opts": [
+          "\\( (3x-4)(x-3)^2 \\)",
+          "\\( (4x-3)(x-3)^3 \\)",
+          "\\( (3x-4)(x-3)^3 \\)",
+          "\\( (4x-3)(x-3)^2 \\)"
+        ],
+        "solutionSteps": [
+          {
+            "explanation": "Differentiate \\( y = x(x-3)^3 \\) using the product rule: \\( u = x \\), \\( v = (x-3)^3 \\).",
+            "workingOut": "\\begin{aligned} y' &= u'v + uv' \\\\ &= 1(x-3)^3 + x \\cdot 3(x-3)^2 \\end{aligned}"
+          },
+          {
+            "explanation": "Factor out the common term \\( (x-3)^2 \\).",
+            "workingOut": "\\begin{aligned} y' &= (x-3)^2 [ (x-3) + 3x ] \\\\ &= (x-3)^2(4x - 3) \\end{aligned}"
+          }
+        ],
+        "options": [
+          {
+            "text": "\\( (3x-4)(x-3)^2 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( (4x-3)(x-3)^3 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( (3x-4)(x-3)^3 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( (4x-3)(x-3)^2 \\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "3",
+        "answerStr": "3"
       },
       {
         "id": "y12a-3b-q9b",
-        "type": "teacher_review",
-        "question": "b) Find any stationary points and use a table of gradients to classify them.",
-        "a": "Stationary points at \\( (3/4, -2187/256) \\) (minimum) and \\( (3, 0) \\) (horizontal point of inflection)."
-      },
-      {
-        "id": "y12a-3b-q9c",
-        "type": "teacher_review",
-        "question": "c) Sketch the graph of the function, indicating all important features.",
-        "a": "Sketch showing minimum at x=3/4, inflection at x=3, and axes intercepts at 0 and 3."
-      }
-    ],
-    "solutionSteps": [
-      {
-        "explanation": "Differentiate using the product rule: \\( u = x \\), \\( v = (x-3)^3 \\).",
-        "workingOut": "\\begin{aligned} y' &= u'v + uv' \\\\ &= 1(x-3)^3 + x \\cdot 3(x-3)^2 \\\\ &= (x-3)^2 [ (x-3) + 3x ] \\\\ &= (4x - 3)(x-3)^2 \\end{aligned}"
-      },
-      {
-        "explanation": "Find stationary values where \\( y' = 0 \\).",
-        "workingOut": "(4x-3)(x-3)^2 = 0 \\implies x = \\frac{3}{4} \\text{ or } x = 3"
-      },
-      {
-        "explanation": "Calculate y-coordinates of the stationary points.",
-        "workingOut": "\\begin{aligned} y(3/4) &= \\frac{3}{4} (\\frac{3}{4}-3)^3 = \\frac{3}{4} (-\\frac{9}{4})^3 = -\\frac{2187}{256} \\approx -8.54 \\\\ y(3) &= 3(0)^3 = 0 \\end{aligned}"
-      },
-      {
-        "explanation": "Complete gradient table.",
-        "workingOut": "\\(\\begin{array}{c|ccccc} x & 0 & 3/4 & 1 & 3 & 4 \\\\ \\hline y' & -27 & 0 & 4 & 0 & 13 \\\\ \\text{Slope} & \\backslash & - & / & - & / \\end{array}\\)"
-      }
-    ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 350,
-        "height": 250,
-        "boundingbox": [
-          -2,
-          6,
-          5,
-          -12
+        "type": "multiple_choice",
+        "question": "b) Find any stationary points and classify their nature.",
+        "opts": [
+          "Minimum at \\( (3/4, -2187/256) \\) and Horizontal inflection at \\( (3, 0) \\)",
+          "Maximum at \\( (3/4, -2187/256) \\) and Horizontal inflection at \\( (3, 0) \\)",
+          "Minimum at \\( (3/4, -2187/256) \\) and Maximum at \\( (3, 0) \\)",
+          "Maximum at \\( (3/4, -2187/256) \\) and Minimum at \\( (3, 0) \\)"
         ],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.5,0], [4.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-11.5], [0,5.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.3, -0.5, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 5.2, 'y'], {fontSize: 14});\nvar f = function(x) { return x*(x-3)*(x-3)*(x-3); };\nboard.create('functiongraph', [f, -0.5, 4.1], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0.75, -8.54], {name: 'Min(0.75, -8.54)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, -10]}});\nboard.create('point', [3, 0], {name: 'Inflection(3,0)', size: 3, color: 'red', label: {autoPosition: false, offset: [-40, 15]}});\nboard.unsuspendUpdate();"
+        "solutionSteps": [
+          {
+            "explanation": "Find stationary values where \\( y' = 0 \\).",
+            "workingOut": "(4x-3)(x-3)^2 = 0 \\implies x = \\frac{3}{4}, \\; x = 3"
+          },
+          {
+            "explanation": "Calculate \\( y \\)-coordinates of the stationary points.",
+            "workingOut": "\\begin{aligned} y(3/4) &= \\frac{3}{4} (\\frac{3}{4}-3)^3 = \\frac{3}{4} (-\\frac{9}{4})^3 = -\\frac{2187}{256} \\approx -8.54 \\\\ y(3) &= 3(3-3)^3 = 0 \\end{aligned}"
+          },
+          {
+            "explanation": "Complete a gradient sign table.",
+            "workingOut": "\\(\\begin{array}{c|ccccc} x & 0 & 3/4 & 1 & 3 & 4 \\\\ \\hline y' & -27 & 0 & 4 & 0 & 13 \\\\ \\text{Slope} & \\backslash & - & / & - & / \\end{array}\\)"
+          },
+          {
+            "explanation": "Determine nature of stationary points from slope changes.",
+            "workingOut": "\\text{Minimum at } (3/4, -2187/256) \\text{ and Horizontal inflection at } (3, 0)",
+            "graphData": {
+              "jsxGraph": {
+                "width": 350,
+                "height": 250,
+                "boundingbox": [
+                  -2,
+                  6,
+                  5,
+                  -12
+                ],
+                "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.5,0], [4.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-11.5], [0,5.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.3, -0.5, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 5.2, 'y'], {fontSize: 14});\nvar f = function(x) { return x*(x-3)*(x-3)*(x-3); };\nboard.create('functiongraph', [f, -0.5, 4.1], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0.75, -8.54], {name: 'Min(0.75, -8.54)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, -10]}});\nboard.create('point', [3, 0], {name: 'Inflection(3,0)', size: 3, color: 'red', label: {autoPosition: false, offset: [-40, 15]}});\nboard.unsuspendUpdate();"
+              }
+            }
+          }
+        ],
+        "options": [
+          {
+            "text": "Minimum at \\( (3/4, -2187/256) \\) and Horizontal inflection at \\( (3, 0) \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "Maximum at \\( (3/4, -2187/256) \\) and Horizontal inflection at \\( (3, 0) \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "Minimum at \\( (3/4, -2187/256) \\) and Maximum at \\( (3, 0) \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "Maximum at \\( (3/4, -2187/256) \\) and Minimum at \\( (3, 0) \\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "0",
+        "answerStr": "0"
       }
-    }
+    ]
   },
   {
     "id": "y12a-3b-q10",
