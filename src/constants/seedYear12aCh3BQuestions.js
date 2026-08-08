@@ -1,7 +1,7 @@
 export const Y12A_CH3B_QUESTIONS = [
   {
     "id": "y12a-3b-q1a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
     "question": "By finding where the derivative equals zero, determine the \\( x \\)-coordinate of any stationary point of the function \\( y = x^2 - 8x + 15 \\).",
@@ -9,22 +9,48 @@ export const Y12A_CH3B_QUESTIONS = [
     "t": "Stationary points and turning points",
     "solutionSteps": [
       {
-        "explanation": "Find the derivative of the function using the power rule.",
-        "workingOut": "y' = 2x - 8"
+        "explanation": "Differentiate the given function \\( y = x^2 - 8x + 15 \\) with respect to \\( x \\).",
+        "workingOut": "\\frac{dy}{dx} = 2x - 8"
       },
       {
-        "explanation": "Set the derivative to zero to locate stationary points.",
+        "explanation": "Stationary points occur where the derivative is equal to zero. Set \\( \\frac{dy}{dx} = 0 \\).",
         "workingOut": "2x - 8 = 0"
       },
       {
-        "explanation": "Solve the equation for \\( x \\).",
+        "explanation": "Solve the linear equation for \\( x \\).",
         "workingOut": "2x = 8 \\implies x = 4"
       }
-    ]
+    ],
+    "opts": [
+      "-8",
+      "-4",
+      "4",
+      "8"
+    ],
+    "options": [
+      {
+        "text": "-8",
+        "imageUrl": ""
+      },
+      {
+        "text": "-4",
+        "imageUrl": ""
+      },
+      {
+        "text": "4",
+        "imageUrl": ""
+      },
+      {
+        "text": "8",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
+    "answerStr": "2"
   },
   {
     "id": "y12a-3b-q1b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
     "question": "By finding where the derivative equals zero, determine the \\( x \\)-coordinate of any stationary point of the function \\( y = x^2 + 6x + 5 \\).",
@@ -32,41 +58,97 @@ export const Y12A_CH3B_QUESTIONS = [
     "t": "Stationary points and turning points",
     "solutionSteps": [
       {
-        "explanation": "Find the derivative of the function.",
-        "workingOut": "y' = 2x + 6"
+        "explanation": "Differentiate the given function \\( y = x^2 + 6x + 5 \\) with respect to \\( x \\).",
+        "workingOut": "\\frac{dy}{dx} = 2x + 6"
       },
       {
-        "explanation": "Set the derivative to zero.",
+        "explanation": "Stationary points occur where the derivative is equal to zero. Set \\( \\frac{dy}{dx} = 0 \\).",
         "workingOut": "2x + 6 = 0"
       },
       {
-        "explanation": "Solve for \\( x \\).",
+        "explanation": "Solve the linear equation for \\( x \\).",
         "workingOut": "2x = -6 \\implies x = -3"
       }
-    ]
+    ],
+    "opts": [
+      "-3",
+      "6",
+      "-6",
+      "3"
+    ],
+    "options": [
+      {
+        "text": "-3",
+        "imageUrl": ""
+      },
+      {
+        "text": "6",
+        "imageUrl": ""
+      },
+      {
+        "text": "-6",
+        "imageUrl": ""
+      },
+      {
+        "text": "3",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "answerStr": "0"
   },
   {
     "id": "y12a-3b-q1c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "By finding where the derivative equals zero, determine the \\( x \\)-coordinates of any stationary points of the function \\( y = x^3 - 12x \\). If there are multiple values, list them in ascending order, separated by a comma (e.g. '-2,2').",
+    "question": "By finding where the derivative equals zero, determine the \\( x \\)-coordinates of any stationary points of the function \\( y = x^3 - 12x \\).",
     "a": "-2,2",
     "t": "Stationary points and turning points",
     "solutionSteps": [
       {
-        "explanation": "Find the derivative of the function.",
-        "workingOut": "y' = 3x^2 - 12"
+        "explanation": "Differentiate the given function \\( y = x^3 - 12x \\) with respect to \\( x \\).",
+        "workingOut": "\\frac{dy}{dx} = 3x^2 - 12"
       },
       {
-        "explanation": "Set the derivative to zero and factor the expression.",
-        "workingOut": "3x^2 - 12 = 0 \\implies 3(x^2 - 4) = 0 \\implies 3(x-2)(x+2) = 0"
+        "explanation": "Stationary points occur where the derivative is equal to zero. Set \\( \\frac{dy}{dx} = 0 \\) and factor out the common term.",
+        "workingOut": "3x^2 - 12 = 0 \\implies 3(x^2 - 4) = 0"
       },
       {
-        "explanation": "Solve for \\( x \\) to find the stationary coordinates.",
-        "workingOut": "x = -2 \\quad \\text{or} \\quad x = 2"
+        "explanation": "Factor the difference of two squares \\( x^2 - 4 \\).",
+        "workingOut": "3(x - 2)(x + 2) = 0"
+      },
+      {
+        "explanation": "Solve for \\( x \\) to find the \\( x \\)-coordinates of the stationary points.",
+        "workingOut": "x = 2 \\quad \\text{or} \\quad x = -2"
       }
-    ]
+    ],
+    "opts": [
+      "\\( -2 \\) and \\( 2 \\)",
+      "\\( -12 \\) and \\( 12 \\)",
+      "\\( -3 \\) and \\( 3 \\)",
+      "\\( -4 \\) and \\( 4 \\)"
+    ],
+    "options": [
+      {
+        "text": "\\( -2 \\) and \\( 2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -12 \\) and \\( 12 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -3 \\) and \\( 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( -4 \\) and \\( 4 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "answerStr": "0"
   },
   {
     "id": "y12a-3b-q2a",
