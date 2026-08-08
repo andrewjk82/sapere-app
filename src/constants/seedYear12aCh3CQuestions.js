@@ -9,16 +9,16 @@ export const Y12A_CH3C_QUESTIONS = [
     "t": "Second and higher derivatives",
     "solutionSteps": [
       {
-        "explanation": "Differentiate \\( y = x^4 \\) using the power rule to find the first derivative.",
-        "workingOut": "y' = 4x^3"
+        "explanation": "Apply the power rule to find the first derivative.",
+        "workingOut": "\\begin{aligned} y' &= 4x^{4-1} \\\\ &= 4x^3 \\end{aligned}"
       },
       {
-        "explanation": "Differentiate \\( y' = 4x^3 \\) to find the second derivative.",
-        "workingOut": "y'' = 12x^2"
+        "explanation": "Apply the power rule to the first derivative to find the second derivative.",
+        "workingOut": "\\begin{aligned} y'' &= 4 \\times 3x^{3-1} \\\\ &= 12x^2 \\end{aligned}"
       },
       {
-        "explanation": "Differentiate \\( y'' = 12x^2 \\) to find the third derivative.",
-        "workingOut": "y''' = 24x"
+        "explanation": "Apply the power rule to the second derivative to find the third derivative.",
+        "workingOut": "\\begin{aligned} y''' &= 12 \\times 2x^{2-1} \\\\ &= 24x \\end{aligned}"
       }
     ],
     "opts": [
@@ -58,16 +58,16 @@ export const Y12A_CH3C_QUESTIONS = [
     "t": "Second and higher derivatives",
     "solutionSteps": [
       {
-        "explanation": "Find the first derivative.",
-        "workingOut": "y' = 8x^7"
+        "explanation": "Apply the power rule to find the first derivative.",
+        "workingOut": "\\begin{aligned} y' &= 8x^{8-1} \\\\ &= 8x^7 \\end{aligned}"
       },
       {
-        "explanation": "Find the second derivative.",
-        "workingOut": "y'' = 8 \\times 7x^6 = 56x^6"
+        "explanation": "Apply the power rule to the first derivative to find the second derivative.",
+        "workingOut": "\\begin{aligned} y'' &= 8 \\times 7x^{7-1} \\\\ &= 56x^6 \\end{aligned}"
       },
       {
-        "explanation": "Find the third derivative.",
-        "workingOut": "y''' = 56 \\times 6x^5 = 336x^5"
+        "explanation": "Apply the power rule to the second derivative to find the third derivative.",
+        "workingOut": "\\begin{aligned} y''' &= 56 \\times 6x^{6-1} \\\\ &= 336x^5 \\end{aligned}"
       }
     ],
     "opts": [
@@ -107,16 +107,16 @@ export const Y12A_CH3C_QUESTIONS = [
     "t": "Second and higher derivatives",
     "solutionSteps": [
       {
-        "explanation": "Find the first derivative.",
-        "workingOut": "y' = 6x^5"
+        "explanation": "Apply the power rule to find the first derivative.",
+        "workingOut": "\\begin{aligned} y' &= 6x^{6-1} \\\\ &= 6x^5 \\end{aligned}"
       },
       {
-        "explanation": "Find the second derivative.",
-        "workingOut": "y'' = 30x^4"
+        "explanation": "Apply the power rule to the first derivative to find the second derivative.",
+        "workingOut": "\\begin{aligned} y'' &= 6 \\times 5x^{5-1} \\\\ &= 30x^4 \\end{aligned}"
       },
       {
-        "explanation": "Find the third derivative.",
-        "workingOut": "y''' = 120x^3"
+        "explanation": "Apply the power rule to the second derivative to find the third derivative.",
+        "workingOut": "\\begin{aligned} y''' &= 30 \\times 4x^{4-1} \\\\ &= 120x^3 \\end{aligned}"
       }
     ],
     "opts": [
@@ -156,16 +156,16 @@ export const Y12A_CH3C_QUESTIONS = [
     "t": "Second and higher derivatives",
     "solutionSteps": [
       {
-        "explanation": "Find the first derivative.",
-        "workingOut": "y' = 5x^4"
+        "explanation": "Apply the power rule to find the first derivative.",
+        "workingOut": "\\begin{aligned} y' &= 5x^{5-1} \\\\ &= 5x^4 \\end{aligned}"
       },
       {
-        "explanation": "Find the second derivative.",
-        "workingOut": "y'' = 20x^3"
+        "explanation": "Apply the power rule to the first derivative to find the second derivative.",
+        "workingOut": "\\begin{aligned} y'' &= 5 \\times 4x^{4-1} \\\\ &= 20x^3 \\end{aligned}"
       },
       {
-        "explanation": "Find the third derivative.",
-        "workingOut": "y''' = 60x^2"
+        "explanation": "Apply the power rule to the second derivative to find the third derivative.",
+        "workingOut": "\\begin{aligned} y''' &= 20 \\times 3x^{3-1} \\\\ &= 60x^2 \\end{aligned}"
       }
     ],
     "opts": [
@@ -205,16 +205,16 @@ export const Y12A_CH3C_QUESTIONS = [
     "t": "Second and higher derivatives",
     "solutionSteps": [
       {
-        "explanation": "Find the first derivative.",
-        "workingOut": "y' = 12x^3"
+        "explanation": "Apply the power rule to find the first derivative.",
+        "workingOut": "\\begin{aligned} y' &= 3 \\times 4x^{4-1} \\\\ &= 12x^3 \\end{aligned}"
       },
       {
-        "explanation": "Find the second derivative.",
-        "workingOut": "y'' = 36x^2"
+        "explanation": "Apply the power rule to the first derivative to find the second derivative.",
+        "workingOut": "\\begin{aligned} y'' &= 12 \\times 3x^{3-1} \\\\ &= 36x^2 \\end{aligned}"
       },
       {
-        "explanation": "Find the third derivative.",
-        "workingOut": "y''' = 72x"
+        "explanation": "Apply the power rule to the second derivative to find the third derivative.",
+        "workingOut": "\\begin{aligned} y''' &= 36 \\times 2x^{2-1} \\\\ &= 72x \\end{aligned}"
       }
     ],
     "opts": [
@@ -254,16 +254,16 @@ export const Y12A_CH3C_QUESTIONS = [
     "t": "Second and higher derivatives",
     "solutionSteps": [
       {
-        "explanation": "Find the first derivative.",
-        "workingOut": "y' = 10x^4"
+        "explanation": "Apply the power rule to find the first derivative.",
+        "workingOut": "\\begin{aligned} y' &= 2 \\times 5x^{5-1} \\\\ &= 10x^4 \\end{aligned}"
       },
       {
-        "explanation": "Find the second derivative.",
-        "workingOut": "y'' = 40x^3"
+        "explanation": "Apply the power rule to the first derivative to find the second derivative.",
+        "workingOut": "\\begin{aligned} y'' &= 10 \\times 4x^{4-1} \\\\ &= 40x^3 \\end{aligned}"
       },
       {
-        "explanation": "Find the third derivative.",
-        "workingOut": "y''' = 120x^2"
+        "explanation": "Apply the power rule to the second derivative to find the third derivative.",
+        "workingOut": "\\begin{aligned} y''' &= 40 \\times 3x^{3-1} \\\\ &= 120x^2 \\end{aligned}"
       }
     ],
     "opts": [
@@ -303,15 +303,15 @@ export const Y12A_CH3C_QUESTIONS = [
     "t": "Second and higher derivatives",
     "solutionSteps": [
       {
-        "explanation": "Find the first derivative.",
-        "workingOut": "y' = -4"
+        "explanation": "Apply the power rule to find the first derivative.",
+        "workingOut": "\\begin{aligned} y' &= 0 - 4(1)x^{1-1} \\\\ &= -4x^0 \\\\ &= -4 \\end{aligned}"
       },
       {
-        "explanation": "Find the second derivative.",
-        "workingOut": "y'' = 0"
+        "explanation": "Apply the power rule to the first derivative to find the second derivative.",
+        "workingOut": "y'' = 0 \\quad (\\text{derivative of a constant is } 0)"
       },
       {
-        "explanation": "Find the third derivative.",
+        "explanation": "Apply the power rule to the second derivative to find the third derivative.",
         "workingOut": "y''' = 0"
       }
     ],
@@ -352,15 +352,15 @@ export const Y12A_CH3C_QUESTIONS = [
     "t": "Second and higher derivatives",
     "solutionSteps": [
       {
-        "explanation": "Find the first derivative.",
-        "workingOut": "y' = 2x - 5"
+        "explanation": "Apply the power rule to find the first derivative.",
+        "workingOut": "\\begin{aligned} y' &= 2x^{2-1} - 5(1)x^{1-1} \\\\ &= 2x - 5 \\end{aligned}"
       },
       {
-        "explanation": "Find the second derivative.",
-        "workingOut": "y'' = 2"
+        "explanation": "Apply the power rule to the first derivative to find the second derivative.",
+        "workingOut": "\\begin{aligned} y'' &= 2(1)x^{1-1} - 0 \\\\ &= 2 \\end{aligned}"
       },
       {
-        "explanation": "Find the third derivative.",
+        "explanation": "Apply the power rule to the second derivative to find the third derivative.",
         "workingOut": "y''' = 0"
       }
     ],
@@ -401,16 +401,16 @@ export const Y12A_CH3C_QUESTIONS = [
     "t": "Second and higher derivatives",
     "solutionSteps": [
       {
-        "explanation": "Find the first derivative.",
-        "workingOut": "y' = 9x^2 - 4x"
+        "explanation": "Apply the power rule to find the first derivative.",
+        "workingOut": "\\begin{aligned} y' &= 3 \\times 3x^{3-1} - 2 \\times 2x^{2-1} \\\\ &= 9x^2 - 4x \\end{aligned}"
       },
       {
-        "explanation": "Find the second derivative.",
-        "workingOut": "y'' = 18x - 4"
+        "explanation": "Apply the power rule to the first derivative to find the second derivative.",
+        "workingOut": "\\begin{aligned} y'' &= 9 \\times 2x^{2-1} - 4(1)x^{1-1} \\\\ &= 18x - 4 \\end{aligned}"
       },
       {
-        "explanation": "Find the third derivative.",
-        "workingOut": "y''' = 18"
+        "explanation": "Apply the power rule to the second derivative to find the third derivative.",
+        "workingOut": "\\begin{aligned} y''' &= 18(1)x^{1-1} - 0 \\\\ &= 18 \\end{aligned}"
       }
     ],
     "opts": [
@@ -450,16 +450,16 @@ export const Y12A_CH3C_QUESTIONS = [
     "t": "Second and higher derivatives",
     "solutionSteps": [
       {
-        "explanation": "Find the first derivative.",
-        "workingOut": "y' = 10x^4 + 12x^2"
+        "explanation": "Apply the power rule to find the first derivative.",
+        "workingOut": "\\begin{aligned} y' &= 2 \\times 5x^{5-1} + 4 \\times 3x^{3-1} \\\\ &= 10x^4 + 12x^2 \\end{aligned}"
       },
       {
-        "explanation": "Find the second derivative.",
-        "workingOut": "y'' = 40x^3 + 24x"
+        "explanation": "Apply the power rule to the first derivative to find the second derivative.",
+        "workingOut": "\\begin{aligned} y'' &= 10 \\times 4x^{4-1} + 12 \\times 2x^{2-1} \\\\ &= 40x^3 + 24x \\end{aligned}"
       },
       {
-        "explanation": "Find the third derivative.",
-        "workingOut": "y''' = 120x^2 + 24"
+        "explanation": "Apply the power rule to the second derivative to find the third derivative.",
+        "workingOut": "\\begin{aligned} y''' &= 40 \\times 3x^{3-1} + 24(1)x^{1-1} \\\\ &= 120x^2 + 24 \\end{aligned}"
       }
     ],
     "opts": [
