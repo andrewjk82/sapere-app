@@ -152,10 +152,10 @@ export const Y12A_CH3B_QUESTIONS = [
   },
   {
     "id": "y12a-3b-q2a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "By finding where the derivative equals zero, determine the coordinates of any stationary point of the function \\( y = x^2 - 6x + 10 \\). (Format: '(x, y)' e.g. '(3, 1)')",
+    "question": "By finding where the derivative equals zero, determine the coordinates of any stationary point of the function \\( y = x^2 - 6x + 10 \\).",
     "a": "(3, 1)",
     "t": "Stationary points and turning points",
     "solutionSteps": [
@@ -173,16 +173,42 @@ export const Y12A_CH3B_QUESTIONS = [
       },
       {
         "explanation": "State the stationary point coordinates.",
-        "workingOut": "\\text{Stationary point is } (3, 1)"
+        "workingOut": "\\text{Stationary point: } (3, 1)"
       }
-    ]
+    ],
+    "opts": [
+      "\\( (6, 10) \\)",
+      "\\( (-3, 19) \\)",
+      "\\( (3, -1) \\)",
+      "\\( (3, 1) \\)"
+    ],
+    "options": [
+      {
+        "text": "\\( (6, 10) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( (-3, 19) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( (3, -1) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( (3, 1) \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
+    "answerStr": "3"
   },
   {
     "id": "y12a-3b-q2b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "By finding where the derivative equals zero, determine the coordinates of any stationary point of the function \\( y = x^2 - 10x + 25 \\). (Format: '(x, y)' e.g. '(5, 0)')",
+    "question": "By finding where the derivative equals zero, determine the coordinates of any stationary point of the function \\( y = x^2 - 10x + 25 \\).",
     "a": "(5, 0)",
     "t": "Stationary points and turning points",
     "solutionSteps": [
@@ -200,16 +226,42 @@ export const Y12A_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Combine coordinates.",
-        "workingOut": "\\text{Stationary point is } (5, 0)"
+        "workingOut": "\\text{Stationary point: } (5, 0)"
       }
-    ]
+    ],
+    "opts": [
+      "\\( (-5, 100) \\)",
+      "\\( (5, 0) \\)",
+      "\\( (10, 25) \\)",
+      "\\( (5, 5) \\)"
+    ],
+    "options": [
+      {
+        "text": "\\( (-5, 100) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( (5, 0) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( (10, 25) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( (5, 5) \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
+    "answerStr": "1"
   },
   {
     "id": "y12a-3b-q2c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "By finding where the derivative equals zero, determine the coordinates of any stationary point of the function \\( y = 2x^2 - 8x + 3 \\). (Format: '(x, y)')",
+    "question": "By finding where the derivative equals zero, determine the coordinates of any stationary point of the function \\( y = 2x^2 - 8x + 3 \\).",
     "a": "(2, -5)",
     "t": "Stationary points and turning points",
     "solutionSteps": [
@@ -227,16 +279,42 @@ export const Y12A_CH3B_QUESTIONS = [
       },
       {
         "explanation": "State the stationary point.",
-        "workingOut": "\\text{Stationary point is } (2, -5)"
+        "workingOut": "\\text{Stationary point: } (2, -5)"
       }
-    ]
+    ],
+    "opts": [
+      "\\( (2, -5) \\)",
+      "\\( (4, 3) \\)",
+      "\\( (-2, 27) \\)",
+      "\\( (2, 5) \\)"
+    ],
+    "options": [
+      {
+        "text": "\\( (2, -5) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( (4, 3) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( (-2, 27) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( (2, 5) \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "answerStr": "0"
   },
   {
     "id": "y12a-3b-q2d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "By finding where the derivative equals zero, determine the coordinates of any stationary point of the function \\( y = -x^2 + 4x - 3 \\). (Format: '(x, y)')",
+    "question": "By finding where the derivative equals zero, determine the coordinates of any stationary point of the function \\( y = -x^2 + 4x - 3 \\).",
     "a": "(2, 1)",
     "t": "Stationary points and turning points",
     "solutionSteps": [
@@ -254,16 +332,42 @@ export const Y12A_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Combine coordinates.",
-        "workingOut": "\\text{Stationary point is } (2, 1)"
+        "workingOut": "\\text{Stationary point: } (2, 1)"
       }
-    ]
+    ],
+    "opts": [
+      "\\( (4, -3) \\)",
+      "\\( (2, -1) \\)",
+      "\\( (-2, -15) \\)",
+      "\\( (2, 1) \\)"
+    ],
+    "options": [
+      {
+        "text": "\\( (4, -3) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( (2, -1) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( (-2, -15) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( (2, 1) \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
+    "answerStr": "3"
   },
   {
     "id": "y12a-3b-q2e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "By finding where the derivative equals zero, determine the coordinates of any stationary points of the function \\( y = x^3 - 6x^2 \\). If there are multiple points, list them in ascending order of their \\( x \\)-coordinates, separated by a comma and space (e.g. '(0, 0), (4, -32)').",
+    "question": "By finding where the derivative equals zero, determine the coordinates of any stationary points of the function \\( y = x^3 - 6x^2 \\).",
     "a": "(0, 0), (4, -32)",
     "t": "Stationary points and turning points",
     "solutionSteps": [
@@ -283,14 +387,40 @@ export const Y12A_CH3B_QUESTIONS = [
         "explanation": "Substitute \\( x = 4 \\) to find the second stationary point.",
         "workingOut": "y(4) = 4^3 - 6(4)^2 = 64 - 96 = -32 \\implies (4, -32)"
       }
-    ]
+    ],
+    "opts": [
+      "\\( (0, 0) \\) and \\( (-4, -160) \\)",
+      "\\( (0, 0) \\) and \\( (2, -16) \\)",
+      "\\( (2, -16) \\) and \\( (4, -32) \\)",
+      "\\( (0, 0) \\) and \\( (4, -32) \\)"
+    ],
+    "options": [
+      {
+        "text": "\\( (0, 0) \\) and \\( (-4, -160) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( (0, 0) \\) and \\( (2, -16) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( (2, -16) \\) and \\( (4, -32) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( (0, 0) \\) and \\( (4, -32) \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
+    "answerStr": "3"
   },
   {
     "id": "y12a-3b-q2f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "By finding where the derivative equals zero, determine the coordinates of any stationary point of the function \\( y = x^4 - 32x + 5 \\). (Format: '(x, y)')",
+    "question": "By finding where the derivative equals zero, determine the coordinates of any stationary point of the function \\( y = x^4 - 32x + 5 \\).",
     "a": "(2, -43)",
     "t": "Stationary points and turning points",
     "solutionSteps": [
@@ -308,9 +438,35 @@ export const Y12A_CH3B_QUESTIONS = [
       },
       {
         "explanation": "State the final coordinates.",
-        "workingOut": "\\text{Stationary point is } (2, -43)"
+        "workingOut": "\\text{Stationary point: } (2, -43)"
       }
-    ]
+    ],
+    "opts": [
+      "\\( (2, -43) \\)",
+      "\\( (-2, 85) \\)",
+      "\\( (2, 43) \\)",
+      "\\( (4, 133) \\)"
+    ],
+    "options": [
+      {
+        "text": "\\( (2, -43) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( (-2, 85) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( (2, 43) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( (4, 133) \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "answerStr": "0"
   },
   {
     "id": "y12a-3b-q3a",
