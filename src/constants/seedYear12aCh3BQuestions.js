@@ -1724,26 +1724,51 @@ export const Y12A_CH3B_QUESTIONS = [
   },
   {
     "id": "y12a-3b-q15b",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "For the curve described in part a, explain why \\( \\frac{dy}{dx} = 3 \\) when \\( x = 0 \\) and use this fact to deduce that \\( b = 3 \\).",
-    "a": "The tangent line at (0,0) is y = 3x, which has slope 3. The derivative is dy/dx = 2ax + b; at x = 0, dy/dx = b = 3.",
+    "question": "For the curve described in part a, find the value of \\( b \\).",
     "t": "Stationary points and turning points",
     "solutionSteps": [
       {
-        "explanation": "Relate the slope of the tangent line to the derivative of the curve at the origin.",
-        "workingOut": "\\text{Slope of tangent } y = 3x \\text{ is } 3 \\implies \\frac{dy}{dx}(0) = 3"
+        "explanation": "The tangent line \\( y = 3x \\) touches the curve at the origin \\( (0,0) \\). This means the slope of the curve at \\( x = 0 \\) is equal to the slope of the line, which is \\( 3 \\).",
+        "workingOut": "\\( \\frac{dy}{dx}(0) = 3 \\)"
       },
       {
-        "explanation": "Find the general derivative of \\( y = ax^2 + bx + c \\).",
-        "workingOut": "\\frac{dy}{dx} = 2ax + b"
+        "explanation": "Differentiate the general quadratic equation \\( y = ax^2 + bx + c \\).",
+        "workingOut": "\\( \\frac{dy}{dx} = 2ax + b \\)"
       },
       {
-        "explanation": "Evaluate the derivative at \\( x = 0 \\) and equate it to the slope.",
-        "workingOut": "\\frac{dy}{dx}(0) = 2a(0) + b = b \\implies b = 3"
+        "explanation": "Substitute \\( x = 0 \\) and equate the derivative to the slope of the tangent.",
+        "workingOut": "\\begin{aligned} \\frac{dy}{dx}(0) &= 2a(0) + b \\\\ 3 &= 0 + b \\\\ b &= 3 \\end{aligned}"
       }
-    ]
+    ],
+    "opts": [
+      "\\( -3 \\)",
+      "\\( 0 \\)",
+      "\\( 3 \\)",
+      "\\( 2 \\)"
+    ],
+    "options": [
+      {
+        "text": "\\( -3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 0 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 3 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( 2 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
+    "answerStr": "2"
   },
   {
     "id": "y12a-3b-q15c",
