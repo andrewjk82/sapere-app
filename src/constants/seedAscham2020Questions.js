@@ -2245,7 +2245,7 @@ export const ASCHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "(a) Find the stationary points and determine their nature.",
+    "question": "Consider the function \\( y = 3 + 2x^2 - x^4 \\).\n(a) Find the stationary points and determine their nature.",
     "opts": [
       "Local minimum at \\((0, 3)\\); local maxima at \\((1, 4)\\) and \\((-1, 4)\\)",
       "The opposite of this statement is true.",
@@ -2290,7 +2290,7 @@ export const ASCHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "(b) Find the coordinates of any points of inflection.",
+    "question": "Consider the function \\( y = 3 + 2x^2 - x^4 \\).\n(b) Find the coordinates of any points of inflection.",
     "opts": [
       "\\(-\\left(\\pm\\dfrac{1}{\\sqrt{3}},\\; \\dfrac{32}{9}\\right)\\)",
       "\\(\\left(\\pm\\dfrac{1}{\\sqrt{3}},\\; \\dfrac{32}{9}\\right)\\)",
