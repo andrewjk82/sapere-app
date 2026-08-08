@@ -1954,7 +1954,7 @@ export const Y12A_CH3B_QUESTIONS = [
       {
         "id": "y12a-3b-q16d",
         "type": "multiple_choice",
-        "question": "d) Hence state how many roots the equation \\( \\frac{4x}{x^2+1} = c \\) has for:\n\\[\n\\begin{array}{c}\n\\textbf{i)} \\ c > 2 \\\\\n\\textbf{ii)} \\ c = 2 \\\\\n\\textbf{iii)} \\ 0 < c < 2 \\\\\n\\textbf{iv)} \\ c = 0\n\\end{array}\n\\]",
+        "question": "d) Hence state how many roots the equation \\( \\frac{4x}{x^2+1} = c \\) has for:\n\\[\n\\begin{array}{l}\n\\textbf{i)} \\ c > 2 \\\\\n\\textbf{ii)} \\ c = 2 \\\\\n\\textbf{iii)} \\ 0 < c < 2 \\\\\n\\textbf{iv)} \\ c = 0\n\\end{array}\n\\]",
         "opts": [
           "i) 2, ii) 1, iii) 0, iv) 1",
           "i) 1, ii) 2, iii) 0, iv) 1",
