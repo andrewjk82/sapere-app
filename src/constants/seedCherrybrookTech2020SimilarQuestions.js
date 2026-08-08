@@ -919,42 +919,102 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     "requiresManualGrading": false
   },
   {
-    "id": "cths2020s-q21b",
+    "id": "cths2020s-q21",
     "topicId": "y12a-exam",
     "c": "EXAM",
-    "t": "Cherrybrook Tech 2020 Trial Exam",
-    "type": "teacher_review",
-    "difficulty": "medium",
-    "timeLimit": 180,
-    "question": "(b) Sketch the curve \\(y = 2x^3 - 3x^2 - 12x + 4\\), showing stationary points, point of inflection, and \\(y\\)-intercept.",
-    "answer": "Curve with local max at \\((-1,11)\\), POI at \\((\\frac{1}{2},-\\frac{5}{2})\\), local min at \\((2,-16)\\), \\(y\\)-intercept at \\((0,4)\\).",
-    "hint": "Use the results from part (a). Mark all key points and draw a smooth cubic curve.",
-    "solution": "Curve with local max at \\((-1,11)\\), POI at \\((\\frac{1}{2},-\\frac{5}{2})\\), local min at \\((2,-16)\\), \\(y\\)-intercept at \\((0,4)\\).",
-    "solutionSteps": [
-      {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Cherrybrook Tech 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\((-1,11),\\;(\\tfrac{1}{2},-\\tfrac{5}{2}),\\;(2,-16),\\;(0,4)\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\text{Cubic with described shape}",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(Curve with local max at \\((-1,11)\\), POI at \\((\\frac{1}{2},-\\frac{5}{2})\\), local min at \\((2,-16)\\), \\(y\\)-intercept at \\((0,4)\\).\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: Curve with local max at \\((-1,11)\\), POI at \\((\\frac{1}{2},-\\frac{5}{2})\\), local min at \\((2,-16)\\), \\(y\\)-intercept at \\((0,4)\\).. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(Curve with local max at \\((-1,11)\\), POI at \\((\\frac{1}{2},-\\frac{5}{2})\\), local min at \\((2,-16)\\), \\(y\\)-intercept at \\((0,4)\\).\\)",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
+    "t": "Cherrybrook Tech 2020 Trial Exam (Similar)",
+    "type": "subquestions",
+    "difficulty": "hard",
+    "timeLimit": 300,
+    "question": "A function is given by \\( y = 2x^3 - 3x^2 - 12x + 4 \\).",
     "isNew": true,
-    "requiresManualGrading": true
+    "requiresManualGrading": true,
+    "subQuestions": [
+      {
+        "id": "cths2020s-q21a",
+        "type": "multiple_choice",
+        "question": "(a) Find the stationary points, determine their nature, and find any points of inflection.",
+        "opts": [
+          "Local max at \\((-1, 11)\\), local min at \\((2, -16)\\), inflection at \\((\\frac{1}{2}, -\\frac{5}{2})\\)",
+          "Local min at \\((-1, 11)\\), local max at \\((2, -16)\\), inflection at \\((\\frac{1}{2}, -\\frac{5}{2})\\)",
+          "Local max at \\((-2, 15)\\), local min at \\((1, -12)\\), inflection at \\((-\\frac{1}{2}, \\frac{3}{2})\\)",
+          "Local max at \\((1, 11)\\), local min at \\((-2, -16)\\), inflection at \\((-\\frac{1}{2}, -\\frac{5}{2})\\)"
+        ],
+        "options": [
+          {
+            "text": "Local max at \\((-1, 11)\\), local min at \\((2, -16)\\), inflection at \\((\\frac{1}{2}, -\\frac{5}{2})\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "Local min at \\((-1, 11)\\), local max at \\((2, -16)\\), inflection at \\((\\frac{1}{2}, -\\frac{5}{2})\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "Local max at \\((-2, 15)\\), local min at \\((1, -12)\\), inflection at \\((-\\frac{1}{2}, \\frac{3}{2})\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "Local max at \\((1, 11)\\), local min at \\((-2, -16)\\), inflection at \\((-\\frac{1}{2}, -\\frac{5}{2})\\)",
+            "imageUrl": ""
+          }
+        ],
+        "answerStr": "0",
+        "answer": "0",
+        "solutionSteps": [
+          {
+            "explanation": "Find the first derivative \\(y'\\) using the power rule.",
+            "workingOut": "y' = 6x^2 - 6x - 12"
+          },
+          {
+            "explanation": "Set \\(y' = 0\\) and solve for stationary points.",
+            "workingOut": "6(x^2 - x - 2) = 0 \\Rightarrow 6(x-2)(x+1) = 0 \\Rightarrow x = 2 \\text{ or } x = -1"
+          },
+          {
+            "explanation": "Find the second derivative \\(y''\\) to classify.",
+            "workingOut": "y'' = 12x - 6"
+          },
+          {
+            "explanation": "Classify stationary points.",
+            "workingOut": "x=-1:\\quad y''=-18 < 0 \\Rightarrow \\text{local max at } (-1, 11)\nx=2:\\quad y''=18 > 0 \\Rightarrow \\text{local min at } (2, -16)"
+          },
+          {
+            "explanation": "Find points of inflection by setting \\(y'' = 0\\).",
+            "workingOut": "12x - 6 = 0 \\Rightarrow x = \\frac{1}{2}\n\\text{POI at } \\left(\\frac{1}{2}, -\\frac{5}{2}\\right)"
+          }
+        ]
+      },
+      {
+        "id": "cths2020s-q21b",
+        "type": "teacher_review",
+        "question": "(b) Sketch the curve, showing the stationary points, the point(s) of inflection and the \\(y\\)-intercept.",
+        "requiresManualGrading": true,
+        "solutionSteps": [
+          {
+            "explanation": "Identify the y-intercept.",
+            "workingOut": "y\\text{-intercept occurs when } x=0: y = 4"
+          },
+          {
+            "explanation": "Sketch the curve passing through these key features.",
+            "workingOut": "\\text{Plot local max } (-1,11)\\text{, POI } \\left(\\frac{1}{2}, -\\frac{5}{2}\\right)\\text{, local min } (2,-16)\\text{, and } y\\text{-intercept } (0,4)\\text{.}",
+            "graphData": {
+              "jsxGraph": {
+                "width": 300,
+                "height": 300,
+                "boundingbox": [
+                  -4,
+                  20,
+                  5,
+                  -20
+                ],
+                "showGrid": true,
+                "showAxisLabels": true,
+                "script": "board.suspendUpdate();\nboard.create('functiongraph', [function(x){ return 2*Math.pow(x,3) - 3*Math.pow(x,2) - 12*x + 4; }], {strokeColor: 'blue', strokeWidth: 2});\nboard.unsuspendUpdate();"
+              }
+            }
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "cths2020s-q22",
