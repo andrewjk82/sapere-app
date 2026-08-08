@@ -1455,7 +1455,7 @@ export const Y12A_CH3C_QUESTIONS = [
   },
   {
     "id": "y12a-3c-q6b",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "By writing the function with a negative index, find the first and second derivatives of \\( y = \\frac{1}{(2 - x)^3} \\).",
@@ -1474,11 +1474,37 @@ export const Y12A_CH3C_QUESTIONS = [
         "explanation": "Find the second derivative.",
         "workingOut": "y'' = 3 \\times (-4)(2-x)^{-5} \\times (-1) = 12(2-x)^{-5} = \\frac{12}{(2-x)^5}"
       }
-    ]
+    ],
+    "opts": [
+      "\\( y' = -\\frac{3}{(2-x)^4}, \\; y'' = \\frac{12}{(2-x)^5} \\)",
+      "\\( y' = \\frac{3}{(2-x)^4}, \\; y'' = \\frac{12}{(2-x)^5} \\)",
+      "\\( y' = -\\frac{3}{(2-x)^4}, \\; y'' = -\\frac{12}{(2-x)^5} \\)",
+      "\\( y' = \\frac{3}{(2-x)^4}, \\; y'' = -\\frac{12}{(2-x)^5} \\)"
+    ],
+    "options": [
+      {
+        "text": "\\( y' = -\\frac{3}{(2-x)^4}, \\; y'' = \\frac{12}{(2-x)^5} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = \\frac{3}{(2-x)^4}, \\; y'' = \\frac{12}{(2-x)^5} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = -\\frac{3}{(2-x)^4}, \\; y'' = -\\frac{12}{(2-x)^5} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = \\frac{3}{(2-x)^4}, \\; y'' = -\\frac{12}{(2-x)^5} \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
+    "answerStr": "1"
   },
   {
     "id": "y12a-3c-q6c",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "By writing the function with a negative index, find the first and second derivatives of \\( y = \\frac{1}{(4x + 3)^2} \\).",
@@ -1497,11 +1523,37 @@ export const Y12A_CH3C_QUESTIONS = [
         "explanation": "Find the second derivative.",
         "workingOut": "y'' = -8 \\times (-3)(4x+3)^{-4} \\times 4 = 96(4x+3)^{-4} = \\frac{96}{(4x+3)^4}"
       }
-    ]
+    ],
+    "opts": [
+      "\\( y' = -\\frac{8}{(4x+3)^3}, \\; y'' = \\frac{96}{(4x+3)^4} \\)",
+      "\\( y' = -\\frac{2}{(4x+3)^3}, \\; y'' = \\frac{6}{(4x+3)^4} \\)",
+      "\\( y' = \\frac{8}{(4x+3)^3}, \\; y'' = -\\frac{96}{(4x+3)^4} \\)",
+      "\\( y' = -\\frac{8}{(4x+3)^3}, \\; y'' = -\\frac{96}{(4x+3)^4} \\)"
+    ],
+    "options": [
+      {
+        "text": "\\( y' = -\\frac{8}{(4x+3)^3}, \\; y'' = \\frac{96}{(4x+3)^4} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = -\\frac{2}{(4x+3)^3}, \\; y'' = \\frac{6}{(4x+3)^4} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = \\frac{8}{(4x+3)^3}, \\; y'' = -\\frac{96}{(4x+3)^4} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = -\\frac{8}{(4x+3)^3}, \\; y'' = -\\frac{96}{(4x+3)^4} \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "answerStr": "0"
   },
   {
     "id": "y12a-3c-q6d",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "By writing the function with a negative index, find the first and second derivatives of \\( y = \\frac{3}{(5 - 2x)^3} \\).",
@@ -1520,11 +1572,37 @@ export const Y12A_CH3C_QUESTIONS = [
         "explanation": "Find the second derivative.",
         "workingOut": "y'' = 18 \\times (-4)(5-2x)^{-5} \\times (-2) = 144(5-2x)^{-5} = \\frac{144}{(5-2x)^5}"
       }
-    ]
+    ],
+    "opts": [
+      "\\( y' = \\frac{18}{(5-2x)^4}, \\; y'' = \\frac{144}{(5-2x)^5} \\)",
+      "\\( y' = \\frac{18}{(5-2x)^4}, \\; y'' = -\\frac{144}{(5-2x)^5} \\)",
+      "\\( y' = \\frac{9}{(5-2x)^4}, \\; y'' = \\frac{36}{(5-2x)^5} \\)",
+      "\\( y' = -\\frac{18}{(5-2x)^4}, \\; y'' = \\frac{144}{(5-2x)^5} \\)"
+    ],
+    "options": [
+      {
+        "text": "\\( y' = \\frac{18}{(5-2x)^4}, \\; y'' = \\frac{144}{(5-2x)^5} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = \\frac{18}{(5-2x)^4}, \\; y'' = -\\frac{144}{(5-2x)^5} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = \\frac{9}{(5-2x)^4}, \\; y'' = \\frac{36}{(5-2x)^5} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = -\\frac{18}{(5-2x)^4}, \\; y'' = \\frac{144}{(5-2x)^5} \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "answerStr": "0"
   },
   {
     "id": "y12a-3c-q7a",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "By writing the function with a fractional index, find the first and second derivatives of \\( f(x) = 2\\sqrt{x} \\).",
@@ -1540,14 +1618,40 @@ export const Y12A_CH3C_QUESTIONS = [
         "workingOut": "f'(x) = 2 \\times \\frac{1}{2}x^{-1/2} = x^{-1/2} = \\frac{1}{\\sqrt{x}}"
       },
       {
-        "explanation": "Find the second derivative.",
+        "explanation": "Find the first derivative.",
         "workingOut": "f''(x) = -\\frac{1}{2}x^{-3/2} = -\\frac{1}{2x\\sqrt{x}}"
       }
-    ]
+    ],
+    "opts": [
+      "\\( f'(x) = \\frac{1}{\\sqrt{x}}, \\; f''(x) = -\\frac{1}{2x\\sqrt{x}} \\)",
+      "\\( f'(x) = \\frac{1}{\\sqrt{x}}, \\; f''(x) = \\frac{1}{2x\\sqrt{x}} \\)",
+      "\\( f'(x) = -\\frac{1}{\\sqrt{x}}, \\; f''(x) = \\frac{1}{2x\\sqrt{x}} \\)",
+      "\\( f'(x) = \\frac{1}{2\\sqrt{x}}, \\; f''(x) = -\\frac{1}{4x\\sqrt{x}} \\)"
+    ],
+    "options": [
+      {
+        "text": "\\( f'(x) = \\frac{1}{\\sqrt{x}}, \\; f''(x) = -\\frac{1}{2x\\sqrt{x}} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f'(x) = \\frac{1}{\\sqrt{x}}, \\; f''(x) = \\frac{1}{2x\\sqrt{x}} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f'(x) = -\\frac{1}{\\sqrt{x}}, \\; f''(x) = \\frac{1}{2x\\sqrt{x}} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f'(x) = \\frac{1}{2\\sqrt{x}}, \\; f''(x) = -\\frac{1}{4x\\sqrt{x}} \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "0",
+    "answerStr": "0"
   },
   {
     "id": "y12a-3c-q7b",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "By writing the function with a fractional index, find the first and second derivatives of \\( f(x) = \\sqrt[3]{x^2} \\).",
@@ -1563,14 +1667,40 @@ export const Y12A_CH3C_QUESTIONS = [
         "workingOut": "f'(x) = \\frac{2}{3}x^{-1/3} = \\frac{2}{3\\sqrt[3]{x}}"
       },
       {
-        "explanation": "Find the second derivative.",
+        "explanation": "Find the first derivative.",
         "workingOut": "f''(x) = \\frac{2}{3} \\times (-\\frac{1}{3})x^{-4/3} = -\\frac{2}{9}x^{-4/3} = -\\frac{2}{9x\\sqrt[3]{x}}"
       }
-    ]
+    ],
+    "opts": [
+      "\\( f'(x) = \\frac{2}{3\\sqrt[3]{x}}, \\; f''(x) = \\frac{2}{9x\\sqrt[3]{x}} \\)",
+      "\\( f'(x) = \\frac{2}{\\sqrt[3]{x}}, \\; f''(x) = -\\frac{2}{3x\\sqrt[3]{x}} \\)",
+      "\\( f'(x) = -\\frac{2}{3\\sqrt[3]{x}}, \\; f''(x) = \\frac{2}{9x\\sqrt[3]{x}} \\)",
+      "\\( f'(x) = \\frac{2}{3\\sqrt[3]{x}}, \\; f''(x) = -\\frac{2}{9x\\sqrt[3]{x}} \\)"
+    ],
+    "options": [
+      {
+        "text": "\\( f'(x) = \\frac{2}{3\\sqrt[3]{x}}, \\; f''(x) = \\frac{2}{9x\\sqrt[3]{x}} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f'(x) = \\frac{2}{\\sqrt[3]{x}}, \\; f''(x) = -\\frac{2}{3x\\sqrt[3]{x}} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f'(x) = -\\frac{2}{3\\sqrt[3]{x}}, \\; f''(x) = \\frac{2}{9x\\sqrt[3]{x}} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f'(x) = \\frac{2}{3\\sqrt[3]{x}}, \\; f''(x) = -\\frac{2}{9x\\sqrt[3]{x}} \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
+    "answerStr": "3"
   },
   {
     "id": "y12a-3c-q7c",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "By writing the function with a fractional index, find the first and second derivatives of \\( f(x) = x^2\\sqrt{x} \\).",
@@ -1586,14 +1716,40 @@ export const Y12A_CH3C_QUESTIONS = [
         "workingOut": "f'(x) = \\frac{5}{2}x^{3/2} = \\frac{5}{2}x\\sqrt{x}"
       },
       {
-        "explanation": "Find the second derivative.",
+        "explanation": "Find the first derivative.",
         "workingOut": "f''(x) = \\frac{5}{2} \\times \\frac{3}{2}x^{1/2} = \\frac{15}{4}\\sqrt{x}"
       }
-    ]
+    ],
+    "opts": [
+      "\\( f'(x) = \\frac{3}{2}x\\sqrt{x}, \\; f''(x) = \\frac{3}{4}\\sqrt{x} \\)",
+      "\\( f'(x) = \\frac{5}{2}\\sqrt{x}, \\; f''(x) = \\frac{15}{4\\sqrt{x}} \\)",
+      "\\( f'(x) = \\frac{5}{2}x\\sqrt{x}, \\; f''(x) = \\frac{15}{4}\\sqrt{x} \\)",
+      "\\( f'(x) = \\frac{5}{2}x\\sqrt{x}, \\; f''(x) = \\frac{15}{2}\\sqrt{x} \\)"
+    ],
+    "options": [
+      {
+        "text": "\\( f'(x) = \\frac{3}{2}x\\sqrt{x}, \\; f''(x) = \\frac{3}{4}\\sqrt{x} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f'(x) = \\frac{5}{2}\\sqrt{x}, \\; f''(x) = \\frac{15}{4\\sqrt{x}} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f'(x) = \\frac{5}{2}x\\sqrt{x}, \\; f''(x) = \\frac{15}{4}\\sqrt{x} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f'(x) = \\frac{5}{2}x\\sqrt{x}, \\; f''(x) = \\frac{15}{2}\\sqrt{x} \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
+    "answerStr": "2"
   },
   {
     "id": "y12a-3c-q7d",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "By writing the function with a fractional index, find the first and second derivatives of \\( f(x) = \\frac{2}{\\sqrt{x}} \\).",
@@ -1609,14 +1765,40 @@ export const Y12A_CH3C_QUESTIONS = [
         "workingOut": "f'(x) = -x^{-3/2} = -\\frac{1}{x\\sqrt{x}}"
       },
       {
-        "explanation": "Find the second derivative.",
+        "explanation": "Find the first derivative.",
         "workingOut": "f''(x) = \\frac{3}{2}x^{-5/2} = \\frac{3}{2x^2\\sqrt{x}}"
       }
-    ]
+    ],
+    "opts": [
+      "\\( f'(x) = -\\frac{1}{x\\sqrt{x}}, \\; f''(x) = -\\frac{3}{2x^2\\sqrt{x}} \\)",
+      "\\( f'(x) = -\\frac{1}{x\\sqrt{x}}, \\; f''(x) = \\frac{3}{2x^2\\sqrt{x}} \\)",
+      "\\( f'(x) = \\frac{1}{x\\sqrt{x}}, \\; f''(x) = -\\frac{3}{2x^2\\sqrt{x}} \\)",
+      "\\( f'(x) = -\\frac{2}{x\\sqrt{x}}, \\; f''(x) = \\frac{3}{x^2\\sqrt{x}} \\)"
+    ],
+    "options": [
+      {
+        "text": "\\( f'(x) = -\\frac{1}{x\\sqrt{x}}, \\; f''(x) = -\\frac{3}{2x^2\\sqrt{x}} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f'(x) = -\\frac{1}{x\\sqrt{x}}, \\; f''(x) = \\frac{3}{2x^2\\sqrt{x}} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f'(x) = \\frac{1}{x\\sqrt{x}}, \\; f''(x) = -\\frac{3}{2x^2\\sqrt{x}} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f'(x) = -\\frac{2}{x\\sqrt{x}}, \\; f''(x) = \\frac{3}{x^2\\sqrt{x}} \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
+    "answerStr": "1"
   },
   {
     "id": "y12a-3c-q7e",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "By writing the function with a fractional index, find the first and second derivatives of \\( f(x) = \\sqrt{x + 3} \\).",
@@ -1632,14 +1814,40 @@ export const Y12A_CH3C_QUESTIONS = [
         "workingOut": "f'(x) = \\frac{1}{2}(x+3)^{-1/2} = \\frac{1}{2\\sqrt{x+3}}"
       },
       {
-        "explanation": "Find the second derivative.",
+        "explanation": "Find the first derivative.",
         "workingOut": "f''(x) = -\\frac{1}{4}(x+3)^{-3/2} = -\\frac{1}{4(x+3)\\sqrt{x+3}}"
       }
-    ]
+    ],
+    "opts": [
+      "\\( f'(x) = -\\frac{1}{2\\sqrt{x+3}}, \\; f''(x) = \\frac{1}{4(x+3)\\sqrt{x+3}} \\)",
+      "\\( f'(x) = \\frac{1}{\\sqrt{x+3}}, \\; f''(x) = -\\frac{1}{2(x+3)\\sqrt{x+3}} \\)",
+      "\\( f'(x) = \\frac{1}{2\\sqrt{x+3}}, \\; f''(x) = \\frac{1}{4(x+3)\\sqrt{x+3}} \\)",
+      "\\( f'(x) = \\frac{1}{2\\sqrt{x+3}}, \\; f''(x) = -\\frac{1}{4(x+3)\\sqrt{x+3}} \\)"
+    ],
+    "options": [
+      {
+        "text": "\\( f'(x) = -\\frac{1}{2\\sqrt{x+3}}, \\; f''(x) = \\frac{1}{4(x+3)\\sqrt{x+3}} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f'(x) = \\frac{1}{\\sqrt{x+3}}, \\; f''(x) = -\\frac{1}{2(x+3)\\sqrt{x+3}} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f'(x) = \\frac{1}{2\\sqrt{x+3}}, \\; f''(x) = \\frac{1}{4(x+3)\\sqrt{x+3}} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f'(x) = \\frac{1}{2\\sqrt{x+3}}, \\; f''(x) = -\\frac{1}{4(x+3)\\sqrt{x+3}} \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
+    "answerStr": "3"
   },
   {
     "id": "y12a-3c-q7f",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "By writing the function with a fractional index, find the first and second derivatives of \\( f(x) = \\sqrt{1 - 3x} \\).",
@@ -1655,14 +1863,40 @@ export const Y12A_CH3C_QUESTIONS = [
         "workingOut": "f'(x) = \\frac{1}{2}(1 - 3x)^{-1/2} \\times (-3) = -\\frac{3}{2}(1-3x)^{-1/2} = -\\frac{3}{2\\sqrt{1-3x}}"
       },
       {
-        "explanation": "Find the second derivative.",
+        "explanation": "Find the first derivative.",
         "workingOut": "f''(x) = -\\frac{3}{2} \\times (-\\frac{1}{2})(1-3x)^{-3/2} \\times (-3) = -\\frac{9}{4}(1-3x)^{-3/2} = -\\frac{9}{4(1-3x)\\sqrt{1-3x}}"
       }
-    ]
+    ],
+    "opts": [
+      "\\( f'(x) = -\\frac{1}{2\\sqrt{1-3x}}, \\; f''(x) = -\\frac{3}{4(1-3x)\\sqrt{1-3x}} \\)",
+      "\\( f'(x) = \\frac{3}{2\\sqrt{1-3x}}, \\; f''(x) = -\\frac{9}{4(1-3x)\\sqrt{1-3x}} \\)",
+      "\\( f'(x) = -\\frac{3}{2\\sqrt{1-3x}}, \\; f''(x) = \\frac{9}{4(1-3x)\\sqrt{1-3x}} \\)",
+      "\\( f'(x) = -\\frac{3}{2\\sqrt{1-3x}}, \\; f''(x) = -\\frac{9}{4(1-3x)\\sqrt{1-3x}} \\)"
+    ],
+    "options": [
+      {
+        "text": "\\( f'(x) = -\\frac{1}{2\\sqrt{1-3x}}, \\; f''(x) = -\\frac{3}{4(1-3x)\\sqrt{1-3x}} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f'(x) = \\frac{3}{2\\sqrt{1-3x}}, \\; f''(x) = -\\frac{9}{4(1-3x)\\sqrt{1-3x}} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f'(x) = -\\frac{3}{2\\sqrt{1-3x}}, \\; f''(x) = \\frac{9}{4(1-3x)\\sqrt{1-3x}} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f'(x) = -\\frac{3}{2\\sqrt{1-3x}}, \\; f''(x) = -\\frac{9}{4(1-3x)\\sqrt{1-3x}} \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
+    "answerStr": "3"
   },
   {
     "id": "y12a-3c-q8a",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "Find the first derivative \\( f'(x) \\) and the second derivative \\( f''(x) \\) for the function \\( f(x) = x^3 + 4x^2 + 6x - 5 \\).",
@@ -1670,14 +1904,40 @@ export const Y12A_CH3C_QUESTIONS = [
     "t": "Second and higher derivatives",
     "solutionSteps": [
       {
-        "explanation": "Differentiate \\( f(x) = x^3 + 4x^2 + 6x - 5 \\) with respect to \\( x \\) to find \\( f'(x) \\).",
+        "explanation": "Find the first derivative.",
         "workingOut": "f'(x) = 3x^2 + 8x + 6"
       },
       {
-        "explanation": "Differentiate \\( f'(x) = 3x^2 + 8x + 6 \\) to find \\( f''(x) \\).",
+        "explanation": "Find the first derivative.",
         "workingOut": "f''(x) = 6x + 8"
       }
-    ]
+    ],
+    "opts": [
+      "\\( f'(x) = 3x^2 + 8x + 6, \\; f''(x) = 6x + 14 \\)",
+      "\\( f'(x) = 3x^2 + 4x + 6, \\; f''(x) = 6x + 4 \\)",
+      "\\( f'(x) = x^2 + 8x + 6, \\; f''(x) = 2x + 8 \\)",
+      "\\( f'(x) = 3x^2 + 8x + 6, \\; f''(x) = 6x + 8 \\)"
+    ],
+    "options": [
+      {
+        "text": "\\( f'(x) = 3x^2 + 8x + 6, \\; f''(x) = 6x + 14 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f'(x) = 3x^2 + 4x + 6, \\; f''(x) = 6x + 4 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f'(x) = x^2 + 8x + 6, \\; f''(x) = 2x + 8 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f'(x) = 3x^2 + 8x + 6, \\; f''(x) = 6x + 8 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
+    "answerStr": "3"
   },
   {
     "id": "y12a-3c-q8bi",
