@@ -1964,11 +1964,83 @@ export const Y12A_CH3B_QUESTIONS = [
         "solutionSteps": [
           {
             "explanation": "The roots of the equation correspond to the intersections between the graph of \\( y = \\frac{4x}{x^2+1} \\) and the horizontal line \\( y = c \\).",
-            "workingOut": "\\text{We can observe the graph sketched in part (c) to determine the number of intersections for different heights } c."
+            "workingOut": "\\text{We can observe the intersections for different heights } c."
           },
           {
-            "explanation": "Analyze the number of intersections for each interval.",
-            "workingOut": "\\text{i) For } c > 2\\text{, the line is above the maximum turning point, so it does not intersect the curve. (0 roots)}\n\\text{ii) For } c = 2\\text{, the line is tangent to the curve at the maximum turning point. (1 root)}\n\\text{iii) For } 0 < c < 2\\text{, the line cuts through the curve twice between the origin and the maximum, and towards positive infinity. (2 roots)}\n\\text{iv) For } c = 0\\text{, the line is the } x\\text{-axis and intersects the curve only at the origin. (1 root)}"
+            "explanation": "\\textbf{i)} For \\( c > 2 \\)",
+            "workingOut": "\\text{The line (e.g. } y=3 \\text{) is above the maximum turning point } (1, 2)\\text{. It does not intersect the curve at all. \\textbf{(0 roots)}}",
+            "graphData": {
+              "jsxGraph": {
+                "width": 350,
+                "height": 250,
+                "boundingbox": [
+                  -2,
+                  4,
+                  6,
+                  -2
+                ],
+                "showGrid": true,
+                "showAxisLabels": true,
+                "script": "board.suspendUpdate();\nboard.create('functiongraph', [function(x){ return 4*x / (x*x + 1); }], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('functiongraph', [function(x){ return 3; }], {strokeColor: 'red', strokeWidth: 2, dash: 2});\nboard.create('point', [1, 2], {name: 'Max(1, 2)', color: 'blue', label: { offset: [-10, 15] }});\nboard.create('text', [4, 3.2, 'y=3'], {color: 'red'});\nboard.unsuspendUpdate();"
+              }
+            }
+          },
+          {
+            "explanation": "\\textbf{ii)} For \\( c = 2 \\)",
+            "workingOut": "\\text{The line is exactly tangent to the curve at the maximum turning point } (1, 2)\\text{. It intersects the curve exactly once. \\textbf{(1 root)}}",
+            "graphData": {
+              "jsxGraph": {
+                "width": 350,
+                "height": 250,
+                "boundingbox": [
+                  -2,
+                  4,
+                  6,
+                  -2
+                ],
+                "showGrid": true,
+                "showAxisLabels": true,
+                "script": "board.suspendUpdate();\nboard.create('functiongraph', [function(x){ return 4*x / (x*x + 1); }], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('functiongraph', [function(x){ return 2; }], {strokeColor: 'red', strokeWidth: 2, dash: 2});\nboard.create('point', [1, 2], {name: 'Max(1, 2) / Intersection', color: 'purple', label: { offset: [-10, 15] }});\nboard.create('text', [4, 2.2, 'y=2'], {color: 'red'});\nboard.unsuspendUpdate();"
+              }
+            }
+          },
+          {
+            "explanation": "\\textbf{iii)} For \\( 0 < c < 2 \\)",
+            "workingOut": "\\text{The line (e.g. } y=1 \\text{) cuts through the curve twice: once before the maximum, and once after. \\textbf{(2 roots)}}",
+            "graphData": {
+              "jsxGraph": {
+                "width": 350,
+                "height": 250,
+                "boundingbox": [
+                  -2,
+                  4,
+                  6,
+                  -2
+                ],
+                "showGrid": true,
+                "showAxisLabels": true,
+                "script": "board.suspendUpdate();\nboard.create('functiongraph', [function(x){ return 4*x / (x*x + 1); }], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('functiongraph', [function(x){ return 1; }], {strokeColor: 'red', strokeWidth: 2, dash: 2});\nboard.create('intersection', [board.objects[board.objects.length-2], board.objects[board.objects.length-1], 0], {name: '', size: 3, color: 'purple'});\nboard.create('intersection', [board.objects[board.objects.length-3], board.objects[board.objects.length-2], 1], {name: '', size: 3, color: 'purple'});\nboard.create('text', [4, 1.2, 'y=1'], {color: 'red'});\nboard.unsuspendUpdate();"
+              }
+            }
+          },
+          {
+            "explanation": "\\textbf{iv)} For \\( c = 0 \\)",
+            "workingOut": "\\text{The line is the } x\\text{-axis itself. It only intersects the curve at the origin } (0,0)\\text{. \\textbf{(1 root)}}",
+            "graphData": {
+              "jsxGraph": {
+                "width": 350,
+                "height": 250,
+                "boundingbox": [
+                  -2,
+                  4,
+                  6,
+                  -2
+                ],
+                "showGrid": true,
+                "showAxisLabels": true,
+                "script": "board.suspendUpdate();\nboard.create('functiongraph', [function(x){ return 4*x / (x*x + 1); }], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('functiongraph', [function(x){ return 0; }], {strokeColor: 'red', strokeWidth: 2, dash: 2});\nboard.create('point', [0, 0], {name: '(0,0) Intersection', color: 'purple', label: { offset: [10, -15] }});\nboard.create('text', [4, 0.2, 'y=0'], {color: 'red'});\nboard.unsuspendUpdate();"
+              }
+            }
           }
         ],
         "options": [
