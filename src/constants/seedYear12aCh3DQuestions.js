@@ -942,27 +942,183 @@ export const Y12A_CH3D_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y12a-3d-q8a",
-        "type": "teacher_review",
-        "question": "a) If \\( f(x) = x^3 - 12x \\), show that \\( f'(x) = 3(x - 2)(x + 2) \\) and \\( f''(x) = 6x \\).",
-        "a": "f'(x) = 3x^2 - 12 = 3(x-2)(x+2), and f''(x) = d/dx[3x^2-12] = 6x."
+        "type": "multiple_choice",
+        "question": "Find \\( y' \\) and \\( y'' \\) for \\( y = x^3 - 3x^2 - 9x + 13 \\).",
+        "a": "f'(x) = 3x^2 - 12 = 3(x-2)(x+2), and f''(x) = d/dx[3x^2-12] = 6x.",
+        "opts": [
+          "\\( y' = 3x^2 - 6x - 9 \\), \\( y'' = 6x \\)",
+          "\\( y' = 3x^2 - 6x \\), \\( y'' = 6x - 6 \\)",
+          "\\( y' = 3x^2 - 9 \\), \\( y'' = 6x \\)",
+          "\\( y' = 3x^2 - 6x - 9 \\), \\( y'' = 6x - 6 \\)"
+        ],
+        "solutionSteps": [
+          {
+            "explanation": "Find the first derivative.",
+            "workingOut": "\\begin{aligned} y' &= 3x^2 - 2 \\times 3x - 9 \\\\ &= 3x^2 - 6x - 9 \\end{aligned}"
+          },
+          {
+            "explanation": "Find the second derivative.",
+            "workingOut": "\\begin{aligned} y'' &= 2 \\times 3x - 6 \\\\ &= 6x - 6 \\end{aligned}"
+          }
+        ],
+        "options": [
+          {
+            "text": "\\( y' = 3x^2 - 6x - 9 \\), \\( y'' = 6x \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( y' = 3x^2 - 6x \\), \\( y'' = 6x - 6 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( y' = 3x^2 - 9 \\), \\( y'' = 6x \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( y' = 3x^2 - 6x - 9 \\), \\( y'' = 6x - 6 \\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "3",
+        "answerStr": "3"
       },
       {
         "id": "y12a-3d-q8b",
-        "type": "teacher_review",
-        "question": "b) By solving \\( f'(x) = 0 \\), find the coordinates of any stationary points.",
-        "a": "Stationary points are at (2, -16) and (-2, 16)."
+        "type": "multiple_choice",
+        "question": "Find the stationary points of \\( y = x^3 - 3x^2 - 9x + 13 \\) and determine their nature.",
+        "a": "Stationary points are at (2, -16) and (-2, 16).",
+        "opts": [
+          "Max at \\( (-1, 18) \\), Min at \\( (3, -14) \\)",
+          "Max at \\( (-1, 13) \\), Min at \\( (3, -14) \\)",
+          "Min at \\( (-1, 13) \\), Max at \\( (3, 14) \\)",
+          "Min at \\( (-1, 18) \\), Max at \\( (3, -14) \\)"
+        ],
+        "solutionSteps": [
+          {
+            "explanation": "Set the first derivative to zero.",
+            "workingOut": "\\begin{aligned} 3x^2 - 6x - 9 &= 0 \\\\ 3(x^2 - 2x - 3) &= 0 \\\\ 3(x - 3)(x + 1) &= 0 \\\\ x &= 3, -1 \\end{aligned}"
+          },
+          {
+            "explanation": "Find the y-coordinates.",
+            "workingOut": "\\begin{aligned} y(3) &= 3^3 - 3(3)^2 - 9(3) + 13 = 27 - 27 - 27 + 13 = -14 \\\\ y(-1) &= (-1)^3 - 3(-1)^2 - 9(-1) + 13 = -1 - 3 + 9 + 13 = 18 \\end{aligned}"
+          },
+          {
+            "explanation": "Determine nature using the second derivative.",
+            "workingOut": "\\begin{aligned} y''(3) &= 6(3) - 6 = 12 > 0 \\implies \\text{Minimum at } (3, -14) \\\\ y''(-1) &= 6(-1) - 6 = -12 < 0 \\implies \\text{Maximum at } (-1, 18) \\end{aligned}"
+          }
+        ],
+        "options": [
+          {
+            "text": "Max at \\( (-1, 18) \\), Min at \\( (3, -14) \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "Max at \\( (-1, 13) \\), Min at \\( (3, -14) \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "Min at \\( (-1, 13) \\), Max at \\( (3, 14) \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "Min at \\( (-1, 18) \\), Max at \\( (3, -14) \\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "0",
+        "answerStr": "0"
       },
       {
         "id": "y12a-3d-q8c",
-        "type": "teacher_review",
-        "question": "c) Examine the sign of \\( f''(2) \\) and \\( f''(-2) \\) to determine their nature.",
-        "a": "f''(2) = 12 > 0 (minimum); f''(-2) = -12 < 0 (maximum)."
+        "type": "multiple_choice",
+        "question": "Find the coordinates of the point of inflection.",
+        "a": "f''(2) = 12 > 0 (minimum); f''(-2) = -12 < 0 (maximum).",
+        "opts": [
+          "\\( (-1, 18) \\)",
+          "\\( (1, 2) \\)",
+          "\\( (3, -14) \\)",
+          "\\( (0, 13) \\)"
+        ],
+        "solutionSteps": [
+          {
+            "explanation": "Set the second derivative to zero.",
+            "workingOut": "\\begin{aligned} y'' &= 6x - 6 = 0 \\\\ 6x &= 6 \\\\ x &= 1 \\end{aligned}"
+          },
+          {
+            "explanation": "Find the y-coordinate.",
+            "workingOut": "\\begin{aligned} y(1) &= 1^3 - 3(1)^2 - 9(1) + 13 \\\\ &= 1 - 3 - 9 + 13 \\\\ &= 2 \\end{aligned}"
+          },
+          {
+            "explanation": "Verify concavity changes.",
+            "workingOut": "\\text{For } x < 1, y'' < 0. \\text{ For } x > 1, y'' > 0. \\text{ Thus, } (1, 2) \\text{ is a point of inflection.}"
+          }
+        ],
+        "options": [
+          {
+            "text": "\\( (-1, 18) \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( (1, 2) \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( (3, -14) \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( (0, 13) \\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "1",
+        "answerStr": "1"
       },
       {
         "id": "y12a-3d-q8d",
-        "type": "teacher_review",
-        "question": "d) Find the coordinates of the point of inflection. Remember that you must show that the sign of \\( f''(x) \\) changes about this point.",
-        "a": "Inflection point is at (0, 0) since f''(0) = 0 and sign of f''(x) changes from negative (for x < 0) to positive (for x > 0)."
+        "type": "multiple_choice",
+        "question": "Which of the following correctly summarizes the key features of the graph?",
+        "a": "Inflection point is at (0, 0) since f''(0) = 0 and sign of f''(x) changes from negative (for x < 0) to positive (for x > 0).",
+        "opts": [
+          "Max at (1, 2), Min at (3, -14), Inflection at (-1, 18)",
+          "Max at (3, -14), Min at (-1, 18), Inflection at (1, 2)",
+          "Max at (-1, 18), Min at (3, -14), Inflection at (1, 2)",
+          "Max at (-1, 18), Min at (3, -14), Inflection at (0, 13)"
+        ],
+        "solutionSteps": [
+          {
+            "explanation": "Identify turning points from previous steps.",
+            "workingOut": "\\text{Maximum at } (-1, 18), \\text{ Minimum at } (3, -14)"
+          },
+          {
+            "explanation": "Identify the inflection point.",
+            "workingOut": "\\text{Point of inflection at } (1, 2)"
+          },
+          {
+            "explanation": "Identify the y-intercept.",
+            "workingOut": "\\text{y-intercept is at } x = 0 \\implies y(0) = 13"
+          }
+        ],
+        "options": [
+          {
+            "text": "Max at (1, 2), Min at (3, -14), Inflection at (-1, 18)",
+            "imageUrl": ""
+          },
+          {
+            "text": "Max at (3, -14), Min at (-1, 18), Inflection at (1, 2)",
+            "imageUrl": ""
+          },
+          {
+            "text": "Max at (-1, 18), Min at (3, -14), Inflection at (1, 2)",
+            "imageUrl": ""
+          },
+          {
+            "text": "Max at (-1, 18), Min at (3, -14), Inflection at (0, 13)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "2",
+        "answerStr": "2"
       },
       {
         "id": "y12a-3d-q8e",
@@ -1017,27 +1173,183 @@ export const Y12A_CH3D_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y12a-3d-q9a",
-        "type": "teacher_review",
-        "question": "a) If \\( f(x) = x^3 - 3x^2 - 24x + 10 \\), show that \\( f'(x) = 3(x - 4)(x + 2) \\) and \\( f''(x) = 6(x - 1) \\).",
-        "a": "f'(x) = 3x^2 - 6x - 24 = 3(x-4)(x+2), and f''(x) = 6x - 6 = 6(x-1)."
+        "type": "multiple_choice",
+        "question": "Find \\( y' \\) and \\( y'' \\) for \\( y = 5 + 9x + 3x^2 - x^3 \\).",
+        "a": "f'(x) = 3x^2 - 6x - 24 = 3(x-4)(x+2), and f''(x) = 6x - 6 = 6(x-1).",
+        "opts": [
+          "\\( y' = 9 + 6x - 3x^2 \\), \\( y'' = 6 - 6x \\)",
+          "\\( y' = 9 + 3x - 3x^2 \\), \\( y'' = 3 - 6x \\)",
+          "\\( y' = 5 + 6x - 3x^2 \\), \\( y'' = 6 - 6x \\)",
+          "\\( y' = 9 + 6x - x^3 \\), \\( y'' = 6 - 6x \\)"
+        ],
+        "solutionSteps": [
+          {
+            "explanation": "Find the first derivative.",
+            "workingOut": "\\begin{aligned} y' &= 0 + 9(1) + 3(2x) - 3x^2 \\\\ &= 9 + 6x - 3x^2 \\end{aligned}"
+          },
+          {
+            "explanation": "Find the second derivative.",
+            "workingOut": "\\begin{aligned} y'' &= 0 + 6(1) - 3(2x) \\\\ &= 6 - 6x \\end{aligned}"
+          }
+        ],
+        "options": [
+          {
+            "text": "\\( y' = 9 + 6x - 3x^2 \\), \\( y'' = 6 - 6x \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( y' = 9 + 3x - 3x^2 \\), \\( y'' = 3 - 6x \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( y' = 5 + 6x - 3x^2 \\), \\( y'' = 6 - 6x \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( y' = 9 + 6x - x^3 \\), \\( y'' = 6 - 6x \\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "0",
+        "answerStr": "0"
       },
       {
         "id": "y12a-3d-q9b",
-        "type": "teacher_review",
-        "question": "b) Find any stationary points and use the sign of \\( f''(x) \\) to determine their nature.",
-        "a": "Stationary points at (-2, 38) (maximum) and (4, -70) (minimum)."
+        "type": "multiple_choice",
+        "question": "Find the stationary points of \\( y = 5 + 9x + 3x^2 - x^3 \\) and determine their nature.",
+        "a": "Stationary points at (-2, 38) (maximum) and (4, -70) (minimum).",
+        "opts": [
+          "Min at \\( (1, 16) \\), Max at \\( (3, 32) \\)",
+          "Min at \\( (-1, 5) \\), Max at \\( (3, 32) \\)",
+          "Min at \\( (-1, 0) \\), Max at \\( (3, 32) \\)",
+          "Max at \\( (-1, 0) \\), Min at \\( (3, 32) \\)"
+        ],
+        "solutionSteps": [
+          {
+            "explanation": "Set the first derivative to zero.",
+            "workingOut": "\\begin{aligned} 9 + 6x - 3x^2 &= 0 \\\\ -3(x^2 - 2x - 3) &= 0 \\\\ -3(x - 3)(x + 1) &= 0 \\\\ x &= 3, -1 \\end{aligned}"
+          },
+          {
+            "explanation": "Find the y-coordinates.",
+            "workingOut": "\\begin{aligned} y(3) &= 5 + 9(3) + 3(3)^2 - 3^3 = 5 + 27 + 27 - 27 = 32 \\\\ y(-1) &= 5 + 9(-1) + 3(-1)^2 - (-1)^3 = 5 - 9 + 3 + 1 = 0 \\end{aligned}"
+          },
+          {
+            "explanation": "Determine nature using the second derivative.",
+            "workingOut": "\\begin{aligned} y''(3) &= 6 - 6(3) = -12 < 0 \\implies \\text{Maximum at } (3, 32) \\\\ y''(-1) &= 6 - 6(-1) = 12 > 0 \\implies \\text{Minimum at } (-1, 0) \\end{aligned}"
+          }
+        ],
+        "options": [
+          {
+            "text": "Min at \\( (1, 16) \\), Max at \\( (3, 32) \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "Min at \\( (-1, 5) \\), Max at \\( (3, 32) \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "Min at \\( (-1, 0) \\), Max at \\( (3, 32) \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "Max at \\( (-1, 0) \\), Min at \\( (3, 32) \\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "2",
+        "answerStr": "2"
       },
       {
         "id": "y12a-3d-q9c",
-        "type": "teacher_review",
-        "question": "c) Find the coordinates of any points of inflection, testing them with a table of concavities.",
-        "a": "Inflection point is at (1, -16) since f''(1) = 0 and f'' changes from negative (for x < 1) to positive (for x > 1)."
+        "type": "multiple_choice",
+        "question": "Find the coordinates of the point of inflection.",
+        "a": "Inflection point is at (1, -16) since f''(1) = 0 and f'' changes from negative (for x < 1) to positive (for x > 1).",
+        "opts": [
+          "\\( (1, 16) \\)",
+          "\\( (-1, 0) \\)",
+          "\\( (0, 5) \\)",
+          "\\( (3, 32) \\)"
+        ],
+        "solutionSteps": [
+          {
+            "explanation": "Set the second derivative to zero.",
+            "workingOut": "\\begin{aligned} y'' &= 6 - 6x = 0 \\\\ 6x &= 6 \\\\ x &= 1 \\end{aligned}"
+          },
+          {
+            "explanation": "Find the y-coordinate.",
+            "workingOut": "\\begin{aligned} y(1) &= 5 + 9(1) + 3(1)^2 - 1^3 \\\\ &= 5 + 9 + 3 - 1 \\\\ &= 16 \\end{aligned}"
+          },
+          {
+            "explanation": "Verify concavity changes.",
+            "workingOut": "\\text{For } x < 1, y'' > 0. \\text{ For } x > 1, y'' < 0. \\text{ Thus, } (1, 16) \\text{ is a point of inflection.}"
+          }
+        ],
+        "options": [
+          {
+            "text": "\\( (1, 16) \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( (-1, 0) \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( (0, 5) \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( (3, 32) \\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "0",
+        "answerStr": "0"
       },
       {
         "id": "y12a-3d-q9d",
-        "type": "teacher_review",
-        "question": "d) Sketch the graph of \\( f(x) \\), indicating all important features.",
-        "a": "Sketch cubic curve showing maximum at (-2,38), minimum at (4,-70), and point of inflection at (1,-16)."
+        "type": "multiple_choice",
+        "question": "Which of the following correctly summarizes the key features of the graph?",
+        "a": "Sketch cubic curve showing maximum at (-2,38), minimum at (4,-70), and point of inflection at (1,-16).",
+        "opts": [
+          "Min at (1, 16), Max at (3, 32), Inflection at (-1, 0)",
+          "Min at (-1, 0), Max at (3, 32), Inflection at (1, 16)",
+          "Min at (-1, 0), Max at (3, 32), Inflection at (0, 5)",
+          "Max at (-1, 0), Min at (3, 32), Inflection at (1, 16)"
+        ],
+        "solutionSteps": [
+          {
+            "explanation": "Identify turning points from previous steps.",
+            "workingOut": "\\text{Minimum at } (-1, 0), \\text{ Maximum at } (3, 32)"
+          },
+          {
+            "explanation": "Identify the inflection point.",
+            "workingOut": "\\text{Point of inflection at } (1, 16)"
+          },
+          {
+            "explanation": "Identify the y-intercept.",
+            "workingOut": "\\text{y-intercept is at } x = 0 \\implies y(0) = 5"
+          }
+        ],
+        "options": [
+          {
+            "text": "Min at (1, 16), Max at (3, 32), Inflection at (-1, 0)",
+            "imageUrl": ""
+          },
+          {
+            "text": "Min at (-1, 0), Max at (3, 32), Inflection at (1, 16)",
+            "imageUrl": ""
+          },
+          {
+            "text": "Min at (-1, 0), Max at (3, 32), Inflection at (0, 5)",
+            "imageUrl": ""
+          },
+          {
+            "text": "Max at (-1, 0), Min at (3, 32), Inflection at (1, 16)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "1",
+        "answerStr": "1"
       }
     ],
     "solutionSteps": [
@@ -1086,27 +1398,183 @@ export const Y12A_CH3D_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y12a-3d-q10a",
-        "type": "teacher_review",
-        "question": "a) If \\( y = x^3 - 6x^2 - 15x + 20 \\), show that \\( y' = 3(x - 5)(x + 1) \\) and \\( y'' = 6(x - 2) \\).",
-        "a": "y' = 3x^2 - 12x - 15 = 3(x-5)(x+1), and y'' = 6x - 12 = 6(x-2)."
+        "type": "multiple_choice",
+        "question": "Find \\( y' \\) and \\( y'' \\) for \\( y = x^3 - 6x^2 - 15x + 20 \\).",
+        "a": "y' = 3x^2 - 12x - 15 = 3(x-5)(x+1), and y'' = 6x - 12 = 6(x-2).",
+        "opts": [
+          "\\( y' = 3x^2 - 12x - 15 \\), \\( y'' = 6x - 12 \\)",
+          "\\( y' = 3x^2 - 12x \\), \\( y'' = 6x - 12 \\)",
+          "\\( y' = 3x^2 - 12x - 15 \\), \\( y'' = 6x \\)",
+          "\\( y' = 3x^2 - 6x - 15 \\), \\( y'' = 6x - 6 \\)"
+        ],
+        "solutionSteps": [
+          {
+            "explanation": "Find the first derivative.",
+            "workingOut": "\\begin{aligned} y' &= 3x^2 - 2(6)x - 15 \\\\ &= 3x^2 - 12x - 15 \\end{aligned}"
+          },
+          {
+            "explanation": "Find the second derivative.",
+            "workingOut": "\\begin{aligned} y'' &= 2(3)x - 12 \\\\ &= 6x - 12 \\end{aligned}"
+          }
+        ],
+        "options": [
+          {
+            "text": "\\( y' = 3x^2 - 12x - 15 \\), \\( y'' = 6x - 12 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( y' = 3x^2 - 12x \\), \\( y'' = 6x - 12 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( y' = 3x^2 - 12x - 15 \\), \\( y'' = 6x \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( y' = 3x^2 - 6x - 15 \\), \\( y'' = 6x - 6 \\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "0",
+        "answerStr": "0"
       },
       {
         "id": "y12a-3d-q10b",
-        "type": "teacher_review",
-        "question": "b) Find any stationary points and use the sign of \\( y'' \\) to determine their nature.",
-        "a": "Stationary points are at (-1, 28) (maximum) and (5, -80) (minimum)."
+        "type": "multiple_choice",
+        "question": "Find the stationary points of \\( y = x^3 - 6x^2 - 15x + 20 \\) and determine their nature.",
+        "a": "Stationary points are at (-1, 28) (maximum) and (5, -80) (minimum).",
+        "opts": [
+          "Max at \\( (-1, 20) \\), Min at \\( (5, -80) \\)",
+          "Min at \\( (-1, 28) \\), Max at \\( (5, -80) \\)",
+          "Min at \\( (-1, 28) \\), Max at \\( (5, 80) \\)",
+          "Max at \\( (-1, 28) \\), Min at \\( (5, -80) \\)"
+        ],
+        "solutionSteps": [
+          {
+            "explanation": "Set the first derivative to zero.",
+            "workingOut": "\\begin{aligned} 3x^2 - 12x - 15 &= 0 \\\\ 3(x^2 - 4x - 5) &= 0 \\\\ 3(x - 5)(x + 1) &= 0 \\\\ x &= 5, -1 \\end{aligned}"
+          },
+          {
+            "explanation": "Find the y-coordinates.",
+            "workingOut": "\\begin{aligned} y(5) &= 5^3 - 6(5)^2 - 15(5) + 20 = 125 - 150 - 75 + 20 = -80 \\\\ y(-1) &= (-1)^3 - 6(-1)^2 - 15(-1) + 20 = -1 - 6 + 15 + 20 = 28 \\end{aligned}"
+          },
+          {
+            "explanation": "Determine nature using the second derivative.",
+            "workingOut": "\\begin{aligned} y''(5) &= 6(5) - 12 = 18 > 0 \\implies \\text{Minimum at } (5, -80) \\\\ y''(-1) &= 6(-1) - 12 = -18 < 0 \\implies \\text{Maximum at } (-1, 28) \\end{aligned}"
+          }
+        ],
+        "options": [
+          {
+            "text": "Max at \\( (-1, 20) \\), Min at \\( (5, -80) \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "Min at \\( (-1, 28) \\), Max at \\( (5, -80) \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "Min at \\( (-1, 28) \\), Max at \\( (5, 80) \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "Max at \\( (-1, 28) \\), Min at \\( (5, -80) \\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "3",
+        "answerStr": "3"
       },
       {
         "id": "y12a-3d-q10c",
-        "type": "teacher_review",
-        "question": "c) Find the coordinates of any points of inflection, testing them with a table of concavities.",
-        "a": "Inflection point is at (2, -26) since y'' = 0 at x = 2 and concavity changes from down (for x < 2) to up (for x > 2)."
+        "type": "multiple_choice",
+        "question": "Find the coordinates of the point of inflection.",
+        "a": "Inflection point is at (2, -26) since y'' = 0 at x = 2 and concavity changes from down (for x < 2) to up (for x > 2).",
+        "opts": [
+          "\\( (0, 20) \\)",
+          "\\( (2, -26) \\)",
+          "\\( (5, -80) \\)",
+          "\\( (-1, 28) \\)"
+        ],
+        "solutionSteps": [
+          {
+            "explanation": "Set the second derivative to zero.",
+            "workingOut": "\\begin{aligned} y'' &= 6x - 12 = 0 \\\\ 6x &= 12 \\\\ x &= 2 \\end{aligned}"
+          },
+          {
+            "explanation": "Find the y-coordinate.",
+            "workingOut": "\\begin{aligned} y(2) &= 2^3 - 6(2)^2 - 15(2) + 20 \\\\ &= 8 - 24 - 30 + 20 \\\\ &= -26 \\end{aligned}"
+          },
+          {
+            "explanation": "Verify concavity changes.",
+            "workingOut": "\\text{For } x < 2, y'' < 0. \\text{ For } x > 2, y'' > 0. \\text{ Thus, } (2, -26) \\text{ is a point of inflection.}"
+          }
+        ],
+        "options": [
+          {
+            "text": "\\( (0, 20) \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( (2, -26) \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( (5, -80) \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( (-1, 28) \\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "1",
+        "answerStr": "1"
       },
       {
         "id": "y12a-3d-q10d",
-        "type": "teacher_review",
-        "question": "d) Sketch the graph of the function, indicating all important features.",
-        "a": "Sketch cubic curve showing maximum at (-1,28), minimum at (5,-80), point of inflection at (2,-26), and y-intercept at (0,20)."
+        "type": "multiple_choice",
+        "question": "Which of the following correctly summarizes the key features of the graph?",
+        "a": "Sketch cubic curve showing maximum at (-1,28), minimum at (5,-80), point of inflection at (2,-26), and y-intercept at (0,20).",
+        "opts": [
+          "Max at (-1, 28), Min at (5, -80), Inflection at (2, -26)",
+          "Max at (-1, 28), Min at (5, -80), Inflection at (0, 20)",
+          "Max at (5, -80), Min at (-1, 28), Inflection at (2, -26)",
+          "Max at (2, -26), Min at (5, -80), Inflection at (-1, 28)"
+        ],
+        "solutionSteps": [
+          {
+            "explanation": "Identify turning points from previous steps.",
+            "workingOut": "\\text{Maximum at } (-1, 28), \\text{ Minimum at } (5, -80)"
+          },
+          {
+            "explanation": "Identify the inflection point.",
+            "workingOut": "\\text{Point of inflection at } (2, -26)"
+          },
+          {
+            "explanation": "Identify the y-intercept.",
+            "workingOut": "\\text{y-intercept is at } x = 0 \\implies y(0) = 20"
+          }
+        ],
+        "options": [
+          {
+            "text": "Max at (-1, 28), Min at (5, -80), Inflection at (2, -26)",
+            "imageUrl": ""
+          },
+          {
+            "text": "Max at (-1, 28), Min at (5, -80), Inflection at (0, 20)",
+            "imageUrl": ""
+          },
+          {
+            "text": "Max at (5, -80), Min at (-1, 28), Inflection at (2, -26)",
+            "imageUrl": ""
+          },
+          {
+            "text": "Max at (2, -26), Min at (5, -80), Inflection at (-1, 28)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "0",
+        "answerStr": "0"
       }
     ],
     "solutionSteps": [
@@ -1151,27 +1619,183 @@ export const Y12A_CH3D_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y12a-3d-q11a",
-        "type": "teacher_review",
-        "question": "a) If \\( y = 16 + 8x^3 - 3x^4 \\), show that \\( y' = 12x^2(2 - x) \\) and \\( y'' = 12x(4 - 3x) \\).",
-        "a": "y' = 24x^2 - 12x^3 = 12x^2(2-x), and y'' = 48x - 36x^2 = 12x(4-3x)."
+        "type": "multiple_choice",
+        "question": "Find \\( y' \\) and \\( y'' \\) for \\( y = 16 + 8x^3 - 3x^4 \\).",
+        "a": "y' = 24x^2 - 12x^3 = 12x^2(2-x), and y'' = 48x - 36x^2 = 12x(4-3x).",
+        "opts": [
+          "\\( y' = 24x^2 - 12x^3 \\), \\( y'' = 24x - 36x^2 \\)",
+          "\\( y' = 24x^2 - 12x^3 \\), \\( y'' = 48x - 36x^2 \\)",
+          "\\( y' = 24x^2 - 12x^4 \\), \\( y'' = 48x - 48x^3 \\)",
+          "\\( y' = 16 + 24x^2 - 12x^3 \\), \\( y'' = 48x - 36x^2 \\)"
+        ],
+        "solutionSteps": [
+          {
+            "explanation": "Find the first derivative.",
+            "workingOut": "\\begin{aligned} y' &= 0 + 8(3x^2) - 3(4x^3) \\\\ &= 24x^2 - 12x^3 \\end{aligned}"
+          },
+          {
+            "explanation": "Find the second derivative.",
+            "workingOut": "\\begin{aligned} y'' &= 24(2x) - 12(3x^2) \\\\ &= 48x - 36x^2 \\end{aligned}"
+          }
+        ],
+        "options": [
+          {
+            "text": "\\( y' = 24x^2 - 12x^3 \\), \\( y'' = 24x - 36x^2 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( y' = 24x^2 - 12x^3 \\), \\( y'' = 48x - 36x^2 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( y' = 24x^2 - 12x^4 \\), \\( y'' = 48x - 48x^3 \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( y' = 16 + 24x^2 - 12x^3 \\), \\( y'' = 48x - 36x^2 \\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "1",
+        "answerStr": "1"
       },
       {
         "id": "y12a-3d-q11b",
-        "type": "teacher_review",
-        "question": "b) Find any stationary points and use a table of test values of \\( y' \\) to determine their nature.",
-        "a": "Stationary points are at (0, 16) (horizontal point of inflection) and (2, 32) (maximum turning point)."
+        "type": "multiple_choice",
+        "question": "Find the stationary points of \\( y = 16 + 8x^3 - 3x^4 \\) and determine their nature.",
+        "a": "Stationary points are at (0, 16) (horizontal point of inflection) and (2, 32) (maximum turning point).",
+        "opts": [
+          "Horizontal inflection at \\( (0, 0) \\), Max at \\( (2, 32) \\)",
+          "Min at \\( (0, 16) \\), Max at \\( (2, 32) \\)",
+          "Max at \\( (0, 16) \\), Min at \\( (2, 32) \\)",
+          "Horizontal inflection at \\( (0, 16) \\), Max at \\( (2, 32) \\)"
+        ],
+        "solutionSteps": [
+          {
+            "explanation": "Set the first derivative to zero.",
+            "workingOut": "\\begin{aligned} 24x^2 - 12x^3 &= 0 \\\\ 12x^2(2 - x) &= 0 \\\\ x &= 0, 2 \\end{aligned}"
+          },
+          {
+            "explanation": "Find the y-coordinates.",
+            "workingOut": "\\begin{aligned} y(0) &= 16 + 8(0) - 3(0) = 16 \\\\ y(2) &= 16 + 8(2^3) - 3(2^4) = 16 + 64 - 48 = 32 \\end{aligned}"
+          },
+          {
+            "explanation": "Use a slope table or second derivative to determine nature.",
+            "workingOut": "\\begin{aligned} y''(2) &= 48(2) - 36(4) = 96 - 144 = -48 < 0 \\implies \\text{Max at } (2, 32) \\\\ y''(0) &= 0 \\implies \\text{Test } x = \\pm 1: \\, y'(-1) = 36 > 0, y'(1) = 12 > 0 \\implies \\text{Horizontal inflection at } (0, 16) \\end{aligned}"
+          }
+        ],
+        "options": [
+          {
+            "text": "Horizontal inflection at \\( (0, 0) \\), Max at \\( (2, 32) \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "Min at \\( (0, 16) \\), Max at \\( (2, 32) \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "Max at \\( (0, 16) \\), Min at \\( (2, 32) \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "Horizontal inflection at \\( (0, 16) \\), Max at \\( (2, 32) \\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "3",
+        "answerStr": "3"
       },
       {
         "id": "y12a-3d-q11c",
-        "type": "teacher_review",
-        "question": "c) Find the coordinates of any points of inflection.",
-        "a": "Inflection points are at (0, 16) and (4/3, 688/27)."
+        "type": "multiple_choice",
+        "question": "Find the coordinates of the points of inflection.",
+        "a": "Inflection points are at (0, 16) and (4/3, 688/27).",
+        "opts": [
+          "\\( (2, 32) \\) and \\( (\\frac{4}{3}, 25.5) \\)",
+          "\\( (0, 16) \\) and \\( (1, 21) \\)",
+          "\\( (0, 0) \\) and \\( (\\frac{4}{3}, \\frac{688}{27}) \\)",
+          "\\( (0, 16) \\) and \\( (\\frac{4}{3}, \\frac{688}{27}) \\)"
+        ],
+        "solutionSteps": [
+          {
+            "explanation": "Set the second derivative to zero.",
+            "workingOut": "\\begin{aligned} y'' &= 48x - 36x^2 = 0 \\\\ 12x(4 - 3x) &= 0 \\\\ x &= 0, \\frac{4}{3} \\end{aligned}"
+          },
+          {
+            "explanation": "Find the corresponding y-coordinates.",
+            "workingOut": "\\begin{aligned} y(0) &= 16 \\\\ y\\left(\\frac{4}{3}\\right) &= 16 + 8\\left(\\frac{4}{3}\\right)^3 - 3\\left(\\frac{4}{3}\\right)^4 = \\frac{688}{27} \\approx 25.48 \\end{aligned}"
+          },
+          {
+            "explanation": "Verify concavity changes.",
+            "workingOut": "\\text{Since } y'' \\text{ is a downward parabola, its sign changes across its roots. Both are inflection points.}"
+          }
+        ],
+        "options": [
+          {
+            "text": "\\( (2, 32) \\) and \\( (\\frac{4}{3}, 25.5) \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( (0, 16) \\) and \\( (1, 21) \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( (0, 0) \\) and \\( (\\frac{4}{3}, \\frac{688}{27}) \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( (0, 16) \\) and \\( (\\frac{4}{3}, \\frac{688}{27}) \\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "3",
+        "answerStr": "3"
       },
       {
         "id": "y12a-3d-q11d",
-        "type": "teacher_review",
-        "question": "d) Sketch the graph of the function, indicating all important features.",
-        "a": "Sketch quartic showing maximum at (2,32), inflection points at (0,16) and (4/3, 25.48), and y-intercept at (0,16)."
+        "type": "multiple_choice",
+        "question": "Which of the following correctly summarizes the key features of the graph?",
+        "a": "Sketch quartic showing maximum at (2,32), inflection points at (0,16) and (4/3, 25.48), and y-intercept at (0,16).",
+        "opts": [
+          "Max at (0, 16), Inflection at (4/3, 25.48)",
+          "Min at (2, 32), Inflections at (0, 16) and (4/3, 25.48)",
+          "Max at (2, 32), Inflection at (0, 16) only",
+          "Max at (2, 32), Inflections at (0, 16) and (4/3, 25.48)"
+        ],
+        "solutionSteps": [
+          {
+            "explanation": "Identify turning points from previous steps.",
+            "workingOut": "\\text{Maximum at } (2, 32), \\text{ horizontal inflection at } (0, 16)"
+          },
+          {
+            "explanation": "Identify all inflection points.",
+            "workingOut": "\\text{Points of inflection at } (0, 16) \\text{ and } (4/3, 688/27 \\approx 25.48)"
+          },
+          {
+            "explanation": "Identify the y-intercept.",
+            "workingOut": "\\text{y-intercept is at } x = 0 \\implies y(0) = 16"
+          }
+        ],
+        "options": [
+          {
+            "text": "Max at (0, 16), Inflection at (4/3, 25.48)",
+            "imageUrl": ""
+          },
+          {
+            "text": "Min at (2, 32), Inflections at (0, 16) and (4/3, 25.48)",
+            "imageUrl": ""
+          },
+          {
+            "text": "Max at (2, 32), Inflection at (0, 16) only",
+            "imageUrl": ""
+          },
+          {
+            "text": "Max at (2, 32), Inflections at (0, 16) and (4/3, 25.48)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "3",
+        "answerStr": "3"
       }
     ],
     "solutionSteps": [
