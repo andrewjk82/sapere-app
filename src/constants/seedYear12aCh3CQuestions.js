@@ -981,7 +981,7 @@ export const Y12A_CH3C_QUESTIONS = [
   },
   {
     "id": "y12a-3c-q3e",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "Find the first, second and third derivatives of the function \\( y = x^3 + x^{-2} \\).",
@@ -1000,11 +1000,37 @@ export const Y12A_CH3C_QUESTIONS = [
         "explanation": "Find the third derivative.",
         "workingOut": "y''' = 6 - 24x^{-5}"
       }
-    ]
+    ],
+    "opts": [
+      "\\( y' = 3x^2 - 2x^{-1}, \\; y'' = 6x + 2x^{-2}, \\; y''' = 6 - 4x^{-3} \\)",
+      "\\( y' = 3x^2 - 2x^{-3}, \\; y'' = 6x + 6x^{-4}, \\; y''' = 6 - 24x^{-5} \\)",
+      "\\( y' = 3x^2 + 2x^{-3}, \\; y'' = 6x - 6x^{-4}, \\; y''' = 6 + 24x^{-5} \\)",
+      "\\( y' = 3x^2 - 2x^{-3}, \\; y'' = 6x - 6x^{-4}, \\; y''' = 6 + 24x^{-5} \\)"
+    ],
+    "options": [
+      {
+        "text": "\\( y' = 3x^2 - 2x^{-1}, \\; y'' = 6x + 2x^{-2}, \\; y''' = 6 - 4x^{-3} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = 3x^2 - 2x^{-3}, \\; y'' = 6x + 6x^{-4}, \\; y''' = 6 - 24x^{-5} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = 3x^2 + 2x^{-3}, \\; y'' = 6x - 6x^{-4}, \\; y''' = 6 + 24x^{-5} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = 3x^2 - 2x^{-3}, \\; y'' = 6x - 6x^{-4}, \\; y''' = 6 + 24x^{-5} \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
+    "answerStr": "1"
   },
   {
     "id": "y12a-3c-q4a",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "By writing the function with a negative index, find the first and second derivatives of \\( f(x) = \\frac{1}{x^4} \\).",
@@ -1023,11 +1049,37 @@ export const Y12A_CH3C_QUESTIONS = [
         "explanation": "Find the second derivative.",
         "workingOut": "f''(x) = 20x^{-6} = \\frac{20}{x^6}"
       }
-    ]
+    ],
+    "opts": [
+      "\\( f'(x) = \\frac{4}{x^5}, \\; f''(x) = \\frac{20}{x^6} \\)",
+      "\\( f'(x) = -\\frac{1}{4x^5}, \\; f''(x) = \\frac{1}{20x^6} \\)",
+      "\\( f'(x) = -\\frac{4}{x^3}, \\; f''(x) = \\frac{12}{x^2} \\)",
+      "\\( f'(x) = -\\frac{4}{x^5}, \\; f''(x) = \\frac{20}{x^6} \\)"
+    ],
+    "options": [
+      {
+        "text": "\\( f'(x) = \\frac{4}{x^5}, \\; f''(x) = \\frac{20}{x^6} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f'(x) = -\\frac{1}{4x^5}, \\; f''(x) = \\frac{1}{20x^6} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f'(x) = -\\frac{4}{x^3}, \\; f''(x) = \\frac{12}{x^2} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f'(x) = -\\frac{4}{x^5}, \\; f''(x) = \\frac{20}{x^6} \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
+    "answerStr": "3"
   },
   {
     "id": "y12a-3c-q4b",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "By writing the function with a negative index, find the first and second derivatives of \\( f(x) = \\frac{1}{x^5} \\).",
@@ -1046,11 +1098,37 @@ export const Y12A_CH3C_QUESTIONS = [
         "explanation": "Find second derivative.",
         "workingOut": "f''(x) = 30x^{-7} = \\frac{30}{x^7}"
       }
-    ]
+    ],
+    "opts": [
+      "\\( f'(x) = \\frac{5}{x^6}, \\; f''(x) = \\frac{30}{x^7} \\)",
+      "\\( f'(x) = -\\frac{5}{x^6}, \\; f''(x) = \\frac{30}{x^7} \\)",
+      "\\( f'(x) = -\\frac{5}{x^4}, \\; f''(x) = \\frac{20}{x^3} \\)",
+      "\\( f'(x) = -\\frac{1}{5x^6}, \\; f''(x) = \\frac{1}{30x^7} \\)"
+    ],
+    "options": [
+      {
+        "text": "\\( f'(x) = \\frac{5}{x^6}, \\; f''(x) = \\frac{30}{x^7} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f'(x) = -\\frac{5}{x^6}, \\; f''(x) = \\frac{30}{x^7} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f'(x) = -\\frac{5}{x^4}, \\; f''(x) = \\frac{20}{x^3} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f'(x) = -\\frac{1}{5x^6}, \\; f''(x) = \\frac{1}{30x^7} \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
+    "answerStr": "1"
   },
   {
     "id": "y12a-3c-q4c",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "By writing the function with a negative index, find the first and second derivatives of \\( f(x) = \\frac{4}{x^3} \\).",
@@ -1069,11 +1147,37 @@ export const Y12A_CH3C_QUESTIONS = [
         "explanation": "Find second derivative.",
         "workingOut": "f''(x) = 48x^{-5} = \\frac{48}{x^5}"
       }
-    ]
+    ],
+    "opts": [
+      "\\( f'(x) = -\\frac{12}{x^4}, \\; f''(x) = -\\frac{48}{x^5} \\)",
+      "\\( f'(x) = \\frac{12}{x^4}, \\; f''(x) = \\frac{48}{x^5} \\)",
+      "\\( f'(x) = -\\frac{12}{x^4}, \\; f''(x) = \\frac{48}{x^5} \\)",
+      "\\( f'(x) = -\\frac{4}{x^4}, \\; f''(x) = \\frac{16}{x^5} \\)"
+    ],
+    "options": [
+      {
+        "text": "\\( f'(x) = -\\frac{12}{x^4}, \\; f''(x) = -\\frac{48}{x^5} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f'(x) = \\frac{12}{x^4}, \\; f''(x) = \\frac{48}{x^5} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f'(x) = -\\frac{12}{x^4}, \\; f''(x) = \\frac{48}{x^5} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f'(x) = -\\frac{4}{x^4}, \\; f''(x) = \\frac{16}{x^5} \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
+    "answerStr": "2"
   },
   {
     "id": "y12a-3c-q4d",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "By writing the function with a negative index, find the first and second derivatives of \\( f(x) = \\frac{5}{x^2} \\).",
@@ -1092,11 +1196,37 @@ export const Y12A_CH3C_QUESTIONS = [
         "explanation": "Find second derivative.",
         "workingOut": "f''(x) = 30x^{-4} = \\frac{30}{x^4}"
       }
-    ]
+    ],
+    "opts": [
+      "\\( f'(x) = -\\frac{10}{x^3}, \\; f''(x) = -\\frac{30}{x^4} \\)",
+      "\\( f'(x) = \\frac{10}{x^3}, \\; f''(x) = \\frac{30}{x^4} \\)",
+      "\\( f'(x) = -\\frac{10}{x^3}, \\; f''(x) = \\frac{30}{x^4} \\)",
+      "\\( f'(x) = -\\frac{5}{x^3}, \\; f''(x) = \\frac{15}{x^4} \\)"
+    ],
+    "options": [
+      {
+        "text": "\\( f'(x) = -\\frac{10}{x^3}, \\; f''(x) = -\\frac{30}{x^4} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f'(x) = \\frac{10}{x^3}, \\; f''(x) = \\frac{30}{x^4} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f'(x) = -\\frac{10}{x^3}, \\; f''(x) = \\frac{30}{x^4} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( f'(x) = -\\frac{5}{x^3}, \\; f''(x) = \\frac{15}{x^4} \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
+    "answerStr": "2"
   },
   {
     "id": "y12a-3c-q5a",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "Use the chain rule to find the first and second derivatives of the function \\( y = (x + 2)^3 \\).",
@@ -1111,11 +1241,37 @@ export const Y12A_CH3C_QUESTIONS = [
         "explanation": "Differentiate again to find the second derivative.",
         "workingOut": "y'' = 6(x+2)"
       }
-    ]
+    ],
+    "opts": [
+      "\\( y' = 3(x+2)^3, \\; y'' = 9(x+2)^2 \\)",
+      "\\( y' = 2(x+2)^2, \\; y'' = 4(x+2) \\)",
+      "\\( y' = 3(x+2)^2, \\; y'' = 6(x+2) \\)",
+      "\\( y' = 3(x+2)^2, \\; y'' = 3(x+2) \\)"
+    ],
+    "options": [
+      {
+        "text": "\\( y' = 3(x+2)^3, \\; y'' = 9(x+2)^2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = 2(x+2)^2, \\; y'' = 4(x+2) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = 3(x+2)^2, \\; y'' = 6(x+2) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = 3(x+2)^2, \\; y'' = 3(x+2) \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
+    "answerStr": "2"
   },
   {
     "id": "y12a-3c-q5b",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "Use the chain rule to find the first and second derivatives of the function \\( y = (2x - 3)^4 \\).",
@@ -1130,11 +1286,37 @@ export const Y12A_CH3C_QUESTIONS = [
         "explanation": "Apply the chain rule again to find the second derivative.",
         "workingOut": "y'' = 8 \\times 3(2x-3)^2 \\times 2 = 48(2x-3)^2"
       }
-    ]
+    ],
+    "opts": [
+      "\\( y' = 8(2x-3)^3, \\; y'' = 24(2x-3)^2 \\)",
+      "\\( y' = 4(2x-3)^3, \\; y'' = 24(2x-3)^2 \\)",
+      "\\( y' = 4(2x-3)^3, \\; y'' = 12(2x-3)^2 \\)",
+      "\\( y' = 8(2x-3)^3, \\; y'' = 48(2x-3)^2 \\)"
+    ],
+    "options": [
+      {
+        "text": "\\( y' = 8(2x-3)^3, \\; y'' = 24(2x-3)^2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = 4(2x-3)^3, \\; y'' = 24(2x-3)^2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = 4(2x-3)^3, \\; y'' = 12(2x-3)^2 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = 8(2x-3)^3, \\; y'' = 48(2x-3)^2 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "3",
+    "answerStr": "3"
   },
   {
     "id": "y12a-3c-q5c",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "Use the chain rule to find the first and second derivatives of the function \\( y = (1 - 3x)^3 \\).",
@@ -1149,11 +1331,37 @@ export const Y12A_CH3C_QUESTIONS = [
         "explanation": "Find second derivative.",
         "workingOut": "y'' = -9 \\times 2(1-3x) \\times (-3) = 54(1-3x)"
       }
-    ]
+    ],
+    "opts": [
+      "\\( y' = 9(1-3x)^2, \\; y'' = -54(1-3x) \\)",
+      "\\( y' = -9(1-3x)^2, \\; y'' = 54(1-3x) \\)",
+      "\\( y' = -9(1-3x)^2, \\; y'' = -54(1-3x) \\)",
+      "\\( y' = -3(1-3x)^2, \\; y'' = 18(1-3x) \\)"
+    ],
+    "options": [
+      {
+        "text": "\\( y' = 9(1-3x)^2, \\; y'' = -54(1-3x) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = -9(1-3x)^2, \\; y'' = 54(1-3x) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = -9(1-3x)^2, \\; y'' = -54(1-3x) \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = -3(1-3x)^2, \\; y'' = 18(1-3x) \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
+    "answerStr": "1"
   },
   {
     "id": "y12a-3c-q5d",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "Use the chain rule to find the first and second derivatives of the function \\( y = (5 - x)^8 \\).",
@@ -1168,11 +1376,37 @@ export const Y12A_CH3C_QUESTIONS = [
         "explanation": "Find the second derivative.",
         "workingOut": "y'' = -8 \\times 7(5-x)^6 \\times (-1) = 56(5-x)^6"
       }
-    ]
+    ],
+    "opts": [
+      "\\( y' = -8(5-x)^7, \\; y'' = 7(5-x)^6 \\)",
+      "\\( y' = 8(5-x)^7, \\; y'' = 56(5-x)^6 \\)",
+      "\\( y' = -8(5-x)^7, \\; y'' = 56(5-x)^6 \\)",
+      "\\( y' = -8(5-x)^7, \\; y'' = -56(5-x)^6 \\)"
+    ],
+    "options": [
+      {
+        "text": "\\( y' = -8(5-x)^7, \\; y'' = 7(5-x)^6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = 8(5-x)^7, \\; y'' = 56(5-x)^6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = -8(5-x)^7, \\; y'' = 56(5-x)^6 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = -8(5-x)^7, \\; y'' = -56(5-x)^6 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
+    "answerStr": "2"
   },
   {
     "id": "y12a-3c-q6a",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "By writing the function with a negative index, find the first and second derivatives of \\( y = \\frac{1}{x + 3} \\).",
@@ -1191,7 +1425,33 @@ export const Y12A_CH3C_QUESTIONS = [
         "explanation": "Find the second derivative.",
         "workingOut": "y'' = 2(x + 3)^{-3} = \\frac{2}{(x + 3)^3}"
       }
-    ]
+    ],
+    "opts": [
+      "\\( y' = -\\frac{1}{(x+3)^2}, \\; y'' = -\\frac{2}{(x+3)^3} \\)",
+      "\\( y' = \\frac{1}{(x+3)^2}, \\; y'' = \\frac{2}{(x+3)^3} \\)",
+      "\\( y' = -\\frac{1}{(x+3)^2}, \\; y'' = \\frac{2}{(x+3)^3} \\)",
+      "\\( y' = -\\frac{1}{(x+3)^2}, \\; y'' = \\frac{1}{(x+3)^3} \\)"
+    ],
+    "options": [
+      {
+        "text": "\\( y' = -\\frac{1}{(x+3)^2}, \\; y'' = -\\frac{2}{(x+3)^3} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = \\frac{1}{(x+3)^2}, \\; y'' = \\frac{2}{(x+3)^3} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = -\\frac{1}{(x+3)^2}, \\; y'' = \\frac{2}{(x+3)^3} \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( y' = -\\frac{1}{(x+3)^2}, \\; y'' = \\frac{1}{(x+3)^3} \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "2",
+    "answerStr": "2"
   },
   {
     "id": "y12a-3c-q6b",
