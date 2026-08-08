@@ -970,7 +970,45 @@ export const CTHS_2020_QUESTIONS = [
                 ],
                 "showGrid": true,
                 "showAxisLabels": true,
-                "script": "board.suspendUpdate();\nboard.create('functiongraph', [function(x){ return 2*Math.pow(x,3) + 3*Math.pow(x,2) - 12*x - 5; }], {strokeColor: 'blue', strokeWidth: 2});\nboard.unsuspendUpdate();"
+                "script": "board.suspendUpdate();\nboard.create('functiongraph', [function(x){ return 2*Math.pow(x,3) + 3*Math.pow(x,2) - 12*x - 5; }], {strokeColor: 'blue', strokeWidth: 2});\nboard.unsuspendUpdate();",
+                "elements": [
+                  {
+                    "type": "point",
+                    "coords": [
+                      -2,
+                      15
+                    ],
+                    "name": "(-2, 15)",
+                    "color": "blue"
+                  },
+                  {
+                    "type": "point",
+                    "coords": [
+                      1,
+                      -12
+                    ],
+                    "name": "(1, -12)",
+                    "color": "blue"
+                  },
+                  {
+                    "type": "point",
+                    "coords": [
+                      -0.5,
+                      1.5
+                    ],
+                    "name": "(-\\frac{1}{2}, \\frac{3}{2})",
+                    "color": "slate"
+                  },
+                  {
+                    "type": "point",
+                    "coords": [
+                      0,
+                      -5
+                    ],
+                    "name": "(0, -5)",
+                    "color": "slate"
+                  }
+                ]
               }
             }
           }

@@ -1008,7 +1008,45 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
                 ],
                 "showGrid": true,
                 "showAxisLabels": true,
-                "script": "board.suspendUpdate();\nboard.create('functiongraph', [function(x){ return 2*Math.pow(x,3) - 3*Math.pow(x,2) - 12*x + 4; }], {strokeColor: 'blue', strokeWidth: 2});\nboard.unsuspendUpdate();"
+                "script": "board.suspendUpdate();\nboard.create('functiongraph', [function(x){ return 2*Math.pow(x,3) - 3*Math.pow(x,2) - 12*x + 4; }], {strokeColor: 'blue', strokeWidth: 2});\nboard.unsuspendUpdate();",
+                "elements": [
+                  {
+                    "type": "point",
+                    "coords": [
+                      -1,
+                      11
+                    ],
+                    "name": "(-1, 11)",
+                    "color": "blue"
+                  },
+                  {
+                    "type": "point",
+                    "coords": [
+                      2,
+                      -16
+                    ],
+                    "name": "(2, -16)",
+                    "color": "blue"
+                  },
+                  {
+                    "type": "point",
+                    "coords": [
+                      0.5,
+                      -2.5
+                    ],
+                    "name": "(\\frac{1}{2}, -\\frac{5}{2})",
+                    "color": "slate"
+                  },
+                  {
+                    "type": "point",
+                    "coords": [
+                      0,
+                      4
+                    ],
+                    "name": "(0, 4)",
+                    "color": "slate"
+                  }
+                ]
               }
             }
           }
