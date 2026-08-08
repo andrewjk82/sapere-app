@@ -1828,60 +1828,171 @@ export const Y12A_CH3B_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y12a-3b-q16a",
-        "type": "teacher_review",
-        "question": "a) If \\( f(x) = \\frac{4x}{x^2+1} \\), show that the derivative is \\( f'(x) = \\frac{4(1-x)(1+x)}{(x^2+1)^2} \\).",
-        "a": "Apply quotient rule: \\( f'(x) = \\frac{4(x^2+1) - 4x(2x)}{(x^2+1)^2} = \\frac{4-4x^2}{(x^2+1)^2} = \\frac{4(1-x)(1+x)}{(x^2+1)^2} \\)."
+        "type": "multiple_choice",
+        "question": "a) If \\( f(x) = \\frac{4x}{x^2+1} \\), what is its derivative \\( f'(x) \\)?",
+        "opts": [
+          "\\( \\frac{4(1+x^2)}{(x^2+1)^2} \\)",
+          "\\( \\frac{4(x-1)(x+1)}{(x^2+1)^2} \\)",
+          "\\( \\frac{4(1-x)(1+x)}{(x^2+1)^2} \\)",
+          "\\( \\frac{4}{(x^2+1)^2} \\)"
+        ],
+        "solutionSteps": [
+          {
+            "explanation": "Differentiate \\( f(x) = \\frac{4x}{x^2+1} \\) using the quotient rule, where \\( u = 4x \\) and \\( v = x^2+1 \\).",
+            "workingOut": "\\begin{aligned} u' &= 4 \\\\ v' &= 2x \\end{aligned}"
+          },
+          {
+            "explanation": "Apply the formula \\( f'(x) = \\frac{u'v - uv'}{v^2} \\).",
+            "workingOut": "\\begin{aligned} f'(x) &= \\frac{4(x^2+1) - 4x(2x)}{(x^2+1)^2} \\\\ &= \\frac{4x^2 + 4 - 8x^2}{(x^2+1)^2} \\\\ &= \\frac{4 - 4x^2}{(x^2+1)^2} \\end{aligned}"
+          },
+          {
+            "explanation": "Factor the numerator.",
+            "workingOut": "\\begin{aligned} f'(x) &= \\frac{4(1 - x^2)}{(x^2+1)^2} \\\\ &= \\frac{4(1-x)(1+x)}{(x^2+1)^2} \\end{aligned}"
+          }
+        ],
+        "options": [
+          {
+            "text": "\\( \\frac{4(1+x^2)}{(x^2+1)^2} \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( \\frac{4(x-1)(x+1)}{(x^2+1)^2} \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( \\frac{4(1-x)(1+x)}{(x^2+1)^2} \\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "\\( \\frac{4}{(x^2+1)^2} \\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "2",
+        "answerStr": "2"
       },
       {
         "id": "y12a-3b-q16b",
-        "type": "teacher_review",
-        "question": "b) Hence find any stationary points and determine their nature.",
-        "a": "Local maximum at (1, 2) and local minimum at (-1, -2)."
+        "type": "multiple_choice",
+        "question": "b) Which of the following correctly describes the stationary points of \\( f(x) \\)?",
+        "opts": [
+          "Local minimum at \\((1, 2)\\) and local maximum at \\((-1, -2)\\)",
+          "Local maxima at \\((1, 2)\\) and \\((-1, -2)\\)",
+          "Local minima at \\((1, 2)\\) and \\((-1, -2)\\)",
+          "Local maximum at \\((1, 2)\\) and local minimum at \\((-1, -2)\\)"
+        ],
+        "solutionSteps": [
+          {
+            "explanation": "Find stationary values by setting \\( f'(x) = 0 \\).",
+            "workingOut": "\\begin{aligned} \\frac{4(1-x)(1+x)}{(x^2+1)^2} &= 0 \\\\ 1 - x^2 &= 0 \\\\ x &= 1 \\text{ or } x = -1 \\end{aligned}"
+          },
+          {
+            "explanation": "Substitute \\( x \\) values into the original function to find the \\(y\\)-coordinates.",
+            "workingOut": "\\begin{aligned} f(1) &= \\frac{4(1)}{1^2+1} = \\frac{4}{2} = 2 \\implies (1, 2) \\\\ f(-1) &= \\frac{4(-1)}{(-1)^2+1} = \\frac{-4}{2} = -2 \\implies (-1, -2) \\end{aligned}"
+          },
+          {
+            "explanation": "Determine their nature using a table of slopes.",
+            "workingOut": "\\text{We analyze the sign of } f'(x) = \\frac{4(1-x^2)}{(x^2+1)^2}:\n\n\\[\n\\begin{array}{c|c|c|c|c|c}\nx & -2 & -1 & 0 & 1 & 2 \\\\ \\hline\nf'(x) & -0.48 & 0 & 4 & 0 & -0.48 \\\\\n\\text{Slope} & \\backslash & - & / & - & \\backslash\n\\end{array}\n\\]\n\n- At \\(x=-1\\): Slope changes from negative to positive \\(\\rightarrow\\) Local minimum at \\((-1,-2)\\)\n- At \\(x=1\\): Slope changes from positive to negative \\(\\rightarrow\\) Local maximum at \\((1,2)\\)"
+          }
+        ],
+        "options": [
+          {
+            "text": "Local minimum at \\((1, 2)\\) and local maximum at \\((-1, -2)\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "Local maxima at \\((1, 2)\\) and \\((-1, -2)\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "Local minima at \\((1, 2)\\) and \\((-1, -2)\\)",
+            "imageUrl": ""
+          },
+          {
+            "text": "Local maximum at \\((1, 2)\\) and local minimum at \\((-1, -2)\\)",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "3",
+        "answerStr": "3"
       },
       {
         "id": "y12a-3b-q16c",
         "type": "teacher_review",
-        "question": "c) Sketch the graph of \\( y = f(x) \\), indicating all important features.",
-        "a": "Sketch showing min at (-1,-2), max at (1,2), intercept at (0,0), and horizontal asymptote along the x-axis."
+        "question": "c) Sketch the graph of \\( y = f(x) \\), showing all key features including stationary points, intercepts, and asymptotes.",
+        "requiresManualGrading": true,
+        "solutionSteps": [
+          {
+            "explanation": "Identify the \\(y\\)-intercept and \\(x\\)-intercepts.",
+            "workingOut": "\\text{When } x = 0, y = 0 \\implies (0,0) \\text{ is the intercept.}"
+          },
+          {
+            "explanation": "Identify any asymptotes.",
+            "workingOut": "\\text{As } x \\to \\pm\\infty, \\quad f(x) = \\frac{4x}{x^2+1} \\approx \\frac{4x}{x^2} = \\frac{4}{x} \\to 0.\n\\text{Therefore, } y = 0 \\text{ is a horizontal asymptote.}"
+          },
+          {
+            "explanation": "Combine all findings to sketch the graph.",
+            "workingOut": "Plot the local minimum at \\((-1,-2)\\), the local maximum at \\((1,2)\\), and the intercept at \\((0,0)\\). Draw the curve approaching the horizontal asymptote \\( y = 0 \\).",
+            "graphData": {
+              "jsxGraph": {
+                "width": 350,
+                "height": 250,
+                "boundingbox": [
+                  -5,
+                  4,
+                  5,
+                  -4
+                ],
+                "showGrid": true,
+                "showAxisLabels": true,
+                "script": "board.suspendUpdate();\nboard.create('functiongraph', [function(x){ return 4*x / (x*x + 1); }], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [1, 2], {name: '(1, 2)', color: 'blue', label: { offset: [-10, 15] }});\nboard.create('point', [-1, -2], {name: '(-1, -2)', color: 'blue', label: { offset: [-25, -15] }});\nboard.create('point', [0, 0], {name: '(0, 0)', color: 'slate', label: { offset: [10, -15] }});\nboard.unsuspendUpdate();"
+              }
+            }
+          }
+        ]
       },
       {
         "id": "y12a-3b-q16d",
-        "type": "teacher_review",
+        "type": "multiple_choice",
         "question": "d) Hence state how many roots the equation \\( \\frac{4x}{x^2+1} = c \\) has for: i) \\( c > 2 \\), ii) \\( c = 2 \\), iii) \\( 0 < c < 2 \\), iv) \\( c = 0 \\).",
-        "a": "i) 0, ii) 1, iii) 2, iv) 1."
-      }
-    ],
-    "solutionSteps": [
-      {
-        "explanation": "Differentiate \\( f(x) = \\frac{4x}{x^2+1} \\) using the quotient rule.",
-        "workingOut": "\\begin{aligned} f'(x) &= \\frac{4(x^2+1) - 4x(2x)}{(x^2+1)^2} \\\\ &= \\frac{4x^2 + 4 - 8x^2}{(x^2+1)^2} \\\\ &= \\frac{4 - 4x^2}{(x^2+1)^2} \\\\ &= \\frac{4(1 - x^2)}{(x^2+1)^2} = \\frac{4(1-x)(1+x)}{(x^2+1)^2} \\end{aligned}"
-      },
-      {
-        "explanation": "Find stationary values where \\( f'(x) = 0 \\).",
-        "workingOut": "4(1-x)(1+x) = 0 \\implies x = 1 \\text{ or } x = -1"
-      },
-      {
-        "explanation": "Find y-coordinates.",
-        "workingOut": "\\begin{aligned} f(1) &= \\frac{4(1)}{1^2+1} = 2 \\implies (1, 2) \\\\ f(-1) &= \\frac{4(-1)}{(-1)^2+1} = -2 \\implies (-1, -2) \\end{aligned}"
-      },
-      {
-        "explanation": "Evaluate the nature using test values of \\( f'(x) \\).",
-        "workingOut": "\\(\\begin{array}{c|ccccc} x & -2 & -1 & 0 & 1 & 2 \\\\ \\hline f'(x) & -0.48 & 0 & 4 & 0 & -0.48 \\\\ \\text{Slope} & \\backslash & - & / & - & \\backslash \\end{array}\\)"
-      }
-    ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 350,
-        "height": 250,
-        "boundingbox": [
-          -5,
-          4,
-          5,
-          -4
+        "opts": [
+          "i) 2, ii) 1, iii) 0, iv) 1",
+          "i) 1, ii) 2, iii) 0, iv) 1",
+          "i) 0, ii) 1, iii) 2, iv) 1",
+          "i) 0, ii) 2, iii) 2, iv) 0"
         ],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5,0], [4.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3.5], [0,3.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 3.2, 'y'], {fontSize: 14});\nvar f = function(x) { return 4*x / (x*x + 1); };\nboard.create('functiongraph', [f, -4.5, 4.5], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [1, 2], {name: 'Max(1,2)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, 10]}});\nboard.create('point', [-1, -2], {name: 'Min(-1,-2)', size: 3, color: 'red', label: {autoPosition: false, offset: [-60, -10]}});\nboard.unsuspendUpdate();"
+        "solutionSteps": [
+          {
+            "explanation": "The roots of the equation correspond to the intersections between the graph of \\( y = \\frac{4x}{x^2+1} \\) and the horizontal line \\( y = c \\).",
+            "workingOut": "\\text{We can observe the graph sketched in part (c) to determine the number of intersections for different heights } c."
+          },
+          {
+            "explanation": "Analyze the number of intersections for each interval.",
+            "workingOut": "\\text{i) For } c > 2\\text{, the line is above the maximum turning point, so it does not intersect the curve. (0 roots)}\n\\text{ii) For } c = 2\\text{, the line is tangent to the curve at the maximum turning point. (1 root)}\n\\text{iii) For } 0 < c < 2\\text{, the line cuts through the curve twice between the origin and the maximum, and towards positive infinity. (2 roots)}\n\\text{iv) For } c = 0\\text{, the line is the } x\\text{-axis and intersects the curve only at the origin. (1 root)}"
+          }
+        ],
+        "options": [
+          {
+            "text": "i) 2, ii) 1, iii) 0, iv) 1",
+            "imageUrl": ""
+          },
+          {
+            "text": "i) 1, ii) 2, iii) 0, iv) 1",
+            "imageUrl": ""
+          },
+          {
+            "text": "i) 0, ii) 1, iii) 2, iv) 1",
+            "imageUrl": ""
+          },
+          {
+            "text": "i) 0, ii) 2, iii) 2, iv) 0",
+            "imageUrl": ""
+          }
+        ],
+        "answer": "2",
+        "answerStr": "2"
       }
-    }
+    ]
   },
   {
     "id": "y12a-3b-q17",
