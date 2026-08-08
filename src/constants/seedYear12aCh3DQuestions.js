@@ -1124,7 +1124,26 @@ export const Y12A_CH3D_QUESTIONS = [
         "id": "y12a-3d-q8e",
         "type": "teacher_review",
         "question": "e) Sketch the graph of \\( f(x) \\), indicating all important features.",
-        "a": "Sketch cubic curve showing maximum at (-2,16), minimum at (2,-16), point of inflection at (0,0), and x-intercepts at \\( \\pm 2\\sqrt{3} \\)."
+        "a": "Sketch cubic curve showing maximum at (-2,16), minimum at (2,-16), point of inflection at (0,0), and x-intercepts at \\( \\pm 2\\sqrt{3} \\).",
+        "solutionSteps": [
+          {
+            "explanation": "Verify your sketch against the graph shown.",
+            "workingOut": "\\text{Ensure the extrema, inflection points, and intercepts are correctly placed and the concavity matches.}",
+            "graphData": {
+              "jsxGraph": {
+                "width": 350,
+                "height": 250,
+                "boundingbox": [
+                  -5,
+                  25,
+                  5,
+                  -25
+                ],
+                "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5,0], [4.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-22], [0,22]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.3, -2, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 20, 'y'], {fontSize: 14});\nvar f = function(x) { return x*x*x - 12*x; };\nboard.create('functiongraph', [f, -4.2, 4.2], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [-2, 16], {name: 'Max(-2,16)', size: 3, color: 'red', label: {autoPosition: false, offset: [-30, 15]}});\nboard.create('point', [2, -16], {name: 'Min(2,-16)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, -10]}});\nboard.create('point', [0, 0], {name: 'Inflection(0,0)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
+              }
+            }
+          }
+        ]
       }
     ],
     "solutionSteps": [
@@ -1148,20 +1167,7 @@ export const Y12A_CH3D_QUESTIONS = [
         "explanation": "Find inflection points where \\( f''(x) = 0 \\) and check for a sign change.",
         "workingOut": "6x = 0 \\implies x = 0 \\implies y(0) = 0. \\text{ Sign changes from } - \\text{ to } + \\implies (0,0) \\text{ is inflection.}"
       }
-    ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 350,
-        "height": 250,
-        "boundingbox": [
-          -5,
-          25,
-          5,
-          -25
-        ],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5,0], [4.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-22], [0,22]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.3, -2, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 20, 'y'], {fontSize: 14});\nvar f = function(x) { return x*x*x - 12*x; };\nboard.create('functiongraph', [f, -4.2, 4.2], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [-2, 16], {name: 'Max(-2,16)', size: 3, color: 'red', label: {autoPosition: false, offset: [-30, 15]}});\nboard.create('point', [2, -16], {name: 'Min(2,-16)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, -10]}});\nboard.create('point', [0, 0], {name: 'Inflection(0,0)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
-      }
-    }
+    ]
   },
   {
     "id": "y12a-3d-q9",
@@ -1359,7 +1365,20 @@ export const Y12A_CH3D_QUESTIONS = [
         "solutionSteps": [
           {
             "explanation": "Verify your sketch against the graph shown.",
-            "workingOut": "\\text{Ensure the extrema, inflection points, and intercepts are correctly placed and the concavity matches.}"
+            "workingOut": "\\text{Ensure the extrema, inflection points, and intercepts are correctly placed and the concavity matches.}",
+            "graphData": {
+              "jsxGraph": {
+                "width": 350,
+                "height": 250,
+                "boundingbox": [
+                  -5,
+                  60,
+                  6,
+                  -95
+                ],
+                "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5,0], [5.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-90], [0,55]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [5.3, -5, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 50, 'y'], {fontSize: 14});\nvar f = function(x) { return x*x*x - 3*x*x - 24*x + 10; };\nboard.create('functiongraph', [f, -4.5, 5.5], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [-2, 38], {name: 'Max(-2,38)', size: 3, color: 'red', label: {autoPosition: false, offset: [-30, 15]}});\nboard.create('point', [4, -70], {name: 'Min(4,-70)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, -10]}});\nboard.create('point', [1, -16], {name: 'Inflection(1,-16)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
+              }
+            }
           }
         ]
       }
@@ -1385,20 +1404,7 @@ export const Y12A_CH3D_QUESTIONS = [
         "explanation": "Locate points of inflection.",
         "workingOut": "f''(x) = 0 \\implies x = 1 \\implies y(1) = -16. \\, text{Table around } x=1 \\text{ shows } y'' \\text{ sign change.}"
       }
-    ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 350,
-        "height": 250,
-        "boundingbox": [
-          -5,
-          60,
-          6,
-          -95
-        ],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5,0], [5.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-90], [0,55]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [5.3, -5, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 50, 'y'], {fontSize: 14});\nvar f = function(x) { return x*x*x - 3*x*x - 24*x + 10; };\nboard.create('functiongraph', [f, -4.5, 5.5], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [-2, 38], {name: 'Max(-2,38)', size: 3, color: 'red', label: {autoPosition: false, offset: [-30, 15]}});\nboard.create('point', [4, -70], {name: 'Min(4,-70)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, -10]}});\nboard.create('point', [1, -16], {name: 'Inflection(1,-16)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
-      }
-    }
+    ]
   },
   {
     "id": "y12a-3d-q10",
@@ -1596,7 +1602,20 @@ export const Y12A_CH3D_QUESTIONS = [
         "solutionSteps": [
           {
             "explanation": "Verify your sketch against the graph shown.",
-            "workingOut": "\\text{Ensure the extrema, inflection points, and intercepts are correctly placed and the concavity matches.}"
+            "workingOut": "\\text{Ensure the extrema, inflection points, and intercepts are correctly placed and the concavity matches.}",
+            "graphData": {
+              "jsxGraph": {
+                "width": 350,
+                "height": 250,
+                "boundingbox": [
+                  -3,
+                  50,
+                  7,
+                  -100
+                ],
+                "script": "board.suspendUpdate();\nboard.create('arrow', [[-2.5,0], [6.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-95], [0,45]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [6.3, -5, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 40, 'y'], {fontSize: 14});\nvar f = function(x) { return x*x*x - 6*x*x - 15*x + 20; };\nboard.create('functiongraph', [f, -2.5, 6.5], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [-1, 28], {name: 'Max(-1,28)', size: 3, color: 'red', label: {autoPosition: false, offset: [-30, 15]}});\nboard.create('point', [5, -80], {name: 'Min(5,-80)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, -10]}});\nboard.create('point', [2, -26], {name: 'Inflection(2,-26)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, 5]}});\nboard.create('point', [0, 20], {name: '20', size: 2, color: 'black', label: {autoPosition: false, offset: [-20, 0]}});\nboard.unsuspendUpdate();"
+              }
+            }
           }
         ]
       }
@@ -1618,20 +1637,7 @@ export const Y12A_CH3D_QUESTIONS = [
         "explanation": "Set \\( y'' = 0 \\) to find points of inflection.",
         "workingOut": "6(x-2) = 0 \\implies x = 2 \\implies y(2) = -26. \\, y'' \\text{ changes sign across } x = 2 \\text{, so it is an inflection point.}"
       }
-    ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 350,
-        "height": 250,
-        "boundingbox": [
-          -3,
-          50,
-          7,
-          -100
-        ],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-2.5,0], [6.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-95], [0,45]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [6.3, -5, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 40, 'y'], {fontSize: 14});\nvar f = function(x) { return x*x*x - 6*x*x - 15*x + 20; };\nboard.create('functiongraph', [f, -2.5, 6.5], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [-1, 28], {name: 'Max(-1,28)', size: 3, color: 'red', label: {autoPosition: false, offset: [-30, 15]}});\nboard.create('point', [5, -80], {name: 'Min(5,-80)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, -10]}});\nboard.create('point', [2, -26], {name: 'Inflection(2,-26)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, 5]}});\nboard.create('point', [0, 20], {name: '20', size: 2, color: 'black', label: {autoPosition: false, offset: [-20, 0]}});\nboard.unsuspendUpdate();"
-      }
-    }
+    ]
   },
   {
     "id": "y12a-3d-q11",
@@ -1829,7 +1835,20 @@ export const Y12A_CH3D_QUESTIONS = [
         "solutionSteps": [
           {
             "explanation": "Verify your sketch against the graph shown.",
-            "workingOut": "\\text{Ensure the extrema, inflection points, and intercepts are correctly placed and the concavity matches.}"
+            "workingOut": "\\text{Ensure the extrema, inflection points, and intercepts are correctly placed and the concavity matches.}",
+            "graphData": {
+              "jsxGraph": {
+                "width": 350,
+                "height": 250,
+                "boundingbox": [
+                  -2,
+                  40,
+                  4,
+                  -10
+                ],
+                "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.5,0], [3.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-5], [0,38]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [3.3, -1, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 36, 'y'], {fontSize: 14});\nvar f = function(x) { return 16 + 8*x*x*x - 3*x*x*x*x; };\nboard.create('functiongraph', [f, -1.2, 2.4], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 16], {name: 'Inflection(0,16)', size: 3, color: 'red', label: {autoPosition: false, offset: [-110, -5]}});\nboard.create('point', [1.33, 25.48], {name: 'Inflection(1.33, 25.48)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, -5]}});\nboard.create('point', [2, 32], {name: 'Max(2,32)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, 10]}});\nboard.unsuspendUpdate();"
+              }
+            }
           }
         ]
       }
@@ -1851,20 +1870,7 @@ export const Y12A_CH3D_QUESTIONS = [
         "explanation": "Identify points of inflection where \\( y'' = 0 \\) and check for a concavity change.",
         "workingOut": "12x(4-3x) = 0 \\implies x = 0 \\text{ or } x = \\frac{4}{3}. \\, text{Since } y'' \\text{ changes sign across both, both are inflection points: } (0, 16) \\text{ and } (\\frac{4}{3}, frac{688}{27})"
       }
-    ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 350,
-        "height": 250,
-        "boundingbox": [
-          -2,
-          40,
-          4,
-          -10
-        ],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.5,0], [3.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-5], [0,38]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [3.3, -1, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 36, 'y'], {fontSize: 14});\nvar f = function(x) { return 16 + 8*x*x*x - 3*x*x*x*x; };\nboard.create('functiongraph', [f, -1.2, 2.4], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 16], {name: 'Inflection(0,16)', size: 3, color: 'red', label: {autoPosition: false, offset: [-110, -5]}});\nboard.create('point', [1.33, 25.48], {name: 'Inflection(1.33, 25.48)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, -5]}});\nboard.create('point', [2, 32], {name: 'Max(2,32)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, 10]}});\nboard.unsuspendUpdate();"
-      }
-    }
+    ]
   },
   {
     "id": "y12a-3d-q12",
