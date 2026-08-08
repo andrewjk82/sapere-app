@@ -1614,12 +1614,12 @@ export const Y12A_CH3C_QUESTIONS = [
         "workingOut": "f(x) = 2x^{1/2}"
       },
       {
-        "explanation": "Find the first derivative.",
-        "workingOut": "f'(x) = 2 \\times \\frac{1}{2}x^{-1/2} = x^{-1/2} = \\frac{1}{\\sqrt{x}}"
+        "explanation": "Apply the power rule to find the first derivative.",
+        "workingOut": "\\begin{aligned} f'(x) &= 2 \\times \\frac{1}{2}x^{\\frac{1}{2}-1} \\\\ &= x^{-1/2} \\\\ &= \\frac{1}{x^{1/2}} \\\\ &= \\frac{1}{\\sqrt{x}} \\end{aligned}"
       },
       {
-        "explanation": "Find the first derivative.",
-        "workingOut": "f''(x) = -\\frac{1}{2}x^{-3/2} = -\\frac{1}{2x\\sqrt{x}}"
+        "explanation": "Apply the power rule to the first derivative to find the second derivative.",
+        "workingOut": "\\begin{aligned} f''(x) &= -\\frac{1}{2}x^{-\\frac{1}{2}-1} \\\\ &= -\\frac{1}{2}x^{-3/2} \\\\ &= -\\frac{1}{2x^{3/2}} \\\\ &= -\\frac{1}{2x\\sqrt{x}} \\end{aligned}"
       }
     ],
     "opts": [
@@ -1659,16 +1659,16 @@ export const Y12A_CH3C_QUESTIONS = [
     "t": "Second and higher derivatives",
     "solutionSteps": [
       {
-        "explanation": "Rewrite using fractional indices.",
+        "explanation": "Rewrite the cube root using fractional indices.",
         "workingOut": "f(x) = x^{2/3}"
       },
       {
-        "explanation": "Find the first derivative.",
-        "workingOut": "f'(x) = \\frac{2}{3}x^{-1/3} = \\frac{2}{3\\sqrt[3]{x}}"
+        "explanation": "Apply the power rule to find the first derivative.",
+        "workingOut": "\\begin{aligned} f'(x) &= \\frac{2}{3}x^{\\frac{2}{3}-1} \\\\ &= \\frac{2}{3}x^{-1/3} \\\\ &= \\frac{2}{3x^{1/3}} \\\\ &= \\frac{2}{3\\sqrt[3]{x}} \\end{aligned}"
       },
       {
-        "explanation": "Find the first derivative.",
-        "workingOut": "f''(x) = \\frac{2}{3} \\times (-\\frac{1}{3})x^{-4/3} = -\\frac{2}{9}x^{-4/3} = -\\frac{2}{9x\\sqrt[3]{x}}"
+        "explanation": "Apply the power rule again for the second derivative.",
+        "workingOut": "\\begin{aligned} f''(x) &= \\frac{2}{3} \\times \\left(-\\frac{1}{3}\\right)x^{-\\frac{1}{3}-1} \\\\ &= -\\frac{2}{9}x^{-4/3} \\\\ &= -\\frac{2}{9x^{4/3}} \\\\ &= -\\frac{2}{9x\\sqrt[3]{x}} \\end{aligned}"
       }
     ],
     "opts": [
@@ -1708,16 +1708,16 @@ export const Y12A_CH3C_QUESTIONS = [
     "t": "Second and higher derivatives",
     "solutionSteps": [
       {
-        "explanation": "Combine terms using exponent laws.",
-        "workingOut": "f(x) = x^2 \\times x^{1/2} = x^{5/2}"
+        "explanation": "Rewrite the expression using fractional indices and combine terms using index laws.",
+        "workingOut": "\\begin{aligned} f(x) &= x^2 \\times x^{1/2} \\\\ &= x^{2 + 1/2} \\\\ &= x^{5/2} \\end{aligned}"
       },
       {
-        "explanation": "Find the first derivative.",
-        "workingOut": "f'(x) = \\frac{5}{2}x^{3/2} = \\frac{5}{2}x\\sqrt{x}"
+        "explanation": "Apply the power rule to find the first derivative.",
+        "workingOut": "\\begin{aligned} f'(x) &= \\frac{5}{2}x^{\\frac{5}{2}-1} \\\\ &= \\frac{5}{2}x^{3/2} \\\\ &= \\frac{5}{2}x\\sqrt{x} \\end{aligned}"
       },
       {
-        "explanation": "Find the first derivative.",
-        "workingOut": "f''(x) = \\frac{5}{2} \\times \\frac{3}{2}x^{1/2} = \\frac{15}{4}\\sqrt{x}"
+        "explanation": "Apply the power rule again for the second derivative.",
+        "workingOut": "\\begin{aligned} f''(x) &= \\frac{5}{2} \\times \\frac{3}{2}x^{\\frac{3}{2}-1} \\\\ &= \\frac{15}{4}x^{1/2} \\\\ &= \\frac{15}{4}\\sqrt{x} \\end{aligned}"
       }
     ],
     "opts": [
@@ -1757,16 +1757,16 @@ export const Y12A_CH3C_QUESTIONS = [
     "t": "Second and higher derivatives",
     "solutionSteps": [
       {
-        "explanation": "Rewrite using indices.",
-        "workingOut": "f(x) = 2x^{-1/2}"
+        "explanation": "Rewrite the function using a negative fractional index.",
+        "workingOut": "\\begin{aligned} f(x) &= \\frac{2}{x^{1/2}} \\\\ &= 2x^{-1/2} \\end{aligned}"
       },
       {
-        "explanation": "Find the first derivative.",
-        "workingOut": "f'(x) = -x^{-3/2} = -\\frac{1}{x\\sqrt{x}}"
+        "explanation": "Apply the power rule to find the first derivative.",
+        "workingOut": "\\begin{aligned} f'(x) &= 2 \\times \\left(-\\frac{1}{2}\\right)x^{-\\frac{1}{2}-1} \\\\ &= -1x^{-3/2} \\\\ &= -\\frac{1}{x^{3/2}} \\\\ &= -\\frac{1}{x\\sqrt{x}} \\end{aligned}"
       },
       {
-        "explanation": "Find the first derivative.",
-        "workingOut": "f''(x) = \\frac{3}{2}x^{-5/2} = \\frac{3}{2x^2\\sqrt{x}}"
+        "explanation": "Apply the power rule again for the second derivative.",
+        "workingOut": "\\begin{aligned} f''(x) &= -1 \\times \\left(-\\frac{3}{2}\\right)x^{-\\frac{3}{2}-1} \\\\ &= \\frac{3}{2}x^{-5/2} \\\\ &= \\frac{3}{2x^{5/2}} \\\\ &= \\frac{3}{2x^2\\sqrt{x}} \\end{aligned}"
       }
     ],
     "opts": [
@@ -1806,16 +1806,16 @@ export const Y12A_CH3C_QUESTIONS = [
     "t": "Second and higher derivatives",
     "solutionSteps": [
       {
-        "explanation": "Rewrite function with an exponent.",
+        "explanation": "Rewrite the function with a fractional exponent to use the chain rule.",
         "workingOut": "f(x) = (x + 3)^{1/2}"
       },
       {
-        "explanation": "Find the first derivative using the chain rule.",
-        "workingOut": "f'(x) = \\frac{1}{2}(x+3)^{-1/2} = \\frac{1}{2\\sqrt{x+3}}"
+        "explanation": "Apply the chain rule to find the first derivative.",
+        "workingOut": "\\begin{aligned} f'(x) &= \\frac{1}{2}(x+3)^{\\frac{1}{2}-1} \\times \\frac{d}{dx}[x+3] \\\\ &= \\frac{1}{2}(x+3)^{-1/2} \\times 1 \\\\ &= \\frac{1}{2\\sqrt{x+3}} \\end{aligned}"
       },
       {
-        "explanation": "Find the first derivative.",
-        "workingOut": "f''(x) = -\\frac{1}{4}(x+3)^{-3/2} = -\\frac{1}{4(x+3)\\sqrt{x+3}}"
+        "explanation": "Apply the chain rule again for the second derivative.",
+        "workingOut": "\\begin{aligned} f''(x) &= \\frac{1}{2} \\times \\left(-\\frac{1}{2}\\right)(x+3)^{-\\frac{1}{2}-1} \\times \\frac{d}{dx}[x+3] \\\\ &= -\\frac{1}{4}(x+3)^{-3/2} \\times 1 \\\\ &= -\\frac{1}{4(x+3)^{3/2}} \\\\ &= -\\frac{1}{4(x+3)\\sqrt{x+3}} \\end{aligned}"
       }
     ],
     "opts": [
@@ -1855,16 +1855,16 @@ export const Y12A_CH3C_QUESTIONS = [
     "t": "Second and higher derivatives",
     "solutionSteps": [
       {
-        "explanation": "Rewrite with a fractional index.",
+        "explanation": "Rewrite the function with a fractional index.",
         "workingOut": "f(x) = (1 - 3x)^{1/2}"
       },
       {
-        "explanation": "Find the first derivative using the chain rule.",
-        "workingOut": "f'(x) = \\frac{1}{2}(1 - 3x)^{-1/2} \\times (-3) = -\\frac{3}{2}(1-3x)^{-1/2} = -\\frac{3}{2\\sqrt{1-3x}}"
+        "explanation": "Apply the chain rule to find the first derivative.",
+        "workingOut": "\\begin{aligned} f'(x) &= \\frac{1}{2}(1 - 3x)^{\\frac{1}{2}-1} \\times \\frac{d}{dx}[1 - 3x] \\\\ &= \\frac{1}{2}(1 - 3x)^{-1/2} \\times (-3) \\\\ &= -\\frac{3}{2}(1 - 3x)^{-1/2} \\\\ &= -\\frac{3}{2\\sqrt{1-3x}} \\end{aligned}"
       },
       {
-        "explanation": "Find the first derivative.",
-        "workingOut": "f''(x) = -\\frac{3}{2} \\times (-\\frac{1}{2})(1-3x)^{-3/2} \\times (-3) = -\\frac{9}{4}(1-3x)^{-3/2} = -\\frac{9}{4(1-3x)\\sqrt{1-3x}}"
+        "explanation": "Apply the chain rule again for the second derivative.",
+        "workingOut": "\\begin{aligned} f''(x) &= -\\frac{3}{2} \\times \\left(-\\frac{1}{2}\\right)(1-3x)^{-\\frac{1}{2}-1} \\times \\frac{d}{dx}[1-3x] \\\\ &= \\frac{3}{4}(1-3x)^{-3/2} \\times (-3) \\\\ &= -\\frac{9}{4}(1-3x)^{-3/2} \\\\ &= -\\frac{9}{4(1-3x)^{3/2}} \\\\ &= -\\frac{9}{4(1-3x)\\sqrt{1-3x}} \\end{aligned}"
       }
     ],
     "opts": [
@@ -1949,12 +1949,12 @@ export const Y12A_CH3C_QUESTIONS = [
     "t": "Second and higher derivatives",
     "solutionSteps": [
       {
-        "explanation": "First, obtain the derivative \\( f'(x) \\).",
-        "workingOut": "f'(x) = 3x^2 + 8x + 6"
+        "explanation": "Find the first derivative \\( f'(x) \\) using the power rule.",
+        "workingOut": "\\begin{aligned} f'(x) &= 3x^{3-1} + 4 \\times 2x^{2-1} + 6 - 0 \\\\ &= 3x^2 + 8x + 6 \\end{aligned}"
       },
       {
-        "explanation": "Substitute \\( x = 0 \\) into \\( f'(x) \\).",
-        "workingOut": "f'(0) = 3(0)^2 + 8(0) + 6 = 6"
+        "explanation": "Substitute \\( x = 0 \\) into the expression for \\( f'(x) \\).",
+        "workingOut": "\\begin{aligned} f'(0) &= 3(0)^2 + 8(0) + 6 \\\\ &= 0 + 0 + 6 \\\\ &= 6 \\end{aligned}"
       }
     ],
     "opts": [
@@ -1994,12 +1994,12 @@ export const Y12A_CH3C_QUESTIONS = [
     "t": "Second and higher derivatives",
     "solutionSteps": [
       {
-        "explanation": "First, write down the expression for the first derivative.",
-        "workingOut": "f'(x) = 3x^2 + 8x + 6"
+        "explanation": "Find the first derivative \\( f'(x) \\) using the power rule.",
+        "workingOut": "\\begin{aligned} f'(x) &= 3x^{3-1} + 4 \\times 2x^{2-1} + 6 \\\\ &= 3x^2 + 8x + 6 \\end{aligned}"
       },
       {
         "explanation": "Substitute \\( x = 1 \\) into \\( f'(x) \\).",
-        "workingOut": "f'(1) = 3(1)^2 + 8(1) + 6 = 17"
+        "workingOut": "\\begin{aligned} f'(1) &= 3(1)^2 + 8(1) + 6 \\\\ &= 3 + 8 + 6 \\\\ &= 17 \\end{aligned}"
       }
     ],
     "opts": [
@@ -2039,12 +2039,12 @@ export const Y12A_CH3C_QUESTIONS = [
     "t": "Second and higher derivatives",
     "solutionSteps": [
       {
-        "explanation": "Find the second derivative formula.",
-        "workingOut": "f''(x) = 6x + 8"
+        "explanation": "First, find the second derivative \\( f''(x) \\) by differentiating \\( f'(x) = 3x^2 + 8x + 6 \\).",
+        "workingOut": "\\begin{aligned} f''(x) &= \\frac{d}{dx}[3x^2 + 8x + 6] \\\\ &= 6x + 8 \\end{aligned}"
       },
       {
         "explanation": "Substitute \\( x = 0 \\) into \\( f''(x) \\).",
-        "workingOut": "f''(0) = 6(0) + 8 = 8"
+        "workingOut": "\\begin{aligned} f''(0) &= 6(0) + 8 \\\\ &= 0 + 8 \\\\ &= 8 \\end{aligned}"
       }
     ],
     "opts": [
@@ -2084,12 +2084,12 @@ export const Y12A_CH3C_QUESTIONS = [
     "t": "Second and higher derivatives",
     "solutionSteps": [
       {
-        "explanation": "Find the second derivative formula.",
-        "workingOut": "f''(x) = 6x + 8"
+        "explanation": "First, find the second derivative \\( f''(x) \\) by differentiating \\( f'(x) = 3x^2 + 8x + 6 \\).",
+        "workingOut": "\\begin{aligned} f''(x) &= \\frac{d}{dx}[3x^2 + 8x + 6] \\\\ &= 6x + 8 \\end{aligned}"
       },
       {
         "explanation": "Substitute \\( x = 1 \\) into \\( f''(x) \\).",
-        "workingOut": "f''(1) = 6(1) + 8 = 14"
+        "workingOut": "\\begin{aligned} f''(1) &= 6(1) + 8 \\\\ &= 6 + 8 \\\\ &= 14 \\end{aligned}"
       }
     ],
     "opts": [
