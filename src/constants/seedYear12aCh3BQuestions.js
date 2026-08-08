@@ -1575,30 +1575,51 @@ export const Y12A_CH3B_QUESTIONS = [
   },
   {
     "id": "y12a-3b-q14a",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "The curve \\( y = ax^2 + bx + c \\) passes through the points \\( (1, 6) \\) and \\( (-1, 10) \\), and there is a maximum turning point at \\( x = -1 \\). Show that \\( a + b + c = 6 \\), \\( a - b + c = 10 \\) and \\( -2a + b = 0 \\).",
-    "a": "Substitute coordinates into y, and evaluate y' at x=-1: a+b+c=6, a-b+c=10, and y'(-1)=-2a+b=0.",
+    "question": "The curve \\( y = ax^2 + bx + c \\) passes through the points \\( (1, 6) \\) and \\( (-1, 10) \\), and there is a maximum turning point at \\( x = -1 \\). Find the values of \\( a \\), \\( b \\), and \\( c \\).",
     "t": "Stationary points and turning points",
     "solutionSteps": [
       {
-        "explanation": "Substitute \\( (1, 6) \\) into \\( y = ax^2 + bx + c \\).",
-        "workingOut": "6 = a(1)^2 + b(1) + c \\implies a + b + c = 6"
+        "explanation": "Use the given points to set up equations for \\( y = ax^2 + bx + c \\).",
+        "workingOut": "\\begin{aligned} \\text{Substitute } (1, 6): \\quad a(1)^2 + b(1) + c &= 6 \\\\ a + b + c &= 6 \\quad \\text{--- (1)} \\\\ \\text{Substitute } (-1, 10): \\quad a(-1)^2 + b(-1) + c &= 10 \\\\ a - b + c &= 10 \\quad \\text{--- (2)} \\end{aligned}"
       },
       {
-        "explanation": "Substitute \\( (-1, 10) \\) into \\( y = ax^2 + bx + c \\).",
-        "workingOut": "10 = a(-1)^2 + b(-1) + c \\implies a - b + c = 10"
+        "explanation": "Use the information about the turning point to find another equation.",
+        "workingOut": "\\begin{aligned} \\text{Differentiate the function:} \\quad y' &= 2ax + b \\\\ \\text{Turning point at } x = -1 \\implies y'(-1) &= 0 \\\\ 2a(-1) + b &= 0 \\\\ -2a + b &= 0 \\\\ b &= 2a \\quad \\text{--- (3)} \\end{aligned}"
       },
       {
-        "explanation": "Differentiate \\( y = ax^2 + bx + c \\) to find \\( y' \\).",
-        "workingOut": "y' = 2ax + b"
-      },
-      {
-        "explanation": "Since there is a turning point at \\( x = -1 \\), set \\( y'(-1) = 0 \\).",
-        "workingOut": "2a(-1) + b = 0 \\implies -2a + b = 0"
+        "explanation": "Solve the system of equations for \\( a \\), \\( b \\), and \\( c \\).",
+        "workingOut": "\\begin{aligned} \\text{Subtract (1) from (2):} \\\\ (a - b + c) - (a + b + c) &= 10 - 6 \\\\ -2b &= 4 \\\\ b &= -2 \\\\ \\\\ \\text{Substitute } b = -2 \\text{ into (3):} \\\\ -2 &= 2a \\\\ a &= -1 \\\\ \\\\ \\text{Substitute } a = -1 \\text{ and } b = -2 \\text{ into (1):} \\\\ -1 - 2 + c &= 6 \\\\ -3 + c &= 6 \\\\ c &= 9 \\end{aligned}"
       }
-    ]
+    ],
+    "opts": [
+      "\\( a = -2 \\), \\( b = -1 \\), \\( c = 9 \\)",
+      "\\( a = -1 \\), \\( b = -2 \\), \\( c = 9 \\)",
+      "\\( a = -1 \\), \\( b = 2 \\), \\( c = 5 \\)",
+      "\\( a = 1 \\), \\( b = 2 \\), \\( c = 3 \\)"
+    ],
+    "options": [
+      {
+        "text": "\\( a = -2 \\), \\( b = -1 \\), \\( c = 9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( a = -1 \\), \\( b = -2 \\), \\( c = 9 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( a = -1 \\), \\( b = 2 \\), \\( c = 5 \\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\( a = 1 \\), \\( b = 2 \\), \\( c = 3 \\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": "1",
+    "answerStr": "1"
   },
   {
     "id": "y12a-3b-q14ba",
