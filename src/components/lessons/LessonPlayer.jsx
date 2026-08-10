@@ -610,7 +610,21 @@ const TrigBoundaryTableInteractive = () => {
   const handlePick = (func, angle) => setSel({ func, angle });
 
   const calcPanel = () => {
-    if (!sel) return null;
+    if (!sel) {
+      return (
+        <div
+          key="placeholder"
+          style={{
+            display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center',
+            background: '#faf5ff', border: '1.5px dashed #ddd6fe', borderRadius: 14,
+            padding: '10px 18px', width: '100%', height: '100%', boxSizing: 'border-box',
+            fontSize: '0.82rem', fontWeight: 600, color: '#a78bfa',
+          }}
+        >
+          Tap a point on a circle, or a blank in the table, to reveal it
+        </div>
+      );
+    }
     const { func, angle } = sel;
     const [x, y] = TRIG_BOUNDARY_COORDS[angle];
     const color = TRIG_BOUNDARY_COLORS[func];
@@ -625,9 +639,9 @@ const TrigBoundaryTableInteractive = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.22 }}
         style={{
-          display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 4,
+          display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 4,
           background: '#faf5ff', border: `1.5px solid ${color}33`, borderRadius: 14,
-          padding: '10px 18px', fontFamily: FONT,
+          padding: '10px 18px', width: '100%', height: '100%', boxSizing: 'border-box', fontFamily: FONT,
         }}
       >
         <MathView content={`$${TRIG_BOUNDARY_FORMULA[func]}$`} style={{ fontSize: '1rem', fontWeight: 800, color }} />
@@ -646,26 +660,28 @@ const TrigBoundaryTableInteractive = () => {
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16, fontFamily: FONT }}>
-      <div style={{ fontSize: '0.82rem', fontWeight: 600, color: '#94a3b8', textAlign: 'center' }}>
-        Tap a point on a circle, or a blank in the table, to reveal it
-      </div>
+      {/* Calc panel sits to the LEFT of the circles, fixed-size, so revealing
+          a value never shifts the graphs or the table below. */}
+      <div style={{ display: 'flex', gap: 20, alignItems: 'center', flexWrap: 'wrap', justifyContent: 'center' }}>
+        <div style={{ width: 220, minHeight: 200 }}>
+          <AnimatePresence mode="wait">{calcPanel()}</AnimatePresence>
+        </div>
 
-      <div style={{ display: 'flex', flexDirection: 'column', gap: 14, alignItems: 'center' }}>
-        {['sin', 'cos', 'tan'].map((func) => (
-          <div key={func} style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
-            <div style={{ width: 64, textAlign: 'right' }}>
-              <MathView content={`$\\${func}\\,\\theta$`} style={{ fontSize: '0.95rem', fontWeight: 800, color: TRIG_BOUNDARY_COLORS[func] }} />
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 14, alignItems: 'center' }}>
+          {['sin', 'cos', 'tan'].map((func) => (
+            <div key={func} style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
+              <div style={{ width: 64, textAlign: 'right' }}>
+                <MathView content={`$\\${func}\\,\\theta$`} style={{ fontSize: '0.95rem', fontWeight: 800, color: TRIG_BOUNDARY_COLORS[func] }} />
+              </div>
+              <TrigBoundaryMiniCircle
+                func={func}
+                selectedAngle={sel?.func === func ? sel.angle : null}
+                onPick={handlePick}
+              />
             </div>
-            <TrigBoundaryMiniCircle
-              func={func}
-              selectedAngle={sel?.func === func ? sel.angle : null}
-              onPick={handlePick}
-            />
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-
-      <AnimatePresence mode="wait">{calcPanel()}</AnimatePresence>
 
       <div style={{ overflowX: 'auto' }}>
         <table style={{ borderCollapse: 'separate', borderSpacing: 0, borderRadius: '14px', overflow: 'hidden', boxShadow: '0 6px 20px rgba(124,58,237,0.08)' }}>
