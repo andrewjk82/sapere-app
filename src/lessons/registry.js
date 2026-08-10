@@ -1332,9 +1332,9 @@ export const buildGeneralAngleTrigLesson = ({ audioBase = null } = {}) => {
       board: [{ type: 'reciprocalBreakdown' }],
     },
     {
-      narration: `<b>Domains:</b> sin θ and cos θ are defined for <b>every</b> angle. tan θ and sec θ are undefined wherever x = 0 (the boundary angles 90°, 270°, …). cot θ and cosec θ are undefined wherever y = 0 (the boundary angles 0°, 180°, …).`,
-      speech: `Domains. Sine theta and cosine theta are defined for every angle. Tangent theta and secant theta are undefined wherever x equals 0, at the boundary angles 90, 270, and so on. Cotangent theta and cosecant theta are undefined wherever y equals 0, at the boundary angles 0, 180, and so on.`,
-      board: [{ type: 'math', content: `$$\\tan\\theta,\\sec\\theta:\\ \\theta\\neq \\ldots,90°,270°,\\ldots \\qquad \\cot\\theta,\\operatorname{cosec}\\theta:\\ \\theta\\neq \\ldots,0°,180°,\\ldots$$` }],
+      narration: `<b>Domains:</b> tap each pair below and watch which axis it breaks on. sin θ and cos θ are defined for <b>every</b> angle; tan θ and sec θ break where x = 0; cot θ and cosec θ break where y = 0.`,
+      speech: `Domains. Tap each pair below and watch which axis it breaks on. Sine theta and cosine theta are defined for every angle. Tangent theta and secant theta break where x equals 0. Cotangent theta and cosecant theta break where y equals 0.`,
+      board: [{ type: 'domainBreakdown' }],
     },
     {
       narration: `Quick check — at θ = 180°, y = 0. Which function is <b>undefined</b> there?`,

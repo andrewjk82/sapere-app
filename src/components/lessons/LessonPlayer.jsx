@@ -46,7 +46,7 @@ const fmt = (n) => n.toLocaleString('en-US').replace(/,/g, ' ');
 
 // Steps that need the student to tap/answer something before moving on —
 // auto-play must PAUSE here rather than racing past on its usual timer.
-const INTERACTIVE_BOARD_TYPES = ['checkpoint', 'compassBearing', 'elevationDepression', 'angleCircle', 'similarTriangles', 'reciprocalRatio', 'exactValuesExplorer', 'unknownSideSolver', 'unknownAngleSolver', 'primaryRatioRecap', 'workedTriangleSolver', 'walkerCliffSolver', 'bearingFlightSolver', 'lessonRecapScene', 'trigBoundaryTable', 'reciprocalBreakdown'];
+const INTERACTIVE_BOARD_TYPES = ['checkpoint', 'compassBearing', 'elevationDepression', 'angleCircle', 'similarTriangles', 'reciprocalRatio', 'exactValuesExplorer', 'unknownSideSolver', 'unknownAngleSolver', 'primaryRatioRecap', 'workedTriangleSolver', 'walkerCliffSolver', 'bearingFlightSolver', 'lessonRecapScene', 'trigBoundaryTable', 'reciprocalBreakdown', 'domainBreakdown'];
 const isInteractiveStep = (step) => (step?.board || []).some(
   (b) => INTERACTIVE_BOARD_TYPES.includes(b.type) || (b.type === 'triangle' && b.quiz),
 );
@@ -855,6 +855,127 @@ const ReciprocalBreakdownDemo = () => {
       <div style={{ display: 'flex', gap: 18, flexWrap: 'wrap', justifyContent: 'center', fontSize: '0.8rem', fontWeight: 700, color: '#64748b' }}>
         <span style={{ display: 'flex', alignItems: 'center', gap: 5 }}><Ban size={14} color="#94a3b8" /> Zero has no reciprocal</span>
         <span style={{ display: 'flex', alignItems: 'center', gap: 5 }}><Ban size={14} color="#94a3b8" /> Infinity isn't a number</span>
+      </div>
+    </div>
+  );
+};
+
+// ── Domain breakdown demo (which functions break, and where) ─────────────────
+// One unit circle plus three selector pills — sin/cos (always defined),
+// tan/sec (undefined where x = 0), cot/cosec (undefined where y = 0). Picking
+// a pill highlights the matching axis on the circle and marks the two
+// boundary points on it with an animated ✕, tying "undefined wherever x = 0"
+// to an actual axis rather than leaving it as a sentence to memorise.
+const DOMAIN_GROUPS = [
+  { key: 'always', label: 'sin θ, cos θ', color: '#059669', axis: null, angles: [], desc: 'Defined for every angle — no restrictions.' },
+  { key: 'xzero', label: 'tan θ, sec θ', color: '#dc2626', axis: 'y', angles: [90, 270], desc: 'Undefined wherever x = 0.' },
+  { key: 'yzero', label: 'cot θ, cosec θ', color: '#ea580c', axis: 'x', angles: [0, 180], desc: 'Undefined wherever y = 0.' },
+];
+
+const DomainMiniCircle = ({ group, size = 156 }) => {
+  const cx = size / 2, cy = size / 2, r = size * 0.32;
+  return (
+    <svg width={size} height={size} style={{ display: 'block', overflow: 'visible' }}>
+      <circle cx={cx} cy={cy} r={r} fill="none" stroke="#ddd6fe" strokeWidth="1.6" />
+      <line x1={cx - r - 18} y1={cy} x2={cx + r + 18} y2={cy} stroke="#cbd5e1" strokeWidth="1.2" />
+      <line x1={cx} y1={cy - r - 18} x2={cx} y2={cy + r + 18} stroke="#cbd5e1" strokeWidth="1.2" />
+      <AnimatePresence>
+        {group.axis === 'y' && (
+          <motion.line
+            key="hl-y" x1={cx} y1={cy - r - 18} x2={cx} y2={cy + r + 18}
+            stroke={group.color} strokeWidth="3.2" strokeLinecap="round"
+            initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.22 }}
+          />
+        )}
+        {group.axis === 'x' && (
+          <motion.line
+            key="hl-x" x1={cx - r - 18} y1={cy} x2={cx + r + 18} y2={cy}
+            stroke={group.color} strokeWidth="3.2" strokeLinecap="round"
+            initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.22 }}
+          />
+        )}
+      </AnimatePresence>
+      {TRIG_BOUNDARY_ANGLES.map((angle) => {
+        const [ux, uy] = TRIG_BOUNDARY_COORDS[angle];
+        const px = cx + ux * r, py = cy - uy * r;
+        const isForbidden = group.angles.includes(angle);
+        const labelX = angle === 0 ? px + 16 : angle === 180 ? px - 16 : px;
+        const labelY = angle === 90 ? py - 12 : angle === 270 ? py + 16 : py + 4;
+        return (
+          <g key={angle}>
+            {isForbidden ? (
+              <motion.g
+                key={`x-${group.key}-${angle}`}
+                initial={{ scale: 0, rotate: -10 }} animate={{ scale: 1, rotate: 0 }}
+                transition={{ type: 'spring', stiffness: 340, damping: 16, delay: 0.08 }}
+              >
+                <line x1={px - 6} y1={py - 6} x2={px + 6} y2={py + 6} stroke={group.color} strokeWidth="2.6" strokeLinecap="round" />
+                <line x1={px - 6} y1={py + 6} x2={px + 6} y2={py - 6} stroke={group.color} strokeWidth="2.6" strokeLinecap="round" />
+              </motion.g>
+            ) : (
+              <circle cx={px} cy={py} r="4" fill="#a7f3d0" stroke="#059669" strokeWidth="1.4" />
+            )}
+            <text x={labelX} y={labelY} fontSize="10.5" fontWeight="700" fill="#94a3b8" textAnchor="middle">{angle}°</text>
+          </g>
+        );
+      })}
+      <circle cx={cx} cy={cy} r="2.4" fill="#1e1b4b" />
+    </svg>
+  );
+};
+
+const DomainBreakdownDemo = () => {
+  const [key, setKey] = useState('always');
+  const group = DOMAIN_GROUPS.find((g) => g.key === key);
+
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16, fontFamily: FONT }}>
+      <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', justifyContent: 'center' }}>
+        {DOMAIN_GROUPS.map((g) => (
+          <button
+            key={g.key}
+            onClick={() => setKey(g.key)}
+            style={{
+              padding: '6px 16px', borderRadius: 999, cursor: 'pointer', fontFamily: FONT,
+              border: `1.5px solid ${key === g.key ? g.color : '#e2e8f0'}`,
+              background: key === g.key ? g.color : '#fff',
+              color: key === g.key ? '#fff' : '#475569',
+              fontWeight: 800, fontSize: '0.8rem',
+            }}
+          >
+            {g.label}
+          </button>
+        ))}
+      </div>
+
+      <DomainMiniCircle group={group} />
+
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={key}
+          initial={{ opacity: 0, y: 6 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.2 }}
+          style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6 }}
+        >
+          <div style={{ fontSize: '0.92rem', fontWeight: 800, color: group.color, textAlign: 'center' }}>{group.desc}</div>
+          {group.angles.length > 0 && (
+            <MathView
+              content={`$$\\theta \\neq \\ldots, ${group.angles.map((a) => `${a}°`).join(', ')}, \\ldots$$`}
+              style={{ fontSize: '1rem', fontWeight: 800, color: '#1e1b4b' }}
+            />
+          )}
+        </motion.div>
+      </AnimatePresence>
+
+      <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap', justifyContent: 'center', fontSize: '0.75rem', fontWeight: 700, color: '#64748b' }}>
+        <span style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
+          <span style={{ width: 9, height: 9, borderRadius: '50%', background: '#a7f3d0', border: '1.5px solid #059669', display: 'inline-block' }} />
+          defined here
+        </span>
+        <span style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
+          <X size={12} color={group.color} /> undefined here
+        </span>
       </div>
     </div>
   );
@@ -4327,6 +4448,7 @@ const BoardItem = ({ item }) => {
   else if (item.type === 'valueTable') inner = <ValueTable rows={item.rows} />;
   else if (item.type === 'trigBoundaryTable') inner = <TrigBoundaryTableInteractive />;
   else if (item.type === 'reciprocalBreakdown') inner = <ReciprocalBreakdownDemo />;
+  else if (item.type === 'domainBreakdown') inner = <DomainBreakdownDemo />;
   else if (item.type === 'math') inner = (
     <motion.div
       initial={{ opacity: 0, scale: 0.93, y: 10 }}
