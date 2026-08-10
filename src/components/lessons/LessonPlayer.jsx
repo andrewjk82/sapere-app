@@ -617,8 +617,8 @@ const TrigBoundaryTableInteractive = () => {
           style={{
             display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center',
             background: '#faf5ff', border: '1.5px dashed #ddd6fe', borderRadius: 14,
-            padding: '10px 18px', width: '100%', height: '100%', boxSizing: 'border-box',
-            fontSize: '0.82rem', fontWeight: 600, color: '#a78bfa',
+            padding: '16px', width: '100%', height: '100%', boxSizing: 'border-box',
+            fontSize: '0.85rem', fontWeight: 600, color: '#a78bfa', lineHeight: 1.5,
           }}
         >
           Tap a point on a circle, or a blank in the table, to reveal it
@@ -631,7 +631,8 @@ const TrigBoundaryTableInteractive = () => {
     const num = func === 'sin' ? y : func === 'cos' ? x : y;
     const den = func === 'tan' ? x : 1;
     const result = TRIG_BOUNDARY_VALUES[func][angle];
-    const resultText = result === null ? '\\text{undefined}' : result;
+    const isUndefined = result === null;
+    const stepLabel = { fontSize: '0.72rem', fontWeight: 700, color: '#a78bfa', textTransform: 'uppercase', letterSpacing: '0.03em' };
     return (
       <motion.div
         key={`${func}-${angle}`}
@@ -639,21 +640,44 @@ const TrigBoundaryTableInteractive = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.22 }}
         style={{
-          display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 4,
+          display: 'flex', flexDirection: 'column', alignItems: 'stretch', gap: 10,
           background: '#faf5ff', border: `1.5px solid ${color}33`, borderRadius: 14,
-          padding: '10px 18px', width: '100%', height: '100%', boxSizing: 'border-box', fontFamily: FONT,
+          padding: '16px 18px', width: '100%', height: '100%', boxSizing: 'border-box', fontFamily: FONT,
         }}
       >
-        <MathView content={`$${TRIG_BOUNDARY_FORMULA[func]}$`} style={{ fontSize: '1rem', fontWeight: 800, color }} />
-        <div style={{ fontSize: '0.82rem', fontWeight: 600, color: '#64748b' }}>
+        <div style={{ textAlign: 'center' }}>
+          <div style={stepLabel}>Formula</div>
+          <MathView content={`$${TRIG_BOUNDARY_FORMULA[func]}$`} style={{ fontSize: '1.05rem', fontWeight: 800, color }} />
+        </div>
+
+        <div style={{ textAlign: 'center', fontSize: '0.8rem', fontWeight: 700, color: '#64748b' }}>
           {`θ = ${angle}°  →  (x, y) = (${x}, ${y}),  r = 1`}
         </div>
-        <MathView
-          content={func === 'tan'
-            ? `$$\\tan ${angle}° = \\dfrac{${num}}{${den}} = ${resultText}$$`
-            : `$$\\${func} ${angle}° = \\dfrac{${num}}{1} = ${resultText}$$`}
-          style={{ fontSize: '1.05rem', fontWeight: 800, color: '#1e1b4b' }}
-        />
+
+        <div style={{ height: 1, background: '#ece9fb', margin: '2px 0' }} />
+
+        <div style={{ textAlign: 'center' }}>
+          <div style={stepLabel}>Substitute</div>
+          <MathView
+            content={`$$\\${func} ${angle}° = \\dfrac{${num}}{${den}}$$`}
+            style={{ fontSize: '1.05rem', fontWeight: 800, color: '#1e1b4b' }}
+          />
+        </div>
+
+        {isUndefined ? (
+          <div style={{
+            display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6,
+            background: '#fee2e2', color: '#b91c1c', borderRadius: 10, padding: '7px 10px',
+            fontWeight: 800, fontSize: '0.86rem', textAlign: 'center',
+          }}>
+            undefined — can't divide by 0
+          </div>
+        ) : (
+          <div style={{ textAlign: 'center' }}>
+            <div style={stepLabel}>Result</div>
+            <div style={{ fontSize: '1.3rem', fontWeight: 800, color }}>{result}</div>
+          </div>
+        )}
       </motion.div>
     );
   };
@@ -663,7 +687,7 @@ const TrigBoundaryTableInteractive = () => {
       {/* Calc panel sits to the LEFT of the circles, fixed-size, so revealing
           a value never shifts the graphs or the table below. */}
       <div style={{ display: 'flex', gap: 20, alignItems: 'center', flexWrap: 'wrap', justifyContent: 'center' }}>
-        <div style={{ width: 220, minHeight: 200 }}>
+        <div style={{ width: 250, minHeight: 260 }}>
           <AnimatePresence mode="wait">{calcPanel()}</AnimatePresence>
         </div>
 
