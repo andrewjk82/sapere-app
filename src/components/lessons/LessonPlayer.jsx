@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowLeft, ArrowRight, X, RotateCcw, Play, Pause, Volume2, VolumeX, Sparkles } from 'lucide-react';
+import { ArrowLeft, ArrowRight, X, RotateCcw, Play, Pause, Volume2, VolumeX, Sparkles, Ban } from 'lucide-react';
 import MathView from '../MathView';
 import { clockSvg } from '../../utils/clockSvg';
 
@@ -46,7 +46,7 @@ const fmt = (n) => n.toLocaleString('en-US').replace(/,/g, ' ');
 
 // Steps that need the student to tap/answer something before moving on —
 // auto-play must PAUSE here rather than racing past on its usual timer.
-const INTERACTIVE_BOARD_TYPES = ['checkpoint', 'compassBearing', 'elevationDepression', 'angleCircle', 'similarTriangles', 'reciprocalRatio', 'exactValuesExplorer', 'unknownSideSolver', 'unknownAngleSolver', 'primaryRatioRecap', 'workedTriangleSolver', 'walkerCliffSolver', 'bearingFlightSolver', 'lessonRecapScene', 'trigBoundaryTable'];
+const INTERACTIVE_BOARD_TYPES = ['checkpoint', 'compassBearing', 'elevationDepression', 'angleCircle', 'similarTriangles', 'reciprocalRatio', 'exactValuesExplorer', 'unknownSideSolver', 'unknownAngleSolver', 'primaryRatioRecap', 'workedTriangleSolver', 'walkerCliffSolver', 'bearingFlightSolver', 'lessonRecapScene', 'trigBoundaryTable', 'reciprocalBreakdown'];
 const isInteractiveStep = (step) => (step?.board || []).some(
   (b) => INTERACTIVE_BOARD_TYPES.includes(b.type) || (b.type === 'triangle' && b.quiz),
 );
@@ -753,6 +753,108 @@ const TrigBoundaryTableInteractive = () => {
             ))}
           </tbody>
         </table>
+      </div>
+    </div>
+  );
+};
+
+// ── Reciprocal breakdown demo (cot θ = 1/tan θ at boundary angles) ────────────
+// Toggle between θ = 0° and θ = 90°. Two cards — tan θ on the left, cot θ on
+// the right — connected by a "×1/x" reciprocal arrow. Whichever one hits 0
+// stays green; the one on the other side of the reciprocal animates into a
+// red "undefined" badge, making the break visible rather than just stated.
+const RECIP_BREAKDOWN_DATA = {
+  0: { tanUndefined: false, tanVal: '0', cotUndefined: true, cotVal: null },
+  90: { tanUndefined: true, tanVal: null, cotUndefined: false, cotVal: '0' },
+};
+
+const RecipValueBox = ({ label, isUndefined, value, boxKey }) => (
+  <AnimatePresence mode="wait">
+    <motion.div
+      key={boxKey}
+      initial={{ opacity: 0, scale: 0.85 }}
+      animate={{ opacity: 1, scale: 1 }}
+      exit={{ opacity: 0, scale: 0.85 }}
+      transition={{ type: 'spring', stiffness: 320, damping: 22 }}
+      style={{
+        display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6,
+        minWidth: 108, padding: '14px 12px', borderRadius: 14,
+        background: isUndefined ? '#fee2e2' : '#ecfdf5',
+        border: `1.5px solid ${isUndefined ? '#fecaca' : '#a7f3d0'}`,
+      }}
+    >
+      <MathView content={`$${label}$`} style={{ fontSize: '1rem', fontWeight: 800, color: isUndefined ? '#b91c1c' : '#047857' }} />
+      {isUndefined ? (
+        <motion.div
+          initial={{ scale: 0.6, rotate: -6 }}
+          animate={{ scale: 1, rotate: 0 }}
+          transition={{ type: 'spring', stiffness: 340, damping: 16, delay: 0.1 }}
+          style={{ fontSize: '0.82rem', fontWeight: 800, color: '#b91c1c', textAlign: 'center' }}
+        >
+          undefined
+        </motion.div>
+      ) : (
+        <div style={{ fontSize: '1.4rem', fontWeight: 800, color: '#047857' }}>{value}</div>
+      )}
+    </motion.div>
+  </AnimatePresence>
+);
+
+const ReciprocalBreakdownDemo = () => {
+  const [angle, setAngle] = useState(0);
+  const data = RECIP_BREAKDOWN_DATA[angle];
+
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16, fontFamily: FONT }}>
+      <div style={{ display: 'flex', gap: 8 }}>
+        {[0, 90].map((a) => (
+          <button
+            key={a}
+            onClick={() => setAngle(a)}
+            style={{
+              padding: '6px 20px', borderRadius: 999, cursor: 'pointer', fontFamily: FONT,
+              border: `1.5px solid ${angle === a ? '#7c3aed' : '#e2e8f0'}`,
+              background: angle === a ? '#7c3aed' : '#fff',
+              color: angle === a ? '#fff' : '#475569',
+              fontWeight: 800, fontSize: '0.85rem',
+            }}
+          >
+            θ = {a}°
+          </button>
+        ))}
+      </div>
+
+      <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
+        <RecipValueBox label="\\tan\\theta" isUndefined={data.tanUndefined} value={data.tanVal} boxKey={`tan-${angle}`} />
+
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 2 }}>
+          <ArrowRight size={20} color="#a78bfa" />
+          <span style={{ fontSize: '0.68rem', fontWeight: 700, color: '#a78bfa', whiteSpace: 'nowrap' }}>reciprocal</span>
+          <span style={{ fontSize: '0.68rem', fontWeight: 700, color: '#a78bfa' }}>(1/x)</span>
+        </div>
+
+        <RecipValueBox label="\\cot\\theta" isUndefined={data.cotUndefined} value={data.cotVal} boxKey={`cot-${angle}`} />
+      </div>
+
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={`eq-${angle}`}
+          initial={{ opacity: 0, y: 6 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.2 }}
+        >
+          <MathView
+            content={data.tanUndefined
+              ? `$$\\cot ${angle}° = \\dfrac{1}{\\text{undefined}} = 0$$`
+              : `$$\\cot ${angle}° = \\dfrac{1}{0} \\;\\rightarrow\\; \\text{undefined}$$`}
+            style={{ fontSize: '1rem', fontWeight: 800, color: '#1e1b4b' }}
+          />
+        </motion.div>
+      </AnimatePresence>
+
+      <div style={{ display: 'flex', gap: 18, flexWrap: 'wrap', justifyContent: 'center', fontSize: '0.8rem', fontWeight: 700, color: '#64748b' }}>
+        <span style={{ display: 'flex', alignItems: 'center', gap: 5 }}><Ban size={14} color="#94a3b8" /> Zero has no reciprocal</span>
+        <span style={{ display: 'flex', alignItems: 'center', gap: 5 }}><Ban size={14} color="#94a3b8" /> Infinity isn't a number</span>
       </div>
     </div>
   );
@@ -4224,6 +4326,7 @@ const BoardItem = ({ item }) => {
   else if (item.type === 'graph') inner = <div style={{ display: 'flex', justifyContent: 'center' }}><FunctionGraph {...item} /></div>;
   else if (item.type === 'valueTable') inner = <ValueTable rows={item.rows} />;
   else if (item.type === 'trigBoundaryTable') inner = <TrigBoundaryTableInteractive />;
+  else if (item.type === 'reciprocalBreakdown') inner = <ReciprocalBreakdownDemo />;
   else if (item.type === 'math') inner = (
     <motion.div
       initial={{ opacity: 0, scale: 0.93, y: 10 }}

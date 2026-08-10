@@ -1327,9 +1327,9 @@ export const buildGeneralAngleTrigLesson = ({ audioBase = null } = {}) => {
       }],
     },
     {
-      narration: `<b>Warning:</b> $\\cot\\theta = \\dfrac{1}{\\tan\\theta}$ is true <b>everywhere except at boundary angles</b>. At θ = 0°, tan θ = 0 and cot θ is undefined; at θ = 90°, tan θ is undefined and cot θ = 0. Zero has no reciprocal, and infinity isn't a number either.`,
-      speech: `A warning. Cotangent theta equals 1 over tangent theta is true everywhere except at boundary angles. At theta equals 0 degrees, tan theta equals 0 and cot theta is undefined. At theta equals 90 degrees, tan theta is undefined and cot theta equals 0. Zero has no reciprocal, and infinity is not a number either.`,
-      board: [{ type: 'math', content: `$$\\theta=0°:\\ \\tan\\theta=0,\\ \\cot\\theta\\ \\text{undefined} \\qquad \\theta=90°:\\ \\tan\\theta\\ \\text{undefined},\\ \\cot\\theta=0$$` }],
+      narration: `<b>Warning:</b> $\\cot\\theta = \\dfrac{1}{\\tan\\theta}$ is true <b>everywhere except at boundary angles</b>. Tap θ = 0° and θ = 90° below and watch which side breaks.`,
+      speech: `A warning. Cotangent theta equals 1 over tangent theta is true everywhere except at boundary angles. Tap theta equals 0 degrees and theta equals 90 degrees below, and watch which side breaks.`,
+      board: [{ type: 'reciprocalBreakdown' }],
     },
     {
       narration: `<b>Domains:</b> sin θ and cos θ are defined for <b>every</b> angle. tan θ and sec θ are undefined wherever x = 0 (the boundary angles 90°, 270°, …). cot θ and cosec θ are undefined wherever y = 0 (the boundary angles 0°, 180°, …).`,
