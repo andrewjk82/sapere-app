@@ -7,6 +7,7 @@ import { parseNumberLineFromText } from '../utils/numberLineParser';
 import SvgGraph from './SvgGraph';
 import { encodeSvgDataUrl } from '../utils/geometrySvg';
 import { toDisplayText } from '../utils/mathPreprocess';
+import TrigonometricBoundaryAnglesTable from './TrigonometricBoundaryAnglesTable';
 
 // toDisplayText lives in a React-free module so the seed/seeder LaTeX
 // validators (scripts/validateSeeds.mjs, latexValidate.js) can reuse the
@@ -299,6 +300,7 @@ const MathView = ({ content, graphData: rawGraphData, style }) => {
             <GeometryFigure {...graphData.geometry} />
           ) : (
             <>
+              {graphData?.trigonometricBoundaryAngles && <TrigonometricBoundaryAnglesTable />}
               {graphData && (graphData.equations?.length > 0 || graphData.points?.length > 0) && !graphData.html && !graphData.diagram && !graphData.jsxGraph && !activeNumberLine && <MathGraph {...graphData} />}
               {activeNumberLine && <NumberLine {...activeNumberLine} />}
               {graphData?.diagram && <GeometricDiagram {...graphData.diagram} />}

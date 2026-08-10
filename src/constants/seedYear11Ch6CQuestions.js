@@ -2782,5 +2782,45 @@ export const Y11_CH6C_QUESTIONS = [
     "graphData": null,
     "isNew": true,
     "requiresManualGrading": true
+  },
+  {
+    "id": "y11a-6c-q9",
+    "topicId": "y11a-6C",
+    "c": "6C",
+    "t": "Trigonometric functions of a general angle",
+    "type": "teacher_review",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "question": "Recall the values of sin θ, cos θ, and tan θ at the boundary angles (0°, 90°, 180°, 270°). Click on any cell in the table below to see how each value is calculated using the unit circle and the definitions:\\n\n sin θ = y/r,  cos θ = x/r,  tan θ = y/x",
+    "answer": "Interactive learning tool — click on any value in the table to see the calculation from the unit circle coordinates.",
+    "hint": "Click on values in the table to learn the reasoning behind each trigonometric value at boundary angles.",
+    "solution": "The values sin 0° = 0, sin 90° = 1, sin 180° = 0, sin 270° = −1, cos 0° = 1, cos 90° = 0, cos 180° = −1, cos 270° = 0, tan 0° = 0, tan 90° = undefined, tan 180° = 0, tan 270° = undefined are derived from reading the coordinates (x, y) on the unit circle at each angle and applying the definitions.",
+    "solutionSteps": [
+      {
+        "explanation": "The unit circle is a circle centered at the origin with radius 1. At each standard angle (0°, 90°, 180°, 270°), a ray from the center intersects the circle at a specific point (x, y).",
+        "workingOut": "Unit circle coordinates: 0° = (1, 0), 90° = (0, 1), 180° = (−1, 0), 270° = (0, −1)",
+        "graphData": null
+      },
+      {
+        "explanation": "The sine function is the ratio of the y-coordinate to the radius: sin θ = y/r. Since r = 1 on the unit circle, sin θ simply equals the y-coordinate.",
+        "workingOut": "sin θ = y (from the unit circle)",
+        "graphData": null
+      },
+      {
+        "explanation": "The cosine function is the ratio of the x-coordinate to the radius: cos θ = x/r. Since r = 1 on the unit circle, cos θ simply equals the x-coordinate.",
+        "workingOut": "cos θ = x (from the unit circle)",
+        "graphData": null
+      },
+      {
+        "explanation": "The tangent function is the ratio of the y-coordinate to the x-coordinate: tan θ = y/x. When x = 0, the tangent is undefined because we cannot divide by zero.",
+        "workingOut": "tan θ = y/x (undefined when x = 0)",
+        "graphData": null
+      }
+    ],
+    "graphData": {
+      "trigonometricBoundaryAngles": true
+    },
+    "isNew": true,
+    "requiresManualGrading": true
   }
 ];
