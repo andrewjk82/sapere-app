@@ -46,7 +46,7 @@ const fmt = (n) => n.toLocaleString('en-US').replace(/,/g, ' ');
 
 // Steps that need the student to tap/answer something before moving on —
 // auto-play must PAUSE here rather than racing past on its usual timer.
-const INTERACTIVE_BOARD_TYPES = ['checkpoint', 'compassBearing', 'elevationDepression', 'angleCircle', 'similarTriangles', 'reciprocalRatio', 'exactValuesExplorer', 'unknownSideSolver', 'unknownAngleSolver', 'primaryRatioRecap', 'workedTriangleSolver', 'walkerCliffSolver', 'bearingFlightSolver', 'lessonRecapScene', 'trigBoundaryTable', 'reciprocalBreakdown', 'domainBreakdown'];
+const INTERACTIVE_BOARD_TYPES = ['checkpoint', 'compassBearing', 'elevationDepression', 'angleCircle', 'similarTriangles', 'reciprocalRatio', 'exactValuesExplorer', 'unknownSideSolver', 'unknownAngleSolver', 'primaryRatioRecap', 'workedTriangleSolver', 'walkerCliffSolver', 'bearingFlightSolver', 'lessonRecapScene', 'trigBoundaryTable', 'reciprocalBreakdown', 'domainBreakdown', 'generalAngleRecap'];
 const isInteractiveStep = (step) => (step?.board || []).some(
   (b) => INTERACTIVE_BOARD_TYPES.includes(b.type) || (b.type === 'triangle' && b.quiz),
 );
@@ -977,6 +977,130 @@ const DomainBreakdownDemo = () => {
           <X size={12} color={group.color} /> undefined here
         </span>
       </div>
+    </div>
+  );
+};
+
+// ── Whole-lesson recap (tabbed) ────────────────────────────────────────────
+// The final step ties together every idea in the lesson: the (x, y, r)
+// definitions, the period of each wave, and where each function breaks down.
+// Rather than one dense static line, three tabs each carry one small
+// animated visual — the circle from earlier (live-draggable), and two new
+// mini wave graphs whose curves draw themselves in on first view.
+const buildMiniWavePath = (fn, xMin, xMax, yMin, yMax, sx, sy, step = 0.5) => {
+  let d = ''; let pen = false;
+  for (let x = xMin; x <= xMax + 1e-9; x += step) {
+    let y; try { y = fn(x); } catch { y = NaN; }
+    if (!isFinite(y) || y < yMin - 0.4 || y > yMax + 0.4) { pen = false; continue; }
+    const X = sx(x), Y = sy(y);
+    d += (pen ? ` L${X.toFixed(1)} ${Y.toFixed(1)}` : ` M${X.toFixed(1)} ${Y.toFixed(1)}`);
+    pen = true;
+  }
+  return d.trim();
+};
+
+const SinCosMiniGraph = () => {
+  const w = 280, h = 90, xMin = 0, xMax = 720, yMin = -1.3, yMax = 1.3;
+  const sx = (x) => (x - xMin) / (xMax - xMin) * w;
+  const sy = (y) => h - (y - yMin) / (yMax - yMin) * h;
+  const toRad = (d) => (d * Math.PI) / 180;
+  const sinPath = buildMiniWavePath((x) => Math.sin(toRad(x)), xMin, xMax, yMin, yMax, sx, sy, 2);
+  const cosPath = buildMiniWavePath((x) => Math.cos(toRad(x)), xMin, xMax, yMin, yMax, sx, sy, 2);
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6 }}>
+      <div style={{ fontSize: '0.78rem', fontWeight: 800, color: '#64748b' }}>sin θ, cos θ — period 360°, amplitude 1</div>
+      <svg width={w} height={h} style={{ overflow: 'visible' }}>
+        <line x1={0} y1={sy(0)} x2={w} y2={sy(0)} stroke="#e2e8f0" strokeWidth="1" />
+        {[0, 360, 720].map((x) => (
+          <line key={x} x1={sx(x)} y1={0} x2={sx(x)} y2={h} stroke="#ddd6fe" strokeWidth="1" strokeDasharray="3 3" />
+        ))}
+        <motion.path d={sinPath} fill="none" stroke="#7c3aed" strokeWidth="2.2" strokeLinecap="round"
+          initial={{ pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ duration: 1.3, ease: 'easeInOut' }} />
+        <motion.path d={cosPath} fill="none" stroke="#059669" strokeWidth="2.2" strokeLinecap="round"
+          initial={{ pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ duration: 1.3, ease: 'easeInOut', delay: 0.15 }} />
+      </svg>
+      <div style={{ display: 'flex', gap: 16, fontSize: '0.74rem', fontWeight: 700 }}>
+        <span style={{ color: '#7c3aed' }}>— sin θ</span>
+        <span style={{ color: '#059669' }}>— cos θ</span>
+      </div>
+    </div>
+  );
+};
+
+const TanMiniGraph = () => {
+  const w = 280, h = 90, xMin = -90, xMax = 270, yMin = -3, yMax = 3;
+  const sx = (x) => (x - xMin) / (xMax - xMin) * w;
+  const sy = (y) => h - (y - yMin) / (yMax - yMin) * h;
+  const toRad = (d) => (d * Math.PI) / 180;
+  const tanPath = buildMiniWavePath((x) => Math.tan(toRad(x)), xMin, xMax, yMin, yMax, sx, sy, 0.5);
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6 }}>
+      <div style={{ fontSize: '0.78rem', fontWeight: 800, color: '#64748b' }}>tan θ — period 180°</div>
+      <svg width={w} height={h} style={{ overflow: 'visible' }}>
+        <line x1={0} y1={sy(0)} x2={w} y2={sy(0)} stroke="#e2e8f0" strokeWidth="1" />
+        {[-90, 90, 270].map((x) => (
+          <line key={x} x1={sx(x)} y1={0} x2={sx(x)} y2={h} stroke="#fecaca" strokeWidth="1.4" strokeDasharray="3 3" />
+        ))}
+        <motion.path d={tanPath} fill="none" stroke="#dc2626" strokeWidth="2.2" strokeLinecap="round"
+          initial={{ pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ duration: 1.1, ease: 'easeInOut' }} />
+      </svg>
+      <div style={{ fontSize: '0.72rem', fontWeight: 700, color: '#dc2626' }}>dashed lines = undefined (asymptotes)</div>
+    </div>
+  );
+};
+
+const RECAP_TABS = [
+  { key: 'definitions', label: 'Definitions' },
+  { key: 'periods', label: 'Periods' },
+  { key: 'domains', label: 'Domains' },
+];
+
+const GeneralAngleRecap = () => {
+  const [tab, setTab] = useState('definitions');
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16, fontFamily: FONT }}>
+      <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', justifyContent: 'center' }}>
+        {RECAP_TABS.map((t) => (
+          <button
+            key={t.key}
+            onClick={() => setTab(t.key)}
+            style={{
+              padding: '6px 18px', borderRadius: 999, cursor: 'pointer', fontFamily: FONT,
+              border: `1.5px solid ${tab === t.key ? '#7c3aed' : '#e2e8f0'}`,
+              background: tab === t.key ? '#7c3aed' : '#fff',
+              color: tab === t.key ? '#fff' : '#475569',
+              fontWeight: 800, fontSize: '0.82rem',
+            }}
+          >
+            {t.label}
+          </button>
+        ))}
+      </div>
+
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={tab}
+          initial={{ opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -8 }}
+          transition={{ duration: 0.2 }}
+          style={{ display: 'flex', justifyContent: 'center', width: '100%' }}
+        >
+          {tab === 'definitions' && (
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8 }}>
+              <AngleCircle width={190} height={190} r={62} initialDeg={40} showRatios quickAngles={[0, 90, 180, 270, 360]} />
+              <div style={{ fontSize: '0.75rem', fontWeight: 700, color: '#a78bfa' }}>drag the slider or tap a quick angle</div>
+            </div>
+          )}
+          {tab === 'periods' && (
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 20, alignItems: 'center' }}>
+              <SinCosMiniGraph />
+              <TanMiniGraph />
+            </div>
+          )}
+          {tab === 'domains' && <DomainBreakdownDemo />}
+        </motion.div>
+      </AnimatePresence>
     </div>
   );
 };
@@ -4449,6 +4573,7 @@ const BoardItem = ({ item }) => {
   else if (item.type === 'trigBoundaryTable') inner = <TrigBoundaryTableInteractive />;
   else if (item.type === 'reciprocalBreakdown') inner = <ReciprocalBreakdownDemo />;
   else if (item.type === 'domainBreakdown') inner = <DomainBreakdownDemo />;
+  else if (item.type === 'generalAngleRecap') inner = <GeneralAngleRecap />;
   else if (item.type === 'math') inner = (
     <motion.div
       initial={{ opacity: 0, scale: 0.93, y: 10 }}

@@ -1409,9 +1409,9 @@ export const buildGeneralAngleTrigLesson = ({ audioBase = null } = {}) => {
       }],
     },
     {
-      narration: `<b>Recap:</b> for a general angle θ, put P(x, y) on a circle of radius r: $\\sin\\theta=\\tfrac{y}{r}$, $\\cos\\theta=\\tfrac{x}{r}$, $\\tan\\theta=\\tfrac{y}{x}$. sin and cos are defined everywhere and have <b>period 360°, amplitude 1</b>; tan and sec break down where x = 0; cot and cosec break down where y = 0; and tan has <b>period 180°</b>.`,
-      speech: `Recap. For a general angle theta, put the point P, x y, on a circle of radius r. Sine theta equals y over r. Cosine theta equals x over r. Tangent theta equals y over x. Sine and cosine are defined everywhere, and have period 360 degrees and amplitude 1. Tangent and secant break down where x equals 0. Cotangent and cosecant break down where y equals 0. And tangent has period 180 degrees.`,
-      board: [{ type: 'math', content: `$$\\sin\\theta=\\dfrac{y}{r} \\quad \\cos\\theta=\\dfrac{x}{r} \\quad \\tan\\theta=\\dfrac{y}{x} \\qquad \\text{period}(\\sin,\\cos)=360° \\quad \\text{period}(\\tan)=180°$$` }],
+      narration: `<b>Recap:</b> tap through the three tabs below — the (x, y, r) <b>definitions</b> on a live circle, the <b>periods</b> of each wave, and where each pair <b>breaks down</b>.`,
+      speech: `Recap. Tap through the three tabs below. The x y r definitions on a live circle, the periods of each wave, and where each pair breaks down.`,
+      board: [{ type: 'generalAngleRecap' }],
     },
   ];
 
