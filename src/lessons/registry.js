@@ -1307,14 +1307,9 @@ export const buildGeneralAngleTrigLesson = ({ audioBase = null } = {}) => {
       board: [{ type: 'angleCircle', initialDeg: 90, showRatios: true, quickAngles: [0, 90, 180, 270, 360] }],
     },
     {
-      narration: `Reading off (x, y, r) at each boundary angle gives this table. Learn it, or rebuild it from the diagram whenever you need it.`,
-      speech: `Reading off x, y and r at each boundary angle gives this table. Learn it, or rebuild it from the diagram whenever you need it.`,
-      board: [{ type: 'valueTable', rows: [
-        ['θ', '0°', '90°', '180°', '270°'],
-        ['\\sin\\theta', '0', '1', '0', '-1'],
-        ['\\cos\\theta', '1', '0', '-1', '0'],
-        ['\\tan\\theta', '0', '\\text{undefined}', '0', '\\text{undefined}'],
-      ] }],
+      narration: `Reading off (x, y, r) at each boundary angle gives this table. Tap a point on a circle, or a blank in the table, to see exactly where each value comes from.`,
+      speech: `Reading off x, y and r at each boundary angle gives this table. Tap a point on a circle, or a blank in the table, to see exactly where each value comes from.`,
+      board: [{ type: 'trigBoundaryTable' }],
     },
     {
       narration: `Quick check — what is $\\tan 90°$?`,

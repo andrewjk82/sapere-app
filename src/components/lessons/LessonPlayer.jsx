@@ -46,7 +46,7 @@ const fmt = (n) => n.toLocaleString('en-US').replace(/,/g, ' ');
 
 // Steps that need the student to tap/answer something before moving on —
 // auto-play must PAUSE here rather than racing past on its usual timer.
-const INTERACTIVE_BOARD_TYPES = ['checkpoint', 'compassBearing', 'elevationDepression', 'angleCircle', 'similarTriangles', 'reciprocalRatio', 'exactValuesExplorer', 'unknownSideSolver', 'unknownAngleSolver', 'primaryRatioRecap', 'workedTriangleSolver', 'walkerCliffSolver', 'bearingFlightSolver', 'lessonRecapScene'];
+const INTERACTIVE_BOARD_TYPES = ['checkpoint', 'compassBearing', 'elevationDepression', 'angleCircle', 'similarTriangles', 'reciprocalRatio', 'exactValuesExplorer', 'unknownSideSolver', 'unknownAngleSolver', 'primaryRatioRecap', 'workedTriangleSolver', 'walkerCliffSolver', 'bearingFlightSolver', 'lessonRecapScene', 'trigBoundaryTable'];
 const isInteractiveStep = (step) => (step?.board || []).some(
   (b) => INTERACTIVE_BOARD_TYPES.includes(b.type) || (b.type === 'triangle' && b.quiz),
 );
@@ -550,6 +550,170 @@ const ValueTable = ({ rows = [] }) => {
           ))}
         </tbody>
       </table>
+    </div>
+  );
+};
+
+// ── Interactive trig boundary-angle table ──────────────────────────────────
+// Three small unit circles (sin, cos, tan) stacked vertically, each with its
+// four boundary points (0°, 90°, 180°, 270°). Clicking a point on a circle —
+// or the matching blank in the table below — fills that one cell and shows
+// exactly which coordinate on that circle produced the value, via the
+// formula (sin θ = y/r etc.) substituted with the actual x, y, r at that
+// angle. Nothing is pre-filled: every value is revealed by a click, tying
+// the number back to "where it came from" on the diagram.
+const TRIG_BOUNDARY_ANGLES = [0, 90, 180, 270];
+const TRIG_BOUNDARY_COORDS = { 0: [1, 0], 90: [0, 1], 180: [-1, 0], 270: [0, -1] };
+const TRIG_BOUNDARY_VALUES = {
+  sin: { 0: '0', 90: '1', 180: '0', 270: '-1' },
+  cos: { 0: '1', 90: '0', 180: '-1', 270: '0' },
+  tan: { 0: '0', 90: null, 180: '0', 270: null },
+};
+const TRIG_BOUNDARY_COLORS = { sin: '#7c3aed', cos: '#059669', tan: '#dc2626' };
+const TRIG_BOUNDARY_FORMULA = { sin: '\\sin\\theta=\\dfrac{y}{r}', cos: '\\cos\\theta=\\dfrac{x}{r}', tan: '\\tan\\theta=\\dfrac{y}{x}' };
+
+const TrigBoundaryMiniCircle = ({ func, selectedAngle, onPick, size = 108 }) => {
+  const cx = size / 2, cy = size / 2, r = size * 0.32;
+  const color = TRIG_BOUNDARY_COLORS[func];
+  return (
+    <svg width={size} height={size} style={{ display: 'block', overflow: 'visible' }}>
+      <circle cx={cx} cy={cy} r={r} fill="none" stroke="#ddd6fe" strokeWidth="1.4" />
+      <line x1={cx - r - 14} y1={cy} x2={cx + r + 14} y2={cy} stroke="#cbd5e1" strokeWidth="1.1" />
+      <line x1={cx} y1={cy - r - 14} x2={cx} y2={cy + r + 14} stroke="#cbd5e1" strokeWidth="1.1" />
+      {TRIG_BOUNDARY_ANGLES.map((angle) => {
+        const [ux, uy] = TRIG_BOUNDARY_COORDS[angle];
+        const px = cx + ux * r, py = cy - uy * r;
+        const isSel = selectedAngle === angle;
+        return (
+          <g key={angle} style={{ cursor: 'pointer' }} onClick={() => onPick(func, angle)}>
+            {isSel && func !== 'tan' && (
+              <>
+                <line x1={px} y1={py} x2={px} y2={cy} stroke={color} strokeDasharray="3 2" strokeWidth="1.2" opacity="0.55" />
+                <line x1={px} y1={py} x2={cx} y2={py} stroke={color} strokeDasharray="3 2" strokeWidth="1.2" opacity="0.55" />
+              </>
+            )}
+            {isSel && <line x1={cx} y1={cy} x2={px} y2={py} stroke={color} strokeWidth="2.2" />}
+            <circle cx={px} cy={py} r={isSel ? 6 : 3.4} fill={isSel ? color : '#c4b5fd'} stroke="#fff" strokeWidth={isSel ? 1.6 : 0} />
+            {/* Generous invisible hit-target — the visible dot is small */}
+            <circle cx={px} cy={py} r="11" fill="transparent" />
+          </g>
+        );
+      })}
+      <circle cx={cx} cy={cy} r="2.4" fill="#1e1b4b" />
+    </svg>
+  );
+};
+
+const TrigBoundaryTableInteractive = () => {
+  const [sel, setSel] = useState(null); // { func, angle }
+
+  const handlePick = (func, angle) => setSel({ func, angle });
+
+  const calcPanel = () => {
+    if (!sel) return null;
+    const { func, angle } = sel;
+    const [x, y] = TRIG_BOUNDARY_COORDS[angle];
+    const color = TRIG_BOUNDARY_COLORS[func];
+    const num = func === 'sin' ? y : func === 'cos' ? x : y;
+    const den = func === 'tan' ? x : 1;
+    const result = TRIG_BOUNDARY_VALUES[func][angle];
+    const resultText = result === null ? '\\text{undefined}' : result;
+    return (
+      <motion.div
+        key={`${func}-${angle}`}
+        initial={{ opacity: 0, y: -6 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.22 }}
+        style={{
+          display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 4,
+          background: '#faf5ff', border: `1.5px solid ${color}33`, borderRadius: 14,
+          padding: '10px 18px', fontFamily: FONT,
+        }}
+      >
+        <MathView content={`$${TRIG_BOUNDARY_FORMULA[func]}$`} style={{ fontSize: '1rem', fontWeight: 800, color }} />
+        <div style={{ fontSize: '0.82rem', fontWeight: 600, color: '#64748b' }}>
+          {`θ = ${angle}°  →  (x, y) = (${x}, ${y}),  r = 1`}
+        </div>
+        <MathView
+          content={func === 'tan'
+            ? `$$\\tan ${angle}° = \\dfrac{${num}}{${den}} = ${resultText}$$`
+            : `$$\\${func} ${angle}° = \\dfrac{${num}}{1} = ${resultText}$$`}
+          style={{ fontSize: '1.05rem', fontWeight: 800, color: '#1e1b4b' }}
+        />
+      </motion.div>
+    );
+  };
+
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16, fontFamily: FONT }}>
+      <div style={{ fontSize: '0.82rem', fontWeight: 600, color: '#94a3b8', textAlign: 'center' }}>
+        Tap a point on a circle, or a blank in the table, to reveal it
+      </div>
+
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 14, alignItems: 'center' }}>
+        {['sin', 'cos', 'tan'].map((func) => (
+          <div key={func} style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
+            <div style={{ width: 64, textAlign: 'right' }}>
+              <MathView content={`$\\${func}\\,\\theta$`} style={{ fontSize: '0.95rem', fontWeight: 800, color: TRIG_BOUNDARY_COLORS[func] }} />
+            </div>
+            <TrigBoundaryMiniCircle
+              func={func}
+              selectedAngle={sel?.func === func ? sel.angle : null}
+              onPick={handlePick}
+            />
+          </div>
+        ))}
+      </div>
+
+      <AnimatePresence mode="wait">{calcPanel()}</AnimatePresence>
+
+      <div style={{ overflowX: 'auto' }}>
+        <table style={{ borderCollapse: 'separate', borderSpacing: 0, borderRadius: '14px', overflow: 'hidden', boxShadow: '0 6px 20px rgba(124,58,237,0.08)' }}>
+          <tbody>
+            <tr>
+              <td style={{ padding: '9px 16px', background: 'linear-gradient(135deg,#a78bfa,#7c3aed)', textAlign: 'center' }}>
+                <MathView content="$\\theta$" style={{ fontSize: '1rem', fontWeight: 800, color: '#fff' }} />
+              </td>
+              {TRIG_BOUNDARY_ANGLES.map((angle) => (
+                <td key={angle} style={{ padding: '9px 16px', textAlign: 'center', background: 'linear-gradient(135deg,#a78bfa,#7c3aed)', borderLeft: '1px solid rgba(255,255,255,0.25)' }}>
+                  <span style={{ fontSize: '1rem', fontWeight: 800, color: '#fff' }}>{angle}°</span>
+                </td>
+              ))}
+            </tr>
+            {['sin', 'cos', 'tan'].map((func) => (
+              <tr key={func}>
+                <td style={{ padding: '9px 16px', textAlign: 'center', background: '#f5f3ff', borderTop: '1px solid #ece9fb' }}>
+                  <MathView content={`$\\${func}\\,\\theta$`} style={{ fontSize: '1rem', fontWeight: 800, color: '#1e1b4b' }} />
+                </td>
+                {TRIG_BOUNDARY_ANGLES.map((angle) => {
+                  const isSel = sel?.func === func && sel?.angle === angle;
+                  const revealed = isSel;
+                  const val = TRIG_BOUNDARY_VALUES[func][angle];
+                  const display = val === null ? 'undefined' : val;
+                  return (
+                    <td
+                      key={angle}
+                      onClick={() => handlePick(func, angle)}
+                      style={{
+                        padding: '9px 16px', textAlign: 'center', cursor: 'pointer', minWidth: 44,
+                        borderTop: '1px solid #ece9fb', borderLeft: '1px solid #ece9fb',
+                        background: isSel ? `${TRIG_BOUNDARY_COLORS[func]}14` : '#fff',
+                        transition: 'background 0.2s',
+                      }}
+                    >
+                      {revealed ? (
+                        <span style={{ fontSize: '0.95rem', fontWeight: 800, color: TRIG_BOUNDARY_COLORS[func] }}>{display}</span>
+                      ) : (
+                        <span style={{ fontSize: '0.95rem', fontWeight: 700, color: '#c4b5fd' }}>?</span>
+                      )}
+                    </td>
+                  );
+                })}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 };
@@ -4019,6 +4183,7 @@ const BoardItem = ({ item }) => {
   else if (item.type === 'triangle') inner = <SpecialTriangle {...item} />;
   else if (item.type === 'graph') inner = <div style={{ display: 'flex', justifyContent: 'center' }}><FunctionGraph {...item} /></div>;
   else if (item.type === 'valueTable') inner = <ValueTable rows={item.rows} />;
+  else if (item.type === 'trigBoundaryTable') inner = <TrigBoundaryTableInteractive />;
   else if (item.type === 'math') inner = (
     <motion.div
       initial={{ opacity: 0, scale: 0.93, y: 10 }}
