@@ -1,10 +1,35 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { doc, getDoc, collection, getDocs, query, where } from 'firebase/firestore';
 import { db } from '../../firebase/config';
-import { BookOpen, ChevronRight, Trophy, Zap, Clock } from 'lucide-react';
+import { BookOpen, ChevronRight, Trophy, Zap, Clock, Target } from 'lucide-react';
 import HscTypePracticeSession from './HscTypePracticeSession';
+
+// ─── Question DNA — "Focus for you" ────────────────────────────────────────
+// personal_priority = 0.55 * hsc priority + 0.45 * (100 - student mastery).
+// Unattempted DNA (mastery 0) surfaces to the top when it's also high-priority
+// — see tools/dna/dnaTaxonomy.js and the master-prompt ingestion pipeline
+// this data was classified with (tools/dna/output/).
+const priorityLabel = (score) => {
+  if (score >= 90) return { text: 'CRITICAL', color: '#dc2626', bg: '#fef2f2' };
+  if (score >= 80) return { text: 'HIGH', color: '#c2410c', bg: '#fff7ed' };
+  if (score >= 65) return { text: 'MEDIUM', color: '#a16207', bg: '#fefce8' };
+  return { text: 'MAINTAIN', color: '#64748b', bg: '#f8fafc' };
+};
+
+const computeFocusDna = (dnaList, dnaStats) => {
+  return dnaList
+    .filter(d => (d.count || 0) > 0)
+    .map(d => {
+      const stat = dnaStats[d.dnaId];
+      const mastery = stat?.total > 0 ? (100 * stat.correct / stat.total) : 0;
+      const personalPriority = 0.55 * (d.priorityScore || 50) + 0.45 * (100 - mastery);
+      return { ...d, mastery, personalPriority, attempted: !!stat?.total };
+    })
+    .sort((a, b) => b.personalPriority - a.personalPriority)
+    .slice(0, 3);
+};
 
 // ─── Pastel green fill based on accuracy ─────────────────────────────────────
 // 0%: white, 1–39%: lightest, 40–69%: light, 70–89%: medium, 90–100%: full
@@ -100,6 +125,55 @@ const TypeCard = ({ type, stats, onClick }) => {
   );
 };
 
+// ─── "Focus for you" banner ────────────────────────────────────────────────
+const FocusBanner = ({ items, onSelect }) => {
+  if (!items.length) return null;
+  return (
+    <div style={{
+      background: 'linear-gradient(135deg, #fff7ed, #fef2f2)', border: '1.5px solid #fed7aa',
+      borderRadius: '20px', padding: '18px 20px', display: 'flex', flexDirection: 'column', gap: '12px',
+    }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+        <Target size={16} color="#c2410c" />
+        <span style={{ fontWeight: 900, color: '#7c2d12', fontSize: '0.85rem' }}>Focus for you</span>
+        <span style={{ fontSize: '0.72rem', fontWeight: 600, color: '#9a3412' }}>
+          — highest HSC value where you have the biggest gap
+        </span>
+      </div>
+      <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
+        {items.map(d => {
+          const badge = priorityLabel(d.priorityScore);
+          return (
+            <motion.button
+              key={d.dnaId}
+              whileHover={{ y: -2 }}
+              onClick={() => onSelect(d)}
+              style={{
+                display: 'flex', flexDirection: 'column', gap: '6px', alignItems: 'flex-start',
+                padding: '12px 16px', borderRadius: '16px', border: '1.5px solid #fed7aa',
+                background: '#fff', cursor: 'pointer', textAlign: 'left', minWidth: '180px', flex: '1 1 200px',
+              }}
+            >
+              <div style={{ display: 'flex', alignItems: 'center', gap: '6px', width: '100%', justifyContent: 'space-between' }}>
+                <span style={{ fontSize: '0.65rem', fontWeight: 900, color: badge.color, background: badge.bg, padding: '2px 8px', borderRadius: '999px' }}>
+                  {badge.text}
+                </span>
+                {!d.attempted && (
+                  <span style={{ fontSize: '0.62rem', fontWeight: 700, color: '#94a3b8' }}>Not started</span>
+                )}
+              </div>
+              <span style={{ fontWeight: 800, fontSize: '0.85rem', color: '#1e1b4b', lineHeight: 1.3 }}>{d.skill}</span>
+              {d.attempted && (
+                <span style={{ fontSize: '0.7rem', fontWeight: 700, color: '#64748b' }}>{Math.round(d.mastery)}% mastered</span>
+              )}
+            </motion.button>
+          );
+        })}
+      </div>
+    </div>
+  );
+};
+
 // ─── Main component ───────────────────────────────────────────────────────────
 const HscTypePractice = ({ profile }) => {
   const [types, setTypes] = useState([]);
@@ -107,6 +181,39 @@ const HscTypePractice = ({ profile }) => {
   const [stats, setStats] = useState({}); // typeSlug → { correct, total }
   const [activeType, setActiveType] = useState(null); // type object for session
   const [filterLevel, setFilterLevel] = useState('All'); // 'All' | 'Advanced' | 'Extension 1'
+  const [dnaList, setDnaList] = useState([]); // question_dna docs
+  const [dnaStats, setDnaStats] = useState({}); // dnaId → { correct, total }
+
+  // ── Load Question DNA taxonomy (static-ish, 33 tiny docs, one read each) ──
+  useEffect(() => {
+    let cancelled = false;
+    (async () => {
+      try {
+        const snap = await getDocs(collection(db, 'question_dna'));
+        if (!cancelled) setDnaList(snap.docs.map(d => ({ dnaId: d.id, ...d.data() })));
+      } catch (e) {
+        console.warn('Failed to load question DNA:', e);
+      }
+    })();
+    return () => { cancelled = true; };
+  }, []);
+
+  // ── Load per-DNA mastery stats for this student ────────────────────────────
+  useEffect(() => {
+    if (!profile?.uid) return;
+    let cancelled = false;
+    (async () => {
+      try {
+        const statsDoc = await getDoc(doc(db, 'users', profile.uid, 'hsc_dna_stats', 'main'));
+        if (!cancelled && statsDoc.exists()) setDnaStats(statsDoc.data() || {});
+      } catch (e) {
+        console.warn('Failed to load hsc dna stats:', e);
+      }
+    })();
+    return () => { cancelled = true; };
+  }, [profile?.uid]);
+
+  const focusDna = useMemo(() => computeFocusDna(dnaList, dnaStats), [dnaList, dnaStats]);
 
   // ── Load type definitions ──────────────────────────────────────────────────
   useEffect(() => {
@@ -151,6 +258,8 @@ const HscTypePractice = ({ profile }) => {
     return t.examLevel === filterLevel || t.examLevel === 'Both';
   });
 
+  const dnaLabels = useMemo(() => Object.fromEntries(dnaList.map(d => [d.dnaId, d.skill])), [dnaList]);
+
   // ── Session active — rendered as full-screen portal to hide sidebar ──────────
   const sessionPortal = activeType ? createPortal(
     <div style={{
@@ -162,10 +271,15 @@ const HscTypePractice = ({ profile }) => {
       <HscTypePracticeSession
         type={activeType}
         profile={profile}
-        initialStats={stats[activeType.slug]}
+        initialStats={activeType.dnaFocus ? dnaStats[activeType.slug] : stats[activeType.slug]}
+        dnaLabels={dnaLabels}
         onBack={(updatedStats) => {
           if (updatedStats) {
-            setStats(prev => ({ ...prev, [activeType.slug]: updatedStats }));
+            if (activeType.dnaFocus) {
+              setDnaStats(prev => ({ ...prev, [activeType.slug]: updatedStats }));
+            } else {
+              setStats(prev => ({ ...prev, [activeType.slug]: updatedStats }));
+            }
           }
           setActiveType(null);
         }}
@@ -211,6 +325,12 @@ const HscTypePractice = ({ profile }) => {
           </div>
         )}
       </div>
+
+      {/* Focus for you — DNA-level personal priority */}
+      <FocusBanner
+        items={focusDna}
+        onSelect={(d) => setActiveType({ slug: d.dnaId, label: d.skill, dnaFocus: true })}
+      />
 
       {/* Filter pills */}
       <div style={{ display: 'flex', gap: '8px' }}>

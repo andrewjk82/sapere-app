@@ -225,6 +225,11 @@ service cloud.firestore {
         allow read, write: if isAdmin() || (isSignedIn() && request.auth.uid == userId);
       }
 
+      // HSC Question DNA mastery stats (per dnaId) — see tools/dna/
+      match /hsc_dna_stats/{docId} {
+        allow read, write: if isAdmin() || (isSignedIn() && request.auth.uid == userId);
+      }
+
       match /notifications/{notifId} {
         allow read, write: if isAdmin() || (isSignedIn() && request.auth.uid == userId);
         allow create: if isSignedIn()
@@ -248,6 +253,12 @@ service cloud.firestore {
 
     // HSC question type index (ids per type — read by all signed-in students)
     match /question_type_index/{typeId} {
+      allow read: if isSignedIn();
+      allow write: if isAdmin();
+    }
+
+    // HSC Question DNA definitions (read by all signed-in students) — see tools/dna/
+    match /question_dna/{dnaId} {
       allow read: if isSignedIn();
       allow write: if isAdmin();
     }

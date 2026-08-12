@@ -4,7 +4,7 @@ import {
   ArrowLeft, ArrowRight, CheckCircle2, XCircle, Clock,
   Lightbulb, RotateCcw, Trophy, ChevronDown, ChevronUp, Flag,
 } from 'lucide-react';
-import { addDoc, collection, doc, getDoc, getDocs, query, setDoc, serverTimestamp, where } from 'firebase/firestore';
+import { addDoc, collection, doc, getDoc, getDocs, increment, query, setDoc, serverTimestamp, where } from 'firebase/firestore';
 import { db } from '../../firebase/config';
 import { useAuth } from '../../context/AuthContext';
 import { useToast } from '../../context/ToastContext';
@@ -307,7 +307,7 @@ const ReviewMode = ({ questions, answers, onDone }) => {
 };
 
 // ─── Main session ─────────────────────────────────────────────────────────────
-const HscTypePracticeSession = ({ type, profile, initialStats, onBack }) => {
+const HscTypePracticeSession = ({ type, profile, initialStats, onBack, dnaLabels = {} }) => {
   const { user } = useAuth();
   const { showToast } = useToast();
   const viewportW = useViewportWidth();
@@ -331,28 +331,36 @@ const HscTypePracticeSession = ({ type, profile, initialStats, onBack }) => {
   const [reportMessage, setReportMessage] = useState('');
   const [isSubmittingReport, setIsSubmittingReport] = useState(false);
 
-  // ── Load questions for this type ───────────────────────────────────────────
+  // ── Load questions for this type (or DNA focus) ────────────────────────────
   useEffect(() => {
     let cancelled = false;
     (async () => {
       try {
-        const indexSnap = await getDoc(doc(db, 'question_type_index', type.slug));
         let qs = [];
-        if (!indexSnap.exists()) {
-          const qSnap = await getDocs(query(collection(db, 'questions'), where('questionType', '==', type.slug)));
+        if (type.dnaFocus) {
+          // DNA-focus mode — no dedicated index doc (small sets, ~30 max), a
+          // scoped equality query is fine (not an unfiltered collection scan).
+          const qSnap = await getDocs(query(collection(db, 'questions'), where('dnaId', '==', type.slug)));
           if (cancelled) return;
-          // isActive is filtered client-side, not in the query — a doc with no
-          // isActive field at all (the common case for pre-existing questions)
-          // must still count as active, and Firestore's `!=` filters exclude
-          // docs missing the field entirely. Same pattern as chapterQuestionsCache.js.
-          qs = shuffleArray(qSnap.docs.map(d => ({ id: d.id, ...d.data() })).filter(q => q.isActive !== false)).slice(0, 15).map(shuffleOptions);
+          qs = shuffleArray(qSnap.docs.map(d => ({ id: d.id, ...d.data() })).filter(q => q.isActive !== false)).slice(0, 12).map(shuffleOptions);
         } else {
-          const { ids = [] } = indexSnap.data();
-          if (cancelled) return;
-          const sample = shuffleArray(ids).slice(0, 12);
-          const fetched = await Promise.all(sample.map(id => getDoc(doc(db, 'questions', id))));
-          if (cancelled) return;
-          qs = fetched.filter(s => s.exists()).map(s => ({ id: s.id, ...s.data() })).filter(q => q.isActive !== false).map(shuffleOptions);
+          const indexSnap = await getDoc(doc(db, 'question_type_index', type.slug));
+          if (!indexSnap.exists()) {
+            const qSnap = await getDocs(query(collection(db, 'questions'), where('questionType', '==', type.slug)));
+            if (cancelled) return;
+            // isActive is filtered client-side, not in the query — a doc with no
+            // isActive field at all (the common case for pre-existing questions)
+            // must still count as active, and Firestore's `!=` filters exclude
+            // docs missing the field entirely. Same pattern as chapterQuestionsCache.js.
+            qs = shuffleArray(qSnap.docs.map(d => ({ id: d.id, ...d.data() })).filter(q => q.isActive !== false)).slice(0, 15).map(shuffleOptions);
+          } else {
+            const { ids = [] } = indexSnap.data();
+            if (cancelled) return;
+            const sample = shuffleArray(ids).slice(0, 12);
+            const fetched = await Promise.all(sample.map(id => getDoc(doc(db, 'questions', id))));
+            if (cancelled) return;
+            qs = fetched.filter(s => s.exists()).map(s => ({ id: s.id, ...s.data() })).filter(q => q.isActive !== false).map(shuffleOptions);
+          }
         }
         setQueue(qs);
         setTotalQuestions(qs.length);
@@ -363,7 +371,7 @@ const HscTypePracticeSession = ({ type, profile, initialStats, onBack }) => {
       }
     })();
     return () => { cancelled = true; };
-  }, [type.slug]);
+  }, [type.slug, type.dnaFocus]);
 
   const q = queue[0]; // always the front of the queue
   const isMC = q && q.options?.length > 0 && q.type !== 'short_answer';
@@ -415,6 +423,20 @@ const HscTypePracticeSession = ({ type, profile, initialStats, onBack }) => {
   // ── Advance — mastery queue logic ──────────────────────────────────────────
   const advance = useCallback(async () => {
     const wasCorrect = lastCorrect;
+
+    // Cross-tag: a question answered during normal by-type practice may also
+    // carry a dnaId (it's from the HSC past-paper corpus) — accumulate that
+    // signal into hsc_dna_stats too, so "Focus for you" mastery isn't limited
+    // to DNA-focused sessions only. (Skipped in dnaFocus mode — the
+    // completion write below already covers that dnaId's stats for this run.)
+    if (!type.dnaFocus && q?.dnaId && user?.uid) {
+      setDoc(
+        doc(db, 'users', user.uid, 'hsc_dna_stats', 'main'),
+        { [q.dnaId]: { correct: increment(wasCorrect ? 1 : 0), total: increment(1), lastPlayedAt: serverTimestamp() } },
+        { merge: true }
+      ).catch(e => console.warn('Failed to accumulate hsc dna stats:', e));
+    }
+
     if (wasCorrect) {
       // Remove from queue (mastered)
       const newMastered = mastered + 1;
@@ -430,11 +452,11 @@ const HscTypePracticeSession = ({ type, profile, initialStats, onBack }) => {
         if (user?.uid) {
           try {
             await setDoc(
-              doc(db, 'users', user.uid, 'hsc_type_stats', 'main'),
+              doc(db, 'users', user.uid, type.dnaFocus ? 'hsc_dna_stats' : 'hsc_type_stats', 'main'),
               { [type.slug]: updatedStats },
               { merge: true }
             );
-          } catch (e) { console.warn('Failed to save hsc type stats:', e); }
+          } catch (e) { console.warn('Failed to save hsc type/dna stats:', e); }
         }
         onBack({ mastered: totalQuestions, total: totalQuestions });
         return;
@@ -550,8 +572,18 @@ const HscTypePracticeSession = ({ type, profile, initialStats, onBack }) => {
 
       {/* question */}
       <div style={{ padding: '20px', borderRadius: '20px', background: '#f8fafc', border: '1px solid #e2e8f0' }}>
-        {q.source && (
-          <div style={{ fontSize: '0.65rem', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '8px' }}>{q.source}</div>
+        {(q.source || (q.dnaId && dnaLabels[q.dnaId])) && (
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap', marginBottom: '8px' }}>
+            {q.source && (
+              <div style={{ fontSize: '0.65rem', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.08em' }}>{q.source}</div>
+            )}
+            {q.dnaId && dnaLabels[q.dnaId] && (
+              <div title="This is the same underlying skill as other questions tagged with this pattern, even when they look different."
+                style={{ fontSize: '0.65rem', fontWeight: 800, color: '#7c3aed', background: '#f5f3ff', border: '1px solid #e0e7ff', borderRadius: '999px', padding: '2px 9px' }}>
+                DNA: {dnaLabels[q.dnaId]}
+              </div>
+            )}
+          </div>
         )}
         <MathView content={q.q || q.question || ''} style={{ fontSize: '1rem', lineHeight: 1.75, color: '#1e1b4b', fontWeight: 500 }} />
       </div>
