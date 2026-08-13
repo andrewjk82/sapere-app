@@ -1,45 +1,24 @@
 import React from 'react';
+import {
+  isChunkLoadError,
+  isStorageQuotaError,
+  clearOwnLocalCache,
+  canAutoReload,
+  CHUNK_RELOAD_KEY,
+  QUOTA_RELOAD_KEY,
+} from '../utils/crashRecovery';
 
 /**
  * Catches render-time errors in the page subtree so a single component crash
  * shows a friendly recovery screen instead of unmounting the whole app
  * (which would expose the black <body> background).
+ *
+ * This only catches errors thrown during React's render/commit/lifecycle
+ * phase. Errors thrown in event handlers or rejected promises (e.g. deep
+ * inside the Firestore SDK's async IndexedDB code) never reach here — see
+ * the window 'error'/'unhandledrejection' listeners in main.jsx, which
+ * share the same detection logic via ../utils/crashRecovery.
  */
-// 배포 후 stale code-split 청크 로드 실패 메시지 패턴.
-const isChunkLoadError = (msg) =>
-  /failed to fetch dynamically imported module|error loading dynamically imported module|importing a module script failed|dynamically imported module|unable to preload|chunkloaderror|loading chunk .* failed/i
-    .test(String(msg || ''));
-
-// localStorage가 가득 차면 Firestore의 persistentMultipleTabManager가 탭 간
-// 동기화용 키(firestore_mutations_firestore/...)를 못 써서 내부 assertion으로
-// 죽는다 (2026-08 iPad 리포트: Challenge/SecretNote 무한 로딩 → 이 에러로 확인).
-// 우리 앱의 localCache(services/localCacheService.js, "sapere-cache:" 프리픽스)가
-// 무제한으로 쌓이는 게 가장 큰 원인 후보이므로, 감지되면 그것부터 비운다.
-const isStorageQuotaError = (msg) =>
-  /quotaexceedederror|exceeded the quota|internal assertion failed/i.test(String(msg || ''));
-
-// 우리가 직접 쓴 캐시만 지운다 — Firebase 자체 IndexedDB 데이터는 건드리지 않음.
-// 캐시일 뿐이므로 지워도 안전 (Firestore가 진짜 소스).
-const clearOwnLocalCache = () => {
-  try {
-    Object.keys(window.localStorage)
-      .filter((k) => k.startsWith('sapere-cache:'))
-      .forEach((k) => window.localStorage.removeItem(k));
-  } catch { /* ignore */ }
-};
-
-const CHUNK_RELOAD_KEY = 'sapere:eb-chunk-reload';
-const QUOTA_RELOAD_KEY = 'sapere:eb-quota-reload';
-
-// 60초 내 이미 자동 리로드했으면 다시 하지 않음(무한 루프 방지).
-// 리로드 후에도 또 실패하면 false → 사용자에게 Reload 버튼 화면을 보여줌.
-const canAutoReload = (key) => {
-  try {
-    return Date.now() - Number(sessionStorage.getItem(key) || 0) > 60_000;
-  } catch {
-    return false;
-  }
-};
 
 class ErrorBoundary extends React.Component {
   constructor(props) {
