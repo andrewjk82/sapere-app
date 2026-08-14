@@ -44,8 +44,9 @@ const Settings = () => {
   });
   const [uploading, setUploading] = useState(false);
   const [cloudVersion, setCloudVersion] = useState(null);
-  const [studySession, setStudySession] = useState({ enabled: false, zoomLink: '' });
+  const [studySession, setStudySession] = useState({ enabled: false, zoomLink: '', manualOpen: false });
   const [studySessionSaving, setStudySessionSaving] = useState(false);
+  const [studySessionOpening, setStudySessionOpening] = useState(false);
   const [showFilmingGuidelinesPreview, setShowFilmingGuidelinesPreview] = useState(false);
   const [qrModalOpen, setQrModalOpen] = useState(false);
   const fileInputRef = useRef(null);
@@ -89,7 +90,7 @@ const Settings = () => {
     getDoc(doc(db, 'system_config', 'onlineStudySession')).then((snap) => {
       if (snap.exists()) {
         const data = snap.data();
-        setStudySession({ enabled: !!data.enabled, zoomLink: data.zoomLink || '' });
+        setStudySession({ enabled: !!data.enabled, zoomLink: data.zoomLink || '', manualOpen: !!data.manualOpen });
       }
     }).catch(() => {});
   }, [isAdmin]);
@@ -110,6 +111,36 @@ const Settings = () => {
       console.error(e);
     } finally {
       setStudySessionSaving(false);
+    }
+  };
+
+  // Manual override — independent of the 7:30–10:30 PM auto window, so the
+  // teacher can open (or close) the "join now" card on their dashboard the
+  // moment they're actually ready, instead of waiting for the fixed time.
+  // Requires a saved Zoom link; does not require the nightly "enabled"
+  // checkbox — this is a one-off open, separate from the scheduled one.
+  const handleToggleManualOpen = async () => {
+    if (!isAdmin) return;
+    const nextOpen = !studySession.manualOpen;
+    if (nextOpen && !studySession.zoomLink.trim()) {
+      showToast('Add and save a Zoom link first.', 'warning');
+      return;
+    }
+    setStudySessionOpening(true);
+    try {
+      await setDoc(doc(db, 'system_config', 'onlineStudySession'), {
+        manualOpen: nextOpen,
+        zoomLink: studySession.zoomLink.trim(),
+        manualOpenedAt: nextOpen ? new Date().toISOString() : null,
+        manualOpenedBy: nextOpen ? user.email : null,
+      }, { merge: true });
+      setStudySession((s) => ({ ...s, manualOpen: nextOpen }));
+      showToast(nextOpen ? 'Study session opened — students can join now.' : 'Study session closed.', 'success');
+    } catch (e) {
+      showToast('Failed to open study session.', 'error');
+      console.error(e);
+    } finally {
+      setStudySessionOpening(false);
     }
   };
 
@@ -811,6 +842,37 @@ const Settings = () => {
                 >
                   {studySessionSaving ? 'Saving...' : 'Save Study Session Settings'}
                 </button>
+
+                <div style={{ marginTop: '14px', paddingTop: '14px', borderTop: '1px dashed #fecaca' }}>
+                  <p style={{ fontSize: '0.8rem', color: '#64748b', marginBottom: '10px' }}>
+                    {studySession.manualOpen
+                      ? 'Open right now — the "join now" card is showing on every student dashboard, regardless of the scheduled time.'
+                      : "Don't want to wait for 7:30? Open the room the moment you're ready — this doesn't change the nightly schedule above."}
+                  </p>
+                  <button
+                    type="button"
+                    onClick={handleToggleManualOpen}
+                    disabled={studySessionOpening}
+                    style={{
+                      width: '100%',
+                      backgroundColor: studySession.manualOpen ? '#fff' : '#16a34a',
+                      color: studySession.manualOpen ? '#991b1b' : '#fff',
+                      border: studySession.manualOpen ? '2px solid #991b1b' : 'none',
+                      padding: '14px',
+                      borderRadius: '16px',
+                      fontWeight: 800,
+                      cursor: studySessionOpening ? 'default' : 'pointer',
+                      opacity: studySessionOpening ? 0.7 : 1,
+                    }}
+                  >
+                    {studySessionOpening
+                      ? 'Working…'
+                      : studySession.manualOpen
+                        ? 'Close Study Session'
+                        : 'Open Study Session Now'}
+                  </button>
+                </div>
+
                 <button
                   type="button"
                   onClick={() => setShowFilmingGuidelinesPreview(true)}

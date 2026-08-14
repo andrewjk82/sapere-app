@@ -17,8 +17,10 @@ function sydneyTotalMinutes() {
 }
 
 // Student-facing card for the nightly 7:30–10:30 PM Zoom study room.
-// Visible only inside that Sydney-time window, and only while an admin has
-// enabled it + set a link in system_config/onlineStudySession.
+// Visible inside that Sydney-time window (while enabled + a link is set),
+// OR any time an admin has flipped the manual "Open Study Session Now"
+// override in Settings — that lets the teacher open the room on demand
+// instead of waiting for the fixed schedule. See Settings.jsx.
 const OnlineStudySessionCard = () => {
   const [config, setConfig] = useState(null);
   const [nowMin, setNowMin] = useState(sydneyTotalMinutes);
@@ -37,7 +39,8 @@ const OnlineStudySessionCard = () => {
   }, []);
 
   const inWindow = nowMin >= START_MIN && nowMin < END_MIN;
-  if (!inWindow || !config?.enabled || !config?.zoomLink) return null;
+  const isOpen = config?.manualOpen || (config?.enabled && inWindow);
+  if (!isOpen || !config?.zoomLink) return null;
 
   return (
     <>
@@ -67,7 +70,9 @@ const OnlineStudySessionCard = () => {
           Online Study Session · Live now
         </div>
         <div style={{ fontSize: '0.97rem', fontWeight: 700, color: '#fff' }}>
-          Tap to join the Zoom room · open until 10:30 PM
+          {config?.manualOpen && !inWindow
+            ? 'Tap to join the Zoom room'
+            : 'Tap to join the Zoom room · open until 10:30 PM'}
         </div>
       </div>
     </button>
