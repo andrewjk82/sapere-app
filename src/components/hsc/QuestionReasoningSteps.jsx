@@ -36,7 +36,7 @@ function recordStepEvidence(dnaId, questionId, step, response, graded, hintsReve
   }).catch((e) => console.warn('Failed to write dna_step_evidence:', e));
 }
 
-export default function QuestionReasoningSteps({ dnaId, questionId, blueprint, onDone }) {
+export default function QuestionReasoningSteps({ dnaId, questionId, questionText, blueprint, onDone }) {
   const { user } = useAuth();
   const [stepIndex, setStepIndex] = useState(0);
   const [selectedId, setSelectedId] = useState(null);
@@ -75,17 +75,28 @@ export default function QuestionReasoningSteps({ dnaId, questionId, blueprint, o
   if (!step) return null;
 
   return (
-    <div style={{ padding: '20px', borderRadius: '20px', background: '#f8fafc', border: '1px solid #e2e8f0', marginBottom: '14px' }}>
-      <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '12px' }}>
-        <span style={{ fontSize: '0.68rem', fontWeight: 800, color: '#7c3aed', background: '#f5f3ff', border: '1px solid #e0e7ff', borderRadius: '999px', padding: '3px 10px' }}>
-          Reasoning step {stepIndex + 1} / {blueprint.length}
-        </span>
-        <span style={{ fontSize: '0.72rem', fontWeight: 600, color: '#94a3b8' }}>Work this out before you see the answer choices</span>
-      </div>
+    <div>
+      {/* The question stem stays visible through every reasoning step —
+          without it, an early step like "find T1" is unanswerable, since
+          the numbers it depends on live in the question text, not the step
+          itself. */}
+      {questionText && (
+        <div style={{ padding: '20px', borderRadius: '20px', background: '#fff', border: '1px solid #e2e8f0', marginBottom: '14px' }}>
+          <MathView content={questionText} style={{ fontSize: '1rem', lineHeight: 1.75, color: '#1e1b4b', fontWeight: 500 }} />
+        </div>
+      )}
 
-      <div style={{ fontWeight: 800, color: '#1e1b4b', fontSize: '0.95rem', marginBottom: '14px' }}>
-        <MathView content={step.objective} inline />
-      </div>
+      <div style={{ padding: '20px', borderRadius: '20px', background: '#f8fafc', border: '1px solid #e2e8f0', marginBottom: '14px' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '12px' }}>
+          <span style={{ fontSize: '0.68rem', fontWeight: 800, color: '#7c3aed', background: '#f5f3ff', border: '1px solid #e0e7ff', borderRadius: '999px', padding: '3px 10px' }}>
+            Reasoning step {stepIndex + 1} / {blueprint.length}
+          </span>
+          <span style={{ fontSize: '0.72rem', fontWeight: 600, color: '#94a3b8' }}>Work this out before you see the answer choices</span>
+        </div>
+
+        <div style={{ fontWeight: 800, color: '#1e1b4b', fontSize: '0.95rem', marginBottom: '14px' }}>
+          <MathView content={step.objective} inline />
+        </div>
 
       <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
         {step.options.map((opt) => {
@@ -156,6 +167,7 @@ export default function QuestionReasoningSteps({ dnaId, questionId, blueprint, o
           </motion.div>
         )}
       </AnimatePresence>
+      </div>
     </div>
   );
 }

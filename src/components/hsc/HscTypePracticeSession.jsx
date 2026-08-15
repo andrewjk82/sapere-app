@@ -593,6 +593,7 @@ const HscTypePracticeSession = ({ type, profile, initialStats, onBack, dnaLabels
       <QuestionReasoningSteps
         dnaId={type.slug}
         questionId={q.id}
+        questionText={q.q || q.question}
         blueprint={q.reasoning_blueprint}
         onDone={() => setPreStepsDoneFor((prev) => new Set(prev).add(q.id))}
       />
