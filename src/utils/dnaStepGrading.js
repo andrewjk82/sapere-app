@@ -14,6 +14,7 @@
 
 const computeRegistry = {
   multiply: ({ a, b }) => a * b,
+  divide: ({ a, b }) => a / b,
 };
 
 function parseNumeric(value) {
