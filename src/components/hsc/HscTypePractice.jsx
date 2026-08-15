@@ -92,6 +92,7 @@ const TypeCard = ({ type, stats, onClick }) => {
         border: `1px solid ${border}`,
         borderRadius: '16px',
         padding: '20px',
+        minHeight: '168px',
         cursor: 'pointer',
         display: 'flex',
         flexDirection: 'column',
@@ -103,7 +104,13 @@ const TypeCard = ({ type, stats, onClick }) => {
         {type.label}
       </div>
 
-      <div style={{ fontSize: '0.8rem', color: '#64748b', lineHeight: 1.55, flex: 1 }}>
+      <div
+        title={type.description}
+        style={{
+          fontSize: '0.8rem', color: '#64748b', lineHeight: 1.55, flex: 1,
+          display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden',
+        }}
+      >
         {type.description}
       </div>
 
