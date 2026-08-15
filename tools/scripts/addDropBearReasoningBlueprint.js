@@ -4,6 +4,11 @@
  * "drop-bear population" multi-part questions (Sapere_Question_DNA_v2.0
  * §3-4 — see src/components/hsc/QuestionReasoningSteps.jsx).
  *
+ * ALWAYS multiple-choice (select) — standing project rule ("Corpus-
+ * generated questions: multiple_choice only, no exceptions" in CLAUDE.md)
+ * applies to these reasoning pre-steps too. Originally free-text 'complete'
+ * steps; converted 2026-08-15 after direct user feedback.
+ *
  * Only asc2020-q30-a and asc2020-q30-b get a blueprint here. The other 3
  * (asc2020-q30-c, asc2020-q30-d, asc2020-q30v) are deliberately SKIPPED —
  * their multiple-choice options are broken (generic mismatched distractors
@@ -18,6 +23,8 @@
  * origin:'seed', not 'teacher' — safe to touch.)
  *   (a) Show that T_2 = 1000×(1.05)^2 - 100×(1.05+1)  [teacher_review]
  *   (b) Find an expression for T_n                     [multiple_choice]
+ * Verified: T1 = 1000*1.05-100 = 950; T2 = 950*1.05-100 = 897.5, matches
+ * the given closed form exactly.
  *
  * Usage:
  *   node tools/scripts/addDropBearReasoningBlueprint.js
@@ -54,24 +61,27 @@ if (!app) {
 }
 const db = getFirestore(app);
 
+const mc = (stepId, objective, axis, options, correctId, hints, explanation) => ({
+  step_id: stepId, objective, axis, interaction_type: 'select', options,
+  expected_response: correctId, hints, explanation,
+});
+
 // Both a and b share the same first two steps (find T1, then T2 via the
 // recurrence) — 30-a's real answer is the algebraic "show that" (free-text,
 // teacher-graded); 30-b's real answer is the closed-form MC. Repeating the
 // recurrence build for both is deliberate: 30-b is a separate question a
 // student may meet on its own, without having just done 30-a.
 const recurrenceSteps = [
-  {
-    step_id: 'S1', objective: 'Find the drop-bear population after 1 year, $T_1$.',
-    axis: 'execution', interaction_type: 'complete', compute: 'growth_minus', params: { a: 1000, r: 1.05, c: 100 }, tolerance: 0.5,
-    hints: ['The population grows by 5% first, then 100 are removed.', '$T_1 = 1000 \\times 1.05 - 100$'],
-    explanation: '$T_1 = 1000 \\times 1.05 - 100 = 950$.',
-  },
-  {
-    step_id: 'S2', objective: 'Using $T_1$, find $T_2$ from the same recurrence: $T_2 = T_1 \\times 1.05 - 100$.',
-    axis: 'execution', interaction_type: 'complete', compute: 'growth_minus', params: { a: 950, r: 1.05, c: 100 }, tolerance: 0.5,
-    hints: ['Apply the same rule to $T_1$ that you applied to $T_0 = 1000$ to get $T_1$.', '$T_2 = 950 \\times 1.05 - 100$'],
-    explanation: '$T_2 = 950 \\times 1.05 - 100 = 897.5$, matching $1000(1.05)^2 - 100(1.05+1)$.',
-  },
+  mc('S1', 'Find the drop-bear population after 1 year, $T_1$.', 'execution',
+    [{ id: 'a', label: '$1050$' }, { id: 'b', label: '$950$' }, { id: 'c', label: '$900$' }],
+    'b',
+    ['The population grows by 5% first, then 100 are removed.', '$T_1 = 1000 \\times 1.05 - 100$'],
+    '$T_1 = 1000 \\times 1.05 - 100 = 950$.'),
+  mc('S2', 'Using $T_1$, find $T_2$ from the same recurrence: $T_2 = T_1 \\times 1.05 - 100$.', 'execution',
+    [{ id: 'a', label: '$897.5$' }, { id: 'b', label: '$902.5$' }, { id: 'c', label: '$1000$' }],
+    'a',
+    ['Apply the same rule to $T_1$ that you applied to $T_0 = 1000$ to get $T_1$.', '$T_2 = 950 \\times 1.05 - 100$'],
+    '$T_2 = 950 \\times 1.05 - 100 = 897.5$, matching $1000(1.05)^2 - 100(1.05+1)$.'),
 ];
 
 const QUESTIONS = [
@@ -80,18 +90,16 @@ const QUESTIONS = [
     id: 'asc2020-q30-b',
     reasoning_blueprint: [
       ...recurrenceSteps,
-      {
-        step_id: 'S3', objective: 'What growth factor is applied to the population each year (before poaching)?',
-        axis: 'recognition', interaction_type: 'complete', expected_response: '1.05', tolerance: 0.01,
-        hints: ['The population grows by 5% per year.', '$1 + 5\\% = 1.05$'],
-        explanation: 'The growth factor is $1.05$ — a $5\\%$ increase each year.',
-      },
-      {
-        step_id: 'S4', objective: 'How many drop-bears are removed by poaching at the end of each year?',
-        axis: 'recognition', interaction_type: 'complete', expected_response: '100', tolerance: 0,
-        hints: ['This is stated directly in the question.'],
-        explanation: '100 drop-bears are poached at the end of every year — now select the closed-form expression for $T_n$ next.',
-      },
+      mc('S3', 'What growth factor is applied to the population each year (before poaching)?', 'recognition',
+        [{ id: 'a', label: '$1.5$' }, { id: 'b', label: '$0.95$' }, { id: 'c', label: '$1.05$' }],
+        'c',
+        ['The population grows by 5% per year.', '$1 + 5\\% = 1.05$'],
+        'The growth factor is $1.05$ — a $5\\%$ increase each year.'),
+      mc('S4', 'How many drop-bears are removed by poaching at the end of each year?', 'recognition',
+        [{ id: 'a', label: '$100$' }, { id: 'b', label: '$5$' }, { id: 'c', label: '$1000$' }],
+        'a',
+        ['This is stated directly in the question.'],
+        '100 drop-bears are poached at the end of every year — now select the closed-form expression for $T_n$ next.'),
     ],
   },
 ];

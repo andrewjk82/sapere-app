@@ -5,6 +5,14 @@
  * src/components/hsc/QuestionReasoningSteps.jsx). Additive merge on one
  * field per doc; never touches answer/options/type.
  *
+ * ALWAYS multiple-choice (select) — standing project rule (CLAUDE.md
+ * "Corpus-generated questions: multiple_choice only, no exceptions")
+ * applies to these reasoning pre-steps too, not just the final answer.
+ * Originally written as free-text 'complete' steps; converted 2026-08-15
+ * after direct user feedback that a free-text numeric input for an
+ * intermediate step ("r/12" for "identify the rate") is exactly the kind
+ * of thing this rule exists to prevent.
+ *
  * Content-only edit to `questions` docs (tools/scripts/CLAUDE.md) — after
  * writing, touches each affected chapter's question_index so
  * chapterQuestionsCache.js doesn't keep serving a stale cached copy.
@@ -13,14 +21,10 @@
  * same reasoning shape as the pilot (rate → periods → factor arithmetic).
  * Deliberately SKIPPED from this pass, not silently forced into the pattern:
  *   - bbhs2020-30a/b/c: tagged FIN-GP-01 but are actually an arithmetic
- *     (AP) rose-garden problem, not geometric — looks like a
- *     classification-pipeline mistake (topic_label-based, not manually
- *     reviewed; see tools/dna/output/questions_classified.json). Needs a
- *     dnaId fix, not a reasoning_blueprint that would assert "this is a GP".
- *   - asc2020-q30-a/b/c/d, asc2020-q30v: multi-part recurrence/extinction-
- *     year problems (drop-bears / fish population) — a different reasoning
- *     shape (recurrence, log-solve) that deserves its own bespoke blueprint,
- *     not this compute-and-select pattern. Left for a future pass.
+ *     (AP) rose-garden problem, not geometric — fixed via
+ *     fixBbhs2020DnaMisclassification.js.
+ *   - asc2020-q30-c/d, asc2020-q30v: broken MC options (generic mismatched
+ *     distractors) — see addDropBearReasoningBlueprint.js header.
  *
  * Usage:
  *   node tools/scripts/addQuestionReasoningBlueprint.js
@@ -57,106 +61,112 @@ if (!app) {
 }
 const db = getFirestore(app);
 
-const rateStep = (id, pct, hints, explanation) => ({
-  step_id: id, objective: 'Identify the interest rate per compounding period.',
-  axis: 'execution', interaction_type: 'complete', expected_response: String(pct), tolerance: 0.01,
-  hints, explanation,
-});
-
-const periodsStep = (id, n, hints, explanation) => ({
-  step_id: id, objective: 'Identify the number of compounding periods.',
-  axis: 'execution', interaction_type: 'complete', expected_response: String(n), tolerance: 0,
-  hints, explanation,
+// options: [{id,label}], correctId: which id is right. Every numeric option
+// verified against the actual computed value before being hardcoded here —
+// see the header comment in each QUESTIONS entry for the node -e check.
+const mc = (stepId, objective, axis, options, correctId, hints, explanation) => ({
+  step_id: stepId, objective, axis, interaction_type: 'select', options,
+  expected_response: correctId, hints, explanation,
 });
 
 const QUESTIONS = [
   {
-    // Jenna — already live (2026-08-15), kept here so a re-run stays idempotent.
+    // Jenna — $500/6mo, 9% p.a. compounded 6-monthly, 3yr, factor 6.7169.
+    // Verified: 500*6.7169 = 3358.45.
     id: 'bar2020-q14ai',
     reasoning_blueprint: [
-      rateStep('S1', 4.5,
-        ['Interest is compounded every six months, but the rate given is annual.', 'Divide the annual rate by the number of compounding periods per year.'],
+      mc('S1', 'Identify the interest rate per compounding period.', 'execution',
+        [{ id: 'a', label: '$9\\%$' }, { id: 'b', label: '$4.5\\%$' }, { id: 'c', label: '$18\\%$' }],
+        'b',
+        ['Interest compounds every 6 months, but the rate given is annual.', 'Divide the annual rate by the number of compounding periods per year.'],
         'The rate per period is $9\\% \\div 2 = 4.5\\%$.'),
-      periodsStep('S2', 6,
+      mc('S2', 'Identify the number of compounding periods.', 'execution',
+        [{ id: 'a', label: '3' }, { id: 'b', label: '6' }, { id: 'c', label: '9' }],
+        'b',
         ['Jenna contributes every six months for 3 years.', 'Multiply the number of years by the number of periods per year.'],
         'There are $3 \\times 2 = 6$ six-monthly periods.'),
-      {
-        step_id: 'S3', objective: 'Use the given factor to find the total future value.',
-        axis: 'execution', interaction_type: 'complete', compute: 'multiply', params: { a: 500, b: 6.7169 }, tolerance: 0.5,
-        hints: ['Multiply the regular contribution by the factor given in the question.', '$500 \\times 6.7169$'],
-        explanation: 'Total future value $= 500 \\times 6.7169 = \\$3358.45$ — select this from the options next.',
-      },
+      mc('S3', 'Use the given factor to find the total future value.', 'execution',
+        [{ id: 'a', label: '\\$3,357.45' }, { id: 'b', label: '\\$3,358.45' }, { id: 'c', label: '\\$33,584.50' }],
+        'b',
+        ['Multiply the regular contribution by the factor given in the question.', '$500 \\times 6.7169$'],
+        '$500 \\times 6.7169 = \\$3358.45$ — select this from the options next.'),
     ],
   },
   {
-    // Marcus — same shape as Jenna, different numbers.
+    // Marcus — $400/6mo, 9% p.a., 2yr, factor 4.2782. Verified: 400*4.2782=1711.28.
     id: 'bar2020-q14aiv',
     reasoning_blueprint: [
-      rateStep('S1', 4.5,
-        ['Interest is compounded every six months, but the rate given is annual.', 'Divide the annual rate by the number of compounding periods per year.'],
+      mc('S1', 'Identify the interest rate per compounding period.', 'execution',
+        [{ id: 'a', label: '$4.5\\%$' }, { id: 'b', label: '$9\\%$' }, { id: 'c', label: '$2.25\\%$' }],
+        'a',
+        ['Interest compounds every 6 months, but the rate given is annual.', 'Divide the annual rate by the number of compounding periods per year.'],
         'The rate per period is $9\\% \\div 2 = 4.5\\%$.'),
-      periodsStep('S2', 4,
+      mc('S2', 'Identify the number of compounding periods.', 'execution',
+        [{ id: 'a', label: '2' }, { id: 'b', label: '4' }, { id: 'c', label: '8' }],
+        'b',
         ['Marcus contributes every six months for 2 years.', 'Multiply the number of years by the number of periods per year.'],
         'There are $2 \\times 2 = 4$ six-monthly periods.'),
-      {
-        step_id: 'S3', objective: 'Use the given factor to find the total future value.',
-        axis: 'execution', interaction_type: 'complete', compute: 'multiply', params: { a: 400, b: 4.2782 }, tolerance: 0.5,
-        hints: ['Multiply the regular contribution by the factor given in the question.', '$400 \\times 4.2782$'],
-        explanation: 'Total future value $= 400 \\times 4.2782 = \\$1711.28$ — select this from the options next.',
-      },
+      mc('S3', 'Use the given factor to find the total future value.', 'execution',
+        [{ id: 'a', label: '\\$1,711.28' }, { id: 'b', label: '\\$1,710.28' }, { id: 'c', label: '\\$17,112.80' }],
+        'a',
+        ['Multiply the regular contribution by the factor given in the question.', '$400 \\times 4.2782$'],
+        '$400 \\times 4.2782 = \\$1711.28$ — select this from the options next.'),
     ],
   },
   {
-    // Dane 2020 — contributions given, factor given, straight FV calc.
+    // Dane2020 — $1200/6mo, 4% p.a., 3yr, factor 6.3081. Verified: 1200*6.3081=7569.72.
     id: 'dane2020-q34a',
     reasoning_blueprint: [
-      rateStep('S1', 2,
+      mc('S1', 'Identify the interest rate per compounding period.', 'execution',
+        [{ id: 'a', label: '$4\\%$' }, { id: 'b', label: '$8\\%$' }, { id: 'c', label: '$2\\%$' }],
+        'c',
         ['The compounding period is half-yearly, but the rate given is annual.', 'Divide the annual rate by the number of compounding periods per year.'],
         'The rate per period is $4\\% \\div 2 = 2\\%$.'),
-      periodsStep('S2', 6,
+      mc('S2', 'Identify the number of compounding periods.', 'execution',
+        [{ id: 'a', label: '6' }, { id: 'b', label: '3' }, { id: 'c', label: '1.5' }],
+        'a',
         ['Contributions are made every half-year for 3 years.', 'Multiply the number of years by the number of periods per year.'],
         'There are $3 \\times 2 = 6$ half-yearly periods.'),
-      {
-        step_id: 'S3', objective: 'Use the given factor to find the total future value.',
-        axis: 'execution', interaction_type: 'complete', compute: 'multiply', params: { a: 1200, b: 6.3081 }, tolerance: 0.5,
-        hints: ['Multiply the regular contribution by the factor given in the question.', '$1200 \\times 6.3081$'],
-        explanation: 'Total future value $= 1200 \\times 6.3081 = \\$7569.72$ — select this from the options next.',
-      },
+      mc('S3', 'Use the given factor to find the total future value.', 'execution',
+        [{ id: 'a', label: '\\$7,570.72' }, { id: 'b', label: '\\$7,569.72' }, { id: 'c', label: '\\$75,697.20' }],
+        'b',
+        ['Multiply the regular contribution by the factor given in the question.', '$1200 \\times 6.3081$'],
+        '$1200 \\times 6.3081 = \\$7569.72$ — select this from the options next.'),
     ],
   },
   {
-    // Sophia — inverse problem: given the target FV and factor, find the
-    // required regular contribution (FV = R × factor, solve for R).
+    // Sophia — inverse: wants $3000 in 2yr, 4.5%/6mo, factor(4 periods)=4.2782.
+    // Verified: 3000/4.2782 ≈ 701.29.
     id: 'bar2020-q14aiiv',
     reasoning_blueprint: [
-      periodsStep('S1', 4,
+      mc('S1', 'Identify the number of compounding periods.', 'execution',
+        [{ id: 'a', label: '4' }, { id: 'b', label: '2' }, { id: 'c', label: '8' }],
+        'a',
         ['Sophia contributes every six months for 2 years.', 'Multiply the number of years by the number of periods per year.'],
         'There are $2 \\times 2 = 4$ six-monthly periods.'),
-      {
-        step_id: 'S2', objective: 'Rearrange $FV = R \\times \\text{factor}$ to find the required contribution $R$.',
-        axis: 'execution', interaction_type: 'complete', compute: 'divide', params: { a: 3000, b: 4.2782 }, tolerance: 0.5,
-        hints: ['You know the target future value and the factor — you need the contribution, not the total.', 'Divide the target amount by the factor: $R = FV \\div \\text{factor}$.'],
-        explanation: '$R = 3000 \\div 4.2782 \\approx \\$701.29$ every six months — select this from the options next.',
-      },
+      mc('S2', 'Rearrange $FV = R \\times \\text{factor}$ to find the required contribution $R$.', 'execution',
+        [{ id: 'a', label: '\\$12,834.60' }, { id: 'b', label: '\\$701.29' }, { id: 'c', label: '\\$700.29' }],
+        'b',
+        ['You know the target future value and the factor — you need the contribution, not the total.', 'Divide the target amount by the factor: $R = FV \\div \\text{factor}$.'],
+        '$R = 3000 \\div 4.2782 \\approx \\$701.29$ every six months — select this from the options next.'),
     ],
   },
   {
-    // Toby — comparison problem: find his required contribution, then the
-    // difference from Jenna's $500 (real MC answer 244.39 matches exactly).
+    // Toby — comparison: needs $5000 in 3yr, same annuity as Jenna
+    // (4.5%/6mo, factor 6.7169). Verified: 5000/6.7169≈744.39, -500≈244.39
+    // (matches the real MC answer exactly).
     id: 'bar2020-q14aii',
     reasoning_blueprint: [
-      {
-        step_id: 'S1', objective: 'Find the six-monthly contribution Toby needs, using $FV = R \\times \\text{factor}$.',
-        axis: 'execution', interaction_type: 'complete', compute: 'divide', params: { a: 5000, b: 6.7169 }, tolerance: 0.5,
-        hints: ['This is the same annuity as Jenna\'s (4.5% per period, factor 6.7169) but a different target amount.', 'Divide the target amount by the factor: $R = FV \\div \\text{factor}$.'],
-        explanation: '$R = 5000 \\div 6.7169 \\approx \\$744.39$ every six months.',
-      },
-      {
-        step_id: 'S2', objective: 'How much more than Jenna\'s \\$500 must Toby contribute?',
-        axis: 'execution', interaction_type: 'complete', expected_response: '244.39', tolerance: 0.5,
-        hints: ['Jenna contributes \\$500 every six months.', 'Subtract Jenna\'s contribution from the amount you just found for Toby.'],
-        explanation: '$744.39 - 500 \\approx \\$244.39$ — select this from the options next.',
-      },
+      mc('S1', 'Find the six-monthly contribution Toby needs, using $FV = R \\times \\text{factor}$.', 'execution',
+        [{ id: 'a', label: '\\$33,584.50' }, { id: 'b', label: '\\$744.39' }, { id: 'c', label: '\\$500.00' }],
+        'b',
+        ['This is the same annuity as Jenna\'s (4.5% per period, factor 6.7169) but a different target amount.', 'Divide the target amount by the factor: $R = FV \\div \\text{factor}$.'],
+        '$R = 5000 \\div 6.7169 \\approx \\$744.39$ every six months.'),
+      mc('S2', 'How much more than Jenna\'s \\$500 must Toby contribute?', 'execution',
+        [{ id: 'a', label: '\\$244.39' }, { id: 'b', label: '\\$1,244.39' }, { id: 'c', label: '\\$744.39' }],
+        'a',
+        ['Jenna contributes \\$500 every six months.', 'Subtract Jenna\'s contribution from the amount you just found for Toby.'],
+        '$744.39 - 500 \\approx \\$244.39$ — select this from the options next.'),
     ],
   },
 ];

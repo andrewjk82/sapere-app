@@ -8,18 +8,23 @@ import MathView from '../MathView';
 import { gradeDnaStep } from '../../utils/dnaStepGrading';
 
 // Question-specific Reasoning Blueprint pre-steps (Sapere_Question_DNA_v2.0
-// §3-4) — pilot on one real FIN-GP-01 question (questions/bar2020-q14ai).
-// Unlike DnaReasoningWarmup (DNA-generic, runs once per DNA), these steps use
-// THIS question's own numbers and run once, immediately before the student
-// sees the real multiple-choice options. The real answer is graded exactly
-// as before by the existing MC flow in HscTypePracticeSession.jsx — this
-// component never decides whether the final answer is correct.
+// §3-4). Unlike DnaReasoningWarmup (DNA-generic, runs once per DNA), these
+// steps use THIS question's own numbers and run once, immediately before
+// the student sees the real multiple-choice options. The real answer is
+// graded exactly as before by the existing MC flow in
+// HscTypePracticeSession.jsx — this component never decides whether the
+// final answer is correct.
+//
+// Always multiple-choice (select), per the project's standing rule that
+// generated content is multiple_choice only — never free-text entry, even
+// for these intermediate reasoning checks.
 function recordStepEvidence(dnaId, questionId, step, response, graded, hintsRevealed, retryCount, startedAt, uid) {
   if (!uid) return;
   addDoc(collection(db, 'users', uid, 'dna_step_evidence'), {
     dna_id: dnaId,
     question_id: questionId,
     step_id: step.step_id,
+    axis: step.axis || null,
     student_id: uid,
     response,
     correct: graded.correct,
@@ -34,7 +39,7 @@ function recordStepEvidence(dnaId, questionId, step, response, graded, hintsReve
 export default function QuestionReasoningSteps({ dnaId, questionId, blueprint, onDone }) {
   const { user } = useAuth();
   const [stepIndex, setStepIndex] = useState(0);
-  const [value, setValue] = useState('');
+  const [selectedId, setSelectedId] = useState(null);
   const [result, setResult] = useState(null);
   const [hintsRevealed, setHintsRevealed] = useState(0);
   const [retryCount, setRetryCount] = useState(0);
@@ -43,19 +48,19 @@ export default function QuestionReasoningSteps({ dnaId, questionId, blueprint, o
   const step = blueprint[stepIndex];
 
   useEffect(() => {
-    setValue('');
+    setSelectedId(null);
     setResult(null);
     setHintsRevealed(0);
     setRetryCount(0);
     startRef.current = Date.now();
   }, [step?.step_id]);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (result?.correct || value.trim() === '') return;
-    const graded = gradeDnaStep(step, value.trim());
+  const handleSelect = (optionId) => {
+    if (result?.correct) return;
+    const graded = gradeDnaStep(step, optionId);
+    setSelectedId(optionId);
     setResult(graded);
-    recordStepEvidence(dnaId, questionId, step, value.trim(), graded, hintsRevealed, retryCount, startRef.current, user?.uid);
+    recordStepEvidence(dnaId, questionId, step, optionId, graded, hintsRevealed, retryCount, startRef.current, user?.uid);
     if (!graded.correct) setRetryCount((c) => c + 1);
   };
 
@@ -82,24 +87,30 @@ export default function QuestionReasoningSteps({ dnaId, questionId, blueprint, o
         <MathView content={step.objective} inline />
       </div>
 
-      <form onSubmit={handleSubmit} style={{ display: 'flex', gap: '8px' }}>
-        <input
-          type="text"
-          inputMode="decimal"
-          placeholder="Enter your answer"
-          value={value}
-          disabled={result?.correct}
-          onChange={(e) => setValue(e.target.value)}
-          style={{ flex: 1, padding: '10px 12px', borderRadius: '10px', border: '1px solid #cbd5e1', fontSize: '0.9rem' }}
-        />
-        <button
-          type="submit"
-          disabled={result?.correct || value.trim() === ''}
-          style={{ padding: '10px 18px', borderRadius: '10px', border: 'none', background: '#7c3aed', color: '#fff', fontWeight: 800, cursor: value.trim() ? 'pointer' : 'not-allowed' }}
-        >
-          Check
-        </button>
-      </form>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+        {step.options.map((opt) => {
+          const isSelected = selectedId === opt.id;
+          const showAsCorrect = result && opt.id === step.expected_response && (isSelected || !result.correct);
+          const showAsWrong = result && isSelected && !result.correct;
+          return (
+            <button
+              key={opt.id}
+              type="button"
+              onClick={() => handleSelect(opt.id)}
+              disabled={result?.correct}
+              style={{
+                padding: '11px 14px', borderRadius: '10px', border: '2px solid', cursor: result?.correct ? 'default' : 'pointer',
+                textAlign: 'left', fontWeight: 600, fontSize: '0.88rem', transition: 'all 0.15s',
+                borderColor: showAsCorrect ? '#86efac' : showAsWrong ? '#fca5a5' : isSelected ? '#7c3aed' : '#cbd5e1',
+                background: showAsCorrect ? '#f0fdf4' : showAsWrong ? '#fef2f2' : isSelected ? '#f5f3ff' : '#fff',
+                color: showAsCorrect ? '#166534' : showAsWrong ? '#dc2626' : '#1e1b4b',
+              }}
+            >
+              <MathView content={opt.label} inline />
+            </button>
+          );
+        })}
+      </div>
 
       {result && !result.correct && (
         <div style={{ marginTop: '10px', display: 'flex', alignItems: 'center', gap: '8px' }}>
