@@ -125,6 +125,45 @@ const TypeCard = ({ type, stats, onClick }) => {
   );
 };
 
+// ─── DNA reasoning-blueprint warmups — always visible, unlike "Focus for
+// you" which only surfaces the top-3 by personal_priority (a low-priority
+// DNA like FIN-GP-01 can have a blueprint but never rank into that top 3).
+// See DnaReasoningWarmup.jsx / dnaTaxonomy.js reasoningBlueprint.
+const ReasoningWarmupBanner = ({ items, onSelect }) => {
+  if (!items.length) return null;
+  return (
+    <div style={{
+      background: 'linear-gradient(135deg, #f5f3ff, #eef2ff)', border: '1.5px solid #e0e7ff',
+      borderRadius: '20px', padding: '18px 20px', display: 'flex', flexDirection: 'column', gap: '12px',
+    }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+        <BookOpen size={16} color="#4f46e5" />
+        <span style={{ fontWeight: 900, color: '#312e81', fontSize: '0.85rem' }}>Reasoning warmups</span>
+        <span style={{ fontSize: '0.72rem', fontWeight: 600, color: '#4338ca' }}>
+          — a quick reasoning check before you dive into the real questions
+        </span>
+      </div>
+      <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
+        {items.map(d => (
+          <motion.button
+            key={d.dnaId}
+            whileHover={{ y: -2 }}
+            onClick={() => onSelect(d)}
+            style={{
+              display: 'flex', flexDirection: 'column', gap: '6px', alignItems: 'flex-start',
+              padding: '12px 16px', borderRadius: '16px', border: '1.5px solid #e0e7ff',
+              background: '#fff', cursor: 'pointer', textAlign: 'left', minWidth: '180px', flex: '1 1 200px',
+            }}
+          >
+            <span style={{ fontWeight: 800, fontSize: '0.85rem', color: '#1e1b4b', lineHeight: 1.3 }}>{d.skill}</span>
+            <span style={{ fontSize: '0.7rem', fontWeight: 700, color: '#6366f1' }}>{d.reasoningBlueprint.length} warmup steps</span>
+          </motion.button>
+        ))}
+      </div>
+    </div>
+  );
+};
+
 // ─── "Focus for you" banner ────────────────────────────────────────────────
 const FocusBanner = ({ items, onSelect }) => {
   if (!items.length) return null;
@@ -214,6 +253,7 @@ const HscTypePractice = ({ profile }) => {
   }, [profile?.uid]);
 
   const focusDna = useMemo(() => computeFocusDna(dnaList, dnaStats), [dnaList, dnaStats]);
+  const warmupDna = useMemo(() => dnaList.filter(d => d.reasoningBlueprint?.length), [dnaList]);
 
   // ── Load type definitions ──────────────────────────────────────────────────
   useEffect(() => {
@@ -329,6 +369,12 @@ const HscTypePractice = ({ profile }) => {
       {/* Focus for you — DNA-level personal priority */}
       <FocusBanner
         items={focusDna}
+        onSelect={(d) => setActiveType({ slug: d.dnaId, label: d.skill, dnaFocus: true, reasoningBlueprint: d.reasoningBlueprint })}
+      />
+
+      {/* Reasoning warmups — always visible, regardless of Focus ranking */}
+      <ReasoningWarmupBanner
+        items={warmupDna}
         onSelect={(d) => setActiveType({ slug: d.dnaId, label: d.skill, dnaFocus: true, reasoningBlueprint: d.reasoningBlueprint })}
       />
 
