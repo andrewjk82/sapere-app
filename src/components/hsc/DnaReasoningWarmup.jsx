@@ -7,6 +7,20 @@ import { useAuth } from '../../context/AuthContext';
 import MathView from '../MathView';
 import { gradeDnaStep } from '../../utils/dnaStepGrading';
 
+const WARMUP_SIZE = 3;
+
+// Fisher-Yates shuffle + slice — pure given (pool, n), only ever called from
+// inside a useState lazy initializer (runs once per mount, not per render),
+// so the Math.random() impurity here is a non-issue for the React Compiler.
+function pickRandomSteps(pool, n) {
+  const arr = [...pool];
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr.slice(0, n);
+}
+
 // Fire-and-forget evidence write, kept as a plain module-level function (not
 // inline in the component) since Date.now()/serverTimestamp() are impure and
 // the React Compiler flags impure calls inside component/render bodies.
@@ -35,10 +49,17 @@ function recordStepEvidence(dnaId, step, response, graded, hintsRevealed, retryC
  * the actual question that follows (see HscTypePracticeSession.jsx) — this
  * is intentionally a thin layer on top, not a replacement.
  *
+ * `blueprint` is the DNA's full warmup POOL (may hold many more items than
+ * are shown in one sitting) — on mount, a random subset of WARMUP_SIZE is
+ * drawn once and used for the whole session, so repeat visits don't always
+ * see the same fixed steps. DNAs with a pool of WARMUP_SIZE or fewer just
+ * get that pool shuffled (order still varies, but nothing is dropped).
+ *
  * @param {{dnaId: string, blueprint: object[], onDone: () => void}} props
  */
-const DnaReasoningWarmup = ({ dnaId, blueprint, onDone }) => {
+const DnaReasoningWarmup = ({ dnaId, blueprint: pool, onDone }) => {
   const { user } = useAuth();
+  const [blueprint] = useState(() => pickRandomSteps(pool, Math.min(WARMUP_SIZE, pool.length)));
   const [stepIndex, setStepIndex] = useState(0);
   const [selectedId, setSelectedId] = useState(null);
   const [result, setResult] = useState(null); // {correct, error_type} | null
