@@ -3725,10 +3725,10 @@
     "chapter": "8A",
     "topic_label": "Applications of APs and GPs",
     "type": "multiple_choice",
-    "dna_id": "FIN-GP-01",
+    "dna_id": "SEQ-01",
     "candidate_id": null,
-    "dna_confidence": 0.85,
-    "classification_method": "topic_label",
+    "dna_confidence": 1,
+    "classification_method": "manual_review",
     "review_required": false
   },
   {
@@ -3737,10 +3737,10 @@
     "chapter": "8A",
     "topic_label": "Applications of APs and GPs",
     "type": "multiple_choice",
-    "dna_id": "FIN-GP-01",
+    "dna_id": "SEQ-01",
     "candidate_id": null,
-    "dna_confidence": 0.85,
-    "classification_method": "topic_label",
+    "dna_confidence": 1,
+    "classification_method": "manual_review",
     "review_required": false
   },
   {
@@ -3749,10 +3749,10 @@
     "chapter": "8A",
     "topic_label": "Applications of APs and GPs",
     "type": "multiple_choice",
-    "dna_id": "FIN-GP-01",
+    "dna_id": "SERIES-01",
     "candidate_id": null,
-    "dna_confidence": 0.85,
-    "classification_method": "topic_label",
+    "dna_confidence": 1,
+    "classification_method": "manual_review",
     "review_required": false
   },
   {
