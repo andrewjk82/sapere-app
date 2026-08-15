@@ -16,6 +16,7 @@ import { prepareShuffledMcOptions, gradeMcSelection, resolveCorrectOptionText } 
 import { parseSolutionSteps } from '../../utils/solutionSteps';
 import { MATH_SYMBOLS } from '../../utils/challengeUtils';
 import DnaReasoningWarmup from './DnaReasoningWarmup';
+import QuestionReasoningSteps from './QuestionReasoningSteps';
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────
 
@@ -337,6 +338,10 @@ const HscTypePracticeSession = ({ type, profile, initialStats, onBack, dnaLabels
   const [isReporting, setIsReporting] = useState(false);
   const [reportMessage, setReportMessage] = useState('');
   const [isSubmittingReport, setIsSubmittingReport] = useState(false);
+  // Question-specific Reasoning Blueprint pre-steps (Sapere_Question_DNA_v2.0
+  // §3-4, pilot: questions/bar2020-q14ai) — shown once per question per
+  // session, then the existing MC flow takes over unchanged.
+  const [preStepsDoneFor, setPreStepsDoneFor] = useState(() => new Set());
 
   // ── Load questions for this type (or DNA focus) ────────────────────────────
   useEffect(() => {
@@ -558,6 +563,20 @@ const HscTypePracticeSession = ({ type, profile, initialStats, onBack, dnaLabels
   }
 
   if (!q) return null;
+
+  // This one question has its own reasoning-blueprint pre-steps and they
+  // haven't been done yet this session — show those first, then fall
+  // through to the normal quiz UI below (unchanged) for the real answer.
+  if (type.dnaFocus && q.reasoning_blueprint?.length && !preStepsDoneFor.has(q.id)) {
+    return (
+      <QuestionReasoningSteps
+        dnaId={type.slug}
+        questionId={q.id}
+        blueprint={q.reasoning_blueprint}
+        onDone={() => setPreStepsDoneFor((prev) => new Set(prev).add(q.id))}
+      />
+    );
+  }
 
   const isCorrect = showFeedback ? answers[answers.length - 1]?.correct : null;
 
