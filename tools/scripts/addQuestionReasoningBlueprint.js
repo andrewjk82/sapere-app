@@ -59,13 +59,13 @@ const db = getFirestore(app);
 
 const rateStep = (id, pct, hints, explanation) => ({
   step_id: id, objective: 'Identify the interest rate per compounding period.',
-  interaction_type: 'complete', expected_response: String(pct), tolerance: 0.01,
+  axis: 'execution', interaction_type: 'complete', expected_response: String(pct), tolerance: 0.01,
   hints, explanation,
 });
 
 const periodsStep = (id, n, hints, explanation) => ({
   step_id: id, objective: 'Identify the number of compounding periods.',
-  interaction_type: 'complete', expected_response: String(n), tolerance: 0,
+  axis: 'execution', interaction_type: 'complete', expected_response: String(n), tolerance: 0,
   hints, explanation,
 });
 
@@ -82,7 +82,7 @@ const QUESTIONS = [
         'There are $3 \\times 2 = 6$ six-monthly periods.'),
       {
         step_id: 'S3', objective: 'Use the given factor to find the total future value.',
-        interaction_type: 'complete', compute: 'multiply', params: { a: 500, b: 6.7169 }, tolerance: 0.5,
+        axis: 'execution', interaction_type: 'complete', compute: 'multiply', params: { a: 500, b: 6.7169 }, tolerance: 0.5,
         hints: ['Multiply the regular contribution by the factor given in the question.', '$500 \\times 6.7169$'],
         explanation: 'Total future value $= 500 \\times 6.7169 = \\$3358.45$ — select this from the options next.',
       },
@@ -100,7 +100,7 @@ const QUESTIONS = [
         'There are $2 \\times 2 = 4$ six-monthly periods.'),
       {
         step_id: 'S3', objective: 'Use the given factor to find the total future value.',
-        interaction_type: 'complete', compute: 'multiply', params: { a: 400, b: 4.2782 }, tolerance: 0.5,
+        axis: 'execution', interaction_type: 'complete', compute: 'multiply', params: { a: 400, b: 4.2782 }, tolerance: 0.5,
         hints: ['Multiply the regular contribution by the factor given in the question.', '$400 \\times 4.2782$'],
         explanation: 'Total future value $= 400 \\times 4.2782 = \\$1711.28$ — select this from the options next.',
       },
@@ -118,7 +118,7 @@ const QUESTIONS = [
         'There are $3 \\times 2 = 6$ half-yearly periods.'),
       {
         step_id: 'S3', objective: 'Use the given factor to find the total future value.',
-        interaction_type: 'complete', compute: 'multiply', params: { a: 1200, b: 6.3081 }, tolerance: 0.5,
+        axis: 'execution', interaction_type: 'complete', compute: 'multiply', params: { a: 1200, b: 6.3081 }, tolerance: 0.5,
         hints: ['Multiply the regular contribution by the factor given in the question.', '$1200 \\times 6.3081$'],
         explanation: 'Total future value $= 1200 \\times 6.3081 = \\$7569.72$ — select this from the options next.',
       },
@@ -134,7 +134,7 @@ const QUESTIONS = [
         'There are $2 \\times 2 = 4$ six-monthly periods.'),
       {
         step_id: 'S2', objective: 'Rearrange $FV = R \\times \\text{factor}$ to find the required contribution $R$.',
-        interaction_type: 'complete', compute: 'divide', params: { a: 3000, b: 4.2782 }, tolerance: 0.5,
+        axis: 'execution', interaction_type: 'complete', compute: 'divide', params: { a: 3000, b: 4.2782 }, tolerance: 0.5,
         hints: ['You know the target future value and the factor — you need the contribution, not the total.', 'Divide the target amount by the factor: $R = FV \\div \\text{factor}$.'],
         explanation: '$R = 3000 \\div 4.2782 \\approx \\$701.29$ every six months — select this from the options next.',
       },
@@ -147,13 +147,13 @@ const QUESTIONS = [
     reasoning_blueprint: [
       {
         step_id: 'S1', objective: 'Find the six-monthly contribution Toby needs, using $FV = R \\times \\text{factor}$.',
-        interaction_type: 'complete', compute: 'divide', params: { a: 5000, b: 6.7169 }, tolerance: 0.5,
+        axis: 'execution', interaction_type: 'complete', compute: 'divide', params: { a: 5000, b: 6.7169 }, tolerance: 0.5,
         hints: ['This is the same annuity as Jenna\'s (4.5% per period, factor 6.7169) but a different target amount.', 'Divide the target amount by the factor: $R = FV \\div \\text{factor}$.'],
         explanation: '$R = 5000 \\div 6.7169 \\approx \\$744.39$ every six months.',
       },
       {
         step_id: 'S2', objective: 'How much more than Jenna\'s \\$500 must Toby contribute?',
-        interaction_type: 'complete', expected_response: '244.39', tolerance: 0.5,
+        axis: 'execution', interaction_type: 'complete', expected_response: '244.39', tolerance: 0.5,
         hints: ['Jenna contributes \\$500 every six months.', 'Subtract Jenna\'s contribution from the amount you just found for Toby.'],
         explanation: '$744.39 - 500 \\approx \\$244.39$ — select this from the options next.',
       },

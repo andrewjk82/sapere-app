@@ -71,19 +71,19 @@ const QUESTIONS = [
     reasoning_blueprint: [
       {
         step_id: 'S1', objective: 'Identify the interest rate per compounding period.',
-        interaction_type: 'complete', expected_response: '2', tolerance: 0.01,
+        axis: 'execution', interaction_type: 'complete', expected_response: '2', tolerance: 0.01,
         hints: ['Interest compounds every 6 months, but the rate given is annual.', 'Divide the annual rate by the number of compounding periods per year.'],
         explanation: 'The rate per period is $4\\% \\div 2 = 2\\%$.',
       },
       {
         step_id: 'S2', objective: 'Identify the number of compounding periods.',
-        interaction_type: 'complete', expected_response: '8', tolerance: 0,
+        axis: 'execution', interaction_type: 'complete', expected_response: '8', tolerance: 0,
         hints: ['Percy is saving for 4 years, compounding every 6 months.', 'Multiply the number of years by the number of periods per year.'],
         explanation: 'There are $4 \\times 2 = 8$ periods.',
       },
       {
         step_id: 'S3', objective: 'Use the given factor to find how much Percy must invest today.',
-        interaction_type: 'complete', compute: 'divide', params: { a: 25000, b: 1.1717 }, tolerance: 1,
+        axis: 'execution', interaction_type: 'complete', compute: 'divide', params: { a: 25000, b: 1.1717 }, tolerance: 1,
         hints: ['This is a present-value question — you want less than $25{,}000$ today.', 'Divide the target amount by the given factor.'],
         explanation: '$25000 \\div 1.1717 \\approx \\$21{,}336.52$ — select this from the options next.',
       },
@@ -95,19 +95,19 @@ const QUESTIONS = [
     reasoning_blueprint: [
       {
         step_id: 'S1', objective: 'Identify the interest rate per compounding period.',
-        interaction_type: 'complete', expected_response: '1.5', tolerance: 0.01,
+        axis: 'execution', interaction_type: 'complete', expected_response: '1.5', tolerance: 0.01,
         hints: ['Interest compounds quarterly, but the rate given is annual.', 'Divide the annual rate by the number of compounding periods per year.'],
         explanation: 'The rate per period is $6\\% \\div 4 = 1.5\\%$.',
       },
       {
         step_id: 'S2', objective: 'Identify the number of compounding periods.',
-        interaction_type: 'complete', expected_response: '12', tolerance: 0,
+        axis: 'execution', interaction_type: 'complete', expected_response: '12', tolerance: 0,
         hints: ['Mia is saving for 3 years, compounding quarterly.', 'Multiply the number of years by the number of periods per year.'],
         explanation: 'There are $3 \\times 4 = 12$ periods.',
       },
       {
         step_id: 'S3', objective: 'Use the given factor to find how much Mia must invest today.',
-        interaction_type: 'complete', compute: 'divide', params: { a: 18000, b: 1.1956 }, tolerance: 1,
+        axis: 'execution', interaction_type: 'complete', compute: 'divide', params: { a: 18000, b: 1.1956 }, tolerance: 1,
         hints: ['This is a present-value question — you want less than $18{,}000$ today.', 'Divide the target amount by the given factor.'],
         explanation: '$18000 \\div 1.1956 \\approx \\$15{,}055.20$ — select this from the options next.',
       },
@@ -120,19 +120,19 @@ const QUESTIONS = [
     reasoning_blueprint: [
       {
         step_id: 'S1', objective: 'Identify the interest rate per compounding period.',
-        interaction_type: 'complete', expected_response: '2', tolerance: 0.01,
+        axis: 'execution', interaction_type: 'complete', expected_response: '2', tolerance: 0.01,
         hints: ['Interest compounds half-yearly, but the rate given is annual.', 'Divide the annual rate by the number of compounding periods per year.'],
         explanation: 'The rate per period is $4\\% \\div 2 = 2\\%$.',
       },
       {
         step_id: 'S2', objective: 'Identify the number of compounding periods.',
-        interaction_type: 'complete', expected_response: '6', tolerance: 0,
+        axis: 'execution', interaction_type: 'complete', expected_response: '6', tolerance: 0,
         hints: ['The investment runs for 3 years, compounding half-yearly.', 'Multiply the number of years by the number of periods per year.'],
         explanation: 'There are $3 \\times 2 = 6$ periods.',
       },
       {
         step_id: 'S3', objective: 'Find the lump sum needed today using $P = A \\div (1+r)^n$.',
-        interaction_type: 'complete', compute: 'compound_pv', params: { fv: 7569.72, rate: 0.02, n: 6 }, tolerance: 1,
+        axis: 'execution', interaction_type: 'complete', compute: 'compound_pv', params: { fv: 7569.72, rate: 0.02, n: 6 }, tolerance: 1,
         hints: ['No factor table is given this time — compute $(1.02)^6$ yourself, or reason it through directly.', '$P = 7569.72 \\div (1.02)^6$'],
         explanation: '$P = 7569.72 \\div (1.02)^6 \\approx \\$6721.69$ — select this from the options next.',
       },

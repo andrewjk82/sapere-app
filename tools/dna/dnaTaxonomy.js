@@ -179,6 +179,7 @@ export const QUESTION_DNA = [
         step_id: 'W1',
         objective: 'Recognise the geometric-series structure.',
         required_skill: 'FIN-GP-01.1',
+        axis: 'recognition',
         interaction_type: 'select',
         options: [
           { id: 'a', label: 'A fixed dollar amount is added or removed each period (arithmetic)' },
@@ -197,6 +198,7 @@ export const QUESTION_DNA = [
         step_id: 'W2',
         objective: 'Select the formula family this problem needs.',
         required_skill: 'FIN-GP-01.2',
+        axis: 'strategy_selection',
         interaction_type: 'select',
         options: [
           { id: 'a', label: '$T_n = ar^{n-1}$ — the value of one single term' },
@@ -219,6 +221,7 @@ export const QUESTION_DNA = [
         step_id: 'W3',
         objective: 'Identify what $a$ and $r$ represent in a financial GP.',
         required_skill: 'FIN-GP-01.3',
+        axis: 'recognition',
         interaction_type: 'select',
         options: [
           { id: 'a', label: '$a$ = the interest rate, $r$ = the first deposit' },
@@ -251,6 +254,7 @@ export const QUESTION_DNA = [
         step_id: 'W1',
         objective: 'To use an interest-rate table or formula, what do you need to convert the annual rate into first?',
         required_skill: 'FIN-INTEREST-01.1',
+        axis: 'execution',
         interaction_type: 'select',
         options: [
           { id: 'a', label: 'The rate per compounding period' },
@@ -269,6 +273,7 @@ export const QUESTION_DNA = [
         step_id: 'W2',
         objective: 'What do you need to count to know how many times interest compounds?',
         required_skill: 'FIN-INTEREST-01.2',
+        axis: 'execution',
         interaction_type: 'select',
         options: [
           { id: 'a', label: 'The number of compounding periods (years × periods per year)' },
@@ -286,6 +291,7 @@ export const QUESTION_DNA = [
         step_id: 'W3',
         objective: 'You know the future value you want, and need to find how much to invest today. Do you multiply or divide by the compounding factor?',
         required_skill: 'FIN-INTEREST-01.3',
+        axis: 'strategy_selection',
         interaction_type: 'select',
         options: [
           { id: 'a', label: 'Multiply' },

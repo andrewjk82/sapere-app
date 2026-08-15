@@ -62,13 +62,13 @@ const db = getFirestore(app);
 const recurrenceSteps = [
   {
     step_id: 'S1', objective: 'Find the drop-bear population after 1 year, $T_1$.',
-    interaction_type: 'complete', compute: 'growth_minus', params: { a: 1000, r: 1.05, c: 100 }, tolerance: 0.5,
+    axis: 'execution', interaction_type: 'complete', compute: 'growth_minus', params: { a: 1000, r: 1.05, c: 100 }, tolerance: 0.5,
     hints: ['The population grows by 5% first, then 100 are removed.', '$T_1 = 1000 \\times 1.05 - 100$'],
     explanation: '$T_1 = 1000 \\times 1.05 - 100 = 950$.',
   },
   {
     step_id: 'S2', objective: 'Using $T_1$, find $T_2$ from the same recurrence: $T_2 = T_1 \\times 1.05 - 100$.',
-    interaction_type: 'complete', compute: 'growth_minus', params: { a: 950, r: 1.05, c: 100 }, tolerance: 0.5,
+    axis: 'execution', interaction_type: 'complete', compute: 'growth_minus', params: { a: 950, r: 1.05, c: 100 }, tolerance: 0.5,
     hints: ['Apply the same rule to $T_1$ that you applied to $T_0 = 1000$ to get $T_1$.', '$T_2 = 950 \\times 1.05 - 100$'],
     explanation: '$T_2 = 950 \\times 1.05 - 100 = 897.5$, matching $1000(1.05)^2 - 100(1.05+1)$.',
   },
@@ -82,13 +82,13 @@ const QUESTIONS = [
       ...recurrenceSteps,
       {
         step_id: 'S3', objective: 'What growth factor is applied to the population each year (before poaching)?',
-        interaction_type: 'complete', expected_response: '1.05', tolerance: 0.01,
+        axis: 'recognition', interaction_type: 'complete', expected_response: '1.05', tolerance: 0.01,
         hints: ['The population grows by 5% per year.', '$1 + 5\\% = 1.05$'],
         explanation: 'The growth factor is $1.05$ — a $5\\%$ increase each year.',
       },
       {
         step_id: 'S4', objective: 'How many drop-bears are removed by poaching at the end of each year?',
-        interaction_type: 'complete', expected_response: '100', tolerance: 0,
+        axis: 'recognition', interaction_type: 'complete', expected_response: '100', tolerance: 0,
         hints: ['This is stated directly in the question.'],
         explanation: '100 drop-bears are poached at the end of every year — now select the closed-form expression for $T_n$ next.',
       },

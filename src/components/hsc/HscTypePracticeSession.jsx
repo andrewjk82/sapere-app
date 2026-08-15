@@ -432,7 +432,28 @@ const HscTypePracticeSession = ({ type, profile, initialStats, onBack, dnaLabels
     setLastCorrect(correct);
     setAnswers(prev => [...prev, { userAnswer, correct, timedOut, questionId: q.id, questionText: q.q || q.question }]);
     setShowFeedback(true);
-  }, [draft, q, isMC, showToast]);
+
+    // Verification-axis evidence: the real final answer, for questions that
+    // went through reasoning-blueprint pre-steps (Sapere_Question_DNA_v2.0
+    // §8/§10 6-axis mastery). Piggybacks on the grading result already
+    // computed above — never re-decides correctness, just records it.
+    if (type.dnaFocus && q.reasoning_blueprint?.length && user?.uid && !timedOut) {
+      addDoc(collection(db, 'users', user.uid, 'dna_step_evidence'), {
+        dna_id: type.slug,
+        question_id: q.id,
+        step_id: 'FINAL',
+        axis: 'verification',
+        student_id: user.uid,
+        response: userAnswer,
+        correct,
+        error_type: correct ? null : 'E_final_answer_incorrect',
+        hint_used: showHint ? 1 : 0,
+        retry_count: 0,
+        time_spent_ms: null,
+        created_at: serverTimestamp(),
+      }).catch(e => console.warn('Failed to write dna_step_evidence (final answer):', e));
+    }
+  }, [draft, q, isMC, showToast, type.dnaFocus, type.slug, user?.uid, showHint]);
 
   // ── Advance — mastery queue logic ──────────────────────────────────────────
   const advance = useCallback(async () => {

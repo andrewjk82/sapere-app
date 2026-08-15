@@ -5,6 +5,7 @@ import { doc, getDoc, collection, getDocs } from 'firebase/firestore';
 import { db } from '../../firebase/config';
 import { ChevronRight, Trophy, Target, Compass } from 'lucide-react';
 import HscTypePracticeSession from './HscTypePracticeSession';
+import DnaMasteryPanel from './DnaMasteryPanel';
 
 // Simple, modern card system for this page — Outfit for titles (matches the
 // app's --font-heading token), Inter for body, purple accent kept consistent
@@ -365,6 +366,9 @@ const HscTypePractice = ({ profile }) => {
         items={warmupDna}
         onSelect={(d) => setActiveType({ slug: d.dnaId, label: d.skill, dnaFocus: true, reasoningBlueprint: d.reasoningBlueprint })}
       />
+
+      {/* 6-axis reasoning profile — only renders once there's evidence */}
+      <DnaMasteryPanel dnaLabels={dnaLabels} />
 
       {/* Filter pills */}
       <div style={{ display: 'flex', gap: '8px' }}>
