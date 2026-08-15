@@ -122,6 +122,83 @@ export const QUESTION_DNA = [
   {
     dna_id: 'CALC-INT-01', family: 'CALCULUS', skill: 'Integration',
     operations: ['identify_technique', 'integrate', 'apply_initial_condition_or_limits'], priorityScore: 95, // C4
+    // Reasoning-blueprint warmup (Sapere_Question_DNA_v2.0 §3-4, 4th DNA,
+    // 2026-08-15). DNA-generic only — true for every CALC-INT-01 question
+    // regardless of the specific function being integrated. The core
+    // failure modes here are: (1) technique misidentification (reaching
+    // for direct/power-rule integration on something that needs a
+    // reverse-chain-rule/substitution recognition first), and (2) forgetting
+    // +C vs. correctly using given limits/initial conditions to pin the
+    // constant down — so the warmup targets both before any real numbers
+    // appear.
+    reasoningBlueprint: [
+      {
+        step_id: 'W1',
+        objective: 'Recognise when a function needs the reverse chain rule (not just the plain power rule).',
+        required_skill: 'CALC-INT-01.1',
+        axis: 'recognition',
+        interaction_type: 'select',
+        options: [
+          { id: 'a', label: '$\\displaystyle\\int (3x+1)^5\\,dx$ — a linear expression raised to a power' },
+          { id: 'b', label: '$\\displaystyle\\int x^5\\,dx$ — a plain power of $x$' },
+          { id: 'c', label: '$\\displaystyle\\int 5\\,dx$ — a constant' },
+        ],
+        expected_response: 'a',
+        common_errors: [{ id: 'b', error_type: 'CALC-INT-01.E1_technique_misidentification' }],
+        hints: [
+          'A plain power of $x$ (or a constant) only needs the ordinary power rule for integration.',
+          '$(3x+1)^5$ has an inner linear expression — integrating it needs the reverse chain rule, which divides by the derivative of that inner expression.',
+        ],
+        explanation:
+          '$(3x+1)^5$ is a composed function (an inner linear expression raised to a power) — integrating it needs the reverse chain rule: $\\int (ax+b)^n\\,dx = \\dfrac{(ax+b)^{n+1}}{a(n+1)}+C$.',
+      },
+      {
+        step_id: 'W2',
+        objective: 'Know when an indefinite integral needs "+C" and when a definite integral does not.',
+        required_skill: 'CALC-INT-01.2',
+        axis: 'strategy_selection',
+        interaction_type: 'select',
+        options: [
+          { id: 'a', label: 'Indefinite integral (no limits, e.g. $\\int f(x)\\,dx$) needs $+C$; a definite integral (with limits, e.g. $\\int_a^b f(x)\\,dx$) evaluates to a single number and does NOT' },
+          { id: 'b', label: 'Every integral, definite or indefinite, always needs $+C$' },
+          { id: 'c', label: 'Neither type ever needs $+C$' },
+        ],
+        expected_response: 'a',
+        common_errors: [
+          { id: 'b', error_type: 'CALC-INT-01.E2_unnecessary_plus_c' },
+          { id: 'c', error_type: 'CALC-INT-01.E3_missing_plus_c' },
+        ],
+        hints: [
+          'A definite integral (with limits) is evaluated by substituting both limits and subtracting — any $+C$ would cancel out anyway.',
+          'An indefinite integral (the general antiderivative, no limits given) represents a whole family of curves, so it always needs $+C$.',
+        ],
+        explanation:
+          'Indefinite integrals need $+C$ (a whole family of antiderivatives); definite integrals (with limits) evaluate to one specific number, so $+C$ is never written.',
+      },
+      {
+        step_id: 'W3',
+        objective: 'Recognise how a given initial condition (a known point on the curve) is used to find the value of C.',
+        required_skill: 'CALC-INT-01.3',
+        axis: 'strategy_selection',
+        interaction_type: 'select',
+        options: [
+          { id: 'a', label: 'Substitute the given $x$ and $y$ values into the general antiderivative (which still has $+C$), then solve for $C$' },
+          { id: 'b', label: 'Substitute the given $x$ value into the ORIGINAL function (before integrating), then solve for $C$' },
+          { id: 'c', label: 'Ignore the initial condition — $C$ is always $0$' },
+        ],
+        expected_response: 'a',
+        common_errors: [
+          { id: 'b', error_type: 'CALC-INT-01.E4_wrong_function_for_condition' },
+          { id: 'c', error_type: 'CALC-INT-01.E5_ignored_initial_condition' },
+        ],
+        hints: [
+          'The initial condition is a point $(x,y)$ that lies ON the antiderivative curve — it\'s used AFTER integrating, not before.',
+          'Substitute both the given $x$ and the given $y$ into $y = (\\text{antiderivative}) + C$, then solve the resulting equation for $C$.',
+        ],
+        explanation:
+          'An initial condition is a known point on the integrated curve — substitute it into the general antiderivative (with $+C$ still in place) and solve for $C$; it\'s never applied to the original un-integrated function.',
+      },
+    ],
   },
   {
     dna_id: 'CALC-AREA-01', family: 'CALCULUS', skill: 'Area under/between curves',
