@@ -905,10 +905,10 @@
     "chapter": "12E",
     "topic_label": "Multi-stage experiments and the product rule",
     "type": "multiple_choice",
-    "dna_id": "CALC-DIFF-01",
+    "dna_id": "PROB-COMP-01",
     "candidate_id": null,
-    "dna_confidence": 0.85,
-    "classification_method": "topic_label",
+    "dna_confidence": 1,
+    "classification_method": "manual_review",
     "review_required": false
   },
   {
@@ -3233,10 +3233,10 @@
     "chapter": "12E",
     "topic_label": "Multi-stage experiments and the product rule",
     "type": "multiple_choice",
-    "dna_id": "CALC-DIFF-01",
+    "dna_id": "PROB-COMP-01",
     "candidate_id": null,
-    "dna_confidence": 0.85,
-    "classification_method": "topic_label",
+    "dna_confidence": 1,
+    "classification_method": "manual_review",
     "review_required": false
   },
   {
@@ -5021,10 +5021,10 @@
     "chapter": "5K",
     "topic_label": "Calculus with other bases",
     "type": "multiple_choice",
-    "dna_id": "CALC-DIFF-01",
+    "dna_id": "CALC-MOTION-01",
     "candidate_id": null,
-    "dna_confidence": 0.85,
-    "classification_method": "topic_label",
+    "dna_confidence": 1,
+    "classification_method": "manual_review",
     "review_required": false
   },
   {
@@ -6677,10 +6677,10 @@
     "chapter": "6C",
     "topic_label": "Applications of differentiation of trigonometric functions",
     "type": "multiple_choice",
-    "dna_id": "CALC-DIFF-01",
+    "dna_id": "CALC-OPT-01",
     "candidate_id": null,
-    "dna_confidence": 0.85,
-    "classification_method": "topic_label",
+    "dna_confidence": 1,
+    "classification_method": "manual_review",
     "review_required": false
   },
   {

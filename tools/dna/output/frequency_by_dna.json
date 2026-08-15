@@ -56,7 +56,7 @@
     ]
   },
   "CALC-DIFF-01": {
-    "count": 79,
+    "count": 75,
     "question_ids": [
       "car2020-mc3",
       "car2020-mc9",
@@ -70,7 +70,6 @@
       "abb2020-q11eii",
       "abb2020-q13bi",
       "abb2020-q13bii",
-      "abb2020-q14a",
       "abb2020-q15ai",
       "asc2020-q13",
       "asc2020-q14",
@@ -90,7 +89,6 @@
       "baulko2020-q16bi",
       "baulko2020-q16bii",
       "baulko2020-q16cii",
-      "bbhs2020-mc9",
       "bbhs2020-14a",
       "bbhs2020-14b",
       "bbhs2020-18a",
@@ -103,7 +101,6 @@
       "cths2020s-q23",
       "cths2020s-q25",
       "cra2023-q14a",
-      "cra2023-q18c",
       "cra2023-q31",
       "dane2020-q23",
       "dane2020-q26",
@@ -112,7 +109,6 @@
       "fortst2020-q2b",
       "fortst2020-q2c",
       "fortst2020-q10b",
-      "fortst2020-q19b",
       "girr2020-mc9",
       "girr2020-mc16",
       "girr2020-mc20",
@@ -622,7 +618,7 @@
     ]
   },
   "CALC-OPT-01": {
-    "count": 23,
+    "count": 24,
     "question_ids": [
       "car2020-q30",
       "abb2020-q16aii",
@@ -646,7 +642,8 @@
       "girr2020-mc33s",
       "asc2020-q32v",
       "bar2020-q19biiiiv",
-      "baulko2020-mc10v"
+      "baulko2020-mc10v",
+      "fortst2020-q19b"
     ]
   },
   "FUNC-TRANS-01": {
@@ -727,7 +724,7 @@
     ]
   },
   "CALC-MOTION-01": {
-    "count": 51,
+    "count": 52,
     "question_ids": [
       "car2020-q37b",
       "car2020-q39",
@@ -779,7 +776,8 @@
       "bar2020-q18aiv",
       "bar2020-q18aiiv",
       "baulko2020-q15aiv",
-      "baulko2020-q15aivv"
+      "baulko2020-q15aivv",
+      "cra2023-q18c"
     ]
   },
   "ALG-EQ-01": {
@@ -919,9 +917,11 @@
     ]
   },
   "PROB-COMP-01": {
-    "count": 1,
+    "count": 3,
     "question_ids": [
-      "dane2020-q17b"
+      "dane2020-q17b",
+      "abb2020-q14a",
+      "bbhs2020-mc9"
     ]
   },
   "UNCLASSIFIED:CAND-PROB-COUNT-001": {
