@@ -19,6 +19,9 @@ const computeRegistry = {
   // amount removed each period (e.g. population growth with harvesting/
   // poaching, or an annuity with a withdrawal) — a*r - c.
   growth_minus: ({ a, r, c }) => a * r - c,
+  // Present value of a single compounding lump sum: fv / (1+rate)^n —
+  // used when no pre-computed table factor is given in the question.
+  compound_pv: ({ fv, rate, n }) => fv / Math.pow(1 + rate, n),
 };
 
 function parseNumeric(value) {

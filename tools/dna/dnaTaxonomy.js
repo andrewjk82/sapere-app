@@ -239,6 +239,67 @@ export const QUESTION_DNA = [
   {
     dna_id: 'FIN-INTEREST-01', family: 'SEQUENCES_FINANCIAL', skill: 'Interest / loan / annuity modelling',
     operations: ['identify_interest_type', 'apply_formula_or_recurrence', 'interpret'], priorityScore: 82, // M1
+    // Reasoning-blueprint warmup (2026-08-15) — DNA-generic only. Unlike
+    // FIN-GP-01, this DNA covers several structurally different scenarios
+    // (lump-sum PV/FV, loan amortisation, annuity depletion), so the
+    // warmup sticks to what's true across ALL of them: converting the
+    // annual rate to a periodic one, counting periods, and — since a
+    // present-value bug was found and fixed on asc2020-mc8 while building
+    // this — explicitly drilling "PV means divide by the factor".
+    reasoningBlueprint: [
+      {
+        step_id: 'W1',
+        objective: 'To use an interest-rate table or formula, what do you need to convert the annual rate into first?',
+        required_skill: 'FIN-INTEREST-01.1',
+        interaction_type: 'select',
+        options: [
+          { id: 'a', label: 'The rate per compounding period' },
+          { id: 'b', label: 'The total interest earned over the whole term' },
+          { id: 'c', label: 'The number of years' },
+        ],
+        expected_response: 'a',
+        common_errors: [{ id: 'b', error_type: 'FIN-INTEREST-01.E1_rate_vs_interest_confusion' }],
+        hints: [
+          'Interest-rate tables and formulas always work with the rate for ONE compounding period, not the whole year.',
+          'If interest compounds more than once a year, the annual rate has to be divided down first.',
+        ],
+        explanation: 'Every rate must first be converted to the rate per compounding period (e.g. annual ÷ periods per year) before it can be used in a formula or table.',
+      },
+      {
+        step_id: 'W2',
+        objective: 'What do you need to count to know how many times interest compounds?',
+        required_skill: 'FIN-INTEREST-01.2',
+        interaction_type: 'select',
+        options: [
+          { id: 'a', label: 'The number of compounding periods (years × periods per year)' },
+          { id: 'b', label: 'The number of dollars invested' },
+          { id: 'c', label: 'The interest rate' },
+        ],
+        expected_response: 'a',
+        common_errors: [{ id: 'b', error_type: 'FIN-INTEREST-01.E2_periods_confusion' }],
+        hints: [
+          'Multiply the number of years by how many times per year interest compounds.',
+        ],
+        explanation: 'The number of periods is years × compounding frequency per year.',
+      },
+      {
+        step_id: 'W3',
+        objective: 'You know the future value you want, and need to find how much to invest today. Do you multiply or divide by the compounding factor?',
+        required_skill: 'FIN-INTEREST-01.3',
+        interaction_type: 'select',
+        options: [
+          { id: 'a', label: 'Multiply' },
+          { id: 'b', label: 'Divide' },
+        ],
+        expected_response: 'b',
+        common_errors: [{ id: 'a', error_type: 'FIN-INTEREST-01.E3_pv_fv_direction_confusion' }],
+        hints: [
+          'Going from a smaller amount today to a larger amount in the future is multiplying by the factor.',
+          'Present value is the reverse direction — undo the multiplication.',
+        ],
+        explanation: 'Present value = future value ÷ compounding factor — the reverse of growing a lump sum forward.',
+      },
+    ],
   },
 ];
 
