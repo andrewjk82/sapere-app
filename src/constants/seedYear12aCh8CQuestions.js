@@ -1623,9 +1623,9 @@ export const Y12A_CH8C_QUESTIONS = [
     "question": "Liam and Sophia each invested \\( \\$30000 \\) for one year. Liam has his invested at \\( 5.25\\% \\) per annum simple interest, while Sophia has hers invested at \\( 5.15\\% \\) per annum compound interest.\na) If Sophia's investment is compounded annually, who has the better investment, and what are the final values of the two investments? (Specify in the format 'Liam (Liam: \\(31,575, Sophia: \\)31,545)')",
     "opts": [
       "Liam (Liam: \\(31,575, Sophia: \\)31,545)",
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x."
+      "Sophia (Liam: \\)31,575, Sophia: \\(31,545)",
+      "Liam (Liam: \\)31,545, Sophia: \\(31,575)",
+      "Liam (Liam: \\)31,575, Sophia: \\(30,515)"
     ],
     "a": 0,
     "answer": "0",
@@ -1665,36 +1665,36 @@ export const Y12A_CH8C_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 90,
-    "question": "Liam and Sophia each invested \\( \\$30000 \\) for one year. Liam has his invested at \\( 5.25\\% \\) per annum simple interest, while Sophia has hers invested at \\( 5.15\\% \\) per annum compound interest.\nb) Sophia then points out that her interest is compounded monthly, not yearly. Now who has the better investment, and by how much? (Specify in the format 'Sophia, by 6.85')",
+    "question": "Liam and Sophia each invested \\( \\$30000 \\) for one year. Liam has his invested at \\( 5.25\\% \\) per annum simple interest, while Sophia has hers invested at \\( 5.15\\% \\) per annum compound interest.\nb) Sophia then points out that her interest is compounded monthly, not yearly. Now who has the better investment, and by how much? (Specify in the format 'Sophia, by 7.00')",
     "opts": [
+      "Sophia, by 7.00",
       "Sophia, by 6.85",
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x."
+      "Liam, by 7.00",
+      "Sophia, by 581.99"
     ],
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "The correct answer is Sophia, by 6.85.",
+    "solution": "The correct answer is Sophia, by 7.00.",
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Simple and compound interest: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(A_S = 30000 \\times (1 + \\frac{0.0515}{12})^{12} \\approx 31581.85\\)",
+        "workingOut": "\\(A_S = 30000 \\times (1 + \\frac{0.0515}{12})^{12} \\approx 31582.00\\)",
         "graphData": null
       },
       {
         "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(31581.85 > 31575 \\implies \\text{Sophia is better}\\)",
+        "workingOut": "\\(31582.00 > 31575 \\implies \\text{Sophia is better}\\)",
         "graphData": null
       },
       {
         "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(31581.85 - 31575 = 6.85\\)",
+        "workingOut": "\\(31582.00 - 31575 = 7.00\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: Sophia, by 6.85. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "Sophia, by 6.85",
+        "explanation": "Final answer: Sophia, by 7.00. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "Sophia, by 7.00",
         "graphData": null
       }
     ],
@@ -2838,9 +2838,9 @@ export const Y12A_CH8C_QUESTIONS = [
     "question": "The cost \\( C \\) of an article is rising with inflation at a rate of \\( 1.5\\% \\) per month.\na) ii) Find the time required for the cost to double, in exact form and then correct to four significant figures. (Format: 'log(2)/log(1.015) months, 46.56 months')",
     "opts": [
       "log(2)/log(1.015) months, 46.56 months",
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x."
+      "log(1.015)/log(2) months, \\(\\approx\\) 0.02 months",
+      "log(2)/1.015 months, \\(\\approx\\) 0.30 months",
+      "2\\(\\times\\)log(1.015) months, \\(\\approx\\) 0.01 months"
     ],
     "a": 0,
     "answer": "0",
@@ -2928,9 +2928,9 @@ export const Y12A_CH8C_QUESTIONS = [
     "question": "The cost \\( C \\) of an article is rising with inflation at a rate of \\( 1.5\\% \\) per month.\nb) ii) Find the time required for the cost to double, in exact form and then correct to four significant figures. (Format: 'ln(2)/k months, 46.56 months')",
     "opts": [
       "ln(2)/k months, 46.56 months",
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x."
+      "k/ln(2) months, \\(\\approx\\) 0.02 months",
+      "ln(2)/1.015 months, \\(\\approx\\) 0.68 months",
+      "2k months, \\(\\approx\\) 0.03 months"
     ],
     "a": 0,
     "answer": "0",

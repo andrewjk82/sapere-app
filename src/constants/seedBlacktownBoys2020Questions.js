@@ -768,8 +768,8 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "opts": [
       "\\(-\\dfrac{dy}{dx} = \\dfrac{3}{4}\\sec^2\\!\\left(\\dfrac{x}{4}\\right)\\tan^2\\!\\left(\\dfrac{x}{4}\\right)\\)",
       "\\(\\dfrac{dy}{dx} = \\dfrac{3}{4}\\sec^2\\!\\left(\\dfrac{x}{4}\\right)\\tan^2\\!\\left(\\dfrac{x}{4}\\right)\\)",
-      "\\(\\frac{1}{dx} = \\dfrac{3}{4}\\sec^2\\!\\left(\\dfrac{x}{4}\\right)\\tan^2\\!\\left(\\dfrac{x}{4}\\right)\\)",
-      "\\(\\frac{dx}{dy} = \\dfrac{3}{4}\\sec^2\\!\\left(\\dfrac{x}{4}\\right)\\tan^2\\!\\left(\\dfrac{x}{4}\\right)\\)"
+      "\\(\\dfrac{dy}{dx} = 3\\sec^2\\!\\left(\\dfrac{x}{4}\\right)\\tan^2\\!\\left(\\dfrac{x}{4}\\right)\\)",
+      "\\(\\dfrac{dy}{dx} = \\dfrac{3}{4}\\tan^2\\!\\left(\\dfrac{x}{4}\\right)\\)"
     ],
     "a": 1,
     "answer": "1",
@@ -813,8 +813,8 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "opts": [
       "\\(-\\dfrac{dy}{dx} = \\dfrac{3xe^{3x} + 2e^{3x} + 5}{(x+1)^2}\\)",
       "\\(\\dfrac{dy}{dx} = \\dfrac{3xe^{3x} + 2e^{3x} + 5}{(x+1)^2}\\)",
-      "\\(\\frac{1}{dx} = \\dfrac{3xe^{3x} + 2e^{3x} + 5}{(x+1)^2}\\)",
-      "\\(\\frac{dx}{dy} = \\dfrac{3xe^{3x} + 2e^{3x} + 5}{(x+1)^2}\\)"
+      "\\(\\dfrac{dy}{dx} = \\dfrac{3xe^{3x} + 2e^{3x} + 5}{x+1}\\)",
+      "\\(\\dfrac{dy}{dx} = \\dfrac{3xe^{3x} + 2e^{3x} - 5}{(x+1)^2}\\)"
     ],
     "a": 1,
     "answer": "1",
@@ -1082,8 +1082,8 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "question": "Show that $\\dfrac{d}{dx}(e^{2x}\\cos x) = e^{2x}(2\\cos x - \\sin x)$.",
     "opts": [
       "-By the product rule: \\(\\frac{d}{dx}(e^{2x}\\cos x) = 2e^{2x}\\cos x - e^{2x}\\sin x = e^{2x}(2\\cos x - \\sin x)\\).",
-      "By the product rule: \\(\\frac{1}{dx}(e^{2x}\\cos x) = 2e^{2x}\\cos x - e^{2x}\\sin x = e^{2x}(2\\cos x - \\sin x)\\).",
-      "By the product rule: \\(\\frac{dx}{d}(e^{2x}\\cos x) = 2e^{2x}\\cos x - e^{2x}\\sin x = e^{2x}(2\\cos x - \\sin x)\\).",
+      "By the product rule: \\(\\dfrac{d}{dx}(e^{2x}\\cos x) = e^{2x}\\cos x - e^{2x}\\sin x = e^{2x}(\\cos x - \\sin x)\\).",
+      "By the product rule: \\(\\dfrac{d}{dx}(e^{2x}\\cos x) = 2e^{2x}\\cos x + e^{2x}\\sin x = e^{2x}(2\\cos x + \\sin x)\\).",
       "By the product rule: \\(\\frac{d}{dx}(e^{2x}\\cos x) = 2e^{2x}\\cos x - e^{2x}\\sin x = e^{2x}(2\\cos x - \\sin x)\\)."
     ],
     "a": 3,
@@ -1126,9 +1126,9 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "timeLimit": 120,
     "question": "Hence find the equation of the tangent to the curve $y = e^{2x}\\cos x$ at the point where $x = 0$.",
     "opts": [
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x.",
+      "y = x + 1\\), or equivalently \\(x - y + 1 = 0",
+      "y = 2x - 1\\), or equivalently \\(2x - y - 1 = 0",
+      "y = 2x + 2\\), or equivalently \\(2x - y + 2 = 0",
       "y = 2x + 1\\), or equivalently \\(2x - y + 1 = 0"
     ],
     "a": 3,
@@ -1532,9 +1532,9 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "question": "A scatterplot of fertiliser amount ($x$ grams) vs tomato yield ($y$ kg) for 8 plants shows a clear upward linear trend with $R^2 = 0.9453$. Use the scatterplot to describe the association between yield and fertiliser in terms of strength and direction.",
     "opts": [
       "Strong, positive, linear association.",
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x."
+      "Weak, positive, linear association.",
+      "Strong, negative, linear association.",
+      "Strong, positive, non-linear association."
     ],
     "a": 0,
     "answer": "0",
@@ -1667,9 +1667,9 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "question": "Explain why you should not extrapolate from this data to find the yield for high rates of fertiliser usage.",
     "opts": [
       "The linear relationship may not hold beyond the observed range of the data. High doses of fertiliser could damage the plants, so the yield may plateau or decrease rather than continue to rise linearly.",
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x."
+      "Extrapolation is always valid as long as \\(R^2\\) is high, since a strong correlation guarantees the trend continues indefinitely.",
+      "The regression line cannot be extended because \\(R^2\\) only applies within the range \\(0\\) to \\(1\\).",
+      "Because the association is linear, the same rate of increase must continue for any amount of fertiliser used."
     ],
     "a": 0,
     "answer": "0",
@@ -2240,9 +2240,9 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "question": "For the rose garden (first row 24, common difference 5), which row would be the first to contain more than 150 rose plants?",
     "opts": [
       "The 27th row.",
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x."
+      "The 26th row.",
+      "The 25th row.",
+      "The 28th row."
     ],
     "a": 0,
     "answer": "0",

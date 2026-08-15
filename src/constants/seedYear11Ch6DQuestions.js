@@ -1112,10 +1112,10 @@ export const Y11_CH6D_QUESTIONS = [
     "timeLimit": 60,
     "question": "Write \\(\\cos 320^{\\circ}\\) as the ratio of an acute angle with the correct sign.",
     "opts": [
-      "cos 40°",
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x."
+      "\\(\\cos 40^{\\circ}\\)",
+      "\\(-\\cos 40^{\\circ}\\)",
+      "\\(\\sin 40^{\\circ}\\)",
+      "\\(-\\sin 40^{\\circ}\\)"
     ],
     "a": 0,
     "answer": "0",
@@ -1202,10 +1202,10 @@ export const Y11_CH6D_QUESTIONS = [
     "timeLimit": 60,
     "question": "Write \\(\\tan 255^{\\circ}\\) as the ratio of an acute angle with the correct sign.",
     "opts": [
-      "tan 75°",
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x."
+      "\\(\\tan 75^{\\circ}\\)",
+      "\\(-\\tan 75^{\\circ}\\)",
+      "\\(\\cot 75^{\\circ}\\)",
+      "\\(-\\cot 75^{\\circ}\\)"
     ],
     "a": 0,
     "answer": "0",
@@ -1382,10 +1382,10 @@ export const Y11_CH6D_QUESTIONS = [
     "timeLimit": 60,
     "question": "Write \\(\\sin 115^{\\circ}\\) as the ratio of an acute angle with the correct sign.",
     "opts": [
-      "sin 65°",
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x."
+      "\\(\\sin 65^{\\circ}\\)",
+      "\\(-\\sin 65^{\\circ}\\)",
+      "\\(\\cos 65^{\\circ}\\)",
+      "\\(-\\cos 65^{\\circ}\\)"
     ],
     "a": 0,
     "answer": "0",
@@ -1472,10 +1472,10 @@ export const Y11_CH6D_QUESTIONS = [
     "timeLimit": 60,
     "question": "Write \\(\\sin 75^{\\circ}\\) as the ratio of an acute angle with the correct sign.",
     "opts": [
-      "sin 75°",
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x."
+      "\\(\\sin 75^{\\circ}\\)",
+      "\\(-\\sin 75^{\\circ}\\)",
+      "\\(\\cos 75^{\\circ}\\)",
+      "\\(-\\cos 75^{\\circ}\\)"
     ],
     "a": 0,
     "answer": "0",
@@ -1562,10 +1562,10 @@ export const Y11_CH6D_QUESTIONS = [
     "timeLimit": 60,
     "question": "Write \\(\\tan 215^{\\circ}\\) as the ratio of an acute angle with the correct sign.",
     "opts": [
-      "tan 35°",
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x."
+      "\\(\\tan 35^{\\circ}\\)",
+      "\\(-\\tan 35^{\\circ}\\)",
+      "\\(\\cot 35^{\\circ}\\)",
+      "\\(-\\cot 35^{\\circ}\\)"
     ],
     "a": 0,
     "answer": "0",

@@ -560,9 +560,9 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "question": "Mia found the radius of sector $OAB$ (area $\\dfrac{49\\pi}{8}$, arc length $\\dfrac{7\\pi}{4}$) using: $(1)\\ \\tfrac{1}{2}r^2\\theta = \\tfrac{49\\pi}{8}$, $(2)\\ r\\theta = \\tfrac{7\\pi}{4}$, $(3)\\ \\tfrac{1}{2}r = \\tfrac{7}{2}$. What operation did Mia perform on $(1)$ and $(2)$ to get $(3)$?",
     "opts": [
       "She divided equation \\((1)\\) by equation \\((2)\\).",
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x."
+      "She multiplied equation \\((1)\\) by equation \\((2)\\).",
+      "She divided equation \\((2)\\) by equation \\((1)\\).",
+      "She subtracted equation \\((2)\\) from equation \\((1)\\)."
     ],
     "a": 0,
     "answer": "0",
@@ -1456,9 +1456,9 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "question": "A discrete random variable $X$ has $P(X{=}1)=0.25$, $P(X{=}2)=0.4$, $P(X{=}3)=a$, $P(X{=}4)=b$, and mean $2.2$. Find two equations in $a$ and $b$.",
     "opts": [
       "a + b = 0.35\\) and \\(3a + 4b = 1.15",
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x."
+      "a + b = 0.65\\) and \\(3a + 4b = 1.15",
+      "a + b = 0.35\\) and \\(3a + 4b = 2.2",
+      "3a + 4b = 0.35\\) and \\(a + b = 1.15"
     ],
     "a": 0,
     "answer": "0",
@@ -1500,10 +1500,10 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "timeLimit": 120,
     "question": "Hence find the values of $a$ and $b$ (where $a + b = 0.35$ and $3a + 4b = 1.15$).",
     "opts": [
-      "a = 0.25\\) and \\(b = 0.10",
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x."
+      "\\(a = 0.25, b = 0.10\\)",
+      "\\(a = 0.20, b = 0.15\\)",
+      "\\(a = 0.15, b = 0.20\\)",
+      "\\(a = 0.10, b = 0.25\\)"
     ],
     "a": 0,
     "answer": "0",
@@ -1547,8 +1547,8 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "opts": [
       "\\(-\\dfrac{dy}{dx} = \\cos 3x - 3x\\sin 3x\\)",
       "\\(\\dfrac{dy}{dx} = \\cos 3x - 3x\\sin 3x\\)",
-      "\\(\\frac{1}{dx} = \\cos 3x - 3x\\sin 3x\\)",
-      "\\(\\frac{dx}{dy} = \\cos 3x - 3x\\sin 3x\\)"
+      "\\(\\dfrac{dy}{dx} = \\cos 3x - x\\sin 3x\\)",
+      "\\(\\dfrac{dy}{dx} = \\cos 3x + 3x\\sin 3x\\)"
     ],
     "a": 1,
     "answer": "1",
@@ -1681,9 +1681,9 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "question": "For a class of students, the English marks $x$ and Science marks $y$ have a strong upward linear trend. A calculator gives the correlation coefficient as approximately $0.9$. Describe the nature of the correlation.",
     "opts": [
       "A strong positive correlation.",
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x."
+      "A weak positive correlation.",
+      "A strong negative correlation.",
+      "No correlation (independent variables)."
     ],
     "a": 0,
     "answer": "0",
@@ -2304,8 +2304,8 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "question": "For the graph of $y = f(x)$ in Q33, for what values of $x$ in $0 < x < 8$ is the function NOT differentiable?",
     "opts": [
       "-x = 2\\) and \\(x = 3",
-      "The opposite of this statement is true.",
-      "This only holds for positive values of x.",
+      "x = 3\\) only",
+      "x = 0\\) and \\(x = 8",
       "x = 2\\) and \\(x = 3"
     ],
     "a": 3,
@@ -2439,9 +2439,9 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "question": "If $y = 2\\tan^2 x$, find the values of the constants $a$ and $b$ such that $\\dfrac{d^2y}{dx^2} = ay^2 + by + 4$.",
     "opts": [
       "a = 3\\) and \\(b = 8",
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x."
+      "a = 8\\) and \\(b = 3",
+      "a = 6\\) and \\(b = 8",
+      "a = 3\\) and \\(b = 4"
     ],
     "a": 0,
     "answer": "0",
@@ -2618,9 +2618,9 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "timeLimit": 120,
     "question": "A particle moves in a straight line with acceleration $a = 6t - 18$. Initially it is at rest at the origin $O$. Find expressions for the velocity $v$ and displacement $x$ in terms of $t$.",
     "opts": [
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x.",
+      "v = 3t^2 + 18t\\) and \\(x = t^3 + 9t^2",
+      "v = 6t - 18\\) and \\(x = 3t^2 - 18t",
+      "v = 3t^2 - 18t\\) and \\(x = t^3 - 18t^2",
       "v = 3t^2 - 18t\\) and \\(x = t^3 - 9t^2"
     ],
     "a": 3,
@@ -2664,9 +2664,9 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "question": "For the particle with $v = 3t^2 - 18t$ and $x = t^3 - 9t^2$, find when and where the particle is next at rest.",
     "opts": [
       "At \\(t = 6\\) s, at \\(x = -108\\) m (108 m to the left of \\(O\\))",
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x."
+      "At \\(t = 3\\) s, at \\(x = -27\\) m (27 m to the left of \\(O\\))",
+      "At \\(t = 6\\) s, at \\(x = 108\\) m (108 m to the right of \\(O\\))",
+      "At \\(t = 6\\) s, at \\(x = -18\\) m (18 m to the left of \\(O\\))"
     ],
     "a": 0,
     "answer": "0",

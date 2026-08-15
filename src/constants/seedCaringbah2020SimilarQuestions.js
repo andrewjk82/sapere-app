@@ -1242,8 +1242,8 @@ export const CARINGBAH_2020_SIMILAR_QUESTIONS = [
     "opts": [
       "\\(-\\dfrac{dy}{dx} = 2x\\cos 3x - 3x^2\\sin 3x\\)",
       "\\(\\dfrac{dy}{dx} = 2x\\cos 3x - 3x^2\\sin 3x\\)",
-      "\\(\\frac{1}{dx} = 2x\\cos 3x - 3x^2\\sin 3x\\)",
-      "\\(\\frac{dx}{dy} = 2x\\cos 3x - 3x^2\\sin 3x\\)"
+      "\\(\\dfrac{dy}{dx} = 2x\\cos 3x - x^2\\sin 3x\\)",
+      "\\(\\dfrac{dy}{dx} = 2x\\cos 3x + 3x^2\\sin 3x\\)"
     ],
     "a": 1,
     "answer": "1",
@@ -1332,8 +1332,8 @@ export const CARINGBAH_2020_SIMILAR_QUESTIONS = [
     "opts": [
       "\\(-\\dfrac{dy}{dx} = \\dfrac{(x+2)e^x}{(x+3)^2}\\)",
       "\\(\\dfrac{dy}{dx} = \\dfrac{(x+2)e^x}{(x+3)^2}\\)",
-      "\\(\\frac{1}{dx} = \\dfrac{(x+2)e^x}{(x+3)^2}\\)",
-      "\\(\\frac{dx}{dy} = \\dfrac{(x+2)e^x}{(x+3)^2}\\)"
+      "\\(\\dfrac{dy}{dx} = \\dfrac{(x+2)e^x}{x+3}\\)",
+      "\\(\\dfrac{dy}{dx} = \\dfrac{(x+4)e^x}{(x+3)^2}\\)"
     ],
     "a": 1,
     "answer": "1",
@@ -1600,15 +1600,15 @@ export const CARINGBAH_2020_SIMILAR_QUESTIONS = [
     "timeLimit": 120,
     "question": "(a) On the number plane, draw the graphs of $y = \\sin\\pi x$ and $y = 1 - |x|$ for $-3 \\leq x \\leq 3$.\n\n(b) Hence find the number of solutions of $\\sin\\pi x = 1 - |x|$ in the domain $(-\\infty, infty)$.",
     "opts": [
+      "(a) See sketches.\n\n(b) \\(4\\) solutions",
       "(a) See sketches.\n\n(b) \\(3\\) solutions",
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x."
+      "(a) See sketches.\n\n(b) \\(5\\) solutions",
+      "(a) See sketches.\n\n(b) \\(2\\) solutions"
     ],
     "a": 0,
     "answer": "0",
     "hint": "$y = \\sin\\pi x$ has period $2$. $y=1-|x|$ is a V-shape with vertex $(0,1)$. Count intersections.",
-    "solution": "The correct answer is (a) See sketches.\n\n(b) \\(3\\) solutions.",
+    "solution": "The correct answer is (a) See sketches.\n\n(b) \\(4\\) solutions.",
     "solutionSteps": [
       {
         "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Caringbah 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
@@ -1622,12 +1622,12 @@ export const CARINGBAH_2020_SIMILAR_QUESTIONS = [
       },
       {
         "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "(a) See sketches.\n\n(b) \\(3\\) solutions",
+        "workingOut": "(a) See sketches.\n\n(b) \\(4\\) solutions",
         "graphData": null
       },
       {
-        "explanation": "Final answer: (a) See sketches.\n\n(b) \\(3\\) solutions. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "(a) See sketches.\n\n(b) \\(3\\) solutions",
+        "explanation": "Final answer: (a) See sketches.\n\n(b) \\(4\\) solutions. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "(a) See sketches.\n\n(b) \\(4\\) solutions",
         "graphData": null
       }
     ],
