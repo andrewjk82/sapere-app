@@ -4997,10 +4997,10 @@
     "chapter": "8G",
     "topic_label": "Applications",
     "type": "multiple_choice",
-    "dna_id": "FIN-INTEREST-01",
+    "dna_id": "ALG-EXP-01",
     "candidate_id": null,
-    "dna_confidence": 0.85,
-    "classification_method": "topic_label",
+    "dna_confidence": 1,
+    "classification_method": "manual_review",
     "review_required": false
   },
   {
@@ -5045,10 +5045,10 @@
     "chapter": "8G",
     "topic_label": "Applications",
     "type": "multiple_choice",
-    "dna_id": "FIN-INTEREST-01",
+    "dna_id": "ALG-LOG-01",
     "candidate_id": null,
-    "dna_confidence": 0.85,
-    "classification_method": "topic_label",
+    "dna_confidence": 1,
+    "classification_method": "manual_review",
     "review_required": false
   },
   {

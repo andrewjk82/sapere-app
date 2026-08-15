@@ -523,7 +523,7 @@
     ]
   },
   "ALG-LOG-01": {
-    "count": 11,
+    "count": 12,
     "question_ids": [
       "car2020-q21",
       "baulko2020-q13di",
@@ -535,7 +535,8 @@
       "fortst2020-q12b",
       "fortst2020-q14a",
       "fortst2020-q14b",
-      "baulko2020-q13div"
+      "baulko2020-q13div",
+      "cra2023-q20"
     ]
   },
   "PROB-DIST-01": {
@@ -705,7 +706,7 @@
     ]
   },
   "ALG-EXP-01": {
-    "count": 15,
+    "count": 16,
     "question_ids": [
       "car2020-q37a",
       "bar2020-q16aii",
@@ -721,7 +722,8 @@
       "girr2020-mc6s",
       "girr2020-mc30s",
       "bar2020-q16aiiiv",
-      "baulko2020-q11dv"
+      "baulko2020-q11dv",
+      "cra2023-q18a"
     ]
   },
   "CALC-MOTION-01": {
@@ -845,7 +847,7 @@
     ]
   },
   "FIN-INTEREST-01": {
-    "count": 16,
+    "count": 14,
     "question_ids": [
       "asc2020-mc8",
       "bar2020-q17bi",
@@ -856,8 +858,6 @@
       "baulko2020-q16aiii",
       "bbhs2020-19a",
       "bbhs2020-19b",
-      "cra2023-q18a",
-      "cra2023-q20",
       "dane2020-q34b",
       "dane2020-q37",
       "asc2020-mc8v",
