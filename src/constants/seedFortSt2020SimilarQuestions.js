@@ -1209,9 +1209,9 @@ export const FORT_STREET_2020_SIMILAR_QUESTIONS = [
     "question": "A circle is given by $x^2 + y^2 - 6x + 8y = -9$. Find the centre and radius.",
     "opts": [
       "Centre \\((3, -4)\\), radius \\(4\\)",
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x."
+      "Centre \\((3, 4)\\), radius \\(4\\)",
+      "Centre \\((3, -4)\\), radius \\(16\\)",
+      "Centre \\((-3, 4)\\), radius \\(4\\)"
     ],
     "a": 0,
     "answer": "0",
@@ -1253,9 +1253,9 @@ export const FORT_STREET_2020_SIMILAR_QUESTIONS = [
     "timeLimit": 120,
     "question": "Let $f(x) = (x+3)(x-1)^3$. Find the $x$- and $y$-intercepts of $y = f(x)$.",
     "opts": [
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x.",
+      "\\(x\\)-intercepts \\((-3, 0)\\) and \\((1, 0)\\); \\(y\\)-intercept \\((0, 3)\\)",
+      "\\(x\\)-intercepts \\((-3, 0)\\) and \\((1, 0)\\); \\(y\\)-intercept \\((0, -1)\\)",
+      "\\(x\\)-intercept \\((1, 0)\\) only; \\(y\\)-intercept \\((0, -3)\\)",
       "x\\)-intercepts \\((-3, 0)\\) and \\((1, 0)\\); \\(y\\)-intercept \\((0, -3)"
     ],
     "a": 3,
@@ -1299,9 +1299,9 @@ export const FORT_STREET_2020_SIMILAR_QUESTIONS = [
     "question": "For $f(x) = (x+3)(x-1)^3$, show that $f'(x) = 4(x-1)^2(x+2)$ and $f''(x) = 12(x-1)(x+1)$.",
     "opts": [
       "f'(x) = 4(x-1)^2(x+2)\\) and \\(f''(x) = 12(x-1)(x+1)",
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x."
+      "f'(x) = 4(x-1)^2(x-2)\\) and \\(f''(x) = 12(x-1)(x+1)",
+      "f'(x) = 4(x-1)^2(x+2)\\) and \\(f''(x) = 12(x-1)(x-1)",
+      "f'(x) = (x-1)^2(x+2)\\) and \\(f''(x) = 12(x-1)(x+1)"
     ],
     "a": 0,
     "answer": "0",
@@ -1622,9 +1622,9 @@ export const FORT_STREET_2020_SIMILAR_QUESTIONS = [
     "question": "Assuming the jacaranda ($60$ cm at planting, growths $40, 40(0.8), dots$) maintains this pattern, explain why it will never reach a height of $3$ metres.",
     "opts": [
       "Limiting growth \\(200\\) cm, so maximum height \\(60 + 200 = 260\\) cm \\(< 300\\) cm.",
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x."
+      "The limiting growth is \\(160\\) cm, so the maximum height is \\(60 + 160 = 220\\) cm \\(< 300\\) cm.",
+      "The limiting growth is \\(200\\) cm, so the maximum height is \\(260\\) cm, which does exceed \\(300\\) cm.",
+      "Since the ratio \\(0.8 < 1\\) is close to \\(1\\), the growth will eventually exceed \\(3\\) metres."
     ],
     "a": 0,
     "answer": "0",
@@ -2102,9 +2102,9 @@ export const FORT_STREET_2020_SIMILAR_QUESTIONS = [
     "question": "The velocity–time graph of a particle ($0 \\le t \\le 8$) is a sine-shaped curve with a maximum at $t = 2$ and a minimum at $t = 6$. State the times at which the acceleration is zero.",
     "opts": [
       "t = 2\\) and \\(t = 6",
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x."
+      "t = 0\\) and \\(t = 8",
+      "t = 2\\) only",
+      "t = 4\\) only"
     ],
     "a": 0,
     "answer": "0",
@@ -2537,9 +2537,9 @@ export const FORT_STREET_2020_SIMILAR_QUESTIONS = [
     "question": "For $V = 4900\\left(1 - \\dfrac{t}{70}\\right)^2$ ($0 \\le t \\le 70$), at what time does the water drain at its fastest rate?",
     "opts": [
       "At \\(t = 0\\) (rate \\(140\\) L/min)",
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x."
+      "At \\(t = 35\\) (rate \\(70\\) L/min)",
+      "At \\(t = 70\\) (rate \\(0\\) L/min)",
+      "At \\(t = 0\\) (rate \\(4900\\) L/min)"
     ],
     "a": 0,
     "answer": "0",
@@ -2581,13 +2581,13 @@ export const FORT_STREET_2020_SIMILAR_QUESTIONS = [
     "timeLimit": 120,
     "question": "The average monthly temperature is $T = 8\\sin(nx + 1) + 15$. What are the maximum and minimum average monthly temperatures?",
     "opts": [
+      "Maximum \\(7°\\), minimum \\(23°\\)",
       "Maximum \\(23°\\), minimum \\(7°\\)",
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x."
+      "Maximum \\(8°\\), minimum \\(-8°\\)",
+      "Maximum \\(24°\\), minimum \\(6°\\)"
     ],
-    "a": 0,
-    "answer": "0",
+    "a": 1,
+    "answer": "1",
     "hint": "Use $\\sin = 1$ for the max and $\\sin = -1$ for the min.",
     "solution": "The correct answer is Maximum \\(23°\\), minimum \\(7°\\).",
     "solutionSteps": [
@@ -2671,13 +2671,13 @@ export const FORT_STREET_2020_SIMILAR_QUESTIONS = [
     "timeLimit": 120,
     "question": "For $T = 8\\sin\\!\\left(\\dfrac{\\pi}{6}x + 1\\right) + 15$ ($x =$ month), which month has the lowest average temperature?",
     "opts": [
+      "October (month \\(10\\))",
       "July (month \\(7\\))",
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x."
+      "January (month \\(1\\))",
+      "April (month \\(4\\))"
     ],
-    "a": 0,
-    "answer": "0",
+    "a": 1,
+    "answer": "1",
     "hint": "Minimum when the argument equals $\\frac{3\\pi}{2}$.",
     "solution": "The correct answer is July (month \\(7\\)).",
     "solutionSteps": [

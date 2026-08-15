@@ -1386,9 +1386,9 @@ export const Y11_CH6C_QUESTIONS = [
     "question": "By referring to the graph of the function \\(y = \\sin x\\) drawn in degrees, write down its domain, range, period, and amplitude.\nWhat is the domain of \\(y = \\sin x\\)?",
     "opts": [
       "All real x",
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x."
+      "\\(-1 \\le x \\le 1\\)",
+      "\\(0° \\le x \\le 360°\\)",
+      "\\(x \\neq 90°, 270°\\)"
     ],
     "a": 0,
     "answer": "0",
@@ -1643,9 +1643,9 @@ export const Y11_CH6C_QUESTIONS = [
     "question": "By referring to the graph of the function \\(y = \\cos x\\) drawn in degrees, write down its domain, range, period, and amplitude.\nWhat is the domain of \\(y = \\cos x\\)?",
     "opts": [
       "All real x",
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x."
+      "\\(-1 \\le x \\le 1\\)",
+      "\\(0° \\le x \\le 360°\\)",
+      "\\(x \\neq 90°, 270°\\)"
     ],
     "a": 0,
     "answer": "0",
@@ -1969,9 +1969,9 @@ export const Y11_CH6C_QUESTIONS = [
     "question": "By referring to the graph of the function \\(y = \\tan x\\), write down its domain, range, period, and the equations of its asymptotes for \\(-360^{\\circ} \\le x \\le 360^{\\circ}\\).\nWhat is the range of \\(y = \\tan x\\)?",
     "opts": [
       "All real y",
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x."
+      "\\(-1 \\le y \\le 1\\)",
+      "\\(y \\neq 0\\)",
+      "\\(y > 0\\)"
     ],
     "a": 0,
     "answer": "0",
@@ -2626,9 +2626,9 @@ export const Y11_CH6C_QUESTIONS = [
     "question": "By referring to the graph of the function \\(y = \\cot x\\), write down its domain, range, period, and the equations of its asymptotes for \\(-360^{\\circ} \\le x \\le 360^{\\circ}\\).\nWhat is the range of \\(y = \\cot x\\)?",
     "opts": [
       "All real y",
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x."
+      "\\(-1 \\le y \\le 1\\)",
+      "\\(y \\neq 0\\)",
+      "\\(y > 0\\)"
     ],
     "a": 0,
     "answer": "0",

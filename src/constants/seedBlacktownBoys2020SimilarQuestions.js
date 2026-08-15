@@ -768,8 +768,8 @@ export const BLACKTOWN_BOYS_2020_SIMILAR_QUESTIONS = [
     "opts": [
       "\\(-\\dfrac{dy}{dx} = \\sin^2\\!\\left(\\dfrac{x}{3}\\right)\\cos\\!\\left(\\dfrac{x}{3}\\right)\\)",
       "\\(\\dfrac{dy}{dx} = \\sin^2\\!\\left(\\dfrac{x}{3}\\right)\\cos\\!\\left(\\dfrac{x}{3}\\right)\\)",
-      "\\(\\frac{1}{dx} = \\sin^2\\!\\left(\\dfrac{x}{3}\\right)\\cos\\!\\left(\\dfrac{x}{3}\\right)\\)",
-      "\\(\\frac{dx}{dy} = \\sin^2\\!\\left(\\dfrac{x}{3}\\right)\\cos\\!\\left(\\dfrac{x}{3}\\right)\\)"
+      "\\(\\dfrac{dy}{dx} = 3\\sin^2\\!\\left(\\dfrac{x}{3}\\right)\\cos\\!\\left(\\dfrac{x}{3}\\right)\\)",
+      "\\(\\dfrac{dy}{dx} = \\cos^2\\!\\left(\\dfrac{x}{3}\\right)\\sin\\!\\left(\\dfrac{x}{3}\\right)\\)"
     ],
     "a": 1,
     "answer": "1",
@@ -813,8 +813,8 @@ export const BLACKTOWN_BOYS_2020_SIMILAR_QUESTIONS = [
     "opts": [
       "\\(-\\dfrac{dy}{dx} = \\dfrac{2xe^{2x} - 3e^{2x} - 3}{(x-1)^2}\\)",
       "\\(\\dfrac{dy}{dx} = \\dfrac{2xe^{2x} - 3e^{2x} - 3}{(x-1)^2}\\)",
-      "\\(\\frac{1}{dx} = \\dfrac{2xe^{2x} - 3e^{2x} - 3}{(x-1)^2}\\)",
-      "\\(\\frac{dx}{dy} = \\dfrac{2xe^{2x} - 3e^{2x} - 3}{(x-1)^2}\\)"
+      "\\(\\dfrac{dy}{dx} = \\dfrac{2xe^{2x} - 3e^{2x} - 3}{x-1}\\)",
+      "\\(\\dfrac{dy}{dx} = \\dfrac{2xe^{2x} - 3e^{2x} + 3}{(x-1)^2}\\)"
     ],
     "a": 1,
     "answer": "1",
@@ -1082,8 +1082,8 @@ export const BLACKTOWN_BOYS_2020_SIMILAR_QUESTIONS = [
     "question": "Show that $\\dfrac{d}{dx}(e^{3x}\\sin x) = e^{3x}(3\\sin x + \\cos x)$.",
     "opts": [
       "-By the product rule: \\(\\frac{d}{dx}(e^{3x}\\sin x) = 3e^{3x}\\sin x + e^{3x}\\cos x = e^{3x}(3\\sin x + \\cos x)\\).",
-      "By the product rule: \\(\\frac{1}{dx}(e^{3x}\\sin x) = 3e^{3x}\\sin x + e^{3x}\\cos x = e^{3x}(3\\sin x + \\cos x)\\).",
-      "By the product rule: \\(\\frac{dx}{d}(e^{3x}\\sin x) = 3e^{3x}\\sin x + e^{3x}\\cos x = e^{3x}(3\\sin x + \\cos x)\\).",
+      "By the product rule: \\(\\dfrac{d}{dx}(e^{3x}\\sin x) = e^{3x}\\sin x + e^{3x}\\cos x = e^{3x}(\\sin x + \\cos x)\\).",
+      "By the product rule: \\(\\dfrac{d}{dx}(e^{3x}\\sin x) = 3e^{3x}\\sin x - e^{3x}\\cos x = e^{3x}(3\\sin x - \\cos x)\\).",
       "By the product rule: \\(\\frac{d}{dx}(e^{3x}\\sin x) = 3e^{3x}\\sin x + e^{3x}\\cos x = e^{3x}(3\\sin x + \\cos x)\\)."
     ],
     "a": 3,
@@ -1126,9 +1126,9 @@ export const BLACKTOWN_BOYS_2020_SIMILAR_QUESTIONS = [
     "timeLimit": 120,
     "question": "Hence find the equation of the tangent to the curve $y = e^{3x}\\sin x$ at the point where $x = 0$.",
     "opts": [
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x.",
+      "y = 3x\\), or equivalently \\(3x - y = 0",
+      "y = x + 1\\), or equivalently \\(x - y + 1 = 0",
+      "y = -x\\), or equivalently \\(x + y = 0",
       "y = x\\), or equivalently \\(x - y = 0"
     ],
     "a": 3,
@@ -1532,9 +1532,9 @@ export const BLACKTOWN_BOYS_2020_SIMILAR_QUESTIONS = [
     "question": "A scatterplot of daily study hours ($x$) vs exam score ($y$) for 8 students shows a clear upward linear trend with $R^2 = 0.9901$. Use the scatterplot to describe the association between exam score and study hours in terms of strength and direction.",
     "opts": [
       "Strong, positive, linear association.",
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x."
+      "Weak, positive, linear association.",
+      "Strong, negative, linear association.",
+      "Strong, positive, non-linear association."
     ],
     "a": 0,
     "answer": "0",
@@ -1667,9 +1667,9 @@ export const BLACKTOWN_BOYS_2020_SIMILAR_QUESTIONS = [
     "question": "Explain why you should not use this regression line to predict the exam score for a student who studied for 20 hours.",
     "opts": [
       "The data only covers the range of approximately 1 to 5 hours. Extrapolating to 20 hours assumes the linear relationship continues far beyond the observed range, which is unreliable — there are likely diminishing returns and a score cannot exceed 100.",
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x."
+      "Extrapolation is always valid as long as \\(R^2\\) is high, since a strong correlation guarantees the trend continues indefinitely.",
+      "The regression line cannot be extended because \\(R^2\\) only applies within the range \\(0\\) to \\(1\\).",
+      "Because the association is linear, the exam score must keep increasing at the same rate no matter how many hours are studied."
     ],
     "a": 0,
     "answer": "0",
@@ -2240,9 +2240,9 @@ export const BLACKTOWN_BOYS_2020_SIMILAR_QUESTIONS = [
     "question": "For the sunflower garden (first row 30, common difference 5), which row would be the first to contain more than 200 sunflowers?",
     "opts": [
       "The 36th row.",
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x."
+      "The 35th row.",
+      "The 34th row.",
+      "The 37th row."
     ],
     "a": 0,
     "answer": "0",

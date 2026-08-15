@@ -1085,9 +1085,9 @@ export const Y11_CH6G_QUESTIONS = [
     "question": "Solve \\(\\cos \\alpha = 2.5\\) for \\(0^{\\circ} \\le \\alpha \\le 360^{\\circ}\\). If no solution exists, write 'no solution'.",
     "opts": [
       "no solution",
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x."
+      "\\(\\alpha = 60°\\) and \\(\\alpha = 300°\\)",
+      "\\(\\alpha = 180°\\)",
+      "Infinitely many solutions"
     ],
     "a": 0,
     "answer": "0",

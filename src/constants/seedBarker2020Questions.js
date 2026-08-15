@@ -1931,9 +1931,9 @@ export const BARKER_2020_QUESTIONS = [
     "question": "A scatterplot of study hours ($H$) vs test score ($T$) for 8 students shows a strong upward trend. The correlation coefficient is calculated as $r = 0.91$. Comment on the strength and direction of the correlation.",
     "opts": [
       "Strong positive correlation",
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x."
+      "Weak positive correlation",
+      "Strong negative correlation",
+      "Moderate positive correlation"
     ],
     "a": 0,
     "answer": "0",
@@ -4022,9 +4022,9 @@ export const BARKER_2020_QUESTIONS = [
     "question": "Let $f(x) = e^x + 2$ and $g(x) = \\ln x$. Find $f(g(x))$, its domain, and its range.",
     "opts": [
       "f(g(x)) = x + 2\\); domain: \\(x > 0\\); range: \\(y > 2",
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x."
+      "f(g(x)) = x + 2\\); domain: \\(x > -2\\); range: \\(y > 0",
+      "f(g(x)) = \\ln(x) + 2\\); domain: \\(x > 0\\); range: \\(y \\in \\mathbb{R}",
+      "f(g(x)) = x + 2\\); domain: \\(x \\in \\mathbb{R}\\); range: \\(y > 2"
     ],
     "a": 0,
     "answer": "0",

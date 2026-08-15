@@ -546,8 +546,8 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     "opts": [
       "\\(-\\dfrac{dy}{dx} = \\sin^{-1}(3x) + \\dfrac{3x}{\\sqrt{1 - 9x^2}}\\)",
       "\\(\\dfrac{dy}{dx} = \\sin^{-1}(3x) + \\dfrac{3x}{\\sqrt{1 - 9x^2}}\\)",
-      "\\(\\frac{1}{dx} = \\sin^{-1}(3x) + \\dfrac{3x}{\\sqrt{1 - 9x^2}}\\)",
-      "\\(\\frac{dx}{dy} = \\sin^{-1}(3x) + \\dfrac{3x}{\\sqrt{1 - 9x^2}}\\)"
+      "\\(\\dfrac{dy}{dx} = \\sin^{-1}(3x) + \\dfrac{x}{\\sqrt{1 - 9x^2}}\\)",
+      "\\(\\dfrac{dy}{dx} = \\sin^{-1}(3x) - \\dfrac{3x}{\\sqrt{1 - 9x^2}}\\)"
     ],
     "a": 1,
     "answer": "1",

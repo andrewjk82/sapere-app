@@ -1233,9 +1233,9 @@ export const FORT_STREET_2020_QUESTIONS = [
     "timeLimit": 120,
     "question": "Let $f(x) = (x+2)(x-2)^3$. Find the $x$- and $y$-intercepts of $y = f(x)$.",
     "opts": [
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x.",
+      "\\(x\\)-intercepts \\((-2, 0)\\) and \\((2, 0)\\); \\(y\\)-intercept \\((0, 16)\\)",
+      "\\(x\\)-intercepts \\((-2, 0)\\) and \\((2, 0)\\); \\(y\\)-intercept \\((0, -8)\\)",
+      "\\(x\\)-intercept \\((2, 0)\\) only; \\(y\\)-intercept \\((0, -16)\\)",
       "x\\)-intercepts \\((-2, 0)\\) and \\((2, 0)\\); \\(y\\)-intercept \\((0, -16)"
     ],
     "a": 3,
@@ -1279,9 +1279,9 @@ export const FORT_STREET_2020_QUESTIONS = [
     "question": "For $f(x) = (x+2)(x-2)^3$, show that $f'(x) = 4(x-2)^2(x+1)$ and $f''(x) = 12x(x-2)$.",
     "opts": [
       "f'(x) = 4(x-2)^2(x+1)\\) and \\(f''(x) = 12x(x-2)",
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x."
+      "f'(x) = 4(x-2)^2(x-1)\\) and \\(f''(x) = 12x(x-2)",
+      "f'(x) = 4(x-2)^2(x+1)\\) and \\(f''(x) = 12x(x+2)",
+      "f'(x) = (x-2)^2(x+1)\\) and \\(f''(x) = 12x(x-2)"
     ],
     "a": 0,
     "answer": "0",
@@ -1602,9 +1602,9 @@ export const FORT_STREET_2020_QUESTIONS = [
     "question": "Assuming the silky oak ($80$ cm at planting, growths $50, 50(0.9), dots$) maintains this growth pattern, explain why the tree will never reach a height of $6$ metres.",
     "opts": [
       "The limiting growth is \\(500\\) cm, so the maximum height is \\(80 + 500 = 580\\) cm \\(< 600\\) cm.",
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x."
+      "The limiting growth is \\(450\\) cm, so the maximum height is \\(80 + 450 = 530\\) cm \\(< 600\\) cm.",
+      "The limiting growth is \\(500\\) cm, so the maximum height is \\(580\\) cm, which does exceed \\(600\\) cm.",
+      "Since the ratio \\(0.9 < 1\\), the growth is unbounded and the tree will eventually exceed \\(6\\) metres."
     ],
     "a": 0,
     "answer": "0",
@@ -2087,9 +2087,9 @@ export const FORT_STREET_2020_QUESTIONS = [
     "question": "The diagram shows the velocity–time graph for a particle ($0 \\le t \\le 8$). State the times at which the acceleration is zero.",
     "opts": [
       "t = 3\\) and \\(t = 7",
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x."
+      "t = 0\\) and \\(t = 8",
+      "t = 3\\) only",
+      "t = 5\\) only"
     ],
     "a": 0,
     "answer": "0",
@@ -2517,9 +2517,9 @@ export const FORT_STREET_2020_QUESTIONS = [
     "question": "For $V = 3600\\left(1 - \\dfrac{t}{60}\\right)^2$ ($0 \\le t \\le 60$), at what time does the model predict the water drains at its fastest rate?",
     "opts": [
       "At \\(t = 0\\) (rate \\(120\\) L/min)",
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x."
+      "At \\(t = 30\\) (rate \\(60\\) L/min)",
+      "At \\(t = 60\\) (rate \\(0\\) L/min)",
+      "At \\(t = 0\\) (rate \\(3600\\) L/min)"
     ],
     "a": 0,
     "answer": "0",
@@ -2561,13 +2561,13 @@ export const FORT_STREET_2020_QUESTIONS = [
     "timeLimit": 120,
     "question": "The average monthly temperature is $T = 7\\sin(nx + 1.5) + 13$. According to the model, what are the maximum and minimum average monthly temperatures?",
     "opts": [
+      "Maximum \\(6°\\), minimum \\(20°\\)",
       "Maximum \\(20°\\), minimum \\(6°\\)",
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x."
+      "Maximum \\(7°\\), minimum \\(-7°\\)",
+      "Maximum \\(21°\\), minimum \\(5°\\)"
     ],
-    "a": 0,
-    "answer": "0",
+    "a": 1,
+    "answer": "1",
     "hint": "Since $-1 \\le \\sin(\\cdot) \\le 1$, the maximum uses $\\sin = 1$ and the minimum uses $\\sin = -1$.",
     "solution": "The correct answer is Maximum \\(20°\\), minimum \\(6°\\).",
     "solutionSteps": [
@@ -2651,13 +2651,13 @@ export const FORT_STREET_2020_QUESTIONS = [
     "timeLimit": 120,
     "question": "For $T = 7\\sin\\!\\left(\\dfrac{\\pi}{6}x + 1.5\\right) + 13$ ($x =$ month number), which month has the lowest average monthly temperature?",
     "opts": [
+      "September (month \\(9\\))",
       "June (month \\(6\\))",
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x."
+      "December (month \\(12\\))",
+      "March (month \\(3\\))"
     ],
-    "a": 0,
-    "answer": "0",
+    "a": 1,
+    "answer": "1",
     "hint": "The minimum occurs when $\\sin = -1$, i.e. when the argument equals $\\frac{3\\pi}{2}$.",
     "solution": "The correct answer is June (month \\(6\\)).",
     "solutionSteps": [

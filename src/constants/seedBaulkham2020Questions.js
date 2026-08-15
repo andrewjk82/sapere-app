@@ -3244,9 +3244,9 @@ export const BAULKHAM_2020_QUESTIONS = [
     "question": "For $v = 5(1+e^{-t})$, is the particle ever stationary? Justify your answer.",
     "opts": [
       "No. \\(v=0\\) requires \\(e^{-t}=-1\\), which has no real solution since \\(e^{-t}>0\\) always.",
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x."
+      "Yes, at \\(t = 0\\) the particle is momentarily at rest.",
+      "Yes, as \\(t \\to \\infty\\), \\(v \\to 0\\), so the particle eventually stops.",
+      "No, because \\(v = 5(1+e^{-t})\\) is always negative."
     ],
     "a": 0,
     "answer": "0",

@@ -1887,10 +1887,10 @@ export const Y11_CH6E_QUESTIONS = [
     "timeLimit": 60,
     "question": "Suppose that \\(\\sin \\theta = -\\frac{\\sqrt{5}}{3}\\). Find the possible values of \\(\\tan \\theta\\).",
     "opts": [
-      "\\\\(\\\\sqrt{5}/2 or -\\\\sqrt{5}/2\\\\)",
-      "\\\\(The opposite of this statement is true.\\\\)",
-      "\\\\(This is true only when the function is linear.\\\\)",
-      "\\\\(This only holds for positive values of x.\\\\)"
+      "\\(\\pm \\frac{\\sqrt{5}}{2}\\)",
+      "\\(\\pm \\frac{2}{\\sqrt{5}}\\)",
+      "\\(\\pm \\frac{\\sqrt{5}}{3}\\)",
+      "\\(\\pm \\frac{2}{3}\\)"
     ],
     "a": 0,
     "answer": "0",
@@ -1927,10 +1927,10 @@ export const Y11_CH6E_QUESTIONS = [
     "timeLimit": 60,
     "question": "Suppose that \\(\\cos \\theta = -\\frac{1}{3}\\). Find the possible values of \\(\\sin \\theta\\).",
     "opts": [
-      "\\\\(\\\\sqrt{8}/3 or -\\\\sqrt{8}/3\\\\)",
-      "\\\\(The opposite of this statement is true.\\\\)",
-      "\\\\(This is true only when the function is linear.\\\\)",
-      "\\\\(This only holds for positive values of x.\\\\)"
+      "\\(\\pm \\frac{2\\sqrt{2}}{3}\\)",
+      "\\(\\pm \\frac{1}{3}\\)",
+      "\\(\\pm \\frac{\\sqrt{2}}{3}\\)",
+      "\\(\\pm \\frac{2}{3}\\)"
     ],
     "a": 0,
     "answer": "0",
@@ -1967,10 +1967,10 @@ export const Y11_CH6E_QUESTIONS = [
     "timeLimit": 60,
     "question": "Suppose that \\(\\cos \\theta = -\\frac{1}{3}\\). Find the possible values of \\(\\tan \\theta\\).",
     "opts": [
-      "\\\\(\\\\sqrt{8} or -\\\\sqrt{8}\\\\)",
-      "\\\\(The opposite of this statement is true.\\\\)",
-      "\\\\(This is true only when the function is linear.\\\\)",
-      "\\\\(This only holds for positive values of x.\\\\)"
+      "\\(\\pm 2\\sqrt{2}\\)",
+      "\\(\\pm \\frac{1}{2\\sqrt{2}}\\)",
+      "\\(\\pm \\frac{2\\sqrt{2}}{3}\\)",
+      "\\(\\pm \\frac{1}{3}\\)"
     ],
     "a": 0,
     "answer": "0",
@@ -2475,10 +2475,10 @@ export const Y11_CH6E_QUESTIONS = [
     "timeLimit": 90,
     "question": "Find the possible values of \\(\\tan \\theta\\), given that \\(\\cos \\theta = -\\frac{3}{4}\\).",
     "opts": [
-      "\\\\(\\\\sqrt{7}/3 or -\\\\sqrt{7}/3\\\\)",
-      "\\\\(The opposite of this statement is true.\\\\)",
-      "\\\\(This is true only when the function is linear.\\\\)",
-      "\\\\(This only holds for positive values of x.\\\\)"
+      "\\(\\pm \\frac{\\sqrt{7}}{3}\\)",
+      "\\(\\pm \\frac{3}{\\sqrt{7}}\\)",
+      "\\(\\frac{\\sqrt{7}}{3}\\)",
+      "\\(-\\frac{\\sqrt{7}}{3}\\)"
     ],
     "a": 0,
     "answer": "0",
@@ -2555,10 +2555,10 @@ export const Y11_CH6E_QUESTIONS = [
     "timeLimit": 90,
     "question": "Find the possible values of \\(\\cos \\theta\\), given that \\(\\tan \\theta = -\\frac{3}{\\sqrt{2}}\\).",
     "opts": [
-      "\\\\(\\\\sqrt{2}/\\\\sqrt{11} or -\\\\sqrt{2}/\\\\sqrt{11}\\\\)",
-      "\\\\(The opposite of this statement is true.\\\\)",
-      "\\\\(This is true only when the function is linear.\\\\)",
-      "\\\\(This only holds for positive values of x.\\\\)"
+      "\\(\\pm \\frac{\\sqrt{2}}{\\sqrt{11}}\\)",
+      "\\(\\pm \\frac{3}{\\sqrt{11}}\\)",
+      "\\(\\frac{\\sqrt{2}}{\\sqrt{11}}\\)",
+      "\\(-\\frac{\\sqrt{2}}{\\sqrt{11}}\\)"
     ],
     "a": 0,
     "answer": "0",
@@ -2943,10 +2943,10 @@ export const Y11_CH6E_QUESTIONS = [
     "timeLimit": 90,
     "question": "Find the possible values of \\(\\sec \\theta\\), given that \\(\\sin \\theta = \\frac{1}{\\sqrt{3}}\\).",
     "opts": [
-      "\\\\(\\\\sqrt{3}/\\\\sqrt{2} or -\\\\sqrt{3}/\\\\sqrt{2}\\\\)",
-      "\\\\(The opposite of this statement is true.\\\\)",
-      "\\\\(This is true only when the function is linear.\\\\)",
-      "\\\\(This only holds for positive values of x.\\\\)"
+      "\\(\\pm \\frac{\\sqrt{3}}{\\sqrt{2}}\\)",
+      "\\(\\pm \\frac{\\sqrt{2}}{\\sqrt{3}}\\)",
+      "\\(\\frac{\\sqrt{3}}{\\sqrt{2}}\\)",
+      "\\(-\\frac{\\sqrt{3}}{\\sqrt{2}}\\)"
     ],
     "a": 0,
     "answer": "0",
@@ -3023,10 +3023,10 @@ export const Y11_CH6E_QUESTIONS = [
     "timeLimit": 90,
     "question": "If \\(\\sec C = -\\frac{\\sqrt{5}}{\\sqrt{2}}\\), find the possible values of \\(\\text{cot } C\\).",
     "opts": [
-      "\\\\(\\\\sqrt{2}/\\\\sqrt{3} or -\\\\sqrt{2}/\\\\sqrt{3}\\\\)",
-      "\\\\(The opposite of this statement is true.\\\\)",
-      "\\\\(This is true only when the function is linear.\\\\)",
-      "\\\\(This only holds for positive values of x.\\\\)"
+      "\\(\\pm \\frac{\\sqrt{2}}{\\sqrt{3}}\\)",
+      "\\(\\pm \\frac{\\sqrt{3}}{\\sqrt{2}}\\)",
+      "\\(\\frac{\\sqrt{2}}{\\sqrt{3}}\\)",
+      "\\(-\\frac{\\sqrt{2}}{\\sqrt{3}}\\)"
     ],
     "a": 0,
     "answer": "0",
@@ -3647,10 +3647,10 @@ export const Y11_CH6E_QUESTIONS = [
     "timeLimit": 120,
     "question": "If \\(\\tan \\alpha = m\\), where \\(m > 0\\), find the possible values of \\(\\sin \\alpha\\) in terms of \\(m\\). (Express as 'value or -value')",
     "opts": [
-      "\\\\(m/\\\\sqrt{1+m^2} or -m/\\\\sqrt{1+m^2}\\\\)",
-      "\\\\(The opposite of this statement is true.\\\\)",
-      "\\\\(This is true only when the function is linear.\\\\)",
-      "\\\\(This only holds for positive values of x.\\\\)"
+      "\\(\\pm \\frac{m}{\\sqrt{m^2 + 1}}\\)",
+      "\\(\\pm \\frac{1}{\\sqrt{m^2 + 1}}\\)",
+      "\\(\\frac{m}{\\sqrt{m^2 + 1}}\\)",
+      "\\(-\\frac{m}{\\sqrt{m^2 + 1}}\\)"
     ],
     "a": 0,
     "answer": "0",
@@ -3687,10 +3687,10 @@ export const Y11_CH6E_QUESTIONS = [
     "timeLimit": 120,
     "question": "If \\(\\tan \\alpha = m\\), where \\(m > 0\\), find the possible values of \\(\\sec \\alpha\\) in terms of \\(m\\).",
     "opts": [
-      "\\\\(\\\\sqrt{1+m^2} or -\\\\sqrt{1+m^2}\\\\)",
-      "\\\\(The opposite of this statement is true.\\\\)",
-      "\\\\(This is true only when the function is linear.\\\\)",
-      "\\\\(This only holds for positive values of x.\\\\)"
+      "\\(\\pm \\sqrt{m^2 + 1}\\)",
+      "\\(\\pm \\frac{1}{\\sqrt{m^2 + 1}}\\)",
+      "\\(\\sqrt{m^2 + 1}\\)",
+      "\\(-\\sqrt{m^2 + 1}\\)"
     ],
     "a": 0,
     "answer": "0",
