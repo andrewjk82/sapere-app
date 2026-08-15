@@ -56,7 +56,7 @@
     ]
   },
   "CALC-DIFF-01": {
-    "count": 75,
+    "count": 74,
     "question_ids": [
       "car2020-mc3",
       "car2020-mc9",
@@ -119,7 +119,6 @@
       "girr2020-mc20s",
       "girr2020-mc22s",
       "girr2020-mc26as",
-      "abb2020-q11eiv",
       "abb2020-q15aiv",
       "asc2020-q13v",
       "asc2020-q14v",
@@ -215,7 +214,7 @@
     ]
   },
   "CALC-TAN-01": {
-    "count": 13,
+    "count": 14,
     "question_ids": [
       "car2020-mc8",
       "asc2020-mc2",
@@ -229,7 +228,8 @@
       "girr2020-mc8",
       "girr2020-mc8s",
       "asc2020-mc2v",
-      "fortst2020-q8"
+      "fortst2020-q8",
+      "abb2020-q11eiv"
     ]
   },
   "SERIES-01": {
