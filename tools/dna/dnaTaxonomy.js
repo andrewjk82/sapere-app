@@ -32,6 +32,80 @@ export const QUESTION_DNA = [
   {
     dna_id: 'CALC-DIFF-01', family: 'CALCULUS', skill: 'Direct differentiation',
     operations: ['identify_rule', 'differentiate', 'simplify'], priorityScore: 93, // C2
+    // Reasoning-blueprint warmup (Sapere_Question_DNA_v2.0 §3-4, 3rd DNA,
+    // 2026-08-15). DNA-generic only — true for every CALC-DIFF-01 question
+    // regardless of the specific function being differentiated. The core
+    // failure mode here is rule misidentification (reaching for product
+    // rule on a composition, or chain rule on a product), so the warmup
+    // targets that recognition step before any real numbers appear.
+    reasoningBlueprint: [
+      {
+        step_id: 'W1',
+        objective: 'Recognise when a function is a PRODUCT of two separate functions (needs the product rule).',
+        required_skill: 'CALC-DIFF-01.1',
+        axis: 'recognition',
+        interaction_type: 'select',
+        options: [
+          { id: 'a', label: '$f(x) = x^2 \\sin(x)$ — two different functions of $x$ multiplied together' },
+          { id: 'b', label: '$f(x) = (3x+1)^5$ — one function raised to a power' },
+          { id: 'c', label: '$f(x) = \\sin(x^2)$ — one function nested inside another' },
+        ],
+        expected_response: 'a',
+        common_errors: [
+          { id: 'b', error_type: 'CALC-DIFF-01.E1_composition_confused_with_product' },
+          { id: 'c', error_type: 'CALC-DIFF-01.E1_composition_confused_with_product' },
+        ],
+        hints: [
+          'A product has two genuinely separate function pieces multiplied side by side, like $x^2$ and $\\sin(x)$.',
+          '$(3x+1)^5$ and $\\sin(x^2)$ are each a single function built by feeding one expression into another — that\'s composition, not a product.',
+        ],
+        explanation:
+          '$x^2\\sin(x)$ is two distinct functions ($x^2$ and $\\sin(x)$) multiplied together — that structure needs the product rule, $\\frac{d}{dx}[uv] = u\'v+uv\'$.',
+      },
+      {
+        step_id: 'W2',
+        objective: 'Recognise when a function is a COMPOSITION (needs the chain rule).',
+        required_skill: 'CALC-DIFF-01.2',
+        axis: 'recognition',
+        interaction_type: 'select',
+        options: [
+          { id: 'a', label: '$f(x) = (3x+1)^5$ — an "outer" power applied to an "inner" expression $3x+1$' },
+          { id: 'b', label: '$f(x) = x^2 \\sin(x)$ — two functions multiplied' },
+          { id: 'c', label: '$f(x) = \\dfrac{x^2}{\\sin(x)}$ — one function divided by another' },
+        ],
+        expected_response: 'a',
+        common_errors: [{ id: 'b', error_type: 'CALC-DIFF-01.E1_composition_confused_with_product' }],
+        hints: [
+          'A composition has one "outer" operation (like "raise to the power 5") wrapped around a whole "inner" expression.',
+          'If you could substitute $u = $ (inner expression) and rewrite $f$ purely in terms of $u$, it\'s a composition — needs the chain rule.',
+        ],
+        explanation:
+          '$(3x+1)^5$ is "raise-to-the-5th" wrapped around the inner expression $3x+1$ — substituting $u=3x+1$ gives $f=u^5$, the signature of a composition needing the chain rule, $\\frac{d}{dx}f(u) = f\'(u)\\cdot u\'$.',
+      },
+      {
+        step_id: 'W3',
+        objective: 'Recall the correct quotient rule formula for $f(x) = \\dfrac{u}{v}$.',
+        required_skill: 'CALC-DIFF-01.3',
+        axis: 'strategy_selection',
+        interaction_type: 'select',
+        options: [
+          { id: 'a', label: '$\\dfrac{u\'v - uv\'}{v^2}$' },
+          { id: 'b', label: '$\\dfrac{uv\' - u\'v}{v^2}$' },
+          { id: 'c', label: '$\\dfrac{u\'v + uv\'}{v^2}$' },
+        ],
+        expected_response: 'a',
+        common_errors: [
+          { id: 'b', error_type: 'CALC-DIFF-01.E2_quotient_rule_order_swap' },
+          { id: 'c', error_type: 'CALC-DIFF-01.E3_quotient_rule_sign_error' },
+        ],
+        hints: [
+          'The numerator subtracts, it doesn\'t add — quotient rule is not just product rule with a $v^2$ underneath.',
+          'The order matters: it\'s ($u$-derivative first)$\\times v$ minus $u \\times$($v$-derivative), not the other way around.',
+        ],
+        explanation:
+          'For $f = \\dfrac{u}{v}$, the derivative is $\\dfrac{u\'v-uv\'}{v^2}$ — get the subtraction order right (it changes the sign of the whole answer) and remember the $v^2$ denominator.',
+      },
+    ],
   },
   {
     dna_id: 'CALC-TAN-01', family: 'CALCULUS', skill: 'Tangent / normal',
