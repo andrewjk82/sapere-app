@@ -16,6 +16,7 @@ import {
   Timer,
   Clock,
   Shuffle,
+  ListChecks,
 } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useAuth } from '../context/AuthContext';
@@ -125,6 +126,9 @@ const Sidebar = ({ activeTab, setActiveTab, isLocked, onShowLeaderboard, onShowN
         )}
         {isAdmin && (
           <SidebarItem icon={Shuffle} label="DNA Warmup" active={activeTab === 'DnaWarmupReview'} onClick={() => setActiveTab('DnaWarmupReview')} disabled={isLocked} />
+        )}
+        {isAdmin && (
+          <SidebarItem icon={ListChecks} label="Question Pre-Steps" active={activeTab === 'QuestionPreStepsReview'} onClick={() => setActiveTab('QuestionPreStepsReview')} disabled={isLocked} />
         )}
         <SidebarItem icon={BookOpen} label="Curriculum" active={activeTab === 'Curriculum'} onClick={() => setActiveTab('Curriculum')} disabled={isLocked} />
         <SidebarItem icon={BookMarked} label="Library" active={activeTab === 'Library'} onClick={() => setActiveTab('Library')} disabled={isLocked} />
