@@ -114,6 +114,76 @@ export const QUESTION_DNA = [
   {
     dna_id: 'CALC-STAT-01', family: 'CALCULUS', skill: 'Stationary points & curve analysis',
     operations: ['differentiate', 'find_stationary_point', 'classify', 'sketch_or_describe'], priorityScore: 93, // C2
+    // Reasoning-blueprint warmup (Sapere_Question_DNA_v2.0 §3-4, 5th DNA,
+    // 2026-08-15). DNA-generic only — true for every CALC-STAT-01
+    // question regardless of the specific function. The core failure
+    // modes here are: (1) confusing "stationary point" (f'(x)=0) with
+    // "x-intercept" (f(x)=0) — a very common mix-up since both involve
+    // "setting something to zero", and (2) misreading the second
+    // derivative test's sign convention, and not knowing what to do when
+    // it's inconclusive (f''=0).
+    reasoningBlueprint: [
+      {
+        step_id: 'W1',
+        objective: 'Recognise that a stationary point requires the DERIVATIVE to be zero, not the function itself.',
+        required_skill: 'CALC-STAT-01.1',
+        axis: 'recognition',
+        interaction_type: 'select',
+        options: [
+          { id: 'a', label: 'Solve $f\'(x)=0$ — the gradient is zero at a stationary point' },
+          { id: 'b', label: 'Solve $f(x)=0$ — the curve crosses the $x$-axis' },
+          { id: 'c', label: 'Solve $f(0)$ — evaluate the function at $x=0$' },
+        ],
+        expected_response: 'a',
+        common_errors: [{ id: 'b', error_type: 'CALC-STAT-01.E1_stationary_vs_intercept_confusion' }],
+        hints: [
+          'A stationary point is where the curve is momentarily flat — that\'s a statement about the GRADIENT, not the height of the curve.',
+          'Setting $f(x)=0$ finds where the curve crosses the $x$-axis, a completely different question from where it has a turning point.',
+        ],
+        explanation:
+          'A stationary point occurs where the gradient is zero, i.e. $f\'(x)=0$ — not where the function value itself is zero.',
+      },
+      {
+        step_id: 'W2',
+        objective: 'Recall the second derivative test\'s sign convention for classifying a stationary point.',
+        required_skill: 'CALC-STAT-01.2',
+        axis: 'strategy_selection',
+        interaction_type: 'select',
+        options: [
+          { id: 'a', label: '$f\'\'(x)>0 \\Rightarrow$ local minimum; $f\'\'(x)<0 \\Rightarrow$ local maximum' },
+          { id: 'b', label: '$f\'\'(x)>0 \\Rightarrow$ local maximum; $f\'\'(x)<0 \\Rightarrow$ local minimum' },
+          { id: 'c', label: 'The sign of $f\'\'(x)$ doesn\'t affect the classification' },
+        ],
+        expected_response: 'a',
+        common_errors: [{ id: 'b', error_type: 'CALC-STAT-01.E2_concavity_sign_reversed' }],
+        hints: [
+          'Think of a smile-shaped curve (concave up, like $y=x^2$ near its minimum) — it curves upward, matching a POSITIVE second derivative and a MINIMUM.',
+          'A frown-shaped curve (concave down) curves downward, matching a NEGATIVE second derivative and a MAXIMUM.',
+        ],
+        explanation:
+          '$f\'\'(x)>0$ means the curve is concave up (like a smile) at that point — a local minimum. $f\'\'(x)<0$ means concave down (a frown) — a local maximum.',
+      },
+      {
+        step_id: 'W3',
+        objective: 'Know what to do when the second derivative test is inconclusive ($f\'\'(x)=0$).',
+        required_skill: 'CALC-STAT-01.3',
+        axis: 'strategy_selection',
+        interaction_type: 'select',
+        options: [
+          { id: 'a', label: 'Test the sign of $f\'(x)$ just before and just after the point (a sign diagram) to classify it directly' },
+          { id: 'b', label: 'Conclude the point must be a horizontal point of inflection with no further checking' },
+          { id: 'c', label: 'Conclude the point is definitely neither a maximum nor minimum' },
+        ],
+        expected_response: 'a',
+        common_errors: [{ id: 'b', error_type: 'CALC-STAT-01.E3_assumed_inflection_without_checking' }],
+        hints: [
+          '$f\'\'(x)=0$ only means the second derivative test CAN\'T decide — it does not automatically mean "point of inflection". $y=x^4$ at $x=0$ has $f\'\'(0)=0$ but is still a minimum.',
+          'When the second derivative test is inconclusive, fall back to checking the sign of $f\'(x)$ on either side of the point.',
+        ],
+        explanation:
+          'When $f\'\'(x)=0$, the second derivative test gives no information — you must go back to checking the sign of $f\'(x)$ immediately either side of the point to correctly classify it.',
+      },
+    ],
   },
   {
     dna_id: 'CALC-OPT-01', family: 'CALCULUS', skill: 'Optimisation',
