@@ -15,6 +15,7 @@ import { gradeQuestion } from '../../utils/answerMatching';
 import { prepareShuffledMcOptions, gradeMcSelection, resolveCorrectOptionText } from '../../utils/mcOptionShuffle';
 import { parseSolutionSteps } from '../../utils/solutionSteps';
 import { MATH_SYMBOLS } from '../../utils/challengeUtils';
+import DnaReasoningWarmup from './DnaReasoningWarmup';
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────
 
@@ -313,7 +314,13 @@ const HscTypePracticeSession = ({ type, profile, initialStats, onBack, dnaLabels
   const viewportW = useViewportWidth();
   const isWide = viewportW >= 980;
 
-  const [stage, setStage] = useState('loading'); // loading | quiz | result | review
+  // DNA reasoning-blueprint warmup (Sapere_Question_DNA_v2.0 §3-6, pilot
+  // FIN-GP-01) — only present when HscTypePractice passed a DNA doc with a
+  // reasoningBlueprint through as `type.reasoningBlueprint`. Question fetch
+  // is deferred until it's done, see the load effect below.
+  const hasWarmup = !!(type.dnaFocus && type.reasoningBlueprint?.length);
+  const [stage, setStage] = useState(hasWarmup ? 'warmup' : 'loading'); // warmup | loading | quiz | result | review
+  const [warmupDone, setWarmupDone] = useState(!hasWarmup);
   // Mastery queue: correct → removed, wrong → sent to back
   const [queue, setQueue] = useState([]); // remaining questions to master
   const [totalQuestions, setTotalQuestions] = useState(0); // fixed total for progress
@@ -333,6 +340,8 @@ const HscTypePracticeSession = ({ type, profile, initialStats, onBack, dnaLabels
 
   // ── Load questions for this type (or DNA focus) ────────────────────────────
   useEffect(() => {
+    if (!warmupDone) return; // wait for the reasoning-blueprint warmup to finish first
+    setStage('loading');
     let cancelled = false;
     (async () => {
       try {
@@ -371,7 +380,7 @@ const HscTypePracticeSession = ({ type, profile, initialStats, onBack, dnaLabels
       }
     })();
     return () => { cancelled = true; };
-  }, [type.slug, type.dnaFocus]);
+  }, [type.slug, type.dnaFocus, warmupDone]);
 
   const q = queue[0]; // always the front of the queue
   const isMC = q && q.options?.length > 0 && q.type !== 'short_answer';
@@ -510,6 +519,17 @@ const HscTypePracticeSession = ({ type, profile, initialStats, onBack, dnaLabels
     setQueue(prev => shuffleArray([...prev]).map(shuffleOptions));
     setTimeout(() => setStage('quiz'), 50);
   }, []);
+
+  // ── Render warmup ──────────────────────────────────────────────────────────
+  if (stage === 'warmup') {
+    return (
+      <DnaReasoningWarmup
+        dnaId={type.slug}
+        blueprint={type.reasoningBlueprint}
+        onDone={() => setWarmupDone(true)}
+      />
+    );
+  }
 
   // ── Render loading ─────────────────────────────────────────────────────────
   if (stage === 'loading') {

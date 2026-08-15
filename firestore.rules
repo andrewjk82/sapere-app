@@ -230,6 +230,15 @@ service cloud.firestore {
         allow read, write: if isAdmin() || (isSignedIn() && request.auth.uid == userId);
       }
 
+      // DNA reasoning-blueprint warmup step evidence (Sapere_Question_DNA_v2.0
+      // §10) — one doc per warmup-step attempt, created client-side.
+      match /dna_step_evidence/{docId} {
+        allow read: if isAdmin() || (isSignedIn() && request.auth.uid == userId);
+        allow create: if isAdmin()
+          || (isSignedIn() && request.auth.uid == userId && request.resource.data.student_id == userId);
+        allow update, delete: if isAdmin();
+      }
+
       match /notifications/{notifId} {
         allow read, write: if isAdmin() || (isSignedIn() && request.auth.uid == userId);
         allow create: if isSignedIn()

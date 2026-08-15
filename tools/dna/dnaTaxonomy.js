@@ -168,6 +168,73 @@ export const QUESTION_DNA = [
   {
     dna_id: 'FIN-GP-01', family: 'SEQUENCES_FINANCIAL', skill: 'Financial geometric-series modelling',
     operations: ['identify_geometric_structure', 'model_deposits_or_withdrawals', 'sum_gp', 'interpret'], priorityScore: 82, // M1
+    // Reasoning-blueprint warmup (Sapere_Question_DNA_v2.0 §3-4, pilot 2026-08-15).
+    // DNA-generic only — true for every FIN-GP-01 question regardless of its
+    // specific numbers, so it can run BEFORE the student sees the real
+    // question and hand off into the existing (already-verified) per-question
+    // grading in HscTypePracticeSession unchanged. Do not add a step here that
+    // depends on a specific question's numbers/answer key.
+    reasoningBlueprint: [
+      {
+        step_id: 'W1',
+        objective: 'Recognise the geometric-series structure.',
+        required_skill: 'FIN-GP-01.1',
+        interaction_type: 'select',
+        options: [
+          { id: 'a', label: 'A fixed dollar amount is added or removed each period (arithmetic)' },
+          { id: 'b', label: 'A fixed percentage or ratio is applied each period (geometric)' },
+        ],
+        expected_response: 'b',
+        common_errors: [{ id: 'a', error_type: 'FIN-GP-01.E1_arithmetic_confusion' }],
+        hints: [
+          'Look at whether the change each period is a flat dollar amount, or a percentage/multiplier of the previous amount.',
+          'Interest, growth and depreciation problems multiply by a ratio each period — that makes it geometric, not arithmetic.',
+        ],
+        explanation:
+          'Interest-based financial series change by a fixed ratio each period, not a fixed amount — that makes them geometric series.',
+      },
+      {
+        step_id: 'W2',
+        objective: 'Select the formula family this problem needs.',
+        required_skill: 'FIN-GP-01.2',
+        interaction_type: 'select',
+        options: [
+          { id: 'a', label: '$T_n = ar^{n-1}$ — the value of one single term' },
+          { id: 'b', label: '$S_n = \\dfrac{a(r^n-1)}{r-1}$ — the sum of all terms so far' },
+          { id: 'c', label: '$S_\\infty = \\dfrac{a}{1-r}$ — the limiting sum as $n \\to \\infty$' },
+        ],
+        expected_response: 'b',
+        common_errors: [
+          { id: 'a', error_type: 'FIN-GP-01.E2_single_term_confusion' },
+          { id: 'c', error_type: 'FIN-GP-01.E3_limiting_sum_confusion' },
+        ],
+        hints: [
+          'The question asks for a total accumulated (or run-down) balance, not the size of one single deposit/withdrawal.',
+          'A running financial balance is the sum of every term up to that point — not one term, and not an infinite sum (the number of periods is finite).',
+        ],
+        explanation:
+          'A balance built from regular deposits/withdrawals is the sum of a finite GP, $S_n = \\dfrac{a(r^n-1)}{r-1}$ — not a single term and not the limiting sum.',
+      },
+      {
+        step_id: 'W3',
+        objective: 'Identify what $a$ and $r$ represent in a financial GP.',
+        required_skill: 'FIN-GP-01.3',
+        interaction_type: 'select',
+        options: [
+          { id: 'a', label: '$a$ = the interest rate, $r$ = the first deposit' },
+          { id: 'b', label: '$a$ = the first term (first deposit/withdrawal), $r$ = the growth factor per period (e.g. $1+\\text{rate}$)' },
+          { id: 'c', label: '$a$ = the total number of periods, $r$ = the final balance' },
+        ],
+        expected_response: 'b',
+        common_errors: [{ id: 'a', error_type: 'FIN-GP-01.E4_ar_swap' }],
+        hints: [
+          'In $S_n = \\dfrac{a(r^n-1)}{r-1}$, $a$ is always the value of the first term in the series.',
+          'The common ratio $r$ is the per-period growth factor — for growth this is usually $1 + \\text{periodic rate}$.',
+        ],
+        explanation:
+          '$a$ is the first deposit/withdrawal amount and $r$ is the per-period growth factor (commonly $1+\\text{rate}$ for growth, $1-\\text{rate}$ for decline) — substitute the question\'s actual numbers next.',
+      },
+    ],
   },
   {
     dna_id: 'FIN-INTEREST-01', family: 'SEQUENCES_FINANCIAL', skill: 'Interest / loan / annuity modelling',

@@ -329,7 +329,7 @@ const HscTypePractice = ({ profile }) => {
       {/* Focus for you — DNA-level personal priority */}
       <FocusBanner
         items={focusDna}
-        onSelect={(d) => setActiveType({ slug: d.dnaId, label: d.skill, dnaFocus: true })}
+        onSelect={(d) => setActiveType({ slug: d.dnaId, label: d.skill, dnaFocus: true, reasoningBlueprint: d.reasoningBlueprint })}
       />
 
       {/* Filter pills */}
