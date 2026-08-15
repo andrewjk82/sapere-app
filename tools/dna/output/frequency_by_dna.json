@@ -56,7 +56,7 @@
     ]
   },
   "CALC-DIFF-01": {
-    "count": 74,
+    "count": 72,
     "question_ids": [
       "car2020-mc3",
       "car2020-mc9",
@@ -119,7 +119,6 @@
       "girr2020-mc20s",
       "girr2020-mc22s",
       "girr2020-mc26as",
-      "abb2020-q15aiv",
       "asc2020-q13v",
       "asc2020-q14v",
       "asc2020-q20v",
@@ -128,7 +127,6 @@
       "bar2020-q11aav",
       "bar2020-q11abv",
       "bar2020-q11biv",
-      "bar2020-q12av",
       "baulko2020-mc2v",
       "baulko2020-q11aiv",
       "baulko2020-q11aiiv"
@@ -323,7 +321,7 @@
     ]
   },
   "CALC-AREA-01": {
-    "count": 35,
+    "count": 36,
     "question_ids": [
       "car2020-q13",
       "car2020-q15",
@@ -359,7 +357,8 @@
       "bar2020-mc6v",
       "bar2020-q14ciiv",
       "baulko2020-mc6v",
-      "baulko2020-mc8v"
+      "baulko2020-mc8v",
+      "abb2020-q15aiv"
     ]
   },
   "TRIG-EQ-01": {
@@ -446,7 +445,7 @@
     ]
   },
   "CALC-INT-01": {
-    "count": 68,
+    "count": 69,
     "question_ids": [
       "car2020-q19",
       "car2020-q28",
@@ -515,7 +514,8 @@
       "baulko2020-q14aiiv",
       "baulko2020-q16ciiiiv",
       "bar2020-q12a",
-      "dane2020-mc10"
+      "dane2020-mc10",
+      "bar2020-q12av"
     ]
   },
   "ALG-LOG-01": {

@@ -7877,10 +7877,10 @@
     "chapter": "4H",
     "topic_label": "Differentiation of exponential functions",
     "type": "teacher_review",
-    "dna_id": "CALC-DIFF-01",
+    "dna_id": "CALC-AREA-01",
     "candidate_id": null,
-    "dna_confidence": 0.85,
-    "classification_method": "inherited_from_base:abb2020-q15ai",
+    "dna_confidence": 1,
+    "classification_method": "manual_review",
     "review_required": false
   },
   {
@@ -8525,10 +8525,10 @@
     "chapter": "5K",
     "topic_label": "Calculus with other bases",
     "type": "multiple_choice",
-    "dna_id": "CALC-DIFF-01",
+    "dna_id": "CALC-INT-01",
     "candidate_id": null,
-    "dna_confidence": 0.85,
-    "classification_method": "inherited_from_base:bar2020-q12a",
+    "dna_confidence": 1,
+    "classification_method": "manual_review",
     "review_required": false
   },
   {
