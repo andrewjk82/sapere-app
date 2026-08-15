@@ -15,6 +15,10 @@
 const computeRegistry = {
   multiply: ({ a, b }) => a * b,
   divide: ({ a, b }) => a / b,
+  // One recurrence step: previous value × growth factor, minus a fixed
+  // amount removed each period (e.g. population growth with harvesting/
+  // poaching, or an annuity with a withdrawal) — a*r - c.
+  growth_minus: ({ a, r, c }) => a * r - c,
 };
 
 function parseNumeric(value) {
