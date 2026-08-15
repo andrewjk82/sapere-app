@@ -1,10 +1,17 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { doc, getDoc, collection, getDocs, query, where } from 'firebase/firestore';
+import { doc, getDoc, collection, getDocs } from 'firebase/firestore';
 import { db } from '../../firebase/config';
-import { BookOpen, ChevronRight, Trophy, Zap, Clock, Target } from 'lucide-react';
+import { ChevronRight, Trophy, Target, Compass } from 'lucide-react';
 import HscTypePracticeSession from './HscTypePracticeSession';
+
+// Simple, modern card system for this page — Outfit for titles (matches the
+// app's --font-heading token), Inter for body, purple accent kept consistent
+// with the rest of Sapere1. Every card (Focus / Warmup / Type) shares the
+// same shape: white surface, thin border, a small coloured accent, title,
+// one line of meta. No separate visual language per section.
+const HEADING = "'Outfit', sans-serif";
 
 // ─── Question DNA — "Focus for you" ────────────────────────────────────────
 // personal_priority = 0.55 * hsc priority + 0.45 * (100 - student mastery).
@@ -12,10 +19,10 @@ import HscTypePracticeSession from './HscTypePracticeSession';
 // — see tools/dna/dnaTaxonomy.js and the master-prompt ingestion pipeline
 // this data was classified with (tools/dna/output/).
 const priorityLabel = (score) => {
-  if (score >= 90) return { text: 'CRITICAL', color: '#dc2626', bg: '#fef2f2' };
-  if (score >= 80) return { text: 'HIGH', color: '#c2410c', bg: '#fff7ed' };
-  if (score >= 65) return { text: 'MEDIUM', color: '#a16207', bg: '#fefce8' };
-  return { text: 'MAINTAIN', color: '#64748b', bg: '#f8fafc' };
+  if (score >= 90) return { text: 'Critical', color: '#dc2626' };
+  if (score >= 80) return { text: 'High', color: '#c2410c' };
+  if (score >= 65) return { text: 'Medium', color: '#a16207' };
+  return { text: 'Maintain', color: '#64748b' };
 };
 
 const computeFocusDna = (dnaList, dnaStats) => {
@@ -35,12 +42,39 @@ const computeFocusDna = (dnaList, dnaStats) => {
 // 0%: white, 1–39%: lightest, 40–69%: light, 70–89%: medium, 90–100%: full
 function accuracyStyle(pct) {
   if (pct === null || pct === undefined) return { bg: '#ffffff', border: '#e2e8f0', label: null };
-  if (pct >= 90) return { bg: '#bbf7d0', border: '#86efac', label: '#14532d' };
-  if (pct >= 70) return { bg: '#d1fae5', border: '#6ee7b7', label: '#166534' };
-  if (pct >= 40) return { bg: '#ecfdf5', border: '#a7f3d0', label: '#16a34a' };
-  if (pct > 0)   return { bg: '#f0fdf4', border: '#bbf7d0', label: '#22c55e' };
+  if (pct >= 90) return { bg: '#f0fdf4', border: '#86efac', label: '#15803d' };
+  if (pct >= 70) return { bg: '#f0fdf4', border: '#a7f3d0', label: '#16a34a' };
+  if (pct >= 40) return { bg: '#ffffff', border: '#a7f3d0', label: '#22c55e' };
+  if (pct > 0)   return { bg: '#ffffff', border: '#bbf7d0', label: '#4ade80' };
   return { bg: '#ffffff', border: '#e2e8f0', label: null };
 }
+
+// ─── Section label — plain, consistent heading for each of the three tiers ──
+const SectionLabel = ({ icon, title, caption }) => (
+  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '12px' }}>
+    {icon}
+    <span style={{ fontFamily: HEADING, fontWeight: 600, fontSize: '0.95rem', color: '#1e1b4b' }}>{title}</span>
+    <span style={{ fontSize: '0.78rem', color: '#94a3b8' }}>{caption}</span>
+  </div>
+);
+
+// ─── Small spotlight card — shared shape for Focus + Warmup items ──────────
+const SpotlightCard = ({ accent, eyebrow, title, meta, onClick }) => (
+  <motion.button
+    whileHover={{ y: -2, borderColor: accent }}
+    onClick={onClick}
+    style={{
+      display: 'flex', flexDirection: 'column', gap: '6px', alignItems: 'flex-start',
+      padding: '14px 16px', borderRadius: '14px', border: '1px solid #e2e8f0', borderLeft: `3px solid ${accent}`,
+      background: '#fff', cursor: 'pointer', textAlign: 'left', minWidth: '190px', flex: '1 1 220px',
+      transition: 'border-color 0.15s',
+    }}
+  >
+    {eyebrow}
+    <span style={{ fontFamily: HEADING, fontWeight: 600, fontSize: '0.92rem', color: '#1e1b4b', lineHeight: 1.3 }}>{title}</span>
+    {meta}
+  </motion.button>
+);
 
 // ─── Single type card ─────────────────────────────────────────────────────────
 const TypeCard = ({ type, stats, onClick }) => {
@@ -50,75 +84,46 @@ const TypeCard = ({ type, stats, onClick }) => {
 
   return (
     <motion.div
-      whileHover={{ y: -3, boxShadow: '0 12px 32px rgba(79,70,229,0.13)' }}
+      whileHover={{ y: -3, boxShadow: '0 10px 28px rgba(30,27,75,0.08)' }}
       whileTap={{ scale: 0.98 }}
       onClick={onClick}
       style={{
         background: bg,
-        border: `1.5px solid ${border}`,
-        borderRadius: '20px',
+        border: `1px solid ${border}`,
+        borderRadius: '16px',
         padding: '20px',
         cursor: 'pointer',
         display: 'flex',
         flexDirection: 'column',
-        gap: '12px',
-        transition: 'background 0.3s, border 0.3s',
-        position: 'relative',
-        overflow: 'hidden',
+        gap: '10px',
+        transition: 'background 0.2s, border 0.2s',
       }}
     >
-      {/* accuracy fill bar at bottom */}
-      {attempted && (
-        <div style={{
-          position: 'absolute', bottom: 0, left: 0,
-          width: `${pct}%`, height: '4px',
-          background: pct >= 90 ? '#22c55e' : pct >= 70 ? '#4ade80' : pct >= 40 ? '#86efac' : '#bbf7d0',
-          borderRadius: '0 0 0 20px',
-          transition: 'width 0.4s ease',
-        }} />
-      )}
-
-      <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: '8px' }}>
-        <div style={{ flex: 1 }}>
-          <div style={{ fontWeight: 900, fontSize: '0.95rem', color: '#1e1b4b', lineHeight: 1.3, marginBottom: '4px' }}>
-            {type.label}
-          </div>
-          <div style={{ fontSize: '0.75rem', color: '#64748b', fontWeight: 600, lineHeight: 1.4 }}>
-            {type.description}
-          </div>
-        </div>
-        <div style={{
-          width: '32px', height: '32px', borderRadius: '10px',
-          background: attempted ? (pct >= 70 ? '#dcfce7' : '#e0e7ff') : '#f1f5f9',
-          display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0,
-        }}>
-          {attempted && pct >= 70
-            ? <Trophy size={16} color="#16a34a" />
-            : <BookOpen size={16} color={attempted ? '#6366f1' : '#94a3b8'} />}
-        </div>
+      <div style={{ fontFamily: HEADING, fontWeight: 600, fontSize: '1rem', color: '#1e1b4b', lineHeight: 1.3 }}>
+        {type.label}
       </div>
 
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-        <div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
-          <span style={{ fontSize: '0.72rem', fontWeight: 800, color: '#94a3b8', background: '#f1f5f9', padding: '3px 8px', borderRadius: '6px' }}>
-            {type.count} Q
-          </span>
+      <div style={{ fontSize: '0.8rem', color: '#64748b', lineHeight: 1.55, flex: 1 }}>
+        {type.description}
+      </div>
+
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', paddingTop: '4px' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+          <span style={{ fontSize: '0.75rem', color: '#94a3b8', fontWeight: 500 }}>{type.count} questions</span>
           {type.examLevel && type.examLevel !== 'Both' && (
-            <span style={{ fontSize: '0.7rem', fontWeight: 800, color: '#7c3aed', background: '#f5f3ff', padding: '3px 8px', borderRadius: '6px' }}>
+            <span style={{ fontSize: '0.68rem', fontWeight: 600, color: '#7c3aed', background: '#f5f3ff', padding: '2px 8px', borderRadius: '6px' }}>
               {type.examLevel}
             </span>
           )}
         </div>
 
-        <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
           {attempted ? (
-            <span style={{ fontSize: '0.88rem', fontWeight: 900, color: label || '#64748b' }}>
-              {pct}%
-            </span>
+            <span style={{ fontSize: '0.85rem', fontWeight: 700, color: label || '#64748b' }}>{pct}%</span>
           ) : (
-            <span style={{ fontSize: '0.72rem', fontWeight: 700, color: '#94a3b8' }}>Not started</span>
+            <span style={{ fontSize: '0.75rem', fontWeight: 500, color: '#cbd5e1' }}>Not started</span>
           )}
-          <ChevronRight size={14} color="#94a3b8" />
+          <ChevronRight size={14} color="#cbd5e1" />
         </div>
       </div>
     </motion.div>
@@ -129,83 +134,56 @@ const TypeCard = ({ type, stats, onClick }) => {
 // you" which only surfaces the top-3 by personal_priority (a low-priority
 // DNA like FIN-GP-01 can have a blueprint but never rank into that top 3).
 // See DnaReasoningWarmup.jsx / dnaTaxonomy.js reasoningBlueprint.
-const ReasoningWarmupBanner = ({ items, onSelect }) => {
+const ReasoningWarmupSection = ({ items, onSelect }) => {
   if (!items.length) return null;
   return (
-    <div style={{
-      background: 'linear-gradient(135deg, #f5f3ff, #eef2ff)', border: '1.5px solid #e0e7ff',
-      borderRadius: '20px', padding: '18px 20px', display: 'flex', flexDirection: 'column', gap: '12px',
-    }}>
-      <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-        <BookOpen size={16} color="#4f46e5" />
-        <span style={{ fontWeight: 900, color: '#312e81', fontSize: '0.85rem' }}>Reasoning warmups</span>
-        <span style={{ fontSize: '0.72rem', fontWeight: 600, color: '#4338ca' }}>
-          — a quick reasoning check before you dive into the real questions
-        </span>
-      </div>
+    <div>
+      <SectionLabel
+        icon={<Compass size={16} color="#6366f1" />}
+        title="Reasoning warmups"
+        caption="a quick check before the real questions"
+      />
       <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
         {items.map(d => (
-          <motion.button
+          <SpotlightCard
             key={d.dnaId}
-            whileHover={{ y: -2 }}
+            accent="#6366f1"
+            title={d.skill}
             onClick={() => onSelect(d)}
-            style={{
-              display: 'flex', flexDirection: 'column', gap: '6px', alignItems: 'flex-start',
-              padding: '12px 16px', borderRadius: '16px', border: '1.5px solid #e0e7ff',
-              background: '#fff', cursor: 'pointer', textAlign: 'left', minWidth: '180px', flex: '1 1 200px',
-            }}
-          >
-            <span style={{ fontWeight: 800, fontSize: '0.85rem', color: '#1e1b4b', lineHeight: 1.3 }}>{d.skill}</span>
-            <span style={{ fontSize: '0.7rem', fontWeight: 700, color: '#6366f1' }}>{d.reasoningBlueprint.length} warmup steps</span>
-          </motion.button>
+            meta={<span style={{ fontSize: '0.72rem', color: '#94a3b8' }}>{d.reasoningBlueprint.length} steps</span>}
+          />
         ))}
       </div>
     </div>
   );
 };
 
-// ─── "Focus for you" banner ────────────────────────────────────────────────
-const FocusBanner = ({ items, onSelect }) => {
+// ─── "Focus for you" section ────────────────────────────────────────────────
+const FocusSection = ({ items, onSelect }) => {
   if (!items.length) return null;
   return (
-    <div style={{
-      background: 'linear-gradient(135deg, #fff7ed, #fef2f2)', border: '1.5px solid #fed7aa',
-      borderRadius: '20px', padding: '18px 20px', display: 'flex', flexDirection: 'column', gap: '12px',
-    }}>
-      <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-        <Target size={16} color="#c2410c" />
-        <span style={{ fontWeight: 900, color: '#7c2d12', fontSize: '0.85rem' }}>Focus for you</span>
-        <span style={{ fontSize: '0.72rem', fontWeight: 600, color: '#9a3412' }}>
-          — highest HSC value where you have the biggest gap
-        </span>
-      </div>
+    <div>
+      <SectionLabel
+        icon={<Target size={16} color="#dc2626" />}
+        title="Focus for you"
+        caption="highest HSC value where you have the biggest gap"
+      />
       <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
         {items.map(d => {
           const badge = priorityLabel(d.priorityScore);
           return (
-            <motion.button
+            <SpotlightCard
               key={d.dnaId}
-              whileHover={{ y: -2 }}
+              accent={badge.color}
+              title={d.skill}
               onClick={() => onSelect(d)}
-              style={{
-                display: 'flex', flexDirection: 'column', gap: '6px', alignItems: 'flex-start',
-                padding: '12px 16px', borderRadius: '16px', border: '1.5px solid #fed7aa',
-                background: '#fff', cursor: 'pointer', textAlign: 'left', minWidth: '180px', flex: '1 1 200px',
-              }}
-            >
-              <div style={{ display: 'flex', alignItems: 'center', gap: '6px', width: '100%', justifyContent: 'space-between' }}>
-                <span style={{ fontSize: '0.65rem', fontWeight: 900, color: badge.color, background: badge.bg, padding: '2px 8px', borderRadius: '999px' }}>
-                  {badge.text}
+              eyebrow={<span style={{ fontSize: '0.68rem', fontWeight: 600, color: badge.color }}>{badge.text}</span>}
+              meta={
+                <span style={{ fontSize: '0.72rem', color: '#94a3b8' }}>
+                  {d.attempted ? `${Math.round(d.mastery)}% mastered` : 'Not started'}
                 </span>
-                {!d.attempted && (
-                  <span style={{ fontSize: '0.62rem', fontWeight: 700, color: '#94a3b8' }}>Not started</span>
-                )}
-              </div>
-              <span style={{ fontWeight: 800, fontSize: '0.85rem', color: '#1e1b4b', lineHeight: 1.3 }}>{d.skill}</span>
-              {d.attempted && (
-                <span style={{ fontSize: '0.7rem', fontWeight: 700, color: '#64748b' }}>{Math.round(d.mastery)}% mastered</span>
-              )}
-            </motion.button>
+              }
+            />
           );
         })}
       </div>
@@ -335,45 +313,48 @@ const HscTypePractice = ({ profile }) => {
   return (
     <>
     {sessionPortal}
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '28px' }}>
 
       {/* Header */}
       <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', flexWrap: 'wrap', gap: '12px' }}>
         <div>
-          <div style={{ fontSize: '0.72rem', fontWeight: 900, color: '#7c3aed', letterSpacing: '0.12em', textTransform: 'uppercase', marginBottom: '4px' }}>
+          <div style={{ fontSize: '0.75rem', fontWeight: 600, color: '#7c3aed', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: '6px' }}>
             HSC Past Paper Practice
           </div>
-          <h2 style={{ margin: 0, fontSize: '1.6rem', fontWeight: 900, color: '#1e1b4b' }}>
+          <h2 style={{ margin: 0, fontFamily: HEADING, fontSize: '1.7rem', fontWeight: 700, color: '#1e1b4b' }}>
             Practice by Type
           </h2>
-          <div style={{ fontSize: '0.82rem', color: '#64748b', fontWeight: 600, marginTop: '4px' }}>
+          <div style={{ fontSize: '0.85rem', color: '#64748b', marginTop: '6px' }}>
             Questions from real HSC trial papers, grouped by technique
           </div>
         </div>
 
         {/* Progress summary */}
         {types.length > 0 && (
-          <div style={{ display: 'flex', gap: '12px' }}>
-            <div style={{ padding: '10px 16px', borderRadius: '14px', background: '#f5f3ff', border: '1px solid #e0e7ff', textAlign: 'center' }}>
-              <div style={{ fontSize: '1.3rem', fontWeight: 900, color: '#7c3aed' }}>{totalAttempted}</div>
-              <div style={{ fontSize: '0.68rem', fontWeight: 800, color: '#9ca3af', textTransform: 'uppercase' }}>Started</div>
+          <div style={{ display: 'flex', gap: '10px' }}>
+            <div style={{ padding: '10px 18px', borderRadius: '14px', background: '#fff', border: '1px solid #e2e8f0', textAlign: 'center' }}>
+              <div style={{ fontFamily: HEADING, fontSize: '1.25rem', fontWeight: 700, color: '#1e1b4b' }}>{totalAttempted}</div>
+              <div style={{ fontSize: '0.68rem', fontWeight: 600, color: '#94a3b8' }}>Started</div>
             </div>
-            <div style={{ padding: '10px 16px', borderRadius: '14px', background: '#f0fdf4', border: '1px solid #bbf7d0', textAlign: 'center' }}>
-              <div style={{ fontSize: '1.3rem', fontWeight: 900, color: '#16a34a' }}>{totalMastered}</div>
-              <div style={{ fontSize: '0.68rem', fontWeight: 800, color: '#9ca3af', textTransform: 'uppercase' }}>Mastered</div>
+            <div style={{ padding: '10px 18px', borderRadius: '14px', background: '#fff', border: '1px solid #e2e8f0', textAlign: 'center', display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <Trophy size={16} color="#16a34a" />
+              <div>
+                <div style={{ fontFamily: HEADING, fontSize: '1.25rem', fontWeight: 700, color: '#1e1b4b', lineHeight: 1.1 }}>{totalMastered}</div>
+                <div style={{ fontSize: '0.68rem', fontWeight: 600, color: '#94a3b8' }}>Mastered</div>
+              </div>
             </div>
           </div>
         )}
       </div>
 
       {/* Focus for you — DNA-level personal priority */}
-      <FocusBanner
+      <FocusSection
         items={focusDna}
         onSelect={(d) => setActiveType({ slug: d.dnaId, label: d.skill, dnaFocus: true, reasoningBlueprint: d.reasoningBlueprint })}
       />
 
       {/* Reasoning warmups — always visible, regardless of Focus ranking */}
-      <ReasoningWarmupBanner
+      <ReasoningWarmupSection
         items={warmupDna}
         onSelect={(d) => setActiveType({ slug: d.dnaId, label: d.skill, dnaFocus: true, reasoningBlueprint: d.reasoningBlueprint })}
       />
@@ -385,9 +366,10 @@ const HscTypePractice = ({ profile }) => {
             key={level}
             onClick={() => setFilterLevel(level)}
             style={{
-              padding: '7px 16px', borderRadius: '999px', border: 'none', cursor: 'pointer',
-              fontWeight: 800, fontSize: '0.8rem',
-              background: filterLevel === level ? '#7c3aed' : '#f1f5f9',
+              padding: '7px 16px', borderRadius: '10px', border: '1px solid', cursor: 'pointer',
+              fontWeight: 600, fontSize: '0.8rem',
+              borderColor: filterLevel === level ? '#7c3aed' : '#e2e8f0',
+              background: filterLevel === level ? '#7c3aed' : '#fff',
               color: filterLevel === level ? '#fff' : '#64748b',
               transition: 'all 0.15s',
             }}
@@ -401,11 +383,11 @@ const HscTypePractice = ({ profile }) => {
       {loading ? (
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '16px' }}>
           {Array.from({ length: 6 }).map((_, i) => (
-            <div key={i} style={{ height: '130px', borderRadius: '20px', background: '#f1f5f9', animation: 'pulse 1.5s infinite' }} />
+            <div key={i} style={{ height: '130px', borderRadius: '16px', background: '#f1f5f9', animation: 'pulse 1.5s infinite' }} />
           ))}
         </div>
       ) : filteredTypes.length === 0 ? (
-        <div style={{ padding: '48px', textAlign: 'center', color: '#94a3b8', fontWeight: 700 }}>
+        <div style={{ padding: '48px', textAlign: 'center', color: '#94a3b8', fontWeight: 600 }}>
           No question types found. Run the import script first.
         </div>
       ) : (
