@@ -1229,8 +1229,8 @@ export const CARINGBAH_2020_QUESTIONS = [
     "opts": [
       "\\(-\\dfrac{dy}{dx} = 2x\\cos 2x + \\sin 2x\\)",
       "\\(\\dfrac{dy}{dx} = 2x\\cos 2x + \\sin 2x\\)",
-      "\\(\\frac{1}{dx} = 2x\\cos 2x + \\sin 2x\\)",
-      "\\(\\frac{dx}{dy} = 2x\\cos 2x + \\sin 2x\\)"
+      "\\(\\dfrac{dy}{dx} = x\\cos 2x + \\sin 2x\\)",
+      "\\(\\dfrac{dy}{dx} = 2x\\cos 2x - \\sin 2x\\)"
     ],
     "a": 1,
     "answer": "1",
@@ -1319,8 +1319,8 @@ export const CARINGBAH_2020_QUESTIONS = [
     "opts": [
       "\\(-\\dfrac{dy}{dx} = \\dfrac{xe^x}{(x+1)^2}\\)",
       "\\(\\dfrac{dy}{dx} = \\dfrac{xe^x}{(x+1)^2}\\)",
-      "\\(\\frac{1}{dx} = \\dfrac{xe^x}{(x+1)^2}\\)",
-      "\\(\\frac{dx}{dy} = \\dfrac{xe^x}{(x+1)^2}\\)"
+      "\\(\\dfrac{dy}{dx} = \\dfrac{xe^x}{x+1}\\)",
+      "\\(\\dfrac{dy}{dx} = \\dfrac{(x+2)e^x}{(x+1)^2}\\)"
     ],
     "a": 1,
     "answer": "1",
@@ -1588,9 +1588,9 @@ export const CARINGBAH_2020_QUESTIONS = [
     "question": "(a) On the number plane, draw the graphs of $y = \\cos\\pi x$ and $y = 1 - |x|$ for $-3 \\leq x \\leq 3$.\n\n(b) Hence find the number of solutions of the equation $\\cos\\pi x = 1 - |x|$ in the domain $(-\\infty, infty)$.",
     "opts": [
       "(a) See sketches.\n\n(b) \\(5\\) solutions",
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x."
+      "(a) See sketches.\n\n(b) \\(4\\) solutions",
+      "(a) See sketches.\n\n(b) \\(6\\) solutions",
+      "(a) See sketches.\n\n(b) \\(3\\) solutions"
     ],
     "a": 0,
     "answer": "0",

@@ -526,8 +526,8 @@ export const ABB_2020_EXT1_QUESTIONS = [
     "opts": [
       "\\(-\\dfrac{dy}{dx} = \\cos^{-1}(4x) - \\dfrac{4x}{\\sqrt{1 - 16x^2}}\\)",
       "\\(\\dfrac{dy}{dx} = \\cos^{-1}(4x) - \\dfrac{4x}{\\sqrt{1 - 16x^2}}\\)",
-      "\\(\\frac{1}{dx} = \\cos^{-1}(4x) - \\dfrac{4x}{\\sqrt{1 - 16x^2}}\\)",
-      "\\(\\frac{dx}{dy} = \\cos^{-1}(4x) - \\dfrac{4x}{\\sqrt{1 - 16x^2}}\\)"
+      "\\(\\dfrac{dy}{dx} = \\cos^{-1}(4x) - \\dfrac{x}{\\sqrt{1 - 16x^2}}\\)",
+      "\\(\\dfrac{dy}{dx} = \\cos^{-1}(4x) + \\dfrac{4x}{\\sqrt{1 - 16x^2}}\\)"
     ],
     "a": 1,
     "answer": "1",

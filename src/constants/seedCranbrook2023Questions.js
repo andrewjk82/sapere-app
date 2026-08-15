@@ -636,8 +636,8 @@ export const CRANBROOK_2023_QUESTIONS = [
     "opts": [
       "\\(-\\dfrac{dy}{dx} = \\dfrac{2\\ln x}{x}\\)",
       "\\(\\dfrac{dy}{dx} = \\dfrac{2\\ln x}{x}\\)",
-      "\\(\\frac{1}{dx} = \\dfrac{2\\ln x}{x}\\)",
-      "\\(\\frac{dx}{dy} = \\dfrac{2\\ln x}{x}\\)"
+      "\\(\\dfrac{dy}{dx} = 2\\ln x\\)",
+      "\\(\\dfrac{dy}{dx} = \\dfrac{2}{x}\\)"
     ],
     "a": 1,
     "answer": "1",
@@ -1200,9 +1200,9 @@ export const CRANBROOK_2023_QUESTIONS = [
     "question": "Ivy has plotted the income she received each week for the past five weeks: $(1, 200), (2, 100), (3, 300), (4, 300), (5, 400)$, where the first coordinate is the week number $n$ and the second is the amount in dollars. Over the same five weeks, Ivy's expenses, which were originally $200 per week, increase by $20 each week. Write the equation of the least-squares regression line for Ivy's income, and determine the equation of Ivy's expenses.",
     "opts": [
       "Income \\(= 60n + 80\\); Expenses \\(= 20n + 180\\)",
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x."
+      "Income \\(= 10n + 230\\); Expenses \\(= 20n + 180\\)",
+      "Income \\(= 60n + 80\\); Expenses \\(= 20n + 200\\)",
+      "Income \\(= 60n + 20\\); Expenses \\(= 20n + 180\\)"
     ],
     "a": 0,
     "answer": "0",
@@ -1330,9 +1330,9 @@ export const CRANBROOK_2023_QUESTIONS = [
     "question": "A safety shutoff valve is programmed to be activated before the balloon reaches its maximum volume, after which the balloon will burst. The flow-rate curve $V = 10e^{-\\sqrt{t}}$ is concave up. By referring to the graph, or otherwise, explain why the Trapezoidal rule is a valid method of estimation in this context.",
     "opts": [
       "Because the curve is concave up, each trapezium lies above the curve, so the rule overestimates the true volume. An overestimate triggers the safety valve early — before the true maximum volume is reached — so the balloon will not burst.",
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x."
+      "Because the curve is concave up, each trapezium lies below the curve, so the rule underestimates the true volume. An underestimate could delay the safety valve until after the balloon bursts.",
+      "Because the curve is concave down, each trapezium lies above the curve, overestimating the volume, so the valve is triggered early.",
+      "The Trapezoidal rule is not valid here because the function is exponential, not polynomial."
     ],
     "a": 0,
     "answer": "0",

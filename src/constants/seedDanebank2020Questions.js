@@ -560,9 +560,9 @@ export const DANEBANK_2020_QUESTIONS = [
     "question": "Tim found the radius of sector $OAB$ (area $\\dfrac{25\\pi}{6}$, arc length $\\dfrac{5\\pi}{3}$) using these equations: $(1)\\ \\tfrac{1}{2}r^2\\theta = \\tfrac{25\\pi}{6}$, $(2)\\ r\\theta = \\tfrac{5\\pi}{3}$, $(3)\\ \\tfrac{1}{2}r = \\tfrac{5}{2}$. What operation did Tim perform on equations $(1)$ and $(2)$ to get equation $(3)$?",
     "opts": [
       "He divided equation \\((1)\\) by equation \\((2)\\).",
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x."
+      "He multiplied equation \\((1)\\) by equation \\((2)\\).",
+      "He divided equation \\((2)\\) by equation \\((1)\\).",
+      "He subtracted equation \\((2)\\) from equation \\((1)\\)."
     ],
     "a": 0,
     "answer": "0",
@@ -1403,9 +1403,9 @@ export const DANEBANK_2020_QUESTIONS = [
     "question": "A discrete random variable $X$ has $P(X{=}1)=0.3$, $P(X{=}2)=0.45$, $P(X{=}3)=a$, $P(X{=}4)=b$, and mean $2$. Find two equations in $a$ and $b$.",
     "opts": [
       "a + b = 0.25\\) and \\(3a + 4b = 0.8",
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x."
+      "a + b = 0.7\\) and \\(3a + 4b = 0.8",
+      "a + b = 0.25\\) and \\(3a + 4b = 2",
+      "3a + 4b = 0.25\\) and \\(a + b = 0.8"
     ],
     "a": 0,
     "answer": "0",
@@ -1448,9 +1448,9 @@ export const DANEBANK_2020_QUESTIONS = [
     "question": "Hence find the values of $a$ and $b$ (where $a + b = 0.25$ and $3a + 4b = 0.8$).",
     "opts": [
       "a = 0.2\\) and \\(b = 0.05",
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x."
+      "a = 0.05\\) and \\(b = 0.2",
+      "a = 0.15\\) and \\(b = 0.10",
+      "a = 0.3\\) and \\(b = -0.05"
     ],
     "a": 0,
     "answer": "0",
@@ -1494,8 +1494,8 @@ export const DANEBANK_2020_QUESTIONS = [
     "opts": [
       "\\(-\\dfrac{dy}{dx} = 2x\\cos 2x + \\sin 2x\\)",
       "\\(\\dfrac{dy}{dx} = 2x\\cos 2x + \\sin 2x\\)",
-      "\\(\\frac{1}{dx} = 2x\\cos 2x + \\sin 2x\\)",
-      "\\(\\frac{dx}{dy} = 2x\\cos 2x + \\sin 2x\\)"
+      "\\(\\dfrac{dy}{dx} = x\\cos 2x + \\sin 2x\\)",
+      "\\(\\dfrac{dy}{dx} = 2x\\cos 2x - \\sin 2x\\)"
     ],
     "a": 1,
     "answer": "1",
@@ -2246,8 +2246,8 @@ export const DANEBANK_2020_QUESTIONS = [
     "question": "For the graph of $y = f(x)$ in Q33, for what values of $x$ in the domain $0 < x < 8$ is the function NOT differentiable?",
     "opts": [
       "-x = 2\\) and \\(x = 4",
-      "The opposite of this statement is true.",
-      "This only holds for positive values of x.",
+      "x = 4\\) only",
+      "x = 0\\) and \\(x = 8",
       "x = 2\\) and \\(x = 4"
     ],
     "a": 3,
@@ -2381,9 +2381,9 @@ export const DANEBANK_2020_QUESTIONS = [
     "question": "If $y = \\tan^2 x$, find the values of the constants $a$ and $b$ such that $\\dfrac{d^2y}{dx^2} = ay^2 + by + 2$.",
     "opts": [
       "a = 6\\) and \\(b = 8",
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x."
+      "a = 8\\) and \\(b = 6",
+      "a = 2\\) and \\(b = 8",
+      "a = 6\\) and \\(b = 2"
     ],
     "a": 0,
     "answer": "0",
@@ -2555,9 +2555,9 @@ export const DANEBANK_2020_QUESTIONS = [
     "timeLimit": 120,
     "question": "A particle moves in a straight line with acceleration $a = 6t - 12$. Initially it is at rest at the origin $O$. Find expressions for the velocity $v$ and displacement $x$ in terms of $t$.",
     "opts": [
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x.",
+      "v = 3t^2 + 12t\\) and \\(x = t^3 + 6t^2",
+      "v = 6t - 12\\) and \\(x = 3t^2 - 12t",
+      "v = 3t^2 - 12t\\) and \\(x = t^3 - 12t^2",
       "v = 3t^2 - 12t\\) and \\(x = t^3 - 6t^2"
     ],
     "a": 3,
@@ -2601,9 +2601,9 @@ export const DANEBANK_2020_QUESTIONS = [
     "question": "For the particle with $v = 3t^2 - 12t$ and $x = t^3 - 6t^2$, find when and where the particle is next at rest.",
     "opts": [
       "At \\(t = 4\\) s, at \\(x = -32\\) m (32 m to the left of \\(O\\))",
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x."
+      "At \\(t = 2\\) s, at \\(x = -16\\) m (16 m to the left of \\(O\\))",
+      "At \\(t = 4\\) s, at \\(x = 32\\) m (32 m to the right of \\(O\\))",
+      "At \\(t = 4\\) s, at \\(x = -8\\) m (8 m to the left of \\(O\\))"
     ],
     "a": 0,
     "answer": "0",
