@@ -1949,10 +1949,10 @@
     "chapter": "5K",
     "topic_label": "Calculus with other bases",
     "type": "multiple_choice",
-    "dna_id": "CALC-DIFF-01",
+    "dna_id": "CALC-INT-01",
     "candidate_id": null,
-    "dna_confidence": 0.85,
-    "classification_method": "topic_label",
+    "dna_confidence": 1,
+    "classification_method": "manual_review",
     "review_required": false
   },
   {
@@ -5453,10 +5453,10 @@
     "chapter": "5K",
     "topic_label": "Calculus with other bases",
     "type": "multiple_choice",
-    "dna_id": "CALC-DIFF-01",
+    "dna_id": "CALC-INT-01",
     "candidate_id": null,
-    "dna_confidence": 0.85,
-    "classification_method": "topic_label",
+    "dna_confidence": 1,
+    "classification_method": "manual_review",
     "review_required": false
   },
   {
@@ -6257,10 +6257,10 @@
     "chapter": "5G",
     "topic_label": "Differentiation of logarithmic functions",
     "type": "multiple_choice",
-    "dna_id": "CALC-DIFF-01",
+    "dna_id": "CALC-TAN-01",
     "candidate_id": null,
-    "dna_confidence": 0.85,
-    "classification_method": "topic_label",
+    "dna_confidence": 1,
+    "classification_method": "manual_review",
     "review_required": false
   },
   {

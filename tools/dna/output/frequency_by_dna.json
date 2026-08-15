@@ -56,7 +56,7 @@
     ]
   },
   "CALC-DIFF-01": {
-    "count": 82,
+    "count": 79,
     "question_ids": [
       "car2020-mc3",
       "car2020-mc9",
@@ -80,7 +80,6 @@
       "bar2020-q11aa",
       "bar2020-q11ab",
       "bar2020-q11bi",
-      "bar2020-q12a",
       "bar2020-q16ai",
       "baulko2020-mc2",
       "baulko2020-q11ai",
@@ -106,14 +105,12 @@
       "cra2023-q14a",
       "cra2023-q18c",
       "cra2023-q31",
-      "dane2020-mc10",
       "dane2020-q23",
       "dane2020-q26",
       "dane2020-q35",
       "fortst2020-q2a",
       "fortst2020-q2b",
       "fortst2020-q2c",
-      "fortst2020-q8",
       "fortst2020-q10b",
       "fortst2020-q19b",
       "girr2020-mc9",
@@ -222,7 +219,7 @@
     ]
   },
   "CALC-TAN-01": {
-    "count": 12,
+    "count": 13,
     "question_ids": [
       "car2020-mc8",
       "asc2020-mc2",
@@ -235,7 +232,8 @@
       "fortst2020-mc6",
       "girr2020-mc8",
       "girr2020-mc8s",
-      "asc2020-mc2v"
+      "asc2020-mc2v",
+      "fortst2020-q8"
     ]
   },
   "SERIES-01": {
@@ -452,7 +450,7 @@
     ]
   },
   "CALC-INT-01": {
-    "count": 66,
+    "count": 68,
     "question_ids": [
       "car2020-q19",
       "car2020-q28",
@@ -519,7 +517,9 @@
       "baulko2020-q11cv",
       "baulko2020-q11eiiv",
       "baulko2020-q14aiiv",
-      "baulko2020-q16ciiiiv"
+      "baulko2020-q16ciiiiv",
+      "bar2020-q12a",
+      "dane2020-mc10"
     ]
   },
   "ALG-LOG-01": {
