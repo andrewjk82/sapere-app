@@ -3356,7 +3356,7 @@ export const ASCHAM_2020_QUESTIONS = [
     difficulty: "hard",
     timeLimit: 180,
     question:
-      "(a) Show that the drop-bear population remaining after two years is given by: \\(T_2 = 1000 \\times (1.05)^2 - 100 \\times (1.05 + 1)\\).",
+      "A colony of drop-bears has an initial population of \\(1000\\) on January 1, 2003. Each year, the population grows by \\(5\\%\\), then \\(100\\) drop-bears are removed by poaching at the end of the year. Let \\(T_n\\) be the drop-bear population \\(n\\) years after January 1, 2003.\n\n(a) Show that the drop-bear population remaining after two years is given by: \\(T_2 = 1000 \\times (1.05)^2 - 100 \\times (1.05 + 1)\\).",
     answer: "Shown — see working.",
     hint: "Write \\(T_1 = 1000 \\times 1.05 - 100\\), then \\(T_2 = T_1 \\times 1.05 - 100\\) and expand.",
     solution: "Shown — see working.",
@@ -3400,7 +3400,7 @@ export const ASCHAM_2020_QUESTIONS = [
     difficulty: "hard",
     timeLimit: 120,
     question:
-      "(b) Find an expression for \\(T_n\\), the number of drop-bears remaining after \\(n\\) years.",
+      "A colony of drop-bears has an initial population of \\(1000\\) on January 1, 2003. Each year, the population grows by \\(5\\%\\), then \\(100\\) drop-bears are removed by poaching at the end of the year. Let \\(T_n\\) be the drop-bear population \\(n\\) years after January 1, 2003.\n\n(b) Find an expression for \\(T_n\\), the number of drop-bears remaining after \\(n\\) years.",
     opts: [
       "\\(T_n = 2000 + 1000 \\times (1.05)^n\\)",
       "\\(T_n = 2000 - 1000 \\times (1.05)^n\\)",
@@ -3451,7 +3451,8 @@ export const ASCHAM_2020_QUESTIONS = [
     type: "multiple_choice",
     difficulty: "medium",
     timeLimit: 120,
-    question: "(c) What is the drop-bear population on January 1, 2008?",
+    question:
+      "A colony of drop-bears has an initial population of \\(1000\\) on January 1, 2003. Each year, the population grows by \\(5\\%\\), then \\(100\\) drop-bears are removed by poaching at the end of the year. Let \\(T_n\\) be the drop-bear population \\(n\\) years after January 1, 2003.\n\n(c) What is the drop-bear population on January 1, 2008?",
     opts: [
       "Approximately \\(724\\) drop-bears",
       "Approximately \\(898\\) drop-bears",
@@ -3502,7 +3503,7 @@ export const ASCHAM_2020_QUESTIONS = [
     difficulty: "hard",
     timeLimit: 120,
     question:
-      "(d) During what calendar year will the drop-bears become extinct if no interventions are put in place?",
+      "A colony of drop-bears has an initial population of \\(1000\\) on January 1, 2003. Each year, the population grows by \\(5\\%\\), then \\(100\\) drop-bears are removed by poaching at the end of the year. Let \\(T_n\\) be the drop-bear population \\(n\\) years after January 1, 2003.\n\n(d) During what calendar year will the drop-bears become extinct if no interventions are put in place?",
     opts: [
       "During \\(2017\\)",
       "During \\(2018\\)",
