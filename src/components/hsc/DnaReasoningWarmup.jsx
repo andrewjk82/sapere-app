@@ -24,7 +24,7 @@ function pickRandomSteps(pool, n) {
 // Fire-and-forget evidence write, kept as a plain module-level function (not
 // inline in the component) since Date.now()/serverTimestamp() are impure and
 // the React Compiler flags impure calls inside component/render bodies.
-function recordStepEvidence(dnaId, step, response, graded, hintsRevealed, retryCount, startedAt, uid) {
+function recordStepEvidence(dnaId, step, response, graded, hintsRevealed, retryCount, startedAt, uid, scaffolded) {
   if (!uid) return;
   addDoc(collection(db, 'users', uid, 'dna_step_evidence'), {
     dna_id: dnaId,
@@ -36,6 +36,7 @@ function recordStepEvidence(dnaId, step, response, graded, hintsRevealed, retryC
     hint_used: hintsRevealed,
     retry_count: retryCount,
     time_spent_ms: startedAt ? Date.now() - startedAt : null,
+    mode: scaffolded ? 'scaffolded' : 'guided',
     created_at: serverTimestamp(),
   }).catch((e) => console.warn('Failed to write dna_step_evidence:', e));
 }
@@ -55,9 +56,17 @@ function recordStepEvidence(dnaId, step, response, graded, hintsRevealed, retryC
  * see the same fixed steps. DNAs with a pool of WARMUP_SIZE or fewer just
  * get that pool shuffled (order still varies, but nothing is dropped).
  *
- * @param {{dnaId: string, blueprint: object[], onDone: () => void}} props
+ * `scaffolded` (Sapere_Question_DNA_v2.0 §5 "Scaffolded — Practise", added
+ * 2026-08-16) — set once a student has enough correct FINAL-answer evidence
+ * for this DNA (see HscTypePracticeSession.jsx). Reuses the exact same
+ * blueprint content as Guided mode; only the objective framing and hint
+ * button are hidden, so the student has to reason from the options alone.
+ * interaction_type stays 'select' either way — no new content or interaction
+ * type needed.
+ *
+ * @param {{dnaId: string, blueprint: object[], scaffolded?: boolean, onDone: () => void}} props
  */
-const DnaReasoningWarmup = ({ dnaId, blueprint: pool, onDone }) => {
+const DnaReasoningWarmup = ({ dnaId, blueprint: pool, scaffolded = false, onDone }) => {
   const { user } = useAuth();
   const [blueprint] = useState(() => pickRandomSteps(pool, Math.min(WARMUP_SIZE, pool.length)));
   const [stepIndex, setStepIndex] = useState(0);
@@ -82,7 +91,7 @@ const DnaReasoningWarmup = ({ dnaId, blueprint: pool, onDone }) => {
     const graded = gradeDnaStep(step, optionId);
     setSelectedId(optionId);
     setResult(graded);
-    recordStepEvidence(dnaId, step, optionId, graded, hintsRevealed, retryCount, startRef.current, user?.uid);
+    recordStepEvidence(dnaId, step, optionId, graded, hintsRevealed, retryCount, startRef.current, user?.uid, scaffolded);
     if (!graded.correct) setRetryCount((c) => c + 1);
   };
 
@@ -100,17 +109,19 @@ const DnaReasoningWarmup = ({ dnaId, blueprint: pool, onDone }) => {
     <div style={{ display: 'flex', flexDirection: 'column', gap: '14px', maxWidth: '640px', margin: '0 auto' }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
         <span style={{ fontSize: '0.68rem', fontWeight: 800, color: '#7c3aed', background: '#f5f3ff', border: '1px solid #e0e7ff', borderRadius: '999px', padding: '3px 10px' }}>
-          Warmup {stepIndex + 1} / {blueprint.length}
+          Warmup {stepIndex + 1} / {blueprint.length}{scaffolded ? ' · Scaffolded' : ''}
         </span>
         <span style={{ fontSize: '0.72rem', fontWeight: 600, color: '#94a3b8' }}>
-          Quick check before the real questions
+          {scaffolded ? 'No prompt this time — work it out from the choices' : 'Quick check before the real questions'}
         </span>
       </div>
 
       <div style={{ padding: '20px', borderRadius: '20px', background: '#f8fafc', border: '1px solid #e2e8f0' }}>
-        <div style={{ fontWeight: 800, color: '#1e1b4b', fontSize: '0.98rem', marginBottom: '14px' }}>
-          <MathView content={step.objective} inline style={{ display: 'inline' }} />
-        </div>
+        {!scaffolded && (
+          <div style={{ fontWeight: 800, color: '#1e1b4b', fontSize: '0.98rem', marginBottom: '14px' }}>
+            <MathView content={step.objective} inline style={{ display: 'inline' }} />
+          </div>
+        )}
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
           {step.options.map((opt) => {
@@ -136,7 +147,7 @@ const DnaReasoningWarmup = ({ dnaId, blueprint: pool, onDone }) => {
           })}
         </div>
 
-        {result && !result.correct && hintsRevealed < step.hints.length && (
+        {!scaffolded && result && !result.correct && hintsRevealed < step.hints.length && (
           <button
             onClick={() => setHintsRevealed((h) => h + 1)}
             style={{ marginTop: '10px', display: 'flex', alignItems: 'center', gap: '6px', padding: '7px 14px', borderRadius: '10px', border: '1px solid #e0e7ff', background: '#f5f3ff', color: '#7c3aed', fontWeight: 800, fontSize: '0.8rem', cursor: 'pointer' }}
@@ -145,7 +156,7 @@ const DnaReasoningWarmup = ({ dnaId, blueprint: pool, onDone }) => {
           </button>
         )}
 
-        {hintsRevealed > 0 && !result?.correct && (
+        {!scaffolded && hintsRevealed > 0 && !result?.correct && (
           <ul style={{ marginTop: '10px', paddingLeft: '20px', display: 'flex', flexDirection: 'column', gap: '6px' }}>
             {step.hints.slice(0, hintsRevealed).map((h, i) => (
               <li key={i} style={{ fontSize: '0.82rem', color: '#475569' }}>

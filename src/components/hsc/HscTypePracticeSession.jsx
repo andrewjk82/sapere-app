@@ -18,6 +18,16 @@ import { MATH_SYMBOLS } from '../../utils/challengeUtils';
 import DnaReasoningWarmup from './DnaReasoningWarmup';
 import QuestionReasoningSteps from './QuestionReasoningSteps';
 
+// Scaffolded learning mode (Sapere_Question_DNA_v2.0 §5 "Scaffolded — Practise").
+// Once a student has correctly answered a DNA's real final question this many
+// times (dna_step_evidence: step_id 'FINAL', axis 'verification', correct
+// true), both the DNA-generic warmup and any question-specific pre-steps for
+// that DNA switch from Guided to Scaffolded rendering — same reasoningBlueprint
+// content, just with the objective framing and hint button hidden, forcing the
+// student to reason from the options alone. See DnaReasoningWarmup.jsx /
+// QuestionReasoningSteps.jsx for the rendering difference.
+const GUIDED_TO_SCAFFOLDED_THRESHOLD = 3;
+
 // ─── Helpers ─────────────────────────────────────────────────────────────────
 
 const shuffleArray = (arr) => {
@@ -342,6 +352,31 @@ const HscTypePracticeSession = ({ type, profile, initialStats, onBack, dnaLabels
   // §3-4, pilot: questions/bar2020-q14ai) — shown once per question per
   // session, then the existing MC flow takes over unchanged.
   const [preStepsDoneFor, setPreStepsDoneFor] = useState(() => new Set());
+  const [scaffolded, setScaffolded] = useState(false);
+
+  // ── Scaffolded-mode check (Sapere_Question_DNA_v2.0 §5) ─────────────────────
+  // Count this DNA's past correct FINAL-answer evidence for this student; once
+  // it reaches the threshold, both warmup and question pre-steps below switch
+  // to Scaffolded rendering. Equality-only filters, no composite index needed.
+  useEffect(() => {
+    if (!type.dnaFocus || !type.slug || !user?.uid) return;
+    let cancelled = false;
+    (async () => {
+      try {
+        const evidenceQuery = query(
+          collection(db, 'users', user.uid, 'dna_step_evidence'),
+          where('dna_id', '==', type.slug),
+          where('step_id', '==', 'FINAL'),
+          where('correct', '==', true),
+        );
+        const snap = await getDocs(evidenceQuery);
+        if (!cancelled) setScaffolded(snap.size >= GUIDED_TO_SCAFFOLDED_THRESHOLD);
+      } catch (e) {
+        console.warn('Failed to check scaffolded-mode threshold:', e);
+      }
+    })();
+    return () => { cancelled = true; };
+  }, [type.dnaFocus, type.slug, user?.uid]);
 
   // ── Load questions for this type (or DNA focus) ────────────────────────────
   useEffect(() => {
@@ -552,6 +587,7 @@ const HscTypePracticeSession = ({ type, profile, initialStats, onBack, dnaLabels
       <DnaReasoningWarmup
         dnaId={type.slug}
         blueprint={type.reasoningBlueprint}
+        scaffolded={scaffolded}
         onDone={() => setWarmupDone(true)}
       />
     );
@@ -595,6 +631,7 @@ const HscTypePracticeSession = ({ type, profile, initialStats, onBack, dnaLabels
         questionId={q.id}
         questionText={q.q || q.question}
         blueprint={q.reasoning_blueprint}
+        scaffolded={scaffolded}
         onDone={() => setPreStepsDoneFor((prev) => new Set(prev).add(q.id))}
       />
     );

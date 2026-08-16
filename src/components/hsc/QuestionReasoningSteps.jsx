@@ -18,7 +18,7 @@ import { gradeDnaStep } from '../../utils/dnaStepGrading';
 // Always multiple-choice (select), per the project's standing rule that
 // generated content is multiple_choice only — never free-text entry, even
 // for these intermediate reasoning checks.
-function recordStepEvidence(dnaId, questionId, step, response, graded, hintsRevealed, retryCount, startedAt, uid) {
+function recordStepEvidence(dnaId, questionId, step, response, graded, hintsRevealed, retryCount, startedAt, uid, scaffolded) {
   if (!uid) return;
   addDoc(collection(db, 'users', uid, 'dna_step_evidence'), {
     dna_id: dnaId,
@@ -32,11 +32,18 @@ function recordStepEvidence(dnaId, questionId, step, response, graded, hintsReve
     hint_used: hintsRevealed,
     retry_count: retryCount,
     time_spent_ms: startedAt ? Date.now() - startedAt : null,
+    mode: scaffolded ? 'scaffolded' : 'guided',
     created_at: serverTimestamp(),
   }).catch((e) => console.warn('Failed to write dna_step_evidence:', e));
 }
 
-export default function QuestionReasoningSteps({ dnaId, questionId, questionText, blueprint, onDone }) {
+// `scaffolded` (Sapere_Question_DNA_v2.0 §5 "Scaffolded — Practise", added
+// 2026-08-16) — set once the student has enough correct FINAL-answer evidence
+// for this DNA (see HscTypePracticeSession.jsx). Reuses the exact same
+// question-specific blueprint content as Guided mode; only the objective
+// framing and hint button are hidden, so the student reasons from the
+// options alone. interaction_type stays 'select' either way.
+export default function QuestionReasoningSteps({ dnaId, questionId, questionText, blueprint, scaffolded = false, onDone }) {
   const { user } = useAuth();
   const [stepIndex, setStepIndex] = useState(0);
   const [selectedId, setSelectedId] = useState(null);
@@ -60,7 +67,7 @@ export default function QuestionReasoningSteps({ dnaId, questionId, questionText
     const graded = gradeDnaStep(step, optionId);
     setSelectedId(optionId);
     setResult(graded);
-    recordStepEvidence(dnaId, questionId, step, optionId, graded, hintsRevealed, retryCount, startRef.current, user?.uid);
+    recordStepEvidence(dnaId, questionId, step, optionId, graded, hintsRevealed, retryCount, startRef.current, user?.uid, scaffolded);
     if (!graded.correct) setRetryCount((c) => c + 1);
   };
 
@@ -112,14 +119,18 @@ export default function QuestionReasoningSteps({ dnaId, questionId, questionText
       <div style={{ padding: '20px', borderRadius: '20px', background: '#f8fafc', border: '1px solid #e2e8f0', marginBottom: '14px' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '12px' }}>
           <span style={{ fontSize: '0.68rem', fontWeight: 800, color: '#7c3aed', background: '#f5f3ff', border: '1px solid #e0e7ff', borderRadius: '999px', padding: '3px 10px' }}>
-            Reasoning step {stepIndex + 1} / {blueprint.length}
+            Reasoning step {stepIndex + 1} / {blueprint.length}{scaffolded ? ' · Scaffolded' : ''}
           </span>
-          <span style={{ fontSize: '0.72rem', fontWeight: 600, color: '#94a3b8' }}>Work this out before you see the answer choices</span>
+          <span style={{ fontSize: '0.72rem', fontWeight: 600, color: '#94a3b8' }}>
+            {scaffolded ? 'No prompt this time — work it out from the choices' : 'Work this out before you see the answer choices'}
+          </span>
         </div>
 
-        <div style={{ fontWeight: 800, color: '#1e1b4b', fontSize: '0.95rem', marginBottom: '14px' }}>
-          <MathView content={step.objective} inline />
-        </div>
+        {!scaffolded && (
+          <div style={{ fontWeight: 800, color: '#1e1b4b', fontSize: '0.95rem', marginBottom: '14px' }}>
+            <MathView content={step.objective} inline />
+          </div>
+        )}
 
       <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
         {step.options.map((opt) => {
@@ -150,7 +161,7 @@ export default function QuestionReasoningSteps({ dnaId, questionId, questionText
         <div style={{ marginTop: '10px', display: 'flex', alignItems: 'center', gap: '8px' }}>
           <XCircle size={15} color="#dc2626" />
           <span style={{ fontSize: '0.85rem', color: '#dc2626', fontWeight: 700 }}>Not quite — try again.</span>
-          {hintsRevealed < step.hints.length && (
+          {!scaffolded && hintsRevealed < step.hints.length && (
             <button
               type="button"
               onClick={() => setHintsRevealed((h) => h + 1)}
@@ -162,7 +173,7 @@ export default function QuestionReasoningSteps({ dnaId, questionId, questionText
         </div>
       )}
 
-      {hintsRevealed > 0 && !result?.correct && (
+      {!scaffolded && hintsRevealed > 0 && !result?.correct && (
         <ul style={{ marginTop: '8px', paddingLeft: '20px', display: 'flex', flexDirection: 'column', gap: '4px' }}>
           {step.hints.slice(0, hintsRevealed).map((h, i) => (
             <li key={i} style={{ fontSize: '0.8rem', color: '#475569' }}><MathView content={h} inline /></li>
