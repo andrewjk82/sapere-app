@@ -105,97 +105,10 @@ version/timestamp as the freshness key for chapter/topic question caches** —
 scope any future cache-invalidation signal to the chapter (or narrower) it
 actually belongs to.
 
-## Question DNA reasoning-blueprint authoring (2026-08-16)
+## Question DNA reasoning-blueprint authoring
 
-Applies whenever adding to a DNA's warmup pool (`question_dna/{dnaId}.reasoningBlueprint`,
-`tools/dna/dnaTaxonomy.js`) or a question's own pre-steps
-(`questions/{id}.reasoning_blueprint`) — the Question DNA v2.0 reasoning
-layer (`DnaReasoningWarmup.jsx`, `QuestionReasoningSteps.jsx`,
-`HscTypePracticeSession.jsx`). Standing rules, apply automatically:
-
-**1. Verify before you enrich.** Before writing any step on top of a
-question, independently re-derive its correct answer (don't trust the
-stored `answer` field), confirm its `dnaId` classification actually
-matches its content, and scan its options for known corpus bugs
-(leftover generic-template garbage like `\dfrac{12}{x+2}`, `\dfrac{13}{x+3}`,
-`"The opposite of this statement is true."`; equivalent-option
-duplicates — `\dfrac` vs `\frac` on the same value, a glued
-double-negative, an unfactored form equal to the factored "wrong"
-option). This session alone surfaced 15+ dnaId misclassifications, 7
-wrong answer keys, and 9+ equivalent-option-duplicate bugs this way —
-none of them reported by anyone, all found purely by verifying before
-building. Guard every write script with `requireAnswer`/`requireType`
-checks that **abort** (don't guess) when the doc doesn't match what was
-verified — a mismatch is a signal to re-investigate, not push through.
-
-**2. Every step is `interaction_type: 'select'` (multiple-choice),
-never free-text** — same project-wide MC-only rule as the option-shuffle
-section above, applies here too.
-
-**3. Question-specific pre-steps must target what's actually unique to
-THAT question's own numbers/structure — never a generic "which rule
-applies?" template reused across many similar-shaped questions.** If a
-step could be pasted unchanged onto a different question with different
-numbers and still make sense, it's too generic — find the concrete
-non-obvious trap instead (a sign flip from an unusual "b−x" inner
-expression, a specific factoring/arithmetic step tied to this question's
-own coefficients, an instruction easy to misread for this exact
-phrasing). Generic rule-recognition ("is this a product or a
-composition?") belongs in the DNA-generic warmup pool, not repeated
-per-question — the warmup already covers it once, generically, for every
-question sharing that DNA.
-
-**4. Highlight the question text a step is actually about, when it
-helps.** A pre-step can carry `highlight: {before, mark, after, color}`
-(`QuestionReasoningSteps.jsx`) — three self-contained (`$...$`-balanced)
-LaTeX fragments that together reconstruct the question text, with `mark`
-shown on a colored background so the student sees exactly which part of
-the question the step refers to. Optional, not mandatory for every step
-— use it when a step is literally about one specific notation/expression
-in the question (e.g. "what does $f'(x)$ mean?", "which rule does
-$3x^4(4-x)^3$ need?"). Falls back to plain question text when absent.
-
-**5. DNA-generic warmup pools are randomized, not a fixed 3.**
-`DnaReasoningWarmup.jsx` draws `WARMUP_SIZE=3` at random from however many
-items are in `reasoningBlueprint` each session — grow a DNA's pool over
-time (CALC-DIFF-01 is the pilot at 24) rather than assuming only 3 items
-ever exist. Every pool item must stay DNA-generic (true regardless of
-which specific question the student sees next), never reference specific
-question numbers.
-
-**6. Any script that writes `reasoning_blueprint` onto a `questions/{id}`
-doc must also set `hasReasoningBlueprint: true`** alongside it (merge
-write). This is the indexed flag the teacher-facing "Question Pre-Steps
-Review" page queries (`where('hasReasoningBlueprint','==',true)`) instead
-of scanning the whole `questions` collection, which project convention
-forbids. Forgetting this flag makes new pre-steps invisible to that
-review page even though they work fine for students. See
-`tools/scripts/backfillReasoningBlueprintFlag.js` if a flag ever needs
-backfilling after the fact.
-
-**7. Call `touchChapterIndex(db, chapterId)`** after any
-`reasoning_blueprint`/`hasReasoningBlueprint` write, same as any other
-content-only edit to `questions/*` (see the cache-invalidation section
-above) — every script in `tools/scripts/add*ReasoningBlueprint*.js`
-already does this; keep doing it in new ones.
-
-**8. Never let a `reasoning_blueprint` array end up with duplicate
-`step_id`s.** Easy to trip on when PREPENDING new steps to an existing
-array whose steps already use `S1`/`S2` — the new steps' own `S0`/`S1`
-will collide. Renumber the whole array sequentially (`S0, S1, S2, ...`)
-after combining, and check `new Set(steps.map(s=>s.step_id)).size ===
-steps.length` before writing.
-
-**9. Two teacher-facing review pages exist for this layer** — Sidebar
-"DNA Warmup" (`DnaWarmupReviewPage.jsx`, every DNA's full warmup pool)
-and "Question Pre-Steps" (`QuestionPreStepsReviewPage.jsx`, every
-question with its own pre-steps) — both `isAdmin`-gated, read-only.
-Spot-check new content there (or ask the user to) rather than assuming
-it renders correctly; this is how the `f'(x)` LaTeX-rendering gap in
-`DnaReasoningWarmup.jsx`'s objective field was actually caught.
-
-**10. Commit messages referencing code with backticks or `$` must be
-written to a temp file and committed with `git commit -F <file>`, never
-inline `-m "..."`** — a bare backtick in an inline `-m` message triggers
-shell command substitution and silently mangles the message (the code
-itself is unaffected, only the message text).
+See the `sapere-question-dna` skill (`.agents/skills/sapere-question-dna/SKILL.md`)
+for the full standing rules on authoring/extending/reviewing the
+reasoning-blueprint layer (DNA-generic warmup pools + question-specific
+pre-steps) — kept as a skill rather than inline here since it only
+applies to that specific workflow.
