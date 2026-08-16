@@ -17,7 +17,7 @@
  * personal_priority = 0.55 * priorityScore + 0.45 * (100 - student_mastery).
  */
 
-export const DNA_TAXONOMY_VERSION = '1.1';
+export const DNA_TAXONOMY_VERSION = '1.2';
 
 // ─── Version history ────────────────────────────────────────────────────────
 // v1.0 — initial 32-entry taxonomy from the master prompt (§7).
@@ -26,6 +26,10 @@ export const DNA_TAXONOMY_VERSION = '1.1';
 //   arcs & sectors, right-angled triangle problems) with similarity <0.75 to
 //   any existing DNA — meets the master prompt §12 promotion trigger
 //   (occurrences>=3 AND similarity<0.75). Tutor-approved.
+// v1.2 (2026-08-16) — grew the reasoningBlueprint warmup pools for
+//   CALC-STAT-01, CALC-INT-01, FIN-GP-01 and FIN-INTEREST-01 from a fixed 3
+//   items each up to 12-15, matching the randomized-draw pattern piloted on
+//   CALC-DIFF-01 (24 items) — see sapere-question-dna skill rule 5.
 
 export const QUESTION_DNA = [
   // ── CALCULUS ────────────────────────────────────────────────────────────
@@ -395,6 +399,115 @@ export const QUESTION_DNA = [
         explanation:
           'When $f\'\'(x)=0$, the second derivative test gives no information — you must go back to checking the sign of $f\'(x)$ immediately either side of the point to correctly classify it.',
       },
+      // W4-W15 (2026-08-16): pool expansion, same randomized-draw pattern
+      // piloted on CALC-DIFF-01 — grow past the fixed 3 so repeat visits
+      // don't feel stale. Still DNA-generic only.
+      ...(() => {
+        const w = (stepId, skillSuffix, objective, axis, options, correctId, errorMap, hints, explanation) => ({
+          step_id: stepId,
+          objective,
+          required_skill: `CALC-STAT-01.${skillSuffix}`,
+          axis,
+          interaction_type: 'select',
+          options,
+          expected_response: correctId,
+          common_errors: Object.entries(errorMap).map(([id, error_type]) => ({ id, error_type })),
+          hints,
+          explanation,
+        });
+        return [
+          w('W4', '4', 'Recognise the difference between a "turning point" and a "horizontal point of inflection".', 'recognition',
+            [
+              { id: 'a', label: 'A turning point is where the curve changes direction (concavity/gradient sign changes either side); a horizontal point of inflection is stationary ($f\'=0$) but keeps going the SAME way' },
+              { id: 'b', label: 'They are always exactly the same thing' },
+              { id: 'c', label: 'A horizontal point of inflection is always a maximum' },
+            ],
+            'a', { b: 'CALC-STAT-01.E4_turning_point_vs_inflection', c: 'CALC-STAT-01.E4_turning_point_vs_inflection' },
+            ['Both are "stationary" ($f\'=0$), but only a turning point actually reverses direction — check the sign of $f\'(x)$ on both sides.'],
+            'Every turning point is stationary, but not every stationary point is a turning point — a horizontal point of inflection is flat for an instant but the curve keeps rising (or keeps falling) through it.'),
+          w('W5', '5', 'Know the alternative to the second derivative test: the first-derivative sign diagram.', 'strategy_selection',
+            [
+              { id: 'a', label: 'Test the sign of $f\'(x)$ just before and just after the stationary point — sign change $+\\to-$ is a maximum, $-\\to+$ is a minimum, no change means not a turning point' },
+              { id: 'b', label: 'The first-derivative sign only tells you where the curve is increasing, never anything about stationary points' },
+              { id: 'c', label: 'A sign diagram can only be used on straight-line functions' },
+            ],
+            'a', { b: 'CALC-STAT-01.E5_sign_diagram_misunderstood' },
+            ['This is the fallback method whenever the second derivative test is inconclusive or awkward to compute.'],
+            'A first-derivative sign diagram classifies a stationary point directly from how $f\'(x)$ behaves either side of it, without needing $f\'\'(x)$ at all.'),
+          w('W6', '6', 'Know what "concave up on an interval" actually requires.', 'recognition',
+            [
+              { id: 'a', label: '$f\'\'(x)>0$ for EVERY $x$ throughout that whole interval, not just at one point' },
+              { id: 'b', label: '$f\'\'(x)>0$ at just one single point somewhere in the interval' },
+              { id: 'c', label: '$f\'(x)>0$ throughout the interval' },
+            ],
+            'a', { b: 'CALC-STAT-01.E6_concavity_at_a_point_vs_interval', c: 'CALC-STAT-01.E6_concavity_at_a_point_vs_interval' },
+            ['Concavity is a statement about a whole interval, not a single $x$-value — and it\'s about $f\'\'$, not $f\'$.'],
+            'Concave up on an interval means $f\'\'(x)>0$ across the entire interval, not just at one point — mixing this up with $f\'(x)>0$ confuses concavity with increasing.'),
+          w('W7', '7', 'Recognise that "find the nature of the stationary point(s)" requires a classification step, not just the $x$-value(s).', 'recognition',
+            [
+              { id: 'a', label: 'State whether each point is a maximum, minimum, or horizontal inflection — solving $f\'(x)=0$ alone doesn\'t answer this' },
+              { id: 'b', label: 'Solving $f\'(x)=0$ for $x$ is the complete answer' },
+              { id: 'c', label: 'State only the $y$-coordinate' },
+            ],
+            'a', { b: 'CALC-STAT-01.E7_missing_classification' },
+            ['"Nature" is asking specifically for max/min/inflection — an $x$-value on its own doesn\'t say which type it is.'],
+            '"Find the nature" means classify each stationary point (max, min, or horizontal inflection) using the second derivative test or a sign diagram — not just list the $x$-values where $f\'(x)=0$.'),
+          w('W8', '8', 'Recognise that a stationary point at a restricted domain\'s ENDpoint is different from an interior stationary point.', 'recognition',
+            [
+              { id: 'a', label: 'An endpoint is only a stationary point if $f\'(x)=0$ actually holds there too — otherwise it\'s just a boundary of the domain, not a genuine stationary point' },
+              { id: 'b', label: 'Every endpoint of a restricted domain automatically counts as a stationary point' },
+              { id: 'c', label: 'Endpoints can never be stationary points' },
+            ],
+            'a', { b: 'CALC-STAT-01.E8_endpoint_assumed_stationary' },
+            ['Being at the edge of the allowed domain doesn\'t by itself make the gradient zero there — check $f\'(x)=0$ explicitly.'],
+            'A restricted-domain endpoint is only a stationary point if $f\'(x)=0$ genuinely holds there — otherwise it may still be a local max/min for the restricted domain, but not a stationary one.'),
+          w('W9', '9', 'Know which value to substitute back to find the $y$-coordinate of a stationary point.', 'execution',
+            [
+              { id: 'a', label: 'Substitute the $x$-value into the ORIGINAL function $f(x)$, not into $f\'(x)$' },
+              { id: 'b', label: 'Substitute the $x$-value into $f\'(x)$' },
+              { id: 'c', label: 'Substitute the $x$-value into $f\'\'(x)$' },
+            ],
+            'a', { b: 'CALC-STAT-01.E9_wrong_function_for_coordinate', c: 'CALC-STAT-01.E9_wrong_function_for_coordinate' },
+            ['$f\'(x)=0$ finds WHERE the stationary point is; the height of the curve there comes from the original $f(x)$.'],
+            'The $x$-value solves $f\'(x)=0$, but the matching $y$-coordinate comes from substituting that $x$ back into the ORIGINAL function $f(x)$.'),
+          w('W10', '10', 'Perform the second derivative test\'s substitution step correctly.', 'execution',
+            [
+              { id: 'a', label: 'Differentiate twice to get $f\'\'(x)$, THEN substitute the stationary point\'s $x$-value into that $f\'\'(x)$ expression' },
+              { id: 'b', label: 'Substitute the $x$-value into $f\'(x)$ before differentiating a second time' },
+              { id: 'c', label: 'Differentiate $f(x)$ twice at the specific $x$-value directly, skipping the general $f\'\'(x)$ expression' },
+            ],
+            'a', { b: 'CALC-STAT-01.E10_substitution_order_wrong' },
+            ['Find the general $f\'\'(x)$ expression first, then plug in the number — doing it in the other order doesn\'t make sense.'],
+            'Get the general expression $f\'\'(x)$ first by differentiating twice, then substitute the stationary point\'s $x$-value into it.'),
+          w('W11', '11', 'Choose valid test points for a first-derivative sign diagram.', 'execution',
+            [
+              { id: 'a', label: 'Pick $x$-values strictly BETWEEN consecutive stationary points (or domain boundaries) — never exactly at a stationary point itself' },
+              { id: 'b', label: 'Pick the stationary point\'s own $x$-value as the test point' },
+              { id: 'c', label: 'Any $x$-value works, including ones far outside the relevant interval' },
+            ],
+            'a', { b: 'CALC-STAT-01.E11_test_point_at_critical_value' },
+            ['Testing exactly at a stationary point just gives $0$ again — you need a nearby value to see which way the gradient is heading.'],
+            'A valid sign-diagram test point sits strictly between two consecutive critical $x$-values, never on top of one — evaluating $f\'(x)$ there reveals the local increasing/decreasing behaviour.'),
+          w('W12', '12', 'Distinguish "local" (relative) extremum from "global" (absolute) extremum on a restricted domain.', 'recognition',
+            [
+              { id: 'a', label: 'A local max/min only needs to be the highest/lowest NEARBY; a global max/min must be the highest/lowest over the ENTIRE domain, and may occur at an endpoint instead of a stationary point' },
+              { id: 'b', label: 'Local and global extrema are always the same value' },
+              { id: 'c', label: 'A global extremum can only ever occur at a stationary point, never at an endpoint' },
+            ],
+            'a', { c: 'CALC-STAT-01.E12_global_extremum_endpoint_ignored' },
+            ['On a closed interval, always check the endpoint values too — the overall highest/lowest point isn\'t guaranteed to be a stationary point.'],
+            'A local extremum is only the highest/lowest compared to its immediate neighbourhood; the global extremum on a restricted domain must also be compared against the domain\'s endpoint values.'),
+          w('W13', '13', 'Know what to do after finding $f\'(x)=0$ gives an expression that needs factoring.', 'execution',
+            [
+              { id: 'a', label: 'Factor the derivative expression fully before solving — each factor set to zero gives a stationary point' },
+              { id: 'b', label: 'If $f\'(x)$ doesn\'t obviously equal zero at $x=0$, conclude there are no stationary points' },
+              { id: 'c', label: 'Only the first factor found needs to be solved' },
+            ],
+            'a', { b: 'CALC-STAT-01.E13_gave_up_without_factoring', c: 'CALC-STAT-01.E13_gave_up_without_factoring' },
+            ['A derivative that isn\'t already factored still needs the usual factoring techniques (common factor, quadratic formula, etc.) before you can read off every root.'],
+            'Solving $f\'(x)=0$ for a non-trivial expression means factoring it completely first — every distinct factor set to zero contributes a separate stationary point.'),
+        ];
+      })(),
     ],
   },
   {
@@ -480,6 +593,132 @@ export const QUESTION_DNA = [
         explanation:
           'An initial condition is a known point on the integrated curve — substitute it into the general antiderivative (with $+C$ still in place) and solve for $C$; it\'s never applied to the original un-integrated function.',
       },
+      // W4-W15 (2026-08-16): pool expansion, same randomized-draw pattern
+      // piloted on CALC-DIFF-01. Still DNA-generic only.
+      ...(() => {
+        const w = (stepId, skillSuffix, objective, axis, options, correctId, errorMap, hints, explanation) => ({
+          step_id: stepId,
+          objective,
+          required_skill: `CALC-INT-01.${skillSuffix}`,
+          axis,
+          interaction_type: 'select',
+          options,
+          expected_response: correctId,
+          common_errors: Object.entries(errorMap).map(([id, error_type]) => ({ id, error_type })),
+          hints,
+          explanation,
+        });
+        return [
+          w('W4', '4', 'Recall the integral of $\\sin(ax+b)$ — the reversed sign trap.', 'strategy_selection',
+            [
+              { id: 'a', label: '$\\displaystyle\\int \\sin(ax+b)\\,dx = -\\dfrac{1}{a}\\cos(ax+b)+C$' },
+              { id: 'b', label: '$\\displaystyle\\int \\sin(ax+b)\\,dx = \\dfrac{1}{a}\\cos(ax+b)+C$' },
+              { id: 'c', label: '$\\displaystyle\\int \\sin(ax+b)\\,dx = -a\\cos(ax+b)+C$' },
+            ],
+            'a', { b: 'CALC-INT-01.E6_trig_integral_sign_error', c: 'CALC-INT-01.E7_reverse_chain_factor_inverted' },
+            ['Integration reverses differentiation, so the sign flips the OPPOSITE way to $\\frac{d}{dx}[\\cos x]=-\\sin x$.', 'Divide by $a$ (not multiply) — the reverse chain rule divides by the inner derivative.'],
+            'Since $\\frac{d}{dx}[\\cos(ax+b)]=-a\\sin(ax+b)$, undoing it gives $\\int\\sin(ax+b)\\,dx=-\\frac{1}{a}\\cos(ax+b)+C$.'),
+          w('W5', '5', 'Recall the integral of $\\cos(ax+b)$.', 'strategy_selection',
+            [
+              { id: 'a', label: '$\\displaystyle\\int \\cos(ax+b)\\,dx = \\dfrac{1}{a}\\sin(ax+b)+C$' },
+              { id: 'b', label: '$\\displaystyle\\int \\cos(ax+b)\\,dx = -\\dfrac{1}{a}\\sin(ax+b)+C$' },
+              { id: 'c', label: '$\\displaystyle\\int \\cos(ax+b)\\,dx = a\\sin(ax+b)+C$' },
+            ],
+            'a', { b: 'CALC-INT-01.E6_trig_integral_sign_error', c: 'CALC-INT-01.E7_reverse_chain_factor_inverted' },
+            ['No extra negative here — that trap only applies to integrating $\\sin$, not $\\cos$.'],
+            '$\\int\\cos(ax+b)\\,dx = \\dfrac{1}{a}\\sin(ax+b)+C$ — positive sign, divide by the inner derivative $a$.'),
+          w('W6', '6', 'Recall the integral of $e^{ax+b}$.', 'strategy_selection',
+            [
+              { id: 'a', label: '$\\displaystyle\\int e^{ax+b}\\,dx = \\dfrac{1}{a}e^{ax+b}+C$' },
+              { id: 'b', label: '$\\displaystyle\\int e^{ax+b}\\,dx = e^{ax+b}+C$' },
+              { id: 'c', label: '$\\displaystyle\\int e^{ax+b}\\,dx = a\\,e^{ax+b}+C$' },
+            ],
+            'a', { b: 'CALC-INT-01.E8_forgot_reverse_chain_divisor', c: 'CALC-INT-01.E7_reverse_chain_factor_inverted' },
+            ['$e^x$ integrates to itself only when the exponent is exactly $x$ — with a linear inner expression, divide by its derivative $a$.'],
+            '$\\int e^{ax+b}\\,dx = \\dfrac{1}{a}e^{ax+b}+C$ — same reverse-chain-rule divisor idea as any other composed integrand.'),
+          w('W7', '7', 'Recall the integral of $\\dfrac{1}{ax+b}$.', 'strategy_selection',
+            [
+              { id: 'a', label: '$\\displaystyle\\int \\dfrac{1}{ax+b}\\,dx = \\dfrac{1}{a}\\ln|ax+b|+C$' },
+              { id: 'b', label: '$\\displaystyle\\int \\dfrac{1}{ax+b}\\,dx = \\ln|ax+b|+C$' },
+              { id: 'c', label: '$\\displaystyle\\int \\dfrac{1}{ax+b}\\,dx = a\\ln|ax+b|+C$' },
+            ],
+            'a', { b: 'CALC-INT-01.E8_forgot_reverse_chain_divisor' },
+            ['This is the one exception to the ordinary power rule (dividing by $n+1$ breaks down at $n=-1$) — it produces a log instead.'],
+            '$\\int\\dfrac{1}{ax+b}\\,dx = \\dfrac{1}{a}\\ln|ax+b|+C$ — the log rule, still with the usual $\\dfrac{1}{a}$ reverse-chain-rule factor.'),
+          w('W8', '8', 'Know why $\\int x^{-1}\\,dx$ can\'t use the ordinary power rule.', 'recognition',
+            [
+              { id: 'a', label: 'The power rule $\\frac{x^{n+1}}{n+1}$ divides by $n+1$, which is $0$ when $n=-1$ — undefined, so a special log rule is needed instead' },
+              { id: 'b', label: 'The power rule works fine for $x^{-1}$, giving $\\frac{x^0}{0}$' },
+              { id: 'c', label: '$x^{-1}$ can\'t be integrated at all' },
+            ],
+            'a', { b: 'CALC-INT-01.E9_power_rule_misapplied_at_n_negative_one' },
+            ['Try the power rule formula with $n=-1$ and see what happens to the denominator.'],
+            'The power rule breaks down exactly at $n=-1$ (division by zero) — that\'s why $\\int x^{-1}\\,dx = \\ln|x|+C$ is a separate rule, not a special case of the power rule.'),
+          w('W9', '9', 'Know the correct order for substituting a definite integral\'s limits.', 'execution',
+            [
+              { id: 'a', label: '(antiderivative at the UPPER limit) $-$ (antiderivative at the LOWER limit)' },
+              { id: 'b', label: '(antiderivative at the LOWER limit) $-$ (antiderivative at the UPPER limit)' },
+              { id: 'c', label: 'Either order gives the same answer' },
+            ],
+            'a', { b: 'CALC-INT-01.E10_limits_swapped', c: 'CALC-INT-01.E10_limits_swapped' },
+            ['Swapping the limits flips the sign of the whole result — order matters.'],
+            'A definite integral $\\int_a^b f(x)\\,dx = F(b)-F(a)$ — upper limit\'s value minus lower limit\'s value, never the other way around.'),
+          w('W10', '10', 'Recognise what a NEGATIVE definite integral value means when the curve dips below the $x$-axis.', 'recognition',
+            [
+              { id: 'a', label: 'The signed area is negative there — to find the actual (physical) area, take the absolute value of that piece before adding it to any part above the axis' },
+              { id: 'b', label: 'A negative result means a calculation mistake was made — areas can never be negative' },
+              { id: 'c', label: 'The negative sign can simply be ignored and the raw integral value used directly as "the area"' },
+            ],
+            'a', { b: 'CALC-INT-01.E11_negative_area_assumed_error', c: 'CALC-INT-01.E12_negative_signed_area_not_converted' },
+            ['A definite integral computes SIGNED area — below the axis counts negative. Actual physical area is always non-negative, so take $|\\cdot|$ of any below-axis piece.'],
+            'When part of a curve is below the $x$-axis, its definite integral is genuinely negative (signed area) — convert to physical area by taking the absolute value of that piece before summing.'),
+          w('W11', '11', 'Recognise the correct setup for the area BETWEEN two curves.', 'strategy_selection',
+            [
+              { id: 'a', label: 'Integrate (TOP curve $-$ BOTTOM curve) between their points of intersection' },
+              { id: 'b', label: 'Integrate just the top curve alone' },
+              { id: 'c', label: 'Add the two curves together, then integrate the sum' },
+            ],
+            'a', { b: 'CALC-INT-01.E13_area_between_curves_single_function', c: 'CALC-INT-01.E13_area_between_curves_single_function' },
+            ['The area between two curves is the gap between them — subtract the lower curve\'s height from the upper curve\'s height at every $x$, then integrate that difference.'],
+            'Area between two curves $= \\int (\\text{top}-\\text{bottom})\\,dx$, evaluated between their intersection points — never just one curve alone.'),
+          w('W12', '12', 'Pull a constant multiple out before integrating.', 'execution',
+            [
+              { id: 'a', label: '$\\displaystyle\\int 5x^3\\,dx = 5\\int x^3\\,dx = 5\\cdot\\dfrac{x^4}{4}+C$' },
+              { id: 'b', label: '$\\displaystyle\\int 5x^3\\,dx$ requires the product rule since $5$ and $x^3$ are multiplied' },
+              { id: 'c', label: 'The constant $5$ must also be integrated, becoming $5x$' },
+            ],
+            'a', { b: 'CALC-INT-01.E14_constant_multiple_needs_no_product_rule', c: 'CALC-INT-01.E14_constant_multiple_needs_no_product_rule' },
+            ['A plain numeric coefficient just rides along unchanged — pull it outside the integral sign first, then integrate the $x$ part.'],
+            'A constant coefficient is simply carried through: $\\int kf(x)\\,dx = k\\int f(x)\\,dx$ — no product rule needed for a plain number times a function.'),
+          w('W13', '13', 'Apply the reverse chain rule to a new composed power expression.', 'execution',
+            [
+              { id: 'a', label: '$\\displaystyle\\int (2x-5)^4\\,dx = \\dfrac{(2x-5)^5}{2\\times 5}+C = \\dfrac{(2x-5)^5}{10}+C$' },
+              { id: 'b', label: '$\\displaystyle\\int (2x-5)^4\\,dx = \\dfrac{(2x-5)^5}{5}+C$ (ignoring the inner derivative)' },
+              { id: 'c', label: '$\\displaystyle\\int (2x-5)^4\\,dx = 4(2x-5)^3+C$' },
+            ],
+            'a', { b: 'CALC-INT-01.E8_forgot_reverse_chain_divisor', c: 'CALC-INT-01.E15_differentiated_instead_of_integrated' },
+            ['Raise the power by 1, then divide by BOTH the new power AND the inner expression\'s own derivative.'],
+            '$\\int (ax+b)^n\\,dx = \\dfrac{(ax+b)^{n+1}}{a(n+1)}+C$ — here $a=2, n=4$, giving $\\dfrac{(2x-5)^5}{10}+C$.'),
+          w('W14', '14', 'Verify an integration result by differentiating it back.', 'simplify_and_verify',
+            [
+              { id: 'a', label: 'Differentiate the claimed antiderivative — if it doesn\'t recover the original integrand, the integration has an error somewhere' },
+              { id: 'b', label: 'There is no way to check an integration result' },
+              { id: 'c', label: 'Integrate the answer a second time to check it' },
+            ],
+            'a', { b: 'CALC-INT-01.E16_no_verification_used' },
+            ['Differentiation undoes integration — it\'s the fastest self-check available.'],
+            'Differentiating a proposed antiderivative should exactly reproduce the original integrand — a reliable way to catch reverse-chain-rule or sign slips before finalising an answer.'),
+          w('W15', '15', 'Distinguish "evaluate the definite integral" from "find the indefinite integral / antiderivative".', 'recognition',
+            [
+              { id: 'a', label: '"Evaluate $\\int_a^b f(x)\\,dx$" wants a single NUMBER (limits given); "find $\\int f(x)\\,dx$" wants a general EXPRESSION with $+C$ (no limits)' },
+              { id: 'b', label: 'Both instructions always produce a general expression with $+C$' },
+              { id: 'c', label: 'Both instructions always produce a single number' },
+            ],
+            'a', { c: 'CALC-INT-01.E17_instruction_misread' },
+            ['Check whether limits of integration are actually written on the integral sign — that\'s the signal for which type of answer is wanted.'],
+            'A definite integral (with limits) evaluates to one number; an indefinite integral (no limits) is the general antiderivative family, written with $+C$.'),
+        ];
+      })(),
     ],
   },
   {
@@ -670,6 +909,108 @@ export const QUESTION_DNA = [
         explanation:
           '$a$ is the first deposit/withdrawal amount and $r$ is the per-period growth factor (commonly $1+\\text{rate}$ for growth, $1-\\text{rate}$ for decline) — substitute the question\'s actual numbers next.',
       },
+      // W4-W13 (2026-08-16): pool expansion, same randomized-draw pattern
+      // piloted on CALC-DIFF-01. Still DNA-generic only. W8/W9 target the
+      // "grows then a fixed amount is removed" recurrence pattern found
+      // during the FIN-GP-01 drop-bear retrofit (2026-08-16) — genuinely
+      // common across this DNA's questions, not specific to one of them.
+      ...(() => {
+        const w = (stepId, skillSuffix, objective, axis, options, correctId, errorMap, hints, explanation) => ({
+          step_id: stepId,
+          objective,
+          required_skill: `FIN-GP-01.${skillSuffix}`,
+          axis,
+          interaction_type: 'select',
+          options,
+          expected_response: correctId,
+          common_errors: Object.entries(errorMap).map(([id, error_type]) => ({ id, error_type })),
+          hints,
+          explanation,
+        });
+        return [
+          w('W4', '4', 'Distinguish geometric GROWTH from geometric DECLINE by the value of $r$.', 'recognition',
+            [
+              { id: 'a', label: '$r>1$ means the quantity is growing each period (e.g. compounding investment); $0<r<1$ means it\'s shrinking (e.g. depreciation)' },
+              { id: 'b', label: '$r$ being positive always means growth, regardless of its size' },
+              { id: 'c', label: '$r>1$ means shrinking, $r<1$ means growing' },
+            ],
+            'a', { b: 'FIN-GP-01.E5_ratio_size_ignored', c: 'FIN-GP-01.E6_growth_decline_reversed' },
+            ['Compare $r$ to $1$, not to $0$ — a ratio just under $1$ still shrinks the sequence every period.'],
+            'Growth needs $r>1$ (each term bigger than the last); decline/depreciation needs $0<r<1$ (each term smaller) — check where $r$ sits relative to $1$, not relative to $0$.'),
+          w('W5', '5', 'Recognise a "how many periods until the target is reached" question needs solving for $n$ using logarithms.', 'strategy_selection',
+            [
+              { id: 'a', label: 'Set the term or sum formula equal to the target value, isolate the power of $r$, then take $\\log$ of both sides to solve for $n$' },
+              { id: 'b', label: 'Guess-and-check is the only way to find $n$' },
+              { id: 'c', label: '$n$ can be found by simply dividing the target by $r$' },
+            ],
+            'a', { c: 'FIN-GP-01.E7_log_solving_skipped' },
+            ['Whenever the unknown is stuck in an exponent, isolating that power and taking logs of both sides is the standard way to bring $n$ down.'],
+            'To solve for $n$ when it sits in an exponent (e.g. $ar^{n-1}=\\text{target}$), isolate $r^{n-1}$ then apply $\\log$ to both sides: $n-1 = \\dfrac{\\log(\\text{target}/a)}{\\log r}$.'),
+          w('W6', '6', 'Know how to round $n$ once solved, for a "first time the target is reached/exceeded" question.', 'execution',
+            [
+              { id: 'a', label: 'Round UP to the next whole number of periods — a target isn\'t reached until a WHOLE period has completed' },
+              { id: 'b', label: 'Round to the nearest whole number, up or down depending which is closer' },
+              { id: 'c', label: 'Round DOWN, since the target might be reached partway through a period' },
+            ],
+            'a', { b: 'FIN-GP-01.E8_rounding_direction_wrong', c: 'FIN-GP-01.E8_rounding_direction_wrong' },
+            ['If $n$ comes out as, say, $6.3$, the target genuinely isn\'t reached until period $7$ — a fractional period doesn\'t count as "reached".'],
+            'For a "first period the target is reached/exceeded" question, always round the solved $n$ UP to the next whole number — a partial period hasn\'t actually happened yet.'),
+          w('W7', '7', 'Watch for an off-by-one trap between "value right after the $n$th deposit" and "value one period later".', 'recognition',
+            [
+              { id: 'a', label: 'These can genuinely differ by one period — read carefully whether the question means immediately after a deposit/withdrawal, or after the following period\'s growth as well' },
+              { id: 'b', label: 'They always mean exactly the same instant' },
+              { id: 'c', label: 'The difference is never worth checking' },
+            ],
+            'a', { b: 'FIN-GP-01.E9_off_by_one_period' },
+            ['"Immediately after the $n$th deposit" and "at the start of the $(n+1)$th period" sound similar but can be the same instant or one growth-step apart depending on the model — check exactly which the wording describes.'],
+            'A financial GP model can define $T_n$ as the value right after the $n$th transaction, or after that period\'s growth has also been applied — misreading which one shifts every answer by one period.'),
+          w('W8', '8', 'Recognise when a recurrence "grows by a percentage, THEN a fixed amount is added or removed" needs the GP SUM formula inside its closed form, not a plain GP term formula.', 'recognition',
+            [
+              { id: 'a', label: '$T_n = rT_{n-1}\\pm d$ (grow by ratio $r$, then adjust by a fixed amount $d$ each period) is NOT a pure geometric sequence — its closed form combines a GP term with a GP SUM of the repeated adjustments' },
+              { id: 'b', label: 'This recurrence is still a pure geometric sequence, and $T_n=ar^{n-1}$ applies directly' },
+              { id: 'c', label: 'This recurrence is arithmetic, since a fixed amount is involved' },
+            ],
+            'a', { b: 'FIN-GP-01.E10_mixed_recurrence_treated_as_pure_gp', c: 'FIN-GP-01.E10_mixed_recurrence_treated_as_pure_gp' },
+            ['A pure GP only ever multiplies by $r$ — as soon as a fixed amount is also added/subtracted every period, the closed form needs a GP sum term to account for all those repeated adjustments.'],
+            'A "grow by $r$, then add/remove a fixed amount $d$" recurrence has closed form $T_n = ar^n - d\\cdot\\dfrac{r^n-1}{r-1}$ (or similar) — the fixed adjustment accumulates as its own geometric SUM, it isn\'t a plain $ar^{n-1}$ term.'),
+          w('W9', '9', 'Verify a given closed-form $T_n$ formula against the model\'s own starting value.', 'simplify_and_verify',
+            [
+              { id: 'a', label: 'Substitute the smallest valid $n$ (often $n=0$ or $n=1$) into the closed-form formula and check it matches the known starting amount' },
+              { id: 'b', label: 'A closed-form formula never needs checking once it\'s derived' },
+              { id: 'c', label: 'Substitute a large $n$ value and check the answer is a "nice" round number' },
+            ],
+            'a', { b: 'FIN-GP-01.E11_no_verification_used' },
+            ['The cheapest sanity check on any derived formula is plugging in the starting point you already know the answer to.'],
+            'A quick sanity check on a derived $T_n$ formula: substitute the model\'s known starting $n$ and confirm the formula reproduces the given initial amount.'),
+          w('W10', '10', 'Interpret a "when does the balance run out / become extinct" question correctly.', 'recognition',
+            [
+              { id: 'a', label: 'Solve for the first whole-number $n$ where $T_n \\le 0$ (or the model breaks down) — the answer is a whole period, even if the algebra gives a decimal' },
+              { id: 'b', label: 'Solve $T_n=0$ exactly and always round DOWN to a whole number' },
+              { id: 'c', label: 'The balance can never reach zero in a geometric model' },
+            ],
+            'a', { c: 'FIN-GP-01.E12_extinction_assumed_impossible' },
+            ['A repeated percentage-growth-plus-fixed-withdrawal model absolutely can run out — solve for $n$, then check which whole period actually first satisfies $T_n\\le 0$.'],
+            'An "extinction"/"runs out" question wants the first whole $n$ where the balance is no longer positive — solve the inequality, then interpret the (often non-integer) result as the first whole period it happens in.'),
+          w('W11', '11', 'Know the validity restriction on the geometric sum formula.', 'recognition',
+            [
+              { id: 'a', label: '$S_n=\\dfrac{a(r^n-1)}{r-1}$ requires $r\\ne 1$ — division by zero otherwise' },
+              { id: 'b', label: 'The sum formula works for any value of $r$, including $r=1$' },
+              { id: 'c', label: 'The sum formula only works when $r$ is negative' },
+            ],
+            'a', { b: 'FIN-GP-01.E13_r_equals_one_ignored' },
+            ['Look at the denominator $r-1$ in the sum formula — it becomes $0$ exactly when $r=1$.'],
+            'The finite GP sum formula $S_n=\\dfrac{a(r^n-1)}{r-1}$ is undefined at $r=1$ (division by zero) — a genuinely constant sequence needs $S_n=na$ instead.'),
+          w('W12', '12', 'Recognise a "will the amount ever double/triple" question as solving $r^{n-1}=k$ for $n$.', 'strategy_selection',
+            [
+              { id: 'a', label: 'Set $ar^{n-1}=k\\cdot a$ (so $r^{n-1}=k$ after dividing by $a$), then solve for $n$ using logarithms' },
+              { id: 'b', label: 'Simply multiply the number of periods by $k$' },
+              { id: 'c', label: 'This type of question cannot be solved algebraically' },
+            ],
+            'a', { c: 'FIN-GP-01.E7_log_solving_skipped' },
+            ['Dividing both sides by the first term $a$ isolates the pure ratio power $r^{n-1}$, ready for logs.'],
+            '"When does it double/triple" means solving $ar^{n-1}=k\\cdot a$, i.e. $r^{n-1}=k$, via logarithms — the initial amount $a$ cancels out of the equation entirely.'),
+        ];
+      })(),
     ],
   },
   {
@@ -738,6 +1079,116 @@ export const QUESTION_DNA = [
         ],
         explanation: 'Present value = future value ÷ compounding factor — the reverse of growing a lump sum forward.',
       },
+      // W4-W14 (2026-08-16): pool expansion, same randomized-draw pattern
+      // piloted on CALC-DIFF-01. Still DNA-generic only — true across the
+      // lump-sum PV/FV, loan amortisation, and annuity scenarios this DNA
+      // spans.
+      ...(() => {
+        const w = (stepId, skillSuffix, objective, axis, options, correctId, errorMap, hints, explanation) => ({
+          step_id: stepId,
+          objective,
+          required_skill: `FIN-INTEREST-01.${skillSuffix}`,
+          axis,
+          interaction_type: 'select',
+          options,
+          expected_response: correctId,
+          common_errors: Object.entries(errorMap).map(([id, error_type]) => ({ id, error_type })),
+          hints,
+          explanation,
+        });
+        return [
+          w('W4', '4', 'Distinguish simple (flat-rate) interest from compound interest by what the interest is calculated on.', 'recognition',
+            [
+              { id: 'a', label: 'Simple interest is calculated on the ORIGINAL principal every period; compound interest is calculated on the CURRENT (growing) balance, which includes previously earned interest' },
+              { id: 'b', label: 'Both types are always calculated on the original principal only' },
+              { id: 'c', label: 'Simple interest grows faster than compound interest over a long term' },
+            ],
+            'a', { c: 'FIN-INTEREST-01.E4_simple_vs_compound_growth_reversed' },
+            ['Compound interest is interest paid on interest already earned — that\'s what makes it grow faster over time than simple interest.'],
+            'Simple interest: same fixed amount each period, based on the ORIGINAL principal. Compound interest: recalculated each period on the CURRENT balance, so it accelerates over time.'),
+          w('W5', '5', 'Recall the simple interest formula.', 'strategy_selection',
+            [
+              { id: 'a', label: '$I = Prn$ ($P$=principal, $r$=rate per period, $n$=number of periods)' },
+              { id: 'b', label: '$I = P(1+r)^n$' },
+              { id: 'c', label: '$I = P + rn$' },
+            ],
+            'a', { b: 'FIN-INTEREST-01.E5_formula_family_swapped' },
+            ['Simple interest is a straight multiplication, not a compounding power — that formula belongs to compound interest instead.'],
+            '$I=Prn$ — simple interest is linear in $n$, no exponent involved.'),
+          w('W6', '6', 'Recall the compound interest / future value formula.', 'strategy_selection',
+            [
+              { id: 'a', label: '$FV = PV(1+r)^n$ ($r$=rate per compounding period, $n$=number of compounding periods)' },
+              { id: 'b', label: '$FV = PV \\cdot rn$' },
+              { id: 'c', label: '$FV = PV + (1+r)^n$' },
+            ],
+            'a', { b: 'FIN-INTEREST-01.E5_formula_family_swapped' },
+            ['Compounding is repeated multiplication by the growth factor, which is exactly what a power represents.'],
+            '$FV=PV(1+r)^n$ — the principal grows by a factor of $(1+r)$ once for every compounding period.'),
+          w('W7', '7', 'Recognise that a loan repayment reduces BOTH principal and interest, not just principal.', 'recognition',
+            [
+              { id: 'a', label: 'Each repayment first covers the interest accrued that period, and the remainder reduces the outstanding principal' },
+              { id: 'b', label: 'Every repayment goes entirely toward reducing the principal, with interest charged separately at the end' },
+              { id: 'c', label: 'Every repayment goes entirely toward the interest until the interest is fully paid off' },
+            ],
+            'a', { b: 'FIN-INTEREST-01.E6_repayment_split_misunderstood', c: 'FIN-INTEREST-01.E6_repayment_split_misunderstood' },
+            ['Interest is charged on the outstanding balance each period first — whatever\'s left of the repayment then chips away at the principal itself.'],
+            'A loan repayment is split: part covers that period\'s interest on the remaining balance, and the rest reduces the principal — which is why the outstanding balance shrinks more slowly at first.'),
+          w('W8', '8', 'Distinguish an "annuity" (regular repeated payments) from a "lump sum" (single amount) when choosing a formula.', 'recognition',
+            [
+              { id: 'a', label: 'A lump sum uses the single-amount compound interest formula $FV=PV(1+r)^n$; an annuity (regular deposits/withdrawals) needs a SUM-of-a-GP-style formula instead, since many separate payments each compound for a different length of time' },
+              { id: 'b', label: 'Both scenarios always use the exact same single-amount formula' },
+              { id: 'c', label: 'An annuity is just a lump sum multiplied by the number of payments' },
+            ],
+            'a', { b: 'FIN-INTEREST-01.E7_annuity_treated_as_lump_sum', c: 'FIN-INTEREST-01.E7_annuity_treated_as_lump_sum' },
+            ['A lump sum is invested/borrowed once; an annuity has many separate payments, each compounding for a different remaining time — that difference is exactly what a GP-sum-based annuity formula (or table factor) accounts for.'],
+            'A single deposit/loan uses $FV=PV(1+r)^n$; a series of regular payments (an annuity) needs a table/formula built from summing each payment\'s own compounding — never treat repeated payments as one lump sum.'),
+          w('W9', '9', 'Read an interest-rate/annuity table correctly for the number of periods and the periodic rate.', 'execution',
+            [
+              { id: 'a', label: 'Match the table row/column to the NUMBER OF COMPOUNDING PERIODS ($n$) and the RATE PER PERIOD — not the number of years and the annual rate directly, if compounding is more than once a year' },
+              { id: 'b', label: 'Always use the row for the number of years, regardless of how often interest compounds' },
+              { id: 'c', label: 'Always use the annual rate column, regardless of compounding frequency' },
+            ],
+            'a', { b: 'FIN-INTEREST-01.E8_table_row_period_mismatch', c: 'FIN-INTEREST-01.E9_table_column_rate_mismatch' },
+            ['If interest compounds quarterly, the table needs $n=$years$\\times4$ periods and the rate column for the quarterly (not annual) rate.'],
+            'Table factors are always indexed by (periodic rate, number of periods) — for anything compounding more than once a year, convert both the rate and the count before looking up the factor.'),
+          w('W10', '10', 'Recognise the difference between "future value of an annuity" and "future value of a lump sum" formula structure.', 'recognition',
+            [
+              { id: 'a', label: 'A lump sum formula tracks ONE amount compounding; an annuity formula tracks a SERIES of equal regular payments, each compounding for a different number of remaining periods, then summed' },
+              { id: 'b', label: 'They are structurally identical formulas' },
+              { id: 'c', label: 'An annuity formula only ever applies to withdrawing money, never depositing it' },
+            ],
+            'a', { c: 'FIN-INTEREST-01.E10_annuity_assumed_withdrawal_only' },
+            ['An annuity can model either regular deposits building up a balance, or regular withdrawals running one down — the key feature is "regular repeated payments", not the direction of the cash flow.'],
+            'An annuity formula sums many separate payments, each compounding for its own remaining time until the valuation date — a lump-sum formula only ever tracks one single amount.'),
+          w('W11', '11', 'Distinguish "reducing balance" from "flat-rate" loan interest calculation.', 'recognition',
+            [
+              { id: 'a', label: 'Reducing balance charges interest on the CURRENT outstanding amount each period (it shrinks as the loan is paid down); flat-rate charges interest on the ORIGINAL principal for the whole term regardless of repayments made' },
+              { id: 'b', label: 'Both methods always produce identical total interest' },
+              { id: 'c', label: 'Reducing balance always charges MORE total interest than flat-rate on the same loan' },
+            ],
+            'a', { c: 'FIN-INTEREST-01.E11_reducing_balance_vs_flat_rate_reversed' },
+            ['If interest is always based on the ORIGINAL amount even as the balance is being paid down, that\'s flat-rate — usually the more expensive method overall.'],
+            'Reducing-balance interest recalculates on the shrinking outstanding balance each period (generally cheaper overall); flat-rate interest is fixed on the original principal for the whole term, regardless of repayments already made.'),
+          w('W12', '12', 'Interpret "how much interest was earned/paid" correctly.', 'recognition',
+            [
+              { id: 'a', label: 'Interest earned/paid = final amount $-$ original principal — NOT the final amount itself' },
+              { id: 'b', label: 'Interest earned/paid IS the final amount' },
+              { id: 'c', label: 'Interest earned/paid = final amount $\\times$ rate' },
+            ],
+            'a', { b: 'FIN-INTEREST-01.E12_final_amount_confused_with_interest' },
+            ['The final balance includes the original principal too — subtract that principal back out to isolate just the interest portion.'],
+            '"Interest earned/paid" asks for the GROWTH only: (final amount) $-$ (original principal) — quoting the final amount alone answers a different question.'),
+          w('W13', '13', 'Recognise that comparing two interest options fairly needs the same principal AND the same time period.', 'strategy_selection',
+            [
+              { id: 'a', label: 'Compute the future value (or total interest) for BOTH options over the identical principal and identical time period before comparing them' },
+              { id: 'b', label: 'Compare the two raw interest RATES directly, regardless of compounding frequency or term length' },
+              { id: 'c', label: 'The option with the higher advertised rate is always better, regardless of anything else' },
+            ],
+            'a', { b: 'FIN-INTEREST-01.E13_raw_rates_compared_directly', c: 'FIN-INTEREST-01.E13_raw_rates_compared_directly' },
+            ['A higher advertised annual rate compounded less often can lose out to a lower rate compounded more often — actually compute both outcomes rather than comparing the headline numbers.'],
+            'Comparing financial options fairly means computing the actual future value or total interest for BOTH over the same principal and time — raw advertised rates alone (especially with different compounding frequencies) can be misleading.'),
+        ];
+      })(),
     ],
   },
 ];
