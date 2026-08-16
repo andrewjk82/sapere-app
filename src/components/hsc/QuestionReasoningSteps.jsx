@@ -79,10 +79,33 @@ export default function QuestionReasoningSteps({ dnaId, questionId, questionText
       {/* The question stem stays visible through every reasoning step —
           without it, an early step like "find T1" is unanswerable, since
           the numbers it depends on live in the question text, not the step
-          itself. */}
+          itself.
+
+          A step can optionally carry `highlight: {before, mark, after,
+          color}` — before/mark/after are self-contained (each internally
+          $...$-balanced) LaTeX fragments that together read as the same
+          question text, with `mark` being the exact part this step is
+          about. When present, `mark` renders on a highlighted background
+          inline with the rest of the question, so the student can see
+          exactly which piece of the question this reasoning step
+          connects to (e.g. highlighting "$f'(x)$" for a step about
+          differentiation notation, or highlighting the expression itself
+          for a step about which rule it needs). Falls back to the plain
+          questionText for any step without a highlight — fully backward
+          compatible with every pre-step authored before this feature. */}
       {questionText && (
         <div style={{ padding: '20px', borderRadius: '20px', background: '#fff', border: '1px solid #e2e8f0', marginBottom: '14px' }}>
-          <MathView content={questionText} style={{ fontSize: '1rem', lineHeight: 1.75, color: '#1e1b4b', fontWeight: 500 }} />
+          {step.highlight ? (
+            <div style={{ fontSize: '1rem', lineHeight: 1.75, color: '#1e1b4b', fontWeight: 500, display: 'flex', flexWrap: 'wrap', alignItems: 'baseline', gap: '2px 4px' }}>
+              <MathView content={step.highlight.before} inline style={{ display: 'inline' }} />
+              <span style={{ background: step.highlight.color || '#fef08a', borderRadius: '6px', padding: '1px 5px' }}>
+                <MathView content={step.highlight.mark} inline style={{ display: 'inline' }} />
+              </span>
+              <MathView content={step.highlight.after} inline style={{ display: 'inline' }} />
+            </div>
+          ) : (
+            <MathView content={questionText} style={{ fontSize: '1rem', lineHeight: 1.75, color: '#1e1b4b', fontWeight: 500 }} />
+          )}
         </div>
       )}
 
