@@ -8,21 +8,24 @@ import { useAuth } from '../../context/AuthContext';
 // student's own users/{uid}/dna_step_evidence (small subcollection, bounded
 // by how many reasoning steps they've actually done — a full read of one's
 // own subcollection, not a cross-user scan) and aggregates correct/total
-// per (dna_id, axis). Only 3 of the doc's 6 axes are wired up so far —
-// recognition, strategy_selection, execution — plus verification, added
-// from the real final-answer submission (HscTypePracticeSession.jsx).
-// backward_reasoning and transfer have no evidence source yet (no D5-shaped
-// DNA or Transfer-mode session built). This is deliberately "evidence, not
-// a single score" — the whole point per doc §11 is that a student can be
-// strong on execution and weak on strategy_selection, and that shouldn't
-// collapse into one percentage.
+// per (dna_id, axis). 5 of the doc's 6 axes are now wired up — recognition,
+// strategy_selection, execution from reasoning-blueprint pre-steps;
+// verification from a Guided/Scaffolded final answer; transfer from a
+// Transfer-mode final answer (2026-08-16, HscTypePracticeSession.jsx —
+// axis:'transfer' evidence written only when no pre-steps ran that
+// session). backward_reasoning still has no evidence source (no D5-shaped
+// DNA built). This is deliberately "evidence, not a single score" — the
+// whole point per doc §11 is that a student can be strong on execution and
+// weak on strategy_selection, and that shouldn't collapse into one
+// percentage.
 const AXIS_LABELS = {
   recognition: 'Recognition',
   strategy_selection: 'Strategy selection',
   execution: 'Execution',
   verification: 'Verification',
+  transfer: 'Transfer',
 };
-const AXIS_ORDER = ['recognition', 'strategy_selection', 'execution', 'verification'];
+const AXIS_ORDER = ['recognition', 'strategy_selection', 'execution', 'verification', 'transfer'];
 
 function aggregate(evidenceDocs) {
   const byDna = new Map(); // dna_id -> { axis -> {correct, total} }

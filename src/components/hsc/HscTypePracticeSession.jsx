@@ -20,13 +20,26 @@ import QuestionReasoningSteps from './QuestionReasoningSteps';
 
 // Scaffolded learning mode (Sapere_Question_DNA_v2.0 §5 "Scaffolded — Practise").
 // Once a student has correctly answered a DNA's real final question this many
-// times (dna_step_evidence: step_id 'FINAL', axis 'verification', correct
-// true), both the DNA-generic warmup and any question-specific pre-steps for
-// that DNA switch from Guided to Scaffolded rendering — same reasoningBlueprint
-// content, just with the objective framing and hint button hidden, forcing the
-// student to reason from the options alone. See DnaReasoningWarmup.jsx /
-// QuestionReasoningSteps.jsx for the rendering difference.
+// times (dna_step_evidence: step_id 'FINAL', mode not yet 'scaffolded'/
+// 'transfer', correct true), both the DNA-generic warmup and any
+// question-specific pre-steps for that DNA switch from Guided to Scaffolded
+// rendering — same reasoningBlueprint content, just with the objective
+// framing and hint button hidden, forcing the student to reason from the
+// options alone. See DnaReasoningWarmup.jsx / QuestionReasoningSteps.jsx for
+// the rendering difference.
 const GUIDED_TO_SCAFFOLDED_THRESHOLD = 3;
+
+// Transfer learning mode (Sapere_Question_DNA_v2.0 §5 "Transfer — Apply: the
+// DNA is not revealed"). Once a student has that many correct Scaffolded-mode
+// final answers for a DNA, the DNA-generic warmup AND any question-specific
+// pre-steps are skipped entirely for that DNA — straight to the real
+// question, no reasoning-blueprint scaffolding shown at all. "Not revealed"
+// is implemented as "no pre-steps shown" (the session header still names the
+// DNA the student chose to practise — see the brainstorming-approved design,
+// 2026-08-16). The resulting final-answer evidence is tagged axis:'transfer'
+// instead of axis:'verification', since with no pre-steps run this session,
+// the final answer itself IS the independent-application evidence.
+const SCAFFOLDED_TO_TRANSFER_THRESHOLD = 3;
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────
 
@@ -353,11 +366,13 @@ const HscTypePracticeSession = ({ type, profile, initialStats, onBack, dnaLabels
   // session, then the existing MC flow takes over unchanged.
   const [preStepsDoneFor, setPreStepsDoneFor] = useState(() => new Set());
   const [scaffolded, setScaffolded] = useState(false);
+  const [transferMode, setTransferMode] = useState(false);
 
-  // ── Scaffolded-mode check (Sapere_Question_DNA_v2.0 §5) ─────────────────────
-  // Count this DNA's past correct FINAL-answer evidence for this student; once
-  // it reaches the threshold, both warmup and question pre-steps below switch
-  // to Scaffolded rendering. Equality-only filters, no composite index needed.
+  // ── Scaffolded/Transfer mode check (Sapere_Question_DNA_v2.0 §5) ────────────
+  // Read this DNA's past correct FINAL-answer evidence for this student once,
+  // split by `mode` (see recordStepEvidence calls / submitAnswer below):
+  // guided successes gate Guided→Scaffolded, scaffolded successes gate
+  // Scaffolded→Transfer. Equality-only filters, no composite index needed.
   useEffect(() => {
     if (!type.dnaFocus || !type.slug || !user?.uid) return;
     let cancelled = false;
@@ -370,9 +385,22 @@ const HscTypePracticeSession = ({ type, profile, initialStats, onBack, dnaLabels
           where('correct', '==', true),
         );
         const snap = await getDocs(evidenceQuery);
-        if (!cancelled) setScaffolded(snap.size >= GUIDED_TO_SCAFFOLDED_THRESHOLD);
+        if (cancelled) return;
+        const docs = snap.docs.map((d) => d.data());
+        const guidedSuccesses = docs.filter((d) => d.mode !== 'scaffolded' && d.mode !== 'transfer').length;
+        const scaffoldedSuccesses = docs.filter((d) => d.mode === 'scaffolded').length;
+        const nowScaffolded = guidedSuccesses >= GUIDED_TO_SCAFFOLDED_THRESHOLD;
+        const nowTransfer = nowScaffolded && scaffoldedSuccesses >= SCAFFOLDED_TO_TRANSFER_THRESHOLD;
+        setScaffolded(nowScaffolded);
+        setTransferMode(nowTransfer);
+        // Transfer skips the DNA-generic warmup entirely (no pre-steps shown
+        // at all) — if the warmup screen is still up when this resolves,
+        // dismiss it straight to the real question. Small race window if a
+        // student is mid-warmup when this (fast, bounded) query resolves —
+        // accepted for now, see design notes.
+        if (nowTransfer) setWarmupDone(true);
       } catch (e) {
-        console.warn('Failed to check scaffolded-mode threshold:', e);
+        console.warn('Failed to check scaffolded/transfer-mode threshold:', e);
       }
     })();
     return () => { cancelled = true; };
@@ -468,16 +496,21 @@ const HscTypePracticeSession = ({ type, profile, initialStats, onBack, dnaLabels
     setAnswers(prev => [...prev, { userAnswer, correct, timedOut, questionId: q.id, questionText: q.q || q.question }]);
     setShowFeedback(true);
 
-    // Verification-axis evidence: the real final answer, for questions that
-    // went through reasoning-blueprint pre-steps (Sapere_Question_DNA_v2.0
-    // §8/§10 6-axis mastery). Piggybacks on the grading result already
-    // computed above — never re-decides correctness, just records it.
-    if (type.dnaFocus && q.reasoning_blueprint?.length && user?.uid && !timedOut) {
+    // Verification/Transfer-axis evidence: the real final answer
+    // (Sapere_Question_DNA_v2.0 §8/§10 6-axis mastery). Piggybacks on the
+    // grading result already computed above — never re-decides correctness,
+    // just records it. Written whenever the question went through
+    // reasoning-blueprint pre-steps (axis 'verification', as before), OR the
+    // session is in Transfer mode (axis 'transfer' — no pre-steps ran this
+    // session, so the final answer itself is the independent-application
+    // evidence, even for a question with no reasoning_blueprint of its own).
+    if (type.dnaFocus && user?.uid && !timedOut && (transferMode || q.reasoning_blueprint?.length)) {
       addDoc(collection(db, 'users', user.uid, 'dna_step_evidence'), {
         dna_id: type.slug,
         question_id: q.id,
         step_id: 'FINAL',
-        axis: 'verification',
+        axis: transferMode ? 'transfer' : 'verification',
+        mode: transferMode ? 'transfer' : (scaffolded ? 'scaffolded' : 'guided'),
         student_id: user.uid,
         response: userAnswer,
         correct,
@@ -488,7 +521,7 @@ const HscTypePracticeSession = ({ type, profile, initialStats, onBack, dnaLabels
         created_at: serverTimestamp(),
       }).catch(e => console.warn('Failed to write dna_step_evidence (final answer):', e));
     }
-  }, [draft, q, isMC, showToast, type.dnaFocus, type.slug, user?.uid, showHint]);
+  }, [draft, q, isMC, showToast, type.dnaFocus, type.slug, user?.uid, showHint, transferMode, scaffolded]);
 
   // ── Advance — mastery queue logic ──────────────────────────────────────────
   const advance = useCallback(async () => {
@@ -624,7 +657,9 @@ const HscTypePracticeSession = ({ type, profile, initialStats, onBack, dnaLabels
   // This one question has its own reasoning-blueprint pre-steps and they
   // haven't been done yet this session — show those first, then fall
   // through to the normal quiz UI below (unchanged) for the real answer.
-  if (type.dnaFocus && q.reasoning_blueprint?.length && !preStepsDoneFor.has(q.id)) {
+  // Skipped entirely in Transfer mode — no pre-steps shown at all, see
+  // GUIDED_TO_SCAFFOLDED_THRESHOLD/SCAFFOLDED_TO_TRANSFER_THRESHOLD above.
+  if (type.dnaFocus && q.reasoning_blueprint?.length && !preStepsDoneFor.has(q.id) && !transferMode) {
     return (
       <QuestionReasoningSteps
         dnaId={type.slug}
@@ -648,7 +683,9 @@ const HscTypePracticeSession = ({ type, profile, initialStats, onBack, dnaLabels
           <ArrowLeft size={16} />
         </button>
         <div style={{ flex: 1 }}>
-          <div style={{ fontSize: '0.68rem', fontWeight: 800, color: '#7c3aed', textTransform: 'uppercase', letterSpacing: '0.1em' }}>{type.label}</div>
+          <div style={{ fontSize: '0.68rem', fontWeight: 800, color: '#7c3aed', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
+            {type.label}{transferMode ? ' · Transfer' : ''}
+          </div>
           <div style={{ fontWeight: 900, color: '#1e1b4b', fontSize: '0.95rem' }}>
             {mastered} / {totalQuestions} mastered
             {queue.length > 1 && <span style={{ fontSize: '0.75rem', fontWeight: 600, color: '#94a3b8', marginLeft: '8px' }}>· {queue.length} remaining</span>}
