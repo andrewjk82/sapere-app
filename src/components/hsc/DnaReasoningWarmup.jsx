@@ -109,7 +109,7 @@ const DnaReasoningWarmup = ({ dnaId, blueprint: pool, onDone }) => {
 
       <div style={{ padding: '20px', borderRadius: '20px', background: '#f8fafc', border: '1px solid #e2e8f0' }}>
         <div style={{ fontWeight: 800, color: '#1e1b4b', fontSize: '0.98rem', marginBottom: '14px' }}>
-          {step.objective}
+          <MathView content={step.objective} inline style={{ display: 'inline' }} />
         </div>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
