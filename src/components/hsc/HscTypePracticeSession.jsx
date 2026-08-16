@@ -367,6 +367,11 @@ const HscTypePracticeSession = ({ type, profile, initialStats, onBack, dnaLabels
   const [preStepsDoneFor, setPreStepsDoneFor] = useState(() => new Set());
   const [scaffolded, setScaffolded] = useState(false);
   const [transferMode, setTransferMode] = useState(false);
+  // Self-reported confidence (Sapere_Question_DNA_v2.0 §10 Evidence Model),
+  // added 2026-08-16 — optional, shown between selecting an MC option and
+  // pressing Submit, only in DNA-focus sessions (where FINAL evidence is
+  // actually recorded). Not required to submit.
+  const [confidence, setConfidence] = useState(null); // null | 'confident' | 'unsure' | 'guessing'
 
   // ── Scaffolded/Transfer mode check (Sapere_Question_DNA_v2.0 §5) ────────────
   // Read this DNA's past correct FINAL-answer evidence for this student once,
@@ -463,6 +468,7 @@ const HscTypePracticeSession = ({ type, profile, initialStats, onBack, dnaLabels
     setLastCorrect(null);
     setTimeLeft(timeLimit);
     setQuestionStartTime(timeLimit ? Date.now() : null);
+    setConfidence(null);
   }, [q?.id]);
 
   // ── Countdown timer ────────────────────────────────────────────────────────
@@ -518,10 +524,11 @@ const HscTypePracticeSession = ({ type, profile, initialStats, onBack, dnaLabels
         hint_used: showHint ? 1 : 0,
         retry_count: 0,
         time_spent_ms: null,
+        confidence, // self-reported, optional — null if the student skipped it
         created_at: serverTimestamp(),
       }).catch(e => console.warn('Failed to write dna_step_evidence (final answer):', e));
     }
-  }, [draft, q, isMC, showToast, type.dnaFocus, type.slug, user?.uid, showHint, transferMode, scaffolded]);
+  }, [draft, q, isMC, showToast, type.dnaFocus, type.slug, user?.uid, showHint, transferMode, scaffolded, confidence]);
 
   // ── Advance — mastery queue logic ──────────────────────────────────────────
   const advance = useCallback(async () => {
@@ -845,6 +852,35 @@ const HscTypePracticeSession = ({ type, profile, initialStats, onBack, dnaLabels
             )}
           </motion.div>
         </AnimatePresence>
+      )}
+
+      {/* Confidence self-report (Sapere_Question_DNA_v2.0 §10) — optional,
+          shown once an answer is drafted but before it's submitted, only in
+          DNA-focus sessions (the only place FINAL evidence is recorded). */}
+      {type.dnaFocus && !showFeedback && (isMC ? draft !== null : !!draft?.trim()) && (
+        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+          <span style={{ fontSize: '0.75rem', fontWeight: 600, color: '#94a3b8' }}>How sure are you?</span>
+          {[
+            { id: 'confident', label: 'Confident' },
+            { id: 'unsure', label: 'Unsure' },
+            { id: 'guessing', label: 'Guessing' },
+          ].map((opt) => (
+            <button
+              key={opt.id}
+              type="button"
+              onClick={() => setConfidence((c) => (c === opt.id ? null : opt.id))}
+              style={{
+                padding: '5px 12px', borderRadius: '999px', border: '1.5px solid',
+                borderColor: confidence === opt.id ? '#7c3aed' : '#e2e8f0',
+                background: confidence === opt.id ? '#f5f3ff' : '#fff',
+                color: confidence === opt.id ? '#7c3aed' : '#64748b',
+                fontWeight: 700, fontSize: '0.75rem', cursor: 'pointer',
+              }}
+            >
+              {opt.label}
+            </button>
+          ))}
+        </div>
       )}
 
       {/* Submit button */}
