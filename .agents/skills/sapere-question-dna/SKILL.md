@@ -42,6 +42,25 @@ Step schema (both shapes): `{ step_id, objective, axis, required_skill?,
 interaction_type: 'select', options: [{id, label}], expected_response,
 common_errors?, hints: string[], explanation, highlight? }`.
 
+**Learning modes** (`HscTypePracticeSession.jsx`, 2026-08-16): Guided (every
+step shown in full) is the default; **Scaffolded** auto-engages after
+`GUIDED_TO_SCAFFOLDED_THRESHOLD` (3) correct FINAL answers for a DNA — same
+content, but `step.objective` and the hint button are hidden; **Transfer**
+auto-engages after `SCAFFOLDED_TO_TRANSFER_THRESHOLD` (3) more correct
+Scaffolded answers — pre-steps are skipped entirely, the real MC question is
+the only thing shown. All three reuse the exact same
+`reasoningBlueprint`/`reasoning_blueprint` content — modes are a rendering/
+gating difference in the session component, never a separate content shape.
+
+**6-axis student model** (`DnaMasteryPanel.jsx`): `recognition`,
+`strategy_selection`, `execution` (from pre-step evidence),
+`verification` (Guided/Scaffolded final answer), `transfer` (Transfer-mode
+final answer), `backward_reasoning` (steps that are genuinely D5/
+work-backwards in character, see rule 12) — all 6 now have a live evidence
+source. Evidence docs (`users/{uid}/dna_step_evidence`) also carry an
+optional `confidence` field (`'confident'|'unsure'|'guessing'|null`),
+self-reported on the final-answer submission only.
+
 ## Standing rules
 
 **1. Verify before you enrich.** Before writing any step on top of a
@@ -148,6 +167,38 @@ written to a temp file and committed with `git commit -F <file>`, never
 inline `-m "..."`** — a bare backtick in an inline `-m` message triggers
 shell command substitution and silently mangles the message (the code
 itself is unaffected, only the message text).
+
+**11. A `teacher_review` ("show that" / "prove") question is a valid,
+DNA-tagged-by-skill-domain question that can still be D8-primary
+(justification) in its reasoning SHAPE.** The DNA id (e.g. `CALC-DIFF-01`,
+`FIN-INTEREST-01`) classifies the mathematical skill domain, not the D1-D10
+reasoning type — a "Show that ..." question tagged `CALC-DIFF-01` is
+justification-primary at the blueprint level even though its skill domain
+is differentiation. Pre-steps for these walk through the proof's own logic
+(recognition/strategy_selection/execution/verification axes, same as any
+other question) while the actual proof stays `type:'teacher_review'`
+(free-form, teacher-graded) — never convert the proof itself into MC.
+Worked examples already live: `abb2020-q11eii`, `abb2020-q15ai`,
+`bar2020-q16ai`, `baulko2020-q11ei` (CALC-DIFF-01), `bar2020-q17bi`,
+`bar2020-q17biia`, `baulko2020-q16ai`, `baulko2020-q16aii`
+(FIN-INTEREST-01). No new axis or interaction type needed for
+justification-shaped content — the existing 6-axis model and `select`-only
+interaction cover it, same as the backward-reasoning case in rule 12.
+
+**12. `axis: 'backward_reasoning'` marks a step that is genuinely D5
+(work-backwards) in character** — start from a known TARGET, reverse the
+relationship to find what must have been true before it (e.g. "given the
+future value, divide by the growth factor to find the present value";
+"given the terminal condition balance=0, rearrange backward to isolate the
+growth-factor unknown"). Prefer retagging an already-verified step's
+`axis` over inventing new DNA/content when a genuine backward-reasoning
+step already exists in the corpus — see
+`tools/scripts/tagBackwardReasoningD5.mjs` for the worked pattern (5
+question-specific steps + 1 DNA-generic warmup item on `FIN-INTEREST-01`,
+2026-08-16). Per the source plan's own caution, do not force D5 as a
+*primary* DNA classification for financial-math content — it belongs as
+a supporting axis on the specific step that's actually backward in
+character, same principle as rule 11 above.
 
 ## Reference: service account / script boilerplate
 
