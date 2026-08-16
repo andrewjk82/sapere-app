@@ -17,7 +17,7 @@
  * personal_priority = 0.55 * priorityScore + 0.45 * (100 - student_mastery).
  */
 
-export const DNA_TAXONOMY_VERSION = '1.3';
+export const DNA_TAXONOMY_VERSION = '1.4';
 
 // ─── Version history ────────────────────────────────────────────────────────
 // v1.0 — initial 32-entry taxonomy from the master prompt (§7).
@@ -38,6 +38,14 @@ export const DNA_TAXONOMY_VERSION = '1.3';
 //   first pass (2-5 items, not yet grown to the 12-24 depth of the 5 DNAs
 //   with real question corpora attached) — deepen later if/when those
 //   DNAs get real question-specific pre-step work.
+// v1.4 (2026-08-16, later same day) — retagged FIN-INTEREST-01's warmup W3
+//   from axis:'strategy_selection' to axis:'backward_reasoning' (§7/§12
+//   Prototype B validation: D5 work-backwards as a supporting axis on real
+//   steps, not a whole new DNA — the plan itself warns against forcing D5
+//   as primary for financial-math content). 5 matching question-specific
+//   steps also retagged directly in Firestore (asc2020-mc8/mc8v S3,
+//   dane2020-q34b S3, bar2020-q17biib/biibv S1) — see
+//   tools/scripts/tagBackwardReasoningD5.mjs. No answer/content changes.
 
 export const QUESTION_DNA = [
   // ── CALCULUS ────────────────────────────────────────────────────────────
@@ -4781,7 +4789,14 @@ export const QUESTION_DNA = [
         step_id: 'W3',
         objective: 'You know the future value you want, and need to find how much to invest today. Do you multiply or divide by the compounding factor?',
         required_skill: 'FIN-INTEREST-01.3',
-        axis: 'strategy_selection',
+        // Genuinely D5 (work-backwards) in character — start from the
+        // TARGET (future value), reverse the growth relationship to find
+        // the PREVIOUS STATE (present value). Retagged 2026-08-16 as the
+        // Sapere_Question_DNA_v2.0 §7/§12 Prototype B validation: D5 as a
+        // supporting axis on real steps, not forced as a whole new DNA
+        // (the plan explicitly warns against forcing D5 as primary for
+        // financial-math content).
+        axis: 'backward_reasoning',
         interaction_type: 'select',
         options: [
           { id: 'a', label: 'Multiply' },

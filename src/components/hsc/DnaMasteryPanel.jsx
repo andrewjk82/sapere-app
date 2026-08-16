@@ -8,24 +8,25 @@ import { useAuth } from '../../context/AuthContext';
 // student's own users/{uid}/dna_step_evidence (small subcollection, bounded
 // by how many reasoning steps they've actually done — a full read of one's
 // own subcollection, not a cross-user scan) and aggregates correct/total
-// per (dna_id, axis). 5 of the doc's 6 axes are now wired up — recognition,
+// per (dna_id, axis). All 6 axes are now wired up — recognition,
 // strategy_selection, execution from reasoning-blueprint pre-steps;
 // verification from a Guided/Scaffolded final answer; transfer from a
-// Transfer-mode final answer (2026-08-16, HscTypePracticeSession.jsx —
-// axis:'transfer' evidence written only when no pre-steps ran that
-// session). backward_reasoning still has no evidence source (no D5-shaped
-// DNA built). This is deliberately "evidence, not a single score" — the
-// whole point per doc §11 is that a student can be strong on execution and
-// weak on strategy_selection, and that shouldn't collapse into one
-// percentage.
+// Transfer-mode final answer; backward_reasoning from 5 real
+// FIN-INTEREST-01 steps retagged 2026-08-16 as the §7/§12 Prototype B
+// validation (present-value "reverse the growth relationship" steps —
+// see tools/scripts/tagBackwardReasoningD5.mjs). This is deliberately
+// "evidence, not a single score" — the whole point per doc §11 is that a
+// student can be strong on execution and weak on strategy_selection, and
+// that shouldn't collapse into one percentage.
 const AXIS_LABELS = {
   recognition: 'Recognition',
   strategy_selection: 'Strategy selection',
   execution: 'Execution',
   verification: 'Verification',
   transfer: 'Transfer',
+  backward_reasoning: 'Backward reasoning',
 };
-const AXIS_ORDER = ['recognition', 'strategy_selection', 'execution', 'verification', 'transfer'];
+const AXIS_ORDER = ['recognition', 'strategy_selection', 'execution', 'verification', 'transfer', 'backward_reasoning'];
 
 function aggregate(evidenceDocs) {
   const byDna = new Map(); // dna_id -> { axis -> {correct, total} }
