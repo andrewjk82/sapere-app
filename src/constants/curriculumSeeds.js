@@ -279,6 +279,13 @@ import { Y10_CH16_QUESTIONS } from './seedYear10Ch16Questions.js';
 import { Y10_CH16B_QUESTIONS } from './seedYear10Ch16BQuestions.js';
 import { Y10_CH16C_QUESTIONS } from './seedYear10Ch16CQuestions.js';
 import { Y10_CH16D_QUESTIONS } from './seedYear10Ch16DQuestions.js';
+import { Y10_CH18A_QUESTIONS } from './seedYear10Ch18AQuestions.js';
+import { Y10_CH18B_QUESTIONS } from './seedYear10Ch18BQuestions.js';
+import { Y10_CH18A2_QUESTIONS } from './seedYear10Ch18A2Questions.js';
+import { Y10_CH18B_ICEM_QUESTIONS } from './seedYear10Ch18BQuestionsICEM.js';
+import { Y10_CH18C_ICEM_QUESTIONS } from './seedYear10Ch18CQuestionsICEM.js';
+import { Y10_CH18D_ICEM_QUESTIONS } from './seedYear10Ch18DQuestionsICEM.js';
+import { Y10_CH18E_ICEM_QUESTIONS } from './seedYear10Ch18EQuestionsICEM.js';
 import { CARINGBAH_2020_QUESTIONS } from './seedCaringbah2020Questions.js';
 import { CARINGBAH_2020_SIMILAR_QUESTIONS } from './seedCaringbah2020SimilarQuestions.js';
 import { ABBOTSLEIGH_2020_QUESTIONS } from './seedAbbotsleigh2020Questions.js';
@@ -1129,6 +1136,13 @@ export const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y10-16', chapterTitle: 'Chapter 16: Direct and inverse proportion', topicId: 'y10-16b', topicCode: '16B', topicTitle: 'Inverse proportion', year: 'Year 10', seed: Y10_CH16B_QUESTIONS, label: 'Y10 Ch16 · 16B Inverse proportion' },
   { chapterId: 'y10-16', chapterTitle: 'Chapter 16: Direct and inverse proportion', topicId: 'y10-16c', topicCode: '16C', topicTitle: 'Proportionality in several variables', year: 'Year 10', seed: Y10_CH16C_QUESTIONS, label: 'Y10 Ch16 · 16C Proportionality in several variables' },
   { chapterId: 'y10-16', chapterTitle: 'Chapter 16: Direct and inverse proportion', topicId: 'y10-16d', topicCode: '16D', topicTitle: 'Revision', year: 'Year 10', seed: Y10_CH16D_QUESTIONS, label: 'Y10 Ch16 · 16D Revision' },
+  { chapterId: 'y10-18', chapterTitle: 'Chapter 18: Statistics', topicId: 'y10-18a', topicCode: '18A', topicTitle: 'Measures of centre and spread', year: 'Year 10', seed: Y10_CH18A_QUESTIONS, label: 'Y10 Ch18 · 18A Measures of centre and spread' },
+  { chapterId: 'y10-18', chapterTitle: 'Chapter 18: Statistics', topicId: 'y10-18b', topicCode: '18B', topicTitle: 'Z-scores and comparing data sets', year: 'Year 10', seed: Y10_CH18B_QUESTIONS, label: 'Y10 Ch18 · 18B Z-scores and comparing data sets' },
+  { chapterId: 'y10-18', chapterTitle: 'Chapter 18: Statistics', topicId: 'y10-18a-icem', topicCode: '18A', topicTitle: 'The median and the interquartile range', year: 'Year 10', seed: Y10_CH18A2_QUESTIONS, label: 'Y10 Ch18 · 18A (ICE-EM) The median and the interquartile range' },
+  { chapterId: 'y10-18', chapterTitle: 'Chapter 18: Statistics', topicId: 'y10-18b-icem', topicCode: '18B', topicTitle: 'Boxplots', year: 'Year 10', seed: Y10_CH18B_ICEM_QUESTIONS, label: 'Y10 Ch18 · 18B (ICE-EM) Boxplots' },
+  { chapterId: 'y10-18', chapterTitle: 'Chapter 18: Statistics', topicId: 'y10-18c-icem', topicCode: '18C', topicTitle: 'Boxplots, histograms and outliers', year: 'Year 10', seed: Y10_CH18C_ICEM_QUESTIONS, label: 'Y10 Ch18 · 18C (ICE-EM) Boxplots, histograms and outliers' },
+  { chapterId: 'y10-18', chapterTitle: 'Chapter 18: Statistics', topicId: 'y10-18d-icem', topicCode: '18D', topicTitle: 'The mean and the standard deviation', year: 'Year 10', seed: Y10_CH18D_ICEM_QUESTIONS, label: 'Y10 Ch18 · 18D (ICE-EM) The mean and the standard deviation' },
+  { chapterId: 'y10-18', chapterTitle: 'Chapter 18: Statistics', topicId: 'y10-18e-icem', topicCode: '18E', topicTitle: 'Interpreting the standard deviation', year: 'Year 10', seed: Y10_CH18E_ICEM_QUESTIONS, label: 'Y10 Ch18 · 18E (ICE-EM) Interpreting the standard deviation' },
   {
     chapterId: 'y11a-1',
     chapterTitle: 'Chapter 1: Algebra review',

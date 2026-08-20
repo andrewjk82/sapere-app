@@ -744,7 +744,12 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
             </div>
 
             {/* Question card */}
-            <div style={{ padding: '32px', borderRadius: '32px', boxShadow: '0 20px 40px rgba(0,0,0,0.05)', background: '#fff', border: '1px solid #e2e8f0', position: 'relative' }}>
+            {/* minWidth: 0 overrides the flex item's default min-width:auto —
+                without it, wide intrinsic content (e.g. a data table in the
+                question text) forces this card (and its ancestors) to grow
+                past the 760px page width instead of letting the table's own
+                overflow-x:auto wrapper scroll internally. */}
+            <div style={{ padding: '32px', borderRadius: '32px', boxShadow: '0 20px 40px rgba(0,0,0,0.05)', background: '#fff', border: '1px solid #e2e8f0', position: 'relative', minWidth: 0, maxWidth: '100%' }}>
               {!q ? (
                 <div style={{ padding: '40px', textAlign: 'center', color: '#94a3b8', fontWeight: 700 }}>Loading question details...</div>
               ) : (

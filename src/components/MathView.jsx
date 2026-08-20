@@ -36,12 +36,12 @@ const convertMarkdownTables = (str) => {
         rows.push(parseCells(rawLines[i]));
         i++;
       }
-      let html = '<table style="border-collapse:collapse;margin:8px auto;font-family:inherit">';
-      html += '<thead><tr>' + headers.map(h => `<th style="border:1px solid #cbd5e1;padding:6px 12px;background:#f1f5f9;text-align:center">${h}</th>`).join('') + '</tr></thead>';
+      let html = '<div style="overflow-x:auto;max-width:100%;margin:8px 0"><table style="border-collapse:collapse;margin:0 auto;font-family:inherit">';
+      html += '<thead><tr>' + headers.map(h => `<th style="border:1px solid #cbd5e1;padding:6px 12px;background:#f1f5f9;text-align:center;white-space:nowrap">${h}</th>`).join('') + '</tr></thead>';
       if (rows.length) {
-        html += '<tbody>' + rows.map(r => '<tr>' + r.map(c => `<td style="border:1px solid #cbd5e1;padding:6px 12px;min-width:40px;text-align:center">${c}</td>`).join('') + '</tr>').join('') + '</tbody>';
+        html += '<tbody>' + rows.map(r => '<tr>' + r.map(c => `<td style="border:1px solid #cbd5e1;padding:6px 12px;min-width:40px;text-align:center;white-space:nowrap">${c}</td>`).join('') + '</tr>').join('') + '</tbody>';
       }
-      html += '</table>';
+      html += '</table></div>';
       out.push(html);
     } else {
       out.push(line);
