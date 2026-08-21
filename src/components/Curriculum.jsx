@@ -3735,11 +3735,20 @@ const Curriculum = () => {
               >
                 <X size={18} color="#1e1b4b" />
               </button>
-              <img
-                src={cheatSheetPreview.url}
-                alt={`${cheatSheetPreview.title} cheat sheet`}
-                style={{ maxWidth: '92vw', maxHeight: '86vh', width: 'auto', height: 'auto', borderRadius: '16px', boxShadow: '0 20px 60px rgba(0,0,0,0.45)', objectFit: 'contain', background: '#fff' }}
-              />
+              {cheatSheetPreview.failed ? (
+                <div style={{ width: '360px', maxWidth: '80vw', padding: '32px 24px', borderRadius: '16px', background: '#fff', textAlign: 'center' }}>
+                  <p style={{ margin: 0, fontWeight: 800, color: '#1e1b4b', fontSize: '0.95rem' }}>Couldn't load this image</p>
+                  <p style={{ margin: '8px 0 0', fontSize: '0.8rem', color: '#64748b', wordBreak: 'break-all' }}>{cheatSheetPreview.url}</p>
+                  <p style={{ margin: '10px 0 0', fontSize: '0.75rem', color: '#94a3b8' }}>Check the URL in the chapter editor — it may be missing, private, or misspelled.</p>
+                </div>
+              ) : (
+                <img
+                  src={cheatSheetPreview.url}
+                  alt={`${cheatSheetPreview.title} cheat sheet`}
+                  onError={() => setCheatSheetPreview(prev => prev ? { ...prev, failed: true } : prev)}
+                  style={{ maxWidth: '92vw', maxHeight: '86vh', width: 'auto', height: 'auto', borderRadius: '16px', boxShadow: '0 20px 60px rgba(0,0,0,0.45)', objectFit: 'contain', background: '#fff' }}
+                />
+              )}
             </motion.div>
           </div>
         )}
