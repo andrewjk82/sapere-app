@@ -90,6 +90,19 @@ import './curriculum.css';
 import './hsc-chart.css';
 
 
+// Google Drive share links ("/file/d/{id}/view?usp=sharing") return an HTML
+// viewer page, not the image bytes, so an <img src> pointed at one just
+// fails to load. Rewrite those into Drive's direct-content endpoint; any
+// other URL (regular image host, /public path, etc.) passes through as-is.
+const toDirectImageUrl = (url) => {
+  if (!url) return url;
+  const driveMatch = url.match(/drive\.google\.com\/file\/d\/([^/]+)/) || url.match(/[?&]id=([^&]+)/);
+  if (driveMatch && url.includes('drive.google.com')) {
+    return `https://drive.google.com/uc?export=view&id=${driveMatch[1]}`;
+  }
+  return url;
+};
+
 const YEARS = [...Array.from({ length: 12 }, (_, i) => `Year ${i + 1}`), 'Past Paper'];
 const PAST_PAPER_COURSES = ['Standard', 'Advanced', 'Extension 1', 'Extension 2'];
 // Bump the cache key suffix to invalidate every client's stored counts once.
@@ -3743,7 +3756,7 @@ const Curriculum = () => {
                 </div>
               ) : (
                 <img
-                  src={cheatSheetPreview.url}
+                  src={toDirectImageUrl(cheatSheetPreview.url)}
                   alt={`${cheatSheetPreview.title} cheat sheet`}
                   onError={() => setCheatSheetPreview(prev => prev ? { ...prev, failed: true } : prev)}
                   style={{ maxWidth: '92vw', maxHeight: '86vh', width: 'auto', height: 'auto', borderRadius: '16px', boxShadow: '0 20px 60px rgba(0,0,0,0.45)', objectFit: 'contain', background: '#fff' }}
