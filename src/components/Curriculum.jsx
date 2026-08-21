@@ -3,7 +3,7 @@ import {
   BookOpen, CheckCircle2, ChevronRight, 
   Layers, GraduationCap, Star, Clock, 
   Search, BookText, Award, Lock, Plus, Edit2, Trash2, Save, X,
-  Target, TrendingUp
+  Target, TrendingUp, Sparkles
 } from 'lucide-react';
 import { auth, db } from '../firebase/config';
 import { doc, onSnapshot, collection, updateDoc, setDoc, deleteDoc, getDocs, getDoc, query, where, getCountFromServer, serverTimestamp } from 'firebase/firestore';
@@ -177,6 +177,7 @@ const Curriculum = () => {
   const [curriculumRecords, setCurriculumRecords] = useState([]);
   const [isMigrating, setIsMigrating] = useState(false);
   const [editingChapter, setEditingChapter] = useState(null); // { mode: 'add'|'edit', chapter: {} }
+  const [cheatSheetPreview, setCheatSheetPreview] = useState(null); // { url, title } | null
   const [editingSubtopicIndex, setEditingSubtopicIndex] = useState(-1);
   const [subtopicForm, setSubtopicForm] = useState({ code: '', title: '', page: '' });
 
@@ -3687,6 +3688,24 @@ const Curriculum = () => {
                         <motion.div initial={{ width: 0 }} animate={{ width: `${p}%` }} className="chapter-card__progress-fill" />
                       </div>
                     </div>
+
+                    {chapter.cheatSheetUrl && (
+                      <div
+                        className="chapter-card__cheatsheet"
+                        onClick={(e) => { e.stopPropagation(); setCheatSheetPreview({ url: chapter.cheatSheetUrl, title: chapter.title }); }}
+                        style={{
+                          display: 'flex', alignItems: 'center', gap: '8px',
+                          marginTop: '2px', padding: '9px 12px',
+                          background: 'linear-gradient(135deg, #fef3c7, #fde68a)',
+                          border: '1px solid #fbbf24', borderRadius: '12px',
+                          cursor: 'pointer'
+                        }}
+                        title="Open cheat sheet"
+                      >
+                        <Sparkles size={14} color="#b45309" />
+                        <span style={{ fontSize: '0.72rem', fontWeight: 800, color: '#92400e' }}>Cheat Sheet</span>
+                      </div>
+                    )}
                   </div>
                 );
               }) : (
@@ -3698,6 +3717,33 @@ const Curriculum = () => {
       )}
 
       <AnimatePresence>
+        {cheatSheetPreview && (
+          <div className="app-modal" style={{ zIndex: 1200 }} onClick={() => setCheatSheetPreview(null)}>
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="app-modal__backdrop" style={{ background: 'rgba(15, 15, 25, 0.86)' }} />
+            <motion.div
+              initial={{ scale: 0.94, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.94, opacity: 0 }}
+              onClick={(e) => e.stopPropagation()}
+              style={{ position: 'relative', maxWidth: '92vw', maxHeight: '92vh', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '12px' }}
+            >
+              <button
+                type="button"
+                onClick={() => setCheatSheetPreview(null)}
+                style={{ position: 'absolute', top: '-16px', right: '-16px', background: '#fff', border: 'none', borderRadius: '50%', width: '36px', height: '36px', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', boxShadow: '0 4px 14px rgba(0,0,0,0.25)' }}
+                aria-label="Close cheat sheet"
+              >
+                <X size={18} color="#1e1b4b" />
+              </button>
+              <img
+                src={cheatSheetPreview.url}
+                alt={`${cheatSheetPreview.title} cheat sheet`}
+                style={{ maxWidth: '92vw', maxHeight: '86vh', width: 'auto', height: 'auto', borderRadius: '16px', boxShadow: '0 20px 60px rgba(0,0,0,0.45)', objectFit: 'contain', background: '#fff' }}
+              />
+            </motion.div>
+          </div>
+        )}
+
         {editingChapter && (
           <div className="app-modal" style={{ zIndex: 1000 }}>
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={closeEditingChapterModal} className="app-modal__backdrop" />
@@ -3727,6 +3773,12 @@ const Curriculum = () => {
                     <label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px' }}>Number of Modules</label>
                     <input required type="number" className="app-input" value={editingChapter.chapter.modules} onChange={e => setEditingChapter({ ...editingChapter, chapter: { ...editingChapter.chapter, modules: parseInt(e.target.value) } })} style={{ padding: '13px 16px', borderRadius: '13px', width: '100%', boxSizing: 'border-box' }} />
                   </div>
+                </div>
+
+                <div>
+                  <label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px' }}>Cheat Sheet Image URL (optional)</label>
+                  <input className="app-input" value={editingChapter.chapter.cheatSheetUrl || ''} onChange={e => setEditingChapter({ ...editingChapter, chapter: { ...editingChapter.chapter, cheatSheetUrl: e.target.value } })} placeholder="https://... or /images/..." style={{ padding: '13px 16px', borderRadius: '13px', width: '100%', boxSizing: 'border-box' }} />
+                  <p style={{ margin: '6px 0 0', fontSize: '11px', color: '#94a3b8', fontWeight: 600 }}>Shown as a small "Cheat Sheet" card on the chapter tile — click opens it full-screen for students.</p>
                 </div>
 
                 <div style={{ borderTop: '1px solid #e2e8f0', paddingTop: '18px', marginTop: '4px' }}>
