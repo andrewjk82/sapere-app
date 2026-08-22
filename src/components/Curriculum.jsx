@@ -92,13 +92,17 @@ import './hsc-chart.css';
 
 // Google Drive share links ("/file/d/{id}/view?usp=sharing") return an HTML
 // viewer page, not the image bytes, so an <img src> pointed at one just
-// fails to load. Rewrite those into Drive's direct-content endpoint; any
+// fails to load. drive.google.com/uc?export=view fixes that for direct
+// navigation, but Drive still blocks it as an <img> hotlink from another
+// origin (onerror fires — verified against this app's own domain). The
+// lh3.googleusercontent.com/d/{id} thumbnail endpoint has no such referrer
+// check and embeds fine cross-origin, so that's the one we rewrite to. Any
 // other URL (regular image host, /public path, etc.) passes through as-is.
 const toDirectImageUrl = (url) => {
   if (!url) return url;
   const driveMatch = url.match(/drive\.google\.com\/file\/d\/([^/]+)/) || url.match(/[?&]id=([^&]+)/);
   if (driveMatch && url.includes('drive.google.com')) {
-    return `https://drive.google.com/uc?export=view&id=${driveMatch[1]}`;
+    return `https://lh3.googleusercontent.com/d/${driveMatch[1]}`;
   }
   return url;
 };
