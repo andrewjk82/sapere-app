@@ -12,6 +12,8 @@ import {
   BookLock,
   GraduationCap,
   Play,
+  HelpCircle,
+  X,
 } from 'lucide-react';
 import { getLesson } from '../../lessons/registry';
 import LessonPlayer from '../lessons/LessonPlayer';
@@ -83,6 +85,81 @@ const SecretNoteStrip = ({ kind, note, onOpen }) => {
           : <>Open <ArrowRight size={15} /></>}
       </span>
     </button>
+  );
+};
+
+// ── Study guide modal: step-by-step "how do I use this page" walkthrough ────
+const StudyGuideModal = ({ calculationEnabled, onClose }) => {
+  const steps = [
+    {
+      n: 1,
+      title: 'Do Daily practice',
+      body: "Answer today's practice questions. It only takes a few minutes — try every question yourself before checking anything.",
+      color: '#7c3aed',
+    },
+    {
+      n: 2,
+      title: 'Review what you got wrong',
+      body: 'Right after you finish, open the Secret Note under Daily practice. Any question you missed is saved there automatically — go through each one and understand why the correct answer is correct.',
+      color: '#8b5cf6',
+    },
+    ...(calculationEnabled ? [{
+      n: 3,
+      title: 'Do Daily Calculation',
+      body: 'Same idea, but for quick number-crunching — a short set of calculation questions to keep your speed and accuracy sharp.',
+      color: '#d97706',
+    }, {
+      n: 4,
+      title: 'Review that Secret Note too',
+      body: 'Daily Calculation has its own Secret Note. Clear it the same way — review every mistake while it\'s still fresh, right after you finish.',
+      color: '#f59e0b',
+    }] : []),
+    {
+      n: calculationEnabled ? 5 : 3,
+      title: 'Come back tomorrow',
+      body: 'Doing this every day — practice, then review, then (if you have it) calculation and its review — is what actually builds your streak and your mastery. Skipping the review step is the #1 way marks slip.',
+      color: '#10b981',
+    },
+  ];
+
+  return (
+    <div className="app-modal" style={{ zIndex: 1200 }} onClick={onClose}>
+      <div className="app-modal__backdrop" />
+      <motion.div
+        initial={{ scale: 0.95, opacity: 0, y: 10 }}
+        animate={{ scale: 1, opacity: 1, y: 0 }}
+        exit={{ scale: 0.95, opacity: 0, y: 10 }}
+        onClick={(e) => e.stopPropagation()}
+        className="app-panel app-modal__card"
+        style={{ maxWidth: '480px', width: '92%', padding: 0, overflow: 'hidden', borderRadius: '26px' }}
+      >
+        <div style={{ background: 'linear-gradient(135deg, #6366f1, #8b5cf6)', padding: '24px 24px 20px', color: '#fff', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+          <div>
+            <div style={{ fontSize: '0.68rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', opacity: 0.75, marginBottom: '4px' }}>How to study</div>
+            <h3 style={{ margin: 0, fontSize: '1.25rem', fontWeight: 900 }}>Your daily study steps</h3>
+          </div>
+          <button type="button" onClick={onClose} style={{ background: 'rgba(255,255,255,0.18)', border: 'none', borderRadius: '50%', width: '30px', height: '30px', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', color: '#fff', flexShrink: 0 }}>
+            <X size={16} />
+          </button>
+        </div>
+        <div style={{ padding: '22px 24px 26px', display: 'flex', flexDirection: 'column', gap: '18px', maxHeight: '60vh', overflowY: 'auto' }}>
+          {steps.map((s, i) => (
+            <div key={s.n} style={{ display: 'flex', gap: '14px' }}>
+              <div style={{ flexShrink: 0, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                <div style={{ width: '30px', height: '30px', borderRadius: '50%', background: s.color, color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 900, fontSize: '0.85rem' }}>
+                  {s.n}
+                </div>
+                {i < steps.length - 1 && <div style={{ flex: 1, width: '2px', background: '#e2e8f0', marginTop: '4px' }} />}
+              </div>
+              <div style={{ paddingBottom: i < steps.length - 1 ? '4px' : 0 }}>
+                <div style={{ fontWeight: 800, fontSize: '0.92rem', color: '#1e1b4b', marginBottom: '3px' }}>{s.title}</div>
+                <div style={{ fontSize: '0.82rem', color: '#64748b', lineHeight: 1.5 }}>{s.body}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </motion.div>
+    </div>
   );
 };
 
@@ -347,6 +424,7 @@ const ChallengeStartView = ({
   // Lessons for assigned Clock Reading topics — one entry per distinct lesson
   // (each clock stage maps several topic ids to the same lesson spec).
   const [previewLesson, setPreviewLesson] = useState(null);
+  const [showStudyGuide, setShowStudyGuide] = useState(false);
   const clockLessons = useMemo(() => {
     const assigned = Array.isArray(studentProfile?.assignedChapters) ? studentProfile.assignedChapters : [];
     const seen = new Set();
@@ -466,7 +544,18 @@ const ChallengeStartView = ({
         {/* Header */}
         <div className="cs__head">
           <div>
-            <h2>Challenge</h2>
+            <h2 style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+              Challenge
+              <button
+                type="button"
+                onClick={() => setShowStudyGuide(true)}
+                title="How to study this section"
+                aria-label="How to study this section"
+                style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: '22px', height: '22px', borderRadius: '50%', border: 'none', background: '#ede9fe', color: '#7c3aed', cursor: 'pointer', flexShrink: 0 }}
+              >
+                <HelpCircle size={14} />
+              </button>
+            </h2>
             <p>
               {calculationEnabled
                 ? 'Two sessions today'
@@ -478,6 +567,10 @@ const ChallengeStartView = ({
             <div className="cs__streak">🔥 {streakDays}-day streak</div>
           )}
         </div>
+
+        {showStudyGuide && (
+          <StudyGuideModal calculationEnabled={calculationEnabled} onClose={() => setShowStudyGuide(false)} />
+        )}
 
         {/* Teacher feedback entry — always available, highlighted when new */}
         {(() => {
