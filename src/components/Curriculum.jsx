@@ -107,6 +107,24 @@ const toDirectImageUrl = (url) => {
   return url;
 };
 
+// lh3.googleusercontent.com supports a "=w{n}-h{n}-c" size suffix that makes
+// Google serve an actual small, cropped thumbnail instead of the full-size
+// original — keeps the mini-card row cheap even with several cheat sheets on
+// one chapter. Non-Drive URLs are returned as-is (no resize param to apply).
+const toThumbnailUrl = (url, size = 96) => {
+  const direct = toDirectImageUrl(url);
+  return direct && direct.includes('lh3.googleusercontent.com') ? `${direct}=w${size}-h${size}-c` : direct;
+};
+
+// Chapters may still carry the old single `cheatSheetUrl` string from before
+// multi-cheat-sheet support — normalize both shapes into one array so render
+// code only has to handle one case.
+const getChapterCheatSheets = (chapter) => {
+  if (Array.isArray(chapter?.cheatSheets) && chapter.cheatSheets.length) return chapter.cheatSheets;
+  if (chapter?.cheatSheetUrl) return [{ id: 'legacy', label: 'Cheat Sheet', url: chapter.cheatSheetUrl }];
+  return [];
+};
+
 const YEARS = [...Array.from({ length: 12 }, (_, i) => `Year ${i + 1}`), 'Past Paper'];
 const PAST_PAPER_COURSES = ['Standard', 'Advanced', 'Extension 1', 'Extension 2'];
 // Bump the cache key suffix to invalidate every client's stored counts once.
@@ -197,6 +215,8 @@ const Curriculum = () => {
   const [cheatSheetPreview, setCheatSheetPreview] = useState(null); // { url, title } | null
   const [editingSubtopicIndex, setEditingSubtopicIndex] = useState(-1);
   const [subtopicForm, setSubtopicForm] = useState({ code: '', title: '', page: '' });
+  const [editingCheatSheetIndex, setEditingCheatSheetIndex] = useState(-1);
+  const [cheatSheetForm, setCheatSheetForm] = useState({ label: '', url: '' });
 
   const closeEditingChapterModal = () => {
     setEditingChapter(null);
@@ -449,6 +469,59 @@ const Curriculum = () => {
     }
   };
 
+  const handleAddOrUpdateCheatSheet = (e) => {
+    e.preventDefault();
+    if (!cheatSheetForm.url) {
+      showToast("Please enter an image URL.", "warning");
+      return;
+    }
+
+    const currentSheets = getChapterCheatSheets(editingChapter.chapter);
+    const newSheet = {
+      id: cheatSheetForm.id || `${editingChapter.chapter.id || 'chapter'}-cs-${Date.now()}`,
+      label: cheatSheetForm.label || 'Cheat Sheet',
+      url: cheatSheetForm.url
+    };
+
+    const nextSheets = [...currentSheets];
+    if (editingCheatSheetIndex >= 0) {
+      nextSheets[editingCheatSheetIndex] = newSheet;
+    } else {
+      nextSheets.push(newSheet);
+    }
+
+    setEditingChapter({
+      ...editingChapter,
+      // Drop the legacy single-URL field once the array takes over, so we
+      // don't end up with both shapes saved side by side.
+      chapter: { ...editingChapter.chapter, cheatSheets: nextSheets, cheatSheetUrl: undefined }
+    });
+
+    setCheatSheetForm({ label: '', url: '' });
+    setEditingCheatSheetIndex(-1);
+  };
+
+  const handleEditCheatSheetClick = (index, sheet) => {
+    setEditingCheatSheetIndex(index);
+    setCheatSheetForm({ id: sheet.id, label: sheet.label || '', url: sheet.url });
+  };
+
+  const handleDeleteCheatSheet = (index) => {
+    const nextSheets = [...getChapterCheatSheets(editingChapter.chapter)];
+    nextSheets.splice(index, 1);
+    setEditingChapter({
+      ...editingChapter,
+      chapter: { ...editingChapter.chapter, cheatSheets: nextSheets, cheatSheetUrl: undefined }
+    });
+
+    if (editingCheatSheetIndex === index) {
+      setCheatSheetForm({ label: '', url: '' });
+      setEditingCheatSheetIndex(-1);
+    } else if (editingCheatSheetIndex > index) {
+      setEditingCheatSheetIndex(editingCheatSheetIndex - 1);
+    }
+  };
+
   const handleSaveChapter = async (e) => {
     e.preventDefault();
     let chapterData = { ...editingChapter.chapter };
@@ -471,6 +544,30 @@ const Curriculum = () => {
       chapterData.topics = currentTopics;
       setSubtopicForm({ code: '', title: '', page: '' });
       setEditingSubtopicIndex(-1);
+    }
+
+    // Same UX fix for a cheat sheet typed but not [+]'d.
+    if (cheatSheetForm.url) {
+      const currentSheets = getChapterCheatSheets(chapterData);
+      const newSheet = {
+        id: cheatSheetForm.id || `${chapterData.id || 'chapter'}-cs-${Date.now()}`,
+        label: cheatSheetForm.label || 'Cheat Sheet',
+        url: cheatSheetForm.url
+      };
+      const nextSheets = [...currentSheets];
+      if (editingCheatSheetIndex >= 0) {
+        nextSheets[editingCheatSheetIndex] = newSheet;
+      } else {
+        nextSheets.push(newSheet);
+      }
+      chapterData.cheatSheets = nextSheets;
+      delete chapterData.cheatSheetUrl; // Firestore setDoc rejects `undefined` field values
+      setCheatSheetForm({ label: '', url: '' });
+      setEditingCheatSheetIndex(-1);
+    } else if (chapterData.cheatSheets || chapterData.cheatSheetUrl !== undefined) {
+      // Normalize the legacy field away even when nothing pending was typed.
+      chapterData.cheatSheets = getChapterCheatSheets(chapterData);
+      delete chapterData.cheatSheetUrl;
     }
 
     // Use currentRecord if it exists; otherwise fall back to displayData so
@@ -3706,21 +3803,34 @@ const Curriculum = () => {
                       </div>
                     </div>
 
-                    {chapter.cheatSheetUrl && (
-                      <div
-                        className="chapter-card__cheatsheet"
-                        onClick={(e) => { e.stopPropagation(); setCheatSheetPreview({ url: chapter.cheatSheetUrl, title: chapter.title }); }}
-                        style={{
-                          display: 'flex', alignItems: 'center', gap: '8px',
-                          marginTop: '2px', padding: '9px 12px',
-                          background: 'linear-gradient(135deg, #fef3c7, #fde68a)',
-                          border: '1px solid #fbbf24', borderRadius: '12px',
-                          cursor: 'pointer'
-                        }}
-                        title="Open cheat sheet"
-                      >
-                        <Sparkles size={14} color="#b45309" />
-                        <span style={{ fontSize: '0.72rem', fontWeight: 800, color: '#92400e' }}>Cheat Sheet</span>
+                    {getChapterCheatSheets(chapter).length > 0 && (
+                      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px', marginTop: '2px' }}>
+                        {getChapterCheatSheets(chapter).map((sheet, i) => (
+                          <div
+                            key={sheet.id || i}
+                            onClick={(e) => { e.stopPropagation(); setCheatSheetPreview({ url: sheet.url, title: sheet.label || chapter.title }); }}
+                            title={sheet.label ? `Open ${sheet.label}` : 'Open cheat sheet'}
+                            style={{
+                              display: 'flex', alignItems: 'center', gap: '6px',
+                              padding: '4px 10px 4px 4px',
+                              background: 'linear-gradient(135deg, #fef3c7, #fde68a)',
+                              border: '1px solid #fbbf24', borderRadius: '999px',
+                              cursor: 'pointer', maxWidth: '100%'
+                            }}
+                          >
+                            <img
+                              src={toThumbnailUrl(sheet.url, 40)}
+                              alt=""
+                              loading="lazy"
+                              style={{ width: '22px', height: '22px', borderRadius: '50%', objectFit: 'cover', flexShrink: 0, background: '#fde68a' }}
+                              onError={(e) => { e.currentTarget.style.display = 'none'; e.currentTarget.nextSibling.style.display = 'inline-flex'; }}
+                            />
+                            <Sparkles size={12} color="#b45309" style={{ display: 'none' }} />
+                            <span style={{ fontSize: '0.7rem', fontWeight: 800, color: '#92400e', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                              {sheet.label || 'Cheat Sheet'}
+                            </span>
+                          </div>
+                        ))}
                       </div>
                     )}
                   </div>
@@ -3801,10 +3911,86 @@ const Curriculum = () => {
                   </div>
                 </div>
 
-                <div>
-                  <label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px' }}>Cheat Sheet Image URL (optional)</label>
-                  <input className="app-input" value={editingChapter.chapter.cheatSheetUrl || ''} onChange={e => setEditingChapter({ ...editingChapter, chapter: { ...editingChapter.chapter, cheatSheetUrl: e.target.value } })} placeholder="https://... or /images/..." style={{ padding: '13px 16px', borderRadius: '13px', width: '100%', boxSizing: 'border-box' }} />
-                  <p style={{ margin: '6px 0 0', fontSize: '11px', color: '#94a3b8', fontWeight: 600 }}>Shown as a small "Cheat Sheet" card on the chapter tile — click opens it full-screen for students.</p>
+                <div style={{ borderTop: '1px solid #e2e8f0', paddingTop: '18px' }}>
+                  <label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '4px' }}>
+                    Cheat Sheets ({getChapterCheatSheets(editingChapter.chapter).length})
+                  </label>
+                  <p style={{ margin: '0 0 12px', fontSize: '11px', color: '#94a3b8', fontWeight: 600 }}>Each one shows as a small thumbnail card on the chapter tile — click opens it full-screen for students. Add as many as you like.</p>
+
+                  {getChapterCheatSheets(editingChapter.chapter).length > 0 ? (
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', maxHeight: '180px', overflowY: 'auto', marginBottom: '14px', paddingRight: '4px' }}>
+                      {getChapterCheatSheets(editingChapter.chapter).map((sheet, index) => (
+                        <div key={sheet.id || index} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '10px 14px', background: '#f8fafc', borderRadius: '12px', border: '1px solid #e2e8f0' }}>
+                          <div style={{ display: 'flex', alignItems: 'center', gap: '10px', overflow: 'hidden' }}>
+                            <img src={toThumbnailUrl(sheet.url, 40)} alt="" loading="lazy" style={{ width: '32px', height: '32px', borderRadius: '8px', objectFit: 'cover', flexShrink: 0, background: '#e2e8f0' }} onError={(e) => { e.currentTarget.style.visibility = 'hidden'; }} />
+                            <span style={{ fontSize: '0.85rem', fontWeight: 600, color: '#334155', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                              {sheet.label || 'Cheat Sheet'}
+                            </span>
+                          </div>
+                          <div style={{ display: 'flex', gap: '4px', flexShrink: 0 }}>
+                            <button type="button" onClick={() => handleEditCheatSheetClick(index, sheet)} style={{ background: 'none', border: 'none', color: '#64748b', cursor: 'pointer', padding: '4px', borderRadius: '4px', display: 'flex', alignItems: 'center' }}>
+                              <Edit2 size={13} />
+                            </button>
+                            <button type="button" onClick={() => handleDeleteCheatSheet(index)} style={{ background: 'none', border: 'none', color: '#ef4444', cursor: 'pointer', padding: '4px', borderRadius: '4px', display: 'flex', alignItems: 'center' }}>
+                              <Trash2 size={13} />
+                            </button>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  ) : (
+                    <div style={{ padding: '14px', background: '#f8fafc', borderRadius: '12px', border: '1px dashed #cbd5e1', textAlign: 'center', color: '#94a3b8', fontSize: '0.85rem', marginBottom: '14px' }}>
+                      No cheat sheets added yet.
+                    </div>
+                  )}
+
+                  <div style={{ background: '#f1f5f9', padding: '12px', borderRadius: '16px', display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                    <div style={{ fontSize: '10px', fontWeight: 800, color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                      {editingCheatSheetIndex >= 0 ? 'Edit Cheat Sheet' : 'Add Cheat Sheet'}
+                    </div>
+                    <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
+                      <input
+                        placeholder="Label (optional)"
+                        value={cheatSheetForm.label}
+                        onChange={e => setCheatSheetForm({ ...cheatSheetForm, label: e.target.value })}
+                        style={{ width: '130px', padding: '8px 10px', borderRadius: '8px', border: '1px solid #cbd5e1', background: '#fff', fontSize: '0.85rem', fontWeight: 600, color: '#334155' }}
+                      />
+                      <input
+                        placeholder="Image URL"
+                        value={cheatSheetForm.url}
+                        onChange={e => setCheatSheetForm({ ...cheatSheetForm, url: e.target.value })}
+                        style={{ flex: 1, padding: '8px 10px', borderRadius: '8px', border: '1px solid #cbd5e1', background: '#fff', fontSize: '0.85rem', fontWeight: 500, color: '#334155' }}
+                      />
+                      <button
+                        type="button"
+                        onClick={handleAddOrUpdateCheatSheet}
+                        style={{
+                          padding: '8px 12px',
+                          background: editingCheatSheetIndex >= 0 ? '#10b981' : '#6366f1',
+                          color: '#fff',
+                          border: 'none',
+                          borderRadius: '8px',
+                          cursor: 'pointer',
+                          fontWeight: 700,
+                          fontSize: '0.8rem',
+                          display: 'flex',
+                          alignItems: 'center',
+                          gap: '4px'
+                        }}
+                      >
+                        {editingCheatSheetIndex >= 0 ? 'Save' : <Plus size={14} />}
+                      </button>
+                      {editingCheatSheetIndex >= 0 && (
+                        <button
+                          type="button"
+                          onClick={() => { setEditingCheatSheetIndex(-1); setCheatSheetForm({ label: '', url: '' }); }}
+                          style={{ padding: '8px 10px', background: '#cbd5e1', color: '#475569', border: 'none', borderRadius: '8px', cursor: 'pointer', fontWeight: 700, fontSize: '0.8rem' }}
+                        >
+                          Cancel
+                        </button>
+                      )}
+                    </div>
+                  </div>
                 </div>
 
                 <div style={{ borderTop: '1px solid #e2e8f0', paddingTop: '18px', marginTop: '4px' }}>
