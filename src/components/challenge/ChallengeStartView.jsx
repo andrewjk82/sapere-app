@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence, useReducedMotion } from 'framer-motion';
 import {
   BookOpen,
   Target,
@@ -14,6 +14,7 @@ import {
   Play,
   HelpCircle,
   X,
+  RefreshCw,
 } from 'lucide-react';
 import { getLesson } from '../../lessons/registry';
 import LessonPlayer from '../lessons/LessonPlayer';
@@ -89,75 +90,190 @@ const SecretNoteStrip = ({ kind, note, onOpen }) => {
 };
 
 // ── Study guide modal: step-by-step "how do I use this page" walkthrough ────
-const StudyGuideModal = ({ calculationEnabled, onClose }) => {
+// The rail is a loop, not a checklist — the whole point of this screen is
+// that step 5 hands back to step 1 the next day. Colour groups the two
+// "do it → review it" pairs (violet for practice, amber for calculation) so
+// the grouping itself carries meaning, not just the sequence number.
+const PRACTICE_COLOR = KIND.daily.ring; // '#7c3aed'
+const CALC_COLOR = KIND.calc.ring;      // '#d97706'
+const LOOP_COLOR = '#10b981';           // matches the "done/mastered" green used elsewhere
+
+const buildStudySteps = (calculationEnabled) => {
   const steps = [
     {
-      n: 1,
+      icon: BookOpen,
+      color: PRACTICE_COLOR,
+      phase: 'Practice',
       title: 'Do Daily practice',
-      body: "Answer today's practice questions. It only takes a few minutes — try every question yourself before checking anything.",
-      color: '#7c3aed',
+      body: "Answer today's practice questions yourself first — no peeking — before checking anything.",
     },
     {
-      n: 2,
-      title: 'Review what you got wrong',
-      body: 'Right after you finish, open the Secret Note under Daily practice. Any question you missed is saved there automatically — go through each one and understand why the correct answer is correct.',
-      color: '#8b5cf6',
-    },
-    ...(calculationEnabled ? [{
-      n: 3,
-      title: 'Do Daily Calculation',
-      body: 'Same idea, but for quick number-crunching — a short set of calculation questions to keep your speed and accuracy sharp.',
-      color: '#d97706',
-    }, {
-      n: 4,
-      title: 'Review that Secret Note too',
-      body: 'Daily Calculation has its own Secret Note. Clear it the same way — review every mistake while it\'s still fresh, right after you finish.',
-      color: '#f59e0b',
-    }] : []),
-    {
-      n: calculationEnabled ? 5 : 3,
-      title: 'Come back tomorrow',
-      body: 'Doing this every day — practice, then review, then (if you have it) calculation and its review — is what actually builds your streak and your mastery. Skipping the review step is the #1 way marks slip.',
-      color: '#10b981',
+      icon: BookLock,
+      color: PRACTICE_COLOR,
+      phase: 'Review',
+      title: 'Clear its Secret Note',
+      body: 'Every miss lands in the Secret Note automatically. Open it right away and work out why the right answer is right.',
     },
   ];
+  if (calculationEnabled) {
+    steps.push(
+      {
+        icon: Target,
+        color: CALC_COLOR,
+        phase: 'Practice',
+        title: 'Do Daily Calculation',
+        body: 'A short, fast set of number-crunching to keep your speed and accuracy sharp.',
+      },
+      {
+        icon: BookLock,
+        color: CALC_COLOR,
+        phase: 'Review',
+        title: 'Clear that Secret Note too',
+        body: 'Same habit, same reason — while the mistake is still fresh, not next week.',
+      },
+    );
+  }
+  steps.push({
+    icon: RefreshCw,
+    color: LOOP_COLOR,
+    phase: 'Tomorrow',
+    title: 'Come back and loop again',
+    body: 'This is a loop, not a one-off — practice, review, repeat is what actually moves your mastery. Skipping the review is the #1 way marks slip back.',
+    isLoop: true,
+  });
+  return steps;
+};
+
+const guideListVariants = {
+  hidden: {},
+  show: (reduce) => ({ transition: { staggerChildren: reduce ? 0 : 0.11, delayChildren: reduce ? 0 : 0.18 } }),
+};
+const guideRowVariants = {
+  hidden: { opacity: 0, y: 10 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.38, ease: [0.22, 1, 0.36, 1] } },
+};
+const guideBarVariants = {
+  hidden: { scaleY: 0 },
+  show: { scaleY: 1, transition: { duration: 0.42, ease: [0.22, 1, 0.36, 1] } },
+};
+const guideNodeVariants = {
+  hidden: { scale: 0.4, opacity: 0 },
+  show: { scale: 1, opacity: 1, transition: { type: 'spring', stiffness: 420, damping: 22 } },
+};
+
+const StudyGuideModal = ({ calculationEnabled, onClose }) => {
+  const reduce = useReducedMotion();
+  const steps = useMemo(() => buildStudySteps(calculationEnabled), [calculationEnabled]);
+
+  const phaseChips = useMemo(() => {
+    const seen = [];
+    steps.forEach((s) => {
+      const last = seen[seen.length - 1];
+      if (!last || last.label !== s.phase || last.color !== s.color) seen.push({ label: s.phase, color: s.color });
+    });
+    return seen;
+  }, [steps]);
 
   return (
     <div className="app-modal" style={{ zIndex: 1200 }} onClick={onClose}>
-      <div className="app-modal__backdrop" />
       <motion.div
-        initial={{ scale: 0.95, opacity: 0, y: 10 }}
+        className="app-modal__backdrop"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+      />
+      <motion.div
+        initial={{ scale: 0.96, opacity: 0, y: 12 }}
         animate={{ scale: 1, opacity: 1, y: 0 }}
-        exit={{ scale: 0.95, opacity: 0, y: 10 }}
+        exit={{ scale: 0.97, opacity: 0, y: 8 }}
+        transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }}
         onClick={(e) => e.stopPropagation()}
-        className="app-panel app-modal__card"
-        style={{ maxWidth: '480px', width: '92%', padding: 0, overflow: 'hidden', borderRadius: '26px' }}
+        className="app-panel app-modal__card sg-card"
+        style={{ maxWidth: '460px', width: '92%', padding: 0, overflow: 'hidden', borderRadius: '24px' }}
       >
-        <div style={{ background: 'linear-gradient(135deg, #6366f1, #8b5cf6)', padding: '24px 24px 20px', color: '#fff', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
-          <div>
-            <div style={{ fontSize: '0.68rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', opacity: 0.75, marginBottom: '4px' }}>How to study</div>
-            <h3 style={{ margin: 0, fontSize: '1.25rem', fontWeight: 900 }}>Your daily study steps</h3>
-          </div>
-          <button type="button" onClick={onClose} style={{ background: 'rgba(255,255,255,0.18)', border: 'none', borderRadius: '50%', width: '30px', height: '30px', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', color: '#fff', flexShrink: 0 }}>
-            <X size={16} />
-          </button>
-        </div>
-        <div style={{ padding: '22px 24px 26px', display: 'flex', flexDirection: 'column', gap: '18px', maxHeight: '60vh', overflowY: 'auto' }}>
-          {steps.map((s, i) => (
-            <div key={s.n} style={{ display: 'flex', gap: '14px' }}>
-              <div style={{ flexShrink: 0, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                <div style={{ width: '30px', height: '30px', borderRadius: '50%', background: s.color, color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 900, fontSize: '0.85rem' }}>
-                  {s.n}
-                </div>
-                {i < steps.length - 1 && <div style={{ flex: 1, width: '2px', background: '#e2e8f0', marginTop: '4px' }} />}
-              </div>
-              <div style={{ paddingBottom: i < steps.length - 1 ? '4px' : 0 }}>
-                <div style={{ fontWeight: 800, fontSize: '0.92rem', color: '#1e1b4b', marginBottom: '3px' }}>{s.title}</div>
-                <div style={{ fontSize: '0.82rem', color: '#64748b', lineHeight: 1.5 }}>{s.body}</div>
-              </div>
+        {/* Header — plain, no gradient slab; the colour lives in the rail below */}
+        <div style={{ padding: '22px 24px 16px', borderBottom: '1px solid #f1f5f9' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '12px' }}>
+            <div>
+              <div style={{ fontSize: '0.66rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.14em', color: '#7c3aed', marginBottom: '5px' }}>How to study</div>
+              <h3 style={{ margin: 0, fontFamily: '"Outfit", sans-serif', fontSize: '1.28rem', fontWeight: 800, color: '#1e1b4b', letterSpacing: '-0.01em' }}>Practice. Review. Repeat.</h3>
             </div>
-          ))}
+            <button
+              type="button"
+              onClick={onClose}
+              aria-label="Close"
+              style={{ background: '#f1f5f9', border: 'none', borderRadius: '50%', width: '28px', height: '28px', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', color: '#64748b', flexShrink: 0 }}
+            >
+              <X size={14} />
+            </button>
+          </div>
+
+          {/* Route preview — the whole loop at a glance before the detail below */}
+          <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', gap: '5px', marginTop: '13px' }}>
+            {phaseChips.map((c, i) => (
+              <React.Fragment key={`${c.label}-${i}`}>
+                {i > 0 && <ArrowRight size={11} color="#cbd5e1" style={{ flexShrink: 0 }} />}
+                <span style={{
+                  fontSize: '0.66rem', fontWeight: 800, padding: '3px 9px', borderRadius: '999px',
+                  background: `${c.color}17`, color: c.color, whiteSpace: 'nowrap',
+                }}>
+                  {c.label === 'Tomorrow' ? '↻ Repeat' : c.label}
+                </span>
+              </React.Fragment>
+            ))}
+          </div>
         </div>
+
+        {/* Rail */}
+        <motion.div
+          variants={guideListVariants}
+          initial="hidden"
+          animate="show"
+          custom={reduce}
+          style={{ padding: '20px 24px 24px', maxHeight: '56vh', overflowY: 'auto' }}
+        >
+          {steps.map((s, i) => {
+            const Icon = s.icon;
+            const isLast = i === steps.length - 1;
+            const next = steps[i + 1];
+            return (
+              <motion.div key={s.title} variants={guideRowVariants} style={{ display: 'flex', gap: '14px' }}>
+                <div style={{ flexShrink: 0, width: '34px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                  <motion.div
+                    variants={guideNodeVariants}
+                    style={{
+                      width: '34px', height: '34px', borderRadius: '50%', flexShrink: 0,
+                      display: 'flex', alignItems: 'center', justifyContent: 'center',
+                      background: s.isLoop ? s.color : `${s.color}14`,
+                      border: `2px solid ${s.color}`,
+                      color: s.isLoop ? '#fff' : s.color,
+                      boxShadow: s.isLoop ? `0 4px 14px ${s.color}55` : 'none',
+                    }}
+                  >
+                    <Icon size={15} strokeWidth={2.3} />
+                  </motion.div>
+                  {!isLast && (
+                    <motion.div
+                      variants={guideBarVariants}
+                      style={{
+                        width: '3px', flex: 1, minHeight: '30px', marginTop: '3px', borderRadius: '2px',
+                        transformOrigin: 'top',
+                        background: `linear-gradient(180deg, ${s.color}, ${next.color})`,
+                      }}
+                    />
+                  )}
+                </div>
+                <div style={{ paddingBottom: isLast ? 0 : '20px', paddingTop: '2px' }}>
+                  <div style={{ fontSize: '0.64rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.08em', color: s.color, marginBottom: '3px' }}>
+                    {s.phase}
+                  </div>
+                  <div style={{ fontWeight: 800, fontSize: '0.92rem', color: '#1e1b4b', marginBottom: '3px' }}>{s.title}</div>
+                  <div style={{ fontSize: '0.81rem', color: '#64748b', lineHeight: 1.5 }}>{s.body}</div>
+                </div>
+              </motion.div>
+            );
+          })}
+        </motion.div>
       </motion.div>
     </div>
   );
@@ -568,9 +684,11 @@ const ChallengeStartView = ({
           )}
         </div>
 
-        {showStudyGuide && (
-          <StudyGuideModal calculationEnabled={calculationEnabled} onClose={() => setShowStudyGuide(false)} />
-        )}
+        <AnimatePresence>
+          {showStudyGuide && (
+            <StudyGuideModal calculationEnabled={calculationEnabled} onClose={() => setShowStudyGuide(false)} />
+          )}
+        </AnimatePresence>
 
         {/* Teacher feedback entry — always available, highlighted when new */}
         {(() => {
