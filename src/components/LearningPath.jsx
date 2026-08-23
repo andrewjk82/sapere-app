@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/set-state-in-effect */
 import { useState, useEffect, useMemo } from 'react';
 import { createPortal } from 'react-dom';
-import { CheckCircle2, Lock, Play, BookMarked, RotateCcw, Trophy, BookOpen, GraduationCap, Network, X } from 'lucide-react';
+import { CheckCircle2, Lock, Play, BookMarked, RotateCcw, Trophy, BookOpen, GraduationCap, Network } from 'lucide-react';
 import CurriculumGraph3D from './CurriculumGraph3D';
 import { db } from '../firebase/config';
 import { doc, getDoc, setDoc, serverTimestamp } from 'firebase/firestore';
@@ -9,7 +9,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useAuth } from '../context/AuthContext';
 import { CURRICULUM_DATA } from '../constants/curriculumData';
 import { localCache } from '../services/localCacheService';
-import { toDirectImageUrl, toThumbnailUrl, getChapterCheatSheets } from '../utils/cheatSheetUtils';
+import { toThumbnailUrl, getChapterCheatSheets } from '../utils/cheatSheetUtils';
+import CheatSheetLightbox from './CheatSheetLightbox';
 import ChapterDetailView from './ChapterDetailView';
 import TopicPracticeSession from './TopicPracticeSession';
 import './learning-path.css';
@@ -503,38 +504,7 @@ const LearningPath = ({ profile }) => {
 
       <AnimatePresence>
         {cheatSheetPreview && (
-          <div className="app-modal" style={{ zIndex: 1200 }} onClick={() => setCheatSheetPreview(null)}>
-            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="app-modal__backdrop" style={{ background: 'rgba(15, 15, 25, 0.86)' }} />
-            <motion.div
-              initial={{ scale: 0.94, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.94, opacity: 0 }}
-              onClick={(e) => e.stopPropagation()}
-              style={{ position: 'relative', maxWidth: '92vw', maxHeight: '92vh', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '12px' }}
-            >
-              <button
-                type="button"
-                onClick={() => setCheatSheetPreview(null)}
-                style={{ position: 'absolute', top: '-16px', right: '-16px', background: '#fff', border: 'none', borderRadius: '50%', width: '36px', height: '36px', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', boxShadow: '0 4px 14px rgba(0,0,0,0.25)' }}
-                aria-label="Close cheat sheet"
-              >
-                <X size={18} color="#1e1b4b" />
-              </button>
-              {cheatSheetPreview.failed ? (
-                <div style={{ width: '360px', maxWidth: '80vw', padding: '32px 24px', borderRadius: '16px', background: '#fff', textAlign: 'center' }}>
-                  <p style={{ margin: 0, fontWeight: 800, color: '#1e1b4b', fontSize: '0.95rem' }}>Couldn't load this image</p>
-                  <p style={{ margin: '10px 0 0', fontSize: '0.75rem', color: '#94a3b8' }}>Ask your teacher to check this cheat sheet's link.</p>
-                </div>
-              ) : (
-                <img
-                  src={toDirectImageUrl(cheatSheetPreview.url)}
-                  alt={`${cheatSheetPreview.title} cheat sheet`}
-                  onError={() => setCheatSheetPreview(prev => prev ? { ...prev, failed: true } : prev)}
-                  style={{ maxWidth: '92vw', maxHeight: '86vh', width: 'auto', height: 'auto', borderRadius: '16px', boxShadow: '0 20px 60px rgba(0,0,0,0.45)', objectFit: 'contain', background: '#fff' }}
-                />
-              )}
-            </motion.div>
-          </div>
+          <CheatSheetLightbox preview={cheatSheetPreview} onClose={() => setCheatSheetPreview(null)} />
         )}
       </AnimatePresence>
     </div>
