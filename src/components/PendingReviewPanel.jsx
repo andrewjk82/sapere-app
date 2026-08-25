@@ -162,6 +162,11 @@ const PendingReviewPanel = () => {
               </span>
               <span style={{ fontSize: '12px', color: '#64748b' }}>{q.chapterId || '—'} / {q.topicId || '—'}</span>
               <span style={{ fontSize: '12px', color: '#94a3b8' }}>{q.difficulty || ''}</span>
+              {q.id && (
+                <span style={{ fontSize: '11px', fontWeight: 700, padding: '2px 10px', borderRadius: '6px', background: '#ede9fe', color: '#6d28d9', fontFamily: 'monospace' }}>
+                  ID: {q.id}
+                </span>
+              )}
               <span style={{ flex: 1, fontSize: '13px', color: '#1e293b', minWidth: '200px' }}>
                 {(q.question || '').replace(/\\\(|\\\)|\$/g, '').slice(0, 90)}
               </span>
