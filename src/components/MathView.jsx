@@ -64,7 +64,13 @@ const MathView = ({ content, graphData: rawGraphData, style }) => {
       lines = [processedContent];
     } else {
       // Only split on newlines that are OUTSIDE of math blocks.
-      const mathBlockRegex = /(\$\$[\s\S]*?\$\$|\$[\s\S]*?\$|\\\([\s\S]*?\\\)|\\\[[\s\S]*?\\\])/g;
+      // (?<!\\)\$ excludes a backslash-escaped \$ (a literal dollar sign,
+      // e.g. money amounts like "\$20") from counting as a math delimiter —
+      // without this, two escaped dollar signs anywhere in the same string
+      // (e.g. "\$20 notes and \$10 notes") were mistaken for one open/close
+      // pair and everything between them got shoved through as "math",
+      // producing garbled \text{...} output for plain-English option text.
+      const mathBlockRegex = /(\$\$[\s\S]*?\$\$|(?<!\\)\$[\s\S]*?(?<!\\)\$|\\\([\s\S]*?\\\)|\\\[[\s\S]*?\\\])/g;
       const parts = processedContent.split(mathBlockRegex);
     let currentLine = "";
     for (let i = 0; i < parts.length; i++) {
