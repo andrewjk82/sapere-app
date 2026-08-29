@@ -42,6 +42,17 @@ const mathHtml = (text) => {
   if (!text) return '';
   let s = cleanLatex(String(text));
 
+  // toDisplayText() passes rich-HTML content (a solution with <p>/<table>/
+  // <br> etc.) through untouched — MathView.jsx then sets it as innerHTML
+  // directly, no escaping, trusting it as real markup. Mirror that here:
+  // escaping &/</> below would turn a literal <br> into the TEXT "<br>"
+  // (2026-08-29 regression — table questions rendered "<br>" instead of a
+  // line break once cleanLatex started calling toDisplayText).
+  const isRichHtml = /<\/(p|div|ul|ol|li|strong|em|h[1-6]|svg|table|thead|tbody|tr|th|td)>|<br\s*\/?>/i.test(s);
+  if (isRichHtml) {
+    return s;
+  }
+
   // Wrap bare LaTeX environments in display-math delimiters.
   // When wrapped, skip \n→<br> substitution — KaTeX can't handle <br> inside math.
   const hasDelimiters = /\$|\\\(|\\\[/.test(s);
@@ -419,7 +430,7 @@ const buildPrintHtml = (questions, { chapterTitle, topicTitle, year, course, rea
     .cover-page {
       display: flex;
       flex-direction: column;
-      height: 250mm;
+      min-height: 250mm;
       justify-content: space-between;
       page-break-after: always;
       break-after: page;
