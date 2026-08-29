@@ -69,7 +69,7 @@ const optLetter = (i) => String.fromCharCode(65 + i);
 /**
  * Generate the full HTML document for the printable question sheet.
  */
-const buildPrintHtml = (questions, { chapterTitle, topicTitle, year, course, readingTime = 5, workingTime = 60, showAnswers = true }) => {
+const buildPrintHtml = (questions, { chapterTitle, topicTitle, year, course, readingTime = 5, workingTime = 60, showAnswers = true, bothVersions = false }) => {
   const title = `${chapterTitle || ''} – ${topicTitle || 'Questions'}`.trim().replace(/^–\s*/, '');
   const headerLeft = year ? `${year} — ${chapterTitle || ''}` : (chapterTitle || '');
   const dateStr = new Date().toLocaleDateString('en-AU', { day: '2-digit', month: '2-digit', year: 'numeric' }) + ', ' + new Date().toLocaleTimeString('en-AU', { hour: '2-digit', minute: '2-digit' });
