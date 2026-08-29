@@ -129,6 +129,31 @@ export const ensurePracticePool = async (uid, studentProfile, membershipVersion)
   }
   const chapterIds = Array.from(targets.targetChapterIds);
 
+  // ✓ GATE 3: Sanity check — all rebuilt chapters must match assigned years.
+  // If dailyPracticeConfig changes between rebuild cycles, stale chapters from
+  // the old config may linger in practice_pool. Log mismatches for audit.
+  const yearNumbers = new Set(
+    targets.assignedYears
+      .map((y) => {
+        const num = parseInt(String(y).replace(/\D/g, ''), 10);
+        return Number.isFinite(num) ? num : null;
+      })
+      .filter((n) => n !== null),
+  );
+  chapterIds.forEach((cid) => {
+    const chYearMatch = String(cid).match(/^y(\d+)/);
+    if (chYearMatch) {
+      const chYear = parseInt(chYearMatch[1], 10);
+      if (!yearNumbers.has(chYear)) {
+        console.warn(
+          `⚠️ practicePool: Chapter ${cid} (Year ${chYear}) ` +
+          `outside assigned years [${Array.from(yearNumbers)}] for uid=${uid}. ` +
+          `This chapter will be filtered at question-fetch time.`,
+        );
+      }
+    }
+  });
+
   if (existing && existing.curriculumSignature === newSignature) {
     // 배정 범위는 그대로. 전역 버전까지 같으면 확인할 것도 없다 (read 0).
     if (Number(existing.membershipVersion || 0) === mv) {

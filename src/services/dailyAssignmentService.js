@@ -338,9 +338,21 @@ export const buildDailyTargets = (studentProfile = {}) => {
 };
 
 const filterManualQuestion = (question, targets) => {
+  // ✓ GATE 1: Year metadata is mandatory — reject questions missing it.
+  // (Missing year = origin unclear; could be wrongly classified question.)
+  if (!question.year) {
+    console.warn(`Question ${question.id} missing year metadata — filtered out`);
+    return false;
+  }
+
   const qYearNum = getYearNumber(question.year);
   const yearMatches = qYearNum !== null
     && targets.assignedYears.some((year) => getYearNumber(year) === qYearNum);
+
+  if (!yearMatches) {
+    console.warn(`Question ${question.id} year="${question.year}" not in assigned years [${targets.assignedYears}] — filtered out`);
+    return false;
+  }
 
   const hasAssignedChapters = targets.assignedChapters && targets.assignedChapters.length > 0;
   const hasChapterMetadata = Boolean(question.chapterId);
@@ -349,7 +361,12 @@ const filterManualQuestion = (question, targets) => {
     ? hasChapterMetadata && targets.targetChapterIds.has(question.chapterId)
     : chapterIsValidForYear;
 
-  return yearMatches && chapterMatches;
+  if (!chapterMatches) {
+    console.warn(`Question ${question.id} chapter="${question.chapterId}" not in valid chapters — filtered out`);
+    return false;
+  }
+
+  return true;
 };
 
 const pickBalancedManualQuestions = (manualQuestions, questionCount) => {
@@ -654,8 +671,26 @@ const buildQuestionsForStudent = async (studentProfile, questionCount, uid, memb
     return true;
   };
 
+  // ✓ GATE 2: Final year-range validation after fetch — catch misclassified questions
+  // from practice_pool rebuild or question_index stale data. Any question outside
+  // the assigned year range is rejected, with logging for post-mortem.
+  const validateQuestionYear = (q) => {
+    if (!q.year) {
+      console.warn(`Question ${q.id} missing year — rejected in final gate`);
+      return false;
+    }
+    const qYearNum = getYearNumber(q.year);
+    const isInRange = targets.assignedYears.some((y) => getYearNumber(y) === qYearNum);
+    if (!isInRange) {
+      console.warn(`Question ${q.id} year="${q.year}" outside assigned range [${targets.assignedYears}] — rejected in final gate`);
+      return false;
+    }
+    return true;
+  };
+
   let questions = rawDocs
     .filter(passesBankFilter)
+    .filter(validateQuestionYear)  // ← Extra year validation before sliming
     .map(slimQuestion)
     .map(correctQuestionAnswer)
     .slice(0, questionCount);
@@ -666,6 +701,7 @@ const buildQuestionsForStudent = async (studentProfile, questionCount, uid, memb
     const { questions: legacyQs, pruneIds } = await fetchManualQuestions(targets, { questionCount, recentlySeen });
     questions = legacyQs
       .filter((q) => !isPrimaryStudent || (Array.isArray(q.options) && q.options.length >= 2))
+      .filter(validateQuestionYear)  // ← Year validation on legacy path too
       .map(correctQuestionAnswer);
     if (pruneIds.length > 0) pruneSeenQuestions(uid, pruneIds).catch(() => {});
   }

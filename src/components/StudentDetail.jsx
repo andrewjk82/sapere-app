@@ -51,7 +51,8 @@ import {
   saveCachedHscResults,
   touchHscResultsSyncMeta,
 } from "../services/hscResultsService";
-import { createDailyAssignment, getCurriculumSignature, getDailyAssignmentCacheKey } from "../services/dailyAssignmentService";
+import { createDailyAssignment, fetchOrCreateDailyAssignment, getCurriculumSignature, getDailyAssignmentCacheKey } from "../services/dailyAssignmentService";
+import { exportExactQuestionsPdf } from "../utils/exportPdf";
 import { touchStudentsSyncMeta } from "../services/studentService";
 import { localCache } from "../services/localCacheService";
 import { generateLearningRecommendations } from "../utils/analyticsUtils";
@@ -178,6 +179,7 @@ const StudentDetail = ({ studentId, onBack }) => {
   const [messageText, setMessageText] = useState("");
   const [sendingMessage, setSendingMessage] = useState(false);
   const [sendingReport, setSendingReport] = useState(false);
+  const [exportingDailyPdf, setExportingDailyPdf] = useState(false);
   const [dailyStats, setDailyStats] = useState([]);
   const [hscRecords, setHscRecords] = useState([]);
   const [hscSaving, setHscSaving] = useState(false);
@@ -702,6 +704,55 @@ const StudentDetail = ({ studentId, onBack }) => {
       showToast(e.message, "error");
     } finally {
       setSendingReport(false);
+    }
+  };
+
+  // Print-friendly PDF of a student's Daily Challenge — for students who
+  // struggle doing it online. Pulls the SAME question set fetchOrCreateDailyAssignment
+  // would hand the student (creating today's assignment if it doesn't exist
+  // yet — safe/idempotent, mirrors what opening Daily Challenge does), then
+  // prints it as two PDFs: the question paper (no answers) + an answer key.
+  const handleExportDailyPdf = async () => {
+    const uid = challengeResultsUid;
+    if (!uid) {
+      showToast(
+        "Daily Challenge PDF is only available for registered students (this profile has no linked account).",
+        "warning",
+        7000,
+      );
+      return;
+    }
+    try {
+      setExportingDailyPdf(true);
+      const assignment = await fetchOrCreateDailyAssignment({ uid, studentProfile: student });
+      if (!assignment?.questions?.length) {
+        showToast("No Daily Challenge questions available to print for this student.", "error");
+        return;
+      }
+      const yearLabel = Array.isArray(student?.assignedYear)
+        ? student.assignedYear[0]
+        : (student?.assignedYear || student?.year || "");
+      const courseLabel = Array.isArray(student?.assignedCourse)
+        ? student.assignedCourse[0]
+        : student?.assignedCourse;
+      const dateLabel = new Date(`${assignment.date}T00:00:00`).toLocaleDateString("en-AU", {
+        weekday: "long", day: "numeric", month: "long", year: "numeric",
+      });
+      exportExactQuestionsPdf(
+        assignment.questions,
+        {
+          chapterTitle: "Daily Challenge",
+          topicTitle: dateLabel,
+          year: yearLabel,
+          course: courseLabel || "",
+        },
+        { bothVersions: true },
+      );
+    } catch (e) {
+      console.error("Daily Challenge PDF export failed:", e);
+      showToast("Failed to generate PDF: " + (e?.message || "unknown error"), "error");
+    } finally {
+      setExportingDailyPdf(false);
     }
   };
 
@@ -2248,6 +2299,8 @@ const StudentDetail = ({ studentId, onBack }) => {
         onOpenMessage={() => setMessageOpen(true)}
         onSendReport={handleSendReport}
         sendingReport={sendingReport}
+        onExportDailyPdf={handleExportDailyPdf}
+        exportingDailyPdf={exportingDailyPdf}
         onEditProfile={() => setIsEditModalOpen(true)}
       />
 

@@ -636,20 +636,28 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode }) => {
         if (!currentResult) throw new Error('result-not-found');
         if (currentResult.correct === true) throw new Error('answer-already-correct');
 
+        // `statData.score` / `statData.total` are QUESTION-count based (see
+        // "Saved score is question-based" comment in DailyChallenge.jsx) —
+        // restoring credit on ONE question is worth exactly +1, no matter how
+        // many gradable sub-parts (totalPoints) that question has internally.
+        // A question's own sub-part tally (totalPoints/earnedPoints, used
+        // below only to mark the question's pointsEarned as fully graded)
+        // must never be added directly to `score`/`total` — doing so let a
+        // single restored multi-part question inflate `score` past `total`
+        // (2026-08-26 Hera incident: a 9-point multi-part question restore
+        // pushed score from 19 to 28 while total stayed at 20).
         const totalPoints = Math.max(1, Number(currentResult.totalPoints) || 1);
-        const earnedPoints = Math.max(0, Number(currentResult.pointsEarned) || 0);
-        const pointsToRestore = Math.max(1, totalPoints - earnedPoints);
         const currentScore = Math.max(0, Number(statData.score) || 0);
-        const total = Math.max(currentScore + pointsToRestore, Number(statData.total) || totalPoints);
-        const newScore = Math.min(total, currentScore + pointsToRestore);
+        const total = Math.max(currentScore, Number(statData.total) || 1); // question count — never inflate it here
+        const newScore = Math.min(total, currentScore + 1); // one restored question = +1, never more
         const actualPointsRestored = newScore - currentScore;
 
         if (actualPointsRestored <= 0) throw new Error('score-already-full');
 
         const maxXp = Math.max(0, Number(statData.maxXp) || (statCollection === 'calc_stats' ? 50 : 100));
         const currentXp = Math.max(0, Number(statData.xpEarned) || 0);
-        const xpPerPoint = total > 0 ? Math.round(maxXp / total) : 0;
-        const xpToRestore = Math.max(0, Math.min(maxXp - currentXp, xpPerPoint * actualPointsRestored));
+        const xpPerQuestion = total > 0 ? Math.round(maxXp / total) : 0;
+        const xpToRestore = Math.max(0, Math.min(maxXp - currentXp, xpPerQuestion * actualPointsRestored));
         const newXpEarned = currentXp + xpToRestore;
         const restoredAt = new Date().toISOString();
 

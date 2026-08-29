@@ -116,6 +116,19 @@ const buildPrintHtml = (questions, { chapterTitle, topicTitle, year, course, rea
         <div class="question-text">${mathHtml(questionText)}</div>
     `;
 
+    // Diagram — same fields MathView.jsx checks for a raw hand-authored SVG
+    // (see the "Corpus-generated geometry/mensuration questions" convention:
+    // graphData.svg / .diagramSvg / .svgSnapshot). graphData can arrive as an
+    // object or a JSON string, matching MathView.jsx's own parsing.
+    let graphData = q.graphData;
+    if (typeof graphData === 'string') {
+      try { graphData = JSON.parse(graphData); } catch { graphData = null; }
+    }
+    const diagramSvg = graphData?.svg || graphData?.diagramSvg || graphData?.svgSnapshot;
+    if (typeof diagramSvg === 'string' && diagramSvg.trim().startsWith('<svg')) {
+      questionsHtml += `<div class="question-diagram">${diagramSvg}</div>`;
+    }
+
     // Sub-questions
     if (q.subQuestions && q.subQuestions.length > 0) {
       questionsHtml += '<div class="sub-questions">';
@@ -642,6 +655,17 @@ const buildPrintHtml = (questions, { chapterTitle, topicTitle, year, course, rea
       margin-bottom: 12px;
     }
 
+    .question-diagram {
+      margin: 4px 0 16px;
+      text-align: center;
+    }
+
+    .question-diagram svg {
+      max-width: 100%;
+      height: auto;
+      max-height: 260px;
+    }
+
     .options-grid {
       display: grid;
       grid-template-columns: 1fr;
@@ -1022,6 +1046,43 @@ export const exportQuestionsPdf = (questions, meta, options = {}) => {
     const answersOk = openPdfWindow(validQuestions, meta, true);
     if (!studentOk || !answersOk) {
       alert('Popup blocked! Please allow popups for this site to export both PDFs (student paper + answer key).');
+    }
+    return;
+  }
+
+  if (!openPdfWindow(validQuestions, meta, showAnswers)) {
+    alert('Popup blocked! Please allow popups for this site to export PDF.');
+  }
+};
+
+/**
+ * Export an EXACT, pre-selected list of questions — no shuffle, no
+ * same-template dedup, no count trimming. Use this (instead of
+ * exportQuestionsPdf) when the question set itself is the thing being
+ * reproduced verbatim — e.g. printing a specific student's already-assigned
+ * Daily Challenge for offline/paper use, where the count and order must
+ * match what that student would see online.
+ *
+ * @param {Array} questions - Array of question objects, already selected/ordered.
+ * @param {Object} meta - { chapterTitle, topicTitle, year, course, readingTime, workingTime }
+ * @param {Object} options - { bothVersions: boolean, showAnswers: boolean }
+ */
+export const exportExactQuestionsPdf = (questions, meta, options = {}) => {
+  const { showAnswers = true, bothVersions = false } = options;
+  const validQuestions = (questions || []).filter((q) => q && !q.loading);
+
+  if (validQuestions.length === 0) {
+    alert('No questions to export');
+    return;
+  }
+
+  // bothVersions emits two PDFs from the SAME question set — the no-answer
+  // student paper and the answer key — same contract as exportQuestionsPdf.
+  if (bothVersions) {
+    const studentOk = openPdfWindow(validQuestions, meta, false);
+    const answersOk = openPdfWindow(validQuestions, meta, true);
+    if (!studentOk || !answersOk) {
+      alert('Popup blocked! Please allow popups for this site to export both PDFs (question paper + answer key).');
     }
     return;
   }

@@ -1,4 +1,4 @@
-import { ChevronLeft, Mail, Phone } from "lucide-react";
+import { ChevronLeft, Mail, Phone, FileDown } from "lucide-react";
 
 const getRoleLabel = (role) => {
   if (role === "student") return "Student";
@@ -14,6 +14,8 @@ export default function StudentHeaderCard({
   onOpenMessage,
   onSendReport,
   sendingReport,
+  onExportDailyPdf,
+  exportingDailyPdf,
   onEditProfile,
 }) {
   return (
@@ -113,6 +115,27 @@ export default function StudentHeaderCard({
             }}
           >
             {sendingReport ? "Sending…" : "Weekly Report"}
+          </button>
+          <button
+            onClick={onExportDailyPdf}
+            disabled={exportingDailyPdf}
+            className="app-button"
+            title="Print today's Daily Challenge as a PDF (question paper + answer key) — for students who find the online version hard to use."
+            style={{
+              padding: "8px 16px",
+              borderRadius: "12px",
+              background: exportingDailyPdf ? "#f1f5f9" : "#fff7ed",
+              color: exportingDailyPdf ? "#94a3b8" : "#c2410c",
+              fontWeight: 700,
+              border: "1px solid #fed7aa",
+              cursor: exportingDailyPdf ? "default" : "pointer",
+              display: "flex",
+              alignItems: "center",
+              gap: "6px",
+            }}
+          >
+            <FileDown size={16} />
+            {exportingDailyPdf ? "Generating…" : "Daily PDF"}
           </button>
           <button
             onClick={onEditProfile}
