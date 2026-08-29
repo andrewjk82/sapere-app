@@ -76,6 +76,22 @@ const mathHtml = (text) => {
 };
 
 /**
+ * Hand-authored diagram SVGs carry their own `width='100%' height='100%'`
+ * (sized for the live app, where a flex/grid parent gives them a definite
+ * box). In the print document the parent (.question-diagram) has no
+ * explicit height, so a percentage height on the <svg> is indeterminate —
+ * html2canvas then captures it collapsed to little more than a sliver of
+ * one stray path (2026-08-29: "Find the value of θ" rendered as an
+ * unrelated curve floating near the page bottom). Strip width/height off
+ * just the opening <svg> tag so our own CSS (max-width:100%; height:auto)
+ * sizes it from the viewBox instead — the aspect ratio is preserved either
+ * way since viewBox is untouched.
+ */
+const stripSvgSize = (svg) =>
+  svg.replace(/^\s*<svg\b[^>]*>/i, (openingTag) =>
+    openingTag.replace(/\s+(?:width|height)\s*=\s*(?:"[^"]*"|'[^']*')/gi, ''));
+
+/**
  * Build the option letter (A, B, C, D …)
  */
 const optLetter = (i) => String.fromCharCode(65 + i);
@@ -140,7 +156,7 @@ const buildPrintHtml = (questions, { chapterTitle, topicTitle, year, course, rea
     }
     const diagramSvg = graphData?.svg || graphData?.diagramSvg || graphData?.svgSnapshot;
     if (typeof diagramSvg === 'string' && diagramSvg.trim().startsWith('<svg')) {
-      questionsHtml += `<div class="question-diagram">${diagramSvg}</div>`;
+      questionsHtml += `<div class="question-diagram">${stripSvgSize(diagramSvg)}</div>`;
     }
 
     // Sub-questions
