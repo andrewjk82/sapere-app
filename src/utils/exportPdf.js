@@ -9,21 +9,24 @@
  * loaded in the app for perfect math rendering.
  */
 import { resolveCorrectOptionIndex, resolveCorrectOptionText } from './mcOptionShuffle.js';
+import { toDisplayText } from './mathPreprocess.js';
 
 /**
- * Strip double-backslashes that leak from JS string escaping into actual
- * LaTeX. The question data stores `\\(` meaning the LaTeX delimiter `\(`,
- * but when we inject it into HTML we need it as a single backslash.
+ * Normalise raw question text the same way the live app does (MathView →
+ * toDisplayText) before we build the print HTML. mathPreprocess.js heals
+ * JS-string-escape corruption from database seeds (a stray unescaped
+ * backslash swallowing the next letter as a control character — e.g. a
+ * seed's "\frac" surviving as "\<FORM FEED>rac", which prints as "rac"
+ * with the f missing) plus unicode→LaTeX substitutions and delimiter
+ * healing. Without this the PDF showed exactly that corruption even though
+ * the live in-app view (which does call toDisplayText) rendered it fine —
+ * 2026-08-29 incident. toDisplayText returns plain text/LaTeX (no HTML
+ * escaping of its own for the ordinary math case), so it composes safely
+ * with mathHtml()'s existing &/</> escaping and wrap logic below.
  */
 const cleanLatex = (str) => {
   if (!str) return '';
-  let s = String(str);
-  // The seed files store LaTeX with double-backslash escaping for JS strings.
-  // When rendered in the app MathView handles this, but for raw HTML injection
-  // we need to normalise. However the data from Firestore usually already
-  // has single backslashes, so we only collapse true double-backslashes
-  // that are NOT structural (e.g. \\n newlines).
-  return s;
+  return toDisplayText(str, '');
 };
 
 /**
