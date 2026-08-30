@@ -620,6 +620,31 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
                       </span>
                     )}
                   </div>
+                  {/* Per-question year/chapter/topic — the topic bar above shows
+                      the PAGE-level filter ("All topics" when browsing a whole
+                      chapter), which doesn't say which specific topic THIS
+                      question belongs to. Read straight off the question doc
+                      so it stays accurate as the teacher pages through a
+                      mixed-topic list. */}
+                  {q && (q.year || q.chapterTitle || q.topicTitle || q.topicCode) && (
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginTop: '5px', flexWrap: 'wrap' }}>
+                      {q.year && (
+                        <span style={{ fontSize: '0.7rem', fontWeight: 800, color: '#6366f1', background: '#eef2ff', borderRadius: '999px', padding: '2px 9px' }}>
+                          {q.year}
+                        </span>
+                      )}
+                      {q.chapterTitle && (
+                        <span style={{ fontSize: '0.7rem', fontWeight: 700, color: '#64748b', background: '#f1f5f9', borderRadius: '999px', padding: '2px 9px' }}>
+                          {q.chapterTitle}
+                        </span>
+                      )}
+                      {(q.topicTitle || q.topicCode) && (
+                        <span style={{ fontSize: '0.7rem', fontWeight: 700, color: '#64748b', background: '#f1f5f9', borderRadius: '999px', padding: '2px 9px' }}>
+                          {q.topicCode ? `${q.topicCode} · ` : ''}{q.topicTitle || ''}
+                        </span>
+                      )}
+                    </div>
+                  )}
                 </div>
                 <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
                   {[
