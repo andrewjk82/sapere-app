@@ -355,12 +355,19 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode }) => {
       // Enrich any report whose saved questionData lacks subQuestions by
       // reading the live question doc (deduped by questionId to bound reads —
       // a direct getDoc per unique id, never a collection scan).
+      // Skip reports that already carry real top-level `options` — a
+      // question edited from multi-part into a standalone MC sometimes keeps
+      // an orphaned `subQuestions` array on the live doc instead of clearing
+      // it, and merging that in here would hide the actual (current,
+      // correct) options behind stale sub-question labels
+      // (2026-08-30: y10-5g-q14).
       const idsToFetch = [...new Set(
         rawReports
           .filter(r => {
             const qid = r.questionId || r.questionData?.id;
             const hasSubs = Array.isArray(r.questionData?.subQuestions) && r.questionData.subQuestions.length > 0;
-            return qid && !hasSubs;
+            const hasOptions = Array.isArray(r.questionData?.options) && r.questionData.options.length > 0;
+            return qid && !hasSubs && !hasOptions;
           })
           .map(r => r.questionId || r.questionData?.id)
       )];
@@ -1036,7 +1043,18 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode }) => {
                 <div style={{ margin: '8px 0 0' }}>
                   <MathView content={report.questionData.question || report.questionData.text || 'No question text'} graphData={report.questionData.graphData} style={{ fontWeight: 600, color: '#1e293b' }} />
                 </div>
-                {Array.isArray(report.questionData.subQuestions) && report.questionData.subQuestions.length > 0 && (
+                {/* Editing a multi-part question into a standalone MC (top-level
+                    `options` populated) sometimes leaves the old `subQuestions`
+                    array attached instead of clearing it — render THOSE stale
+                    labels as if they were real answer options and never show
+                    the actual (current, correct) options at all. Top-level
+                    `options` existing is the authoritative signal this is now
+                    a single-answer question; only fall back to sub-questions
+                    when there ISN'T a real options list (2026-08-30: y10-5g-q14
+                    showed "a) one solution / b) two solutions / c) no
+                    solutions" as if those were the MC choices). */}
+                {!(Array.isArray(report.questionData.options) && report.questionData.options.length > 0)
+                  && Array.isArray(report.questionData.subQuestions) && report.questionData.subQuestions.length > 0 && (
                   <div style={{ marginTop: '12px', display: 'flex', flexDirection: 'column', gap: '10px' }}>
                     {report.questionData.subQuestions.map((sq, idx) => (
                       <div key={sq.id ?? idx} style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', padding: '12px 14px', borderRadius: '12px', background: '#fff', border: '1px solid #eef2ff' }}>
@@ -1583,7 +1601,14 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode }) => {
           const q = previewQuestion || previewReport.questionData || {};
           const studentAnswer = getPreviewStudentAnswer();
           const options = Array.isArray(q.options) ? q.options : [];
-          const hasSubs = Array.isArray(q.subQuestions) && q.subQuestions.length > 0;
+          // A real top-level `options` list is the authoritative signal this
+          // question is now a standalone single-answer question — only treat
+          // it as multi-part when there ISN'T one. Editing a multi-part
+          // question into a standalone MC sometimes leaves the old
+          // `subQuestions` array attached instead of clearing it, which
+          // otherwise hides the actual (current, correct) options entirely
+          // behind a stale sub-question breakdown (2026-08-30: y10-5g-q14).
+          const hasSubs = options.length === 0 && Array.isArray(q.subQuestions) && q.subQuestions.length > 0;
           // For sub-questions the student's answer is an object keyed by sq.id || index.
           const subAnswerObj = (studentAnswer && typeof studentAnswer === 'object' && !Array.isArray(studentAnswer))
             ? studentAnswer
