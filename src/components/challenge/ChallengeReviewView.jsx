@@ -161,11 +161,32 @@ const ChallengeReviewView = ({
   const correctOption = correctOptIdx >= 0 ? mcOptions[correctOptIdx] : null;
   const correctOptGraphData = (correctOption && typeof correctOption === 'object') ? correctOption.graphData : null;
   const correctOptImage = correctOption ? getOptionImage(correctOption) : '';
-  const shuffleOrder = Array.isArray(q._shuffledOrder) ? q._shuffledOrder : mcOptions.map((_, i) => i);
+  // `selectedOptionIdx` is a position in the SHUFFLED display list, not the
+  // persisted `options` array order. `_shuffledOrder` (written by
+  // prepareShuffledMcOptions) is what maps one back to the other — but it
+  // lives only on the in-memory question object for the live session and is
+  // never persisted, so a review opened from History (question objects
+  // re-fetched fresh, no `_shuffledOrder`) loses it entirely. The old code
+  // fell back to an IDENTITY mapping in that case, which silently shows
+  // whichever option happens to sit at that position in `options` — a
+  // different option than the student actually picked whenever Daily
+  // Calculation double-shuffles (generator shuffle + prepareShuffledMcOptions)
+  // land differently (2026-08-30: Chloe Sia Kim's "I clicked ans but it did
+  // different ans" reports — grading was correct throughout, this was a
+  // display-only bug). Prefer a TEXT match against the student's actual
+  // recorded answer — safe regardless of shuffle order — and only trust the
+  // index reconstruction when the real `_shuffledOrder` is present (the
+  // diagram-only-option case, which has no text to match on).
+  const shuffleOrder = Array.isArray(q._shuffledOrder) ? q._shuffledOrder : null;
   const studentOptIdx = result?.selectedOptionIdx;
-  const studentOption = (isPlainMc && Number.isInteger(studentOptIdx) && studentOptIdx >= 0 && studentOptIdx < shuffleOrder.length)
-    ? mcOptions[shuffleOrder[studentOptIdx]]
-    : null;
+  let studentOption = null;
+  if (isPlainMc && studentText) {
+    const textMatchIdx = mcOptions.findIndex((o) => answersMatch(getOptionText(o), studentText));
+    if (textMatchIdx >= 0) studentOption = mcOptions[textMatchIdx];
+  }
+  if (!studentOption && isPlainMc && shuffleOrder && Number.isInteger(studentOptIdx) && studentOptIdx >= 0 && studentOptIdx < shuffleOrder.length) {
+    studentOption = mcOptions[shuffleOrder[studentOptIdx]];
+  }
   const studentOptGraphData = (studentOption && typeof studentOption === 'object') ? studentOption.graphData : null;
   const studentOptImage = studentOption ? getOptionImage(studentOption) : '';
 
