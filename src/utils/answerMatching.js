@@ -202,6 +202,7 @@ export const expandAnswerCandidates = (value) => {
     while (s.length >= 2 && s[0] === '(' && s[s.length - 1] === ')') {
       let depth = 0;
       let balanced = true;
+      let hasTopLevelComma = false;
       for (let i = 0; i < s.length; i += 1) {
         if (s[i] === '(') depth += 1;
         else if (s[i] === ')') {
@@ -210,9 +211,21 @@ export const expandAnswerCandidates = (value) => {
             balanced = false;
             break;
           }
+        } else if (s[i] === ',' && depth === 1) {
+          hasTopLevelComma = true;
         }
       }
       if (!balanced || depth !== 0) break;
+      // A comma directly inside the wrapping parens means this is an ordered
+      // pair/coordinate/interval like "(-0.5, 5)" or "(1, 2, 3)" — the parens
+      // are semantically essential (order matters), not decorative. Stripping
+      // them here defeats isListLike()'s own coordinate guard one level down
+      // in answersMatchOne (it only recognises "(...)" — with the parens
+      // already gone it can't tell a coordinate from a genuine unordered
+      // list), letting "(-0.5, 5)" and "(5, -0.5)" — a DIFFERENT point —
+      // grade as equal (2026-08-31: y9-11b-q1g midpoint question, two
+      // unrelated options both lit up green).
+      if (hasTopLevelComma) break;
       s = s.slice(1, -1).trim();
     }
     return s;
