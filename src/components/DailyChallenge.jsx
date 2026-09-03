@@ -709,6 +709,16 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
       // the race and surfacing as "Assignment load timed out" for students who
       // weren't actually stuck. 20s keeps the crash-safety guard but stops
       // penalising slow-but-succeeding requests.
+      //
+      // 2026-09-03: bumped 20s → 45s. A bulk write to the questions collection
+      // ("dedupe-q2-sub-stems") bumped sync_meta/questions.membershipVersion
+      // GLOBALLY, invalidating every student's practice_pool + next_prep. The
+      // first Daily Practice of the day then rebuilds the pool from scratch —
+      // for a Year 11 Advanced student that spans ~13 chapters (one with 1000+
+      // indexed questions), and at after-school peak the sequential round trips
+      // legitimately exceed 20s. The rebuild is a one-time cost per student per
+      // signature change; 45s lets it finish instead of hard-failing with
+      // "Failed to start challenge (Assignment load timed out)".
       const assignment = await Promise.race([
         fetchOrCreateDailyAssignment({
           uid: user?.uid,
@@ -716,7 +726,7 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
           dateKey: today,
           questionCount: qCount,
         }),
-        new Promise((_, reject) => setTimeout(() => reject(new Error('Assignment load timed out')), 20000)),
+        new Promise((_, reject) => setTimeout(() => reject(new Error('Assignment load timed out')), 45000)),
       ]);
       const rawQs = (assignment.questions || []).map(correctQuestionAnswer);
       if (rawQs.length === 0) throw new Error('No daily assignment questions were generated.');
