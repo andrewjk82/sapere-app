@@ -45,3 +45,6 @@ scratch/
 
 # P0 Firestore snapshot (65MB) - keep locally; reports beside it are tracked
 /content/_export/raw/
+
+# built by tools/content/publish.mjs during npm run build
+/public/content/

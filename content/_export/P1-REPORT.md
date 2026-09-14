@@ -37,3 +37,12 @@
 | warning: part id also a standalone doc | 662 (+110 reverse) | legacy "split sub-parts into docs"; reconcile in P5 |
 
 Gate proven: passes on baseline; an injected `\frac{1}` fails with exit 1.
+
+---
+# P2 — publisher (2026-09-14)
+`tools/content/publish.mjs` → `public/content/` (734 (chapter,topic) files, 34.7MB raw / ~3KB gz median, manifest 123KB / 23KB gz). Deterministic (byte-identical re-run). Wired into `npm run build`; full build 43s. Cache headers in vercel.json.
+
+Acceptance vs today's Firestore indexes (from raw-meta snapshot):
+- chapter membership: 263/328 identical; the 65 others fully explained — 17 empty index docs, 22 inactive (filtered today too), 98 orphan ids (no doc). **0 unexplained.**
+- topic membership: published sets ⊇ `question_topic_index` (311 identical, 217 larger). The Firestore topic index only ever held the seeder's own ids, so teacher/script-added questions (2,801) never reached topic practice — the published files correct that. Exam-paper questions tagged with curriculum topicIds also appear under that topic; P3 loader must exclude `exam:*` chapters from topic practice by default to keep today's behaviour.
+- `figure.html` carrying inline SVG (raw Firestore used the html key): preserved as-is, not de-duplicated — P5 cleanup.

@@ -12,8 +12,13 @@
 ```
 edit content/chapters/*.json
 npm run content:validate          # schema + KaTeX (renderer preprocessing) + MC keys; fails on NEW defects only
-git commit / push                 # → publish (P2) → CDN
+git commit / push                 # Vercel: npm run build = validate → publish → vite build
 ```
+`npm run content:publish` writes `public/content/` (gitignored, rebuilt every build):
+`manifest.json` (chapter → topic → file), `topics/<chapter>__<topic>.<hash>.json` (immutable, SVGs inlined),
+`ids.<hash>.json` (id → topicId for non-derivable ids), `extra.<hash>.json` (cross-listings), `hsc-types.<hash>.json`.
+A topicId can appear under several chapters (exam papers tag questions with curriculum topics) —
+`manifest.topics[topicId]` lists every file that carries it.
 `npm run content:validate:report` writes `_export/validate-report.json` with every error/warning.
 
 ## Provenance
