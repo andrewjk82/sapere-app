@@ -238,6 +238,7 @@
             "source": "Caringbah 2020 Trial Q1",
             "examPaper": "caringbah-2020"
           },
+          "hscType": "trig-applications",
           "dna": {
             "dnaId": "TRIG-ID-01",
             "dnaConfidence": 0.85
@@ -280,6 +281,7 @@
             "course": "Advanced",
             "examPaper": "caringbah-2020"
           },
+          "hscType": "exponential-and-log",
           "dna": {
             "dnaId": "FUNC-GRAPH-01",
             "dnaConfidence": 0.85
@@ -321,6 +323,7 @@
             "source": "Caringbah 2020 Trial Q3",
             "examPaper": "caringbah-2020"
           },
+          "hscType": "differentiation-rules",
           "dna": {
             "dnaId": "CALC-DIFF-01",
             "dnaConfidence": 0.85,
@@ -415,6 +418,7 @@
             "source": "Caringbah 2020 Trial Q4",
             "examPaper": "caringbah-2020"
           },
+          "hscType": "functions-and-graphs",
           "dna": {
             "dnaId": "FUNC-GRAPH-01",
             "dnaConfidence": 0.85
@@ -455,6 +459,7 @@
             "source": "Caringbah 2020 Trial Q5",
             "examPaper": "caringbah-2020"
           },
+          "hscType": "continuous-distributions",
           "dna": {
             "dnaId": "PROB-NORM-01",
             "dnaConfidence": 0.85
@@ -495,6 +500,7 @@
             "source": "Caringbah 2020 Trial Q6",
             "examPaper": "caringbah-2020"
           },
+          "hscType": "trig-equations-and-graphs",
           "dna": {
             "dnaId": "TRIG-GRAPH-01",
             "dnaConfidence": 0.85
@@ -539,6 +545,7 @@
             "source": "Caringbah 2020 Trial Q7",
             "examPaper": "caringbah-2020"
           },
+          "hscType": "data-analysis",
           "dna": {
             "dnaId": "STAT-DESC-01",
             "dnaConfidence": 0.85
@@ -579,6 +586,7 @@
             "source": "Caringbah 2020 Trial Q8",
             "examPaper": "caringbah-2020"
           },
+          "hscType": "differentiation-rules",
           "dna": {
             "dnaId": "CALC-TAN-01",
             "dnaConfidence": 0.85
@@ -623,6 +631,7 @@
             "source": "Caringbah 2020 Trial Q9",
             "examPaper": "caringbah-2020"
           },
+          "hscType": "differentiation-rules",
           "dna": {
             "dnaId": "CALC-DIFF-01",
             "dnaConfidence": 0.85,
@@ -718,6 +727,7 @@
             "source": "Caringbah 2020 Trial Q10",
             "examPaper": "caringbah-2020"
           },
+          "hscType": "arithmetic-series",
           "dna": {
             "dnaId": "SERIES-01",
             "dnaConfidence": 0.85
@@ -761,6 +771,7 @@
           "meta": {
             "source": "Caringbah 2020 Trial Q11"
           },
+          "hscType": "exponential-and-log",
           "dna": {
             "dnaId": "ALG-SURD-01"
           },
@@ -804,6 +815,7 @@
             "source": "Caringbah 2020 Trial Q12",
             "examPaper": "caringbah-2020"
           },
+          "hscType": "trig-applications",
           "dna": {
             "dnaId": "TRIG-GEO-01",
             "dnaConfidence": 0.85
@@ -915,6 +927,7 @@
             "course": "Advanced",
             "examPaper": "caringbah-2020"
           },
+          "hscType": "areas-and-volumes",
           "dna": {
             "dnaId": "CALC-AREA-01",
             "dnaConfidence": 0.85
@@ -969,6 +982,7 @@
             }
           ],
           "timeLimit": 180,
+          "hscType": "other",
           "dna": {
             "dnaId": "CALC-DIFF-01",
             "dnaConfidence": 0.6,
@@ -1064,6 +1078,7 @@
             }
           ],
           "timeLimit": 180,
+          "hscType": "other",
           "dna": {
             "dnaId": "CALC-DIFF-01",
             "dnaConfidence": 0.6,
@@ -1159,6 +1174,7 @@
             "course": "Advanced",
             "examPaper": "caringbah-2020"
           },
+          "hscType": "trapezoidal-rule",
           "dna": {
             "dnaId": "CALC-AREA-01",
             "dnaConfidence": 0.85
@@ -1261,6 +1277,7 @@
             "source": "Caringbah 2020 Trial Q16",
             "examPaper": "caringbah-2020"
           },
+          "hscType": "areas-and-volumes",
           "dna": {
             "dnaId": "TRIG-GEO-01",
             "dnaConfidence": 0.85
@@ -1302,6 +1319,7 @@
             "source": "Caringbah 2020 Trial Q17",
             "examPaper": "caringbah-2020"
           },
+          "hscType": "trig-equations-and-graphs",
           "dna": {
             "dnaId": "TRIG-EQ-01",
             "dnaConfidence": 0.85
@@ -1347,6 +1365,7 @@
             "course": "Advanced",
             "examPaper": "caringbah-2020"
           },
+          "hscType": "integration-techniques",
           "dna": {
             "dnaId": "CALC-INT-01",
             "dnaConfidence": 0.85
@@ -1385,6 +1404,7 @@
             "course": "Advanced",
             "examPaper": "caringbah-2020"
           },
+          "hscType": "areas-and-volumes",
           "dna": {
             "dnaId": "CALC-AREA-01",
             "dnaConfidence": 0.85
@@ -1426,6 +1446,7 @@
             "source": "Caringbah 2020 Trial Q21",
             "examPaper": "caringbah-2020"
           },
+          "hscType": "exponential-and-log",
           "dna": {
             "dnaId": "ALG-LOG-01",
             "dnaConfidence": 0.85
@@ -1467,6 +1488,7 @@
             "source": "Caringbah 2020 Trial Q22",
             "examPaper": "caringbah-2020"
           },
+          "hscType": "continuous-distributions",
           "dna": {
             "dnaId": "PROB-NORM-01",
             "dnaConfidence": 0.85
@@ -1509,6 +1531,7 @@
             "topic": "y12a-10A",
             "examPaper": "caringbah-2020"
           },
+          "hscType": "probability-distributions",
           "dna": {
             "dnaId": "PROB-DIST-01",
             "dnaConfidence": 0.85
@@ -1550,6 +1573,7 @@
             "source": "Caringbah 2020 Trial Q24",
             "examPaper": "caringbah-2020"
           },
+          "hscType": "functions-and-graphs",
           "dna": {
             "dnaId": "FUNC-COMP-01",
             "dnaConfidence": 0.85
@@ -1591,6 +1615,7 @@
             "source": "Caringbah 2020 Trial Q25",
             "examPaper": "caringbah-2020"
           },
+          "hscType": "differentiation-rules",
           "dna": {
             "dnaId": "CALC-DIFF-01",
             "dnaConfidence": 0.85,
@@ -1724,6 +1749,7 @@
             "source": "Caringbah 2020 Trial Q26",
             "examPaper": "caringbah-2020"
           },
+          "hscType": "bivariate-statistics",
           "dna": {
             "dnaId": "STAT-BIV-01",
             "dnaConfidence": 0.85
@@ -1765,6 +1791,7 @@
             "source": "Caringbah 2020 Trial Q27",
             "examPaper": "caringbah-2020"
           },
+          "hscType": "exponential-and-log",
           "dna": {
             "dnaId": "CALC-DIFF-01",
             "dnaConfidence": 0.85,
@@ -1859,6 +1886,7 @@
             "source": "Caringbah 2020 Trial Q28",
             "examPaper": "caringbah-2020"
           },
+          "hscType": "integration-techniques",
           "dna": {
             "dnaId": "CALC-INT-01",
             "dnaConfidence": 0.85,
@@ -1954,6 +1982,7 @@
             "course": "Advanced",
             "examPaper": "caringbah-2020"
           },
+          "hscType": "integration-techniques",
           "dna": {
             "dnaId": "CALC-INT-01",
             "dnaConfidence": 0.85,
@@ -2048,6 +2077,7 @@
             "source": "Caringbah 2020 Trial Q30",
             "examPaper": "caringbah-2020"
           },
+          "hscType": "optimisation",
           "dna": {
             "dnaId": "CALC-OPT-01",
             "dnaConfidence": 0.85
@@ -2089,6 +2119,7 @@
             "source": "Caringbah 2020 Trial Q31",
             "examPaper": "caringbah-2020"
           },
+          "hscType": "integration-techniques",
           "dna": {
             "dnaId": "CALC-INT-01",
             "dnaConfidence": 0.85,
@@ -2184,6 +2215,7 @@
             "course": "Advanced",
             "examPaper": "caringbah-2020"
           },
+          "hscType": "conditional-probability",
           "dna": {
             "dnaId": "FUNC-TRANS-01",
             "dnaConfidence": 0.85
@@ -2222,6 +2254,7 @@
             "course": "Advanced",
             "examPaper": "caringbah-2020"
           },
+          "hscType": "trig-equations-and-graphs",
           "dna": {
             "dnaId": "TRIG-GRAPH-01",
             "dnaConfidence": 0.85
@@ -2266,6 +2299,7 @@
             "source": "Caringbah 2020 Trial Q34",
             "examPaper": "caringbah-2020"
           },
+          "hscType": "differentiation-rules",
           "dna": {
             "dnaId": "CALC-DIFF-01",
             "dnaConfidence": 0.85,
@@ -2363,6 +2397,7 @@
             "source": "Caringbah 2020 Trial Q35",
             "examPaper": "caringbah-2020"
           },
+          "hscType": "continuous-distributions",
           "dna": {
             "dnaId": "PROB-CONT-01",
             "dnaConfidence": 0.85
@@ -2404,6 +2439,7 @@
             "source": "Caringbah 2020 Trial Q36",
             "examPaper": "caringbah-2020"
           },
+          "hscType": "integration-techniques",
           "dna": {
             "dnaId": "CALC-INT-01",
             "dnaConfidence": 0.85,
@@ -2491,6 +2527,7 @@
             }
           ],
           "timeLimit": 240,
+          "hscType": "other",
           "dna": {
             "dnaId": "ALG-EXP-01",
             "dnaConfidence": 0.95
@@ -2525,6 +2562,7 @@
             }
           ],
           "timeLimit": 240,
+          "hscType": "other",
           "dna": {
             "dnaId": "CALC-MOTION-01",
             "dnaConfidence": 0.95
@@ -2566,6 +2604,7 @@
             "source": "Caringbah 2020 Trial Q38",
             "examPaper": "caringbah-2020"
           },
+          "hscType": "geometric-series",
           "dna": {
             "dnaId": "SERIES-01",
             "dnaConfidence": 0.85
@@ -2607,6 +2646,7 @@
             "source": "Caringbah 2020 Trial Q39",
             "examPaper": "caringbah-2020"
           },
+          "hscType": "motion-kinematics",
           "dna": {
             "dnaId": "CALC-MOTION-01",
             "dnaConfidence": 0.85
@@ -2648,6 +2688,7 @@
             "source": "Caringbah 2020 Trial Q40",
             "examPaper": "caringbah-2020"
           },
+          "hscType": "integration-techniques",
           "dna": {
             "dnaId": "CALC-INT-01",
             "dnaConfidence": 0.85,
@@ -2741,6 +2782,7 @@
           "meta": {
             "source": "Caringbah 2020 Trial Q1"
           },
+          "hscType": "trig-applications",
           "alsoIn": [
             "exam:caringbah2020similar"
           ]
@@ -2782,6 +2824,7 @@
             "course": "Advanced",
             "examPaper": "caringbah-2020"
           },
+          "hscType": "exponential-and-log",
           "alsoIn": [
             "exam:caringbah2020similar"
           ]
@@ -2822,6 +2865,7 @@
             "source": "Caringbah 2020 Trial Q3",
             "examPaper": "caringbah-2020"
           },
+          "hscType": "differentiation-rules",
           "alsoIn": [
             "exam:caringbah2020similar"
           ]
@@ -2862,6 +2906,7 @@
             "source": "Caringbah 2020 Trial Q4",
             "examPaper": "caringbah-2020"
           },
+          "hscType": "functions-and-graphs",
           "alsoIn": [
             "exam:caringbah2020similar"
           ]
@@ -2902,6 +2947,7 @@
             "source": "Caringbah 2020 Trial Q5",
             "examPaper": "caringbah-2020"
           },
+          "hscType": "continuous-distributions",
           "alsoIn": [
             "exam:caringbah2020similar"
           ]
@@ -2938,6 +2984,7 @@
             "source": "Caringbah 2020 Trial Q6",
             "examPaper": "caringbah-2020"
           },
+          "hscType": "trig-equations-and-graphs",
           "alsoIn": [
             "exam:caringbah2020similar"
           ]
@@ -2978,6 +3025,7 @@
             "source": "Caringbah 2020 Trial Q7",
             "examPaper": "caringbah-2020"
           },
+          "hscType": "data-analysis",
           "alsoIn": [
             "exam:caringbah2020similar"
           ]
@@ -3017,6 +3065,7 @@
           "meta": {
             "source": "Caringbah 2020 Trial Q8"
           },
+          "hscType": "differentiation-rules",
           "alsoIn": [
             "exam:caringbah2020similar"
           ]
@@ -3056,6 +3105,7 @@
           "meta": {
             "source": "Caringbah 2020 Trial Q9"
           },
+          "hscType": "differentiation-rules",
           "alsoIn": [
             "exam:caringbah2020similar"
           ]
@@ -3095,6 +3145,7 @@
           "meta": {
             "source": "Caringbah 2020 Trial Q10"
           },
+          "hscType": "arithmetic-series",
           "alsoIn": [
             "exam:caringbah2020similar"
           ]
@@ -3134,6 +3185,7 @@
           "meta": {
             "source": "Caringbah 2020 Trial Q11"
           },
+          "hscType": "exponential-and-log",
           "alsoIn": [
             "exam:caringbah2020similar"
           ]
@@ -3173,6 +3225,7 @@
           "meta": {
             "source": "Caringbah 2020 Trial Q12"
           },
+          "hscType": "trig-applications",
           "alsoIn": [
             "exam:caringbah2020similar"
           ]
@@ -3214,6 +3267,7 @@
             "course": "Advanced",
             "examPaper": "caringbah-2020"
           },
+          "hscType": "areas-and-volumes",
           "alsoIn": [
             "exam:caringbah2020similar"
           ]
@@ -3250,7 +3304,8 @@
               "work": "\\(x^{2} e^{x}(x+3)\\)"
             }
           ],
-          "timeLimit": 180
+          "timeLimit": 180,
+          "hscType": "other"
         },
         {
           "id": "car2020s-q14b",
@@ -3284,7 +3339,8 @@
               "work": "\\(\\dfrac{x e^{x}-e^{x}+1}{3x^{2}}\\)"
             }
           ],
-          "timeLimit": 180
+          "timeLimit": 180,
+          "hscType": "other"
         },
         {
           "id": "car2020s-q15",
@@ -3323,6 +3379,7 @@
             "course": "Advanced",
             "examPaper": "caringbah-2020"
           },
+          "hscType": "trapezoidal-rule",
           "alsoIn": [
             "exam:caringbah2020similar"
           ]
@@ -3362,6 +3419,7 @@
           "meta": {
             "source": "Caringbah 2020 Trial Q16"
           },
+          "hscType": "areas-and-volumes",
           "alsoIn": [
             "exam:caringbah2020similar"
           ]
@@ -3401,6 +3459,7 @@
           "meta": {
             "source": "Caringbah 2020 Trial Q17"
           },
+          "hscType": "trig-equations-and-graphs",
           "alsoIn": [
             "exam:caringbah2020similar"
           ]
@@ -3441,7 +3500,8 @@
             "source": "Caringbah 2020 similar",
             "course": "Advanced",
             "examPaper": "caringbah-2020"
-          }
+          },
+          "hscType": "integration-techniques"
         },
         {
           "id": "car2020s-q20",
@@ -3480,6 +3540,7 @@
             "course": "Advanced",
             "examPaper": "caringbah-2020"
           },
+          "hscType": "areas-and-volumes",
           "alsoIn": [
             "exam:caringbah2020similar"
           ]
@@ -3520,6 +3581,7 @@
             "source": "Caringbah 2020 Trial Q21",
             "examPaper": "caringbah-2020"
           },
+          "hscType": "exponential-and-log",
           "alsoIn": [
             "exam:caringbah2020similar"
           ]
@@ -3560,6 +3622,7 @@
             "source": "Caringbah 2020 Trial Q22",
             "examPaper": "caringbah-2020"
           },
+          "hscType": "continuous-distributions",
           "alsoIn": [
             "exam:caringbah2020similar"
           ]
@@ -3601,6 +3664,7 @@
             "topic": "y12a-10A",
             "examPaper": "caringbah-2020"
           },
+          "hscType": "probability-distributions",
           "alsoIn": [
             "exam:caringbah2020similar"
           ]
@@ -3641,6 +3705,7 @@
             "source": "Caringbah 2020 Trial Q24",
             "examPaper": "caringbah-2020"
           },
+          "hscType": "functions-and-graphs",
           "alsoIn": [
             "exam:caringbah2020similar"
           ]
@@ -3680,6 +3745,7 @@
           "meta": {
             "source": "Caringbah 2020 Trial Q25"
           },
+          "hscType": "differentiation-rules",
           "alsoIn": [
             "exam:caringbah2020similar"
           ]
@@ -3756,6 +3822,7 @@
             "source": "Caringbah 2020 Trial Q26",
             "examPaper": "caringbah-2020"
           },
+          "hscType": "bivariate-statistics",
           "alsoIn": [
             "exam:caringbah2020similar"
           ]
@@ -3795,6 +3862,7 @@
           "meta": {
             "source": "Caringbah 2020 Trial Q27"
           },
+          "hscType": "exponential-and-log",
           "alsoIn": [
             "exam:caringbah2020similar"
           ]
@@ -3834,6 +3902,7 @@
           "meta": {
             "source": "Caringbah 2020 Trial Q28"
           },
+          "hscType": "integration-techniques",
           "alsoIn": [
             "exam:caringbah2020similar"
           ]
@@ -3875,6 +3944,7 @@
             "course": "Advanced",
             "examPaper": "caringbah-2020"
           },
+          "hscType": "integration-techniques",
           "alsoIn": [
             "exam:caringbah2020similar"
           ]
@@ -3914,6 +3984,7 @@
           "meta": {
             "source": "Caringbah 2020 Trial Q30"
           },
+          "hscType": "optimisation",
           "alsoIn": [
             "exam:caringbah2020similar"
           ]
@@ -3953,6 +4024,7 @@
           "meta": {
             "source": "Caringbah 2020 Trial Q31"
           },
+          "hscType": "integration-techniques",
           "alsoIn": [
             "exam:caringbah2020similar"
           ]
@@ -3994,6 +4066,7 @@
             "course": "Advanced",
             "examPaper": "caringbah-2020"
           },
+          "hscType": "conditional-probability",
           "alsoIn": [
             "exam:caringbah2020similar"
           ]
@@ -4035,6 +4108,7 @@
             "course": "Advanced",
             "examPaper": "caringbah-2020"
           },
+          "hscType": "trig-equations-and-graphs",
           "alsoIn": [
             "exam:caringbah2020similar"
           ]
@@ -4074,6 +4148,7 @@
           "meta": {
             "source": "Caringbah 2020 Trial Q34"
           },
+          "hscType": "differentiation-rules",
           "alsoIn": [
             "exam:caringbah2020similar"
           ]
@@ -4114,6 +4189,7 @@
             "source": "Caringbah 2020 Trial Q35",
             "examPaper": "caringbah-2020"
           },
+          "hscType": "continuous-distributions",
           "alsoIn": [
             "exam:caringbah2020similar"
           ]
@@ -4153,6 +4229,7 @@
           "meta": {
             "source": "Caringbah 2020 Trial Q36"
           },
+          "hscType": "integration-techniques",
           "alsoIn": [
             "exam:caringbah2020similar"
           ]
@@ -4185,7 +4262,8 @@
               "work": "\\(1\\,200(0.6703 - 0.4493) = 1\\,200\\times 0.2210 \\approx 265\\)"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "hscType": "other"
         },
         {
           "id": "car2020s-q37b",
@@ -4215,7 +4293,8 @@
               "work": "\\(\\text{During the 6th year}\\)"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "hscType": "other"
         },
         {
           "id": "car2020s-q38",
@@ -4252,6 +4331,7 @@
           "meta": {
             "source": "Caringbah 2020 Trial Q38"
           },
+          "hscType": "geometric-series",
           "alsoIn": [
             "exam:caringbah2020similar"
           ]
@@ -4292,6 +4372,7 @@
             "source": "Caringbah 2020 Trial Q39",
             "examPaper": "caringbah-2020"
           },
+          "hscType": "motion-kinematics",
           "alsoIn": [
             "exam:caringbah2020similar"
           ]
@@ -4331,6 +4412,7 @@
           "meta": {
             "source": "Caringbah 2020 Trial Q40"
           },
+          "hscType": "integration-techniques",
           "alsoIn": [
             "exam:caringbah2020similar"
           ]

@@ -20046,6 +20046,7 @@
             "source": "Baulkham Hills 2020 Trial Q12(d)(i)",
             "course": "Advanced"
           },
+          "hscType": "functions-and-graphs",
           "dna": {
             "dnaId": "ALG-EQ-01",
             "dnaConfidence": 0.85
@@ -20092,6 +20093,7 @@
             "source": "Baulkham Hills 2020 Trial Q12(d)(ii)",
             "course": "Advanced"
           },
+          "hscType": "functions-and-graphs",
           "dna": {
             "dnaId": "ALG-EQ-01",
             "dnaConfidence": 0.85
@@ -20133,6 +20135,7 @@
             "source": "Baulkham Hills 2020 Trial Q12(d)(iii)",
             "course": "Advanced"
           },
+          "hscType": "functions-and-graphs",
           "dna": {
             "dnaId": "ALG-EQ-01",
             "dnaConfidence": 0.85
@@ -20179,6 +20182,7 @@
             "source": "Adapted from Baulkham Hills 2020 Trial Q12(d)",
             "course": "Advanced"
           },
+          "hscType": "functions-and-graphs",
           "dna": {
             "dnaId": "ALG-EQ-01",
             "dnaConfidence": 0.85

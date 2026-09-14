@@ -396,6 +396,9 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
+          },
+          "ext": {
+            "explanation": "**Finding α = ∠PTU**\n\nSince line \\(PQ \\parallel\\) line \\(RS\\), we can draw an auxiliary line through point \\(T\\) that is parallel to both lines. This helps us use alternate interior angles.\n\nThe auxiliary line through \\(T\\) is parallel to \\(PQ\\). By the **Alternate Interior Angles** theorem, the angle on the left part of \\(\\angle PTU\\) is equal to \\(\\angle TPQ\\):\n$$\\angle \\text{(left part)} = 48^\\circ$$\n\nThe auxiliary line is also parallel to \\(RS\\). Since \\(\\angle TUS = 73^\\circ\\), by the **Alternate Interior Angles** theorem, the right part of \\(\\angle PTU\\) is equal to \\(\\angle TUS\\):\n$$\\angle \\text{(right part)} = 73^\\circ$$\n\nAdding both parts gives the total angle for \\(\\alpha\\):\n$$\\alpha = 48^\\circ + 73^\\circ = \\boxed{121^\\circ}$$"
           }
         },
         {
@@ -441,6 +444,9 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
+          },
+          "ext": {
+            "explanation": "**Finding β = ∠AKC**\n\n**Key Concept:** Draw an auxiliary line through \\(K\\) parallel to both \\(EF\\) and \\(GH\\).\n\n**Step 1 — Find the interior angle at \\(A\\):**\nSince \\(\\angle KAE = 130°\\), and \\(EAF\\) is a straight line:\n$$\\angle KAF = 180° - 130° = 50°$$\n\n**Step 2 — Apply Alternate Interior Angles at \\(K\\) (upper part):**\nThe auxiliary line through \\(K\\) is parallel to \\(EF\\). Transversal \\(AK\\) cuts them.\nBy the **Alternate Interior Angles Theorem**:\n$$\\angle_{\\text{upper}} = \\angle KAF = 50°$$\n\n**Step 3 — Find the interior angle at \\(C\\):**\nSince \\(\\angle KCG = 125°\\), and \\(GCH\\) is a straight line:\n$$\\angle KCH = 180° - 125° = 55°$$\n\n**Step 4 — Apply Alternate Interior Angles at \\(K\\) (lower part):**\nThe auxiliary line through \\(K\\) is parallel to \\(GH\\). Transversal \\(KC\\) cuts them.\nBy the **Alternate Interior Angles Theorem**:\n$$\\angle_{\\text{lower}} = \\angle KCH = 55°$$\n\n**Step 5 — Add both parts:**\n$$\\beta = \\angle AKC = 50° + 55° = \\boxed{105°}$$"
           }
         },
         {

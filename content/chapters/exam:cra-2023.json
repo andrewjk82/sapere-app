@@ -39,6 +39,7 @@
           "meta": {
             "source": "Cranbrook 2023 Trial Q1"
           },
+          "hscType": "functions-and-graphs",
           "dna": {
             "dnaId": "FUNC-GRAPH-01",
             "dnaConfidence": 0.85
@@ -99,6 +100,7 @@
             "source": "Cranbrook 2023 Trial Q2",
             "examPaper": "cra-2023"
           },
+          "hscType": "bivariate-statistics",
           "dna": {
             "dnaId": "STAT-BIV-01",
             "dnaConfidence": 0.85
@@ -143,6 +145,7 @@
             "source": "Cranbrook 2023 Trial Q3",
             "examPaper": "cra-2023"
           },
+          "hscType": "data-analysis",
           "dna": {
             "dnaId": "STAT-DESC-01",
             "dnaConfidence": 0.85
@@ -190,6 +193,7 @@
           "meta": {
             "source": "Cranbrook 2023 Trial Q4"
           },
+          "hscType": "arithmetic-series",
           "dna": {
             "dnaId": "SERIES-01",
             "dnaConfidence": 0.85
@@ -238,6 +242,7 @@
             "source": "Cranbrook 2023 Trial Q5",
             "examPaper": "cra-2023"
           },
+          "hscType": "functions-and-graphs",
           "dna": {
             "dnaId": "FUNC-COMP-01",
             "dnaConfidence": 0.85
@@ -277,6 +282,7 @@
           "meta": {
             "source": "Cranbrook 2023 Trial Q6"
           },
+          "hscType": "geometric-series",
           "dna": {
             "dnaId": "SERIES-01",
             "dnaConfidence": 0.85
@@ -321,6 +327,7 @@
             "source": "Cranbrook 2023 Trial Q7",
             "examPaper": "cra-2023"
           },
+          "hscType": "conditional-probability",
           "dna": {
             "dnaId": "PROB-TOTAL-01",
             "dnaConfidence": 0.85
@@ -365,6 +372,7 @@
             "source": "Cranbrook 2023 Trial Q8",
             "examPaper": "cra-2023"
           },
+          "hscType": "motion-kinematics",
           "dna": {
             "dnaId": "CALC-MOTION-01",
             "dnaConfidence": 0.85
@@ -409,6 +417,7 @@
             "source": "Cranbrook 2023 Trial Q9",
             "examPaper": "cra-2023"
           },
+          "hscType": "trig-equations-and-graphs",
           "dna": {
             "dnaId": "TRIG-EQ-01",
             "dnaConfidence": 0.85
@@ -474,6 +483,7 @@
             "source": "Cranbrook 2023 Trial Q10",
             "examPaper": "cra-2023"
           },
+          "hscType": "integration-techniques",
           "dna": {
             "dnaId": "CALC-INT-01",
             "dnaConfidence": 0.85
@@ -532,6 +542,7 @@
           "meta": {
             "examPaper": "cra-2023"
           },
+          "hscType": "data-analysis",
           "dna": {
             "dnaId": "STAT-DESC-01",
             "dnaConfidence": 0.85
@@ -577,6 +588,7 @@
             "source": "Cranbrook 2023 Trial Q12",
             "examPaper": "cra-2023"
           },
+          "hscType": "differentiation-rules",
           "dna": {
             "dnaId": "CALC-TAN-01",
             "dnaConfidence": 0.85
@@ -620,6 +632,7 @@
           "meta": {
             "source": "Cranbrook 2023 Trial Q13"
           },
+          "hscType": "functions-and-graphs",
           "dna": {
             "dnaId": "FUNC-GRAPH-01",
             "dnaConfidence": 0.85
@@ -659,6 +672,7 @@
           "meta": {
             "source": "Cranbrook 2023 Trial Q14(a)"
           },
+          "hscType": "exponential-and-log",
           "dna": {
             "dnaId": "CALC-DIFF-01",
             "dnaConfidence": 0.85,
@@ -751,6 +765,7 @@
           "meta": {
             "source": "Cranbrook 2023 Trial Q14(b)"
           },
+          "hscType": "integration-techniques",
           "dna": {
             "dnaId": "CALC-INT-01",
             "dnaConfidence": 0.85,
@@ -843,6 +858,7 @@
           "meta": {
             "source": "Cranbrook 2023 Trial Q15"
           },
+          "hscType": "integration-techniques",
           "dna": {
             "dnaId": "CALC-INT-01",
             "dnaConfidence": 0.85,
@@ -936,6 +952,7 @@
               "work": "\\(f(-x) = \\cos\\!\\left(-\\dfrac{x}{2}\\right) = \\cos\\dfrac{x}{2} = f(x)\\)"
             }
           ],
+          "hscType": "functions-and-graphs",
           "dna": {
             "dnaId": "FUNC-TRANS-01",
             "dnaConfidence": 0.85
@@ -975,6 +992,7 @@
           "meta": {
             "source": "Cranbrook 2023 Trial Q16(b)"
           },
+          "hscType": "integration-techniques",
           "dna": {
             "dnaId": "CALC-INT-01",
             "dnaConfidence": 0.85,
@@ -1073,6 +1091,7 @@
             "topic": "y12a-10A",
             "examPaper": "cra-2023"
           },
+          "hscType": "probability-distributions",
           "dna": {
             "dnaId": "PROB-DIST-01",
             "dnaConfidence": 0.85
@@ -1113,6 +1132,7 @@
             "source": "Cranbrook 2023 Trial Q17(b)",
             "examPaper": "cra-2023"
           },
+          "hscType": "probability-distributions",
           "dna": {
             "dnaId": "PROB-DIST-01",
             "dnaConfidence": 0.85
@@ -1157,6 +1177,7 @@
             "source": "Cranbrook 2023 Trial Q17(c)",
             "examPaper": "cra-2023"
           },
+          "hscType": "probability-distributions",
           "dna": {
             "dnaId": "PROB-DIST-01",
             "dnaConfidence": 0.85
@@ -1201,6 +1222,7 @@
             "source": "Cranbrook 2023 Trial Q18(a)",
             "examPaper": "cra-2023"
           },
+          "hscType": "financial-mathematics",
           "dna": {
             "dnaId": "ALG-EXP-01",
             "dnaConfidence": 1,
@@ -1247,6 +1269,7 @@
             "source": "Cranbrook 2023 Trial Q18(b)",
             "examPaper": "cra-2023"
           },
+          "hscType": "rates-of-change",
           "dna": {
             "dnaId": "CALC-MOTION-01",
             "dnaConfidence": 0.85
@@ -1294,6 +1317,7 @@
           "meta": {
             "source": "Cranbrook 2023 Trial Q18(c)"
           },
+          "hscType": "differentiation-rules",
           "dna": {
             "dnaId": "CALC-MOTION-01",
             "dnaConfidence": 1,
@@ -1340,6 +1364,7 @@
             "source": "Cranbrook 2023 Trial Q19",
             "examPaper": "cra-2023"
           },
+          "hscType": "conditional-probability",
           "dna": {
             "dnaId": "PROB-COND-01",
             "dnaConfidence": 0.85
@@ -1384,6 +1409,7 @@
             "source": "Cranbrook 2023 Trial Q20",
             "examPaper": "cra-2023"
           },
+          "hscType": "financial-mathematics",
           "dna": {
             "dnaId": "ALG-LOG-01",
             "dnaConfidence": 1,
@@ -1458,6 +1484,7 @@
             "source": "Cranbrook 2023 Trial Q21",
             "examPaper": "cra-2023"
           },
+          "hscType": "bivariate-statistics",
           "dna": {
             "dnaId": "STAT-BIV-01",
             "dnaConfidence": 0.85
@@ -1515,6 +1542,7 @@
             "course": "Advanced",
             "examPaper": "cra-2023"
           },
+          "hscType": "trapezoidal-rule",
           "dna": {
             "dnaId": "CALC-AREA-01",
             "dnaConfidence": 0.85
@@ -1572,6 +1600,7 @@
             "course": "Advanced",
             "examPaper": "cra-2023"
           },
+          "hscType": "trapezoidal-rule",
           "dna": {
             "dnaId": "CALC-AREA-01",
             "dnaConfidence": 0.85
@@ -1615,6 +1644,7 @@
           "meta": {
             "source": "Cranbrook 2023 Trial Q23(a)"
           },
+          "hscType": "optimisation",
           "dna": {
             "dnaId": "CALC-OPT-01",
             "dnaConfidence": 0.85
@@ -1654,6 +1684,7 @@
           "meta": {
             "source": "Cranbrook 2023 Trial Q23(b)"
           },
+          "hscType": "optimisation",
           "dna": {
             "dnaId": "CALC-OPT-01",
             "dnaConfidence": 0.85
@@ -1697,6 +1728,7 @@
           "meta": {
             "source": "Cranbrook 2023 Trial Q23(c)"
           },
+          "hscType": "optimisation",
           "dna": {
             "dnaId": "CALC-OPT-01",
             "dnaConfidence": 0.85
@@ -1862,6 +1894,7 @@
           "meta": {
             "source": "Cranbrook 2023 Trial Q24(a)"
           },
+          "hscType": "areas-and-volumes",
           "dna": {
             "dnaId": "TRIG-GEO-01",
             "dnaConfidence": 0.85
@@ -1966,6 +1999,7 @@
           "meta": {
             "source": "Cranbrook 2023 Trial Q24(b)"
           },
+          "hscType": "trig-applications",
           "dna": {
             "dnaId": "TRIG-GEO-01",
             "dnaConfidence": 0.85
@@ -2034,6 +2068,7 @@
             "source": "Cranbrook 2023 Trial Q25",
             "course": "Advanced"
           },
+          "hscType": "functions-and-graphs",
           "dna": {
             "dnaId": "FUNC-TRANS-01",
             "dnaConfidence": 0.85
@@ -2074,6 +2109,7 @@
             "source": "Cranbrook 2023 Trial Q26(a)",
             "examPaper": "cra-2023"
           },
+          "hscType": "motion-kinematics",
           "dna": {
             "dnaId": "CALC-MOTION-01",
             "dnaConfidence": 0.85
@@ -2118,6 +2154,7 @@
             "source": "Cranbrook 2023 Trial Q26(b)",
             "examPaper": "cra-2023"
           },
+          "hscType": "motion-kinematics",
           "dna": {
             "dnaId": "CALC-MOTION-01",
             "dnaConfidence": 0.85
@@ -2162,6 +2199,7 @@
             "source": "Cranbrook 2023 Trial Q26(c)",
             "examPaper": "cra-2023"
           },
+          "hscType": "motion-kinematics",
           "dna": {
             "dnaId": "CALC-MOTION-01",
             "dnaConfidence": 0.85
@@ -2209,6 +2247,7 @@
           "meta": {
             "source": "Cranbrook 2023 Trial Q27(a)"
           },
+          "hscType": "applications-of-differentiation",
           "dna": {
             "dnaId": "CALC-STAT-01",
             "dnaConfidence": 0.85
@@ -2252,6 +2291,7 @@
           "meta": {
             "source": "Cranbrook 2023 Trial Q27(b)"
           },
+          "hscType": "applications-of-differentiation",
           "dna": {
             "dnaId": "CALC-STAT-01",
             "dnaConfidence": 0.85,
@@ -2360,6 +2400,7 @@
           "meta": {
             "source": "Cranbrook 2023 Trial Q27(c)"
           },
+          "hscType": "applications-of-differentiation",
           "dna": {
             "dnaId": "CALC-STAT-01",
             "dnaConfidence": 0.85
@@ -2408,6 +2449,7 @@
             "source": "Cranbrook 2023 Trial Q28(a)",
             "examPaper": "cra-2023"
           },
+          "hscType": "continuous-distributions",
           "dna": {
             "dnaId": "PROB-CONT-01",
             "dnaConfidence": 0.85
@@ -2452,6 +2494,7 @@
             "source": "Cranbrook 2023 Trial Q28(b)",
             "examPaper": "cra-2023"
           },
+          "hscType": "continuous-distributions",
           "dna": {
             "dnaId": "PROB-CONT-01",
             "dnaConfidence": 0.85
@@ -2492,6 +2535,7 @@
             "source": "Cranbrook 2023 Trial Q28(c)",
             "examPaper": "cra-2023"
           },
+          "hscType": "continuous-distributions",
           "dna": {
             "dnaId": "PROB-CONT-01",
             "dnaConfidence": 0.85
@@ -2565,6 +2609,7 @@
             "course": "Advanced",
             "examPaper": "cra-2023"
           },
+          "hscType": "trig-equations-and-graphs",
           "dna": {
             "dnaId": "TRIG-GRAPH-01",
             "dnaConfidence": 0.85
@@ -2632,6 +2677,7 @@
             "source": "Cranbrook 2023 Trial Q29(b)",
             "examPaper": "cra-2023"
           },
+          "hscType": "trig-equations-and-graphs",
           "dna": {
             "dnaId": "TRIG-EQ-01",
             "dnaConfidence": 0.85
@@ -2687,6 +2733,7 @@
           "meta": {
             "source": "Cranbrook 2023 Trial Q29(c)"
           },
+          "hscType": "integration-techniques",
           "dna": {
             "dnaId": "CALC-INT-01",
             "dnaConfidence": 0.85,
@@ -2784,6 +2831,7 @@
             "source": "Cranbrook 2023 Trial Q30(a)",
             "examPaper": "cra-2023"
           },
+          "hscType": "continuous-distributions",
           "dna": {
             "dnaId": "PROB-CONT-01",
             "dnaConfidence": 0.85
@@ -2828,6 +2876,7 @@
             "source": "Cranbrook 2023 Trial Q30(b)",
             "examPaper": "cra-2023"
           },
+          "hscType": "continuous-distributions",
           "dna": {
             "dnaId": "PROB-CONT-01",
             "dnaConfidence": 0.85
@@ -2868,6 +2917,7 @@
             "source": "Cranbrook 2023 Trial Q31",
             "examPaper": "cra-2023"
           },
+          "hscType": "differentiation-rules",
           "dna": {
             "dnaId": "CALC-DIFF-01",
             "dnaConfidence": 0.85,
@@ -2960,6 +3010,7 @@
           "meta": {
             "source": "Cranbrook 2023 Trial Q1"
           },
+          "hscType": "functions-and-graphs",
           "alsoIn": [
             "exam:cranbrook2023similar"
           ]
@@ -3016,6 +3067,7 @@
             "source": "Cranbrook 2023 Trial Q2",
             "examPaper": "cra-2023"
           },
+          "hscType": "bivariate-statistics",
           "alsoIn": [
             "exam:cranbrook2023similar"
           ]
@@ -3052,6 +3104,7 @@
             "source": "Cranbrook 2023 Trial Q3",
             "examPaper": "cra-2023"
           },
+          "hscType": "data-analysis",
           "alsoIn": [
             "exam:cranbrook2023similar"
           ]
@@ -3095,6 +3148,7 @@
           "meta": {
             "source": "Cranbrook 2023 Trial Q4"
           },
+          "hscType": "arithmetic-series",
           "alsoIn": [
             "exam:cranbrook2023similar"
           ]
@@ -3135,6 +3189,7 @@
             "source": "Cranbrook 2023 Trial Q5",
             "examPaper": "cra-2023"
           },
+          "hscType": "functions-and-graphs",
           "alsoIn": [
             "exam:cranbrook2023similar"
           ]
@@ -3174,6 +3229,7 @@
           "meta": {
             "source": "Cranbrook 2023 Trial Q6"
           },
+          "hscType": "geometric-series",
           "alsoIn": [
             "exam:cranbrook2023similar"
           ]
@@ -3214,6 +3270,7 @@
             "source": "Cranbrook 2023 Trial Q7",
             "examPaper": "cra-2023"
           },
+          "hscType": "conditional-probability",
           "alsoIn": [
             "exam:cranbrook2023similar"
           ]
@@ -3254,6 +3311,7 @@
             "source": "Cranbrook 2023 Trial Q8",
             "examPaper": "cra-2023"
           },
+          "hscType": "motion-kinematics",
           "alsoIn": [
             "exam:cranbrook2023similar"
           ]
@@ -3290,6 +3348,7 @@
             "source": "Cranbrook 2023 Trial Q9",
             "examPaper": "cra-2023"
           },
+          "hscType": "trig-equations-and-graphs",
           "alsoIn": [
             "exam:cranbrook2023similar"
           ]
@@ -3363,6 +3422,7 @@
             "source": "Cranbrook 2023 Trial Q10",
             "examPaper": "cra-2023"
           },
+          "hscType": "integration-techniques",
           "alsoIn": [
             "exam:cranbrook2023similar"
           ]
@@ -3436,7 +3496,8 @@
           ],
           "meta": {
             "examPaper": "cra-2023"
-          }
+          },
+          "hscType": "data-analysis"
         },
         {
           "id": "cra2023s-q12",
@@ -3474,6 +3535,7 @@
             "source": "Cranbrook 2023 Trial Q12",
             "examPaper": "cra-2023"
           },
+          "hscType": "differentiation-rules",
           "alsoIn": [
             "exam:cranbrook2023similar"
           ]
@@ -3513,6 +3575,7 @@
           "meta": {
             "source": "Cranbrook 2023 Trial Q13"
           },
+          "hscType": "functions-and-graphs",
           "alsoIn": [
             "exam:cranbrook2023similar"
           ]
@@ -3552,6 +3615,7 @@
           "meta": {
             "source": "Cranbrook 2023 Trial Q14(a)"
           },
+          "hscType": "exponential-and-log",
           "alsoIn": [
             "exam:cranbrook2023similar"
           ]
@@ -3587,6 +3651,7 @@
           "meta": {
             "source": "Cranbrook 2023 Trial Q14(b)"
           },
+          "hscType": "integration-techniques",
           "alsoIn": [
             "exam:cranbrook2023similar"
           ]
@@ -3626,6 +3691,7 @@
           "meta": {
             "source": "Cranbrook 2023 Trial Q15"
           },
+          "hscType": "integration-techniques",
           "alsoIn": [
             "exam:cranbrook2023similar"
           ]
@@ -3662,6 +3728,7 @@
               "work": "\\(Even\\)"
             }
           ],
+          "hscType": "functions-and-graphs",
           "alsoIn": [
             "exam:cranbrook2023similar"
           ]
@@ -3701,6 +3768,7 @@
           "meta": {
             "source": "Cranbrook 2023 Trial Q16(b)"
           },
+          "hscType": "integration-techniques",
           "alsoIn": [
             "exam:cranbrook2023similar"
           ]
@@ -3742,6 +3810,7 @@
             "topic": "y12a-10A",
             "examPaper": "cra-2023"
           },
+          "hscType": "probability-distributions",
           "alsoIn": [
             "exam:cranbrook2023similar"
           ]
@@ -3782,6 +3851,7 @@
             "source": "Cranbrook 2023 Trial Q17(b)",
             "examPaper": "cra-2023"
           },
+          "hscType": "probability-distributions",
           "alsoIn": [
             "exam:cranbrook2023similar"
           ]
@@ -3822,6 +3892,7 @@
             "source": "Cranbrook 2023 Trial Q17(c)",
             "examPaper": "cra-2023"
           },
+          "hscType": "probability-distributions",
           "alsoIn": [
             "exam:cranbrook2023similar"
           ]
@@ -3862,6 +3933,7 @@
             "source": "Cranbrook 2023 Trial Q18(a)",
             "examPaper": "cra-2023"
           },
+          "hscType": "financial-mathematics",
           "alsoIn": [
             "exam:cranbrook2023similar"
           ]
@@ -3902,6 +3974,7 @@
             "source": "Cranbrook 2023 Trial Q18(b)",
             "examPaper": "cra-2023"
           },
+          "hscType": "rates-of-change",
           "alsoIn": [
             "exam:cranbrook2023similar"
           ]
@@ -3937,6 +4010,7 @@
           "meta": {
             "source": "Cranbrook 2023 Trial Q18(c)"
           },
+          "hscType": "differentiation-rules",
           "alsoIn": [
             "exam:cranbrook2023similar"
           ]
@@ -3977,6 +4051,7 @@
             "source": "Cranbrook 2023 Trial Q19",
             "examPaper": "cra-2023"
           },
+          "hscType": "conditional-probability",
           "alsoIn": [
             "exam:cranbrook2023similar"
           ]
@@ -4017,6 +4092,7 @@
             "source": "Cranbrook 2023 Trial Q20",
             "examPaper": "cra-2023"
           },
+          "hscType": "financial-mathematics",
           "alsoIn": [
             "exam:cranbrook2023similar"
           ]
@@ -4069,6 +4145,7 @@
             "source": "Cranbrook 2023 Trial Q21",
             "examPaper": "cra-2023"
           },
+          "hscType": "bivariate-statistics",
           "alsoIn": [
             "exam:cranbrook2023similar"
           ]
@@ -4142,6 +4219,7 @@
             "course": "Advanced",
             "examPaper": "cra-2023"
           },
+          "hscType": "trapezoidal-rule",
           "alsoIn": [
             "exam:cranbrook2023similar"
           ]
@@ -4194,7 +4272,8 @@
             "source": "Cranbrook 2023 similar",
             "course": "Advanced",
             "examPaper": "cra-2023"
-          }
+          },
+          "hscType": "trapezoidal-rule"
         },
         {
           "id": "cra2023s-q23a",
@@ -4231,6 +4310,7 @@
           "meta": {
             "source": "Cranbrook 2023 Trial Q23(a)"
           },
+          "hscType": "optimisation",
           "alsoIn": [
             "exam:cranbrook2023similar"
           ]
@@ -4270,6 +4350,7 @@
           "meta": {
             "source": "Cranbrook 2023 Trial Q23(b)"
           },
+          "hscType": "optimisation",
           "alsoIn": [
             "exam:cranbrook2023similar"
           ]
@@ -4309,6 +4390,7 @@
           "meta": {
             "source": "Cranbrook 2023 Trial Q23(c)"
           },
+          "hscType": "optimisation",
           "alsoIn": [
             "exam:cranbrook2023similar"
           ]
@@ -4470,6 +4552,7 @@
           "meta": {
             "source": "Cranbrook 2023 Trial Q24(a)"
           },
+          "hscType": "areas-and-volumes",
           "alsoIn": [
             "exam:cranbrook2023similar"
           ]
@@ -4631,6 +4714,7 @@
           "meta": {
             "source": "Cranbrook 2023 Trial Q24(b)"
           },
+          "hscType": "trig-applications",
           "alsoIn": [
             "exam:cranbrook2023similar"
           ]
@@ -4679,6 +4763,7 @@
             "source": "Cranbrook 2023 Trial Q25",
             "course": "Advanced"
           },
+          "hscType": "functions-and-graphs",
           "alsoIn": [
             "exam:cranbrook2023similar"
           ]
@@ -4719,6 +4804,7 @@
             "source": "Cranbrook 2023 Trial Q26(a)",
             "examPaper": "cra-2023"
           },
+          "hscType": "motion-kinematics",
           "alsoIn": [
             "exam:cranbrook2023similar"
           ]
@@ -4759,6 +4845,7 @@
             "source": "Cranbrook 2023 Trial Q26(b)",
             "examPaper": "cra-2023"
           },
+          "hscType": "motion-kinematics",
           "alsoIn": [
             "exam:cranbrook2023similar"
           ]
@@ -4799,6 +4886,7 @@
             "source": "Cranbrook 2023 Trial Q26(c)",
             "examPaper": "cra-2023"
           },
+          "hscType": "motion-kinematics",
           "alsoIn": [
             "exam:cranbrook2023similar"
           ]
@@ -4842,6 +4930,7 @@
           "meta": {
             "source": "Cranbrook 2023 Trial Q27(a)"
           },
+          "hscType": "applications-of-differentiation",
           "alsoIn": [
             "exam:cranbrook2023similar"
           ]
@@ -4881,6 +4970,7 @@
           "meta": {
             "source": "Cranbrook 2023 Trial Q27(b)"
           },
+          "hscType": "applications-of-differentiation",
           "alsoIn": [
             "exam:cranbrook2023similar"
           ]
@@ -4932,6 +5022,7 @@
           "meta": {
             "source": "Cranbrook 2023 Trial Q27(c)"
           },
+          "hscType": "applications-of-differentiation",
           "alsoIn": [
             "exam:cranbrook2023similar"
           ]
@@ -4972,6 +5063,7 @@
             "source": "Cranbrook 2023 Trial Q28(a)",
             "examPaper": "cra-2023"
           },
+          "hscType": "continuous-distributions",
           "alsoIn": [
             "exam:cranbrook2023similar"
           ]
@@ -5012,6 +5104,7 @@
             "source": "Cranbrook 2023 Trial Q28(b)",
             "examPaper": "cra-2023"
           },
+          "hscType": "continuous-distributions",
           "alsoIn": [
             "exam:cranbrook2023similar"
           ]
@@ -5052,6 +5145,7 @@
             "source": "Cranbrook 2023 Trial Q28(c)",
             "examPaper": "cra-2023"
           },
+          "hscType": "continuous-distributions",
           "alsoIn": [
             "exam:cranbrook2023similar"
           ]
@@ -5121,6 +5215,7 @@
             "course": "Advanced",
             "examPaper": "cra-2023"
           },
+          "hscType": "trig-equations-and-graphs",
           "alsoIn": [
             "exam:cranbrook2023similar"
           ]
@@ -5184,6 +5279,7 @@
             "source": "Cranbrook 2023 Trial Q29(b)",
             "examPaper": "cra-2023"
           },
+          "hscType": "trig-equations-and-graphs",
           "alsoIn": [
             "exam:cranbrook2023similar"
           ]
@@ -5255,6 +5351,7 @@
           "meta": {
             "source": "Cranbrook 2023 Trial Q29(c)"
           },
+          "hscType": "integration-techniques",
           "alsoIn": [
             "exam:cranbrook2023similar"
           ]
@@ -5295,6 +5392,7 @@
             "source": "Cranbrook 2023 Trial Q30(a)",
             "examPaper": "cra-2023"
           },
+          "hscType": "continuous-distributions",
           "alsoIn": [
             "exam:cranbrook2023similar"
           ]
@@ -5335,6 +5433,7 @@
             "source": "Cranbrook 2023 Trial Q30(b)",
             "examPaper": "cra-2023"
           },
+          "hscType": "continuous-distributions",
           "alsoIn": [
             "exam:cranbrook2023similar"
           ]
@@ -5371,6 +5470,7 @@
             "source": "Cranbrook 2023 Trial Q31",
             "examPaper": "cra-2023"
           },
+          "hscType": "differentiation-rules",
           "alsoIn": [
             "exam:cranbrook2023similar"
           ]

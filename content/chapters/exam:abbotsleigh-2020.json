@@ -43,6 +43,7 @@
             "source": "Abbotsleigh 2020 Trial Q1",
             "examPaper": "abbotsleigh-2020"
           },
+          "hscType": "trig-equations-and-graphs",
           "dna": {
             "dnaId": "TRIG-EQ-01",
             "dnaConfidence": 0.85
@@ -83,6 +84,7 @@
             "source": "Abbotsleigh 2020 Trial Q2",
             "examPaper": "abbotsleigh-2020"
           },
+          "hscType": "bivariate-statistics",
           "dna": {
             "dnaId": "STAT-BIV-01",
             "dnaConfidence": 0.85
@@ -122,6 +124,7 @@
           "meta": {
             "source": "Abbotsleigh 2020 Trial Q3"
           },
+          "hscType": "applications-of-differentiation",
           "dna": {
             "dnaId": "CALC-STAT-01",
             "dnaConfidence": 0.85,
@@ -215,6 +218,7 @@
             "course": "Advanced",
             "examPaper": "abbotsleigh-2020"
           },
+          "hscType": "trig-equations-and-graphs",
           "dna": {
             "dnaId": "TRIG-GRAPH-01",
             "dnaConfidence": 0.85
@@ -254,6 +258,7 @@
           "meta": {
             "source": "Abbotsleigh 2020 Trial Q5"
           },
+          "hscType": "integration-techniques",
           "dna": {
             "dnaId": "ALG-EQ-01",
             "dnaConfidence": 0.85
@@ -298,6 +303,7 @@
             "source": "Abbotsleigh 2020 Trial Q6",
             "examPaper": "abbotsleigh-2020"
           },
+          "hscType": "differentiation-rules",
           "dna": {
             "dnaId": "CALC-DIFF-01",
             "dnaConfidence": 0.85,
@@ -462,6 +468,7 @@
             "course": "Advanced",
             "examPaper": "abbotsleigh-2020"
           },
+          "hscType": "conditional-probability",
           "dna": {
             "dnaId": "FUNC-TRANS-01",
             "dnaConfidence": 0.85
@@ -505,6 +512,7 @@
           "meta": {
             "source": "Abbotsleigh 2020 Trial Q8"
           },
+          "hscType": "geometric-series",
           "dna": {
             "dnaId": "SERIES-01",
             "dnaConfidence": 0.85
@@ -548,6 +556,7 @@
           "meta": {
             "source": "Abbotsleigh 2020 Trial Q9"
           },
+          "hscType": "integration-techniques",
           "dna": {
             "dnaId": "CALC-INT-01",
             "dnaConfidence": 0.85,
@@ -645,6 +654,7 @@
             "source": "Abbotsleigh 2020 Trial Q10",
             "examPaper": "abbotsleigh-2020"
           },
+          "hscType": "conditional-probability",
           "dna": {
             "dnaId": "PROB-COND-01",
             "dnaConfidence": 0.85
@@ -684,6 +694,7 @@
           "meta": {
             "source": "Abbotsleigh 2020 Trial Q11(a)"
           },
+          "hscType": "integration-techniques",
           "dna": {
             "dnaId": "CALC-INT-01",
             "dnaConfidence": 0.85,
@@ -780,6 +791,7 @@
           "meta": {
             "examPaper": "abbotsleigh-2020"
           },
+          "hscType": "data-analysis",
           "dna": {
             "dnaId": "STAT-DESC-01",
             "dnaConfidence": 0.85
@@ -817,6 +829,7 @@
             "source": "Abbotsleigh 2020 Trial Q11(b)(ii)",
             "examPaper": "abbotsleigh-2020"
           },
+          "hscType": "data-analysis",
           "dna": {
             "dnaId": "STAT-DESC-01",
             "dnaConfidence": 0.85
@@ -860,6 +873,7 @@
           "meta": {
             "source": "Abbotsleigh 2020 Trial Q11(c)"
           },
+          "hscType": "geometric-series",
           "dna": {
             "dnaId": "SERIES-01",
             "dnaConfidence": 0.85
@@ -904,6 +918,7 @@
             "source": "Abbotsleigh 2020 Trial Q11(d)",
             "examPaper": "abbotsleigh-2020"
           },
+          "hscType": "integration-techniques",
           "dna": {
             "dnaId": "CALC-INT-01",
             "dnaConfidence": 0.85,
@@ -1000,6 +1015,7 @@
           "meta": {
             "source": "Abbotsleigh 2020 Trial Q11(e)(i)"
           },
+          "hscType": "differentiation-rules",
           "dna": {
             "dnaId": "CALC-DIFF-01",
             "dnaConfidence": 0.85,
@@ -1092,6 +1108,7 @@
           "meta": {
             "source": "Abbotsleigh 2020 Trial Q11(e)(ii)"
           },
+          "hscType": "differentiation-rules",
           "dna": {
             "dnaId": "CALC-DIFF-01",
             "dnaConfidence": 0.85,
@@ -1188,6 +1205,7 @@
           "meta": {
             "source": "Abbotsleigh 2020 Trial Q11(e)(iii)"
           },
+          "hscType": "integration-techniques",
           "dna": {
             "dnaId": "CALC-INT-01",
             "dnaConfidence": 0.85,
@@ -1285,6 +1303,7 @@
             "source": "Abbotsleigh 2020 Trial Q11(e)(iv)",
             "examPaper": "abbotsleigh-2020"
           },
+          "hscType": "differentiation-rules",
           "dna": {
             "dnaId": "CALC-TAN-01",
             "dnaConfidence": 1,
@@ -1378,6 +1397,7 @@
           "meta": {
             "source": "Abbotsleigh 2020 Trial Q12(a)(i)"
           },
+          "hscType": "applications-of-differentiation",
           "dna": {
             "dnaId": "CALC-STAT-01",
             "dnaConfidence": 0.85
@@ -1425,6 +1445,7 @@
           "meta": {
             "source": "Abbotsleigh 2020 Trial Q12(a)(ii)"
           },
+          "hscType": "applications-of-differentiation",
           "dna": {
             "dnaId": "CALC-STAT-01",
             "dnaConfidence": 0.85,
@@ -1514,6 +1535,7 @@
           ],
           "manual": true,
           "timeLimit": 180,
+          "hscType": "applications-of-differentiation",
           "dna": {
             "dnaId": "CALC-STAT-01",
             "dnaConfidence": 0.85
@@ -1550,6 +1572,7 @@
           "meta": {
             "source": "Abbotsleigh 2020 Trial Q12(b)"
           },
+          "hscType": "trig-applications",
           "dna": {
             "dnaId": "TRIG-ID-01",
             "dnaConfidence": 0.85
@@ -1590,6 +1613,7 @@
               "work": "\\(200\\)"
             }
           ],
+          "hscType": "functions-and-graphs",
           "dna": {
             "dnaId": "FUNC-GRAPH-01",
             "dnaConfidence": 0.85
@@ -1627,6 +1651,7 @@
               "work": "\\(350 face masks\\)"
             }
           ],
+          "hscType": "functions-and-graphs",
           "dna": {
             "dnaId": "FUNC-GRAPH-01",
             "dnaConfidence": 0.85
@@ -1667,6 +1692,7 @@
           "meta": {
             "source": "Abbotsleigh 2020 Trial Q13(a)"
           },
+          "hscType": "integration-techniques",
           "dna": {
             "dnaId": "CALC-INT-01",
             "dnaConfidence": 0.85,
@@ -1763,6 +1789,7 @@
           "meta": {
             "source": "Abbotsleigh 2020 Trial Q13(b)(i)"
           },
+          "hscType": "exponential-and-log",
           "dna": {
             "dnaId": "CALC-DIFF-01",
             "dnaConfidence": 0.85,
@@ -1855,6 +1882,7 @@
           "meta": {
             "source": "Abbotsleigh 2020 Trial Q13(b)(ii)"
           },
+          "hscType": "differentiation-rules",
           "dna": {
             "dnaId": "CALC-DIFF-01",
             "dnaConfidence": 0.85,
@@ -1954,6 +1982,7 @@
             "course": "Advanced",
             "examPaper": "abbotsleigh-2020"
           },
+          "hscType": "areas-and-volumes",
           "dna": {
             "dnaId": "CALC-AREA-01",
             "dnaConfidence": 0.85
@@ -1998,6 +2027,7 @@
             "source": "Abbotsleigh 2020 Trial Q13(c)(ii)",
             "examPaper": "abbotsleigh-2020"
           },
+          "hscType": "areas-and-volumes",
           "dna": {
             "dnaId": "CALC-AREA-01",
             "dnaConfidence": 0.85
@@ -2042,6 +2072,7 @@
             "source": "Abbotsleigh 2020 Trial Q13(d)",
             "examPaper": "abbotsleigh-2020"
           },
+          "hscType": "conditional-probability",
           "dna": {
             "dnaId": "PROB-COND-01",
             "dnaConfidence": 0.85
@@ -2090,6 +2121,7 @@
             "source": "Abbotsleigh 2020 Trial Q13(e)(i)",
             "examPaper": "abbotsleigh-2020"
           },
+          "hscType": "bivariate-statistics",
           "dna": {
             "dnaId": "STAT-CORR-01",
             "dnaConfidence": 0.85
@@ -2138,6 +2170,7 @@
             "source": "Abbotsleigh 2020 Trial Q13(e)(ii)",
             "examPaper": "abbotsleigh-2020"
           },
+          "hscType": "bivariate-statistics",
           "dna": {
             "dnaId": "STAT-BIV-01",
             "dnaConfidence": 0.85
@@ -2178,6 +2211,7 @@
             "source": "Abbotsleigh 2020 Trial Q13(e)(iii)",
             "examPaper": "abbotsleigh-2020"
           },
+          "hscType": "bivariate-statistics",
           "dna": {
             "dnaId": "STAT-BIV-01",
             "dnaConfidence": 0.85
@@ -2213,6 +2247,7 @@
           "meta": {
             "examPaper": "abbotsleigh-2020"
           },
+          "hscType": "bivariate-statistics",
           "dna": {
             "dnaId": "STAT-CORR-01",
             "dnaConfidence": 0.85
@@ -2254,6 +2289,7 @@
             "source": "Abbotsleigh 2020 Trial Q14(a)",
             "examPaper": "abbotsleigh-2020"
           },
+          "hscType": "differentiation-rules",
           "dna": {
             "dnaId": "PROB-COMP-01",
             "dnaConfidence": 1,
@@ -2299,6 +2335,7 @@
           "meta": {
             "source": "Abbotsleigh 2020 Trial Q14(b)"
           },
+          "hscType": "functions-and-graphs",
           "dna": {
             "dnaId": "FUNC-GRAPH-01",
             "dnaConfidence": 0.85
@@ -2343,6 +2380,7 @@
             "source": "Abbotsleigh 2020 Trial Q14(c)",
             "examPaper": "abbotsleigh-2020"
           },
+          "hscType": "probability-distributions",
           "dna": {
             "dnaId": "PROB-DIST-01",
             "dnaConfidence": 0.85
@@ -2387,6 +2425,7 @@
             "source": "Abbotsleigh 2020 Trial Q14(d)(i)",
             "examPaper": "abbotsleigh-2020"
           },
+          "hscType": "motion-kinematics",
           "dna": {
             "dnaId": "CALC-MOTION-01",
             "dnaConfidence": 0.85
@@ -2431,6 +2470,7 @@
             "source": "Abbotsleigh 2020 Trial Q14(d)(ii)",
             "examPaper": "abbotsleigh-2020"
           },
+          "hscType": "motion-kinematics",
           "dna": {
             "dnaId": "CALC-MOTION-01",
             "dnaConfidence": 0.85
@@ -2467,6 +2507,7 @@
             "source": "Abbotsleigh 2020 Trial Q14(d)(iii)",
             "examPaper": "abbotsleigh-2020"
           },
+          "hscType": "motion-kinematics",
           "dna": {
             "dnaId": "CALC-MOTION-01",
             "dnaConfidence": 0.85
@@ -2511,6 +2552,7 @@
             "source": "Abbotsleigh 2020 Trial Q14(d)(iv)",
             "examPaper": "abbotsleigh-2020"
           },
+          "hscType": "rates-of-change",
           "dna": {
             "dnaId": "CALC-MOTION-01",
             "dnaConfidence": 0.85
@@ -2550,6 +2592,7 @@
           "meta": {
             "source": "Abbotsleigh 2020 Trial Q15(a)(i)"
           },
+          "hscType": "exponential-and-log",
           "dna": {
             "dnaId": "CALC-DIFF-01",
             "dnaConfidence": 0.85,
@@ -2650,6 +2693,7 @@
           "meta": {
             "source": "Abbotsleigh 2020 Trial Q15(a)(ii)"
           },
+          "hscType": "applications-of-differentiation",
           "dna": {
             "dnaId": "CALC-STAT-01",
             "dnaConfidence": 0.85,
@@ -2739,6 +2783,7 @@
           ],
           "manual": true,
           "timeLimit": 180,
+          "hscType": "exponential-and-log",
           "dna": {
             "dnaId": "CALC-INT-01",
             "dnaConfidence": 0.85
@@ -2777,6 +2822,7 @@
             "course": "Advanced",
             "examPaper": "abbotsleigh-2020"
           },
+          "hscType": "trapezoidal-rule",
           "dna": {
             "dnaId": "CALC-AREA-01",
             "dnaConfidence": 1,
@@ -2824,6 +2870,7 @@
             "course": "Advanced",
             "examPaper": "abbotsleigh-2020"
           },
+          "hscType": "trapezoidal-rule",
           "dna": {
             "dnaId": "CALC-AREA-01",
             "dnaConfidence": 0.85
@@ -2869,6 +2916,7 @@
             "course": "Advanced",
             "examPaper": "abbotsleigh-2020"
           },
+          "hscType": "exponential-and-log",
           "dna": {
             "dnaId": "FUNC-GRAPH-01",
             "dnaConfidence": 0.85
@@ -2912,6 +2960,7 @@
           "meta": {
             "source": "Abbotsleigh 2020 Trial Q15(c)"
           },
+          "hscType": "trig-applications",
           "dna": {
             "dnaId": "TRIG-ID-01",
             "dnaConfidence": 0.85
@@ -2952,6 +3001,7 @@
             "source": "Abbotsleigh 2020 Trial Q16(a)(i)",
             "examPaper": "abbotsleigh-2020"
           },
+          "hscType": "trig-applications",
           "dna": {
             "dnaId": "TRIG-GEO-01",
             "dnaConfidence": 0.85
@@ -2987,6 +3037,7 @@
           "meta": {
             "source": "Abbotsleigh 2020 Trial Q16(a)(ii)"
           },
+          "hscType": "optimisation",
           "dna": {
             "dnaId": "CALC-OPT-01",
             "dnaConfidence": 0.85
@@ -3026,6 +3077,7 @@
           "meta": {
             "source": "Abbotsleigh 2020 Trial Q16(a)(iii)"
           },
+          "hscType": "optimisation",
           "dna": {
             "dnaId": "CALC-OPT-01",
             "dnaConfidence": 0.85
@@ -3069,6 +3121,7 @@
           "meta": {
             "source": "Abbotsleigh 2020 Trial Q16(a)(iv)"
           },
+          "hscType": "applications-of-differentiation",
           "dna": {
             "dnaId": "TRIG-GEO-01",
             "dnaConfidence": 0.85
@@ -3106,6 +3159,7 @@
             "course": "Advanced",
             "examPaper": "abbotsleigh-2020"
           },
+          "hscType": "trig-equations-and-graphs",
           "dna": {
             "dnaId": "TRIG-GRAPH-01",
             "dnaConfidence": 0.85
@@ -3146,6 +3200,7 @@
             "course": "Advanced",
             "examPaper": "abbotsleigh-2020"
           },
+          "hscType": "trig-equations-and-graphs",
           "dna": {
             "dnaId": "TRIG-GRAPH-01",
             "dnaConfidence": 0.85
@@ -3183,6 +3238,7 @@
             "course": "Advanced",
             "examPaper": "abbotsleigh-2020"
           },
+          "hscType": "trig-equations-and-graphs",
           "dna": {
             "dnaId": "TRIG-GRAPH-01",
             "dnaConfidence": 0.85
@@ -3223,6 +3279,7 @@
             "source": "Abbotsleigh 2020 Trial Q16(b)(iv)",
             "examPaper": "abbotsleigh-2020"
           },
+          "hscType": "trig-equations-and-graphs",
           "dna": {
             "dnaId": "TRIG-GRAPH-01",
             "dnaConfidence": 0.85
@@ -3266,6 +3323,7 @@
           "meta": {
             "source": "Abbotsleigh 2020 Trial Q16(b)(v)"
           },
+          "hscType": "differentiation-rules",
           "dna": {
             "dnaId": "CALC-MOTION-01",
             "dnaConfidence": 0.95

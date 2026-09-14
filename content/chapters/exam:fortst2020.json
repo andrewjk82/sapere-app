@@ -45,6 +45,7 @@
             "origin": "teacher",
             "examPaper": "fortst-2020"
           },
+          "hscType": "arithmetic-series",
           "dna": {
             "dnaId": "SEQ-01",
             "dnaConfidence": 0.85

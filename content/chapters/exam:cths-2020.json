@@ -43,6 +43,7 @@
           "meta": {
             "source": "Cherrybrook Tech 2020 Trial Q1"
           },
+          "hscType": "applications-of-differentiation",
           "dna": {
             "dnaId": "CALC-STAT-01",
             "dnaConfidence": 0.85
@@ -83,6 +84,7 @@
             "source": "Cherrybrook Tech 2020 Trial Q2",
             "examPaper": "cths-2020"
           },
+          "hscType": "functions-and-graphs",
           "dna": {
             "dnaId": "FUNC-GRAPH-01",
             "dnaConfidence": 0.85
@@ -127,6 +129,7 @@
             "source": "Cherrybrook Tech 2020 Trial Q3",
             "examPaper": "cths-2020"
           },
+          "hscType": "conditional-probability",
           "dna": {
             "dnaId": "PROB-TOTAL-01",
             "dnaConfidence": 0.85
@@ -171,6 +174,7 @@
             "source": "Cherrybrook Tech 2020 Trial Q4",
             "examPaper": "cths-2020"
           },
+          "hscType": "probability-distributions",
           "dna": {
             "dnaId": "PROB-DIST-01",
             "dnaConfidence": 0.85
@@ -215,6 +219,7 @@
             "source": "Cherrybrook Tech 2020 Trial Q5",
             "examPaper": "cths-2020"
           },
+          "hscType": "differentiation-rules",
           "dna": {
             "dnaId": "CALC-DIFF-01",
             "dnaConfidence": 0.85
@@ -254,6 +259,7 @@
           "meta": {
             "source": "Cherrybrook Tech 2020 Trial Q6"
           },
+          "hscType": "functions-and-graphs",
           "dna": {
             "dnaId": "FUNC-GRAPH-01",
             "dnaConfidence": 0.85
@@ -298,6 +304,7 @@
             "course": "Advanced",
             "examPaper": "cths-2020"
           },
+          "hscType": "trig-equations-and-graphs",
           "dna": {
             "dnaId": "TRIG-GRAPH-01",
             "dnaConfidence": 0.85
@@ -341,6 +348,7 @@
           "meta": {
             "source": "Cherrybrook Tech 2020 Trial Q8"
           },
+          "hscType": "arithmetic-series",
           "dna": {
             "dnaId": "SERIES-01",
             "dnaConfidence": 0.85
@@ -382,6 +390,7 @@
             "course": "Advanced",
             "examPaper": "cths-2020"
           },
+          "hscType": "conditional-probability",
           "dna": {
             "dnaId": "FUNC-TRANS-01",
             "dnaConfidence": 0.85
@@ -434,6 +443,7 @@
           "meta": {
             "source": "Cherrybrook Tech 2020 Trial Q10"
           },
+          "hscType": "applications-of-differentiation",
           "dna": {
             "dnaId": "CALC-STAT-01",
             "dnaConfidence": 0.85
@@ -477,6 +487,7 @@
           "meta": {
             "source": "Cherrybrook Tech 2020 Trial Q11"
           },
+          "hscType": "geometric-series",
           "dna": {
             "dnaId": "SEQ-01",
             "dnaConfidence": 0.85
@@ -516,6 +527,7 @@
           "meta": {
             "source": "Cherrybrook Tech 2020 Trial Q12"
           },
+          "hscType": "integration-techniques",
           "dna": {
             "dnaId": "CALC-INT-01",
             "dnaConfidence": 0.85,
@@ -608,6 +620,7 @@
           "meta": {
             "source": "Cherrybrook Tech 2020 Trial Q13"
           },
+          "hscType": "trig-applications",
           "dna": {
             "dnaId": "TRIG-GEO-01",
             "dnaConfidence": 0.85
@@ -652,6 +665,7 @@
             "source": "Cherrybrook Tech 2020 Trial Q14",
             "examPaper": "cths-2020"
           },
+          "hscType": "differentiation-rules",
           "dna": {
             "dnaId": "CALC-DIFF-01",
             "dnaConfidence": 0.85,
@@ -778,6 +792,7 @@
           "meta": {
             "source": "Cherrybrook Tech 2020 Trial Q15"
           },
+          "hscType": "applications-of-differentiation",
           "dna": {
             "dnaId": "CALC-STAT-01",
             "dnaConfidence": 0.85
@@ -821,6 +836,7 @@
           "meta": {
             "source": "Cherrybrook Tech 2020 Trial Q16"
           },
+          "hscType": "trig-applications",
           "dna": {
             "dnaId": "TRIG-ID-01",
             "dnaConfidence": 0.85
@@ -860,6 +876,7 @@
           "meta": {
             "source": "Cherrybrook Tech 2020 Trial Q17"
           },
+          "hscType": "trig-applications",
           "dna": {
             "dnaId": "TRIG-ID-01",
             "dnaConfidence": 0.85
@@ -906,6 +923,7 @@
           "meta": {
             "source": "Cherrybrook Tech 2020 Trial Q18"
           },
+          "hscType": "trig-equations-and-graphs",
           "dna": {
             "dnaId": "TRIG-EQ-01",
             "dnaConfidence": 0.85
@@ -946,6 +964,7 @@
             "source": "Cherrybrook Tech 2020 Trial Q19",
             "examPaper": "cths-2020"
           },
+          "hscType": "functions-and-graphs",
           "dna": {
             "dnaId": "FUNC-COMP-01",
             "dnaConfidence": 0.85
@@ -985,6 +1004,7 @@
           "meta": {
             "source": "Cherrybrook Tech 2020 Trial Q20"
           },
+          "hscType": "integration-techniques",
           "dna": {
             "dnaId": "CALC-INT-01",
             "dnaConfidence": 0.85,
@@ -1078,6 +1098,7 @@
             "source": "Cherrybrook Tech 2020 Trial Q22",
             "examPaper": "cths-2020"
           },
+          "hscType": "exponential-and-log",
           "dna": {
             "dnaId": "FUNC-GRAPH-01",
             "dnaConfidence": 0.85
@@ -1121,6 +1142,7 @@
           "meta": {
             "source": "Cherrybrook Tech 2020 Trial Q23"
           },
+          "hscType": "exponential-and-log",
           "dna": {
             "dnaId": "CALC-DIFF-01",
             "dnaConfidence": 0.85,
@@ -1214,6 +1236,7 @@
             "source": "Cherrybrook Tech 2020",
             "course": "Advanced"
           },
+          "hscType": "other",
           "dna": {
             "dnaId": "CALC-STAT-01",
             "dnaConfidence": 0.95
@@ -1251,6 +1274,7 @@
             "source": "Cherrybrook Tech 2020",
             "course": "Advanced"
           },
+          "hscType": "other",
           "dna": {
             "dnaId": "FUNC-TRANS-01",
             "dnaConfidence": 0.95
@@ -1287,6 +1311,7 @@
           "meta": {
             "source": "Cherrybrook Tech 2020 Trial Q25"
           },
+          "hscType": "exponential-and-log",
           "dna": {
             "dnaId": "CALC-DIFF-01",
             "dnaConfidence": 0.85,
@@ -1385,6 +1410,7 @@
             "course": "Advanced",
             "examPaper": "cths-2020"
           },
+          "hscType": "trapezoidal-rule",
           "dna": {
             "dnaId": "CALC-AREA-01",
             "dnaConfidence": 0.85
@@ -1429,6 +1455,7 @@
             "source": "Cherrybrook Tech 2020 Trial Q27",
             "examPaper": "cths-2020"
           },
+          "hscType": "continuous-distributions",
           "dna": {
             "dnaId": "PROB-CONT-01",
             "dnaConfidence": 0.85
@@ -1469,6 +1496,7 @@
             "source": "Cherrybrook Tech 2020 Trial Q28",
             "examPaper": "cths-2020"
           },
+          "hscType": "continuous-distributions",
           "dna": {
             "dnaId": "PROB-NORM-01",
             "dnaConfidence": 0.85
@@ -1513,6 +1541,7 @@
             "source": "Cherrybrook Tech 2020 Trial Q29",
             "examPaper": "cths-2020"
           },
+          "hscType": "conditional-probability",
           "dna": {
             "dnaId": "PROB-TOTAL-01",
             "dnaConfidence": 0.85
@@ -1558,6 +1587,7 @@
             "course": "Advanced",
             "examPaper": "cths-2020"
           },
+          "hscType": "areas-and-volumes",
           "dna": {
             "dnaId": "CALC-AREA-01",
             "dnaConfidence": 0.85
@@ -1601,6 +1631,7 @@
           "meta": {
             "source": "Cherrybrook Tech 2020 Trial Q31"
           },
+          "hscType": "geometric-series",
           "dna": {
             "dnaId": "SEQ-01",
             "dnaConfidence": 0.85
@@ -1645,6 +1676,7 @@
             "source": "Cherrybrook Tech 2020 Trial Q32",
             "examPaper": "cths-2020"
           },
+          "hscType": "continuous-distributions",
           "dna": {
             "dnaId": "PROB-CONT-01",
             "dnaConfidence": 0.85
@@ -1685,6 +1717,7 @@
             "source": "Cherrybrook Tech 2020 Trial Q33",
             "examPaper": "cths-2020"
           },
+          "hscType": "probability-distributions",
           "dna": {
             "dnaId": "PROB-DIST-01",
             "dnaConfidence": 0.85
@@ -1725,6 +1758,7 @@
             "source": "Cherrybrook Tech 2020 Trial Q34",
             "examPaper": "cths-2020"
           },
+          "hscType": "bivariate-statistics",
           "dna": {
             "dnaId": "STAT-BIV-01",
             "dnaConfidence": 0.85
@@ -1769,6 +1803,7 @@
             "source": "Cherrybrook Tech 2020 Trial Q35",
             "examPaper": "cths-2020"
           },
+          "hscType": "integration-techniques",
           "dna": {
             "dnaId": "CALC-MOTION-01",
             "dnaConfidence": 0.85
@@ -1812,6 +1847,7 @@
           "meta": {
             "source": "Cherrybrook Tech 2020 Trial Q36"
           },
+          "hscType": "optimisation",
           "dna": {
             "dnaId": "CALC-OPT-01",
             "dnaConfidence": 0.85
@@ -1859,6 +1895,7 @@
           "meta": {
             "source": "Cherrybrook Tech 2020 Trial Q1"
           },
+          "hscType": "applications-of-differentiation",
           "dna": {
             "dnaId": "CALC-STAT-01",
             "dnaConfidence": 0.85
@@ -1899,6 +1936,7 @@
             "source": "Cherrybrook Tech 2020 Trial Q2",
             "examPaper": "cths-2020"
           },
+          "hscType": "functions-and-graphs",
           "dna": {
             "dnaId": "FUNC-GRAPH-01",
             "dnaConfidence": 0.85
@@ -1943,6 +1981,7 @@
             "source": "Cherrybrook Tech 2020 Trial Q3",
             "examPaper": "cths-2020"
           },
+          "hscType": "conditional-probability",
           "dna": {
             "dnaId": "PROB-TOTAL-01",
             "dnaConfidence": 0.85
@@ -1987,6 +2026,7 @@
             "source": "Cherrybrook Tech 2020 Trial Q4",
             "examPaper": "cths-2020"
           },
+          "hscType": "probability-distributions",
           "dna": {
             "dnaId": "PROB-DIST-01",
             "dnaConfidence": 0.85
@@ -2031,6 +2071,7 @@
             "source": "Cherrybrook Tech 2020 Trial Q5",
             "examPaper": "cths-2020"
           },
+          "hscType": "differentiation-rules",
           "dna": {
             "dnaId": "CALC-DIFF-01",
             "dnaConfidence": 0.85,
@@ -2123,6 +2164,7 @@
           "meta": {
             "source": "Cherrybrook Tech 2020 Trial Q6"
           },
+          "hscType": "functions-and-graphs",
           "dna": {
             "dnaId": "FUNC-GRAPH-01",
             "dnaConfidence": 0.85
@@ -2167,6 +2209,7 @@
             "course": "Advanced",
             "examPaper": "cths-2020"
           },
+          "hscType": "trig-equations-and-graphs",
           "dna": {
             "dnaId": "TRIG-GRAPH-01",
             "dnaConfidence": 0.85
@@ -2210,6 +2253,7 @@
           "meta": {
             "source": "Cherrybrook Tech 2020 Trial Q8"
           },
+          "hscType": "arithmetic-series",
           "dna": {
             "dnaId": "SERIES-01",
             "dnaConfidence": 0.85
@@ -2255,6 +2299,7 @@
             "course": "Advanced",
             "examPaper": "cths-2020"
           },
+          "hscType": "conditional-probability",
           "dna": {
             "dnaId": "FUNC-TRANS-01",
             "dnaConfidence": 0.85
@@ -2307,6 +2352,7 @@
           "meta": {
             "source": "Cherrybrook Tech 2020 Trial Q10"
           },
+          "hscType": "applications-of-differentiation",
           "dna": {
             "dnaId": "CALC-STAT-01",
             "dnaConfidence": 0.85
@@ -2346,6 +2392,7 @@
           "meta": {
             "source": "Cherrybrook Tech 2020 Trial Q11"
           },
+          "hscType": "geometric-series",
           "dna": {
             "dnaId": "SEQ-01",
             "dnaConfidence": 0.85
@@ -2389,6 +2436,7 @@
           "meta": {
             "source": "Cherrybrook Tech 2020 Trial Q12"
           },
+          "hscType": "integration-techniques",
           "dna": {
             "dnaId": "CALC-INT-01",
             "dnaConfidence": 0.85,
@@ -2485,6 +2533,7 @@
           "meta": {
             "source": "Cherrybrook Tech 2020 Trial Q13"
           },
+          "hscType": "trig-applications",
           "dna": {
             "dnaId": "TRIG-GEO-01",
             "dnaConfidence": 0.85
@@ -2529,6 +2578,7 @@
             "source": "Cherrybrook Tech 2020 Trial Q14",
             "examPaper": "cths-2020"
           },
+          "hscType": "differentiation-rules",
           "dna": {
             "dnaId": "CALC-DIFF-01",
             "dnaConfidence": 0.85,
@@ -2655,6 +2705,7 @@
           "meta": {
             "source": "Cherrybrook Tech 2020 Trial Q15"
           },
+          "hscType": "applications-of-differentiation",
           "dna": {
             "dnaId": "CALC-STAT-01",
             "dnaConfidence": 0.85
@@ -2698,6 +2749,7 @@
           "meta": {
             "source": "Cherrybrook Tech 2020 Trial Q16"
           },
+          "hscType": "trig-applications",
           "dna": {
             "dnaId": "TRIG-ID-01",
             "dnaConfidence": 0.85
@@ -2741,6 +2793,7 @@
           "meta": {
             "source": "Cherrybrook Tech 2020 Trial Q17"
           },
+          "hscType": "trig-applications",
           "dna": {
             "dnaId": "TRIG-ID-01",
             "dnaConfidence": 0.85
@@ -2783,6 +2836,7 @@
           "meta": {
             "source": "Cherrybrook Tech 2020 Trial Q18"
           },
+          "hscType": "trig-equations-and-graphs",
           "dna": {
             "dnaId": "TRIG-EQ-01",
             "dnaConfidence": 0.85
@@ -2827,6 +2881,7 @@
             "source": "Cherrybrook Tech 2020 Trial Q19",
             "examPaper": "cths-2020"
           },
+          "hscType": "functions-and-graphs",
           "dna": {
             "dnaId": "FUNC-COMP-01",
             "dnaConfidence": 0.85
@@ -2870,6 +2925,7 @@
           "meta": {
             "source": "Cherrybrook Tech 2020 Trial Q20"
           },
+          "hscType": "integration-techniques",
           "dna": {
             "dnaId": "CALC-INT-01",
             "dnaConfidence": 0.85,
@@ -2967,6 +3023,7 @@
             "source": "Cherrybrook Tech 2020 Trial Q22",
             "examPaper": "cths-2020"
           },
+          "hscType": "exponential-and-log",
           "dna": {
             "dnaId": "FUNC-GRAPH-01",
             "dnaConfidence": 0.85
@@ -3010,6 +3067,7 @@
           "meta": {
             "source": "Cherrybrook Tech 2020 Trial Q23"
           },
+          "hscType": "exponential-and-log",
           "dna": {
             "dnaId": "CALC-DIFF-01",
             "dnaConfidence": 0.85,
@@ -3103,6 +3161,7 @@
             "source": "Cherrybrook Tech 2020 similar",
             "course": "Advanced"
           },
+          "hscType": "other",
           "dna": {
             "dnaId": "CALC-STAT-01",
             "dnaConfidence": 0.95
@@ -3140,6 +3199,7 @@
             "source": "Cherrybrook Tech 2020 similar",
             "course": "Advanced"
           },
+          "hscType": "other",
           "dna": {
             "dnaId": "FUNC-TRANS-01",
             "dnaConfidence": 0.95
@@ -3180,6 +3240,7 @@
           "meta": {
             "source": "Cherrybrook Tech 2020 Trial Q25"
           },
+          "hscType": "exponential-and-log",
           "dna": {
             "dnaId": "CALC-DIFF-01",
             "dnaConfidence": 0.85
@@ -3225,6 +3286,7 @@
             "course": "Advanced",
             "examPaper": "cths-2020"
           },
+          "hscType": "trapezoidal-rule",
           "dna": {
             "dnaId": "CALC-AREA-01",
             "dnaConfidence": 0.85
@@ -3269,6 +3331,7 @@
             "source": "Cherrybrook Tech 2020 Trial Q27",
             "examPaper": "cths-2020"
           },
+          "hscType": "continuous-distributions",
           "dna": {
             "dnaId": "PROB-CONT-01",
             "dnaConfidence": 0.85
@@ -3313,6 +3376,7 @@
             "source": "Cherrybrook Tech 2020 Trial Q28",
             "examPaper": "cths-2020"
           },
+          "hscType": "continuous-distributions",
           "dna": {
             "dnaId": "PROB-NORM-01",
             "dnaConfidence": 0.85
@@ -3357,6 +3421,7 @@
             "source": "Cherrybrook Tech 2020 Trial Q29",
             "examPaper": "cths-2020"
           },
+          "hscType": "conditional-probability",
           "dna": {
             "dnaId": "PROB-TOTAL-01",
             "dnaConfidence": 0.85
@@ -3402,6 +3467,7 @@
             "course": "Advanced",
             "examPaper": "cths-2020"
           },
+          "hscType": "areas-and-volumes",
           "dna": {
             "dnaId": "CALC-AREA-01",
             "dnaConfidence": 0.85
@@ -3445,6 +3511,7 @@
           "meta": {
             "source": "Cherrybrook Tech 2020 Trial Q31"
           },
+          "hscType": "geometric-series",
           "dna": {
             "dnaId": "SEQ-01",
             "dnaConfidence": 0.85
@@ -3489,6 +3556,7 @@
             "source": "Cherrybrook Tech 2020 Trial Q32",
             "examPaper": "cths-2020"
           },
+          "hscType": "continuous-distributions",
           "dna": {
             "dnaId": "PROB-CONT-01",
             "dnaConfidence": 0.85
@@ -3533,6 +3601,7 @@
             "source": "Cherrybrook Tech 2020 Trial Q34",
             "examPaper": "cths-2020"
           },
+          "hscType": "bivariate-statistics",
           "dna": {
             "dnaId": "STAT-BIV-01",
             "dnaConfidence": 0.85
@@ -3577,6 +3646,7 @@
             "source": "Cherrybrook Tech 2020 Trial Q35",
             "examPaper": "cths-2020"
           },
+          "hscType": "integration-techniques",
           "dna": {
             "dnaId": "CALC-MOTION-01",
             "dnaConfidence": 0.85
@@ -3620,6 +3690,7 @@
           "meta": {
             "source": "Cherrybrook Tech 2020 Trial Q36"
           },
+          "hscType": "optimisation",
           "dna": {
             "dnaId": "CALC-OPT-01",
             "dnaConfidence": 0.85

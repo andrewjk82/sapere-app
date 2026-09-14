@@ -60,6 +60,7 @@
             "origin": "teacher",
             "examPaper": "asc-2020"
           },
+          "hscType": "areas-and-volumes",
           "dna": {
             "dnaId": "CALC-AREA-01",
             "dnaConfidence": 0.85
@@ -117,6 +118,7 @@
             "origin": "teacher",
             "examPaper": "asc-2020"
           },
+          "hscType": "areas-and-volumes",
           "dna": {
             "dnaId": "CALC-AREA-01",
             "dnaConfidence": 0.85
@@ -640,7 +642,8 @@
                   "explain": "Finally, retrieve the correlation coefficient \\(r\\) from the regression menu.\n\n1. Press **SHIFT** and then **1 (STAT)**.\n2. Select **5 (Reg)** for regression variables.\n3. Select **3 (r)** for Pearson's correlation coefficient.\n4. Press **=** to calculate the value.\n\nRounding to 3 decimal places, you should get \\(-0.980\\).",
                   "work": "$$ \\begin{aligned} \\text{SHIFT} \\rightarrow 1 \\rightarrow 5:\\text{Reg} \\rightarrow 3:r \\rightarrow = \\\\\\\\ r \\approx -0.980 \\end{aligned} $$"
                 }
-              ]
+              ],
+              "hscType": "other"
             },
             {
               "id": "asc2020-q17-b",
@@ -673,7 +676,8 @@
                   "explain": "Final answer: \\hat{y} = -1.07x + 9.63. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
                   "work": "\\(\\hat{y} = -1.07x + 9.63\\)"
                 }
-              ]
+              ],
+              "hscType": "other"
             }
           ],
           "answer": "See parts (a) and (b)",
@@ -831,6 +835,7 @@
           "meta": {
             "source": "Adapted from Ascham 2020 Trial Q34"
           },
+          "hscType": "integration-techniques",
           "dna": {
             "dnaId": "CALC-INT-01",
             "dnaConfidence": 0.85,

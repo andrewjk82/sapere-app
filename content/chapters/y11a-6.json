@@ -23088,7 +23088,8 @@
               "work": "\\[ x = \\sqrt{19} \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "hscType": "multiple_choice"
         },
         {
           "id": "y11a-6I-q4a",
@@ -23129,7 +23130,8 @@
               "work": "\\[ a = \\sqrt{33} \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "hscType": "multiple_choice"
         },
         {
           "id": "y11a-6I-q4b",
@@ -23170,7 +23172,8 @@
               "work": "\\[ c = \\sqrt{64} = 8 \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "hscType": "multiple_choice"
         },
         {
           "id": "y11a-6I-q5a",
@@ -23211,7 +23214,8 @@
               "work": "\\[ \\theta = \\cos^{-1}(0.6875) \\approx 46.567^{\\circ} \\dots \\] \\[ \\theta \\approx 46^{\\circ} 34' \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "hscType": "multiple_choice"
         },
         {
           "id": "y11a-6I-q5b",
@@ -23252,7 +23256,8 @@
               "work": "\\[ \\theta = \\cos^{-1}\\left(\\frac{-23}{198}\\right) \\approx 96.671^{\\circ} \\dots \\] \\[ \\theta \\approx 96^{\\circ} 40' \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "hscType": "multiple_choice"
         },
         {
           "id": "y11a-6I-q5c",
@@ -23289,7 +23294,8 @@
               "work": "\\[ \\cos \\theta = \\frac{14}{50} \\] \\[ \\cos \\theta = \\frac{7}{25} \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "hscType": "multiple_choice"
         },
         {
           "id": "y11a-6I-q6",
@@ -23330,7 +23336,8 @@
               "work": "\\[ r = \\sqrt{91.4116 \\dots} \\approx 9.5609 \\dots \\] \\[ r \\approx 9.6 \\text{ km} \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "hscType": "multiple_choice"
         },
         {
           "id": "y11a-6I-q7",
@@ -23467,7 +23474,8 @@
               "work": "\\[ d = \\sqrt{28589.57 \\dots} \\approx 169.08 \\dots \\] \\[ d \\approx 169 \\text{ nautical miles} \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "hscType": "multiple_choice"
         },
         {
           "id": "y11a-6I-q8",
@@ -23508,7 +23516,8 @@
               "work": "\\[ G = \\cos^{-1}\\left(\\frac{10075}{11200}\\right) \\approx 25.901^{\\circ} \\dots \\] \\[ G \\approx 26^{\\circ} \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "hscType": "multiple_choice"
         },
         {
           "id": "y11a-6I-q9b",
@@ -23541,7 +23550,8 @@
               "work": "\\[ \\angle ABC = 179^{\\circ} 60' - 100^{\\circ} 18' \\] \\[ \\angle ABC = 79^{\\circ} 42' \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "hscType": "multiple_choice"
         },
         {
           "id": "y11a-6I-q10",
@@ -23982,7 +23992,8 @@
               "work": "\\\\[ x \\\\approx 5.1962 - 2.6458 \\\\] \\\\[ x \\\\approx 2.55 \\\\]"
             }
           ],
-          "manual": true
+          "manual": true,
+          "hscType": "multiple_choice"
         },
         {
           "id": "bb2020-q11",
@@ -24189,7 +24200,8 @@
                   "explain": "Take the square root to find \\(x\\) in simplest surd form.",
                   "work": "\\[ x = \\sqrt{19} \\]"
                 }
-              ]
+              ],
+              "hscType": "multiple_choice"
             }
           ],
           "answer": "\\(\\sqrt{31}\\)",
@@ -24220,7 +24232,8 @@
               "work": "\\[ x = \\sqrt{31} \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "hscType": "multiple_choice"
         },
         {
           "id": "y11a-6I-q9",
@@ -24255,7 +24268,8 @@
                   "explain": "Perform the subtraction.",
                   "work": "\\[ \\angle ABC = 179^{\\circ} 60' - 100^{\\circ} 18' \\] \\[ \\angle ABC = 79^{\\circ} 42' \\]"
                 }
-              ]
+              ],
+              "hscType": "multiple_choice"
             }
           ],
           "answer": "\\(100^\\circ 18'\\)",
@@ -24286,7 +24300,8 @@
               "work": "\\[ C = \\cos^{-1}(-0.17875) \\approx 100.297^{\\circ} \\dots \\] \\[ C \\approx 100^{\\circ} 18' \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "hscType": "multiple_choice"
         },
         {
           "id": "y11a-6I-q13",
@@ -24499,7 +24514,8 @@
                   "explain": "Evaluate this expression as a decimal using a calculator.",
                   "work": "\\\\[ x \\\\approx 5.1962 - 2.6458 \\\\] \\\\[ x \\\\approx 2.55 \\\\]"
                 }
-              ]
+              ],
+              "hscType": "multiple_choice"
             }
           ],
           "answer": "Using the cosine rule with side BC = 4 opposite to angle A: BC^2 = AB^2 + AC^2 - 2(AB)(AC) cos A => 4^2 = 6^2 + x^2 - 2(6)(x) cos 30° => 16 = 36 + x^2 - 12x * (sqrt(3)/2) => 16 = 36 + x^2 - 6*sqrt(3)x => x^2 - 6*sqrt(3)x + 20 = 0.",

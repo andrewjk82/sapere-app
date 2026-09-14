@@ -39,6 +39,7 @@ const Base = {
   timeLimit: z.number().int().positive().optional(),
   inactive: z.literal(true).optional(),
   alsoIn: z.array(z.string()).optional(),
+  hscType: z.string().optional(),          // HSC type-practice category slug
   meta: z.record(z.string(), z.any()).optional(),
   dna: z.record(z.string(), z.any()).optional(),
   ext: z.record(z.string(), z.any()).optional(),

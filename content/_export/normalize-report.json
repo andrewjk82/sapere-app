@@ -48,9 +48,11 @@
   "orphanTopic": 1653,
   "crossListed": 2136,
   "dropped": {
+    "explanation": 2,
     "partLabel": 18,
     "ans": 1,
-    "gridConfig": 27
+    "gridConfig": 27,
+    "graphData.html": 17
   },
   "chapterFiles": 228,
   "questions": 25310

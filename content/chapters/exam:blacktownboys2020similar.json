@@ -39,7 +39,8 @@
           "meta": {
             "source": "Similar to Blacktown Boys 2020 Trial Q12b",
             "origin": "teacher"
-          }
+          },
+          "hscType": "arithmetic-series"
         }
       ]
     }

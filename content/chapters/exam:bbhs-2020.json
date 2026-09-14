@@ -44,6 +44,7 @@
             "source": "Blacktown Boys 2020 Trial Q1",
             "examPaper": "bbhs-2020"
           },
+          "hscType": "functions-and-graphs",
           "dna": {
             "dnaId": "FUNC-GRAPH-01",
             "dnaConfidence": 0.85
@@ -84,6 +85,7 @@
               "work": "\\(60°\\)"
             }
           ],
+          "hscType": "functions-and-graphs",
           "dna": {
             "dnaId": "FUNC-GRAPH-01",
             "dnaConfidence": 0.85
@@ -124,6 +126,7 @@
           "meta": {
             "source": "Blacktown Boys 2020 Trial Q3"
           },
+          "hscType": "exponential-and-log",
           "dna": {
             "dnaId": "ALG-LOG-01",
             "dnaConfidence": 0.85
@@ -167,6 +170,7 @@
           "meta": {
             "examPaper": "bbhs-2020"
           },
+          "hscType": "data-analysis",
           "dna": {
             "dnaId": "STAT-DESC-01",
             "dnaConfidence": 0.85
@@ -207,6 +211,7 @@
           "meta": {
             "examPaper": "bbhs-2020"
           },
+          "hscType": "data-analysis",
           "dna": {
             "dnaId": "STAT-DESC-01",
             "dnaConfidence": 0.85
@@ -248,6 +253,7 @@
             "source": "Blacktown Boys 2020 Trial Q6",
             "examPaper": "bbhs-2020"
           },
+          "hscType": "continuous-distributions",
           "dna": {
             "dnaId": "PROB-NORM-01",
             "dnaConfidence": 0.85
@@ -291,6 +297,7 @@
           "meta": {
             "examPaper": "bbhs-2020"
           },
+          "hscType": "data-analysis",
           "dna": {
             "dnaId": "STAT-DESC-01",
             "dnaConfidence": 0.85
@@ -327,6 +334,7 @@
           "meta": {
             "source": "Blacktown Boys 2020 Trial Q8"
           },
+          "hscType": "applications-of-differentiation",
           "dna": {
             "dnaId": "CALC-STAT-01",
             "dnaConfidence": 0.85
@@ -370,6 +378,7 @@
           "meta": {
             "examPaper": "bbhs-2020"
           },
+          "hscType": "differentiation-rules",
           "dna": {
             "dnaId": "PROB-COMP-01",
             "dnaConfidence": 1,
@@ -422,6 +431,7 @@
             "source": "Blacktown Boys 2020 Trial Q10",
             "examPaper": "bbhs-2020"
           },
+          "hscType": "areas-and-volumes",
           "dna": {
             "dnaId": "CALC-AREA-01",
             "dnaConfidence": 0.85
@@ -462,6 +472,7 @@
               "work": "\\(\\cos A = \\dfrac{8^2 + 10^2 - 7^2}{2 \\times 8 \\times 10} = \\dfrac{64 + 100 - 49}{160} = \\dfrac{115}{160} = \\dfrac{23}{32}\\)"
             }
           ],
+          "hscType": "trig-applications",
           "dna": {
             "dnaId": "TRIG-GEO-01",
             "dnaConfidence": 0.85
@@ -499,6 +510,7 @@
               "work": "\\(\\frac{120\\sqrt{55}}{32} = \\frac{15\\sqrt{55}}{4} \\text{ units}^2\\)"
             }
           ],
+          "hscType": "areas-and-volumes",
           "dna": {
             "dnaId": "TRIG-GEO-01",
             "dnaConfidence": 0.85
@@ -536,6 +548,7 @@
               "work": "\\(T_{20} = 113\\)"
             }
           ],
+          "hscType": "arithmetic-series",
           "dna": {
             "dnaId": "SERIES-01",
             "dnaConfidence": 0.85
@@ -569,6 +582,7 @@
               "work": "\\(d = \\frac{95}{19} = 5\\)"
             }
           ],
+          "hscType": "arithmetic-series",
           "dna": {
             "dnaId": "SERIES-01",
             "dnaConfidence": 0.85
@@ -602,6 +616,7 @@
               "work": "\\(S_{35} = \\frac{35 \\times 206}{2} = \\frac{7210}{2} = 3605\\)"
             }
           ],
+          "hscType": "arithmetic-series",
           "dna": {
             "dnaId": "SERIES-01",
             "dnaConfidence": 0.85
@@ -642,6 +657,7 @@
           "meta": {
             "source": "Blacktown Boys 2020 Trial Q13a"
           },
+          "hscType": "functions-and-graphs",
           "dna": {
             "dnaId": "ALG-EQ-01",
             "dnaConfidence": 0.85
@@ -682,6 +698,7 @@
               "work": "\\(x \\le 1\\) or \\(x \\ge 4\\)"
             }
           ],
+          "hscType": "functions-and-graphs",
           "dna": {
             "dnaId": "ALG-EQ-01",
             "dnaConfidence": 0.85
@@ -722,6 +739,7 @@
           "meta": {
             "examPaper": "bbhs-2020"
           },
+          "hscType": "differentiation-rules",
           "dna": {
             "dnaId": "CALC-DIFF-01",
             "dnaConfidence": 0.85,
@@ -816,6 +834,7 @@
             "source": "Blacktown Boys 2020 Trial Q14b",
             "examPaper": "bbhs-2020"
           },
+          "hscType": "differentiation-rules",
           "dna": {
             "dnaId": "CALC-DIFF-01",
             "dnaConfidence": 0.85,
@@ -912,6 +931,7 @@
           "meta": {
             "source": "Blacktown Boys 2020 Trial Q15"
           },
+          "hscType": "geometric-series",
           "dna": {
             "dnaId": "SERIES-01",
             "dnaConfidence": 0.85
@@ -952,6 +972,7 @@
               "work": "\\(m = 120,\\ n = 300\\)"
             }
           ],
+          "hscType": "geometric-series",
           "dna": {
             "dnaId": "SEQ-01",
             "dnaConfidence": 0.85
@@ -994,6 +1015,7 @@
             "course": "Advanced",
             "examPaper": "bbhs-2020"
           },
+          "hscType": "differentiation-rules",
           "dna": {
             "dnaId": "CALC-INT-01",
             "dnaConfidence": 0.85,
@@ -1084,6 +1106,7 @@
               "work": "\\(\\dfrac{x^4}{2} + \\dfrac{1}{3}\\ln|3x+1| + C\\)"
             }
           ],
+          "hscType": "integration-techniques",
           "dna": {
             "dnaId": "CALC-INT-01",
             "dnaConfidence": 0.85,
@@ -1174,6 +1197,7 @@
               "work": "\\(-\\dfrac{1}{10}\\cos 10x + \\dfrac{2}{5e^{5x}} + C\\)"
             }
           ],
+          "hscType": "integration-techniques",
           "dna": {
             "dnaId": "CALC-INT-01",
             "dnaConfidence": 0.85,
@@ -1267,6 +1291,7 @@
           "meta": {
             "source": "Blacktown Boys 2020 Trial Q18a"
           },
+          "hscType": "differentiation-rules",
           "dna": {
             "dnaId": "CALC-DIFF-01",
             "dnaConfidence": 0.85,
@@ -1363,6 +1388,7 @@
           "meta": {
             "examPaper": "bbhs-2020"
           },
+          "hscType": "differentiation-rules",
           "dna": {
             "dnaId": "CALC-TAN-01",
             "dnaConfidence": 0.85
@@ -1400,6 +1426,7 @@
               "work": "\\(46\\,573.50\\)"
             }
           ],
+          "hscType": "financial-mathematics",
           "dna": {
             "dnaId": "FIN-INTEREST-01",
             "dnaConfidence": 0.85,
@@ -1492,6 +1519,7 @@
               "work": "\\(3005.49\\)"
             }
           ],
+          "hscType": "financial-mathematics",
           "dna": {
             "dnaId": "FIN-INTEREST-01",
             "dnaConfidence": 0.85,
@@ -1584,6 +1612,7 @@
               "work": "\\(f(x) = x^4 - 3x - 2\\)"
             }
           ],
+          "hscType": "integration-techniques",
           "dna": {
             "dnaId": "CALC-INT-01",
             "dnaConfidence": 0.85,
@@ -1679,6 +1708,7 @@
             "course": "Advanced",
             "examPaper": "bbhs-2020"
           },
+          "hscType": "integration-techniques",
           "dna": {
             "dnaId": "CALC-INT-01",
             "dnaConfidence": 0.85,
@@ -1776,6 +1806,7 @@
             "source": "Blacktown Boys 2020 Trial Q22",
             "examPaper": "bbhs-2020"
           },
+          "hscType": "trig-equations-and-graphs",
           "dna": {
             "dnaId": "TRIG-EQ-01",
             "dnaConfidence": 0.85
@@ -1819,6 +1850,7 @@
           "meta": {
             "examPaper": "bbhs-2020"
           },
+          "hscType": "probability-distributions",
           "dna": {
             "dnaId": "PROB-DIST-01",
             "dnaConfidence": 0.85
@@ -1861,6 +1893,7 @@
             "course": "Advanced",
             "examPaper": "bbhs-2020"
           },
+          "hscType": "trapezoidal-rule",
           "dna": {
             "dnaId": "CALC-AREA-01",
             "dnaConfidence": 0.85
@@ -1903,6 +1936,7 @@
             "course": "Advanced",
             "examPaper": "bbhs-2020"
           },
+          "hscType": "trapezoidal-rule",
           "dna": {
             "dnaId": "CALC-AREA-01",
             "dnaConfidence": 0.85
@@ -1943,6 +1977,7 @@
           "meta": {
             "examPaper": "bbhs-2020"
           },
+          "hscType": "bivariate-statistics",
           "dna": {
             "dnaId": "STAT-BIV-01",
             "dnaConfidence": 0.85
@@ -1988,6 +2023,7 @@
             "source": "Blacktown Boys 2020 Trial Q25b",
             "examPaper": "bbhs-2020"
           },
+          "hscType": "bivariate-statistics",
           "dna": {
             "dnaId": "STAT-CORR-01",
             "dnaConfidence": 0.85
@@ -2027,6 +2063,7 @@
           "meta": {
             "examPaper": "bbhs-2020"
           },
+          "hscType": "bivariate-statistics",
           "dna": {
             "dnaId": "STAT-CORR-01",
             "dnaConfidence": 0.85
@@ -2063,6 +2100,7 @@
           "meta": {
             "examPaper": "bbhs-2020"
           },
+          "hscType": "bivariate-statistics",
           "dna": {
             "dnaId": "STAT-BIV-01",
             "dnaConfidence": 0.85
@@ -2096,6 +2134,7 @@
               "work": "$$ \\begin{aligned} y'' &= -6x \\\\\\\\ \\text{At } x = 1: &\\quad y'' = -6(1) = -6 < 0 \\implies \\text{Local Maximum at } (1, 1) \\\\\\\\ \\text{At } x = -1: &\\quad y'' = -6(-1) = 6 > 0 \\implies \\text{Local Minimum at } (-1, -3) \\end{aligned} $$"
             }
           ],
+          "hscType": "applications-of-differentiation",
           "dna": {
             "dnaId": "CALC-STAT-01",
             "dnaConfidence": 0.85,
@@ -2193,6 +2232,7 @@
           "meta": {
             "source": "Blacktown Boys 2020 Trial Q26b"
           },
+          "hscType": "applications-of-differentiation",
           "dna": {
             "dnaId": "CALC-STAT-01",
             "dnaConfidence": 0.85,
@@ -2289,6 +2329,7 @@
           "meta": {
             "source": "Blacktown Boys 2020 Trial Q26d"
           },
+          "hscType": "applications-of-differentiation",
           "dna": {
             "dnaId": "CALC-STAT-01",
             "dnaConfidence": 0.85,
@@ -2385,6 +2426,7 @@
           "meta": {
             "examPaper": "bbhs-2020"
           },
+          "hscType": "continuous-distributions",
           "dna": {
             "dnaId": "PROB-NORM-01",
             "dnaConfidence": 0.85
@@ -2425,6 +2467,7 @@
           "meta": {
             "examPaper": "bbhs-2020"
           },
+          "hscType": "continuous-distributions",
           "dna": {
             "dnaId": "PROB-NORM-01",
             "dnaConfidence": 0.85
@@ -2465,6 +2508,7 @@
           "meta": {
             "examPaper": "bbhs-2020"
           },
+          "hscType": "continuous-distributions",
           "dna": {
             "dnaId": "PROB-NORM-01",
             "dnaConfidence": 0.85
@@ -2505,6 +2549,7 @@
           "meta": {
             "examPaper": "bbhs-2020"
           },
+          "hscType": "continuous-distributions",
           "dna": {
             "dnaId": "PROB-CONT-01",
             "dnaConfidence": 0.85
@@ -2545,6 +2590,7 @@
           "meta": {
             "examPaper": "bbhs-2020"
           },
+          "hscType": "continuous-distributions",
           "dna": {
             "dnaId": "PROB-CONT-01",
             "dnaConfidence": 0.85
@@ -2585,6 +2631,7 @@
           "meta": {
             "examPaper": "bbhs-2020"
           },
+          "hscType": "continuous-distributions",
           "dna": {
             "dnaId": "PROB-CONT-01",
             "dnaConfidence": 0.85
@@ -2633,6 +2680,7 @@
             "course": "Advanced",
             "examPaper": "bbhs-2020"
           },
+          "hscType": "areas-and-volumes",
           "dna": {
             "dnaId": "CALC-AREA-01",
             "dnaConfidence": 0.85
@@ -2681,6 +2729,7 @@
             "course": "Advanced",
             "examPaper": "bbhs-2020"
           },
+          "hscType": "areas-and-volumes",
           "dna": {
             "dnaId": "CALC-AREA-01",
             "dnaConfidence": 0.85
@@ -2718,6 +2767,7 @@
               "work": "\\(59\\)"
             }
           ],
+          "hscType": "financial-mathematics",
           "dna": {
             "dnaId": "SEQ-01",
             "dnaConfidence": 1,
@@ -2757,6 +2807,7 @@
               "work": "The 27th row."
             }
           ],
+          "hscType": "financial-mathematics",
           "dna": {
             "dnaId": "SEQ-01",
             "dnaConfidence": 1,
@@ -2796,6 +2847,7 @@
               "work": "\\(30\\) rows"
             }
           ],
+          "hscType": "financial-mathematics",
           "dna": {
             "dnaId": "SERIES-01",
             "dnaConfidence": 1,
@@ -2838,6 +2890,7 @@
           "meta": {
             "examPaper": "bbhs-2020"
           },
+          "hscType": "motion-kinematics",
           "dna": {
             "dnaId": "CALC-MOTION-01",
             "dnaConfidence": 0.85
@@ -2879,6 +2932,7 @@
             "source": "Blacktown Boys 2020 Trial Q31b",
             "examPaper": "bbhs-2020"
           },
+          "hscType": "motion-kinematics",
           "dna": {
             "dnaId": "CALC-MOTION-01",
             "dnaConfidence": 0.85
@@ -2922,6 +2976,7 @@
           "meta": {
             "examPaper": "bbhs-2020"
           },
+          "hscType": "motion-kinematics",
           "dna": {
             "dnaId": "CALC-MOTION-01",
             "dnaConfidence": 0.85
@@ -2962,6 +3017,7 @@
           "meta": {
             "examPaper": "bbhs-2020"
           },
+          "hscType": "rates-of-change",
           "dna": {
             "dnaId": "CALC-MOTION-01",
             "dnaConfidence": 0.85
@@ -2999,6 +3055,7 @@
               "work": "Perimeter \\(= 2h + 2r + \\pi r = 16\\pi\\), so \\(2h = 16\\pi - 2r - \\pi r\\), giving \\(h = 8\\pi - r - \\frac{1}{2}\\pi r\\)."
             }
           ],
+          "hscType": "optimisation",
           "dna": {
             "dnaId": "CALC-OPT-01",
             "dnaConfidence": 0.85
@@ -3036,6 +3093,7 @@
               "work": "\\(A = 2rh + \\frac{1}{2}\\pi r^2 = 2r(8\\pi - r - \\frac{\\pi r}{2}) + \\frac{\\pi r^2}{2} = 16\\pi r - 2r^2 - \\pi r^2 + \\frac{\\pi r^2}{2} = 16\\pi r - 2r^2 - \\frac{\\pi r^2}{2}\\)"
             }
           ],
+          "hscType": "optimisation",
           "dna": {
             "dnaId": "CALC-OPT-01",
             "dnaConfidence": 0.85
@@ -3073,6 +3131,7 @@
               "work": "\\(r = \\dfrac{16\\pi}{4 + \\pi}\\)"
             }
           ],
+          "hscType": "optimisation",
           "dna": {
             "dnaId": "CALC-OPT-01",
             "dnaConfidence": 0.85
@@ -3110,6 +3169,7 @@
               "work": "\\(176.9\\) m²"
             }
           ],
+          "hscType": "optimisation",
           "dna": {
             "dnaId": "CALC-OPT-01",
             "dnaConfidence": 0.85
@@ -3151,6 +3211,7 @@
             "source": "Similar to Blacktown Boys 2020 Trial Q1",
             "examPaper": "bbhs-2020"
           },
+          "hscType": "functions-and-graphs",
           "alsoIn": [
             "exam:blacktownboys2020similar"
           ]
@@ -3186,7 +3247,8 @@
               "explain": "Final answer: 30°. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
               "work": "\\(30°\\)"
             }
-          ]
+          ],
+          "hscType": "functions-and-graphs"
         },
         {
           "id": "bbhs2020s-mc3",
@@ -3223,6 +3285,7 @@
           "meta": {
             "source": "Similar to Blacktown Boys 2020 Trial Q3"
           },
+          "hscType": "exponential-and-log",
           "alsoIn": [
             "exam:blacktownboys2020similar"
           ]
@@ -3261,7 +3324,8 @@
           ],
           "meta": {
             "examPaper": "bbhs-2020"
-          }
+          },
+          "hscType": "data-analysis"
         },
         {
           "id": "bbhs2020s-mc5",
@@ -3297,7 +3361,8 @@
           ],
           "meta": {
             "examPaper": "bbhs-2020"
-          }
+          },
+          "hscType": "data-analysis"
         },
         {
           "id": "bbhs2020s-mc6",
@@ -3335,6 +3400,7 @@
             "source": "Similar to Blacktown Boys 2020 Trial Q6",
             "examPaper": "bbhs-2020"
           },
+          "hscType": "continuous-distributions",
           "alsoIn": [
             "exam:blacktownboys2020similar"
           ]
@@ -3373,7 +3439,8 @@
           ],
           "meta": {
             "examPaper": "bbhs-2020"
-          }
+          },
+          "hscType": "data-analysis"
         },
         {
           "id": "bbhs2020s-mc8",
@@ -3406,6 +3473,7 @@
           "meta": {
             "source": "Similar to Blacktown Boys 2020 Trial Q8"
           },
+          "hscType": "applications-of-differentiation",
           "alsoIn": [
             "exam:blacktownboys2020similar"
           ]
@@ -3444,7 +3512,8 @@
           ],
           "meta": {
             "examPaper": "bbhs-2020"
-          }
+          },
+          "hscType": "differentiation-rules"
         },
         {
           "id": "bbhs2020s-mc10",
@@ -3488,6 +3557,7 @@
             "source": "Similar to Blacktown Boys 2020 Trial Q10",
             "examPaper": "bbhs-2020"
           },
+          "hscType": "areas-and-volumes",
           "alsoIn": [
             "exam:blacktownboys2020similar"
           ]
@@ -3527,6 +3597,7 @@
           "meta": {
             "source": "Similar to Blacktown Boys 2020 Trial Q11a"
           },
+          "hscType": "trig-applications",
           "alsoIn": [
             "exam:blacktownboys2020similar"
           ]
@@ -3566,6 +3637,7 @@
           "meta": {
             "source": "Similar to Blacktown Boys 2020 Trial Q11b"
           },
+          "hscType": "areas-and-volumes",
           "alsoIn": [
             "exam:blacktownboys2020similar"
           ]
@@ -3605,6 +3677,7 @@
           "meta": {
             "source": "Similar to Blacktown Boys 2020 Trial Q12a"
           },
+          "hscType": "arithmetic-series",
           "alsoIn": [
             "exam:blacktownboys2020similar"
           ]
@@ -3636,7 +3709,8 @@
               "explain": "Multiply 35 by 176, then divide by 2 to get the final sum.",
               "work": "\\(S_{35} = \\frac{35 \\times 176}{2} = \\frac{6160}{2} = 3080\\)"
             }
-          ]
+          ],
+          "hscType": "arithmetic-series"
         },
         {
           "id": "bbhs2020s-13a",
@@ -3673,6 +3747,7 @@
           "meta": {
             "source": "Similar to Blacktown Boys 2020 Trial Q13a"
           },
+          "hscType": "functions-and-graphs",
           "alsoIn": [
             "exam:blacktownboys2020similar"
           ]
@@ -3708,7 +3783,8 @@
               "explain": "Final answer: x \\le -1\\) or \\(x \\ge 4. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
               "work": "\\(x \\le -1\\) or \\(x \\ge 4\\)"
             }
-          ]
+          ],
+          "hscType": "functions-and-graphs"
         },
         {
           "id": "bbhs2020s-14a",
@@ -3746,6 +3822,7 @@
             "source": "Similar to Blacktown Boys 2020 Trial Q14a",
             "examPaper": "bbhs-2020"
           },
+          "hscType": "differentiation-rules",
           "alsoIn": [
             "exam:blacktownboys2020similar"
           ]
@@ -3786,6 +3863,7 @@
             "source": "Similar to Blacktown Boys 2020 Trial Q14b",
             "examPaper": "bbhs-2020"
           },
+          "hscType": "differentiation-rules",
           "alsoIn": [
             "exam:blacktownboys2020similar"
           ]
@@ -3825,6 +3903,7 @@
           "meta": {
             "source": "Similar to Blacktown Boys 2020 Trial Q15"
           },
+          "hscType": "geometric-series",
           "alsoIn": [
             "exam:blacktownboys2020similar"
           ]
@@ -3864,6 +3943,7 @@
           "meta": {
             "source": "Similar to Blacktown Boys 2020 Trial Q16"
           },
+          "hscType": "geometric-series",
           "alsoIn": [
             "exam:blacktownboys2020similar"
           ]
@@ -3905,6 +3985,7 @@
             "course": "Advanced",
             "examPaper": "bbhs-2020"
           },
+          "hscType": "differentiation-rules",
           "alsoIn": [
             "exam:blacktownboys2020similar"
           ]
@@ -3944,6 +4025,7 @@
           "meta": {
             "source": "Similar to Blacktown Boys 2020 Trial Q17b"
           },
+          "hscType": "integration-techniques",
           "alsoIn": [
             "exam:blacktownboys2020similar"
           ]
@@ -3983,6 +4065,7 @@
           "meta": {
             "source": "Similar to Blacktown Boys 2020 Trial Q17c"
           },
+          "hscType": "integration-techniques",
           "alsoIn": [
             "exam:blacktownboys2020similar"
           ]
@@ -4022,6 +4105,7 @@
           "meta": {
             "source": "Similar to Blacktown Boys 2020 Trial Q18a"
           },
+          "hscType": "differentiation-rules",
           "alsoIn": [
             "exam:blacktownboys2020similar"
           ]
@@ -4062,6 +4146,7 @@
             "source": "Similar to Blacktown Boys 2020 Trial Q18b",
             "examPaper": "bbhs-2020"
           },
+          "hscType": "differentiation-rules",
           "alsoIn": [
             "exam:blacktownboys2020similar"
           ]
@@ -4101,6 +4186,7 @@
           "meta": {
             "source": "Similar to Blacktown Boys 2020 Trial Q19a"
           },
+          "hscType": "financial-mathematics",
           "alsoIn": [
             "exam:blacktownboys2020similar"
           ]
@@ -4140,6 +4226,7 @@
           "meta": {
             "source": "Similar to Blacktown Boys 2020 Trial Q19b"
           },
+          "hscType": "financial-mathematics",
           "alsoIn": [
             "exam:blacktownboys2020similar"
           ]
@@ -4179,6 +4266,7 @@
           "meta": {
             "source": "Similar to Blacktown Boys 2020 Trial Q20"
           },
+          "hscType": "integration-techniques",
           "alsoIn": [
             "exam:blacktownboys2020similar"
           ]
@@ -4220,6 +4308,7 @@
             "course": "Advanced",
             "examPaper": "bbhs-2020"
           },
+          "hscType": "integration-techniques",
           "alsoIn": [
             "exam:blacktownboys2020similar"
           ]
@@ -4263,6 +4352,7 @@
             "source": "Similar to Blacktown Boys 2020 Trial Q22",
             "examPaper": "bbhs-2020"
           },
+          "hscType": "trig-equations-and-graphs",
           "alsoIn": [
             "exam:blacktownboys2020similar"
           ]
@@ -4303,6 +4393,7 @@
             "source": "Similar to Blacktown Boys 2020 Trial Q23",
             "examPaper": "bbhs-2020"
           },
+          "hscType": "probability-distributions",
           "alsoIn": [
             "exam:blacktownboys2020similar"
           ]
@@ -4344,6 +4435,7 @@
             "course": "Advanced",
             "examPaper": "bbhs-2020"
           },
+          "hscType": "trapezoidal-rule",
           "alsoIn": [
             "exam:blacktownboys2020similar"
           ]
@@ -4385,6 +4477,7 @@
             "course": "Advanced",
             "examPaper": "bbhs-2020"
           },
+          "hscType": "trapezoidal-rule",
           "alsoIn": [
             "exam:blacktownboys2020similar"
           ]
@@ -4425,6 +4518,7 @@
             "source": "Similar to Blacktown Boys 2020 Trial Q25a",
             "examPaper": "bbhs-2020"
           },
+          "hscType": "bivariate-statistics",
           "alsoIn": [
             "exam:blacktownboys2020similar"
           ]
@@ -4465,6 +4559,7 @@
             "source": "Similar to Blacktown Boys 2020 Trial Q25b",
             "examPaper": "bbhs-2020"
           },
+          "hscType": "bivariate-statistics",
           "alsoIn": [
             "exam:blacktownboys2020similar"
           ]
@@ -4501,6 +4596,7 @@
             "source": "Similar to Blacktown Boys 2020 Trial Q25c",
             "examPaper": "bbhs-2020"
           },
+          "hscType": "bivariate-statistics",
           "alsoIn": [
             "exam:blacktownboys2020similar"
           ]
@@ -4537,6 +4633,7 @@
             "source": "Similar to Blacktown Boys 2020 Trial Q25d",
             "examPaper": "bbhs-2020"
           },
+          "hscType": "bivariate-statistics",
           "alsoIn": [
             "exam:blacktownboys2020similar"
           ]
@@ -4572,6 +4669,7 @@
           "meta": {
             "source": "Similar to Blacktown Boys 2020 Trial Q26a"
           },
+          "hscType": "applications-of-differentiation",
           "alsoIn": [
             "exam:blacktownboys2020similar"
           ]
@@ -4615,6 +4713,7 @@
           "meta": {
             "source": "Similar to Blacktown Boys 2020 Trial Q26b"
           },
+          "hscType": "applications-of-differentiation",
           "alsoIn": [
             "exam:blacktownboys2020similar"
           ]
@@ -4654,6 +4753,7 @@
           "meta": {
             "source": "Similar to Blacktown Boys 2020 Trial Q26d"
           },
+          "hscType": "applications-of-differentiation",
           "alsoIn": [
             "exam:blacktownboys2020similar"
           ]
@@ -4694,6 +4794,7 @@
             "source": "Similar to Blacktown Boys 2020 Trial Q27a",
             "examPaper": "bbhs-2020"
           },
+          "hscType": "continuous-distributions",
           "alsoIn": [
             "exam:blacktownboys2020similar"
           ]
@@ -4734,6 +4835,7 @@
             "source": "Similar to Blacktown Boys 2020 Trial Q27b",
             "examPaper": "bbhs-2020"
           },
+          "hscType": "continuous-distributions",
           "alsoIn": [
             "exam:blacktownboys2020similar"
           ]
@@ -4774,6 +4876,7 @@
             "source": "Similar to Blacktown Boys 2020 Trial Q27c",
             "examPaper": "bbhs-2020"
           },
+          "hscType": "continuous-distributions",
           "alsoIn": [
             "exam:blacktownboys2020similar"
           ]
@@ -4814,6 +4917,7 @@
             "source": "Similar to Blacktown Boys 2020 Trial Q28a",
             "examPaper": "bbhs-2020"
           },
+          "hscType": "continuous-distributions",
           "alsoIn": [
             "exam:blacktownboys2020similar"
           ]
@@ -4854,6 +4958,7 @@
             "source": "Similar to Blacktown Boys 2020 Trial Q28b",
             "examPaper": "bbhs-2020"
           },
+          "hscType": "continuous-distributions",
           "alsoIn": [
             "exam:blacktownboys2020similar"
           ]
@@ -4894,6 +4999,7 @@
             "source": "Similar to Blacktown Boys 2020 Trial Q28c",
             "examPaper": "bbhs-2020"
           },
+          "hscType": "continuous-distributions",
           "alsoIn": [
             "exam:blacktownboys2020similar"
           ]
@@ -4941,6 +5047,7 @@
             "course": "Advanced",
             "examPaper": "bbhs-2020"
           },
+          "hscType": "areas-and-volumes",
           "alsoIn": [
             "exam:blacktownboys2020similar"
           ]
@@ -4988,6 +5095,7 @@
             "course": "Advanced",
             "examPaper": "bbhs-2020"
           },
+          "hscType": "areas-and-volumes",
           "alsoIn": [
             "exam:blacktownboys2020similar"
           ]
@@ -5027,6 +5135,7 @@
           "meta": {
             "source": "Similar to Blacktown Boys 2020 Trial Q30a"
           },
+          "hscType": "financial-mathematics",
           "alsoIn": [
             "exam:blacktownboys2020similar"
           ]
@@ -5062,7 +5171,8 @@
               "explain": "Final answer: The 36th row.. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
               "work": "The 36th row."
             }
-          ]
+          ],
+          "hscType": "financial-mathematics"
         },
         {
           "id": "bbhs2020s-30c",
@@ -5095,7 +5205,8 @@
               "explain": "Final answer: \\(40\\) rows. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
               "work": "\\(40\\) rows"
             }
-          ]
+          ],
+          "hscType": "financial-mathematics"
         },
         {
           "id": "bbhs2020s-31a",
@@ -5133,6 +5244,7 @@
             "source": "Similar to Blacktown Boys 2020 Trial Q31a",
             "examPaper": "bbhs-2020"
           },
+          "hscType": "motion-kinematics",
           "alsoIn": [
             "exam:blacktownboys2020similar"
           ]
@@ -5173,6 +5285,7 @@
             "source": "Similar to Blacktown Boys 2020 Trial Q31b",
             "examPaper": "bbhs-2020"
           },
+          "hscType": "motion-kinematics",
           "alsoIn": [
             "exam:blacktownboys2020similar"
           ]
@@ -5213,6 +5326,7 @@
             "source": "Similar to Blacktown Boys 2020 Trial Q31d",
             "examPaper": "bbhs-2020"
           },
+          "hscType": "motion-kinematics",
           "alsoIn": [
             "exam:blacktownboys2020similar"
           ]
@@ -5253,6 +5367,7 @@
             "source": "Similar to Blacktown Boys 2020 Trial Q31e",
             "examPaper": "bbhs-2020"
           },
+          "hscType": "rates-of-change",
           "alsoIn": [
             "exam:blacktownboys2020similar"
           ]
@@ -5292,6 +5407,7 @@
           "meta": {
             "source": "Similar to Blacktown Boys 2020 Trial Q32a"
           },
+          "hscType": "optimisation",
           "alsoIn": [
             "exam:blacktownboys2020similar"
           ]
@@ -5331,6 +5447,7 @@
           "meta": {
             "source": "Similar to Blacktown Boys 2020 Trial Q32b"
           },
+          "hscType": "optimisation",
           "alsoIn": [
             "exam:blacktownboys2020similar"
           ]
@@ -5370,6 +5487,7 @@
           "meta": {
             "source": "Similar to Blacktown Boys 2020 Trial Q32c"
           },
+          "hscType": "optimisation",
           "alsoIn": [
             "exam:blacktownboys2020similar"
           ]
@@ -5409,6 +5527,7 @@
           "meta": {
             "source": "Similar to Blacktown Boys 2020 Trial Q32d"
           },
+          "hscType": "optimisation",
           "alsoIn": [
             "exam:blacktownboys2020similar"
           ]

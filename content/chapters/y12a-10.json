@@ -591,7 +591,8 @@
             "source": "Cherrybrook Tech 2020 Trial Q33",
             "origin": "teacher",
             "examPaper": "cths-2020"
-          }
+          },
+          "hscType": "probability-distributions"
         },
         {
           "id": "asc2020-q28",

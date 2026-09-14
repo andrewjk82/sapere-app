@@ -43,6 +43,7 @@
           "meta": {
             "source": "Ascham 2020 Trial Q1"
           },
+          "hscType": "functions-and-graphs",
           "dna": {
             "dnaId": "FUNC-GRAPH-01",
             "dnaConfidence": 0.85
@@ -86,6 +87,7 @@
           "meta": {
             "source": "Adapted from Ascham 2020 Trial Q1"
           },
+          "hscType": "functions-and-graphs",
           "dna": {
             "dnaId": "FUNC-GRAPH-01",
             "dnaConfidence": 0.85
@@ -129,6 +131,7 @@
           "meta": {
             "source": "Ascham 2020 Trial Q2"
           },
+          "hscType": "differentiation-rules",
           "dna": {
             "dnaId": "CALC-TAN-01",
             "dnaConfidence": 0.85
@@ -172,6 +175,7 @@
           "meta": {
             "source": "Adapted from Ascham 2020 Trial Q2"
           },
+          "hscType": "differentiation-rules",
           "dna": {
             "dnaId": "CALC-TAN-01",
             "dnaConfidence": 0.85
@@ -216,6 +220,7 @@
             "source": "Ascham 2020 Trial Q4",
             "examPaper": "asc-2020"
           },
+          "hscType": "data-analysis",
           "dna": {
             "dnaId": "STAT-DESC-01",
             "dnaConfidence": 0.85
@@ -260,6 +265,7 @@
             "source": "Adapted from Ascham 2020 Trial Q4",
             "examPaper": "asc-2020"
           },
+          "hscType": "data-analysis",
           "dna": {
             "dnaId": "STAT-DESC-01",
             "dnaConfidence": 0.85
@@ -304,6 +310,7 @@
             "source": "Ascham 2020 Trial Q5",
             "examPaper": "asc-2020"
           },
+          "hscType": "data-analysis",
           "dna": {
             "dnaId": "STAT-DESC-01",
             "dnaConfidence": 0.85
@@ -347,6 +354,7 @@
           "meta": {
             "examPaper": "asc-2020"
           },
+          "hscType": "data-analysis",
           "dna": {
             "dnaId": "STAT-DESC-01",
             "dnaConfidence": 0.85
@@ -389,6 +397,7 @@
             "topic": "y12a-10A",
             "examPaper": "asc-2020"
           },
+          "hscType": "probability-distributions",
           "dna": {
             "dnaId": "PROB-DIST-01",
             "dnaConfidence": 0.85
@@ -433,6 +442,7 @@
             "topic": "y12a-10A",
             "examPaper": "asc-2020"
           },
+          "hscType": "probability-distributions",
           "dna": {
             "dnaId": "PROB-DIST-01",
             "dnaConfidence": 0.85
@@ -475,6 +485,7 @@
             "course": "Advanced",
             "examPaper": "asc-2020"
           },
+          "hscType": "exponential-and-log",
           "dna": {
             "dnaId": "ALG-EQ-01",
             "dnaConfidence": 0.85
@@ -520,6 +531,7 @@
             "course": "Advanced",
             "examPaper": "asc-2020"
           },
+          "hscType": "exponential-and-log",
           "dna": {
             "dnaId": "ALG-EQ-01",
             "dnaConfidence": 0.85
@@ -557,6 +569,7 @@
               "work": "\\(25000 \\div 1.1717\\)"
             }
           ],
+          "hscType": "financial-mathematics",
           "dna": {
             "dnaId": "FIN-INTEREST-01",
             "dnaConfidence": 0.85,
@@ -681,6 +694,7 @@
           "meta": {
             "source": "Adapted from Ascham 2020 Trial Q8"
           },
+          "hscType": "financial-mathematics",
           "dna": {
             "dnaId": "FIN-INTEREST-01",
             "dnaConfidence": 0.85,
@@ -806,6 +820,7 @@
             "source": "Ascham 2020 Trial Q9",
             "examPaper": "asc-2020"
           },
+          "hscType": "continuous-distributions",
           "dna": {
             "dnaId": "PROB-NORM-01",
             "dnaConfidence": 0.85
@@ -849,6 +864,7 @@
           "meta": {
             "examPaper": "asc-2020"
           },
+          "hscType": "continuous-distributions",
           "dna": {
             "dnaId": "PROB-NORM-01",
             "dnaConfidence": 0.85
@@ -890,6 +906,7 @@
             "source": "Ascham 2020 Trial Q10",
             "examPaper": "asc-2020"
           },
+          "hscType": "continuous-distributions",
           "dna": {
             "dnaId": "PROB-CONT-01",
             "dnaConfidence": 0.85
@@ -934,6 +951,7 @@
             "source": "Adapted from Ascham 2020 Trial Q10",
             "examPaper": "asc-2020"
           },
+          "hscType": "continuous-distributions",
           "dna": {
             "dnaId": "PROB-CONT-01",
             "dnaConfidence": 0.85
@@ -977,6 +995,7 @@
           "meta": {
             "source": "Adapted from Ascham 2020 Trial Q11"
           },
+          "hscType": "functions-and-graphs",
           "dna": {
             "dnaId": "ALG-EQ-01",
             "dnaConfidence": 0.85
@@ -1021,6 +1040,7 @@
             "source": "Ascham 2020 Trial Q12",
             "examPaper": "asc-2020"
           },
+          "hscType": "conditional-probability",
           "dna": {
             "dnaId": "PROB-TOTAL-01",
             "dnaConfidence": 0.85
@@ -1065,6 +1085,7 @@
             "source": "Adapted from Ascham 2020 Trial Q12",
             "examPaper": "asc-2020"
           },
+          "hscType": "conditional-probability",
           "dna": {
             "dnaId": "PROB-TOTAL-01",
             "dnaConfidence": 0.85
@@ -1112,6 +1133,7 @@
           "meta": {
             "source": "Ascham 2020 Trial Q13"
           },
+          "hscType": "exponential-and-log",
           "dna": {
             "dnaId": "CALC-DIFF-01",
             "dnaConfidence": 0.85,
@@ -1212,6 +1234,7 @@
           "meta": {
             "source": "Adapted from Ascham 2020 Trial Q13"
           },
+          "hscType": "exponential-and-log",
           "dna": {
             "dnaId": "CALC-DIFF-01",
             "dnaConfidence": 0.85,
@@ -1308,6 +1331,7 @@
           "meta": {
             "source": "Ascham 2020 Trial Q14"
           },
+          "hscType": "exponential-and-log",
           "dna": {
             "dnaId": "CALC-DIFF-01",
             "dnaConfidence": 0.85,
@@ -1404,6 +1428,7 @@
           "meta": {
             "source": "Adapted from Ascham 2020 Trial Q14"
           },
+          "hscType": "exponential-and-log",
           "dna": {
             "dnaId": "CALC-DIFF-01",
             "dnaConfidence": 0.85,
@@ -1501,6 +1526,7 @@
             "source": "Ascham 2020 Trial Q15",
             "examPaper": "asc-2020"
           },
+          "hscType": "trig-applications",
           "dna": {
             "dnaId": "TRIG-GEO-01",
             "dnaConfidence": 0.85
@@ -1544,6 +1570,7 @@
           "meta": {
             "examPaper": "asc-2020"
           },
+          "hscType": "trig-applications",
           "dna": {
             "dnaId": "TRIG-GEO-01",
             "dnaConfidence": 0.85
@@ -1581,6 +1608,7 @@
               "work": "C = 60 + 16x\\) and \\(I = 20x"
             }
           ],
+          "hscType": "other",
           "dna": {
             "dnaId": "ALG-EQ-01",
             "dnaConfidence": 0.95
@@ -1618,6 +1646,7 @@
               "work": "\\(x = 15\\) dolls"
             }
           ],
+          "hscType": "other",
           "dna": {
             "dnaId": "TRIG-EQ-01",
             "dnaConfidence": 0.6
@@ -1658,6 +1687,7 @@
           "meta": {
             "source": "Adapted from Ascham 2020 Trial Q16"
           },
+          "hscType": "geometric-series",
           "dna": {
             "dnaId": "ALG-EQ-01",
             "dnaConfidence": 0.85
@@ -1694,6 +1724,7 @@
               "work": "$$ \\begin{aligned} \\text{SHIFT} \\rightarrow 1 \\rightarrow 5:\\text{Reg} \\rightarrow 3:r \\rightarrow = \\\\\\\\ r \\approx -0.980 \\end{aligned} $$"
             }
           ],
+          "hscType": "other",
           "dna": {
             "dnaId": "STAT-CORR-01",
             "dnaConfidence": 0.6
@@ -1731,6 +1762,7 @@
               "work": "\\(\\hat{y} = -1.07x + 9.63\\)"
             }
           ],
+          "hscType": "other",
           "dna": {
             "dnaId": "STAT-BIV-01",
             "dnaConfidence": 0.6
@@ -1792,6 +1824,7 @@
             "source": "Adapted from Ascham 2020 Trial Q17",
             "examPaper": "asc-2020"
           },
+          "hscType": "bivariate-statistics",
           "dna": {
             "dnaId": "STAT-BIV-01",
             "dnaConfidence": 0.85
@@ -1832,6 +1865,7 @@
               "work": "\\(TE \\approx 910\\) m"
             }
           ],
+          "hscType": "other",
           "dna": {
             "dnaId": "TRIG-GEO-01",
             "dnaConfidence": 0.95
@@ -1869,6 +1903,7 @@
               "work": "\\(\\approx 157°\\)"
             }
           ],
+          "hscType": "other",
           "dna": {
             "dnaId": "TRIG-GEO-01",
             "dnaConfidence": 0.6
@@ -1909,6 +1944,7 @@
           "meta": {
             "source": "Adapted from Ascham 2020 Trial Q18"
           },
+          "hscType": "trig-applications",
           "dna": {
             "dnaId": "TRIG-GEO-01",
             "dnaConfidence": 0.85
@@ -1953,6 +1989,7 @@
             "source": "Ascham 2020 Trial Q19",
             "examPaper": "asc-2020"
           },
+          "hscType": "functions-and-graphs",
           "dna": {
             "dnaId": "FUNC-COMP-01",
             "dnaConfidence": 0.85
@@ -1997,6 +2034,7 @@
             "source": "Adapted from Ascham 2020 Trial Q19",
             "examPaper": "asc-2020"
           },
+          "hscType": "functions-and-graphs",
           "dna": {
             "dnaId": "FUNC-COMP-01",
             "dnaConfidence": 0.85
@@ -2041,6 +2079,7 @@
             "source": "Ascham 2020 Trial Q20",
             "examPaper": "asc-2020"
           },
+          "hscType": "differentiation-rules",
           "dna": {
             "dnaId": "CALC-DIFF-01",
             "dnaConfidence": 0.85
@@ -2085,6 +2124,7 @@
             "source": "Adapted from Ascham 2020 Trial Q20",
             "examPaper": "asc-2020"
           },
+          "hscType": "differentiation-rules",
           "dna": {
             "dnaId": "CALC-DIFF-01",
             "dnaConfidence": 0.85
@@ -2132,6 +2172,7 @@
             "source": "Ascham 2020 Trial Q21",
             "examPaper": "asc-2020"
           },
+          "hscType": "trig-equations-and-graphs",
           "dna": {
             "dnaId": "TRIG-EQ-01",
             "dnaConfidence": 0.85
@@ -2179,6 +2220,7 @@
             "source": "Adapted from Ascham 2020 Trial Q21",
             "examPaper": "asc-2020"
           },
+          "hscType": "trig-equations-and-graphs",
           "dna": {
             "dnaId": "TRIG-EQ-01",
             "dnaConfidence": 0.85
@@ -2215,6 +2257,7 @@
           ],
           "manual": true,
           "timeLimit": 180,
+          "hscType": "other",
           "dna": {
             "dnaId": "FUNC-TRANS-01",
             "dnaConfidence": 0.95
@@ -2248,6 +2291,7 @@
           ],
           "manual": true,
           "timeLimit": 180,
+          "hscType": "other",
           "dna": {
             "dnaId": "FUNC-TRANS-01",
             "dnaConfidence": 0.95
@@ -2290,6 +2334,7 @@
             "course": "Advanced",
             "examPaper": "asc-2020"
           },
+          "hscType": "functions-and-graphs",
           "dna": {
             "dnaId": "FUNC-TRANS-01",
             "dnaConfidence": 0.95
@@ -2333,6 +2378,7 @@
           "meta": {
             "source": "Ascham 2020 Trial Q23"
           },
+          "hscType": "functions-and-graphs",
           "dna": {
             "dnaId": "ALG-EQ-01",
             "dnaConfidence": 0.85
@@ -2373,6 +2419,7 @@
               "work": "\\(m = \\dfrac{4}{9}\\)"
             }
           ],
+          "hscType": "functions-and-graphs",
           "dna": {
             "dnaId": "ALG-EQ-01",
             "dnaConfidence": 0.85
@@ -2410,6 +2457,7 @@
               "work": "Local minimum at \\((0, 3)\\); local maxima at \\((1, 4)\\) and \\((-1, 4)\\)"
             }
           ],
+          "hscType": "other",
           "dna": {
             "dnaId": "CALC-STAT-01",
             "dnaConfidence": 0.6,
@@ -2500,6 +2548,7 @@
               "work": "\\(\\left(\\pm\\dfrac{1}{\\sqrt{3}},\\; \\dfrac{32}{9}\\right)\\)"
             }
           ],
+          "hscType": "other",
           "dna": {
             "dnaId": "CALC-STAT-01",
             "dnaConfidence": 0.6,
@@ -2586,6 +2635,7 @@
           ],
           "manual": true,
           "timeLimit": 180,
+          "hscType": "other",
           "dna": {
             "dnaId": "CALC-STAT-01",
             "dnaConfidence": 0.6
@@ -2626,6 +2676,7 @@
           "meta": {
             "source": "Adapted from Ascham 2020 Trial Q24"
           },
+          "hscType": "applications-of-differentiation",
           "dna": {
             "dnaId": "CALC-STAT-01",
             "dnaConfidence": 0.85
@@ -2669,6 +2720,7 @@
           "meta": {
             "source": "Ascham 2020 Trial Q25"
           },
+          "hscType": "exponential-and-log",
           "dna": {
             "dnaId": "CALC-INT-01",
             "dnaConfidence": 0.85,
@@ -2765,6 +2817,7 @@
           "meta": {
             "source": "Adapted from Ascham 2020 Trial Q25"
           },
+          "hscType": "exponential-and-log",
           "dna": {
             "dnaId": "CALC-INT-01",
             "dnaConfidence": 0.85,
@@ -2857,6 +2910,7 @@
           "meta": {
             "source": "Ascham 2020 Trial Q26"
           },
+          "hscType": "trig-applications",
           "dna": {
             "dnaId": "TRIG-GRAPH-01",
             "dnaConfidence": 0.85
@@ -2900,6 +2954,7 @@
           "meta": {
             "source": "Adapted from Ascham 2020 Trial Q26"
           },
+          "hscType": "trig-applications",
           "dna": {
             "dnaId": "TRIG-GRAPH-01",
             "dnaConfidence": 0.85
@@ -2943,6 +2998,7 @@
           "meta": {
             "source": "Ascham 2020 Trial Q27"
           },
+          "hscType": "differentiation-rules",
           "dna": {
             "dnaId": "CALC-DIFF-01",
             "dnaConfidence": 0.85,
@@ -3039,6 +3095,7 @@
           "meta": {
             "source": "Adapted from Ascham 2020 Trial Q27"
           },
+          "hscType": "differentiation-rules",
           "dna": {
             "dnaId": "CALC-DIFF-01",
             "dnaConfidence": 0.85,
@@ -3132,6 +3189,7 @@
               "work": "\\(E(X) \\approx 2\\)"
             }
           ],
+          "hscType": "other",
           "dna": {
             "dnaId": "PROB-DIST-01",
             "dnaConfidence": 0.95
@@ -3169,6 +3227,7 @@
               "work": "\\(\\text{Var}(X) \\approx 0.9804\\)"
             }
           ],
+          "hscType": "other",
           "dna": {
             "dnaId": "PROB-DIST-01",
             "dnaConfidence": 0.95
@@ -3206,6 +3265,7 @@
               "work": "Kelly should take Shop \\(X\\). Expected pay: Shop \\(X\\) = \\(700, Shop \\)Y\\( = \\)650."
             }
           ],
+          "hscType": "other",
           "dna": {
             "dnaId": "PROB-DIST-01",
             "dnaConfidence": 0.95
@@ -3247,6 +3307,7 @@
             "source": "Adapted from Ascham 2020 Trial Q28",
             "examPaper": "asc-2020"
           },
+          "hscType": "probability-distributions",
           "dna": {
             "dnaId": "PROB-DIST-01",
             "dnaConfidence": 0.85
@@ -3290,6 +3351,7 @@
           "meta": {
             "source": "Ascham 2020 Trial Q29"
           },
+          "hscType": "integration-techniques",
           "dna": {
             "dnaId": "CALC-INT-01",
             "dnaConfidence": 0.85,
@@ -3386,6 +3448,7 @@
           "meta": {
             "source": "Adapted from Ascham 2020 Trial Q29"
           },
+          "hscType": "integration-techniques",
           "dna": {
             "dnaId": "CALC-INT-01",
             "dnaConfidence": 0.85,
@@ -3475,6 +3538,7 @@
           ],
           "manual": true,
           "timeLimit": 180,
+          "hscType": "other",
           "dna": {
             "dnaId": "FIN-GP-01",
             "dnaConfidence": 0.95,
@@ -3565,6 +3629,7 @@
               "work": "\\(T_n = 2000 - 1000 \\times (1.05)^n\\)"
             }
           ],
+          "hscType": "other",
           "dna": {
             "dnaId": "FIN-GP-01",
             "dnaConfidence": 0.95,
@@ -3655,6 +3720,7 @@
               "work": "Approximately \\(724\\) drop-bears"
             }
           ],
+          "hscType": "other",
           "dna": {
             "dnaId": "FIN-GP-01",
             "dnaConfidence": 0.95,
@@ -3745,6 +3811,7 @@
               "work": "During \\(2017\\)"
             }
           ],
+          "hscType": "other",
           "dna": {
             "dnaId": "FIN-GP-01",
             "dnaConfidence": 0.95,
@@ -3838,6 +3905,7 @@
           "meta": {
             "source": "Adapted from Ascham 2020 Trial Q30"
           },
+          "hscType": "geometric-series",
           "dna": {
             "dnaId": "FIN-GP-01",
             "dnaConfidence": 0.95,
@@ -3952,6 +4020,7 @@
           ],
           "manual": true,
           "timeLimit": 180,
+          "hscType": "other",
           "dna": {
             "dnaId": "PROB-CONT-01",
             "dnaConfidence": 0.95
@@ -3989,6 +4058,7 @@
               "work": "F(x) = \\dfrac{x^2(15-x)}{500}\\) for \\(0 \\leq x \\leq 10"
             }
           ],
+          "hscType": "other",
           "dna": {
             "dnaId": "PROB-CONT-01",
             "dnaConfidence": 0.95
@@ -4026,6 +4096,7 @@
               "work": "\\(0.216\\)"
             }
           ],
+          "hscType": "other",
           "dna": {
             "dnaId": "PROB-CONT-01",
             "dnaConfidence": 0.95
@@ -4067,6 +4138,7 @@
             "source": "Adapted from Ascham 2020 Trial Q31",
             "examPaper": "asc-2020"
           },
+          "hscType": "continuous-distributions",
           "dna": {
             "dnaId": "PROB-CONT-01",
             "dnaConfidence": 0.85
@@ -4305,6 +4377,7 @@
             }
           ],
           "timeLimit": 180,
+          "hscType": "other",
           "dna": {
             "dnaId": "CALC-OPT-01",
             "dnaConfidence": 0.95
@@ -4535,6 +4608,7 @@
               "work": "\\(\\theta \\approx 1.91\\) rad"
             }
           ],
+          "hscType": "other",
           "dna": {
             "dnaId": "CALC-OPT-01",
             "dnaConfidence": 0.95
@@ -4969,6 +5043,7 @@
           "meta": {
             "source": "Adapted from Ascham 2020 Trial Q32"
           },
+          "hscType": "optimisation",
           "dna": {
             "dnaId": "CALC-OPT-01",
             "dnaConfidence": 0.85
@@ -5009,6 +5084,7 @@
               "work": "\\(\\sigma = 1.5\\) minutes"
             }
           ],
+          "hscType": "other",
           "dna": {
             "dnaId": "STAT-DESC-01",
             "dnaConfidence": 0.6
@@ -5042,6 +5118,7 @@
           ],
           "manual": true,
           "timeLimit": 180,
+          "hscType": "other",
           "dna": {
             "dnaId": "PROB-NORM-01",
             "dnaConfidence": 0.6
@@ -5079,6 +5156,7 @@
               "work": "Qualifying time \\(\\approx 11.51\\) minutes"
             }
           ],
+          "hscType": "other",
           "dna": {
             "dnaId": "PROB-NORM-01",
             "dnaConfidence": 0.6
@@ -5120,6 +5198,7 @@
             "source": "Adapted from Ascham 2020 Trial Q33",
             "examPaper": "asc-2020"
           },
+          "hscType": "continuous-distributions",
           "dna": {
             "dnaId": "PROB-NORM-01",
             "dnaConfidence": 0.85

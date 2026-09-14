@@ -139,7 +139,7 @@ const merge = (id) => {
 };
 
 // ---------- canonicalise
-const CORE = new Set(['id', 'type', 'question', 'q', 'options', 'opts', 'answer', 'a', 'correctAnswer', 'answerStr', 'acceptedAnswers', 'hint', 'h', 'hintText', 'solution', 's', 'solutionSteps', 'graphData', 'questionImage', 'imageUrl', 'subQuestions', 'blanks', 'difficulty', 'timeLimit', 'requiresManualGrading', 'topicId', 'chapterId', 'topicCode', 'topicTitle', 'chapterTitle', 'year', 'c', 't', 'title', 'isManual', 'isActive', 'createdAt', 'updatedAt', 'isNew', 'examPaper', 'origin', 'questionType', 'explanation', 'graphData.html', '_pingTest', 'contentBump', 'bankVersion', 'batchId']);
+const CORE = new Set(['id', 'type', 'question', 'q', 'options', 'opts', 'answer', 'a', 'correctAnswer', 'answerStr', 'acceptedAnswers', 'hint', 'h', 'hintText', 'solution', 's', 'solutionSteps', 'graphData', 'questionImage', 'imageUrl', 'subQuestions', 'blanks', 'difficulty', 'timeLimit', 'requiresManualGrading', 'topicId', 'chapterId', 'topicCode', 'topicTitle', 'chapterTitle', 'year', 'c', 't', 'title', 'isManual', 'isActive', 'createdAt', 'updatedAt', 'isNew', 'examPaper', 'origin', 'questionType', '_pingTest', 'contentBump', 'bankVersion', 'batchId']);
 const META = ['source', 'sourcePaper', 'sourceId', 'sourcePdf', 'school', 'examType', 'course', 'grade', 'tags', 'reviewStatus', 'verificationNeeded', 'manualReview', 'topic'];
 const DNA = ['dnaId', 'dnaConfidence', 'reasoning_blueprint', 'hasReasoningBlueprint', 'dnaReclassifiedAt', 'dnaReclassifiedReason'];
 
@@ -179,6 +179,7 @@ const canon = (raw, id, depth = 0) => {
   if (raw.origin === 'teacher') meta.origin = 'teacher';
   if (nz(raw.examPaper)) meta.examPaper = raw.examPaper;
   if (Object.keys(meta).length) q.meta = meta;
+  if (nz(raw.questionType)) q.hscType = str(raw.questionType);   // HSC type-practice slug (was question_type_index)
   const dna = {}; DNA.forEach((k) => { if (raw[k] != null) dna[k] = raw[k]; });
   if (Object.keys(dna).length) q.dna = dna;
   const ext = {}; Object.keys(raw).forEach((k) => { if (!CORE.has(k) && !META.includes(k) && !DNA.includes(k)) ext[k] = raw[k]; });

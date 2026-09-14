@@ -43,6 +43,7 @@
           "meta": {
             "source": "Baulkham Hills 2020 Trial Q1"
           },
+          "hscType": "integration-techniques",
           "dna": {
             "dnaId": "CALC-INT-01",
             "dnaConfidence": 0.85,
@@ -136,6 +137,7 @@
               "work": "\\(\\tan x - x + C\\)"
             }
           ],
+          "hscType": "integration-techniques",
           "dna": {
             "dnaId": "CALC-INT-01",
             "dnaConfidence": 0.85
@@ -176,6 +178,7 @@
           "meta": {
             "source": "Baulkham Hills 2020 Trial Q2"
           },
+          "hscType": "exponential-and-log",
           "dna": {
             "dnaId": "CALC-DIFF-01",
             "dnaConfidence": 0.85,
@@ -272,6 +275,7 @@
           "meta": {
             "source": "Adapted from Baulkham Hills 2020 Trial Q2"
           },
+          "hscType": "exponential-and-log",
           "dna": {
             "dnaId": "CALC-DIFF-01",
             "dnaConfidence": 0.85,
@@ -368,6 +372,7 @@
           "meta": {
             "source": "Baulkham Hills 2020 Trial Q3"
           },
+          "hscType": "integration-techniques",
           "dna": {
             "dnaId": "CALC-INT-01",
             "dnaConfidence": 0.85
@@ -411,6 +416,7 @@
           "meta": {
             "source": "Adapted from Baulkham Hills 2020 Trial Q3"
           },
+          "hscType": "integration-techniques",
           "dna": {
             "dnaId": "CALC-INT-01",
             "dnaConfidence": 0.85,
@@ -500,6 +506,7 @@
               "work": "$$ \\therefore \\frac{dy}{dx} < 0 \\text{ and } \\frac{d^2y}{dx^2} > 0 $$"
             }
           ],
+          "hscType": "applications-of-differentiation",
           "dna": {
             "dnaId": "CALC-STAT-01",
             "dnaConfidence": 0.85
@@ -533,6 +540,7 @@
               "work": "$$ \\therefore \\frac{dy}{dx} > 0 \\text{ and } \\frac{d^2y}{dx^2} < 0 $$"
             }
           ],
+          "hscType": "applications-of-differentiation",
           "dna": {
             "dnaId": "CALC-STAT-01",
             "dnaConfidence": 0.85
@@ -574,6 +582,7 @@
             "source": "Baulkham Hills 2020 Trial Q5",
             "examPaper": "baulko-2020"
           },
+          "hscType": "continuous-distributions",
           "dna": {
             "dnaId": "PROB-NORM-01",
             "dnaConfidence": 0.85
@@ -618,6 +627,7 @@
             "source": "Adapted from Baulkham Hills 2020 Trial Q5",
             "examPaper": "baulko-2020"
           },
+          "hscType": "continuous-distributions",
           "dna": {
             "dnaId": "PROB-NORM-01",
             "dnaConfidence": 0.85
@@ -674,6 +684,7 @@
             "source": "Baulkham Hills 2020 Trial Q6",
             "examPaper": "baulko-2020"
           },
+          "hscType": "areas-and-volumes",
           "dna": {
             "dnaId": "CALC-AREA-01",
             "dnaConfidence": 0.85
@@ -729,6 +740,7 @@
           "meta": {
             "examPaper": "baulko-2020"
           },
+          "hscType": "areas-and-volumes",
           "dna": {
             "dnaId": "CALC-AREA-01",
             "dnaConfidence": 0.85
@@ -770,6 +782,7 @@
             "source": "Baulkham Hills 2020 Trial Q7",
             "examPaper": "baulko-2020"
           },
+          "hscType": "continuous-distributions",
           "dna": {
             "dnaId": "PROB-NORM-01",
             "dnaConfidence": 0.85
@@ -814,6 +827,7 @@
             "source": "Adapted from Baulkham Hills 2020 Trial Q7",
             "examPaper": "baulko-2020"
           },
+          "hscType": "continuous-distributions",
           "dna": {
             "dnaId": "PROB-NORM-01",
             "dnaConfidence": 0.85
@@ -858,6 +872,7 @@
             "source": "Baulkham Hills 2020 Trial Q8",
             "examPaper": "baulko-2020"
           },
+          "hscType": "trapezoidal-rule",
           "dna": {
             "dnaId": "CALC-AREA-01",
             "dnaConfidence": 0.85
@@ -902,6 +917,7 @@
             "source": "Adapted from Baulkham Hills 2020 Trial Q8",
             "examPaper": "baulko-2020"
           },
+          "hscType": "trapezoidal-rule",
           "dna": {
             "dnaId": "CALC-AREA-01",
             "dnaConfidence": 0.85
@@ -945,6 +961,7 @@
           "meta": {
             "source": "Baulkham Hills 2020 Trial Q9"
           },
+          "hscType": "functions-and-graphs",
           "dna": {
             "dnaId": "FUNC-GRAPH-01",
             "dnaConfidence": 0.85
@@ -988,6 +1005,7 @@
           "meta": {
             "source": "Adapted from Baulkham Hills 2020 Trial Q9"
           },
+          "hscType": "functions-and-graphs",
           "dna": {
             "dnaId": "FUNC-GRAPH-01",
             "dnaConfidence": 0.85
@@ -1031,6 +1049,7 @@
           "meta": {
             "source": "Baulkham Hills 2020 Trial Q10"
           },
+          "hscType": "optimisation",
           "dna": {
             "dnaId": "CALC-OPT-01",
             "dnaConfidence": 0.85
@@ -1074,6 +1093,7 @@
           "meta": {
             "source": "Adapted from Baulkham Hills 2020 Trial Q10"
           },
+          "hscType": "optimisation",
           "dna": {
             "dnaId": "CALC-OPT-01",
             "dnaConfidence": 0.85
@@ -1117,6 +1137,7 @@
           "meta": {
             "examPaper": "baulko-2020"
           },
+          "hscType": "differentiation-rules",
           "dna": {
             "dnaId": "CALC-DIFF-01",
             "dnaConfidence": 0.85,
@@ -1210,6 +1231,7 @@
           "meta": {
             "examPaper": "baulko-2020"
           },
+          "hscType": "differentiation-rules",
           "dna": {
             "dnaId": "CALC-DIFF-01",
             "dnaConfidence": 0.85,
@@ -1303,6 +1325,7 @@
           "meta": {
             "source": "Baulkham Hills 2020 Trial Q11(a)(ii)"
           },
+          "hscType": "differentiation-rules",
           "dna": {
             "dnaId": "CALC-DIFF-01",
             "dnaConfidence": 0.85,
@@ -1396,6 +1419,7 @@
               "work": "\\(-\\sin 2x\\)"
             }
           ],
+          "hscType": "differentiation-rules",
           "dna": {
             "dnaId": "CALC-DIFF-01",
             "dnaConfidence": 0.85,
@@ -1489,6 +1513,7 @@
           "meta": {
             "source": "Baulkham Hills 2020 Trial Q11(b)"
           },
+          "hscType": "arithmetic-series",
           "dna": {
             "dnaId": "SERIES-01",
             "dnaConfidence": 0.85
@@ -1532,6 +1557,7 @@
           "meta": {
             "source": "Adapted from Baulkham Hills 2020 Trial Q11(b)"
           },
+          "hscType": "arithmetic-series",
           "dna": {
             "dnaId": "SERIES-01",
             "dnaConfidence": 0.85
@@ -1577,6 +1603,7 @@
             "course": "Advanced",
             "examPaper": "baulko-2020"
           },
+          "hscType": "integration-techniques",
           "dna": {
             "dnaId": "CALC-INT-01",
             "dnaConfidence": 0.85,
@@ -1675,6 +1702,7 @@
             "course": "Advanced",
             "examPaper": "baulko-2020"
           },
+          "hscType": "integration-techniques",
           "dna": {
             "dnaId": "CALC-INT-01",
             "dnaConfidence": 0.85
@@ -1718,6 +1746,7 @@
           "meta": {
             "source": "Baulkham Hills 2020 Trial Q11(d)"
           },
+          "hscType": "exponential-and-log",
           "dna": {
             "dnaId": "ALG-EXP-01",
             "dnaConfidence": 0.85
@@ -1761,6 +1790,7 @@
           "meta": {
             "source": "Adapted from Baulkham Hills 2020 Trial Q11(d)"
           },
+          "hscType": "exponential-and-log",
           "dna": {
             "dnaId": "ALG-EXP-01",
             "dnaConfidence": 0.85
@@ -1800,6 +1830,7 @@
           "meta": {
             "source": "Baulkham Hills 2020 Trial Q11(e)(i)"
           },
+          "hscType": "differentiation-rules",
           "dna": {
             "dnaId": "CALC-DIFF-01",
             "dnaConfidence": 0.85,
@@ -1896,6 +1927,7 @@
           "meta": {
             "source": "Baulkham Hills 2020 Trial Q11(e)(ii)"
           },
+          "hscType": "integration-techniques",
           "dna": {
             "dnaId": "CALC-INT-01",
             "dnaConfidence": 0.85,
@@ -1989,6 +2021,7 @@
               "work": "\\(\\sin^2 x + C\\) (or equivalently \\(-\\dfrac{1}{2}\\cos 2x + C\\))"
             }
           ],
+          "hscType": "integration-techniques",
           "dna": {
             "dnaId": "CALC-INT-01",
             "dnaConfidence": 0.85
@@ -2026,6 +2059,7 @@
             "source": "Baulkham Hills 2020 Trial Q11(f)(i)",
             "examPaper": "baulko-2020"
           },
+          "hscType": "continuous-distributions",
           "dna": {
             "dnaId": "PROB-CONT-01",
             "dnaConfidence": 0.85
@@ -2070,6 +2104,7 @@
             "source": "Baulkham Hills 2020 Trial Q11(f)(ii)",
             "examPaper": "baulko-2020"
           },
+          "hscType": "continuous-distributions",
           "dna": {
             "dnaId": "PROB-CONT-01",
             "dnaConfidence": 0.85
@@ -2114,6 +2149,7 @@
             "source": "Adapted from Baulkham Hills 2020 Trial Q11(f)(ii)",
             "examPaper": "baulko-2020"
           },
+          "hscType": "continuous-distributions",
           "dna": {
             "dnaId": "PROB-CONT-01",
             "dnaConfidence": 0.85
@@ -2153,6 +2189,7 @@
           "meta": {
             "source": "Baulkham Hills 2020 Trial Q12(a)"
           },
+          "hscType": "applications-of-differentiation",
           "dna": {
             "dnaId": "CALC-STAT-01",
             "dnaConfidence": 0.85
@@ -2192,6 +2229,7 @@
           "meta": {
             "source": "Adapted from Baulkham Hills 2020 Trial Q12(a)"
           },
+          "hscType": "applications-of-differentiation",
           "dna": {
             "dnaId": "CALC-STAT-01",
             "dnaConfidence": 0.85
@@ -2236,6 +2274,7 @@
             "source": "Baulkham Hills 2020 Trial Q12(b)(i)",
             "examPaper": "baulko-2020"
           },
+          "hscType": "conditional-probability",
           "dna": {
             "dnaId": "PROB-TOTAL-01",
             "dnaConfidence": 0.85
@@ -2280,6 +2319,7 @@
             "source": "Baulkham Hills 2020 Trial Q12(b)(ii)",
             "examPaper": "baulko-2020"
           },
+          "hscType": "conditional-probability",
           "dna": {
             "dnaId": "PROB-TOTAL-01",
             "dnaConfidence": 0.85
@@ -2324,6 +2364,7 @@
             "source": "Adapted from Baulkham Hills 2020 Trial Q12(b)",
             "examPaper": "baulko-2020"
           },
+          "hscType": "conditional-probability",
           "dna": {
             "dnaId": "PROB-TOTAL-01",
             "dnaConfidence": 0.85
@@ -2363,6 +2404,7 @@
           "meta": {
             "source": "Baulkham Hills 2020 Trial Q12(c)(i)"
           },
+          "hscType": "functions-and-graphs",
           "dna": {
             "dnaId": "FUNC-GRAPH-01",
             "dnaConfidence": 0.85
@@ -2406,6 +2448,7 @@
           "meta": {
             "source": "Baulkham Hills 2020 Trial Q12(c)(ii)"
           },
+          "hscType": "functions-and-graphs",
           "dna": {
             "dnaId": "FUNC-GRAPH-01",
             "dnaConfidence": 0.85
@@ -2449,6 +2492,7 @@
           "meta": {
             "source": "Adapted from Baulkham Hills 2020 Trial Q12(c)"
           },
+          "hscType": "functions-and-graphs",
           "dna": {
             "dnaId": "FUNC-GRAPH-01",
             "dnaConfidence": 0.85
@@ -2490,6 +2534,7 @@
             "course": "Advanced",
             "examPaper": "baulko-2020"
           },
+          "hscType": "exponential-and-log",
           "dna": {
             "dnaId": "CALC-STAT-01",
             "dnaConfidence": 0.85
@@ -2535,6 +2580,7 @@
             "course": "Advanced",
             "examPaper": "baulko-2020"
           },
+          "hscType": "exponential-and-log",
           "dna": {
             "dnaId": "ALG-EQ-01",
             "dnaConfidence": 0.85
@@ -2577,6 +2623,7 @@
             "course": "Advanced",
             "examPaper": "baulko-2020"
           },
+          "hscType": "exponential-and-log",
           "dna": {
             "dnaId": "ALG-EQ-01",
             "dnaConfidence": 0.85
@@ -2618,6 +2665,7 @@
             "source": "Baulkham Hills 2020 Trial Q13(b)(i)",
             "examPaper": "baulko-2020"
           },
+          "hscType": "trig-applications",
           "dna": {
             "dnaId": "TRIG-GEO-01",
             "dnaConfidence": 0.85
@@ -2657,6 +2705,7 @@
           "meta": {
             "source": "Baulkham Hills 2020 Trial Q13(b)(ii)"
           },
+          "hscType": "trig-applications",
           "dna": {
             "dnaId": "TRIG-GEO-01",
             "dnaConfidence": 0.85
@@ -2700,6 +2749,7 @@
           "meta": {
             "source": "Baulkham Hills 2020 Trial Q13(b)(iii)"
           },
+          "hscType": "trig-applications",
           "dna": {
             "dnaId": "TRIG-GEO-01",
             "dnaConfidence": 0.85
@@ -2744,6 +2794,7 @@
             "source": "Adapted from Baulkham Hills 2020 Trial Q13(b)",
             "examPaper": "baulko-2020"
           },
+          "hscType": "trig-applications",
           "dna": {
             "dnaId": "TRIG-GEO-01",
             "dnaConfidence": 0.85
@@ -2792,6 +2843,7 @@
             "source": "Baulkham Hills 2020 Trial Q13(c)(i)",
             "examPaper": "baulko-2020"
           },
+          "hscType": "bivariate-statistics",
           "dna": {
             "dnaId": "STAT-BIV-01",
             "dnaConfidence": 0.85
@@ -2840,6 +2892,7 @@
             "source": "Baulkham Hills 2020 Trial Q13(c)(ii)",
             "examPaper": "baulko-2020"
           },
+          "hscType": "bivariate-statistics",
           "dna": {
             "dnaId": "STAT-BIV-01",
             "dnaConfidence": 0.85
@@ -2880,6 +2933,7 @@
             "source": "Adapted from Baulkham Hills 2020 Trial Q13(c)",
             "examPaper": "baulko-2020"
           },
+          "hscType": "bivariate-statistics",
           "dna": {
             "dnaId": "STAT-BIV-01",
             "dnaConfidence": 0.85
@@ -2920,6 +2974,7 @@
             "source": "Baulkham Hills 2020 Trial Q13(d)(i)",
             "examPaper": "baulko-2020"
           },
+          "hscType": "exponential-and-log",
           "dna": {
             "dnaId": "ALG-LOG-01",
             "dnaConfidence": 0.85
@@ -2963,6 +3018,7 @@
           "meta": {
             "source": "Baulkham Hills 2020 Trial Q13(d)(ii)"
           },
+          "hscType": "applications-of-differentiation",
           "dna": {
             "dnaId": "CALC-STAT-01",
             "dnaConfidence": 0.85,
@@ -3063,6 +3119,7 @@
           "meta": {
             "source": "Baulkham Hills 2020 Trial Q13(d)(iii)"
           },
+          "hscType": "applications-of-differentiation",
           "dna": {
             "dnaId": "CALC-STAT-01",
             "dnaConfidence": 0.85,
@@ -3163,6 +3220,7 @@
           "meta": {
             "source": "Baulkham Hills 2020 Trial Q13(d)(iv)"
           },
+          "hscType": "applications-of-differentiation",
           "dna": {
             "dnaId": "ALG-LOG-01",
             "dnaConfidence": 0.85
@@ -3214,6 +3272,7 @@
           "meta": {
             "source": "Adapted from Baulkham Hills 2020 Trial Q13(d)"
           },
+          "hscType": "applications-of-differentiation",
           "dna": {
             "dnaId": "CALC-STAT-01",
             "dnaConfidence": 0.85
@@ -3253,6 +3312,7 @@
           "meta": {
             "source": "Baulkham Hills 2020 Trial Q14(a)(i)"
           },
+          "hscType": "trig-applications",
           "dna": {
             "dnaId": "TRIG-ID-01",
             "dnaConfidence": 0.85
@@ -3296,6 +3356,7 @@
           "meta": {
             "source": "Baulkham Hills 2020 Trial Q14(a)(ii)"
           },
+          "hscType": "integration-techniques",
           "dna": {
             "dnaId": "CALC-INT-01",
             "dnaConfidence": 0.85,
@@ -3392,6 +3453,7 @@
           "meta": {
             "source": "Adapted from Baulkham Hills 2020 Trial Q14(a)"
           },
+          "hscType": "integration-techniques",
           "dna": {
             "dnaId": "CALC-INT-01",
             "dnaConfidence": 0.85,
@@ -3488,6 +3550,7 @@
           "meta": {
             "source": "Baulkham Hills 2020 Trial Q14(b)(i)"
           },
+          "hscType": "trig-applications",
           "dna": {
             "dnaId": "TRIG-GRAPH-01",
             "dnaConfidence": 0.85
@@ -3531,6 +3594,7 @@
           "meta": {
             "source": "Baulkham Hills 2020 Trial Q14(b)(ii)"
           },
+          "hscType": "trig-applications",
           "dna": {
             "dnaId": "TRIG-GRAPH-01",
             "dnaConfidence": 0.85
@@ -3570,6 +3634,7 @@
           "meta": {
             "source": "Baulkham Hills 2020 Trial Q14(b)(iii)"
           },
+          "hscType": "trig-applications",
           "dna": {
             "dnaId": "TRIG-GRAPH-01",
             "dnaConfidence": 0.85
@@ -3613,6 +3678,7 @@
           "meta": {
             "source": "Adapted from Baulkham Hills 2020 Trial Q14(b)"
           },
+          "hscType": "trig-applications",
           "dna": {
             "dnaId": "TRIG-GRAPH-01",
             "dnaConfidence": 0.85
@@ -3658,6 +3724,7 @@
             "topic": "y12a-10A",
             "examPaper": "baulko-2020"
           },
+          "hscType": "probability-distributions",
           "dna": {
             "dnaId": "PROB-DIST-01",
             "dnaConfidence": 0.85
@@ -3702,6 +3769,7 @@
             "source": "Baulkham Hills 2020 Trial Q14(c)(ii)",
             "examPaper": "baulko-2020"
           },
+          "hscType": "probability-distributions",
           "dna": {
             "dnaId": "PROB-DIST-01",
             "dnaConfidence": 0.85
@@ -3746,6 +3814,7 @@
             "source": "Adapted from Baulkham Hills 2020 Trial Q14(c)",
             "examPaper": "baulko-2020"
           },
+          "hscType": "probability-distributions",
           "dna": {
             "dnaId": "PROB-DIST-01",
             "dnaConfidence": 0.85
@@ -3790,6 +3859,7 @@
             "source": "Baulkham Hills 2020 Trial Q15(a)(i)",
             "examPaper": "baulko-2020"
           },
+          "hscType": "motion-kinematics",
           "dna": {
             "dnaId": "CALC-MOTION-01",
             "dnaConfidence": 0.85
@@ -3834,6 +3904,7 @@
             "source": "Baulkham Hills 2020 Trial Q15(a)(ii)",
             "examPaper": "baulko-2020"
           },
+          "hscType": "motion-kinematics",
           "dna": {
             "dnaId": "CALC-MOTION-01",
             "dnaConfidence": 0.85
@@ -3874,6 +3945,7 @@
             "source": "Baulkham Hills 2020 Trial Q15(a)(iii)",
             "examPaper": "baulko-2020"
           },
+          "hscType": "motion-kinematics",
           "dna": {
             "dnaId": "CALC-MOTION-01",
             "dnaConfidence": 0.85
@@ -3918,6 +3990,7 @@
             "source": "Baulkham Hills 2020 Trial Q15(a)(iv)",
             "examPaper": "baulko-2020"
           },
+          "hscType": "rates-of-change",
           "dna": {
             "dnaId": "CALC-MOTION-01",
             "dnaConfidence": 0.85
@@ -3961,6 +4034,7 @@
           "meta": {
             "examPaper": "baulko-2020"
           },
+          "hscType": "rates-of-change",
           "dna": {
             "dnaId": "CALC-MOTION-01",
             "dnaConfidence": 0.85
@@ -4016,6 +4090,7 @@
             "source": "Baulkham Hills 2020 Trial Q15(b)(i)",
             "examPaper": "baulko-2020"
           },
+          "hscType": "exponential-and-log",
           "dna": {
             "dnaId": "ALG-LOG-01",
             "dnaConfidence": 0.85,
@@ -4108,6 +4183,7 @@
           "meta": {
             "source": "Baulkham Hills 2020 Trial Q15(b)(ii)"
           },
+          "hscType": "differentiation-rules",
           "dna": {
             "dnaId": "CALC-DIFF-01",
             "dnaConfidence": 0.85,
@@ -4200,6 +4276,7 @@
           "meta": {
             "source": "Baulkham Hills 2020 Trial Q15(b)(iii)"
           },
+          "hscType": "differentiation-rules",
           "dna": {
             "dnaId": "CALC-DIFF-01",
             "dnaConfidence": 0.85,
@@ -4297,6 +4374,7 @@
             "source": "Baulkham Hills 2020 Trial Q15(c)(i)",
             "examPaper": "baulko-2020"
           },
+          "hscType": "continuous-distributions",
           "dna": {
             "dnaId": "PROB-CONT-01",
             "dnaConfidence": 0.85
@@ -4341,6 +4419,7 @@
             "source": "Baulkham Hills 2020 Trial Q15(c)(ii)",
             "examPaper": "baulko-2020"
           },
+          "hscType": "continuous-distributions",
           "dna": {
             "dnaId": "PROB-CONT-01",
             "dnaConfidence": 0.85
@@ -4385,6 +4464,7 @@
             "source": "Adapted from Baulkham Hills 2020 Trial Q15(c)",
             "examPaper": "baulko-2020"
           },
+          "hscType": "continuous-distributions",
           "dna": {
             "dnaId": "PROB-CONT-01",
             "dnaConfidence": 0.85
@@ -4421,6 +4501,7 @@
           ],
           "manual": true,
           "timeLimit": 180,
+          "hscType": "financial-mathematics",
           "dna": {
             "dnaId": "FIN-INTEREST-01",
             "dnaConfidence": 0.85,
@@ -4510,6 +4591,7 @@
           "meta": {
             "source": "Baulkham Hills 2020 Trial Q16(a)(ii)"
           },
+          "hscType": "financial-mathematics",
           "dna": {
             "dnaId": "FIN-INTEREST-01",
             "dnaConfidence": 0.85,
@@ -4607,6 +4689,7 @@
           "meta": {
             "source": "Baulkham Hills 2020 Trial Q16(a)(iii)"
           },
+          "hscType": "financial-mathematics",
           "dna": {
             "dnaId": "FIN-INTEREST-01",
             "dnaConfidence": 0.85,
@@ -4704,6 +4787,7 @@
           "meta": {
             "source": "Adapted from Baulkham Hills 2020 Trial Q16(a)"
           },
+          "hscType": "financial-mathematics",
           "dna": {
             "dnaId": "FIN-INTEREST-01",
             "dnaConfidence": 0.85,
@@ -4797,6 +4881,7 @@
           "meta": {
             "source": "Baulkham Hills 2020 Trial Q16(b)(i)"
           },
+          "hscType": "differentiation-rules",
           "dna": {
             "dnaId": "CALC-DIFF-01",
             "dnaConfidence": 0.85
@@ -4836,6 +4921,7 @@
           "meta": {
             "source": "Baulkham Hills 2020 Trial Q16(b)(ii)"
           },
+          "hscType": "differentiation-rules",
           "dna": {
             "dnaId": "CALC-DIFF-01",
             "dnaConfidence": 0.85,
@@ -4946,6 +5032,7 @@
             "course": "Advanced",
             "examPaper": "baulko-2020"
           },
+          "hscType": "areas-and-volumes",
           "dna": {
             "dnaId": "CALC-AREA-01",
             "dnaConfidence": 0.85
@@ -4993,6 +5080,7 @@
           "meta": {
             "source": "Baulkham Hills 2020 Trial Q16(c)(ii)"
           },
+          "hscType": "exponential-and-log",
           "dna": {
             "dnaId": "CALC-DIFF-01",
             "dnaConfidence": 0.85,
@@ -5089,6 +5177,7 @@
           "meta": {
             "source": "Baulkham Hills 2020 Trial Q16(c)(iii)"
           },
+          "hscType": "exponential-and-log",
           "dna": {
             "dnaId": "CALC-INT-01",
             "dnaConfidence": 0.85
@@ -5132,6 +5221,7 @@
           "meta": {
             "source": "Adapted from Baulkham Hills 2020 Trial Q16(c)"
           },
+          "hscType": "exponential-and-log",
           "dna": {
             "dnaId": "CALC-INT-01",
             "dnaConfidence": 0.85,

@@ -43,6 +43,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "differentiation-rules",
           "dna": {
             "dnaId": "CALC-TAN-01",
             "dnaConfidence": 0.85
@@ -86,6 +87,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "bivariate-statistics",
           "dna": {
             "dnaId": "ALG-EXP-01",
             "dnaConfidence": 0.85
@@ -129,6 +131,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "functions-and-graphs",
           "dna": {
             "dnaId": "FUNC-GRAPH-01",
             "dnaConfidence": 0.85
@@ -172,6 +175,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "functions-and-graphs",
           "dna": {
             "dnaId": "FUNC-GRAPH-01",
             "dnaConfidence": 0.85
@@ -215,6 +219,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "arithmetic-series",
           "dna": {
             "dnaId": "SEQ-01",
             "dnaConfidence": 0.85
@@ -286,6 +291,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "applications-of-differentiation",
           "dna": {
             "dnaId": "CALC-STAT-01",
             "dnaConfidence": 0.85
@@ -329,6 +335,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "integration-techniques",
           "dna": {
             "dnaId": "ALG-EQ-01",
             "dnaConfidence": 0.85
@@ -372,6 +379,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "trig-equations-and-graphs",
           "dna": {
             "dnaId": "TRIG-GRAPH-01",
             "dnaConfidence": 0.85
@@ -415,6 +423,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "data-analysis",
           "dna": {
             "dnaId": "STAT-DESC-01",
             "dnaConfidence": 0.85
@@ -458,6 +467,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "differentiation-rules",
           "dna": {
             "dnaId": "CALC-INT-01",
             "dnaConfidence": 1,
@@ -588,6 +598,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "trapezoidal-rule",
           "dna": {
             "dnaId": "CALC-AREA-01",
             "dnaConfidence": 0.85
@@ -663,6 +674,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "trig-applications",
           "dna": {
             "dnaId": "TRIG-GEO-01",
             "dnaConfidence": 0.85
@@ -706,6 +718,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "trig-applications",
           "dna": {
             "dnaId": "TRIG-GEO-01",
             "dnaConfidence": 0.85
@@ -794,6 +807,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "trig-applications",
           "dna": {
             "dnaId": "TRIG-GEO-01",
             "dnaConfidence": 0.85
@@ -837,6 +851,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "areas-and-volumes",
           "dna": {
             "dnaId": "TRIG-GEO-01",
             "dnaConfidence": 0.85
@@ -912,6 +927,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "geometric-series",
           "dna": {
             "dnaId": "ALG-EQ-01",
             "dnaConfidence": 0.85
@@ -955,6 +971,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "areas-and-volumes",
           "dna": {
             "dnaId": "CALC-AREA-01",
             "dnaConfidence": 0.85
@@ -998,6 +1015,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "trig-equations-and-graphs",
           "dna": {
             "dnaId": "TRIG-EQ-01",
             "dnaConfidence": 0.85
@@ -1041,6 +1059,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "differentiation-rules",
           "dna": {
             "dnaId": "CALC-TAN-01",
             "dnaConfidence": 0.85
@@ -1084,6 +1103,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "conditional-probability",
           "dna": {
             "dnaId": "PROB-COND-01",
             "dnaConfidence": 0.85
@@ -1125,6 +1145,7 @@
             "source": "Danebank 2020 Trial Q17(b)",
             "examPaper": "dane-2020"
           },
+          "hscType": "conditional-probability",
           "dna": {
             "dnaId": "PROB-COMP-01",
             "dnaConfidence": 0.85
@@ -1168,6 +1189,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "differentiation-rules",
           "dna": {
             "dnaId": "CALC-TAN-01",
             "dnaConfidence": 0.85
@@ -1211,6 +1233,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "exponential-and-log",
           "dna": {
             "dnaId": "ALG-LOG-01",
             "dnaConfidence": 0.85
@@ -1254,6 +1277,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "exponential-and-log",
           "dna": {
             "dnaId": "ALG-LOG-01",
             "dnaConfidence": 0.85
@@ -1297,6 +1321,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "integration-techniques",
           "dna": {
             "dnaId": "CALC-INT-01",
             "dnaConfidence": 0.85
@@ -1344,6 +1369,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "applications-of-differentiation",
           "dna": {
             "dnaId": "CALC-STAT-01",
             "dnaConfidence": 0.85
@@ -1404,6 +1430,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "applications-of-differentiation",
           "dna": {
             "dnaId": "CALC-STAT-01",
             "dnaConfidence": 0.85
@@ -1447,6 +1474,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "probability-distributions",
           "dna": {
             "dnaId": "PROB-DIST-01",
             "dnaConfidence": 0.85
@@ -1490,6 +1518,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "probability-distributions",
           "dna": {
             "dnaId": "PROB-DIST-01",
             "dnaConfidence": 0.85
@@ -1533,6 +1562,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "differentiation-rules",
           "dna": {
             "dnaId": "CALC-DIFF-01",
             "dnaConfidence": 0.85
@@ -1576,6 +1606,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "functions-and-graphs",
           "dna": {
             "dnaId": "FUNC-COMP-01",
             "dnaConfidence": 0.85
@@ -1619,6 +1650,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "functions-and-graphs",
           "dna": {
             "dnaId": "FUNC-COMP-01",
             "dnaConfidence": 0.85
@@ -1662,6 +1694,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "bivariate-statistics",
           "dna": {
             "dnaId": "STAT-BIV-01",
             "dnaConfidence": 0.85
@@ -1705,6 +1738,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "bivariate-statistics",
           "dna": {
             "dnaId": "STAT-BIV-01",
             "dnaConfidence": 0.85
@@ -1748,6 +1782,7 @@
           "meta": {
             "source": "Danebank 2020 Trial Q26"
           },
+          "hscType": "differentiation-rules",
           "dna": {
             "dnaId": "CALC-DIFF-01",
             "dnaConfidence": 0.85
@@ -1791,6 +1826,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "integration-techniques",
           "dna": {
             "dnaId": "CALC-INT-01",
             "dnaConfidence": 0.85,
@@ -1887,6 +1923,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "geometric-series",
           "dna": {
             "dnaId": "SERIES-01",
             "dnaConfidence": 0.85
@@ -1962,6 +1999,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "optimisation",
           "dna": {
             "dnaId": "CALC-OPT-01",
             "dnaConfidence": 0.85
@@ -2005,6 +2043,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "optimisation",
           "dna": {
             "dnaId": "CALC-OPT-01",
             "dnaConfidence": 0.85
@@ -2080,6 +2119,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "conditional-probability",
           "dna": {
             "dnaId": "FUNC-TRANS-01",
             "dnaConfidence": 0.85
@@ -2126,6 +2166,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "trig-equations-and-graphs",
           "dna": {
             "dnaId": "TRIG-EQ-01",
             "dnaConfidence": 0.85
@@ -2165,6 +2206,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "trig-equations-and-graphs",
           "dna": {
             "dnaId": "TRIG-GRAPH-01",
             "dnaConfidence": 0.85
@@ -2208,6 +2250,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "exponential-and-log",
           "dna": {
             "dnaId": "FUNC-GRAPH-01",
             "dnaConfidence": 0.85
@@ -2279,6 +2322,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "areas-and-volumes",
           "dna": {
             "dnaId": "CALC-AREA-01",
             "dnaConfidence": 0.85
@@ -2322,6 +2366,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "differentiation-rules",
           "dna": {
             "dnaId": "CALC-TAN-01",
             "dnaConfidence": 0.85
@@ -2365,6 +2410,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "geometric-series",
           "dna": {
             "dnaId": "FIN-GP-01",
             "dnaConfidence": 0.85,
@@ -2461,6 +2507,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "financial-mathematics",
           "dna": {
             "dnaId": "FIN-INTEREST-01",
             "dnaConfidence": 0.85,
@@ -2581,6 +2628,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "differentiation-rules",
           "dna": {
             "dnaId": "CALC-DIFF-01",
             "dnaConfidence": 0.85
@@ -2624,6 +2672,7 @@
           "meta": {
             "source": "Danebank 2020 Trial Q36(a)"
           },
+          "hscType": "differentiation-rules",
           "dna": {
             "dnaId": "ALG-EXP-01",
             "dnaConfidence": 0.95
@@ -2667,6 +2716,7 @@
           "meta": {
             "source": "Danebank 2020 Trial Q36(b)"
           },
+          "hscType": "differentiation-rules",
           "dna": {
             "dnaId": "CALC-MOTION-01",
             "dnaConfidence": 0.95
@@ -2710,6 +2760,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "financial-mathematics",
           "dna": {
             "dnaId": "FIN-INTEREST-01",
             "dnaConfidence": 0.85,
@@ -2832,6 +2883,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "rates-of-change",
           "dna": {
             "dnaId": "CALC-MOTION-01",
             "dnaConfidence": 0.85
@@ -2875,6 +2927,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "motion-kinematics",
           "dna": {
             "dnaId": "CALC-MOTION-01",
             "dnaConfidence": 0.85
@@ -2950,6 +3003,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "exponential-and-log",
           "dna": {
             "dnaId": "CALC-INT-01",
             "dnaConfidence": 0.85,
@@ -3046,6 +3100,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "exponential-and-log",
           "dna": {
             "dnaId": "ALG-LOG-01",
             "dnaConfidence": 0.85
@@ -3089,6 +3144,7 @@
           "meta": {
             "source": "Danebank 2020 Trial Q1"
           },
+          "hscType": "differentiation-rules",
           "alsoIn": [
             "exam:danebank2020similar"
           ]
@@ -3129,6 +3185,7 @@
             "source": "Danebank 2020 Trial Q2",
             "examPaper": "dane-2020"
           },
+          "hscType": "bivariate-statistics",
           "alsoIn": [
             "exam:danebank2020similar"
           ]
@@ -3168,6 +3225,7 @@
           "meta": {
             "source": "Danebank 2020 Trial Q3"
           },
+          "hscType": "functions-and-graphs",
           "alsoIn": [
             "exam:danebank2020similar"
           ]
@@ -3207,6 +3265,7 @@
           "meta": {
             "source": "Danebank 2020 Trial Q4"
           },
+          "hscType": "functions-and-graphs",
           "alsoIn": [
             "exam:danebank2020similar"
           ]
@@ -3247,6 +3306,7 @@
             "source": "Danebank 2020 Trial Q5",
             "examPaper": "dane-2020"
           },
+          "hscType": "arithmetic-series",
           "alsoIn": [
             "exam:danebank2020similar"
           ]
@@ -3314,6 +3374,7 @@
           "meta": {
             "source": "Danebank 2020 Trial Q6"
           },
+          "hscType": "applications-of-differentiation",
           "alsoIn": [
             "exam:danebank2020similar"
           ]
@@ -3353,6 +3414,7 @@
           "meta": {
             "source": "Danebank 2020 Trial Q7"
           },
+          "hscType": "integration-techniques",
           "alsoIn": [
             "exam:danebank2020similar"
           ]
@@ -3388,6 +3450,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "trig-equations-and-graphs",
           "alsoIn": [
             "exam:danebank2020similar"
           ]
@@ -3428,6 +3491,7 @@
             "source": "Danebank 2020 Trial Q9",
             "examPaper": "dane-2020"
           },
+          "hscType": "data-analysis",
           "alsoIn": [
             "exam:danebank2020similar"
           ]
@@ -3467,6 +3531,7 @@
           "meta": {
             "source": "Danebank 2020 Trial Q10"
           },
+          "hscType": "differentiation-rules",
           "alsoIn": [
             "exam:danebank2020similar"
           ]
@@ -3538,6 +3603,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "trapezoidal-rule",
           "alsoIn": [
             "exam:danebank2020similar"
           ]
@@ -3609,6 +3675,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "trig-applications",
           "alsoIn": [
             "exam:danebank2020similar"
           ]
@@ -3649,6 +3716,7 @@
             "source": "Danebank 2020 Trial Q12(b)",
             "examPaper": "dane-2020"
           },
+          "hscType": "trig-applications",
           "alsoIn": [
             "exam:danebank2020similar"
           ]
@@ -3786,6 +3854,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "trig-applications",
           "alsoIn": [
             "exam:danebank2020similar"
           ]
@@ -3825,6 +3894,7 @@
           "meta": {
             "source": "Danebank 2020 Trial Q13(b)"
           },
+          "hscType": "areas-and-volumes",
           "alsoIn": [
             "exam:danebank2020similar"
           ]
@@ -3896,6 +3966,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "geometric-series",
           "alsoIn": [
             "exam:year11ch1e"
           ]
@@ -3935,6 +4006,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "areas-and-volumes",
           "alsoIn": [
             "exam:danebank2020similar"
           ]
@@ -3975,6 +4047,7 @@
             "source": "Danebank 2020 Trial Q15",
             "examPaper": "dane-2020"
           },
+          "hscType": "trig-equations-and-graphs",
           "alsoIn": [
             "exam:danebank2020similar"
           ]
@@ -4014,6 +4087,7 @@
           "meta": {
             "source": "Danebank 2020 Trial Q16"
           },
+          "hscType": "differentiation-rules",
           "alsoIn": [
             "exam:danebank2020similar"
           ]
@@ -4052,7 +4126,8 @@
           ],
           "meta": {
             "examPaper": "dane-2020"
-          }
+          },
+          "hscType": "conditional-probability"
         },
         {
           "id": "dane2020s-q17b",
@@ -4088,7 +4163,8 @@
           ],
           "meta": {
             "examPaper": "dane-2020"
-          }
+          },
+          "hscType": "conditional-probability"
         },
         {
           "id": "dane2020s-q18",
@@ -4126,6 +4202,7 @@
             "source": "Danebank 2020 Trial Q18",
             "examPaper": "dane-2020"
           },
+          "hscType": "differentiation-rules",
           "alsoIn": [
             "exam:danebank2020similar"
           ]
@@ -4165,6 +4242,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "exponential-and-log",
           "alsoIn": [
             "exam:danebank2020similar"
           ]
@@ -4205,6 +4283,7 @@
             "source": "Danebank 2020 Trial Q19(b)",
             "examPaper": "dane-2020"
           },
+          "hscType": "exponential-and-log",
           "alsoIn": [
             "exam:danebank2020similar"
           ]
@@ -4244,6 +4323,7 @@
           "meta": {
             "source": "Danebank 2020 Trial Q20"
           },
+          "hscType": "integration-techniques",
           "alsoIn": [
             "exam:danebank2020similar"
           ]
@@ -4287,6 +4367,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "applications-of-differentiation",
           "alsoIn": [
             "exam:danebank2020similar"
           ]
@@ -4326,6 +4407,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "probability-distributions",
           "alsoIn": [
             "exam:danebank2020similar"
           ]
@@ -4367,6 +4449,7 @@
             "topic": "y12a-10A",
             "examPaper": "dane-2020"
           },
+          "hscType": "probability-distributions",
           "alsoIn": [
             "exam:danebank2020similar"
           ]
@@ -4406,6 +4489,7 @@
           "meta": {
             "source": "Danebank 2020 Trial Q23"
           },
+          "hscType": "differentiation-rules",
           "alsoIn": [
             "exam:danebank2020similar"
           ]
@@ -4445,6 +4529,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "functions-and-graphs",
           "alsoIn": [
             "exam:danebank2020similar"
           ]
@@ -4485,6 +4570,7 @@
             "source": "Danebank 2020 Trial Q24(b)",
             "examPaper": "dane-2020"
           },
+          "hscType": "functions-and-graphs",
           "alsoIn": [
             "exam:danebank2020similar"
           ]
@@ -4524,6 +4610,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "bivariate-statistics",
           "alsoIn": [
             "exam:danebank2020similar"
           ]
@@ -4564,6 +4651,7 @@
             "source": "Danebank 2020 Trial Q25(b)",
             "examPaper": "dane-2020"
           },
+          "hscType": "bivariate-statistics",
           "alsoIn": [
             "exam:danebank2020similar"
           ]
@@ -4603,6 +4691,7 @@
           "meta": {
             "source": "Danebank 2020 Trial Q26"
           },
+          "hscType": "differentiation-rules",
           "alsoIn": [
             "exam:danebank2020similar"
           ]
@@ -4642,6 +4731,7 @@
           "meta": {
             "source": "Danebank 2020 Trial Q27"
           },
+          "hscType": "integration-techniques",
           "alsoIn": [
             "exam:danebank2020similar"
           ]
@@ -4681,6 +4771,7 @@
           "meta": {
             "source": "Danebank 2020 Trial Q28"
           },
+          "hscType": "geometric-series",
           "alsoIn": [
             "exam:danebank2020similar"
           ]
@@ -4752,6 +4843,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "optimisation",
           "alsoIn": [
             "exam:danebank2020similar"
           ]
@@ -4791,6 +4883,7 @@
           "meta": {
             "source": "Danebank 2020 Trial Q29(b)"
           },
+          "hscType": "optimisation",
           "alsoIn": [
             "exam:danebank2020similar"
           ]
@@ -4862,6 +4955,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "conditional-probability",
           "alsoIn": [
             "exam:danebank2020similar"
           ]
@@ -4901,6 +4995,7 @@
             "source": "Danebank 2020 Trial Q31",
             "examPaper": "dane-2020"
           },
+          "hscType": "trig-equations-and-graphs",
           "alsoIn": [
             "exam:danebank2020similar"
           ]
@@ -4936,6 +5031,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "trig-equations-and-graphs",
           "alsoIn": [
             "exam:danebank2020similar"
           ]
@@ -4975,6 +5071,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "exponential-and-log",
           "alsoIn": [
             "exam:danebank2020similar"
           ]
@@ -5042,6 +5139,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "areas-and-volumes",
           "alsoIn": [
             "exam:danebank2020similar"
           ]
@@ -5082,6 +5180,7 @@
             "source": "Danebank 2020 Trial Q33(b)",
             "examPaper": "dane-2020"
           },
+          "hscType": "differentiation-rules",
           "alsoIn": [
             "exam:danebank2020similar"
           ]
@@ -5121,6 +5220,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "geometric-series",
           "alsoIn": [
             "exam:danebank2020similar"
           ]
@@ -5160,6 +5260,7 @@
           "meta": {
             "source": "Danebank 2020 Trial Q34(b)"
           },
+          "hscType": "financial-mathematics",
           "alsoIn": [
             "exam:danebank2020similar"
           ]
@@ -5199,6 +5300,7 @@
           "meta": {
             "source": "Danebank 2020 Trial Q35"
           },
+          "hscType": "differentiation-rules",
           "alsoIn": [
             "exam:danebank2020similar"
           ]
@@ -5238,6 +5340,7 @@
           "meta": {
             "source": "Danebank 2020 Trial Q36(a)"
           },
+          "hscType": "differentiation-rules",
           "alsoIn": [
             "exam:danebank2020similar"
           ]
@@ -5277,6 +5380,7 @@
           "meta": {
             "source": "Danebank 2020 Trial Q36(b)"
           },
+          "hscType": "differentiation-rules",
           "alsoIn": [
             "exam:danebank2020similar"
           ]
@@ -5316,6 +5420,7 @@
           "meta": {
             "source": "Danebank 2020 Trial Q37"
           },
+          "hscType": "financial-mathematics",
           "alsoIn": [
             "exam:danebank2020similar"
           ]
@@ -5355,6 +5460,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "rates-of-change",
           "alsoIn": [
             "exam:danebank2020similar"
           ]
@@ -5395,6 +5501,7 @@
             "source": "Danebank 2020 Trial Q38(b)",
             "examPaper": "dane-2020"
           },
+          "hscType": "motion-kinematics",
           "alsoIn": [
             "exam:danebank2020similar"
           ]
@@ -5466,6 +5573,7 @@
           "meta": {
             "examPaper": "dane-2020"
           },
+          "hscType": "exponential-and-log",
           "alsoIn": [
             "exam:danebank2020similar"
           ]
@@ -5506,6 +5614,7 @@
             "source": "Danebank 2020 Trial Q39(b)",
             "examPaper": "dane-2020"
           },
+          "hscType": "exponential-and-log",
           "alsoIn": [
             "exam:danebank2020similar"
           ]

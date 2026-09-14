@@ -44,6 +44,7 @@
             "source": "Abbotsleigh 2020 Trial Q1",
             "examPaper": "abb-2020-ext1"
           },
+          "hscType": "conditional-probability",
           "alsoIn": [
             "exam:abbotsleigh2020ext1"
           ]
@@ -80,6 +81,7 @@
             "source": "Abbotsleigh 2020 Trial Q2",
             "examPaper": "abb-2020-ext1"
           },
+          "hscType": "conditional-probability",
           "alsoIn": [
             "exam:abbotsleigh2020ext1"
           ]
@@ -120,6 +122,7 @@
             "source": "Abbotsleigh 2020 Trial Q3",
             "examPaper": "abb-2020-ext1"
           },
+          "hscType": "trig-equations-and-graphs",
           "alsoIn": [
             "exam:abbotsleigh2020ext1"
           ]
@@ -160,6 +163,7 @@
             "source": "Abbotsleigh 2020 Trial Q4",
             "examPaper": "abb-2020-ext1"
           },
+          "hscType": "financial-mathematics",
           "alsoIn": [
             "exam:abbotsleigh2020ext1"
           ]
@@ -200,6 +204,7 @@
             "source": "Abbotsleigh 2020 Trial Q5",
             "examPaper": "abb-2020-ext1"
           },
+          "hscType": "trig-equations-and-graphs",
           "alsoIn": [
             "exam:abbotsleigh2020ext1"
           ]
@@ -240,6 +245,7 @@
             "source": "Abbotsleigh 2020 Trial Q6",
             "examPaper": "abb-2020-ext1"
           },
+          "hscType": "extension1-misc",
           "alsoIn": [
             "exam:abbotsleigh2020ext1"
           ]
@@ -276,6 +282,7 @@
             "source": "Abbotsleigh 2020 Trial Q7",
             "examPaper": "abb-2020-ext1"
           },
+          "hscType": "extension1-misc",
           "alsoIn": [
             "exam:abbotsleigh2020ext1"
           ]
@@ -316,6 +323,7 @@
             "source": "Abbotsleigh 2020 Trial Q8",
             "examPaper": "abb-2020-ext1"
           },
+          "hscType": "financial-mathematics",
           "alsoIn": [
             "exam:abbotsleigh2020ext1"
           ]
@@ -352,6 +360,7 @@
             "source": "Abbotsleigh 2020 Trial Q9",
             "examPaper": "abb-2020-ext1"
           },
+          "hscType": "trig-applications",
           "alsoIn": [
             "exam:abbotsleigh2020ext1"
           ]
@@ -388,6 +397,7 @@
             "source": "Abbotsleigh 2020 Trial Q10",
             "examPaper": "abb-2020-ext1"
           },
+          "hscType": "trig-applications",
           "alsoIn": [
             "exam:abbotsleigh2020ext1"
           ]
@@ -424,6 +434,7 @@
             "source": "Abbotsleigh 2020 Trial Q11a",
             "examPaper": "abb-2020-ext1"
           },
+          "hscType": "trig-equations-and-graphs",
           "alsoIn": [
             "exam:abbotsleigh2020ext1"
           ]
@@ -464,6 +475,7 @@
             "source": "Abbotsleigh 2020 Trial Q11b(i)",
             "examPaper": "abb-2020-ext1"
           },
+          "hscType": "conditional-probability",
           "alsoIn": [
             "exam:abbotsleigh2020ext1"
           ]
@@ -504,6 +516,7 @@
             "source": "Abbotsleigh 2020 Trial Q11c",
             "examPaper": "abb-2020-ext1"
           },
+          "hscType": "conditional-probability",
           "alsoIn": [
             "exam:abbotsleigh2020ext1"
           ]
@@ -544,6 +557,7 @@
             "source": "Abbotsleigh 2020 Trial Q11d(i)",
             "examPaper": "abb-2020-ext1"
           },
+          "hscType": "financial-mathematics",
           "alsoIn": [
             "exam:abbotsleigh2020ext1"
           ]
@@ -580,6 +594,7 @@
             "source": "Abbotsleigh 2020 Trial Q11d(ii)",
             "examPaper": "abb-2020-ext1"
           },
+          "hscType": "financial-mathematics",
           "alsoIn": [
             "exam:abbotsleigh2020ext1"
           ]
@@ -620,6 +635,7 @@
             "source": "Abbotsleigh 2020 Trial Q11e",
             "examPaper": "abb-2020-ext1"
           },
+          "hscType": "trig-applications",
           "alsoIn": [
             "exam:abbotsleigh2020ext1"
           ]
@@ -664,6 +680,7 @@
             "source": "Abbotsleigh 2020 Trial Q12a",
             "examPaper": "abb-2020-ext1"
           },
+          "hscType": "conditional-probability",
           "alsoIn": [
             "exam:abbotsleigh2020ext1"
           ]
@@ -708,6 +725,7 @@
             "source": "Abbotsleigh 2020 Trial Q12b",
             "examPaper": "abb-2020-ext1"
           },
+          "hscType": "extension1-misc",
           "alsoIn": [
             "exam:abbotsleigh2020ext1"
           ]
@@ -744,6 +762,7 @@
             "source": "Abbotsleigh 2020 Trial Q12c",
             "examPaper": "abb-2020-ext1"
           },
+          "hscType": "probability-distributions",
           "alsoIn": [
             "exam:abbotsleigh2020ext1"
           ]
@@ -784,6 +803,7 @@
             "source": "Abbotsleigh 2020 Trial Q12d",
             "examPaper": "abb-2020-ext1"
           },
+          "hscType": "extension1-misc",
           "alsoIn": [
             "exam:abbotsleigh2020ext1"
           ]
@@ -822,7 +842,8 @@
           ],
           "meta": {
             "examPaper": "abb-2020-ext1"
-          }
+          },
+          "hscType": "conditional-probability"
         },
         {
           "id": "abb2020e1-q13bi",
@@ -860,6 +881,7 @@
             "source": "Abbotsleigh 2020 Trial Q13b(i)",
             "examPaper": "abb-2020-ext1"
           },
+          "hscType": "extension1-misc",
           "alsoIn": [
             "exam:abbotsleigh2020ext1"
           ]
@@ -900,6 +922,7 @@
             "source": "Abbotsleigh 2020 Trial Q13b(ii)",
             "examPaper": "abb-2020-ext1"
           },
+          "hscType": "extension1-misc",
           "alsoIn": [
             "exam:abbotsleigh2020ext1"
           ]
@@ -940,6 +963,7 @@
             "source": "Abbotsleigh 2020 Trial Q13c(i)",
             "examPaper": "abb-2020-ext1"
           },
+          "hscType": "trig-equations-and-graphs",
           "alsoIn": [
             "exam:abbotsleigh2020ext1"
           ]
@@ -980,6 +1004,7 @@
             "source": "Abbotsleigh 2020 Trial Q13c(ii)",
             "examPaper": "abb-2020-ext1"
           },
+          "hscType": "trig-equations-and-graphs",
           "alsoIn": [
             "exam:abbotsleigh2020ext1"
           ]
@@ -1020,6 +1045,7 @@
             "source": "Abbotsleigh 2020 Trial Q13d(i)",
             "examPaper": "abb-2020-ext1"
           },
+          "hscType": "conditional-probability",
           "alsoIn": [
             "exam:abbotsleigh2020ext1"
           ]
@@ -1060,6 +1086,7 @@
             "source": "Abbotsleigh 2020 Trial Q13d(ii)",
             "examPaper": "abb-2020-ext1"
           },
+          "hscType": "conditional-probability",
           "alsoIn": [
             "exam:abbotsleigh2020ext1"
           ]
@@ -1100,6 +1127,7 @@
             "source": "Abbotsleigh 2020 Trial Q14a",
             "examPaper": "abb-2020-ext1"
           },
+          "hscType": "differentiation-rules",
           "alsoIn": [
             "exam:abbotsleigh2020ext1"
           ]
@@ -1140,6 +1168,7 @@
             "source": "Abbotsleigh 2020 Trial Q14b",
             "examPaper": "abb-2020-ext1"
           },
+          "hscType": "conditional-probability",
           "alsoIn": [
             "exam:abbotsleigh2020ext1"
           ]
@@ -1176,6 +1205,7 @@
             "source": "Abbotsleigh 2020 Trial Q14c(i)",
             "examPaper": "abb-2020-ext1"
           },
+          "hscType": "continuous-distributions",
           "alsoIn": [
             "exam:abbotsleigh2020ext1"
           ]
@@ -1216,6 +1246,7 @@
             "source": "Abbotsleigh 2020 Trial Q14c(ii)",
             "examPaper": "abb-2020-ext1"
           },
+          "hscType": "continuous-distributions",
           "alsoIn": [
             "exam:abbotsleigh2020ext1"
           ]
@@ -1256,6 +1287,7 @@
             "source": "Abbotsleigh 2020 Trial Q14c(iii)",
             "examPaper": "abb-2020-ext1"
           },
+          "hscType": "continuous-distributions",
           "alsoIn": [
             "exam:abbotsleigh2020ext1"
           ]

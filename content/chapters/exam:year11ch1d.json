@@ -522,6 +522,7 @@
               "work": "\\(304 \\geq 160k \\Rightarrow k \\leq \\frac{304}{160} = \\frac{19}{10}\\)"
             }
           ],
+          "hscType": "arithmetic-series",
           "dna": {
             "dnaId": "ALG-EQ-01",
             "dnaConfidence": 0.85
@@ -559,6 +560,7 @@
               "work": "\\(t \\approx 17.6 \\Rightarrow \\text{about 18 minutes}\\)"
             }
           ],
+          "hscType": "arithmetic-series",
           "dna": {
             "dnaId": "ALG-EQ-01",
             "dnaConfidence": 0.85
@@ -595,7 +597,8 @@
               "explain": "Rearrange to isolate $k$: add $24k$ to both sides, then divide by 24 and simplify the fraction.",
               "work": "\\(100 \\geq 24k \\Rightarrow k \\leq \\frac{100}{24} = \\frac{25}{6}\\)"
             }
-          ]
+          ],
+          "hscType": "arithmetic-series"
         },
         {
           "id": "fortst2020s-q17b",
@@ -628,7 +631,8 @@
               "explain": "The domain is $0 \\le t \\le 70$, so $t \\approx 119.5$ is rejected. The valid solution $t \\approx 20.5$ rounds to 21 minutes.",
               "work": "\\(t \\approx 20.5 \\Rightarrow \\text{about 21 minutes}\\)"
             }
-          ]
+          ],
+          "hscType": "arithmetic-series"
         }
       ]
     }
