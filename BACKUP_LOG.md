@@ -32,7 +32,16 @@ tar -xzf sapere1-firestore-questions-20260914.tar.gz -C /tmp/restore
 
 ### 2. Git 복원점
 
-코드 복원점은 아래 `known-good/20260904` 그대로 유효. P0/P1 산출물(`content/`, `tools/content/`)은 이 시점에 **아직 커밋 전** — tarball에만 존재.
+| | |
+|---|---|
+| 태그 | `content-migration/p1` (로컬) |
+| 커밋 | `4daf901e` — *content: P0/P1 — canonical question bank in content/* |
+| 포함 | `content/` 정규 콘텐츠 + `tools/content/` + 스키마·검증 게이트 (raw Firestore 스냅샷은 제외 — tarball에만) |
+
+```bash
+git checkout content-migration/p1      # content/ 를 P1 직후 상태로
+```
+코드 자체의 복원점은 아래 `known-good/20260904` 그대로 유효.
 
 ---
 
